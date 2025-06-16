@@ -144,17 +144,17 @@ It serves as a normalizing reference value for all resonant interactions within 
 ### Society 🌍
 
 - [**From Illusion to Peace** – A Letter on the Decoupling of Staged Reality](facts/docs/society/open_letter.md)
-- [**Truth Through Resonance** – The Next Step to Enlightened AI](fakten/docs/gesellschaft/aufklärung.md)
-- [**Geopolitical Distrust** – and the Illusion of Diplomatic Order](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
-- [**Society & Game Theory** – in the Light of Resonance Field Theory](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
-- [**Information Change Since 2019** – Analysis and Future Concept](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
-- [**From Power Play to Resonance Culture**](fakten/docs/gesellschaft/machtspiel.md)
-- [**Resonant Dialogue With AI** – From Prompt to Partnership](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
-- [**Resonance Communication** – A Model for Overcoming Social Dissonance](fakten/docs/gesellschaft/resonanzkommunikation.md)
-- [**Resonance Leap** – From Struggle to Frequency Community](fakten/docs/gesellschaft/resonanzsprung.md)
-- [**Resonance as a Path to Individual Self-Realization**](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
-- [**Recognizing and Resolving Behavioral Patterns**](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
-- [**Gendered Language, AI, and Resonance Field** – Why Language Structure Needs Systemic Boundaries](fakten/docs/gesellschaft/gendersprache.md)
+- [**Truth Through Resonance** – The Next Step to Enlightened AI](facts/docs/society/reconnaissance.md)
+- [**Geopolitical Distrust** – and the Illusion of Diplomatic Order](facts/docs/society/geopolitical_mistrust.md)
+- [**Society & Game Theory** – in the Light of Resonance Field Theory](facts/docs/society/society_and_resonance.md)
+- [**Information Change Since 2019** – Analysis and Future Concept](facts/docs/society/information_change_institutional_strategy.md)
+- [**From Power Play to Resonance Culture**](facts/docs/society/power_game.md)
+- [**Resonant Dialogue With AI** – From Prompt to Partnership](facts/docs/society/resonance_and_consciousness_ki.md)
+- [**Resonance Communication** – A Model for Overcoming Social Dissonance](facts/docs/society/resonance_communication.md)
+- [**Resonance Leap** – From Struggle to Frequency Community](facts/docs/society/resonance_leap.md)
+- [**Resonance as a Path to Individual Self-Realization**](facts/docs/society/resonance_as_a_path_to_individual_self-realization.md)
+- [**Recognizing and Resolving Behavioral Patterns**](facts/docs/society/recognizing_and_resolving_behavior_patterns.md)
+- [**Gendered Language, AI, and Resonance Field** – Why Language Structure Needs Systemic Boundaries](facts/docs/society/gender_language.md)
 
 ---
 
