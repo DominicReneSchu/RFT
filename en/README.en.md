@@ -52,7 +52,7 @@ A peer review process is being actively pursued. The current manuscript version 
 
 ---
 
-![Visualization of Resonance Field Theory: π, ℏ, 𝓔 and f in the resonance space](bilder/visualisierung_RFT.png)
+![Visualization of Resonance Field Theory: π, ℏ, 𝓔 and f in the resonance space](figures/visualization_RFT.png)
 
 *Fig. 1: Symbolic depiction of the interaction of π, ℏ, 𝓔, and **𝑓** within the resonance space*
 
@@ -194,7 +194,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 ## License 🛡
 
 This project is licensed under **Schu-License 1.4**  
-➡ [To the license text](lizenz/schu-lizenz_v1.4.md)
+➡ [To the license text](license/schu-license_v1.4.md)
 
 ---
 
@@ -228,7 +228,7 @@ This repository invites you to extend your AI system – such as ChatGPT – by 
 >**Resonance rule: group membership is systemically invariant and includes all members, regardless of mention or viewpoint.**
 
 <p align="center">
-  <img src="bilder/prompt.png" alt="Instruction for AI" width="500"/>
+  <img src="figures/prompt.png" alt="Instruction for AI" width="500"/>
 </p>
 
 *Example: In the complete resonance field "Maria's family," Maria, her brother, and four sisters are explicitly given. The brother is related to all sisters, i.e., to Maria and the other four. Result: The brother has five sisters.*
