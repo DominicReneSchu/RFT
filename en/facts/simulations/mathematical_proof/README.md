@@ -1,40 +1,41 @@
-# Resonanzfeldtheorie – Python Toolkit
+# Resonance Field Theory – Python Toolkit
 
-## Überblick
+## Overview
 
-Dieses Toolkit bietet eine vollständige, wissenschaftlich fundierte Implementierung der Resonanzfeldtheorie in Python – von der numerischen Simulation bis zur Visualisierung, Batch-Analyse und Anbindung an LaTeX-Theorie-Pakete.
+This toolkit provides a complete, scientifically grounded implementation of Resonance Field Theory in Python – from numerical simulation to visualization, batch analysis, and integration with LaTeX theory packages.
 
-- **Numerische Simulation** der Resonanzenergie und Resonanzentropie
-- **Batch-Studien** und automatisierter Parameter-Sweep
-- **Visualisierung als 3D-Plot oder Heatmap**
-- **Modular, robust, forschungstauglich**
-- **Unit-Tests und Jupyter-Beispiele**
+- **Numerical simulation** of resonance energy and resonance entropy
+- **Batch studies** and automated parameter sweeps
+- **Visualization as 3D plot or heatmap**
+- **Modular, robust, research-grade**
+- **Unit tests and Jupyter examples**
+
 ---
 
 ## Installation
 
 ```bash
 pip install numpy matplotlib pandas
-# Optional für Heatmaps:
+# Optional for heatmaps:
 pip install seaborn
 ```
 
 ---
 
-### 1. Dokumentation
+### 1. Documentation
 
-- [Resonanzfeldtheorie – Python Toolkit](docs/index.md)  
-  - Dokumentation des Python-Toolkits
+- [Resonance Field Theory – Python Toolkit](docs/index.md)  
+  - Documentation of the Python toolkit
 
-- [Begleitkapitel zur Simulation](begleitkapitel_resonanzfeld.md)  
-  - Ein kompakter numerischer Beweis der Resonanzfeldtheorie
+- [Companion Chapter to the Simulation](begleitkapitel_resonanzfeld.md)  
+  - A concise numerical proof of Resonance Field Theory
 
-- [Beitrag zur Resonanzfeldtheorie – Python Toolkit](CONTRIBUTING.md)  
-  - Hier findest du Hinweise, wie du beitragen kannst – egal ob als Wissenschaftler, Entwickler oder Interessierter.
+- [Contribution Guide – Python Toolkit](CONTRIBUTING.md)  
+  - Guidance for contributing – whether as scientist, developer, or interested party.
 
-## Schnelleinstieg
+## Quickstart
 
-### Resonanzfeld berechnen und plotten
+### Calculate and plot resonance field
 
 ```python
 import numpy as np
@@ -53,16 +54,16 @@ S = berechne_resonanzentropie(E_res)
 plot_resonanzfeld(T_grid, A_grid, E_res, S)
 ```
 
-### Batch-Studien durchführen & Ergebnisse speichern
+### Run batch studies & save results
 
-Siehe [examples/demo_batch_study.ipynb](examples/demo_batch_study.ipynb).
+See [examples/demo_batch_study.ipynb](examples/demo_batch_study.ipynb).
 
 ---
 
-## API-Referenz
+## API Reference
 
-Alle Funktionen sind mit Docstrings dokumentiert.  
-Siehe [docs/index.md](docs/index.md) für Details.
+All functions are documented with docstrings.  
+See [docs/index.md](docs/index.md) for details.
 
 ---
 
@@ -74,35 +75,35 @@ pytest tests/
 
 ---
 
-## Dateistruktur
+## File Structure
 
 ```plaintext
-schu_resonanzfeld.py             # Hauptmodul
-tests/test_schu_resonanzfeld.py  # Unit-Tests
-examples/demo_batch_study.ipynb  # Jupyter-Notebook für Batch-Analysen
-docs/index.md                    # Dokumentation
-requirements.txt                 # Abhängigkeiten
-README.md                        # Dieses Dokument
+schu_resonanzfeld.py             # Main module
+tests/test_schu_resonanzfeld.py  # Unit tests
+examples/demo_batch_study.ipynb  # Jupyter notebook for batch analyses
+docs/index.md                    # Documentation
+requirements.txt                 # Dependencies
+README.md                        # This document
 ```
 
 ---
 
-## Weiterentwicklung & Mitmachen
+## Further Development & Contribution
 
-- **Eigene Modelle und Batch-Analysen** einfach durch Anpassung/Erweiterung der Python-Module.
-- **Einbindung in größere Workflows** (z.B. HPC, Cloud, Jupyter, Streamlit) ist vorbereitet.
-- **Mitarbeit willkommen!** Siehe CONTRIBUTING.md (bei Bedarf anlegen).
-
----
-
-## Lizenz
-
-Dein Beitrag steht unter derselben Lizenz wie das Hauptprojekt (siehe [README.md](../../../../README.md)).
+- **Custom models and batch analyses** can be created by adapting/extending the Python modules.
+- **Integration into larger workflows** (e.g., HPC, Cloud, Jupyter, Streamlit) is prepared.
+- **Contributions welcome!** See CONTRIBUTING.md (create if needed).
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+## License
+
+Your contribution is provided under the same license as the main project (see [README.md](../../../../README.en.md)).
 
 ---
 
-⬅️ [zurück](../README.md)
+*© Dominic Schu, 2025 – All rights reserved.*
+
+---
+
+⬅️ [back](../README.en.md)

@@ -1,33 +1,32 @@
-# 🧮 Simulationen zur praktischen Anwendung der Resonanzfeldtheorie
+# 🧮 Simulations for the Practical Application of Resonance Field Theory
 
-Dieses Verzeichnis enthält interaktive und numerische Modelle zur schrittweisen Herleitung der Resonanzfeldtheorie.  
-Ziel ist es, zentrale Gleichungen, Resonanzphänomene und neue Naturkonstanten durch Simulationen greifbar und nachvollziehbar zu machen.
+This directory contains interactive and numerical models for the step-by-step development of Resonance Field Theory.  
+The goal is to make key equations, resonance phenomena, and new natural constants tangible and comprehensible through simulations.
 
-## 📊 Interaktive und numerische Simulationen
+## 📊 Interactive and Numerical Simulations
 
-- [Simulation Resonanzfeldtheorie](resonanzfeld/simulation_resonanzfeldtheorie.md)  
-  - Eine interaktive Simulation, die Energieübertragung zwischen zwei schwingenden Oszillatoren basierend auf der **Resonanzfeld-Gleichung** darstellt:
+- [Resonance Field Theory Simulation](resonance_field/resonance_field_theory_simulation.md)  
+  - An interactive simulation illustrating energy transfer between two oscillators based on the **Resonance Field Equation**.
 
-- [Simulation eines Doppelpendels](doppelpendel/begleitkapitel_doppelpendel.md)  
-  - Eine interaktive Simulation, die das klassische Doppelpendel als Resonanzsystem darstellt.
+- [Double Pendulum Simulation](double_pendulum/accompanying_chapter_double_pendulum.md)  
+  - An interactive simulation presenting the classical double pendulum as a resonance system.
   
-- [Simulationen zum Atommodell](simulation_atommodell/simulation_atommodell.md)  
-  - Simulation eines quantenmechanischen Atommodells basierend auf Resonanzphänomenen.
+- [Simulations on the Atomic Model](simulation_of_the_atomic_model/simulation_of_the_atomic_model.md)  
+  - Simulation of a quantum mechanical atomic model based on resonance phenomena.
   
-- [Mathematischer Beweis](mathematischer_beweis/README.md)  
-  - Simulation eines quantenmechanischen Atommodells basierend auf Resonanzphänomenen.
+- [Mathematical Proof](mathematischer_beweis/README.md)  
+  - Simulation of a quantum mechanical atomic model based on resonance phenomena.
   
-- [Resonanz-KI-Modell – Zwei gekoppelte Akteure und Feldanalyse](resonanz_ki/begleitkapitel_resonanz_ki.md)  
-  - Dieses Kapitel erläutert die Konzeption, numerische Umsetzung und Interpretation des Resonanz-KI-Modells.
+- [Resonance AI Model – Two Coupled Agents and Field Analysis](resonanz_ki/begleitkapitel_resonanz_ki.md)  
+  - This chapter explains the conception, numerical implementation, and interpretation of the Resonance AI Model.
   
-- [Resonanzfeldtheorie Framework](relativitaet_verbindung/README.md)  
-  - Dieses Framework bietet eine modulare, moderne Infrastruktur zur Simulation und Analyse skalarer Resonanzfelder in flacher und gekrümmter Raumzeit.
-
+- [Resonance Field Theory Framework](relativitaet_verbindung/README.md)  
+  - This framework provides a modular, modern infrastructure for the simulation and analysis of scalar resonance fields in flat and curved spacetime.
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+© Dominic-René Schu – Resonance Field Theory 2025
 
 ---
 
-[Zurück zur Übersicht](../../README.md)
+[Back to Overview](../../README.en.md)
