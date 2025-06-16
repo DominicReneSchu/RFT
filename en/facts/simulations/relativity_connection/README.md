@@ -1,119 +1,118 @@
-# Resonanzfeldtheorie Framework
+# Resonance Field Theory Framework
 
-Dieses Framework bietet eine modulare, moderne Infrastruktur zur Simulation und Analyse skalarer Resonanzfelder in flacher und gekrümmter Raumzeit. Es verbindet numerische Methoden, Visualisierung und wissenschaftliche Dokumentation und legt besonderen Fokus auf Energiehaltung, Stabilität und Erweiterbarkeit.
-
----
-
-## Inhalt und Motivation
-
-**Was ist die Resonanzfeldtheorie?**  
-Die Resonanzfeldtheorie beschreibt ein skalares Feld (epsilon, ε) mit nichtlinearem Potential, das an die Raumzeitgeometrie – speziell an den Ricci-Skalar (R) – gekoppelt ist. Solche Felder sind relevant in der modernen Kosmologie (z.B. modifizierte Gravitation, Inflatonmodelle, skalare Solitonen, Topologische Defekte) und in der Feldtheorie (Domänenwände, Symmetriebrüche).
-
-**Was kann das Framework?**  
-- **1D/FLRW-Modell:** Direkte Zeitentwicklung des Resonanzfelds und des kosmologischen Skalenfaktors (a(t)), gekoppelt über modifizierte Einsteingleichungen. Energiehaltung und Dynamik werden überwacht.
-- **3D-Resonanzfeld:** Klassische Gitter-Simulation (explizite Zeitentwicklung) für nichtlineare Wellengleichungen, inkl. Visualisierung von Schnitten und Mittelwerten. Erweiterbar auf parallele oder GPU-basierte Berechnung.
-- **Theorie, Tests, Doku:** Alle Gleichungen, Methoden und Skripte sind dokumentiert und mit Unittests versehen. Die Struktur erlaubt eine schnelle Anpassung für eigene Fragestellungen.
+This framework provides a modular, modern infrastructure for the simulation and analysis of scalar resonance fields in flat and curved spacetime. It combines numerical methods, visualization, and scientific documentation, with a special focus on energy conservation, stability, and extensibility.
 
 ---
 
-## Zentrale Erkenntnisse und Highlights
+## Content and Motivation
 
-- **Numerische Energieüberwachung**: Die 1D/FLRW-Implementierung prüft und visualisiert die Energieerhaltung als Qualitätsmaß für die numerische Integrität – ein entscheidender Aspekt für jede Feldsimulation.
-- **Flexible Modellierung**: Potenziale (Masse, Selbstkopplung, mexikanischer Hut etc.) und Kopplungen (Ricci-Skalar, nichtlinear) sind leicht anpassbar und ermöglichen eine Vielzahl physikalischer Szenarien.
-- **Visualisierung & Analyse**: Live-Plots von Feldern, Skalenfaktoren und deren Mittelwerten geben schnellen Einblick in Dynamik, Stabilität und Musterbildung (z.B. Solitonen, Ausbreitung, Relaxation).
-- **Erweiterbarkeit**: Parallele (Numba) und GPU-basierte (CuPy) 3D-Algorithmen ermöglichen größere Simulationen mit wenig Codeänderung. Die klare Trennung von Kernlogik, Visualisierung und Steuerung macht das Framework robust und wartbar.
-- **Wissenschaftliche Reproduzierbarkeit**: Mit zentraler Konfiguration, dokumentierten Testfällen und klaren Skripten ist das Framework ideal für kollaborative Forschung und Lehre.
+**What is Resonance Field Theory?**  
+Resonance Field Theory describes a scalar field (epsilon, ε) with a nonlinear potential, coupled to spacetime geometry—specifically to the Ricci scalar (R). Such fields are relevant in modern cosmology (e.g., modified gravity, inflaton models, scalar solitons, topological defects) and in field theory (domain walls, symmetry breaking).
+
+**What can the framework do?**  
+- **1D/FLRW Model:** Direct time evolution of the resonance field and the cosmological scale factor (a(t)), coupled through modified Einstein equations. Energy conservation and dynamics are monitored.
+- **3D Resonance Field:** Classical lattice simulation (explicit time evolution) for nonlinear wave equations, including visualization of slices and averages. Extendable to parallel or GPU-based computation.
+- **Theory, Tests, Docs:** All equations, methods, and scripts are documented and equipped with unit tests. The structure allows rapid adaptation for your own research questions.
 
 ---
 
-## Ordnerstruktur
+## Key Insights and Highlights
+
+- **Numerical Energy Monitoring:** The 1D/FLRW implementation checks and visualizes energy conservation as a quality measure for numerical integrity—a crucial aspect of any field simulation.
+- **Flexible Modeling:** Potentials (mass, self-coupling, Mexican hat, etc.) and couplings (Ricci scalar, nonlinear) are easily adjustable, enabling a wide variety of physical scenarios.
+- **Visualization & Analysis:** Live plots of fields, scale factors, and their means provide rapid insight into dynamics, stability, and pattern formation (e.g., solitons, propagation, relaxation).
+- **Extensibility:** Parallel (Numba) and GPU-based (CuPy) 3D algorithms allow for larger simulations with minimal code changes. Clear separation of core logic, visualization, and control makes the framework robust and maintainable.
+- **Scientific Reproducibility:** With central configuration, documented test cases, and clear scripts, the framework is ideal for collaborative research and teaching.
+
+---
+
+## Folder Structure
 
 ```
 relativitaet_verbindung/
 │
-├── config.py                  # Globale Parameter & Optionen
-├── requirements.txt           # Python-Abhängigkeiten
-├── README.md                  # Diese Dokumentation
+├── config.py                  # Global parameters & options
+├── requirements.txt           # Python dependencies
+├── README.md                  # This documentation
 │
-├── core/                      # Kernmodule: Modelle & Methoden
-│   ├── flrw_1d.py             # 1D/FLRW-Integrator
-│   ├── field_3d.py            # 3D Gitterfeld (Basis)
-│   ├── field_3d_parallel.py   # 3D (Numba-parallelisiert)
+├── core/                      # Core modules: models & methods
+│   ├── flrw_1d.py             # 1D/FLRW integrator
+│   ├── field_3d.py            # 3D lattice field (base)
+│   ├── field_3d_parallel.py   # 3D (Numba-parallelized)
 │   └── field_3d_gpu.py        # 3D (GPU/CuPy)
 │
-├── viz/                       # Visualisierungsmodule
+├── viz/                       # Visualization modules
 │   ├── plot_1d.py
 │   └── plot_3d.py
 │
-├── run_1d.py                  # Startskript 1D-Simulation
-├── run_3d.py                  # Startskript 3D-Simulation
+├── run_1d.py                  # Entry script 1D simulation
+├── run_3d.py                  # Entry script 3D simulation
 │
-└── tests/                     # Unittests
+└── tests/                     # Unit tests
     ├── test_flrw_1d.py
     └── test_field_3d.py
 ```
 
 ---
 
-## Anwendung: Schnellstart
+## Usage: Quickstart
 
 1. **Installation**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **1D-FLRW-Simulation starten**
+2. **Start 1D FLRW Simulation**
    ```bash
    python run_1d.py
    ```
-   → Plots für ε(t), Skalenfaktor a(t) und Energieänderung.
+   → Plots for ε(t), scale factor a(t), and energy change.
 
-3. **3D-Resonanzfeldsimulation starten**
+3. **Start 3D Resonance Field Simulation**
    ```bash
    python run_3d.py
    ```
-   → Live-Visualisierung von Schnitten und Mittelwerten des Feldes.
+   → Live visualization of slices and averages of the field.
 
-4. **Tests ausführen**
+4. **Run Tests**
    ```bash
    pytest tests/
    ```
 
 ---
 
-## Beispiel: Physikalische Szenarien und Erkenntnisse
+## Example: Physical Scenarios and Insights
 
-- **Kosmische Felddynamik:**  
-  Wie koppelt ein skalares Feld an die Expansion des Universums? Welche Wechselwirkungen dominieren die Dynamik?
-- **Nichtlineare Phänomene:**  
-  Wie entstehen Solitonen, Domänenwände oder Relaxationsphänomene aus dem Potential?
-- **Numerische Stabilität:**  
-  Wie wirkt sich die Wahl von Schrittweite, Potentialparametern und Kopplung auf die Energiehaltung aus?
-- **Vergleich von CPU, Parallelisierung und GPU:**  
-  Wie lässt sich die Simulation für große Gitter und lange Zeitentwicklungen effizient beschleunigen?
-
----
-
-## Typische Erweiterungen
-
-- Neue Felder/Kopplungen (z.B. komplexe Felder, Tensorfelder)
-- Erweiterte Potenziale und Anfangsbedingungen
-- Spezielle Visualisierungen (3D-Volumen, Animationen, Interaktivität)
-- Einbindung experimenteller oder beobachteter Daten
+- **Cosmic Field Dynamics:**  
+  How does a scalar field couple to the expansion of the universe? Which interactions dominate the dynamics?
+- **Nonlinear Phenomena:**  
+  How do solitons, domain walls, or relaxation phenomena emerge from the potential?
+- **Numerical Stability:**  
+  How do step size, potential parameters, and coupling choices affect energy conservation?
+- **CPU, Parallelization, and GPU Comparison:**  
+  How can the simulation be efficiently accelerated for large grids and long time evolutions?
 
 ---
 
-## Weiterführende Literatur und Hintergründe
+## Typical Extensions
 
-- Scalar-Tensor-Theorien, modifizierte Gravitation (z.B. Brans-Dicke, f(R)-Gravitation)
-- Nichtlineare Feldtheorie, Solitonen, Topologische Defekte
-- Kosmologie und frühes Universum
-
-
----
-
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+- New fields/couplings (e.g., complex fields, tensor fields)
+- Extended potentials and initial conditions
+- Specialized visualizations (3D volumes, animations, interactivity)
+- Integration of experimental or observational data
 
 ---
 
-⬅️ [zurück zur Übersicht](../README.md)
+## Further Reading and Background
+
+- Scalar-tensor theories, modified gravity (e.g., Brans-Dicke, f(R) gravity)
+- Nonlinear field theory, solitons, topological defects
+- Cosmology and the early universe
+
+---
+
+*© Dominic Schu, 2025 – All rights reserved.*
+
+---
+
+⬅️ [back to overview](../README.md)

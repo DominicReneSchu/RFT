@@ -17,10 +17,10 @@ The goal is to make key equations, resonance phenomena, and new natural constant
 - [Mathematical Proof](mathematical_proof/README.md)  
   - Simulation of a quantum mechanical atomic model based on resonance phenomena.
   
-- [Resonance AI Model – Two Coupled Agents and Field Analysis](resonanz_ki/begleitkapitel_resonanz_ki.md)  
+- [Resonance AI Model – Two Coupled Agents and Field Analysis](resonanz_ai/companion_chapter_resonance_ai.md)  
   - This chapter explains the conception, numerical implementation, and interpretation of the Resonance AI Model.
   
-- [Resonance Field Theory Framework](relativitaet_verbindung/README.md)  
+- [Resonance Field Theory Framework](relativity_connection/README.md)  
   - This framework provides a modular, modern infrastructure for the simulation and analysis of scalar resonance fields in flat and curved spacetime.
 
 ---
