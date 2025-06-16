@@ -83,7 +83,7 @@ The effects of linguistic change **propagate across all levels**—like an impul
 
 ## 📊 Visualization of the Resonance Field
 
-![Network graphic: Nodes = systems (human, AI, language, context), connections = resonance lines](../bilder/visualisierung_gendern.png)
+![Network graphic: Nodes = systems (human, AI, language, context), connections = resonance lines](../figures/visualization_gendering.png)
 
 > - A change at one node triggers vibrations throughout the entire resonance field  
 > - Network graphic: Nodes = systems (human, AI, language, context), connections = resonance lines  
