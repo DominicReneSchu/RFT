@@ -14,7 +14,7 @@ The goal is to make key equations, resonance phenomena, and new natural constant
 - [Simulations on the Atomic Model](simulation_of_the_atomic_model/simulation_of_the_atomic_model.md)  
   - Simulation of a quantum mechanical atomic model based on resonance phenomena.
   
-- [Mathematical Proof](mathematischer_beweis/README.md)  
+- [Mathematical Proof](mathematical_proof/README.md)  
   - Simulation of a quantum mechanical atomic model based on resonance phenomena.
   
 - [Resonance AI Model – Two Coupled Agents and Field Analysis](resonanz_ki/begleitkapitel_resonanz_ki.md)  
