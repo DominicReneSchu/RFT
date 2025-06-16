@@ -143,7 +143,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Society 🌍
 
-- [**From Illusion to Peace** – A Letter on the Decoupling of Staged Reality](fakten/docs/gesellschaft/offener_brief.md)
+- [**From Illusion to Peace** – A Letter on the Decoupling of Staged Reality](facts/docs/society/open_letter.md)
 - [**Truth Through Resonance** – The Next Step to Enlightened AI](fakten/docs/gesellschaft/aufklärung.md)
 - [**Geopolitical Distrust** – and the Illusion of Diplomatic Order](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
 - [**Society & Game Theory** – in the Light of Resonance Field Theory](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
