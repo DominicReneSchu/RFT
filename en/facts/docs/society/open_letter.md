@@ -25,7 +25,7 @@ All following analyses and recommendations are explicitly based on the axioms of
 * **Axiom 6: Measurement as Projection**  
   Narratives, media, and political communication act as projection mechanisms that selectively shape the societal layer of action.
 
-[^1]: Full list of axioms: [paper_resonanzfeldtheorie.md](../definitions/paper_resonance_field_theory.md)
+[^1]: Full list of axioms: [paper_resonance_field_theory.md](../definitions/paper_resonance_field_theory.md)
 
 ---
 
