@@ -29,7 +29,7 @@ Resonance Field Theory describes a scalar field (epsilon, ε) with a nonlinear p
 ## Folder Structure
 
 ```
-relativitaet_verbindung/
+relativity_connection/
 │
 ├── config.py                  # Global parameters & options
 ├── requirements.txt           # Python dependencies
