@@ -27,7 +27,7 @@ pip install seaborn
 - [Resonance Field Theory – Python Toolkit](docs/index.md)  
   - Documentation of the Python toolkit
 
-- [Companion Chapter to the Simulation](begleitkapitel_resonanzfeld.md)  
+- [Companion Chapter to the Simulation](accompanying_chapter_resonance_field.md)  
   - A concise numerical proof of Resonance Field Theory
 
 - [Contribution Guide – Python Toolkit](CONTRIBUTING.md)  
@@ -106,4 +106,4 @@ Your contribution is provided under the same license as the main project (see [R
 
 ---
 
-⬅️ [back](../README.en.md)
+⬅️ [back to overview](../README.md)

@@ -1,18 +1,18 @@
-# Resonanzfeldtheorie – Python Toolkit
+# Resonance Field Theory – Python Toolkit
 
-Willkommen zur offiziellen Dokumentation des Python-Toolkits zur **Resonanzfeldtheorie**.  
-Dieses Paket ermöglicht die numerische Simulation, Analyse und Visualisierung von Resonanzphänomenen gemäß der Theorie von Dominic-René Schu.
+Welcome to the official documentation of the Python toolkit for **Resonance Field Theory**.  
+This package enables the numerical simulation, analysis, and visualization of resonance phenomena according to the theory of Dominic-René Schu.
 
 ---
 
-## Übersicht
+## Overview
 
-- **Berechnung der Resonanzenergie** auf Basis normierter Amplitude (A), Temperatur (T), Eigenfrequenz (omega₀) und Dämpfung (gamma).
-- **Entropie-Berechnung** als Maß für die Ordnung im Resonanzfeld.
-- **Batch- und Parameterstudien**: Systematische Scans und Export der Ergebnisse.
-- **Modulare Struktur**: Leicht erweiterbar für neue Modelle, Kopplungen und Visualisierungen.
-- **Wissenschaftlicher Standard**: Typisierung, Fehlerprüfung und klare Dokumentation.
-- **Interaktive Notebooks** und Visualisierungsmöglichkeiten.
+- **Calculation of resonance energy** based on normalized amplitude (A), temperature (T), eigenfrequency (omega₀), and damping (gamma).
+- **Entropy calculation** as a measure of order in the resonance field.
+- **Batch and parameter studies**: Systematic scans and export of results.
+- **Modular structure**: Easily extendable for new models, couplings, and visualizations.
+- **Scientific standard**: Typing, error checking, and clear documentation.
+- **Interactive notebooks** and visualization options.
 
 ---
 
@@ -22,11 +22,11 @@ Dieses Paket ermöglicht die numerische Simulation, Analyse und Visualisierung v
 pip install numpy matplotlib pandas
 ```
 
-(Optionale Visualisierung: `seaborn`)
+(Optional visualization: `seaborn`)
 
 ---
 
-## Erste Schritte
+## Getting Started
 
 ### 1. Import
 
@@ -38,7 +38,7 @@ from schu_resonanzfeld import (
 )
 ```
 
-### 2. Beispiel: Resonanzfeld berechnen und plotten
+### 2. Example: Calculate and plot resonance field
 
 ```python
 import numpy as np
@@ -52,61 +52,61 @@ S = berechne_resonanzentropie(E_res)
 plot_resonanzfeld(T_grid, A_grid, E_res, S)
 ```
 
-### 3. Batch-Studien und CSV-Export
+### 3. Batch studies and CSV export
 
-Siehe [examples/demo_batch_study.ipynb](../examples/demo_batch_study.ipynb) für eine Schritt-für-Schritt-Anleitung.
+See [examples/demo_batch_study.ipynb](../examples/demo_batch_study.ipynb) for a step-by-step guide.
 
 ---
 
-## API-Referenz
+## API Reference
 
 ### `berechne_resonanzenergie(A, T, omega_0=1.0, gamma=0.2)`
 
-Berechnet das Resonanzfeld für die Gitter aus $A$ und $T$.
+Computes the resonance field for the grids of $A$ and $T$.
 
-**Parameter:**
-- `A` (`ndarray`): Amplituden (1D, positiv)
-- `T` (`ndarray`): Temperaturen (1D, positiv)
-- `omega_0` (`float`): Eigenfrequenz (Standard: 1.0)
-- `gamma` (`float`): Dämpfung (Standard: 0.2)
+**Parameters:**
+- `A` (`ndarray`): Amplitudes (1D, positive)
+- `T` (`ndarray`): Temperatures (1D, positive)
+- `omega_0` (`float`): Eigenfrequency (default: 1.0)
+- `gamma` (`float`): Damping (default: 0.2)
 
-**Rückgabe:**
-- `E_res` (`ndarray`): Resonanzenergie
-- `T_grid`, `A_grid` (`ndarray`): Gitter für $T$ und $A$
+**Returns:**
+- `E_res` (`ndarray`): Resonance energy
+- `T_grid`, `A_grid` (`ndarray`): Grids for $T$ and $A$
 
 ---
 
 ### `berechne_resonanzentropie(E_res)`
 
-Berechnet die Resonanzentropie S = –E_res · ln(E_res).
+Computes the resonance entropy S = –E_res · ln(E_res).
 
-**Parameter:**  
-- `E_res` (`ndarray`): Resonanzenergie (muss > 0 sein)
+**Parameters:**  
+- `E_res` (`ndarray`): Resonance energy (must be > 0)
 
-**Rückgabe:**  
-- `S` (`ndarray`): Entropie
+**Returns:**  
+- `S` (`ndarray`): Entropy
 
 ---
 
 ### `plot_resonanzfeld(T_grid, A_grid, E_res, S, save_path=None, show=True)`
 
-3D-Visualisierung der Resonanzenergie und Entropie.
+3D visualization of resonance energy and entropy.
 
-**Parameter:**  
-- `T_grid`, `A_grid`: Gitter (wie aus `berechne_resonanzenergie`)
-- `E_res`, `S`: Felder
-- `save_path` (optional): Dateiname für PNG-Speicherung
-- `show` (optional): Anzeigeplot (Standard: `True`)
-
----
-
-## Lizenz
-
-Dein Beitrag steht unter derselben Lizenz wie das Hauptprojekt (siehe [README.md](../../../../README.md)).
-
-© Dominic Schu, 2025 – Alle Rechte vorbehalten.  
-Nutzung für Forschungs- und Bildungszwecke gestattet.
+**Parameters:**  
+- `T_grid`, `A_grid`: Grids (as from `berechne_resonanzenergie`)
+- `E_res`, `S`: Fields
+- `save_path` (optional): Filename for PNG export
+- `show` (optional): Show plot (default: `True`)
 
 ---
 
-➡️ [zurück](../README.md)
+## License
+
+Your contribution is provided under the same license as the main project (see [README.md](../../../../README.en.md)).
+
+© Dominic Schu, 2025 – All rights reserved.  
+Use permitted for research and educational purposes.
+
+---
+
+➡️ [back to overview](../README.md)

@@ -1,88 +1,86 @@
-# Begleitkapitel: Kompakter numerischer Beweis der Resonanzfeldtheorie
+# Companion Chapter: Compact Numerical Proof of Resonance Field Theory
 
-Dieses Kapitel erläutert die numerische Umsetzung und die physikalische Bedeutung der Resonanzfeldtheorie, wie sie im begleitenden Python-Code realisiert ist. Der Ansatz bietet eine kompakte, nachvollziehbare und visuell überprüfbare Bestätigung zentraler Aussagen der Resonanzfeldtheorie.
+This chapter explains the numerical implementation and physical meaning of Resonance Field Theory as realized in the accompanying Python code. The approach provides a compact, transparent, and visually verifiable confirmation of the central claims of Resonance Field Theory.
 
 <p align="center">
-  <img src="plot.png" alt="Visualisierung der Resonanzfeldtheorie" width="800"/>
+  <img src="plot.png" alt="Visualization of Resonance Field Theory" width="800"/>
 </p>
 
 ---
 
-[Link zur Python](resonanzfeld.py)
+[Link to Python](resonance_field.py)
 
 ---
 
----
+## 1. Theoretical Background
 
-## 1. Theoretischer Hintergrund
-
-Die **Resonanzfeldtheorie** beschäftigt sich mit der Beschreibung und Analyse von Resonanzphänomenen in komplexen Systemen. Im Fokus steht hierbei die explizite Abhängigkeit der Resonanzenergie von Systemparametern wie Amplitude (A) und Temperatur (T).
-Die hier verwendete Formel für die **Resonanzenergie** lautet:
+**Resonance Field Theory** deals with the description and analysis of resonance phenomena in complex systems. The focus is on the explicit dependence of resonance energy on system parameters such as amplitude (A) and temperature (T).
+The formula used here for **resonance energy** is:
 
 $$
 E_\mathrm{res} = \frac{A}{1 + \left(\frac{\omega_\mathrm{ext} - \omega_0}{\gamma}\right)^2}
 $$
 
-mit:
+where:
 
 - 𝐴: Amplitude
-- 𝜔₀: Eigenfrequenz (Standard: 1.0)
-- 𝛾: Dämpfungskonstante (Standard: 0.2)
-- 𝜔_ext = 𝜔₀ · (1 + sin(T)): effektive Anregungsfrequenz, abhängig von T
+- 𝜔₀: Eigenfrequency (default: 1.0)
+- 𝛾: Damping constant (default: 0.2)
+- 𝜔_ext = 𝜔₀ · (1 + sin(T)): effective excitation frequency, dependent on T
 
-Diese Beziehung beschreibt die Verstärkung der Energieaufnahme in einem Resonanzfeld in Abhängigkeit von den veränderlichen Parametern.
+This relationship describes the amplification of energy absorption in a resonance field as a function of varying parameters.
 
 ---
 
-## 2. Numerische Umsetzung
+## 2. Numerical Implementation
 
-### **a) Berechnung der Resonanzenergie**
+### **a) Calculation of Resonance Energy**
 
-Die Funktion `berechne_resonanzenergie` erzeugt aus den Wertebereichen für Amplitude (A) und Temperatur (T) ein Gitter und berechnet für jedes Gitterfeld die entsprechende Resonanzenergie (E_res). Werte ohne physikalischen Sinn, wie etwa A ≤ 0 oder T ≤ 0, werden dabei ausgeschlossen.
+The function `berechne_resonanzenergie` generates a grid from the value ranges for amplitude (A) and temperature (T), and computes the corresponding resonance energy (E_res) for each grid field. Physically meaningless values, such as A ≤ 0 or T ≤ 0, are excluded.
 
-### **b) Resonanzentropie**
+### **b) Resonance Entropy**
 
-Als weiteres charakteristisches Feld wird die **Resonanzentropie** S berechnet:
+As another characteristic field, the **resonance entropy** S is calculated:
 
 $$
 S = -E_\mathrm{res} \cdot \ln(E_\mathrm{res})
 $$
 
-Hiermit wird die Unordnung oder Diversität des Resonanzfeldes quantifiziert. Auch hier ist numerische Stabilität dadurch sichergestellt, dass E_res > 0 gilt.
+This quantifies the disorder or diversity of the resonance field. Numerical stability is ensured by requiring E_res > 0.
 
 ---
 
-## 3. Visualisierung
+## 3. Visualization
 
-Die Funktion `plot_resonanzfeld` erzeugt zwei gekoppelte 3D-Visualisierungen:
+The `plot_resonanzfeld` function generates two coupled 3D visualizations:
 
-- **Resonanzenergie** E_res über dem A-T-Parameterraum (Farbskala: "inferno")
-- **Resonanzentropie** S über demselben Raum (Farbskala: "viridis")
+- **Resonance energy** E_res over the A-T parameter space (color scale: "inferno")
+- **Resonance entropy** S over the same space (color scale: "viridis")
 
-Diese Plots bieten eine unmittelbare, intuitive Übersicht über die Struktur des Resonanzfeldes. Charakteristische Maxima, Plateaus und Bereiche minimaler oder maximaler Entropie werden auf einen Blick sichtbar.
-
----
-
-## 4. Numerischer Beweis
-
-Durch die Kombination aus analytischer Formel, Gitterberechnung und Visualisierung entsteht ein **kompakter numerischer Beweis** für die Gültigkeit der postulierten Resonanzstruktur. Die resultierenden Energie- und Entropiefelder liefern eine konsistente Bestätigung der theoretischen Vorhersagen für beliebige (physikalisch sinnvolle) Wertebereiche von $A$ und $T$.
+These plots provide an immediate, intuitive overview of the structure of the resonance field. Characteristic maxima, plateaus, and areas of minimal or maximal entropy become instantly visible.
 
 ---
 
-## 5. Eingabebereiche und physikalische Plausibilität
+## 4. Numerical Proof
 
-Die Eingabewerte für A und T sind auf positive Werte normiert und können beliebig fein gewählt werden. Dies gewährleistet sowohl numerische Stabilität als auch physikalische Plausibilität der Ergebnisse.
-
----
-
-## 6. Bedeutung und Ausblick
-
-Die vorliegende Implementation bietet nicht nur eine konkrete Überprüfung der Resonanzfeldtheorie, sondern auch eine flexible Grundlage für die Erweiterung auf komplexere Systeme (zum Beispiel die Kopplung mehrerer Resonatoren, temperaturabhängige gamma-Werte usw.) oder die Anbindung an experimentelle Daten.
+By combining the analytical formula, grid computation, and visualization, a **compact numerical proof** for the validity of the postulated resonance structure is obtained. The resulting energy and entropy fields provide consistent confirmation of the theoretical predictions for any (physically meaningful) value ranges of $A$ and $T$.
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+## 5. Input Ranges and Physical Plausibility
+
+The input values for A and T are normalized to positive values and can be chosen with arbitrary granularity. This ensures both numerical stability and physical plausibility of the results.
 
 ---
 
-⬅️ [zurück zur Übersicht](README.md)
+## 6. Significance and Outlook
+
+This implementation not only offers a concrete verification of Resonance Field Theory, but also a flexible foundation for extension to more complex systems (e.g., coupling of multiple resonators, temperature-dependent gamma values, etc.) or integration with experimental data.
+
+---
+
+*© Dominic Schu, 2025 – All rights reserved.*
+
+---
+
+⬅️ [back to overview](README.md)

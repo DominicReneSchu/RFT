@@ -1,61 +1,61 @@
-# Beitrag zur Resonanzfeldtheorie – Python Toolkit
+# Contribution Guide – Resonance Field Theory Python Toolkit
 
-Vielen Dank für dein Interesse, dieses wissenschaftliche Open-Toolkit zu verbessern!  
-Hier findest du Hinweise, wie du beitragen kannst – egal ob als Wissenschaftler, Entwickler oder Interessierter.
+Thank you for your interest in improving this scientific open toolkit!  
+Below you'll find guidance on how to contribute—whether you're a scientist, developer, or enthusiast.
 
 ---
 
-## Wie du beitragen kannst
+## How to Contribute
 
-### 1. Fehler melden und Fragen stellen
+### 1. Reporting Issues and Asking Questions
 
-- Überprüfe bitte zuerst die [Issues](https://github.com/DominicReneSchu/public/issues), ob das Thema schon gemeldet wurde.
-- Erstelle einen neuen Issue, wenn du einen Fehler findest oder Fragen hast.
-- Beschreibe das Problem möglichst genau (inkl. Python-Version, Betriebssystem, Fehlermeldung etc.).
+- Please first check [Issues](https://github.com/DominicReneSchu/public/issues) to see if the topic has already been reported.
+- Create a new issue if you find a bug or have questions.
+- Describe the problem as precisely as possible (including Python version, operating system, error message, etc.).
 
-### 2. Neue Features und Beispiele
+### 2. New Features and Examples
 
-- Du hast eine neue Idee, Erweiterung oder möchtest ein Beispiel-Notebook beitragen?
-- Erstelle dafür einen „Feature request“-Issue oder einen Pull-Request (siehe unten).
-- Vorschläge für neue Kopplungsmodelle, Analyse-Workflows oder Visualisierungen sind willkommen!
+- Have a new idea, extension, or want to contribute an example notebook?
+- Open a “feature request” issue or a pull request (see below).
+- Suggestions for new coupling models, analysis workflows, or visualizations are welcome!
 
-### 3. Code-Beiträge (Pull Requests)
+### 3. Code Contributions (Pull Requests)
 
-1. **Forke das Repo** & clone es auf deinen Rechner.
-2. Erstelle einen neuen Branch (`git checkout -b meine-verbesserung`).
-3. Schreibe oder verbessere Code, Doku, Tests oder Notebooks.
-4. Stelle sicher, dass alle Unit-Tests (`pytest tests/`) durchlaufen.
-5. Erstelle einen Pull Request mit einer klaren Beschreibung deiner Änderung.
+1. **Fork the repo** & clone it to your machine.
+2. Create a new branch (`git checkout -b my-improvement`).
+3. Write or improve code, docs, tests, or notebooks.
+4. Ensure all unit tests (`pytest tests/`) pass.
+5. Open a pull request with a clear description of your changes.
 
 ### 4. Style Guide
 
-- Halte dich an den PEP8-Styleguide für Python.
-- Typisierung (`type hints`) und Docstrings bitte beibehalten.
-- Schreibe Tests für neue oder geänderte Funktionen.
-- Dokumentiere neue Features kurz in der README und/oder im Notebook-Ordner.
+- Follow the PEP8 style guide for Python.
+- Keep type hints and docstrings.
+- Write tests for new or changed functions.
+- Briefly document new features in the README and/or in the notebooks folder.
 
-### 5. Wissenschaftliche Erweiterungen
+### 5. Scientific Extensions
 
-- Wenn du die Theorie weiterführen möchtest, verweise bitte auf relevante Papers, LaTeX-Repos oder Preprints.
-- Diskutiere gerne größere konzeptionelle Änderungen vorab in einem Issue.
+- If you wish to advance the theory, please reference relevant papers, LaTeX repos, or preprints.
+- Discuss major conceptual changes in an issue before starting work.
 
 ---
 
 ## Community
 
-- **Diskussionen und Ideen** gerne offen in Issues oder im Discussions-Bereich.
-- Jede Form von konstruktiver Kritik und Feedback ist willkommen.
+- **Discussion and ideas** are welcome in issues or the Discussions area.
+- All forms of constructive criticism and feedback are encouraged.
 
 ---
 
-## Lizenz
+## License
 
-Dein Beitrag steht unter derselben Lizenz wie das Hauptprojekt (siehe [README.md](../../../README.md)).
-
----
-
-Danke für dein Engagement für offene, nachvollziehbare Wissenschaft!
+Your contribution is provided under the same license as the main project (see [README.md](../../../README.en.md)).
 
 ---
 
-⬅️ [zurück](README.md)
+Thank you for supporting open, transparent science!
+
+---
+
+⬅️ [back to overview](README.md)
