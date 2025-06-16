@@ -160,7 +160,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Concepts 📐
 
-- [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](fakten/konzepte/ResoCalc/resocalc.md)
+- [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
 - [**Resonance Generator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
 - [**Resonance Reactor**](fakten/konzepte/resonanzreaktor/README.md)
 - [**Force Field Generator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
