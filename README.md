@@ -14,7 +14,7 @@ Bitte wähle deine bevorzugte Sprache:
 Please select your preferred language:
 
 - 🇩🇪 [Zur deutschen Version](de/README.md)
-- 🇬🇧 [Go to the English version](en/README.md)
+- 🇬🇧 [Go to the English version](en/README.en.md)
 
 ---
 
