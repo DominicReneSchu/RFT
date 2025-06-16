@@ -171,7 +171,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Simulations 🧠
 
-- [**Further Simulations**](fakten/simulationen/README.md)
+- [**Further Simulations**](facts/simulations/README.md)
 
 ---
 
