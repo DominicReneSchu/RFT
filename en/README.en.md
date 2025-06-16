@@ -68,7 +68,7 @@ Resonance Field Theory is a new paradigm for describing the world. It assumes th
 - **ℏ (Planck constant):** Measure of quantization and energy packaging  
 - **𝓔 (Coupling Operator):** Resonance coupling constant
 
-These constants lead to the **[Resonance Field Equation](fakten/docs/mathematik/resonanzfeld_gleichung.md)**:
+These constants lead to the **[Resonance Field Equation](facts/docs/mathematics/resonance_field_equation.md)**:
 
 > **Core Formula:**  
 >
