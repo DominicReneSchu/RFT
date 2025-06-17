@@ -35,7 +35,7 @@ This concept opens new perspectives for innovative energy technologies and poten
 
 ## Nonlinear Resonance Analysis (Resonance Field Theory)
 
-For further depth and visualization, see the [Nonlinear Resonance Analysis](nichtlineare_resonanzanalyse.md). This tool simulates the dynamics of a nonlinear, energy- and field-coupled oscillator based on **resonance field theory**. The simulation is implemented as an interactive web application (e.g., with [Streamlit](https://streamlit.io)) and allows live control of key system parameters.
+For further depth and visualization, see the [Nonlinear Resonance Analysis](nonlinear_resonance_analysis.md). This tool simulates the dynamics of a nonlinear, energy- and field-coupled oscillator based on **resonance field theory**. The simulation is implemented as an interactive web application (e.g., with [Streamlit](https://streamlit.io)) and allows live control of key system parameters.
 
 ---
 
