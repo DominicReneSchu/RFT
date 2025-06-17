@@ -1,5 +1,13 @@
 # Nichtlineare Resonanzanalyse – Interaktive Simulation
 
+---
+
+![Simulation nichtlineare Resonanzfeldanalyse](./nichtlineare_resonanzanalyse.png)
+
+*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, ℏ, 𝓔 und **𝑓** im Resonanzraum*
+
+---
+
 ## Was zeigt die Simulation?
 
 ### 1. Zeitverlauf der Auslenkung `x(t)`
