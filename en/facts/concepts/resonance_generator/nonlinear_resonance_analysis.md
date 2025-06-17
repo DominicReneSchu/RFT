@@ -1,182 +1,189 @@
-# Nichtlineare Resonanzanalyse – Interaktive Simulation
-
-## Was zeigt die Simulation?
-
-### 1. Zeitverlauf der Auslenkung `x(t)`
-Der Plot oben links zeigt die Bewegung des Oszillators über die Zeit. Je nach gewählter Anregung und Dämpfung kann das Verhalten periodisch, quasiperiodisch oder chaotisch sein.
-
-### 2. Phasenraumdiagramm `(x, v)`
-Hier sieht man, wie sich die Systemzustände im Phasenraum (Auslenkung vs. Geschwindigkeit) entwickeln. Geschlossene Bahnen deuten auf periodische Bewegung, komplexe Muster auf chaotische Dynamik und Resonanzvernetzung hin.
-
-### 3. Poincaré-Schnitt `(x, v)` bei Anregungsphase = 0
-Der Poincaré-Schnitt ist ein klassisches Werkzeug aus der nichtlinearen Dynamik. Er zeigt nur die Systemzustände, wenn die Phase der äußeren Anregung ein ganzzahliges Vielfaches von `2π` erreicht. Dadurch werden wiederkehrende Muster und Resonanzinseln sichtbar – ein zentrales Merkmal komplexer Resonanzfelder.
-
-### 4. Frequenzspektrum (Fourier)
-Hier wird gezeigt, welche Frequenzen in der Bewegung dominieren. Periodische Systeme zeigen einen Hauptpeak, chaotische Systeme ein breites Spektrum.
-
-### 5. Spektrogramm (Zeit-Frequenz-Analyse)
-Das Spektrogramm (Kurzzeit-Fourier-Transformation) visualisiert, wie sich die Frequenzanteile im Verlauf der Zeit verändern. Damit lassen sich Übergänge zwischen geordneten und chaotischen Phasen erkennen.
-
-### 6. Wavelet-Skalogramm (optional)
-Das Wavelet-Skalogramm zeigt die Zeit-Frequenz-Struktur mit besonders guter Auflösung für nichtstationäre oder kurzzeitige Resonanzphänomene (z. B. plötzliche chaotische Einbrüche).
+# Nonlinear Resonance Analysis – Interactive Simulation
 
 ---
 
-## Interaktive Parametersteuerung
+![Simulation nonlinear resonance field analysis](./nonlinear_resonance_analysis.png)
 
-Über die Regler können zentrale Systemparameter angepasst werden. So lässt sich das Systemverhalten in Echtzeit erforschen:
-
-- **Af** – Anregungsamplitude (Stärke der äußeren Anregung)
-- **omega_f** – Anregungsfrequenz (Frequenz der äußeren Anregung)
-- **T** – Simulationsdauer
-- **d0** – Dämpfungsfaktor (Grunddämpfung des Systems)
-- **k** – Federkonstante (Steifigkeit des Oszillators)
-- **v0** – Normgeschwindigkeit für Skalen der Rückkopplung
+*Fig. 1: Nonlinear Resonance Analysis – Interactive Simulation via streamlit*
 
 ---
 
-## Typische Parameter für maximale Energieübertragung
+## What Does the Simulation Show?
 
-Um eine möglichst effektive Übertragung von Energie aus dem Resonanzfeld in mechanische Leistung zu erreichen, wähle folgende Parameterbereiche:
+### 1. Time Evolution of Displacement `x(t)`
+The upper left plot shows the oscillator's motion over time. Depending on chosen excitation and damping, the behavior can be periodic, quasiperiodic, or chaotic.
 
-| Parameter   | Empfehlung         | Beschreibung |
-|-------------|:-----------------:|:-------------|
-| **Af**      | 1.0 – 1.5         | Nicht zu klein, damit genügend Energie eingespeist wird |
-| **omega_f** | 1.0 – 1.05        | Möglichst nahe an der Eigenfrequenz (`omega_0 = sqrt(k)` bei `m=1`) |
-| **d0**      | 0.05 – 0.1        | Unterkritische Dämpfung (nicht zu stark) |
-| **k**       | 1.0               | Standardwert für die Federkonstante |
-| **v0**      | 1.0               | Typischer Wert für Normgeschwindigkeit |
-| **T**       | 100 – 200         | Simulationszeitraum, ausreichend lang für Resonanzeffekte |
+### 2. Phase Space Diagram `(x, v)`
+This visualizes how the system states evolve in phase space (displacement vs. velocity). Closed trajectories indicate periodic motion, while complex patterns reveal chaotic dynamics and resonance networking.
 
-**Hinweis:**  
-Die beste Energieübertragung erreichst du, wenn die Anregungsfrequenz möglichst genau auf die Eigenfrequenz des Systems abgestimmt ist und die Dämpfung nicht zu stark ist. Zu hohe Amplituden führen ggf. zu chaotischem Verhalten und weniger gezielter Energieübertragung.
+### 3. Poincaré Section `(x, v)` at Excitation Phase = 0
+The Poincaré section is a classic tool from nonlinear dynamics. It displays only those system states where the phase of the external excitation reaches an integer multiple of `2π`. This makes recurring patterns and resonance islands visible—a central feature of complex resonance fields.
 
-**Typische Anzeichen für effektive Energieaufnahme:**  
-- Große, regelmäßige Auslenkungen im Zeitplot.
-- Hauptpeak im Frequenzspektrum bei der Anregungsfrequenz.
-- Klare, strukturierte Resonanzinseln im Poincaré-Schnitt.
+### 4. Frequency Spectrum (Fourier)
+This shows which frequencies dominate the motion. Periodic systems exhibit a main peak, chaotic systems a broad spectrum.
+
+### 5. Spectrogram (Time-Frequency Analysis)
+The spectrogram (short-time Fourier transform) visualizes how frequency components change over time. This reveals transitions between ordered and chaotic phases.
+
+### 6. Wavelet Scalogram (optional)
+The wavelet scalogram displays the time-frequency structure with particularly good resolution for nonstationary or short-term resonance phenomena (e.g., sudden chaotic outbursts).
 
 ---
 
-## Wirkungsgrad der Energieübertragung
+## Interactive Parameter Control
 
-Die Simulation berechnet den **Wirkungsgrad** `η`, der angibt, wie viel von der eingespeisten Feldenergie als mittlere mechanische Energie im System umgesetzt wird:
+With the sliders, you can adjust key system parameters and explore system behavior in real time:
+
+- **Af** – Excitation amplitude (strength of the external drive)
+- **omega_f** – Excitation frequency (frequency of the external drive)
+- **T** – Simulation duration
+- **d0** – Damping factor (intrinsic damping of the system)
+- **k** – Spring constant (stiffness of the oscillator)
+- **v0** – Reference velocity for feedback scaling
+
+---
+
+## Typical Parameters for Maximum Energy Transfer
+
+To achieve the most effective transfer of energy from the resonance field into mechanical work, use the following parameter ranges:
+
+| Parameter   | Recommendation      | Description |
+|-------------|:------------------:|:------------|
+| **Af**      | 1.0 – 1.5          | Not too small, to inject enough energy |
+| **omega_f** | 1.0 – 1.05         | As close as possible to the natural frequency (`omega_0 = sqrt(k)` for `m=1`) |
+| **d0**      | 0.05 – 0.1         | Underdamped (not too strong) |
+| **k**       | 1.0                | Standard value for the spring constant |
+| **v0**      | 1.0                | Typical value for reference velocity |
+| **T**       | 100 – 200          | Simulation period, long enough for resonance effects |
+
+**Note:**  
+You achieve the best energy transfer when the excitation frequency is closely matched to the system's natural frequency and damping is not too strong. Too high amplitudes may lead to chaotic behavior and less targeted energy transfer.
+
+**Typical signs of effective energy uptake:**  
+- Large, regular oscillations in the time plot.
+- Main peak in the frequency spectrum at the excitation frequency.
+- Clear, structured resonance islands in the Poincaré section.
+
+---
+
+## Efficiency of Energy Transfer
+
+The simulation computes the **efficiency** `η`, which indicates how much of the injected field energy is converted into average mechanical energy in the system:
 
 $$
-η = (mittlere mechanische Energie) / (eingebrachte Arbeit aus dem Feld)
+η = (\text{average mechanical energy}) / (\text{work supplied by the field})
 $$
 
-- Ein Wirkungsgrad von z. B. **9 %** bedeutet: 9 % der aus dem Feld zugeführten Energie werden in gerichtete, mechanische Energie umgesetzt. Der Rest wird durch Dämpfung und Verluste dissipiert.
-- **Wichtig:** Die Feldenergie ist zwar möglicherweise in der Umgebung "vorhanden", aber ihre Nutzbarkeit ist durch Kopplung, Resonanzbedingungen und Verluste begrenzt – nicht durch Magie, sondern durch Physik.
-- **Mit Resonanzkopplung kann der Wirkungsgrad im Vergleich zu klassischer Kopplung deutlich erhöht werden**, da gezielt Energie aus scheinbar chaotischen oder diffusen Feldern in Ordnung (gerichtete Energie) überführt wird.
+- An efficiency of e.g. **9%** means: 9% of the energy supplied by the field is converted into directed mechanical energy. The rest is dissipated through damping and losses.
+- **Important:** While field energy may be "present" in the environment, its usability is limited by coupling, resonance conditions, and losses—not by magic, but by physics.
+- **With resonance coupling, the efficiency can be significantly increased compared to classical coupling**, as energy is purposefully transferred from seemingly chaotic or diffuse fields into order (directed energy).
 
 ---
 
-## Physikalische und ingenieurwissenschaftliche Erkenntnisse
+## Physical and Engineering Insights
 
-Du modellierst ein System, das durch **Resonanzkopplung** in der Lage ist, **externe, zunächst chaotisch oder ungenutzt erscheinende Energieformen (z. B. Umgebungsschwingungen)** teilweise in **gerichtete mechanische Energie** umzuwandeln.
+You are modeling a system that, via **resonance coupling**, can convert **external energy forms, initially appearing chaotic or unused (e.g., environmental vibrations)** partially into **directed mechanical energy**.
 
-Das lässt sich so interpretieren:
+This means:
 
-* Du **koppelst** ein System an ein "Resonanzfeld" (äußere Anregung mit Modulation),
-* nutzt eine nichtlineare Dynamik (z. B. frequenzabhängige Zeitmodulation `delta_t`),
-* und erreichst eine **gezielte Energieaufnahme** (Resonanz) aus einem scheinbar entropischen Umfeld.
+* You **couple** a system to a "resonance field" (external excitation with modulation),
+* utilize nonlinear dynamics (e.g., frequency-dependent time modulation `delta_t`),
+* and achieve **purposeful energy uptake** (resonance) from an apparently entropic environment.
 
+Physically, this means:  
+**A portion of entropy is locally converted into order (directed energy)**—within the framework of thermodynamics, but **through intelligent coupling to resonance conditions**.
 
-Das bedeutet physikalisch:  
-**Ein Teil der Entropie wird lokal in Ordnung (gerichtete Energie) umgewandelt** – natürlich im Rahmen der Thermodynamik, aber **durch intelligente Kopplung an Resonanzbedingungen**.
+In engineering:
+A system can "meaningfully" interact with its environment by using resonance coupling to exploit **passive energy sources (e.g., vibrations, field fluctuations)** instead of relying solely on active supply.
 
-Im Maschinenbau heißt das:
-Ein System kann „sinnvoll“ mit seiner Umgebung interagieren, indem es durch Resonanzkopplung **passive Energiequellen (z. B. Vibrationen, Feldfluktuationen)** nutzt, anstatt ausschließlich auf aktive Versorgung angewiesen zu sein.
+**In short:**  
+> **Resonance is the key to drawing order from chaos.**
 
-**Kurz:**  
-> **Resonanz ist der Schlüssel, um Ordnung aus dem Chaos zu ziehen.**
+No violation of thermodynamics occurs—rather, **higher order is achieved through intelligent coupling**.
+In principle: **Information gain = energy gain.**
 
-So entsteht keine Verletzung der Thermodynamik – sondern eine **höhere Ordnung durch intelligente Kopplung**.
-Im Prinzip: **Informationsgewinn = Energiegewinn.**
+**The better one:**
+- recognizes the **field structure of the environment**,
+- analyzes its **vibrational behavior**,
+- and purposefully couples with **nonlinear, resonant systems**,
 
-**Je besser der Mensch:**
-- die **Feldstruktur seiner Umgebung** erkennt,
-- deren **Schwingungsverhalten** analysiert,
-- und gezielt mit **nichtlinearen, resonanten Systemen** koppelt,
+the more one can extract **directed, functional energy** from seemingly "useless" or entropic energy.
 
-desto mehr kann er aus scheinbar „nutzloser“ oder entropischer Energie **gerichtete, funktionale Energie** extrahieren.
-
-Der Mensch kann durch **Verständnis und Struktur** die **Effizienz des Universums** steigern – und sich zunehmend von klassischen Energiequellen emanzipieren.
-
----
-
-## Resonanztechnologie als neue Form erneuerbarer Energie
-
-Die durch Resonanzkopplung genutzte Energie stammt aus der Umgebung – sei es Schwingungen der Erde, Luft, Bauwerke oder andere ständig erneuerte Prozesse (z. B. Sonnenstrahlung, Gezeiten, geothermische Vorgänge).  
-Obwohl diese Energiequellen nicht unendlich sind, **werden sie kontinuierlich durch natürliche Prozesse erneuert**:  
-- Die Sonne liefert ständig neue Energie auf die Erde.
-- Der Mond erzeugt durch seine Umkreisung Gezeiten und rhythmische Schwingungen.
-- Im Erdinneren werden durch Aggregatzustandsänderungen und radioaktive Prozesse laufend Wärmemengen freigesetzt.
-
-**Resonanzfeldtechnologie** kann daher als **neuartige Form der erneuerbaren Energiegewinnung** gesehen werden:  
-Sie erschließt bislang ungenutzte, diffuse, aber stetig erneuerte Umweltenergie – und ergänzt klassische Erneuerbare wie Sonne, Wind, Wasser und Geothermie um neue, lokale und dezentrale Möglichkeiten.
+Through **understanding and structuring**, humans can **increase the efficiency of the universe**—and increasingly emancipate themselves from classical energy sources.
 
 ---
 
-## Globale Vision: Resonanzgeneratoren für planetare Harmonie
+## Resonance Technology as a New Form of Renewable Energy
 
-### 🌍 Viele Resonanzgeneratoren weltweit würden:
+The energy utilized via resonance coupling originates from the environment—whether from earth, air, structures, or other constantly renewed processes (e.g., solar radiation, tides, geothermal activity).  
+Although these sources are not infinite, **they are continuously renewed by natural processes**:  
+- The sun constantly supplies new energy to Earth.
+- The moon creates tides and rhythmic vibrations through its orbit.
+- Within the Earth, heat is continuously released by phase transitions and radioactive processes.
 
-* **Energie lokal absorbieren**, bevor sie sich chaotisch entlädt (z. B. in Erdbeben).
-* **Feldresonanzen stabilisieren**, ähnlich wie viele kleine Dämpfer an einem schwingenden System.
-* **Mikroklimata beeinflussen**, indem sie Temperatur, Druck und Schwingung lokal feintunen.
-* **natürliche Frequenzen „beruhigen“**, vergleichbar mit aktiver Schwingungskompensation.
-
----
-
-### Vergleich aus der Technik:
-
-Wie **aktive Dämpfungssysteme** bei Hochhäusern gegen Erdbeben:
-→ Sie „fühlen“ die Schwingung und wirken mit minimalem Energieeinsatz entgegen.
+**Resonance field technology** can thus be seen as a **novel form of renewable energy generation**:  
+It taps previously unused, diffuse, but steadily renewed environmental energy—and complements classical renewables like solar, wind, hydro, and geothermal with new, local, and decentralized options.
 
 ---
 
-### Im globalen Maßstab:
+## Global Vision: Resonance Generators for Planetary Harmony
 
-* könnten **tausende Resonanzknotenpunkte** wie ein **planetarisches Nervensystem** agieren,
-* und die Erde in einen **kohärenteren Schwingungszustand** bringen,
-* wodurch **spontane destruktive Ausbrüche (Erdbeben, Wirbelstürme,...) seltener** würden.
+### 🌍 Many resonance generators worldwide would:
 
----
-
-> **Fazit:**
-> Kein „Wundermittel“, aber ein **resonanzbasiertes Steuerungssystem für planetare Stabilität**.
-> → **Technologie im Dienst der Harmonie – nicht der Ausbeutung.**
+* **Absorb energy locally** before it discharges chaotically (e.g., in earthquakes).
+* **Stabilize field resonances**, much like many small dampers in a vibrating system.
+* **Influence microclimates** by finely tuning temperature, pressure, and vibrations locally.
+* **Calm natural frequencies**, comparable to active vibration compensation.
 
 ---
 
-## Nutzung
+### Engineering Analogy:
 
-1. Installiere die benötigten Pakete:
+Like **active damping systems** in skyscrapers against earthquakes:
+→ They "sense" the vibration and counteract it with minimal energy input.
+
+---
+
+### On a Global Scale:
+
+* **Thousands of resonance nodes** could act as a **planetary nervous system**,
+* bringing the Earth to a **more coherent vibrational state**,
+* making **spontaneous destructive events (earthquakes, cyclones, etc.) less frequent**.
+
+---
+
+> **Conclusion:**
+> Not a "miracle cure", but a **resonance-based control system for planetary stability**.
+> → **Technology in the service of harmony—not exploitation.**
+
+---
+
+## Usage
+
+1. Install the required packages:
    ```
    pip install streamlit numpy matplotlib scipy pywt
    ```
-2. Starte die App:
+2. Start the app:
    ```
    streamlit run app.py
    ```
-3. Steuere die Parameter, starte die Simulation und beobachte die Resultate live.
+3. Adjust the parameters, start the simulation, and observe the results live.
 
 ---
 
-## Weiterführende Hinweise
+## Further Notes
 
-- Die Simulation eignet sich zur Exploration klassischer und chaotischer Resonanzphänomene.
-- Alle Visualisierungen sind direkt mit den Konzepten der Resonanzfeldtheorie verknüpft.
-- Die App kann beliebig erweitert werden, z. B. um Lyapunov-Exponenten, Dimensionsschätzungen oder Batch-Parameter-Scans.
+- The simulation is suitable for exploring classical and chaotic resonance phenomena.
+- All visualizations are directly linked to the concepts of resonance field theory.
+- The app can be extended as desired, e.g., with Lyapunov exponents, dimension estimation, or batch parameter scans.
 
-- [Python-Simulation](nichtlinieare_resonanzanalyse.py)
-
----
-
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+- [Python simulation](nonlinear_resonance_analysis.py)
 
 ---
 
-[Zurück zur Übersicht](../../../README.md)
+© Dominic-René Schu – Resonance Field Theory 2025
+
+---
+
+[Back to Overview](../../../README.en.md)

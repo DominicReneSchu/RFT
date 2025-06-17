@@ -1,53 +1,53 @@
-# Resonanzgenerator – Konzept, Simulation und nächster Schritt
+# Resonance Generator – Concept, Simulation, and Next Step
 
-## Einführung
+## Introduction
 
-Der **Resonanzgenerator** ist ein innovatives Energiekonzept, das auf gezielter Resonanzkopplung eines externen Feldes mit einem mechanischen System basiert. Die **Resonanzfeld-Gleichung** spielt dabei eine zentrale Rolle, da sie den Energiefluss als Funktion von Feldfrequenz und Kopplungskonstanten beschreibt.
+The **Resonance Generator** is an innovative energy concept based on targeted resonance coupling of an external field with a mechanical system. The **resonance field equation** plays a central role, as it describes the energy flow as a function of field frequency and coupling constants.
 
-Das Ziel besteht darin, durch Resonanz zwischen Feld und System schwingungsfähige Energie hocheffizient zu übertragen – dies führt zu einer deutlichen Verstärkung sowohl der Amplituden als auch der gespeicherten Energie (vgl. Born & Wolf, 1999).
-
----
-
-## Simulationsergebnisse und Interpretation
-
-Die Simulation liefert folgende zentrale Erkenntnisse:
-
-- **Resonanzkurve (Amplitude vs. Feldfrequenz):**  
-  Ein ausgeprägter Resonanzpeak nahe der Eigenfrequenz des Systems bestätigt das Eintreten der Resonanzbedingung. Die Form und Breite des Peaks geben Aufschluss über Dämpfungsgrad und Güte des Systems.
-- **Energieanalyse:**  
-  Ein positiver Energieüberschuss $$\\Delta E\$$ belegt die zusätzliche Energieaufnahme durch das eingekoppelte Resonanzfeld. Das Verhältnis von $$\\Delta E\$$ zur Feldarbeit demonstriert die hohe Effizienz der Übertragung.
-- **Zeitsignale am Resonanzpunkt:**  
-  Die Amplitude wächst bis zum Erreichen eines stationären Zustands, in dem Energiezufuhr und Dissipation im Gleichgewicht stehen.
-- **Frequenzspektrum (FFT):**  
-  Ein dominanter Peak bei der Anregungsfrequenz belegt die kohärente Kopplung zwischen Feld und mechanischem System.
-- **Physikalische Deutung:**  
-  Die Simulation bestätigt die Wirksamkeit der Resonanzkopplung zur effizienten Energieübertragung. Die Resonanzfeld-Gleichung gewährleistet dabei Konsistenz im Energiefluss mit der Feldfrequenz. Raumzeitliche Effekte können in erweiterten Modellen berücksichtigt werden (vgl. Penrose, 2004).
+The aim is to transfer oscillatory energy with high efficiency through resonance between field and system—leading to a significant amplification of both amplitudes and stored energy (cf. Born & Wolf, 1999).
 
 ---
 
-## Bedeutung und Potenzial
+## Simulation Results and Interpretation
 
-Die Ergebnisse zeigen, dass der Resonanzgenerator als physikalisches System Energie durch kohärente Resonanzfelder aufnehmen und verstärken kann. Damit entsteht ein neuartiges Modell der Energieübertragung, das über klassische mechanische Systeme hinausgeht und fundamentale Prinzipien von Resonanz und Feldkopplung nutzt.
+The simulation yields the following key insights:
 
-Dieses Konzept eröffnet neue Perspektiven für innovative Energietechnologien und potenzielle Anwendungen im Maschinenbau, in der Physik und in der Energieversorgung.
+- **Resonance curve (amplitude vs. field frequency):**  
+  A pronounced resonance peak near the system’s natural frequency confirms the occurrence of the resonance condition. The shape and width of the peak provide information about the damping and quality factor of the system.
+- **Energy analysis:**  
+  A positive energy surplus $$\Delta E$$ demonstrates the additional energy uptake from the coupled resonance field. The ratio of $$\Delta E$$ to the work done by the field highlights the high efficiency of the transfer.
+- **Time signals at resonance:**  
+  The amplitude grows until it reaches a stationary state, where energy input and dissipation are in balance.
+- **Frequency spectrum (FFT):**  
+  A dominant peak at the excitation frequency evidences coherent coupling between field and mechanical system.
+- **Physical interpretation:**  
+  The simulation confirms the effectiveness of resonance coupling for efficient energy transfer. The resonance field equation ensures consistency in energy flow with varying field frequency. Spacetime-related effects can be considered in extended models (cf. Penrose, 2004).
 
 ---
 
-## Nichtlineare Resonanzanalyse (Resonanzfeldtheorie)
+## Significance and Potential
 
-Weitere Tiefe und Visualisierung bietet die [Nichtlineare Resonanzanalyse](nichtlineare_resonanzanalyse.md). Dieses Tool simuliert die Dynamik eines nichtlinearen, energie- und feldgekoppelten Oszillators auf Grundlage der **Resonanzfeldtheorie**. Die Simulation ist als interaktive Webanwendung realisiert (z. B. mit [Streamlit](https://streamlit.io)) und erlaubt die Live-Steuerung zentraler Systemparameter.
+The results show that the resonance generator, as a physical system, can absorb and amplify energy through coherent resonance fields. This creates a novel model of energy transfer that goes beyond classical mechanical systems and utilizes fundamental principles of resonance and field coupling.
+
+This concept opens new perspectives for innovative energy technologies and potential applications in engineering, physics, and energy supply.
 
 ---
 
-## Literaturhinweise
+## Nonlinear Resonance Analysis (Resonance Field Theory)
+
+For further depth and visualization, see the [Nonlinear Resonance Analysis](nichtlineare_resonanzanalyse.md). This tool simulates the dynamics of a nonlinear, energy- and field-coupled oscillator based on **resonance field theory**. The simulation is implemented as an interactive web application (e.g., with [Streamlit](https://streamlit.io)) and allows live control of key system parameters.
+
+---
+
+## References
 
 - Born, M. & Wolf, E. (1999). Principles of Optics. Cambridge: Cambridge University Press.
 - Penrose, R. (2004). The Road to Reality. London: Jonathan Cape.
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+© Dominic-René Schu – Resonance Field Theory 2025
 
 ---
 
-[Zurück zur Übersicht](../../../README.md)
+[Back to Overview](../../../README.en.md)
