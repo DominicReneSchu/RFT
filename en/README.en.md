@@ -184,10 +184,10 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ## Vision 🦋
 
-- [**Generational Contract of the Future**](vision/docs/generationenvertrag_der_zukunft.md)
-- [**Global Wealth Gap**](vision/docs/globale_wohlstandsschere.md)
+- [**Generational Contract of the Future**](vision/docs/intergenerational_contract_of_the_future.md)
+- [**Global Wealth Gap**](vision/docs/global_wealth_gap.md)
 - [**Vision of a Possible Future**](vision/docs/vision3000.md)
-- [**The World of Tomorrow**](vision/docs/welt_von_morgen.md)
+- [**The World of Tomorrow**](vision/docs/world_of_tomorrow.md)
 
 ---
 
