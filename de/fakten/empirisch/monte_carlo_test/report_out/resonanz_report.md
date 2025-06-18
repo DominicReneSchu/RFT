@@ -13,13 +13,13 @@ Erstellt am: 2025-06-01 15:55
 
 
 ### Monte-Carlo-Hits vs. echte Hits
-![Histogramm MC vs Echt](..\figures\hist_mc_vs_real_hits.png)
+![Histogramm MC vs Echt](.\figures\hist_mc_vs_real_hits.png)
 
 ### p-Wert-Verläufe über Δ
-![p-Wert-Verläufe](..\figures\pvalue_curves.png)
+![p-Wert-Verläufe](.\figures\pvalue_curves.png)
 
 ### Heatmaps Trefferanzahl
-![Heatmaps Trefferanzahl](..\figures\heatmaps_hits.png)
+![Heatmaps Trefferanzahl](.\figures\heatmaps_hits.png)
 
 ## Interpretation
 
