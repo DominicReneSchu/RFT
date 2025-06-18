@@ -13,13 +13,13 @@ Generated on: 2025-06-18 13:54
 
 
 ### Monte-Carlo Hits vs. Real Hits
-![Histogram MC vs Real](.\figures\hist_mc_vs_real_hits.png)
+![Histogram MC vs Real](figures/hist_mc_vs_real_hits.png)
 
 ### p-value Curves over Δ
-![p-value Curves](.\figures\pvalue_curves.png)
+![p-value Curves](figures/pvalue_curves.png)
 
 ### Heatmaps Hit Count
-![Heatmaps Hit Count](.\figures\heatmaps_hits.png)
+![Heatmaps Hit Count](figures/heatmaps_hits.png)
 
 ## Interpretation
 
