@@ -5,7 +5,7 @@ from typing import Callable, Dict, List, Tuple, Optional, Any
 
 def create_kde_sampler(background_data: np.ndarray, bandwidth: float = 0.05) -> Callable[[int], np.ndarray]:
     """
-    Erstelle eine Sampling-Funktion für den Hintergrund basierend auf Kernel-Density-Estimate (KDE).
+    Create a sampling function for the background based on kernel density estimation (KDE).
     """
     from sklearn.neighbors import KernelDensity
     background_data = np.asarray(background_data).reshape(-1, 1)
@@ -21,7 +21,7 @@ def correct_pvalues(
     multitest_methods: Tuple[str, ...] = ('bonferroni', 'fdr_bh')
 ) -> Dict[str, np.ndarray]:
     """
-    Korrigiere eine Liste von p-Werten mit mehreren Multiple-Testing-Methoden.
+    Correct a list of p-values with several multiple-testing methods.
     """
     pval_corrs = {}
     for mt in multitest_methods:
@@ -44,7 +44,7 @@ def resonance_analysis(
     Dict[float, List[float]]
 ]:
     """
-    Führe Resonanzfenster-Analyse durch, inkl. Multiple-Testing-Korrekturen und optional Permutationstest.
+    Perform resonance window analysis, including multiple-testing corrections and optional permutation test.
     """
     results: Dict[float, Dict[str, Any]] = {}
     all_hits: Dict[float, List[int]] = {}
@@ -91,7 +91,7 @@ def permutation_test_count(
     n_permutations: int = 1000
 ) -> float:
     """
-    Exakter Permutationstest für Trefferzahl im Fenster [eps-delta, eps+delta].
+    Exact permutation test for hit count in the window [eps-delta, eps+delta].
     """
     count = 0
     n = len(data)
@@ -109,7 +109,7 @@ def bootstrap_hits(
     n_bootstrap: int = 5000
 ) -> Tuple[float, float, float]:
     """
-    Bootstrap-Konfidenzintervall für Trefferzahl im Fenster [eps-delta, eps+delta].
+    Bootstrap confidence interval for hit count in the window [eps-delta, eps+delta].
     """
     hits = np.array([
         int(np.sum((np.random.choice(data, size=len(data), replace=True) > eps - delta) &
@@ -128,7 +128,7 @@ def bootstrap_pvalue(
     multitest_methods: Tuple[str, ...] = ('bonferroni', 'fdr_bh')
 ) -> Dict[str, Dict[str, Any]]:
     """
-    Bootstrap-Konfidenzintervall für p-Wert (bzw. korrigierte p-Werte) auf Basis von Bootstrapsamples.
+    Bootstrap confidence interval for the p-value (and corrected p-values) based on bootstrap samples.
     """
     pvals_dict: Dict[str, List[float]] = {mt: [] for mt in multitest_methods}
     for _ in range(n_bootstrap):
@@ -164,7 +164,7 @@ def resonance_blind_analysis(
     Optional[Dict[str, np.ndarray]]
 ]:
     """
-    Blind-Analyse: Scan über alle Fenster, inkl. Multiple-Testing-Korrekturen und optional Permutationstest.
+    Blind analysis: scan over all windows, including multiple-testing corrections and optional permutation test.
     """
     n_eps = len(epsilon_grid)
     n_del = len(delta_grid)
@@ -181,7 +181,7 @@ def resonance_blind_analysis(
             hits_matrix[i, j] = hits
             if use_permutation:
                 permutation_matrix[i, j] = permutation_test_count(data, eps, delta, hits, n_permutations)
-    # Multiple Testing
+    # Multiple testing
     pval_corrs = {}
     pvals_flat = pval_matrix.flatten()
     for mt in multitest_methods:

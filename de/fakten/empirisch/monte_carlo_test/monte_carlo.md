@@ -1,5 +1,7 @@
 # Monte-Carlo-Simulation zur Resonanzanalyse
 
+*[Detaillierter Ergebnis- und Interpretationsreport → report_out/resonanz_report.md](./report_out/resonanz_report.md)*
+
 ## Einleitung
 
 Die Monte-Carlo-Simulation ist ein zentrales Werkzeug in der statistischen Auswertung wissenschaftlicher Datensätze. In dieser Analyse dient sie dazu, die Wahrscheinlichkeit zu bestimmen, mit der ein beobachteter Überschuss an Ereignissen im Bereich einer vermuteten Resonanzstelle (**𝓔**) rein zufällig durch den Hintergrund erklärt werden könnte.

@@ -8,22 +8,22 @@ def interactive_hits_histogram(sim_hits, real_hits, epsilons):
         fig.add_trace(go.Histogram(
             x=sim_hits[eps], 
             nbinsx=30,
-            name='Monte-Carlo Hits',
+            name='Monte Carlo Hits',
             marker_color='cornflowerblue',
             opacity=0.75
         ))
         fig.add_vline(
             x=real_hits[eps]['hits'], 
             line=dict(color='red', dash='dash'),
-            annotation_text="Echt",
+            annotation_text="Real",
             annotation_position="top right"
         )
         fig.update_layout(
-            title=f"ε = {eps}: Monte-Carlo-Hits vs. echte Hits",
-            xaxis_title="Hits (bestes Δ)",
-            yaxis_title="Häufigkeit",
+            title=f"ε = {eps}: Monte Carlo Hits vs. Real Hits",
+            xaxis_title="Hits (best Δ)",
+            yaxis_title="Frequency",
             bargap=0.1,
-            legend_title="Legende",
+            legend_title="Legend",
             template="plotly_white"
         )
         figs.append(fig)
@@ -52,7 +52,7 @@ def interactive_pval_curve(deltas, sim_pvals_per_epsilon_delta, real_pvals_matri
             x=deltas, y=q_med, mode='lines', name='Median MC', line=dict(color='cornflowerblue')
         ))
         fig.add_trace(go.Scatter(
-            x=deltas, y=real_pvals_matrix[eps], mode='lines', name='Echt', line=dict(color='red')
+            x=deltas, y=real_pvals_matrix[eps], mode='lines', name='Real', line=dict(color='red')
         ))
         fig.add_trace(go.Scatter(
             x=[real_results[eps]['best_delta']], 
@@ -62,9 +62,9 @@ def interactive_pval_curve(deltas, sim_pvals_per_epsilon_delta, real_pvals_matri
         ))
         fig.update_layout(
             yaxis_type="log",
-            title=f"p-Wert-Verlauf für ε={eps}",
+            title=f"p-value curve for ε={eps}",
             xaxis_title="Δ",
-            yaxis_title="korrigierter p-Wert (log)",
+            yaxis_title="corrected p-value (log)",
             template="plotly_white"
         )
         figs.append(fig)

@@ -16,11 +16,11 @@ from report import generate_report
 from config import EPSILONS, DELTAS, EXPECTED_HIT_RATES, N_SIMULATIONS, N_BOOTSTRAP, HIST_BINS
 
 def main():
-    # --- Daten laden ---
+    # --- Load data ---
     df = pd.read_csv('dielectron.csv')
     n = len(df)
 
-    # Signalbereiche für klassisches Modell
+    # Signal regions for classical model
     def get_signal_mask(df, epsilons, delta_max):
         mask = pd.Series(False, index=df.index)
         for eps in epsilons:
@@ -29,20 +29,20 @@ def main():
     max_delta = max(DELTAS)
     signal_mask = get_signal_mask(df, EPSILONS, max_delta)
 
-    # Hintergrunddaten vorbereiten (NaNs entfernen!)
+    # Prepare background data (remove NaNs!)
     background_data = df.loc[~signal_mask, 'M'].values
     num_nans = np.isnan(background_data).sum()
     if num_nans > 0:
-        print(f"Achtung: {num_nans} NaN-Werte im Hintergrund entfernt!")
+        print(f"Warning: {num_nans} NaN values removed from background!")
     background_data = background_data[~np.isnan(background_data)]
     background_sampler = create_kde_sampler(background_data, bandwidth=0.05)
 
-    # --- Klassische Resonanzanalyse ---
+    # --- Classical resonance analysis ---
     real_results, real_hits_dict, real_pvals_dict = resonance_analysis(
         df['M'].values, EPSILONS, DELTAS, EXPECTED_HIT_RATES, n
     )
 
-    # Bootstrap-Konfidenzintervalle für Trefferzahl und p-Werte
+    # Bootstrap confidence intervals for hit counts and p-values
     for eps, res in real_results.items():
         delta = res['best_delta']
         hits_median, hits_16, hits_84 = bootstrap_hits(df['M'].values, eps, delta, n_bootstrap=N_BOOTSTRAP)
@@ -52,14 +52,14 @@ def main():
         pval_ci = bootstrap_pvalue(df['M'].values, eps, delta, EXPECTED_HIT_RATES[eps], n, n_bootstrap=N_BOOTSTRAP)
         res['pval_bootstrap'] = pval_ci
 
-    # --- Monte-Carlo-Simulation ---
-    print(f"\nMonte-Carlo-Simulation läuft... ({N_SIMULATIONS} Durchläufe, KDE-Sampling)")
+    # --- Monte Carlo simulation ---
+    print(f"\nRunning Monte Carlo simulation... ({N_SIMULATIONS} runs, KDE sampling)")
     sim_p_values = {eps: [] for eps in EPSILONS}
     sim_hits = {eps: [] for eps in EPSILONS}
     sim_hits_per_epsilon_delta = {eps: [] for eps in EPSILONS}
     sim_pvals_per_epsilon_delta = {eps: [] for eps in EPSILONS}
 
-    for idx in tqdm(range(N_SIMULATIONS), desc="Simulationen", total=N_SIMULATIONS):
+    for idx in tqdm(range(N_SIMULATIONS), desc="Simulations", total=N_SIMULATIONS):
         simulated_data = background_sampler(n)
         sim_results, sim_hits_dict, sim_pvals_dict = resonance_analysis(
             simulated_data, EPSILONS, DELTAS, EXPECTED_HIT_RATES, n
@@ -70,12 +70,12 @@ def main():
             sim_hits_per_epsilon_delta[eps].append(sim_hits_dict[eps])
             sim_pvals_per_epsilon_delta[eps].append(sim_pvals_dict[eps])
 
-    # In numpy-Arrays umwandeln
+    # Convert to numpy arrays
     for eps in EPSILONS:
         sim_hits_per_epsilon_delta[eps] = np.array(sim_hits_per_epsilon_delta[eps])
         sim_pvals_per_epsilon_delta[eps] = np.array(sim_pvals_per_epsilon_delta[eps])
 
-    # Empirische p-Werte
+    # Empirical p-values
     empirical_p_values = {}
     for eps in EPSILONS:
         real_p = real_results[eps]['p_corr']
@@ -83,8 +83,8 @@ def main():
         empirical_p = count_lower / N_SIMULATIONS
         empirical_p_values[eps] = empirical_p
 
-    # --- Interaktive Visualisierung ---
-    print("Starte interaktive Visualisierung ...")
+    # --- Interactive visualization ---
+    print("Starting interactive visualization ...")
     figs_hist = interactive_hits_histogram(sim_hits, real_results, EPSILONS)
     for fig in figs_hist:
         fig.show()
@@ -95,11 +95,11 @@ def main():
 
     real_hits_heatmap = np.array([real_hits_dict[eps] for eps in EPSILONS])
     sim_hits_heatmap = np.mean(np.array([sim_hits_per_epsilon_delta[eps] for eps in EPSILONS]), axis=1)
-    fig_heatmap = interactive_heatmap_contrast(real_hits_heatmap, DELTAS, [f"{e:.2f}" for e in EPSILONS], "Δ", "ε", "Echte Treffer Heatmap")
+    fig_heatmap = interactive_heatmap_contrast(real_hits_heatmap, DELTAS, [f"{e:.2f}" for e in EPSILONS], "Δ", "ε", "Real Hits Heatmap")
     fig_heatmap.show()
 
-    # --- Automatischer Report ---
-    print("Erzeuge Report ...")
+    # --- Automatic report ---
+    print("Generating report ...")
     generate_report(
         output_dir="report_out",
         real_results=real_results,
@@ -111,7 +111,7 @@ def main():
         real_pvals_matrix=real_pvals_dict,
         real_hits_matrix=real_hits_dict,
         sim_hits_heatmap=sim_hits_heatmap,
-        blind_results=None  # Optional: dict mit Blind-Analyse-Ergebnissen
+        blind_results=None  # Optional: dict with blind analysis results
     )
 
 if __name__ == "__main__":

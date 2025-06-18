@@ -1,4 +1,4 @@
-# Zentrale Parameter für die Resonanzanalyse
+# Central parameters for the resonance analysis
 
 EPSILONS = [1, 0.5, 2/3, 0.75, 1.25]
 DELTAS = [0.1 * i for i in range(1, 31)]

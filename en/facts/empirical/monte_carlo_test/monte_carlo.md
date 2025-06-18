@@ -1,103 +1,105 @@
-# Monte-Carlo-Simulation zur Resonanzanalyse
+# Monte Carlo Simulation for Resonance Analysis
 
-## Einleitung
+*[Detailed results and interpretation report → report_out/resonance_report.md](./report_out/resonance_report.md)*
 
-Die Monte-Carlo-Simulation ist ein zentrales Werkzeug in der statistischen Auswertung wissenschaftlicher Datensätze. In dieser Analyse dient sie dazu, die Wahrscheinlichkeit zu bestimmen, mit der ein beobachteter Überschuss an Ereignissen im Bereich einer vermuteten Resonanzstelle (**𝓔**) rein zufällig durch den Hintergrund erklärt werden könnte.
+## Introduction
 
-### Wissenschaftlicher Kontext
+The Monte Carlo simulation is a central tool in the statistical evaluation of scientific datasets. In this analysis, it is used to determine the probability that an observed excess of events in the region of a suspected resonance point (**𝓔**) could be explained purely by background fluctuations.
 
-Monte-Carlo-Tests sind Standard in der modernen Physik, Data Science und vielen anderen Forschungsfeldern, wenn analytische Lösungen zu komplex oder nicht verfügbar sind. Sie erlauben eine robuste, empirische Bestimmung von Signifikanzen, insbesondere bei adaptiven oder nicht-trivialen Suchverfahren wie in dieser Resonanzanalyse.
+### Scientific Context
 
-## Ziel
+Monte Carlo tests are standard in modern physics, data science, and many other research fields whenever analytical solutions are too complex or not available. They provide a robust, empirical determination of significances, especially for adaptive or non-trivial search procedures as used in this resonance analysis.
 
-Das Ziel ist es, die empirische Signifikanz (p-Wert) der Beobachtungen zu quantifizieren, indem viele Hintergrund-Szenarien simuliert und mit den realen Daten verglichen werden.
+## Objective
 
-## Methodik
+The objective is to quantify the empirical significance (p-value) of the observations by simulating many background scenarios and comparing them to the real data.
 
-### Hintergrundmodellierung
+## Methodology
 
-* Die Hintergrundverteilung wird aus den Messdaten extrahiert – unter explizitem Ausschluss der Signalbereiche (um die untersuchten **𝓔**).
-* Ein Kernel-Density-Estimator (KDE) wird verwendet, um daraus eine glatte Wahrscheinlichkeitsverteilung zu erzeugen.
+### Background Modeling
 
-### Durchführung der Monte-Carlo-Simulation
+* The background distribution is extracted from the measurement data – explicitly excluding the signal regions (around the investigated **𝓔**).
+* A kernel density estimator (KDE) is used to create a smooth probability distribution from this background.
 
-* Es werden viele (z.B. 1.000–10.000) *Pseudo-Experimente* durchgeführt, bei denen jeweils die gleiche Anzahl an Events wie im Originaldatensatz aus dem KDE-Modell gezogen wird.
-* Für jedes *Pseudo-Experiment* wird die vollständige Resonanzanalyse wiederholt:
-  * Trefferzahlen in variablen Fenstern (**Δ**) um jedes **𝓔** werden bestimmt.
-  * Die p-Werte werden mit den gleichen Tests wie für die Originaldaten berechnet.
-  * Die jeweils optimalen Fenstergrößen werden automatisch bestimmt.
-* Es werden die jeweils extremsten Trefferzahlen und p-Werte dokumentiert.
+### Conducting the Monte Carlo Simulation
 
-### Bestimmung des empirischen p-Werts
+* Many (e.g., 1,000–10,000) *pseudo-experiments* are performed, each drawing the same number of events as in the original dataset from the KDE model.
+* For each *pseudo-experiment*, the full resonance analysis is repeated:
+  * The number of hits in variable windows (**Δ**) around each **𝓔** is determined.
+  * p-values are calculated using the same tests as for the original data.
+  * The optimal window sizes are automatically determined for each case.
+* The most extreme hit counts and p-values are recorded for each run.
 
-* Der empirische p-Wert ist der Anteil der Simulationsdurchläufe, in denen ein ebenso extremer oder extremerer Überschuss wie in den realen Daten gefunden wurde.
-* Beispiel: Ist der empirische p-Wert ≈ 0, wurde in keiner Simulation ein so starkes Signal wie in den echten Daten beobachtet.
+### Determination of the Empirical p-Value
 
-## Visualisierung der Ergebnisse
+* The empirical p-value is the fraction of simulation runs in which an excess at least as extreme as in the real data is observed.
+* Example: If the empirical p-value ≈ 0, then no simulation observed a signal as strong as the one found in the real data.
 
-### 1. Monte-Carlo-Hits vs. echte Treffer
+## Visualization of Results
 
-Das Histogramm zeigt, wie häufig in der Monte-Carlo-Simulation bestimmte Trefferzahlen im optimalen Fenster für jedes **𝓔** vorkommen. Die rote Linie markiert den Wert aus den echten Daten.
+### 1. Monte Carlo Hits vs. Real Hits
 
-![Histogramm MC vs Echt](report_out/figures/hist_mc_vs_real_hits.png)
+The histogram shows how often certain hit counts in the optimal window for each **𝓔** occur in the Monte Carlo simulation. The red line marks the value from the real data.
 
----
-
-### 2. p-Wert-Verläufe über die Fensterbreite **Δ**
-
-Hier siehst du für jede Resonanzstelle **𝓔** die p-Werte aus den MC-Simulationen (Median und 68%-Intervall) und den realen Daten in Abhängigkeit von **Δ**.
-
-![p-Wert-Verläufe](report_out/figures/pvalue_curves.png)
+![Histogram MC vs Real](report_out/figures/hist_mc_vs_real_hits.png)
 
 ---
 
-### 3. Heatmaps: Trefferanzahl über **𝓔** und **Δ**
+### 2. p-Value Curves over Window Width **Δ**
 
-Die Heatmaps zeigen die Trefferzahlen für alle Kombinationen aus **𝓔** und **Δ**, einmal für die realen Daten und einmal als Mittelwert der Monte-Carlo-Simulationen.
+Here you see, for each resonance point **𝓔**, the p-values from the MC simulations (median and 68% interval) and the real data as a function of **Δ**.
 
-![Heatmaps Trefferanzahl](report_out/figures/heatmaps_hits.png)
+![p-Value Curves](report_out/figures/pvalue_curves.png)
+
+---
+
+### 3. Heatmaps: Hit Count over **𝓔** and **Δ**
+
+The heatmaps show the hit counts for all combinations of **𝓔** and **Δ**, once for the real data and once as the mean of the Monte Carlo simulations.
+
+![Heatmaps Hit Count](report_out/figures/heatmaps_hits.png)
 
 ---
 
 ## Interpretation
 
-* Die Monte-Carlo-Simulation zeigt, wie außergewöhnlich die beobachteten Überschüsse im Vergleich zum Hintergrund sind.
-* Empirische p-Werte < 0,01 – insbesondere p ≈ 0 – sprechen für eine extrem geringe Wahrscheinlichkeit, dass die Befunde durch Zufall entstehen.
-* Die grafische Gegenüberstellung (Histogramme, p-Wert-Kurven, Heatmaps) macht die Differenz zwischen Signal und Hintergrund anschaulich.
+* The Monte Carlo simulation reveals how extraordinary the observed excesses are compared to the background.
+* Empirical p-values < 0.01 – especially p ≈ 0 – indicate an extremely low probability that the findings are due to chance.
+* The graphical comparison (histograms, p-value curves, heatmaps) vividly illustrates the difference between signal and background.
 
-## Hinweise zum Code
+## Notes on the Code
 
-* Die Simulation nutzt `scikit-learn` für KDE, `numpy` und `pandas` für Datenhandling und `matplotlib` für die Visualisierung.
-* Fortschrittsbalken (`tqdm`) zeigen den Simulationsfortschritt an.
-* Alle wichtigen Parameter wie **𝓔**, **Δ** und die Anzahl der Simulationen sind zentral in `config.py` eingestellt.
-* Die wichtigsten Plots werden automatisch im Ordner `report_out/figures` abgelegt und sind hier direkt eingebunden.
+* The simulation uses `scikit-learn` for KDE, `numpy` and `pandas` for data handling, and `matplotlib` for visualization.
+* Progress bars (`tqdm`) display simulation progress.
+* All key parameters such as **𝓔**, **Δ**, and the number of simulations are set centrally in `config.py`.
+* The most important plots are automatically saved in the folder `report_out/figures` and are directly embedded here.
 
-### Ausführung der Simulation
+### Running the Simulation
 
-Um die Monte-Carlo-Simulation selbst auszuführen, folge diesen Schritten:
+To run the Monte Carlo simulation yourself, follow these steps:
 
-1. Navigiere in das Verzeichnis des Projekts.
-2. Stelle sicher, dass alle erforderlichen Python-Pakete installiert sind (siehe ggf. `requirements.txt`).
-3. Starte das Hauptskript, z.B. mit:
+1. Navigate to the project directory.
+2. Ensure all required Python packages are installed (see `requirements.txt` if provided).
+3. Start the main script, e.g., with:
 
    ```bash
    python fakten/empirisch/monte_carlo_test/run.py
    ```
 
-   oder führe das begleitende Jupyter Notebook aus, falls vorhanden.
+   or run the accompanying Jupyter notebook, if available.
 
-4. Die erzeugten Ergebnisse und Plots findest du im Ordner `report_out/figures`.
+4. The generated results and plots can be found in the folder `report_out/figures`.
 
-## Fazit
+## Conclusion
 
-Die Monte-Carlo-Methode bietet eine robuste Möglichkeit zur statistischen Validierung von Resonanzeffekten. Durch die gezielte Modellierung des Hintergrunds und die wiederholte Zufallssimulation kann die Signifikanz von Beobachtungen empirisch und nachvollziehbar bestimmt werden.
+The Monte Carlo method provides a robust way to statistically validate resonance effects. Through targeted background modeling and repeated random simulation, the significance of observations can be determined empirically and transparently.
 
-Zukünftige Erweiterungen könnten adaptive Fenstergrößen, multiple Hypothesentests oder bayesianische Ansätze integrieren.
-
----
-
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+Future extensions could integrate adaptive window sizes, multiple hypothesis testing, or Bayesian approaches.
 
 ---
 
-[Zurück zur Übersicht](../../../README.md)
+© Dominic-René Schu – Resonance Field Theory 2025
+
+---
+
+[Back to overview](../../../README.en.md)
