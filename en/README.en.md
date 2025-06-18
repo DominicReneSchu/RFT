@@ -177,9 +177,9 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Empirical Proof 🔬
 
-- [**Resonance Analysis in Mass Data**](fakten/empirisch/dokumentation.md)
-- [**Monte Carlo Simulation for Resonance Analysis**](fakten/empirisch/monte_carlo_test/monte_carlo.md)
-- [**Mirror Coherence and Self-Inclusion:** Formal Proof of Resonance Field Theory via AI Interaction](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md)
+- [**Resonance Analysis in Mass Data**](facts/empirical/documentation.md)
+- [**Monte Carlo Simulation for Resonance Analysis**](facts/empirical/monte_carlo_test/monte_carlo.md)
+- [**Mirror Coherence and Self-Inclusion:** Formal Proof of Resonance Field Theory via AI Interaction](facts/empirical/empirical_evidence_by_mirror_coherence.md)
 ---
 
 ## Vision 🦋
