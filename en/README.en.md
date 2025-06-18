@@ -162,7 +162,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 - [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
 - [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
-- [**Resonance Reactor**](fakten/konzepte/resonanzreaktor/README.md)
+- [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
 - [**Force Field Generator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
 - [**Weather Warning System**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
 - [**Warp Drive**](fakten/konzepte/warpantrieb/warpantrieb.md)

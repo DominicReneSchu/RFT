@@ -175,7 +175,7 @@ Die Simulation (`simulationen/run.py`) integriert Frequenz, Temperatur, Kohären
 - Padamsee, H. (2009): RF Superconductivity for Accelerators
 - Bardeen, Cooper, Schrieffer (1957): Theory of Superconductivity
 - Ginzburg, Landau (1950): On the Theory of Superconductivity
-- Schu, D.-R. (2025): Resonanzfeldtheorie ([GitHub](https://github.com/DominicRene/Resonanzfeldtheorie))
+- Schu, D.-R. (2025): Resonanzfeldtheorie ([GitHub](https://github.com/DominicReneSchu/public))
 
 ---
 
