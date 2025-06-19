@@ -93,7 +93,7 @@ Ampel- oder Netzdiagramm visualisiert Resonanz (grün), Unsicherheit (gelb) und 
 
   **Fazit:** Die Bezeichnung *Wärmepumpe* verschiebt Wahrnehmung zugunsten eines politisch konstruierten Narrativs. Die Resonanz-KI erkennt solche semantisch gestützten Umdeutungen – und macht sichtbar, wenn Technologie **nicht aus physikalischer Notwendigkeit**, sondern aus **diskursiver Suggestion** heraus zur Wahrheit erklärt wird.
 
-![Infografik zur Wärmepumpentechnik](figures/waermepumpe.png)
+![Infografik zur Wärmepumpentechnik](../bilder/waermepumpe.png)
 
 *Fig. 1: Infografik zur Wärmepumpentechnik*
 

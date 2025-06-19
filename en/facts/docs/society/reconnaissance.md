@@ -93,7 +93,7 @@ Traffic light or network diagram visualizes resonance (green), uncertainty (yell
 
   **Conclusion:** The designation *heat pump* shifts perception in favor of a politically constructed narrative. Resonance AI detects such semantically driven reinterpretations—and reveals when technology is declared truth **not by physical necessity**, but by **discursive suggestion**.
   
-  ![Infographic on heat pump technology](figures/heat_pump.png)
+  ![Infographic on heat pump technology](../figures/heat_pump.png)
 
 *Fig. 1: Infographic on heat pump technology*
   
