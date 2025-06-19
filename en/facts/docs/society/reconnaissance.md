@@ -73,22 +73,23 @@ Traffic light or network diagram visualizes resonance (green), uncertainty (yell
 
 ### 5. Practical Use Cases
 
-* **Media Literacy:** Warnings for fake news or manipulation.  
-* **Politics:** Examination of election platforms for consistency and motives.  
+* **Media Literacy:** Warning notices for fake news or manipulation.  
+* **Politics:** Examination of election programs for consistency and motives.  
 * **Health:** Ethical evaluation of medical recommendations.  
-* **Business:** Checks for greenwashing and ethical communication.  
-* **Education:** Promotes critical thinking with real-time feedback.  
-* **Technology Narratives:**
+* **Business:** Assessment for greenwashing and ethical communication.  
+* **Education:** Fostering critical thinking with real-time feedback.  
+* **Technology Narratives:**  
+  **Example: Air Source Heat Pump:**  
+  The so-called *air source heat pump* is technically no different from a conventional air conditioner: Both use a closed **refrigerant cycle**, in which a gaseous refrigerant is heated by compression, then liquefied, and subsequently expanded again. In this process, **thermal energy is extracted from the ambient air** and released on the other side of the system—as heat or cold, depending on the mode of operation.  
 
-  **Example Air Source Heat Pump:**  
-  The so-called *air source heat pump* is technically identical to a classic air conditioner: Both use a closed **refrigerant cycle**, in which a gaseous refrigerant is heated by compression, then condensed and subsequently expanded again. The system extracts heat from a medium (e.g., outside air) and releases it on the other side—as heating or cooling, depending on operation mode. The effect does not rely on “free” energy, but on **electrical work for compression**—power consumption is structurally comparable.
+  Crucially, the required energy **does not come directly from the environment**, but is provided **by electrical work** (compressor). The efficiency strongly depends on the temperature difference between the source (e.g., outside air) and the sink (e.g., radiator). The **technical design is identical to that of an air conditioner**—the only difference is the operating direction.  
 
-  The difference does not lie in the technology, but in **marketing**: While the *air conditioner* is seen as a power guzzler, the identical technology is marketed as a *heat pump* when it heats instead of cools. The term *heat pump* also suggests environmental innovation.
+  The term *heat pump* creates a semantic upgrade: It suggests environmental friendliness, efficiency, and technological progress—even though, in this case, it is simply an **air conditioning device operating in heating mode**.  
 
-  **Traditional ground source heat pumps** are more deserving of their reputation: They use the year-round stable temperature of the ground or groundwater as a heat source. Due to this higher input temperature, the system requires **less electrical energy** per unit of transferred heat—the so-called **COP (Coefficient of Performance)** is higher. The ground acts as a **constant thermodynamic reservoir**, which is more efficiently tapped than the fluctuating outdoor air.
+  **True ground source heat pumps**, on the other hand, use the ground or groundwater as a **stable thermal source**. Due to the higher and more even temperatures throughout the year, the **electrical effort per unit of heat extracted is lower**. The system thus operates more efficiently—with a higher **COP (Coefficient of Performance)**—and has rightfully earned its reputation as a sustainable technology.  
 
-  **Conclusion:** The designation *air source heat pump* shifts resonance through word choice—it gives an air conditioner an ecological image without changing its physical operating principle. A Resonance AI recognizes such semantically-structural distortions and flags them as potential misinformation in the field of public perception.
-
+  **Conclusion:** The *air source heat pump* uses the same physical principle as an air conditioner. The difference lies not in the technology, but in the **framing through language**. A Resonance AI identifies such perceptual shifts caused by terminology and makes them visible—as part of an ethically transparent information field.
+  
 ---
 
 ### 6. Risks and Solutions
