@@ -79,6 +79,7 @@ Ampel- oder Netzdiagramm visualisiert Resonanz (grün), Unsicherheit (gelb) und 
 * **Unternehmen:** Prüfung auf Greenwashing und ethische Kommunikation.  
 * **Bildung:** Förderung kritischen Denkens mit Echtzeit-Feedback.  
 * **Technologie-Narrative:**  
+
   **Beispiel Luftwärmepumpe:**  
   Die sogenannte *Luftwärmepumpe* unterscheidet sich technisch nicht von einer klassischen Klimaanlage: Beide nutzen einen geschlossenen **Kältekreisprozess**, bei dem ein gasförmiges Kältemittel durch Kompression erhitzt, anschließend verflüssigt und danach wieder entspannt wird. Dabei wird **thermische Energie der Umgebungsluft entzogen** und auf der anderen Seite des Systems wieder abgegeben – je nach Betriebsmodus als Wärme oder Kälte.  
 

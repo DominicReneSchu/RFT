@@ -79,6 +79,7 @@ Traffic light or network diagram visualizes resonance (green), uncertainty (yell
 * **Business:** Assessment for greenwashing and ethical communication.  
 * **Education:** Fostering critical thinking with real-time feedback.  
 * **Technology Narratives:**  
+
   **Example: Air Source Heat Pump:**  
   The so-called *air source heat pump* is technically no different from a conventional air conditioner: Both use a closed **refrigerant cycle**, in which a gaseous refrigerant is heated by compression, then liquefied, and subsequently expanded again. In this process, **thermal energy is extracted from the ambient air** and released on the other side of the system—as heat or cold, depending on the mode of operation.  
 
