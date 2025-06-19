@@ -73,11 +73,22 @@ Ampel- oder Netzdiagramm visualisiert Resonanz (grün), Unsicherheit (gelb) und 
 
 ### 5. Praxis-Use-Cases
 
-* **Medienkompetenz:** Warnhinweise bei Fake News oder Manipulation.
-* **Politik:** Prüfung von Wahlprogrammen auf Konsistenz und Motive.
-* **Gesundheit:** Bewertung medizinischer Empfehlungen auch ethisch.
-* **Unternehmen:** Prüfung auf Greenwashing und ethische Kommunikation.
-* **Bildung:** Förderung kritischen Denkens mit Echtzeit-Feedback.
+* **Medienkompetenz:** Warnhinweise bei Fake News oder Manipulation.  
+* **Politik:** Prüfung von Wahlprogrammen auf Konsistenz und Motive.  
+* **Gesundheit:** Bewertung medizinischer Empfehlungen auch ethisch.  
+* **Unternehmen:** Prüfung auf Greenwashing und ethische Kommunikation.  
+* **Bildung:** Förderung kritischen Denkens mit Echtzeit-Feedback.  
+* **Technologie-Narrative:**  
+
+  **Beispiel Luftwärmepumpe:**  
+  Die sogenannte *Luftwärmepumpe* unterscheidet sich technisch nicht von einer klassischen Klimaanlage: Beide Geräte nutzen einen geschlossenen **Kältekreisprozess**, bei dem ein gasförmiges Kältemittel durch Kompression erhitzt, anschließend verflüssigt und dann wieder entspannt wird. Dabei entzieht das System einem Medium (z. B. der Außenluft) Wärme und gibt sie auf der anderen Seite wieder ab – je nach Betriebsmodus als Heizung oder Kühlung. Der Effekt basiert nicht auf „freier“ Energie, sondern auf **elektrischer Arbeit zur Verdichtung** des Kältemittels – der Stromverbrauch ist also strukturell vergleichbar.  
+
+  Der Unterschied liegt nicht in der Technik, sondern im **Marketing**: Während die *Klimaanlage* als Stromfresser gilt, wird die identische Technik als *Wärmepumpe* verkauft, sobald sie heizt statt kühlt. Der Begriff *Wärmepumpe* suggeriert zudem umweltfreundliche Innovation.  
+
+  **Traditionelle Erdwärmepumpen** hingegen verdienen ihren Ruf eher: Sie nutzen die ganzjährig stabile Temperatur des Erdreichs oder Grundwassers als Wärmequelle. Aufgrund dieser höheren Ausgangstemperatur benötigt das System **weniger elektrische Energie** pro transportierter Wärmeeinheit – der sogenannte **COP-Wert (Coefficient of Performance)** ist höher. Das Erdreich fungiert hier als **konstantes thermodynamisches Reservoir**, das effizienter anzuzapfen ist als schwankende Außenluft.  
+
+  **Fazit:** Die Bezeichnung *Luftwärmepumpe* erzeugt durch Wortwahl eine Resonanzverschiebung – sie verleiht einer Klimaanlage ein ökologisches Image, ohne deren physikalisches Wirkprinzip zu verändern. Eine Resonanz-KI erkennt solche semantisch-strukturellen Verzerrungen und kennzeichnet sie als potenzielle Irreführung im Feld der öffentlichen Wahrnehmung.
+
 
 ---
 
