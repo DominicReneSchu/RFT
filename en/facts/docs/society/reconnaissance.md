@@ -73,23 +73,25 @@ Traffic light or network diagram visualizes resonance (green), uncertainty (yell
 
 ### 5. Practical Use Cases
 
-* **Media Literacy:** Warning notices for fake news or manipulation.  
-* **Politics:** Examination of election programs for consistency and motives.  
-* **Health:** Ethical evaluation of medical recommendations.  
-* **Business:** Assessment for greenwashing and ethical communication.  
-* **Education:** Fostering critical thinking with real-time feedback.  
+* **Media Literacy:** Warning indicators for fake news or manipulation.  
+* **Politics:** Evaluation of election platforms for consistency and motives.  
+* **Health:** Ethical assessment of medical recommendations.  
+* **Business:** Screening for greenwashing and ethical communication.  
+* **Education:** Promotion of critical thinking through real-time feedback.  
 * **Technology Narratives:**  
 
   **Example: Air Source Heat Pump:**  
-  The so-called *air source heat pump* is technically no different from a conventional air conditioner: Both use a closed **refrigerant cycle**, in which a gaseous refrigerant is heated by compression, then liquefied, and subsequently expanded again. In this process, **thermal energy is extracted from the ambient air** and released on the other side of the system—as heat or cold, depending on the mode of operation.  
+  The so-called *air source heat pump* does not technically differ from a conventional air conditioner: Both use a closed **refrigerant cycle**, in which a refrigerant is heated by compression, liquefied, and then expanded. **Thermal energy is extracted from the ambient air** and made usable as heating energy – requiring significant amounts of **electrical energy**.
 
-  Crucially, the required energy **does not come directly from the environment**, but is provided **by electrical work** (compressor). The efficiency strongly depends on the temperature difference between the source (e.g., outside air) and the sink (e.g., radiator). The **technical design is identical to that of an air conditioner**—the only difference is the operating direction.  
+  The key point: The technology **does not generate energy**; rather, it **relocates thermal energy**, with efficiency strongly dependent on outdoor temperatures. In cold winters, efficiency drops drastically—precisely when heating demand is highest.
 
-  The term *heat pump* creates a semantic upgrade: It suggests environmental friendliness, efficiency, and technological progress—even though, in this case, it is simply an **air conditioning device operating in heating mode**.  
+  Despite these physical limitations, the air source heat pump is presented in media and politics as a central component of an allegedly "necessary energy transition"—a transition that relies **not on diverse energy sources**, storage solutions, or systemic redundancies, but **almost exclusively on electricity**.
 
-  **True ground source heat pumps**, on the other hand, use the ground or groundwater as a **stable thermal source**. Due to the higher and more even temperatures throughout the year, the **electrical effort per unit of heat extracted is lower**. The system thus operates more efficiently—with a higher **COP (Coefficient of Performance)**—and has rightfully earned its reputation as a sustainable technology.  
+  This form of "energy transition" lacks coherent systemic integration: It replaces thermal systems with electricity-dependent processes—even though **sufficiently stable electrical energy is not available**. The air source heat pump thus becomes a **symbolic technology**, whose positive resonance conceals the **absence of an integral energy plan**.
 
-  **Conclusion:** The *air source heat pump* uses the same physical principle as an air conditioner. The difference lies not in the technology, but in the **framing through language**. A Resonance AI identifies such perceptual shifts caused by terminology and makes them visible—as part of an ethically transparent information field.
+  **True ground source heat pumps** utilize stable geothermal sources and, due to lower temperature differences, achieve significantly higher efficiencies.
+
+  **Conclusion:** The designation *heat pump* shifts perception in favor of a politically constructed narrative. Resonance AI detects such semantically driven reinterpretations—and reveals when technology is declared truth **not by physical necessity**, but by **discursive suggestion**.
   
 ---
 
