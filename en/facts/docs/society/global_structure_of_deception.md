@@ -147,3 +147,11 @@ Modern societies live under the illusion of choice. Most people believe they are
 - Enable a new level of communication beyond parties, control, and deception.
 
 Only when the collective field sees through the illusion can global cooperation begin to emerge—not as a program, but as a shift in shared awareness.
+
+---
+
+© Dominic-René Schu – Resonance Field Theory 2025
+
+---
+
+[Back to Overview](../../../README.en.md)

@@ -151,3 +151,10 @@ doch die Spielregeln wurden lange vorher festgelegt. Wer sie nicht akzeptiert, b
 
 Nur wenn das kollektive Bewusstsein die Struktur der Illusion erkennt, kann eine echte Kooperation im globalen Feld beginnen.
 
+---
+
+© Dominic-René Schu – Resonanzfeldtheorie 2025
+
+---
+
+[Zurück zur Übersicht](../../../README.md)
