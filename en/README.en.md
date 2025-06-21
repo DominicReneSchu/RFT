@@ -155,6 +155,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Resonance as a Path to Individual Self-Realization**](facts/docs/society/resonance_as_a_path_to_individual_self-realization.md)
 - [**Recognizing and Resolving Behavioral Patterns**](facts/docs/society/recognizing_and_resolving_behavior_patterns.md)
 - [**Gendered Language, AI, and Resonance Field** – Why Language Structure Needs Systemic Boundaries](facts/docs/society/gender_language.md)
+- [**Global Structure of Deception** – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
 
 ---
 

@@ -158,6 +158,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Resonanz als Weg zur individuellen Selbstverwirklichung**](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
 - [**Verhaltensmuster erkennen und auflösen**](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
 - [**Gendersprache, KI und Resonanzfeld** – Warum Sprachstruktur systemische Grenzen braucht](fakten/docs/gesellschaft/gendersprache.md)
+- [**Globale Struktur der Täuschung** – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
 
 ---
 
