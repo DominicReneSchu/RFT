@@ -23,7 +23,7 @@
 
 In the beginning, there was no paradise, but a field of raw couplings.  
 Humans acted instinctively, driven by basic resonances: hunger, fear, survival.  
-No differentiated [language field](../definitionen/paper_resonanzfeldtheorie.md#sprachfeld), no lasting bonds, no systemic history – only spontaneous coupling and decoupling.
+No differentiated [language field](../definitions/paper_resonance_field_theory.md#sprachfeld), no lasting bonds, no systemic history – only spontaneous coupling and decoupling.
 
 ---
 
