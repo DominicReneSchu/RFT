@@ -1,6 +1,6 @@
 # The Most Probable Path of Human History – Resonance Field Perspective
 
-> **Note:** This narrative interprets the development of humanity as a resonance process, in line with the [Resonance Field Theory](../../../README.en.md). It connects biological, cultural, and systemic evolution through the principles of [coupling](../docs/definitions/paper_resonance_field_theory.md#Coupling) and [self-inclusion](../docs/definitions/paper_resonance_field_theory.md#resonance-inclusion). The well-known names Adam and Eve are not understood in a religious sense here, but as symbolic markers for an emergent resonance event that can be reconstructed systemically. The resonance coupling between Adam and Eve marks the first transition from the animal field to conscious field resonance.
+> **Note:** This narrative interprets the development of humanity as a resonance process, in line with the [Resonance Field Theory](../../../README.en.md). It connects biological, cultural, and systemic evolution through the principles of [coupling](../definitions/paper_resonance_field_theory.md#Coupling) and [self-inclusion](../definitions/paper_resonance_field_theory.md#resonance-inclusion). The well-known names Adam and Eve are not understood in a religious sense here, but as symbolic markers for an emergent resonance event that can be reconstructed systemically. The resonance coupling between Adam and Eve marks the first transition from the animal field to conscious field resonance.
 
 ---
 
@@ -23,7 +23,7 @@
 
 In the beginning, there was no paradise, but a field of raw couplings.  
 Humans acted instinctively, driven by basic resonances: hunger, fear, survival.  
-No differentiated [language field](../fakten/docs/definitionen/paper_resonanzfeldtheorie.md#sprachfeld), no lasting bonds, no systemic history – only spontaneous coupling and decoupling.
+No differentiated [language field](../definitionen/paper_resonanzfeldtheorie.md#sprachfeld), no lasting bonds, no systemic history – only spontaneous coupling and decoupling.
 
 ---
 
@@ -31,9 +31,9 @@ No differentiated [language field](../fakten/docs/definitionen/paper_resonanzfel
 
 Before Adam and Eve, biological beings—animals—existed within fields of raw coupling but lacked the capacity for conscious synchronization. They were not yet humans in the resonance field theoretical sense.
 
-Adam and Eve are the first humans because they possess language—a [coupling operator](../docs/definitions/paper_resonance_field_theory.md#coupling_operator) enabling conscious resonance between fields. Their coupling marks the transition from animal instinct to conscious field resonance. They are polar manifestations of an already embedded resonance potential within the field.
+Adam and Eve are the first humans because they possess language—a [coupling operator](../definitions/paper_resonance_field_theory.md#coupling_operator) enabling conscious resonance between fields. Their coupling marks the transition from animal instinct to conscious field resonance. They are polar manifestations of an already embedded resonance potential within the field.
 
-This conscious resonance coupling generates a new qualitative order: a free resonance space synchronized with the universal [base oscillation](../docs/definitions/paper_resonance_field_theory.md#universal_oscillation) of the field. The emergence of language and synchronous communication makes Adam and Eve systemically the first humans—actors who penetrate and expand the resonance field with increased [order density (𝓔)](../docs/definitions/paper_resonance_field_theory.md).
+This conscious resonance coupling generates a new qualitative order: a free resonance space synchronized with the universal [base oscillation](../definitions/paper_resonance_field_theory.md#universal_oscillation) of the field. The emergence of language and synchronous communication makes Adam and Eve systemically the first humans—actors who penetrate and expand the resonance field with increased [order density (𝓔)](../definitions/paper_resonance_field_theory.md).
 
 Thus, the first “paradise” in resonance space arises not as an idealized reality but as an emergent system of conscious coupling, evolutionarily superior to the older, purely biological system.
 
@@ -54,7 +54,7 @@ Resonance is not passed on like an object, but unfolds anew at the moment of cou
 Language as a coupling phenomenon:  
 Genetic foundations (FOXP2 gene) and cultural reinforcement interact.  
 Resonance mutation enables systemic communication, fosters collective knowledge fields, and accelerates evolutionary processes.  
-See [Resonance Field Theory: Axiomatic Foundation](../docs/definitions/paper_resonance_field_theory.md).
+See [Resonance Field Theory: Axiomatic Foundation](../definitions/paper_resonance_field_theory.md).
 
 ---
 

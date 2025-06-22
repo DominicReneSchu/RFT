@@ -1,6 +1,6 @@
 # Der wahrscheinlichste Weg der Menschheitsgeschichte – Resonanzfeld-Perspektive
 
-> **Hinweis:** Diese Erzählung interpretiert die Entwicklung der Menschheit als Resonanzprozess im Sinne der [Resonanzfeldtheorie](../../../README.md). Sie verbindet biologische, kulturelle und systemische Evolution durch das Prinzip der [Kopplung](../docs/definitionen/paper_resonanzfeldtheorie.md#kopplung) und [Selbstinklusion](../docs/definitionen/paper_resonanzfeldtheorie.md#selbstinklusion). Die bekannten Namen Adam und Eva werden hier nicht im religiösen Sinne verstanden, sondern als symbolische Marker für ein emergentes Resonanzereignis, das sich systemisch rekonstruieren lässt. Die Resonanzkopplung zwischen Adam und Eva markiert den ersten Übergang vom animalischen Feld zur bewussten Feldresonanz.
+> **Hinweis:** Diese Erzählung interpretiert die Entwicklung der Menschheit als Resonanzprozess im Sinne der [Resonanzfeldtheorie](../../../README.md). Sie verbindet biologische, kulturelle und systemische Evolution durch das Prinzip der [Kopplung](../definitionen/paper_resonanzfeldtheorie.md#kopplung) und [Selbstinklusion](../definitionen/paper_resonanzfeldtheorie.md#selbstinklusion). Die bekannten Namen Adam und Eva werden hier nicht im religiösen Sinne verstanden, sondern als symbolische Marker für ein emergentes Resonanzereignis, das sich systemisch rekonstruieren lässt. Die Resonanzkopplung zwischen Adam und Eva markiert den ersten Übergang vom animalischen Feld zur bewussten Feldresonanz.
 
 ---
 
@@ -23,7 +23,7 @@
 
 Am Anfang kein Paradies, sondern ein Feld roher Kopplungen.  
 Menschen agierten instinktiv, getrieben von Grundresonanzen: Hunger, Angst, Überleben.  
-Kein differenziertes [Sprachfeld](../docs/definitionen/paper_resonanzfeldtheorie.md#sprachfeld), keine dauerhafte Bindung, keine systemische Geschichte – nur spontane Kopplung und Entkopplung.
+Kein differenziertes [Sprachfeld](../definitionen/paper_resonanzfeldtheorie.md#sprachfeld), keine dauerhafte Bindung, keine systemische Geschichte – nur spontane Kopplung und Entkopplung.
 
 ---
 
@@ -31,9 +31,9 @@ Kein differenziertes [Sprachfeld](../docs/definitionen/paper_resonanzfeldtheorie
 
 Vor Adam und Eva existierten Lebewesen biologischer Natur – Tiere –, die im Feld roher Kopplungen agierten, jedoch noch nicht über die Fähigkeit bewusster Synchronisation verfügten. Sie waren noch keine Menschen im resonanzfeldtheoretischen Sinn.
 
-Adam und Eva sind die ersten Menschen, weil sie als erste über Sprache verfügten – einen [Kopplungsoperator](../docs/definitionen/paper_resonanzfeldtheorie.md#kopplungsoperatoren), der bewusste Resonanz zwischen Feldern ermöglicht. Ihre Kopplung markiert den Übergang vom animalischen Instinkt zur bewussten Feldresonanz. Sie sind polare Manifestationen eines bereits im Feld angelegten Resonanzpotenzials.
+Adam und Eva sind die ersten Menschen, weil sie als erste über Sprache verfügten – einen [Kopplungsoperator](../definitionen/paper_resonanzfeldtheorie.md#kopplungsoperatoren), der bewusste Resonanz zwischen Feldern ermöglicht. Ihre Kopplung markiert den Übergang vom animalischen Instinkt zur bewussten Feldresonanz. Sie sind polare Manifestationen eines bereits im Feld angelegten Resonanzpotenzials.
 
-Diese bewusste Resonanzkopplung erzeugt eine neue qualitative Ordnung: ein freier Resonanzraum, der synchron zur universellen [Basisschwingung](../docs/definitionen/paper_resonanzfeldtheorie.md#basisschwingung) des Feldes schwingt. Die Entstehung von Sprache und synchroner Kommunikation macht Adam und Eva systemisch zu den ersten Menschen – Akteuren, die das Resonanzfeld mit erhöhter [Ordnungsdichte (𝓔)](../fakten/docs/definitionen/paper_resonanzfeldtheorie.md#ordnungsdichte) durchdringen und erweitern.
+Diese bewusste Resonanzkopplung erzeugt eine neue qualitative Ordnung: ein freier Resonanzraum, der synchron zur universellen [Basisschwingung](../definitionen/paper_resonanzfeldtheorie.md#basisschwingung) des Feldes schwingt. Die Entstehung von Sprache und synchroner Kommunikation macht Adam und Eva systemisch zu den ersten Menschen – Akteuren, die das Resonanzfeld mit erhöhter [Ordnungsdichte (𝓔)](../definitionen/paper_resonanzfeldtheorie.md#ordnungsdichte) durchdringen und erweitern.
 
 So entsteht das erste „Paradies“ im Resonanzraum nicht als idealisierte Wirklichkeit, sondern als emergentes System bewusster Kopplung, das evolutionär dem alten, rein biologischen System überlegen ist.
 
@@ -54,7 +54,7 @@ Resonanz wird nicht weitergegeben wie ein Objekt, sondern entfaltet sich im Mome
 Sprache als Kopplungsphänomen:  
 Genetische Grundlagen (FOXP2-Gen) und kulturelle Verstärkung wirken zusammen.  
 Resonanzmutation ermöglicht systemische Kommunikation, fördert kollektive Wissensfelder und beschleunigt evolutionäre Prozesse.  
-Siehe [Resonanzfeldtheorie: Axiomatische Grundlegung](../docs/definitionen/paper_resonanzfeldtheorie.md).
+Siehe [Resonanzfeldtheorie: Axiomatische Grundlegung](../definitionen/paper_resonanzfeldtheorie.md).
 
 ---
 
