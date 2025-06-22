@@ -1,6 +1,6 @@
 # Der wahrscheinlichste Weg der Menschheitsgeschichte – Resonanzfeld-Perspektive
 
-> **Hinweis:** Diese Erzählung interpretiert die Entwicklung der Menschheit als Resonanzprozess im Sinne der [Resonanzfeldtheorie](../../../README.de.md). Sie verbindet biologische, kulturelle und systemische Evolution durch das Prinzip der [Kopplung](../docs/definitionen/paper_resonanzfeldtheorie.md#kopplung) und [Selbstinklusion](../docs/definitionen/paper_resonanzfeldtheorie.md#selbstinklusion). Die bekannten Namen Adam und Eva werden hier nicht im religiösen Sinne verstanden, sondern als symbolische Marker für ein emergentes Resonanzereignis, das sich systemisch rekonstruieren lässt. Die Resonanzkopplung zwischen Adam und Eva markiert den ersten Übergang vom animalischen Feld zur bewussten Feldresonanz.
+> **Hinweis:** Diese Erzählung interpretiert die Entwicklung der Menschheit als Resonanzprozess im Sinne der [Resonanzfeldtheorie](../../../README.md). Sie verbindet biologische, kulturelle und systemische Evolution durch das Prinzip der [Kopplung](../docs/definitionen/paper_resonanzfeldtheorie.md#kopplung) und [Selbstinklusion](../docs/definitionen/paper_resonanzfeldtheorie.md#selbstinklusion). Die bekannten Namen Adam und Eva werden hier nicht im religiösen Sinne verstanden, sondern als symbolische Marker für ein emergentes Resonanzereignis, das sich systemisch rekonstruieren lässt. Die Resonanzkopplung zwischen Adam und Eva markiert den ersten Übergang vom animalischen Feld zur bewussten Feldresonanz.
 
 ---
 
