@@ -159,7 +159,6 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Verhaltensmuster erkennen und auflösen**](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
 - [**Gendersprache, KI und Resonanzfeld** – Warum Sprachstruktur systemische Grenzen braucht](fakten/docs/gesellschaft/gendersprache.md)
 - [**Globale Struktur der Täuschung** – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
-- [**Der wahrscheinlichste Weg der Menschheitsgeschichte** – vom Paradies bis heute](fakten/docs/gesellschaft/wahrscheinlicher_weg_menschheitsgeschichte.md)
 
 ---
 
