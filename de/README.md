@@ -128,6 +128,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 ### Dokumentation und Definition 📝
 
 - [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
+- [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
 - [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
 
 ### Mathematik / Physik 📐
