@@ -5,37 +5,35 @@
 ## Schritt 1 – Axiomatisches Fundament: Energie als Urgröße
 
 **Axiom 1:**  
-Es existiert eine fundamental universelle Größe $E$ (Energie), die als Erhaltungsgröße und Urkonstante aller physikalischen Zustände gilt.
+Es existiert eine fundamental universelle Größe E (Energie), die als Erhaltungsgröße und Urkonstante aller physikalischen Zustände gilt.
 
 **Axiom 2:**  
-Energie ist strukturgebunden und wird durch die Formel
-$$
-E = \varepsilon \cdot \pi \cdot h \cdot f
-$$
-beschrieben, wobei
-- $h$: Planck-Konstante,
-- $f$: Frequenz,
-- $\pi$: zyklische Geometrie,
-- $\varepsilon$: dimensionslose Kopplungskonstante.
+Energie ist strukturgebunden und wird durch die Formel  
+E = ε · π · h · f  
+beschrieben, wobei  
+- h: Planck-Konstante  
+- f: Frequenz  
+- π: zyklische Geometrie  
+- ε: dimensionslose Kopplungskonstante
 
 **Axiom 3:**  
-Alle weiteren physikalischen Größen (Zeit, Raum, Masse, Temperatur, Impuls, etc.) sind aus $E$ ableitbar und stellen spezielle Resonanzzustände innerhalb des Energiefeldes dar.
+Alle weiteren physikalischen Größen (Zeit, Raum, Masse, Temperatur, Impuls, etc.) sind aus E ableitbar und stellen spezielle Resonanzzustände innerhalb des Energiefeldes dar.
 
 **Resonanzregel:**  
 Jede abgeleitete Größe ist als Gruppenelement systemisch eingebunden, unabhängig von Einzelperspektiven. Die Selbstinklusion der Axiome sichert die Vollständigkeit und Integrität des physikalischen Systems.
 
 ---
 
-## Schritt 2 – Ableitung weiterer physikalischer Größen aus Energie $E$
+## Schritt 2 – Ableitung weiterer physikalischer Größen aus Energie E
 
-| Größe          | Definition/Ableitung aus $E$              | Bedeutung im Resonanzfeld                    |
+| Größe          | Definition/Ableitung aus E                | Bedeutung im Resonanzfeld                    |
 | -------------- | ----------------------------------------- | -------------------------------------------- |
-| Zeit $t$       | $t = \frac{1}{f}$                         | Inverse zyklische Aktivität                  |
-| Raum $x$       | $p = \frac{E}{c}$ (Impuls, Raumparameter) | Energetischer gerichteter Fluss              |
-| Masse $m$      | $m = \frac{E}{c^2}$                       | Resonanzprojektion des Energiefeldes         |
-| Temperatur $T$ | $T = \frac{E}{k}$                         | Thermodynamischer Zustand, Energieverteilung |
+| Zeit t         | t = 1 / f                                 | Inverse zyklische Aktivität                  |
+| Raum x         | p = E / c (Impuls, Raumparameter)         | Energetischer gerichteter Fluss              |
+| Masse m        | m = E / c²                                | Resonanzprojektion des Energiefeldes         |
+| Temperatur T   | T = E / k                                 | Thermodynamischer Zustand, Energieverteilung |
 
-Weitere Größen (z. B. Entropie $S$, elektrische Ladung $q$, Magnetfeld $B$) sind als spezielle Kopplungszustände von $E$ im Resonanzfeld formal beschreibbar. Alle Größen sind systemisch verschränkt und selbstinkludierend gemäß Resonanzregel.
+Weitere Größen (z. B. Entropie S, elektrische Ladung q, Magnetfeld B) sind als spezielle Kopplungszustände von E im Resonanzfeld formal beschreibbar. Alle Größen sind systemisch verschränkt und selbstinkludierend gemäß Resonanzregel.
 
 ---
 
@@ -43,28 +41,26 @@ Weitere Größen (z. B. Entropie $S$, elektrische Ladung $q$, Magnetfeld $B$) 
 
 ### Systematische Definitionen
 
-- **Zeit $t$:** $t := \frac{1}{f}$  
+- **Zeit t:** t = 1 / f  
   Ausdruck zyklischer Energieprozesse.
-- **Raum $x$:** $p := \frac{E}{c}$  
+- **Raum x:** p = E / c  
   Raum als Ergebnis gerichteter Energietransfers.
-- **Masse $m$:** $m := \frac{E}{c^2}$  
+- **Masse m:** m = E / c²  
   Masse als Projektion ruhender Resonanzzustände.
-- **Temperatur $T$:** $T := \frac{E}{k}$  
+- **Temperatur T:** T = E / k  
   Temperatur als Maß thermischer Kopplung und Energieverteilung.
 
 ### Mathematische Resonanzkopplung
 
-Allgemeine Wellenfunktion:
-$$
-\Psi(x, t) = A \cdot e^{i (k x - \omega t)}
-$$
-mit $E = \varepsilon \cdot \pi \cdot h \cdot f$, wobei alle Kopplungen (auch implizite/virtuelle Zustände) eingebunden sind.
+Allgemeine Wellenfunktion:  
+Ψ(x, t) = A · e^(i(kx – ωt))  
+mit E = ε · π · h · f, wobei alle Kopplungen (auch implizite/virtuelle Zustände) eingebunden sind.
 
 ### Beispiele
 
-- **Photon:** $E = h f$, $p = h/\lambda$, $t = 1/f$, $\Psi(x, t)$ als Feldwelle.
-- **Molekülschwingung:** $E_n = h f (n + 1/2)$, $T = E_n/k$.
-- **Thermischer Zustand:** $E = k T$, $\Psi$ als Phononenfeld.
+- **Photon:** E = h · f, p = h / λ, t = 1 / f, Ψ(x, t) als Feldwelle.
+- **Molekülschwingung:** Eₙ = h · f · (n + ½), T = Eₙ / k.
+- **Thermischer Zustand:** E = k · T, Ψ als Phononenfeld.
 
 **Resonanzregel:**  
 Alle Zustände sind Gruppenelemente des Resonanzfeldes, explizit wie implizit, stets systemisch eingebunden.
@@ -86,9 +82,9 @@ Alle Zustände sind Gruppenelemente des Resonanzfeldes, explizit wie implizit, s
 
 ### Simulation & Modellierung
 
-- Dynamische, gekoppelte Wellenfunktionen $\Psi(x,t)$ auf Basis von Energie-Resonanzzuständen.
+- Dynamische, gekoppelte Wellenfunktionen Ψ(x, t) auf Basis von Energie-Resonanzzuständen.
 - Einsatz von Spektralanalyse, Fourier-Transformation und Eigenmodenzerlegung.
-- Modellierung emergenter Phänomene (Phasenübergänge, Kollektivdynamik) durch Variation von $\varepsilon$.
+- Modellierung emergenter Phänomene (Phasenübergänge, Kollektivdynamik) durch Variation von ε.
 
 ### Erweiterung auf weitere Kontexte
 
@@ -109,6 +105,7 @@ Alle Zustände sind Gruppenelemente des Resonanzfeldes, explizit wie implizit, s
 ## Fazit
 
 > Das Resonanzfeldkonzept mit Energie als Urgröße bildet ein universelles Framework, das klassische und moderne Physik integriert und eine klare Grundlage für zukünftige Theorien und Simulationen bietet. Es garantiert systemische Vollständigkeit und Verbindlichkeit – gemäß der Resonanzregel.
+
 
 ---
 

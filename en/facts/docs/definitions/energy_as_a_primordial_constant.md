@@ -5,37 +5,35 @@
 ## Step 1 – Axiomatic Foundation: Energy as Primal Quantity
 
 **Axiom 1:**  
-There exists a fundamentally universal quantity $E$ (energy), which serves as a conserved and primordial constant of all physical states.
+There exists a fundamentally universal quantity E (energy), which serves as a conserved and primordial constant of all physical states.
 
 **Axiom 2:**  
-Energy is structure-bound and described by the equation
-$$
-E = \varepsilon \cdot \pi \cdot h \cdot f
-$$
-where
-- $h$: Planck constant,
-- $f$: frequency,
-- $\pi$: cyclic geometry,
-- $\varepsilon$: dimensionless coupling constant.
+Energy is structure-bound and described by the equation  
+E = ε · π · h · f  
+where  
+- h: Planck constant  
+- f: frequency  
+- π: cyclic geometry  
+- ε: dimensionless coupling constant
 
 **Axiom 3:**  
-All other physical quantities (time, space, mass, temperature, momentum, etc.) are derivable from $E$ and constitute specific resonance states within the energy field.
+All other physical quantities (time, space, mass, temperature, momentum, etc.) are derivable from E and constitute specific resonance states within the energy field.
 
 **Resonance Rule:**  
 Every derived quantity is systemically embedded as a group element, independent of individual perspectives. The self-inclusion of the axioms secures completeness and integrity of the physical system.
 
 ---
 
-## Step 2 – Derivation of Further Physical Quantities from Energy $E$
+## Step 2 – Derivation of Further Physical Quantities from Energy E
 
-| Quantity       | Definition/Derivation from $E$              | Meaning in the Resonance Field                    |
-| -------------- | ------------------------------------------- | ------------------------------------------------- |
-| Time $t$       | $t = \frac{1}{f}$                           | Inverse cyclic activity                           |
-| Space $x$      | $p = \frac{E}{c}$ (momentum, space param.)  | Directed energetic flow                           |
-| Mass $m$       | $m = \frac{E}{c^2}$                         | Resonance projection of the energy field          |
-| Temperature $T$| $T = \frac{E}{k}$                           | Thermodynamic state, energy distribution          |
+| Quantity       | Definition/Derivation from E               | Meaning in the Resonance Field                    |
+| -------------- | ------------------------------------------ | ------------------------------------------------- |
+| Time t         | t = 1 / f                                  | Inverse cyclic activity                           |
+| Space x        | p = E / c (momentum, space parameter)      | Directed energetic flow                           |
+| Mass m         | m = E / c²                                 | Resonance projection of the energy field          |
+| Temperature T  | T = E / k                                  | Thermodynamic state, energy distribution          |
 
-Further quantities (e.g., entropy $S$, electric charge $q$, magnetic field $B$) are also formally describable as specific coupling states of $E$ within the resonance field. All quantities are systemically entangled and self-including according to the resonance rule.
+Further quantities (e.g., entropy S, electric charge q, magnetic field B) are also formally describable as specific coupling states of E within the resonance field. All quantities are systemically entangled and self-including according to the resonance rule.
 
 ---
 
@@ -43,28 +41,26 @@ Further quantities (e.g., entropy $S$, electric charge $q$, magnetic field $B$) 
 
 ### Systematic Definitions
 
-- **Time $t$:** $t := \frac{1}{f}$  
+- **Time t:** t = 1 / f  
   Expression of cyclic energy processes.
-- **Space $x$:** $p := \frac{E}{c}$  
+- **Space x:** p = E / c  
   Space as the result of directed energy transfers.
-- **Mass $m$:** $m := \frac{E}{c^2}$  
+- **Mass m:** m = E / c²  
   Mass as projection of stationary resonance states.
-- **Temperature $T$:** $T := \frac{E}{k}$  
+- **Temperature T:** T = E / k  
   Temperature as a measure of thermal coupling and energy distribution.
 
 ### Mathematical Resonance Coupling
 
-General wave function:
-$$
-\Psi(x, t) = A \cdot e^{i (k x - \omega t)}
-$$
-with $E = \varepsilon \cdot \pi \cdot h \cdot f$, where all couplings (including implicit/virtual states) are included.
+General wave function:  
+Ψ(x, t) = A · e^(i(kx – ωt))  
+with E = ε · π · h · f, where all couplings (including implicit/virtual states) are included.
 
 ### Examples
 
-- **Photon:** $E = h f$, $p = h/\lambda$, $t = 1/f$, $\Psi(x, t)$ as field wave.
-- **Molecular Vibration:** $E_n = h f (n + 1/2)$, $T = E_n/k$.
-- **Thermal State:** $E = k T$, $\Psi$ as phonon field.
+- **Photon:** E = h · f, p = h / λ, t = 1 / f, Ψ(x, t) as field wave.
+- **Molecular vibration:** Eₙ = h · f · (n + ½), T = Eₙ / k.
+- **Thermal state:** E = k · T, Ψ as phonon field.
 
 **Resonance Rule:**  
 All states are group elements of the resonance field, explicit as well as implicit, always systemically embedded.
@@ -75,24 +71,24 @@ All states are group elements of the resonance field, explicit as well as implic
 
 ### Application of Resonance Coupling
 
-- **Quantized Energy States:**  
+- **Quantized energy states:**  
   Description of discrete energy levels (electron, photon, phonon, …).
-- **Thermodynamic Processes:**  
+- **Thermodynamic processes:**  
   Energy transfer, relaxation, temperature distributions as coupling dynamics.
-- **Field Theory:**  
+- **Field theory:**  
   Foundation for fundamental interactions (electromagnetic, gravitational, weak/nuclear).
-- **Physics of Information:**  
+- **Physics of information:**  
   Linking energy, information, and entropy quantitatively via coupling constants.
 
 ### Simulation & Modeling
 
-- Dynamic, coupled wave functions $\Psi(x,t)$ based on energy-resonance states.
+- Dynamic, coupled wave functions Ψ(x, t) based on energy-resonance states.
 - Use of spectral analysis, Fourier transform, and eigenmode decomposition.
-- Modeling of emergent phenomena (phase transitions, collective dynamics) by varying $\varepsilon$.
+- Modeling of emergent phenomena (phase transitions, collective dynamics) by varying ε.
 
 ### Extension to Further Contexts
 
-- **Dark Matter/Energy:**  
+- **Dark matter/energy:**  
   Implicit couplings and zero modes as structured energy forms in the resonance field.
 - **Biophysics:**  
   Energy flow and coupling as the basis of living systems, neural dynamics, information processing.
