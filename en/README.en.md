@@ -158,6 +158,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Gendered Language, AI, and Resonance Field** – Why Language Structure Needs Systemic Boundaries](facts/docs/society/gender_language.md)
 - [**Global Structure of Deception** – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
 - [**The Most Probable Path of Human History** – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
+- [**Yin and Yang as a Universal Principle of Resonance**](facts/docs/society/yin_and_yang.md)
 
 ---
 
