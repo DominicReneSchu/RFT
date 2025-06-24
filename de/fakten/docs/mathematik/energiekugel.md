@@ -9,7 +9,7 @@ Dieses Kapitel zeigt, wie die Begrenzung der Energie durch die Lichtgeschwindigk
 
 ---
 
-<div style="width: 800px; max-width: 100%; margin: 0 auto; text-align: center;">
+<div style="width: 800px; max-width: 60%; margin: 0 auto; text-align: center;">
   <img src="../bilder/energiekugel.png" alt="Visualisierung der Energiekugel" style="width: 60%;">
 </div>
 

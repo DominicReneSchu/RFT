@@ -9,7 +9,7 @@ This chapter shows how the limitation of energy by the speed of light and the st
 
 ---
 
-<div style="width: 800px; max-width: 100%; margin: 0 auto; text-align: center;">
+<div style="width: 800px; max-width: 60%; margin: 0 auto; text-align: center;">
   <img src="../figures/energy_orb.png" alt="Visualization of the energy ball" style="width: 60%;">
 </div>
 
