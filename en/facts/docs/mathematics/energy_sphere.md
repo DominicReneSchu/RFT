@@ -9,7 +9,7 @@ This chapter shows how the limitation of energy by the speed of light and the st
 
 ---
 
-![Visualization of the energy ball](figures/energy_orb.png)
+![Visualization of the energy ball](../figures/energy_orb.png)
 
 ---
 ## 1. Foundations and Axioms

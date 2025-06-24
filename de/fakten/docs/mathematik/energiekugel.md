@@ -9,7 +9,7 @@ Dieses Kapitel zeigt, wie die Begrenzung der Energie durch die Lichtgeschwindigk
 
 ---
 
-![Visualisierung der Energiekugel](bilder/energiekugel.png)
+![Visualisierung der Energiekugel](../bilder/energiekugel.png)
 
 ---
 
