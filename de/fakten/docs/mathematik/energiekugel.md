@@ -9,6 +9,10 @@ Dieses Kapitel zeigt, wie die Begrenzung der Energie durch die Lichtgeschwindigk
 
 ---
 
+![Visualisierung der Energiekugel](bilder/energiekugel.png)
+
+---
+
 ## 1. Grundlagen und Axiome
 
 Das Modell der Energiekugel gründet auf den wichtigsten Axiomen der Resonanzfeldtheorie[^1]:
