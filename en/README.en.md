@@ -125,6 +125,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 ### Documentation and Definition 📝
 
 - [**Resonance Field Theory: Axiomatic Foundation, Coupling Operator, and Mathematical Consequences**](facts/docs/definitions/paper_resonance_field_theory.md)
+- [**Systemic Foundation of Resonance Field Theory**](facts/docs/definitions/energy_as_a_primordial_constant.md)
 - [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
 
 ### Mathematics / Physics 📐
