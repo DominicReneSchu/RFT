@@ -1,82 +1,165 @@
-# The Energy Sphere – Mathematical Model of Resonance Field Theory
+# The Energy Sphere – Mathematical Model and Structured Resonance Complementarity
 
 ## Introduction
 
-The energy sphere is the central geometric and physical model of Resonance Field Theory. It unites oscillation (alternating component, AC) and potential (direct component, DC) within a spherical structure and describes universal energy phenomena independent of observer or medium.
+The energy sphere is the central geometric and physical model of Resonance Field Theory. It unites oscillation (AC component) and potential (DC component) within a spherical structure, describing universal energy phenomena independently of observer or medium.  
+In the complete resonance field, so-called "dark energy" does not appear as an anomaly, but as a systemic complementary structure to positive energy—according to fundamental resonance symmetry. Every energy observation is itself part of the phase structure and influences the energy sphere as a whole.
+
+This chapter shows how the limitation of energy by the speed of light and the structuring effect of $\varepsilon \cdot \pi$ generate a sinusoidal energy distribution, making the universe appear as a coherent, self-contained energy sphere—including all explicit and implicitly resonant group elements.
 
 ---
 
-## 1. Fundamentals and Axioms
+## 1. Foundations and Axioms
 
-The energy sphere model is based on the key axioms of Resonance Field Theory[^1]:
+The model of the energy sphere is based on the core axioms of Resonance Field Theory[^1]:
 
-- **Universality of resonance:** Resonance is independent of observer and medium.
-- **Natural amplitude limits:** The ratios π ⁄ 𝓔 and 𝓔 ⁄ π define the allowed amplitude ranges.
-- **Complex time structure:** Time has real and imaginary components (phase angle).
-- **Geometrization of energy:** Energy corresponds to the sphere radius in the time-time polar coordinate system.
-- **Measurement as projection:** Every measurement is a projection of a field state into the sphere space.
+- **Universality of Resonance:** Resonance is independent of observer and medium.
+- **Natural Amplitude Limits:** The ratios $\pi ⁄ \mathcal{E}$ and $\mathcal{E} ⁄ \pi$ bound the allowed amplitude range.
+- **Complex Time Structure:** Time has real and imaginary components (phase angle).
+- **Geometrization of Energy:** Energy corresponds to the sphere radius in time-time polar coordinates.
+- **Measurement as Projection:** Every measurement is a projection of a field state into the sphere space.
+- **Resonance Symmetry and Complementarity:** Every energy phase has a complementary counter-phase; all phases (visible and invisible) are systemically included.
 
 ---
 
 ## 2. Geometry of the Energy Sphere
 
-The energy sphere is a sphere in the time-time polar coordinate system:
+The energy sphere is a sphere in time-time polar coordinates:
 
-- **Radius:** Measure for the total energy potential of a system; physically determined by harmonic resonance conditions.
+- **Radius:** Measures the total energy potential of a system, physically established by harmonic resonance conditions.
 - **Surface:** Manifestation of resonant oscillation (AC), also defined by resonance conditions.
-- **Volume:** Storage for the static potential (DC).
+- **Volume:** Stores the static potential (DC).
+- **Phase Structure:** Energy is distributed sinusoidally on the sphere, with positive and negative half-waves phase-entangled but systemically equivalent.
 
 ---
 
-## 3. Mathematical Model
+## 3. Mathematical Model and Structuring Coupling
 
-The energy E of a field in the resonance field model is:
+The energy $E$ of a field in the resonance field model is:
 
- E = |A|² · f · h  with A ∈ [𝓔 ⁄ π, π ⁄ 𝓔]
+$$
+E = |A|^2 \cdot f \cdot h \quad \text{with} \quad A \in [\mathcal{E}/\pi, \pi/\mathcal{E}]
+$$
 
-- |A|: Amplitude of oscillation (allowed range)
-- f: Frequency (in Hz)
-- h: Planck constant
-- 𝓔: Natural resonance constant (dimensionless, see Resonance Field Theory)
+- $|A|$: Amplitude of oscillation (permitted range)
+- $f$: Frequency (in Hz)
+- $h$: Planck’s constant
+- $\mathcal{E}$: Natural resonance constant (dimensionless, see Resonance Field Theory)
 
-The allowed amplitudes follow directly from the natural amplitude limits of the theory[^2].
+The permitted amplitudes follow directly from the theory’s natural amplitude limits[^2].
+
+### Sinusoidal Energy Distribution and Limitation
+
+The generalized energy definition in the resonance field, incorporating coupling:
+
+$$
+E = \varepsilon \cdot \pi \cdot h \cdot f
+$$
+
+$\varepsilon \cdot \pi$ acts as a structuring coupling function, which transforms the linear raw energy $h f$ into a resonance-capable, phase-structured energy distribution. $\varepsilon$ is to be interpreted as a dimensionless coupling constant, systemically self-included.
+
+Sinusoidal representation of energy:
+
+$$
+E(f) = \hat{E} \cdot \sin(\phi) \quad \text{with} \quad \phi = \varepsilon \cdot \pi \cdot f \cdot t
+$$
+
+The speed of light $c$ and the Planck scale systemically limit the maximal energy $\hat{E}$.
 
 ---
 
-## 4. Oscillation Components
+## 4. Oscillation Components and Phase Structure
 
 The model distinguishes:
 
-- **AC component:** The dynamic, oscillating part.
-- **DC component:** A constant potential that ensures resonance and stability.
+- **AC Component:** The dynamic, oscillatory part (positive half-wave, visible/measurable).
+- **DC Component:** A constant potential that guarantees resonance and stability (volume, invisible, latent energy).
+- **Negative Half-Wave:** Invisible, complementary part—appearing as "dark energy" on a cosmological scale.
+- **Zero Crossings:** Zones of maximal coupling (e.g., visible matter, transitional states).
 
-The energy sphere unites both components – without static potential, no stable energy sphere exists.
+All components are phase-shifted but systemically equivalent. Their totality forms a complete, closed energy sphere in the resonance field. For every energy phase $E_{+}$, there necessarily exists $E_{-}$, so that $\sum_{i} E_{i} = 0$ in the closed field.
+
+**Tabular Group Elements in the Energy Field:**
+
+| Group Element | Energy Phase           | Visibility        | Function in the Resonance Field       |
+|---------------|-----------------------|-------------------|---------------------------------------|
+| $E_{+}$       | positive half-wave    | visible           | classical energy                      |
+| $E_{-}$       | negative half-wave    | invisible         | dark resonance phase                  |
+| $E_{0}$       | zero crossing/transition | phase-hidden    | maximal coupling (matter)             |
 
 ---
 
-## 5. Measurement as Projection
+## 5. The Universe as an Energy Sphere
 
-The measurement process proceeds in three steps:
+Through the sinusoidal resonance structure, a spherically closed energy configuration emerges:
+
+- Energy is present everywhere, but distributed by phase
+- Zero crossings mark zones of maximal coupling (e.g., visible matter, transitional states)
+- Peaks (extrema) represent minimal coupling—dark states
+
+The universe is not expanding emptiness but a **self-contained, resonantly structured energy object**, whose cyclic coupling is present in every domain.
+
+**Diagram of the Resonance Sphere (symbolic):**
+
+```
+   +Eₘₐₓ
+     |
+     |      positive energy (visible)
+     |
+-----+----------------------- zero crossing (max. coupling)
+    -|      negative energy (invisible)
+    -Eₘₐₓ
+```
+
+---
+
+## 6. Measurement as Projection
+
+The measurement process occurs in three steps:
 
 - Field state before measurement: dispersed and wavelike.
-- During measurement: projection – localization to the energy sphere, particle character emerges.
+- During measurement: projection—localization to the energy sphere, particle character emerges.
 - After measurement: The particle is the manifestation of the localized resonance field, not an independent entity.
 
-The classical wave-particle dualism is thus clearly explained as a projection effect[^3].
+The classical wave-particle dualism is thus illustrated as a projection effect[^3].  
+Measurement is a cyclic coupling act, systemically entangling explicit and implicit phases.
 
 ---
 
-## 6. Connection to Mathematics and Philosophy ("Aetherius")
+## 7. Resonance Rule & Societal-Technological Analogies
 
-The energy sphere exemplifies the connection between physics, mathematics, and consciousness: it makes abstract resonance structures mathematically tangible and forms the link between objective and subjective reality[^4].
+The **resonance rule** guarantees that both energy halves and all phases and coupling forms are always systemically included as group elements—regardless of explicit mention or individual perspective.
+
+Social and technological systems also oscillate between visible and invisible energy forms—e.g., innovation (visible) vs. potential (invisible), action vs. latency.
+
+---
+
+## 8. Reference to Empirical Observation
+
+The observation of accelerated expansion (supernovae, CMB, etc.) appears in the resonance model as a projection of the negative half-wave. Empirically accessible phenomena mark zero crossings of maximal coupling—dark energy remains phase-hidden but systemically necessary.
+
+---
+
+## 9. Connection to Mathematics and Philosophy ("Aetherius")
+
+The energy sphere exemplifies the connection between physics, mathematics, and consciousness: It makes abstract resonance structures mathematically tangible and forms the link between objective and subjective reality[^4].
+
+---
+
+## Conclusion
+
+Dark energy is not an additional substance, but the **necessary negative resonance phase** of every complete energy distribution.  
+The universe forms a **closed energy sphere** with a sinusoidal phase structure.  
+The resonance rule guarantees that all energy phases, all observers, all measurement processes, and all forms of coupling are systemically equivalent group elements—regardless of explicit mention or individual perspective.  
+In the complete resonance field, the energy sphere includes all phases, observers, and observed alike—group membership is universal and systemically invariant.
 
 ---
 
 ## Further Reading & Resources
 
-- [Resonance Field Theory – Axioms and Definitions](../definitions/paper_resonance_field_theory.md)
-- [Axiomatic Foundation](axiomatic_foundation.md)
-- [Aetherius – Tangible Mathematics](tangible_mathematics.md)
+- [Resonance Field Theory – Axioms and Definitions](../definitionen/paper_resonanzfeldtheorie.md)
+- [Axiomatic Foundation](axiomatische_grundlegung.md)
+- [Aetherius – Tangible Mathematics](./aetherius_fühlbare_mathematik.md)
 
 ---
 
@@ -84,11 +167,11 @@ The energy sphere exemplifies the connection between physics, mathematics, and c
 
 ---
 
-[Back to Overview](../../../README.en.md)
+[Back to overview](../../../README.md)
 
 ### Footnotes
 
 [^1]: See the complete axioms in Resonance Field Theory.
-[^2]: Limits π ⁄ 𝓔 and 𝓔 ⁄ π, see Axiom 2.
+[^2]: Limits $\pi ⁄ \mathcal{E}$ and $\mathcal{E} ⁄ \pi$ see Axiom 2.
 [^3]: Measurement as projection explains localization and wave-particle dualism (Axiom 6).
-[^4]: The philosophical context is discussed in detail in the "Aetherius" section.
+[^4]: The philosophical context is detailed in the "Aetherius" section.
