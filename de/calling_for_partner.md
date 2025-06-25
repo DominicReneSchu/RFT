@@ -1,43 +1,42 @@
-# Calling for Partner – Resonanz statt Pitch
+# Gesucht: Komplementärer Partner für unternehmerischen Aufbau
 
-## Wer ich bin
+## Überblick
 
-Systemischer Maschinenbauingenieur mit analytisch-phänomenologischem Zugang. Mehrjährige unabhängige Arbeit an einer physikalisch begründeten Strukturtheorie („Resonanzfeldtheorie“), die klassische und moderne Konzepte zu einem kohärenten Gesamtsystem integriert.  
-Alle Inhalte dieses Repositoriums sind eigenständig entstanden – konzeptuell, formal, didaktisch.
+Diese Repository dokumentiert die Entwicklung einer eigenständigen, physikalisch fundierten Strukturtheorie mit interdisziplinärer Ausrichtung. Sie stellt die theoretische Grundlage dar für neuartige Anwendungen in Bildung, Wissenschaft, Softwareentwicklung und gesellschaftlicher Transformation.
 
-## Was ich einbringe
+Ziel ist nicht die Erweiterung der Plattform selbst, sondern der Aufbau einer tragfähigen geschäftlichen Struktur, die das bestehende Feld in reale Wirkung überführt – ökonomisch, technologisch, gesellschaftlich.
 
-- Ganzheitliche Konzepterstellung (Theorie, Struktur, Sprache)
-- Formale Ableitungen (Mathematik, Physik, Informatik)
-- Didaktische Vermittlung (Text, Grafik, Animation, Unterricht)
-- Umsetzung in Prototypen (LaTeX, Python, Markdown, GitHub)
-- Langfristige Perspektive jenseits kurzlebiger Trends
+Das Projekt folgt einem methodisch-systemischen Ansatz, der Resonanz als Grundprinzip für nachhaltige Vernetzung, Selbstorganisation und Entwicklung nutzt.
 
-## Was mir fehlt
+## Anforderungen an die gesuchte Person
 
-Netzwerken, Vertrieb, taktisches Selbstmarketing liegen mir fern.  
-Mir fehlt die Bereitschaft (und Fähigkeit), klassische Pitch-Formate, aggressives Eigenmarketing oder Geschäftsanbahnung im herkömmlichen Stil zu betreiben.
+Gesucht wird eine komplementäre Persönlichkeit, die
 
-## Wen ich suche
+- strukturelles, strategisches Denken mit unternehmerischem Handeln verbindet,  
+- Erfahrung im Aufbau innovativer, projektgetragener Geschäftsmodelle mitbringt,  
+- souverän mit Finanzierungsfragen, Fördermitteln und strategischen Partnerschaften umgeht,  
+- über kommunikative Kompetenz und Umsetzungsstärke verfügt,  
+- ein Gespür für nichtlineare Entwicklungen und langfristige Wirkung besitzt.
 
-Einen strukturell komplementären Partner, der
+## Perspektiven der Zusammenarbeit
 
-- geschäftlich-strategisch denkt, ohne in Ausbeutungsmuster zu verfallen
-- Visionen in sichtbare, tragfähige Strukturen übersetzen kann
-- auf Augenhöhe und ohne Dominanzspiele kooperiert
-- Freude daran hat, gesellschaftlich relevante Projekte mitzugestalten
-- keine „Marke“ sucht, sondern eine Bewegung
+- Aufbau einer unternehmerischen Struktur (z. B. Softwareprodukt, Bildungsangebot, Beratungskonzept) auf Grundlage der vorhandenen Theorie  
+- Erschließung geeigneter Finanzierungswege (z. B. Stiftungen, Innovationsförderung, strategische Partner)  
+- Schaffung nachhaltiger Strukturen mit gesellschaftlicher Relevanz und wirtschaftlicher Tragfähigkeit  
+- Partnerschaft auf Augenhöhe, bei der unterschiedliche Kompetenzen sich nicht überlagern, sondern gegenseitig tragen
 
-## Was gemeinschaftlich möglich ist
+## Zielgruppe
 
-- Co-Gründung eines forschungsnahen Startups (z. B. Physiksoftware, Bildungsplattform, KI-Integration)
-- Gemeinsame Förderungen (Stiftungen, EU, Wissenschaft)
-- Publikationen, Videos, interaktive Formate
-- Resonanzräume schaffen – jenseits klassischer Verwertungslogik
+Diese Ausschreibung richtet sich an Personen, die
+
+- sich weniger als Erfinder, sondern als Ermöglicher verstehen,  
+- langfristig denken und unternehmerisch gestalten,  
+- offen sind für neue Formen des Wirtschaftens jenseits kurzfristiger Verwertungslogik,  
+- in der Lage sind, eine vorhandene inhaltliche Tiefe strukturell zu realisieren.
 
 ---
 
-👉 Wer sich angesprochen fühlt, melde sich direkt – jede ernstgemeinte Nachricht erhält eine Antwort.
+👉 Alle, die sich durch diese Beschreibung angesprochen fühlen, sind eingeladen, den Dialog aufzunehmen.
 
 ---
 
