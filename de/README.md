@@ -22,7 +22,7 @@ Dieses Projekt vereint Mathematik, Physik, Technik, Philosophie und neue Denkans
 	- [🔬 Empirische Beweisführung](#empirische-beweisführung-)
 - [🦋 Vision](#vision-)
 - [🛡 Lizenz](#lizenz-)
-- [🤝 Beteiligung](#beteiligung-)
+- [🤝 Beteiligung](#beteiligung-und-partnerschaft-)
 - [🤖 KI-Erweiterung durch Resonanzfeldtheorie](#ki-erweiterung-durch-resonanzfeldtheorie-)
 - [📄 Kontakt](#kontakt-)
 - [📥 Repository klonen](#repository-klonen-)
@@ -205,7 +205,12 @@ Dieses Projekt steht unter der **Schu-Lizenz 1.4**
 
 ---
 
-## Beteiligung 🤝
+## Beteiligung und Partnerschaft 🤝
+
+Neben Beiträgen innerhalb des Repositoriums suche ich gezielt nach einer strukturell komplementären Partnerschaft für die Weiterentwicklung des Projekts.
+
+👉 [→ Strategische Partnerschaft: Calling for Partner – Resonanz statt Pitch](./calling_for_partner.md)
+
 
 Beiträge, Kritik und neue Perspektiven sind herzlich willkommen.  
 Bitte verwende Pull-Requests oder Issues – oder kontaktiere direkt:  
