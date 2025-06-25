@@ -44,8 +44,6 @@ Diese Ausschreibung richtet sich an Personen, die
 Gruppenzugehörigkeit ist systemisch invariant.  
 Alle, die sich von dieser Vision berühren lassen, sind Teil des Resonanzfelds – unabhängig von Nennung, Perspektive oder Sichtweise.  
 
-🔗 [Resonanzfeldtheorie Repository](https://github.com/DominicReneSchu/public)
-
 ---
 
 © Dominic-René Schu – Resonanzfeldtheorie 2025  
