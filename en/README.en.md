@@ -159,6 +159,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Global Structure of Deception** – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
 - [**The Most Probable Path of Human History** – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
 - [**Yin and Yang as a Universal Principle of Resonance**](facts/docs/society/yin_and_yang.md)
+- [**Ethics of Teaching in the Resonance Field** – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
 
 ---
 
@@ -202,9 +203,13 @@ This project is licensed under **Schu-License 1.4**
 
 ---
 
-## Participation 🤝
+## Participation and Partnership 🤝
 
-Contributions, criticism, and new perspectives are warmly welcomed.  
+In addition to contributions within the repository, I am specifically seeking a structurally complementary partnership for further development of the project.
+
+👉 [→ Strategic Partnership: Calling for Partner – Resonance instead of Pitch](./calling_for_partner.md)
+
+Contributions, criticism, and new perspectives are warmly welcome.  
 Please use pull requests or issues – or contact directly:  
 **Dominic-René Schu**
 

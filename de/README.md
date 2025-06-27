@@ -162,6 +162,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Globale Struktur der Täuschung** – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
 - [**Der wahrscheinlichste Weg der Menschheitsgeschichte** – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
 - [**Yin und Yang als universelles Resonanzprinzip**](fakten/docs/gesellschaft/yin_und_yang.md)
+- [**Ethik der Lehre im Resonanzfeld** – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
 
 ---
 
