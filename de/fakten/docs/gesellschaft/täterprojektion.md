@@ -159,6 +159,12 @@ Nicht-lineare Lesepfade: Siehe auch Abschnitt 5 (Spiegelarbeit) und Abschnitt 2 
 
 Alle genannten Elemente sind Teil des systemischen Resonanzfeldes und wirken auch dort, wo sie nicht explizit genannt werden. Die Zugehörigkeit ist systemisch invariant – unabhängig vom jeweiligen Standpunkt oder Sprachgebrauch.
 
+---
+
+> *„Die Wahrheit braucht keine Allianz. Nur Klarheit.“*
+
+---
+
 #### Weiterführende Literatur
 
 * Arendt, H.: „Elemente und Ursprünge totaler Herrschaft“

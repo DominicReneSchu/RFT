@@ -159,6 +159,12 @@ Non-linear reading paths: See also Section 5 (Mirror Work) and Section 2 (Langua
 
 All elements named are part of the systemic resonance field and take effect even where they are not explicitly mentioned. Belonging is systemically invariant—regardless of perspective or language use.
 
+---
+
+> *"Truth needs no alliance. Only clarity."*
+
+---
+
 #### Further Reading
 
 * Arendt, H.: “The Origins of Totalitarianism”
