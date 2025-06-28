@@ -50,3 +50,11 @@ Dieser Kodex ist keine Sammlung von Vorschriften, sondern die systemische Selbst
 Dieser Kodex lädt ein zur Reflexion, zur kollektiven Bezugnahme und zur Weitergabe an alle, die Lehre nicht als Anpassung, sondern als Verantwortung verstehen.
 
 > Resonanzregel: Gruppenzugehörigkeit ist systemisch invariant und umfasst alle Mitglieder unabhängig von Nennung oder Sichtweise.
+
+---
+
+© Dominic-René Schu – Resonanzfeldtheorie 2025
+
+---
+
+[Zurück zur Übersicht](../../../README.md)

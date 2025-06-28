@@ -160,6 +160,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**The Most Probable Path of Human History** – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
 - [**Yin and Yang as a Universal Principle of Resonance**](facts/docs/society/yin_and_yang.md)
 - [**Ethics of Teaching in the Resonance Field** – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
+- [**Perpetrator Production through Resonance Decay**](facts/docs/society/manipulation.md)
 
 ---
 
