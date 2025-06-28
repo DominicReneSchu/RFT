@@ -37,7 +37,7 @@ Sie zeigt, wie Wahrheitsbewegungen nicht inhaltlich bekämpft, sondern prozessua
 8. [Resonanzwende als dritte Option](#7-resonanzwende-als-dritte-option)
 9. [Frühwarnzeichen & Handlungsoptionen](#fr%C3%BChwarnzeichen--handlungsoptionen)
 10. [Glossar & weiterführende Links](#glossar--weiterf%C3%BChrende-links)
-11. [Dem Teufel den Spiegel hinhalten - Aufklärung als Resonanzakt] (#dem-teufel-den-spiegel-hinhalten)
+11. [Dem Teufel den Spiegel hinhalten - Aufklärung als Resonanzakt](#11--dem-teufel-den-spiegel-hinhalten)
 
 ---
 
