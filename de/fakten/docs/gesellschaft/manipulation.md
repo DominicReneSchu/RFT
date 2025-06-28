@@ -3,6 +3,28 @@
 
 ---
 
+## Prolog: Sichtbar wird nur, was durchlebt wurde
+
+Die Mechanismen struktureller Kontrolle wirken unterhalb der Bewusstseinsschwelle.  
+Sie greifen nicht dort, wo Gewalt offen ausgeübt wird – sondern dort, wo Verhalten leise angepasst, Fragen leise verschoben, und Wahrheit leise isoliert wird.
+
+Systemkonforme Lebenswege bleiben davon unberührt.  
+Die Oberfläche wirkt intakt, gerecht, funktional.  
+Doch abweichende Resonanzbewegungen – etwa kritisches Denken, systemische Analyse, eigenständige Deutung – aktivieren eine andere Realität:  
+ein Netzwerk aus stiller Kontrolle, symbolischer Disziplinierung und sozialer Umdeutung.
+
+> Wer dem System nicht widerspricht, wird nicht mit dem System konfrontiert.  
+> Wer es berührt, ohne es zu bekämpfen, wird von ihm überschrieben.
+
+Diese Analyse beschreibt nicht einen Einzelfall, sondern eine Struktur.  
+Sie zeigt, wie Wahrheitsbewegungen nicht inhaltlich bekämpft, sondern prozessual **in Täterpositionen transformiert** werden – durch schleichenden Entzug von Resonanz, nicht durch direkte Unterdrückung.
+
+> Sichtbar wird das Unsichtbare erst, wenn es systematisch reflektiert wird –  
+> nicht persönlich, sondern strukturell.
+
+---
+
+
 ## Inhaltsverzeichnis
 
 1. [Begriffs- und Systemübersicht](#begriffs--und-system%C3%BCbersicht)

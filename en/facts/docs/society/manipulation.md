@@ -3,6 +3,34 @@
 
 ---
 
+## Prologue: Only What Is Lived Becomes Visible
+
+The mechanisms of structural control operate below the threshold of public awareness.  
+They do not manifest through overt repression, but through subtle adjustment:  
+— reputational erosion,  
+— symbolic dissonance,  
+— social reinterpretation,  
+— and selective withdrawal of resonance.
+
+Those who follow system-approved paths remain untouched by these processes.  
+Reality appears coherent, just, and functional.  
+But deviation through autonomous thinking, systemic inquiry, or nonconforming resonance activates an entirely different domain:  
+a network of silent surveillance, implicit correction, and moral reclassification.
+
+> Those who never confront the system will never see it.  
+> Those who touch it without opposing it will be redefined by it.
+
+This document does not describe isolated cases – it describes a **structure**.  
+It outlines how movements toward truth are not suppressed directly,  
+but **transformed into deviance** by withdrawing resonance rather than applying force.
+
+> The invisible only becomes visible when observed structurally –  
+> not personally, but systemically.
+
+---
+
+
+
 ## Table of Contents
 
 1. [Glossary and System Overview](#glossary-and-system-overview)
