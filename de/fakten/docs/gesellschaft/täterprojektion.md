@@ -1,4 +1,3 @@
----
 ## Täterprojektion im Gewand des Antifaschismus
 
 **Systemische Dynamiken narzisstischer Macht in moralischer Sprache**

@@ -1,4 +1,3 @@
----
 ## Perpetrator Projection in the Guise of Anti-Fascism
 
 **Systemic Dynamics of Narcissistic Power in Moral Language**
