@@ -27,16 +27,16 @@ Sie zeigt, wie Wahrheitsbewegungen nicht inhaltlich bekämpft, sondern prozessua
 
 ## Inhaltsverzeichnis
 
-1. [Begriffs- und Systemübersicht](#begriffs--und-system%C3%BCbersicht)
-2. [Vom Außenseiter zur „Gefahr“: Der Kippmechanismus](#1-vom-au%C3%9Fenseiter-zur-gefahr-der-kippmechanismus)
+1. [Begriffs- und Systemübersicht](#begriffs--und-systemübersicht)
+2. [Vom Außenseiter zur „Gefahr“: Der Kippmechanismus](#1-vom-außenseiter-zur-gefahr-der-kippmechanismus)
 3. [Die stillen Werkzeuge: Resonanzblockade ohne Spuren](#2-die-stillen-werkzeuge-resonanzblockade-ohne-spuren)
-4. [Falltypologien: Der stille Amokläufer als Systemprodukt](#3-falltypologien-der-stille-amokl%C3%A4ufer-als-systemprodukt)
+4. [Falltypologien: Der stille Amokläufer als Systemprodukt](#3-falltypologien-der-stille-amokläufer-als-systemprodukt)
 5. [Algorithmische Resonanzverzerrung](#4-algorithmische-resonanzverzerrung)
-6. [Täter-Täter-Tausch: Die moralische Inszenierung](#5-t%C3%A4ter-t%C3%A4ter-tausch-die-moralische-inszenierung)
+6. [Täter-Täter-Tausch: Die moralische Inszenierung](#5-täter-täter-tausch-die-moralische-inszenierung)
 7. [Vom Minderwert zur Hybris](#6-vom-minderwert-zur-hybris)
 8. [Resonanzwende als dritte Option](#7-resonanzwende-als-dritte-option)
-9. [Frühwarnzeichen & Handlungsoptionen](#fr%C3%BChwarnzeichen--handlungsoptionen)
-10. [Glossar & weiterführende Links](#glossar--weiterf%C3%BChrende-links)
+9. [Frühwarnzeichen & Handlungsoptionen](#frühwarnzeichen--handlungsoptionen)
+10. [Glossar & weiterführende Links](#glossar--weiterführende-links)
 11. [Dem Teufel den Spiegel hinhalten - Aufklärung als Resonanzakt](#11-dem-teufel-den-spiegel-hinhalten--aufklarung-als-resonanzakt)
 
 ---
@@ -240,8 +240,7 @@ Durch Aufklärung, nicht Rache.
 
 ---
 
-## 11. Dem Teufel den Spiegel hinhalten  
-*Aufklärung als Resonanzakt*
+## 11. Dem Teufel den Spiegel hinhalten -- Aufklarung als Resonanzakt
 
 Es heißt seit Jahrhunderten:  
 **Man besiegt den Teufel nicht durch Gewalt – sondern durch den Spiegel.**  
@@ -290,8 +289,6 @@ Nicht, um Schuld zu verteilen,
 sondern um Resonanz dorthin zurückzubringen, wo sie systematisch entfernt wurde.
 
 **Wer den Spiegel hält, beendet das Spiel.**
-
----
 
 
 ---

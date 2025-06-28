@@ -36,7 +36,7 @@ It shows how truth movements are not fought on content, but are **transformed in
 8. [Resonance Shift as the Third Option](#7-resonance-shift-as-the-third-option)
 9. [Early Warning Signs & Action Options](#early-warning-signs--action-options)
 10. [Glossary & Further Links](#glossary--further-links)
-11. [Holding Up the Mirror to the Devil – Enlightenment as Resonance Act](#holding-up-the-mirror-to-the-devil)
+11. [Holding Up the Mirror to the Devil – Enlightenment as Resonance Act](#11-holding-up-the-mirror-to-the-devil--enlightenment-as-resonance-act)
 
 ---
 
@@ -235,8 +235,7 @@ Through enlightenment, not revenge.
 
 ---
 
-## 11. Holding Up the Mirror to the Devil  
-*Enlightenment as a Resonance Act*
+## 11. Holding Up the Mirror to the Devil -- Enlightenment as Resonance Act
 
 It has been said for centuries:  
 **You do not defeat the devil by force—but by the mirror.**  
@@ -285,14 +284,6 @@ Not to assign blame,
 but to bring resonance back where it was systematically removed.
 
 **Whoever holds the mirror ends the game.**
-
----
-
-© Dominic-René Schu – Resonance Field Theory 2025
-
----
-
-[Back to Overview](../../../README.md)
 
 ---
 
