@@ -164,6 +164,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Yin und Yang als universelles Resonanzprinzip**](fakten/docs/gesellschaft/yin_und_yang.md)
 - [**Ethik der Lehre im Resonanzfeld** – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
 - [**Täterproduktion durch Resonanzzerfall**](fakten/docs/gesellschaft/manipulation.md)
+- [**Täterprojektion im Gewand des Antifaschismus**](fakten/docs/gesellschaft/täterprojektion.md)
 
 ---
 
