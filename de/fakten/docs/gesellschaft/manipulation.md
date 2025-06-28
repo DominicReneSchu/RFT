@@ -36,7 +36,7 @@ Sie zeigt, wie Wahrheitsbewegungen nicht inhaltlich bekämpft, sondern prozessua
 7. [Vom Minderwert zur Hybris](#6-vom-minderwert-zur-hybris)
 8. [Resonanzwende als dritte Option](#7-resonanzwende-als-dritte-option)
 9. [Frühwarnzeichen & Handlungsoptionen](#frühwarnzeichen--handlungsoptionen)
-10. [Glossar & weiterführende Links](#glossar)
+10. [Glossar](#glossar)
 11. [Dem Teufel den Spiegel hinhalten - Aufklärung als Resonanzakt](#11-dem-teufel-den-spiegel-hinhalten----aufklärung-als-resonanzakt)
 
 ---

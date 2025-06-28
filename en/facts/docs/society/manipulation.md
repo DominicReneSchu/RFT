@@ -35,7 +35,7 @@ It shows how truth movements are not fought on content, but are **transformed in
 7. [From Inferiority to Hubris](#6-from-inferiority-to-hubris)
 8. [Resonance Shift as the Third Option](#7-resonance-shift-as-the-third-option)
 9. [Early Warning Signs & Action Options](#early-warning-signs--action-options)
-10. [Glossary & Further Links](#glossary--further-links)
+10. [Glossary](#glossary--further-links)
 11. [Holding Up the Mirror to the Devil – Enlightenment as Resonance Act](#11-holding-up-the-mirror-to-the-devil----enlightenment-as-resonance-act)
 
 ---
