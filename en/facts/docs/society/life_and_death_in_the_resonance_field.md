@@ -139,12 +139,12 @@ Only those who can resonate with it may reincarnate.
 
 ```text
 Amplitude
-  A ─────────●─────┐             ┌─────●─────────────┐
-            / \    │             │    / \            │
-           /   \   │             │   /   \           │
-          /     \  ▼             ▼  /     \          │
-         /       \                 /       \         │
-────────●─────────●──────────────●─────────●─────────●── Time →
+  A ─────────●─────┐             ┌────●─────────────┐
+            / \    │             │   / \            │
+           /   \   │             │  /   \           │
+          /     \  ▼             ▼ /     \          │
+         /       \                /       \         │
+────────●─────────●──────────────●─────────●────────●── Time →
       Birth       Death      Reconnection  Reincarnation
 
       ▲ Individual (𝓛)   ▲ Death (𝓣) (recursive)   ▲ New Life (𝓛′)
