@@ -139,10 +139,10 @@ Only those who can resonate with it may reincarnate.
 
 ```text
 Amplitude
-  A ─────────●─────┐             ┌────●─────────────┐
-            / \    │             │   / \            │
-           /   \   │             │  /   \           │
-          /     \  ▼             ▼ /     \          │
+  A ─────────●────┐              ┌────●─────────────┐
+            / \   │              │   / \            │
+           /   \  │              │  /   \           │
+          /     \ ▼              ▼ /     \          │
          /       \                /       \         │
 ────────●─────────●──────────────●─────────●────────●── Time →
       Birth       Death      Reconnection  Reincarnation
