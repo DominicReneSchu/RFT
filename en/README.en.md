@@ -162,6 +162,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Ethics of Teaching in the Resonance Field** – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
 - [**Perpetrator Production through Resonance Decay**](facts/docs/society/manipulation.md)
 - [**Perpetrator Projection in the Guise of Antifascism**](facts/docs/society/perpetrator_projection.md)
+- [**Strategy of Controlled Derailment**](facts/docs/society/strategy_of_controlled_derailment.md)
 
 ---
 

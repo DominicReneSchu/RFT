@@ -165,6 +165,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Ethik der Lehre im Resonanzfeld** – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
 - [**Täterproduktion durch Resonanzzerfall**](fakten/docs/gesellschaft/manipulation.md)
 - [**Täterprojektion im Gewand des Antifaschismus**](fakten/docs/gesellschaft/täterprojektion.md)
+- [**Strategie der kontrollierten Entgleisung**](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
 
 ---
 
