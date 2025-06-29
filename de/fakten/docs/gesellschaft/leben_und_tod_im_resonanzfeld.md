@@ -139,12 +139,12 @@ Nur wer mit dieser mitschwingen kann, darf neu inkarnieren.
 
 ```text
 Amplitude
-  A ─────────●─────┐               ┌─────●─────────────┐
-            / \    │             │    / \             │
-           /   \   │             │   /   \            │
-          /     \  ▼             ▼  /     \           │
-         /       \                 /       \          │
-────────●─────────●──────────────●─────────●──────────●── Zeit →
+  A ─────────●─────┐              ┌─────●─────────────┐
+            / \    │              │    / \            │
+           /   \   │              │   /   \           │
+          /     \  ▼              ▼  /     \          │
+         /       \                  /       \         │
+────────●─────────●──────   ───────●─────────●────────●── Zeit →
       Geburt      Tod         Rückbindung  Reinkarnation
 
       ▲ Individuum (𝓛)    ▲ Tod (𝓣) (rekursiv)    ▲ Neues Leben (𝓛′)
