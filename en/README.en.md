@@ -163,6 +163,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Perpetrator Production through Resonance Decay**](facts/docs/society/manipulation.md)
 - [**Perpetrator Projection in the Guise of Antifascism**](facts/docs/society/perpetrator_projection.md)
 - [**Strategy of Controlled Derailment**](facts/docs/society/strategy_of_controlled_derailment.md)
+- [**Life, Death, and Return** – Cyclical Resonance Structure in the Resonance Field](facts/docs/society/life_and_death_in_the_resonance_field.md)
 
 ---
 

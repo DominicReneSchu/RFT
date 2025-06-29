@@ -166,6 +166,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Täterproduktion durch Resonanzzerfall**](fakten/docs/gesellschaft/manipulation.md)
 - [**Täterprojektion im Gewand des Antifaschismus**](fakten/docs/gesellschaft/täterprojektion.md)
 - [**Strategie der kontrollierten Entgleisung**](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
+- [**Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld**](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
 
 ---
 
