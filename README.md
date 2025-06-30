@@ -78,7 +78,7 @@ REAKTIVE GESELLSCHAFT                        RESONANTE GESELLSCHAFT
 ─────────────────────────────                 ───────────────────────────────────────
                 │                                             │
                 │     Bewusstwerdung systemischer             │
-                │─────────> Zusammenhänge <───────────────│
+                │─────────> Zusammenhänge <───────────────    │
                 │                                             │
 Projektion   Illusion   Konkurrenz         Integration   Transparenz   Ko-Kreation
     │           │          │                   │            │             │
