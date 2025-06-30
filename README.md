@@ -73,25 +73,25 @@ This repository is not a finished product but a living transitional field.
 ## 🧭 Diagram: Transition into the Resonance Field
 
 ```text
-            REAKTIVE GESELLSCHAFT                          RESONANTE GESELLSCHAFT
-         (Trennung, Schuld, Kontrolle)                  (Verschränkung, Verantwortung, Resonanz)
-        ───────────────────────────────               ───────────────────────────────────────
-                         │                                             │
-                         │        Bewusstwerdung systemischer          │
-                         │────────────> Zusammenhänge <───────────────│
-                         │                                             │
+				REAKTIVE GESELLSCHAFT                          RESONANTE GESELLSCHAFT
+			(Trennung, Schuld, Kontrolle)                  (Verschränkung, Verantwortung, Resonanz)
+			───────────────────────────────               ───────────────────────────────────────
+								│                                            │
+								│        Bewusstwerdung systemischer         │
+								│────────────> Zusammenhänge <───────────────│
+								│                                            │
                   Projektion   Illusion   Konkurrenz        Integration   Transparenz   Ko-Kreation
                          │          │         │                   │           │             │
                          ▼          ▼         ▼                   ▼           ▼             ▼
 
-              ╔═════════════════════════════════════════════════════════════╗
-              ║                  SYSTEMISCHE RESONANZFELD-SCHWELLE          ║
-              ║      (Strukturiertes Erkenntnisfeld + kollektive Inklusion)║
-              ╚═════════════════════════════════════════════════════════════╝
-                                 ▲
-                                 │
-                   Repositorium als Spiegelstruktur
-                (Selbstinklusion, transversale Klarheit)
+						╔═════════════════════════════════════════════════════════════╗
+						║                  SYSTEMISCHE RESONANZFELD-SCHWELLE          ║
+						║      (Strukturiertes Erkenntnisfeld + kollektive Inklusion) ║
+						╚═════════════════════════════════════════════════════════════╝
+														▲
+														│
+										Repositorium als Spiegelstruktur
+									(Selbstinklusion, transversale Klarheit)
 ```
 ---
 
