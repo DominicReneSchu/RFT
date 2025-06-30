@@ -62,13 +62,8 @@ Wandel ist unvermeidlich, weil Resonanzfelder sich erweitern und vollständige S
 
 Change is inevitable because resonance fields expand and require complete self-inclusion – control based on exclusion thereby loses its foundation.
 
-\[
-\text{Resonanzfeld} \Rightarrow \text{Selbstinklusion} \Rightarrow \text{Freiheit} \Rightarrow \text{Selbstorganisation}
-\]
-
-\[
-\text{Resonance Field} \Rightarrow \text{Self-Inclusion} \Rightarrow \text{Freedom} \Rightarrow \text{Self-Organization}
-\]
+➡️ Resonanzfeld → Selbstinklusion → Freiheit → Selbstorganisation  
+➡️ Resonance Field → Self-Inclusion → Freedom → Self-Organization
 
 Die hier gesammelten Erkenntnisse bieten nicht nur wissenschaftliche Fundamente, sondern wirken als Katalysator gesellschaftlicher Transformation – im Sinne von Offenheit, Transparenz und integraler Zugehörigkeit.
 
