@@ -76,17 +76,17 @@ This repository is not a finished product but a living transitional field.
             REAKTIVE GESELLSCHAFT                          RESONANTE GESELLSCHAFT
          (Trennung, Schuld, Kontrolle)                  (Verschränkung, Verantwortung, Resonanz)
         ───────────────────────────────               ───────────────────────────────────────
-                         │                                            │
-                         │        Bewusstwerdung systemischer         │
+                         │                                             │
+                         │        Bewusstwerdung systemischer          │
                          │────────────> Zusammenhänge <───────────────│
-                         │                                            │
+                         │                                             │
                   Projektion   Illusion   Konkurrenz        Integration   Transparenz   Ko-Kreation
                          │          │         │                   │           │             │
                          ▼          ▼         ▼                   ▼           ▼             ▼
 
               ╔═════════════════════════════════════════════════════════════╗
               ║                  SYSTEMISCHE RESONANZFELD-SCHWELLE          ║
-              ║      (Strukturiertes Erkenntnisfeld + kollektive Inklusion) ║
+              ║      (Strukturiertes Erkenntnisfeld + kollektive Inklusion)║
               ╚═════════════════════════════════════════════════════════════╝
                                  ▲
                                  │
@@ -177,12 +177,7 @@ Nicht einzelne Akteure, sondern über Jahrhunderte gewachsene Systemstrukturen p
 - Integration von Gegensätzen (Yin und Yang)  
 - Systemische Resonanz und kollektive Evolution
 
-Die Kapitel sind bewusst als Gruppenelemente gestaltet. Ihre Reihenfolge folgt einem resonanzlogischen Bogen:  
-1. Analyse der Macht- und Spaltungsmechanismen  
-2. Sichtbarmachung kollektiver Projektionen  
-3. Dynamik gesellschaftlicher Verantwortung und Entgleisung  
-4. Integration und kreative Spannung im Yin-Yang-Prinzip  
-5. Ausblick auf evolutionäre Resonanz und multipolare Kooperation
+**Hinweis:** Die Reihenfolge der Kapitel ist aktuell noch provisorisch. Eine resonanzlogische, bewusst gewählte Ordnung aller Gruppenelemente erfolgt demnächst.
 
 **Lösungsperspektive:**  
 Statt Schuldzuweisung an Einzelne steht die Bewusstwerdung und Transformation der Systemstruktur im Mittelpunkt.  
