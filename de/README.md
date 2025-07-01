@@ -168,6 +168,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Strategie der kontrollierten Entgleisung**](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
 - [**Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld**](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
 - [**Geopolitik im Resonanzfeld** – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
+- [**Politische Resonanzsysteme unter medialer Projektion**](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
 
 ---
 
