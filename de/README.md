@@ -169,6 +169,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld**](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
 - [**Geopolitik im Resonanzfeld** – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
 - [**Politische Resonanzsysteme unter medialer Projektion**](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
+- [**Globale Resonanzstörung** – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
 
 ---
 
