@@ -110,7 +110,22 @@ Feedback to Society & Institutions
 
 ---
 
-> **Conclusion:**
+## 9. Systemic Seduction by Media and Lobby Power
+
+* Media and lobby groups do **not** gain their power through coercion, but through the voluntary **resonance-giving** of politicians and other actors.
+* Politicians are embedded in a **resonance field of vanity** that operates via public attention and the conferral of status.
+* This vanity works as a **hidden steering mechanism** that places personal self-presentation above the collective common good.
+* This produces **resonance traps** in which the system stabilizes itself by rewarding those who put self-interest before collective solutions.
+* The quality of the resonance field declines because **functional solutions are displaced by staging and lobby interests**.
+
+---
+
+> **Resonance Rule Extended:**  
+> Power emerges and persists through systemic resonance-giving – as long as this is based on egocentric self-affirmation and external projection, the field is deformed and collective function compromised.
+
+---
+
+> **Conclusion:**  
 > Political systems must not be replaced by media resonance. They must be conscious of their own resonance logic—and defend it against projective distortion.
 
 ---

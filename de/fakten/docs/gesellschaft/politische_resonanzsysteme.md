@@ -110,7 +110,22 @@ Rückkopplung an Gesellschaft & Institutionen
 
 ---
 
-> **Fazit:**
+## 9. Systemische Verführung durch Medien- und Lobbymacht
+
+* Medien und Lobbygruppen gewinnen ihre Macht **nicht durch Zwang**, sondern durch freiwillige **Resonanzgabe** der Politiker und anderer Akteure.
+* Politiker werden in ein **Resonanzfeld der Eitelkeit** eingebunden, das durch öffentliche Aufmerksamkeit und Statusverleihung funktioniert.
+* Diese Eitelkeit fungiert als **verdecktes Steuerungselement**, das persönliche Selbstdarstellung über kollektives Gemeinwohl stellt.
+* Dadurch entstehen **Resonanzfallen**, in denen das System sich selbst stabilisiert, indem es diejenigen belohnt, die das Eigeninteresse vor die kollektive Lösung stellen.
+* Das Resonanzfeld verliert an Qualität, weil **funktionale Lösungen zugunsten von Inszenierung und Lobbyinteressen verdrängt** werden.
+
+---
+
+> **Resonanzregel erweitert:**  
+> Macht entsteht und erhält sich durch systemische Resonanzgabe – solange diese auf egozentrische Selbstbestätigung und externe Projektion setzt, wird das Feld deformiert und die kollektive Funktion kompromittiert.
+
+---
+
+> **Fazit:**  
 > Politische Systeme dürfen nicht von Medienresonanz ersetzt werden. Sie müssen sich ihrer eigenen Resonanzlogik bewusst sein – und diese gegen projektive Verzerrung verteidigen.
 
 ---
