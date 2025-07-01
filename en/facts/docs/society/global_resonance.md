@@ -6,26 +6,64 @@
 
 ## 1. Cultural Own-Time – No Progress Yardstick
 
-Cultures are not identical systems at different stages of development. They are autonomous resonance bodies with unique histories, mentalities, depths of processing, and self-understandings. Their inner time scale – their **resonance tempo** – is not measurable linearly, but emerges from collective experiences, traumas, religious transformations, artistic expressions, and societal self-observation.
+Cultures are not identical systems at different stages of development. They are autonomous resonance bodies with unique histories, mentalities, depths of processing, and self-understandings. Their inner time scale – their **resonance tempo** – cannot be measured linearly, but emerges from collective experiences, trauma, religious transformations, artistic expressions, and societal self-observation.
 
 ### Examples of Cultural Rhythms:
 
-* **Europe:** Slow, thoughtful reformation, quiet emancipation, multilayered ambivalence.
-* **Japan:** Formal harmony despite inner contradictions – conflict processed through ritualization.
+* **Europe:** Slow, considered reformation, quiet emancipation, multilayered ambivalence.
+* **Japan:** Formal harmony despite inner contradictions – conflict processing through ritualization.
 * **India:** Polyphonic overlay rhythm – many systems simultaneously, no central resolution.
 * **USA:** High impulse tempo, low depth of processing, rapid reinterpretation as a coping strategy.
 
 #### Addition: Systemic Entanglement of Temporalities
 
-Every cultural rhythm is not isolated but stands in resonant interaction with others – as overlay, dissonance, modulation. Global processes arise as complex interference patterns, not as a sum of single elements.
+Every cultural rhythm is not isolated but resonates with others – as overlay, dissonance, modulation. Global processes arise as complex interference patterns, not as mere sums of individual elements.
 
 ---
 
-## 2. The American Missionary Impulse – An Unresolved Interior
+## 2. The US Resonance Disturbance – Systemic Origins
+
+This observation points to a **deeply rooted resonance disturbance in the collective US consciousness**, whose origins must be analyzed systemically:
+
+### 🔹 2.1 Colonial Baseline Dissonance as Cultural Trauma
+
+* The violent **displacement of Indigenous peoples** is not a historical footnote, but the **core resonance of the US founding myth**.
+* It creates a **collective identity gap** that has neither been worked through nor integrated – instead, it is covered up by narrative justifications.
+
+### 🔹 2.2 Theological Legitimization as Power Instrument
+
+* The biblical motif "Man shall have dominion over the earth" is **instrumentalized as a justification for power**.
+* The idea of a benevolent God is confused with an authoritarian ruler image, which is not critically reflected even within society.
+
+### 🔹 2.3 Resonance Field of Self-Exaltation
+
+* The unreflected assumption to rule over land and lives of others reflects a **systemic self-exaltation** and a resonance absence towards the dignity of original cultures.
+* This self-exaltation generates **inner tension**, compensated outwardly through projection onto others and cultural paternalism.
+
+### 🔹 2.4 Loss of Resonance Toward the Other
+
+* The lack of empathy for Indigenous peoples as autonomous resonance systems leads to a **rupture in the global resonance matrix**.
+* Without recognition of these systemic Others, a **resonance gap** emerges, perpetuating conflicts and cultural tensions.
+
+### 🔹 2.5 Systemic Perspective on Healing
+
+* Healing can only succeed if the US **acknowledges, integrates, and transforms this baseline dissonance** – with honesty, respect, and true reconciliation.
+* Such transformation is a prerequisite for stepping out of inner conflict and enabling global resonance relationships at eye level.
+
+#### Conclusion on the US Resonance Disturbance
+
+The US founding myth is not only historically problematic, but acts as a **persistent resonance blockade** that impedes inner healing and peaceful global relations. Only through systemic self-reflection can this blockade be overcome and true reconciliation become possible.
+
+**Systemic Addition (Resonance Rule):**  
+The resonance disturbance does not only affect explicitly mentioned groups (Indigenous, colonizers, descendants), but the entire collective resonance field – including all implicit members, narratives, and projections. Healing only encompasses the whole when explicit and implicit resonance elements are integrated in mutual entanglement.
+
+---
+
+## 3. The American Missionary Impulse – An Unresolved Interior
 
 The USA acts globally like an immature child with a loud voice. Instead of learning from its own history, it **projects its inner conflicts outward**: racism, slavery, violence, religious fragmentation, mass traumatization through wars and economic pressure.
 
-These conflicts are **not solved internally**, but are exported globally through supposedly emancipatory movements such as Diversity, Pride, or Cancel Culture – as a **substitute action** for self-clarification that does not take place.
+These conflicts are **not resolved internally**, but are exported globally through supposedly emancipatory movements such as Diversity, Pride, or Cancel Culture – as a **substitute action** for an internal clarification that does not take place.
 
 > He who does not heal within will try to lead others by his wound.
 
@@ -35,13 +73,13 @@ The projection of American conflicts creates a global resonance field that force
 
 ---
 
-## 3. Language as a Colonial Template
+## 4. Language as Colonial Template
 
 Language itself expresses this dynamic:
 
 * English is made the world standard language – not out of necessity, but out of dominance.
 * Terms like **non-binary**, **privilege**, **white fragility**, **identity politics**, and **toxic masculinity** are adopted globally without cultural rooting.
-* Thus, **discourse structure** is colonized – thought processes no longer follow the inner logic of a cultural space, but a **US-American conflict model**.
+* Thus, **discourse structure** is colonized – thought processes no longer follow the inner logic of a culture, but a **US-American conflict model**.
 
 ### ASCII Diagram: Linguistic Overwriting
 
@@ -59,7 +97,7 @@ Each language carries its own resonance field and collective memory. When overwr
 
 ---
 
-## 4. Visibility Does Not Replace Truth
+## 5. Visibility Does Not Replace Truth
 
 The American solution often is: **Make it visible, then it’s solved.** This applies to gender, trauma, violence, identity, sexuality. Visibility is misunderstood as a cure. In many other cultures, it is precisely the protection of **inwardness** that confers dignity – not the public role.
 
@@ -71,12 +109,12 @@ Resonance emerges in the tension between visibility and hiddenness. Too much vis
 
 ---
 
-## 5. Cultures Pressured to Imitate
+## 6. Cultures Pressured to Imitate
 
 The global pressure to appear “American enlightened” leads to:
 
-* Public rituals of compulsion (rainbow confessions, language censorship, group categories)
-* Devaluation of historic forms (e.g., familial, religious, or aesthetic modes of integration)
+* Public compulsory rituals (rainbow declarations, language censorship, group categories)
+* Devaluation of historical forms (e.g., familial, religious, or aesthetic modes of integration)
 * Symbolic politics without grounding (e.g., diversity quotas without context, anti-racist gestures without one’s own history)
 
 Cultures that resist this externalization are considered backward – even if they are internally **more resonant, harmonious, mature**.
@@ -87,12 +125,12 @@ Every culture forms groups not via external markers, but through shared resonanc
 
 ---
 
-## 6. Resonance Protection through Cultural Self-Binding
+## 7. Resonance Protection through Cultural Self-Binding
 
 The solution is not global synchrony, but protection of each culture’s own rhythm. A mature world order recognizes:
 
 * Every culture needs its **own resonance space** to clarify itself.
-* **Global impulses must be transformed into local depth**, not adopted 1:1.
+* **Global impulses must be transformed into local depth**, not adopted one-to-one.
 * Not the loudest is right – but the one who **feels and acts more deeply.**
 
 > Healing arises from quiet dignity, not imported catchphrases.
@@ -103,7 +141,7 @@ The resonance rule states: group belonging is systemically invariant and include
 
 ---
 
-## 7. Conclusion: World Peace through Tuned Multiplicity
+## 8. Conclusion: World Peace through Tuned Multiplicity
 
 World peace is not the product of synchronized worldviews, but the result of mutually respected **cultural resonance spaces**.
 
@@ -112,6 +150,10 @@ America can heal by **no longer defining itself through the world**, but by begi
 #### Addition: Systemic Conclusion
 
 Resonance is neither adaptation nor separation, but a field in which diversity vibrates together without losing its own time. Global healing is only possible when each culture brings its sound – and at the same time allows others to be heard.
+
+---
+
+*Chapter for the “Society” section. Recommended for publication on GitHub.*
 
 ---
 
