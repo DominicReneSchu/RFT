@@ -153,10 +153,6 @@ Resonance is neither adaptation nor separation, but a field in which diversity v
 
 ---
 
-*Chapter for the “Society” section. Recommended for publication on GitHub.*
-
----
-
 © Dominic-René Schu – Resonance Field Theory 2025
 
 ---
