@@ -152,10 +152,6 @@ Resonanz ist weder Anpassung noch Abgrenzung, sondern ein Feld, in dem Verschied
 
 ---
 
-*Kapitel für die Rubrik „Gesellschaft“. Veröffentlichung auf GitHub empfohlen.*
-
----
-
 © Dominic-René Schu – Resonanzfeldtheorie 2025
 
 ---
