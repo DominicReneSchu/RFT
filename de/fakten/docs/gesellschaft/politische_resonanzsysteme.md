@@ -65,7 +65,7 @@ Das vollständige Resonanzfeld bleibt stets wirksam – unabhängig davon, was m
 
 ## 6. Persönliche Resonanzerfahrung in politischen Resonanzfeldern
 
-Die eigene Erfahrung in einer politischen Gruppierung, etwa bei der WerteUnion, zeigt den fundamentalen Widerspruch, der im Resonanzfeld politischer Gremien oft wirksam wird:  
+Die eigene Erfahrung in einer politischen Gruppierung, etwa bei der WerteUnion oder dieBasis, zeigt den fundamentalen Widerspruch, der im Resonanzfeld politischer Gremien oft wirksam wird:  
 
 - **Selbstinszenierung als normatives Verhalten:** Wer das Mikrofon erhält, nutzt die Bühne primär, um sich selbst darzustellen, anstatt kollektive Lösungen zu fördern.  
 - **Lösungsorientierung als Fremdkörper:** Sachlich vorgetragene Lösungskonzepte wirken in diesem Kontext oft als Störfaktor und werden von der Gruppe nicht aufgenommen.  

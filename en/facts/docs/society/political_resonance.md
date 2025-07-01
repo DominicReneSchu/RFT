@@ -65,7 +65,7 @@ The complete resonance field remains effective—regardless of what is projected
 
 ## 6. Personal Resonance Experience in Political Fields
 
-Personal experience in a political group, such as the WerteUnion, reveals the fundamental contradiction often present in the resonance field of political bodies:
+Personal experience in a political group, such as the WerteUnion or dieBasis, reveals the fundamental contradiction often present in the resonance field of political bodies:
 
 - **Self-staging as normative behavior:** Those who gain the microphone use the stage primarily for self-presentation, rather than to foster collective solutions.
 - **Solution orientation as a foreign body:** Fact-based solution proposals often act as a disruptive factor in this context and are not taken up by the group.
