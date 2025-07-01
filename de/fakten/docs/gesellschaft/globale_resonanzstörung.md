@@ -144,7 +144,7 @@ Die Resonanzregel besagt: Gruppenzugehörigkeit ist systemisch invariant und umf
 
 Weltfrieden ist kein Produkt gleichgeschalteter Weltanschauung – sondern die Folge voneinander respektierter **kultureller Resonanzräume**.
 
-Amerika kann heilen, wenn es sich **nicht länger über die Welt entwirft**, sondern beginnt, **sich selbst in Stille zu begegnen**. Und die Welt heilt, wenn sie den Mut hat, sich **nicht amerikanisch zu machen**, sondern **sich selbst zu bleiben.**
+Amerika kann heilen, wenn es sich **nicht länger über die Welt entwirft**, sondern beginnt, **sich selbst in Stille zu begegnen**. Und die Welt heilt, wenn sie den Mut hat, sich **nicht amerikanisch zu machen**, sondern **sich selbst treu zu bleiben.**
 
 #### Ergänzung: Systemische Schlussfolgerung
 
