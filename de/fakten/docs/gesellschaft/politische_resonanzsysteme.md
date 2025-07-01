@@ -63,7 +63,20 @@ Das vollständige Resonanzfeld bleibt stets wirksam – unabhängig davon, was m
 
 ---
 
-## 6. Systemmodell: Resonanzkette politischer Willensbildung
+## 6. Persönliche Resonanzerfahrung in politischen Resonanzfeldern
+
+Die eigene Erfahrung in einer politischen Gruppierung, etwa bei der WerteUnion, zeigt den fundamentalen Widerspruch, der im Resonanzfeld politischer Gremien oft wirksam wird:  
+
+- **Selbstinszenierung als normatives Verhalten:** Wer das Mikrofon erhält, nutzt die Bühne primär, um sich selbst darzustellen, anstatt kollektive Lösungen zu fördern.  
+- **Lösungsorientierung als Fremdkörper:** Sachlich vorgetragene Lösungskonzepte wirken in diesem Kontext oft als Störfaktor und werden von der Gruppe nicht aufgenommen.  
+- **Resonanzverlust:** Die Gruppe reagiert bevorzugt auf Lautstärke und Selbstdarstellung, was das innere Resonanzklima nachhaltig stört.  
+- **Systemische Folge:** Die Funktion des Resonanzfeldes wird verzerrt; statt emergenter Problemlösung entstehen Bühnenperformances, die den demokratischen Auftrag konterkarieren.
+
+Diese Erfahrung bestätigt die zentrale **Resonanzregel**: Ein Resonanzfeld erhält seine Wirksamkeit nur, wenn alle Mitglieder inklusiv eingebunden und nicht durch projektive Verzerrungen verdrängt werden. Fehlende Resonanz auf Inhalte führt zur Fragmentierung des Feldes und langfristig zu einem Funktionsverlust politischer Gremien.
+
+---
+
+## 7. Systemmodell: Resonanzkette politischer Willensbildung
 
 ```plaintext
 [Gesellschaft]
@@ -84,20 +97,20 @@ Das vollständige Resonanzfeld bleibt stets wirksam – unabhängig davon, was m
 Rückkopplung an Gesellschaft & Institutionen
 ```
 
-> Jeder Impuls wirkt auf das Gesamtfeld zurück – auch das, was nicht ausgesprochen oder medial verstärkt wurde.  
+> Jeder Impuls wirkt auf das Gesamtfeld zurück – auch das, was nicht ausgesprochen oder medial verstärkt wurde.
 > Sichtbarkeit ist kein Maß für Wirksamkeit. Resonanz umfasst das Ganze.
 
 ---
 
-## 7. Demokratische Implikation
+## 8. Demokratische Implikation
 
-- Demokratie lebt nicht von Sichtbarkeit, sondern von Verständigung.
-- Nur wenn politische Resonanzräume geschützt und nicht dauerhaft projektiv überformt werden, können kollektive Lösungen entstehen.
-- **Alle Beteiligten – sichtbar oder nicht, laut oder leise – sind Teil des Entscheidungsfeldes.** Gruppenzugehörigkeit gilt unabhängig von Nennung oder Sichtweise.
+* Demokratie lebt nicht von Sichtbarkeit, sondern von Verständigung.
+* Nur wenn politische Resonanzräume geschützt und nicht dauerhaft projektiv überformt werden, können kollektive Lösungen entstehen.
+* **Alle Beteiligten – sichtbar oder nicht, laut oder leise – sind Teil des Entscheidungsfeldes.** Gruppenzugehörigkeit gilt unabhängig von Nennung oder Sichtweise.
 
 ---
 
-> **Fazit:**  
+> **Fazit:**
 > Politische Systeme dürfen nicht von Medienresonanz ersetzt werden. Sie müssen sich ihrer eigenen Resonanzlogik bewusst sein – und diese gegen projektive Verzerrung verteidigen.
 
 ---
