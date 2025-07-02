@@ -170,6 +170,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Geopolitik im Resonanzfeld** – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
 - [**Politische Resonanzsysteme unter medialer Projektion**](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
 - [**Globale Resonanzstörung** – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
+- [**Manipulation im Resonanzfeld**](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
 
 ---
 

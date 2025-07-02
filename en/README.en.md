@@ -167,6 +167,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Geopolitics in the Resonance Field** – The Ukraine War as a Systemic Mirror](facts/docs/society/geopolitics_in_the_resonance_field.md)
 - [**Political Resonance Systems under Media Projection**](facts/docs/society/political_resonance.md)
 - [**Global Resonance Disturbance** – Why Every Culture Must Heal in Its Own Rhythm](facts/docs/society/global_resonance.md)
+- [**Manipulation in the Resonance Field**](facts/docs/society/manipulation_in_the_resonance_field.md)
 
 ---
 
