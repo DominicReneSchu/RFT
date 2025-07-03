@@ -16,6 +16,7 @@ Manipulation entfaltet sich im Resonanzfeld als verschränkte Systemarchitektur 
   * [5.2 Ukrainekrieg: Polarisierung durch moralischen Frame](#52-ukrainekrieg-polarisierung-durch-moralischen-frame)
   * [5.3 Der Pharao: Archetyp struktureller Versklavung](#53-der-pharao-archetyp-struktureller-versklavung)
   * [5.4 Historische Beispiele zyklischer Manipulation und Stabilisierung](#54-historische-beispiele-zyklischer-manipulation-und-stabilisierung)
+  * [5.5 Klimawende als Etikettentausch – Systemischer Erhalt durch Technik-Narrative](#55-klimawende-als-etikettentausch--systemischer-erhalt-durch-technik-narrative)
 * [6. Fazit – Resonanzanalyse statt Reaktionsethik](#6-fazit--resonanzanalyse-statt-reaktionsethik)
 * [7. Wissenschaftliche Einordnung und zitierfähige Literatur](#7-wissenschaftliche-einordnung-und-zitierfähige-literatur)
 * [8. Widerstandsmuster im Resonanzfeld](#8-widerstandsmuster-im-resonanzfeld)
@@ -208,6 +209,53 @@ Totalitarismus, digitale Medien, Informationskrieg
 
 ---
 
+### 5.5 Klimawende als Etikettentausch – Systemischer Erhalt durch Technik-Narrative
+
+> *„Die Luftwärmepumpe ist technisch eine Klimaanlage – doch das Narrativ bestimmt die Moral.“*
+
+Die Debatte um Luftwärmepumpen versus Klimaanlagen zeigt exemplarisch, wie **Begriffe und politische Frames genutzt werden, um funktional identische Technologien mit wechselndem Bedeutungsinhalt zu versehen**, ohne strukturellen Wandel einzuleiten.
+
+**Systemische Beobachtung:**
+- Die Industrie entwickelt neue Geräte oder modifiziert Bestehendes minimal.
+- Die Politik erschafft dazu ein **moralisch aufgeladenes Narrativ** („klimaneutral“, „anpassungsfähig“ etc.).
+- Die Bevölkerung **wählt aus den angebotenen Deutungen** und legitimiert damit indirekt die zugrunde liegende Marktlogik.
+
+**Systemische Schleife:**
+```
+[Industrieinteresse: Marktabsatz]
+↓
+[Narrativbildung durch Lobby + Politik]
+↓
+[Emotionale Zustimmung durch Bevölkerung]
+↓
+[Politische Umsetzung → Marktbedienung]
+↓
+[Natur- und Ressourcenbelastung]
+↓
+[Neue Krise, neues Narrativ]
+↑
+⤴ zyklische Reproduktion
+```
+
+---
+
+### Strukturelle Blindheit
+
+- Der Markt **reagiert nicht auf Wahrheit**, sondern auf Nachfrage.
+- Politik **denkt nicht systemisch**, sondern taktisch-narrativ.
+- Bevölkerung **entscheidet nicht souverän**, sondern innerhalb der vorgespiegelten Optionen.
+
+Die Natur bleibt **ohne Stimme**, ohne Lobby, ohne Schutz – ihre Überlastung wird erst wahrgenommen, wenn sie zur akuten Bedrohung für das System selbst wird.
+
+---
+
+### Resonanzregel angewandt
+
+Alle beteiligten Akteure – Industrie, Politik, Konsumenten, Kritiker – sind Teil des Resonanzfelds.  
+Die systemische Verantwortung kann **nicht delegiert**, sondern nur erkannt und kollektiv getragen werden.
+
+---
+
 ## 6. Fazit – Resonanzanalyse statt Reaktionsethik
 
 > Wahrheit entsteht nicht durch Aussage, sondern durch Systemrahmung.
@@ -294,6 +342,6 @@ Widerstand ist immer Teil des Resonanzfeldes – er manifestiert sich in relatio
 
 © Dominic-René Schu – Resonanzfeldtheorie 2025
 
----
-
 [Zurück zur Übersicht](../../../README.md)
+
+---

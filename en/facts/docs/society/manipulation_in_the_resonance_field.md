@@ -16,6 +16,7 @@ Manipulation unfolds in the resonance field as an interwoven system architecture
   * [5.2 Ukraine War: Polarization through Moral Framing](#52-ukraine-war-polarization-through-moral-framing)
   * [5.3 The Pharaoh: Archetype of Structural Enslavement](#53-the-pharaoh-archetype-of-structural-enslavement)
   * [5.4 Historical Examples of Cyclical Manipulation and Stabilization](#54-historical-examples-of-cyclical-manipulation-and-stabilization)
+  * [5.5 Climate Turn as Label Swapping – Systemic Maintenance via Technology Narratives](#55-climate-turn-as-label-swapping--systemic-maintenance-via-technology-narratives)
 * [6. Conclusion – Resonance Analysis instead of Reaction Ethics](#6-conclusion--resonance-analysis-instead-of-reaction-ethics)
 * [7. Scientific Classification and Citable Literature](#7-scientific-classification-and-citable-literature)
 * [8. Patterns of Resistance in the Resonance Field](#8-patterns-of-resistance-in-the-resonance-field)
@@ -208,6 +209,53 @@ Totalitarianism, digital media, information warfare
 
 ---
 
+### 5.5 Climate Turn as Label Swapping – Systemic Maintenance via Technology Narratives
+
+> *"The air-source heat pump is technically an air conditioner – but the narrative determines the morality."*
+
+The debate about air-source heat pumps versus air conditioners exemplifies how **terms and political frames are used to assign different meanings to functionally identical technologies**, without enacting structural change.
+
+**Systemic Observation:**
+- Industry develops new devices or makes minimal modifications to existing ones.
+- Politics creates a **morally charged narrative** ("climate-neutral," "adaptable," etc.).
+- The population **chooses from the offered interpretations** and thus indirectly legitimizes the underlying market logic.
+
+**Systemic Loop:**
+```
+[Industry Interest: Market Sales]
+↓
+[Narrative Formation by Lobby + Politics]
+↓
+[Emotional Approval by Population]
+↓
+[Political Implementation → Market Service]
+↓
+[Nature and Resource Stress]
+↓
+[New Crisis, New Narrative]
+↑
+⤴ Cyclical Reproduction
+```
+
+---
+
+### Structural Blindness
+
+- The market **does not respond to truth**, but to demand.
+- Politics **does not think systemically**, but tactically-narratively.
+- The population **does not decide sovereignly**, but within the options presented.
+
+Nature remains **voiceless, without lobby, without protection**—its overload is only noticed when it becomes an acute threat to the system itself.
+
+---
+
+### Applied Resonance Principle
+
+All involved actors—industry, politics, consumers, critics—are part of the resonance field.  
+Systemic responsibility **cannot be delegated**, but only recognized and collectively borne.
+
+---
+
 ## 6. Conclusion – Resonance Analysis instead of Reaction Ethics
 
 > Truth does not arise from statements, but from system framing.
@@ -292,8 +340,8 @@ Resistance is always part of the resonance field—it manifests in relational pa
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+© Dominic-René Schu – Resonance Field Theory 2025
 
-[Back to overview](../../../README.en.md)
+[Back to overview](../../../README.md)
 
 ---
