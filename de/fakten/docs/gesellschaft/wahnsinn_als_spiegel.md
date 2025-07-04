@@ -149,12 +149,6 @@ Heilung und Wandel geschehen nur über die Gruppenstruktur.
 
 ---
 
-## 🌐 [Englische Version](wahnsinn_as_spiegel_en.md)
-
-
-
----
-
 © Dominic-René Schu – Resonanzfeldtheorie 2025
 
 ---
