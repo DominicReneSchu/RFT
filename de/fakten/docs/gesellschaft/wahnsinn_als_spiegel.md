@@ -4,7 +4,7 @@
 
 ---
 
-![Wahnsinn als Spiegel](bilder/spiegel.png)
+![Wahnsinn als Spiegel](../bilder/spiegel.png)
 
 *Abb. 1: Symbolische Darstellung der Wechselwirkung von π, ℏ, 𝓔 und **𝑓** im Resonanzraum*
 

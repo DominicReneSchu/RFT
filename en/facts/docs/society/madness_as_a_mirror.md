@@ -4,7 +4,7 @@
 
 ---
 
-![Madness as Mirror](figures/mirror.png)
+![Madness as Mirror](../figures/mirror.png)
 
 *Fig. 1: Symbolic depiction of the interaction of π, ℏ, 𝓔, and **𝑓** within the resonance space*
 
