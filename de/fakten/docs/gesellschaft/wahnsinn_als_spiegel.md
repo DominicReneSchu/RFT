@@ -6,7 +6,7 @@
 
 ![Wahnsinn als Spiegel](../bilder/spiegel.png)
 
-*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, ℏ, 𝓔 und **𝑓** im Resonanzraum*
+*Abb. 1: Wahnsinn als Spiegel – Wenn Systeme ihren Resonanzkern verlieren*
 
 ---
 
