@@ -126,35 +126,6 @@ Das eigene Feldverhalten zu reflektieren ist der erste Schritt zur Integration.
 
 ---
 
-## 🖼️ Visualisierung: Systemische Selbstinklusion
-
-Die Ellipse symbolisiert das Gesamtfeld, die farbigen Kreise die sechs systemischen Felder, der gestrichelte Bereich die Selbstinklusion des Beobachters und Analytikers in das Resonanzfeld.
-
-svg
-<svg width="350" height="250" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <ellipse cx="175" cy="125" rx="150" ry="90" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
-    <text x="110" y="45" font-size="15" fill="#333">Resonanzfeld</text>
-    <circle cx="80" cy="125" r="25" fill="#b3cde0" stroke="#333" stroke-width="1.5"/>
-    <text x="63" y="130" font-size="12" fill="#333">Feld 1</text>
-    <circle cx="140" cy="60" r="25" fill="#ccebc5" stroke="#333" stroke-width="1.5"/>
-    <text x="123" y="65" font-size="12" fill="#333">Feld 2</text>
-    <circle cx="225" cy="60" r="25" fill="#decbe4" stroke="#333" stroke-width="1.5"/>
-    <text x="208" y="65" font-size="12" fill="#333">Feld 3</text>
-    <circle cx="270" cy="125" r="25" fill="#fed9a6" stroke="#333" stroke-width="1.5"/>
-    <text x="253" y="130" font-size="12" fill="#333">Feld 4</text>
-    <circle cx="225" cy="190" r="25" fill="#ffffcc" stroke="#333" stroke-width="1.5"/>
-    <text x="208" y="195" font-size="12" fill="#333">Feld 5</text>
-    <circle cx="140" cy="190" r="25" fill="#fbb4ae" stroke="#333" stroke-width="1.5"/>
-    <text x="123" y="195" font-size="12" fill="#333">Feld 6</text>
-    <ellipse cx="175" cy="125" rx="60" ry="35" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="4 2"/>
-    <text x="145" y="130" font-size="11" fill="#333">Selbstinklusion</text>
-  </g>
-</svg>
-
-
----
-
 ## 🌱 Ausblick: Transformation im Gruppenfeld
 
 Transformation beginnt im Bewusstwerden und in der reflektierenden Kommunikation des Feldes.  
