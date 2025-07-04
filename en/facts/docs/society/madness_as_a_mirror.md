@@ -124,21 +124,12 @@ Reflecting on your own field behavior is the first step toward integration.
 
 > _The resonance field includes all – leaders, followers, critics, the indifferent. Transformation begins in the field._
 
----
-
-## ⬇️ Cross-References & Connectivity
-
-- [Resonance Rule](https://github.com/DominicReneSchu/public/blob/main/Resonanzregel.md)
-- [Parliamentary Resonance](https://github.com/DominicReneSchu/public/blob/main/Parlamentsresonanz.md)
-- [Manipulation through Resonance Decay](https://github.com/DominicReneSchu/public/blob/main/Manipulation_Resonanzzerfall.md)
-
----
 
 ## 🖼️ Visualization: Systemic Self-Inclusion
 
 The ellipse symbolizes the entire field, the colored circles represent the six systemic fields, and the dashed area marks the self-inclusion of observer and analyst within the resonance field.
 
-```svg
+svg
 <svg width="350" height="250" xmlns="http://www.w3.org/2000/svg">
   <g>
     <ellipse cx="175" cy="125" rx="150" ry="90" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
@@ -159,7 +150,7 @@ The ellipse symbolizes the entire field, the colored circles represent the six s
     <text x="125" y="130" font-size="11" fill="#333">Self-Inclusion</text>
   </g>
 </svg>
-```
+
 
 ---
 

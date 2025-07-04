@@ -126,19 +126,11 @@ Das eigene Feldverhalten zu reflektieren ist der erste Schritt zur Integration.
 
 ---
 
-## ⬇️ Querverweise & Anschlussfähigkeit
-
-- [Resonanzregel](https://github.com/DominicReneSchu/public/blob/main/Resonanzregel.md)
-- [Parlamentsresonanz](https://github.com/DominicReneSchu/public/blob/main/Parlamentsresonanz.md)
-- [Manipulation durch Resonanzzerfall](https://github.com/DominicReneSchu/public/blob/main/Manipulation_Resonanzzerfall.md)
-
----
-
 ## 🖼️ Visualisierung: Systemische Selbstinklusion
 
 Die Ellipse symbolisiert das Gesamtfeld, die farbigen Kreise die sechs systemischen Felder, der gestrichelte Bereich die Selbstinklusion des Beobachters und Analytikers in das Resonanzfeld.
 
-```svg
+svg
 <svg width="350" height="250" xmlns="http://www.w3.org/2000/svg">
   <g>
     <ellipse cx="175" cy="125" rx="150" ry="90" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
@@ -159,7 +151,7 @@ Die Ellipse symbolisiert das Gesamtfeld, die farbigen Kreise die sechs systemisc
     <text x="145" y="130" font-size="11" fill="#333">Selbstinklusion</text>
   </g>
 </svg>
-```
+
 
 ---
 
