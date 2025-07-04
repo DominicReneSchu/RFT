@@ -168,6 +168,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Political Resonance Systems under Media Projection**](facts/docs/society/political_resonance.md)
 - [**Global Resonance Disturbance** – Why Every Culture Must Heal in Its Own Rhythm](facts/docs/society/global_resonance.md)
 - [**Manipulation in the Resonance Field**](facts/docs/society/manipulation_in_the_resonance_field.md)
+- [**The Lost Connection** – How True Love Disappears in the System of Utility](facts/docs/society/love_in_the_resonance_field.md)
 
 ---
 
