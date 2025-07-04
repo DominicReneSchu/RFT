@@ -4,6 +4,12 @@
 
 ---
 
+![Madness as Mirror](figures/mirror.png)
+
+*Fig. 1: Symbolic depiction of the interaction of π, ℏ, 𝓔, and **𝑓** within the resonance space*
+
+---
+
 ## 🧭 Resonance Field: Irrationality as Group Pattern
 
 What we are witnessing today is no random sequence of individual excesses, but the systemic result of a global resonance loss.  

@@ -4,6 +4,12 @@
 
 ---
 
+![Wahnsinn als Spiegel](bilder/spiegel.png)
+
+*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, ℏ, 𝓔 und **𝑓** im Resonanzraum*
+
+---
+
 ## 🧭 Resonanzfeld: Irrationalität als Gruppenmuster
 
 Was sich heute zeigt, ist keine zufällige Kette individueller Exzesse, sondern die systemische Folge eines globalen Resonanzverlusts.  
