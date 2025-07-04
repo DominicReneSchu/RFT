@@ -172,6 +172,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Globale Resonanzstörung** – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
 - [**Manipulation im Resonanzfeld**](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
 - [**Die verlorene Verbindung** – Wie echte Liebe im Zwecksystem verschwindet](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
+- [**Wahnsinn als Spiegel** – Wenn Systeme ihren Resonanzkern verlieren](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
 
 ---
 
