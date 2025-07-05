@@ -407,6 +407,22 @@ Those who live at the center but ignore suffering at the periphery benefit from 
 * Every intervention changes the whole – systemic belonging is always inclusive of self-reference.
 * The pandemic is a resonance-structuring event with long-term implications for system stability and human dignity.
 
+### 🔁 Interim Conclusion: Falun Gong, Uyghurs, and the Emerging Blueprint of Global Resonance Control
+
+> _In the resonance field, control is never merely local – it unfolds its logic through global mirroring._
+
+The systemic treatment of Falun Gong practitioners and Uyghurs in China cannot be reduced to isolated historical events or cultural particularities. Rather, these cases reveal a highly structured resonance architecture serving two central functions:  
+first, **internal resonance shielding through total surveillance and disciplinary restructuring**,  
+second, **external resonance distortion through silence, dehumanization, and opacity**.
+
+This dual structure – inward control, outward obscurity – does not operate as a planned export, but as a **functional prototype**:  
+A systemic control model that becomes structurally adoptable far beyond China, wherever systems begin to treat truth as a threat to their internal resonance stability.
+
+> No central intent is required – what unfolds is a global trend:  
+> **the selective adoption of the logic of control**,  
+> not as ideology, but as a **structural response to worldwide resonance decay**.
+
+
 ---
 
 ## 5. Resonance Field Analysis as Scientific Paradigm

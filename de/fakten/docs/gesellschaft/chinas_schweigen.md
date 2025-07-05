@@ -407,6 +407,21 @@ Wer im Zentrum lebt, aber das Leiden an der Peripherie ignoriert, profitiert von
 * Jeder Eingriff verändert das Ganze – systemische Zugehörigkeit ist immer inklusive Selbstbezug.
 * Die Pandemie ist strukturgebendes Resonanzereignis mit langfristiger Implikation für Systemstabilität und Menschenwürde.
 
+### 🔁 Zwischenfazit: Falun Gong, Uiguren und die emergente Blaupause globaler Resonanzsteuerung
+
+> _Im Resonanzfeld ist Kontrolle nie bloß lokal – sie entfaltet ihre Logik im globalen Spiegel._
+
+Die systemische Behandlung von Falun Gong und Uiguren in China lässt sich nicht auf historische Einzelfälle oder kulturelle Eigenheiten reduzieren. Vielmehr zeigt sich in diesen Fällen eine hochstrukturierte Resonanzarchitektur, die zwei zentrale Funktionen erfüllt:  
+erstens den **inneren Resonanzschutz durch totale Durchleuchtung und Disziplinierung**,  
+zweitens die **äußere Resonanzverzerrung durch Schweigen, Entmenschlichung und Undurchsichtigkeit**.
+
+Diese doppelte Struktur – Kontrolle nach innen, Intransparenz nach außen – wirkt **nicht als geplanter Export**, sondern als **funktionale Blaupause**:  
+Ein Modell systemischer Steuerung, das auch jenseits Chinas strukturell anschlussfähig wird, wo immer Systeme beginnen, Wahrheit als Bedrohung ihrer inneren Resonanzstabilität zu behandeln.
+
+> Ohne dass es einer zentralen Absicht bedarf, entfaltet sich ein globaler Trend: **die selektive Übernahme der Kontrolllogik**,  
+> nicht als Ideologie, sondern als **Antwort auf einen weltweiten Resonanzzerfall**.
+
+
 ---
 
 ## 5. Resonanzfeldanalyse als wissenschaftliches Paradigma
