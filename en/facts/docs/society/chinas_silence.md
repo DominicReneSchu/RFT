@@ -9,7 +9,7 @@
 1. [China’s Performative Silence](#1-chinas-performative-silence)
 2. [Falun Gong and Uyghurs as Systemic Test Groups](#2-falun-gong-and-uyghurs-as-systemic-test-groups)
 3. [Global Complicity through Economic Interdependence](#3-global-complicity-through-economic-interdependence)
-4. [Pandemic as Resonance Infrastructure](#4-pandemic-as-resonance-infrastructure)
+4. [Pandemic as Resonance Infrastructure](#4-systemic-resonance-framework-and-pandemic-as-resonance-infrastructure)
 5. [Resonance Field Analysis as Scientific Paradigm](#5-resonance-field-analysis-as-scientific-paradigm)
 6. [Resonance Field and Self-Transformation: Reflexivity, Adaptivity, Futures](#6-resonance-field-and-self-transformation-reflexivity-adaptivity-futures)
 7. [References and Literature](#7-references-and-literature)

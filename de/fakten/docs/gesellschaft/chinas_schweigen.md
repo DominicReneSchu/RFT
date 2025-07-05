@@ -9,7 +9,7 @@
 1. [Das performative Schweigen Chinas](#1-das-performative-schweigen-chinas)
 2. [Falun Gong und Uiguren als systemische Versuchsgruppen](#2-falun-gong-und-uiguren-als-systemische-versuchsgruppen)
 3. [Globale Komplizenschaft durch ökonomische Verflechtung](#3-globale-komplizenschaft-durch-ökonomische-verflechtung)
-4. [Pandemie als Resonanzinfrastruktur](#4-pandemie-als-resonanzinfrastruktur)
+4. [Pandemie als Resonanzinfrastruktur](#4-systemischer-resonanzrahmen-und-pandemie-als-resonanzinfrastruktur)
 5. [Resonanzfeldanalyse als wissenschaftliches Paradigma](#5-resonanzfeldanalyse-als-wissenschaftliches-paradigma)
 6. [Resonanzfeld und Selbsttransformation: Reflexivität, Adaptivität, Zukunft](#6-resonanzfeld-und-selbsttransformation-reflexivitat-adaptivitat-zukunft)
 7. [Quellen und Literatur](#7-quellen-und-literatur)
