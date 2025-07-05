@@ -18,7 +18,7 @@
 
 ---
 
-## 1. Das performative Schweigen Chinas
+# 1. Das performative Schweigen Chinas
 
 ---
 
@@ -80,7 +80,7 @@ Auch das, was verschwiegen wird, bleibt Teil des Feldes und formt dessen Struktu
 
 ---
 
-## 2. Maskendeals und Resonanzkomplexe - Jens Spahn als symbolischer Resonanzpuffer
+# 2. Maskendeals und Resonanzkomplexe - Jens Spahn als symbolischer Resonanzpuffer
 
 > *„Im Resonanzfeld schützt sich das System durch Scheintransparenz –  
 > Symbolische Prozesse sind Ventile, keine Aufklärung.“*
@@ -131,7 +131,7 @@ Diese Resonanzpartnerschaft sichert gegenseitigen Profit und politischen Schutz 
 
 ---
 
-## 3. Falun Gong und Uiguren als systemische Versuchsgruppen
+# 3. Falun Gong und Uiguren als systemische Versuchsgruppen
 
 ---
 
@@ -225,7 +225,7 @@ Unabhängige Untersuchungen belegen systematische Organentnahmen an Falun-Gong-P
 
 ---
 
-## 4. Globale Komplizenschaft durch ökonomische Verflechtung
+# 4. Globale Komplizenschaft durch ökonomische Verflechtung
 
 ---
 
@@ -467,7 +467,7 @@ Diese doppelte Struktur – Kontrolle nach innen, Intransparenz nach außen – 
 
 ---
 
-## 6. Resonanzfeldanalyse als wissenschaftliches Paradigma
+# 6. Resonanzfeldanalyse als wissenschaftliches Paradigma
 
 ---
 
@@ -519,7 +519,7 @@ Transformation ist im vollständigen Resonanzfeld stets zirkulär, selbstinkludi
 
 ---
 
-## 7. Resonanzfeld und Selbsttransformation: Reflexivität, Adaptivität, Zukunft
+# 7. Resonanzfeld und Selbsttransformation: Reflexivität, Adaptivität, Zukunft
 
 ---
 
