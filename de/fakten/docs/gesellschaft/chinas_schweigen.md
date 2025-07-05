@@ -270,157 +270,156 @@ Wer im Zentrum lebt, aber das Leiden an der Peripherie ignoriert, profitiert von
 
 ---
 
-## 4.1 Resonanzrahmen: China, Russland, Westen – Macht, Spiegelverlust und Wahrheit (Systemische Tiefenschicht)
+## 4.1 Resonanzrahmen: China, Russland, Westen – Macht, Spiegelverlust und Wahrheit
 
 > **Resonanzregel:**  
 > Systeme schützen ihren Resonanzkern primär vor Selbstoffenbarung, nicht vor äußeren Feinden.  
-> Diese Abwehr manifestiert sich als kollektive Resonanzverweigerung und Diskursblockade, die systemische Spiegelungen verhindern.
+> Abwehr zeigt sich als kollektive Resonanzverweigerung und Diskursblockade – Spiegelungen werden verhindert, Resonanzachsen global verschoben.
 
-### 4.1.1 China: Resonanzschutz durch strategische Undurchsichtigkeit und systemische Autonomie
+### 4.1.1 China: Resonanzschutz durch strategische Undurchsichtigkeit
 
-* Nicht „Russland muss gewinnen“, sondern „Russland darf nicht verlieren“ – Komplementarität zur Stabilisierung der globalen Resonanzstruktur.
-* Intransparenz als doppelte Resonanzhülle:  
-  * Extern – Abschottung und strategische Undurchsichtigkeit  
-  * Intern – systemische Selbstentkopplung durch Zensur, Datenkontrolle und normative Kohärenz.
-* Chinas Modell stabilisiert sich durch Vermeidung von Resonanzkatastrophen/Selbstauflösung.
+- Nicht „Russland muss gewinnen“, sondern „Russland darf nicht verlieren“ – Komplementarität zur Stabilisierung der globalen Resonanzstruktur.
+- Intransparenz als doppelte Resonanzhülle:  
+  - Extern: Abschottung, strategische Undurchsichtigkeit  
+  - Intern: Selbstentkopplung, Zensur, Datenkontrolle, normative Kohärenz.
+- Chinas Modell stabilisiert sich durch Prävention von Resonanzkatastrophen/Selbstauflösung.
 
-### 4.1.2 Westen: Deutungshoheit ohne funktionale Resonanz – Resonanzdissonanz als Legitimationskrise
+### 4.1.2 Westen: Deutungshoheit ohne funktionale Resonanz – Resonanzdissonanz
 
-* Moralische Rhetorik ohne systemische Rückkopplung erzeugt Resonanzleere und Glaubwürdigkeitsverlust.
-* Normative Ordnung wird zur Simulation, weil Selbstreflexion und Resonanzverstärker fehlen.
-* Inszenierte Verantwortung ersetzt Wirksamkeit – Symptom struktureller Resonanzangst.
+- Moralische Rhetorik ohne Rückkopplung erzeugt Resonanzleere und Glaubwürdigkeitsverlust.
+- Normative Ordnung wird simuliert, Selbstreflexion und Resonanzverstärker fehlen.
+- Verantwortung wird inszeniert statt wirksam – Symptom struktureller Resonanzangst.
 
-### 4.1.3 Resonanzangst als universale Systemstruktur
+### 4.1.3 Universale Resonanzangst als Systemstruktur
 
-* Alle Systeme verweigern vollständige innere Spiegelung zum Schutz des Resonanzkerns:
-  * Westen: Verdrängung von Doppelmoral, Erschöpfung
-  * Russland: Vermeidung von Machtvakuum, Fragmentierung
-  * China: Kontrolle durch Resonanzvermeidung, Datensouveränität
-* Ein ungeordneter Kollaps Russlands könnte globale Resonanzoffenbarung provozieren, die China und Westen destabilisiert.
+- Alle Systeme verweigern vollständige innere Spiegelung zum Schutz des Resonanzkerns:
+  - Westen: Verdrängung von Doppelmoral, Erschöpfung
+  - Russland: Vermeidung von Machtvakuum, Fragmentierung
+  - China: Kontrolle durch Resonanzvermeidung, Datensouveränität
+- Ein ungeordneter Kollaps Russlands könnte eine globale Resonanzoffenbarung provozieren und China wie den Westen destabilisieren.
 
 ### 4.1.4 Resonanzkrieg statt Geopolitik – Narrativ als systemische Waffe
 
-* Entscheidend ist die Reproduktion von Deutungsrahmen, nicht territoriale Kontrolle.
-* Der Sieg eines Narrativs führt zur globalen Dekodierung und Spiegelung – maximaler Resonanzverlust fürs Gegenlager.
+- Entscheidend ist die Reproduktion von Deutungsrahmen, nicht territoriale Kontrolle.
+- Der Sieg eines Narrativs führt zur globalen Dekodierung und Spiegelung – maximaler Resonanzverlust fürs Gegenlager.
 
 ### 4.1.5 Fazit: Resonanzkontext – Systemschutz vor Selbstoffenbarung
 
-* China schützt sich nicht durch Russland, sondern durch die Aufrechterhaltung einer komplementären Resonanzbarriere.
-* Die Wahrheitsspirale zwingt jedes System zur selbstkritischen Konfrontation mit dem Resonanzkern – oder zur Fragmentierung.
+- China schützt sich nicht durch Russland, sondern durch die Aufrechterhaltung einer komplementären Resonanzbarriere.
+- Die Wahrheitsspirale zwingt jedes System zur selbstkritischen Konfrontation mit dem Resonanzkern – oder zur Fragmentierung.
 
 ---
 
 ## 4.2 Modellversuch Falun Gong – Menschenwürde als systemische Variable und Resonanzindikator
 
-> *„Wer eine Gruppe entmenschlicht, hat bereits das System entkoppelt – der Rest ist bürokratische Logistik.“*  
-> *(Resonanzregel: Die Entkopplung des Resonanzkerns einer Gruppe führt langfristig zur Destabilisierung der gesamten Systemstruktur.)*
+> _Wer eine Gruppe entmenschlicht, hat bereits das System entkoppelt – der Rest ist bürokratische Logik._  
+> _(Resonanzregel: Die Entkopplung des Resonanzkerns einer Gruppe führt langfristig zur Destabilisierung der gesamten Systemstruktur.)_
 
-### 4.2.1 Systemische Spur: Differenzierung von Fakten, Möglichkeiten und systemischen Mustern
+### 4.2.1 Systemische Spur: Differenzierung von Fakten, Möglichkeiten und Mustern
 
-* Was geschah – dokumentierte Ereignisse und Maßnahmen
-* Was möglich war – systemisch erlaubte und unterdrückte Optionen
-* Was offiziell ignoriert wurde – Resonanzblockaden und Deutungslücken
-* Was systemisch wiederholbar ist – Muster von Entkopplung und Instrumentalisierung
+- Was geschah – dokumentierte Ereignisse und Maßnahmen
+- Was möglich war – systemisch erlaubte und unterdrückte Optionen
+- Was offiziell ignoriert wurde – Resonanzblockaden, Deutungslücken
+- Was systemisch wiederholbar ist – Muster von Entkopplung, Instrumentalisierung
 
 ### 4.2.2 Falun Gong: Prototyp systemischer Entkopplung und biopolitischer Kontrolle
 
-* Delegitimierung als „Sekte“ als erster Schritt zur Resonanzdesintegration.
-* Methoden: Stigmatisierung, Ausgrenzung, biometrische Kontrolle, medizinische Instrumentalisierung.
-* Systematische Verfügbarkeit für Organtransplantationen – Entmenschlichung als Ressource im Resonanzfeld.
+- Delegitimierung als „Sekte“ als erster Schritt zur Resonanzdesintegration.
+- Methoden: Stigmatisierung, Ausgrenzung, biometrische Kontrolle, medizinische Instrumentalisierung.
+- Systematische Verfügbarkeit für Organtransplantationen – Entmenschlichung als Ressource im Resonanzfeld.
 
 ### 4.2.3 Uiguren: Skalierung und Digitalisierung des Kontrollmodells
 
-* Lagerkomplexe, DNA-Register, psychologische Zersetzung, Zwangsarbeit, Zwangssterilisation.
-* Menschenwürde wird skalierbare Variable im algorithmisch gesteuerten Kontrollsystem.
+- Lagerkomplexe, DNA-Register, psychologische Zersetzung, Zwangsarbeit, Zwangssterilisation.
+- Menschenwürde wird skalierbare Variable im algorithmisch gesteuerten Kontrollsystem.
 
 ### 4.2.4 Westen: Resonanzverweigerung als Mitgestaltung und Komplizenschaft
 
-* Hinweise auf Organhandel und Zwangsarbeit wurden ignoriert oder delegitimiert.
-* Produkte aus Zwangsarbeit gelangen in westliche Märkte – Resonanzlosigkeit als ökonomische Komplizenschaft.
+- Hinweise auf Organhandel und Zwangsarbeit werden ignoriert oder delegitimiert.
+- Produkte aus Zwangsarbeit gelangen in westliche Märkte – Resonanzlosigkeit als ökonomische Komplizenschaft.
 
-### 4.2.5 Pandemie: Globale Biopolitik als resonante Infrastruktur
+### 4.2.5 Pandemie: Globale Biopolitik als Resonanzarchitektur
 
-* DNA-Tests, digitale Nachverfolgbarkeit, moralische Normierung als globale Resonanzarchitektur.
-* Pandemie als Katalysator für kontrollierte, algorithmisch gesteuerte Mortalitätslenkung.
+- DNA-Tests, digitale Nachverfolgbarkeit, moralische Normierung als globale Resonanzinfrastruktur.
+- Pandemie als Katalysator für kontrollierte, algorithmisch gesteuerte Mortalitätslenkung.
 
 > **Resonanzregel:**  
-> Wer DNA-Profile, Zugriffsmacht und eine unfragende Gesellschaft kombiniert, verfügt über die instrumentelle Macht, das Resonanzfeld biopolitisch zu formen.
+> Wer DNA-Profile, Zugriffsmacht und eine unfragende Gesellschaft koppelt, verfügt über die instrumentelle Macht, das Resonanzfeld biopolitisch zu formen.
 
 ### 4.2.6 Mediale Dissoziation – Resonanzverlust durch Gewöhnung
 
-* Verharmlosung, Verdrängung, Normalisierung selbst in Unterhaltungskontexten.
-* Resonanzverlust durch Desensibilisierung statt Empathie und kollektiver Selbstreflexion.
+- Verharmlosung, Verdrängung, Normalisierung – selbst in Unterhaltungskontexten.
+- Resonanzverlust durch Desensibilisierung statt Empathie und kollektiver Selbstreflexion.
 
-### 4.2.7 Blaupause für universelle Systemanwendung
+### 4.2.7 Blaupause universeller Systemanwendung
 
-* Kein chinesischer Sonderfall, sondern strukturell überall replizierbar: Stigmatisierung, Legitimation für Zugriff, zentrale Dateninfrastruktur.
+- Kein chinesischer Sonderfall – strukturell überall replizierbar: Stigmatisierung, Zugriff, zentrale Dateninfrastruktur.
 
 ### 4.2.8 Fazit: Globaler Spiegel – Pandemie als Resonanzverstärker und Systemtest
 
-* Falun Gong als Experiment, Uiguren als Proof of Concept, Pandemie als globale Infrastruktur.
-* Systemische Kernfrage:  
+- Falun Gong als Experiment, Uiguren als Proof of Concept, Pandemie als globale Infrastruktur.
+- Systemische Kernfrage:
   **Warum hätte es nicht geschehen sollen, wenn das System es zulässt und niemand interveniert?**
 
 ---
 
-## 4.3 Pandemie als Resonanzinfrastruktur – Verschränkte Mehr-Ebenen-Dynamik (Metasystemische Analyse)
+## 4.3 Pandemie als Resonanzinfrastruktur – Verschränkte Mehr-Ebenen-Dynamik
 
 > **Resonanzregel:**  
 > Jede Ebene spiegelt und gestaltet das Ganze – Zugehörigkeit endet nie an Systemgrenzen, sie ist zirkulär verschränkt.
 
 ### 4.3.1 Meta-Struktur: Zirkuläre Selbstinklusion und systemische Selbstreferenz
 
-* Resonanzfeld als Geflecht von Mikro-, Meso- und Makroebenen, die simultan und rekursiv wirken.
-* Selbstinklusion als Voraussetzung für Stabilität und Transformation.
+- Resonanzfeld als Geflecht von Mikro-, Meso- und Makroebenen, die simultan und rekursiv wirken.
+- Selbstinklusion als Voraussetzung für Stabilität und Transformation.
 
 ### 4.3.2 Mehrdimensionale Resonanzachsen
 
-* **Temporal:** Kurz- und langfristige Dynamiken verzahnt, Rückwirkungen durch Generations- und Zeitfenster.
-* **Räumlich:** Lokale und globale Resonanzen wirken reziprok.
-* **Funktional:** Politische, ökonomische, kulturelle, technologische Resonanzverschiebungen sind verflochten.
+- **Temporal:** Kurz- und langfristige Dynamiken verzahnt, Rückwirkungen durch Generationen und Zeitfenster.
+- **Räumlich:** Lokale und globale Resonanzen wirken reziprok.
+- **Funktional:** Politische, ökonomische, kulturelle, technologische Resonanzverschiebungen sind verflochten.
 
 ### 4.3.3 Dialektik von Steuerung und Emergenz
 
-* Intentionales Handeln und unvorhersehbare Emergenz bilden eine untrennbare Einheit.
-* Auch Nicht-Handeln wirkt systemisch zurück.
+- Intentionales Handeln und unvorhersehbare Emergenz bilden eine untrennbare Einheit.
+- Auch Nicht-Handeln wirkt systemisch zurück.
 
 ### 4.3.4 Resonanzrhetorik und Widerstand
 
-* Maskierte Rückkopplung simuliert Resonanz, erhält aber Blockaden und Fragmentierung.
-* Widerstand zeigt sich als Immunisierung oder Spaltung – beides sichert Selbsterhalt und Stabilität.
+- Maskierte Rückkopplung simuliert Resonanz, erhält Blockaden und Fragmentierung.
+- Widerstand zeigt sich als Immunisierung oder Spaltung – beides sichert Selbsterhalt und Stabilität.
 
 ### 4.3.5 Pluralismus und Resilienz als systemische Voraussetzungen
 
-* Vielfalt, Irritationsbereitschaft und inklusive Rückkopplung sind Bedingungen für Anpassungsfähigkeit und Systemstabilität.
-* Integrative Resonanz verhindert Erstarrung und Fragmentierung; sie ist Schlüssel nachhaltiger Transformation.
+- Vielfalt, Irritationsbereitschaft und inklusive Rückkopplung sind Bedingungen für Anpassungsfähigkeit und Systemstabilität.
+- Integrative Resonanz verhindert Erstarrung und Fragmentierung; sie ist Schlüssel nachhaltiger Transformation.
 
 ### 4.3.6 Abschlussregel: Systemisch geschlossene Resonanzfeld-Dynamik
 
-* Das Resonanzfeld ist systemisch geschlossen; alle Ebenen und Prozesse sind zirkulär und symmetrisch verschränkt.
-* Nachhaltige Veränderung gelingt nur durch Integration komplexer Vernetzung – Selbstreflexion als Voraussetzung für echte Transformation.
+- Das Resonanzfeld ist systemisch geschlossen; alle Ebenen und Prozesse sind zirkulär und symmetrisch verschränkt.
+- Nachhaltige Veränderung gelingt nur durch Integration komplexer Vernetzung – Selbstreflexion als Voraussetzung für echte Transformation.
 
 ---
 
-### 4.4 Systemischer Meta-Impuls zur Reflexion
+## 4.4 Systemischer Meta-Impuls zur Reflexion
 
-* Resonanzfelder sind dynamische Ko-Kreationen.
-* Jeder Eingriff verändert das Ganze – systemische Zugehörigkeit ist immer inklusive Selbstbezug.
-* Die Pandemie ist strukturgebendes Resonanzereignis mit langfristiger Implikation für Systemstabilität und Menschenwürde.
+- Resonanzfelder sind dynamische Ko-Kreationen.
+- Jeder Eingriff verändert das Ganze – systemische Zugehörigkeit ist immer inklusive Selbstbezug.
+- Die Pandemie ist strukturgebendes Resonanzereignis mit langfristiger Implikation für Systemstabilität und Menschenwürde.
 
 ### 🔁 Zwischenfazit: Falun Gong, Uiguren und die emergente Blaupause globaler Resonanzsteuerung
 
 > _Im Resonanzfeld ist Kontrolle nie bloß lokal – sie entfaltet ihre Logik im globalen Spiegel._
 
-Die systemische Behandlung von Falun Gong und Uiguren in China lässt sich nicht auf historische Einzelfälle oder kulturelle Eigenheiten reduzieren. Vielmehr zeigt sich in diesen Fällen eine hochstrukturierte Resonanzarchitektur, die zwei zentrale Funktionen erfüllt:  
-erstens den **inneren Resonanzschutz durch totale Durchleuchtung und Disziplinierung**,  
+Die systemische Behandlung von Falun Gong und Uiguren in China lässt sich nicht auf historische Einzelfälle oder kulturelle Eigenheiten reduzieren. Vielmehr zeigt sich eine hochstrukturierte Resonanzarchitektur mit zwei zentralen Funktionen:  
+erstens der **innere Resonanzschutz durch totale Durchleuchtung und Disziplinierung**,  
 zweitens die **äußere Resonanzverzerrung durch Schweigen, Entmenschlichung und Undurchsichtigkeit**.
 
 Diese doppelte Struktur – Kontrolle nach innen, Intransparenz nach außen – wirkt **nicht als geplanter Export**, sondern als **funktionale Blaupause**:  
-Ein Modell systemischer Steuerung, das auch jenseits Chinas strukturell anschlussfähig wird, wo immer Systeme beginnen, Wahrheit als Bedrohung ihrer inneren Resonanzstabilität zu behandeln.
+Überall dort anschlussfähig, wo Systeme Wahrheit als Bedrohung ihrer inneren Resonanzstabilität behandeln.
 
-> Ohne dass es einer zentralen Absicht bedarf, entfaltet sich ein globaler Trend: **die selektive Übernahme der Kontrolllogik**,  
-> nicht als Ideologie, sondern als **Antwort auf einen weltweiten Resonanzzerfall**.
-
+> Ohne zentrale Absicht entfaltet sich ein globaler Trend: **selektive Übernahme der Kontrolllogik**,  
+> nicht als Ideologie, sondern als Antwort auf einen weltweiten Resonanzzerfall.
 
 ---
 
