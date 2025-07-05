@@ -133,7 +133,7 @@ Diese Resonanzpartnerschaft sichert gegenseitigen Profit und politischen Schutz 
 
 ## 3. Falun Gong und Uiguren als systemische Versuchsgruppen
 
-# 3. Systemtest am Menschen – Falun Gong und Uiguren als strukturierte Resonanzexperimente
+---
 
 > *Systeme testen ihre Grenzen stets am Menschen – im Resonanzfeld wird das Individuum zur strukturierten Variablen der Macht.*
 
@@ -291,9 +291,6 @@ Die völkerrechtlich kodifizierte Sorgfaltspflicht entlang globaler Lieferketten
 Die Diskrepanz zwischen Anspruch und gelebter Praxis erzeugt eine **Resonanzdissonanz**, die Verantwortungslücken und systemische Blockaden verstärkt.  
 Medien und Wissenschaft fungieren als aktive Resonanzakteure, die diese Lücken durch investigative Recherche und kritische Debatten schließen können – eine Chance für systemische Transformation.
 
----
-
-## 4.5 Fußnoten & Quellen
 
 [^1]: Australian Strategic Policy Institute: „Uyghurs for Sale“, 2020.  
 [^2]: Amnesty International: „In Broad Daylight“, 2021.  
@@ -472,8 +469,6 @@ Diese doppelte Struktur – Kontrolle nach innen, Intransparenz nach außen – 
 
 ## 6. Resonanzfeldanalyse als wissenschaftliches Paradigma
 
-# 6. Transformation im Resonanzfeld: Zirkularität, Paradoxien und Resonanzökologie
-
 ---
 
 ## 6.0 Dynamik der Transformation im vollständigen Resonanzfeld
@@ -527,8 +522,6 @@ Transformation ist im vollständigen Resonanzfeld stets zirkulär, selbstinkludi
 ## 7. Resonanzfeld und Selbsttransformation: Reflexivität, Adaptivität, Zukunft
 
 ---
-
-## 7.0 Resonanzregel und Selbsttransformation: Meta-Reflexion als Feldleistung
 
 Die Resonanzregel wirkt als dynamisches Metaaxiom: Das Feld transformiert sich durch wechselseitige Beobachtung und Irritation mit seiner Umwelt.  
 Selbstreflexion entfaltet sich als Kopplung von Innen- und Außenperspektive; das System wird zum eigenen Beobachter und aktiven Gestalter seiner Evolution.  
