@@ -401,18 +401,7 @@ Wer im Zentrum lebt, aber das Leiden an der Peripherie ignoriert, profitiert von
 
 ---
 
-## 4.4 Weiterführend
-
-Anschluss an [„Chinas Schweigen – Der globale Krieg gegen die Wahrheit“](https://github.com/DominicReneSchu/public)  
-Grundlage für vertiefende Kapitel zu:
-
-* Pandemie als Systemverstärker
-* Biopolitik und digitale Resonanzüberwachung
-* Globale Menschenwürde unter algorithmischer Kontrolle
-
----
-
-### 4.5 Systemischer Meta-Impuls zur Reflexion
+### 4.4 Systemischer Meta-Impuls zur Reflexion
 
 * Resonanzfelder sind dynamische Ko-Kreationen.
 * Jeder Eingriff verändert das Ganze – systemische Zugehörigkeit ist immer inklusive Selbstbezug.

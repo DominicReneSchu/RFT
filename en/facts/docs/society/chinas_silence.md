@@ -401,18 +401,7 @@ Those who live at the center but ignore suffering at the periphery benefit from 
 
 ---
 
-## 4.4 Further Reading
-
-See also: [“China’s Silence – The Global War on Truth”](https://github.com/DominicReneSchu/public)  
-Foundation for further chapters on:
-
-* Pandemic as a system amplifier
-* Biopolitics and digital resonance surveillance
-* Global human dignity under algorithmic control
-
----
-
-### 4.5 Systemic Meta-Impulse for Reflection
+### 4.4 Systemic Meta-Impulse for Reflection
 
 * Resonance fields are dynamic co-creations.
 * Every intervention changes the whole – systemic belonging is always inclusive of self-reference.
