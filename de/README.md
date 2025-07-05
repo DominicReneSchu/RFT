@@ -173,6 +173,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [**Manipulation im Resonanzfeld**](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
 - [**Die verlorene Verbindung** – Wie echte Liebe im Zwecksystem verschwindet](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
 - [**Wahnsinn als Spiegel** – Wenn Systeme ihren Resonanzkern verlieren](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
+- [**Chinas Schweigen** – Der globale Krieg gegen die Wahrheit](fakten/docs/gesellschaft/chinas_schweigen.md)
 
 ---
 

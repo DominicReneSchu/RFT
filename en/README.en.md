@@ -170,6 +170,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [**Manipulation in the Resonance Field**](facts/docs/society/manipulation_in_the_resonance_field.md)
 - [**The Lost Connection** – How True Love Disappears in the System of Utility](facts/docs/society/love_in_the_resonance_field.md)
 - [**Madness as Mirror** – When Systems Lose Their Resonance Core](facts/docs/society/madness_as_a_mirror.md)
+- [**China’s Silence** – The Global War on Truth](facts/docs/society/chinas_silence.md)
 
 ---
 
