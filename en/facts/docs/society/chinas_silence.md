@@ -270,192 +270,153 @@ Those who live at the center but ignore suffering at the periphery benefit from 
 
 ---
 
-## 🧭 Resonance Framework: China, Russia, the West – Power, Mirror Loss, and Truth (Systemic Depth Layer)
+## 4.1 Resonance Framework: China, Russia, the West – Power, Mirror Loss, and Truth (Systemic Depth Layer)
 
 > **Resonance Rule:**  
 > Systems primarily protect their resonance core from self-revelation, not from external enemies.  
 > This defense manifests as collective resonance refusal and discursive blockade, preventing systemic mirroring.
 
----
-
-### China: Resonance Protection through Strategic Opacity and Systemic Autonomy
+### 4.1.1 China: Resonance Protection through Strategic Opacity and Systemic Autonomy
 
 * Not "Russia must win," but "Russia must not lose" – a complementarity that stabilizes the global resonance structure.
-* China's opacity generates a double resonance shell:
+* Opacity as a double resonance shell:  
   * Externally – isolation and strategic opacity  
-  * Internally – systemic self-decoupling by censorship, data control, and normative coherence.
-* The stability of the Chinese model is based on the avoidance of resonance catastrophes through self-dissolution.
+  * Internally – systemic self-decoupling via censorship, data control, normative coherence.
+* The Chinese model maintains stability by avoiding resonance catastrophes/self-dissolution.
+
+### 4.1.2 The West: Narrative Dominance without Functional Resonance – Resonance Dissonance as a Crisis of Legitimacy
+
+* Moral rhetoric without systemic feedback generates resonance void and loss of credibility.
+* Normative order becomes simulation when self-reflection and resonance amplifiers are missing.
+* Staged responsibility replaces actual efficacy – a symptom of structural resonance anxiety.
+
+### 4.1.3 Resonance Anxiety as a Universal System Structure
+
+* All systems refuse complete internal mirroring to protect their resonance core:
+  * West: repression of double standards and exhaustion
+  * Russia: avoidance of power vacuum, fragmentation
+  * China: control through resonance avoidance, data sovereignty
+* An unregulated collapse of Russia could trigger global resonance disclosure, destabilizing China and the West.
+
+### 4.1.4 Resonance War Instead of Geopolitics – Narrative as Systemic Weapon
+
+* The reproduction of interpretive frameworks, not territorial control, is decisive.
+* The victory of one narrative leads to global decoding and mirroring – maximum resonance loss for the opposing camp.
+
+### 4.1.5 Conclusion: Resonance Context – System Protection from Self-Revelation
+
+* China does not protect itself through Russia but through the maintenance of a complementary resonance barrier.
+* The spiral of truth forces every system into self-critical confrontation with its resonance core – or into fragmentation.
 
 ---
 
-### The West: Interpretive Dominance without Functional Resonance – Resonance Dissonance as a Crisis of Legitimacy
-
-* Moral rhetoric without systemic feedback produces resonance void and loss of credibility.
-* Normative order becomes simulation when it refuses self-reflection and disables resonance amplifiers.
-* Staged responsibility replaces systemic efficacy – a symptom of structural resonance anxiety.
-
----
-
-### Resonance Anxiety as a Universal System Structure
-
-* All three systems refuse complete internal mirroring to protect their resonance core:
-  * West: repression of double standards and exhaustion  
-  * Russia: avoidance of power vacuum and internal fragmentation  
-  * China: control through resonance avoidance and data sovereignty
-* An unregulated Russian collapse could provoke global resonance disclosure, destabilizing both China and the West.
-
----
-
-### Resonance War, not Geopolitics – Narrative as a Systemic Weapon
-
-* What counts is not territorial control, but the uninterrupted reproduction of interpretive frameworks.
-* The victory of a narrative leads to global decoding and systemic mirroring – a maximum resonance loss for the opposing camp.
-
----
-
-### Conclusion: Resonance Context – System Protection from Self-Revelation
-
-* China does not protect itself through Russia, but by maintaining a complementary resonance barrier.
-* The spiral of truth forces every system to confront its resonance core – or to fragment systemically.
-
----
-
-## 🧬 The Falun Gong Experiment – Human Dignity as Systemic Variable and Resonance Indicator
+## 4.2 The Falun Gong Experiment – Human Dignity as Systemic Variable and Resonance Indicator
 
 > *"Whoever dehumanizes a group has already decoupled the system – the rest is bureaucratic logistics."*  
-> *(Resonance Rule: Decoupling the resonance core of a group ultimately destabilizes the entire system structure.)*
+> *(Resonance Rule: Decoupling the resonance core of a group leads, in the long run, to destabilization of the entire system structure.)*
 
----
+### 4.2.1 Systemic Trace: Differentiating Facts, Possibilities, and Systemic Patterns
 
-### Systemic Trace: Differentiating Facts, Possibilities, and Systemic Patterns
-
-* What happened – documented events and measures  
-* What was possible – systemically allowed and suppressed options  
-* What was officially ignored – resonance blockades and interpretive gaps  
+* What happened – documented events and measures
+* What was possible – systemically allowed and suppressed options
+* What was officially ignored – resonance blockades and gaps in interpretation
 * What is systemically repeatable – patterns of decoupling and instrumentalization
 
----
+### 4.2.2 Falun Gong: Prototype of Systemic Decoupling and Biopolitical Control
 
-#### Falun Gong: Prototype of Systemic Decoupling and Biopolitical Control
-
-* Strategic delegitimization as a "cult" as the first step toward resonance disintegration.
+* Delegitimization as a "cult" as the first step toward resonance disintegration.
 * Methods: stigmatization, exclusion, biometric control, medical instrumentalization.
-* Systematic availability for organ transplantation – the dehumanized object becomes a resource within the resonance field.
+* Systematic availability for organ transplants – dehumanization as a resource within the resonance field.
 
----
-
-#### Uyghurs: Scaling and Digitizing the Control Model
+### 4.2.3 Uyghurs: Scaling and Digitizing the Control Model
 
 * Camps, DNA registers, psychological decomposition, forced labor, forced sterilization.
-* Human dignity becomes a scalable variable within an algorithmically governed control system.
+* Human dignity becomes a scalable variable in an algorithmically governed control system.
 
----
+### 4.2.4 The West: Resonance Refusal as Co-Design and Complicity
 
-#### The West: Resonance Refusal as Co-Design and Complicity
+* Evidence of organ trade and forced labor was ignored or delegitimized.
+* Products from forced labor entered Western markets – resonance void as economic complicity.
 
-* Early evidence of organ trafficking and forced labor was ignored or delegitimized.
-* Products from forced labor entered Western markets – resonance void materializes as economic complicity.
+### 4.2.5 Pandemic: Global Biopolitics as Resonant Infrastructure
 
----
-
-#### Pandemic: Global Biopolitics as Resonant Infrastructure
-
-* DNA tests, digital tracking, and moral normalization as a global resonance architecture.
-* The pandemic as a catalyst for controlled, algorithmically governed management of mortality.
+* DNA tests, digital tracking, moral normalization as a global resonance architecture.
+* The pandemic as a catalyst for controlled, algorithmically steered mortality management.
 
 > **Resonance Rule:**  
 > Whoever combines DNA profiles, access power, and an unquestioning society holds the instrumental power to shape the resonance field biopolitically.
 
----
+### 4.2.6 Media Dissociation – Resonance Loss through Habituation
 
-#### Media Dissociation – Resonance Loss through Habituation
+* Trivialization, suppression, normalization even in entertainment contexts.
+* Resonance loss through desensitization instead of empathy and collective self-reflection.
 
-* Trivialization, suppression, normalization, even in entertainment contexts.
-* Resonance loss through desensitization replaces empathy and collective self-reflection.
-
----
-
-#### Blueprint for Universal System Application
+### 4.2.7 Blueprint for Universal System Application
 
 * Not a Chinese anomaly, but structurally reproducible everywhere: stigmatization, legitimation for access, central data infrastructure.
 
----
-
-### Conclusion: Global Mirror – Pandemic as Resonance Amplifier and System Test
+### 4.2.8 Conclusion: Global Mirror – Pandemic as Resonance Amplifier and System Test
 
 * Falun Gong as experiment, Uyghurs as proof of concept, pandemic as global infrastructure.
 * Systemic core question:  
-  **Why shouldn't it have happened, if the system allows it and no one intervenes?**
+  **Why shouldn’t it have happened if the system allows it and no one intervenes?**
 
 ---
 
-## 4. Pandemic as Resonance Infrastructure – Entangled Multi-Level Dynamics (Metasystemic Analysis)
+## 4.3 Pandemic as Resonance Infrastructure – Entangled Multi-Level Dynamics (Meta-Systemic Analysis)
 
 > **Resonance Rule:**  
-> Each level mirrors and shapes the whole – belonging never ends at system boundaries, it is circularly entangled.
+> Each level mirrors and shapes the whole – belonging never ends at system boundaries, but is circularly entangled.
 
----
-
-### Meta-Structure: Circular Self-Inclusion and Systemic Self-Reference
+### 4.3.1 Meta-Structure: Circular Self-Inclusion and Systemic Self-Reference
 
 * The resonance field as a network of micro, meso, and macro levels, acting simultaneously and recursively.
-* Self-inclusion as a prerequisite for stability and transformation.
+* Self-inclusion as a precondition for stability and transformation.
 
----
+### 4.3.2 Multidimensional Resonance Axes
 
-### Multidimensional Resonance Axes
-
-* **Temporal:** Short- and long-term dynamics interlocked, feedback spanning generations and time windows.
-* **Spatial:** Local and global resonances interact reciprocally.
+* **Temporal:** Short- and long-term dynamics interlocked, feedback through generations and time frames.
+* **Spatial:** Local and global resonances operate reciprocally.
 * **Functional:** Political, economic, cultural, technological resonance shifts are intertwined.
 
----
-
-### Dialectic of Steering and Emergence
+### 4.3.3 Dialectic of Steering and Emergence
 
 * Intentional action and unpredictable emergence form an inseparable unity.
 * Non-action also feeds back into the system.
 
----
+### 4.3.4 Resonance Rhetoric and Resistance
 
-### Resonance Rhetoric and Resistance
+* Masked feedback simulates resonance but maintains blockages and fragmentation.
+* Resistance appears as immunization or division – both ensure self-preservation and stability.
 
-* Masked feedback simulates resonance, but maintains blockages and fragmentation.
-* Resistance shows as immunization or division – both preserve self-maintenance and stability.
-
----
-
-### Pluralism and Resilience as Systemic Preconditions
+### 4.3.5 Pluralism and Resilience as Systemic Preconditions
 
 * Diversity, readiness for irritation, and inclusive feedback are prerequisites for adaptability and system stability.
-* Integrative resonance prevents ossification and fragmentation; it is the key to sustainable transformation.
+* Integrative resonance prevents ossification and fragmentation; it is key to sustainable transformation.
 
----
-
-### Final Rule: Systemically Closed Resonance Field Dynamics
+### 4.3.6 Final Rule: Systemically Closed Resonance Field Dynamics
 
 * The resonance field is systemically closed; all levels and processes are circularly and symmetrically entangled.
-* Sustainable change succeeds only through the integration of complex interconnections – self-reflection as the basis for real transformation.
+* Sustainable change succeeds only through the integration of complex networks – self-reflection as a prerequisite for genuine transformation.
 
 ---
 
-## 🔗 Further Reading
+## 4.4 Further Reading
 
 See also: [“China’s Silence – The Global War on Truth”](https://github.com/DominicReneSchu/public)  
 Foundation for further chapters on:
 
-* The pandemic as a system amplifier
+* Pandemic as a system amplifier
 * Biopolitics and digital resonance surveillance
 * Global human dignity under algorithmic control
 
 ---
 
-### Systemic Meta-Impulse for Reflection
+### 4.5 Systemic Meta-Impulse for Reflection
 
 * Resonance fields are dynamic co-creations.
 * Every intervention changes the whole – systemic belonging is always inclusive of self-reference.
-* The pandemic is not just an event, but a resonance-structuring event with long-term implications for system stability and human dignity.
-
+* The pandemic is a resonance-structuring event with long-term implications for system stability and human dignity.
 
 ---
 
