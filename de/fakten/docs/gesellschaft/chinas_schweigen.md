@@ -159,9 +159,6 @@ Unabhängige Untersuchungen belegen systematische Organentnahmen an Falun-Gong-P
 - Internationale Organisationen (UN, Amnesty International, Human Rights Watch) dokumentieren systematische Menschenrechtsverletzungen; staatliches Schweigen und Desinformation behindern Aufklärung massiv.[^3][^4]
 - Multinationale Unternehmen, Universitäten und Staaten kooperierten über Jahre mit chinesischen Stellen – trotz Kenntnis der systematischen Menschenrechtsverletzungen.[^5][^6]
 
----
-
-## 2.5 Fußnoten & Quellen
 
 [^1]: Gutmann, Ethan: „The Slaughter: Mass Killings, Organ Harvesting, and China’s Secret Solution to Its Dissident Problem“, Prometheus Books, 2014. Journalistisches Standardwerk über systematischen Organraub an Falun-Gong-Praktizierenden, gestützt auf Interviews mit Überlebenden, Klinikpersonal und ehemaligen Gefängniswärtern.
 [^2]: Kilgour, David; Matas, David; Gutmann, Ethan: „Bloody Harvest / The Slaughter: An Update“, 2016. Unabhängiger Untersuchungsbericht zur Organentnahme in China.

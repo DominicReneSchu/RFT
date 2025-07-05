@@ -159,9 +159,6 @@ Independent investigations confirm systematic organ harvesting from Falun Gong p
 - International organizations (UN, Amnesty International, Human Rights Watch) document systematic human rights violations; state silence and disinformation massively block clarification.[^3][^4]
 - Multinational corporations, universities, and states have cooperated for years with Chinese authorities – despite knowledge of systematic human rights abuses.[^5][^6]
 
----
-
-### 2.5 Footnotes & References
 
 [^1]: Gutmann, Ethan: “The Slaughter: Mass Killings, Organ Harvesting, and China’s Secret Solution to Its Dissident Problem”, Prometheus Books, 2014. Journalistic standard work on systematic organ harvesting from Falun Gong practitioners, based on interviews with survivors, clinic staff, and former prison guards.
 [^2]: Kilgour, David; Matas, David; Gutmann, Ethan: “Bloody Harvest / The Slaughter: An Update”, 2016. Independent investigative report on organ harvesting in China.
