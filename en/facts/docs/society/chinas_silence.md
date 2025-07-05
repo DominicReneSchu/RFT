@@ -17,7 +17,7 @@
 
 ---
 
-## 1. The Performative Silence of China
+# 1. The Performative Silence of China
 
 ---
 
@@ -78,7 +78,7 @@ Even what is kept silent remains part of the field and shapes its structure – 
 
 ---
 
-## 2. Mask Deals and Resonance Complexes – Jens Spahn as Symbolic Resonance Buffer
+# 2. Mask Deals and Resonance Complexes – Jens Spahn as Symbolic Resonance Buffer
 
 > *“In the resonance field, the system protects itself through apparent transparency –  
 > Symbolic processes are valves, not clarification.”*
@@ -128,7 +128,7 @@ This resonance partnership ensures mutual profit and political protection – at
 
 ---
 
-## 3. Falun Gong and Uyghurs as Systemic Test Groups
+# 3. Falun Gong and Uyghurs as Systemic Test Groups
 
 ---
 
@@ -221,7 +221,7 @@ Independent investigations confirm systematic organ harvesting from Falun Gong p
 
 ---
 
-## 4. Global Complicity through Economic Interconnection
+# 4. Global Complicity through Economic Interconnection
 
 ---
 
@@ -458,7 +458,7 @@ A model of systemic steering that becomes structurally adaptable wherever system
 
 ---
 
-## 6. Resonance Field Analysis as Scientific Paradigm
+# 6. Resonance Field Analysis as Scientific Paradigm
 
 ---
 
@@ -510,7 +510,7 @@ Transformation in the complete resonance field is always circular, self-includin
 
 ---
 
-## 7. Resonance Field and Self-Transformation: Reflexivity, Adaptivity, Future
+# 7. Resonance Field and Self-Transformation: Reflexivity, Adaptivity, Future
 
 ---
 
