@@ -65,9 +65,6 @@ Das Schweigen ist nicht Leerstelle, sondern performativer Akt im Resonanzfeld de
 * Das performative Schweigen Chinas kann als *doppelter Schutzschild* gelesen werden:
   Es schützt das eigene System vor Offenlegung – und zugleich die globale Ordnung vor einer Wahrheit, die das System in Frage stellen würde.
 
----
-
-## 1.5 Fußnoten & Quellen
 
 [^1]: Gabuev, Alexander: "China’s New Vassal", Foreign Affairs, 2022.
 
