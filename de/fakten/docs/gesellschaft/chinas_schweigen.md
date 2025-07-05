@@ -7,7 +7,7 @@
 ## Inhaltsverzeichnis
 
 1. [Das performative Schweigen Chinas](#1-das-performative-schweigen-chinas)
-2. [Maskendeals und Resonanzkomplexe – Jens Spahn als symbolischer Resonanzpuffer](#2-maskendeals-und-resonanzkomplexe)
+2. [Maskendeals und Resonanzkomplexe – Jens Spahn als symbolischer Resonanzpuffer](#2-maskendeals-und-resonanzkomplexe-)
 3. [Falun Gong und Uiguren als systemische Versuchsgruppen](#3-falun-gong-und-uiguren-als-systemische-versuchsgruppen)
 4. [Globale Komplizenschaft durch ökonomische Verflechtung](#4-globale-komplizenschaft-durch-ökonomische-verflechtung)
 5. [Pandemie als Resonanzinfrastruktur](#5-systemischer-resonanzrahmen-und-pandemie-als-resonanzinfrastruktur)
