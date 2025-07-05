@@ -385,6 +385,7 @@ Only through integrative resonance can the field develop dynamics and remain sta
 **Resonance Rule – Conclusion:**  
 The resonance field forms a systemically closed whole in which all levels and processes self-include and mutually shape each other. Resonance is never one-dimensional, but always multilayered, circular, and self-referential.  
 Only by acknowledging this complex interconnectedness can change be sustainable and coherent.
+
 ---
 
 ## 5. Resonance Field Analysis as Scientific Paradigm

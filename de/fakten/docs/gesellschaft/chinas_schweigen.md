@@ -265,6 +265,7 @@ Medien und Wissenschaft fungieren als aktive Resonanzakteure, die diese Lücken 
 Wer im Zentrum lebt, aber das Leiden an der Peripherie ignoriert, profitiert von einem Resonanzfeld, das ihn nicht berührt – und verliert dadurch seine systemische Rückbindung und Legitimität.
 
 ---
+
 # 4. Systemischer Resonanzrahmen und Pandemie als Resonanzinfrastruktur
 
 ---
@@ -385,6 +386,7 @@ Nur durch integrative Resonanz kann das Feld Dynamik entfalten und stabil zuglei
 **Resonanzregel – Abschluss:**  
 Das Resonanzfeld bildet ein systemisch geschlossenes Ganzes, in dem alle Ebenen und Prozesse sich selbstinkludieren und wechselseitig gestalten. Resonanz ist niemals eindimensional, sondern stets vielschichtig, zirkulär und selbstreferenziell.  
 Nur durch Anerkennung dieser komplexen Vernetzung kann Veränderung nachhaltig und kohärent erfolgen.
+
 ---
 
 ## 5. Resonanzfeldanalyse als wissenschaftliches Paradigma
