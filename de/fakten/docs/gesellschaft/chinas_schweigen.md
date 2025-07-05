@@ -19,7 +19,7 @@
 
 ## 1. Das performative Schweigen Chinas
 
-# Abschnitt 1: Das performative Schweigen Chinas
+---
 
 > *„Nicht das gesprochene Wort, sondern die bewusst gewählte Stille formt das Resonanzfeld der Macht.“*
 
@@ -79,7 +79,7 @@ Auch das, was verschwiegen wird, bleibt Teil des Feldes und formt dessen Struktu
 
 ---
 
-# 2. Maskendeals und Resonanzkomplexe – Jens Spahn als symbolischer Resonanzpuffer
+## 2. Maskendeals und Resonanzkomplexe – Jens Spahn als symbolischer Resonanzpuffer
 
 > *„Im Resonanzfeld schützt sich das System durch Scheintransparenz –  
 > Symbolische Prozesse sind Ventile, keine Aufklärung.“*
