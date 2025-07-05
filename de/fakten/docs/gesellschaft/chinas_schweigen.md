@@ -7,13 +7,14 @@
 ## Inhaltsverzeichnis
 
 1. [Das performative Schweigen Chinas](#1-das-performative-schweigen-chinas)
-2. [Maskendeals und Resonanzkomplexe – Jens Spahn als symbolischer Resonanzpuffer](#2-maskendeals-und-resonanzkomplexe-jens-spahn-als-resonanzpuffer)
+2. [Maskendeals und Resonanzkomplexe – Jens Spahn als symbolischer Resonanzpuffer](#2-maskendeals-und-resonanzkomplexe-jens-spahn-als-symbolischer-resonanzpuffer)
 3. [Falun Gong und Uiguren als systemische Versuchsgruppen](#3-falun-gong-und-uiguren-als-systemische-versuchsgruppen)
-4. [Globale Komplizenschaft durch ökonomische Verflechtung](#4-globale-komplizenschaft-durch-ökonomische-verflechtung)
+4. [Globale Komplizenschaft durch ökonomische Verflechtung](#4-globale-komplizenschaft-durch-oekonomische-verflechtung)
 5. [Pandemie als Resonanzinfrastruktur](#5-systemischer-resonanzrahmen-und-pandemie-als-resonanzinfrastruktur)
 6. [Resonanzfeldanalyse als wissenschaftliches Paradigma](#6-resonanzfeldanalyse-als-wissenschaftliches-paradigma)
-7. [Resonanzfeld und Selbsttransformation: Reflexivität, Adaptivität, Zukunft](#7-resonanzfeld-und-selbsttransformation-reflexivitat-adaptivitat-zukunft)
+7. [Resonanzfeld und Selbsttransformation: Reflexivität, Adaptivität, Zukunft](#7-resonanzfeld-und-selbsttransformation-reflexivitaet-adaptivitaet-zukunft)
 8. [Quellen und Literatur](#8-quellen-und-literatur)
+
 
 ---
 
@@ -79,7 +80,7 @@ Auch das, was verschwiegen wird, bleibt Teil des Feldes und formt dessen Struktu
 
 ---
 
-## 2. Maskendeals und Resonanzkomplexe Jens Spahn als symbolischer Resonanzpuffer
+## 2. Maskendeals und Resonanzkomplexe - Jens Spahn als symbolischer Resonanzpuffer
 
 > *„Im Resonanzfeld schützt sich das System durch Scheintransparenz –  
 > Symbolische Prozesse sind Ventile, keine Aufklärung.“*
