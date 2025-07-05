@@ -7,7 +7,7 @@
 ## Table of Contents
 
 1. [The Performative Silence of China](#1-the-performative-silence-of-china)
-2. [Mask Deals and Resonance Complexes – Jens Spahn as Symbolic Resonance Buffer](#2-mask-deals-and-resonance-complexes-jens-spahn-as-symbolic-resonance-buffer)
+2. [Mask Deals and Resonance Complexes – Jens Spahn as Symbolic Resonance Buffer](#2-mask-deals-and-resonance-complexes---jens-spahn-as-symbolic-resonance-buffer)
 3. [Falun Gong and Uyghurs as Systemic Test Groups](#3-falun-gong-and-uyghurs-as-systemic-test-groups)
 4. [Global Complicity through Economic Interconnection](#4-global-complicity-through-economic-interconnection)
 5. [Pandemic as Resonance Infrastructure](#5-pandemic-as-resonance-infrastructure)
