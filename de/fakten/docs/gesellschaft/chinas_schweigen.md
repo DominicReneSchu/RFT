@@ -117,6 +117,7 @@ Diese Resonanzpartnerschaft sichert gegenseitigen Profit und politischen Schutz 
 ## 2.3 Feldstruktur der Komplizenschaft
 
 
+```text
 +--------------------------+          +----------------------+
 | Westliche Regierungen    | <------> | Pharmakonzerne       |
 +--------------------------+          +----------------------+
@@ -125,6 +126,7 @@ Diese Resonanzpartnerschaft sichert gegenseitigen Profit und politischen Schutz 
 +--------------------------+          +----------------------+
 | China (CCP/Fosun Pharma) | <------> | WHO, GAVI, Gates     |
 +--------------------------+          +----------------------+
+```
 
 ---
 
