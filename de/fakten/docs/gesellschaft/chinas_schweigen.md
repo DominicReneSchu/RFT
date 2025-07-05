@@ -227,7 +227,7 @@ Unabhängige Untersuchungen belegen systematische Organentnahmen an Falun-Gong-P
 
 ## 4. Globale Komplizenschaft durch ökonomische Verflechtung
 
-# 4. Strukturierte Komplizenschaft – Wie globale Märkte Menschenrechte systemisch entwerten im globalen Resonanzfeld
+---
 
 > *Im Resonanzfeld ist Schweigen nie neutral – Systeme verschleiern nicht die Wahrheit, sie verteilen ihre Konsequenzen.*
 

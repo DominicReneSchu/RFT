@@ -223,7 +223,7 @@ Independent investigations confirm systematic organ harvesting from Falun Gong p
 
 ## 4. Global Complicity through Economic Interconnection
 
-# 4. Structured Complicity – How Global Markets Systemically Devalue Human Rights in the Global Resonance Field
+---
 
 > *In the resonance field, silence is never neutral – systems do not conceal the truth, they distribute its consequences.*
 
