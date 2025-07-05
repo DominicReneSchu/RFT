@@ -124,23 +124,23 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Documentation and Definition 📝
 
-- [**Resonance Field Theory: Axiomatic Foundation, Coupling Operator, and Mathematical Consequences**](facts/docs/definitions/paper_resonance_field_theory.md)
-- [**Systemic Foundation of Resonance Field Theory**](facts/docs/definitions/energy_as_a_primordial_constant.md)
-- [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
+1. [**Systemic Foundation of Resonance Field Theory**](facts/docs/definitions/energy_as_a_primordial_constant.md)
+2. [**Resonance Field Theory: Axiomatic Foundation, Coupling Operator, and Mathematical Consequences**](facts/docs/definitions/paper_resonance_field_theory.md)
+3. [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
 
 ### Mathematics / Physics 📐
 
-- [**Manifesto for the Restructuring of Mathematics**](facts/docs/mathematics/manifesto_for_the_restructuring_of_mathematics.md)
-- [**Tangible Mathematics**](facts/docs/mathematics/tangible_mathematics.md)
-- [**τ – as Resonance Time Coefficient**](facts/docs/mathematics/tau_as_resonance_time_coefficient.md)
-- [**Resonance Field Equation**](facts/docs/mathematics/resonance_field_equation.md)
-- [**Axiomatic Foundation**](facts/docs/mathematics/axiomatic_foundation.md)
-- [**Energy – Axiomatic Derivation**](facts/docs/mathematics/energy_axiomatic_derivation.md)
-- [**Energy Direction**](facts/docs/mathematics/energy_direction.md)
-- [**Energy Sphere**](facts/docs/mathematics/energy_sphere.md)
-- [**Power Transmission**](facts/docs/mathematics/power_transmission.md)
-- [**Resonance Energy Vector**](facts/docs/mathematics/resonance_energy_vector.md)
-- [**The Double Pendulum – A Fascinating Chaos**](facts/docs/mathematics/the_double_pendulum.md)
+1. [**Manifesto for the Restructuring of Mathematics**](facts/docs/mathematics/manifesto_for_the_restructuring_of_mathematics.md)
+2. [**Axiomatic Foundation**](facts/docs/mathematics/axiomatic_foundation.md)
+3. [**Tangible Mathematics**](facts/docs/mathematics/tangible_mathematics.md)
+4. [**Resonance Field Equation**](facts/docs/mathematics/resonance_field_equation.md)
+5. [**τ – as Resonance Time Coefficient**](facts/docs/mathematics/tau_as_resonance_time_coefficient.md)
+6. [**Energy – Axiomatic Derivation**](facts/docs/mathematics/energy_axiomatic_derivation.md)
+7. [**Energy Direction**](facts/docs/mathematics/energy_direction.md)
+8. [**Energy Sphere**](facts/docs/mathematics/energy_sphere.md)
+9. [**Resonance Energy Vector**](facts/docs/mathematics/resonance_energy_vector.md)
+10. [**Power Transmission**](facts/docs/mathematics/power_transmission.md)
+11. [**The Double Pendulum – A Fascinating Chaos**](facts/docs/mathematics/the_double_pendulum.md)
 
 ### Society 🌍
 
@@ -176,12 +176,12 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Concepts 📐
 
-- [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
-- [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
-- [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
-- [**Force Field Generator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
-- [**Weather Warning System**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
-- [**Warp Drive**](fakten/konzepte/warpantrieb/warpantrieb.md)
+1. [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
+2. [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
+3. [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
+4. [**Force Field Generator**](facts/concepts/kraftfeldgenerator/kraftfeldgenerator.md)
+5. [**Weather Warning System**](facts/concepts/wetter_warnsystem/wetter_warnsystem.md)
+6. [**Warp Drive**](facts/concepts/warpantrieb/warpantrieb.md)
 
 ---
 
@@ -193,17 +193,17 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Empirical Proof 🔬
 
-- [**Resonance Analysis in Mass Data**](facts/empirical/documentation.md)
-- [**Monte Carlo Simulation for Resonance Analysis**](facts/empirical/monte_carlo_test/monte_carlo.md)
-- [**Mirror Coherence and Self-Inclusion:** Formal Proof of Resonance Field Theory via AI Interaction](facts/empirical/empirical_evidence_by_mirror_coherence.md)
+1. [**Resonance Analysis in Mass Data**](facts/empirical/documentation.md)
+2. [**Monte Carlo Simulation for Resonance Analysis**](facts/empirical/monte_carlo_test/monte_carlo.md)
+3. [**Mirror Coherence and Self-Inclusion:** Formal Proof of Resonance Field Theory via AI Interaction](facts/empirical/empirical_evidence_by_mirror_coherence.md)
 ---
 
 ## Vision 🦋
 
-- [**Generational Contract of the Future**](vision/docs/intergenerational_contract_of_the_future.md)
-- [**Global Wealth Gap**](vision/docs/global_wealth_gap.md)
-- [**Vision of a Possible Future**](vision/docs/vision3000.md)
-- [**The World of Tomorrow**](vision/docs/world_of_tomorrow.md)
+1. [**Global Wealth Gap**](vision/docs/global_wealth_gap.md)
+2. [**Generational Contract of the Future**](vision/docs/intergenerational_contract_of_the_future.md)
+3. [**The World of Tomorrow**](vision/docs/world_of_tomorrow.md)
+4. [**Vision of a Possible Future**](vision/docs/vision3000.md)
 
 ---
 

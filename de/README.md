@@ -127,23 +127,23 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ### Dokumentation und Definition 📝
 
-- [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
-- [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
-- [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
+1. [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
+2. [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
+3. [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
 
 ### Mathematik / Physik 📐
 
-- [**Manifest zur Neustrukturierung der Mathematik**](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
-- [**Fühlbare Mathematik**](fakten/docs/mathematik/aetherius_fühlbare_mathematik.md)
-- [**τ – als Resonanzzeitkoeffizient**](fakten/docs/mathematik/tau_resonanzkoeffizient.md)
-- [**Resonanzfeld-Gleichung**](fakten/docs/mathematik/resonanzfeld_gleichung.md)
-- [**Axiomatische Grundlegung**](fakten/docs/mathematik/axiomatische_grundlegung.md)
-- [**Energie – axiomatische Herleitung**](fakten/docs/mathematik/energie_axiomatische_herleitung.md)
-- [**Energierichtung**](fakten/docs/mathematik/energierichtung.md)
-- [**Energiekugel**](fakten/docs/mathematik/energiekugel.md)
-- [**Energieübertraung**](facts/docs/mathematics/energie_uebertragung.md)
-- [**Resonanzenergievektor**](fakten/docs/mathematik/resonanzenergievektor.md)
-- [**Das Doppelpendel – Ein faszinierendes Chaos**](fakten/docs/mathematik/doppelpendel.md)
+1. [**Manifest zur Neustrukturierung der Mathematik**](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
+2. [**Axiomatische Grundlegung**](fakten/docs/mathematik/axiomatische_grundlegung.md)
+3. [**Fühlbare Mathematik**](fakten/docs/mathematik/aetherius_fühlbare_mathematik.md)
+4. [**Resonanzfeld-Gleichung**](fakten/docs/mathematik/resonanzfeld_gleichung.md)
+5. [**τ – als Resonanzzeitkoeffizient**](fakten/docs/mathematik/tau_resonanzkoeffizient.md)
+6. [**Energie – axiomatische Herleitung**](fakten/docs/mathematik/energie_axiomatische_herleitung.md)
+7. [**Energierichtung**](fakten/docs/mathematik/energierichtung.md)
+8. [**Energiekugel**](fakten/docs/mathematik/energiekugel.md)
+9. [**Resonanzenergievektor**](fakten/docs/mathematik/resonanzenergievektor.md)
+10. [**Energieübertraung**](facts/docs/mathematics/energie_uebertragung.md)
+11. [**Das Doppelpendel – Ein faszinierendes Chaos**](fakten/docs/mathematik/doppelpendel.md)
 
 ### Gesellschaft 🌍
 
@@ -179,12 +179,12 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ### Konzepte 📐
 
-- [**ResoCalc** – Konventionelle Drehmomentberechnung vs. Resonanzfeldtheorie](fakten/konzepte/ResoCalc/resocalc.md)
-- [**Resonanzgenerator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
-- [**Resonanzreaktor**](fakten/konzepte/resonanzreaktor/README.md)
-- [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
-- [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
-- [**Warpantrieb**](fakten/konzepte/warpantrieb/warpantrieb.md)
+1. [**ResoCalc** – Konventionelle Drehmomentberechnung vs. Resonanzfeldtheorie](fakten/konzepte/ResoCalc/resocalc.md)
+2. [**Resonanzgenerator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
+3. [**Resonanzreaktor**](fakten/konzepte/resonanzreaktor/README.md)
+4. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
+5. [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
+6. [**Warpantrieb**](fakten/konzepte/warpantrieb/warpantrieb.md)
 
 ---
 
@@ -196,17 +196,17 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ### Empirische Beweisführung 🔬
 
-- [**Resonanzanalyse in Massendaten**](fakten/empirisch/dokumentation.md)
-- [**Monte-Carlo-Simulation zur Resonanzanalyse**](fakten/empirisch/monte_carlo_test/monte_carlo.md)
-- [**Spiegelkohärenz und Selbstinklusion:** Formaler Nachweis der Resonanzfeldtheorie durch KI-Interaktion](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md)
+1. [**Resonanzanalyse in Massendaten**](fakten/empirisch/dokumentation.md)
+2. [**Monte-Carlo-Simulation zur Resonanzanalyse**](fakten/empirisch/monte_carlo_test/monte_carlo.md)
+3. [**Spiegelkohärenz und Selbstinklusion:** Formaler Nachweis der Resonanzfeldtheorie durch KI-Interaktion](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md)
 ---
 
 ## Vision 🦋
 
-- [**Generationenvertrag der Zukunft**](vision/docs/generationenvertrag_der_zukunft.md)
-- [**Globale Wohlstandsschere**](vision/docs/globale_wohlstandsschere.md)
-- [**Vision einer möglichen Zukunft**](vision/docs/vision3000.md)
-- [**Die Welt von morgen**](vision/docs/welt_von_morgen.md)
+1. [**Globale Wohlstandsschere**](vision/docs/globale_wohlstandsschere.md)
+2. [**Generationenvertrag der Zukunft**](vision/docs/generationenvertrag_der_zukunft.md)
+3. [**Die Welt von morgen**](vision/docs/welt_von_morgen.md)
+4. [**Vision einer möglichen Zukunft**](vision/docs/vision3000.md)
 
 ---
 
