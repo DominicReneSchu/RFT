@@ -174,6 +174,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 25. [**Yin und Yang als universelles Resonanzprinzip**](fakten/docs/gesellschaft/yin_und_yang.md)
 26. [**Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld**](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
 27. [**Der wahrscheinlichste Weg der Menschheitsgeschichte** – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
+28. [**Vom Mangel zur Fülle** – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
 
 ---
 

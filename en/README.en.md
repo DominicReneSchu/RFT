@@ -171,6 +171,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 25. [**Yin and Yang as a Universal Principle of Resonance**](facts/docs/society/yin_and_yang.md)
 26. [**Life, Death, and Return** – Cyclical Resonance Structure in the Resonance Field](facts/docs/society/life_and_death_in_the_resonance_field.md)
 27. [**The Most Probable Path of Human History** – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
+28. [**From Scarcity to Abundance** – The Resonance Economy as a Systemic Alternative](facts/docs/society/resonance_economy.md)
 
 ---
 
