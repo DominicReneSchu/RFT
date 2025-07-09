@@ -20,6 +20,9 @@ The goal is to make key equations, resonance phenomena, and new natural constant
 - [Resonance AI Model – Two Coupled Agents and Field Analysis](resonance_ai/companion_chapter_resonance_ai.md)  
   - This chapter explains the conception, numerical implementation, and interpretation of the Resonance AI Model.
   
+- [Field Coherence Instead of Goal Optimization – Foundation of a Resonance-Logical AI](resonance_chess/resonance_ai.md)  
+  - This document lays the foundation for a new AI paradigm
+  
 - [Resonance Field Theory Framework](relativity_connection/README.md)  
   - This framework provides a modular, modern infrastructure for the simulation and analysis of scalar resonance fields in flat and curved spacetime.
 
