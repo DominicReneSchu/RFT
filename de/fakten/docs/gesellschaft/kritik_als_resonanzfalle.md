@@ -63,6 +63,7 @@ Kritik und Macht stehen sich nicht antagonistisch gegenüber – sie sind **zirk
 Jede Kritik erzeugt neue Formen der Immunisierung.
 Jede Immunisierung neue Arten der Kritik.
 Das System bleibt offen – aber nur **für Impulse, die es nicht gefährden**.
+
 ---
 
 ## 2. Die Resonanzfalle: Vom Impuls zur Entwertung
