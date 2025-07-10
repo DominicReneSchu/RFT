@@ -235,6 +235,7 @@ Die Bühne wird geöffnet – aber nur für Stimmen, die das System nicht gefäh
 
 **Die Plattform ist kein Marktplatz, sondern ein Aquarium:**  
 Die Kritik schwimmt sichtbar im Raum – aber **die Scheibe bleibt unüberwindbar**.
+
 ---
 
 ## 5. Fragmentierung statt Gruppenresonanz
