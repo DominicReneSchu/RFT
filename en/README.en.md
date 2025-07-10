@@ -181,9 +181,9 @@ It serves as a normalizing reference value for all resonant interactions within 
 1. [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
 2. [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
 3. [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
-4. [**Force Field Generator**](facts/concepts/kraftfeldgenerator/kraftfeldgenerator.md)
-5. [**Weather Warning System**](facts/concepts/wetter_warnsystem/wetter_warnsystem.md)
-6. [**Warp Drive**](facts/concepts/warpantrieb/warpantrieb.md)
+4. [**Force Field Generator**](facts/concepts/force_field_generator/force_field_generator.md)
+5. [**Weather Warning System**](facts/concepts/weather_warning_system/wetter_warnsystem.md)
+6. [**Warp Drive**](facts/concepts/warp_drive/warpantrieb.md)
 
 ---
 
