@@ -63,6 +63,7 @@ Critique and power are not antagonistic – they are **circularly interwoven**.
 Each critique generates new forms of immunization.
 Each immunization creates new types of critique.
 The system remains open – but only **for impulses that do not threaten it**.
+
 ---
 
 ## 2. The Resonance Trap: From Impulse to Devaluation
@@ -180,6 +181,7 @@ In all cases, the resonance trap follows a **meta-logic of integration without e
 * The group experiences itself as a participant – **but not as a shaper**.
 
 > *The examples are not exceptions, but systemically typical patterns of targeted resonance control.*
+
 ---
 
 ## 4. The Role of Controlled Visibility
@@ -234,6 +236,7 @@ The stage is opened – but only for voices that do not threaten the system, but
 
 **The platform is not a marketplace, but an aquarium:**  
 Critique swims visibly in the space – but **the glass wall remains insurmountable**.
+
 ---
 
 ## 5. Fragmentation Instead of Group Resonance
