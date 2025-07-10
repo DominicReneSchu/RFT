@@ -149,9 +149,6 @@ GitHub: [https://github.com/DominicReneSchu/public](https://github.com/DominicRe
 
 ---
 
-
----
-
 *© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
 
 ---

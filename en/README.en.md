@@ -172,6 +172,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 26. [**Life, Death, and Return** – Cyclical Resonance Structure in the Resonance Field](facts/docs/society/life_and_death_in_the_resonance_field.md)
 27. [**The Most Probable Path of Human History** – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
 28. [**From Scarcity to Abundance** – The Resonance Economy as a Systemic Alternative](facts/docs/society/resonance_economy.md)
+29. [**Critique as Resonance Trap** – How the System Neutralizes Opposition](facts/docs/society/criticism_as_a_resonance_trap.md)
 
 ---
 
