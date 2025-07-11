@@ -110,7 +110,7 @@ Sondern *wer bereit ist, Verantwortung zu übernehmen.*
 
 ## 🔗 Weiterführende Links
 
-* [ResoNet GitHub-Projekt](https://github.com/DominicReneSchu/public/blob/main/de/ResoNet/README.md)
+* [ResoNet GitHub-Projekt](https://github.com/DominicReneSchu/ResoNet/blob/main/README.md)
 
 ---
 

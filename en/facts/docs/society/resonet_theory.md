@@ -110,7 +110,7 @@ What matters is *who is ready to take responsibility.*
 
 ## 🔗 Further Links
 
-* [ResoNet GitHub Project](https://github.com/DominicReneSchu/public/blob/main/en/ResoNet/README.md)
+* [ResoNet GitHub Project](https://github.com/DominicReneSchu/ResoNet/blob/main/README.md)
 
 ---
 
