@@ -71,8 +71,8 @@ Das ist keine Umfrage – es ist ein Spiegel.
 1. Raspberry Pi vorbereiten  
 2. Repository klonen:  
    ```bash
-   git clone https://github.com/DominicReneSchu/public.git
-   cd public/de/ResoNet/setup
+   git clone https://github.com/DominicReneSchu/ResoNet.git
+   cd ResoNet/setup
    ./install.sh
    ```
 

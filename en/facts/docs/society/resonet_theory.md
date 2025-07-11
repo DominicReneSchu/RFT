@@ -68,11 +68,11 @@ This is not a survey – it is a mirror.
 
 ## 🔧 How to Join
 
-1. Prepare Raspberry Pi  
-2. Clone the repository:  
+1. Prepare a Raspberry Pi  
+2. Clone the ResoNet repository:  
    ```bash
-   git clone https://github.com/DominicReneSchu/public.git
-   cd public/de/ResoNet/setup
+   git clone https://github.com/DominicReneSchu/ResoNet.git
+   cd ResoNet/setup
    ./install.sh
    ```
 
