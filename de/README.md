@@ -176,6 +176,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 27. [**Der wahrscheinlichste Weg der Menschheitsgeschichte** – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
 28. [**Vom Mangel zur Fülle** – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
 29. [**Kritik als Resonanzfalle** – Wie das System Opposition neutralisiert](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
+30. [**ResoNet** – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
 
 ---
 
