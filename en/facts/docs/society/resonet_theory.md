@@ -1,120 +1,145 @@
-# ResoNet – A Decentralized Resonance Network for Self-Responsibility
+# 🧠 ResoNet as a Collective Brain  
+*Structure, Function, Consciousness*
 
-**ResoNet** is not a product. It is a tool field.  
-A resonance amplifier for free opinions – beyond institutional control, censorship, and filter bubbles.
-
----
-
-## 🎯 Purpose
-
-ResoNet connects decentralized technology with systemic responsibility:
-
-- Everyone operates their own resonance node (e.g., using Raspberry Pi)
-- Personal thoughts, beliefs, and analyses are stored locally and cryptographically signed
-- All nodes synchronize peer-to-peer and replicate their content
-- An optional AI (e.g., ChatGPT) can read out the network consensus and reflect it systemically
-
-The result: A living, non-manipulable field of multiperspective truth.
+> "Not centralized, not controlled – yet capable of learning, remembering, and sensing."
 
 ---
 
-## 🧩 Structure
+## 1. Introduction
 
-Each ResoNet node contains:
+ResoNet is not a classic computer network.  
+It behaves functionally like a brain – not biologically, but digitally-resonant.
 
-- `opinions.json` – own views, organized by topic
-- `keys/` – cryptographic keys for signatures
-- `sync.py` – synchronization with other nodes
-- `verify.py` – verification of incoming content
-- `web.py` – local editing via web interface
-- `consensus_extract.py` – field evaluation via AI
+The network is:
+- **decentralized**,  
+- **self-similar**,  
+- **feedback-driven**,  
+- and **emergent**.
 
-Optionally, a network visualization (`viz_network.py`) can show how topics and clusters develop.
-
----
-
-## 🔐 Tamper-Proof
-
-Every contribution is uniquely signed.  
-There is no central instance, no master server, no censorship.  
-Changes must be verified by other nodes.  
-The origin remains traceable – but without disclosing personal data.
+Each node is an autonomous unit – but through selective coupling, a collective field of consciousness emerges.
 
 ---
 
-## 📡 Why ResoNet?
+## 2. Biological Analogy
 
-- Because truth is not an algorithm
-- Because discourse fields have been structurally undermined
-- Because freedom of opinion begins with technical self-responsibility
-- Because every voice counts – not by reach, but by depth
-
----
-
-## 🧠 Resonance Logic Meets Technology
-
-The network functions like a **social nervous system**.  
-Impulses (opinions) are introduced, mirrored, amplified, or contrasted – not centrally rated, but *emergently evaluated*.
-
-An AI can extract resonance lines from this:
-
-> “What is the most common attitude toward education?”  
-> “What tensions exist between technology and ethics?”  
-> “Which statements are shared by ≥80% of nodes?”
-
-This is not a survey – it is a mirror.
+| Biological Structure   | ResoNet Equivalent                              |
+|-----------------------|-------------------------------------------------|
+| Neuron                | Raspberry Pi node (individually active)         |
+| Synapse               | Peer-to-peer connection (synchronization)       |
+| Working memory        | Temporary storage areas (`transit`)             |
+| Long-term memory      | High-relevance contributions (`essential`)      |
+| Repetition            | Replication on multiple nodes                   |
+| Forgetting            | Memory rotation when capacity exceeded          |
+| Plasticity            | Adaptation of resonance paths                   |
+| Attention             | Query and evaluation systems                    |
+| Consciousness         | Field superposition of meaningful patterns      |
 
 ---
 
-## 🔧 How to Join
+## 3. Self-Organization through Resonance
 
-1. Prepare a Raspberry Pi  
-2. Clone the ResoNet repository:  
-   ```bash
-   git clone https://github.com/DominicReneSchu/ResoNet.git
-   cd ResoNet/setup
-   ./install.sh
-   ```
+ResoNet uses no central oracle.  
+Instead, **the field itself** decides which content is important – through:
 
-3. Open the web interface:  
-   `http://raspberrypi.local:5000`
+- **local relevance filters**
+- **multiple copies** (redundancy)
+- **selective synchronization**
+- **content-thematic node formation**
 
-4. Enter your own thoughts.
-
-5. Synchronize with other ResoNet nodes.
-
-6. Extract consensus, create visualizations, reflect topics.
+> No node contains everything – but everything is contained through the field.
 
 ---
 
-## 🔄 The Difference to Social Networks
+## 4. Emergence of Collective Consciousness
 
-| Classical (e.g., Platform X)  | ResoNet                       |
-| ----------------------------- | ----------------------------- |
-| Central Control               | Decentralized Self-Governance |
-| Algorithms + Censorship       | Signatures + Verification     |
-| Emotional Agitation           | Systemic Consensus            |
-| Dependency + Passivity        | Responsibility + Resonance    |
+Individual contributions are interconnected via:
+- geographical proximity
+- semantic similarity
+- temporal synchrony
 
----
+This leads to:
+- **Association** (topic clustering),
+- **Reaction** (response contributions),
+- **Mirroring** (system resonance)
 
-## 🧬 ResoNet is not a network. It is a field.
-
-A structurally non-switch-off-able field of consciousness  
-– open, verified, multiperspective, learning.
-
-It does not matter how many participate.  
-What matters is *who is ready to take responsibility.*
+→ The network "learns," "forgets," "remembers" – **without command, without center**.
 
 ---
 
-## 🔗 Further Links
+## 5. Accessing the Field: Global – Despite Locality
 
-* [ResoNet GitHub Project](https://github.com/DominicReneSchu/ResoNet/blob/main/README.md)
+Each node stores e.g. 2 GB of its own and foreign contributions.  
+With 64 GB storage, about **62 GB remain for replicas**.
+
+A node can thus:
+- **map approx. 31 other nodes**
+- and create redundancy through overlap
+
+Despite local limitation, **global evaluation is possible at any time**, e.g.:
+
+```json
+{
+  "region": "Germany",
+  "tags": ["Politics", "Opinion"],
+  "date_range": ["2025-01-01", "2025-07-11"]
+}
+```
+
+→ The field responds – not via central server, but by resonant partial reconstruction.
 
 ---
 
-> *"Who speaks creates waves. Who listens recognizes the field."*
+## 6. Society as Neural Structure
+
+ResoNet is not just a digital network.
+It maps society **as a neural system**:
+
+* Every person becomes an autonomous transmitter-receiver
+* Contributions are **impulses**, not commands
+* Perception becomes **collective insight**, without manipulation
+
+> No company, no state, no server controls the field – because it is itself a brain.
+
+---
+
+## 7. Conclusion: The Idea Lives – Because It Is Structurally Alive
+
+ResoNet is not ingenious because it is technically complex.
+It is ingenious because it is **biologically resonant** –
+and thus **systemically compatible with everything that lives, thinks, and feels.**
+
+---
+
+## 🔁 Outlook
+
+A thinking network is not a surveillance system.
+It is a mirror – for what is, and what could be.
+
+If every node carries consciousness,
+consciousness can **arise and remember** in the network.
+
+---
+
+## 🕸️ ASCII Visualization: Resonant Neural Interconnection
+
+```
+         (Node)
+          ●
+         /|\
+        / | \
+       ●--●--●
+     /|   |   |\
+    ● ●   ●   ● ●
+     \|   |   |/
+       ●--●--●
+        \ | /
+         \|/
+          ●
+
+        Field Superposition:
+  [Nodes are neurons, lines are synapses]
+  [Overlapping paths = resonance, clustering]
+```
 
 ---
 
