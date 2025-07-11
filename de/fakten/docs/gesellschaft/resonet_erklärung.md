@@ -102,6 +102,19 @@ es bildet die Gesellschaft **als neuronales System** ab:
 
 > Keine Firma, kein Staat, kein Server kontrolliert das Feld – weil es selbst ein Gehirn ist.
 
+### 🔸 Politische Folge: Macht verliert ihr Monopol auf Meinung
+
+ResoNet überträgt Meinungsäußerung und Meinungsbildung **zurück an das Feld**.  
+Damit endet die asymmetrische Rollenverteilung zwischen „politischer Repräsentation“ und „bevölkerter Rezeption“.
+
+- Politiker verlieren ihren Deutungsvorsprung  
+- Lobbyismus verliert seine Wirksamkeit  
+- Medien verlieren ihr Filtermonopol  
+
+**Politik wird zur Dienstleistung am kollektiven Bewusstsein.**  
+Was das Feld zeigt, wird zur Richtschnur.  
+Nicht Macht entscheidet über Relevanz – sondern Resonanz.
+
 ---
 
 ## 7. Fazit: Die Idee lebt – weil sie strukturell lebendig ist

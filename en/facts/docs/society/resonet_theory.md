@@ -91,16 +91,30 @@ Despite local limits, **global evaluation is always possible**, e.g.:
 
 ---
 
-## 6. Society as a Neural Structure
+## 6. Society as a Neuronal Structure
 
-ResoNet is not just a digital network –  
-it models society **as a neural system**:
+ResoNet does not merely form a digital network –  
+it maps society **as a neuronal system**:
 
-- Each human becomes an autonomous transmitter-receiver
-- Contributions are **impulses**, not commands
-- Perception becomes **collective insight**, without manipulation
+- Every person becomes an autonomous sender-receiver  
+- Contributions are **impulses**, not commands  
+- Perception becomes **collective cognition**, without manipulation  
 
-> No company, no state, no server controls the field – because the field itself is a brain.
+> No company, no state, no server controls the field – because it itself is a brain.
+
+### 🔸 Political Consequence: Power loses its monopoly on opinion
+
+ResoNet transfers expression and opinion formation **back to the field**.  
+This ends the asymmetric role distribution between “political representation” and “populace reception.”
+
+- Politicians lose their interpretative advantage  
+- Lobbying loses its effectiveness  
+- Media lose their filtering monopoly  
+
+**Politics becomes a service to the collective consciousness.**  
+What the field shows becomes the guiding principle.  
+Not power decides relevance – but resonance.
+
 
 ---
 
