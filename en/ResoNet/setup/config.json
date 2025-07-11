@@ -1,0 +1,16 @@
+{
+  "node_name": "raspy.local",
+  "port": 5000,
+  "topics": [
+    "Gesellschaft",
+    "Politik",
+    "Technologie",
+    "Philosophie"
+  ],
+  "peers": [
+    "raspy1.local:5000",
+    "raspy2.local:5000"
+  ],
+  "sync_interval_s": 60,
+  "use_tls": false
+}
