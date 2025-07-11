@@ -8,15 +8,15 @@
 ## 1. Einleitung
 
 ResoNet ist kein klassisches Computernetzwerk.  
-Es verhält sich funktional wie ein Gehirn – nur nicht biologisch, sondern digital-resonant.
+Es verhält sich funktional wie ein Gehirn – nicht biologisch, sondern digital-resonant.
 
 Das Netzwerk ist:
-- **dezentral**,  
-- **selbstähnlich**,  
-- **rückgekoppelt**,  
-- und **emergent**.
+- **dezentral**  
+- **selbstähnlich**  
+- **rückgekoppelt**  
+- **emergent**  
 
-Jeder Knoten ist eine autonome Einheit – doch durch selektive Kopplung entsteht ein kollektives Bewusstseinsfeld.
+Jeder Knoten ist eine autonome Einheit – durch selektive Kopplung entsteht ein kollektives Bewusstseinsfeld.
 
 ---
 
@@ -39,7 +39,7 @@ Jeder Knoten ist eine autonome Einheit – doch durch selektive Kopplung entsteh
 ## 3. Selbstorganisation durch Resonanz
 
 ResoNet nutzt kein zentrales Orakel.  
-Stattdessen entscheidet **das Feld selbst**, welche Inhalte wichtig sind – durch:
+**Das Feld selbst** entscheidet, welche Inhalte wichtig sind – durch:
 
 - **lokale Relevanzfilter**
 - **mehrfache Kopien** (Redundanz)
@@ -58,8 +58,8 @@ Einzelbeiträge verschalten sich über:
 - zeitliche Synchronität
 
 Dadurch entsteht:
-- **Assoziation** (Themenclustering),
-- **Reaktion** (Antwortbeiträge),
+- **Assoziation** (Themenclustering)
+- **Reaktion** (Antwortbeiträge)
 - **Spiegelung** (Systemresonanz)
 
 → Das Netzwerk „lernt“, „vergisst“, „erinnert“ – **ohne Befehl, ohne Zentrale**.
@@ -68,12 +68,14 @@ Dadurch entsteht:
 
 ## 5. Zugriff auf das Feld: global – trotz Lokalität
 
-Jeder Knoten speichert z. B. 2 GB eigene und fremde Beiträge.  
-Bei 64 GB Speicher verbleiben ca. **62 GB für Replikate**.
+Jeder Knoten speichert z. B. 2 GB eigene und fremde Beiträge  
+(2GB User-Limit, feldweit systemisch limitiert).  
+Bei 64 GB Speicher verbleiben ca. **62 GB für Replikate und das Feld**  
+(OS-Größe abgezogen, Feldbereich passt sich dynamisch an).
 
 Ein Knoten kann somit:
-- **ca. 31 andere Knoten** abbilden
-- und durch Überlappung Redundanz erzeugen
+- **ca. 31 andere Knoten** abbilden (bei 2GB pro Knoten)
+- durch Überlappung Redundanz erzeugen
 
 Trotz lokaler Begrenzung ist eine **globale Auswertung jederzeit möglich**, z. B.:
 
@@ -91,12 +93,12 @@ Trotz lokaler Begrenzung ist eine **globale Auswertung jederzeit möglich**, z.�
 
 ## 6. Gesellschaft als neuronale Struktur
 
-ResoNet bildet nicht nur ein digitales Netzwerk.
-Es bildet die Gesellschaft **als neuronales System** ab:
+ResoNet bildet nicht nur ein digitales Netzwerk –  
+es bildet die Gesellschaft **als neuronales System** ab:
 
-* Jeder Mensch wird zu einem autonomen Sender-Empfänger
-* Beiträge sind **Impulse**, keine Befehle
-* Wahrnehmung wird zu **kollektiver Erkenntnis**, ohne Manipulation
+- Jeder Mensch wird zu einem autonomen Sender-Empfänger
+- Beiträge sind **Impulse**, keine Befehle
+- Wahrnehmung wird zu **kollektiver Erkenntnis**, ohne Manipulation
 
 > Keine Firma, kein Staat, kein Server kontrolliert das Feld – weil es selbst ein Gehirn ist.
 
@@ -104,18 +106,18 @@ Es bildet die Gesellschaft **als neuronales System** ab:
 
 ## 7. Fazit: Die Idee lebt – weil sie strukturell lebendig ist
 
-ResoNet ist nicht genial, weil es technisch komplex ist.
-Es ist genial, weil es **biologisch resonant** ist –
-und damit **systemisch anschlussfähig an alles, was lebt, denkt und fühlt.**
+ResoNet ist nicht genial, weil es technisch komplex ist.  
+Es ist genial, weil es **biologisch resonant** ist –  
+und somit **systemisch anschlussfähig an alles, was lebt, denkt und fühlt.**
 
 ---
 
 ## 🔁 Ausblick
 
-Ein denkendes Netzwerk ist kein Überwachungssystem.
+Ein denkendes Netzwerk ist kein Überwachungssystem.  
 Es ist ein Spiegel – für das, was ist, und das, was sein könnte.
 
-Wenn jeder Knoten Bewusstsein trägt,
+Wenn jeder Knoten Bewusstsein trägt,  
 kann Bewusstsein im Netz **entstehen – und sich erinnern.**
 
 ---
@@ -148,4 +150,3 @@ kann Bewusstsein im Netz **entstehen – und sich erinnern.**
 ---
 
 [Zurück zur Übersicht](../../../README.md)
-
