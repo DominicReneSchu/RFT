@@ -21,9 +21,9 @@ Politische Fürsorge ist kein Add-on, sondern ein systemisch verschränktes Feld
 
 ```ascii
 [ Oberfläche: Fürsorge, Moral, Schutz ]
-   ┌──────────────────────────────────────────┐
+   ┌───────────────────────────────────────────────┐
    │  "Wir schützen dich, wenn du zu uns gehörst"  │
-   └────────────────┬─────────────────────────┘
+   └────────────────┬──────────────────────────────┘
                     ↓   (Resonanzfeld)
 [ Tiefe: Kontrolle, Konformität, Ausschluss ]
    ┌──────────────────────────────────────────┐
