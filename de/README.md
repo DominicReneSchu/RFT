@@ -178,6 +178,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 29. [**Kritik als Resonanzfalle** – Wie das System Opposition neutralisiert](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
 30. [**ResoNet** – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
 31. [**Was ist *das System*?**](fakten/docs/gesellschaft/das_system.md)
+32. [**Die fürsorgliche Maske** – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
 
 ---
 

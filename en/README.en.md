@@ -174,7 +174,8 @@ It serves as a normalizing reference value for all resonant interactions within 
 28. [**From Scarcity to Abundance** – The Resonance Economy as a Systemic Alternative](facts/docs/society/resonance_economy.md)
 29. [**Critique as Resonance Trap** – How the System Neutralizes Opposition](facts/docs/society/criticism_as_a_resonance_trap.md)
 30. [**ResoNet** – A Decentralized Resonance Network for Self-Responsibility](facts/docs/society/resonet_theory.md)
-
+31. [**What is *the System*?**](facts/docs/society/the_system.md)
+32. [**The Caring Mask** – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
 ---
 
 ### Concepts 📐
