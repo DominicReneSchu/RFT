@@ -179,6 +179,8 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 30. [**ResoNet** – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
 31. [**Was ist *das System*?**](fakten/docs/gesellschaft/das_system.md)
 32. [**Die fürsorgliche Maske** – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
+33. [**Duales Resonanzgeldsystem** – Ein Ausweg aus globaler Verschuldung und monetärer Dominanz](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
+34. [**Digitale Resonanzkontrolle** – Wie soziale Netzwerke Bewusstsein steuern](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
 
 ---
 

@@ -176,6 +176,8 @@ It serves as a normalizing reference value for all resonant interactions within 
 30. [**ResoNet** – A Decentralized Resonance Network for Self-Responsibility](facts/docs/society/resonet_theory.md)
 31. [**What is *the System*?**](facts/docs/society/the_system.md)
 32. [**The Caring Mask** – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
+33. [**Dual Resonance Money System** – A Way Out of Global Debt and Monetary Dominance](facts/docs/society/dual_resonance_money_system.md)
+34. [**Digital Resonance Control** – How Social Networks Steer Consciousness](facts/docs/society/digital_resonance_control.md)
 ---
 
 ### Concepts 📐
