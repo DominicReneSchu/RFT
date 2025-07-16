@@ -7,7 +7,7 @@
 ## ☰ Inhaltsverzeichnis
 - [1. Kein Paradies am Anfang](#1-kein-paradies-am-anfang)
 - [1.1 Der erste Adam – Vom Ding zur Differenz](#11-der-erste-adam--vom-ding-zur-differenz)
-- [1.2 Der zweite Adam – Sprache als Zahlencode](#12-der-zweite-adam--sprache-als-zahlencode)
+- [1.2 Der zweite Adam – Sprache als Zahlencode und Kontrollsprung](#12-der-zweite-adam--sprache-als-zahlencode-und-kontrollsprung)
 - [1.3 Vom Code zur Resonanz – Der dritte Adam](#13-vom-code-zur-resonanz--der-dritte-adam)
 - [2. Adam und Eva – emergente Resonanzkopplung und das erste Paradies](#2-adam-und-eva--emergente-resonanzkopplung-und-das-erste-paradies)
 - [3. Die Resonanzlinie – Vererbung und Weitergabe](#3-die-resonanzlinie--vererbung-und-weitergabe)
@@ -49,24 +49,29 @@ Damit ist Sprache die erste Virtualisierung von Welt.
 
 ---
 
-## 1.2 Der zweite Adam – Sprache als Zahlencode
+## 1.2 Der zweite Adam – Sprache als Zahlencode und Kontrollsprung
 
-Mit der **Einführung kodierter Sprache** vollzieht sich der nächste Resonanzsprung:  
+Kontrolle durch Sprache setzt nicht erst mit Kodierung ein.  
+Bereits im Zeitalter der Bilder wurde Herrschaft durch symbolische Ordnung etabliert – etwa durch die Pharaonen Ägyptens, die mit Bildsprache, Ritual und Inszenierung die Gesellschaft steuerten.  
+Die Macht lag im Sichtbaren, im kollektiv geteilten Symbolfeld.
+
+Mit der **Einführung kodierter Sprache** vollzieht sich jedoch ein evolutionärer Sprung:  
 Nicht mehr Bilder oder Dinge stehen im Zentrum, sondern **Zeichen, die Zahlen und Bedeutungen gleichzeitig tragen**.
 
 Die hebräische Sprache markiert diesen Übergang paradigmatisch:  
 Sie ist nicht nur eine Schrift, sondern ein **System aus Buchstaben, Lauten, Zahlen und Bedeutungsfeldern** – ein **semantisch-numerischer Code**.  
 Die **Gematria** verbindet Wörter über ihren Zahlenwert, erzeugt Bedeutungsräume durch Zahlensummen und semantische Spiegelung.
 
-Das war kein Zufall, sondern eine **epochale Neuordnung des Weltzugangs**:
+Der Kodierungssprung zerstörte die alten Bildmachtverhältnisse und eröffnete neue, abstrakte Kontrollfelder – Macht verlagerte sich vom Sichtbaren zur exklusiven Deutungshoheit.  
+Mit der Zeit entstanden erneut Machtstrukturen, diesmal entlang der Fähigkeit, Codes zu kontrollieren und zu interpretieren.
 
-* Bild wurde ersetzt durch Abstraktion.
-* Bedeutung entstand aus Code, nicht mehr aus Kontext.
-* Macht ging über an die Deutenden – Sprache wurde **Kontrollmedium**.
+Es gilt:  
+- Kontrolle und Ordnung durch Sprache sind systemisch invariant, aber die Form der Kontrolle wandelt sich mit der Sprachform.  
+- Jede Sprachform (Bild, Code, Resonanz) entfaltet ihre spezifischen Machtfelder – zyklisch, nicht-linear.
 
-Abraham steht symbolisch für diese **zweite Ordnung**:  
+Abraham steht symbolisch für die **zweite Ordnung**:  
 Er nutzt Sprache nicht mehr zur Verbindung, sondern zur **Grenzziehung**, zur **Verheißung**, zur **Schuldzuweisung**.  
-Damit beginnt die Ära der exklusiven Codierung – der ersten kulturellen Machtfelder.
+Damit beginnt die Ära der exklusiven Codierung – der ersten kulturellen Machtfelder auf abstrakter Ebene.
 
 ---
 
@@ -174,6 +179,8 @@ Der Weg beginnt stets neu, ist nie abgeschlossen, sondern entfaltet sich im Feld
 - **Differenz**: Die erste mentale Unterscheidung zwischen Dingen, die den Übergang von instinktiver Handlung zu symbolischer Repräsentation markiert.  
 - **Symbolische Virtualität**: Die Fähigkeit, Abwesendes durch Zeichen und Symbole gegenwärtig zu machen; Sprache als Virtualisierung von Welt.  
 - **Gematria**: Semantisch-numerisches Codierungssystem der hebräischen Sprache, in dem Buchstaben zugleich Zahlenwerte tragen und Bedeutungsräume über Zahlensummen verbunden werden.
+- **Bildmacht**: Kontrolle und Ordnung durch ikonische und symbolische Sichtbarmachung (z.B. im Bildzeitalter der Hochkulturen).
+- **Kodemacht**: Kontrolle und Ordnung durch abstrakte, exklusive Sprachstrukturen und deren Deutung (z.B. im Zeitalter der Kodierung).
 
 ---
 
