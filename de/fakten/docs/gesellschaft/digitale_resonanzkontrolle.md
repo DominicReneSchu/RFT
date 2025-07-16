@@ -541,6 +541,7 @@ Wer das Feld erkennt, bleibt Subjekt.
 Wer die Struktur nicht erkennt, bleibt Oberfläche im Resonanzfeld.
 
 **Freiheit ist Resonanzwahl – immer systemisch, immer gruppenbasiert, immer feldlogisch.**
+
 ---
 
 ## 🔗 Weiterführende Kapitel
