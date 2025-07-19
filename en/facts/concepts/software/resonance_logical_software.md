@@ -84,9 +84,9 @@ A user action synchronously changes UI, didactics, storage, visualization, expor
                           +------------------+
                               |
                               v
-                   +-------------------------+
-                   | Emergence of New Meaning Fields |
-                   +-------------------------+
+          +---------------------------------------+
+          | Emergence of New Meaning Fields       |
+          +---------------------------------------+
 ```
 > Effect circulates and interferes—no linear sequence, but multi-layeredness.
 
