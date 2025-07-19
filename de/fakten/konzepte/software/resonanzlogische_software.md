@@ -84,9 +84,9 @@ Eine Nutzeraktion verändert synchron UI, Didaktik, Speicher, Visualisierung, Ex
                           +------------------+
                               |
                               v
-                   +-------------------------+
-                   | Emergenz neuer Sinnfelder |
-                   +-------------------------+
+                +----------------------------+
+                | Emergenz neuer Sinnfelder  |
+                +----------------------------+
 ```
 > Wirkung zirkuliert und interferiert – keine lineare Abfolge, sondern Vielschichtigkeit.
 
