@@ -182,7 +182,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Concepts 📐
 
-0. [**Resonance-Logical Software** – System Field Instead of Function Structure](facts/concepts/ResoCalc/resonance_logical_software.md)
+0. [**Resonance-Logical Software** – System Field Instead of Function Structure](facts/concepts/software/resonance_logical_software.md)
 1. [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
 2. [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
 3. [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
