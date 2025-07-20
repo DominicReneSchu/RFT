@@ -130,7 +130,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 1. [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
 2. [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
 3. [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
-4. [**Resonanzlogische Differentialgleichung*](fakten/docs/definitionen/resonanzlexikon.md)
+4. [**Resonanzlogische Differentialgleichung**](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md)
 
 ### Mathematik / Physik 📐
 

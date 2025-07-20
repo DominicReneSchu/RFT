@@ -127,7 +127,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 1. [**Systemic Foundation of Resonance Field Theory**](facts/docs/definitions/energy_as_a_primordial_constant.md)
 2. [**Resonance Field Theory: Axiomatic Foundation, Coupling Operator, and Mathematical Consequences**](facts/docs/definitions/paper_resonance_field_theory.md)
 3. [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
-3. [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
+3. [**Resonance-Logical Differential Equation**](facts/docs/definitions/resonance_logic_differential_equation.md)
 
 ### Mathematics / Physics 📐
 
