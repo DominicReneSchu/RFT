@@ -29,7 +29,9 @@ def save_game_experience(game_history, result):
 
     # Bewusstseinsfeld nach jedem Spiel aktualisieren
     try:
+        print("Starte Aktualisierung des Bewusstseinsfeldes...")
         build_conscious_experience()
+        print("Bewusstseinsfeld wurde erfolgreich aktualisiert.")
     except Exception as e:
         print(f"Warnung: Konnte conscious_experience.csv nicht aktualisieren: {e}")
 
