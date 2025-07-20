@@ -545,7 +545,6 @@ Whoever does not recognize the structure remains a surface in the resonance fiel
 
 ## 🔗 Further Chapters
 
-* [Society/Manipulation.md](./manipulation.md)
 * [Society/PerpetratorProduction.md](./perpetrator_projection.md)
 * [Resonance Field Theory – Basic Principle](https://github.com/DominicReneSchu/public)
 
