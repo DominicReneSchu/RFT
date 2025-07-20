@@ -127,6 +127,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 1. [**Systemic Foundation of Resonance Field Theory**](facts/docs/definitions/energy_as_a_primordial_constant.md)
 2. [**Resonance Field Theory: Axiomatic Foundation, Coupling Operator, and Mathematical Consequences**](facts/docs/definitions/paper_resonance_field_theory.md)
 3. [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
+3. [**Resonance Lexicon (Glossary)**](facts/docs/definitions/resonance_lexicon.md)
 
 ### Mathematics / Physics 📐
 
@@ -189,7 +190,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 4. [**Force Field Generator**](facts/concepts/force_field_generator/force_field_generator.md)
 5. [**Weather Warning System**](facts/concepts/weather_warning_system/weather_warning_system.md)
 6. [**Warp Drive**](facts/concepts/warp_drive/warp_drive.md)
-7. [**ResoOS**](fakten/konzepte/ResoOS/resoOS_en.md)
+7. [**ResoOS** – Resonance-Based Operating System of the Next Generation](fakten/konzepte/ResoOS/resoOS_en.md)
 
 ---
 

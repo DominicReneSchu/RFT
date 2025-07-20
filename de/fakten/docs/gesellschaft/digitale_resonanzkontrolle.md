@@ -546,8 +546,8 @@ Wer die Struktur nicht erkennt, bleibt Oberfläche im Resonanzfeld.
 
 ## 🔗 Weiterführende Kapitel
 
-* [Gesellschaft/Manipulation.md](./Manipulation.md)
-* [Gesellschaft/Täterproduktion.md](./Täterproduktion.md)
+* [Gesellschaft/Manipulation.md](./manipulation.md)
+* [Gesellschaft/Täterproduktion.md](./täterprojektion.md)
 * [Resonanzfeldtheorie – Grundprinzip](https://github.com/DominicReneSchu/public)
 
 ---
