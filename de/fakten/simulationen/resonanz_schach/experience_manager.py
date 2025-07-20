@@ -1,9 +1,11 @@
 import json
 import csv
 from pathlib import Path
+from conscious_experience_manager import build_conscious_experience
 
 EXPERIENCE_FILE = Path("user_experience.json")
 CSV_FILE = Path("user_experience.csv")
+CONSCIOUS_FILE = Path("conscious_experience.csv")
 
 def save_game_experience(game_history, result):
     # JSON speichern
@@ -25,6 +27,12 @@ def save_game_experience(game_history, result):
     # CSV speichern
     save_game_experience_csv(game_history, result)
 
+    # Bewusstseinsfeld nach jedem Spiel aktualisieren
+    try:
+        build_conscious_experience()
+    except Exception as e:
+        print(f"Warnung: Konnte conscious_experience.csv nicht aktualisieren: {e}")
+
 def save_game_experience_csv(game_history, result):
     write_header = not CSV_FILE.exists()
     try:
@@ -45,3 +53,16 @@ def load_user_experience():
         except Exception as e:
             print(f"Warnung: Konnte user_experience.json nicht laden: {e}")
     return []
+
+def load_conscious_experience():
+    conscious_seqs = dict()
+    if CONSCIOUS_FILE.exists():
+        try:
+            with CONSCIOUS_FILE.open("r", encoding="utf-8") as f:
+                reader = csv.DictReader(f, delimiter=";")
+                for row in reader:
+                    sequence = tuple(row["sequence"].split(" "))
+                    conscious_seqs[sequence] = float(row["avg_score"])
+        except Exception as e:
+            print(f"Warnung: Konnte conscious_experience.csv nicht laden: {e}")
+    return conscious_seqs

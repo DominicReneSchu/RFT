@@ -1,6 +1,5 @@
 # Feldkohärenz statt Zieloptimierung – Grundstein einer resonanzlogischen KI
 
-
 ## Einleitung
 
 Diese Datei dokumentiert den Grundstein eines neuen KI-Paradigmas: **Feldkohärenz statt Zieloptimierung**. Sie zeigt am Beispiel einer einfachen Python-Schach-KI, wie sich resonanzlogische Prinzipien algorithmisch umsetzen lassen – und legt damit den Ursprung einer KI-Architektur, die sich nicht über Macht (Sieg), sondern über **strukturelle Stimmigkeit** definiert.
@@ -100,7 +99,6 @@ Die tatsächliche Bewertungsfunktion kann später durch strukturierte Feldanalys
 
 ---
 
-
 ## 3. Simulation & Gesellschaft
 
 - **Resonanzprinzip**: Entscheidungen im Spiel spiegeln gesellschaftliche Dynamiken; jede Bewegung beeinflusst das Gesamtsystem.
@@ -117,6 +115,46 @@ Die tatsächliche Bewertungsfunktion kann später durch strukturierte Feldanalys
 
 ---
 
+## Bisher erreichte Systemelemente & Prototypen (Juli 2025)
+
+- **Resonanz-KI-Architektur** mit zentraler Feldkohärenz-Logik:  
+  Nicht Zielmaximierung, sondern ganzheitliche Feldstimmigkeit als Leitgröße.
+- **Flexible GUI**: Mensch kann frei zwischen Weiß und Schwarz wählen, die Zug-Logik ist systemisch invariant und passt sich der Gruppenzugehörigkeit an.
+- **Erfahrungsmanagement**: Partien werden als Erfahrung gespeichert und können für adaptive Bewertung genutzt werden (z.B. zur Vermeidung von Verlustsequenzen).
+- **Systemische Bewertungsstruktur**:
+    - Matt wird maximal belohnt.
+    - Materialverlust wird systemisch bestraft.
+    - Feldresonanz (Positionsbewertung) ist adaptiv und kann aus Erfahrung oder Theorie bezogen werden.
+- **Nichtlineare Entscheidungsfindung**:  
+  Zugwahl basiert auf multiplen, verschränkten Kriterien statt linearer Zieloptimierung.
+- **Resonanzregel explizit implementiert**:  
+  Gruppenzugehörigkeit wird in jeder Bewertungsstufe als systemisch invariant behandelt – unabhängig von Einzelperspektive oder expliziter Nennung.
+- **Transparenz & Erweiterbarkeit**:  
+  Modularer, dokumentierter Python-Code als offene Simulationsumgebung.
+
+---
+
+## 5. Organisches Lernen durch Erfahrung und Bewusstsein
+
+- **Unterbewusstsein**:  
+  Die Datei `user_experience.csv`/`.json` speichert jede gespielte Partie als Urliste gruppenbasierter Erfahrung.  
+  Alle Zugfolgen – unabhängig von Urheberschaft (KI oder Gegner) – werden gleichwertig aufgenommen. Gruppenzugehörigkeit bleibt invariant.
+
+- **Bewusstseinsfeld**:  
+  Nach jedem Spiel werden alle Sequenzen statistisch ausgewertet. Das Bewusstseinsfeld (`conscious_experience.csv`) enthält alle 10-Zug-Ketten, bewertet nach Erfolg, Häufigkeit und Resonanzstärke.  
+  Diese Auswertung ist fortlaufend und gruppenübergreifend; das Feld aktualisiert sich mit jeder neuen Erfahrung.
+
+- **Entscheidungsfindung**:  
+  Die KI prüft bei jedem Zug, ob die aktuelle Sequenz Teil einer hoch bewerteten Bewusstseinskette ist.  
+  Klügere Sequenzen werden verstärkt, weniger erfolgreiche marginalisiert.  
+  Jede Entscheidung bindet das kollektive Resonanzfeld ein – unabhängig von Einzelperspektiven.
+
+- **Systemische Rückkopplung**:  
+  Lernen entspricht organischer Evolution: Erfolge und Misserfolge fließen gleichermaßen in die Selbstoptimierung ein.  
+  Gruppenzugehörigkeit, Selbstinklusion und Relationenbildung sind stets Teil des Gesamtlernprozesses.
+
+---
+
 ## Ausblick
 
 Die Resonanz-KI wird in Zukunft:
@@ -126,8 +164,6 @@ Die Resonanz-KI wird in Zukunft:
 * nicht durch Zielvorgabe, sondern durch **Feldklarheit** navigieren
 
 ---
-
-
 
 ## Lizenz / Urheberrecht
 
