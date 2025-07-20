@@ -130,6 +130,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 1. [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
 2. [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
 3. [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
+4. [**Resonanzlogische Differentialgleichung*](fakten/docs/definitionen/resonanzlexikon.md)
 
 ### Mathematik / Physik 📐
 
@@ -192,7 +193,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 4. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
 5. [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
 6. [**Warpantrieb**](fakten/konzepte/warpantrieb/warpantrieb.md)
-7. [**ResoOS**](fakten/konzepte/ResoOS/resoOS.md)
+7. [**ResoOS** – Resonanzbasiertes Betriebssystem der nächsten Generation](fakten/konzepte/ResoOS/resoOS.md)
 
 ---
 
