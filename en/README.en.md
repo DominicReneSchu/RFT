@@ -189,6 +189,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 4. [**Force Field Generator**](facts/concepts/force_field_generator/force_field_generator.md)
 5. [**Weather Warning System**](facts/concepts/weather_warning_system/weather_warning_system.md)
 6. [**Warp Drive**](facts/concepts/warp_drive/warp_drive.md)
+7. [**ResoOS**](fakten/konzepte/ResoOS/resoOS_en.md)
 
 ---
 

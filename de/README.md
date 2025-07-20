@@ -192,6 +192,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 4. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
 5. [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
 6. [**Warpantrieb**](fakten/konzepte/warpantrieb/warpantrieb.md)
+7. [**ResoOS**](fakten/konzepte/ResoOS/resoOS.md)
 
 ---
 
