@@ -58,36 +58,23 @@ ẍ + α(x, t)ẋ + β(x, t) + ∫γ(x, τ)dτ + η(x, ẋ, t, Φ) = 0
 
 ## 4. Derivation Tree of Typical Equations from 𝓡
 
-```mermaid
-graph TD
-  R["𝓡(x, ẋ, ẍ, t, Φ) = 0"]
-  O1["Harmonic Oscillator"]
-  O2["Damped Oscillator"]
-  O3["Nonlinear Oscillator (Van der Pol)"]
-  O4["Threshold/Switching Model (FitzHugh-Nagumo)"]
-  O5["Stochastic DE"]
-  O6["Partial DE (Diffusion/Waves)"]
-  O7["Network Dynamics (Coupled Systems)"]
-  O8["Memory Model (Hysteresis, Nonlocal)"]
-
-  R --> O1
-  R --> O2
-  R --> O3
-  R --> O4
-  R --> O5
-  R --> O6
-  R --> O7
-  R --> O8
-
-  O1 ---|α, β, γ, η = 0| O1a["ẍ + ω²x = 0"]
-  O2 ---|α ≠ 0| O2a["ẍ + 2γẋ + ω²x = 0"]
-  O3 ---|α = −μ(1−x²), β = x| O3a["ẍ − μ(1−x²)ẋ + x = 0"]
-  O4 ---|Threshold in Φ| O4a["FitzHugh-Nagumo"]
-  O5 ---|Φ includes noise| O5a["dx = f(x, t)dt + g(x, t)dWₜ"]
-  O6 ---|Φ includes spatial coupling| O6a["∂ₜx = D∇²x + f(x)"]
-  O7 ---|Φ = coupling matrix| O7a["ẋᵢ = Fᵢ(x, Φ)"]
-  O8 ---|γ ≠ 0| O8a["ẍ + ∫γ(x,τ)dτ = 0"]
-```
+𝓡(x, ẋ, ẍ, t, Φ) = 0  
+├── Harmonic Oscillator  
+│   └── ẍ + ω²x = 0           [α, β, γ, η = 0]  
+├── Damped Oscillator  
+│   └── ẍ + 2γẋ + ω²x = 0    [α ≠ 0]  
+├── Nonlinear Oscillator (Van der Pol)  
+│   └── ẍ − μ(1−x²)ẋ + x = 0 [α = −μ(1−x²), β = x]  
+├── Threshold/Switching Model (FitzHugh-Nagumo)  
+│   └── threshold in Φ  
+├── Stochastic DE  
+│   └── dx = f(x, t)dt + g(x, t)dWₜ [Φ includes noise]  
+├── Partial DE (Diffusion/Waves)  
+│   └── ∂ₜx = D∇²x + f(x)      [Φ includes spatial coupling]  
+├── Network Dynamics (coupled systems)  
+│   └── ẋᵢ = Fᵢ(x, Φ)         [Φ = coupling matrix]  
+└── Memory Model (hysteresis, nonlocal)  
+    └── ẍ + ∫γ(x,τ)dτ = 0     [γ ≠ 0]
 
 ---
 
