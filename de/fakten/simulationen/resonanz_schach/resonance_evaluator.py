@@ -1,69 +1,86 @@
 import chess
-import numpy as np
+import math
 
-def king_zone(square):
-    """Gibt alle Felder des 3x3-Quadrats um square zurück (inkl. Randprüfung)."""
-    rank = chess.square_rank(square)
-    file = chess.square_file(square)
-    zone = []
-    for dr in [-1, 0, 1]:
-        for df in [-1, 0, 1]:
-            r = rank + dr
-            f = file + df
-            if 0 <= r < 8 and 0 <= f < 8:
-                zone.append(chess.square(f, r))
-    return zone
-
-def king_safety(board, color):
-    """Bewerte die Feldkohärenz um den eigenen König: Nähe verbündeter Figuren, Distanz zu feindlichen Angreifern."""
-    king_square = board.king(color)
-    if king_square is None:
-        return -999  # Matt
-
-    # Verbündete um den König
-    allied_mask = np.zeros(64)
-    for sq in chess.SQUARES:
-        if board.color_at(sq) == color and sq != king_square:
-            allied_mask[sq] = 1
-    king_neighbors = king_zone(king_square)
-    allied_shield = sum(allied_mask[sq] for sq in king_neighbors)
-
-    # Feindliche Angreifer auf den König
-    enemy_attackers = board.attackers(not color, king_square)
-    pressure = len(enemy_attackers)
-
-    # Resonanzwert: Mehr Schutz = besser, mehr Druck = schlechter
-    return allied_shield - 2 * pressure
-
-def king_pressure(board, color):
-    """Bewerte den Angriffsdruck auf den gegnerischen König."""
-    enemy_king_square = board.king(not color)
-    if enemy_king_square is None:
-        return 999  # Matt gesetzt
-
-    # Eigene Angreifer auf den gegnerischen König
-    attackers = board.attackers(color, enemy_king_square)
-    pressure = len(attackers)
-
-    # Nähe: Je näher eigene Figuren am König, desto höher der Druck
-    proximity = 0
-    for sq in attackers:
-        dist = chess.square_distance(sq, enemy_king_square)
-        proximity += max(0, 3 - dist)  # Bonus für Nähe bis 3 Felder
-
-    return pressure + proximity
+def dynamic_piece_value(piece_type, board, color):
+    """
+    Dynamischer Wert einer Figur abhängig vom Spielfeld-Zustand.
+    Exponentielles Wachstum: Je weniger Figuren, desto wertvoller wird jede einzelne.
+    Die Dame ist einzigartig und wird besonders stark gewichtet.
+    """
+    base = {
+        chess.PAWN: 1,
+        chess.KNIGHT: 3,
+        chess.BISHOP: 3,
+        chess.ROOK: 5,
+        chess.QUEEN: 9,
+        chess.KING: 0
+    }
+    own_pieces = [p for p in board.piece_map().values() if p.color == color and p.piece_type != chess.KING]
+    n = len(own_pieces)
+    # Exponentieller Wachstumsfaktor
+    k = 0.13
+    expo = math.exp(k * (15 - n))
+    # Dame erhält zusätzlichen Multiplikator für Einzigartigkeit und Bedeutung im Endspiel
+    if piece_type == chess.QUEEN:
+        expo *= 1.7
+    # Bauern werden im Endspiel ebenfalls systemisch wertvoller
+    if piece_type == chess.PAWN and n < 7:
+        expo *= 1.25
+    return base[piece_type] * expo
 
 def evaluate_resonance(board, move):
-    """
-    Feldlogische Gesamtbewertung eines Zuges: 
-    𝓡(z) = Schutz eigener König + Druck auf gegnerischen König
-    """
+    board_cp = board.copy()
+    board_cp.push(move)
     color = board.turn
-    board_push = board.copy(stack=False)
-    board_push.push(move)
+    opp_color = not color
 
-    safety = king_safety(board_push, color)
-    pressure = king_pressure(board_push, color)
+    # Dynamische Materialbewertung
+    my_material = sum(
+        dynamic_piece_value(p.piece_type, board_cp, color)
+        for p in board_cp.piece_map().values() if p.color == color and p.piece_type != chess.KING
+    )
+    opp_material = sum(
+        dynamic_piece_value(p.piece_type, board_cp, opp_color)
+        for p in board_cp.piece_map().values() if p.color == opp_color and p.piece_type != chess.KING
+    )
+    material_diff = my_material - opp_material
 
-    resonance = safety + pressure
-    return resonance, {"king_safety": safety, "king_pressure": pressure}
+    # Gefolgschaft (Anzahl + Typen der verbleibenden Figuren)
+    my_figures = [sq for sq in chess.SQUARES if (
+        (p := board_cp.piece_at(sq)) and p.color == color and p.piece_type != chess.KING)]
+    opp_figures = [sq for sq in chess.SQUARES if (
+        (p := board_cp.piece_at(sq)) and p.color == opp_color and p.piece_type != chess.KING)]
+    gefolgschaft = len(my_figures) - len(opp_figures)
+
+    # Mobilität
+    my_mob = sum(1 for m in board_cp.legal_moves if board_cp.piece_at(m.from_square) and board_cp.piece_at(m.from_square).color == color)
+    opp_mob = sum(1 for m in board_cp.legal_moves if board_cp.piece_at(m.from_square) and board_cp.piece_at(m.from_square).color == opp_color)
+    mobilitaet = my_mob - opp_mob
+
+    # Synergie
+    my_synergy = sum(
+        sum(1 for sq2 in chess.SQUARES if board_cp.is_attacked_by(color, sq2) and board_cp.piece_at(sq2) and board_cp.piece_at(sq2).color == color)
+        for sq in my_figures
+    )
+    opp_synergy = sum(
+        sum(1 for sq2 in chess.SQUARES if board_cp.is_attacked_by(opp_color, sq2) and board_cp.piece_at(sq2) and board_cp.piece_at(sq2).color == opp_color)
+        for sq in opp_figures
+    )
+    synergie = my_synergy - opp_synergy
+
+    # Königssicherheit: Wie viele eigene Figuren decken Felder um den König
+    king_sq = next(sq for sq in chess.SQUARES if (p := board_cp.piece_at(sq)) and p.color == color and p.piece_type == chess.KING)
+    king_zone = [sq for sq in chess.SQUARES if chess.square_distance(sq, king_sq) == 1]
+    king_safe = sum(1 for sq in king_zone if board_cp.is_attacked_by(color, sq))
+
+    # Gesamtbewertung: Dynamisches Material dominiert exponentiell, Rest systemisch verschränkt
+    value = 8.0 * material_diff + 2.0 * gefolgschaft + 1.2 * mobilitaet + 0.8 * synergie + 1.0 * king_safe
+
+    details = {
+        "material_diff": material_diff,
+        "gefolgschaft": gefolgschaft,
+        "mobilitaet": mobilitaet,
+        "synergie": synergie,
+        "king_safe": king_safe
+    }
+    return value, details

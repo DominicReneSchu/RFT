@@ -1,4 +1,5 @@
 import tkinter as tk
+import time
 from tkinter import messagebox
 import chess
 from PIL import Image, ImageTk
@@ -51,6 +52,20 @@ def xy_to_square(x, y):
         return chess.square(file, rank)
     return None
 
+def get_time_limit(board, last_move=None):
+    # Dynamisches Zeitbudget in Sekunden je nach Spielsituation
+    if last_move:
+        piece = board.piece_at(last_move.to_square)
+        if piece and piece.piece_type == chess.KING:
+            return 300  # 5 Minuten bei Königszug
+    if board.is_check():
+        return 300  # 5 Minuten bei Schach
+    if len(list(board.legal_moves)) < 8:
+        return 240  # 4 Minuten bei Endspiel/Kritik
+    if sum(1 for p in board.piece_map().values() if p.color == board.turn) < 5:
+        return 180  # 3 Minuten bei wenig Material
+    return 120  # 2 Minuten Standard (unkritisch)
+
 class ResonanceChessGUI:
     def __init__(self, master, user_experience=None):
         self.master = master
@@ -61,11 +76,35 @@ class ResonanceChessGUI:
         self.legal_moves = []
         self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
         self.user_experience = user_experience if user_experience is not None else []
+        self.human_color = None  # Gruppenzugehörigkeit explizit
+        self.create_start_dialog()
+
+    def create_start_dialog(self):
+        dialog = tk.Toplevel(self.master)
+        dialog.title("Farbwahl")
+        dialog.transient(self.master)
+        dialog.grab_set()
+        tk.Label(dialog, text="Welche Farbe willst du spielen?", font=FONT).pack(padx=16, pady=16)
+        btn_frame = tk.Frame(dialog)
+        btn_frame.pack(pady=8)
+        tk.Button(btn_frame, text="Weiß", font=FONT, width=12,
+                  command=lambda: self.start_game(dialog, chess.WHITE)).pack(side="left", padx=8)
+        tk.Button(btn_frame, text="Schwarz", font=FONT, width=12,
+                  command=lambda: self.start_game(dialog, chess.BLACK)).pack(side="left", padx=8)
+        dialog.wait_window()
+
+    def start_game(self, dialog, color):
+        self.human_color = color
+        dialog.destroy()
         self.create_widgets()
         self.draw_board()
         self.update_move_list()
-        self.info_label.config(text="Du spielst Weiß – KI spielt Schwarz.")
-        self.master.after(400, self.ki_move)  # falls Schwarz am Zug ist
+        if self.human_color == chess.WHITE:
+            self.info_label.config(text="Du spielst Weiß – KI spielt Schwarz.")
+        else:
+            self.info_label.config(text="Du spielst Schwarz – KI spielt Weiß.")
+        if self.board.turn != self.human_color:
+            self.master.after(400, self.ki_move)
 
     def create_widgets(self):
         self.canvas = tk.Canvas(self.master, width=8*SQUARE_SIZE, height=8*SQUARE_SIZE)
@@ -124,7 +163,7 @@ class ResonanceChessGUI:
             return
         square = xy_to_square(event.x, event.y)
         piece = self.board.piece_at(square) if square is not None else None
-        if piece and piece.color == self.board.turn and self.board.turn == chess.WHITE:
+        if piece and piece.color == self.board.turn and self.board.turn == self.human_color:
             self.selected_square = square
             self.legal_moves = [m for m in self.board.legal_moves if m.from_square == square]
             self.drag_data["piece"] = piece
@@ -141,19 +180,19 @@ class ResonanceChessGUI:
             self.master.update()
 
     def on_release(self, event):
+        if self.board.turn != self.human_color:
+            return
         if self.selected_square is not None and self.drag_data["drag_img_id"] is not None:
             to_square = xy_to_square(event.x, event.y)
             from_square = self.selected_square
             piece = self.board.piece_at(from_square)
             move = None
-            # Promotion: Prüfen, ob ein Bauer auf die letzte Reihe zieht
             if piece and piece.piece_type == chess.PAWN and chess.square_rank(to_square) in [0, 7]:
-                # Automatische Umwandlung zur Dame
                 move = chess.Move(from_square, to_square, promotion=chess.QUEEN)
             else:
                 move = chess.Move(from_square, to_square)
             if move is not None and move in self.board.legal_moves:
-                san = self.board.san(move)  # SAN-Notation vor dem Push bestimmen!
+                san = self.board.san(move)
                 self.board.push(move)
                 self.move_list.append(san)
                 self.selected_square = None
@@ -164,7 +203,7 @@ class ResonanceChessGUI:
                 if self.board.is_game_over():
                     self.on_game_end(self.board.result())
                     return
-                if self.board.turn == chess.BLACK:
+                if self.board.turn != self.human_color:
                     self.info_label.config(text="KI denkt …")
                     self.master.after(400, self.ki_move)
                 else:
@@ -178,25 +217,34 @@ class ResonanceChessGUI:
         self.draw_board()
 
     def ki_move(self):
-        if self.board.is_game_over():
-            self.on_game_end(self.board.result())
+        if self.board.is_game_over() or self.board.turn == self.human_color:
             return
-        if self.board.turn == chess.BLACK:
-            move, score, diag = select_best_move(self.board, depth=2)
-            if move is not None:
-                san = self.board.san(move)  # SAN VOR push()!
-                self.board.push(move)
-                self.move_list.append(san)
-                self.draw_board()
-                self.update_move_list()
-                if self.board.is_game_over():
-                    self.on_game_end(self.board.result())
-                    return
-                else:
-                    self.info_label.config(text=f"KI zog: {san} (𝓡={score:.2f})")
+        last_move = self.board.move_stack[-1] if self.board.move_stack else None
+        time_limit = get_time_limit(self.board, last_move)
+        start_time = time.time()
+        move, score, diag = select_best_move(
+            self.board,
+            time_limit=time_limit,
+            user_experience=self.user_experience
+        )
+        elapsed = time.time() - start_time
+        if move is not None:
+            san = self.board.san(move)
+            self.board.push(move)
+            self.move_list.append(san)
+            self.draw_board()
+            self.update_move_list()
+            if self.board.is_game_over() or len(list(self.board.legal_moves)) == 0:
+                result = self.board.result() if self.board.is_game_over() else "KI kann nicht ziehen"
+                self.on_game_end(result)
+                return
             else:
-                self.info_label.config(text="KI kann nicht ziehen.")
+                self.info_label.config(
+                    text=f"KI zog: {san} (𝓡={score:.2f}, {elapsed:.1f}s gerechnet)"
+                )
         else:
+            self.on_game_end("KI kann nicht ziehen")
+        if self.board.turn == self.human_color:
             self.info_label.config(text="Dein Zug")
 
     def update_move_list(self):
@@ -212,12 +260,14 @@ class ResonanceChessGUI:
         self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
         self.draw_board()
         self.update_move_list()
-        self.info_label.config(text="Du spielst Weiß – KI spielt Schwarz.")
-        if self.board.turn == chess.BLACK:
+        if self.human_color == chess.WHITE:
+            self.info_label.config(text="Du spielst Weiß – KI spielt Schwarz.")
+        else:
+            self.info_label.config(text="Du spielst Schwarz – KI spielt Weiß.")
+        if self.board.turn != self.human_color:
             self.master.after(400, self.ki_move)
 
     def on_game_end(self, result):
-        # Spielprotokoll und Ergebnis speichern (nur Nutzerpartien werden gespeichert)
         print(f"Speichere Spielerfahrung: {self.move_list} Ergebnis: {result}")
         save_game_experience(self.move_list, result)
         self.info_label.config(text="Spielende: " + result)
@@ -230,7 +280,6 @@ if __name__ == "__main__":
     except Exception as e:
         print("Warnung: Schachfigurenbilder konnten nicht geladen werden.", e)
         print("Bitte platziere die Bilder für p_s, P_w, r_s, R_w, n_s, N_w, b_s, B_w, q_s, Q_w, k_s, K_w im Unterordner 'pieces'.")
-    # Nutzererfahrung laden
     user_experience = load_user_experience()
     app = ResonanceChessGUI(root, user_experience=user_experience)
     root.mainloop()

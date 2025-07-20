@@ -100,3 +100,3048 @@ Zugnummer;Zug;Ergebnis
 99;Bf6;1/2-1/2
 100;Kh5;1/2-1/2
 101;Bf5;1/2-1/2
+1;Nf3;KI kann nicht ziehen
+2;Nh6;KI kann nicht ziehen
+3;g3;KI kann nicht ziehen
+4;Rg8;KI kann nicht ziehen
+5;Na3;KI kann nicht ziehen
+6;Rh8;KI kann nicht ziehen
+7;e4;KI kann nicht ziehen
+8;Rg8;KI kann nicht ziehen
+9;Bh3;KI kann nicht ziehen
+10;Nc6;KI kann nicht ziehen
+11;Bf5;KI kann nicht ziehen
+12;Rh8;KI kann nicht ziehen
+13;Ke2;KI kann nicht ziehen
+14;Rg8;KI kann nicht ziehen
+15;h3;KI kann nicht ziehen
+16;Rh8;KI kann nicht ziehen
+17;Bxh7;KI kann nicht ziehen
+18;Ng8;KI kann nicht ziehen
+19;Nb5;KI kann nicht ziehen
+20;Nd4+;KI kann nicht ziehen
+21;Nfxd4;KI kann nicht ziehen
+22;Nh6;KI kann nicht ziehen
+23;Bf5;KI kann nicht ziehen
+24;Rg8;KI kann nicht ziehen
+25;Nxc7+;KI kann nicht ziehen
+26;Qxc7;KI kann nicht ziehen
+27;f4;KI kann nicht ziehen
+28;Qc4+;KI kann nicht ziehen
+29;Ke1;KI kann nicht ziehen
+30;Qe2+;KI kann nicht ziehen
+31;Nxe2;KI kann nicht ziehen
+32;Nxf5;KI kann nicht ziehen
+33;exf5;KI kann nicht ziehen
+34;Rh8;KI kann nicht ziehen
+35;c4;KI kann nicht ziehen
+36;Rg8;KI kann nicht ziehen
+37;Ng1;KI kann nicht ziehen
+38;Rh8;KI kann nicht ziehen
+39;h4;KI kann nicht ziehen
+40;Rg8;KI kann nicht ziehen
+41;Kf2;KI kann nicht ziehen
+42;Rh8;KI kann nicht ziehen
+43;Ke3;KI kann nicht ziehen
+44;Rg8;KI kann nicht ziehen
+45;g4;KI kann nicht ziehen
+46;Rh8;KI kann nicht ziehen
+47;Kd3;KI kann nicht ziehen
+48;Rg8;KI kann nicht ziehen
+49;Kd4;KI kann nicht ziehen
+50;Rh8;KI kann nicht ziehen
+51;g5;KI kann nicht ziehen
+52;Rg8;KI kann nicht ziehen
+53;Qf3;KI kann nicht ziehen
+54;Rh8;KI kann nicht ziehen
+55;Qc3;KI kann nicht ziehen
+56;Rg8;KI kann nicht ziehen
+57;Qd3;KI kann nicht ziehen
+58;Rh8;KI kann nicht ziehen
+59;Nh3;KI kann nicht ziehen
+60;Rg8;KI kann nicht ziehen
+61;g6;KI kann nicht ziehen
+62;Rh8;KI kann nicht ziehen
+63;gxf7+;KI kann nicht ziehen
+64;Kxf7;KI kann nicht ziehen
+65;Qe4;KI kann nicht ziehen
+66;Rb8;KI kann nicht ziehen
+67;Qd5+;KI kann nicht ziehen
+68;Ke8;KI kann nicht ziehen
+69;Rf1;KI kann nicht ziehen
+70;Rg8;KI kann nicht ziehen
+71;Qxg8;KI kann nicht ziehen
+72;Kd8;KI kann nicht ziehen
+73;Qxf8+;KI kann nicht ziehen
+74;Kc7;KI kann nicht ziehen
+75;Ke5;KI kann nicht ziehen
+76;d6+;KI kann nicht ziehen
+77;Kd4;KI kann nicht ziehen
+78;e5+;KI kann nicht ziehen
+79;Kd5;KI kann nicht ziehen
+80;Be6+;KI kann nicht ziehen
+81;fxe6;KI kann nicht ziehen
+82;Rxf8;KI kann nicht ziehen
+83;Rb1;KI kann nicht ziehen
+84;Rh8;KI kann nicht ziehen
+85;fxe5;KI kann nicht ziehen
+86;Rd8;KI kann nicht ziehen
+87;e7;KI kann nicht ziehen
+88;Kb6;KI kann nicht ziehen
+89;exd8=Q+;KI kann nicht ziehen
+90;Ka6;KI kann nicht ziehen
+91;Qxd6+;KI kann nicht ziehen
+92;b6;KI kann nicht ziehen
+93;Qa3+;KI kann nicht ziehen
+94;Kb7;KI kann nicht ziehen
+95;d4;KI kann nicht ziehen
+96;Ka8;KI kann nicht ziehen
+97;Qf8+;KI kann nicht ziehen
+98;Kb7;KI kann nicht ziehen
+99;Qe7+;KI kann nicht ziehen
+100;Ka6;KI kann nicht ziehen
+101;Qxg7;KI kann nicht ziehen
+102;Ka5;KI kann nicht ziehen
+103;Qxa7+;KI kann nicht ziehen
+1;Nf3;KI kann nicht ziehen
+2;Nf6;KI kann nicht ziehen
+3;c4;KI kann nicht ziehen
+4;g5;KI kann nicht ziehen
+5;d4;KI kann nicht ziehen
+6;g4;KI kann nicht ziehen
+7;Nh4;KI kann nicht ziehen
+8;Bg7;KI kann nicht ziehen
+9;Qb3;KI kann nicht ziehen
+10;Nc6;KI kann nicht ziehen
+11;d5;KI kann nicht ziehen
+12;Nb8;KI kann nicht ziehen
+13;Qg3;KI kann nicht ziehen
+14;Na6;KI kann nicht ziehen
+15;Nf5;KI kann nicht ziehen
+16;Bf8;KI kann nicht ziehen
+17;Ng7+;KI kann nicht ziehen
+18;Bxg7;KI kann nicht ziehen
+19;Bh6;KI kann nicht ziehen
+20;Bxh6;KI kann nicht ziehen
+21;b3;KI kann nicht ziehen
+22;Bg5;KI kann nicht ziehen
+23;b4;KI kann nicht ziehen
+24;Nxb4;KI kann nicht ziehen
+25;h4;KI kann nicht ziehen
+26;Nc2+;KI kann nicht ziehen
+27;Kd1;KI kann nicht ziehen
+28;Nxa1;KI kann nicht ziehen
+29;hxg5;KI kann nicht ziehen
+30;O-O;KI kann nicht ziehen
+31;Kc1;KI kann nicht ziehen
+32;d6;KI kann nicht ziehen
+33;gxf6;KI kann nicht ziehen
+34;exf6;KI kann nicht ziehen
+35;Kb2;KI kann nicht ziehen
+36;f5;KI kann nicht ziehen
+37;Qc3;KI kann nicht ziehen
+38;Nc2;KI kann nicht ziehen
+39;Kxc2;KI kann nicht ziehen
+40;f6;KI kann nicht ziehen
+41;Kb2;KI kann nicht ziehen
+42;Bd7;KI kann nicht ziehen
+43;Qd2;KI kann nicht ziehen
+44;Qc8;KI kann nicht ziehen
+45;Qa5;KI kann nicht ziehen
+46;Bc6;KI kann nicht ziehen
+47;Qe1;KI kann nicht ziehen
+48;Bxd5;KI kann nicht ziehen
+49;cxd5;KI kann nicht ziehen
+50;b6;KI kann nicht ziehen
+51;Kc3;KI kann nicht ziehen
+52;a5;KI kann nicht ziehen
+53;a3;KI kann nicht ziehen
+54;a4;KI kann nicht ziehen
+55;Qd1;KI kann nicht ziehen
+56;Ra5;KI kann nicht ziehen
+57;Qd2;KI kann nicht ziehen
+58;Ra8;KI kann nicht ziehen
+59;Kc4;KI kann nicht ziehen
+60;Ra6;KI kann nicht ziehen
+61;Kd4;KI kann nicht ziehen
+62;Ra8;KI kann nicht ziehen
+63;Kc4;KI kann nicht ziehen
+64;Ra6;KI kann nicht ziehen
+65;Qb4;KI kann nicht ziehen
+66;Kh8;KI kann nicht ziehen
+67;f3;KI kann nicht ziehen
+68;Rg8;KI kann nicht ziehen
+69;Rh5;KI kann nicht ziehen
+70;gxf3;KI kann nicht ziehen
+71;exf3;KI kann nicht ziehen
+72;Ra8;KI kann nicht ziehen
+73;Rh1;KI kann nicht ziehen
+74;Rxg2;KI kann nicht ziehen
+75;Bxg2;KI kann nicht ziehen
+76;Qa6+;KI kann nicht ziehen
+77;Kc3;KI kann nicht ziehen
+78;Qc8;KI kann nicht ziehen
+79;Kc2;KI kann nicht ziehen
+80;Kg8;KI kann nicht ziehen
+81;Nd2;KI kann nicht ziehen
+82;Kh8;KI kann nicht ziehen
+83;Qd4;KI kann nicht ziehen
+84;Qd8;KI kann nicht ziehen
+85;Rh4;KI kann nicht ziehen
+86;f4;KI kann nicht ziehen
+87;Rxh7+;KI kann nicht ziehen
+88;Kxh7;KI kann nicht ziehen
+89;Qd3+;KI kann nicht ziehen
+90;Kg8;KI kann nicht ziehen
+91;Nb3;KI kann nicht ziehen
+92;axb3+;KI kann nicht ziehen
+93;Kxb3;KI kann nicht ziehen
+94;Kf8;KI kann nicht ziehen
+95;Qc4;KI kann nicht ziehen
+96;Rxa3+;KI kann nicht ziehen
+97;Kxa3;KI kann nicht ziehen
+98;Ke8;KI kann nicht ziehen
+99;Qc6+;KI kann nicht ziehen
+100;Kf8;KI kann nicht ziehen
+101;Kb2;KI kann nicht ziehen
+102;Qe7;KI kann nicht ziehen
+103;Qa8+;KI kann nicht ziehen
+104;Qd8;KI kann nicht ziehen
+105;Qxd8+;KI kann nicht ziehen
+106;Kf7;KI kann nicht ziehen
+107;Qxc7+;KI kann nicht ziehen
+108;Kg6;KI kann nicht ziehen
+109;Qd7;KI kann nicht ziehen
+110;Kh6;KI kann nicht ziehen
+111;Ka1;KI kann nicht ziehen
+112;f5;KI kann nicht ziehen
+113;Qxd6+;KI kann nicht ziehen
+114;Kh5;KI kann nicht ziehen
+115;Qxf4;KI kann nicht ziehen
+116;Kg6;KI kann nicht ziehen
+117;Qc1;KI kann nicht ziehen
+118;Kh5;KI kann nicht ziehen
+119;d6;KI kann nicht ziehen
+120;b5;KI kann nicht ziehen
+121;Bh3;KI kann nicht ziehen
+122;f4;KI kann nicht ziehen
+123;Qxf4;KI kann nicht ziehen
+124;Kg6;KI kann nicht ziehen
+125;Bd7;KI kann nicht ziehen
+126;b4;KI kann nicht ziehen
+127;Be8+;KI kann nicht ziehen
+128;Kh7;KI kann nicht ziehen
+129;Bf7;KI kann nicht ziehen
+130;b3;KI kann nicht ziehen
+131;Qf6;KI kann nicht ziehen
+132;b2+;KI kann nicht ziehen
+133;Qxb2;KI kann nicht ziehen
+134;Kh6;KI kann nicht ziehen
+135;f4;KI kann nicht ziehen
+136;Kh7;KI kann nicht ziehen
+137;d7;KI kann nicht ziehen
+1;Nf3;KI kann nicht ziehen
+2;Nf6;KI kann nicht ziehen
+3;c4;KI kann nicht ziehen
+4;g5;KI kann nicht ziehen
+5;e3;KI kann nicht ziehen
+6;g4;KI kann nicht ziehen
+7;Nh4;KI kann nicht ziehen
+8;Bg7;KI kann nicht ziehen
+9;a4;KI kann nicht ziehen
+10;a5;KI kann nicht ziehen
+11;Ng6;KI kann nicht ziehen
+12;hxg6;KI kann nicht ziehen
+13;c5;KI kann nicht ziehen
+14;Nc6;KI kann nicht ziehen
+15;h3;KI kann nicht ziehen
+16;Rb8;KI kann nicht ziehen
+17;Nc3;KI kann nicht ziehen
+18;Rxh3;KI kann nicht ziehen
+19;gxh3;KI kann nicht ziehen
+20;gxh3;KI kann nicht ziehen
+21;Ke2;KI kann nicht ziehen
+22;h2;KI kann nicht ziehen
+23;Ke1;KI kann nicht ziehen
+24;Kf8;KI kann nicht ziehen
+25;d3;KI kann nicht ziehen
+26;Ng8;KI kann nicht ziehen
+27;f3;KI kann nicht ziehen
+28;Bxc3+;KI kann nicht ziehen
+29;bxc3;KI kann nicht ziehen
+30;Nf6;KI kann nicht ziehen
+31;Qb3;KI kann nicht ziehen
+32;Nh5;KI kann nicht ziehen
+33;Ra2;KI kann nicht ziehen
+34;e6;KI kann nicht ziehen
+35;Qc2;KI kann nicht ziehen
+36;Ke8;KI kann nicht ziehen
+37;Qg2;KI kann nicht ziehen
+38;Kf8;KI kann nicht ziehen
+39;Bd2;KI kann nicht ziehen
+40;Ke8;KI kann nicht ziehen
+41;Qg4;KI kann nicht ziehen
+42;Kf8;KI kann nicht ziehen
+43;Qg2;KI kann nicht ziehen
+44;Ke8;KI kann nicht ziehen
+45;Rxh2;KI kann nicht ziehen
+46;Ng7;KI kann nicht ziehen
+47;Rh8+;KI kann nicht ziehen
+48;Ke7;KI kann nicht ziehen
+49;Rh3;KI kann nicht ziehen
+50;Kf8;KI kann nicht ziehen
+51;Rh8+;KI kann nicht ziehen
+52;Ke7;KI kann nicht ziehen
+53;Qg5+;KI kann nicht ziehen
+54;f6;KI kann nicht ziehen
+55;Qh6;KI kann nicht ziehen
+56;Qxh8;KI kann nicht ziehen
+57;Qxh8;KI kann nicht ziehen
+58;Ne8;KI kann nicht ziehen
+59;Qh7+;KI kann nicht ziehen
+60;Kd8;KI kann nicht ziehen
+61;Ke2;KI kann nicht ziehen
+62;f5;KI kann nicht ziehen
+63;Qh4+;KI kann nicht ziehen
+64;g5;KI kann nicht ziehen
+65;Qh1;KI kann nicht ziehen
+66;g4;KI kann nicht ziehen
+67;fxg4;KI kann nicht ziehen
+68;d5;KI kann nicht ziehen
+69;cxd6;KI kann nicht ziehen
+70;Nxd6;KI kann nicht ziehen
+71;Qh4+;KI kann nicht ziehen
+72;Kd7;KI kann nicht ziehen
+73;Bg2;KI kann nicht ziehen
+74;Ra8;KI kann nicht ziehen
+75;Bxc6+;KI kann nicht ziehen
+76;Kxc6;KI kann nicht ziehen
+77;Qh1+;KI kann nicht ziehen
+78;Ne4;KI kann nicht ziehen
+79;g5;KI kann nicht ziehen
+80;Ra6;KI kann nicht ziehen
+81;Qf3;KI kann nicht ziehen
+82;e5;KI kann nicht ziehen
+83;g6;KI kann nicht ziehen
+84;Kd6;KI kann nicht ziehen
+85;Bc1;KI kann nicht ziehen
+86;Nxc3+;KI kann nicht ziehen
+87;Ke1;KI kann nicht ziehen
+88;Ne4;KI kann nicht ziehen
+89;Ba3+;KI kann nicht ziehen
+90;c5;KI kann nicht ziehen
+91;dxe4;KI kann nicht ziehen
+92;fxe4;KI kann nicht ziehen
+93;Qf6+;KI kann nicht ziehen
+94;Be6;KI kann nicht ziehen
+95;Qd8+;KI kann nicht ziehen
+96;Bd7;KI kann nicht ziehen
+97;Rd2+;KI kann nicht ziehen
+98;Ke6;KI kann nicht ziehen
+99;Qxd7+;KI kann nicht ziehen
+100;Kf6;KI kann nicht ziehen
+101;Rf2+;KI kann nicht ziehen
+102;Kxg6;KI kann nicht ziehen
+103;Qe8+;KI kann nicht ziehen
+104;Kh7;KI kann nicht ziehen
+105;Qd7+;KI kann nicht ziehen
+106;Kh6;KI kann nicht ziehen
+107;Qh3+;KI kann nicht ziehen
+108;Kg6;KI kann nicht ziehen
+109;Qf5+;KI kann nicht ziehen
+110;Kh6;KI kann nicht ziehen
+111;Rh2+;KI kann nicht ziehen
+112;Kg7;KI kann nicht ziehen
+113;Qh7+;KI kann nicht ziehen
+114;Kf6;KI kann nicht ziehen
+115;Rf2+;KI kann nicht ziehen
+116;Ke6;KI kann nicht ziehen
+117;Qf5+;KI kann nicht ziehen
+118;Kd5;KI kann nicht ziehen
+119;Qf7+;KI kann nicht ziehen
+120;Re6;KI kann nicht ziehen
+121;Qxb7+;KI kann nicht ziehen
+122;Rc6;KI kann nicht ziehen
+123;Qd7+;KI kann nicht ziehen
+124;Rd6;KI kann nicht ziehen
+125;Rd2+;KI kann nicht ziehen
+126;Kc4;KI kann nicht ziehen
+127;Qb5+;KI kann nicht ziehen
+1;e4;KI kann nicht ziehen
+2;Nf6;KI kann nicht ziehen
+3;e5;KI kann nicht ziehen
+4;Ng8;KI kann nicht ziehen
+5;Qf3;KI kann nicht ziehen
+6;g6;KI kann nicht ziehen
+7;d4;KI kann nicht ziehen
+8;e6;KI kann nicht ziehen
+9;Qe3;KI kann nicht ziehen
+10;Ke7;KI kann nicht ziehen
+11;Bc4;KI kann nicht ziehen
+12;Nf6;KI kann nicht ziehen
+13;Qg5;KI kann nicht ziehen
+14;d5;KI kann nicht ziehen
+15;Qxf6+;KI kann nicht ziehen
+16;Ke8;KI kann nicht ziehen
+17;Qxh8;KI kann nicht ziehen
+18;dxc4;KI kann nicht ziehen
+19;Bh6;KI kann nicht ziehen
+20;Nd7;KI kann nicht ziehen
+21;Nd2;KI kann nicht ziehen
+22;c6;KI kann nicht ziehen
+23;Bxf8;KI kann nicht ziehen
+24;Nxf8;KI kann nicht ziehen
+25;Ne4;KI kann nicht ziehen
+26;Kd7;KI kann nicht ziehen
+27;Qg7;KI kann nicht ziehen
+28;b5;KI kann nicht ziehen
+29;Qxf7+;KI kann nicht ziehen
+30;Qe7;KI kann nicht ziehen
+31;Nc5+;KI kann nicht ziehen
+32;Kd8;KI kann nicht ziehen
+33;Qf6;KI kann nicht ziehen
+34;Qxf6;KI kann nicht ziehen
+35;exf6;KI kann nicht ziehen
+36;Bd7;KI kann nicht ziehen
+37;a4;KI kann nicht ziehen
+38;bxa4;KI kann nicht ziehen
+39;Ne2;KI kann nicht ziehen
+40;c3;KI kann nicht ziehen
+41;Nxc3;KI kann nicht ziehen
+42;Rc8;KI kann nicht ziehen
+43;h3;KI kann nicht ziehen
+44;Ra8;KI kann nicht ziehen
+45;O-O-O;KI kann nicht ziehen
+46;Rc8;KI kann nicht ziehen
+47;f3;KI kann nicht ziehen
+48;Ra8;KI kann nicht ziehen
+49;Rhe1;KI kann nicht ziehen
+50;Rc8;KI kann nicht ziehen
+51;Re5;KI kann nicht ziehen
+52;Kc7;KI kann nicht ziehen
+53;f4;KI kann nicht ziehen
+54;Kb6;KI kann nicht ziehen
+55;N3xa4+;KI kann nicht ziehen
+56;Kc7;KI kann nicht ziehen
+57;Rf1;KI kann nicht ziehen
+58;Kb8;KI kann nicht ziehen
+59;f7;KI kann nicht ziehen
+60;Rd8;KI kann nicht ziehen
+61;g3;KI kann nicht ziehen
+62;Rc8;KI kann nicht ziehen
+63;Nxd7+;KI kann nicht ziehen
+64;Nxd7;KI kann nicht ziehen
+65;Kd2;KI kann nicht ziehen
+66;Nxe5;KI kann nicht ziehen
+67;fxe5;KI kann nicht ziehen
+68;Kb7;KI kann nicht ziehen
+69;Nc5+;KI kann nicht ziehen
+70;Ka8;KI kann nicht ziehen
+71;f8=Q;KI kann nicht ziehen
+72;Kb8;KI kann nicht ziehen
+73;Qe7;KI kann nicht ziehen
+74;Rc7;KI kann nicht ziehen
+75;Rf8+;KI kann nicht ziehen
+1;e4;1-0
+2;h5;1-0
+3;a3;1-0
+4;h4;1-0
+5;Be2;1-0
+6;a5;1-0
+7;d3;1-0
+8;a4;1-0
+9;Nh3;1-0
+10;g6;1-0
+11;Nc3;1-0
+12;e6;1-0
+13;b3;1-0
+14;Ke7;1-0
+15;Bd2;1-0
+16;d6;1-0
+17;O-O;1-0
+18;e5;1-0
+19;g4;1-0
+20;c5;1-0
+21;Qc1;1-0
+22;b6;1-0
+23;Ng5;1-0
+24;h3;1-0
+25;Nd5+;1-0
+26;Ke8;1-0
+27;f4;1-0
+28;Rh6;1-0
+29;bxa4;1-0
+30;Ne7;1-0
+31;Nf6#;1-0
+1;e4;1-0
+2;h5;1-0
+3;d4;1-0
+4;h4;1-0
+5;Qe2;1-0
+6;d5;1-0
+7;Nf3;1-0
+8;a5;1-0
+9;c3;1-0
+10;a4;1-0
+11;Bg5;1-0
+12;f6;1-0
+13;Bxh4;1-0
+14;g5;1-0
+15;Bg3;1-0
+16;e5;1-0
+17;Qd3;1-0
+18;Ke7;1-0
+19;dxe5;1-0
+20;d4;1-0
+21;exf6+;1-0
+22;Ke8;1-0
+23;e5;1-0
+24;g4;1-0
+25;Qg6+;1-0
+26;Kd7;1-0
+27;Nxd4;1-0
+28;Nh6;1-0
+29;e6#;1-0
+1;d4;1-0
+2;d5;1-0
+3;c4;1-0
+4;h5;1-0
+5;Nf3;1-0
+6;h4;1-0
+7;Nc3;1-0
+8;f5;1-0
+9;cxd5;1-0
+10;a5;1-0
+11;e4;1-0
+12;a4;1-0
+13;Ng5;1-0
+14;f4;1-0
+15;Ne6;1-0
+16;Kd7;1-0
+17;Bxf4;1-0
+18;h3;1-0
+19;Bxc7;1-0
+20;a3;1-0
+21;Bxd8;1-0
+22;Nf6;1-0
+23;Rb1;1-0
+24;Rg8;1-0
+25;e5;1-0
+26;g5;1-0
+27;Qa4+;1-0
+28;Rxa4;1-0
+29;Bb5+;1-0
+30;Nc6;1-0
+31;gxh3;1-0
+32;Ra7;1-0
+33;exf6;1-0
+34;Ra6;1-0
+35;bxa3;1-0
+36;b6;1-0
+37;Bxc6+;1-0
+38;Kd6;1-0
+39;Bc7#;1-0
+1;e4;1-0
+2;h5;1-0
+3;h4;1-0
+4;a5;1-0
+5;e5;1-0
+6;a4;1-0
+7;g3;1-0
+8;e6;1-0
+9;Nf3;1-0
+10;Ke7;1-0
+11;d4;1-0
+12;d5;1-0
+13;exd6+;1-0
+14;Ke8;1-0
+15;Bf4;1-0
+16;c6;1-0
+17;Nbd2;1-0
+18;b5;1-0
+19;c4;1-0
+20;Qd7;1-0
+21;Ne4;1-0
+22;Bb7;1-0
+23;Rb1;1-0
+24;f5;1-0
+25;Nc5;1-0
+26;Kf7;1-0
+27;Ne5+;1-0
+28;Ke8;1-0
+29;Nexd7;1-0
+30;Nxd7;1-0
+31;Nxe6;1-0
+32;Rb8;1-0
+33;cxb5;1-0
+34;Ne7;1-0
+35;dxe7;1-0
+36;Rh6;1-0
+37;Bxh6;1-0
+38;g6;1-0
+39;exf8=Q+;1-0
+40;Nxf8;1-0
+41;Nxf8;1-0
+42;Ra8;1-0
+43;Qe2+;1-0
+44;Kf7;1-0
+45;Qe6#;1-0
+1;e4;1/2-1/2
+2;h5;1/2-1/2
+3;g4;1/2-1/2
+4;h4;1/2-1/2
+5;h3;1/2-1/2
+6;a5;1/2-1/2
+7;Nf3;1/2-1/2
+8;a4;1/2-1/2
+9;Nxh4;1/2-1/2
+10;a3;1/2-1/2
+11;Nxa3;1/2-1/2
+12;g6;1/2-1/2
+13;Nxg6;1/2-1/2
+14;f6;1/2-1/2
+15;Nxf8;1/2-1/2
+16;e5;1/2-1/2
+17;Ne6;1/2-1/2
+18;Ke7;1/2-1/2
+19;Nxd8;1/2-1/2
+20;Na6;1/2-1/2
+21;Nxb7;1/2-1/2
+22;c5;1/2-1/2
+23;Nxc5;1/2-1/2
+24;Rb8;1/2-1/2
+25;Nxd7;1/2-1/2
+26;Rh6;1/2-1/2
+27;Nxf6;1/2-1/2
+28;Kxf6;1/2-1/2
+29;Nb5;1/2-1/2
+30;Bb7;1/2-1/2
+31;Nd6;1/2-1/2
+32;Rg6;1/2-1/2
+33;Ne8+;1/2-1/2
+34;Kg5;1/2-1/2
+35;Be2;1/2-1/2
+36;Kf4;1/2-1/2
+37;f3;1/2-1/2
+38;Rg5;1/2-1/2
+39;Nd6;1/2-1/2
+40;Bc8;1/2-1/2
+41;Bd3;1/2-1/2
+42;Bb7;1/2-1/2
+43;Qe2;1/2-1/2
+44;Bc8;1/2-1/2
+45;Qe3+;1/2-1/2
+46;Kg3;1/2-1/2
+47;Rg1+;1/2-1/2
+48;Kh4;1/2-1/2
+49;a4;1/2-1/2
+50;Bb7;1/2-1/2
+51;Ra3;1/2-1/2
+52;Rh5;1/2-1/2
+53;gxh5;1/2-1/2
+54;Nh6;1/2-1/2
+55;Qxh6;1/2-1/2
+56;Bc8;1/2-1/2
+57;Qe6;1/2-1/2
+58;Bxe6;1/2-1/2
+59;Bxa6;1/2-1/2
+60;Rb3;1/2-1/2
+61;cxb3;1/2-1/2
+62;Bc4;1/2-1/2
+63;bxc4;1/2-1/2
+64;Kxh3;1/2-1/2
+65;Rh1+;1/2-1/2
+66;Kg2;1/2-1/2
+67;Rh4;1/2-1/2
+68;Kg3;1/2-1/2
+69;Nf5+;1/2-1/2
+70;Kg2;1/2-1/2
+71;Rg4+;1/2-1/2
+72;Kh3;1/2-1/2
+73;Ne3;1/2-1/2
+74;Kh2;1/2-1/2
+75;d4;1/2-1/2
+76;Kh3;1/2-1/2
+77;dxe5;1/2-1/2
+78;Kh2;1/2-1/2
+79;Rd3;1/2-1/2
+80;Kh3;1/2-1/2
+81;Rd2;1/2-1/2
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Ng6;1/2-1/2
+10;a5;1/2-1/2
+11;Nxf8;1/2-1/2
+12;a4;1/2-1/2
+13;Ne6;1/2-1/2
+14;g5;1/2-1/2
+15;Nxd8;1/2-1/2
+16;Kd7;1/2-1/2
+17;Nxb7;1/2-1/2
+18;g4;1/2-1/2
+19;Nd6;1/2-1/2
+20;Nc6;1/2-1/2
+21;Nxc8;1/2-1/2
+22;Ra7;1/2-1/2
+23;Nxa7;1/2-1/2
+24;a3;1/2-1/2
+25;Nxc6;1/2-1/2
+26;Kd6;1/2-1/2
+27;Nxe7;1/2-1/2
+28;c5;1/2-1/2
+29;bxa3;1/2-1/2
+30;Ne4;1/2-1/2
+31;f3;1/2-1/2
+32;g3;1/2-1/2
+33;fxe4;1/2-1/2
+34;h4;1/2-1/2
+35;hxg3;1/2-1/2
+36;h3;1/2-1/2
+37;gxh3;1/2-1/2
+38;Ke5;1/2-1/2
+39;d3;1/2-1/2
+40;c4;1/2-1/2
+41;dxc4;1/2-1/2
+42;d3;1/2-1/2
+43;cxd3;1/2-1/2
+44;Kd4;1/2-1/2
+45;e3+;1/2-1/2
+46;Ke5;1/2-1/2
+47;Nc3;1/2-1/2
+48;Kf6;1/2-1/2
+49;Ncd5+;1/2-1/2
+50;Ke5;1/2-1/2
+51;h4;1/2-1/2
+52;Ke6;1/2-1/2
+53;h5;1/2-1/2
+54;Ke5;1/2-1/2
+55;Rh4;1/2-1/2
+56;Ke6;1/2-1/2
+57;Rg4;1/2-1/2
+58;Ke5;1/2-1/2
+59;Rg6;1/2-1/2
+1;Nc3;1-0
+2;d5;1-0
+3;Nxd5;1-0
+4;h5;1-0
+5;Nxe7;1-0
+6;h4;1-0
+7;Nxg8;1-0
+8;Rh6;1-0
+9;Nxh6;1-0
+10;g5;1-0
+11;Nxf7;1-0
+12;Kd7;1-0
+13;Nxd8;1-0
+14;Be7;1-0
+15;Nxb7;1-0
+16;c5;1-0
+17;Na5;1-0
+18;a6;1-0
+19;Nc4;1-0
+20;a5;1-0
+21;Nxa5;1-0
+22;Bb7;1-0
+23;Nxb7;1-0
+24;Ra6;1-0
+25;Nd8;1-0
+26;Bd6;1-0
+27;Nc6;1-0
+28;Bf4;1-0
+29;Nxb8+;1-0
+30;Kd6;1-0
+31;Nxa6;1-0
+32;c4;1-0
+33;Nc5;1-0
+34;Bxd2+;1-0
+35;Kxd2;1-0
+36;c3+;1-0
+37;bxc3;1-0
+38;Ke5;1-0
+39;Ba3;1-0
+40;Kf4;1-0
+41;Nh3+;1-0
+42;Kg4;1-0
+43;g3;1-0
+44;Kf5;1-0
+45;e4+;1-0
+46;Kg6;1-0
+47;Qh5+;1-0
+48;Kxh5;1-0
+49;g4+;1-0
+50;Kg6;1-0
+51;Bg2;1-0
+52;Kf6;1-0
+53;Bf3;1-0
+54;Kg6;1-0
+55;Bb4;1-0
+56;Kf6;1-0
+57;Nd7+;1-0
+58;Kg6;1-0
+59;Nf8+;1-0
+60;Kf6;1-0
+61;e5+;1-0
+62;Kg7;1-0
+63;Bd5;1-0
+64;Kh6;1-0
+65;Rag1;1-0
+66;Kg7;1-0
+67;Rg3;1-0
+68;hxg3;1-0
+69;Nxg5;1-0
+70;g2;1-0
+71;Rg1;1-0
+72;Kh6;1-0
+73;Rxg2;1-0
+74;Kxg5;1-0
+75;Be7+;1-0
+76;Kf4;1-0
+77;Rg3;1-0
+78;Kxe5;1-0
+79;Bc6;1-0
+80;Kf4;1-0
+81;c4;1-0
+82;Ke5;1-0
+83;Bd5;1-0
+84;Kd4;1-0
+85;Rd3+;1-0
+86;Ke5;1-0
+87;Ng6#;1-0
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Nc3;1/2-1/2
+4;d4;1/2-1/2
+5;Ne4;1/2-1/2
+6;h5;1/2-1/2
+7;Nh4;1/2-1/2
+8;f5;1/2-1/2
+9;Nxf5;1/2-1/2
+10;h4;1/2-1/2
+11;Nxg7+;1/2-1/2
+12;Bxg7;1/2-1/2
+13;Nd6+;1/2-1/2
+14;Kd7;1/2-1/2
+15;Nf7;1/2-1/2
+16;Qf8;1/2-1/2
+17;Nxh8;1/2-1/2
+18;e5;1/2-1/2
+19;Nf7;1/2-1/2
+20;c5;1/2-1/2
+21;Nd8;1/2-1/2
+22;a5;1/2-1/2
+23;Nxb7;1/2-1/2
+24;a4;1/2-1/2
+25;Nd6;1/2-1/2
+26;Kc6;1/2-1/2
+27;Nxc8;1/2-1/2
+28;h3;1/2-1/2
+29;Nd6;1/2-1/2
+30;Ra6;1/2-1/2
+31;Nf7;1/2-1/2
+32;a3;1/2-1/2
+33;Nh6;1/2-1/2
+34;Ne7;1/2-1/2
+35;Ng8;1/2-1/2
+36;Nd5;1/2-1/2
+37;Nf6;1/2-1/2
+38;Nf4;1/2-1/2
+39;Ng4;1/2-1/2
+40;Nd3+;1/2-1/2
+41;exd3;1/2-1/2
+42;Qh8;1/2-1/2
+43;bxa3;1/2-1/2
+44;Bf6;1/2-1/2
+45;Rb1;1/2-1/2
+46;Rb6;1/2-1/2
+47;Rxb6+;1/2-1/2
+48;Kxb6;1/2-1/2
+49;Nxf6;1/2-1/2
+50;Nd7;1/2-1/2
+51;Nxd7+;1/2-1/2
+52;Kc6;1/2-1/2
+53;Nf6;1/2-1/2
+54;Qxf6;1/2-1/2
+55;Qf3+;1/2-1/2
+56;Qxf3;1/2-1/2
+57;gxf3;1/2-1/2
+58;Kd5;1/2-1/2
+59;Be2;1/2-1/2
+60;c4;1/2-1/2
+61;f4;1/2-1/2
+62;c3;1/2-1/2
+63;fxe5;1/2-1/2
+64;cxd2+;1/2-1/2
+65;Bxd2;1/2-1/2
+66;Kc5;1/2-1/2
+67;Bf4;1/2-1/2
+68;Kd5;1/2-1/2
+69;f3;1/2-1/2
+70;Kc5;1/2-1/2
+71;c4;1/2-1/2
+72;Kc6;1/2-1/2
+73;e6;1/2-1/2
+74;Kc5;1/2-1/2
+75;Rg1;1/2-1/2
+76;Kc6;1/2-1/2
+77;Rg7;1/2-1/2
+78;Kc5;1/2-1/2
+79;Rc7+;1/2-1/2
+80;Kb6;1/2-1/2
+81;Re7;1/2-1/2
+82;Kc5;1/2-1/2
+83;Bb8;1/2-1/2
+84;Kc6;1/2-1/2
+85;Rc7+;1/2-1/2
+86;Kd6;1/2-1/2
+87;c5+;1/2-1/2
+88;Ke5;1/2-1/2
+89;f4+;1/2-1/2
+90;Kd5;1/2-1/2
+91;Bg4;1/2-1/2
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Ng6;1/2-1/2
+10;a5;1/2-1/2
+11;Nxf8;1/2-1/2
+12;a4;1/2-1/2
+13;Na3;1/2-1/2
+14;g5;1/2-1/2
+15;Nb5;1/2-1/2
+16;g4;1/2-1/2
+17;Nxc7+;1/2-1/2
+18;Kf7;1/2-1/2
+19;Nxa8;1/2-1/2
+20;Qe8;1/2-1/2
+21;Nc7;1/2-1/2
+22;e5;1/2-1/2
+23;Nxe8;1/2-1/2
+24;Nbd7;1/2-1/2
+25;Nxf6;1/2-1/2
+26;Kxf6;1/2-1/2
+27;Nh7+;1/2-1/2
+28;Kg6;1/2-1/2
+29;Nf8+;1/2-1/2
+30;Kf6;1/2-1/2
+31;Nxd7+;1/2-1/2
+32;Kg6;1/2-1/2
+33;Nb8;1/2-1/2
+34;Bf5;1/2-1/2
+35;Nd7;1/2-1/2
+36;b5;1/2-1/2
+37;Nxe5+;1/2-1/2
+38;Kg5;1/2-1/2
+39;Nf7+;1/2-1/2
+40;Kg6;1/2-1/2
+41;Nh8+;1/2-1/2
+42;Kg5;1/2-1/2
+43;Nf7+;1/2-1/2
+44;Kg6;1/2-1/2
+45;Nh8+;1/2-1/2
+46;Kg5;1/2-1/2
+47;h4+;1/2-1/2
+48;Kf4;1/2-1/2
+49;e3+;1/2-1/2
+50;Ke4;1/2-1/2
+51;f3+;1/2-1/2
+52;Ke5;1/2-1/2
+53;e4;1/2-1/2
+54;Bd7;1/2-1/2
+55;c3;1/2-1/2
+56;Be8;1/2-1/2
+57;cxd4+;1/2-1/2
+58;Kf4;1/2-1/2
+59;d5;1/2-1/2
+60;g3;1/2-1/2
+61;Rh3;1/2-1/2
+62;b4;1/2-1/2
+63;Rxg3;1/2-1/2
+64;Kxg3;1/2-1/2
+65;d3;1/2-1/2
+66;b3;1/2-1/2
+67;Bg5;1/2-1/2
+68;Bf7;1/2-1/2
+69;Be2;1/2-1/2
+70;Be8;1/2-1/2
+71;Qc1;1/2-1/2
+72;Bc6;1/2-1/2
+73;Qxc6;1/2-1/2
+74;a3;1/2-1/2
+75;Qf6;1/2-1/2
+76;Kh2;1/2-1/2
+77;Qf4+;1/2-1/2
+78;Kg1;1/2-1/2
+79;Qg4;1/2-1/2
+80;hxg4;1/2-1/2
+81;Ng6;1/2-1/2
+82;g3;1/2-1/2
+83;Nf4;1/2-1/2
+84;Kh2;1/2-1/2
+85;Rc1;1/2-1/2
+86;Kg1;1/2-1/2
+87;Rc3;1/2-1/2
+88;Kh2;1/2-1/2
+89;Rxb3;1/2-1/2
+90;Kg1;1/2-1/2
+91;Rxa3;1/2-1/2
+92;Kh2;1/2-1/2
+93;Ra6;1/2-1/2
+94;Kg1;1/2-1/2
+95;Rf6;1/2-1/2
+96;Kh2;1/2-1/2
+97;Rf5;1/2-1/2
+98;Kg1;1/2-1/2
+99;Bf1;1/2-1/2
+100;Kh2;1/2-1/2
+101;Nh3;1/2-1/2
+102;Kh1;1/2-1/2
+103;Kd1;1/2-1/2
+104;Kh2;1/2-1/2
+105;Kc1;1/2-1/2
+106;Kh1;1/2-1/2
+107;Rf4;1/2-1/2
+108;Kh2;1/2-1/2
+109;Rg4;1/2-1/2
+110;Kh1;1/2-1/2
+111;Rxg3;1/2-1/2
+112;Kh2;1/2-1/2
+113;Ng1;1/2-1/2
+114;Kxg3;1/2-1/2
+115;Ne2+;1/2-1/2
+116;Kf2;1/2-1/2
+117;Bd2;1/2-1/2
+118;Kxf1;1/2-1/2
+119;Be1;1/2-1/2
+120;Kxe2;1/2-1/2
+121;Bf2;1/2-1/2
+122;Kxf2;1/2-1/2
+123;g3;1/2-1/2
+124;Kxg3;1/2-1/2
+125;d6;1/2-1/2
+126;Kf4;1/2-1/2
+127;d7;1/2-1/2
+128;Ke5;1/2-1/2
+129;d8=Q;1/2-1/2
+130;Kf4;1/2-1/2
+131;Qf8+;1/2-1/2
+132;Ke5;1/2-1/2
+133;Qh8+;1/2-1/2
+134;Kf4;1/2-1/2
+135;a3;1/2-1/2
+136;Ke3;1/2-1/2
+137;a4;1/2-1/2
+138;Ke2;1/2-1/2
+139;a5;1/2-1/2
+140;Ke3;1/2-1/2
+141;a6;1/2-1/2
+142;Ke2;1/2-1/2
+143;a7;1/2-1/2
+144;Ke3;1/2-1/2
+145;a8=Q;1/2-1/2
+146;Ke2;1/2-1/2
+147;Qa7;1/2-1/2
+148;Ke1;1/2-1/2
+149;Qa5+;1/2-1/2
+150;Ke2;1/2-1/2
+151;e5;1/2-1/2
+152;Ke3;1/2-1/2
+153;e6;1/2-1/2
+154;Ke2;1/2-1/2
+155;e7;1/2-1/2
+156;Ke3;1/2-1/2
+157;e8=Q+;1/2-1/2
+158;Kf4;1/2-1/2
+159;Qef8+;1/2-1/2
+160;Ke3;1/2-1/2
+161;d4;1/2-1/2
+162;Kd3;1/2-1/2
+163;d5;1/2-1/2
+164;Ke2;1/2-1/2
+165;d6;1/2-1/2
+166;Kd3;1/2-1/2
+167;d7;1/2-1/2
+168;Ke2;1/2-1/2
+169;d8=Q;1/2-1/2
+170;Ke3;1/2-1/2
+171;Qfb4;1/2-1/2
+172;Ke2;1/2-1/2
+173;f4;1/2-1/2
+174;Ke3;1/2-1/2
+175;f5;1/2-1/2
+176;Ke2;1/2-1/2
+177;f6;1/2-1/2
+178;Ke3;1/2-1/2
+179;f7;1/2-1/2
+180;Ke2;1/2-1/2
+181;f8=Q;1/2-1/2
+182;Ke3;1/2-1/2
+183;Qhc3+;1/2-1/2
+184;Ke2;1/2-1/2
+185;h5;1/2-1/2
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Na3;1/2-1/2
+10;a5;1/2-1/2
+11;Nb5;1/2-1/2
+12;a4;1/2-1/2
+13;Nxc7+;1/2-1/2
+14;Kd7;1/2-1/2
+15;Nxa8;1/2-1/2
+16;Nc6;1/2-1/2
+17;Nc7;1/2-1/2
+18;e5;1/2-1/2
+19;Ne8;1/2-1/2
+20;Qa5;1/2-1/2
+21;a3;1/2-1/2
+22;Qb4;1/2-1/2
+23;c3;1/2-1/2
+24;e4;1/2-1/2
+25;e3;1/2-1/2
+26;d3;1/2-1/2
+27;g3;1/2-1/2
+28;b5;1/2-1/2
+29;cxb4;1/2-1/2
+30;Be7;1/2-1/2
+31;Nf7;1/2-1/2
+32;g5;1/2-1/2
+33;Nc7;1/2-1/2
+34;g4;1/2-1/2
+35;Ne6;1/2-1/2
+36;Ba6;1/2-1/2
+37;Neg5;1/2-1/2
+38;Bd8;1/2-1/2
+39;Nd6;1/2-1/2
+40;Be7;1/2-1/2
+41;Nc8;1/2-1/2
+42;Bd8;1/2-1/2
+43;Qb3;1/2-1/2
+44;axb3;1/2-1/2
+45;Bxd3;1/2-1/2
+46;Bxc8;1/2-1/2
+47;Bxe4;1/2-1/2
+48;Nxe4;1/2-1/2
+49;d4;1/2-1/2
+50;Nxg5;1/2-1/2
+51;d5;1/2-1/2
+52;Nf3+;1/2-1/2
+53;Kf1;1/2-1/2
+54;Ncd4;1/2-1/2
+55;exd4;1/2-1/2
+56;Nd2+;1/2-1/2
+57;Bxd2;1/2-1/2
+58;h4;1/2-1/2
+59;gxh4;1/2-1/2
+60;Kc7;1/2-1/2
+61;h3;1/2-1/2
+62;Bd7;1/2-1/2
+63;hxg4;1/2-1/2
+64;Bc6;1/2-1/2
+65;Bf4+;1/2-1/2
+66;Kd7;1/2-1/2
+67;dxc6+;1/2-1/2
+68;Ke7;1/2-1/2
+69;h5;1/2-1/2
+70;Bc7;1/2-1/2
+71;h6;1/2-1/2
+72;Bxf4;1/2-1/2
+73;h7;1/2-1/2
+74;Bh2;1/2-1/2
+75;h8=Q;1/2-1/2
+76;Kd6;1/2-1/2
+77;Qxh2+;1/2-1/2
+78;Kd5;1/2-1/2
+79;Qc7;1/2-1/2
+80;Kc4;1/2-1/2
+81;d5;1/2-1/2
+82;Kd3;1/2-1/2
+83;d6;1/2-1/2
+84;Kc4;1/2-1/2
+85;d7;1/2-1/2
+86;Kd3;1/2-1/2
+87;d8=Q+;1/2-1/2
+88;Kc4;1/2-1/2
+89;Qe8;1/2-1/2
+90;Kd3;1/2-1/2
+91;Qcd8+;1/2-1/2
+92;Kc4;1/2-1/2
+93;c7;1/2-1/2
+1;Nf3;1-0
+2;d5;1-0
+3;Ng5;1-0
+4;d4;1-0
+5;Nxf7;1-0
+6;h5;1-0
+7;Nxh8;1-0
+8;Nf6;1-0
+9;Nf7;1-0
+10;a5;1-0
+11;Nxd8;1-0
+12;Nc6;1-0
+13;Nxb7;1-0
+14;Kd7;1-0
+15;Nd8;1-0
+16;Rb8;1-0
+17;Nf7;1-0
+18;Bb7;1-0
+19;Nd6;1-0
+20;e5;1-0
+21;Nxb7;1-0
+22;e4;1-0
+23;Nd8;1-0
+24;Bb4;1-0
+25;Ne6;1-0
+26;Rg8;1-0
+27;Nxg7;1-0
+28;Rf8;1-0
+29;Nf5;1-0
+30;e3;1-0
+31;Nd6;1-0
+32;exd2+;1-0
+33;Qxd2;1-0
+34;Bxd2+;1-0
+35;Bxd2;1-0
+36;cxd6;1-0
+37;Na3;1-0
+38;d5;1-0
+39;Nb5;1-0
+40;Rg8;1-0
+41;Na7;1-0
+42;Rg4;1-0
+43;Nxc6;1-0
+44;Kxc6;1-0
+45;h3;1-0
+46;Kd7;1-0
+47;hxg4;1-0
+48;a4;1-0
+49;gxh5;1-0
+50;a3;1-0
+51;h6;1-0
+52;Ke7;1-0
+53;h7;1-0
+54;Nh5;1-0
+55;h8=Q;1-0
+56;Ke6;1-0
+57;Qe8+;1-0
+58;Kf6;1-0
+59;Rxh5;1-0
+60;Kg7;1-0
+61;Rh8;1-0
+62;Kf6;1-0
+63;Rf8+;1-0
+64;Kg7;1-0
+65;Qf7#;1-0
+1;d4;1-0
+2;Nf6;1-0
+3;d5;1-0
+4;Nxd5;1-0
+5;h4;1-0
+6;Nf4;1-0
+7;h5;1-0
+8;Nxg2+;1-0
+9;Bxg2;1-0
+10;Nc6;1-0
+11;Bd5;1-0
+12;Nd4;1-0
+13;c4;1-0
+14;Nc2+;1-0
+15;Kd2;1-0
+16;Ne1;1-0
+17;Qxe1;1-0
+18;d6;1-0
+19;Bc6+;1-0
+20;bxc6;1-0
+21;b3;1-0
+22;Qd7;1-0
+23;Rh3;1-0
+24;Qxh3;1-0
+25;Nxh3;1-0
+26;Rb8;1-0
+27;Nf4;1-0
+28;Rxb3;1-0
+29;axb3;1-0
+30;Bg4;1-0
+31;Kc3;1-0
+32;Bxe2;1-0
+33;Qxe2;1-0
+34;e5;1-0
+35;Kb2;1-0
+36;Be7;1-0
+37;f3;1-0
+38;Bg5;1-0
+39;Qxe5+;1-0
+40;Kd8;1-0
+41;Qxg5+;1-0
+42;Kc8;1-0
+43;Qg4+;1-0
+44;Kb8;1-0
+45;Qc8+;1-0
+46;Kxc8;1-0
+47;Nc3;1-0
+48;Re8;1-0
+49;Ne4;1-0
+50;Rxe4;1-0
+51;fxe4;1-0
+52;d5;1-0
+53;e5;1-0
+54;f6;1-0
+55;e6;1-0
+56;g6;1-0
+57;Ra4;1-0
+58;gxh5;1-0
+59;Ra3;1-0
+60;h4;1-0
+61;Ra4;1-0
+62;h3;1-0
+63;Ra3;1-0
+64;h2;1-0
+65;Ra4;1-0
+66;h1=Q;1-0
+67;Ra3;1-0
+68;Qxc1+;1-0
+69;Kxc1;1-0
+70;h6;1-0
+71;cxd5;1-0
+72;h5;1-0
+73;dxc6;1-0
+74;h4;1-0
+75;Rxa7;1-0
+76;h3;1-0
+77;Ra8#;1-0
+1;d4;0-1
+2;Nf6;0-1
+3;d5;0-1
+4;Nxd5;0-1
+5;h4;0-1
+6;Nf4;0-1
+7;h5;0-1
+8;Nxg2+;0-1
+9;Bxg2;0-1
+10;Nc6;0-1
+11;Bd5;0-1
+12;Nb4;0-1
+13;f4;0-1
+14;Nxc2+;0-1
+15;Kf1;0-1
+16;Nxa1;0-1
+17;Nc3;0-1
+18;Nc2;0-1
+19;Kg2;0-1
+20;Ne1+;0-1
+21;Kg3;0-1
+22;Ng2;0-1
+23;Rh3;0-1
+24;Ne3;0-1
+25;a4;0-1
+26;Nxd1;0-1
+27;Kg2;0-1
+28;Ne3+;0-1
+29;Bxe3;0-1
+30;d6;0-1
+31;Bc6+;0-1
+32;bxc6;0-1
+33;Kf3;0-1
+34;c5;0-1
+35;h6;0-1
+36;Rb8;0-1
+37;Ke4;0-1
+38;Rxb2;0-1
+39;Kd3;0-1
+40;Rxe2;0-1
+41;Kxe2;0-1
+42;Bxh3;0-1
+43;f5;0-1
+44;Qd7;0-1
+45;Kd2;0-1
+46;Qxf5;0-1
+47;Nxh3;0-1
+48;Qf1;0-1
+49;Nf2;0-1
+50;Qxf2+;0-1
+51;Bxf2;0-1
+52;f5;0-1
+53;Be3;0-1
+54;f4;0-1
+55;a5;0-1
+56;fxe3+;0-1
+57;Ke2;0-1
+58;g5;0-1
+59;a6;0-1
+60;g4;0-1
+61;Nd1;0-1
+62;g3;0-1
+63;Nc3;0-1
+64;g2;0-1
+65;Nd1;0-1
+66;g1=Q;0-1
+67;Nf2;0-1
+68;Qxf2+;0-1
+69;Kd3;0-1
+70;Qf4;0-1
+71;Ke2;0-1
+72;Rg8;0-1
+73;Kd3;0-1
+74;Rg1;0-1
+75;Ke2;0-1
+76;Rf1;0-1
+77;Kd3;0-1
+78;Qd4+;0-1
+79;Ke2;0-1
+80;Bg7;0-1
+81;Kxf1;0-1
+82;Be5;0-1
+83;Ke2;0-1
+84;Qc3;0-1
+85;Kf3;0-1
+86;e2+;0-1
+87;Ke4;0-1
+88;e1=Q+;0-1
+89;Kd5;0-1
+90;Bg3;0-1
+91;Kc6;0-1
+92;Qb4;0-1
+93;Kd5;0-1
+94;Qbe4#;0-1
+1;d4;0-1
+2;d6;0-1
+3;d5;0-1
+4;e5;0-1
+5;h4;0-1
+6;Nf6;0-1
+7;h5;0-1
+8;Nxh5;0-1
+9;a4;0-1
+10;Ng3;0-1
+11;a5;0-1
+12;Nxf1;0-1
+13;g3;0-1
+14;Nxg3;0-1
+15;Rh6;0-1
+16;Nh1;0-1
+17;Re6+;0-1
+18;fxe6;0-1
+19;Nf3;0-1
+20;Nxf2;0-1
+21;Ng5;0-1
+22;Nxd1;0-1
+23;Kd2;0-1
+24;Nxb2;0-1
+25;e4;0-1
+26;Qxg5+;0-1
+27;Kc3;0-1
+28;Qxc1;0-1
+29;Nd2;0-1
+30;Qxd2+;0-1
+31;Kxd2;0-1
+32;h6;0-1
+33;Ra4;0-1
+34;g5;0-1
+35;a6;0-1
+36;h5;0-1
+37;c3;0-1
+38;h4;0-1
+39;Rd4;0-1
+40;h3;0-1
+41;Rb4;0-1
+42;g4;0-1
+43;Rd4;0-1
+44;h2;0-1
+45;Rb4;0-1
+46;g3;0-1
+47;Rd4;0-1
+48;h1=Q;0-1
+49;Rb4;0-1
+50;g2;0-1
+51;Rd4;0-1
+52;g1=Q;0-1
+53;c4;0-1
+54;Qd1+;0-1
+55;Ke3;0-1
+56;Qxd4+;0-1
+57;Ke2;0-1
+58;Qhd1#;0-1
+1;d4;1/2-1/2
+2;d5;1/2-1/2
+3;h4;1/2-1/2
+4;h5;1/2-1/2
+5;f4;1/2-1/2
+6;f5;1/2-1/2
+7;a4;1/2-1/2
+8;a5;1/2-1/2
+9;e3;1/2-1/2
+10;e5;1/2-1/2
+11;Bb5+;1/2-1/2
+12;Qd7;1/2-1/2
+13;Bxd7+;1/2-1/2
+14;Kxd7;1/2-1/2
+15;Qd2;1/2-1/2
+16;Nh6;1/2-1/2
+17;Kf2;1/2-1/2
+18;Ng4+;1/2-1/2
+19;Kf3;1/2-1/2
+20;Nf2;1/2-1/2
+21;Kxf2;1/2-1/2
+22;Bb4;1/2-1/2
+23;Rh3;1/2-1/2
+24;Bxd2;1/2-1/2
+25;Nxd2;1/2-1/2
+26;Nc6;1/2-1/2
+27;c3;1/2-1/2
+28;Nxd4;1/2-1/2
+29;cxd4;1/2-1/2
+30;Rf8;1/2-1/2
+31;Kf1;1/2-1/2
+32;Rf6;1/2-1/2
+33;b3;1/2-1/2
+34;Rg6;1/2-1/2
+35;Rb1;1/2-1/2
+36;Rxg2;1/2-1/2
+37;Kxg2;1/2-1/2
+38;Kd8;1/2-1/2
+39;Kh2;1/2-1/2
+40;Be6;1/2-1/2
+41;Kh1;1/2-1/2
+42;e4;1/2-1/2
+43;Kh2;1/2-1/2
+44;Bf7;1/2-1/2
+45;Kh1;1/2-1/2
+46;Ra6;1/2-1/2
+47;Kh2;1/2-1/2
+48;Rg6;1/2-1/2
+49;Kh1;1/2-1/2
+50;Rg4;1/2-1/2
+51;Kh2;1/2-1/2
+52;Rxg1;1/2-1/2
+53;Kxg1;1/2-1/2
+54;Be6;1/2-1/2
+55;Kh2;1/2-1/2
+56;g6;1/2-1/2
+57;Kg3;1/2-1/2
+58;Bd7;1/2-1/2
+59;Kh2;1/2-1/2
+60;Bb5;1/2-1/2
+61;axb5;1/2-1/2
+62;b6;1/2-1/2
+63;b4;1/2-1/2
+64;Kc8;1/2-1/2
+65;bxa5;1/2-1/2
+66;c6;1/2-1/2
+67;a6;1/2-1/2
+68;Kb8;1/2-1/2
+69;Kg3;1/2-1/2
+70;Ka8;1/2-1/2
+71;Kh2;1/2-1/2
+72;Ka7;1/2-1/2
+73;Kg3;1/2-1/2
+74;c5;1/2-1/2
+75;Kh2;1/2-1/2
+76;c4;1/2-1/2
+77;Kg3;1/2-1/2
+78;c3;1/2-1/2
+79;Kh2;1/2-1/2
+80;cxd2;1/2-1/2
+81;Rb2;1/2-1/2
+82;d1=Q;1/2-1/2
+83;Kg3;1/2-1/2
+84;Qxc1;1/2-1/2
+85;Kg2;1/2-1/2
+86;Qxb2+;1/2-1/2
+87;Kg3;1/2-1/2
+88;Qxb5;1/2-1/2
+89;Kh2;1/2-1/2
+90;Qxa6;1/2-1/2
+91;Kg3;1/2-1/2
+92;Qb5;1/2-1/2
+93;Kh2;1/2-1/2
+94;Qd7;1/2-1/2
+95;Kg3;1/2-1/2
+96;Qe7;1/2-1/2
+97;Kh2;1/2-1/2
+98;Qg5;1/2-1/2
+99;hxg5;1/2-1/2
+100;b5;1/2-1/2
+101;Rxh5;1/2-1/2
+102;b4;1/2-1/2
+103;Rh3;1/2-1/2
+104;b3;1/2-1/2
+105;Kg3;1/2-1/2
+106;b2;1/2-1/2
+107;Kh4;1/2-1/2
+108;b1=Q;1/2-1/2
+109;Kg3;1/2-1/2
+110;Qg1+;1/2-1/2
+111;Kh4;1/2-1/2
+112;Qg2;1/2-1/2
+113;Rg3;1/2-1/2
+114;Qxg3+;1/2-1/2
+115;Kxg3;1/2-1/2
+116;Kb6;1/2-1/2
+117;Kf2;1/2-1/2
+118;Kb5;1/2-1/2
+119;Ke2;1/2-1/2
+120;Kb4;1/2-1/2
+121;Kd2;1/2-1/2
+122;Kc4;1/2-1/2
+123;Ke2;1/2-1/2
+124;Kc3;1/2-1/2
+125;Kf2;1/2-1/2
+126;Kc2;1/2-1/2
+127;Ke2;1/2-1/2
+128;Kc3;1/2-1/2
+129;Kf2;1/2-1/2
+130;Kc4;1/2-1/2
+131;Ke2;1/2-1/2
+132;Kb5;1/2-1/2
+133;Kf2;1/2-1/2
+134;Kc6;1/2-1/2
+135;Ke2;1/2-1/2
+136;Kd7;1/2-1/2
+137;Kf2;1/2-1/2
+138;Ke6;1/2-1/2
+139;Ke2;1/2-1/2
+140;Kf7;1/2-1/2
+141;Kf2;1/2-1/2
+142;Kg7;1/2-1/2
+143;Ke2;1/2-1/2
+144;Kh7;1/2-1/2
+145;Kf2;1/2-1/2
+146;Kg7;1/2-1/2
+147;Ke2;1/2-1/2
+148;Kf7;1/2-1/2
+149;Kf2;1/2-1/2
+150;Ke7;1/2-1/2
+151;Ke2;1/2-1/2
+152;Kd7;1/2-1/2
+153;Kf2;1/2-1/2
+154;Kc7;1/2-1/2
+155;Ke2;1/2-1/2
+156;Kc6;1/2-1/2
+157;Kf2;1/2-1/2
+158;Kb6;1/2-1/2
+159;Ke2;1/2-1/2
+160;Kb5;1/2-1/2
+161;Kf2;1/2-1/2
+162;Kb4;1/2-1/2
+163;Ke2;1/2-1/2
+164;Kb3;1/2-1/2
+165;Kd2;1/2-1/2
+166;Kb2;1/2-1/2
+167;Ke2;1/2-1/2
+168;Kb1;1/2-1/2
+169;Kd2;1/2-1/2
+170;Kb2;1/2-1/2
+171;Ke2;1/2-1/2
+172;Kb3;1/2-1/2
+173;Kd2;1/2-1/2
+174;Kc4;1/2-1/2
+175;Ke2;1/2-1/2
+176;Kc3;1/2-1/2
+177;Kf2;1/2-1/2
+178;Kd2;1/2-1/2
+179;Kg3;1/2-1/2
+180;Kxe3;1/2-1/2
+181;Kg2;1/2-1/2
+182;Kxf4;1/2-1/2
+183;Kf2;1/2-1/2
+184;Kxg5;1/2-1/2
+185;Kg3;1/2-1/2
+186;Kf6;1/2-1/2
+187;Kf4;1/2-1/2
+188;Ke7;1/2-1/2
+189;Ke5;1/2-1/2
+190;Kd7;1/2-1/2
+191;Kxd5;1/2-1/2
+192;Kc7;1/2-1/2
+193;Kc5;1/2-1/2
+194;e3;1/2-1/2
+195;d5;1/2-1/2
+196;e2;1/2-1/2
+197;d6+;1/2-1/2
+198;Kc8;1/2-1/2
+199;d7+;1/2-1/2
+200;Kd8;1/2-1/2
+201;Kd6;1/2-1/2
+202;e1=Q;1/2-1/2
+203;Kc6;1/2-1/2
+204;f4;1/2-1/2
+205;Kd6;1/2-1/2
+206;f3;1/2-1/2
+207;Kc6;1/2-1/2
+208;f2;1/2-1/2
+209;Kd6;1/2-1/2
+210;f1=Q;1/2-1/2
+211;Kc6;1/2-1/2
+212;g5;1/2-1/2
+213;Kd6;1/2-1/2
+214;g4;1/2-1/2
+215;Kc6;1/2-1/2
+216;g3;1/2-1/2
+217;Kd6;1/2-1/2
+218;g2;1/2-1/2
+219;Kc6;1/2-1/2
+220;g1=Q;1/2-1/2
+221;Kd6;1/2-1/2
+222;Qc1;1/2-1/2
+223;Ke6;1/2-1/2
+224;Qfd1;1/2-1/2
+225;Kf7;1/2-1/2
+226;Qgf1+;1/2-1/2
+227;Ke6;1/2-1/2
+228;Qff4;1/2-1/2
+1;d4;1/2-1/2
+2;Nf6;1/2-1/2
+3;d5;1/2-1/2
+4;Nxd5;1/2-1/2
+5;h4;1/2-1/2
+6;Nf4;1/2-1/2
+7;h5;1/2-1/2
+8;Nxe2;1/2-1/2
+9;f4;1/2-1/2
+10;Nxg1;1/2-1/2
+11;Rh3;1/2-1/2
+12;Nxh3;1/2-1/2
+13;g4;1/2-1/2
+14;Ng1;1/2-1/2
+15;g5;1/2-1/2
+16;Ne2;1/2-1/2
+17;h6;1/2-1/2
+18;Nxc1;1/2-1/2
+19;b3;1/2-1/2
+20;Nxa2;1/2-1/2
+21;Qd2;1/2-1/2
+22;Nc1;1/2-1/2
+23;Kf2;1/2-1/2
+24;Nxb3;1/2-1/2
+25;Ba6;1/2-1/2
+26;Nxa1;1/2-1/2
+27;Bd3;1/2-1/2
+28;Nxc2;1/2-1/2
+29;f5;1/2-1/2
+30;Ne1;1/2-1/2
+31;Bc2;1/2-1/2
+32;Nxc2;1/2-1/2
+33;f6;1/2-1/2
+34;gxh6;1/2-1/2
+35;Qe3;1/2-1/2
+36;Nxe3;1/2-1/2
+37;Kg3;1/2-1/2
+38;Nc2;1/2-1/2
+39;Kg4;1/2-1/2
+40;exf6;1/2-1/2
+41;Kf5;1/2-1/2
+42;fxg5;1/2-1/2
+43;Kg4;1/2-1/2
+44;Qf6;1/2-1/2
+45;Nc3;1/2-1/2
+46;Qf4+;1/2-1/2
+47;Kh5;1/2-1/2
+48;Qe3;1/2-1/2
+49;Ne4;1/2-1/2
+50;Qxe4;1/2-1/2
+1;d4;0-1
+2;Nf6;0-1
+3;d5;0-1
+4;Ng4;0-1
+5;h4;0-1
+6;Nxf2;0-1
+7;h5;0-1
+8;Nxh1;0-1
+9;h6;0-1
+10;Ng3;0-1
+11;Nh3;0-1
+12;Nxf1;0-1
+13;Kf2;0-1
+14;Nd2;0-1
+15;Qxd2;0-1
+16;Nc6;0-1
+17;b4;0-1
+18;Nxb4;0-1
+19;a4;0-1
+20;Nxc2;0-1
+21;a5;0-1
+22;Ne3;0-1
+23;Bb2;0-1
+24;Nf1;0-1
+25;a6;0-1
+26;Nxd2;0-1
+27;Bc3;0-1
+28;Nxb1;0-1
+29;Ra5;0-1
+30;Nxc3;0-1
+31;e3;0-1
+32;Ne2;0-1
+33;Kf3;0-1
+34;Nc3;0-1
+35;e4;0-1
+36;bxa6;0-1
+37;Rc5;0-1
+38;Rb8;0-1
+39;Rc6;0-1
+40;Rb5;0-1
+41;Nf4;0-1
+42;dxc6;0-1
+43;Ne6;0-1
+44;cxd5;0-1
+45;Nxd8;0-1
+46;Kxd8;0-1
+47;e5;0-1
+48;e6;0-1
+49;g4;0-1
+50;Bd6;0-1
+51;exd6;0-1
+52;cxd6;0-1
+53;g5;0-1
+54;Rb4;0-1
+55;Kg3;0-1
+56;e5;0-1
+57;Kf3;0-1
+58;Bg4+;0-1
+59;Kg3;0-1
+60;Ne2+;0-1
+61;Kg2;0-1
+62;Ng3;0-1
+63;Kxg3;0-1
+64;e4;0-1
+65;Kxg4;0-1
+66;e3+;0-1
+67;Kf5;0-1
+68;e2;0-1
+69;g6;0-1
+70;e1=Q;0-1
+71;Kg5;0-1
+72;Qg1+;0-1
+73;Kf5;0-1
+74;Qxg6#;0-1
+1;d4;1/2-1/2
+2;Nf6;1/2-1/2
+3;d5;1/2-1/2
+4;Ng4;1/2-1/2
+5;h4;1/2-1/2
+6;Nxf2;1/2-1/2
+7;h5;1/2-1/2
+8;Nxd1;1/2-1/2
+9;Kd2;1/2-1/2
+10;Nxb2;1/2-1/2
+11;Nf3;1/2-1/2
+12;Nd1;1/2-1/2
+13;Nc3;1/2-1/2
+14;Ne3;1/2-1/2
+15;Rb1;1/2-1/2
+16;Nxf1+;1/2-1/2
+17;Kd3;1/2-1/2
+18;Nd2;1/2-1/2
+19;Rh2;1/2-1/2
+20;Nxb1;1/2-1/2
+21;Bg5;1/2-1/2
+22;Nxc3;1/2-1/2
+23;e4;1/2-1/2
+24;Ne2;1/2-1/2
+25;a4;1/2-1/2
+26;Ng3;1/2-1/2
+27;a5;1/2-1/2
+28;Nf5;1/2-1/2
+29;Bd2;1/2-1/2
+30;Ne3;1/2-1/2
+31;h6;1/2-1/2
+32;Nxd5;1/2-1/2
+33;e5;1/2-1/2
+34;Ne3;1/2-1/2
+35;Bc3;1/2-1/2
+36;gxh6;1/2-1/2
+37;Kd2;1/2-1/2
+38;Rg8;1/2-1/2
+39;Kd3;1/2-1/2
+40;Rxg2;1/2-1/2
+41;Rxg2;1/2-1/2
+42;Nxg2;1/2-1/2
+43;Nd2;1/2-1/2
+44;Ne3;1/2-1/2
+45;Ne4;1/2-1/2
+46;Nd5;1/2-1/2
+47;Nf6+;1/2-1/2
+48;Nxf6;1/2-1/2
+49;exf6;1/2-1/2
+50;exf6;1/2-1/2
+51;Kd2;1/2-1/2
+52;Qe7;1/2-1/2
+53;Kd3;1/2-1/2
+54;Qe1;1/2-1/2
+55;Bxe1;1/2-1/2
+56;Bb4;1/2-1/2
+57;Bxb4;1/2-1/2
+58;h5;1/2-1/2
+59;Kc3;1/2-1/2
+60;h4;1/2-1/2
+61;Kb3;1/2-1/2
+62;h3;1/2-1/2
+63;Kc3;1/2-1/2
+64;h2;1/2-1/2
+65;Kb3;1/2-1/2
+66;h1=Q;1/2-1/2
+67;Kc3;1/2-1/2
+68;Qf3+;1/2-1/2
+69;Kd2;1/2-1/2
+70;d6;1/2-1/2
+71;Bc3;1/2-1/2
+72;Bg4;1/2-1/2
+73;a6;1/2-1/2
+74;Qe2+;1/2-1/2
+75;Kc1;1/2-1/2
+76;Qd1+;1/2-1/2
+77;Kb2;1/2-1/2
+78;Qd5;1/2-1/2
+79;Bd4;1/2-1/2
+80;Qxd4+;1/2-1/2
+81;c3;1/2-1/2
+82;Qxc3+;1/2-1/2
+83;Kxc3;1/2-1/2
+84;Nc6;1/2-1/2
+85;Kc4;1/2-1/2
+86;bxa6;1/2-1/2
+87;Kd5;1/2-1/2
+88;Nb4+;1/2-1/2
+89;Ke4;1/2-1/2
+90;Rb8;1/2-1/2
+91;Kd4;1/2-1/2
+92;Nc2+;1/2-1/2
+93;Kd5;1/2-1/2
+94;Bf3+;1/2-1/2
+95;Kc4;1/2-1/2
+96;Rb4+;1/2-1/2
+97;Kd3;1/2-1/2
+98;h6;1/2-1/2
+99;Kxc2;1/2-1/2
+100;h5;1/2-1/2
+101;Kd3;1/2-1/2
+102;h4;1/2-1/2
+103;Ke3;1/2-1/2
+104;h3;1/2-1/2
+105;Kxf3;1/2-1/2
+106;h2;1/2-1/2
+107;Kg3;1/2-1/2
+108;h1=Q;1/2-1/2
+109;Kf2;1/2-1/2
+110;Rb1;1/2-1/2
+111;Kg3;1/2-1/2
+112;Qg2+;1/2-1/2
+113;Kxg2;1/2-1/2
+114;a5;1/2-1/2
+115;Kg3;1/2-1/2
+116;a4;1/2-1/2
+117;Kg4;1/2-1/2
+118;a3;1/2-1/2
+119;Kf5;1/2-1/2
+120;a2;1/2-1/2
+121;Ke4;1/2-1/2
+122;a1=Q;1/2-1/2
+123;Kd5;1/2-1/2
+124;Qb2;1/2-1/2
+125;Kc6;1/2-1/2
+126;Qb6+;1/2-1/2
+127;Kd5;1/2-1/2
+128;f5;1/2-1/2
+129;Kc4;1/2-1/2
+130;f4;1/2-1/2
+131;Kd5;1/2-1/2
+132;f3;1/2-1/2
+133;Ke4;1/2-1/2
+134;f2;1/2-1/2
+135;Kd5;1/2-1/2
+136;f1=Q;1/2-1/2
+137;Ke4;1/2-1/2
+138;Qe1+;1/2-1/2
+139;Kd5;1/2-1/2
+140;f6;1/2-1/2
+141;Kc4;1/2-1/2
+142;f5;1/2-1/2
+143;Kd5;1/2-1/2
+144;f4;1/2-1/2
+145;Kc4;1/2-1/2
+146;f3;1/2-1/2
+147;Kd5;1/2-1/2
+148;f2;1/2-1/2
+149;Kc4;1/2-1/2
+150;f1=Q+;1/2-1/2
+151;Kd5;1/2-1/2
+152;Qf5+;1/2-1/2
+153;Kc4;1/2-1/2
+154;a6;1/2-1/2
+1;d4;1/2-1/2
+2;Nf6;1/2-1/2
+3;d5;1/2-1/2
+4;Ng4;1/2-1/2
+5;h4;1/2-1/2
+6;Nxf2;1/2-1/2
+7;h5;1/2-1/2
+8;Nh3;1/2-1/2
+9;h6;1/2-1/2
+10;Nxg1;1/2-1/2
+11;Rh3;1/2-1/2
+12;Nxe2;1/2-1/2
+13;a4;1/2-1/2
+14;Nxc1;1/2-1/2
+15;b3;1/2-1/2
+16;Nxb3;1/2-1/2
+17;Nc3;1/2-1/2
+18;Nxa1;1/2-1/2
+19;Ke2;1/2-1/2
+20;Nxc2;1/2-1/2
+21;Kd3;1/2-1/2
+22;Ne1+;1/2-1/2
+23;Ke2;1/2-1/2
+24;Nxg2;1/2-1/2
+25;Qd3;1/2-1/2
+26;Ne3;1/2-1/2
+27;Qd2;1/2-1/2
+28;Nxd5;1/2-1/2
+29;Rf3;1/2-1/2
+30;Nxc3+;1/2-1/2
+31;Rxc3;1/2-1/2
+32;gxh6;1/2-1/2
+33;Qc2;1/2-1/2
+34;Rg8;1/2-1/2
+35;Rc5;1/2-1/2
+36;Rg1;1/2-1/2
+37;a5;1/2-1/2
+38;Rxf1;1/2-1/2
+39;Kxf1;1/2-1/2
+40;Nc6;1/2-1/2
+41;Kg2;1/2-1/2
+42;Nxa5;1/2-1/2
+43;Kf2;1/2-1/2
+44;Nc4;1/2-1/2
+45;Qf5;1/2-1/2
+46;Nd6;1/2-1/2
+47;Qh5;1/2-1/2
+48;Bg7;1/2-1/2
+49;Re5;1/2-1/2
+50;Bxe5;1/2-1/2
+51;Qxf7+;1/2-1/2
+52;Kxf7;1/2-1/2
+53;Kf3;1/2-1/2
+54;Nf5;1/2-1/2
+55;Ke4;1/2-1/2
+56;Ne3;1/2-1/2
+57;Kxe5;1/2-1/2
+58;Ng4+;1/2-1/2
+59;Kf5;1/2-1/2
+60;e6+;1/2-1/2
+61;Kxg4;1/2-1/2
+62;Qg5+;1/2-1/2
+63;Kf3;1/2-1/2
+64;h5;1/2-1/2
+65;Ke4;1/2-1/2
+66;h4;1/2-1/2
+67;Kd4;1/2-1/2
+68;h3;1/2-1/2
+69;Ke4;1/2-1/2
+70;h2;1/2-1/2
+71;Kd4;1/2-1/2
+72;h1=Q;1/2-1/2
+73;Kc4;1/2-1/2
+74;Qhc1+;1/2-1/2
+75;Kd4;1/2-1/2
+76;a6;1/2-1/2
+77;Ke4;1/2-1/2
+78;a5;1/2-1/2
+79;Kd4;1/2-1/2
+80;a4;1/2-1/2
+81;Ke4;1/2-1/2
+82;a3;1/2-1/2
+83;Kd4;1/2-1/2
+84;a2;1/2-1/2
+85;Ke4;1/2-1/2
+86;a1=Q;1/2-1/2
+87;Kf3;1/2-1/2
+88;Qa4;1/2-1/2
+89;Kf2;1/2-1/2
+90;b6;1/2-1/2
+91;Kf3;1/2-1/2
+92;b5;1/2-1/2
+93;Kf2;1/2-1/2
+94;b4;1/2-1/2
+95;Kf3;1/2-1/2
+96;b3;1/2-1/2
+97;Kf2;1/2-1/2
+98;b2;1/2-1/2
+99;Kf3;1/2-1/2
+100;b1=Q;1/2-1/2
+101;Kf2;1/2-1/2
+102;Qbb3;1/2-1/2
+103;Ke2;1/2-1/2
+104;c6;1/2-1/2
+105;Kf2;1/2-1/2
+106;c5;1/2-1/2
+107;Ke2;1/2-1/2
+108;c4;1/2-1/2
+109;Kf2;1/2-1/2
+110;c3;1/2-1/2
+111;Kf3;1/2-1/2
+112;c2+;1/2-1/2
+113;Kf2;1/2-1/2
+114;Qd1;1/2-1/2
+1;d4;1/2-1/2
+2;Nf6;1/2-1/2
+3;d5;1/2-1/2
+4;Ng4;1/2-1/2
+5;h4;1/2-1/2
+6;Nh2;1/2-1/2
+7;g3;1/2-1/2
+8;Nxf1;1/2-1/2
+9;h5;1/2-1/2
+10;Nd2;1/2-1/2
+11;Nc3;1/2-1/2
+12;Nb1;1/2-1/2
+13;Rxb1;1/2-1/2
+14;Nc6;1/2-1/2
+15;e4;1/2-1/2
+16;Nd4;1/2-1/2
+17;a4;1/2-1/2
+18;Ne2;1/2-1/2
+19;h6;1/2-1/2
+20;Nxg1;1/2-1/2
+21;Rh5;1/2-1/2
+22;Nh3;1/2-1/2
+23;e5;1/2-1/2
+24;Nxf2;1/2-1/2
+25;g4;1/2-1/2
+26;Nxd1;1/2-1/2
+27;Kd2;1/2-1/2
+28;Nxc3;1/2-1/2
+29;b3;1/2-1/2
+30;Nxb1+;1/2-1/2
+31;Kd3;1/2-1/2
+32;b6;1/2-1/2
+33;Be3;1/2-1/2
+34;Na3;1/2-1/2
+35;e6;1/2-1/2
+36;Nc4;1/2-1/2
+37;Rg5;1/2-1/2
+38;Ne5+;1/2-1/2
+39;Kd4;1/2-1/2
+40;f5;1/2-1/2
+41;c4;1/2-1/2
+42;g6;1/2-1/2
+43;c5;1/2-1/2
+44;Rg8;1/2-1/2
+45;c6;1/2-1/2
+46;Rg7;1/2-1/2
+47;hxg7;1/2-1/2
+48;dxc6;1/2-1/2
+49;gxf8=Q+;1/2-1/2
+50;Kxf8;1/2-1/2
+51;Kxe5;1/2-1/2
+52;Bxe6;1/2-1/2
+53;Bf4;1/2-1/2
+54;Bxd5;1/2-1/2
+55;Rxf5+;1/2-1/2
+56;Ke8;1/2-1/2
+57;Rf8+;1/2-1/2
+58;Kxf8;1/2-1/2
+59;Bh6+;1/2-1/2
+60;Kf7;1/2-1/2
+61;g5;1/2-1/2
+62;Qd6+;1/2-1/2
+63;Kd4;1/2-1/2
+64;Qg3;1/2-1/2
+65;a5;1/2-1/2
+66;Qxb3;1/2-1/2
+67;a6;1/2-1/2
+68;Qa3;1/2-1/2
+69;Ke5;1/2-1/2
+70;Qxa6;1/2-1/2
+71;Kd4;1/2-1/2
+72;Qa3;1/2-1/2
+73;Ke5;1/2-1/2
+74;Qh3;1/2-1/2
+75;Kd4;1/2-1/2
+76;Qxh6;1/2-1/2
+77;gxh6;1/2-1/2
+78;Rd8;1/2-1/2
+79;Ke5;1/2-1/2
+80;Rd6;1/2-1/2
+81;Kd4;1/2-1/2
+82;Re6;1/2-1/2
+83;Kd3;1/2-1/2
+84;Re1;1/2-1/2
+85;Kd4;1/2-1/2
+86;g5;1/2-1/2
+87;Kd3;1/2-1/2
+88;g4;1/2-1/2
+89;Kd4;1/2-1/2
+90;g3;1/2-1/2
+91;Kd3;1/2-1/2
+92;g2;1/2-1/2
+93;Kd4;1/2-1/2
+94;g1=Q+;1/2-1/2
+95;Kd3;1/2-1/2
+96;Qg4;1/2-1/2
+97;Kc3;1/2-1/2
+98;Qe4;1/2-1/2
+99;Kd2;1/2-1/2
+100;e6;1/2-1/2
+101;Kc3;1/2-1/2
+102;e5;1/2-1/2
+103;Kd2;1/2-1/2
+104;Qf5;1/2-1/2
+105;Kxe1;1/2-1/2
+106;e4;1/2-1/2
+107;Ke2;1/2-1/2
+108;e3;1/2-1/2
+109;Ke1;1/2-1/2
+110;Qe4;1/2-1/2
+111;Ke2;1/2-1/2
+112;b5;1/2-1/2
+113;Kf1;1/2-1/2
+114;b4;1/2-1/2
+115;Ke2;1/2-1/2
+116;b3;1/2-1/2
+117;Kf1;1/2-1/2
+118;b2;1/2-1/2
+119;Ke2;1/2-1/2
+120;b1=Q;1/2-1/2
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Nf7;1/2-1/2
+10;a5;1/2-1/2
+11;Nxd8;1/2-1/2
+12;Nc6;1/2-1/2
+13;Nxb7;1/2-1/2
+14;Kd7;1/2-1/2
+15;Nd6;1/2-1/2
+16;Ba6;1/2-1/2
+17;Nf7;1/2-1/2
+18;e5;1/2-1/2
+19;Nh6;1/2-1/2
+20;e4;1/2-1/2
+21;Ng8;1/2-1/2
+22;Re8;1/2-1/2
+23;Ne7;1/2-1/2
+24;Bc8;1/2-1/2
+25;Nxc6;1/2-1/2
+26;Bb4;1/2-1/2
+27;Nd8;1/2-1/2
+28;c5;1/2-1/2
+29;Nf7;1/2-1/2
+30;Rg8;1/2-1/2
+31;Nh6;1/2-1/2
+32;Ke6;1/2-1/2
+33;Nf5;1/2-1/2
+34;g5;1/2-1/2
+35;Ng7+;1/2-1/2
+36;Ke5;1/2-1/2
+37;Ne8;1/2-1/2
+38;Bg4;1/2-1/2
+39;Nd6;1/2-1/2
+40;Ke6;1/2-1/2
+41;Nb5;1/2-1/2
+42;h4;1/2-1/2
+43;Nxd4+;1/2-1/2
+44;Ke5;1/2-1/2
+45;Nc6+;1/2-1/2
+46;Ke6;1/2-1/2
+47;Nxa5;1/2-1/2
+48;h3;1/2-1/2
+49;Nb3;1/2-1/2
+50;Kf5;1/2-1/2
+51;Nxc5;1/2-1/2
+52;Re8;1/2-1/2
+53;Nb7;1/2-1/2
+54;Bf8;1/2-1/2
+55;Nd6+;1/2-1/2
+56;Kf4;1/2-1/2
+57;Nxe8;1/2-1/2
+58;Nd7;1/2-1/2
+59;Nd6;1/2-1/2
+60;Bf5;1/2-1/2
+61;Nxf5;1/2-1/2
+62;g4;1/2-1/2
+63;Nh4;1/2-1/2
+64;Ne5;1/2-1/2
+65;Nf3;1/2-1/2
+66;Nxf3+;1/2-1/2
+67;gxf3;1/2-1/2
+68;Bb4;1/2-1/2
+69;fxg4;1/2-1/2
+70;Ke5;1/2-1/2
+71;Rg1;1/2-1/2
+72;Kf4;1/2-1/2
+73;e3+;1/2-1/2
+74;Ke5;1/2-1/2
+75;Rg3;1/2-1/2
+76;Bd6;1/2-1/2
+77;Rf3;1/2-1/2
+78;exf3;1/2-1/2
+79;Bg2;1/2-1/2
+80;Ke4;1/2-1/2
+81;Bxf3+;1/2-1/2
+82;Ke5;1/2-1/2
+83;Bd5;1/2-1/2
+84;Kxd5;1/2-1/2
+85;Nc3+;1/2-1/2
+86;Ke5;1/2-1/2
+87;Nb5;1/2-1/2
+88;Bb4;1/2-1/2
+89;b3;1/2-1/2
+90;Ke4;1/2-1/2
+91;Qf3+;1/2-1/2
+92;Kxf3;1/2-1/2
+93;c3;1/2-1/2
+94;Kg2;1/2-1/2
+95;d4;1/2-1/2
+96;Bxc3+;1/2-1/2
+97;Bd2;1/2-1/2
+98;Bxa1;1/2-1/2
+99;d5;1/2-1/2
+100;Be5;1/2-1/2
+101;d6;1/2-1/2
+102;Bb2;1/2-1/2
+103;d7;1/2-1/2
+104;Be5;1/2-1/2
+105;d8=Q;1/2-1/2
+106;Bb2;1/2-1/2
+107;Qc7;1/2-1/2
+108;Be5;1/2-1/2
+109;Qxe5;1/2-1/2
+110;Kf3;1/2-1/2
+111;Qf5+;1/2-1/2
+112;Kg2;1/2-1/2
+113;Bc3;1/2-1/2
+114;Kg1;1/2-1/2
+115;Nd4;1/2-1/2
+116;Kg2;1/2-1/2
+117;Ne2;1/2-1/2
+118;Kh1;1/2-1/2
+119;Qf3+;1/2-1/2
+120;Kxh2;1/2-1/2
+121;Qxh3+;1/2-1/2
+122;Kxh3;1/2-1/2
+123;Be5;1/2-1/2
+124;Kg2;1/2-1/2
+125;Bg3;1/2-1/2
+126;Kf3;1/2-1/2
+127;a4;1/2-1/2
+128;Ke4;1/2-1/2
+129;b4;1/2-1/2
+130;Kf3;1/2-1/2
+131;a5;1/2-1/2
+132;Ke4;1/2-1/2
+133;b5;1/2-1/2
+134;Kf3;1/2-1/2
+135;a6;1/2-1/2
+136;Ke4;1/2-1/2
+137;b6;1/2-1/2
+138;Kf3;1/2-1/2
+139;a7;1/2-1/2
+140;Ke4;1/2-1/2
+141;b7;1/2-1/2
+142;Kf3;1/2-1/2
+143;a8=Q;1/2-1/2
+144;Ke4;1/2-1/2
+145;b8=Q+;1/2-1/2
+146;Kd3;1/2-1/2
+147;Qd8+;1/2-1/2
+148;Kc2;1/2-1/2
+149;Qab8;1/2-1/2
+1;Nf3;1-0
+2;d5;1-0
+3;Nc3;1-0
+4;d4;1-0
+5;Nd5;1-0
+6;Nc6;1-0
+7;Ne5;1-0
+8;Rb8;1-0
+9;Nxf7;1-0
+10;Kd7;1-0
+11;Nf6+;1-0
+12;Ke6;1-0
+13;Nxg8;1-0
+14;h5;1-0
+15;Nxd8+;1-0
+16;Kd7;1-0
+17;Nxe7;1-0
+18;h4;1-0
+19;Nxc8;1-0
+20;b5;1-0
+21;Nxc6;1-0
+22;Rb7;1-0
+23;N6xa7;1-0
+24;c5;1-0
+25;Ne7;1-0
+26;Kc7;1-0
+27;Nac8;1-0
+28;Bxe7;1-0
+29;Nxe7;1-0
+30;Rh7;1-0
+31;Ng8;1-0
+32;Kb6;1-0
+33;Nf6;1-0
+34;Rh6;1-0
+35;Nh7;1-0
+36;b4;1-0
+37;Ng5;1-0
+38;Rc7;1-0
+39;Nf7;1-0
+40;h3;1-0
+41;Nxh6;1-0
+42;Rb7;1-0
+43;Nf7;1-0
+44;g6;1-0
+45;Nd8;1-0
+46;g5;1-0
+47;Nxb7;1-0
+48;g4;1-0
+49;Nd6;1-0
+50;Kc6;1-0
+51;Nc4;1-0
+52;Kd5;1-0
+53;Nb6+;1-0
+54;Kd6;1-0
+55;Nd7;1-0
+56;Kd5;1-0
+57;Nb6+;1-0
+58;Kd6;1-0
+59;Nc4+;1-0
+60;Kd5;1-0
+61;d3;1-0
+62;Kc6;1-0
+63;b3;1-0
+64;Kd5;1-0
+65;Nd6;1-0
+66;Kc6;1-0
+67;Nf7;1-0
+68;Kd5;1-0
+69;Ng5;1-0
+70;Kd6;1-0
+71;Nxh3;1-0
+72;Kd5;1-0
+73;Nf4+;1-0
+74;Kd6;1-0
+75;Ng6;1-0
+76;Kd5;1-0
+77;Ne5;1-0
+78;Kd6;1-0
+79;Nxg4;1-0
+80;Kd5;1-0
+81;Nf6+;1-0
+82;Kd6;1-0
+83;h3;1-0
+84;Kc6;1-0
+85;g4;1-0
+86;Kd6;1-0
+87;h4;1-0
+88;Kc6;1-0
+89;h5;1-0
+90;Kd6;1-0
+91;h6;1-0
+92;Kc6;1-0
+93;h7;1-0
+94;Kd6;1-0
+95;h8=Q;1-0
+96;Kc6;1-0
+97;g5;1-0
+98;Kd6;1-0
+99;g6;1-0
+100;Kc6;1-0
+101;g7;1-0
+102;Kd6;1-0
+103;g8=Q;1-0
+104;Kc6;1-0
+105;Qa8+;1-0
+106;Kd6;1-0
+107;Qhe8;1-0
+108;Kc7;1-0
+109;Qec8+;1-0
+110;Kd6;1-0
+111;Qaa6+;1-0
+112;Ke5;1-0
+113;Qae6#;1-0
+1;Nf3;1-0
+2;d5;1-0
+3;Nc3;1-0
+4;d4;1-0
+5;Nb5;1-0
+6;h5;1-0
+7;Nxc7+;1-0
+8;Kd7;1-0
+9;Ne8;1-0
+10;Kxe8;1-0
+11;Ng5;1-0
+12;h4;1-0
+13;Nxf7;1-0
+14;a5;1-0
+15;Nxh8;1-0
+16;h3;1-0
+17;Nf7;1-0
+18;Nh6;1-0
+19;Nxd8;1-0
+20;Nc6;1-0
+21;Nxb7;1-0
+22;Bd7;1-0
+23;Nd8;1-0
+24;Rc8;1-0
+25;Nf7;1-0
+26;Bg4;1-0
+27;Nd8;1-0
+28;Bd7;1-0
+29;Nxc6;1-0
+30;a4;1-0
+31;Nd8;1-0
+32;Rc4;1-0
+33;Nf7;1-0
+34;Rb4;1-0
+35;Nxh6;1-0
+36;e5;1-0
+37;Ng8;1-0
+38;e4;1-0
+39;Ne7;1-0
+40;Rc4;1-0
+41;Nc6;1-0
+42;Rb4;1-0
+43;Nxd4;1-0
+44;Ke7;1-0
+45;Nb5;1-0
+46;Ke8;1-0
+47;Nc3;1-0
+48;Ke7;1-0
+49;Nb5;1-0
+50;Ke8;1-0
+51;Nd6+;1-0
+52;Ke7;1-0
+53;Ne8;1-0
+54;Rd4;1-0
+55;Nxg7;1-0
+56;Rc4;1-0
+57;Nf5+;1-0
+58;Bxf5;1-0
+59;f3;1-0
+60;Be6;1-0
+61;fxe4;1-0
+62;Kf7;1-0
+63;d3;1-0
+64;Bb4+;1-0
+65;c3;1-0
+66;Bc5;1-0
+67;dxc4;1-0
+68;Bf2+;1-0
+69;Kxf2;1-0
+70;Bg4;1-0
+71;e3;1-0
+72;Bxd1;1-0
+73;Rb1;1-0
+74;Bg4;1-0
+75;g3;1-0
+76;Ke6;1-0
+77;Bd2;1-0
+78;Kd7;1-0
+79;c5;1-0
+80;Ke6;1-0
+81;c6;1-0
+82;Ke5;1-0
+83;c7;1-0
+84;Ke6;1-0
+85;c8=Q+;1-0
+86;Ke5;1-0
+87;Qe8+;1-0
+88;Be6;1-0
+89;Qxe6+;1-0
+90;Kxe6;1-0
+91;e5;1-0
+92;Kd5;1-0
+93;e6;1-0
+94;Ke4;1-0
+95;e7;1-0
+96;Ke5;1-0
+97;e8=Q+;1-0
+98;Kd5;1-0
+99;g4;1-0
+100;Kd6;1-0
+101;g5;1-0
+102;Kd5;1-0
+103;g6;1-0
+104;Kd6;1-0
+105;g7;1-0
+106;Kd5;1-0
+107;g8=Q+;1-0
+108;Kd6;1-0
+109;Qd8+;1-0
+110;Ke5;1-0
+111;Qgd5#;1-0
+1;Nf3;0-1
+2;d5;0-1
+3;d4;0-1
+4;h5;0-1
+5;Qd3;0-1
+6;f5;0-1
+7;Qxf5;0-1
+8;Bxf5;0-1
+9;Ng5;0-1
+10;Bc8;0-1
+11;Nf7;0-1
+12;h4;0-1
+13;Nxd8;0-1
+14;Kd7;0-1
+15;Nxb7;0-1
+16;Nf6;0-1
+17;Nd6;0-1
+18;exd6;0-1
+19;Bg5;0-1
+20;a5;0-1
+21;Bxf6;0-1
+22;gxf6;0-1
+23;Nc3;0-1
+24;c6;0-1
+25;Nxd5;0-1
+26;cxd5;0-1
+27;a4;0-1
+28;Rh6;0-1
+29;Ra3;0-1
+30;Bb7;0-1
+31;Rc3;0-1
+32;Bc6;0-1
+33;Rxc6;0-1
+34;Kxc6;0-1
+35;e3;0-1
+36;h3;0-1
+37;Ba6;0-1
+38;Rxa6;0-1
+39;gxh3;0-1
+40;Nd7;0-1
+41;Rg1;0-1
+42;Rb6;0-1
+43;Rg8;0-1
+44;Ra6;0-1
+45;Rxf8;0-1
+46;Nxf8;0-1
+47;h4;0-1
+48;Nh7;0-1
+49;h5;0-1
+50;Rxh5;0-1
+51;b4;0-1
+52;Rh3;0-1
+53;b5+;0-1
+54;Kb6;0-1
+55;bxa6;0-1
+56;Kc6;0-1
+57;a7;0-1
+58;Ng5;0-1
+59;a8=Q+;0-1
+60;Kd7;0-1
+61;Qb8;0-1
+62;Nf3+;0-1
+63;Kf1;0-1
+64;Nd2+;0-1
+65;Kg1;0-1
+66;Nf3+;0-1
+67;Kh1;0-1
+68;Rxh2#;0-1
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Nf7;1/2-1/2
+10;a5;1/2-1/2
+11;Nxd8;1/2-1/2
+12;Nc6;1/2-1/2
+13;Nxb7;1/2-1/2
+14;Kd7;1/2-1/2
+15;Nd8;1/2-1/2
+16;Rb8;1/2-1/2
+17;Nb7;1/2-1/2
+18;Bxb7;1/2-1/2
+19;Nc3;1/2-1/2
+20;e5;1/2-1/2
+21;Ne4;1/2-1/2
+22;Ba8;1/2-1/2
+23;Nxf6+;1/2-1/2
+24;Kd6;1/2-1/2
+25;Ne8+;1/2-1/2
+26;Ke7;1/2-1/2
+27;Nxg7;1/2-1/2
+28;Kd6;1/2-1/2
+29;Ne8+;1/2-1/2
+30;Ke7;1/2-1/2
+31;Nxc7;1/2-1/2
+32;h4;1/2-1/2
+33;Ne6;1/2-1/2
+34;Re8;1/2-1/2
+35;Nc5;1/2-1/2
+36;Rd8;1/2-1/2
+37;Nb7;1/2-1/2
+38;Kd7;1/2-1/2
+39;Nxa5;1/2-1/2
+40;Be7;1/2-1/2
+41;Nb7;1/2-1/2
+42;Bb4;1/2-1/2
+43;Nxd8;1/2-1/2
+44;Ke7;1/2-1/2
+45;Nf7;1/2-1/2
+46;Bb7;1/2-1/2
+47;Nd6;1/2-1/2
+48;Ba8;1/2-1/2
+49;Nb7;1/2-1/2
+50;Kd7;1/2-1/2
+51;Nd6;1/2-1/2
+52;Ke7;1/2-1/2
+53;Nf7;1/2-1/2
+54;Bb7;1/2-1/2
+55;Nxe5;1/2-1/2
+56;Kd6;1/2-1/2
+57;Nc4+;1/2-1/2
+58;Ke7;1/2-1/2
+59;Nb6;1/2-1/2
+60;Kd6;1/2-1/2
+61;Nd7;1/2-1/2
+62;Bc8;1/2-1/2
+63;Nf6;1/2-1/2
+64;h3;1/2-1/2
+65;Ng4;1/2-1/2
+66;Bd7;1/2-1/2
+67;Nf6;1/2-1/2
+68;Be6;1/2-1/2
+69;gxh3;1/2-1/2
+70;Bd5;1/2-1/2
+71;Rg1;1/2-1/2
+72;Bg2;1/2-1/2
+73;Rxg2;1/2-1/2
+74;Kc5;1/2-1/2
+75;Rg6;1/2-1/2
+76;Na5;1/2-1/2
+77;Nd7+;1/2-1/2
+78;Kc4;1/2-1/2
+79;Nc5;1/2-1/2
+80;Bxd2+;1/2-1/2
+81;Kxd2;1/2-1/2
+82;Nb3+;1/2-1/2
+83;cxb3+;1/2-1/2
+84;Kb4;1/2-1/2
+85;Rb6+;1/2-1/2
+86;Ka5;1/2-1/2
+87;Ne4;1/2-1/2
+88;Kxb6;1/2-1/2
+89;Nf6;1/2-1/2
+90;Kc5;1/2-1/2
+91;e3;1/2-1/2
+92;Kb4;1/2-1/2
+93;exd4;1/2-1/2
+94;Ka5;1/2-1/2
+95;d5;1/2-1/2
+96;Kb4;1/2-1/2
+97;d6;1/2-1/2
+98;Kc5;1/2-1/2
+99;d7;1/2-1/2
+100;Kd4;1/2-1/2
+101;d8=Q+;1/2-1/2
+102;Ke5;1/2-1/2
+103;Qd5+;1/2-1/2
+104;Kf4;1/2-1/2
+105;Q5h5;1/2-1/2
+1;Nf3;1-0
+2;d5;1-0
+3;Ng5;1-0
+4;d4;1-0
+5;Nxf7;1-0
+6;h5;1-0
+7;Nxh8;1-0
+8;Nf6;1-0
+9;Nf7;1-0
+10;a5;1-0
+11;Nxd8;1-0
+12;Nc6;1-0
+13;Nxb7;1-0
+14;Kd7;1-0
+15;Nd8;1-0
+16;Rb8;1-0
+17;Nxc6;1-0
+18;Rb4;1-0
+19;Nd8;1-0
+20;a4;1-0
+21;Nf7;1-0
+22;e6;1-0
+23;Nh6;1-0
+24;c5;1-0
+25;Nf5;1-0
+26;Be7;1-0
+27;Nxe7;1-0
+28;Rc4;1-0
+29;Nxc8;1-0
+30;Rb4;1-0
+31;Nd6;1-0
+32;Kxd6;1-0
+33;Na3;1-0
+34;Kd5;1-0
+35;Nc4;1-0
+36;e5;1-0
+37;Nxe5;1-0
+38;Rc4;1-0
+39;Nf7;1-0
+40;Rb4;1-0
+41;Nh6;1-0
+42;Kc4;1-0
+43;Nf5;1-0
+44;Kd5;1-0
+45;Nxg7;1-0
+46;Kc4;1-0
+47;Nf5;1-0
+48;Ng4;1-0
+49;Nxd4;1-0
+50;Nf6;1-0
+51;Nb5;1-0
+52;Ng4;1-0
+53;Nd6+;1-0
+54;Kd4;1-0
+55;Nc4;1-0
+56;Ne5;1-0
+57;Nb6;1-0
+58;Nd3+;1-0
+59;exd3;1-0
+60;h4;1-0
+61;Nxa4;1-0
+62;Kd5;1-0
+63;Nxc5;1-0
+64;Re4+;1-0
+65;Nxe4;1-0
+66;Kd4;1-0
+67;Ng5;1-0
+68;Ke5;1-0
+69;h3;1-0
+70;Kd4;1-0
+71;g3;1-0
+72;Ke5;1-0
+73;gxh4;1-0
+74;Kd4;1-0
+75;Rg1;1-0
+76;Ke5;1-0
+77;Qf3;1-0
+78;Kd4;1-0
+79;Qe4+;1-0
+80;Kc5;1-0
+81;Rg4;1-0
+82;Kd6;1-0
+83;Qc4;1-0
+84;Ke5;1-0
+85;Re4+;1-0
+86;Kf6;1-0
+87;Qc6+;1-0
+88;Kg7;1-0
+89;Qe8;1-0
+90;Kf6;1-0
+91;Qf7#;1-0
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Nf7;1/2-1/2
+10;a5;1/2-1/2
+11;Nxd8;1/2-1/2
+12;Nc6;1/2-1/2
+13;Nxb7;1/2-1/2
+14;Kd7;1/2-1/2
+15;Nd8;1/2-1/2
+16;Rb8;1/2-1/2
+17;Nxc6;1/2-1/2
+18;Rb4;1/2-1/2
+19;Nxa5;1/2-1/2
+20;e6;1/2-1/2
+21;Nc6;1/2-1/2
+22;Be7;1/2-1/2
+23;Nxe7;1/2-1/2
+24;c5;1/2-1/2
+25;Nxc8;1/2-1/2
+26;Rc4;1/2-1/2
+27;Nd6;1/2-1/2
+28;Rb4;1/2-1/2
+29;Ne8;1/2-1/2
+30;Rc4;1/2-1/2
+31;Nxf6+;1/2-1/2
+32;Ke7;1/2-1/2
+33;Nxh5;1/2-1/2
+34;Kf7;1/2-1/2
+35;Nxg7;1/2-1/2
+36;Rb4;1/2-1/2
+37;Nxe6;1/2-1/2
+38;Rc4;1/2-1/2
+39;Nxc5;1/2-1/2
+40;Rb4;1/2-1/2
+41;Na3;1/2-1/2
+42;Kg7;1/2-1/2
+43;Nb5;1/2-1/2
+44;Rc4;1/2-1/2
+45;Nd6;1/2-1/2
+46;Rb4;1/2-1/2
+47;Nd7;1/2-1/2
+48;Ra4;1/2-1/2
+49;Nf5+;1/2-1/2
+50;Kf7;1/2-1/2
+51;Nxd4;1/2-1/2
+52;Rc4;1/2-1/2
+53;Nb6;1/2-1/2
+54;Rb4;1/2-1/2
+55;b3;1/2-1/2
+56;Kg7;1/2-1/2
+57;c3;1/2-1/2
+58;Kf7;1/2-1/2
+59;cxb4;1/2-1/2
+60;Kg7;1/2-1/2
+61;Bb2;1/2-1/2
+62;Kf7;1/2-1/2
+63;Qc1;1/2-1/2
+64;Kg7;1/2-1/2
+65;Qc7+;1/2-1/2
+66;Kg6;1/2-1/2
+67;Nd7;1/2-1/2
+68;Kg7;1/2-1/2
+69;Qd8;1/2-1/2
+70;Kf7;1/2-1/2
+71;Qg5;1/2-1/2
+72;Ke8;1/2-1/2
+73;Qg7;1/2-1/2
+74;Kd8;1/2-1/2
+75;Qf7;1/2-1/2
+76;Kc7;1/2-1/2
+77;Qf6;1/2-1/2
+78;Kxd7;1/2-1/2
+79;Rc1;1/2-1/2
+80;Ke8;1/2-1/2
+81;Rc6;1/2-1/2
+82;Kd7;1/2-1/2
+83;Qd6+;1/2-1/2
+84;Ke8;1/2-1/2
+85;Qc7;1/2-1/2
+86;Kf8;1/2-1/2
+87;Re6;1/2-1/2
+88;Kg8;1/2-1/2
+89;Qc8+;1/2-1/2
+90;Kg7;1/2-1/2
+91;Qe8;1/2-1/2
+92;Kh7;1/2-1/2
+93;Rg6;1/2-1/2
+1;Nf3;1/2-1/2
+2;d5;1/2-1/2
+3;Ng5;1/2-1/2
+4;d4;1/2-1/2
+5;Nxf7;1/2-1/2
+6;h5;1/2-1/2
+7;Nxh8;1/2-1/2
+8;Nf6;1/2-1/2
+9;Nf7;1/2-1/2
+10;a5;1/2-1/2
+11;Nxd8;1/2-1/2
+12;Nc6;1/2-1/2
+13;Nxb7;1/2-1/2
+14;Kd7;1/2-1/2
+15;Nd8;1/2-1/2
+16;Rb8;1/2-1/2
+17;Nf7;1/2-1/2
+18;Bb7;1/2-1/2
+19;Nd6;1/2-1/2
+20;e5;1/2-1/2
+21;Nxb7;1/2-1/2
+22;e4;1/2-1/2
+23;Nxa5;1/2-1/2
+24;Re8;1/2-1/2
+25;Nxc6;1/2-1/2
+26;Rd8;1/2-1/2
+27;Nxd8;1/2-1/2
+28;c5;1/2-1/2
+29;Ne6;1/2-1/2
+30;Ke8;1/2-1/2
+31;Nxf8;1/2-1/2
+32;Kf7;1/2-1/2
+33;Ng6;1/2-1/2
+34;Kg8;1/2-1/2
+35;Ne5;1/2-1/2
+36;Kh7;1/2-1/2
+37;Nc6;1/2-1/2
+38;Kg8;1/2-1/2
+39;Nxd4;1/2-1/2
+40;c4;1/2-1/2
+41;Nc6;1/2-1/2
+42;Kh7;1/2-1/2
+43;Ne7;1/2-1/2
+44;Kh6;1/2-1/2
+45;Ng6;1/2-1/2
+46;Kh7;1/2-1/2
+47;Nf8+;1/2-1/2
+48;Kg8;1/2-1/2
+49;g4;1/2-1/2
+50;Kf7;1/2-1/2
+51;Bh3;1/2-1/2
+52;Kg8;1/2-1/2
+53;Rg1;1/2-1/2
+54;Kf7;1/2-1/2
+55;Rg3;1/2-1/2
+56;Kg8;1/2-1/2
+57;Rf3;1/2-1/2
+58;exf3;1/2-1/2
+59;exf3;1/2-1/2
+60;Kf7;1/2-1/2
+61;Qe2;1/2-1/2
+62;g6;1/2-1/2
+63;Qe8+;1/2-1/2
+64;Nxe8;1/2-1/2
+65;d3;1/2-1/2
+66;Kxf8;1/2-1/2
+67;dxc4;1/2-1/2
+68;Kg7;1/2-1/2
+69;Bf4;1/2-1/2
+70;Nf6;1/2-1/2
+71;Nc3;1/2-1/2
+72;Kf7;1/2-1/2
+73;Nd5;1/2-1/2
+74;Nxd5;1/2-1/2
+75;cxd5;1/2-1/2
+76;h4;1/2-1/2
+77;Bd6;1/2-1/2
+78;g5;1/2-1/2
+79;Rd1;1/2-1/2
+80;Kg6;1/2-1/2
+81;Rd4;1/2-1/2
+82;Kf6;1/2-1/2
+83;Re4;1/2-1/2
+84;Kg6;1/2-1/2
+85;Re7;1/2-1/2
+86;Kf6;1/2-1/2
+87;a3;1/2-1/2
+88;Kg6;1/2-1/2
+89;a4;1/2-1/2
+90;Kf6;1/2-1/2
+91;a5;1/2-1/2
+92;Kg6;1/2-1/2
+93;a6;1/2-1/2
+94;Kf6;1/2-1/2
+95;a7;1/2-1/2
+96;Kg6;1/2-1/2
+97;a8=Q;1/2-1/2
+98;Kf6;1/2-1/2
+99;Qe8;1/2-1/2
