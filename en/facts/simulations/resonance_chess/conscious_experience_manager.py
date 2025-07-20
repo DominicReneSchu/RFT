@@ -13,16 +13,20 @@ def extract_sequences():
     with USER_CSV.open("r", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter=";")
         for row in reader:
+            # Erkenne Start einer neuen Partie
             if row["Zugnummer"] == "1" and current_game:
-                # Sliding Window über die Partie
-                for i in range(len(current_game) - SEQUENCE_LENGTH + 1):
-                    sequences.append((tuple(current_game[i:i+SEQUENCE_LENGTH]), current_result))
+                # Sliding Window über die abgeschlossene Partie
+                if len(current_game) >= SEQUENCE_LENGTH:
+                    for i in range(len(current_game) - SEQUENCE_LENGTH + 1):
+                        sequences.append((tuple(current_game[i:i+SEQUENCE_LENGTH]), current_result))
                 current_game = []
             current_game.append(row["Zug"])
             current_result = row["Ergebnis"]
-        if len(current_game) >= SEQUENCE_LENGTH:
+        # Sliding Window für die letzte (evtl. laufende) Partie
+        if current_game and len(current_game) >= SEQUENCE_LENGTH:
             for i in range(len(current_game) - SEQUENCE_LENGTH + 1):
                 sequences.append((tuple(current_game[i:i+SEQUENCE_LENGTH]), current_result))
+    print(f"[DEBUG] Extrahierte {len(sequences)} Sequenzen aus allen Partien.")
     return sequences
 
 def score_result(result):
@@ -54,6 +58,7 @@ def build_conscious_experience():
         writer.writeheader()
         for row in conscious_list:
             writer.writerow(row)
+    print(f"[DEBUG] Bewusstseinsfeld aktualisiert: {len(conscious_list)} Sequenzen gespeichert.")
 
 if __name__ == "__main__":
     build_conscious_experience()

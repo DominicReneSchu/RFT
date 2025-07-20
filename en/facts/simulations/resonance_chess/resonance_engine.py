@@ -3,9 +3,13 @@ import time
 from resonance_evaluator import evaluate_resonance
 from experience_manager import load_user_experience, load_conscious_experience
 
+FIELD_WEIGHTS = {
+    chess.E4: 0.25, chess.D4: 0.25, chess.E5: 0.25, chess.D5: 0.25,
+    # Weitere Felder und Gewichtungen können ergänzt werden
+}
+
 class ResonanceEngine:
     def __init__(self):
-        # ...
         self.user_experience = load_user_experience()
         self.conscious_experience = load_conscious_experience()
         self.SEQUENCE_LENGTH = 10
@@ -19,34 +23,46 @@ class ResonanceEngine:
     def score_with_consciousness(self, move_list, base_score):
         seq = self.get_move_sequence(move_list)
         if seq and seq in self.conscious_experience:
-            # Verstärke Score proportional zum Bewusstseinswert
             boost = self.conscious_experience[seq] / 10.0  # Skaliere nach oben
             return base_score * (1.0 + 0.5 * boost)
         return base_score
 
-    def select_best_move(self, board, depth=2, move_list=None):
-        # ... Standard-Moveauswahl ...
+    def evaluate_position(self, board):
+        # Dummy-Auswertung (kann durch komplexe Bewertung ersetzt werden)
+        # Hier wird einfach die Materialdifferenz berechnet
+        value = 0
+        piece_values = {
+            chess.PAWN: 1,
+            chess.KNIGHT: 3,
+            chess.BISHOP: 3,
+            chess.ROOK: 5,
+            chess.QUEEN: 9,
+            chess.KING: 0
+        }
+        for piece_type in piece_values:
+            value += len(board.pieces(piece_type, chess.WHITE)) * piece_values[piece_type]
+            value -= len(board.pieces(piece_type, chess.BLACK)) * piece_values[piece_type]
+        return value if board.turn == chess.WHITE else -value
+
+    def select_best_move(self, board, depth=2, move_list=None, time_limit=None):
+        if time_limit is not None:
+            start_time = time.time()
         best_score = -float("inf")
         best_move = None
+        if move_list is None:
+            move_list = []
         for move in board.legal_moves:
+            if time_limit is not None and time.time() - start_time > time_limit:
+                break
             board_push = board.copy(stack=False)
             board_push.push(move)
-            # ... Standardbewertung ...
             base_score = self.evaluate_position(board_push)
-            # Bewusstseins-Boost
-            test_move_list = (move_list or []) + [board.san(move)]
+            test_move_list = move_list + [board.san(move)]
             score = self.score_with_consciousness(test_move_list, base_score)
             if score > best_score:
                 best_score = score
                 best_move = move
         return best_move, best_score
-
-
-# Beispiel: Adaptive Feldbewertung (kann durch weitere Erfahrungslogik dynamisiert werden)
-FIELD_WEIGHTS = {
-    chess.E4: 0.25, chess.D4: 0.25, chess.E5: 0.25, chess.D5: 0.25,
-    # Flankenfelder, eigene Grundreihe, etc. können anders gewichtet werden
-}
 
 def select_best_move(board, depth=1, user_experience=None, time_limit=None):
     if time_limit is not None:
@@ -61,7 +77,7 @@ def select_best_move(board, depth=1, user_experience=None, time_limit=None):
 
             value, details = evaluate_resonance(board, move)
             value += aggression_score(board, move)
-            value += field_resonance(move)  # Adaptive Feldbewertung
+            value += field_resonance(move)
 
             if user_experience:
                 value += experience_bonus(move, user_experience, board)
@@ -70,16 +86,12 @@ def select_best_move(board, depth=1, user_experience=None, time_limit=None):
             board_push = board.copy(stack=False)
             board_push.push(move)
 
-            # Mattbelohnung
             if board_push.is_checkmate():
                 value = float('inf')
                 details["matt"] = True
-
-            # Materialverlust-Strafe
             elif causes_material_loss(board, move):
-                value -= 8  # Starker Malus
+                value -= 8
 
-            # Positionsresonanz-Detail
             details["field_resonance"] = field_resonance(move)
 
             if value > best_value:
@@ -207,18 +219,13 @@ def causes_material_loss(board, move):
     """
     board_push = board.copy(stack=False)
     board_push.push(move)
-    # Figur, die gerade gezogen wurde
     moved_piece = board_push.piece_at(move.to_square)
-    # Ist das Feld nach dem eigenen Zug von gegnerischer Figur angegriffen?
     attackers = board_push.attackers(not moved_piece.color, move.to_square)
-    # Ist die Figur auf dem Zielfeld noch gedeckt?
     defenders = board_push.attackers(moved_piece.color, move.to_square)
     if attackers and (not defenders or len(attackers) > len(defenders)):
-        # Materialverlust droht
         return True
     return False
 
-# experience_bonus und avoid_losing_situations wie zuvor
 def experience_bonus(move, user_experience, board=None):
     bonus = 0.0
     move_san = move.uci()
