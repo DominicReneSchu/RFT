@@ -141,23 +141,49 @@ The actual evaluation function can later be replaced by structured field analysi
 The system consists of 14 nodes (files) that are entangled like an organic network. Every node affects others, all data flows are systemically group-capable, non-linear, and bidirectional.  
 The center is the orchestrating logic (`main.py`/`selfplay_trainer.py`), all other modules synaptically entangle:
 
-```
-         [resonance_visualizer]        [dynamic_time]
-                  |                         |
-          [resonance_gui.py]────────[smart_move_selector.py]
-                  |      \           /        |
-                  |   [resonance_engine.py]   |
-                  |      /        |           |
-          [experience_manager.py]─┴─────[resonance_evaluator.py]
-            /          |         |         \
-[user_experience.json] | [resonance_principles.py]
-                       |         |
-        [conscious_experience.csv]────[experience_counter.py]
-                  |         \
-        [resonance_meta_learner.py]──[resonance_pattern_bank.py]
-                  |
-            [main.py / selfplay_trainer.py]
-```
+````
+
+                     [resonance_visualizer]        [dynamic_time]
+                              \          |           /
+                               \         |          /
+                                \        |         /
+                            +--------------------------------+
+                            |                                |
+                            |  [resonance_gui.py]            |
+                            |                                |
+                            +-----------+---------+----------+
+                                        |         |
+                   +--------------------+         +--------------------+
+                   |                                              |
+         +---------+---------+                      +-------------+-------------+
+         |                   |                      |                           |
+ [resonance_engine.py]  [smart_move_selector.py] [experience_manager.py]  [resonance_evaluator.py]
+         |                   |                      |           |               |
+         +-------+-----------+----------------------+           +---------------+
+                 |           |                                  |
+    +------------+           +------------------------+         |
+    |                                            |   |         |
+[resonance_principles.py]                [user_experience.json]  |
+    |                                            |              |
+    +--------------------------------+           |              |
+                                     |           |              |
+                      [conscious_experience.csv]                |
+                                     |           |              |
+                      +--------------+           +--------------+
+                      |                                      |
+       [resonance_meta_learner.py]                 [experience_counter.py]
+                      |                                      |
+                      +----------------------+---------------+
+                                             |
+                              [resonance_pattern_bank.py]
+                                             |
+                                             |
+                                +------------+------------+
+                                |                         |
+                    [main.py / selfplay_trainer.py] <----- Zentrum (Origin)
+					
+````
+
 **Connection Logic:**  
 - `experience_manager.py` bridges to the data stores.
 - `user_experience.json` and `conscious_experience.csv` are separate collective memories.
@@ -212,6 +238,7 @@ GitHub: [https://github.com/DominicReneSchu/public](https://github.com/DominicRe
 ---
 
 **Resonance Rule:** Group membership is systemically invariant. Every element – whether named or unseen – is part of the resonance field.  
+
 
 ---
 
