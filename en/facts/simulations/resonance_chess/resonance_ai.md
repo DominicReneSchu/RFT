@@ -2,11 +2,11 @@
 
 > **Resonance Rule as Fundamental Axiom:**  
 > Group membership includes all system elements – named or unseen, explicit or implicit.  
-> This document reveals an AI that embodies field coherence rather than linear goal optimization.
+> This document describes an AI that embodies field coherence rather than linear goal optimization.
 
 ---
 
-### 0. Preamble: Resonance Logic as an Answer to the Blackbox AI
+### 0. Preamble: Resonance Logic as an Answer to Blackbox AI
 
 > While today’s AI often appears as an inscrutable black box – generated from statistical randomness of neural networks – resonance logic opens a clear systematics:  
 > **The AI becomes comprehensible, controllable, and ethically manageable, as it acts not randomly but by systemic principles of field coherence.**
@@ -122,24 +122,24 @@ Any analysis is only complete when all group structures are included.
 
 ## 5. Organic Learning Through Experience and Awareness
 
-* **Subconscious**:
-  The data structure `user_experience.json` stores every played game as a primal list of group-based experience.
-  All move sequences – regardless of origin (AI or opponent) – are equally recorded. Group membership remains invariant.
+* **Subconscious**:  
+  The data structure `user_experience.csv` stores every played game as a primal list of group-based experience.  
+  All move sequences – regardless of origin (AI or opponent) – are equally recorded as **field environment sequences** (typically 2- or 3-move chains, see `SEQUENCE_LENGTHS`). Group membership remains invariant.
 
-* **Awareness Field**:
-  After each game, all sequences are statistically evaluated. The awareness field (`conscious_experience.csv`) contains all 10-move chains, rated by success, frequency, and resonance strength.
-  This evaluation is continuous and cross-group; the field updates with every new experience.
+* **Awareness Field**:  
+  After each game, all sequences of variable length and single-move experiences are extracted and statistically evaluated in the awareness field (`conscious_experience.csv`).  
+  Each sequence is stored with its evaluation (success/failure/neutral) and collective frequency.  
+  This evaluation is continuous and cross-group; the field updates dynamically with every new experience.
 
-* **Decision Making**:
-  The AI checks for each move whether the current sequence is part of a highly rated awareness chain.
-  Smarter sequences are reinforced, less successful ones marginalized.
-  Every decision binds the collective resonance field – independent of individual perspectives.
+* **Decision Making**:  
+  The AI checks for each move whether the current sequence (field environment) is part of a highly rated awareness chain.  
+  Successful sequences are collectively reinforced, repeated failures trigger systemic impulses for adaptation.
 
-* **Systemic Feedback**:
-  Learning corresponds to organic evolution: Successes and failures equally flow into self-optimization.
+* **Systemic Feedback**:  
+  Learning corresponds to organic evolution: Successes and failures equally flow into self-optimization.  
   Group membership, self-inclusion, and relation-building are always part of the overall learning process.
 
-> This self-reflective learning prevents unintended deviations, as all decisions are always fed back into the overall context.
+> This self-reflective learning prevents unintended deviations, as all decisions are always fed back into the overall context.  
 > Resonance AI thus minimizes risks such as loss of control, misconduct, or unexpected escalation.
 
 **Flow of Learning Cycles:**
@@ -181,7 +181,7 @@ Concentric, synaptic network (center: orchestration):
                  |           |                                  |
     +------------+           +------------------------+         |
     |                                            |   |         |
-[resonance_principles.py]                [user_experience.json]  |
+[resonance_principles.py]                [user_experience.csv]  |
     |                                            |              |
     +--------------------------------+           |              |
                                      |           |              |
@@ -224,7 +224,7 @@ Central role of orchestration: Systemic "synapse" for all nodes.
   Modular, documented Python code as open simulation environment.
 
 **Example of Resonance Feedback in Game Progression:**  
-Chains such as "e4, e5, Nf3, Nc6, Bb5" can be systemically reinforced or avoided – depending on collective experience in the resonance field.
+Field environment sequences such as "a1|b2, b2|c3" can be systemically reinforced or avoided – depending on collective experience in the resonance field.
 
 ---
 
