@@ -1,10 +1,12 @@
 import chess
 import random
+from motif_detection import detect_motifs
 
-def get_recent_chain(board, n=2, relative=False):
+def get_recent_chain(board, n=2, relative=False, semantic_map_func=None):
     """
     Extrahiert die letzten n Züge als SAN-Zugkette mit Farbmarkierung (z.B. "w:e4|b:e5").
-    Für relative=True Platzhalter für zukünftige semantische Abstraktion.
+    Für relative=True: explizite Farbmarkierung und Platzhalter für zukünftige semantische Abstraktion.
+    Optional: semantic_map_func ermöglicht weitere Musterabstraktion.
     """
     if not board.move_stack:
         return ""
@@ -13,21 +15,19 @@ def get_recent_chain(board, n=2, relative=False):
     for move in board.move_stack:
         color = 'w' if temp_board.turn else 'b'
         san = temp_board.san(move)
-        if relative:
-            # Platzhalter für Muster, z.B. f"{color}:piece_center"
-            san_list.append(f"{color}:{san}")  # später abstrahieren
-        else:
-            san_list.append(f"{color}:{san}")
+        if semantic_map_func:
+            san = semantic_map_func(san, temp_board)
+        san_list.append(f"{color}:{san}")
         temp_board.push(move)
     last_n_san = san_list[-n:]
     return "|".join(last_n_san)
 
 def select_learned_move(board, experience_set, max_chain_n=4):
     """
-    Wählt anhand von Erfahrung und Gewichtung.
-    - Berücksichtigt alle Kettenlängen von max_chain_n bis 2 (je länger, desto vorrangig)
-    - Bevorzugt Züge mit hoher 'success'-Gewichtung, meidet 'failure'
-    - Bei Gleichstand: Zufallswahl
+    Resonanzlogische Zugauswahl: Kumuliert Zugketten- und Motivresonanz.
+    Alle Kettenlängen (max_chain_n bis 2), Motive als gleichwertige Resonanzträger.
+    Score = Erfolg + Motivbonus − Fehler, Länge als Tiebreaker.
+    Zufall nur bei Gleichstand (Exploration).
     """
     legal_moves = list(board.legal_moves)
     if not legal_moves:
@@ -38,19 +38,23 @@ def select_learned_move(board, experience_set, max_chain_n=4):
         temp_board = board.copy()
         temp_board.push(move)
         best_score = None
+        motif_bonus = 0
+        motifs = detect_motifs(temp_board)
+        if motifs:
+            motif_chain = "|".join(sorted(motifs))
+            motif_bonus += experience_set.get((f"motif:{motif_chain}", "success"), 0)
+            motif_bonus -= experience_set.get((f"motif:{motif_chain}", "failure"), 0)
         for n in range(max_chain_n, 1, -1):
-            chain = get_recent_chain(temp_board, n=n)
+            chain = get_recent_chain(temp_board, n=n, relative=True)
             success = experience_set.get((chain, "success"), 0)
             failure = experience_set.get((chain, "failure"), 0)
-            if success or failure:
-                score = (success, -failure, n)
-                if (best_score is None) or (score > best_score):
-                    best_score = score
+            score = (success + motif_bonus, -failure, n)
+            if (best_score is None) or (score > best_score):
+                best_score = score
         if best_score is None:
-            best_score = (0, 0, 0)
+            best_score = (motif_bonus, 0, 0)
         move_scores.append((move, best_score))
 
-    # Sortiere nach Success, dann wenig Failure, dann längste Kette
     move_scores.sort(key=lambda x: x[1], reverse=True)
     top_score = move_scores[0][1]
     top_moves = [move for move, score in move_scores if score == top_score]
