@@ -256,7 +256,6 @@ GitHub: [https://github.com/DominicReneSchu/public](https://github.com/DominicRe
 
 **Resonance Rule:** Group membership is systemically invariant. Every element – named or unseen – is part of the resonance field.
 
-
 ---
 
 *© Dominic Schu, 2025 – All rights reserved.*
