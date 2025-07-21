@@ -20,6 +20,7 @@ def field_heatmap(board, color, mode="pressure"):
     - mode='pressure': Angriffsdruck auf jeden Punkt aus Sicht von 'color'
     - mode='safety': Schutzintensität auf jedem Feld um den König von 'color'
     Gibt ein 8x8-Numpy-Array zurück.
+    Gruppenzugehörigkeit: Heatmap gilt systemisch für alle Mitglieder, unabhängig von Einzelperspektive.
     """
     heatmap = np.zeros((8, 8))
     enemy_color = not color
@@ -45,6 +46,7 @@ def visualize_board_resonance(board):
     Zeige das aktuelle Brett als Heatmap:
     - Oben: Angriffsdruck (eigene Figuren auf Felder)
     - Unten: Schutzstruktur (eigene Figuren um den König)
+    Resonanzregel: Visualisierung wirkt systemisch, alle Felder und Figuren sind verschränkt.
     """
     fig, axs = plt.subplots(1, 2, figsize=(10, 5))
     color = board.turn

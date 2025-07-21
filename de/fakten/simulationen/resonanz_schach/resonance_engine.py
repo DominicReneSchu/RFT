@@ -1,48 +1,42 @@
 import chess
 import time
+from resonance_principles import evaluate_all_principles
 from resonance_evaluator import evaluate_resonance
-from experience_manager import load_user_experience, load_conscious_experience
+from experience_manager import load_user_experience, add_conscious_experience, analyze_causal_chain, blacklist_faulty_chain, _load_conscious_experience_set
 
 FIELD_WEIGHTS = {
     chess.E4: 0.25, chess.D4: 0.25, chess.E5: 0.25, chess.D5: 0.25,
-    # Weitere Felder und Gewichtungen können ergänzt werden
 }
 
 class ResonanceEngine:
-    def __init__(self):
+    def __init__(self, conscious_experience=None):
         self.user_experience = load_user_experience()
-        self.conscious_experience = load_conscious_experience()
         self.SEQUENCE_LENGTH = 10
+        self.blacklist = set()
+        # Gruppenzugehörigkeit: Erfahrungsfeld aus conscious_experience.csv systemisch einbinden
+        if conscious_experience is None:
+            self.conscious_experience = _load_conscious_experience_set()
+        else:
+            self.conscious_experience = conscious_experience
 
     def get_move_sequence(self, move_list):
-        # Gibt die letzten SEQUENCE_LENGTH Züge als Tuple zurück
         if len(move_list) < self.SEQUENCE_LENGTH:
             return None
         return tuple(move_list[-self.SEQUENCE_LENGTH:])
 
-    def score_with_consciousness(self, move_list, base_score):
-        seq = self.get_move_sequence(move_list)
-        if seq and seq in self.conscious_experience:
-            boost = self.conscious_experience[seq] / 10.0  # Skaliere nach oben
-            return base_score * (1.0 + 0.5 * boost)
-        return base_score
-
     def evaluate_position(self, board):
-        # Dummy-Auswertung (kann durch komplexe Bewertung ersetzt werden)
-        # Hier wird einfach die Materialdifferenz berechnet
-        value = 0
-        piece_values = {
-            chess.PAWN: 1,
-            chess.KNIGHT: 3,
-            chess.BISHOP: 3,
-            chess.ROOK: 5,
-            chess.QUEEN: 9,
-            chess.KING: 0
-        }
-        for piece_type in piece_values:
-            value += len(board.pieces(piece_type, chess.WHITE)) * piece_values[piece_type]
-            value -= len(board.pieces(piece_type, chess.BLACK)) * piece_values[piece_type]
-        return value if board.turn == chess.WHITE else -value
+        return evaluate_all_principles(board)
+
+    def after_move(self, game_history, result):
+        # Fehler- oder Erfolgsketten systemisch aktualisieren
+        if result == "loss":
+            idx = len(self.user_experience) - 1
+            chain = analyze_causal_chain(self.user_experience, idx)
+            self.blacklist.update(blacklist_faulty_chain(chain))
+        elif result == "success":
+            idx = len(self.user_experience) - 1
+            chain = analyze_causal_chain(self.user_experience, idx)
+            add_conscious_experience(chain)
 
     def select_best_move(self, board, depth=2, move_list=None, time_limit=None):
         if time_limit is not None:
@@ -54,13 +48,23 @@ class ResonanceEngine:
         for move in board.legal_moves:
             if time_limit is not None and time.time() - start_time > time_limit:
                 break
+            # Blacklist-Check: systemisch Fehlerketten vermeiden
+            candidate_seq = tuple(move_list + [move.uci()])
+            if "|".join(candidate_seq) in self.blacklist:
+                continue
             board_push = board.copy(stack=False)
             board_push.push(move)
             base_score = self.evaluate_position(board_push)
-            test_move_list = move_list + [board.san(move)]
-            score = self.score_with_consciousness(test_move_list, base_score)
-            if score > best_score:
-                best_score = score
+            # Resonanz-Erfahrungsfeld: Bewusstseinsbonus systemisch aus conscious_experience.csv
+            chain_str = "|".join([m for m in move_list] + [move.uci()])
+            key_success = (chain_str, "success")
+            key_failure = (chain_str, "failure")
+            if key_success in self.conscious_experience:
+                base_score += 0.5
+            if key_failure in self.conscious_experience:
+                base_score -= 0.5
+            if base_score > best_score:
+                best_score = base_score
                 best_move = move
         return best_move, best_score
 
@@ -209,14 +213,9 @@ def aggression_score(board, move):
     return score
 
 def field_resonance(move):
-    """Adaptive Bewertung des Zielfelds je nach Positionsgewichtung."""
     return FIELD_WEIGHTS.get(move.to_square, 0.0)
 
 def causes_material_loss(board, move):
-    """
-    Prüft, ob der Zug zu unmittelbarem Materialverlust führt (einfache Version):
-    Nach dem Zug ist die eigene Figur auf dem Zielfeld ungedeckt und kann vom Gegner geschlagen werden.
-    """
     board_push = board.copy(stack=False)
     board_push.push(move)
     moved_piece = board_push.piece_at(move.to_square)
