@@ -1,10 +1,9 @@
 import tkinter as tk
-import time
 from tkinter import messagebox
 import chess
 from PIL import Image, ImageTk
-from resonance_engine import ResonanceEngine
-from experience_manager import save_game_experience, load_user_experience, add_conscious_experience
+from engine import ResonanceEngine
+from experience_manager import add_conscious_experience  # Nur noch relevante Funktion importieren
 
 SQUARE_SIZE = 60
 BOARD_COLOR_1 = "#F0D9B5"
@@ -44,45 +43,15 @@ def xy_to_square(x, y):
         return chess.square(file, rank)
     return None
 
-def get_time_limit(board, last_move=None):
-    if last_move:
-        piece = board.piece_at(last_move.to_square)
-        if piece and piece.piece_type == chess.KING:
-            return 300
-    if board.is_check():
-        return 300
-    if len(list(board.legal_moves)) < 8:
-        return 240
-    if sum(1 for p in board.piece_map().values() if p.color == board.turn) < 5:
-        return 180
-    return 120
-
 def relative_move_description(board_before, move):
-    piece = board_before.piece_at(move.from_square)
-    if not piece:
-        return "unbekannter Zug"
-    piece_type = piece.piece_type
-    capture = board_before.is_capture(move)
-    if piece_type == chess.PAWN:
-        return "Bauer schlägt" if capture else "Bauer vorwärts"
-    if piece_type == chess.KNIGHT:
-        return "Springer schlägt" if capture else "Springer zieht"
-    if piece_type == chess.BISHOP:
-        return "Läufer schlägt" if capture else "Läufer diagonal"
-    if piece_type == chess.ROOK:
-        return "Turm schlägt" if capture else "Turm gerade"
-    if piece_type == chess.QUEEN:
-        return "Dame schlägt" if capture else "Dame zieht"
-    if piece_type == chess.KING:
-        return "König schlägt" if capture else "König zieht"
-    return "unbekannter Zug"
+    return board_before.san(move) if move else "unbekannter Zug"
 
 class ResonanceChessGUI:
     def __init__(self, master, user_experience=None, engine=None):
         self.master = master
         self.user_experience = user_experience if user_experience is not None else []
         self.engine = engine if engine is not None else ResonanceEngine()
-        self.master.title("Resonanzschach – Drag & Drop")
+        self.master.title("Resonanzschach – Minimal")
         self.board = chess.Board()
         self.move_list = []
         self.rel_move_list = []
@@ -91,7 +60,7 @@ class ResonanceChessGUI:
         self.legal_moves = []
         self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
         self.human_color = None
-        self.last_move_squares = None
+        self.last_move_from_square = None
         self.create_start_dialog()
 
     def create_start_dialog(self):
@@ -116,6 +85,7 @@ class ResonanceChessGUI:
         self.update_move_list()
         self.previous_pieces = self.board.piece_map()
         self.rel_move_list = []
+        self.last_move_from_square = None
         if self.human_color == chess.WHITE:
             self.info_label.config(text="Du spielst Weiß – KI spielt Schwarz.")
         else:
@@ -136,23 +106,9 @@ class ResonanceChessGUI:
         self.info_label = tk.Label(self.master, text="", font=FONT, fg="blue")
         self.info_label.grid(row=2, column=1, sticky="ew")
 
-    def get_board_status_text(self):
-        if self.board.is_checkmate():
-            return "Schachmatt!"
-        elif self.board.is_stalemate():
-            return "Patt – Unentschieden"
-        elif self.board.is_insufficient_material():
-            return "Unentschieden – unzureichendes Material"
-        elif self.board.is_seventyfive_moves():
-            return "Unentschieden – 75-Züge-Regel"
-        elif self.board.is_fivefold_repetition():
-            return "Unentschieden – 5-fache Wiederholung"
-        elif self.board.is_check():
-            return "Schach!"
-        return ""
-
     def draw_board(self):
         self.canvas.delete("all")
+        # 1. Grundfarben
         for rank in range(8):
             for file in range(8):
                 color = BOARD_COLOR_1 if (rank + file) % 2 == 0 else BOARD_COLOR_2
@@ -161,14 +117,16 @@ class ResonanceChessGUI:
                 x2 = x1 + SQUARE_SIZE
                 y2 = y1 + SQUARE_SIZE
                 self.canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="")
-        if self.last_move_squares:
-            for square in self.last_move_squares:
-                file, rank = square_to_xy(square)
-                x1 = file * SQUARE_SIZE
-                y1 = rank * SQUARE_SIZE
-                x2 = x1 + SQUARE_SIZE
-                y2 = y1 + SQUARE_SIZE
-                self.canvas.create_rectangle(x1, y1, x2, y2, fill=LAST_MOVE_COLOR, outline="")
+        # 2. Markiere Ursprungsfeld des letzten Zuges persistent
+        if self.last_move_from_square is not None:
+            file, rank = square_to_xy(self.last_move_from_square)
+            x1 = file * SQUARE_SIZE
+            y1 = rank * SQUARE_SIZE
+            x2 = x1 + SQUARE_SIZE
+            y2 = y1 + SQUARE_SIZE
+            self.canvas.create_rectangle(x1, y1, x2, y2, fill=LAST_MOVE_COLOR, outline="")
+
+        # 3. Markiere mögliche Züge bei Auswahl
         if self.selected_square is not None:
             for move in self.legal_moves:
                 to_sq = move.to_square
@@ -184,19 +142,24 @@ class ResonanceChessGUI:
             x2 = x1 + SQUARE_SIZE
             y2 = y1 + SQUARE_SIZE
             self.canvas.create_rectangle(x1, y1, x2, y2, outline=HIGHLIGHT_COLOR, width=4)
+        # 4. Figuren einzeichnen
         for square in chess.SQUARES:
             piece = self.board.piece_at(square)
             if piece:
-                if not (self.drag_data["piece"] and square == self.drag_data["start_square"]):
-                    file, rank = square_to_xy(square)
-                    x = file * SQUARE_SIZE
-                    y = rank * SQUARE_SIZE
-                    img = PIECE_IMAGES.get(piece.symbol())
-                    if img:
-                        self.canvas.create_image(x, y, anchor="nw", image=img)
-        if self.drag_data["drag_img_id"] is not None:
-            self.canvas.tag_raise(self.drag_data["drag_img_id"])
+                file, rank = square_to_xy(square)
+                x = file * SQUARE_SIZE
+                y = rank * SQUARE_SIZE
+                img = PIECE_IMAGES.get(piece.symbol(), None)
+                if img:
+                    self.canvas.create_image(x, y, anchor="nw", image=img)
         self.master.update()
+
+    def get_status_text(self, prefix=""):
+        if self.board.is_check():
+            if prefix:
+                return f"{prefix} – Schach!"
+            return "Schach!"
+        return prefix
 
     def on_press(self, event):
         if self.board.is_game_over():
@@ -208,112 +171,69 @@ class ResonanceChessGUI:
             self.legal_moves = [m for m in self.board.legal_moves if m.from_square == square]
             self.drag_data["piece"] = piece
             self.drag_data["start_square"] = square
-            img = PIECE_IMAGES.get(piece.symbol())
-            if img:
-                self.drag_data["image"] = img
-                self.drag_data["drag_img_id"] = self.canvas.create_image(event.x - SQUARE_SIZE//2, event.y - SQUARE_SIZE//2, anchor="nw", image=img)
+        else:
+            self.selected_square = None
+            self.legal_moves = []
         self.draw_board()
 
     def on_drag(self, event):
-        if self.drag_data["drag_img_id"] is not None:
-            self.canvas.coords(self.drag_data["drag_img_id"], event.x - SQUARE_SIZE//2, event.y - SQUARE_SIZE//2)
-            self.master.update()
+        pass  # Minimalversion: kein Drag-Bild
 
     def on_release(self, event):
         if self.board.turn != self.human_color:
             return
-        if self.selected_square is not None and self.drag_data["drag_img_id"] is not None:
+        if self.selected_square is not None:
             to_square = xy_to_square(event.x, event.y)
             from_square = self.selected_square
-            piece = self.board.piece_at(from_square)
-            move = None
-            if piece and piece.piece_type == chess.PAWN and chess.square_rank(to_square) in [0, 7]:
-                move = chess.Move(from_square, to_square, promotion=chess.QUEEN)
-            else:
-                move = chess.Move(from_square, to_square)
-            if move is not None and move in self.board.legal_moves:
+            move = chess.Move(from_square, to_square)
+            if move in self.board.legal_moves:
                 board_before = self.board.copy()
-                previous_pieces = self.previous_pieces.copy()
                 san = self.board.san(move)
-                self.last_move_squares = (from_square, to_square)
                 self.board.push(move)
                 self.move_list.append(san)
-                rel_move = relative_move_description(board_before, move)
-                self.rel_move_list.append(rel_move)
-                # Figurenverlust Mensch
-                current_pieces = self.board.piece_map()
-                own_color = self.human_color
-                lost_own = sum(1 for sq, p in previous_pieces.items() if p.color == own_color and
-                               (sq not in current_pieces or current_pieces.get(sq) != p)) > \
-                            sum(1 for sq, p in current_pieces.items() if p.color == own_color and
-                               (sq not in previous_pieces or previous_pieces.get(sq) != p))
-                if lost_own:
-                    chain = self.rel_move_list[-5:]
-                    add_conscious_experience(chain, result="failure")
-                self.previous_pieces = self.board.piece_map()
+                self.rel_move_list.append(relative_move_description(board_before, move))
+                self.last_move_from_square = from_square
                 self.selected_square = None
                 self.legal_moves = []
-                self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
                 self.draw_board()
                 self.update_move_list()
                 if self.board.is_game_over():
                     self.on_game_end(self.board.result())
                     return
                 if self.board.turn != self.human_color:
-                    self.info_label.config(text="KI denkt …")
+                    self.info_label.config(text=self.get_status_text("KI denkt …"))
                     self.master.after(400, self.ki_move)
                 else:
-                    status = self.get_board_status_text()
-                    self.info_label.config(text=f"Dein Zug ({status})" if status else "Dein Zug")
+                    self.info_label.config(text=self.get_status_text("Dein Zug"))
                 return
         self.selected_square = None
         self.legal_moves = []
-        if self.drag_data["drag_img_id"] is not None:
-            self.canvas.delete(self.drag_data["drag_img_id"])
-        self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
         self.draw_board()
 
     def ki_move(self):
         if self.board.is_game_over() or self.board.turn == self.human_color:
             return
-        last_move = self.board.move_stack[-1] if self.board.move_stack else None
-        time_limit = get_time_limit(self.board, last_move)
-        start_time = time.time()
-        move, score = self.engine.select_best_move(self.board, depth=2, move_list=[m.uci() for m in self.board.move_stack])
-        elapsed = time.time() - start_time
+        move = self.engine.select_best_move(self.board)
         if move is not None:
             board_before = self.board.copy()
-            previous_pieces = self.previous_pieces.copy()
             san = self.board.san(move)
-            self.last_move_squares = (move.from_square, move.to_square)
+            from_square = move.from_square
             self.board.push(move)
             self.move_list.append(san)
-            rel_move = relative_move_description(board_before, move)
-            self.rel_move_list.append(rel_move)
-            # Figurenverlust KI
-            current_pieces = self.board.piece_map()
-            ki_color = not self.human_color
-            lost_own = sum(1 for sq, p in previous_pieces.items() if p.color == ki_color and
-                           (sq not in current_pieces or current_pieces.get(sq) != p)) > \
-                        sum(1 for sq, p in current_pieces.items() if p.color == ki_color and
-                           (sq not in previous_pieces or previous_pieces.get(sq) != p))
-            if lost_own:
-                chain = self.rel_move_list[-5:]
-                add_conscious_experience(chain, result="failure")
-            self.previous_pieces = self.board.piece_map()
+            self.rel_move_list.append(relative_move_description(board_before, move))
+            self.last_move_from_square = from_square
             self.draw_board()
             self.update_move_list()
-            if self.board.is_game_over() or len(list(self.board.legal_moves)) == 0:
-                result = self.board.result() if self.board.is_game_over() else "KI kann nicht ziehen"
+            if self.board.is_game_over():
+                result = self.board.result()
                 self.on_game_end(result)
                 return
             else:
-                self.info_label.config(text=f"KI zog: {san} (𝓡={score:.2f}, {elapsed:.1f}s gerechnet)")
+                self.info_label.config(text=self.get_status_text(f"KI zog: {san}"))
         else:
             self.on_game_end("KI kann nicht ziehen")
         if self.board.turn == self.human_color:
-            status = self.get_board_status_text()
-            self.info_label.config(text=f"Dein Zug ({status})" if status else "Dein Zug")
+            self.info_label.config(text=self.get_status_text("Dein Zug"))
 
     def update_move_list(self):
         self.move_listbox.delete(0, tk.END)
@@ -326,9 +246,7 @@ class ResonanceChessGUI:
         self.rel_move_list = []
         self.selected_square = None
         self.legal_moves = []
-        self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
-        self.last_move_squares = None
-        self.previous_pieces = self.board.piece_map()
+        self.last_move_from_square = None
         self.draw_board()
         self.update_move_list()
         if self.human_color == chess.WHITE:
@@ -339,15 +257,6 @@ class ResonanceChessGUI:
             self.master.after(400, self.ki_move)
 
     def on_game_end(self, result):
-        print(f"Speichere Spielerfahrung: {self.move_list} Ergebnis: {result}")
-        save_game_experience(self.move_list, result)
-        # Erfolgskette (Sieg der KI)
-        if ((self.human_color == chess.WHITE and result == "0-1") or
-            (self.human_color == chess.BLACK and result == "1-0")):
-            chain = self.rel_move_list[-5:]
-            add_conscious_experience(chain, result="success")
-        elif result in ["1/2-1/2", "1-0" if self.human_color == chess.WHITE else "0-1"]:
-            chain = self.rel_move_list[-5:]
-            add_conscious_experience(chain, result="failure")
+        # Persistenz und Lernen ist jetzt systemisch in main.py zentralisiert.
         self.info_label.config(text="Spielende: " + result)
         messagebox.showinfo("Spielende", f"Ergebnis: {result}")

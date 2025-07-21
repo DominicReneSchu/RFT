@@ -1,58 +1,57 @@
 import chess
 import random
-from experience_manager import _load_conscious_experience_set
 
 def get_recent_chain(board, n=2, relative=False):
     """
-    Gibt die letzten n Züge als Kette zurück.
-    Optional: relative Beschreibung der Züge (wie im Trainer).
+    Extrahiert die letzten n Züge als SAN-Zugkette mit Farbmarkierung (z.B. "w:e4|b:e5").
+    Für relative=True Platzhalter für zukünftige semantische Abstraktion.
     """
-    stack = board.move_stack[-n:] if len(board.move_stack) >= n else board.move_stack
-    if relative:
-        # Implementiere hier ggf. die relative Beschreibung, z.B. "Bauer vorwärts"
-        # Sonst Standard-SAN
-        return [board.san(move) for move in stack]
-    else:
-        return [board.san(move) for move in stack]
+    if not board.move_stack:
+        return ""
+    san_list = []
+    temp_board = chess.Board()
+    for move in board.move_stack:
+        color = 'w' if temp_board.turn else 'b'
+        san = temp_board.san(move)
+        if relative:
+            # Platzhalter für Muster, z.B. f"{color}:piece_center"
+            san_list.append(f"{color}:{san}")  # später abstrahieren
+        else:
+            san_list.append(f"{color}:{san}")
+        temp_board.push(move)
+    last_n_san = san_list[-n:]
+    return "|".join(last_n_san)
 
-def select_learned_move(board):
+def select_learned_move(board, experience_set, max_chain_n=4):
     """
-    Wählt einen Zug, indem die letzten zwei Züge mit den gespeicherten Erfahrungen abgeglichen werden.
-    Bei Resonanz: Zwei Züge vorausberechnen und Erfolg/Misserfolg systemisch prüfen.
+    Wählt anhand von Erfahrung und Gewichtung.
+    - Berücksichtigt alle Kettenlängen von max_chain_n bis 2 (je länger, desto vorrangig)
+    - Bevorzugt Züge mit hoher 'success'-Gewichtung, meidet 'failure'
+    - Bei Gleichstand: Zufallswahl
     """
-    experience_set = _load_conscious_experience_set()
-    recent_chain = get_recent_chain(board, n=2)
-    recent_key_success = ("|".join(recent_chain), "success")
-    recent_key_failure = ("|".join(recent_chain), "failure")
+    legal_moves = list(board.legal_moves)
+    if not legal_moves:
+        return None
 
-    best_move = None
-    avoid_moves = set()
-    prefer_moves = set()
+    move_scores = []
+    for move in legal_moves:
+        temp_board = board.copy()
+        temp_board.push(move)
+        best_score = None
+        for n in range(max_chain_n, 1, -1):
+            chain = get_recent_chain(temp_board, n=n)
+            success = experience_set.get((chain, "success"), 0)
+            failure = experience_set.get((chain, "failure"), 0)
+            if success or failure:
+                score = (success, -failure, n)
+                if (best_score is None) or (score > best_score):
+                    best_score = score
+        if best_score is None:
+            best_score = (0, 0, 0)
+        move_scores.append((move, best_score))
 
-    # Prüfe, ob aktuelle Kette resonant ist
-    if recent_key_success in experience_set or recent_key_failure in experience_set:
-        for move in board.legal_moves:
-            board.push(move)
-            # Vorausberechnung: alle möglichen Antworten des Gegners
-            for reply in board.legal_moves:
-                board.push(reply)
-                test_chain = get_recent_chain(board, n=2)
-                chain_success = ("|".join(test_chain), "success")
-                chain_failure = ("|".join(test_chain), "failure")
-                if chain_failure in experience_set:
-                    avoid_moves.add(move)
-                if chain_success in experience_set:
-                    prefer_moves.add(move)
-                board.pop()
-            board.pop()
-        # Systemische Auswahl nach Resonanzregel
-        if prefer_moves:
-            return random.choice(list(prefer_moves))
-        # Wenn alle Züge Fehler erzeugen, wähle einen Zug, der nicht in avoid_moves ist
-        available_moves = [m for m in board.legal_moves if m not in avoid_moves]
-        if available_moves:
-            return random.choice(available_moves)
-        # Notfall: Keine Vermeidung möglich, wähle beliebigen legalen Zug
-        return random.choice(list(board.legal_moves))
-    # Keine resonante Erfahrung: Zufall oder Engine
-    return random.choice(list(board.legal_moves))
+    # Sortiere nach Success, dann wenig Failure, dann längste Kette
+    move_scores.sort(key=lambda x: x[1], reverse=True)
+    top_score = move_scores[0][1]
+    top_moves = [move for move, score in move_scores if score == top_score]
+    return random.choice(top_moves)
