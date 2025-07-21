@@ -3,7 +3,7 @@ from tkinter import messagebox
 import chess
 from PIL import Image, ImageTk
 from engine import ResonanceEngine
-from experience_manager import add_conscious_experience  # Nur noch relevante Funktion importieren
+from experience_manager import add_conscious_experience
 
 SQUARE_SIZE = 60
 BOARD_COLOR_1 = "#F0D9B5"
@@ -61,6 +61,7 @@ class ResonanceChessGUI:
         self.drag_data = {"piece": None, "image": None, "start_square": None, "drag_img_id": None}
         self.human_color = None
         self.last_move_from_square = None
+        self.user_feedback = 0  # +1 für positiv, -1 für negativ, 0 neutral
         self.create_start_dialog()
 
     def create_start_dialog(self):
@@ -86,6 +87,7 @@ class ResonanceChessGUI:
         self.previous_pieces = self.board.piece_map()
         self.rel_move_list = []
         self.last_move_from_square = None
+        self.user_feedback = 0
         if self.human_color == chess.WHITE:
             self.info_label.config(text="Du spielst Weiß – KI spielt Schwarz.")
         else:
@@ -105,6 +107,21 @@ class ResonanceChessGUI:
         self.reset_button.grid(row=1, column=1, sticky="ew")
         self.info_label = tk.Label(self.master, text="", font=FONT, fg="blue")
         self.info_label.grid(row=2, column=1, sticky="ew")
+        # Feedback-Buttons für Nutzerinteraktion
+        self.feedback_frame = tk.Frame(self.master)
+        self.feedback_frame.grid(row=3, column=1, pady=10)
+        self.good_button = tk.Button(self.feedback_frame, text="Lernzug gut", command=self.on_good_feedback, font=FONT, bg="#B6FCD5")
+        self.good_button.pack(side=tk.LEFT, padx=2)
+        self.bad_button = tk.Button(self.feedback_frame, text="Lernzug schlecht", command=self.on_bad_feedback, font=FONT, bg="#FFB6B6")
+        self.bad_button.pack(side=tk.LEFT, padx=2)
+
+    def on_good_feedback(self):
+        self.user_feedback = 1
+        messagebox.showinfo("Feedback", "Positives Feedback gespeichert.")
+
+    def on_bad_feedback(self):
+        self.user_feedback = -1
+        messagebox.showinfo("Feedback", "Negatives Feedback gespeichert.")
 
     def draw_board(self):
         self.canvas.delete("all")
@@ -247,6 +264,7 @@ class ResonanceChessGUI:
         self.selected_square = None
         self.legal_moves = []
         self.last_move_from_square = None
+        self.user_feedback = 0
         self.draw_board()
         self.update_move_list()
         if self.human_color == chess.WHITE:
