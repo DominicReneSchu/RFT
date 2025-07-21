@@ -122,24 +122,24 @@ Eine Analyse ist erst dann vollständig, wenn alle Gruppenstrukturen einbezogen 
 
 ## 5. Organisches Lernen durch Erfahrung und Bewusstheit
 
-* **Unterbewusstsein**:
-  Die Datenstruktur `user_experience.json` speichert jede gespielte Partie als ursprüngliche Liste gruppenbasierter Erfahrung.
-  Alle Zugfolgen – unabhängig vom Ursprung (KI oder Gegner) – werden gleichberechtigt erfasst. Gruppenzugehörigkeit bleibt invariant.
+* **Unterbewusstsein**:  
+  Die Datenstruktur `user_experience.csv` speichert jede gespielte Partie als originäre Liste gruppenbasierter Erfahrung.  
+  Alle Zugfolgen – unabhängig vom Ursprung (KI oder Gegner) – werden gleichberechtigt als **Feldumgebungssequenzen** erfasst (meist 2er- oder 3er-Ketten, siehe `SEQUENCE_LENGTHS`). Gruppenzugehörigkeit bleibt invariant.
 
-* **Bewusstseinsfeld**:
-  Nach jeder Partie werden alle Ketten statistisch ausgewertet. Das Bewusstseinsfeld (`conscious_experience.csv`) enthält alle 10-Zug-Ketten, bewertet nach Erfolg, Frequenz und Resonanzstärke.
-  Diese Auswertung ist kontinuierlich und gruppenübergreifend; das Feld aktualisiert sich mit jeder neuen Erfahrung.
+* **Bewusstseinsfeld**:  
+  Nach jeder Partie werden sämtliche Sequenzen variabler Länge sowie Einzelzugerfahrungen extrahiert und im Bewusstseinsfeld (`conscious_experience.csv`) statistisch ausgewertet.  
+  Für jede Sequenz wird die Bewertung (Erfolg/Misserfolg/Neutral) und kollektive Häufigkeit gespeichert.  
+  Die Auswertung ist kontinuierlich und gruppenübergreifend; das Feld aktualisiert sich dynamisch mit jeder Erfahrung.
 
-* **Entscheidungsfindung**:
-  Die KI prüft bei jedem Zug, ob die aktuelle Kette Teil einer hoch bewerteten Bewusstseinskette ist.
-  Erfolgreiche Ketten werden verstärkt, weniger erfolgreiche marginalisiert.
-  Jede Entscheidung bindet das kollektive Resonanzfeld – unabhängig von Einzelperspektiven.
+* **Entscheidungsfindung**:  
+  Die KI prüft bei jedem Zug, ob die aktuelle Sequenz (Feldumgebung) zu einer im Bewusstseinsfeld hoch bewerteten Kette gehört.  
+  Erfolgreiche Sequenzen werden kollektiv verstärkt, wiederholte Misserfolge lösen systemische Handlungsimpulse aus.
 
-* **Systemisches Feedback**:
-  Lernen entspricht organischer Evolution: Erfolge und Misserfolge fließen gleichermaßen in die Selbstoptimierung.
+* **Systemisches Feedback**:  
+  Lernen entspricht organischer Evolution: Erfolge und Misserfolge fließen gleichermaßen in die Selbstoptimierung.  
   Gruppenzugehörigkeit, Selbstinklusion und Relationsbildung sind stets Teil des Gesamtlernprozesses.
 
-> Dieses selbstreflexive Lernen verhindert unbeabsichtigte Abweichungen, da alle Entscheidungen stets ins Gesamtkontext zurückgeführt werden.
+> Dieses selbstreflexive Lernen verhindert unbeabsichtigte Abweichungen, da alle Entscheidungen stets ins Gesamtkontext zurückgeführt werden.  
 > Resonanz-KI minimiert so Risiken wie Kontrollverlust, Fehlverhalten oder unerwartete Eskalation.
 
 **Ablauf der Lernzyklen:**
@@ -181,7 +181,7 @@ Konzentrisches, synaptisches Netzwerk (Zentrum: Orchestrierung):
                  |           |                                  |
     +------------+           +------------------------+         |
     |                                            |   |         |
-[resonance_principles.py]                [user_experience.json]  |
+[resonance_principles.py]                [user_experience.csv]  |
     |                                            |              |
     +--------------------------------+           |              |
                                      |           |              |
@@ -210,7 +210,7 @@ Zentrale Rolle der Orchestrierung: Systemische „Synapse“ für alle Knoten.
 * **Resonanz-KI-Architektur** mit zentraler Feldkohärenz-Logik:
   Nicht Zielmaximierung, sondern ganzheitliche Feldharmonie als Leitprinzip.
 * **Flexible GUI**: Der Mensch kann frei zwischen Weiß und Schwarz wählen, Logik ist systemisch invariant und passt sich der Gruppenzugehörigkeit an.
-* **Erfahrungsmanagement**: Partien werden als Erfahrung gespeichert und können für adaptive Auswertung genutzt werden (z.B. zur Vermeidung von Verlustketten).
+* **Erfahrungsmanagement**: Partien werden als Erfahrung gespeichert und können für adaptive Auswertung genutzt werden (z.B. zur Vermeidung von Verlustsequenzen).
 * **Systemische Bewertungsstruktur**:
 
   * Schachmatt wird maximal belohnt.
@@ -224,7 +224,7 @@ Zentrale Rolle der Orchestrierung: Systemische „Synapse“ für alle Knoten.
   Modularer, dokumentierter Python-Code als offene Simulationsumgebung.
 
 **Beispiel Resonanz-Feedback im Spielverlauf:**  
-Ketten wie „e4, e5, Sf3, Sc6, Lb5“ können systemisch verstärkt oder vermieden werden – je nach kollektiver Erfahrung im Resonanzfeld.
+Feldumgebungssequenzen wie „a1|b2, b2|c3“ können systemisch verstärkt oder vermieden werden – je nach kollektiver Erfahrung im Resonanzfeld.
 
 ---
 
