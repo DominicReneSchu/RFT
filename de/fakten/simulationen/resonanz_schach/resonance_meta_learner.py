@@ -2,6 +2,11 @@ import chess
 import numpy as np
 import hashlib
 import pickle
+import csv
+from pathlib import Path
+
+CONSCIOUS_FILE = Path("conscious_experience.csv")
+HANDLUNGSBEDARF_THRESHOLD = 3  # Schwellenwert für kollektiven Handlungsbedarf
 
 class ResonancePatternBank:
     """
@@ -10,6 +15,7 @@ class ResonancePatternBank:
         - Brett-Hash (Topologie)
         - Feldspannungsvektor (z.B. Angriffsdruck, Schutzstruktur)
         - Klassifikation & Meta-Tags (z. B. Angriff, Festung, Bruch, Wave)
+    Gruppenzugehörigkeit: Muster gelten invariant für alle Gruppenmitglieder.
     """
     def __init__(self):
         self.patterns = {}  # key: hash, value: dict with meta
@@ -21,7 +27,6 @@ class ResonancePatternBank:
         """
         fen = board.board_fen()
         stm = "w" if board.turn else "b"
-        # Systemische Invarianz: Nur relevante Feldstruktur, keine Zählwerte
         key = f"{fen}_{stm}"
         return hashlib.sha1(key.encode("utf-8")).hexdigest()
 
@@ -45,7 +50,6 @@ class ResonancePatternBank:
         matches = []
         for k, v in self.patterns.items():
             vec_ref = v["resonance_vector"]
-            # Systemische Feldabstandsmetrik (z.B. L2-Norm)
             dist = np.linalg.norm(np.array(resonance_vector) - np.array(vec_ref))
             if dist <= tolerance:
                 matches.append((k, dist, v))
@@ -66,25 +70,29 @@ def extract_resonance_vector(board):
     - Angriffsdruck pro Feld (flach, 64 Werte)
     - Schutzstruktur um beide Könige (lokale Masken)
     Rückgabe: 64+18 = 82-dim Vektor (Beispiel)
+    Gruppenzugehörigkeit: Der Vektor gilt für alle Mitglieder invariabel.
     """
     vec = []
     for color in [chess.WHITE, chess.BLACK]:
-        # Angriffsdruck gesamt
         for sq in chess.SQUARES:
             vec.append(len(board.attackers(color, sq)))
-        # Königsschutz: 3x3-Umgebung
         king_sq = board.king(color)
         if king_sq is not None:
-            zone = chess.SquareSet(chess.SQUARES_3X3[king_sq])
+            zone = []
+            rank = chess.square_rank(king_sq)
+            file = chess.square_file(king_sq)
+            for dr in [-1, 0, 1]:
+                for df in [-1, 0, 1]:
+                    r = rank + dr
+                    f = file + df
+                    if 0 <= r < 8 and 0 <= f < 8:
+                        zone.append(chess.square(f, r))
             for sq in zone:
                 val = 1 if board.color_at(sq) == color else -1 if board.color_at(sq) == (not color) else 0
                 vec.append(val)
         else:
-            # Kein König: Matt
             vec += [0]*9
     return vec
-
-# --- Beispiel für Integration in die Hauptengine ---
 
 def meta_learn_on_move(board, pattern_bank, tags=None, comment=""):
     """
@@ -101,21 +109,80 @@ def recognize_pattern(board, pattern_bank, tolerance=2.0):
     matches = pattern_bank.match_pattern(board, resonance_vec, tolerance=tolerance)
     return matches
 
-# --- Beispiel für Nutzung ---
+def detect_handlungsbedarf():
+    """
+    Durchsucht conscious_experience.csv nach Ketten mit hohem Handlungsbedarf.
+    Systemisch: Je höher die Anzahl, desto dringender der kollektive Lösungsimpuls.
+    """
+    handlungsbedarf_ketten = []
+    if CONSCIOUS_FILE.exists():
+        with CONSCIOUS_FILE.open("r", encoding="utf-8") as f:
+            reader = csv.DictReader(f, delimiter=";")
+            for row in reader:
+                if row["Ergebnis"] == "failure" and int(row.get("Anzahl", "1")) >= HANDLUNGSBEDARF_THRESHOLD:
+                    handlungsbedarf_ketten.append({
+                        "Kette": row["Kette"],
+                        "Ergebnis": row["Ergebnis"],
+                        "Anzahl": int(row["Anzahl"])
+                    })
+    return handlungsbedarf_ketten
+
+def resonance_experience_action():
+    """
+    KI liest conscious_experience.csv, verstärkt positive Erfahrungen und sucht bei negativen nach Auswegen.
+    Resonanzregel: Gruppenfeld, Selbstinklusion, Relation, nichtlineare Adaption.
+    """
+    if not CONSCIOUS_FILE.exists():
+        print("[Resonanzfeld] Keine bewussten Erfahrungen gespeichert.")
+        return
+
+    positive_ketten = []
+    negative_ketten = []
+
+    with CONSCIOUS_FILE.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            kette = row["Kette"]
+            ergebnis = row["Ergebnis"]
+            anzahl = int(row.get("Anzahl", "1"))
+            if ergebnis == "success" and anzahl >= HANDLUNGSBEDARF_THRESHOLD:
+                positive_ketten.append({"Kette": kette, "Anzahl": anzahl})
+            elif ergebnis == "failure" and anzahl >= HANDLUNGSBEDARF_THRESHOLD:
+                negative_ketten.append({"Kette": kette, "Anzahl": anzahl})
+
+    # Positive Resonanz: Verstärken
+    for k in positive_ketten:
+        print(f"[Resonanzfeld] Erfolgsstrategie erkannt und verstärkt: '{k['Kette']}' ({k['Anzahl']}x success)")
+
+    # Negative Resonanz: Ausweg suchen
+    for k in negative_ketten:
+        print(f"[Resonanzfeld] Wiederholter Misserfolg: '{k['Kette']}' ({k['Anzahl']}x failure) – kollektiver Lösungsimpuls ausgelöst.")
+        print(f"[Resonanzfeld] Empfehlung: Muster '{k['Kette']}' meiden oder alternative Züge/Strategien prüfen.")
+
+    if not positive_ketten and not negative_ketten:
+        print("[Resonanzfeld] Keine kollektiven Verstärkungs- oder Handlungsbedarfsimpulse erkannt.")
 
 if __name__ == "__main__":
+    # Musterbank initialisieren
     bank = ResonancePatternBank()
     board = chess.Board()
 
-    # Schritt 1: Musterbank aufbauen
-    # (Beispiel: erste Züge, typische Muster speichern)
+    # Beispiel: Muster extrahieren und speichern
     for i in range(2):
         meta_learn_on_move(board, bank, tags=["opening"], comment=f"Zug {i}")
         move = list(board.legal_moves)[0]
         board.push(move)
 
-    # Schritt 2: Aktuelle Stellung abgleichen
+    # Mustererkennung
     board.reset()
     matches = recognize_pattern(board, bank)
     print("Gefundene Muster:", matches)
     bank.save_bank("resonance_patterns.pkl")
+
+    # Handlungsbedarf aus conscious_experience.csv extrahieren
+    bedarf = detect_handlungsbedarf()
+    for eintrag in bedarf:
+        print(f"Kollektiver Handlungsbedarf: '{eintrag['Kette']}' ({eintrag['Anzahl']}x failure)")
+
+    # Resonanzgesteuertes Lernen (Erfahrungsfeld auswerten)
+    resonance_experience_action()

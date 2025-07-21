@@ -6,6 +6,7 @@ def dynamic_piece_value(piece_type, board, color):
     Dynamischer Wert einer Figur abhängig vom Spielfeld-Zustand.
     Exponentielles Wachstum: Je weniger Figuren, desto wertvoller wird jede einzelne.
     Die Dame ist einzigartig und wird besonders stark gewichtet.
+    Systemisch verschränkt mit Materialdichte und Gruppenzugehörigkeit.
     """
     base = {
         chess.PAWN: 1,
@@ -17,7 +18,7 @@ def dynamic_piece_value(piece_type, board, color):
     }
     own_pieces = [p for p in board.piece_map().values() if p.color == color and p.piece_type != chess.KING]
     n = len(own_pieces)
-    # Exponentieller Wachstumsfaktor
+    # Exponentieller Wachstumsfaktor – systemisch auf Gruppendichte abgestimmt
     k = 0.13
     expo = math.exp(k * (15 - n))
     # Dame erhält zusätzlichen Multiplikator für Einzigartigkeit und Bedeutung im Endspiel
@@ -57,7 +58,7 @@ def evaluate_resonance(board, move):
     opp_mob = sum(1 for m in board_cp.legal_moves if board_cp.piece_at(m.from_square) and board_cp.piece_at(m.from_square).color == opp_color)
     mobilitaet = my_mob - opp_mob
 
-    # Synergie
+    # Synergie: Wie viele eigene Figuren decken eigene Figuren (Verschränkung)
     my_synergy = sum(
         sum(1 for sq2 in chess.SQUARES if board_cp.is_attacked_by(color, sq2) and board_cp.piece_at(sq2) and board_cp.piece_at(sq2).color == color)
         for sq in my_figures
@@ -73,14 +74,49 @@ def evaluate_resonance(board, move):
     king_zone = [sq for sq in chess.SQUARES if chess.square_distance(sq, king_sq) == 1]
     king_safe = sum(1 for sq in king_zone if board_cp.is_attacked_by(color, sq))
 
+    # --- NEU: Schutz- und Steal-Logik ---
+
+    # Eigene Figuren, die gedeckt sind (durch andere eigene Figuren)
+    my_covered = sum(
+        1 for sq in my_figures
+        if any(
+            board_cp.is_attacked_by(color, sq) and board_cp.piece_at(sq2) and board_cp.piece_at(sq2).color == color
+            for sq2 in chess.SQUARES if sq2 != sq
+        )
+    )
+
+    # Ungeschützte gegnerische Figuren, die im nächsten Zug gestohlen werden könnten
+    unguarded_targets = [
+        sq for sq in opp_figures
+        if not any(
+            board_cp.is_attacked_by(opp_color, sq2) and board_cp.piece_at(sq2) and board_cp.piece_at(sq2).color == opp_color
+            for sq2 in chess.SQUARES if sq2 != sq
+        )
+        and any(board_cp.is_attacked_by(color, sq) for _ in [0])
+    ]
+    steal_score = len(unguarded_targets) * 6.0  # Hoher Prioritätsfaktor für Steals
+    cover_score = my_covered * 2.5              # Bonus für eigene Deckung
+
     # Gesamtbewertung: Dynamisches Material dominiert exponentiell, Rest systemisch verschränkt
-    value = 8.0 * material_diff + 2.0 * gefolgschaft + 1.2 * mobilitaet + 0.8 * synergie + 1.0 * king_safe
+    value = (
+        8.0 * material_diff
+        + 2.0 * gefolgschaft
+        + 1.2 * mobilitaet
+        + 0.8 * synergie
+        + 1.0 * king_safe
+        + cover_score
+        + steal_score
+    )
 
     details = {
         "material_diff": material_diff,
         "gefolgschaft": gefolgschaft,
         "mobilitaet": mobilitaet,
         "synergie": synergie,
-        "king_safe": king_safe
+        "king_safe": king_safe,
+        "my_covered": my_covered,
+        "unguarded_steals": len(unguarded_targets),
+        "cover_score": cover_score,
+        "steal_score": steal_score
     }
     return value, details

@@ -1,64 +1,173 @@
 import csv
-from collections import defaultdict
 from pathlib import Path
+import chess
+import hashlib
 
-SEQUENCE_LENGTH = 10
+from experience_counter import ExperienceField
+
 USER_CSV = Path("user_experience.csv")
-CONSCIOUS_CSV = Path("conscious_experience.csv")
+CONSCIOUS_FILE = Path("conscious_experience.csv")
+SEQUENCE_LENGTHS = [2, 3]
+
+experience_counter = ExperienceField()
+
+def board_environment_signature(board, move):
+    own_moves = sorted([board.san(m) for m in board.legal_moves])
+    board_push = board.copy()
+    board_push.push(move)
+    opponent_moves = sorted([board_push.san(m) for m in board_push.legal_moves])
+    env_str = ",".join(own_moves) + "|" + ",".join(opponent_moves)
+    return hashlib.sha256(env_str.encode('utf-8')).hexdigest()
+
+def initialize_conscious_file():
+    """
+    Systemische Initialisierung der conscious_experience.csv.
+    Ergänzt die Zählspalte 'Anzahl' für alle vorhandenen Einträge.
+    """
+    if not CONSCIOUS_FILE.exists():
+        return
+    rows = []
+    with CONSCIOUS_FILE.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            if "Anzahl" not in row or not row["Anzahl"]:
+                row["Anzahl"] = "1"
+            rows.append(row)
+    with CONSCIOUS_FILE.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["Kette", "Ergebnis", "Anzahl"], delimiter=";")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+
+def add_conscious_experience(chain, result="success"):
+    """
+    Fügt eine Erfahrung in conscious_experience.csv hinzu oder erhöht die Zählspalte 'Anzahl' kollektiv.
+    Resonanzregel: Jede Wiederholung wird systemisch verstärkt.
+    """
+    chain_str = "|".join(chain)
+    rows = []
+    found = False
+    if CONSCIOUS_FILE.exists():
+        with CONSCIOUS_FILE.open("r", encoding="utf-8") as f:
+            reader = csv.DictReader(f, delimiter=";")
+            for row in reader:
+                if row["Kette"] == chain_str and row["Ergebnis"] == result:
+                    row["Anzahl"] = str(int(row.get("Anzahl", "1")) + 1)
+                    found = True
+                rows.append(row)
+    if not found:
+        rows.append({"Kette": chain_str, "Ergebnis": result, "Anzahl": "1"})
+    with CONSCIOUS_FILE.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["Kette", "Ergebnis", "Anzahl"], delimiter=";")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+    experience_counter.register_experience(
+        experience_key=chain_str,
+        context={"type": "conscious", "result": result},
+        experience_type="positive" if result == "success" else "negative" if result == "failure" else "neutral"
+    )
 
 def extract_sequences():
     sequences = []
-    current_game = []
-    current_result = None
     with USER_CSV.open("r", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter=";")
+        game_moves = []
+        game_result = None
+        board = chess.Board()
         for row in reader:
-            # Erkenne Start einer neuen Partie
-            if row["Zugnummer"] == "1" and current_game:
-                # Sliding Window über die abgeschlossene Partie
-                if len(current_game) >= SEQUENCE_LENGTH:
-                    for i in range(len(current_game) - SEQUENCE_LENGTH + 1):
-                        sequences.append((tuple(current_game[i:i+SEQUENCE_LENGTH]), current_result))
-                current_game = []
-            current_game.append(row["Zug"])
-            current_result = row["Ergebnis"]
-        # Sliding Window für die letzte (evtl. laufende) Partie
-        if current_game and len(current_game) >= SEQUENCE_LENGTH:
-            for i in range(len(current_game) - SEQUENCE_LENGTH + 1):
-                sequences.append((tuple(current_game[i:i+SEQUENCE_LENGTH]), current_result))
-    print(f"[DEBUG] Extrahierte {len(sequences)} Sequenzen aus allen Partien.")
+            if row["Zugnummer"] == "1" and game_moves:
+                for seq_len in SEQUENCE_LENGTHS:
+                    if len(game_moves) >= seq_len:
+                        for i in range(len(game_moves) - seq_len + 1):
+                            seq = game_moves[i:i+seq_len]
+                            sequences.append((tuple(seq), seq_len, game_result))
+                            experience_counter.register_experience(
+                                experience_key="|".join(seq),
+                                context={"type": "sequence", "length": seq_len, "result": game_result},
+                                experience_type="positive" if "1-0" in game_result else "negative" if "0-1" in game_result else "neutral"
+                            )
+                            add_conscious_experience(seq, result="success" if "1-0" in game_result else "failure" if "0-1" in game_result else "neutral")
+                game_moves = []
+                board = chess.Board()
+            zug_string = row["Zug"]
+            move = None
+            try:
+                move = chess.Move.from_uci(zug_string)
+                if move not in board.legal_moves:
+                    raise ValueError
+            except Exception:
+                try:
+                    move = board.parse_san(zug_string)
+                except Exception:
+                    print(f"[WARN] Konnte Zug nicht interpretieren: {zug_string}")
+                    continue
+            sig = board_environment_signature(board, move)
+            game_moves.append(sig)
+            board.push(move)
+            game_result = row["Ergebnis"]
+        # Letzte Partie
+        for seq_len in SEQUENCE_LENGTHS:
+            if len(game_moves) >= seq_len:
+                for i in range(len(game_moves) - seq_len + 1):
+                    seq = game_moves[i:i+seq_len]
+                    sequences.append((tuple(seq), seq_len, game_result))
+                    experience_counter.register_experience(
+                        experience_key="|".join(seq),
+                        context={"type": "sequence", "length": seq_len, "result": game_result},
+                        experience_type="positive" if "1-0" in game_result else "negative" if "0-1" in game_result else "neutral"
+                    )
+                    add_conscious_experience(seq, result="success" if "1-0" in game_result else "failure" if "0-1" in game_result else "neutral")
+    print(f"[DEBUG] Extrahierte {len(sequences)} Feldumgebungssequenzen aller Längen.")
     return sequences
 
 def score_result(result):
-    # Skala: 10 = Sieg, 1 = Niederlage, 5 = Remis, 3 = Sonstiges
     if "1-0" in result:
         return 10
     elif "0-1" in result:
-        return 1
+        return -10
     elif "1/2-1/2" in result:
-        return 5
-    return 3
+        return 0
+    return 0
 
-def build_conscious_experience():
-    seq_stats = defaultdict(list)
-    sequences = extract_sequences()
-    for seq, result in sequences:
-        seq_stats[seq].append(score_result(result))
-    conscious_list = []
-    for seq, scores in seq_stats.items():
-        avg_score = sum(scores) / len(scores)
-        conscious_list.append({
-            "sequence": " ".join(seq),
-            "count": len(scores),
-            "avg_score": round(avg_score, 2)
-        })
-    conscious_list.sort(key=lambda x: (-x["avg_score"], -x["count"]))
-    with CONSCIOUS_CSV.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["sequence", "count", "avg_score"], delimiter=";")
-        writer.writeheader()
-        for row in conscious_list:
-            writer.writerow(row)
-    print(f"[DEBUG] Bewusstseinsfeld aktualisiert: {len(conscious_list)} Sequenzen gespeichert.")
+def extract_single_move_experiences():
+    single_moves = []
+    with USER_CSV.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        board = chess.Board()
+        for row in reader:
+            zug_string = row["Zug"]
+            move = None
+            try:
+                move = chess.Move.from_uci(zug_string)
+                if move not in board.legal_moves:
+                    raise ValueError
+            except Exception:
+                try:
+                    move = board.parse_san(zug_string)
+                except Exception:
+                    continue
+            sig = board_environment_signature(board, move)
+            score = None
+            if "Bewertung" in row and row["Bewertung"]:
+                try:
+                    score = float(row["Bewertung"])
+                except Exception:
+                    score = None
+            if score is None:
+                score = score_result(row["Ergebnis"])
+            single_moves.append((tuple([sig]), 1, score))
+            experience_counter.register_experience(
+                experience_key=sig,
+                context={"type": "single_move", "score": score, "result": row["Ergebnis"]},
+                experience_type="positive" if score > 0 else "negative" if score < 0 else "neutral"
+            )
+            add_conscious_experience([sig], result="success" if score > 0 else "failure" if score < 0 else "neutral")
+            board.push(move)
+    print(f"[DEBUG] Extrahierte {len(single_moves)} Einzelzugerfahrungen aus user_experience.csv.")
+    return single_moves
 
 if __name__ == "__main__":
-    build_conscious_experience()
+    initialize_conscious_file()  # Initialisiert die Anzahl-Spalte
+    print("[DEBUG] conscious_experience Logik aktiv – kollektive Resonanzübersicht folgt.")
+    experience_counter.summary()
