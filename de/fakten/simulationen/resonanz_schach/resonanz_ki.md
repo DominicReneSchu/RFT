@@ -2,6 +2,8 @@
 
 ## Resonanzbasierte Schach-KI – Aktueller Entwicklungsstand
 
+**ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
+
 ---
 
 ### 1. Systemische Grundstruktur
