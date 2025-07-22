@@ -1,6 +1,0 @@
-numpy
-pandas
-matplotlib
-networkx
-python-chess
-scipy
