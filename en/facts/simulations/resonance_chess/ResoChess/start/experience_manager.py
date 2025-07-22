@@ -95,8 +95,8 @@ def apply_user_feedback(move_list, result, experience_set, max_chain_n=4, feedba
     feedback: +N (positiv), -N (negativ), 0 (neutral)
     """
     import chess
-    from smart_move_selector import get_recent_chain
-    from motif_detection import detect_motifs
+    from .smart_move_selector import get_recent_chain
+    from .motif_detection import detect_motifs
 
     temp_board = chess.Board()
     for san in move_list:

@@ -1,0 +1,2 @@
+[console_scripts]
+resonanz-schach = start.main:main

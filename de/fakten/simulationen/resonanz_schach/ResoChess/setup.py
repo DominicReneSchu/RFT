@@ -26,10 +26,21 @@ setup(
         ],
     },
     include_package_data=True,  # Einbezug nicht-Python-Dateien (z.B. README, Ressourcen)
+    package_data={
+        "start": [
+            "pieces/*.*",       # Alle Bilder/Ressourcen in start/pieces/
+        ],
+    },
     author="Dominic-René Schu",
-    description="Resonanzlogische Schach-KI mit Snapshot-Auswertung",
+    description="Resonance-logical Chess AI with snapshot evaluation",
     long_description=long_description,              # Aus README.md
     long_description_content_type="text/markdown",  # Formatierung für Paketregister
     python_requires=">=3.8",                        # Mindestversion (systemische Kompatibilität)
-    license="MIT"
+    license="Proprietary",
+    license_files=['../de/lizenz/schu-lizenz_v1.4.md'],  # Relativer Pfad zur Lizenzdatei
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: Other/Proprietary License",
+        "Operating System :: OS Independent",
+    ],
 )

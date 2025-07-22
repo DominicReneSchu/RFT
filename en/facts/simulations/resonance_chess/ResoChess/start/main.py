@@ -10,17 +10,17 @@ import re
 import subprocess
 from pathlib import Path
 
-from gui import ResonanceChessGUI, load_piece_images
-from experience_manager import (
+from .gui import ResonanceChessGUI, load_piece_images
+from .experience_manager import (
     add_conscious_experience,
     decay_experience_weights,
     persist_experience_set_async,
     load_weighted_experience_set,
     apply_user_feedback
 )
-from smart_move_selector import get_recent_chain
-from motif_detection import detect_motifs
-from engine import ResonanceEngine
+from .smart_move_selector import get_recent_chain
+from .motif_detection import detect_motifs
+from .engine import ResonanceEngine
 
 # === Snapshot-Konstanten und Zähler ===
 SNAPSHOT_DIR = os.path.join(".", "snapshots")
@@ -163,7 +163,7 @@ def play_selfplay_games(num_games, engine, experience_set, max_chain_n=4):
     print("Fertig. KI vs. KI abgeschlossen.")
     return moves_list, stats
 
-if __name__ == "__main__":
+def main():
     root = tk.Tk()
     root.withdraw()
 
@@ -221,3 +221,7 @@ if __name__ == "__main__":
     else:
         print("Ungültige Eingabe. Bitte 1 oder 2 wählen.")
         root.destroy()
+
+# Entry-point für setuptools/CLI
+if __name__ == "__main__":
+    main()
