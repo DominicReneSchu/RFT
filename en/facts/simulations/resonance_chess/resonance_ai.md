@@ -2,6 +2,8 @@
 
 ## Resonance-Based Chess AI – Current State of Development
 
+**ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
+
 ---
 
 ### 1. Systemic Core Structure
