@@ -4,6 +4,11 @@ import os
 import csv
 from datetime import datetime
 import chess
+import sys
+import shutil
+import re
+import subprocess
+from pathlib import Path
 
 from gui import ResonanceChessGUI, load_piece_images
 from experience_manager import (
@@ -17,11 +22,52 @@ from smart_move_selector import get_recent_chain
 from motif_detection import detect_motifs
 from engine import ResonanceEngine
 
+# === Snapshot-Konstanten und Zähler ===
+SNAPSHOT_DIR = os.path.join(".", "snapshots")
+SNAPSHOT_PREFIX = "experience_snapshot_"
+SNAPSHOT_EXTENSION = ".csv"
+SNAPSHOT_INTERVAL = 100
+games_played = 0
+
+LOG_DIR = os.path.join(".", "logs")
+SNAPSHOT_LOG = os.path.join(LOG_DIR, "snapshot.log")
+
+def ensure_dir_exists(path):
+    os.makedirs(path, exist_ok=True)
+
+def log_snapshot_event(msg):
+    ensure_dir_exists(LOG_DIR)
+    timestamp = datetime.now().isoformat(sep=' ', timespec='seconds')
+    entry = f"[{timestamp}] {msg}"
+    print(entry)
+    with open(SNAPSHOT_LOG, "a", encoding="utf-8") as f:
+        f.write(entry + "\n")
+
+def export_snapshot():
+    """
+    Kopiert die aktuelle Datei 'data/experience_weighted.csv' in snapshots/
+    und benennt sie mit fortlaufender Nummer.
+    """
+    source_file = "data/experience_weighted.csv"
+    snapshot_dir = "snapshots"
+
+    ensure_dir_exists(snapshot_dir)
+
+    # Nächste fortlaufende Nummer bestimmen
+    existing = [f for f in os.listdir(snapshot_dir) if f.startswith("experience_snapshot_")]
+    snapshot_ids = [int(f.split("_")[-1].split(".")[0]) for f in existing if f.split("_")[-1].split(".")[0].isdigit()]
+    next_id = max(snapshot_ids + [0]) + 1
+
+    snapshot_filename = f"experience_snapshot_{next_id:05d}.csv"
+    destination_path = os.path.join(snapshot_dir, snapshot_filename)
+
+    if os.path.isfile(source_file):
+        shutil.copy(source_file, destination_path)
+        log_snapshot_event(f"Snapshot exported: {destination_path}")
+    else:
+        log_snapshot_event(f"Snapshot NOT exported (source missing): {source_file}")
+
 def extend_experience_by_game(move_list, result, experience_set, max_chain_n=4):
-    """
-    Extrahiert alle n-Zug-Ketten (n=2..max) und erweitert das Erfahrungsspektrum.
-    Inkludiert Motiverfahrung und resultiert in vollständiger Gruppenresonanz.
-    """
     if result == "1-0":
         res_key = "success"
     elif result == "0-1":
@@ -48,8 +94,7 @@ def extend_experience_by_game(move_list, result, experience_set, max_chain_n=4):
 def save_game_experience(moves, result, modus="unknown"):
     DATA_DIR = os.path.join(".", "data")
     CSV_PATH = os.path.join(DATA_DIR, "experience.csv")
-    if not os.path.exists(DATA_DIR):
-        os.makedirs(DATA_DIR)
+    ensure_dir_exists(DATA_DIR)
     file_exists = os.path.isfile(CSV_PATH)
     with open(CSV_PATH, "a", newline='', encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
@@ -60,9 +105,6 @@ def save_game_experience(moves, result, modus="unknown"):
         writer.writerow([timestamp, modus, result, moves_str])
 
 def after_game_update(move_list, result, experience_set, max_chain_n=4, user_feedback=0):
-    """
-    Nach Partie: Erfahrung erweitern, decay anwenden, Feedback integrieren, persistieren.
-    """
     extend_experience_by_game(move_list, result, experience_set, max_chain_n)
     decay_experience_weights(experience_set, decay_factor=0.95, min_threshold=1)
     if user_feedback != 0:
@@ -71,11 +113,15 @@ def after_game_update(move_list, result, experience_set, max_chain_n=4, user_fee
     return experience_set
 
 def play_selfplay_games(num_games, engine, experience_set, max_chain_n=4):
+    global games_played
     stats = {"1-0": 0, "0-1": 0, "1/2-1/2": 0}
     moves_list = []
     for i in range(1, num_games + 1):
         board = chess.Board()
         move_list = []
+        zugnr = 1
+        print(f"\n=== Starte Spiel {i}/{num_games} ===")
+        total_possible_moves = 100
         while not board.is_game_over():
             move = engine.select_best_move(board)
             if move is None:
@@ -83,13 +129,34 @@ def play_selfplay_games(num_games, engine, experience_set, max_chain_n=4):
             san = board.san(move)
             board.push(move)
             move_list.append(san)
+            bar_length = 30
+            progress = min(zugnr / total_possible_moves, 1.0)
+            filled_length = int(bar_length * progress)
+            bar = '█' * filled_length + '-' * (bar_length - filled_length)
+            sys.stdout.write(f"\rSpiel {i}/{num_games} |{bar}| Zug {zugnr}: {san} ")
+            sys.stdout.flush()
+            zugnr += 1
+        print()
         result = board.result()
         stats[result] = stats.get(result, 0) + 1
         moves_list.append(move_list)
+        print(f"Spiel {i} beendet. Ergebnis: {result}")
+        print("Züge:", " ".join(move_list))
         save_game_experience(move_list, result, modus="KI_vs_KI")
         after_game_update(move_list, result, experience_set, max_chain_n)
         engine.conscious_experience = experience_set
-        print(f"Spiel {i}: Ergebnis {result}")
+        games_played += 1
+
+        # === Snapshot-Logik ===
+        if games_played % SNAPSHOT_INTERVAL == 0:
+            export_snapshot()
+            log_snapshot_event("Starte Snapshot-Auswertung (evaluate_snapshots.py)")
+            try:
+                subprocess.run(["python", "evaluate_snapshots.py"], check=True)
+                log_snapshot_event("Snapshot-Auswertung abgeschlossen.")
+            except Exception as e:
+                log_snapshot_event(f"Snapshot-Auswertung FEHLGESCHLAGEN: {e}")
+
     print("\nStatistik nach", num_games, "Spielen:")
     for res, n in stats.items():
         print(f"{res}: {n}")
