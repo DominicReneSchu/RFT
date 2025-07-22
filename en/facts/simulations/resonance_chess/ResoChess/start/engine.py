@@ -1,5 +1,5 @@
-from experience_manager import load_weighted_experience_set
-from smart_move_selector import select_learned_move
+from .experience_manager import load_weighted_experience_set
+from .smart_move_selector import select_learned_move
 
 class ResonanceEngine:
     def __init__(self, conscious_experience=None, max_chain_n=4):

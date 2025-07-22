@@ -2,8 +2,10 @@ import tkinter as tk
 from tkinter import messagebox
 import chess
 from PIL import Image, ImageTk
-from engine import ResonanceEngine
-from experience_manager import add_conscious_experience
+from .engine import ResonanceEngine
+from .experience_manager import add_conscious_experience
+
+import importlib.resources
 
 SQUARE_SIZE = 60
 BOARD_COLOR_1 = "#F0D9B5"
@@ -26,8 +28,10 @@ PIECE_IMAGE_FILES = {
 def load_piece_images():
     for symbol, filename in PIECE_IMAGE_FILES.items():
         try:
-            img = Image.open(f"pieces/{filename}").resize((SQUARE_SIZE, SQUARE_SIZE), Image.Resampling.LANCZOS)
-            PIECE_IMAGES[symbol] = ImageTk.PhotoImage(img)
+            # Paketdaten laden, unabhängig vom Arbeitsverzeichnis
+            with importlib.resources.path("start.pieces", filename) as img_path:
+                img = Image.open(img_path).resize((SQUARE_SIZE, SQUARE_SIZE), Image.Resampling.LANCZOS)
+                PIECE_IMAGES[symbol] = ImageTk.PhotoImage(img)
         except Exception as e:
             print(f"Warnung: Bild für {symbol} konnte nicht geladen werden: {e}")
 

@@ -1,6 +1,6 @@
 import chess
 import random
-from motif_detection import detect_motifs
+from .motif_detection import detect_motifs
 
 def get_recent_chain(board, n=2, relative=False, semantic_map_func=None):
     """
