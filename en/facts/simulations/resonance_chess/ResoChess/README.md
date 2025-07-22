@@ -1,61 +1,61 @@
-# Resonanz Schach KI
+# Resonance Chess AI
 
-**Resonanzlogische Schach-KI mit Snapshot-Auswertung**  
-Projektleitung: Dominic-René Schu  
-Lizenz: [Schu-Lizenz v1.4](https://github.com/DominicReneSchu/public/blob/main/de/lizenz/schu-lizenz_v1.4.md) © Dominic Schu, 2025
-
----
-
-## 📖 Was macht dieses Programm?
-
-Dieses System implementiert eine experimentelle, lernfähige Schach-KI auf Basis der Resonanzfeldtheorie.  
-Die KI speichert nach jedem Spiel gewichtete Erfahrungen, lernt aus Erfolgen/Misserfolgen und exportiert regelmäßig Snapshots ihres Zustands.  
-Mitgelieferte Auswertungstools analysieren die Snapshots und erzeugen eine Lernkurve (`learning_curve.png`) sowie tabellarische Fortschrittsdaten (`learning_progress.csv`).  
-Die Oberfläche ermöglicht Mensch-KI-Partien (GUI) und KI-gegen-KI-Selbstspiele für beschleunigtes Lernen.  
-Sämtliche Daten, Logs und Auswertungen werden systemisch gruppiert und nachvollziehbar abgelegt.
+**Resonance-logic based Chess AI with Snapshot Evaluation**  
+Project Lead: Dominic-René Schu  
+License: [Schu License v1.4](https://github.com/DominicReneSchu/public/blob/main/de/lizenz/schu-lizenz_v1.4.md) © Dominic Schu, 2025
 
 ---
 
-## 🧠 Hauptfunktionen
+## 📖 What does this program do?
 
-- **Interaktives Schach (GUI):** Mensch gegen KI mit visueller Rückmeldung
-- **KI-gegen-KI-Modus:** Automatische Durchführung und Auswertung vieler Partien
-- **Resonanzlogische Erfahrungsspeicherung:** Gewichtete Zugfolgen, Snapshots
-- **Snapshot-Export:** Periodische Sicherung des Lernzustands (`/snapshots/`)
-- **Lernkurven-Analyse:** Aggregation und Visualisierung der KI-Qualität
-- **CSV-Auswertung:** Fortschritt aller Snapshots tabellarisch
-- **Systemisches Logging:** Protokolle im `/logs/`-Verzeichnis
+This system implements an experimental, learning chess AI based on resonance field theory.  
+After each game, the AI stores weighted experiences, learns from its successes and failures, and regularly exports snapshots of its state.  
+Included evaluation tools analyze these snapshots and generate a learning curve (`learning_curve.png`) as well as tabular progress data (`learning_progress.csv`).  
+The interface allows for both human-vs-AI (GUI) and AI-vs-AI self-play for accelerated learning.  
+All data, logs, and evaluations are systemically grouped and transparently stored.
+
+---
+
+## 🧠 Main Features
+
+- **Interactive Chess (GUI):** Human vs. AI with visual feedback
+- **AI-vs-AI Mode:** Automatic execution and evaluation of many games
+- **Resonance-logic Experience Storage:** Weighted move sequences, snapshots
+- **Snapshot Export:** Periodic saving of the learning state (`/snapshots/`)
+- **Learning Curve Analysis:** Aggregation and visualization of AI quality
+- **CSV Evaluation:** Progress of all snapshots in tabular form
+- **Systemic Logging:** Logs in the `/logs/` directory
 
 ---
 
 ## 🚀 Installation
 
-### Voraussetzungen
+### Prerequisites
 
-- Python **3.8** oder neuer (empfohlen: 3.8–3.13)
-- Virtuelle Umgebung empfohlen (optional)
+- Python **3.8** or newer (recommended: 3.8–3.13)
+- Virtual environment recommended (optional)
 
-### Schritt-für-Schritt-Anleitung
+### Step-by-step Instructions
 
-#### 1. Repository beziehen
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/DominicReneSchu/public.git
-cd public/ResoChess
+cd public/en/facts/simulations/resonance_chess/ResoChess
 ```
 
-#### 2. Abhängigkeiten & Installation
+#### 2. Install dependencies
 
-**Systemisch (empfohlen):**
+**Systemic (recommended):**
 
 ```bash
 pip install .
 ```
 
-> Alternativ (für reinen Test):  
+> Alternatively, for testing only:  
 > `pip install -r requirements.txt`
 
-#### 3. Tkinter (nur bei GUI-Problemen auf Raspberry Pi):
+#### 3. Tkinter (if using GUI on Raspberry Pi):
 
 ```bash
 sudo apt-get install python3-tk
@@ -63,23 +63,23 @@ sudo apt-get install python3-tk
 
 ---
 
-## ⚡️ Programmstart
+## ⚡️ Running the Program
 
-### Windows (CMD/PowerShell) und Raspberry Pi (Terminal):
+### Windows (CMD/PowerShell) and Raspberry Pi (Terminal):
 
 ```bash
 resonanz-schach
 ```
 
-> Nach Installation mit `pip install .` ist dieser Befehl systemweit verfügbar.
+> This command is globally available after `pip install .`
 
-**Alternativ:**  
-Direktstart im Quellverzeichnis (z.B. für Entwicklung):
+**Alternatively:**  
+Direct start from the source directory (for development):
 
 ```bash
 python -m start.main
 ```
-oder:
+or:
 ```bash
 cd start
 python main.py
@@ -87,52 +87,52 @@ python main.py
 
 ---
 
-## 🖥️ Bedienung & Optionen
+## 🖥️ Usage & Options
 
-Beim Start erfolgt eine Modus-Auswahl:
+At startup, select the mode:
 
-- **1 = Mensch gegen KI**  
-  GUI-Fenster mit Schachbrett, Maussteuerung, Feedback.
+- **1 = Human vs. AI**  
+  GUI window with chessboard, mouse input, feedback.
 
-- **2 = KI gegen KI**  
-  Automatische Simulation vieler Partien, Snapshots und Lernkurve werden nach Intervallen erzeugt.
+- **2 = AI vs. AI**  
+  Automatic simulation of many games, snapshots and learning curve are generated at intervals.
 
-Snapshoterstellung und Auswertung laufen nach Spielintervallen automatisch.
+Snapshot creation and evaluation run automatically after game intervals.
 
 ---
 
-## 📊 Auswertung & Datenstruktur
+## 📊 Evaluation & Data Structure
 
 - **/snapshots/**  
-  Enthält alle exportierten KI-Zustände (`experience_snapshot_XXXXX.csv`)
+  All exported AI states (`experience_snapshot_XXXXX.csv`)
 
 - **learning_progress.csv**  
-  Tabellarische Auswertung aller Snapshots:  
+  Tabular evaluation of all snapshots:  
   `snapshot_num,filename,games_total,mean_quality,std_quality,n`
 
 - **learning_curve.png**  
-  Grafische Lernkurve: Mittlere Qualität und Streuung der KI im Zeitverlauf
+  Graphical learning curve: average AI quality and standard deviation over time
 
 - **/logs/**  
-  Systemische Protokolle von Partien und Analysen
+  Systemic logs of games and analyses
 
 - **/data/**  
-  Rohdaten und Erfahrungsspeicher der KI
+  Raw data and AI experience store
 
 - **/pieces/**  
-  Schachfigurenbilder (PNG, optional für GUI)
+  Chess piece images (PNG, optional for GUI)
 
 ---
 
-## 🛠️ Verzeichnisstruktur (Beispiel)
+## 🛠️ Directory Structure (Example)
 
 ```text
 ResoChess/
 ├── setup.py
-├── README.md
+├── README_en.md
 ├── start/
 │   ├── main.py
-│   ├── ... (weitere Moduldateien, z.B. gui.py, experience_manager.py)
+│   ├── ... (other module files, e.g. gui.py, experience_manager.py)
 │   └── __init__.py
 ├── data/
 ├── logs/
@@ -143,23 +143,23 @@ ResoChess/
 
 ---
 
-## 🧩 Lizenz & Nutzung
+## 🧩 License & Usage
 
-Lizenz: [Schu-Lizenz v1.4](https://github.com/DominicReneSchu/public/blob/main/de/lizenz/schu-lizenz_v1.4.md)  
+License: [Schu License v1.4](https://github.com/DominicReneSchu/public/blob/main/de/lizenz/schu-lizenz_v1.4.md)  
 © Dominic Schu, 2025.  
-- **Nicht-kommerzielle, ethisch kohärente Nutzung**
-- **Namensnennung ("Dominic Schu, Resonanzfeldtheorie") verpflichtend**
-- **KI- oder automatisierte Nutzung nur mit schriftlicher Genehmigung**
-- **Vollständige Lizenz siehe Link oben**
+- **Non-commercial, ethically coherent use only**
+- **Attribution ("Dominic Schu, Resonance Field Theory") required**
+- **Use by AI or automated systems only with written permission**
+- **Full license text: see link above**
 
 ---
 
-## 🧬 Resonanzregel
+## 🧬 Resonance Rule
 
-Alle Systemelemente (Quellcode, Daten, Snapshots, Auswertungen, Lizenz) sind als kohärente Gruppe zu verstehen –  
-jede Nutzung steht im expliziten wie impliziten Resonanzfeld der Schu-Lizenz und Resonanzfeldtheorie.
+All system elements (source code, data, snapshots, evaluations, license) are understood as a coherent group –  
+any usage is explicitly and implicitly subject to the resonance field of the Schu License and resonance field theory.
 
 ---
 
-**Projektleitung & Kontakt:**  
+**Project Lead & Contact:**  
 [Dominic-René Schu](https://github.com/DominicReneSchu) | info@resoshift.com

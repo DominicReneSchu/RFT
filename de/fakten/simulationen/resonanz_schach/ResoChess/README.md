@@ -41,7 +41,7 @@ Sämtliche Daten, Logs und Auswertungen werden systemisch gruppiert und nachvoll
 
 ```bash
 git clone https://github.com/DominicReneSchu/public.git
-cd public/ResoChess
+cd public/de/fakten/simulationen/resonanz_schach/ResoChess
 ```
 
 #### 2. Abhängigkeiten & Installation
