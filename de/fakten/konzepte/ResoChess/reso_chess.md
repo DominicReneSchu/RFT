@@ -128,7 +128,7 @@ Lernen heißt: Muster ins Ganze integrieren.*
 > *Keine KI, die rechnet – sondern eine, die **fühlt**, ob sie passt.*
 
 * © Dominic Schu, 2025 – Alle Rechte vorbehalten.
-**ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
+* **ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
 * **Lizenz:** Schu-License V1.4
 ---
 

@@ -128,7 +128,7 @@ Learning means integrating patterns into the whole.*
 > *Not an AI that computes – but one that **feels** if it fits.*
 
 * © Dominic Schu, 2025 – All rights reserved.
-**ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
+* **ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
 * **License:** Schu-License V1.4
 
 ---
