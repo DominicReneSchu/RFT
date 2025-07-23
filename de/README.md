@@ -191,7 +191,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 0. [**Resonanzlogische Software** – Systemfeld statt Funktionsstruktur](fakten/konzepte/software/resonanzlogische_software.md)
 1. [**ResoOS** – Resonanzbasiertes Betriebssystem der nächsten Generation](fakten/konzepte/ResoOS/resoOS.md)
 2. [**ResoCalc** – Konventionelle Drehmomentberechnung vs. Resonanzfeldtheorie](fakten/konzepte/ResoCalc/resocalc.md)
-3. [**ResoChess** – Feldkohärenz statt Zieloptimierung – Grundstein einer resonanzlogischen KI](fakten/konzepte/ResoCalc/reso_chess.md)
+3. [**ResoChess** – Feldkohärenz statt Zieloptimierung – Grundstein einer resonanzlogischen KI](fakten/konzepte/ResoChess/reso_chess.md)
 4. [**Resonanzgenerator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
 5. [**Resonanzreaktor**](fakten/konzepte/resonanzreaktor/README.md)
 6. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
