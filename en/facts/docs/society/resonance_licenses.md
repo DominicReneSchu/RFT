@@ -100,7 +100,6 @@ The process systemically includes all elements; access and roles are distributed
 
 **Contact for license applicants**  
 📧 info@resoshift.de  
-🔗 [GitHub project page](https://github.com/DominicReneSchu/public)
 
 ---
 

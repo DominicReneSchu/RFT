@@ -99,7 +99,6 @@ Der Prozess schließt alle Elemente systemisch ein; Zugänge und Rollen werden r
 
 **Kontakt für Lizenzinteressenten**  
 📧 info@resoshift.de  
-🔗 [GitHub Projektseite](https://github.com/DominicReneSchu/public)
 
 ---
 
