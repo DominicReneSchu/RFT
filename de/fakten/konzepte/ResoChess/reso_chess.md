@@ -143,8 +143,8 @@ wirksam oder potenziell.**
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+© Dominic-René Schu – Resonanzfeldtheorie 2025
 
 ---
 
-⬅️ [zurück zur Übersicht](../README.md)
+[Zurück zur Übersicht](../../../README.md)
