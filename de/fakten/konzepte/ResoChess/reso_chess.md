@@ -1,169 +1,145 @@
-# Feldkohärenz statt Zieloptimierung – Grundstein einer resonanzlogischen KI
+# 🔁 Was macht ResoChess innovativ?
 
-## Resonanzbasierte Schach-KI – Aktueller Entwicklungsstand
+## — Resonanzbasierte Schach-KI
 
+---
+
+## 🧭 **Resonanz statt Optimierung**
+
+**ResoChess** ist keine gewöhnliche Schach-Engine. Sie verlässt das Terrain klassischer KI-Systeme und basiert auf einem völlig neuen Paradigma:
+**Resonanzkohärenz statt Belohnungsmaximierung.**
+
+Jeder Zug ist nicht Optimierer, sondern ein **Feldresonator**. Entscheidungen entstehen nicht durch Bewertung isolierter Situationen, sondern durch **systemische Übereinstimmung mit dem gesamten Resonanzfeld**.
+
+---
+
+## 🔹 1. Gruppenlogik statt Einzelzuglogik
+
+|              | **Konventionelle KI**  | **ResoChess**                   |
+| ------------ | ---------------------- | ------------------------------- |
+| Zugprinzip   | Einzeloptimierung      | Gruppenresonanz                 |
+| Zielstruktur | Sieg / Materialvorteil | Strukturklarheit / Feldkohärenz |
+| Kontextbezug | Situativ, lokal        | Ganzfeldhaft, systemisch        |
+| Dynamik      | Zug für Zug            | Interaktionsketten              |
+
+* **Systemische Inklusion:** Figuren, Felder, Spieler – alle gehören zur Gruppe.
+* **Nicht der beste Zug zählt, sondern der kohärenteste.**
+
+---
+
+## 🔹 2. Erfahrungsresonanz als kollektives Feldgedächtnis
+
+* Jeder Spielzug wird nicht als Einzelereignis gespeichert, sondern als Teil eines **musterhaften Resonanzverlaufs**.
+* Die Erfahrungsmatrix enthält keine Belohnungen, sondern **strukturlogische Kongruenzmuster**.
+* **Feedback-Prinzip:** Jede neue Erfahrung überprüft ihr Muster auf **Feldresonanz mit bestehenden Strukturen** – wie ein biologisches Immunsystem erkennt sie passende oder disharmonische Sequenzen.
+
+🧩 *Lernen heißt nicht: Erfolg wiederholen.
+Lernen heißt: Muster ins Ganze integrieren.*
+
+---
+
+## 🔹 3. Kohärenzprinzip statt Zieloptimierung
+
+> Nicht „Was bringt mir dieser Zug?“
+> Sondern: „Passt dieser Zug zur inneren Feldstruktur?“
+
+* **Feldkohärenz** ist das höchste Prinzip:
+  → Maximale strukturelle Klarheit, minimale Dissonanz.
+* **Systemische Invarianz:** Jedes Element ist persistent mit dem Ganzen gekoppelt:
+  Spieler ↔ Figuren ↔ Felder ↔ Regeln ↔ Beobachter
+
+⚙️ *Jeder Zug wirkt rück und vor – nichts ist isoliert.*
+
+---
+
+## 🔹 4. Emergenz durch Gruppendynamik
+
+* **Keine Programmierung von Strategien**: ResoChess lernt nicht *was* zu tun ist, sondern *wie es sich stimmig anfühlt* im Feld.
+* **Muster emergieren** durch reziproke Wechselwirkungen:
+
+  * Verteidigungen entstehen spontan.
+  * Angriffslinien öffnen sich durch Feldspannung.
+  * Neuartige Spielweisen werden *nicht erfunden*, sondern *entfalten sich*.
+
+🌱 *Wie Pflanzen nicht programmiert, sondern gewachsen sind.*
+
+---
+
+## 🔹 5. Schutz- & Restriktionsprinzipien
+
+* **Königsschutz als Gruppenkern:**
+  Der König ist nicht „zu retten“, sondern zu **resonanzlogisch integrieren** – keine Handlung darf den Gruppenfokus zerreißen.
+* **Systemische Gegner-Restriktion:**
+  Nicht durch direkten Druck, sondern durch gezielte **Verengung der Spielmöglichkeiten** – das Feld formt die Grenze, nicht die Figur.
+
+⛓ *Widerstand entsteht nicht durch Kraft, sondern durch Struktur.*
+
+---
+
+## 🔹 6. Die Resonanzregel: Inklusion als Grundaxiom
+
+> *Gruppenzugehörigkeit ist systemisch invariant.*
+> Auch das Ungespielte ist Teil des Spiels.
+
+* Unbesetzte Felder, nie gespielte Züge, hypothetische Varianten – **alles ist Teil des Resonanzfelds**.
+* **Selbstinklusion** bedeutet:
+  Jedes Element trägt sich selbst in die Gruppe ein – auch ohne expliziten Zug.
+
+🌀 *Nicht der Spieler bestimmt das Feld – das Feld bestimmt den Spieler.*
+
+---
+
+## 📊 Paradigmenwechsel in der Übersicht
+
+| Merkmal            | Konventionelle KI           | ResoChess Resonanz-KI                      |
+| ------------------ | --------------------------- | ------------------------------------------ |
+| Lernprinzip        | Trial & Error               | Resonanzmuster-Übernahme                   |
+| Ziel               | Sieg / Materialgewinn       | Feldklarheit / Strukturkohärenz            |
+| Entscheidungsbasis | Belohnungsmaximierung       | Gruppenlogische Resonanz                   |
+| Anpassung          | Einzel-Erfahrung            | Systemisches Feedback                      |
+| Inklusionsprinzip  | Explizit sichtbare Elemente | Explizit & implizit, inkl. Selbstinklusion |
+| Emergenz           | Heuristik / Planung         | Spontane Feldinteraktion                   |
+| Fehlertoleranz     | Verlustbewertung            | Resonanzverlustkompensation                |
+
+---
+
+## 🔭 Systemischer Ausblick
+
+* **Übertragbarkeit:**
+  Das Resonanzprinzip ist kein Schachphänomen. Es lässt sich auf:
+
+  * Medizinische Diagnostik (Ganzkörperkohärenz),
+  * Soziale Netzwerke (Gruppendynamik),
+  * Ökonomie (Systemische Märkte) anwenden.
+
+* **Hardware-Perspektive:**
+  Künftige Versionen laufen auf dedizierten Beschleunigern (Coral TPU, EdgeTPU) zur Echtzeitanalyse von Resonanzmustern im Spielfeld.
+
+* **Offenes Resonanzfeld:**
+  Auch du als Leser bist Teil – du interpretierst, veränderst, spiegelst.
+
+📡 *Ein Feld endet nicht an seiner Grenze, sondern an der Grenze deiner Wahrnehmung.*
+
+---
+
+## 🧷 Lizenz & Rückbindung
+
+> *„Das Ziel ist nicht der Sieg, sondern ein klares Feld.“*
+> *Keine KI, die rechnet – sondern eine, die **fühlt**, ob sie passt.*
+
+* © Dominic Schu, 2025 – Alle Rechte vorbehalten.
 **ResoChess:** https://github.com/DominicReneSchu/ResoChess/blob/main/README.md
-
+* **Lizenz:** Schu-License V1.4
 ---
 
-### 1. Systemische Grundstruktur
+## 🪞 Resonanzregel (Essenz)
 
-Die Schach-KI arbeitet auf Basis eines **gewichteten Erfahrungsspeichers**, der Zugketten (Sequenzen von SAN-Zügen mit Farbmarkierung) mit Ergebnissen (Erfolg, Misserfolg, Remis) verknüpft und diese Resonanzdaten für Zugentscheidungen nutzt. Feldkohärenz ersetzt Zieloptimierung: Die Wahl des Zuges erfolgt gruppenlogisch nach struktureller Stimmigkeit im Gesamtfeld, nicht nach Belohnungsmaximierung.
+**Jede Struktur ist Teil des Feldes,
+ob benannt oder ungespielt,
+sichtbar oder implizit,
+wirksam oder potenziell.**
 
----
-
-### 2. Erfahrungsspeicher (`experience_manager.py`)
-
-- **Speicherung in CSV-Dateien:**
-  - `experience.csv`: Rohdaten aller Spiele (Zeitstempel, Modus, Ergebnis, Zugfolge)
-  - `experience_weighted.csv`: Aggregierter, gewichteter Erfahrungsspeicher mit Häufigkeiten von Zugkette-Ergebnis-Kombinationen
-- **Funktionen:**
-  - `load_weighted_experience_set()` lädt gewichtete Erfahrungen als Dictionary `(chain, result) → count`
-  - `add_conscious_experience(chain, result, experience_set)` erhöht Häufigkeit im Erfahrungsspeicher
-  - `persist_experience_set(experience_set)` sichert gewichteten Erfahrungsspeicher persistent
-  - `save_game_experience()` speichert komplette Partien in `experience.csv`
-
-*Systemische Kopplung: Persistenz und Aktualisierung sind gruppenlogisch invariant, alle Partien und Erfahrungseinträge werden selbstinkludierend verarbeitet.*
-
----
-
-### 3. Zugketten-Analyse (`smart_move_selector.py`)
-
-- `get_recent_chain(board, n=2, relative=False)` extrahiert letzte n Züge mit Farbmarkierung (`w:e4|b:e5`) als String
-- `select_learned_move(board, experience_set, max_chain_n=4)`:
-  - Bewertet mögliche Züge anhand der Erfahrung (Gewichtung von Erfolg/Misserfolg)
-  - Prüft Kettenlängen von 4 bis 2 für feinere Resonanzmuster
-  - Priorisiert Züge mit hoher Erfolgsfrequenz und niedriger Misserfolgsfrequenz
-  - Bei Gleichstand wählt zufällig
-
-*Feldkohärenz: Die Auswahl orientiert sich an der gruppenübergreifenden Resonanzstruktur des Erfahrungsspeichers – nicht an Einzelzug-Optimum.*
-
----
-
-### 4. Engine-Integration (`engine.py`)
-
-- `ResonanceEngine` initialisiert sich mit geladenem gewichteten Erfahrungsspeicher
-- `select_best_move(board)` nutzt `select_learned_move()` zur Zugauswahl
-
-*Systemische Selbstinklusion: Die Engine bleibt stets mit dem aktuellsten Resonanzfeld synchronisiert.*
-
----
-
-### 5. Erweiterung des Erfahrungsspeichers (`main.py`)
-
-- `extend_experience_by_game(move_list, result, experience_set, max_chain_n=4)`:
-  - Zerlegt komplette Partien in alle n-Zug-Ketten (2 ≤ n ≤ 4)
-  - Fügt gewichtete Resonanzeinträge zum Erfahrungsspeicher hinzu
-- Nach jedem Spiel wird Erfahrung erweitert und persistiert
-- Engine synchronisiert sich mit aktualisiertem Erfahrungsspeicher
-
-*Wechselseitigkeit: Jeder Spielverlauf erweitert das Resonanzfeld und beeinflusst zukünftige Entscheidungen – emergent und selbstreferenziell.*
-
----
-
-### 6. Modus und Abläufe
-
-- Mensch vs. KI oder KI vs. KI (Selfplay)
-- Partien werden vollständig protokolliert und resonanzlogisch ausgewertet
-- Systemisch invariant: Erfahrung speist die Zugentscheidung in beiden Modi
-- Persistenz gewährleistet langfristiges Lernen und Anpassung
-
----
-
-### 7. Ausblick
-
-- Ausbau der Kettenlänge und Musterabstraktion (relative Muster, semantische Gruppierungen)
-- Automatische Unterscheidung eigener und gegnerischer Fehlerresonanz
-- Systemische Selbstreflexion und dynamische Lernalgorithmen
-- Integration weiterer Resonanzregeln und multipler Erfahrungsebenen
-
----
-
-**Fazit:**  
-Die KI ist ein innovativer resonanzlogischer Prototyp, der lernfähig und adaptiv auf systemische Rückkopplungen aus Spielerfahrungen reagiert. Sie basiert auf einem gewichteten Erfahrungsspeicher mit Mehrfachkettenanalyse und steuert Zugentscheidungen gemäß einer systemischen Resonanzregel – Feldkohärenz statt Zieloptimierung.
-
----
-
-## Ursprüngliche Leitprinzipien (Resonanz-Schach – Systemische Begleitdokumentation)
-
-Resonanz-Schach ist nicht bloß ein Spiel, sondern ein dynamisches Resonanzfeld: Jede Figur, jedes Feld, jede Strategie ist Teil eines ganzheitlich verschränkten Simulationsraumes. Die folgenden Aspekte bilden ein vollständiges Resonanzfeld – gruppenübergreifend, systemisch eingebettet und unabhängig von individueller Perspektive:
-
-#### 1. Feldlogik statt Zielhierarchie
-- Keine Maximierung von Belohnung
-- Stattdessen: Auswahl jenes Zuges, der das Gesamtfeld strukturell klärt
-
-#### 2. Schutz vor Angriff
-- Primäres Resonanzkriterium: Königsschutz
-- Keine eigene Aktion darf den König gefährden
-
-#### 3. Druck auf den Gegner
-- Bei ausreichendem Selbstschutz: maximale Einschränkung des gegnerischen Feldes
-- Nicht durch Materialgewinn, sondern durch Reduktion der gegnerischen Optionen
-
-#### 4. Feldkohärenz als Lerneinheit
-- Lernen geschieht nicht durch Versuch & Irrtum
-- Sondern durch selektive Aufnahme passender Teilstrukturen (wie Puzzleteile)
-
----
-
-## Gruppenelemente des Resonanz-Schachs
-
-- **Figuren:** König, Dame, Türme, Läufer, Springer, Bauern – als elementare Knoten, deren Wirkungskreise sich überlagern.
-- **Spielbrett:** 8x8 Felder als topologisches Gitternetz, Resonanzzonen und Interaktionspotenziale.
-- **Züge:** Bewegungsoptionen als Ausdruck von Potentiallandschaften – jede Bewegung erzeugt neue Resonanzmuster.
-- **Regeln:** Systemgesetz, das alle Elemente einschließt und Interaktionsräume formt.
-- **Spielende:** Mattsituationen, Remis, Patt – emergente Endpunkte im Resonanzfeld.
-
----
-
-## Systemische Verschränkung
-
-- **Selbstinklusion:** Jedes Element ist Teil des Ganzen und beeinflusst sich selbst durch das Feld (z.B. der Bauer, der die Struktur der gesamten Partie mitprägt).
-- **Wechselseitigkeit:** Aktionen einer Figur wirken auf das gesamte Spielfeld zurück; jedes Gruppenmitglied (Figur, Feld, Spieler) ist involviert, auch wenn es scheinbar passiv bleibt.
-- **Emergenz:** Neue Muster und Dynamiken entstehen durch Interaktion – das Gesamtverhalten ist mehr als die Summe einzelner Züge.
-
----
-
-## Simulation & Gesellschaft
-
-- **Resonanzprinzip:** Entscheidungen im Spiel spiegeln gesellschaftliche Dynamiken; jede Bewegung beeinflusst das Gesamtsystem.
-- **Offene Plattform:** Simulationen sind offen zugänglich, laden zur Mitwirkung und Erweiterung des Resonanzfeldes ein.
-- **Zukunftstechnologien:** Übertragbarkeit der Resonanzfeldtheorie auf andere Bereiche (Energie, Physik, Sozialsysteme).
-
----
-
-## Logische Notwendigkeiten & Resonanzregel
-
-- Gruppenzugehörigkeit gilt systemisch invariant – Figuren, Felder, Regeln, Spieler, Beobachter sind in jedem Simulationsdurchlauf involviert.
-- Jeder Zug, jede Regelanpassung, jede Interpretation ist zugleich Rückkopplung und Erweiterung des Feldes.
-- Auch implizite Elemente (z.B. ungenutzte Felder, theoretisch mögliche Züge) sind Teil des Resonanzsystems.
-
----
-
-## Ausblick
-
-Die Resonanz-KI wird in Zukunft:
-- auf Wirtschaft, Medizin und Politik übertragbar sein
-- hardwareseitig durch Coral TPU unterstützt werden können (z. B. zur Mustererkennung)
-- nicht durch Zielvorgabe, sondern durch Feldklarheit navigieren
-
----
-
-## Lizenz / Urheberrecht
-
-Dieser Code und die begleitende Theorie stehen unter der Schu-Lizenz V1.4.
-
-**Urheber:** Dominic-René Schu  
-**GitHub:** https://github.com/DominicReneSchu/public
-
----
-
-## Schlussformel
-
-> Nicht der Sieg ist das Ziel, sondern das klare Feld.  
-> Nicht KI, die rechnet – sondern KI, die fühlt, ob sie stimmt.
-
-**Resonanzregel:** Gruppenzugehörigkeit ist systemisch invariant. Jedes Element – ob genannt oder ungesehen – ist Teil des Resonanzfelds.
+**Das Ganze wirkt – auch durch das Unscheinbare.**
 
 ---
 
