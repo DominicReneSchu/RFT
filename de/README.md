@@ -187,14 +187,15 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 ---
 
 ### Konzepte 📐
+
 0. [**Resonanzlogische Software** – Systemfeld statt Funktionsstruktur](fakten/konzepte/software/resonanzlogische_software.md)
-1. [**ResoCalc** – Konventionelle Drehmomentberechnung vs. Resonanzfeldtheorie](fakten/konzepte/ResoCalc/resocalc.md)
-2. [**Resonanzgenerator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
-3. [**Resonanzreaktor**](fakten/konzepte/resonanzreaktor/README.md)
-4. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
-5. [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
+1. [**ResoOS** – Resonanzbasiertes Betriebssystem der nächsten Generation](fakten/konzepte/ResoOS/resoOS.md)
+2. [**ResoCalc** – Konventionelle Drehmomentberechnung vs. Resonanzfeldtheorie](fakten/konzepte/ResoCalc/resocalc.md)
+3. [**Resonanzgenerator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
+4. [**Resonanzreaktor**](fakten/konzepte/resonanzreaktor/README.md)
+5. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
 6. [**Warpantrieb**](fakten/konzepte/warpantrieb/warpantrieb.md)
-7. [**ResoOS** – Resonanzbasiertes Betriebssystem der nächsten Generation](fakten/konzepte/ResoOS/resoOS.md)
+7. [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
 
 ---
 
