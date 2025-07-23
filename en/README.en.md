@@ -188,11 +188,12 @@ It serves as a normalizing reference value for all resonant interactions within 
 0. [**Resonance-Logical Software** – System Field Instead of Function Structure](facts/concepts/software/resonance_logical_software.md)
 1. [**ResoOS** – Resonance-Based Operating System of the Next Generation](fakten/konzepte/ResoOS/resoOS_en.md)
 2. [**ResoCalc** – Conventional Torque Calculation vs. Resonance Field Theory](facts/concepts/ResoCalc/resocalc.md)
-3. [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
-4. [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
-5. [**Force Field Generator**](facts/concepts/force_field_generator/force_field_generator.md)
-6. [**Warp Drive**](facts/concepts/warp_drive/warp_drive.md)
-7. [**Weather Warning System**](facts/concepts/weather_warning_system/weather_warning_system.md)
+3. [**ResoChess** – Field Coherence Instead of Goal Optimization – Foundations of a Resonance-Based AI](facts/concepts/ResoCalc/reso_chess.md)
+4. [**Resonance Generator**](facts/concepts/resonance_generator/resonance_generator.md)
+5. [**Resonance Reactor**](facts/concepts/resonance_reactor/README.md)
+6. [**Force Field Generator**](facts/concepts/force_field_generator/force_field_generator.md)
+7. [**Warp Drive**](facts/concepts/warp_drive/warp_drive.md)
+8. [**Weather Warning System**](facts/concepts/weather_warning_system/weather_warning_system.md)
 
 ---
 

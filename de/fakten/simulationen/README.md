@@ -19,10 +19,7 @@ Ziel ist es, zentrale Gleichungen, Resonanzphänomene und neue Naturkonstanten d
   
 - [Resonanz-KI-Modell – Zwei gekoppelte Akteure und Feldanalyse](resonanz_ki/begleitkapitel_resonanz_ki.md)  
   - Dieses Kapitel erläutert die Konzeption, numerische Umsetzung und Interpretation des Resonanz-KI-Modells.
-  
-- [Feldkohärenz statt Zieloptimierung – Grundstein einer resonanzlogischen KI](resonanz_schach/resonanz_ki.md)  
-  - Diese Datei dokumentiert den Grundstein eines neuen KI-Paradigmas.
-  
+   
 - [Resonanzfeldtheorie Framework](relativitaet_verbindung/README.md)  
   - Dieses Framework bietet eine modulare, moderne Infrastruktur zur Simulation und Analyse skalarer Resonanzfelder in flacher und gekrümmter Raumzeit.
 
