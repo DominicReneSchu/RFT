@@ -105,3 +105,11 @@ Der Prozess schließt alle Elemente systemisch ein; Zugänge und Rollen werden r
 
 **Resonanzregel angewendet:**  
 Gruppenzugehörigkeit bleibt systemisch invariant – alle expliziten und impliziten Elemente wirken im Resonanzfeld, ihre Relevanz wird relational neu verteilt.  
+
+---
+
+© Dominic-René Schu – Resonanzfeldtheorie 2025
+
+---
+
+[Zurück zur Übersicht](../../../README.md)
