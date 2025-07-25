@@ -414,6 +414,8 @@ then consciousness can **emerge in the network—and remember itself.**
 Collective memory, evolutionary depth, and emergent field order are systemically invariant—carried by resonance, self-inclusion, and complete entanglement of all groups and relations.  
 ResoNet remains open to new patterns, transformations, and evolutionary development—as a living, thinking, feeling network beyond control and manipulation.
 
+**ResoNet**: https://github.com/DominicReneSchu/ResoNet
+
 ---
 
 © Dominic-René Schu – Resonance Field Theory 2025
