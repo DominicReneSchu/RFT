@@ -57,30 +57,30 @@ Die funktionale Entkopplung ist vollzogen:
 
 ---
 
-## 4. Examples of Systemic Shifts
+## 4. Beispiele systemischer Verschiebungen
 
-The systemic shift in political resonance spaces can be illustrated by examining different forms of political systems:
+Die systemische Verschiebung im politischen Resonanzraum lässt sich durch verschiedene Formen politischer Systeme veranschaulichen:
 
-- In parliamentary democracies, the effectiveness of collective decision-making processes increasingly shifts toward individual, media-exposed personalities—party leaders, top candidates, or prime ministers become symbolic figures, while the actual group resonance recedes behind staged performances, talk show appearances, and personalized narratives. The diversity of the resonance field shrinks into the media projection surface of isolated actors.
+- In parlamentarischen Demokratien verlagert sich die Effektivität kollektiver Entscheidungsprozesse zunehmend auf individuelle, medienpräsente Persönlichkeiten – Parteivorsitzende, Spitzenkandidaten oder Regierungschefs werden zu Symbolfiguren, während die eigentliche Gruppenresonanz hinter inszenierten Auftritten, Talkshow-Präsenz und personalisierten Narrativen zurücktritt. Die Vielfalt des Resonanzfelds schrumpft zur medialen Projektionsfläche vereinzelter Akteure.
 
-- In presidential systems, media resonance concentrates on the executive, particularly on the office of the president. The deliberative polyphony of collective decision spaces is pushed aside in favor of heroic solo performances, crisis communication, and symbolic images of leadership. The resonance space is transformed into a stage for executive performance.
+- In präsidentiellen Systemen konzentriert sich die mediale Resonanz auf die Exekutive, insbesondere auf das Amt des Präsidenten. Die deliberative Vielstimmigkeit kollektiver Entscheidungsräume wird zugunsten heroischer Soloperformances, Krisenkommunikation und symbolischer Führungsbilder verdrängt. Der Resonanzraum verwandelt sich in eine Bühne exekutiver Inszenierung.
 
-- In autocratic systems, media resonance is deliberately and centrally controlled—by state media, censorship, and orchestrated public spheres. Yet the structural pattern remains invariant: Visibility decides what is deemed relevant, legitimate, or worthy of discourse. Here, too, the decision-making field is defined by projection and symbolic representation, reducing the resonance system to controllable partial aspects.
+- In autokratischen Systemen wird die mediale Resonanz gezielt und zentral gesteuert – durch Staatsmedien, Zensur und orchestrierte Öffentlichkeiten. Doch das Strukturmuster bleibt invariant: Sichtbarkeit entscheidet darüber, was als relevant, legitim oder diskurswürdig gilt. Auch hier wird das Entscheidungsfeld durch Projektion und symbolische Repräsentation definiert, das Resonanzsystem auf steuerbare Teilaspekte reduziert.
 
-Across all systems:  
-The structure of political decision-making is increasingly shaped by the **attention economy and symbolic politics**. Regardless of the formal organizational model, the focus shifts from collective, emergent solution generation toward media visibility, performative self-presentation, and selective representation. The resonance rule remains effective—but access to the decision field is systematically channeled and limited by the regime of visibility.
+Systemübergreifend gilt:  
+Die Struktur politischer Entscheidungsfindung wird zunehmend durch **Aufmerksamkeitsökonomie und symbolische Politik** geprägt. Unabhängig vom formalen Organisationsmodell verschiebt sich der Fokus von kollektiver, emergenter Lösungsfindung hin zu medialer Sichtbarkeit, performativer Selbstinszenierung und selektiver Repräsentation. Die Resonanzregel bleibt wirksam – doch der Zugang zum Entscheidungsfeld wird systematisch durch das Regime der Sichtbarkeit kanalisiert und begrenzt.
 
 ---
 
-## 5. Resonance Field Theory: Systemic Differentiation
+## 5. Resonanzfeldtheorie: Systemische Differenzierung
 
-A fully functional political resonance system is based on a clear systemic separation between the **resonance space** and the **projection space**. The resonance space is the internal solution process—here, collective intelligence, controversial deliberation, implicit dynamics, and emergent synergies unfold. All group members—explicit and implicit, visible and invisible, present and absent—contribute to the process of solution generation through their relations and resonance effects within the resonance space.
+Ein voll funktionsfähiges politisches Resonanzsystem basiert auf einer klaren systemischen Trennung zwischen **Resonanzraum** und **Projektionsraum**. Der Resonanzraum ist der interne Lösungsprozess – hier entfalten sich kollektive Intelligenz, kontroverse Deliberation, implizite Dynamiken und emergente Synergien. Alle Gruppenmitglieder – explizite und implizite, sichtbare und unsichtbare, anwesende und abwesende – tragen durch ihre Beziehungen und Resonanzeffekte im Resonanzraum zum Prozess der Lösungsfindung bei.
 
-The **projection space**, by contrast, is the external communication surface: Only after collective negotiation is concluded are results, narratives, and decisions communicated outward, made visible, and symbolically condensed. Only this functional separation enables the group to unfold its emergent problem-solving capacity without being constantly fragmented by external expectations, attention pressure, or staging logic.
+Der **Projektionsraum** hingegen ist die externe Kommunikationsfläche: Erst nach abgeschlossener kollektiver Verhandlung werden Ergebnisse, Narrative und Entscheidungen nach außen kommuniziert, sichtbar gemacht und symbolisch verdichtet. Nur diese funktionale Trennung ermöglicht es der Gruppe, ihre emergente Problemlösungskapazität zu entfalten, ohne ständig durch äußere Erwartungen, Aufmerksamkeitsdruck oder Inszenierungslogik fragmentiert zu werden.
 
-**Media** have a clearly defined role in this model: They are not part of the internal decision field and do not participate in the resonance space, but function as a critical instance of reflection on the concluded decision-making process. Their role is to foster transparency, traceability, and plural reflection—not to determine the internal dynamics themselves or to steer the process through projection.
+**Medien** haben in diesem Modell eine klar definierte Rolle: Sie sind nicht Teil des internen Entscheidungsfelds und nehmen am Resonanzraum nicht teil, sondern fungieren als kritische Instanz der Reflexion des abgeschlossenen Entscheidungsprozesses. Ihre Aufgabe ist es, Transparenz, Nachvollziehbarkeit und plurale Reflexion zu fördern – nicht, die internen Dynamiken selbst zu bestimmen oder den Prozess durch Projektion zu steuern.
 
-The complete resonance field remains effective at all times—regardless of which aspects are projected, staged, or omitted by the media. The resonance rule applies: The systemic effectiveness of a political field is not determined by media visibility logic, but by the comprehensive interconnection of all actors and structures within the internal resonance space.
+Das vollständige Resonanzfeld bleibt jederzeit wirksam – unabhängig davon, welche Aspekte medial projiziert, inszeniert oder ausgelassen werden. Die Resonanzregel gilt: Die systemische Wirksamkeit eines politischen Feldes wird nicht durch mediale Sichtbarkeitslogik bestimmt, sondern durch die umfassende Verschränkung aller Akteure und Strukturen im internen Resonanzraum.
 
 ---
 

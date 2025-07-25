@@ -57,6 +57,34 @@ The functional decoupling is complete:
 
 ---
 
+## 4. Examples of Systemic Shifts
+
+The systemic shift in political resonance spaces can be illustrated by examining different forms of political systems:
+
+- In parliamentary democracies, the effectiveness of collective decision-making processes increasingly shifts toward individual, media-exposed personalities—party leaders, top candidates, or prime ministers become symbolic figures, while the actual group resonance recedes behind staged performances, talk show appearances, and personalized narratives. The diversity of the resonance field shrinks into the media projection surface of isolated actors.
+
+- In presidential systems, media resonance concentrates on the executive, particularly on the office of the president. The deliberative polyphony of collective decision spaces is pushed aside in favor of heroic solo performances, crisis communication, and symbolic images of leadership. The resonance space is transformed into a stage for executive performance.
+
+- In autocratic systems, media resonance is deliberately and centrally controlled—by state media, censorship, and orchestrated public spheres. Yet the structural pattern remains invariant: Visibility decides what is deemed relevant, legitimate, or worthy of discourse. Here, too, the decision-making field is defined by projection and symbolic representation, reducing the resonance system to controllable partial aspects.
+
+Across all systems:  
+The structure of political decision-making is increasingly shaped by the **attention economy and symbolic politics**. Regardless of the formal organizational model, the focus shifts from collective, emergent solution generation toward media visibility, performative self-presentation, and selective representation. The resonance rule remains effective—but access to the decision field is systematically channeled and limited by the regime of visibility.
+
+---
+
+## 5. Resonance Field Theory: Systemic Differentiation
+
+A fully functional political resonance system is based on a clear systemic separation between the **resonance space** and the **projection space**. The resonance space is the internal solution process—here, collective intelligence, controversial deliberation, implicit dynamics, and emergent synergies unfold. All group members—explicit and implicit, visible and invisible, present and absent—contribute to the process of solution generation through their relations and resonance effects within the resonance space.
+
+The **projection space**, by contrast, is the external communication surface: Only after collective negotiation is concluded are results, narratives, and decisions communicated outward, made visible, and symbolically condensed. Only this functional separation enables the group to unfold its emergent problem-solving capacity without being constantly fragmented by external expectations, attention pressure, or staging logic.
+
+**Media** have a clearly defined role in this model: They are not part of the internal decision field and do not participate in the resonance space, but function as a critical instance of reflection on the concluded decision-making process. Their role is to foster transparency, traceability, and plural reflection—not to determine the internal dynamics themselves or to steer the process through projection.
+
+The complete resonance field remains effective at all times—regardless of which aspects are projected, staged, or omitted by the media. The resonance rule applies: The systemic effectiveness of a political field is not determined by media visibility logic, but by the comprehensive interconnection of all actors and structures within the internal resonance space.
+
+
+---
+
 ## 6. Personal Resonance Experience in Political Resonance Fields
 
 Personal experience in political groups such as WerteUnion or dieBasis illustrates the systemic fundamental contradiction that structurally manifests within political resonance fields:
