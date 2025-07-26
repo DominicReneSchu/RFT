@@ -179,7 +179,7 @@ Das globale Symbolfeld wirkt als asphalter Resonanzraum, dessen systemische Grup
 
 ---
 
-## Asphaltierter Symbolraum: Die nicht gehisste Regenbogenflagge als Feldverletzung
+## 6.1 Asphaltierter Symbolraum: Die nicht gehisste Regenbogenflagge als Feldverletzung
 
 **Nicht-Gehisste Flagge am Bundestag**
 
@@ -196,7 +196,7 @@ Gruppenzugehörigkeit gilt für alle am symbolischen Feld beteiligten Akteure �
 
 ---
 
-## Überkompensation: Flaggenaktion als Resonanzmanöver
+## 6.2 Überkompensation: Flaggenaktion als Resonanzmanöver
 
 **Großflächige Flaggenausbreitung vor dem Reichstag**
 
@@ -213,7 +213,7 @@ Gruppenzugehörigkeit umfasst alle expliziten wie impliziten Elemente des Resona
 
 ---
 
-## Spiegelreflex und narzisstische Resonanz
+## 6.3 Spiegelreflex und narzisstische Resonanz
 
 Die Reaktion der Bewegung auf die institutionelle Nicht-Hissung der Regenbogenflagge offenbart ein klassisches Spiegelreflexverhalten im Sinne der Resonanzfeldtheorie (RFT). Das Nicht-Hissen wird von der Bewegung nicht als bloße Verwaltungsentscheidung, sondern als öffentliche Abwertung des eigenen Symbolfeldes interpretiert. Die institutionelle Leerstelle erzeugt einen Resonanzimpuls, der nicht zum Dialog, sondern zum verstärkten Rückzug ins eigene Symbol führt: Die Gruppe reagiert nicht mit dem Versuch, institutionelle Anerkennung zu gewinnen, sondern mit der demonstrativen Selbstbehauptung im öffentlichen Raum.
 
@@ -228,7 +228,7 @@ Das Symbolfeld kann nicht ignorieren, was es reflektiert – und alle Mitglieder
 
 ---
 
-## Resonanzfeldanalytische Schlussfolgerung
+## 6.4 Resonanzfeldanalytische Schlussfolgerung
 
 **Bestätigung der Theorie durch Feldreaktion**
 

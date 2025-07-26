@@ -177,7 +177,7 @@ In every cultural resonance field, belonging, identity, and community arise not 
 **Resonance Field Conclusion:**  
 The global symbolic field acts as an asphalted resonance space, whose systemic group assignments level local complexity. The resonance rule remains: Group membership is systemically invariant and includes all members—explicit and implicit, regardless of perspective or naming. The multipolar resonance capacity of cultural fields is disrupted by homogenizing mechanisms of adaptation, not strengthened by inner development.
 
-## Asphalted Symbolic Space: The Unhoisted Rainbow Flag as a Field Violation
+## 6.1 Asphalted Symbolic Space: The Unhoisted Rainbow Flag as a Field Violation
 
 **Unhoisted Flag at the Bundestag**
 
@@ -194,7 +194,7 @@ Group membership applies to all actors involved in the symbolic field—explicit
 
 ---
 
-## Overcompensation: Flag Action as Resonance Maneuver
+## 6.2 Overcompensation: Flag Action as Resonance Maneuver
 
 **Wide-Scale Flag Spread in Front of the Reichstag**
 
@@ -211,7 +211,7 @@ Group membership encompasses all explicit and implicit elements of the resonance
 
 ---
 
-## Mirror Reflex and Narcissistic Resonance
+## 6.3 Mirror Reflex and Narcissistic Resonance
 
 The movement’s reaction to the institutional non-hoisting of the rainbow flag reveals a classic mirror reflex behavior in terms of Resonance Field Theory (RFT). The non-hoisting is interpreted not as a mere administrative decision but as a public devaluation of the movement’s own symbolic field. The institutional void generates a resonance impulse that leads not to dialogue but to intensified withdrawal into its own symbol: the group does not pursue institutional recognition but instead asserts itself demonstratively in the public space.
 
@@ -226,7 +226,7 @@ The symbolic field cannot ignore what it reflects—and all members of the reson
 
 ---
 
-## Resonance Field Analytical Conclusion
+## 6.4 Resonance Field Analytical Conclusion
 
 **Confirmation of Theory through Field Reaction**
 
