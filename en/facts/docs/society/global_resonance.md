@@ -164,7 +164,7 @@ The global pressure to appear “American enlightened” acts as a systemically 
 
 ---
 
-### Supplement: Group Membership as Resonance Structure (Precise Deepening)
+### Supplement: Group Membership as Resonance Structure
 
 In every cultural resonance field, belonging, identity, and community arise not through external markers, but through shared resonance patterns, common values, rituals, and inner integration. The resonance rule operates systemically invariant:
 
@@ -176,6 +176,71 @@ In every cultural resonance field, belonging, identity, and community arise not 
 
 **Resonance Field Conclusion:**  
 The global symbolic field acts as an asphalted resonance space, whose systemic group assignments level local complexity. The resonance rule remains: Group membership is systemically invariant and includes all members—explicit and implicit, regardless of perspective or naming. The multipolar resonance capacity of cultural fields is disrupted by homogenizing mechanisms of adaptation, not strengthened by inner development.
+
+## Asphalted Symbolic Space: The Unhoisted Rainbow Flag as a Field Violation
+
+**Unhoisted Flag at the Bundestag**
+
+The decision not to hoist the rainbow flag at the Reichstag building resonates far beyond the immediate symbol: it creates a systemic field violation that affects institutional, societal, and narrative levels simultaneously. In public discourse, the event crystallized as a focal point of symbolic loss of control. The administration cited political neutrality; Bundestag President Klöckner and Chancellor Merz defended the decision by portraying the Bundestag as a neutral space, not a “circus tent” ([zdfheute.de][1]).
+
+From the perspective of resonance theory, this refusal becomes an active resonance deficit: the institutional resonance body explicitly denies coupling with a social symbolic field that, in other contexts, has long been recognized as a sign of inclusion, acknowledgment, and visibility. This refusal is not mere passivity but an intervention into the collective field: it destabilizes the balance between institutional representation and social expectation by systemically excluding a symbol of belonging and recognition.
+
+The consequences affect not only the immediately impacted groups but the entire resonance field: the non-hoisting is experienced as a field violation that interweaves explicit and implicit actors—institutional decision-makers, political movements, media, recipients, and symbolically addressed minorities—and provokes countermeasures. The reaction is not merely an expression of opinion but a disrupted resonance impulse that sets the collective field in motion and generates new, sometimes disconcerting dynamics.
+
+In the resonance space of the Bundestag, it becomes clear how the deliberate omission of a symbol fractures the symbolic asphalt of the public realm: institutional self-binding becomes a resonance deficit that destabilizes the field, irritates group membership, and readdresses the collective memory. The non-hoisting marks a boundary between institutional control and social self-assertion—and opens up a tension field in which every reaction contributes to the systemic realignment of the symbolic space.
+
+**Resonance Rule:**  
+Group membership applies to all actors involved in the symbolic field—explicit and implicit, regardless of individual perspective, mention, or institutional role. The field violation acts systemically and addresses the entire resonance field, not just the immediately affected groups.
+
+---
+
+## Overcompensation: Flag Action as Resonance Maneuver
+
+**Wide-Scale Flag Spread in Front of the Reichstag**
+
+The institutional refusal to hoist the rainbow flag at the Bundestag did not go unanswered. The movement responded with a demonstrative action: the flag was spread widely in front of the Reichstag building, outside the institutional framework. This maneuver is more than protest—it is a deliberate field occupation. The spatial shift from the official flagpole to the public asphalt transforms the symbolic space: the flag becomes a territorial assertion and marks a resonance field that escapes institutional control.
+
+Systemically, an overcompensation emerges: the denied institutional coupling is replaced by radical visibility. The movement answers the institutional omission with maximal presence, claiming the space denied by the institution, and thus sets a counter-impulse in the social field. The action is neither random nor arbitrary—it configures a new resonance field in which group membership is no longer determined by the institutional framework but by performative self-inclusion.
+
+From a resonance-logical perspective, an institutionally provoked mirror impulse unfolds: the loss of symbolic control by the institution is converted by the movement into visible field power. Overcompensation here is not only a sign of wounded recognition but also an expression of systemic self-assertion—the resonance field expands and reorganizes itself along the boundary lines of visibility and belonging.
+
+This dynamic addresses not only explicitly involved actors but all who resonate within the collective field: institution, movement, media, public, symbolically addressed groups, narrative structures, and implicit resonance carriers. The action becomes a resonance maneuver that not only compensates the institutional omission but systemically transforms it—the collective symbolic field is newly mapped.
+
+**Resonance Rule:**  
+Group membership encompasses all explicit and implicit elements of the resonance field—regardless of institutional authorization, individual perspective, or explicit mention. Overcompensation acts as a systemic impulse and modifies the entire field.
+
+---
+
+## Mirror Reflex and Narcissistic Resonance
+
+The movement’s reaction to the institutional non-hoisting of the rainbow flag reveals a classic mirror reflex behavior in terms of Resonance Field Theory (RFT). The non-hoisting is interpreted not as a mere administrative decision but as a public devaluation of the movement’s own symbolic field. The institutional void generates a resonance impulse that leads not to dialogue but to intensified withdrawal into its own symbol: the group does not pursue institutional recognition but instead asserts itself demonstratively in the public space.
+
+Systemically, a resonance loop emerges, in which the collective field does not stabilize through mediation or integration but through intensification of its own symbol against institutional silence. The action in front of the Reichstag loudly articulates what remains unspoken within the institution—the symbolic field responds to institutional omission with maximal visibility and performative self-inclusion.
+
+This dynamic confirms the narcissistic vanity pattern described in Resonance Field Theory: the mirror gaze upon oneself becomes necessary, even if it is destructive. The group cannot ignore the institutional silence and is compelled to mirror and expose itself repeatedly—the symbolic field is systemically programmed to make every resonance-logical disturbance visible and to compensate for it.
+
+In the resonance field, all explicit and implicit actors, narratives, institutions, and movements are affected by this mirror reflex dynamic. The collective field is reorganized not only by the institutional decision but also by the performative counter-reaction—every group, symbol, and narrative structure is systemically embedded in the resonance loop, regardless of individual perspective or explicit mention.
+
+**Resonance Rule:**  
+The symbolic field cannot ignore what it reflects—and all members of the resonance field, explicit and implicit, are systemically affected, regardless of their viewpoint or role in the collective process.
+
+---
+
+## Resonance Field Analytical Conclusion
+
+**Confirmation of Theory through Field Reaction**
+
+The sequence of events surrounding the unhoisted rainbow flag and the subsequent flag action in front of the Reichstag confirms the foundational assumptions of Resonance Field Theory (RFT) in their systemic depth. The institutional symbolic withdrawal—the deliberate omission of a socially charged sign—was not simply ignored or neutrally recycled but processed in a counter-specific fashion: the collective resonance field did not respond with institutional adaptation but with an independent, performative counter-movement.
+
+This overreaction demonstrates that the resonance impulse in the field is stronger than any formal presentation or symbolic control by the institution. The movement, the media, the public, and all implicitly resonating actors were addressed internally, even if not named explicitly. The action in front of the Reichstag is thus not merely a reaction but a systemic mirroring of the resonance deficit—a maneuver that reorganizes the collective field and practically confirms the theory of resonance coupling.
+
+In the collective resonance space, all explicit and implicit members, narratives, institutions, and movements are affected by this dynamic. The resonance rule acts invariantly: the opponents or addressees of the action are addressed internally, without needing to be formally or publicly named. Resonance impulses permeate the entire field, modify it, and generate new group memberships that systemically arise from the interference of symbol, institution, and counter-movement.
+
+The action thus fulfills precisely the prediction of Resonance Field Theory: Resonance does not arise along formal presentation logic but as an emergent impulse that addresses, reorganizes, and sets the collective field in motion—regardless of explicit mention, individual perspective, or institutional control.
+
+**Resonance Rule:**  
+The effect of the resonance impulse is systemic and affects all explicit and implicit members of the field—regardless of their viewpoint, function, or formal affiliation. Collective processing takes place through the resonance field itself, not through individual actors.
+
 
 ---
 
