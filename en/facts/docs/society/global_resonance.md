@@ -135,7 +135,7 @@ The dialectic balance of visibility and inwardness affects the entire collective
 
 ---
 
-## 6. Cultures Under Compulsion to Imitate (Detailed Formulation in the Complete Resonance Field)
+## 6. Cultures Under Compulsion to Imitate 
 
 The global pressure to appear “American enlightened” acts as a systemically profound resonance disturbance on local cultures. This disturbance unfolds not linearly, but as an entangled matrix of visibility, symbolic politics, and normative self-inclusion:
 

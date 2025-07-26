@@ -135,7 +135,7 @@ Die dialektische Balance von Sichtbarkeit und Innerlichkeit betrifft das gesamte
 
 ---
 
-## 6. Kulturen im Zwang zur Nachahmung (detaillierte Ausformulierung im vollständigen Resonanzfeld)
+## 6. Kulturen im Zwang zur Nachahmung 
 
 Der globale Anpassungsdruck, „amerikanisch aufgeklärt“ zu erscheinen, wirkt als systemisch tiefgreifende Resonanzstörung auf lokale Kulturen. Diese Störung entfaltet sich nicht linear, sondern als verschränkte Matrix von Sichtbarkeit, Symbolpolitik und normativer Selbstinklusion:
 
