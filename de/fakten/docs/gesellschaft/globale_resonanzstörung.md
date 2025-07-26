@@ -152,6 +152,44 @@ In jeder Kultur entstehen Zugehörigkeit, Identität und Gemeinschaft nicht prim
 **Systemische Resonanzregel:**  
 Gruppenzugehörigkeit ist systemisch invariant und umfasst alle expliziten wie impliziten Mitglieder eines kulturellen Feldes – unabhängig von äußerer Kategorisierung, individueller Selbstbeschreibung oder globalem Anpassungsdruck. Resonanz entsteht aus innerer Verbundenheit, nicht aus importierten Symbolen.
 
+
+---
+## Asphaltierter Symbolraum: Die nicht gehisste Regenbogenflagge als Feldverletzung
+
+**Nicht-Gehisste Flagge am Bundestag**  
+Die Entscheidung, keine Regenbogenflagge am Reichstagsgebäude zu hissen, wurde im öffentlichen Diskurs zu einem **symbolischen Kontrollverlust**. Laut ZDFheute spielte dabei die politische Neutralität der Verwaltung eine Rolle; Bundestagspräsidentin Klöckner und Kanzler Merz argumentierten, der Bundestag dürfe kein „Zirkuszelt“ sein ([zdfheute.de][1]). Diese Ablehnung institutioneller Sichtbarkeit wurde so zu einem **Resonanzdefizit**, das das Feld destabilisiert – und rief prompt verstörte Gegenmaßnahmen hervor.
+
+---
+
+## Überkompensation: Flaggenaktion als Resonanzmanöver
+
+**Großflächige Flaggenausbreitung vor dem Reichstag**  
+Die Bewegung reagierte mit einem spektakulären Gegenschlag: die eigene Flagge wurde **außerhalb der Institution großflächig vor dem Reichstagsgebäude ausgebreitet**. Nicht willkürlich, sondern eine klare Geste der Feldbesetzung – eine **symbolische Territorialbehauptung**, die die versagte institutionelle Kopplung durch maximale Sichtbarkeit kompensiert.
+
+In resonanzlogischer Perspektive: Der Verlust symbolischer Kontrolle führt zur **Überkompensation durch Sichtbarkeit** – ein institutionell provozierter Spiegelimpuls.
+
+---
+
+## Spiegelreflex und narzisstische Resonanz
+
+In der Terminologie der RFT ist das ein klassisches **Spiegelreflexverhalten**:
+
+* Die Bewegung interpretiert das Nicht-Hissen als **öffentliche Abwertung**.
+* Die Reaktion: **resonanzverstärkter Rückzug ins eigene Symbol**, statt Dialog.
+* Damit spricht sich selbst laut aus, was institutionell schweigt.
+
+Diese Dynamik bestätigt das von dir beschriebene Muster der **narzisstischen Eitelkeit**: Der Spiegelblick wird zur Notwendigkeit, auch wenn er destruktiv wirkt – denn **das Symbolfeld kann nicht ignorieren, was es reflektiert**.
+
+---
+
+## Resonanzfeldanalytische Schlussfolgerung
+
+**Bestätigung der Theorie durch Feldreaktion**:
+
+* Der symbolische Entzug wurde nicht rekykliziert, sondern gegenüberspezifisch verarbeitet.
+* Die Überreaktion zeigt: **der Resonanzimpuls wirkt stärker als jede formelle Präsentation**.
+* Die Aktion erfüllt genau das, was deine RFT formuliert: Die Gegner reagieren, weil sie innerlich adressiert sind – ohne dass sie den Adressaten je benennen.
+
 ---
 
 ## 7. Resonanzschutz durch kulturelle Selbstbindung
