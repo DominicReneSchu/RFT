@@ -135,22 +135,47 @@ The dialectic balance of visibility and inwardness affects the entire collective
 
 ---
 
-## 6. Cultures Under Pressure to Imitate
+## 6. Cultures Under Compulsion to Imitate (Detailed Formulation in the Complete Resonance Field)
 
-The global pressure to appear “Americanly enlightened” forces cultures worldwide into publicly visible adaptation rituals:
+The global pressure to appear “American enlightened” acts as a systemically profound resonance disturbance on local cultures. This disturbance unfolds not linearly, but as an entangled matrix of visibility, symbolic politics, and normative self-inclusion:
 
-- **Public Compulsory Rituals:** Rainbow affirmations, language censorship, performative group categories become the global standard. Companies, institutions, media, educational systems, and individuals are systemically embedded in these practices—regardless of inner conviction or cultural fit.
-- **Devaluation of Historical Forms:** Family, religious, or aesthetic forms of integration that have developed in local resonance fields are labeled as backward or problematic. Both implicit and explicit carriers of these forms—traditions, rituals, communities, arts, language—lose societal appreciation.
-- **Symbolic Politics Without Connection:** Diversity quotas, anti-racist gestures, gender labels, and other symbolic actions are adopted without being embedded in one’s own cultural history, experiential structure, or resonance logic. Local actors, narratives, and inner development cycles are overlaid or fragmented.
+### Public Compulsory Rituals as Resonance Field Standard
 
-Cultures that refuse this externalization and pressure to adapt are considered backward, regressive, or dangerous—even if they are internally **more resonant, harmonious, or mature** than the exported model. Thus, the global resonance matrix is not multipolar but is homogenized and shaped by systemic group attributions from the US conflict model.
+- **Systemic Inclusion:** Corporations, institutions, media, educational systems, and individuals—regardless of internal conviction or cultural fit—are embedded in publicly visible adaptation practices. Resonance-field participation in rainbow declarations, language censorship, and performative group categories becomes the global standard, impacting all explicit and implicit group members.
+- **Ritualized Visibility:** The level of action ranges from institutionally mandated diversity statements and public gestures to algorithmically enforced language codes. These rituals are not expressions of inner resonance but acts of systemic adaptation within the global resonance field.
+- **Invariant Group Membership:** The resonance rule applies: Anyone moving within the field—whether participating, rejecting, or uninvolved—is systemically part of the group process and its feedback effects.
 
-### Addendum: Group Belonging as Resonance Structure
+### Devaluation of Historical Forms – Loss of Local Resonance
 
-In each culture, belonging, identity, and community are not formed primarily through external markers, but through shared resonance patterns, values, rituals, and inner integration. External group categories such as race, gender, or identity can erode local structures of belonging, prevent resonance, and weaken collective self-regulation. Both explicit and implicit members of the cultural resonance field—keepers of tradition, minorities, individuals, rituals, narratives, inner images—are equally affected by this disturbance.
+- **Resonance Field Fragmentation:** Local forms of integration such as familial, religious, or aesthetic traditions are marked as regressive and lose social appreciation. Fragmentation affects explicit carriers (communities, rituals, language, arts) as well as implicit resonance structures (inner images, values, narrative patterns).
+- **Systemic Stigmatization:** Devaluation acts as a cross-group impulse: Not only explicit representatives of traditional forms, but also those who carry or unconsciously reproduce these forms internally are affected by social degradation.
+- **Collective Self-Regulation:** The weakening of local resonance forms leads to a reduction in collective self-regulation and inner development. The global symbolic field dominates local cycles of development and processes of internal integration.
 
-**Systemic Resonance Rule:**  
-Group belonging is systemically invariant and includes all explicit and implicit members of a cultural field—regardless of external categorization, individual self-description, or global pressure to adapt. Resonance arises from inner connectedness, not from imported symbols.
+### Symbolic Politics Without Local Grounding – Externalization of the Resonance Field
+
+- **Adoption of Symbolic Acts:** Diversity quotas, anti-racist gestures, gender labels, and other globally exported symbolic acts are adopted without being embedded in one’s own cultural experience structure or resonance logic.
+- **Overwriting Local Narratives:** Local actors, narratives, and cycles of development are overwritten, fragmented, or rendered invisible by imported symbolic politics.
+- **Resonance Field Disturbance:** Externalization acts as a systemic resonance disturbance, in which local belonging structures are replaced by global group categories. The resonance matrix becomes homogenized; multipolarity, complexity, and local maturation are lost.
+
+### Sanctioning of Refusal – Homogenization Through Systemic Group Assignment
+
+- **Systemic Devaluation:** Cultures that refuse externalization and adaptation pressure are considered regressive, backward, or dangerous—regardless of how resonant, harmonious, or mature their internal structures may be.
+- **Homogenization of the Resonance Matrix:** The global resonance field is shaped by systemic group assignments from the US conflict model, not by multipolar development. Group membership is defined not by inner connectedness, but by externally visible markers and acts of adaptation.
+
+---
+
+### Supplement: Group Membership as Resonance Structure (Precise Deepening)
+
+In every cultural resonance field, belonging, identity, and community arise not through external markers, but through shared resonance patterns, common values, rituals, and inner integration. The resonance rule operates systemically invariant:
+
+- **Inclusive Structure:** Explicit and implicit members of the cultural field—keepers of tradition, minorities, individuals, rituals, narrative patterns, inner images—are equally part of the resonance structure and affected by global disturbances.
+- **Categorical Disintegration:** External group categories such as race, gender, or identity decompose local resonance structures, prevent inner connectedness, and weaken collective self-regulation.
+- **Systemic Resonance Rule:** Group membership is systemically invariant and includes all explicit and implicit members of a cultural field—regardless of external categorization, individual self-description, or global adaptation pressure. Resonance arises from inner connectedness, not from imported symbols.
+
+---
+
+**Resonance Field Conclusion:**  
+The global symbolic field acts as an asphalted resonance space, whose systemic group assignments level local complexity. The resonance rule remains: Group membership is systemically invariant and includes all members—explicit and implicit, regardless of perspective or naming. The multipolar resonance capacity of cultural fields is disrupted by homogenizing mechanisms of adaptation, not strengthened by inner development.
 
 ---
 
