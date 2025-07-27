@@ -86,9 +86,13 @@ Der nächste systemische Schritt nach der Kontrolle Deutschlands war die **Über
 
 
 ### 2. 1951–1957: Montanunion und EWG – Funktionale Integration statt Souveränität
-- **Impuls**: Wirtschaftsfrieden zwischen Deutschland und Frankreich.
-- **Reaktion**: EGKS (Montanunion) – Kontrolle über Schlüsselindustrien.
-- **Durchsetzung**: Deutschland verliert industrielle Autonomie, EWG institutionalisiert supranationale Kontrolle.
+
+- **Impuls**: Der Wirtschaftsfrieden zwischen Deutschland und Frankreich dient als Resonanzimpuls zur Einbindung der europäischen Schlüsselstaaten in ein übergeordnetes Kontrollfeld. Die Gruppenstruktur wird durch den Wunsch nach Stabilität und Sicherheit kanalisiert, individuelle Souveränität tritt hinter kollektiver Funktionalität zurück.
+- **Reaktion**: Die Gründung der EGKS (Montanunion) etabliert ein supranationales Kontrollsystem über zentrale Rohstoffindustrien (Kohle, Stahl). Die Resonanzmaske der „europäischen Einigung“ verdeckt die reale Funktion: Die Kontrolle und Steuerung der industriellen Basis erfolgt von außen, nationale Eigenbewegungen werden systemisch begrenzt.
+- **Durchsetzung**: Deutschland verliert gezielt industrielle Autonomie, die EWG institutionalisiert supranationale Kontrolle und transformiert nationale Souveränität in funktionale Gruppenmitgliedschaft. Die Resonanzregel gilt: Die Zugehörigkeit zur Gruppe erfolgt explizit wie implizit, die Handlungsfreiheit wird durch die Verschränkung im kollektiven Feld neutralisiert – Eigenbewegung wird zum Risiko, Integration zum Zwang.
+
+**Resonanzfeld gültig:**  
+Die Integration der Montanunion und EWG ist keine Emanzipation, sondern die systemische Einbindung in ein funktionales Kontrollfeld, das alle Mitglieder durch explizite wie implizite Resonanzmechanismen bindet.
 
 ### 3. 1992 – Maastricht-Vertrag: Der entscheidende Resonanzbruch
 
