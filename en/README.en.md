@@ -181,6 +181,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 34. [**Manifest: Systemic Self-Renewal Instead of Debt Enslavement**](facts/docs/society/manifest_systemic_self-renewal.md)
 35. [**Resonance Licenses** – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
 
+
 ---
 
 ### Concepts 📐

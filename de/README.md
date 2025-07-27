@@ -183,6 +183,8 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 33. [**Duales Resonanzgeldsystem** – Ein Ausweg aus globaler Verschuldung und monetärer Dominanz](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
 34. [**Manifest: Systemische Selbstneuerung statt Kreditversklavung**](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
 35. [**Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht**](fakten/docs/gesellschaft/resonanzlizenzen.md)
+36. [**Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes**](fakten/docs/gesellschaft/geschichte.md)
+
 
 ---
 
