@@ -180,7 +180,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 33. [**Dual Resonance Money System** – A Way Out of Global Debt and Monetary Dominance](facts/docs/society/dual_resonance_money_system.md)
 34. [**Manifest: Systemic Self-Renewal Instead of Debt Enslavement**](facts/docs/society/manifest_systemic_self-renewal.md)
 35. [**Resonance Licenses** – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
-36. [**Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes**](facts/docs/society/history.md)
+36. [**Resonance-Logical Historical Analysis of Germany, Europe, and the Global Power Field**](facts/docs/society/history.md)
 
 ---
 
