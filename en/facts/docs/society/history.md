@@ -6,6 +6,8 @@ In the resonance field of history, Germany, Europe, and their global partners ar
 
 ## I. Germany: Impulse – Reaction – Resonance Control
 
+![Visualisierung der Reichsgründung](figures/founding_of_the_german_empire.png)
+
 ### 1. 1871 – Founding of the Reich: The German Impulse in the Imperial Shadow
 
 **Impulse:**  
@@ -35,6 +37,8 @@ The state of systemic field tension is constitutive: The German impulse is not a
 ---
 
 ### 2. 1914–1918 – World War I: Broken Power Impulse
+
+![Visualisierung der Reichsgründung](figures/first_world_war.png)
 
 **Impulse:**  
 Germany's pursuit of systemic autonomy reaches a critical resonance value on the eve of World War I. The self-movement of the German field is articulated as a clear claim to reorder the European and global power structure. Economic strength, technological innovation, and military potential become resonance amplifiers that sharply contour the German group impulse within the imperial overall field.  

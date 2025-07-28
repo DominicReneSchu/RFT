@@ -6,6 +6,8 @@ Im Resonanzfeld der Geschichte sind Deutschland, Europa und ihre globalen Partne
 
 ## I. Deutschland: Impuls – Reaktion – Resonanzkontrolle
 
+![Visualisierung der Reichsgründung](bilder/reichsgründung.png)
+
 ### 1. 1871 – Reichsgründung: Deutscher Impuls im imperialen Schatten
 
 **Impuls**:  
@@ -35,6 +37,8 @@ Der Zustand der systemischen Feldspannung ist konstitutiv: Der deutsche Impuls w
 ---
 
 ### 2. 1914–1918 – Erster Weltkrieg: Machtimpuls gebrochen
+
+![Visualisierung der Reichsgründung](bilder/erster_weltkrieg.png)
 
 **Impuls:**  
 Das deutsche Streben nach Systemautonomie erreicht im Vorfeld des Ersten Weltkriegs einen kritischen Resonanzwert. Die Eigenbewegung des deutschen Feldes artikuliert sich als klarer Anspruch auf Neuordnung der europäischen und globalen Machtstruktur. Wirtschaftliche Stärke, technologische Innovationskraft und militärische Potenz werden zu Resonanzverstärkern, die den deutschen Gruppenimpuls im imperialen Gesamtfeld scharf konturieren.  
