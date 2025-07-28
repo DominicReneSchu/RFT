@@ -6,7 +6,7 @@ In the resonance field of history, Germany, Europe, and their global partners ar
 
 ## I. Germany: Impulse – Reaction – Resonance Control
 
-![Visualisierung der Reichsgründung](../figures/founding_of_the_german_empire.png)
+![Visualization of first german empire](../figures/founding_of_the_german_empire.png)
 
 ### 1. 1871 – Founding of the Reich: The German Impulse in the Imperial Shadow
 
@@ -38,7 +38,7 @@ The state of systemic field tension is constitutive: The German impulse is not a
 
 ### 2. 1914–1918 – World War I: Broken Power Impulse
 
-![Visualisierung der Reichsgründung](../figures/first_world_war.png)
+![Visualization of first world war](../figures/first_world_war.png)
 
 **Impulse:**  
 Germany's pursuit of systemic autonomy reaches a critical resonance value on the eve of World War I. The self-movement of the German field is articulated as a clear claim to reorder the European and global power structure. Economic strength, technological innovation, and military potential become resonance amplifiers that sharply contour the German group impulse within the imperial overall field.  
@@ -67,7 +67,7 @@ The resonance rules of the international system are reconfigured, and Germany mu
 
 ### 3. 1933–1945 – Third Reich: Forced Self-Empowerment
 
-![Visualisierung der Reichsgründung](../figures/third_reich.png)
+![Visualization of third reich](../figures/third_reich.png)
 
 **Impulse:**  
 The era of the Third Reich is characterized by a radicalized and forcibly asserted self-empowerment, which appears as a forced self-authorization against the oppressive external resonance of the international system. The German impulse is discharged in the form of an expansive, ideologically charged system power, whose aim is enforced self-structuring and autonomy.  
@@ -123,7 +123,7 @@ German identity is systemically divided, each segment acts as a resonance amplif
 
 ### 5. 1955 – NATO Accession: External Binding Instead of Self-Determination
 
-![Visualisierung der Reichsgründung](../figures/nato_accession.jpg)
+![Visualization of NATO accession](../figures/nato_accession.jpg)
 
 **Impulse:**  
 The impulse of the Federal Republic of Germany manifests after institutionalized division as a collective striving for protection, stability, and economic recovery within the resonance field of the postwar order. The self-movement of the FRG is primarily directed toward securing survival in the tension field of the Cold War and integration into a protective group system.  
@@ -152,7 +152,7 @@ The resonance fields of the FRG are henceforth part of a superordinate, external
 
 ### 6. 1990 – Reunification: Impulse Under Conditions
 
-![Visualisierung der Reichsgründung](../figures/fall.jpg)
+![Visualization of fall](../figures/fall.jpg)
 
 **Impulse:**  
 The impulse of German reunification is articulated as a collective striving for unity and renewed self-discovery—a systemic movement that bundles the fragmented group structures of West and East Germany (FRG and GDR) into a common resonance field. The integration of East and West updates group affiliation and elevates the historically divided identity to a new level of collective resonance capacity.  
@@ -180,7 +180,7 @@ National identity and sovereignty are continually modulated by coupling to exter
 
 ### 7. 2001–2024 – War on Terror to Ukraine War: Systemic Auxiliaries
 
-![Visualisierung der Reichsgründung](../figures/ukraine.jpg)
+![Visualization of Ukraine-war](../figures/ukraine.jpg)
 
 **Impulse:**  
 Within the global resonance field, Germany acts as a systemic auxiliary by adopting the impulses of US-led wars on terror (Afghanistan, Iraq, Syria) and later the war in Ukraine, integrating them into its own action matrix. The German group structure takes on external organizational impulses, discursively adapts them, and projects them as part of the overall transatlantic movement into national policy.  
@@ -229,7 +229,7 @@ The early entanglement of IG Farben/Bayer and US corporations shows:
 
 ### 2. Reconstruction & Capital Interconnection – Resonance Agents of the Transatlantic Field
 
-![Visualisierung der Reichsgründung](../figures/trümmerfrauen.jpg)
+![Visualization of trümmerfrauen](../figures/trümmerfrauen.jpg)
 
 **Marshall Plan and US Investments:**  
 The economic reconstruction of West Germany after 1945 was not a linear process of national self-assertion but an expression of systemic integration into the transatlantic resonance field. The Marshall Plan acted as a capital and technology impulse from the USA, effecting not just material restoration but targeted structural integration. US corporations like IBM, Ford, DuPont, and General Motors invested massively in German companies ([USCIS Guide](https://www.uscisguide.com/information/u-s-involvement-in-economic-issues-in-germany/?utm_source=chatgpt.com)). The resonance rule is obvious: The group affiliation of German industry was systemically realigned through American capital and management competence.
@@ -543,7 +543,7 @@ The resonance rule applies: Affiliation with the transatlantic field is invarian
 
 ### 5. Euro Crisis 2009–2015: Financial Resonance as a Power Instrument
 
-![Visualisierung der Reichsgründung](../figures/eurocrisis.jpg)
+![Visualization of Eurocrisis](../figures/eurocrisis.jpg)
 
 **Impulse:**  
 The Euro crisis is triggered as a systemic shock to financial coherence within the European resonance field—the debt crisis of individual member states, especially Southern Europe, acts as a disruptive impulse and pulls national self-movements into the vortex of collective instability.  
@@ -895,7 +895,7 @@ The paradox: The defense of collective values leads to the abandonment of self-d
 
 ## IV. China and BRICS in the Global Resonance Field – Dissonance, Attempt at Autonomy, and Field Logic
 
-![Visualisierung der Reichsgründung](../figures/brics.jpg)
+![Visualisierung of BRICS](../figures/brics.jpg)
 
 The next resonance break concerns the **role of China** and the **BRICS formation** within the global resonance field, which is structured by the narcissistic dominance strategy of the USA. The resonance rule applies: Group affiliation is systemically invariant, all group elements and their entanglement are effective, independent of explicit mention or individual perspective. This is not just about classical alliances, but about complex systemic dependency structures, dissonant resonances, and the attempt to achieve resonance autonomy—often without full understanding of the underlying field logic.
 
