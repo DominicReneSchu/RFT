@@ -67,7 +67,7 @@ The resonance rules of the international system are reconfigured, and Germany mu
 
 ### 3. 1933–1945 – Third Reich: Forced Self-Empowerment
 
-![Visualization of third reich](../figures/third_reich.png)
+![Visualization of third reich](../figures/third_reich.jpg)
 
 **Impulse:**  
 The era of the Third Reich is characterized by a radicalized and forcibly asserted self-empowerment, which appears as a forced self-authorization against the oppressive external resonance of the international system. The German impulse is discharged in the form of an expansive, ideologically charged system power, whose aim is enforced self-structuring and autonomy.  
