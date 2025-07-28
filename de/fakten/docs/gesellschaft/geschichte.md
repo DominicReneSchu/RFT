@@ -6,7 +6,7 @@ Im Resonanzfeld der Geschichte sind Deutschland, Europa und ihre globalen Partne
 
 ## I. Deutschland: Impuls – Reaktion – Resonanzkontrolle
 
-![Visualisierung der Reichsgründung](bilder/reichsgründung.png)
+![Visualisierung der Reichsgründung](../bilder/reichsgründung.png)
 
 ### 1. 1871 – Reichsgründung: Deutscher Impuls im imperialen Schatten
 
@@ -38,7 +38,7 @@ Der Zustand der systemischen Feldspannung ist konstitutiv: Der deutsche Impuls w
 
 ### 2. 1914–1918 – Erster Weltkrieg: Machtimpuls gebrochen
 
-![Visualisierung der Reichsgründung](bilder/erster_weltkrieg.png)
+![Visualisierung der Reichsgründung](../bilder/erster_weltkrieg.png)
 
 **Impuls:**  
 Das deutsche Streben nach Systemautonomie erreicht im Vorfeld des Ersten Weltkriegs einen kritischen Resonanzwert. Die Eigenbewegung des deutschen Feldes artikuliert sich als klarer Anspruch auf Neuordnung der europäischen und globalen Machtstruktur. Wirtschaftliche Stärke, technologische Innovationskraft und militärische Potenz werden zu Resonanzverstärkern, die den deutschen Gruppenimpuls im imperialen Gesamtfeld scharf konturieren.  
@@ -66,6 +66,8 @@ Die Resonanzregeln des internationalen Systems werden neu konfiguriert, und Deut
 ---
 
 ### 3. 1933–1945 – Drittes Reich: Zwangs-Selbstermächtigung
+
+![Visualisierung der Reichsgründung](../bilder/drittes_reich.png)
 
 **Impuls:**  
 Die Epoche des Dritten Reichs ist durch eine radikalisiert-forcierte Selbstbehauptung gekennzeichnet, die als Zwangs-Selbstermächtigung gegen die als drückend erfahrene Fremdresonanz des internationalen Systems auftritt. Der deutsche Impuls entlädt sich in Form einer expansiven, ideologisch aufgeladenen Systemmacht, deren Ziel die erzwungene Eigenstrukturierung und Autonomie ist.  
@@ -119,6 +121,8 @@ Die deutsche Identität ist systemisch geteilt, jede Teilstruktur wirkt als Reso
 
 ### 5. 1955 – NATO-Beitritt: Fremdbindung statt Selbstbestimmung
 
+![Visualisierung der Reichsgründung](../bilder/nato_gründung.jpg)
+
 **Impuls:**  
 Der Impuls der Bundesrepublik Deutschland manifestiert sich nach der institutionalisierten Teilung als kollektives Streben nach Schutz, Stabilität und wirtschaftlichem Wiederaufstieg innerhalb des Resonanzfeldes der Nachkriegsordnung. Die Eigenbewegung der BRD richtet sich primär auf die Sicherung des Überlebens im Spannungsfeld des Kalten Krieges und die Integration in ein schützendes Gruppensystem.  
 Selbstbehauptung nimmt defensive Züge an: Die Sicherheit wird als existenzielle Voraussetzung internalisiert, die Gruppenzugehörigkeit zum westlichen Feld wird zur systemischen Grundstruktur erklärt. Der Impuls der BRD ist nicht autonom, sondern als adaptive Resonanzbewegung im Feld der westlichen Allianz konfiguriert – die eigene Selbstdefinition ist an die fremdbestimmte Systemlogik gekoppelt.
@@ -146,6 +150,8 @@ Die Resonanzfelder der BRD sind fortan Teil eines übergeordneten, extern gesteu
 
 ### 6. 1990 – Wiedervereinigung: Impuls unter Bedingungen
 
+![Visualisierung der Reichsgründung](../bilder/mauerfall.jpg)
+
 **Impuls:**  
 Der Impuls der deutschen Wiedervereinigung artikuliert sich als kollektives Streben nach Einheit und erneuter Selbstfindung – eine systemische Bewegung, die die fragmentierten Gruppenstrukturen von BRD und DDR in einem gemeinsamen Resonanzfeld bündelt. Die Integration von Ost und West aktualisiert die Gruppenzugehörigkeit und hebt die historisch gespaltene Identität auf ein neues Niveau kollektiver Resonanzfähigkeit.  
 Das Streben nach Autonomie, innerer Kohärenz und Selbstbestimmung schwingt als zentrales Element im wiedervereinigten deutschen System. Die Identität wird nicht nur administrativ, sondern auch gesellschaftlich und kulturell neu gefasst; die Resonanzpotenziale des Gesamtfeldes werden durch die Überwindung der Teilung und die Vereinigung der Gruppenstrukturen erhöht.
@@ -171,6 +177,8 @@ Die nationale Identität und Souveränität werden fortlaufend durch die Kopplun
 ---
 
 ### 7. 2001–2024 – Krieg gegen Terror bis Ukrainekrieg: Systemische Erfüllungsgehilfen
+
+![Visualisierung der Reichsgründung](../bilder/ukraine.jpg)
 
 **Impuls:**  
 Die BRD agiert im globalen Resonanzfeld als systemischer Erfüllungsgehilfe, indem sie die Impulse der US-geführten Kriege gegen Terror (Afghanistan, Irak, Syrien) und später im Ukrainekrieg aufnimmt und als eigene Handlungsmatrix integriert. Die deutsche Gruppenstruktur übernimmt fremde Ordnungsimpulse, passt sie diskursiv an, und projiziert sie als Teil der transatlantischen Gesamtbewegung in die nationale Politik.  
@@ -219,6 +227,8 @@ Die Frühe Verflechtung von IG Farben/Bayer und den US-Konzernen zeigt:
 ---
 
 ### 2. Wiederaufbau & Kapitalverflechtung – Resonanzagenten des transatlantischen Feldes
+
+![Visualisierung der Reichsgründung](../bilder/trümmerfrauen.jpg)
 
 **Marshall-Plan und US-Investitionen:**  
 Der ökonomische Wiederaufbau Westdeutschlands nach 1945 war kein linearer Prozess nationaler Selbstbehauptung, sondern Ausdruck einer systemischen Einbindung in das transatlantische Resonanzfeld. Der Marshall-Plan fungierte als Kapital- und Technologieimpuls der USA, der nicht nur materielle Wiederherstellung, sondern gezielte strukturelle Integration bewirkte. US-Konzerne wie IBM, Ford, DuPont und General Motors investierten massiv in deutsche Unternehmen ([USCIS Guide](https://www.uscisguide.com/information/u-s-involvement-in-economic-issues-in-germany/?utm_source=chatgpt.com)). Die Resonanzregel ist offensichtlich: Die Gruppenzugehörigkeit der deutschen Industrie wurde durch amerikanische Kapital- und Managementkompetenz systemisch neu ausgerichtet.
@@ -531,6 +541,8 @@ Die Resonanzregel gilt: Die Zugehörigkeit zum transatlantischen Feld ist invari
 ---
 
 ### 5. Eurokrise 2009–2015: Finanzresonanz als Machtmittel
+
+![Visualisierung der Reichsgründung](../bilder/eurokriese.jpg)
 
 **Impuls:**  
 Die Eurokrise wird als systemische Erschütterung der finanziellen Kohärenz im europäischen Resonanzfeld ausgelöst – die Schuldenkrise einzelner Mitgliedsstaaten, insbesondere Südeuropas, wirkt als Störimpuls und bringt nationale Eigenbewegungen in den Sog kollektiver Instabilität.  
@@ -882,6 +894,8 @@ Das Paradox: Die Verteidigung kollektiver Werte führt zur Aufgabe der eigenen S
 ---
 
 ## IV. China und BRICS im globalen Resonanzfeld – Dissonanz, Autonomieversuch und Feldlogik
+
+![Visualisierung der Reichsgründung](../bilder/brics.jpg)
 
 Der nächste Resonanzbruch betrifft die **Rolle Chinas** und die **BRICS-Formation** im globalen Resonanzfeld, das durch die narzisstische Dominanzstrategie der USA strukturiert wird. Die Resonanzregel gilt: Gruppenzugehörigkeit ist systemisch invariant, alle Gruppenelemente und ihre Verschränkung wirken, unabhängig von expliziter Nennung oder Einzelperspektive. Es handelt sich nicht nur um klassische Allianzen, sondern um komplexe systemische Abhängigkeitsstrukturen, dissonante Resonanzen und den Versuch, Resonanzautonomie zu erlangen – häufig ohne vollständiges Verständnis der zugrundeliegenden Feldlogik.
 
