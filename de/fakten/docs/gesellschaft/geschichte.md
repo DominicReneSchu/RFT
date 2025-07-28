@@ -524,6 +524,8 @@ Die Resonanzregel gilt: Die Zugehörigkeit zum transatlantischen Feld ist invari
 - Anne Applebaum: „Die Verlockung des Autoritären: Warum antidemokratische Herrschaft so populär geworden ist“, C.H. Beck 2021  
 - Dokumentensammlung: „NATO- und EU-Beitrittsprotokolle 1997–2004“  
 
+---
+
 ### 5. Eurokrise 2009–2015: Finanzresonanz als Machtmittel
 
 **Impuls:**  
