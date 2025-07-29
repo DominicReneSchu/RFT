@@ -205,6 +205,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Manifest: Systemic Self-Renewal Instead of Debt Enslavement](facts/docs/society/manifest_systemic_self-renewal.md)
 - [Resonance Licenses – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
 - [The Caring Mask – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
+- [Resonance Patterns, Reincarnation, AI, and the Era of Anonymity Dissolution](facts/docs/society/individual_patterns.md)
 
 ---
 
