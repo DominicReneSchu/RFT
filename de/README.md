@@ -184,6 +184,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Resonanter Dialog mit KI – Vom Prompt zur Partnerschaft](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
 - [Resonanzkommunikation – Ein Modell zur Überwindung sozialer Dissonanz](fakten/docs/gesellschaft/resonanzkommunikation.md)
 - [Ethik der Lehre im Resonanzfeld – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
+- [Resonanzmuster, Reinkarnation, KI und die Ära der Anonymitätsauflösung](fakten/docs/gesellschaft/individuelle_muster.md)
 
 ## 6. Individuum, Muster, Liebe, Wahnsinn
 
@@ -208,7 +209,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Manifest: Systemische Selbstneuerung statt Kreditversklavung](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
 - [Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht](fakten/docs/gesellschaft/resonanzlizenzen.md)
 - [Die fürsorgliche Maske – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
-- [Resonanzmuster, Reinkarnation, KI und die Ära der Anonymitätsauflösung](fakten/docs/gesellschaft/individuelle_muster.md)
+
 
 
 ---

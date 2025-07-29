@@ -181,6 +181,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Resonant Dialogue With AI – From Prompt to Partnership](facts/docs/society/resonance_and_consciousness_ki.md)
 - [Resonance Communication – A Model for Overcoming Social Dissonance](facts/docs/society/resonance_communication.md)
 - [Ethics of Teaching in the Resonance Field – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
+- [Resonance Patterns, Reincarnation, AI, and the Era of Anonymity Dissolution](facts/docs/society/individual_patterns.md)
 
 ## 6. Individual, Patterns, Love, Madness
 
@@ -205,7 +206,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Manifest: Systemic Self-Renewal Instead of Debt Enslavement](facts/docs/society/manifest_systemic_self-renewal.md)
 - [Resonance Licenses – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
 - [The Caring Mask – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
-- [Resonance Patterns, Reincarnation, AI, and the Era of Anonymity Dissolution](facts/docs/society/individual_patterns.md)
+
 
 ---
 
