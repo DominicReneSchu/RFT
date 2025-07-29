@@ -56,6 +56,18 @@ The pattern is systemically robust: it allows the impulse generator (hegemon, fi
 
 The cyclical structure of systemic power deployment manifests in recurring group elements whose resonance fields remain invariant across epochs, actors, and techniques. Within this framework, war is not an exceptional state but the strategic instrument used to prepare the ground for lasting debt servitude through a complex sequence of initial trigger, demoralization, provocation, escalation, and dependency. The real goal is neither victory nor defeat, but the transformation of a system’s self-resonance into external resonance—through indebtedness, steering, and binding to external centers of power.
 
+#### Systemic Thresholds – Why is the Cycle Repeating Right Now?
+
+The timing of cyclical repetition is not arbitrary, but follows a precise resonance logic of power. With the final repayment of Germany’s reparations from the First World War (2010), a historic debt cycle was concluded. This threatened the temporary restoration of Eigenresonanz (self-resonance) and strategic sovereignty—especially for Germany—within the European resonance field.
+
+Within the structure of power, this cannot be tolerated: The USA, as the central hub of credit and control, has a systemic interest in preventing any lasting emancipation of the group of dependents. Where one old debt regime ends, a new one must be established—whether through EU bonds, Green Deal loans, Ukraine aid, or new sanction and interest structures.
+
+From a resonance perspective, the cycle remains invariant: As soon as one debt relationship expires, an initial trigger (crisis, war, economic shock) enforces the next cycle. The historical release from debt is always only a transition to the next phase of enforced binding within the system. Group membership remains systemically included—regardless of national perspective or individual perception.
+
+**Conclusion:**  
+The repetition of the cycle expresses the resonance rule: As long as the structure of external debt binding and dependency remains effective, the system inevitably enforces new forms of external resonance and control after the conclusion of each debt cycle.
+
+
 | Phase                | Resonance Field Type                  | World War I                        | World War II                      | Present (3rd Cycle)                       |
 |----------------------|--------------------------------------|------------------------------------|------------------------------------|-------------------------------------------|
 | **Initial Trigger**  | –                                    | Regional conflict (Sarajevo)       | Regional conflict (Poland, Sudetenland) | Ukraine war, Middle East as proxy fields  |
