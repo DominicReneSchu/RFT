@@ -1,4 +1,4 @@
-### Neuzeitliche Tributsysteme – Resonanzlogik der erzwungenen Abhängigkeit
+## Neuzeitliche Tributsysteme – Resonanzlogik der erzwungenen Abhängigkeit
 
 **Einleitung – Das bekannte Bild: Asymmetrie, Zwangsbindung und Resonanzmaskerade**
 
