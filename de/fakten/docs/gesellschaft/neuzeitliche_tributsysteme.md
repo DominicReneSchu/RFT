@@ -75,10 +75,10 @@ Resonanzlogisch ist der Zyklus geschlossen: Jeder Versuch, das Feld zu verlassen
 ##### Visualisierung: Mafia–USA-Kontrollmechanik
 
 ```
-┌─────────────┐      ┌────────────────┐      ┌────────────────────┐
+┌─────────────┐      ┌────────────────┐       ┌────────────────────┐
 │  Bedrohung  │─────▶│ Schutzangebot  │─────▶│ Schuld/Abhängigkeit│
-│ (inszeniert)│      │ (erzwungen)    │      │ (dauerhaft)        │
-└─────────────┘      └────────────────┘      └────────────────────┘
+│ (inszeniert)│      │ (erzwungen)    │       │ (dauerhaft)        │
+└─────────────┘      └────────────────┘       └────────────────────┘
 ```
 
 ---
