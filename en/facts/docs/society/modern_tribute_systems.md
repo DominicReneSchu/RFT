@@ -74,10 +74,10 @@ In terms of resonance logic, the cycle is closed: Every attempt to leave the fie
 ##### Visualization: Mafia–USA Control Mechanism
 
 ```
-┌─────────────┐      ┌────────────────┐      ┌────────────────────┐
-│  Threat     │─────▶│ Offer of       │─────▶│ Debt/Dependency    │
-│ (staged)    │      │ Protection     │      │ (permanent)        │
-└─────────────┘      └────────────────┘      └────────────────────┘
+┌─────────────┐      ┌────────────────┐       ┌────────────────────┐
+│  Threat     │───── ▶│ Offer of      │─────▶│ Debt/Dependency    │
+│ (staged)    │      │ Protection     │       │ (permanent)        │
+└─────────────┘      └────────────────┘       └────────────────────┘
 ```
 
 ---
