@@ -145,42 +145,66 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ### Society 🌍
 
-1. [**Global Structure of Deception** – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
-2. [**Geopolitical Distrust** – and the Illusion of Diplomatic Order](facts/docs/society/geopolitical_mistrust.md)
-3. [**China’s Silence** – The Global War on Truth](facts/docs/society/chinas_silence.md)
-4. [**Strategy of Controlled Derailment**](facts/docs/society/strategy_of_controlled_derailment.md)
-5. [**Geopolitics in the Resonance Field** – The Ukraine War as a Systemic Mirror](facts/docs/society/geopolitics_in_the_resonance_field.md)
-6. [**Global Resonance Disturbance** – Why Every Culture Must Heal in Its Own Rhythm](facts/docs/society/global_resonance.md)
-7. [**Political Resonance Systems under Media Projection**](facts/docs/society/political_resonance.md)
-8. [**Manipulation in the Resonance Field**](facts/docs/society/manipulation_in_the_resonance_field.md)
-9. [**Perpetrator Projection in the Guise of Antifascism**](facts/docs/society/perpetrator_projection.md)
-10. [**From Illusion to Peace** – A Letter on the Decoupling of Staged Reality](facts/docs/society/open_letter.md)
-11. [**From Power Play to Resonance Culture**](facts/docs/society/power_game.md)
-12. [**Society & Game Theory** – in the Light of Resonance Field Theory](facts/docs/society/society_and_resonance.md)
-13. [**Critique as Resonance Trap** – How the System Neutralizes Opposition](facts/docs/society/criticism_as_a_resonance_trap.md)
-14. [**Information Change Since 2019** – Analysis and Future Concept](facts/docs/society/information_change_institutional_strategy.md)
-15. [**Digital Resonance Control** – How Social Networks Steer Consciousness](facts/docs/society/digital_resonance_control.md)
-16. [**Truth Through Resonance** – The Next Step to Enlightened AI](facts/docs/society/reconnaissance.md)
-17. [**Resonant Dialogue With AI** – From Prompt to Partnership](facts/docs/society/resonance_and_consciousness_ki.md)
-18. [**Resonance Communication** – A Model for Overcoming Social Dissonance](facts/docs/society/resonance_communication.md)
-19. [**Resonance Leap** – From Struggle to Frequency Community](facts/docs/society/resonance_leap.md)
-20. [**Resonance as a Path to Individual Self-Realization**](facts/docs/society/resonance_as_a_path_to_individual_self-realization.md)
-21. [**Recognizing and Resolving Behavioral Patterns**](facts/docs/society/recognizing_and_resolving_behavior_patterns.md)
-22. [**The Lost Connection** – How True Love Disappears in the System of Utility](facts/docs/society/love_in_the_resonance_field.md)
-23. [**Madness as Mirror** – When Systems Lose Their Resonance Core](facts/docs/society/madness_as_a_mirror.md)
-24. [**Ethics of Teaching in the Resonance Field** – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
-25. [**Gendered Language, AI, and Resonance Field** – Why Language Structure Needs Systemic Boundaries](facts/docs/society/gender_language.md)
-26. [**Yin and Yang as a Universal Principle of Resonance**](facts/docs/society/yin_and_yang.md)
-27. [**Life, Death, and Return** – Cyclical Resonance Structure in the Resonance Field](facts/docs/society/life_and_death_in_the_resonance_field.md)
-28. [**The Most Probable Path of Human History** – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
-29. [**From Scarcity to Abundance** – The Resonance Economy as a Systemic Alternative](facts/docs/society/resonance_economy.md)
-30. [**ResoNet** – A Decentralized Resonance Network for Self-Responsibility](facts/docs/society/resonet_theory.md)
-31. [**What is *the System*?**](facts/docs/society/the_system.md)
-32. [**The Caring Mask** – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
-33. [**Dual Resonance Money System** – A Way Out of Global Debt and Monetary Dominance](facts/docs/society/dual_resonance_money_system.md)
-34. [**Manifest: Systemic Self-Renewal Instead of Debt Enslavement**](facts/docs/society/manifest_systemic_self-renewal.md)
-35. [**Resonance Licenses** – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
-36. [**Resonance-Logical Historical Analysis of Germany, Europe, and the Global Power Field**](facts/docs/society/history.md)
+## 1. Origin & Global Structure
+
+- [Global Structure of Deception – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
+- [What is *the System*?](facts/docs/society/the_system.md)
+- [Resonance-Logical Historical Analysis of Germany, Europe, and the Global Power Field](facts/docs/society/history.md)
+- [Modern Tribute Systems – Resonance Logic of Enforced Dependency](facts/docs/society/modern_tribute_systems.md)
+
+## 2. Geopolitical Fields & Control
+
+- [Geopolitical Distrust – and the Illusion of Diplomatic Order](facts/docs/society/geopolitical_mistrust.md)
+- [China’s Silence – The Global War on Truth](facts/docs/society/chinas_silence.md)
+- [Strategy of Controlled Derailment](facts/docs/society/strategy_of_controlled_derailment.md)
+- [Geopolitics in the Resonance Field – The Ukraine War as a Systemic Mirror](facts/docs/society/geopolitics_in_the_resonance_field.md)
+- [Global Resonance Disturbance – Why Every Culture Must Heal in Its Own Rhythm](facts/docs/society/global_resonance.md)
+
+## 3. Societal Resonance & Manipulation
+
+- [Political Resonance Systems under Media Projection](facts/docs/society/political_resonance.md)
+- [Manipulation in the Resonance Field](facts/docs/society/manipulation_in_the_resonance_field.md)
+- [Perpetrator Projection in the Guise of Antifascism](facts/docs/society/perpetrator_projection.md)
+- [From Illusion to Peace – A Letter on the Decoupling of Staged Reality](facts/docs/society/open_letter.md)
+- [From Power Play to Resonance Culture](facts/docs/society/power_game.md)
+
+## 4. Game Theory, Opposition, Information Change
+
+- [Society & Game Theory – in the Light of Resonance Field Theory](facts/docs/society/society_and_resonance.md)
+- [Critique as Resonance Trap – How the System Neutralizes Opposition](facts/docs/society/criticism_as_a_resonance_trap.md)
+- [Information Change Since 2019 – Analysis and Future Concept](facts/docs/society/information_change_institutional_strategy.md)
+- [Digital Resonance Control – How Social Networks Steer Consciousness](facts/docs/society/digital_resonance_control.md)
+
+## 5. Resonance Field & AI: Knowledge, Communication, Ethics
+
+- [Truth Through Resonance – The Next Step to Enlightened AI](facts/docs/society/reconnaissance.md)
+- [Resonant Dialogue With AI – From Prompt to Partnership](facts/docs/society/resonance_and_consciousness_ki.md)
+- [Resonance Communication – A Model for Overcoming Social Dissonance](facts/docs/society/resonance_communication.md)
+- [Ethics of Teaching in the Resonance Field – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
+
+## 6. Individual, Patterns, Love, Madness
+
+- [Resonance Leap – From Struggle to Frequency Community](facts/docs/society/resonance_leap.md)
+- [Resonance as a Path to Individual Self-Realization](facts/docs/society/resonance_as_a_path_to_individual_self-realization.md)
+- [Recognizing and Resolving Behavioral Patterns](facts/docs/society/recognizing_and_resolving_behavior_patterns.md)
+- [The Lost Connection – How True Love Disappears in the System of Utility](facts/docs/society/love_in_the_resonance_field.md)
+- [Madness as Mirror – When Systems Lose Their Resonance Core](facts/docs/society/madness_as_a_mirror.md)
+
+## 7. Language, Polarity, Cyclical Structures
+
+- [Gendered Language, AI, and Resonance Field – Why Language Structure Needs Systemic Boundaries](facts/docs/society/gender_language.md)
+- [Yin and Yang as a Universal Principle of Resonance](facts/docs/society/yin_and_yang.md)
+- [Life, Death, and Return – Cyclical Resonance Structure in the Resonance Field](facts/docs/society/life_and_death_in_the_resonance_field.md)
+
+## 8. Outlook: History, Economy, Manifest, Network
+
+- [The Most Probable Path of Human History – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
+- [From Scarcity to Abundance – The Resonance Economy as a Systemic Alternative](facts/docs/society/resonance_economy.md)
+- [ResoNet – A Decentralized Resonance Network for Self-Responsibility](facts/docs/society/resonet_theory.md)
+- [Dual Resonance Money System – A Way Out of Global Debt and Monetary Dominance](facts/docs/society/dual_resonance_money_system.md)
+- [Manifest: Systemic Self-Renewal Instead of Debt Enslavement](facts/docs/society/manifest_systemic_self-renewal.md)
+- [Resonance Licenses – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
+- [The Caring Mask – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
 
 ---
 

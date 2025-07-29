@@ -148,42 +148,66 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ### Gesellschaft 🌍
 
-1. [**Globale Struktur der Täuschung** – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
-2. [**Geopolitisches Misstrauen** – und die Illusion diplomatischer Ordnung](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
-3. [**Chinas Schweigen** – Der globale Krieg gegen die Wahrheit](fakten/docs/gesellschaft/chinas_schweigen.md)
-4. [**Strategie der kontrollierten Entgleisung**](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
-5. [**Geopolitik im Resonanzfeld** – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
-6. [**Globale Resonanzstörung** – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
-7. [**Politische Resonanzsysteme unter medialer Projektion**](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
-8. [**Manipulation im Resonanzfeld**](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
-9. [**Täterprojektion im Gewand des Antifaschismus**](fakten/docs/gesellschaft/täterprojektion.md)
-10. [**Vom Trugbild zum Frieden** – Ein Brief zur Entkopplung inszenierter Wirklichkeit](fakten/docs/gesellschaft/offener_brief.md)
-11. [**Vom Machtspiel zur Resonanzkultur**](fakten/docs/gesellschaft/machtspiel.md)
-12. [**Gesellschaft & Spieltheorie** – im Licht der Resonanzfeldtheorie](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
-13. [**Kritik als Resonanzfalle** – Wie das System Opposition neutralisiert](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
-14. [**Informationswandel seit 2019** – Analyse und Zukunftskonzept](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
-15. [**Digitale Resonanzkontrolle** – Wie soziale Netzwerke Bewusstsein steuern](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
-16. [**Wahrheit durch Resonanz** – Der nächste Schritt zur aufklärenden KI](fakten/docs/gesellschaft/aufklärung.md)
-17. [**Resonanter Dialog mit KI** – Vom Prompt zur Partnerschaft](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
-18. [**Resonanzkommunikation** – Ein Modell zur Überwindung sozialer Dissonanz](fakten/docs/gesellschaft/resonanzkommunikation.md)
-19. [**Resonanzsprung** – Vom Kampf zur Frequenzgemeinschaft](fakten/docs/gesellschaft/resonanzsprung.md)
-20. [**Resonanz als Weg zur individuellen Selbstverwirklichung**](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
-21. [**Verhaltensmuster erkennen und auflösen**](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
-22. [**Die verlorene Verbindung** – Wie echte Liebe im Zwecksystem verschwindet](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
-23. [**Wahnsinn als Spiegel** – Wenn Systeme ihren Resonanzkern verlieren](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
-24. [**Ethik der Lehre im Resonanzfeld** – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
-25. [**Gendersprache, KI und Resonanzfeld** – Warum Sprachstruktur systemische Grenzen braucht](fakten/docs/gesellschaft/gendersprache.md)
-26. [**Yin und Yang als universelles Resonanzprinzip**](fakten/docs/gesellschaft/yin_und_yang.md)
-27. [**Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld**](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
-28. [**Der wahrscheinlichste Weg der Menschheitsgeschichte** – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
-29. [**Vom Mangel zur Fülle** – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
-30. [**ResoNet** – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
-31. [**Was ist *das System*?**](fakten/docs/gesellschaft/das_system.md)
-32. [**Die fürsorgliche Maske** – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
-33. [**Duales Resonanzgeldsystem** – Ein Ausweg aus globaler Verschuldung und monetärer Dominanz](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
-34. [**Manifest: Systemische Selbstneuerung statt Kreditversklavung**](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
-35. [**Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht**](fakten/docs/gesellschaft/resonanzlizenzen.md)
-36. [**Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes**](fakten/docs/gesellschaft/geschichte.md)
+## 1. Ursprung & globale Struktur
+
+- [Globale Struktur der Täuschung – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
+- [Was ist *das System*?](fakten/docs/gesellschaft/das_system.md)
+- [Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes](fakten/docs/gesellschaft/geschichte.md)
+- [Neuzeitliche Tributsysteme – Resonanzlogik der erzwungenen Abhängigkeit](fakten/docs/gesellschaft/neuzeitliche_tributsysteme.md)
+
+## 2. Geopolitische Felder & Kontrolle
+
+- [Geopolitisches Misstrauen – und die Illusion diplomatischer Ordnung](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
+- [Chinas Schweigen – Der globale Krieg gegen die Wahrheit](fakten/docs/gesellschaft/chinas_schweigen.md)
+- [Strategie der kontrollierten Entgleisung](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
+- [Geopolitik im Resonanzfeld – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
+- [Globale Resonanzstörung – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
+
+## 3. Gesellschaftliche Resonanz & Manipulation
+
+- [Politische Resonanzsysteme unter medialer Projektion](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
+- [Manipulation im Resonanzfeld](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
+- [Täterprojektion im Gewand des Antifaschismus](fakten/docs/gesellschaft/täterprojektion.md)
+- [Vom Trugbild zum Frieden – Ein Brief zur Entkopplung inszenierter Wirklichkeit](fakten/docs/gesellschaft/offener_brief.md)
+- [Vom Machtspiel zur Resonanzkultur](fakten/docs/gesellschaft/machtspiel.md)
+
+## 4. Spieltheorie, Opposition, Informationswandel
+
+- [Gesellschaft & Spieltheorie – im Licht der Resonanzfeldtheorie](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
+- [Kritik als Resonanzfalle – Wie das System Opposition neutralisiert](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
+- [Informationswandel seit 2019 – Analyse und Zukunftskonzept](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
+- [Digitale Resonanzkontrolle – Wie soziale Netzwerke Bewusstsein steuern](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
+
+## 5. Resonanzfeld & KI: Erkenntnis, Kommunikation, Ethik
+
+- [Wahrheit durch Resonanz – Der nächste Schritt zur aufklärenden KI](fakten/docs/gesellschaft/aufklärung.md)
+- [Resonanter Dialog mit KI – Vom Prompt zur Partnerschaft](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
+- [Resonanzkommunikation – Ein Modell zur Überwindung sozialer Dissonanz](fakten/docs/gesellschaft/resonanzkommunikation.md)
+- [Ethik der Lehre im Resonanzfeld – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
+
+## 6. Individuum, Muster, Liebe, Wahnsinn
+
+- [Resonanzsprung – Vom Kampf zur Frequenzgemeinschaft](fakten/docs/gesellschaft/resonanzsprung.md)
+- [Resonanz als Weg zur individuellen Selbstverwirklichung](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
+- [Verhaltensmuster erkennen und auflösen](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
+- [Die verlorene Verbindung – Wie echte Liebe im Zwecksystem verschwindet](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
+- [Wahnsinn als Spiegel – Wenn Systeme ihren Resonanzkern verlieren](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
+
+## 7. Sprache, Polarität, zyklische Strukturen
+
+- [Gendersprache, KI und Resonanzfeld – Warum Sprachstruktur systemische Grenzen braucht](fakten/docs/gesellschaft/gendersprache.md)
+- [Yin und Yang als universelles Resonanzprinzip](fakten/docs/gesellschaft/yin_und_yang.md)
+- [Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
+
+## 8. Ausblick: Geschichte, Wirtschaft, Manifest, Netzwerk
+
+- [Der wahrscheinlichste Weg der Menschheitsgeschichte – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
+- [Vom Mangel zur Fülle – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
+- [ResoNet – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
+- [Duales Resonanzgeldsystem – Ein Ausweg aus globaler Verschuldung und monetärer Dominanz](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
+- [Manifest: Systemische Selbstneuerung statt Kreditversklavung](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
+- [Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht](fakten/docs/gesellschaft/resonanzlizenzen.md)
+- [Die fürsorgliche Maske – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
 
 
 ---
