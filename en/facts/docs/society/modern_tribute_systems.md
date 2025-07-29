@@ -1,4 +1,4 @@
-### Modern Tribute Systems – Resonance Logic of Enforced Dependency
+## Modern Tribute Systems – Resonance Logic of Enforced Dependency
 
 **Introduction – The Familiar Image: Asymmetry, Forced Bondage, and Resonance Masquerade**
 
