@@ -167,6 +167,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 - [Politische Resonanzsysteme unter medialer Projektion](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
 - [Manipulation im Resonanzfeld](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
+- [Der Schattenkrieg im Resonanzfeld – Wie Provokation, Projektion und Spaltung Macht generieren](fakten/docs/gesellschaft/schattenkrieg.md)
 - [Täterprojektion im Gewand des Antifaschismus](fakten/docs/gesellschaft/täterprojektion.md)
 - [Vom Trugbild zum Frieden – Ein Brief zur Entkopplung inszenierter Wirklichkeit](fakten/docs/gesellschaft/offener_brief.md)
 - [Vom Machtspiel zur Resonanzkultur](fakten/docs/gesellschaft/machtspiel.md)

@@ -164,6 +164,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 - [Political Resonance Systems under Media Projection](facts/docs/society/political_resonance.md)
 - [Manipulation in the Resonance Field](facts/docs/society/manipulation_in_the_resonance_field.md)
+- [The Shadow War in the Resonance Field – How Provocation, Projection, and Division Generate Power](facts/docs/society/shadow_war.md)
 - [Perpetrator Projection in the Guise of Antifascism](facts/docs/society/perpetrator_projection.md)
 - [From Illusion to Peace – A Letter on the Decoupling of Staged Reality](facts/docs/society/open_letter.md)
 - [From Power Play to Resonance Culture](facts/docs/society/power_game.md)
