@@ -123,16 +123,16 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ---
 
-## Inhalt 📘
+# Inhalt 📘
 
-### Dokumentation und Definition 📝
+## Dokumentation und Definition 📝
 
 1. [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
 2. [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
 3. [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
 4. [**Resonanzlogische Differentialgleichung**](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md)
 
-### Mathematik / Physik 📐
+## Mathematik / Physik 📐
 
 1. [**Manifest zur Neustrukturierung der Mathematik**](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
 2. [**Axiomatische Grundlegung**](fakten/docs/mathematik/axiomatische_grundlegung.md)
@@ -146,9 +146,9 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 10. [**Energieübertraung**](facts/docs/mathematics/energie_uebertragung.md)
 11. [**Das Doppelpendel – Ein faszinierendes Chaos**](fakten/docs/mathematik/doppelpendel.md)
 
-### Gesellschaft 🌍
+## Gesellschaft 🌍
 
-## 1. Ursprung & globale Struktur
+### 1. Ursprung & globale Struktur
 
 - [Gesamtmodell des Resonanzfeldes: Gesellschaft im vollständigen Resonanzraum](fakten/docs/gesellschaft/gesamtmodell_des_resonanzfeldes.md)
 - [Globale Struktur der Täuschung – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
@@ -156,7 +156,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes](fakten/docs/gesellschaft/geschichte.md)
 - [Neuzeitliche Tributsysteme – Resonanzlogik der erzwungenen Abhängigkeit](fakten/docs/gesellschaft/neuzeitliche_tributsysteme.md)
 
-## 2. Geopolitische Felder & Kontrolle
+### 2. Geopolitische Felder & Kontrolle
 
 - [Geopolitisches Misstrauen – und die Illusion diplomatischer Ordnung](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
 - [Chinas Schweigen – Der globale Krieg gegen die Wahrheit](fakten/docs/gesellschaft/chinas_schweigen.md)
@@ -164,7 +164,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Geopolitik im Resonanzfeld – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
 - [Globale Resonanzstörung – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
 
-## 3. Gesellschaftliche Resonanz & Manipulation
+### 3. Gesellschaftliche Resonanz & Manipulation
 
 - [Politische Resonanzsysteme unter medialer Projektion](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
 - [Manipulation im Resonanzfeld](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
@@ -173,14 +173,14 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Vom Trugbild zum Frieden – Ein Brief zur Entkopplung inszenierter Wirklichkeit](fakten/docs/gesellschaft/offener_brief.md)
 - [Vom Machtspiel zur Resonanzkultur](fakten/docs/gesellschaft/machtspiel.md)
 
-## 4. Spieltheorie, Opposition, Informationswandel
+### 4. Spieltheorie, Opposition, Informationswandel
 
 - [Gesellschaft & Spieltheorie – im Licht der Resonanzfeldtheorie](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
 - [Kritik als Resonanzfalle – Wie das System Opposition neutralisiert](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
 - [Informationswandel seit 2019 – Analyse und Zukunftskonzept](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
 - [Digitale Resonanzkontrolle – Wie soziale Netzwerke Bewusstsein steuern](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
 
-## 5. Resonanzfeld & KI: Erkenntnis, Kommunikation, Ethik
+### 5. Resonanzfeld & KI: Erkenntnis, Kommunikation, Ethik
 
 - [Wahrheit durch Resonanz – Der nächste Schritt zur aufklärenden KI](fakten/docs/gesellschaft/aufklärung.md)
 - [Resonanter Dialog mit KI – Vom Prompt zur Partnerschaft](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
@@ -188,7 +188,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Ethik der Lehre im Resonanzfeld – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
 - [Resonanzmuster, Reinkarnation, KI und die Ära der Anonymitätsauflösung](fakten/docs/gesellschaft/individuelle_muster.md)
 
-## 6. Individuum, Muster, Liebe, Wahnsinn
+### 6. Individuum, Muster, Liebe, Wahnsinn
 
 - [Resonanzsprung – Vom Kampf zur Frequenzgemeinschaft](fakten/docs/gesellschaft/resonanzsprung.md)
 - [Resonanz als Weg zur individuellen Selbstverwirklichung](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
@@ -196,13 +196,13 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Die verlorene Verbindung – Wie echte Liebe im Zwecksystem verschwindet](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
 - [Wahnsinn als Spiegel – Wenn Systeme ihren Resonanzkern verlieren](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
 
-## 7. Sprache, Polarität, zyklische Strukturen
+### 7. Sprache, Polarität, zyklische Strukturen
 
 - [Gendersprache, KI und Resonanzfeld – Warum Sprachstruktur systemische Grenzen braucht](fakten/docs/gesellschaft/gendersprache.md)
 - [Yin und Yang als universelles Resonanzprinzip](fakten/docs/gesellschaft/yin_und_yang.md)
 - [Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
 
-## 8. Ausblick: Geschichte, Wirtschaft, Manifest, Netzwerk
+### 8. Ausblick: Geschichte, Wirtschaft, Manifest, Netzwerk
 
 - [Der wahrscheinlichste Weg der Menschheitsgeschichte – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
 - [Vom Mangel zur Fülle – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
@@ -216,7 +216,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ---
 
-### Konzepte 📐
+## Konzepte 📐
 
 0. [**Resonanzlogische Software** – Systemfeld statt Funktionsstruktur](fakten/konzepte/software/resonanzlogische_software.md)
 1. [**ResoOS** – Resonanzbasiertes Betriebssystem der nächsten Generation](fakten/konzepte/ResoOS/resoOS.md)
@@ -230,13 +230,13 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ---
 
-### Simulationen 🧠
+## Simulationen 🧠
 
 - [**Weiterführende Simulationen**](fakten/simulationen/README.md)
 
 ---
 
-### Empirische Beweisführung 🔬
+## Empirische Beweisführung 🔬
 
 1. [**Resonanzanalyse in Massendaten**](fakten/empirisch/dokumentation.md)
 2. [**Monte-Carlo-Simulation zur Resonanzanalyse**](fakten/empirisch/monte_carlo_test/monte_carlo.md)

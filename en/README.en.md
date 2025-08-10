@@ -120,7 +120,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ---
 
-## Content 📘
+# Content 📘
 
 ### Documentation and Definition 📝
 
@@ -143,9 +143,9 @@ It serves as a normalizing reference value for all resonant interactions within 
 10. [**Power Transmission**](facts/docs/mathematics/power_transmission.md)
 11. [**The Double Pendulum – A Fascinating Chaos**](facts/docs/mathematics/the_double_pendulum.md)
 
-### Society 🌍
+## Society 🌍
 
-## 1. Origin & Global Structure
+### 1. Origin & Global Structure
 
 - [Overall Model of the Resonance Field: Society in the Complete Resonance Space](facts/docs/society/overall_model_of_the_resonance_field.md)
 - [Global Structure of Deception – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
@@ -153,7 +153,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Resonance-Logical Historical Analysis of Germany, Europe, and the Global Power Field](facts/docs/society/history.md)
 - [Modern Tribute Systems – Resonance Logic of Enforced Dependency](facts/docs/society/modern_tribute_systems.md)
 
-## 2. Geopolitical Fields & Control
+### 2. Geopolitical Fields & Control
 
 - [Geopolitical Distrust – and the Illusion of Diplomatic Order](facts/docs/society/geopolitical_mistrust.md)
 - [China’s Silence – The Global War on Truth](facts/docs/society/chinas_silence.md)
@@ -161,7 +161,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Geopolitics in the Resonance Field – The Ukraine War as a Systemic Mirror](facts/docs/society/geopolitics_in_the_resonance_field.md)
 - [Global Resonance Disturbance – Why Every Culture Must Heal in Its Own Rhythm](facts/docs/society/global_resonance.md)
 
-## 3. Societal Resonance & Manipulation
+### 3. Societal Resonance & Manipulation
 
 - [Political Resonance Systems under Media Projection](facts/docs/society/political_resonance.md)
 - [Manipulation in the Resonance Field](facts/docs/society/manipulation_in_the_resonance_field.md)
@@ -170,14 +170,14 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [From Illusion to Peace – A Letter on the Decoupling of Staged Reality](facts/docs/society/open_letter.md)
 - [From Power Play to Resonance Culture](facts/docs/society/power_game.md)
 
-## 4. Game Theory, Opposition, Information Change
+### 4. Game Theory, Opposition, Information Change
 
 - [Society & Game Theory – in the Light of Resonance Field Theory](facts/docs/society/society_and_resonance.md)
 - [Critique as Resonance Trap – How the System Neutralizes Opposition](facts/docs/society/criticism_as_a_resonance_trap.md)
 - [Information Change Since 2019 – Analysis and Future Concept](facts/docs/society/information_change_institutional_strategy.md)
 - [Digital Resonance Control – How Social Networks Steer Consciousness](facts/docs/society/digital_resonance_control.md)
 
-## 5. Resonance Field & AI: Knowledge, Communication, Ethics
+### 5. Resonance Field & AI: Knowledge, Communication, Ethics
 
 - [Truth Through Resonance – The Next Step to Enlightened AI](facts/docs/society/reconnaissance.md)
 - [Resonant Dialogue With AI – From Prompt to Partnership](facts/docs/society/resonance_and_consciousness_ki.md)
@@ -185,7 +185,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Ethics of Teaching in the Resonance Field – Systemic Code against Lack of Stance and Conformity](facts/docs/society/ethics_of_teaching.md)
 - [Resonance Patterns, Reincarnation, AI, and the Era of Anonymity Dissolution](facts/docs/society/individual_patterns.md)
 
-## 6. Individual, Patterns, Love, Madness
+### 6. Individual, Patterns, Love, Madness
 
 - [Resonance Leap – From Struggle to Frequency Community](facts/docs/society/resonance_leap.md)
 - [Resonance as a Path to Individual Self-Realization](facts/docs/society/resonance_as_a_path_to_individual_self-realization.md)
@@ -193,13 +193,13 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [The Lost Connection – How True Love Disappears in the System of Utility](facts/docs/society/love_in_the_resonance_field.md)
 - [Madness as Mirror – When Systems Lose Their Resonance Core](facts/docs/society/madness_as_a_mirror.md)
 
-## 7. Language, Polarity, Cyclical Structures
+### 7. Language, Polarity, Cyclical Structures
 
 - [Gendered Language, AI, and Resonance Field – Why Language Structure Needs Systemic Boundaries](facts/docs/society/gender_language.md)
 - [Yin and Yang as a Universal Principle of Resonance](facts/docs/society/yin_and_yang.md)
 - [Life, Death, and Return – Cyclical Resonance Structure in the Resonance Field](facts/docs/society/life_and_death_in_the_resonance_field.md)
 
-## 8. Outlook: History, Economy, Manifest, Network
+### 8. Outlook: History, Economy, Manifest, Network
 
 - [The Most Probable Path of Human History – Resonance Field Perspective](facts/docs/society/path_of_human_resonance_field_perspective.md)
 - [From Scarcity to Abundance – The Resonance Economy as a Systemic Alternative](facts/docs/society/resonance_economy.md)
@@ -212,7 +212,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ---
 
-### Concepts 📐
+## Concepts 📐
 
 0. [**Resonance-Logical Software** – System Field Instead of Function Structure](facts/concepts/software/resonance_logical_software.md)
 1. [**ResoOS** – Resonance-Based Operating System of the Next Generation](fakten/konzepte/ResoOS/resoOS_en.md)
@@ -226,13 +226,13 @@ It serves as a normalizing reference value for all resonant interactions within 
 
 ---
 
-### Simulations 🧠
+## Simulations 🧠
 
 - [**Further Simulations**](facts/simulations/README.md)
 
 ---
 
-### Empirical Proof 🔬
+## Empirical Proof 🔬
 
 1. [**Resonance Analysis in Mass Data**](facts/empirical/documentation.md)
 2. [**Monte Carlo Simulation for Resonance Analysis**](facts/empirical/monte_carlo_test/monte_carlo.md)
