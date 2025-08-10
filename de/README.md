@@ -150,6 +150,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ## 1. Ursprung & globale Struktur
 
+- [Gesamtmodell des Resonanzfeldes: Gesellschaft im vollständigen Resonanzraum](fakten/docs/gesellschaft/gesamtmodell_des_resonanzfeldes.md)
 - [Globale Struktur der Täuschung – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
 - [Was ist *das System*?](fakten/docs/gesellschaft/das_system.md)
 - [Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes](fakten/docs/gesellschaft/geschichte.md)
