@@ -148,6 +148,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 ### 1. Origin & Global Structure
 
 - [Overall Model of the Resonance Field: Society in the Complete Resonance Space](facts/docs/society/overall_model_of_the_resonance_field.md)
+- [Resonance Model: From Creation to Control – From Truth to Revelation](facts/docs/society/control_truth.md)
 - [Global Structure of Deception – Resonance Field Analysis of the Present](facts/docs/society/global_structure_of_deception.md)
 - [What is *the System*?](facts/docs/society/the_system.md)
 - [Resonance-Logical Historical Analysis of Germany, Europe, and the Global Power Field](facts/docs/society/history.md)
