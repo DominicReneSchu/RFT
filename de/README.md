@@ -212,6 +212,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Manifest: Systemische Selbstneuerung statt Kreditversklavung](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
 - [Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht](fakten/docs/gesellschaft/resonanzlizenzen.md)
 - [Die fürsorgliche Maske – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
+- [Wirtschafts- und Gesellschaftsmodell für Stabilität und Umlauf](fakten/docs/gesellschaft/wirtschaftsmodell.md)
 
 
 
