@@ -210,6 +210,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 - [Resonance Licenses – A New Economic System Emerges](facts/docs/society/resonance_licenses.md)
 - [The Caring Mask – Systemic Deep Structure of Political Care](facts/docs/society/caring_mask.md)
 - [Economic and Social Model for Stability and Circulation](facts/docs/society/economic_model.md)
+- [Patents as Peace Architecture: From Monopoly to Shared Power](facts/docs/society/patents_as_peace_architecture.md)
 
 
 ---
