@@ -213,6 +213,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht](fakten/docs/gesellschaft/resonanzlizenzen.md)
 - [Die fürsorgliche Maske – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
 - [Wirtschafts- und Gesellschaftsmodell für Stabilität und Umlauf](fakten/docs/gesellschaft/wirtschaftsmodell.md)
+- [Patente als Friedensarchitektur: Vom Monopol zur geteilten Macht](fakten/docs/gesellschaft/patente_frieden_partnerschaft.md)
 
 
 
