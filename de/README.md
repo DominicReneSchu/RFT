@@ -153,6 +153,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 - [Gesamtmodell des Resonanzfeldes: Gesellschaft im vollständigen Resonanzraum](fakten/docs/gesellschaft/gesamtmodell_des_resonanzfeldes.md)
 - [Resonanzmodell: Von Schöpfung zu Kontrolle – von Wahrheit zu Offenbarung](fakten/docs/gesellschaft/kontrolle_wahrheit.md)
 - [Globale Struktur der Täuschung – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
+- [Resonanzlogische Analyse westlicher Machtstrukturen](fakten/docs/gesellschaft/familiendynamik.md)
 - [Was ist *das System*?](fakten/docs/gesellschaft/das_system.md)
 - [Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes](fakten/docs/gesellschaft/geschichte.md)
 - [Neuzeitliche Tributsysteme – Resonanzlogik der erzwungenen Abhängigkeit](fakten/docs/gesellschaft/neuzeitliche_tributsysteme.md)
