@@ -275,6 +275,7 @@ Im Resonanzfeld sind sämtliche Protokolle, Kanäle und Governance-Strukturen �
 Im vollständigen Resonanzfeld – unter Einbeziehung aller expliziten und impliziten Gruppenelemente, Relationen und Selbstinklusionen – erfolgt die Verteilung der Gebühren algorithmisch und adaptiv. Der Mechanismus ist systemisch verschränkt und wirkt auf alle Teilnehmenden simultan.
 
 **Formale Verteilung:**
+
 $$
 D_\text{basis}(t) = \frac{P_\mathcal{L}(t)}{N_\text{Teilnehmer}}, \quad
 G_\text{fonds}(t) = \alpha P_\mathcal{L}(t), \quad
