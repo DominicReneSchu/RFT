@@ -141,7 +141,8 @@ It serves as a normalizing reference value for all resonant interactions within 
 8. [**Energy Sphere**](facts/docs/mathematics/energy_sphere.md)
 9. [**Resonance Energy Vector**](facts/docs/mathematics/resonance_energy_vector.md)
 10. [**Power Transmission**](facts/docs/mathematics/power_transmission.md)
-11. [**The Double Pendulum – A Fascinating Chaos**](facts/docs/mathematics/the_double_pendulum.md)
+11. [**Resonance Coordinates**](facts/docs/mathematics/resonance_coordinates.md)
+12. [**The Double Pendulum – A Fascinating Chaos**](facts/docs/mathematics/the_double_pendulum.md)
 
 ## Society 🌍
 
