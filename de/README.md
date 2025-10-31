@@ -206,6 +206,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 
 ### 8. Ausblick: Geschichte, Wirtschaft, Manifest, Netzwerk
 
+- [Systemische Stabilisierung der Weltordnung im Resonanzfeld](fakten/docs/gesellschaft/Systemanpassung.md)
 - [Der wahrscheinlichste Weg der Menschheitsgeschichte – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
 - [Vom Mangel zur Fülle – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
 - [ResoNet – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
