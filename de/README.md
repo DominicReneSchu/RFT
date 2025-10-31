@@ -144,7 +144,8 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 8. [**Energiekugel**](fakten/docs/mathematik/energiekugel.md)
 9. [**Resonanzenergievektor**](fakten/docs/mathematik/resonanzenergievektor.md)
 10. [**Energieübertraung**](facts/docs/mathematics/energie_uebertragung.md)
-11. [**Das Doppelpendel – Ein faszinierendes Chaos**](fakten/docs/mathematik/doppelpendel.md)
+11. [**Resonanzkoordinaten**](facts/docs/mathematics/resonanzkoordinaten.md)
+12. [**Das Doppelpendel – Ein faszinierendes Chaos**](fakten/docs/mathematik/doppelpendel.md)
 
 ## Gesellschaft 🌍
 
