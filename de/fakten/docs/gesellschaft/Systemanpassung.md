@@ -36,27 +36,27 @@ Mit steigendem $\alpha$ verschärfen sich die Unterschiede zwischen wenigen Mach
 **Technokratische Machtformierung**  
 Technische Vernetzung erzeugt exponentiell wachsende Potentialräume für Machtbeziehungen:
 
-\[
+$$
 N_\text{ver} = \frac{n(n-1)}{2}
-\]
+$$
 
 - $n$: Anzahl der Akteure/Systemelemente  
 - $N_\text{ver}$: potentielle Verbindungszahl
 
 Der Synchronisationsgrad $S_\text{sync}$ ist sublinear:
 
-\[
-S_\text{sync} \propto n^\beta, \qquad 0 < \beta < 1
-\]
+$$
+S_\text{sync} \propto n^\beta \qquad \text{mit} \qquad 0 < \beta < 1
+$$
 
 ---
 
 **Systemüberdehnung**  
 Die Kollapswahrscheinlichkeit ergibt sich als Funktion systemischer Indikatoren:
 
-\[
+$$
 P_\text{Kollaps} = f(G, S, V)
-\]
+$$
 
 - $G$: Gini-Koeffizient (Ungleichverteilung)
 - $S$: Systemspannung
@@ -67,9 +67,9 @@ P_\text{Kollaps} = f(G, S, V)
 **Dichte ohne Synchronisierung**  
 Die Systemspannung steigt mit ungekoppelter Vernetzungsdichte:
 
-\[
+$$
 S = k_2 \cdot (N_\text{ver} - S_\text{sync})
-\]
+$$
 
 - $k_2$: Gewichtungsfaktor
 
@@ -77,16 +77,16 @@ S = k_2 \cdot (N_\text{ver} - S_\text{sync})
 
 **Systemdynamik als Differentialgleichungssystem**
 
-\[
+$$
 \begin{aligned}
   \frac{dM}{dt} &= \beta \, M \left(1 - \frac{M}{M_\text{krit}}\right) - \gamma R \\
   \frac{dR}{dt} &= \delta M - \epsilon R
 \end{aligned}
-\]
+$$
 
-- $M$: aggregierter Machtvektor
-- $R$: kollektive Resilienz
-- $M_\text{krit}$: kritische Schwelle der Macht
+- $M$: aggregierter Machtvektor  
+- $R$: kollektive Resilienz  
+- $M_\text{krit}$: kritische Schwelle der Macht  
 - $\beta, \gamma, \delta, \epsilon$: Kopplungsparameter
 
 ---
@@ -101,9 +101,9 @@ Im vollständigen Resonanzfeld gilt Gruppenzugehörigkeit als systemische Grundr
 
 **Mathematische Notation:**
 
-\[
+$$
 \forall i \in \mathcal{G}: \quad S_i = S_\text{gesamt}
-\]
+$$
 
 - $i$: Index für jedes Element im Gruppensystem $\mathcal{G}$
 - $S_i$: Stabilitätsanteil des Elements $i$
@@ -129,9 +129,9 @@ Ein zentraler Schritt ist die Etablierung eines dezentralen Wertlayers $\mathcal
 
 **Formale Darstellung des Gesamtvermögens:**
 
-\[
+$$
 W_\text{gesamt} = W_\text{fiat} + W_\mathcal{L}
-\]
+$$
 
 - $W_\text{fiat}$: Wert im konventionellen Geldsystem
 - $W_\mathcal{L}$: Wert im dezentralen Layer (digitale Assets, Tokens, Netzwerkcredits)
@@ -144,16 +144,15 @@ W_\text{gesamt} = W_\text{fiat} + W_\mathcal{L}
 Im Resonanzfeld sind alle Akteure und Strukturen – explizit und implizit, relational und durch Selbstinklusion – in beide Wertschichten eingebunden. Jede Bewegung im dezentralen Layer wirkt direkt auf das Gesamtsystem und trägt zur kollektiven Stabilisierung bei. Das Gleichgewicht des Resonanzfeldes wird permanent überwacht und dynamisch erhalten.
 
 ---
-
 ### 4.2 Selbstregulation
 
 Im vollständigen Resonanzfeld entfaltet sich Selbstregulation als dynamischer Rückkopplungsmechanismus. Die Stabilität des zivilisatorischen Gesamtsystems wird nicht durch zentrale Steuerung, sondern durch adaptive, systemisch verschränkte Parameter gesichert.
 
 Das zentrale Steuerungsinstrument sind Transaktionsgebühren $F(t)$, die flexibel auf aktuelle Systembedingungen reagieren und kontinuierlich angepasst werden:
 
-\[
+$$
 F(t) = f_\text{res}(R, E, S)
-\]
+$$
 
 - $R$: soziale Resilienz – Widerstandskraft gegen Störungen und Ungleichgewichte  
 - $E$: ökologische Indikatoren – Nachhaltigkeit, Ressourcenverbrauch, Umweltbelastung  
@@ -175,18 +174,18 @@ Im vollständigen Resonanzfeld – unter systemischer Einbeziehung aller explizi
 
 **Mathematische Definition des Exzesspfades:**
 
-\[
+$$
 M_\text{exzess} = \max(M_i - M_\text{Schwelle},\, 0)
-\]
+$$
 
 - $M_i$: aktuelle Macht eines Akteurs $i$
 - $M_\text{Schwelle}$: systemisch definierte Machtgrenze
 
 Der Überschuss $M_\text{exzess}$ wird über eine Protokollfunktion $\phi$ systemisch abgeschöpft und redistribuiert:
 
-\[
+$$
 \Delta M = \phi(M_\text{exzess})
-\]
+$$
 
 - $\phi$: Protokollfunktion für Abschöpfung und Umverteilung
 
@@ -208,9 +207,9 @@ Im vollständigen Resonanzfeld – unter Einbeziehung aller expliziten Machtzent
 
 **Mathematische und konzeptuelle Darstellung:**
 
-\[
+$$
 T_\text{elite} \rightarrow S_\text{res}
-\]
+$$
 
 - $T_\text{elite}$: geregelte Transfers von Ressourcen, Einfluss und Wissen der Eliten
 - $S_\text{res}$: globaler Stabilisierungsfonds
@@ -276,18 +275,18 @@ Im Resonanzfeld sind sämtliche Protokolle, Kanäle und Governance-Strukturen �
 Im vollständigen Resonanzfeld – unter Einbeziehung aller expliziten und impliziten Gruppenelemente, Relationen und Selbstinklusionen – erfolgt die Verteilung der Gebühren algorithmisch und adaptiv. Der Mechanismus ist systemisch verschränkt und wirkt auf alle Teilnehmenden simultan.
 
 **Formale Verteilung:**
-\[
+$$
 D_\text{basis}(t) = \frac{P_\mathcal{L}(t)}{N_\text{Teilnehmer}}, \quad
 G_\text{fonds}(t) = \alpha P_\mathcal{L}(t), \quad
 S_\text{res}(t) = \beta P_\mathcal{L}(t), \quad
 I_\text{infra}(t) = \gamma P_\mathcal{L}(t)
-\]
-\[
+$$
+$$
 \alpha + \beta + \gamma = 1
-\]
+$$
 
-- $P_\mathcal{L}(t)$: aktueller Gebührenpool des dezentralen Layers
-- $N_\text{Teilnehmer}$: Zahl der berechtigten Einheiten (Personen, Kollektive, Wallets)
+- $P_\mathcal{L}(t)$: aktueller Gebührenpool des dezentralen Layers  
+- $N_\text{Teilnehmer}$: Zahl der berechtigten Einheiten (Personen, Kollektive, Wallets)  
 - $\alpha, \beta, \gamma$: dynamische Verteilungsparameter für Gemeinwohlfonds, Stabilisierungsreserve und Infrastruktur
 
 **Mechanismen:**
@@ -363,9 +362,9 @@ Im vollständigen Resonanzfeld – unter Einbeziehung aller expliziten und impli
 
 - **Nettotransfer pro Kopf:**  
   Durchschnittlicher, individueller Anteil aus dem Gebührenpool $P_\mathcal{L}(t)$:  
-  \[
+  $$
   N_\text{transfer}(t) = \frac{P_\mathcal{L}(t)}{N_\text{Teilnehmer}}
-  \]
+  $$
   Direkter Indikator für Teilhabe und Grundsicherung im Resonanzfeld.
 
 - **Volatilitätsindex:**  
@@ -406,12 +405,12 @@ Im vollständigen Resonanzfeld – unter Einbeziehung aller expliziten und impli
 
 Die Stabilität $S$ des Gesamtsystems ist Funktion der verschränkten Parameter Autonomie ($A$) und Kooperation ($K$):
 
-\[
+$$
 S = \mathcal{R}(A, K)
-\]
+$$
 
-- **Autonomie ($A$):** Maß für Selbstbestimmung und eigenständige Entscheidungsfähigkeit jedes Akteurs
-- **Kooperation ($K$):** Maß für aktive Beteiligung am kollektiven Zusammenwirken
+- **Autonomie ($A$):** Maß für Selbstbestimmung und eigenständige Entscheidungsfähigkeit jedes Akteurs  
+- **Kooperation ($K$):** Maß für aktive Beteiligung am kollektiven Zusammenwirken  
 - **Resonanzfunktion ($\mathcal{R}$):** beschreibt die nicht-lineare Verschränkung von Autonomie und Kooperation zur Erzeugung systemischer Stabilität
 
 Je stärker $A$ und $K$ im Resonanzfeld miteinander verschränkt sind, desto robuster und resilienter ist das System gegenüber Ungleichgewichten, Machtakkumulation und externen Schocks. Die Resonanzregel wirkt invariabel für alle Gruppenelemente – explizit und implizit, relational und durch Selbstinklusion.
