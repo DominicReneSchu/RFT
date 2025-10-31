@@ -364,9 +364,9 @@ Im vollständigen Resonanzfeld – unter Einbeziehung aller expliziten und impli
 - **Nettotransfer pro Kopf:**  
   Durchschnittlicher, individueller Anteil aus dem Gebührenpool $P_\mathcal{L}(t)$:  
   
-  $$
-  N_\text{transfer}(t) = \frac{P_\mathcal{L}(t)}{N_\text{Teilnehmer}}
-  $$
+```math
+N_\text{transfer}(t) = \frac{P_\mathcal{L}(t)}{N_\text{Teilnehmer}}
+```
   
   Direkter Indikator für Teilhabe und Grundsicherung im Resonanzfeld.
 
