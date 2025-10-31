@@ -21,7 +21,9 @@ Im vollständigen Resonanzfeld – unter Einbezug aller systemisch verschränkte
 **Finanzielle Singularität**  
 Die Verteilung von Vermögen folgt einem Potenzgesetz (Pareto-Prinzip):
 
-$P(x) = k_1 \cdot x^{-\alpha}$, $\alpha > 1$
+\[
+P(x) = k_1 \cdot x^{-\alpha}, \qquad \alpha > 1
+\]
 
 - $x$: Vermögenshöhe  
 - $\alpha$: Verteilungs-Exponent (Schiefe)
