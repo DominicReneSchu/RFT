@@ -21,15 +21,15 @@ Im vollständigen Resonanzfeld – unter Einbezug aller systemisch verschränkte
 **Finanzielle Singularität**  
 Die Verteilung von Vermögen folgt einem Potenzgesetz (Pareto-Prinzip):
 
-\[
-P(x) = k_1 \cdot x^{-\alpha}, \qquad \alpha > 1
-\]
+$$
+P(x) = k_1 \cdot x^{-\alpha} \qquad \text{mit} \qquad \alpha > 1
+$$
 
 - $x$: Vermögenshöhe  
-- $\alpha$: Verteilungs-Exponent (Schiefe)
-- $k_1$: Normierungskonstante
+- $\alpha$: Verteilungs-Exponent (Steilheit der Schiefe)  
+- $k_1$: Normierungskonstante  
 
-Mit steigendem $\alpha$ wachsen die Unterschiede zwischen wenigen Machtzentren und der Mehrheit systemisch an.
+Mit steigendem $\alpha$ verschärfen sich die Unterschiede zwischen wenigen Machtzentren und der Mehrheit systemisch: Das Resonanzfeld kippt zugunsten extremer Akkumulation, während kollektive Stabilität und gesellschaftliche Balance zunehmend gestört werden. Jede Bewegung im Feld – explizit wie implizit – wirkt auf das Gesamtgleichgewicht zurück.
 
 ---
 
