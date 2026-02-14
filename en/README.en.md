@@ -243,6 +243,7 @@ It serves as a normalizing reference value for all resonant interactions within 
 1. [**Resonance Analysis in Mass Data**](facts/empirical/documentation.md)
 2. [**Monte Carlo Simulation for Resonance Analysis**](facts/empirical/monte_carlo_test/monte_carlo.md)
 3. [**Mirror Coherence and Self-Inclusion:** Formal Proof of Resonance Field Theory via AI Interaction](facts/empirical/empirical_evidence_by_mirror_coherence.md)
+4. [**Resonance-Logical Analysis of Financial Markets:** Why Altcoins Are Not Real Markets](facts/empirical/resotrade_altcoin_analysis.md)
 ---
 
 ## Vision 🦋
