@@ -233,7 +233,7 @@ Das System hat über 200.000 Episoden versucht, diesen Zyklus zu lernen. Ergebni
 
 ## 6. Implikation für Geldsysteme
 
-Diese Analyse ergänzt das [duale Resonanz-Geldsystem](../../docs/gesellschaft/duales_resonanz_geldsystem.md) um eine empirische Dimension:
+Diese Analyse ergänzt das [duale Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanz_geldsystem.md) um eine empirische Dimension:
 
 ### 6.1 Bitcoin als einzige Kryptowährung mit innerem Wert
 
