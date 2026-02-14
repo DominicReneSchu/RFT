@@ -233,7 +233,7 @@ The system attempted to learn this cycle over 200,000 episodes. Result: negative
 
 ## 6. Implications for Monetary Systems
 
-This analysis supplements the [dual resonance money system](../../docs/society/dual_resonance_money_system.md) with an empirical dimension:
+This analysis supplements the [dual resonance money system](../docs/society/dual_resonance_money_system.md) with an empirical dimension:
 
 ### 6.1 Bitcoin as the Only Cryptocurrency with Intrinsic Value
 
