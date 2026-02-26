@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.stats import binomtest
 from statsmodels.stats.multitest import multipletests
+from sklearn.neighbors import KernelDensity
 from typing import Callable, Dict, List, Tuple, Optional, Any
 
 
@@ -11,17 +12,62 @@ def create_kde_sampler(
     Erstelle eine Sampling-Funktion für den Hintergrund basierend auf
     Kernel-Density-Estimate (KDE).
     """
-    from sklearn.neighbors import KernelDensity
-
     background_data = np.asarray(background_data).reshape(-1, 1)
     kde = KernelDensity(kernel="gaussian", bandwidth=bandwidth)
     kde.fit(background_data)
 
     def sampler(size: int) -> np.ndarray:
-        samples = kde.sample(size)
-        return samples.flatten()
+        return kde.sample(size).flatten()
 
     return sampler
+
+
+def create_kde_model(
+    background_data: np.ndarray, bandwidth: float = 0.05
+) -> KernelDensity:
+    """
+    Erstelle ein KDE-Modell für die Hintergrunddichte.
+    """
+    background_data = np.asarray(background_data).reshape(-1, 1)
+    kde = KernelDensity(kernel="gaussian", bandwidth=bandwidth)
+    kde.fit(background_data)
+    return kde
+
+
+def expected_rate_from_kde(
+    kde: KernelDensity, m0: float, delta: float, n_points: int = 50
+) -> float:
+    """
+    Berechne die erwartete Trefferrate im Fenster [m0-delta, m0+delta]
+    aus dem KDE-Hintergrundmodell durch numerische Integration (Trapez).
+    """
+    x_grid = np.linspace(m0 - delta, m0 + delta, n_points).reshape(-1, 1)
+    log_density = kde.score_samples(x_grid)
+    density = np.exp(log_density)
+    rate = float(np.trapz(density, x_grid.flatten()))
+    rate = min(max(rate, 1e-10), 1.0 - 1e-10)
+    return rate
+
+
+def precompute_expected_rates(
+    kde: KernelDensity,
+    m0_values: List[float],
+    deltas: List[float],
+) -> Dict[float, Dict[float, float]]:
+    """
+    Vorberechnung aller erwarteten Raten für jede Kombination (M₀, Δ).
+
+    Wird einmal vor der Monte-Carlo-Schleife aufgerufen und eliminiert
+    redundante KDE-Integrationen in den Simulationsdurchläufen.
+
+    Rückgabe: {m0: {delta: rate}}
+    """
+    rates = {}
+    for m0 in m0_values:
+        rates[m0] = {}
+        for delta in deltas:
+            rates[m0][delta] = expected_rate_from_kde(kde, m0, delta)
+    return rates
 
 
 def correct_pvalues(
@@ -30,9 +76,6 @@ def correct_pvalues(
 ) -> Dict[str, np.ndarray]:
     """
     Korrigiere eine Liste von p-Werten mit mehreren Multiple-Testing-Methoden.
-
-    Hinweis: Nur sinnvoll bei len(p_values) > 1. Bei Einzelwerten gibt
-    Bonferroni den identischen Wert zurück.
     """
     pval_corrs = {}
     for mt in multitest_methods:
@@ -45,41 +88,29 @@ def resonance_analysis(
     data: np.ndarray,
     m0_values: List[float],
     deltas: List[float],
-    expected_hit_rates: Dict[float, float],
     n_total: int,
+    expected_rates: Dict[float, Dict[float, float]],
     multitest_methods: Tuple[str, ...] = ("bonferroni", "fdr_bh"),
-    use_permutation: bool = False,
-    n_permutations: int = 1000,
 ) -> Tuple[
     Dict[float, Dict[str, Any]], Dict[float, List[int]], Dict[float, List[float]]
 ]:
     """
-    Führe Resonanzfenster-Analyse durch für gegebene Massenstellen M₀.
+    Resonanzfenster-Analyse mit vorberechneten erwarteten Raten.
 
     Parameter
     ---------
     data : np.ndarray
         Messdaten (invariante Massen).
     m0_values : List[float]
-        Resonanzmassenstellen M₀, an denen gesucht wird.
+        Resonanzmassenstellen M₀.
     deltas : List[float]
-        Fensterbreiten (halbe Breite) um jede Massenstelle.
-    expected_hit_rates : Dict[float, float]
-        Erwartete Trefferrate unter Nullhypothese pro M₀.
+        Fensterbreiten (halbe Breite).
     n_total : int
         Gesamtzahl der Ereignisse.
+    expected_rates : Dict[float, Dict[float, float]]
+        Vorberechnete erwartete Raten {m0: {delta: rate}}.
     multitest_methods : Tuple[str, ...]
         Methoden für Multiple-Testing-Korrektur.
-    use_permutation : bool
-        Ob zusätzlich ein Permutationstest durchgeführt wird.
-    n_permutations : int
-        Anzahl der Permutationen.
-
-    Rückgabe
-    --------
-    results : Dict mit Ergebnissen pro M₀
-    all_hits : Dict mit Trefferlisten pro M₀
-    all_pvals : Dict mit p-Wert-Listen pro M₀
     """
     results: Dict[float, Dict[str, Any]] = {}
     all_hits: Dict[float, List[int]] = {}
@@ -88,23 +119,18 @@ def resonance_analysis(
     for m0 in m0_values:
         p_values: List[float] = []
         hits_list: List[int] = []
-        permutation_pvals: List[float] = []
+
         for delta in deltas:
             hits = int(np.sum((data > m0 - delta) & (data < m0 + delta)))
-            expected_rate = expected_hit_rates[m0]
-            test = binomtest(hits, n_total, expected_rate, alternative="greater")
+            rate = expected_rates[m0][delta]
+            test = binomtest(hits, n_total, rate, alternative="greater")
             p_values.append(test.pvalue)
             hits_list.append(hits)
-            if use_permutation:
-                perm_p = permutation_test_count(
-                    data, m0, delta, hits, n_permutations
-                )
-                permutation_pvals.append(perm_p)
 
         pval_corrs = correct_pvalues(p_values, multitest_methods)
         best_idx = int(np.argmin(pval_corrs[multitest_methods[0]]))
 
-        result_entry = {
+        results[m0] = {
             "best_delta": deltas[best_idx],
             "hits": hits_list[best_idx],
             "p_raw": p_values[best_idx],
@@ -113,41 +139,10 @@ def resonance_analysis(
             "pvals": p_values,
             "pvals_corr": pval_corrs,
         }
-        if use_permutation:
-            perm_pval_corrs = correct_pvalues(permutation_pvals, multitest_methods)
-            result_entry["perm_pvals"] = permutation_pvals
-            result_entry["perm_pvals_corr"] = perm_pval_corrs
-
-        results[m0] = result_entry
         all_hits[m0] = hits_list
         all_pvals[m0] = p_values
 
     return results, all_hits, all_pvals
-
-
-def permutation_test_count(
-    data: np.ndarray,
-    m0: float,
-    delta: float,
-    observed_hits: int,
-    n_permutations: int = 1000,
-) -> float:
-    """
-    Permutationstest für Trefferzahl im Fenster [m0-delta, m0+delta].
-
-    Hinweis: Da die Daten keine Gruppenstruktur haben, wird hier
-    die Verteilung der Trefferzahl unter zufälliger Permutation
-    der Massenwerte geschätzt. Dies testet, ob die räumliche
-    Anordnung der Werte (nicht nur ihre Verteilung) zum Überschuss
-    beiträgt.
-    """
-    count = 0
-    for _ in range(n_permutations):
-        shuffled = np.random.permutation(data)
-        perm_hits = int(np.sum((shuffled > m0 - delta) & (shuffled < m0 + delta)))
-        if perm_hits >= observed_hits:
-            count += 1
-    return (count + 1) / (n_permutations + 1)
 
 
 def bootstrap_hits(
@@ -157,9 +152,7 @@ def bootstrap_hits(
     n_bootstrap: int = 5000,
 ) -> Tuple[float, float, float]:
     """
-    Bootstrap-Konfidenzintervall für Trefferzahl im Fenster
-    [m0-delta, m0+delta].
-
+    Bootstrap-Konfidenzintervall für Trefferzahl.
     Rückgabe: (median, 16%-Perzentil, 84%-Perzentil)
     """
     n = len(data)
@@ -167,7 +160,11 @@ def bootstrap_hits(
     for i in range(n_bootstrap):
         sample = np.random.choice(data, size=n, replace=True)
         hits[i] = int(np.sum((sample > m0 - delta) & (sample < m0 + delta)))
-    return float(np.median(hits)), float(np.percentile(hits, 16)), float(np.percentile(hits, 84))
+    return (
+        float(np.median(hits)),
+        float(np.percentile(hits, 16)),
+        float(np.percentile(hits, 84)),
+    )
 
 
 def bootstrap_pvalue(
@@ -180,91 +177,17 @@ def bootstrap_pvalue(
 ) -> Dict[str, float]:
     """
     Bootstrap-Konfidenzintervall für den rohen p-Wert.
-
-    Rückgabe: Dict mit 'median', '16%', '84%' des Bootstrap-p-Werts.
-
-    Hinweis: Multiple-Testing-Korrektur auf Einzel-p-Werte ist nicht
-    sinnvoll und wird hier nicht durchgeführt. Die Korrektur erfolgt
-    über die Gesamtanalyse in resonance_analysis().
     """
     n = len(data)
     pvals = np.empty(n_bootstrap)
     for i in range(n_bootstrap):
         sample = np.random.choice(data, size=n, replace=True)
         hits = int(np.sum((sample > m0 - delta) & (sample < m0 + delta)))
-        pvals[i] = binomtest(hits, n_total, expected_rate, alternative="greater").pvalue
-
+        pvals[i] = binomtest(
+            hits, n_total, expected_rate, alternative="greater"
+        ).pvalue
     return {
         "median": float(np.median(pvals)),
         "16%": float(np.percentile(pvals, 16)),
         "84%": float(np.percentile(pvals, 84)),
     }
-
-
-def resonance_blind_analysis(
-    data: np.ndarray,
-    m0_grid: np.ndarray,
-    delta_grid: List[float],
-    n_total: int,
-    multitest_methods: Tuple[str, ...] = ("bonferroni", "fdr_bh"),
-    use_permutation: bool = False,
-    n_permutations: int = 1000,
-) -> Tuple[
-    np.ndarray, Dict[str, np.ndarray], Optional[np.ndarray], Optional[Dict[str, np.ndarray]]
-]:
-    """
-    Blind-Analyse: Scan über alle Fenster, inkl. Multiple-Testing-Korrekturen.
-
-    Die erwartete Rate wird aus der KDE-Dichte an der jeweiligen
-    Massenstelle geschätzt (statt einer uniformen Annahme).
-    """
-    from sklearn.neighbors import KernelDensity
-
-    # KDE für lokale Dichteabschätzung
-    kde = KernelDensity(kernel="gaussian", bandwidth=0.05)
-    kde.fit(data.reshape(-1, 1))
-
-    n_m0 = len(m0_grid)
-    n_del = len(delta_grid)
-    hits_matrix = np.zeros((n_m0, n_del), dtype=int)
-    pval_matrix = np.zeros((n_m0, n_del))
-    permutation_matrix = np.zeros((n_m0, n_del)) if use_permutation else None
-
-    for i, m0 in enumerate(m0_grid):
-        # Lokale erwartete Rate aus KDE
-        log_density = kde.score_samples(np.array([[m0]]))
-        local_density = np.exp(log_density[0])
-
-        for j, delta in enumerate(delta_grid):
-            hits = int(np.sum((data > m0 - delta) & (data < m0 + delta)))
-            # Erwartete Rate: lokale Dichte * Fensterbreite
-            expected_rate = local_density * 2 * delta
-            expected_rate = min(max(expected_rate, 1e-10), 1.0 - 1e-10)
-
-            test = binomtest(hits, n_total, expected_rate, alternative="greater")
-            pval_matrix[i, j] = test.pvalue
-            hits_matrix[i, j] = hits
-
-            if use_permutation:
-                permutation_matrix[i, j] = permutation_test_count(
-                    data, m0, delta, hits, n_permutations
-                )
-
-    # Multiple Testing über alle Fenster
-    pval_corrs = {}
-    pvals_flat = pval_matrix.flatten()
-    for mt in multitest_methods:
-        _, pvals_corr_flat, _, _ = multipletests(pvals_flat, alpha=0.05, method=mt)
-        pval_corrs[mt] = pvals_corr_flat.reshape(pval_matrix.shape)
-
-    perm_corrs = None
-    if use_permutation:
-        perm_corrs = {}
-        perms_flat = permutation_matrix.flatten()
-        for mt in multitest_methods:
-            _, perms_corr_flat, _, _ = multipletests(
-                perms_flat, alpha=0.05, method=mt
-            )
-            perm_corrs[mt] = perms_corr_flat.reshape(permutation_matrix.shape)
-
-    return hits_matrix, pval_corrs, permutation_matrix, perm_corrs
