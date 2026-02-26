@@ -1,104 +1,154 @@
 import numpy as np
 import plotly.graph_objs as go
 
-def interactive_hits_histogram(sim_hits, real_hits, epsilons):
+
+def interactive_hits_histogram(sim_hits, real_hits, m0_values):
+    """Interaktive Histogramme: MC-Hits vs. echte Hits pro Massenstelle M₀."""
     figs = []
-    for eps in epsilons:
+    for m0 in m0_values:
         fig = go.Figure()
-        fig.add_trace(go.Histogram(
-            x=sim_hits[eps], 
-            nbinsx=30,
-            name='Monte-Carlo Hits',
-            marker_color='cornflowerblue',
-            opacity=0.75
-        ))
+        fig.add_trace(
+            go.Histogram(
+                x=sim_hits[m0],
+                nbinsx=30,
+                name="Monte-Carlo Hits",
+                marker_color="cornflowerblue",
+                opacity=0.75,
+            )
+        )
         fig.add_vline(
-            x=real_hits[eps]['hits'], 
-            line=dict(color='red', dash='dash'),
+            x=real_hits[m0]["hits"],
+            line=dict(color="red", dash="dash"),
             annotation_text="Echt",
-            annotation_position="top right"
+            annotation_position="top right",
         )
         fig.update_layout(
-            title=f"ε = {eps}: Monte-Carlo-Hits vs. echte Hits",
+            title=f"M₀ = {m0:.2f}: Monte-Carlo-Hits vs. echte Hits",
             xaxis_title="Hits (bestes Δ)",
             yaxis_title="Häufigkeit",
             bargap=0.1,
             legend_title="Legende",
-            template="plotly_white"
+            template="plotly_white",
         )
         figs.append(fig)
     return figs
 
-def interactive_pval_curve(deltas, sim_pvals_per_epsilon_delta, real_pvals_matrix, real_results, epsilons):
+
+def interactive_pval_curve(
+    deltas, sim_pvals_per_m0_delta, real_pvals_matrix, real_results, m0_values
+):
+    """Interaktive p-Wert-Verläufe über Δ pro Massenstelle M₀."""
     figs = []
-    for eps in epsilons:
-        sim_pvals = sim_pvals_per_epsilon_delta[eps]
+    for m0 in m0_values:
+        sim_pvals = sim_pvals_per_m0_delta[m0]
         q_low = np.percentile(sim_pvals, 16, axis=0)
         q_med = np.percentile(sim_pvals, 50, axis=0)
         q_high = np.percentile(sim_pvals, 84, axis=0)
         fig = go.Figure()
-        fig.add_traces([
+        fig.add_traces(
+            [
+                go.Scatter(
+                    x=deltas,
+                    y=q_high,
+                    mode="lines",
+                    line=dict(width=0),
+                    showlegend=False,
+                ),
+                go.Scatter(
+                    x=deltas,
+                    y=q_low,
+                    mode="lines",
+                    fill="tonexty",
+                    fillcolor="rgba(100,100,255,0.2)",
+                    line=dict(width=0),
+                    showlegend=True,
+                    name="68% MC CI",
+                ),
+            ]
+        )
+        fig.add_trace(
             go.Scatter(
-                x=deltas, y=q_high, mode='lines',
-                line=dict(width=0), showlegend=False
-            ),
+                x=deltas,
+                y=q_med,
+                mode="lines",
+                name="Median MC",
+                line=dict(color="cornflowerblue"),
+            )
+        )
+        fig.add_trace(
             go.Scatter(
-                x=deltas, y=q_low, mode='lines',
-                fill='tonexty', fillcolor='rgba(100,100,255,0.2)',
-                line=dict(width=0), showlegend=True, name='68% MC CI'
-            ),
-        ])
-        fig.add_trace(go.Scatter(
-            x=deltas, y=q_med, mode='lines', name='Median MC', line=dict(color='cornflowerblue')
-        ))
-        fig.add_trace(go.Scatter(
-            x=deltas, y=real_pvals_matrix[eps], mode='lines', name='Echt', line=dict(color='red')
-        ))
-        fig.add_trace(go.Scatter(
-            x=[real_results[eps]['best_delta']], 
-            y=[real_results[eps]['p_corr']], 
-            mode='markers', marker=dict(color='black', size=10, symbol='x'),
-            name='Min p_corr'
-        ))
+                x=deltas,
+                y=real_pvals_matrix[m0],
+                mode="lines",
+                name="Echt",
+                line=dict(color="red"),
+            )
+        )
+        fig.add_trace(
+            go.Scatter(
+                x=[real_results[m0]["best_delta"]],
+                y=[real_results[m0]["p_corr"]],
+                mode="markers",
+                marker=dict(color="black", size=10, symbol="x"),
+                name="Min p_corr",
+            )
+        )
         fig.update_layout(
             yaxis_type="log",
-            title=f"p-Wert-Verlauf für ε={eps}",
+            title=f"p-Wert-Verlauf für M₀={m0:.2f}",
             xaxis_title="Δ",
             yaxis_title="korrigierter p-Wert (log)",
-            template="plotly_white"
+            template="plotly_white",
         )
         figs.append(fig)
     return figs
 
-def interactive_heatmap(matrix, xvals, yvals, xlabel, ylabel, title, colorbar_title="Hits", annot=True, colorscale="Viridis"):
+
+def interactive_heatmap(
+    matrix, xvals, yvals, xlabel, ylabel, title,
+    colorbar_title="Hits", annot=True, colorscale="Viridis",
+):
+    """Interaktive Heatmap mit optionaler Annotation."""
     fig = go.Figure(
         data=go.Heatmap(
             z=matrix,
-            x=xvals, y=yvals,
+            x=xvals,
+            y=yvals,
             colorscale=colorscale,
             colorbar=dict(title=colorbar_title),
             hoverongaps=False,
             zmin=np.min(matrix),
-            zmax=np.max(matrix)
+            zmax=np.max(matrix),
         )
     )
     fig.update_layout(
         title=title,
         xaxis_title=xlabel,
         yaxis_title=ylabel,
-        template="plotly_white"
+        template="plotly_white",
     )
     if annot:
         for i, y in enumerate(yvals):
             for j, x in enumerate(xvals):
+                val = matrix[i, j]
+                text = str(int(val)) if float(val).is_integer() else f"{val:.1f}"
                 fig.add_annotation(
-                    x=x, y=y, text=str(int(matrix[i, j])),
-                    showarrow=False, font=dict(color="black", size=10),
-                    opacity=0.6
+                    x=x,
+                    y=y,
+                    text=text,
+                    showarrow=False,
+                    font=dict(color="black", size=10),
+                    opacity=0.6,
                 )
     return fig
 
-def interactive_heatmap_contrast(matrix, xvals, yvals, xlabel, ylabel, title, colorbar_title="Hits", annot=True):
+
+def interactive_heatmap_contrast(
+    matrix, xvals, yvals, xlabel, ylabel, title,
+    colorbar_title="Hits", annot=True,
+):
+    """Heatmap mit Cividis-Farbschema für besseren Kontrast."""
     return interactive_heatmap(
-        matrix, xvals, yvals, xlabel, ylabel, title, colorbar_title, annot=annot, colorscale="Cividis"
+        matrix, xvals, yvals, xlabel, ylabel, title,
+        colorbar_title, annot=annot, colorscale="Cividis",
     )
