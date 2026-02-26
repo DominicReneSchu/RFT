@@ -22,10 +22,10 @@ ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung von vier Ax
 
 | Axiom | Prinzip | Anwendung in ResoTrade | Empirischer Nachweis |
 |-------|---------|------------------------|---------------------|
-| [**Axiom 1**](../docs/mathematik/energiekugel.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
-| **Axiom 2** | Kopplungsstruktur | Balance-Regler: Cash ↔ BTC | System bleibt über 24 Monate handlungsfähig |
+| [**Axiom 1**](../docs/mathematik/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
+| [**Axiom 4**](../docs/mathematik/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Balance-Regler: Cash ↔ BTC | System bleibt über 24 Monate handlungsfähig |
 | [**Axiom 5**](../docs/mathematik/energierichtung.md) | Energie ist vektoriell | `energy_dir = e_short - e_long` | Richtung schlägt Prognose |
-| **Axiom 6** | Resonanzkopplung K = K₀·cos(θ) | Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
+| [**Axiom 6**](../docs/mathematik/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
 
 Zusätzlich bestätigt die [Altcoin-Analyse](resotrade_altcoin_analyse.md) Axiom 3 (Resonanzbedingung) und Axiom 6 (Informationsgehalt) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
 
