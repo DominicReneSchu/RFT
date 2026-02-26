@@ -248,6 +248,7 @@ Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen i
 2. [**Monte-Carlo-Simulation zur Resonanzanalyse**](fakten/empirisch/monte_carlo_test/monte_carlo.md)
 3. [**Spiegelkohärenz und Selbstinklusion:** Formaler Nachweis der Resonanzfeldtheorie durch KI-Interaktion](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md)
 4. [**Resonanzlogische Analyse der Finanzmärkte:** Warum Altcoins keine echten Märkte sind](fakten/empirisch/resotrade_altcoin_analyse.md)
+5. [**ResoTrade V11.1** — Resonanzfeldtheoretische BTC-KI mit AC/DC-Zerlegung](fakten/empirisch/resotrade_trading_ki.md)
 ---
 
 ## Vision 🦋

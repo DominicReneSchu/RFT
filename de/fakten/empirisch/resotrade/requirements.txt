@@ -1,0 +1,7 @@
+pandas
+numpy
+requests
+matplotlib
+yfinance
+scipy
+keyring
