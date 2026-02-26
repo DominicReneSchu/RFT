@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 
 
 def interactive_hits_histogram(sim_hits, real_hits, m0_values):
-    """Interaktive Histogramme: MC-Hits vs. echte Hits pro Massenstelle M₀."""
+    """Interaktive Histogramme: MC-Hits vs. echte Hits pro M₀."""
     figs = []
     for m0 in m0_values:
         fig = go.Figure()
@@ -23,7 +23,7 @@ def interactive_hits_histogram(sim_hits, real_hits, m0_values):
             annotation_position="top right",
         )
         fig.update_layout(
-            title=f"M₀ = {m0:.2f}: Monte-Carlo-Hits vs. echte Hits",
+            title=f"M₀ = {m0:.2f} GeV: Monte-Carlo-Hits vs. echte Hits",
             xaxis_title="Hits (bestes Δ)",
             yaxis_title="Häufigkeit",
             bargap=0.1,
@@ -37,7 +37,7 @@ def interactive_hits_histogram(sim_hits, real_hits, m0_values):
 def interactive_pval_curve(
     deltas, sim_pvals_per_m0_delta, real_pvals_matrix, real_results, m0_values
 ):
-    """Interaktive p-Wert-Verläufe über Δ pro Massenstelle M₀."""
+    """Interaktive p-Wert-Verläufe über Δ pro M₀."""
     figs = []
     for m0 in m0_values:
         sim_pvals = sim_pvals_per_m0_delta[m0]
@@ -95,8 +95,8 @@ def interactive_pval_curve(
         )
         fig.update_layout(
             yaxis_type="log",
-            title=f"p-Wert-Verlauf für M₀={m0:.2f}",
-            xaxis_title="Δ",
+            title=f"p-Wert-Verlauf für M₀={m0:.2f} GeV",
+            xaxis_title="Δ (GeV)",
             yaxis_title="korrigierter p-Wert (log)",
             template="plotly_white",
         )
@@ -105,10 +105,17 @@ def interactive_pval_curve(
 
 
 def interactive_heatmap(
-    matrix, xvals, yvals, xlabel, ylabel, title,
-    colorbar_title="Hits", annot=True, colorscale="Viridis",
+    matrix,
+    xvals,
+    yvals,
+    xlabel,
+    ylabel,
+    title,
+    colorbar_title="Hits",
+    annot=False,
+    colorscale="Viridis",
 ):
-    """Interaktive Heatmap mit optionaler Annotation."""
+    """Interaktive Heatmap."""
     fig = go.Figure(
         data=go.Heatmap(
             z=matrix,
@@ -127,28 +134,28 @@ def interactive_heatmap(
         yaxis_title=ylabel,
         template="plotly_white",
     )
-    if annot:
-        for i, y in enumerate(yvals):
-            for j, x in enumerate(xvals):
-                val = matrix[i, j]
-                text = str(int(val)) if float(val).is_integer() else f"{val:.1f}"
-                fig.add_annotation(
-                    x=x,
-                    y=y,
-                    text=text,
-                    showarrow=False,
-                    font=dict(color="black", size=10),
-                    opacity=0.6,
-                )
     return fig
 
 
 def interactive_heatmap_contrast(
-    matrix, xvals, yvals, xlabel, ylabel, title,
-    colorbar_title="Hits", annot=True,
+    matrix,
+    xvals,
+    yvals,
+    xlabel,
+    ylabel,
+    title,
+    colorbar_title="Hits",
+    annot=False,
 ):
-    """Heatmap mit Cividis-Farbschema für besseren Kontrast."""
+    """Interaktive Heatmap mit Cividis-Farbskala."""
     return interactive_heatmap(
-        matrix, xvals, yvals, xlabel, ylabel, title,
-        colorbar_title, annot=annot, colorscale="Cividis",
+        matrix,
+        xvals,
+        yvals,
+        xlabel,
+        ylabel,
+        title,
+        colorbar_title,
+        annot=annot,
+        colorscale="Cividis",
     )
