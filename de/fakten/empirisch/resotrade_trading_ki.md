@@ -157,7 +157,7 @@ ResoTrade neutralisiert den letzten verbleibenden Vorteil der Institutionen: den
 | Erfahrungsspeicher | Terabytes Modellgewichte | 2MB CSV-Datei |
 | Stromverbrauch | Kilowatt | 5 Watt |
 | Erklärbarkeit | Black Box | Jede Entscheidung nachvollziehbar |
-| Physik-Grundlage | Keine — Korrelationen in Daten | Resonanzfeldtheorie (4 Axiome) |
+| Physik-Grundlage | Keine — Korrelationen in Daten | Resonanzfeldtheorie (7 Axiome) |
 | Zugang | Akkreditierte Investoren | Jeder mit 50€ und WLAN |
 
 ### Langfristige Perspektive
@@ -265,7 +265,7 @@ P_eff = (AC_amplitude / DC_level) · f_trade · η(Δφ) · (1 − γ_fee)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│          RESONANZ-POLICY V11.1 (Axiome 1,2,5,6)             │
+│          RESONANZ-POLICY V11.1 (Axiome 1,4,5,6)             │
 │                                                              │
 │   State ──→ AC/DC-Zerlegung (Axiom 1)                       │
 │     │          DC = MA_LONG, AC = Preis - DC                 │
@@ -286,7 +286,7 @@ P_eff = (AC_amplitude / DC_level) · f_trade · η(Δφ) · (1 − γ_fee)
 │     │       Trough → BUY aggressiver (Schwelle -0.5%)        │
 │     │              │                                         │
 │     │              ▼                                         │
-│     ├──→ Balance-Regler (Axiom 2)                            │
+│     ├──→ Balance-Regler (Axiom 4)                            │
 │     │       cash < 8% → kein BUY                             │
 │     │       sellable < 5% → kein SELL                        │
 │     │              │                                         │
@@ -306,7 +306,7 @@ P_eff = (AC_amplitude / DC_level) · f_trade · η(Δφ) · (1 − γ_fee)
 Preis ─────────────────────────────────────────────
          ╱╲       ╱╲                ╱╲
         ╱  ╲     ╱  ╲    AC       ╱  ╲
-  ─────╱────╲───╱────╲──────────╱────╲─────�� MA_LONG (DC)
+  ─────╱────╲───╱────╲──────────╱────╲────── MA_LONG (DC)
       ╱      ╲ ╱      ╲       ╱      ╲
      ╱        ╳        ╲     ╱        ╲
               ↑              ↑
@@ -345,7 +345,7 @@ Policy-Entscheidung (phasenmoduliert)
 ┌─────────────────────────────────────────────────────────────┐
 │   MENSCH                        SYSTEM                      │
 │                                                             │
-��   Nachrichten lesen ──→ python human_hint.py bullish "..."  │
+│   Nachrichten lesen ──→ python human_hint.py bullish "..."  │
 │                              │                              │
 │                              ▼                              │
 │                         data/human_hint.json                │
@@ -360,7 +360,7 @@ Policy-Entscheidung (phasenmoduliert)
 │                              │                              │
 │                              ▼                              │
 │   hint_evaluator.py ←── War der Hint korrekt?               │
-└──────────────────────────���──────────────────────────────────┘
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ### State-Repräsentation
