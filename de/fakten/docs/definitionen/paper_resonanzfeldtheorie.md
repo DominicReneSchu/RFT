@@ -1,299 +1,290 @@
-# Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen
+# Resonanzfeldtheorie — Übersicht und Kopplungsoperator
+
+*Dominic-René Schu, 2025/2026*
+
+---
 
 ## Zusammenfassung
 
-Dieses Paper vereint die axiomatische Basis der Resonanzfeldtheorie (RFT) mit der Einführung und mathematischen Einordnung des Kopplungsoperators (𝜀). Es beschreibt ein kohärentes Fundament, leitet zentrale Gleichungen ab und diskutiert die Rolle von Kopplungsdynamik und Resonanz für Energie, Information und Systemverhalten. Ziel ist es, ein einheitliches Rahmenwerk für Physik, Informationstheorie, Technik und Gesellschaft bereitzustellen.
+Die Resonanzfeldtheorie (RFT) beschreibt fundamentale Prozesse in
+Natur, Technik und Informationssystemen als Kopplungs- und
+Resonanzphänomene in Schwingungsfeldern. Dieses Paper gibt eine
+Gesamtübersicht der Theorie, fasst das axiomatische Fundament
+zusammen und führt den Kopplungsoperator (Kopplungseffizienz ε)
+als zentrale Größe ein.
+
+Für die vollständige formale Axiomatik siehe die
+[axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md).
 
 ---
 
-## 1. Einleitung – Ordnung im Chaos
+## 1. Einleitung
 
-Die Resonanzfeldtheorie postuliert, dass alle fundamentalen Prozesse im Universum auf Schwingung, Kopplung und Resonanz beruhen. Das scheinbare Chaos der Welt ist ein Meer an Informationen, in dem durch Resonanz Ordnung, Energieübertragung und Informationsaustausch ermöglicht werden.
-
-> „Im Anfang war das Chaos. Der Sinn entstand durch Resonanz.“
-> – Axiom Nr. 0
+Die Resonanzfeldtheorie postuliert, dass alle fundamentalen
+Prozesse auf Schwingung, Kopplung und Resonanz beruhen. Sie
+vereint Konzepte aus klassischer Schwingungslehre, Quantenphysik,
+Informationstheorie und Netzwerktheorie in einem axiomatischen
+Rahmenwerk.
 
 ---
 
-## 2. Axiomensystem der Resonanzfeldtheorie
+## 2. Axiomensystem (Kurzfassung)
 
-### Axiom 1 (Universelle Schwingung)
-Jede Entität im Universum ist durch eine periodische Schwingung beschreibbar:
+Die RFT besteht aus 7 Kern-Axiomen. Jedes Axiom ist minimal,
+formal präzise und empirisch testbar. Die vollständige
+Formalisierung mit Beweisen und empirischen Tests findet sich
+in der [axiomatischen Grundlegung](../mathematik/axiomatische_grundlegung.md).
+
+### Axiom 1 — Universelle Schwingung
+
+Jede physikalische Entität besitzt mindestens eine periodische
+Schwingungsmode:
 
 $$
 \psi(x, t) = A \cdot \cos(kx - \omega t + \phi)
 $$
 
-### Axiom 2 (Superposition und Interferenz)
-Schwingungen überlagern sich linear im Raum-Zeit-Kontinuum:
+### Axiom 2 — Superposition
+
+Schwingungsmoden überlagern sich linear in Feldern:
 
 $$
-\psi_{\text{gesamt}}(x, t) = \sum_i \psi_i(x, t)
+\Phi(x, t) = \sum_i \psi_i(x, t)
 $$
 
-### Axiom 3 (Resonanzbedingung)
-Zwei Systeme treten in Resonanz, wenn ihre Frequenzen im rationalen Verhältnis stehen:
+### Axiom 3 — Resonanzbedingung
+
+Resonanz tritt auf bei rationalen Frequenzverhältnissen innerhalb
+eines Toleranzfensters δ:
 
 $$
-\frac{f_1}{f_2} = \frac{n}{m},\quad n, m \in \mathbb{Z}^+
+|f_1/f_2 - m/n| < \delta, \quad m, n \in \mathbb{Z}^+
 $$
 
-### Axiom 4 (Kopplungsenergie durch Resonanz)
-Die durch Resonanz übertragene Energie ist proportional zur Frequenz, Planck-Konstante, 𝜋 und dem Kopplungsoperator 𝜀:
+### Axiom 4 — Kopplungsenergie
+
+Die effektive Energie einer resonanten Kopplung:
 
 $$
-E = \pi \cdot \varepsilon \cdot h \cdot f
+E_{\text{eff}} = \pi \cdot \varepsilon(\Delta\phi) \cdot h \cdot f
 $$
 
-### Axiom 5 (Stabiles Resonanzfeld)
-Ein stabiles Resonanzfeld entsteht, wenn sich Wellen zu einem stehenden Muster organisieren:
+wobei ε(Δφ) ∈ [0, 1] die Kopplungseffizienz ist.
+
+### Axiom 5 — Energierichtung
+
+Energie ist ein Vektor im Resonanzfeld:
 
 $$
-\Phi(x, t) = \sum_{i} A_i \cdot \cos(k_i x - \omega_i t + \phi_i)
+\vec{E} = E_{\text{eff}} \cdot \hat{e}(\Delta\phi, \nabla\Phi)
 $$
 
-### Axiom 6 (Informationsfluss durch Resonanzkopplung)
-Information ist strukturierte Resonanz. Informationsaustausch erfolgt ausschließlich über kohärente Resonanzpfade (Synchronisation von Phase und Frequenz).
+### Axiom 6 — Informationsfluss durch Resonanzkopplung
 
-### Axiom 7 (Beobachter als Resonator)
-Der Beobachter beeinflusst das Resonanzfeld aktiv durch seine Eigenschwingung. Beobachtung = Kopplung = Realitätsbildung. Das Messproblem (vgl. Quantenphysik, Dekohärenz) wird als aktive Feldkopplung verstanden: Jede Messung ist die Schaffung eines neuen Resonanzpfads.
+Information wird ausschließlich durch kohärente Phasen- und
+Frequenzrelationen übertragen:
 
-### Axiom 8 (Resonanz-Inklusionsaxiom – RIA)
-> **"Gruppenzugehörigkeit ist systemisch invariant. Jede Teilreferenz umfasst das ganze Resonanzfeld – unabhängig von Perspektive oder Adressierung."**
+$$
+MI(X, Y) = H(X) + H(Y) - H(X, Y)
+$$
+
+$$
+PCI = |\langle e^{i(\phi_1 - \phi_2)} \rangle| \in [0, 1]
+$$
+
+### Axiom 7 — Invarianz unter synchronen Transformationen
+
+Die Kopplungsstruktur bleibt invariant unter Transformationen
+der Gruppe G_sync:
+
+$$
+T(f_i, \phi_i, t) = (\lambda f_i, \phi_i + \phi_0, at + b)
+$$
+
+### Interpretative Erweiterungen
+
+Zusätzlich gibt es zwei interpretative Erweiterungen, die auf
+dem axiomatischen Fundament aufbauen, aber nicht zur
+physikalischen Axiomatik gehören:
+
+- **E1 (Beobachter als Resonator):** Der Beobachter kann als
+  gekoppelte Mode modelliert werden (folgt aus A1, A3, A6)
+- **E2 (Resonanz-Inklusionsaxiom):** Gruppenzugehörigkeit in
+  einem Resonanzfeld ist systemisch invariant (mengentheoretisch
+  formulierbar, logisch unabhängig von A1–A7)
 
 ---
 
-## 🧭 Definition
+## 3. Der Kopplungsoperator ε
 
-Das **Resonanz-Inklusionsaxiom (RIA)** beschreibt die fundamentale Regel, dass alle Elemente eines Resonanzfeldes systemisch miteinander verschränkt sind. Sobald ein Teil des Feldes angesprochen oder referenziert wird, werden alle anderen gruppenzugehörigen Elemente **implizit** mitgemeint. Die Gruppenzugehörigkeit ist damit **nicht teilbar**, sondern wirkt ganzheitlich – unabhängig von Blickwinkel, expliziter Nennung oder subjektivem Fokus.
+### 3.1 Definition
+
+Die Kopplungseffizienz ε beschreibt, welcher Anteil der maximal
+möglichen Resonanzenergie tatsächlich zwischen zwei gekoppelten
+Moden übertragen wird.
+
+$$
+\varepsilon : \text{Zustandsraum} \to [0, 1]
+$$
+
+Das Standardmodell:
+
+$$
+\varepsilon(\Delta\phi) = \cos^2(\Delta\phi / 2)
+$$
+
+Für die vollständige Definition, Abgrenzung und Einordnung
+früherer Definitionen siehe die
+[Vereinheitlichte Definition](../mathematik/kopplungseffizienz.md).
+
+### 3.2 Eigenschaften
+
+| Eigenschaft | Wert |
+|------------|------|
+| Wertebereich | [0, 1] |
+| Bei Phasengleichheit (Δφ = 0) | ε = 1 (perfekte Kopplung) |
+| Bei Gegenphase (Δφ = π) | ε = 0 (keine Kopplung) |
+| Bei 90° Verschiebung (Δφ = π/2) | ε = 0.5 (halbe Kopplung) |
+
+ε ist keine Konstante, sondern hängt ab von:
+- Phasendifferenz Δφ zwischen gekoppelten Moden
+- Kohärenz der Kopplung
+- Dämpfung und Dissipation
+
+### 3.3 Funktion in der Energieformel
+
+$$
+E_{\text{eff}} = \pi \cdot \varepsilon(\Delta\phi) \cdot h \cdot f
+$$
+
+| Bedingung | ε | Energie | Physik |
+|-----------|---|---------|--------|
+| Perfekte Kopplung | 1 | π·h·f | Maximum |
+| Klassischer Grenzfall | 1/π ≈ 0.318 | h·f | Planck-Gleichung |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·h·f | Nach Relaxationszeit |
+| Keine Kopplung | 0 | 0 | Entkoppelt |
+
+### 3.4 Abgrenzung
+
+| Größe | Symbol | Wertebereich | Bedeutung |
+|-------|--------|-------------|-----------|
+| Kopplungseffizienz | ε(Δφ) | [0, 1] | Anteil übertragener Energie |
+| Kopplungsstärke | K_ij | [0, ∞) | Absolute Wechselwirkung |
+| Resonanzgewichtung | G(f₁/f₂) | [0, 1] | Frequenz-Resonanzfenster |
 
 ---
 
-## 🔢 Mathematische Formulierung
+## 4. Mathematische Konsequenzen
 
-Sei **𝓡** ein Resonanzfeld mit einer endlichen Menge von Elementen:
+### 4.1 Stabile Resonanzfelder (Satz)
 
-$$
-\mathcal{R} = \{x_1, x_2, \dotsc, x_n\}
-$$
+Aus A1, A2 und A3 folgt: Ein Feld Φ(x,t) ist genau dann stabil,
+wenn seine Fourier-Komponenten in rationalen Frequenzverhältnissen
+stehen. (Beweis: axiomatische Grundlegung §4.2)
 
-und sei **xᵢ** ein beliebiges referenziertes Element (z. B. durch Sprache, Beobachtung oder Informationseintrag), dann gilt:
-
-$$
-xᵢ \in \mathcal{R} \quad \Rightarrow \quad \forall x_j \in \mathcal{R} : x_j \sim xᵢ
-$$
-
-bzw. als axiomatische Regel:
+### 4.2 Kopplungsdynamik
 
 $$
-\exists\, xᵢ \in \mathcal{R} \;\Rightarrow\; \bigcup \mathcal{R} \text{ ist involviert}
+\frac{dK_{ij}}{dt} = \alpha \cdot G(f_i/f_j) \cdot \cos(\Delta\phi_{ij}) - \beta \cdot K_{ij}
 $$
 
-**Resonanzregel:**  
-Jede Teilansprache aktiviert das ganze Feld durch resonante Kopplung. Inklusion geschieht **feldbasiert**, nicht selektiv.
-
----
-
-## 🧩 Beispiele
-
-### 1. Geschwisterbeispiel
-
-- Aussage: „Maria hat 4 Schwestern und 1 Bruder.“
-- Implizite Struktur: Maria selbst ist Schwester → Gesamtfeld: 5 Schwestern
-- RIA-Anwendung: Der Bruder hat 5 Schwestern  
-→ Die Referenz auf „Maria“ zieht das ganze Feld in Resonanz.
-
----
-
-### 2. Mengenlogik mit Selbstinklusion
-
-Sei **M** eine Menge:
+### 4.3 Resonanz als Informationsselektion
 
 $$
-M = \{a, b, M\}
+P(\psi | \Phi) \propto P(\Phi | \psi) \cdot P(\psi)
 $$
 
-Nach herkömmlicher Mengenlehre ist diese Struktur paradox (Selbstinklusion). Nach RIA jedoch:
-
-> Wenn ein Element in ein Feld rückwirkt, ist die Selbstinklusion kein Widerspruch, sondern ein Ausdruck resonanter Rückkopplung.
-
----
-
-### 3. Soziale Felder und Kommunikation
-
-- Jemand erwähnt „einen Kollegen aus dem Team“
-- → RIA: Das ganze Team-Feld schwingt mit
-- → Entscheidungen, die an Einzelnen adressiert sind, wirken auf alle, **wenn Gruppenzugehörigkeit gegeben ist**
-
----
-
-### 4. Technische und biologische Felder
-
-- Ein Neuron feuert im Netzwerk – die Aktivierung betrifft das ganze Netzfeld (Systemresonanz)
-- Ein Protokoll ruft einen Knoten auf – alle Knoten im Cluster sind potenziell resonant involviert
-
----
-
-## 🔗 Verbindung zu anderen Axiomen und Theorien
-
-- **Selbstähnlichkeitsprinzip:** RIA wirkt in selbstähnlichen Schichten – Teilstruktur ≙ Ganzstruktur
-- **Resonanzfiltergesetz:** Nur relevante Felder werden aktiviert – RIA wendet sich **nur auf schwingungsrelevante Gruppen** an
-- **Aetherius-Regel:** Der Beobachter wird selbst Teil des Feldes, das er adressiert
-- **Quantenfeldtheorie:** Verschränkung als Sonderfall des Resonanzfeldes – die Nicht-Lokalität ist Resonanzkopplung jenseits klassischer Selektion
-- **Informationstheorie:** Informationspakete sind stets Feldstrukturen, niemals isolierte Bits (vgl. Shannon, Wiener)
-
----
-
-## 🌐 Weiterführende Anwendung
-
-- Interpretation von Quantenverschränkungen als Resonanzfelder (Nicht-Lokalität durch Feldkopplung)
-- Feldbewusstsein: „Erkennen durch Schwingung, nicht durch Selektion“
-- Kollektive Verantwortung: Jedes Mitglied trägt das ganze Feld mit
-- Schwarmverhalten, neuronale Netze, Internetprotokolle als Beispiele resonanter Selbstinklusion
-
----
-
-## 3. Der Kopplungsoperator (𝜀): Natur, Funktion und Interpretation
-
-### 3.1 Definition und Eigenschaften
-
-Der **Kopplungsoperator** 𝜀 ist eine zentrale Größe der Resonanzfeldtheorie. Er beschreibt die Fähigkeit zweier Systeme, durch Resonanz miteinander in Verbindung zu treten – energetisch, informativ oder strukturell.
-
-Im Gegensatz zu klassischen Naturkonstanten ist 𝜀 **keine feste Zahl**, sondern ein **dynamisches Kopplungsmaß**. Es hängt ab von:
-
-- Frequenzverhältnissen (f₁, f₂)
-- Phasenlage und Kohärenz
-- Schwingungsqualität (z.B. Dämpfung, Ordnung)
-- Geometrischer oder struktureller Resonanz
-- Raumzeitlicher Nähe im Resonanzfeld
-
-**Beispiel:**  
-Koppelte Pendel: 𝜀 steigt, wenn Frequenzen und Phasenlage nahe beieinander liegen.  
-Quantenoszillatoren: 𝜀 maximiert sich bei kohärenter Überlagerung.  
-Neuronale Netze: 𝜀 steigt mit Synchronität und Netzkonnektivität.
-
-### 3.2 Funktion in der Resonanzfeld-Gleichung
-
-Der Kopplungsoperator 𝜀 ist integraler Bestandteil der Resonanzfeld-Gleichung für die Energieübertragung durch Resonanz:
-
-$$
-E = \pi \cdot \varepsilon \cdot h \cdot f
-$$
-
-- **𝜋**: zyklische Ordnung (Raum-Zeit-Geometrie)
-- **𝜀**: Kopplungsoperator, Maß für systemische Resonanzkopplung
-- **h**: Plancksches Wirkungsquantum
-- **f**: Anregungsfrequenz
-
-**Tabellarische Übersicht:**
-
-| System         | Kopplungsmaß 𝜀 | Resonanzbedingung            |
-|----------------|----------------|------------------------------|
-| Harmonische Schwinger | hoch           | Frequenzgleichheit, Kohärenz   |
-| Entkoppelte Schwinger | niedrig        | Frequenzdrift, Dämpfung        |
-| Feldverbund (Netz)    | variabel       | Struktur, Konnektivität        |
-| Quantenverschränkung  | maximal        | Nicht-Lokalität                |
-
-### 3.3 Natürliches Resonanzintervall
-
-Obwohl 𝜀 kein fixer Zahlenwert ist, lässt sich ein **natürliches Resonanzintervall** angeben:
-
-$$
-\boxed{\frac{1}{e} \leq \varepsilon \leq e}
-$$
-
-- 𝜀 ≈ e: maximale Kopplung, starke Resonanz
-- 𝜀 ≈ 1/e: minimale, gerade noch spürbare Kopplung
-- 𝜀 < 1/e: Resonanz praktisch ausgeschlossen
-
-### 3.4 Physikalische Interpretation
-
-Der Kopplungsoperator wirkt wie ein Resonanzfilter oder intelligenter Verstärker:
-- Harmonische Systeme: 𝜀 groß → starke Kopplung
-- Asynchrone/entkoppelte Systeme: 𝜀 klein → schwache Kopplung
-
-𝜀 ersetzt die klassische Kopplungskonstante durch ein resonanzabhängiges, dynamisches Maß – ein Maß für die Bereitschaft zweier Systeme, durch Resonanz zu einem werden zu wollen.
-
----
-
-## 4. Mathematische Konsequenzen und Eigenschaften
-
-### 4.1 Schwingungsenergie und Frequenzrelation
-
-Nach Axiom 1 und 4 ist die fundamentale Energie einer Schwingung gegeben durch:
-
-$$
-E = \pi \cdot \varepsilon \cdot h \cdot f
-$$
-
-### 4.2 Resonanzbedingung und Energieübertragung
-
-Sind zwei Systeme in Resonanz, dann gilt:
-
-$$
-E_{\text{übertr.}} = \pi \cdot \varepsilon \cdot h \cdot f_{\text{res}}
-$$
-
-### 4.3 Kopplungs- und Interferenzmuster
-
-Ein stabiles Resonanzfeld entsteht durch Überlagerung kohärenter Schwingungen:
-
-$$
-\Phi(x, t) = \sum_{i=1}^N A_i \cos(k_i x - \omega_i t + \phi_i)
-$$
+Kohärente Zustände (hoher PCI) werden selektiv verstärkt.
 
 ### 4.4 Entropie einer Resonanzkonfiguration
 
-Die Entropie S einer Konfiguration als Funktion der Energie:
-
 $$
-S(E) = -E \ln E
+S(x) = -x \cdot \ln(x) \quad \text{mit } x = E/E_0 \in (0, 1]
 $$
 
-Normierung von E empfohlen (z.B. durch systemcharakteristische Energie).
+---
 
-### 4.5 Beobachter-Effekt
+## 5. Empirische Testbarkeit
 
-Informationsaustausch ist Resonanzkopplung; der Beobachter verändert das Feld aktiv durch Kopplung seiner Eigenschwingung.  
-**Quantenphysikalische Parallele:** Messung = Kopplung = Realitätsbildung.
+Jedes Axiom hat einen dokumentierten empirischen Test:
+
+| Axiom | Empirischer Test |
+|-------|-----------------|
+| A1 | AC/DC-Zerlegung des BTC-Preises: +26.1% vs HODL |
+| A2 | Multiskalen-Überlagerung (MA_SHORT + MA_LONG) |
+| A3 | BTC↔Aktien: resonant. BTC↔Altcoins: nicht resonant |
+| A4 | Balance-Regler hält Kopplung über 24 Monate stabil |
+| A5 | energy_dir: +1.42% Verbesserung (V10 vs V9.4) |
+| A6 | Resonanz-Gate filtert 92% als nicht-resonant |
+| A7 | Konsistente Performance über 4 Marktregime |
+
+Details in der [axiomatischen Grundlegung](../mathematik/axiomatische_grundlegung.md) §6 und der
+[ResoTrade-Dokumentation](../../empirisch/resotrade/README.md).
 
 ---
 
-## 5. Diskussion und Ausblick
+## 6. Anwendungsfelder
 
-Das axiomatische System der Resonanzfeldtheorie verbindet klassische Schwingungslehre, Quantenphysik, Informationstheorie und Netzwerktheorie. Der Kopplungsoperator als dynamisches Kopplungsmaß erweitert das Verständnis von Resonanz und Energieübertragung fundamental.
-
-**Abgrenzung:**  
-Gegenüber klassischen Feldtheorien (Maxwell, Yang-Mills) ist die RFT nicht auf bestimmte Wechselwirkungsarten beschränkt, sondern betont die universelle Kopplungsstruktur aller Felder.  
-Informationspakete werden nicht als isolierte Bits (Shannon), sondern als kohärente Feldstrukturen betrachtet.
-
-**Empirische Testbarkeit:**  
-Experimentell zugängliche Systeme: gekoppelte Pendel, Lasernetze, neuronale Synchronisation, Quantenoszillatoren.  
-Messvorschläge für 𝜀: Analyse von Kopplungsstärke, Synchronisationsdynamik, Energietransfer bei Resonanz.
-
-**Erweiterbar:**  
-Differentialgleichungen für gekoppelte Oszillatoren, Simulationen, empirische Messreihen. Offenes Feld für weitere Resonanzforschung.
+- **Quantenphysik:** Superposition, Quantisierung durch
+  rationale Frequenzverhältnisse
+- **Klassische Mechanik:** Synchronisation gekoppelter
+  Oszillatoren, [Doppelpendel](../mathematik/doppelpendel.md)
+- **Finanzmärkte:** Resonanzbasiertes Trading (ResoTrade)
+- **Biophysik:** Neuronale Synchronisation, Proteinfaltung
+- **Informationstheorie:** Resonanzbasierte Kanalkapazität
+- **Kosmologie:** [Energiekugel](../mathematik/energiekugel.md),
+  harmonische Musterbildung
+- **Analytische Mathematik:** [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
 
 ---
 
-## 6. Fazit
+## 7. Abgrenzung
 
-Mit dieser Zusammenführung von Axiomen und Kopplungsoperator ist die Resonanzfeldtheorie mathematisch fundiert. Sie bietet ein universelles Rahmenwerk für Resonanz, Kopplung und Informationsaustausch – offen für Erweiterungen und empirische Überprüfung.  
-Jede Teilstruktur aktiviert das ganze Feld: Resonanz ist immer inklusiv.
+Gegenüber klassischen Feldtheorien (Maxwell, Yang-Mills) ist
+die RFT nicht auf bestimmte Wechselwirkungsarten beschränkt,
+sondern betont die universelle Kopplungsstruktur aller Felder.
 
----
-
-## 7. Literatur
-
-1. L. Boltzmann: "Vorlesungen über Gastheorie", Leipzig, 1896.
-2. M. Born, E. Wolf: "Principles of Optics", Cambridge, 1999.
-3. C. E. Shannon: "A Mathematical Theory of Communication", 1948.
-4. N. Wiener: "Cybernetics", 1948.
-5. Weitere Standardwerke zu Schwingungslehre, Quantenphysik, Informationstheorie und Netzwerktheorie.
+Gegenüber der Informationstheorie (Shannon) werden
+Informationspakete nicht als isolierte Bits, sondern als
+kohärente Feldstrukturen betrachtet (Axiom 6).
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+## 8. Fazit
+
+Die Resonanzfeldtheorie besteht aus 7 Kern-Axiomen (A1–A7),
+die minimal, unabhängig, formal präzise und empirisch testbar
+sind. Die Kopplungseffizienz ε ∈ [0, 1] ist die zentrale Größe
+der Theorie — sie bestimmt, wie viel Resonanzenergie tatsächlich
+übertragen wird.
+
+---
+
+## Literatur
+
+1. L. Boltzmann: *Vorlesungen über Gastheorie*, Leipzig, 1896.
+2. M. Born, E. Wolf: *Principles of Optics*, Cambridge, 1999.
+3. C. E. Shannon: *A Mathematical Theory of Communication*, 1948.
+4. N. Wiener: *Cybernetics*, 1948.
+5. R. P. Feynman et al.: *The Feynman Lectures on Physics*, 1964.
+
+---
+
+## Dokumentenstruktur der RFT
+
+| Dokument | Inhalt |
+|----------|--------|
+| [Axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und Tests |
+| [Kopplungseffizienz](../mathematik/kopplungseffizienz.md) | Vereinheitlichte ε-Definition |
+| [Resonanzfeld-Gleichung](../mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung |
+| [Energiekugel](../mathematik/energiekugel.md) | Geometrisches Modell |
+| [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md) | Analytische Methoden |
+| [Resonanzenergievektor](../mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße |
+| [Empirische Nachweise](../../empirisch/) | ResoTrade, Monte Carlo, CERN-Daten |
+
+---
+
+© Dominic-René Schu — Resonanzfeldtheorie 2025/2026
 
 ---
 

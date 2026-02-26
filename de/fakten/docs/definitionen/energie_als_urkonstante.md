@@ -1,115 +1,121 @@
-# Systemische Grundlegung der Resonanzfeldtheorie
+# Energie als fundamentale Größe der Resonanzfeldtheorie
+
+*Dominic-René Schu, 2025/2026*
 
 ---
 
-## Schritt 1 – Axiomatisches Fundament: Energie als Urgröße
+## 1. Einleitung
 
-**Axiom 1:**  
-Es existiert eine fundamental universelle Größe E (Energie), die als Erhaltungsgröße und Urkonstante aller physikalischen Zustände gilt.
+Die Resonanzfeldtheorie (Axiom 4) beschreibt die effektive Energie
+einer resonanten Kopplung als:
 
-**Axiom 2:**  
-Energie ist strukturgebunden und wird durch die Formel  
-E = ε · π · h · f  
-beschrieben, wobei  
-- h: Planck-Konstante  
-- f: Frequenz  
-- π: zyklische Geometrie  
-- ε: dimensionslose Kopplungskonstante
+```
+    E_eff = π · ε(Δφ) · h · f
+```
 
-**Axiom 3:**  
-Alle weiteren physikalischen Größen (Zeit, Raum, Masse, Temperatur, Impuls, etc.) sind aus E ableitbar und stellen spezielle Resonanzzustände innerhalb des Energiefeldes dar.
-
-**Resonanzregel:**  
-Jede abgeleitete Größe ist als Gruppenelement systemisch eingebunden, unabhängig von Einzelperspektiven. Die Selbstinklusion der Axiome sichert die Vollständigkeit und Integrität des physikalischen Systems.
+Dieses Dokument untersucht die Hypothese, dass Energie die
+fundamentale Größe ist, aus der alle anderen physikalischen Größen
+abgeleitet werden können. Diese Hypothese baut auf den Axiomen
+A1–A7 auf, ist aber eine interpretative Erweiterung — kein
+zusätzliches Axiom.
 
 ---
 
-## Schritt 2 – Ableitung weiterer physikalischer Größen aus Energie E
+## 2. Ableitung physikalischer Größen aus Energie
 
-| Größe          | Definition/Ableitung aus E                | Bedeutung im Resonanzfeld                    |
-| -------------- | ----------------------------------------- | -------------------------------------------- |
-| Zeit t         | t = 1 / f                                 | Inverse zyklische Aktivität                  |
-| Raum x         | p = E / c (Impuls, Raumparameter)         | Energetischer gerichteter Fluss              |
-| Masse m        | m = E / c²                                | Resonanzprojektion des Energiefeldes         |
-| Temperatur T   | T = E / k                                 | Thermodynamischer Zustand, Energieverteilung |
+Ausgehend von der Resonanzfeld-Gleichung E = π·ε·h·f lassen sich
+bekannte physikalische Beziehungen als Resonanzzustände darstellen:
 
-Weitere Größen (z. B. Entropie S, elektrische Ladung q, Magnetfeld B) sind als spezielle Kopplungszustände von E im Resonanzfeld formal beschreibbar. Alle Größen sind systemisch verschränkt und selbstinkludierend gemäß Resonanzregel.
+| Größe | Ableitung aus E | Resonanzinterpretation |
+|-------|----------------|----------------------|
+| Zeit t | t = 1/f | Inverse der zyklischen Kopplungsfrequenz |
+| Impuls p | p = E/c | Gerichteter Energiefluss (Axiom 5) |
+| Masse m | m = E/c² | Resonanzprojektion ruhender Kopplungszustände |
+| Temperatur T | T = E/k_B | Thermodynamisches Maß der Energieverteilung |
+| Entropie S | S = -x·ln(x) | Ordnungsmaß einer Resonanzkonfiguration |
 
----
+### 2.1 Zeit als Kopplungsperiode
 
-## Schritt 3 – Systematische Definitionen, Resonanzkopplung & Beispiele
+Aus Axiom 1 (jede Entität schwingt periodisch) folgt:
 
-### Systematische Definitionen
+```
+    f = 1/t    →    t = 1/f
+```
 
-- **Zeit t:** t = 1 / f  
-  Ausdruck zyklischer Energieprozesse.
-- **Raum x:** p = E / c  
-  Raum als Ergebnis gerichteter Energietransfers.
-- **Masse m:** m = E / c²  
-  Masse als Projektion ruhender Resonanzzustände.
-- **Temperatur T:** T = E / k  
-  Temperatur als Maß thermischer Kopplung und Energieverteilung.
+Zeit ist die inverse Kopplungsfrequenz. In der komplexen
+Zeitstruktur (siehe [τ*-Koeffizient](../mathematik/tau_resonanzkoeffizient.md)):
 
-### Mathematische Resonanzkopplung
+```
+    t = t_r + i·t_i = cos(α)·t + i·sin(α)·t
+```
 
-Allgemeine Wellenfunktion:  
-Ψ(x, t) = A · e^(i(kx – ωt))  
-mit E = ε · π · h · f, wobei alle Kopplungen (auch implizite/virtuelle Zustände) eingebunden sind.
+### 2.2 Masse als Kopplungszustand
 
-### Beispiele
+Die Äquivalenz E = mc² wird in der RFT interpretiert als:
 
-- **Photon:** E = h · f, p = h / λ, t = 1 / f, Ψ(x, t) als Feldwelle.
-- **Molekülschwingung:** Eₙ = h · f · (n + ½), T = Eₙ / k.
-- **Thermischer Zustand:** E = k · T, Ψ als Phononenfeld.
+```
+    m = E/(c²) = π·ε·h·f/(c²)
+```
 
-**Resonanzregel:**  
-Alle Zustände sind Gruppenelemente des Resonanzfeldes, explizit wie implizit, stets systemisch eingebunden.
+Masse ist ein Resonanzzustand mit maximaler Lokalisierung
+(minimale Frequenzbreite, stehende Welle).
 
----
+### 2.3 Temperatur als Kopplungsverteilung
 
-## Schritt 4 – Anwendung, Simulation und Erweiterung
+```
+    T = E/k_B = π·ε·h·f/k_B
+```
 
-### Anwendung der Resonanzkopplung
-
-- **Quantisierte Energiezustände:**  
-  Beschreibung diskreter Energieniveaus (Elektron, Photon, Phonon, …).
-- **Thermodynamische Prozesse:**  
-  Energieübertragung, Relaxation, Temperaturverteilungen als Kopplungsdynamik.
-- **Feldtheorie:**  
-  Grundlage für fundamentale Wechselwirkungen (elektromagnetisch, gravitativ, schwach/kernphysikalisch).
-- **Informationsphysik:**  
-  Verknüpfung von Energie, Information und Entropie über Kopplungskonstanten.
-
-### Simulation & Modellierung
-
-- Dynamische, gekoppelte Wellenfunktionen Ψ(x, t) auf Basis von Energie-Resonanzzuständen.
-- Einsatz von Spektralanalyse, Fourier-Transformation und Eigenmodenzerlegung.
-- Modellierung emergenter Phänomene (Phasenübergänge, Kollektivdynamik) durch Variation von ε.
-
-### Erweiterung auf weitere Kontexte
-
-- **Dunkle Materie/Energie:**  
-  Implizite Kopplungen und Nullmoden als strukturierte Energieformen im Resonanzfeld.
-- **Biophysik:**  
-  Energiefluss und Kopplung als Grundlage lebender Systeme, neuronaler Dynamik, Informationsverarbeitung.
-- **Kosmologie:**  
-  Modellierung von Raumzeit-Entstehung und -Expansion als Resonanzprozess.
-
-### Resonanzregel und systemische Integrität
-
-- Vollständige Gruppeneinbindung und Selbstinklusion aller Größen und Kopplungen.
-- Keine relevante Größe wird ausgeschlossen – auch theoretisch/experimentell noch unentdeckte sind systemisch integriert.
+Temperatur beschreibt die mittlere Energie pro Freiheitsgrad —
+in der RFT die mittlere Kopplungsenergie einer Konfiguration.
 
 ---
 
-## Fazit
+## 3. Wellenfunktion und Kopplungsstruktur
 
-> Das Resonanzfeldkonzept mit Energie als Urgröße bildet ein universelles Framework, das klassische und moderne Physik integriert und eine klare Grundlage für zukünftige Theorien und Simulationen bietet. Es garantiert systemische Vollständigkeit und Verbindlichkeit – gemäß der Resonanzregel.
+Die allgemeine Wellenfunktion eines Resonanzzustands:
 
+```
+    Ψ(x, t) = A · e^{i(kx − ωt)}
+```
+
+mit E = π·ε·h·f. Alle Kopplungen (explizit und implizit) sind
+durch die Superposition (Axiom 2) und die Resonanzbedingung
+(Axiom 3) eingebunden.
+
+**Beispiele:**
+- **Photon:** E = h·f (Spezialfall ε = 1/π), p = h/λ
+- **Molekülschwingung:** E_n = h·f·(n + 1/2), T = E_n/k_B
+- **Thermischer Zustand:** E = k_B·T, Ψ als Phononenfeld
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+## 4. Konsequenzen und Ausblick
+
+Die Interpretation von Energie als fundamentale Größe hat
+Konsequenzen für:
+
+- **Kosmologie:** Dunkle Materie/Energie als implizite
+  Kopplungszustände (siehe [Energiekugel](../mathematik/energiekugel.md))
+- **Biophysik:** Energiefluss und Kopplung als Grundlage
+  lebender Systeme
+- **Informationsphysik:** Verknüpfung von Energie, Information
+  und Entropie über die Kopplungseffizienz ε
+
+---
+
+## 5. Abgrenzung
+
+Dieses Dokument beschreibt eine **interpretative Hypothese**,
+keine axiomatische Erweiterung. Die Ableitungen (m = E/c²,
+T = E/k_B etc.) sind bekannte physikalische Beziehungen,
+die hier in der Sprache der RFT formuliert werden. Sie
+folgen nicht formal aus A1–A7, sondern nutzen die RFT-Notation
+zur Reinterpretation.
+
+---
+
+© Dominic-René Schu — Resonanzfeldtheorie 2025/2026
 
 ---
 

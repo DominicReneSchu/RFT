@@ -64,11 +64,25 @@ Die Gleichung verdeutlicht, dass Resonanz nicht nur von Frequenz, sondern auch v
 ---
 
 ### **Kopplungsoperator (ε)** 🔗
-**Definition:**  
-Der Kopplungsoperator ε beschreibt als dynamische Größe die Stärke der Resonanzkopplung. Er kann Werte im Bereich von ca. 0,37 bis 2,72 annehmen (entsprechend 1/e bis e) und bestimmt maßgeblich, wie effizient Energie zwischen Systemen übertragen wird.
+**Definition:**
+Die Kopplungseffizienz ε beschreibt als dynamische Größe den Anteil
+der maximal möglichen Resonanzenergie, der tatsächlich zwischen
+gekoppelten Systemen übertragen wird. Sie nimmt Werte im Bereich
+[0, 1] an und bestimmt maßgeblich die Effizienz der
+Energieübertragung.
 
-**Meta-Impuls:**  
-Der Kopplungsoperator erlaubt es, Kopplungszustände mathematisch und experimentell präzise zu erfassen und zu steuern.
+Das Standardmodell: ε(Δφ) = cos²(Δφ/2)
+
+- ε = 1: Perfekte Kopplung (Phasengleichheit)
+- ε = 0: Keine Kopplung (Gegenphase)
+- ε = 1/e ≈ 0.368: Natürliche Dämpfung (nach Relaxationszeit)
+- ε = 1/π ≈ 0.318: Klassischer Grenzfall (E = h·f)
+
+Siehe [Vereinheitlichte Definition](../mathematik/kopplungseffizienz.md).
+
+**Meta-Impuls:**
+Der Kopplungsoperator erlaubt es, Kopplungszustände mathematisch
+und experimentell präzise zu erfassen und zu steuern.
 
 ---
 
