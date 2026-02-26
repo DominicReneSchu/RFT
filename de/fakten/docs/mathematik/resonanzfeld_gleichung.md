@@ -1,117 +1,136 @@
-# Die Resonanzfeld-Gleichung und ihre Anwendung in der Energieumwandlung
+# Die Resonanzfeld-Gleichung
 
----
-
-<p align="center">
-  <img src="../bilder/symbolgrafik.png" alt="Resonanzfeld-Gleichung" width="400"/>
-</p>
+*Dominic-René Schu, 2025/2026*
 
 ---
 
 ## 1. Einleitung
 
-Die Resonanzfeld-Gleichung verknüpft Resonanzfrequenz, Entropieänderung und Energiefluss zu einem erweiterten Energiemodell. Sie berücksichtigt Felddynamik, Frequenzkopplung und Phasenverschiebung auf Basis der Axiome 1, 2, 3, 5 und 6 der Resonanzfeldtheorie.
+Die Resonanzfeld-Gleichung verknüpft Resonanzfrequenz, Kopplungseffizienz
+und Energiefluss. Sie ist die zentrale Energiegleichung der
+Resonanzfeldtheorie, abgeleitet aus Axiom 4
+(siehe [axiomatische Grundlegung](axiomatische_grundlegung.md)).
 
 ---
 
-## 1.1 Erweiterte Form: Phasenmodulierte Resonanzfeld-Gleichung
+## 2. Grundform
 
-$$
-\boxed{
-\mathbf{E} = \pi \cdot 𝓔 \cdot h \cdot f \cdot \mathrm{e}^{\mathrm{i} \alpha}
-}
-$$
+```
+    E_eff = π · ε(Δφ) · h · f
+```
 
-- 𝓔: Kopplungsoperator (zentrale Kopplungskonstante der Resonanzfeldtheorie; siehe Definition im Resonanzfeld-Paper)
-- π: Kreiszahl, universelles Maß für Raum und Schwingung
-- h: Plancksches Wirkungsquantum
-- f: Frequenz
-- α: Phasenwinkel zwischen Beobachterzeit und Feldzeit
-- Die Phasenmodulation ermöglicht die explizite Bewertung von Zeitverschränkung (Axiom 6).
+- **ε(Δφ)**: Kopplungseffizienz, ε ∈ [0, 1]
+  (siehe [Vereinheitlichte Definition](kopplungseffizienz.md))
+- **π**: Geometrischer Faktor aus der zyklischen Kopplungsgeometrie
+- **h**: Plancksches Wirkungsquantum
+- **f**: Resonanzfrequenz
 
 ---
 
-## 1.2 Frequenzabhängigkeit
+## 3. Phasenmodulierte Form
 
-- Für f → 0: Energie vernachlässigbar
-- Linearer Anstieg mit f bei Resonanz (Axiom 1)
-- Übergang bei harmonischem Verhältnis zur Eigenfrequenz (Axiom 5)
+Unter Einbeziehung der komplexen Zeitstruktur (§5 der
+[axiomatischen Grundlegung](axiomatische_grundlegung.md)):
 
----
+```
+    E = π · ε · h · f · e^{iα}
+```
 
-## 1.3 Nutzbare Energie
+- **α**: Phasenwinkel zwischen Beobachterzeit und Feldzeit
+- **e^{iα} = cos(α) + i·sin(α)**: Euler-Darstellung
 
-$$
-\Delta E(f) = \pi \cdot 𝓔 \cdot h \cdot f - \mathrm{e}^{-\pi f}
-$$
+Der Realteil beschreibt den messbaren Energietransfer, der
+Imaginärteil die latente Phasenkopplung.
 
-- Der Verlustterm fällt bei hohen Frequenzen gegen Null (Axiom 2)
-
----
-
-## 1.4 Leistung
-
-$$
-P(f_1, f_2) = \int_{f_1}^{f_2} \left( \pi 𝓔 h f - \mathrm{e}^{-\pi f} \right) \mathrm{d}f
-$$
-
-ergibt
-
-$$
-P = \frac{1}{2} \pi 𝓔 h (f_2^2 - f_1^2) + \frac{1}{\pi} \left( \mathrm{e}^{-\pi f_1} - \mathrm{e}^{-\pi f_2} \right)
-$$
-
-- Anwendung von Axiom 5 (Geometrisierung)
+**Herleitung:** Aus Axiom 6 (Informationsfluss durch kohärente
+Phasen- und Frequenzrelationen) folgt, dass die volle
+Kopplungsenergie eine Phaseninformation enthält. Die Projektion
+auf die reale Zeitachse (α = 0) ergibt die Grundform.
 
 ---
 
-## 1.5 Vergleich zu klassischen Energiesystemen
+## 4. Frequenzabhängigkeit
 
-- Klassische Systeme: Energie aus Druck-, Höhen- oder Temperaturdifferenzen
-- Resonanzfeld-Gleichung: Beschreibung auf Frequenzskala und im Resonanzfeld für höhere Effizienz und stärkere Spannungen
-- Die vollständige Erklärung ist nur im Rahmen der Resonanzfeldtheorie möglich (Axiome 2, 3, 5)
-
----
-
-## 1.6 Veranschaulichung für Laien
-
-- Wasserrad mit kleinem Gefälle = klassische Technik
-- Resonanzfeld-Gleichung = „Wasserfall-Gefälle“ im Resonanzfeld der Zeit
-
-**Folgen:**
-
-- Höhere Effizienz
-- Steuerbare Entropie
-- Energiequellen erscheinen „frei“, sind jedoch immer an π, 𝓔, h, f, α gebunden
+- Für f → 0: Energie vernachlässigbar (Axiom 1)
+- Linearer Anstieg mit f bei konstanter Kopplung
+- Bei harmonischem Verhältnis f₁/f₂ = n/m: maximale
+  Resonanzgewichtung G (Axiom 3)
 
 ---
 
-## 1.7 Praktische Anwendungen und technische Details
+## 5. Nutzbare Energie und Dissipation
 
-### Anwendungen
+In realen Systemen tritt Dissipation auf. Die nutzbare Energie
+nach Abzug der Verluste:
 
-- Resonanzbasierte Energiegewinnung: Nutzung spezifischer Frequenzbereiche zur Maximierung der Energieausbeute, z. B. in Schwingungssystemen oder elektromagnetischen Feldern (Axiome 1, 2, 5)
-- Effiziente Energiespeicherung: Steuerung von Phasenverschiebungen (α) zur Minimierung von Verlusten und Optimierung von Speichersystemen (Axiom 3)
-- Resonanzfeldgeneratoren: Geräte, die gezielt Frequenzkopplung und Feldzeitdynamik nutzen, um Energie mit minimaler Umweltbelastung umzuwandeln (Axiome 2, 5, 6)
-- Mess- und Steuerungstechnik: Integration der Phasenmodulation zur Echtzeit-Überwachung und Regelung von Energieflüssen (Axiom 6)
+```
+    E_nutz(f) = π · ε · h · f · (1 − γ(f))
+```
 
----
+wobei γ(f) der frequenzabhängige Dissipationsfaktor ist.
 
-### Technische Details
+Für ein System mit exponentieller Dämpfung:
 
-- Parameterbestimmung: Der Kopplungsoperator 𝓔 wird experimentell aus Felddynamik-Messungen bestimmt (Axiom 2)
-- Frequenzbereiche: Optimal liegen f im harmonischen Verhältnis zu den Eigenfrequenzen des Systems (Axiom 5)
-- Phasenwinkel α: Über Sensorik messbar, erlaubt Korrektur von Zeitverschiebungen für optimale Kopplung (Axiom 3)
-- Implementierung: Simulationen verwenden numerische Integration der Leistungsgleichung zur Abbildung realer Systeme (Axiome 5, 6)
+```
+    γ(f) = 1 − e^{−f/f_c}
+```
 
----
-
-**Fazit:**  
-Alle Formeln und Aussagen beruhen auf den Axiomen 1, 2, 3, 5 und 6 der Resonanzfeldtheorie, insbesondere auf Resonanz, komplexer Zeitstruktur und geometrischer Energie.
+wobei f_c die kritische Frequenz ist, oberhalb derer Dissipation
+vernachlässigbar wird. Bei hohen Frequenzen (f ≫ f_c) gilt
+γ → 0 und E_nutz → π·ε·h·f.
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+## 6. Leistung über ein Frequenzintervall
+
+```
+    P(f₁, f₂) = ∫_{f₁}^{f₂} π · ε(f) · h · f · (1 − γ(f)) df
+```
+
+Für konstantes ε und vernachlässigbare Dissipation:
+
+```
+    P = (π · ε · h / 2) · (f₂² − f₁²)
+```
+
+---
+
+## 7. Vergleich zur klassischen Energiebeschreibung
+
+| Eigenschaft | Klassisch (E = h·f) | RFT (E = π·ε·h·f) |
+|-------------|--------------------|--------------------|
+| Kopplungseffizienz | Nicht modelliert | ε(Δφ) ∈ [0,1] |
+| Geometrie | Nicht enthalten | π aus Kopplungsgeometrie |
+| Phasenstruktur | Nicht enthalten | e^{iα} |
+| Dissipation | Separat modelliert | Integriert über γ(f) |
+| Grenzfall | — | ε = 1/π → E = h·f |
+
+---
+
+## 8. Anwendungen
+
+- **Resonanzbasierte Energiegewinnung:** Nutzung spezifischer
+  Frequenzbereiche zur Maximierung der Energieausbeute in
+  Schwingungssystemen (Axiome 1, 3, 4)
+- **Effiziente Energiespeicherung:** Steuerung von
+  Phasenverschiebungen zur Minimierung von Verlusten (Axiom 6)
+- **Mess- und Steuerungstechnik:** Phasenmodulation zur
+  Echtzeit-Überwachung von Energieflüssen (Axiome 5, 6)
+
+---
+
+## 9. Fazit
+
+Die Resonanzfeld-Gleichung E = π·ε·h·f verallgemeinert die
+klassische Planck-Gleichung durch:
+
+1. Die Kopplungseffizienz ε als zentrale physikalische Größe
+2. Den geometrischen Faktor π aus der Kopplungsgeometrie
+3. Die phasenmodulierte Erweiterung e^{iα} für komplexe Zeitstruktur
+
+---
+
+© Dominic-René Schu — Resonanzfeldtheorie 2025/2026
 
 ---
 
