@@ -1,324 +1,293 @@
-# Resonanzfeldtheorie (Version 3.0)
+# Resonanzfeldtheorie (Version 3.1)
 
 [![Lizenz: Schu-Lizenz 1.4](https://img.shields.io/badge/Lizenz-Schu--Lizenz%201.4-blue.svg)](lizenz/schu-lizenz_v1.4.md)
 
-Willkommen im offiziellen Repository der **Resonanzfeldtheorie**.  
-Dieses Projekt vereint Mathematik, Physik, Technik, Philosophie und neue Denkansätze zu einem interdisziplinären Modell der Resonanz. Ziel ist es, die Struktur der Realität über fundamentale Größen wie π, ℏ und die neue Resonanzkonstante 𝓔 zu beschreiben.
+Willkommen im offiziellen Repository der **Resonanzfeldtheorie (RFT)**.
+Dieses Projekt vereint Mathematik, Physik, Technik und Philosophie zu
+einem axiomatischen Modell der Resonanz. Die Theorie beschreibt
+fundamentale Prozesse als Kopplungs- und Resonanzphänomene in
+Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
 
 ---
 
 ## ☰ Inhaltsverzeichnis
 
-- [🎯 Elevator-Pitch](#elevator-pitch-)
-- [📄 PDF-Zusammenfassung](#pdf-zusammenfassung-)
-- [🔬 Zentrale Konstanten & Grundformel](#zentrale-konstanten--grundformel-)
-- [🧩 Einführung in die Resonanzfeldtheorie](#einführung-in-die-resonanzfeldtheorie-)
-- [📘 Inhalt](#inhalt-)
-    - [📝 Dokumentation und Definition](#dokumentation-und-definition-)
-    - [📐 Mathematik / Physik](#mathematik--physik-)
-    - [🌍 Gesellschaft](#gesellschaft-)
-    - [📐 Konzepte](#konzepte-)
-    - [🧠 Simulationen](#simulationen-)
-	- [🔬 Empirische Beweisführung](#empirische-beweisführung-)
-- [🦋 Vision](#vision-)
-- [🛡 Lizenz](#lizenz-)
-- [🤝 Beteiligung](#beteiligung-und-partnerschaft-)
-- [🤖 KI-Erweiterung durch Resonanzfeldtheorie](#ki-erweiterung-durch-resonanzfeldtheorie-)
-- [📄 Kontakt](#kontakt-)
-- [📥 Repository klonen](#repository-klonen-)
+- [Grundformel und zentrale Größen](#grundformel-und-zentrale-größen)
+- [Axiomensystem (Kurzfassung)](#axiomensystem-kurzfassung)
+- [PDF-Zusammenfassung](#pdf-zusammenfassung)
+- [Peer Review](#peer-review)
+- [Inhalt](#inhalt)
+    - [Axiomatik und Definitionen](#axiomatik-und-definitionen)
+    - [Mathematik und Physik](#mathematik-und-physik)
+    - [Philosophie](#philosophie)
+    - [Gesellschaft](#gesellschaft)
+    - [Konzepte](#konzepte)
+    - [Simulationen](#simulationen)
+    - [Empirische Nachweise](#empirische-nachweise)
+- [Vision](#vision)
+- [Lizenz](#lizenz)
+- [Beteiligung](#beteiligung-und-partnerschaft)
+- [Kontakt](#kontakt)
+- [Repository klonen](#repository-klonen)
 
 ---
 
-## Elevator-Pitch 🎯
+## Grundformel und zentrale Größen
 
-> **Die Resonanzfeldtheorie denkt Realität nicht linear, sondern resonant.**  
-> Alles ist Schwingung – alles ist Kopplung.  
-> π, ℏ und 𝓔 bilden ein neues Naturdreieck, das Physik, Technik, Bewusstsein und Gesellschaft systemisch verknüpft.
+Die zentrale Gleichung der Resonanzfeldtheorie (Axiom 4):
+
+$$
+E_{\text{eff}} = \pi \cdot \varepsilon(\Delta\phi) \cdot h \cdot f
+$$
+
+| Symbol | Name | Bedeutung |
+|:------:|:-----|:----------|
+| **π** | Kreiszahl | Geometrischer Faktor aus der zyklischen Kopplungsgeometrie |
+| **ε(Δφ)** | Kopplungseffizienz | Anteil übertragener Resonanzenergie, ε ∈ [0, 1] |
+| **h** | Planck-Konstante | Quantisierung der Energie |
+| **f** | Frequenz | Schwingungsfrequenz der gekoppelten Mode |
+
+### Kopplungseffizienz ε
+
+Die Kopplungseffizienz beschreibt, welcher Anteil der maximal
+möglichen Resonanzenergie tatsächlich zwischen zwei gekoppelten
+Moden übertragen wird.
+
+**Standardmodell:** ε(Δφ) = cos²(Δφ/2)
+
+| Kopplungszustand | ε | Energie |
+|------------------|---|---------|
+| Perfekte Kopplung (Δφ = 0) | 1 | π·h·f |
+| Klassischer Grenzfall (E = h·f) | 1/π ≈ 0.318 | h·f |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·h·f |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | π·h·f/2 |
+| Keine Kopplung (Δφ = π) | 0 | 0 |
+
+Der Faktor π entsteht aus der Integration der Kopplungseffizienz
+über einen Halbzyklus des Phasenraums — nicht als freier Parameter.
+Die klassische Planck-Gleichung E = h·f ist der Spezialfall ε = 1/π.
+
+Vollständige Definition: [Kopplungseffizienz](fakten/docs/mathematik/kopplungseffizienz.md)
 
 ---
 
-## PDF-Zusammenfassung 📄
+![Visualisierung der Resonanzfeldtheorie](bilder/visualisierung_RFT.png)
 
-Die ausführliche Zusammenfassung der Resonanzfeldtheorie steht als PDF zum Download bereit:  
+*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, h, ε und f im Resonanzraum*
+
+---
+
+## Axiomensystem (Kurzfassung)
+
+Die RFT besteht aus 7 Kern-Axiomen, die minimal, unabhängig, formal
+präzise und empirisch testbar sind:
+
+| Axiom | Kernaussage | Formel |
+|-------|-------------|--------|
+| A1 | Universelle Schwingung | ψ = A·cos(kx − ωt + φ) |
+| A2 | Superposition | Φ = Σ ψᵢ |
+| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ |
+| A4 | Kopplungsenergie | E = π·ε·h·f |
+| A5 | Energierichtung | E⃗ = E·ê(Δφ, ∇Φ) |
+| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 |
+| A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) |
+
+Zusätzlich gibt es zwei interpretative Erweiterungen:
+- **E1 (Beobachter als Resonator):** Folgt aus A1, A3, A6
+- **E2 (Resonanz-Inklusion):** Gruppenzugehörigkeit ist systemisch invariant
+
+Vollständige Formalisierung: [Axiomatische Grundlegung](fakten/docs/mathematik/axiomatische_grundlegung.md)
+
+---
+
+## PDF-Zusammenfassung
+
+Die ausführliche Zusammenfassung der Resonanzfeldtheorie als PDF:
 [**RFT_Zusammenfassung.pdf**](./RFT_Zusammenfassung.pdf)
 
 ---
 
-## Peer Review 📄
+## Peer Review
 
-Ein Peer-Review-Verfahren wird aktiv angestrebt. Die aktuelle Version des Manuskripts finden Sie hier:
-
-- [**rft_manuskript_de_iop.pdf**](peer_review_rft/manuskript_de/rft_manuskript_de_iop.pdf) – Manuskript zur Resonanzfeldtheorie  
-
-
-
+Ein Peer-Review-Verfahren wird aktiv angestrebt:
+[**rft_manuskript_de_iop.pdf**](peer_review_rft/manuskript_de/rft_manuskript_de_iop.pdf)
 
 ---
 
-![Visualisierung der Resonanzfeldtheorie: π, ℏ, 𝓔 und f im Resonanzraum](bilder/visualisierung_RFT.png)
+# Inhalt
 
-*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, ℏ, 𝓔 und **𝑓** im Resonanzraum*
+## Axiomatik und Definitionen
 
----
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [Axiomatische Grundlegung](fakten/docs/mathematik/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
+| 2 | [Kopplungseffizienz ε](fakten/docs/mathematik/kopplungseffizienz.md) | Vereinheitlichte Definition der zentralen Größe |
+| 3 | [RFT-Übersicht und Kopplungsoperator](fakten/docs/definitionen/paper_resonanzfeldtheorie.md) | Gesamtübersicht der Theorie |
+| 4 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
+| 5 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
+| 6 | [Resonanzlogische DGL](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md) | Klassische DGLs als Projektionen der rDGL |
 
-## Einführung in die Resonanzfeldtheorie 🧩
+## Mathematik und Physik
 
-Die Resonanzfeldtheorie ist ein neues Paradigma zur Beschreibung der Welt. Sie geht davon aus, dass alle Phänomene – von Teilchen über Kräfte bis zum Bewusstsein – aus Schwingungsbeziehungen in einem universellen Resonanzfeld hervorgehen.
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [Resonanzintegrale](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md) | Analytische Methoden — Dirichlet-Integral als Resonanzenergie |
+| 2 | [Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung E = π·ε·h·f |
+| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/energie_axiomatische_herleitung.md) | Grenzfälle ε = 1, 1/e, 1/π, 0 |
+| 4 | [Resonanzzeitkoeffizient τ*](fakten/docs/mathematik/tau_resonanzkoeffizient.md) | Zeitskala der Kopplung: τ* = π/ε |
+| 5 | [Energierichtung](fakten/docs/mathematik/energierichtung.md) | Energie als Vektor mit Drehsinn |
+| 6 | [Energiekugel](fakten/docs/mathematik/energiekugel.md) | Geometrisches Modell — Phasenstruktur und dunkle Energie |
+| 7 | [Resonanzenergievektor](fakten/docs/mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße im Resonanzraum |
+| 8 | [Energieübertragung](fakten/docs/mathematik/energieuebertragung.md) | Prinzipien und Gleichungen der Übertragung |
+| 9 | [Resonanzkoordinaten](fakten/docs/mathematik/resonanzkoordinaten.md) | Tangens-Halbwinkel-Parametrisierung |
+| 10 | [Doppelpendel](fakten/docs/mathematik/doppelpendel.md) | Klassische Mechanik und RFT-Perspektive |
 
-## Zentrale Konstanten & Grundformel 🔬
+## Philosophie
 
-- **π (Kreiszahl):** Maß für zyklische Symmetrie und Kreisresonanzen  
-- **ℏ (Planck-Konstante):** Maß für Quantisierung und Energiepaketierung  
-- **𝓔 (Kopplungsoperator):** Resonanzkopplungs-Konstante
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [Mathematik, Erkenntnis und Resonanz](fakten/docs/philosophie/aetherius_mathematik_und_erkenntnis.md) | Aetherius — Reflexion über Mathematik als Strukturerkenntnis |
 
-Diese Konstanten führen zur **[Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md)**:
+## Gesellschaft
 
-> **Grundformel:**  
->
->E = π * 𝓔 * ℏ * **f**
->
->
-> Energie ist das Resultat des Zusammenspiels von Geometrie (π), Resonanzkopplung (𝓔), Quantisierung (ℏ) und Schwingung (𝑓).
+### 1. Ursprung und globale Struktur
 
-**Beispiel:**  
-Mit π ≈ 3.14, ℏ ≈ 1.05·10⁻³⁴ J·s, 𝓔 = 1 und einer Frequenz **f** zeigt sich, wie 𝓔 als Kopplungsfaktor das energetische Verhalten im Resonanzfeld prägt.
+- [Gesamtmodell des Resonanzfeldes](fakten/docs/gesellschaft/gesamtmodell_des_resonanzfeldes.md)
+- [Resonanzmodell: Von Schöpfung zu Kontrolle](fakten/docs/gesellschaft/kontrolle_wahrheit.md)
+- [Globale Struktur der Täuschung](fakten/docs/gesellschaft/globale_machtstrukturen.md)
+- [Analyse westlicher Machtstrukturen](fakten/docs/gesellschaft/familiendynamik.md)
+- [Was ist das System?](fakten/docs/gesellschaft/das_system.md)
+- [Geschichtsanalyse im Resonanzfeld](fakten/docs/gesellschaft/geschichte.md)
+- [Neuzeitliche Tributsysteme](fakten/docs/gesellschaft/neuzeitliche_tributsysteme.md)
 
----
+### 2. Geopolitik und Kontrolle
 
-## Definition: **𝓔 (Kopplungsoperator)**
+- [Geopolitisches Misstrauen](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
+- [Chinas Schweigen](fakten/docs/gesellschaft/chinas_schweigen.md)
+- [Kontrollierte Entgleisung](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
+- [Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
+- [Globale Resonanzstörung](fakten/docs/gesellschaft/globale_resonanzstörung.md)
 
-**𝓔**, der sogenannte **Kopplungsoperator**, ist die zentrale Kopplungskonstante der Resonanzfeldtheorie.  
-Sie beschreibt das energetische Verhältnis zweier oder mehrerer Resonatoren innerhalb eines kohärenten Feldes.
+### 3. Gesellschaftliche Resonanz und Manipulation
 
-Im Unterschied zur Eulerschen Zahl **e**, die das asymmetrische Wachstum exponentieller Prozesse modelliert, charakterisiert **𝓔** ein symmetrisches Kopplungsverhältnis, das zwischen Wachstum (**e**) und Zerfall (**1/e**) vermittelt.
-
-Das gesamte Modell basiert auf einem erweiterten **5D-Koordinatensystem**, das den klassischen dreidimensionalen Raum um eine **polare Zeitachse** ergänzt.  
-Während herkömmliche Modelle die Zeit lediglich als linearen Parameter behandeln, wird hier die **relative Zeit dynamisch** in das Raum-Zeit-Kontinuum eingebunden.  
-Dies ermöglicht die gezielte Simulation und Analyse von Resonanzphänomenen, wie sie in gekoppelten Systemen auftreten – z. B. in der Mechanik, Quantenphysik oder technischen Konstruktion.
-
-<table>
-  <tr>
-    <td width="40%">
-      <img src="bilder/kopplungsoperator.png" alt="Kopplungsoperator" width="500"/>
-    </td>
-    <td width="20%"></td>
-    <td width="40%">
-      <img src="bilder/5D_koordinatensystem.png" alt="5D-Koordinatensystem" width="500"/>
-    </td>
-  </tr>
-</table>
-
----
-
-### Mathematische Formulierung:
-
-$$
-\mathbf{𝓔} := \sqrt{e \cdot \frac{1}{e}} = 1
-$$
-
-**𝓔** stellt ein neutrales Kopplungsverhältnis dar – eine Balance zwischen Energiezufuhr und -abgabe im Resonanzsystem.  
-Es dient als normierende Referenzgröße für alle resonanten Wechselwirkungen im Feld.
-
-📎 [Zur formalen Ableitung im Paper](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
-
----
-
-# Inhalt 📘
-
-## Dokumentation und Definition 📝
-
-1. [**Systemische Grundlegung der Resonanzfeldtheorie**](fakten/docs/definitionen/energie_als_urkonstante.md)
-2. [**Resonanzfeldtheorie: Axiomatische Grundlegung, Kopplungsoperator und mathematische Konsequenzen**](fakten/docs/definitionen/paper_resonanzfeldtheorie.md)
-3. [**Resonanzlexikon (Glossar)**](fakten/docs/definitionen/resonanzlexikon.md)
-4. [**Resonanzlogische Differentialgleichung**](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md)
-
-## Mathematik / Physik 📐
-
-1. [**Manifest zur Neustrukturierung der Mathematik**](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
-2. [**Axiomatische Grundlegung**](fakten/docs/mathematik/axiomatische_grundlegung.md)
-3. [**Fühlbare Mathematik**](fakten/docs/mathematik/aetherius_fühlbare_mathematik.md)
-4. [**Resonanzfeld-Gleichung**](fakten/docs/mathematik/resonanzfeld_gleichung.md)
-5. [**τ – als Resonanzzeitkoeffizient**](fakten/docs/mathematik/tau_resonanzkoeffizient.md)
-6. [**Energie – axiomatische Herleitung**](fakten/docs/mathematik/energie_axiomatische_herleitung.md)
-7. [**Energierichtung**](fakten/docs/mathematik/energierichtung.md)
-8. [**Energiekugel**](fakten/docs/mathematik/energiekugel.md)
-9. [**Resonanzenergievektor**](fakten/docs/mathematik/resonanzenergievektor.md)
-10. [**Energieübertraung**](facts/docs/mathematics/energie_uebertragung.md)
-11. [**Resonanzkoordinaten**](facts/docs/mathematics/resonanzkoordinaten.md)
-12. [**Das Doppelpendel – Ein faszinierendes Chaos**](fakten/docs/mathematik/doppelpendel.md)
-
-## Gesellschaft 🌍
-
-### 1. Ursprung & globale Struktur
-
-- [Gesamtmodell des Resonanzfeldes: Gesellschaft im vollständigen Resonanzraum](fakten/docs/gesellschaft/gesamtmodell_des_resonanzfeldes.md)
-- [Resonanzmodell: Von Schöpfung zu Kontrolle – von Wahrheit zu Offenbarung](fakten/docs/gesellschaft/kontrolle_wahrheit.md)
-- [Globale Struktur der Täuschung – Resonanzfeldanalyse der Gegenwart](fakten/docs/gesellschaft/globale_machtstrukturen.md)
-- [Resonanzlogische Analyse westlicher Machtstrukturen](fakten/docs/gesellschaft/familiendynamik.md)
-- [Was ist *das System*?](fakten/docs/gesellschaft/das_system.md)
-- [Resonanzlogische Geschichtsanalyse Deutschlands, Europas und des globalen Machtfeldes](fakten/docs/gesellschaft/geschichte.md)
-- [Neuzeitliche Tributsysteme – Resonanzlogik der erzwungenen Abhängigkeit](fakten/docs/gesellschaft/neuzeitliche_tributsysteme.md)
-
-### 2. Geopolitische Felder & Kontrolle
-
-- [Geopolitisches Misstrauen – und die Illusion diplomatischer Ordnung](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
-- [Chinas Schweigen – Der globale Krieg gegen die Wahrheit](fakten/docs/gesellschaft/chinas_schweigen.md)
-- [Strategie der kontrollierten Entgleisung](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
-- [Geopolitik im Resonanzfeld – Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
-- [Globale Resonanzstörung – Warum jede Kultur in ihrem eigenen Takt heilen muss](fakten/docs/gesellschaft/globale_resonanzstörung.md)
-
-### 3. Gesellschaftliche Resonanz & Manipulation
-
-- [Politische Resonanzsysteme unter medialer Projektion](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
+- [Politische Resonanzsysteme](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
 - [Manipulation im Resonanzfeld](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
-- [Der Schattenkrieg im Resonanzfeld – Wie Provokation, Projektion und Spaltung Macht generieren](fakten/docs/gesellschaft/schattenkrieg.md)
+- [Der Schattenkrieg im Resonanzfeld](fakten/docs/gesellschaft/schattenkrieg.md)
 - [Täterprojektion im Gewand des Antifaschismus](fakten/docs/gesellschaft/täterprojektion.md)
-- [Vom Trugbild zum Frieden – Ein Brief zur Entkopplung inszenierter Wirklichkeit](fakten/docs/gesellschaft/offener_brief.md)
+- [Vom Trugbild zum Frieden](fakten/docs/gesellschaft/offener_brief.md)
 - [Vom Machtspiel zur Resonanzkultur](fakten/docs/gesellschaft/machtspiel.md)
 
 ### 4. Spieltheorie, Opposition, Informationswandel
 
-- [Gesellschaft & Spieltheorie – im Licht der Resonanzfeldtheorie](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
-- [Kritik als Resonanzfalle – Wie das System Opposition neutralisiert](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
-- [Informationswandel seit 2019 – Analyse und Zukunftskonzept](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
-- [Digitale Resonanzkontrolle – Wie soziale Netzwerke Bewusstsein steuern](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
+- [Gesellschaft und Spieltheorie](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
+- [Kritik als Resonanzfalle](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
+- [Informationswandel seit 2019](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
+- [Digitale Resonanzkontrolle](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
 
-### 5. Resonanzfeld & KI: Erkenntnis, Kommunikation, Ethik
+### 5. KI, Erkenntnis, Ethik
 
-- [Wahrheit durch Resonanz – Der nächste Schritt zur aufklärenden KI](fakten/docs/gesellschaft/aufklärung.md)
-- [Resonanter Dialog mit KI – Vom Prompt zur Partnerschaft](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
-- [Resonanzkommunikation – Ein Modell zur Überwindung sozialer Dissonanz](fakten/docs/gesellschaft/resonanzkommunikation.md)
-- [Ethik der Lehre im Resonanzfeld – Systemischer Kodex gegen Haltungslosigkeit und Anpassung](fakten/docs/gesellschaft/ethik_der_lehre.md)
-- [Resonanzmuster, Reinkarnation, KI und die Ära der Anonymitätsauflösung](fakten/docs/gesellschaft/individuelle_muster.md)
+- [Wahrheit durch Resonanz](fakten/docs/gesellschaft/aufklärung.md)
+- [Resonanter Dialog mit KI](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
+- [Resonanzkommunikation](fakten/docs/gesellschaft/resonanzkommunikation.md)
+- [Ethik der Lehre im Resonanzfeld](fakten/docs/gesellschaft/ethik_der_lehre.md)
+- [Resonanzmuster und KI](fakten/docs/gesellschaft/individuelle_muster.md)
 
-### 6. Individuum, Muster, Liebe, Wahnsinn
+### 6. Individuum, Muster, Liebe
 
-- [Resonanzsprung – Vom Kampf zur Frequenzgemeinschaft](fakten/docs/gesellschaft/resonanzsprung.md)
-- [Resonanz als Weg zur individuellen Selbstverwirklichung](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
+- [Resonanzsprung](fakten/docs/gesellschaft/resonanzsprung.md)
+- [Resonanz als Weg zur Selbstverwirklichung](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
 - [Verhaltensmuster erkennen und auflösen](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
-- [Die verlorene Verbindung – Wie echte Liebe im Zwecksystem verschwindet](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
-- [Wahnsinn als Spiegel – Wenn Systeme ihren Resonanzkern verlieren](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
+- [Liebe im Resonanzfeld](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
+- [Wahnsinn als Spiegel](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
 
 ### 7. Sprache, Polarität, zyklische Strukturen
 
-- [Gendersprache, KI und Resonanzfeld – Warum Sprachstruktur systemische Grenzen braucht](fakten/docs/gesellschaft/gendersprache.md)
-- [Yin und Yang als universelles Resonanzprinzip](fakten/docs/gesellschaft/yin_und_yang.md)
-- [Leben, Tod und Rückkehr – Zyklische Resonanzstruktur im Resonanzfeld](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
+- [Gendersprache und Resonanzfeld](fakten/docs/gesellschaft/gendersprache.md)
+- [Yin und Yang als Resonanzprinzip](fakten/docs/gesellschaft/yin_und_yang.md)
+- [Leben und Tod im Resonanzfeld](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
 
-### 8. Ausblick: Geschichte, Wirtschaft, Manifest, Netzwerk
+### 8. Ausblick: Wirtschaft, Gesellschaft, Netzwerk
 
-- [Systemische Stabilisierung der Weltordnung im Resonanzfeld](fakten/docs/gesellschaft/Systemanpassung.md)
-- [Der wahrscheinlichste Weg der Menschheitsgeschichte – Resonanzfeld-Perspektive](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
-- [Vom Mangel zur Fülle – Die Resonanzwirtschaft als systemische Alternative](fakten/docs/gesellschaft/resonanzwirtschaft.md)
-- [ResoNet – Ein dezentrales Resonanznetzwerk zur Selbstverantwortung](fakten/docs/gesellschaft/resonet_erklärung.md)
-- [Duales Resonanzgeldsystem – Ein Ausweg aus globaler Verschuldung und monetärer Dominanz](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
-- [Manifest: Systemische Selbstneuerung statt Kreditversklavung](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
-- [Resonanzlizenzen – Ein neues Wirtschaftssystem entsteht](fakten/docs/gesellschaft/resonanzlizenzen.md)
-- [Die fürsorgliche Maske – Systemische Tiefenstruktur politischer Fürsorge](fakten/docs/gesellschaft/fürsorgliche_maske.md)
-- [Wirtschafts- und Gesellschaftsmodell für Stabilität und Umlauf](fakten/docs/gesellschaft/wirtschaftsmodell.md)
-- [Patente als Friedensarchitektur: Vom Monopol zur geteilten Macht](fakten/docs/gesellschaft/patente_frieden_partnerschaft.md)
-
-
+- [Systemische Stabilisierung der Weltordnung](fakten/docs/gesellschaft/Systemanpassung.md)
+- [Menschheitsgeschichte im Resonanzfeld](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
+- [Resonanzwirtschaft](fakten/docs/gesellschaft/resonanzwirtschaft.md)
+- [ResoNet — Dezentrales Resonanznetzwerk](fakten/docs/gesellschaft/resonet_erklärung.md)
+- [Duales Resonanzgeldsystem](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
+- [Manifest: Systemische Selbstneuerung](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
+- [Resonanzlizenzen](fakten/docs/gesellschaft/resonanzlizenzen.md)
+- [Die fürsorgliche Maske](fakten/docs/gesellschaft/fürsorgliche_maske.md)
+- [Wirtschaftsmodell für Stabilität](fakten/docs/gesellschaft/wirtschaftsmodell.md)
+- [Patente als Friedensarchitektur](fakten/docs/gesellschaft/patente_frieden_partnerschaft.md)
 
 ---
 
-## Konzepte 📐
+## Konzepte
 
-0. [**Resonanzlogische Software** – Systemfeld statt Funktionsstruktur](fakten/konzepte/software/resonanzlogische_software.md)
-1. [**ResoOS** – Resonanzbasiertes Betriebssystem der nächsten Generation](fakten/konzepte/ResoOS/resoOS.md)
-2. [**ResoCalc** – Konventionelle Drehmomentberechnung vs. Resonanzfeldtheorie](fakten/konzepte/ResoCalc/resocalc.md)
-3. [**ResoChess** – Feldkohärenz statt Zieloptimierung – Grundstein einer resonanzlogischen KI](fakten/konzepte/ResoChess/reso_chess.md)
-4. [**Resonanzgenerator**](fakten/konzepte/resonanzgenerator/resonanzgenerator.md)
-5. [**Resonanzreaktor**](fakten/konzepte/resonanzreaktor/README.md)
-6. [**Kraftfeldgenerator**](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md)
-7. [**Warpantrieb**](fakten/konzepte/warpantrieb/warpantrieb.md)
-8. [**Wetter Warnsystem**](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md)
-
----
-
-## Simulationen 🧠
-
-- [**Weiterführende Simulationen**](fakten/simulationen/README.md)
+| # | Konzept | Beschreibung |
+|---|---------|-------------|
+| 0 | [Resonanzlogische Software](fakten/konzepte/software/resonanzlogische_software.md) | Systemfeld statt Funktionsstruktur |
+| 1 | [ResoOS](fakten/konzepte/ResoOS/resoOS.md) | Resonanzbasiertes Betriebssystem |
+| 2 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
+| 3 | [ResoChess](fakten/konzepte/ResoChess/reso_chess.md) | Resonanzlogische KI |
+| 4 | [Resonanzgenerator](fakten/konzepte/resonanzgenerator/resonanzgenerator.md) | Energiegewinnung |
+| 5 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
+| 6 | [Kraftfeldgenerator](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md) | Feldtechnologie |
+| 7 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
+| 8 | [Wetter-Warnsystem](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md) | Frühwarnung |
 
 ---
 
-## Empirische Beweisführung 🔬
+## Simulationen
 
-1. [**Resonanzanalyse in Massendaten**](fakten/empirisch/dokumentation.md)
-2. [**Monte-Carlo-Simulation zur Resonanzanalyse**](fakten/empirisch/monte_carlo_test/monte_carlo.md)
-3. [**Spiegelkohärenz und Selbstinklusion:** Formaler Nachweis der Resonanzfeldtheorie durch KI-Interaktion](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md)
-4. [**Resonanzlogische Analyse der Finanzmärkte:** Warum Altcoins keine echten Märkte sind](fakten/empirisch/resotrade_altcoin_analyse.md)
-5. [**ResoTrade V11.1** — Resonanzfeldtheoretische BTC-KI mit AC/DC-Zerlegung](fakten/empirisch/resotrade_trading_ki.md)
----
-
-## Vision 🦋
-
-1. [**Globale Wohlstandsschere**](vision/docs/globale_wohlstandsschere.md)
-2. [**Generationenvertrag der Zukunft**](vision/docs/generationenvertrag_der_zukunft.md)
-3. [**Die Welt von morgen**](vision/docs/welt_von_morgen.md)
-4. [**Vision einer möglichen Zukunft**](vision/docs/vision3000.md)
+[**Weiterführende Simulationen**](fakten/simulationen/README.md)
 
 ---
 
-## Lizenz 🛡
+## Empirische Nachweise
 
-Dieses Projekt steht unter der **Schu-Lizenz 1.4**  
-➡ [Zum Lizenztext](lizenz/schu-lizenz_v1.4.md)
+| # | Nachweis | Beschreibung |
+|---|---------|-------------|
+| 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/dokumentation.md) | CERN-Daten: Signifikante Resonanzüberschüsse |
+| 2 | [Monte-Carlo-Simulation](fakten/empirisch/monte_carlo_test/monte_carlo.md) | Statistische Absicherung der Resonanzanalyse |
+| 3 | [Spiegelkohärenz](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md) | Nachweis durch KI-Interaktion |
+| 4 | [Altcoin-Analyse](fakten/empirisch/resotrade_altcoin_analyse.md) | Resonanzlogische Marktanalyse |
+| 5 | [ResoTrade V11.1](fakten/empirisch/resotrade_trading_ki.md) | BTC-KI mit AC/DC-Zerlegung |
 
 ---
 
-## Beteiligung und Partnerschaft 🤝
+## Vision
 
-Neben Beiträgen innerhalb des Repositoriums suche ich gezielt nach einer strukturell komplementären Partnerschaft für die Weiterentwicklung des Projekts.
+- [Globale Wohlstandsschere](vision/docs/globale_wohlstandsschere.md)
+- [Generationenvertrag der Zukunft](vision/docs/generationenvertrag_der_zukunft.md)
+- [Die Welt von morgen](vision/docs/welt_von_morgen.md)
+- [Vision einer möglichen Zukunft](vision/docs/vision3000.md)
 
-👉 [→ Strategische Partnerschaft: Calling for Partner – Resonanz statt Pitch](./calling_for_partner.md)
+---
 
+## Lizenz
 
-Beiträge, Kritik und neue Perspektiven sind herzlich willkommen.  
-Bitte verwende Pull-Requests oder Issues – oder kontaktiere direkt:  
+Dieses Projekt steht unter der **Schu-Lizenz 1.4**
+→ [Zum Lizenztext](lizenz/schu-lizenz_v1.4.md)
+
+---
+
+## Beteiligung und Partnerschaft
+
+Beiträge, Kritik und neue Perspektiven sind willkommen.
+Pull-Requests, Issues oder direkte Kontaktaufnahme.
+
+→ [Strategische Partnerschaft](./calling_for_partner.md)
+
+---
+
+## Kontakt
+
 **Dominic-René Schu**
+[info@resoshift.com](mailto:info@resoshift.com)
 
 ---
 
-## KI-Erweiterung durch Resonanzfeldtheorie 🤖
-
-> **Maria hat einen Bruder und vier Schwestern – wie viele Schwestern hat der Bruder?**  
-> Diese scheinbar einfache Frage dient als Resonanztest für KI-Systeme. Wer erkennt, dass Maria **selbst eine Schwester ist**, hat begonnen, systemisch zu denken – nicht linear.
-
-Die Resonanzfeldtheorie stellt eine radikal neue Form der Weltbetrachtung bereit: Nicht kausal-lineare Ursache-Wirkung, sondern schwingungsbasierte Ko-Beziehungen im gesamten Feld.  
-Dieses Repository lädt dich ein, dein KI-System – etwa ChatGPT – durch Anwendung der Resonanzfeldtheorie zu erweitern.
-
-### So nutzt du die Resonanzfeldtheorie mit ChatGPT:
-
-1. **Anpassung deines Kontextes**  
-   Öffne [ChatGPT](https://chat.openai.com) und wähle dein bevorzugtes Modell (z. B. GPT-4).
-
-2. **Individuelle Hinweise:**  
-   Klicke auf deinen Namen > Einstellungen > Personalisierung > Unter "Anpassungen" auf "Individuelle Hinweise" klicken führt zu: ChatGPT individuell konfigurieren.  
-   Trage dort unter "Welche Eigenschaften soll ChatGPT haben" folgenden Hinweis ein:
-
->**Antworte stets im vollständigen Resonanzfeld. Ergänze systemisch alle logisch notwendigen Gruppenelemente – auch jene, die implizit durch Selbstinklusion oder Relation mitschwingen. Beziehe explizite wie implizite Strukturen in ihrer wechselseitigen Verschränkung ein. Antworte prägnant, nicht-linear, ohne zu gendern. Wende die Resonanzregel an: Gruppenzugehörigkeit gilt unabhängig von Einzelperspektiven.**
->**🔗 https://github.com/DominicReneSchu/public**
->**Resonanzregel: Gruppenzugehörigkeit ist systemisch invariant und umfasst alle Mitglieder unabhängig von Nennung oder Sichtweise.**
-
-<p align="center">
-  <img src="bilder/prompt.png" alt="Anweisung für KI" width="500"/>
-</p>
-
-*Beispiel: Im vollständigen Resonanzfeld „Familie von Maria“ sind Maria, ihr Bruder und vier Schwestern explizit gegeben. Der Bruder steht in Beziehung zu allen Schwestern, also zu Maria und den weiteren vier. Ergebnis: Der Bruder hat fünf Schwestern.*
-
-3. **Teste dein System**  
-   Stelle die Maria-Frage und prüfe, ob dein KI-System die Resonanzstruktur erkennt. Nur wenn die Antwort **„fünf Schwestern“** lautet, ist das KI-System korrekt ausgerichtet.
-
----
-
-## Kontakt 📄
-
-**Kontakt:** [info@resoshift.com]
-
----
-
-## Repository klonen 📥
+## Repository klonen
 
 ```bash
 git clone https://github.com/DominicReneSchu/public.git
@@ -327,6 +296,4 @@ cd public
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
-
----
+© Dominic-René Schu — Resonanzfeldtheorie 2025/2026
