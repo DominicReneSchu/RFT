@@ -104,6 +104,7 @@ Das Dirichlet-Integral entspricht der Kopplungsenergie bei halber
 Kopplungseffizienz — konsistent mit der Tatsache, dass nur die
 positive Halbachse [0, ∞) integriert wird (halber Phasenraum).
 
+
 ---
 
 ## 3. Familie der Resonanzintegrale
@@ -193,7 +194,7 @@ wobei ε(x) die ortsabhängige Kopplungseffizienz ist.
 **Beispiel:** Für ε(x) = e^{−bx} und f(x) = sin(ax)/x:
 
 ```
-    ∫_�� sin(ax)/x dx = arctan(a/b)
+    ∫_0^∞ sin(ax)/x · e^{-bx} dx = arctan(a/b)
 ```
 
 ### 4.2 Resonanzableitung
