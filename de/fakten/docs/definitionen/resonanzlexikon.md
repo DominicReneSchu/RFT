@@ -63,7 +63,8 @@ Die Gleichung verdeutlicht, dass Resonanz nicht nur von Frequenz, sondern auch v
 
 ---
 
-### **Kopplungsoperator (ε)** 🔗
+### **Kopplungseffizienz (ε)**
+
 **Definition:**
 Die Kopplungseffizienz ε beschreibt als dynamische Größe den Anteil
 der maximal möglichen Resonanzenergie, der tatsächlich zwischen
@@ -81,7 +82,7 @@ Das Standardmodell: ε(Δφ) = cos²(Δφ/2)
 Siehe [Vereinheitlichte Definition](../mathematik/kopplungseffizienz.md).
 
 **Meta-Impuls:**
-Der Kopplungsoperator erlaubt es, Kopplungszustände mathematisch
+Die Kopplungseffizienz erlaubt es, Kopplungszustände mathematisch
 und experimentell präzise zu erfassen und zu steuern.
 
 ---

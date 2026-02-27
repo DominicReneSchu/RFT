@@ -10,8 +10,7 @@ Die Resonanzfeldtheorie (RFT) beschreibt fundamentale Prozesse in
 Natur, Technik und Informationssystemen als Kopplungs- und
 Resonanzphänomene in Schwingungsfeldern. Dieses Paper gibt eine
 Gesamtübersicht der Theorie, fasst das axiomatische Fundament
-zusammen und führt den Kopplungsoperator (Kopplungseffizienz ε)
-als zentrale Größe ein.
+zusammen und führt die Kopplungseffizienz ε als zentrale Größe ein.
 
 Für die vollständige formale Axiomatik siehe die
 [axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md).
