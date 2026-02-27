@@ -438,6 +438,171 @@
 		(\texttt{energy\_dir = e\_short - e\_long})
 		\item A6: Resonanz-Gate (Trades nur in Phase)
 	\end{itemize}
+		
+	%% ============================================================
+	\subsection{Gekoppelte FLRW-Simulation: Kosmologische Validierung}
+	\label{sec:flrw}
+	%% ============================================================
+	
+	Als dritte unabh\"angige Validierungsdom\"ane wird die RFT
+	in gekr\"ummter Raumzeit gepr\"uft. Zwei skalare
+	Resonanzfelder $\varepsilon_1(t)$, $\varepsilon_2(t)$ werden
+	\"uber die Klein-Gordon-Gleichung in
+	FLRW-Raumzeit gekoppelt und numerisch propagiert.
+	
+	\subsubsection{Methodik.}
+	
+	Die Felder gehorchen der nichtlinearen Klein-Gordon-Gleichung
+	mit $\lambda\varepsilon^4$-Selbstwechselwirkung in einer
+	expandierenden Raumzeit mit Skalenfaktor~$a(t)$:
+	\begin{equation}
+		\ddot{\varepsilon}_i + 3H\dot{\varepsilon}_i
+		+ \omega^2 \varepsilon_i + \lambda \varepsilon_i^3 = 0,
+		\quad H = \frac{\dot{a}}{a}
+		\label{eq:kg_flrw}
+	\end{equation}
+	Die Friedmann-Gleichung koppelt die Raumzeitexpansion
+	an die Gesamtenergiedichte beider Felder:
+	\begin{equation}
+		H^2 = \frac{8\pi G}{3}\,\rho_{\mathrm{total}}
+		\label{eq:friedmann}
+	\end{equation}
+	Die Kopplungseffizienz wird aus dem zeitgemittelten
+	Kreuzterm extrahiert:
+	\begin{equation}
+		\eta(\Delta\varphi)
+		= \frac{\langle\varepsilon_1 \cdot \varepsilon_2\rangle}%
+		{\sqrt{\langle\varepsilon_1^2\rangle\,
+				\langle\varepsilon_2^2\rangle}}
+		\label{eq:eta_def}
+	\end{equation}
+	Die analytische Erwartung f\"ur harmonische Felder ist
+	$\eta_{\mathrm{theo}} = \cos^2(\Delta\varphi/2)$.
+	Die mittlere Abweichung
+	$d_\eta = \langle|\eta_{\mathrm{sim}}
+	- \eta_{\mathrm{theo}}|\rangle$ quantifiziert den
+	Einfluss der Raumzeitexpansion.
+	
+	\subsubsection{Stufe 5: Falsifizierbare Vorhersage.}
+	
+	Ein Kontrolltest \"uber drei Szenarien zeigt, dass die
+	Abweichung systematisch von der Expansionsrate abh\"angt:
+	
+	\begin{center}
+		\begin{tabular}{lrl}
+			\hline
+			\textbf{Szenario} & $\langle|d_\eta|\rangle$
+			& \textbf{Interpretation} \\
+			\hline
+			Flach ($H = 0$) & $0{,}0438$
+			& $\cos^2$ fast exakt \\
+			FLRW ($\dot{a}_0 = 0{,}3$) & $0{,}1375$
+			& $3\times$ gr\"o\ss{}er \\
+			Schnell ($\dot{a}_0 = 1{,}0$) & $0{,}1812$
+			& $4\times$ gr\"o\ss{}er \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\noindent
+	\textbf{Best\"atigt:}
+	$d_\eta(H{=}0) < d_\eta(H{>}0) < d_\eta(H{\gg}0)$.
+	Die Hubble-Reibung ($3H\dot{\varepsilon}$-Term) reduziert
+	$\eta$ systematisch unter $\cos^2(\Delta\varphi/2)$.
+	
+	\subsubsection{Stufe 6a: Kosmologische Skalierung.}
+	
+	Ein $H_0$-Scan \"uber 330~Einzelsimulationen
+	($H_0 = 0$--$100$~km/s/Mpc, je 15~Phasenwerte) zeigt
+	lineares Skalierungsverhalten:
+	\begin{equation}
+		d_\eta(H_0) = (0{,}00204 \pm 0{,}00003)\,
+		\frac{H_0}{\mathrm{km/s/Mpc}} + \mathrm{const}
+		\label{eq:d_eta_h0}
+	\end{equation}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Ergebnisse des $H_0$-Scans (330 Simulationen).
+			Die Differenz zwischen Planck und SH0ES ist die erste
+			quantitative Vorhersage der RFT f\"ur eine
+			kosmologische Observable.}
+		\label{tab:h0_scan}
+		\begin{tabular}{lr}
+			\hline
+			\textbf{Messgr\"o\ss{}e} & \textbf{Wert} \\
+			\hline
+			Steigung $\mathrm{d}d_\eta / \mathrm{d}H_0$
+			& $0{,}00204\;\mathrm{(km/s/Mpc)}^{-1}$ \\
+			$d_\eta$ (Planck, $H_0 = 67{,}4$)
+			& $0{,}1334$ \\
+			$d_\eta$ (SH0ES, $H_0 = 73{,}0$)
+			& $0{,}1448$ \\
+			$\Delta d_\eta$ (SH0ES $-$ Planck)
+			& $0{,}0114$ \\
+			Relative Verschiebung
+			& $\approx 8{,}6\%$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	Die Differenz $\Delta d_\eta = 0{,}0114$ zwischen
+	Planck~\cite{planck2018vi} und SH0ES~\cite{riess2022}
+	stellt eine prinzipiell pr\"ufbare Vorhersage dar.
+	
+	\subsubsection{Stufe 6b: Vergleich mit Planck-2018-CMB-Daten.}
+	
+	Die $\eta$-Korrektur wird gegen das Planck-2018
+	TT-Leistungsspektrum~\cite{planck2018v} getestet
+	(83~Datenpunkte, $\ell = 764$--$1280$).
+	
+	\begin{table}[ht]
+		\centering
+		\caption{CMB-Vergleich: $\Lambda$CDM vs.\
+			$\Lambda$CDM~+~Resonanzfeld-Korrektur.}
+		\label{tab:cmb}
+		\begin{tabular}{lrr}
+			\hline
+			\textbf{Messgr\"o\ss{}e}
+			& $H_0 = 67{,}4$ & $H_0 = 73{,}0$ \\
+			\hline
+			$\chi^2/\mathrm{dof}$ ($\Lambda$CDM)
+			& $6{,}75$ & $6{,}75$ \\
+			$\chi^2/\mathrm{dof}$ (Resonanzfeld)
+			& $6{,}56$ & $6{,}55$ \\
+			$\Delta\chi^2$
+			& $+16{,}0$ & $+17{,}3$ \\
+			Pearson~$r$
+			& $0{,}626$ & $0{,}626$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\noindent
+	\textbf{Interpretation:}
+	Die $\eta$-Korrektur \textit{verbessert} den Fit um
+	$\Delta\chi^2 = +16{,}0$ bei 83~Datenpunkten.
+	Die Pearson-Korrelation $r = 0{,}626$ zeigt, dass das
+	Korrektursignal signifikant mit den Planck-Residuen
+	korreliert. $\Delta\chi^2$ ist \"uber den gesamten
+	Bereich $H_0 = 60$--$80$~km/s/Mpc positiv.
+	
+	\textbf{Einschr\"ankung:} Das parametrische
+	$\Lambda$CDM-Modell erreicht nicht das Niveau von
+	\textsc{camb}/\textsc{class}. F\"ur eine Publikation
+	w\"are der volle $\ell$-Bereich mit Boltzmann-Solver
+	als Referenz n\"otig.
+	
+	\textbf{Axiom-Zuordnung:}
+	\begin{itemize}
+		\item A1: Felder $\varepsilon_1$, $\varepsilon_2$
+		schwingen (Klein-Gordon)
+		\item A3: $\eta = 1{,}0$ bei $\Delta\varphi = 0$
+		\item A4: $\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
+		emergiert
+		\item A5: $a(t)$ reagiert auf Gesamtenergiedichte
+		\item A7: Ergebnisse stabil \"uber 330~Simulationen
+	\end{itemize}
 	
 	
 	%% ============================================================
@@ -518,27 +683,37 @@
 	beschreibt. Die zentrale Grundformel
 	$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot
 	\hbar \cdot f$ ist dimensionskonsistent, enth\"alt die
-	Planck-Relation als Spezialfall und wird an zwei
+	Planck-Relation als Spezialfall und wird an drei
 	unabh\"angigen Dom\"anen empirisch validiert.
 	
-	Die Monte-Carlo-Simulation detektiert vier bekannte
-	Teilchenresonanzen mit empirischem p-Wert~$= 0$.
-	ResoTrade \"ubertrifft HODL in vier Marktregimen \"uber
-	24~Monate. Beide Ergebnisse sind konsistent mit den
-	Axiomen der RFT -- Teilchenphysik best\"atigt Axiom~3
-	und~7, ResoTrade best\"atigt Axiom~1, 4, 5 und~6.
+	\textbf{Teilchenphysik:} Monte-Carlo-Simulation detektiert
+	vier bekannte Resonanzen mit empirischem p-Wert~$= 0$
+	\"uber $10\,000$~Durchl\"aufe (Axiom~3, 7).
 	
-	Die Theorie ist in ihrer aktuellen Form ein
-	konzeptionelles Rahmenwerk mit erstem nicht-trivialem
-	empirischem Erfolg. F\"ur wissenschaftliche Anerkennung
-	als physikalische Theorie fehlen: eine quantitative
-	Vorhersage, die vom Standardmodell abweicht; eine
-	unabh\"angige Methode zur Bestimmung von~$\varepsilon$
-	ohne Kenntnis des Ergebnisses; und mehrj\"ahrige
+	\textbf{Kosmologie:} Gekoppelte FLRW-Simulationen zeigen,
+	dass die Kopplungseffizienz $\eta$ durch
+	Hubble-Reibung systematisch unter
+	$\cos^2(\Delta\varphi/2)$ gedr\"uckt wird.
+	Die Skalierung $\mathrm{d}d_\eta/\mathrm{d}H_0 = 0{,}00204$
+	\"uber 330~Simulationen und die Verbesserung
+	$\Delta\chi^2 = +16$ gegen\"uber Planck-Daten
+	stellen die erste kosmologische Vorhersage der RFT dar
+	(Axiom~1, 3, 4, 5, 7).
+	
+	\textbf{Finanzm\"arkte:} ResoTrade \"ubertrifft HODL
+	um $+26{,}1\%$ in vier Marktregimen \"uber 24~Monate
+	(Axiom~1, 4, 5, 6).
+	
+	F\"ur wissenschaftliche Anerkennung als physikalische
+	Theorie fehlen: eine quantitative Vorhersage, die vom
+	Standardmodell abweicht; eine unabh\"angige Methode zur
+	Bestimmung von~$\varepsilon$ ohne Kenntnis des
+	Ergebnisses; ein CMB-Vergleich mit vollem
+	$\ell$-Bereich und Boltzmann-Solver; und mehrj\"ahrige
 	Live-Validierung von ResoTrade.
 	
-	Alle Herleitungen, Quellcodes und Daten sind
-	vollst\"andig offen verf\"ugbar.
+	Alle Herleitungen, Quellcodes, Simulationen und Daten
+	sind vollst\"andig offen verf\"ugbar.
 	
 	
 	\section*{Code- und Datenverf\"ugbarkeit}
@@ -580,6 +755,21 @@
 		Schu D-R 2025/2026 \textit{Resonanzfeldtheorie: Axiomatik,
 			Quellcode und empirische Validierung},
 		\url{https://github.com/DominicReneSchu/public}
+		
+		\bibitem{planck2018v}
+		Planck Collaboration 2020 \textit{Astron.\ Astrophys.}\
+		\textbf{641} A5
+		(arXiv:1907.12875)
+		
+		\bibitem{planck2018vi}
+		Planck Collaboration 2020 \textit{Astron.\ Astrophys.}\
+		\textbf{641} A6
+		(arXiv:1807.06209)
+		
+		\bibitem{riess2022}
+		Riess A G et al 2022 \textit{Astrophys.\ J.\ Lett.}\
+		\textbf{934} L7
+		(arXiv:2112.04510)
 		
 	\end{thebibliography}
 	
