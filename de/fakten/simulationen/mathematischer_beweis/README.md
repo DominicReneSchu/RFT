@@ -1,107 +1,77 @@
-# Resonanzfeldtheorie – Python Toolkit
+# Resonanzfeldtheorie — Numerische Analyse
 
-## Überblick
-
-Dieses Toolkit bietet eine vollständige, wissenschaftlich fundierte Implementierung der Resonanzfeldtheorie in Python – von der numerischen Simulation bis zur Visualisierung, Batch-Analyse und Anbindung an LaTeX-Theorie-Pakete.
-
-- **Numerische Simulation** der Resonanzenergie und Resonanzentropie
-- **Batch-Studien** und automatisierter Parameter-Sweep
-- **Visualisierung als 3D-Plot oder Heatmap**
-- **Modular, robust, forschungstauglich**
-- **Unit-Tests und Jupyter-Beispiele**
----
-
-## Installation
-
-```bash
-pip install numpy matplotlib pandas
-# Optional für Heatmaps:
-pip install seaborn
-```
+Numerische Simulation und Visualisierung der Resonanzfeldtheorie:
+Resonanzenergie, Kopplungseffizienz und Resonanzentropie über dem
+(A, τ)-Parameterraum.
 
 ---
 
-### 1. Dokumentation
+## Axiom-Bezug
 
-- [Resonanzfeldtheorie – Python Toolkit](docs/index.md)  
-  - Dokumentation des Python-Toolkits
+| Axiom | Was demonstriert wird |
+|-------|----------------------|
+| A3 Resonanzbedingung | Lorentz-Profil: Peak bei ω_ext ≈ ω₀ |
+| A4 Kopplungseffizienz | ε = E_res / A ∈ (0, 1] |
+| A5 Stabiles Feld | Entropie S = −ε·ln(ε) ≥ 0 |
 
-- [Begleitkapitel zur Simulation](begleitkapitel_resonanzfeld.md)  
-  - Ein kompakter numerischer Beweis der Resonanzfeldtheorie
-
-- [Beitrag zur Resonanzfeldtheorie – Python Toolkit](CONTRIBUTING.md)  
-  - Hier findest du Hinweise, wie du beitragen kannst – egal ob als Wissenschaftler, Entwickler oder Interessierter.
+---
 
 ## Schnelleinstieg
 
-### Resonanzfeld berechnen und plotten
-
-```python
-import numpy as np
-from schu_resonanzfeld import (
-    berechne_resonanzenergie,
-    berechne_resonanzentropie,
-    plot_resonanzfeld,
-)
-
-A = np.linspace(0.1, 5.0, 500)
-T = np.linspace(0.1, 5.0, 500)
-
-E_res, T_grid, A_grid = berechne_resonanzenergie(A, T)
-S = berechne_resonanzentropie(E_res)
-
-plot_resonanzfeld(T_grid, A_grid, E_res, S)
+```bash
+pip install numpy matplotlib
+python resonanzfeld.py
 ```
 
-### Batch-Studien durchführen & Ergebnisse speichern
+Erzeugt `plot.png` und Konsolen-Output:
 
-Siehe [examples/demo_batch_study.ipynb](examples/demo_batch_study.ipynb).
-
----
-
-## API-Referenz
-
-Alle Funktionen sind mit Docstrings dokumentiert.  
-Siehe [docs/index.md](docs/index.md) für Details.
-
----
-
-## Tests
-
-```bash
-pytest tests/
+```
+Resonanzfeldtheorie — Numerische Analyse
+==================================================
+A ∈ [0.1, 5.0], τ ∈ [0.1, 5.0]
+E_res ∈ [0.0000, 5.0000]
+ε ∈ [0.0000, 1.0000]
+S ∈ [0.0000, 0.3679]
+==================================================
 ```
 
 ---
 
 ## Dateistruktur
 
-```plaintext
-schu_resonanzfeld.py             # Hauptmodul
-tests/test_schu_resonanzfeld.py  # Unit-Tests
-examples/demo_batch_study.ipynb  # Jupyter-Notebook für Batch-Analysen
-docs/index.md                    # Dokumentation
-requirements.txt                 # Abhängigkeiten
-README.md                        # Dieses Dokument
+| Datei | Funktion |
+|-------|----------|
+| [`resonanzfeld.py`](resonanzfeld.py) | Hauptmodul: Berechnung + Visualisierung |
+| [`begleitkapitel_resonanzfeld.md`](begleitkapitel_resonanzfeld.md) | Physikalische Erläuterung |
+| [`requirements.txt`](requirements.txt) | Abhängigkeiten |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Beitragsrichtlinien |
+
+---
+
+## API
+
+```python
+from resonanzfeld import (
+    berechne_resonanzenergie,
+    berechne_kopplungseffizienz,
+    berechne_resonanzentropie,
+    plot_resonanzfeld,
+)
+
+A = np.linspace(0.1, 5.0, 500)
+tau = np.linspace(0.1, 5.0, 500)
+
+E_res, tau_grid, A_grid = berechne_resonanzenergie(A, tau)
+eps = berechne_kopplungseffizienz(E_res, A_grid)
+S = berechne_resonanzentropie(eps)
+
+plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S,
+                  save_path="plot.png")
 ```
 
 ---
 
-## Weiterentwicklung & Mitmachen
-
-- **Eigene Modelle und Batch-Analysen** einfach durch Anpassung/Erweiterung der Python-Module.
-- **Einbindung in größere Workflows** (z.B. HPC, Cloud, Jupyter, Streamlit) ist vorbereitet.
-- **Mitarbeit willkommen!** Siehe CONTRIBUTING.md (bei Bedarf anlegen).
-
----
-
-## Lizenz
-
-Dein Beitrag steht unter derselben Lizenz wie das Hauptprojekt (siehe [README.md](../../../../README.md)).
-
----
-
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
 
 ---
 

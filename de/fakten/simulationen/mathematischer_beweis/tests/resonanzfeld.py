@@ -11,6 +11,8 @@ Axiom-Bezug:
 
 Abhängigkeiten: numpy, matplotlib
 Ausführung: python resonanzfeld.py
+
+© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie
 """
 
 import numpy as np
@@ -44,9 +46,11 @@ def berechne_resonanzenergie(
         (E_res, tau_grid, A_grid)
     """
     if np.any(A <= 0) or np.any(tau <= 0):
-        raise ValueError("A und τ müssen > 0 sein.")
+        raise ValueError(
+            "A und τ müssen > 0 sein.")
     if A.ndim != 1 or tau.ndim != 1:
-        raise ValueError("A und τ müssen 1D-Arrays sein.")
+        raise ValueError(
+            "A und τ müssen 1D-Arrays sein.")
 
     tau_grid, A_grid = np.meshgrid(tau, A)
     omega_ext = omega_0 * (1 + np.sin(tau_grid))
@@ -58,21 +62,21 @@ def berechne_kopplungseffizienz(
     E_res: np.ndarray,
     A_grid: np.ndarray
 ) -> np.ndarray:
-    """Kopplungseffizienz aus Resonanzprofil.
+    """Kopplungseffizienz aus Resonanzprofil (Axiom A4).
 
     ε = E_res / A ∈ (0, 1]
 
     Bei exakter Resonanz (ω_ext = ω₀): ε = 1
     Bei starker Verstimmung: ε → 0
 
-    Dies entspricht dem Lorentz-Profil als
-    frequenzabhängige Realisierung von Axiom 4.
+    Dies ist die frequenzabhängige Realisierung der
+    Kopplungseffizienz.
     """
     return np.clip(E_res / A_grid, 1e-8, 1.0)
 
 
 def berechne_resonanzentropie(eps: np.ndarray) -> np.ndarray:
-    """Resonanzentropie als Informationsmaß.
+    """Resonanzentropie als Informationsmaß (Axiom A5).
 
     S = −ε · ln(ε)
 
@@ -103,10 +107,12 @@ def plot_resonanzfeld(
 
     # --- Plot 1: Resonanzenergie ---
     ax1 = fig.add_subplot(131, projection='3d')
-    surf1 = ax1.plot_surface(tau_grid, A_grid, E_res,
-                             cmap='inferno', edgecolor='none')
-    ax1.set_title(r"Resonanzenergie $E_{\mathrm{res}}$"
-                  "\n(Lorentz-Profil, Axiom A3)")
+    surf1 = ax1.plot_surface(
+        tau_grid, A_grid, E_res,
+        cmap='inferno', edgecolor='none')
+    ax1.set_title(
+        r"Resonanzenergie $E_{\mathrm{res}}$"
+        "\n(Lorentz-Profil, Axiom A3)")
     ax1.set_xlabel(r'Verstimmung $\tau$')
     ax1.set_ylabel(r'Amplitude $A$')
     ax1.set_zlabel(r'$E_{\mathrm{res}}$')
@@ -114,10 +120,13 @@ def plot_resonanzfeld(
 
     # --- Plot 2: Kopplungseffizienz ---
     ax2 = fig.add_subplot(132, projection='3d')
-    surf2 = ax2.plot_surface(tau_grid, A_grid, eps,
-                             cmap='plasma', edgecolor='none')
-    ax2.set_title(r"Kopplungseffizienz $\varepsilon = E_{\mathrm{res}}/A$"
-                  "\n(Axiom A4)")
+    surf2 = ax2.plot_surface(
+        tau_grid, A_grid, eps,
+        cmap='plasma', edgecolor='none')
+    ax2.set_title(
+        r"Kopplungseffizienz "
+        r"$\varepsilon = E_{\mathrm{res}}/A$"
+        "\n(Axiom A4)")
     ax2.set_xlabel(r'Verstimmung $\tau$')
     ax2.set_ylabel(r'Amplitude $A$')
     ax2.set_zlabel(r'$\varepsilon$')
@@ -126,10 +135,13 @@ def plot_resonanzfeld(
 
     # --- Plot 3: Resonanzentropie ---
     ax3 = fig.add_subplot(133, projection='3d')
-    surf3 = ax3.plot_surface(tau_grid, A_grid, S,
-                             cmap='viridis', edgecolor='none')
-    ax3.set_title(r"Resonanzentropie $S = -\varepsilon \ln \varepsilon$"
-                  "\n(Axiom A5)")
+    surf3 = ax3.plot_surface(
+        tau_grid, A_grid, S,
+        cmap='viridis', edgecolor='none')
+    ax3.set_title(
+        r"Resonanzentropie "
+        r"$S = -\varepsilon \ln \varepsilon$"
+        "\n(Axiom A5)")
     ax3.set_xlabel(r'Verstimmung $\tau$')
     ax3.set_ylabel(r'Amplitude $A$')
     ax3.set_zlabel(r'Entropie $S$')

@@ -1,87 +1,145 @@
-# Begleitkapitel: Kompakter numerischer Beweis der Resonanzfeldtheorie
+# Numerische Analyse der Resonanzfeldtheorie
 
-Dieses Kapitel erläutert die numerische Umsetzung und die physikalische Bedeutung der Resonanzfeldtheorie, wie sie im begleitenden Python-Code realisiert ist. Der Ansatz bietet eine kompakte, nachvollziehbare und visuell überprüfbare Bestätigung zentraler Aussagen der Resonanzfeldtheorie.
+Numerische Berechnung und Visualisierung von Resonanzenergie,
+Kopplungseffizienz und Resonanzentropie über dem
+(A, τ)-Parameterraum.
 
 <p align="center">
-  <img src="plot.png" alt="Visualisierung der Resonanzfeldtheorie" width="800"/>
+  <img src="plot.png" alt="Resonanzfeldtheorie — Numerische Analyse" width="900"/>
 </p>
 
 ---
 
-[Link zur Python](resonanzfeld.py)
+## Axiom-Bezug
+
+| Axiom | Umsetzung |
+|-------|-----------|
+| A3 Resonanzbedingung | Peak bei ω_ext ≈ ω₀ (Lorentz-Profil) |
+| A4 Kopplungseffizienz | ε = E_res / A ∈ (0, 1] |
+| A5 Stabiles Resonanzfeld | Entropie-Plateau bei Resonanz |
 
 ---
 
----
+## 1. Resonanzenergie (Lorentz-Profil)
 
-## 1. Theoretischer Hintergrund
-
-Die **Resonanzfeldtheorie** beschäftigt sich mit der Beschreibung und Analyse von Resonanzphänomenen in komplexen Systemen. Im Fokus steht hierbei die explizite Abhängigkeit der Resonanzenergie von Systemparametern wie Amplitude (A) und Temperatur (T).
-Die hier verwendete Formel für die **Resonanzenergie** lautet:
+Die Resonanzenergie folgt einem klassischen Lorentz-Profil:
 
 $$
-E_\mathrm{res} = \frac{A}{1 + \left(\frac{\omega_\mathrm{ext} - \omega_0}{\gamma}\right)^2}
+E_{\mathrm{res}} = \frac{A}{1 + \left(\frac{\omega_{\mathrm{ext}} - \omega_0}{\gamma}\right)^2}
 $$
 
 mit:
 
-- 𝐴: Amplitude
-- 𝜔₀: Eigenfrequenz (Standard: 1.0)
-- 𝛾: Dämpfungskonstante (Standard: 0.2)
-- 𝜔_ext = 𝜔₀ · (1 + sin(T)): effektive Anregungsfrequenz, abhängig von T
+| Symbol | Bedeutung | Default |
+|--------|-----------|---------|
+| A | Amplitude | 0.1–5.0 |
+| ω₀ | Eigenfrequenz | 1.0 |
+| γ | Dämpfungskonstante (Halbwertsbreite) | 0.2 |
+| τ | Verstimmungsparameter | 0.1–5.0 |
+| ω_ext | ω₀ · (1 + sin(τ)) — effektive Anregungsfrequenz | — |
 
-Diese Beziehung beschreibt die Verstärkung der Energieaufnahme in einem Resonanzfeld in Abhängigkeit von den veränderlichen Parametern.
+**Resonanzbedingung (A3):** Bei τ = 0, π, 2π, ... ist
+sin(τ) = 0, also ω_ext = ω₀ und E_res = A (Maximum).
 
 ---
 
-## 2. Numerische Umsetzung
+## 2. Kopplungseffizienz (Axiom 4)
 
-### **a) Berechnung der Resonanzenergie**
-
-Die Funktion `berechne_resonanzenergie` erzeugt aus den Wertebereichen für Amplitude (A) und Temperatur (T) ein Gitter und berechnet für jedes Gitterfeld die entsprechende Resonanzenergie (E_res). Werte ohne physikalischen Sinn, wie etwa A ≤ 0 oder T ≤ 0, werden dabei ausgeschlossen.
-
-### **b) Resonanzentropie**
-
-Als weiteres charakteristisches Feld wird die **Resonanzentropie** S berechnet:
+Aus dem Lorentz-Profil lässt sich die Kopplungseffizienz
+als normierte Resonanzenergie ableiten:
 
 $$
-S = -E_\mathrm{res} \cdot \ln(E_\mathrm{res})
+\varepsilon = \frac{E_{\mathrm{res}}}{A} = \frac{1}{1 + \left(\frac{\omega_{\mathrm{ext}} - \omega_0}{\gamma}\right)^2} \in (0, 1]
 $$
 
-Hiermit wird die Unordnung oder Diversität des Resonanzfeldes quantifiziert. Auch hier ist numerische Stabilität dadurch sichergestellt, dass E_res > 0 gilt.
+### Grenzfälle
+
+| Bedingung | ε | Bedeutung |
+|-----------|---|-----------|
+| ω_ext = ω₀ | 1.0 | Exakte Resonanz — maximale Effizienz |
+| \|ω_ext − ω₀\| = γ | 0.5 | Halbwertsbreite |
+| \|ω_ext − ω₀\| ≫ γ | → 0 | Weit verstimmt — keine Kopplung |
+
+Dies ist die **frequenzabhängige** Realisierung der
+Kopplungseffizienz. Sie ergänzt die **phasenabhängige**
+Variante ε(Δφ) = cos²(Δφ/2) aus den anderen Simulationen.
 
 ---
 
-## 3. Visualisierung
+## 3. Resonanzentropie (Axiom 5)
 
-Die Funktion `plot_resonanzfeld` erzeugt zwei gekoppelte 3D-Visualisierungen:
+Die Entropie wird über die Kopplungseffizienz definiert:
 
-- **Resonanzenergie** E_res über dem A-T-Parameterraum (Farbskala: "inferno")
-- **Resonanzentropie** S über demselben Raum (Farbskala: "viridis")
+$$
+S = -\varepsilon \cdot \ln(\varepsilon), \quad \varepsilon \in (0, 1]
+$$
 
-Diese Plots bieten eine unmittelbare, intuitive Übersicht über die Struktur des Resonanzfeldes. Charakteristische Maxima, Plateaus und Bereiche minimaler oder maximaler Entropie werden auf einen Blick sichtbar.
+Da ε ∈ (0, 1] ist S ≥ 0 garantiert.
 
----
+### Eigenschaften
 
-## 4. Numerischer Beweis
+| ε | S | Interpretation |
+|---|---|----------------|
+| 1.0 | 0 | Perfekte Resonanz — vollständige Ordnung |
+| 1/e ≈ 0.368 | 1/e ≈ 0.368 | Maximum — Balance zwischen Ordnung und Diversität |
+| → 0 | → 0 | Keine Kopplung — triviale Ordnung |
 
-Durch die Kombination aus analytischer Formel, Gitterberechnung und Visualisierung entsteht ein **kompakter numerischer Beweis** für die Gültigkeit der postulierten Resonanzstruktur. Die resultierenden Energie- und Entropiefelder liefern eine konsistente Bestätigung der theoretischen Vorhersagen für beliebige (physikalisch sinnvolle) Wertebereiche von $A$ und $T$.
-
----
-
-## 5. Eingabebereiche und physikalische Plausibilität
-
-Die Eingabewerte für A und T sind auf positive Werte normiert und können beliebig fein gewählt werden. Dies gewährleistet sowohl numerische Stabilität als auch physikalische Plausibilität der Ergebnisse.
-
----
-
-## 6. Bedeutung und Ausblick
-
-Die vorliegende Implementation bietet nicht nur eine konkrete Überprüfung der Resonanzfeldtheorie, sondern auch eine flexible Grundlage für die Erweiterung auf komplexere Systeme (zum Beispiel die Kopplung mehrerer Resonatoren, temperaturabhängige gamma-Werte usw.) oder die Anbindung an experimentelle Daten.
+**Warum über ε statt E?** Wenn S = −E·ln(E) berechnet wird
+und E > 1 (große Amplituden), wird S negativ — physikalisch
+unsinnig. Die Normierung über ε = E/A stellt sicher, dass
+die Entropie ein wohldefiniertes Informationsmaß bleibt.
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+## 4. Visualisierung
+
+Drei 3D-Oberflächen über dem (A, τ)-Parameterraum:
+
+1. **Resonanzenergie** E_res — Lorentz-Profil mit
+   periodischen Peaks bei sin(τ) = 0
+2. **Kopplungseffizienz** ε — amplitudenunabhängig,
+   zeigt reine Resonanzstruktur
+3. **Resonanzentropie** S — Informationsmaß,
+   Maximum bei ε = 1/e
+
+---
+
+## 5. Ausführung
+
+```bash
+pip install numpy matplotlib
+python resonanzfeld.py
+```
+
+Output: `plot.png` und Konsolen-Zusammenfassung.
+
+---
+
+## 6. Einordnung
+
+Diese Simulation zeigt das Lorentz-Profil als **Spezialfall**
+der Resonanzfeldtheorie. Die Kopplungseffizienz ε tritt in
+zwei komplementären Formen auf:
+
+| Modell | ε-Formel | Abhängigkeit | Simulation |
+|--------|----------|-------------|------------|
+| Phasenbasiert | cos²(Δφ/2) | Phasendifferenz | Resonanz-KI, Doppelpendel |
+| Frequenzbasiert | 1/(1+(Δω/γ)²) | Frequenzverstimmung | Diese Simulation |
+| Exponentiell | exp(−α·\|Δf\|) | Frequenzdifferenz | Gekoppelte Oszillatoren |
+
+Alle drei sind Realisierungen von Axiom 4: Die
+Kopplungseffizienz bestimmt den Anteil der übertragenen
+Resonanzenergie und liegt im Intervall (0, 1].
+
+---
+
+## Quellcode
+
+[resonanzfeld.py](resonanzfeld.py)
+
+---
+
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
 
 ---
 
