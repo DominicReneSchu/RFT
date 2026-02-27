@@ -1,86 +1,136 @@
-# Begleitkapitel: Resonanz-KI-Modell – Zwei gekoppelte Akteure und Feldanalyse
+# Resonanz-KI-Modell — Zwei gekoppelte Akteure
 
-Dieses Kapitel erläutert die Konzeption, numerische Umsetzung und Interpretation des Resonanz-KI-Modells, das die Kopplung zweier schwingender „Akteure“ im Rahmen der Resonanzfeldtheorie simuliert. Die numerische Analyse verknüpft klassische Schwingungsphysik mit moderner Signalverarbeitung und KI-naher Modellbildung.
+Simulation der Kopplung zweier schwingender Akteure im Rahmen
+der Resonanzfeldtheorie (Axiome A1–A4). Die numerische Analyse
+verknüpft Schwingungsphysik mit Signalverarbeitung und
+KI-naher Modellbildung.
 
 <p align="center">
-  <img src="plot.png" alt="Visualisierung der Resonanzfeldtheorie" width="800"/>
+  <img src="plot.png" alt="Resonanz-KI-Modell" width="800"/>
 </p>
 
 ---
 
-[Link zur Python](resonanz_ki.py)
+## Axiom-Bezug
+
+| Axiom | Umsetzung in der Simulation |
+|-------|----------------------------|
+| A1 Schwingung | ψᵢ(t) = cos(2πfᵢt + φᵢ) |
+| A2 Superposition | Φ = (1−ε)·ψ₁ + ε·ψ₂ + ε·ψ₁·ψ₂ |
+| A3 Resonanzbedingung | Prüfung ob f₁/f₂ ≈ n/m |
+| A4 Kopplungsenergie | E_eff = π · ε(Δφ) · h · f_res |
 
 ---
 
-## 1. Modellidee und physikalische Basis
+## 1. Modellidee
 
-Das Modell betrachtet **zwei Akteure** (zum Beispiel Oszillatoren, Systeme oder Agenten), die jeweils mit eigenen Frequenzen (f₁, f₂) schwingen. Über eine **Kopplungskonstante** (epsilon) beeinflussen sie sich gegenseitig. Die Kopplung kann für viele reale Anwendungen stehen, etwa Resonanzphänomene in Physik, Biologie oder sozialen Systemen.
-
-Das **Resonanzfeld** ist definiert als Überlagerung der Einzelschwingungen:
-
-$$
-\psi_\mathrm{Res} = \psi_1 + \epsilon \psi_2
-$$
-
-mit
+Zwei Akteure (Oszillatoren, Agenten, Systeme) schwingen mit
+eigenen Frequenzen f₁ und f₂. Die Kopplungseffizienz ε(Δφ)
+bestimmt, wie stark sie sich gegenseitig beeinflussen:
 
 $$
-\psi_i = \cos(2\pi f_i t + \varphi_i)
+\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi / 2) \in [0, 1]
 $$
 
-(φ_i: optionale Phasenverschiebung)
+Das Resonanzfeld ist die symmetrische Kopplung beider Akteure
+mit einem nichtlinearen Kreuzterm:
+
+$$
+\Phi = (1 - \varepsilon) \cdot \psi_1 + \varepsilon \cdot \psi_2
+      + \varepsilon \cdot \psi_1 \cdot \psi_2
+$$
 
 ---
 
-## 2. Berechnung der Resonanzenergie
-
-Die **Resonanzenergie** E_res des gekoppelten Systems wird analytisch nach folgender Formel berechnet:
+## 2. Resonanzenergie (Axiom 4)
 
 $$
-E_\mathrm{res} = \pi \epsilon h \cdot \frac{f_1 + f_2}{2}
+E_{\text{eff}} = \pi \cdot \varepsilon(\Delta\varphi) \cdot h \cdot f_{\text{res}}
 $$
 
-Hierbei steht h für die normierte Plancksche Konstante.
+mit f_res = (f₁ + f₂) / 2 als mittlere Resonanzfrequenz
+des gekoppelten Systems.
+
+### Grenzfälle
+
+| Δφ | ε | Bedeutung |
+|----|---|-----------|
+| 0 | 1.0 | Perfekte Kopplung (Phasengleichheit) |
+| π/2 | 0.5 | Halbe Kopplung |
+| π | 0.0 | Keine Kopplung (Gegenphase) |
 
 ---
 
 ## 3. Fourier-Analyse
 
-Die Fourier-Analyse des Resonanzfeldes liefert Einblick in die im Signal enthaltenen Frequenzkomponenten. Dadurch kann man direkt erkennen, wie die Kopplung (epsilon) und die Differenz der Akteursfrequenzen die spektrale Zusammensetzung des Feldes beeinflussen.
+Die Fourier-Analyse des Resonanzfelds zeigt:
 
-
-**Vorgehen:**
-- Diskrete Fourier-Transformation (`numpy.fft`) des Resonanzfeldes
-- Darstellung des Amplitudenspektrums in Abhängigkeit der Frequenz
-
----
-
-## 4. Visualisierung und Interpretation
-
-Die grafische Ausgabe besteht aus zwei Teilplots:
-1. **Zeitverlauf:** Die Einzelschwingungen der Akteure und das gekuppelte Resonanzfeld im Zeitbereich.
-2. **Frequenzanalyse:** Das Amplitudenspektrum des Resonanzfeldes, das die dominierenden Frequenzen und Modulationen sichtbar macht.
-
-So lassen sich Eigenfrequenzen, Kopplung und deren Auswirkungen auf das Gesamtsystem anschaulich nachvollziehen.
+- **Zwei Peaks** bei f₁ und f₂ (Grundfrequenzen der Akteure)
+- **Summen- und Differenzfrequenzen** durch den nichtlinearen
+  Kreuzterm ε·ψ₁·ψ₂
+- Bei Resonanz (f₁/f₂ ≈ n/m) verschmelzen die Peaks und
+  die Kopplungsenergie wird maximal
 
 ---
 
-## 5. Parametrisierung und Flexibilität
+## 4. Visualisierung
 
-Sämtliche Modellparameter (Frequenzen, Kopplung, Phasen, Zeitbereich) sind zentral konfigurierbar. Dies ermöglicht eine flexible Anpassung an verschiedene Szenarien, etwa:
-- Resonanz vs. Dissonanz (nahe oder entfernte Frequenzen)
-- Starke vs. schwache Kopplung
-- Phaseneffekte
+Drei Plots:
 
----
-
-## 6. Bedeutung und Ausblick
-
-Das Resonanz-KI-Modell zeigt, wie durch einfache Kopplung von Einzelsystemen komplexe und emergente Felder entstehen können. Die Analyse bietet eine Grundlage für weiterführende Simulationen, z. B. mit mehr als zwei Akteuren, adaptiven Kopplungen oder KI-gesteuerter Optimierung von Resonanzbedingungen.
+1. **Zeitverlauf** — Einzelschwingungen und Resonanzfeld mit
+   Resonanz-Anzeige (Axiom 3)
+2. **Frequenzspektrum** — Normiertes Amplitudenspektrum,
+   begrenzt auf den relevanten Frequenzbereich
+3. **Kopplungseffizienz** — ε(Δφ) = cos²(Δφ/2) mit
+   Markierung des aktuellen Arbeitspunkts
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+## 5. Parameter
+
+Alle Parameter sind in `init_parameter()` zentral konfigurierbar:
+
+| Parameter | Default | Bedeutung |
+|-----------|---------|-----------|
+| f_akteur1 | 1.0 Hz | Frequenz Akteur 1 |
+| f_akteur2 | 1.3 Hz | Frequenz Akteur 2 |
+| phi1, phi2 | 0.0 rad | Phasenverschiebungen |
+| h | 1.0 | Planck-Konstante (normiert) |
+| t | 0–20 s | Zeitbereich (2000 Punkte) |
+
+Die Kopplungseffizienz ε wird aus der Phasendifferenz
+Δφ = φ₂ − φ₁ automatisch berechnet.
+
+---
+
+## 6. Ausführung
+
+```bash
+pip install numpy matplotlib
+python resonanz_ki.py
+```
+
+---
+
+## 7. Bedeutung und Ausblick
+
+Das Resonanz-KI-Modell zeigt, wie durch Kopplung von
+Einzelsystemen emergente Felder entstehen. Erweiterungen:
+
+- Mehr als zwei Akteure (Netzwerk-Resonanz)
+- Adaptive Kopplungen (zeitabhängiges ε)
+- KI-gesteuerte Optimierung der Resonanzbedingungen
+- Integration von Axiom 5 (Energierichtung) und A6 (Informationsfluss)
+
+---
+
+## Quellcode
+
+[resonanz_ki.py](resonanz_ki.py)
+
+---
+
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
 
 ---
 
