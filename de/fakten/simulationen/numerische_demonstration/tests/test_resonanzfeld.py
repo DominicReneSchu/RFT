@@ -4,12 +4,12 @@ Unit-Tests für resonanzfeld.py
 Testet Resonanzenergie, Kopplungseffizienz und Resonanzentropie.
 
 Ausführung (empfohlen):
-    cd mathematischer_beweis
+    cd numerische_demonstration
     pip install pytest
     pytest tests/
 
 Ausführung (standalone, ohne pytest):
-    cd mathematischer_beweis
+    cd numerische_demonstration
     python tests/test_resonanzfeld.py
 """
 
