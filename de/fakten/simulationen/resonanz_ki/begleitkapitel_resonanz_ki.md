@@ -18,7 +18,7 @@ KI-naher Modellbildung.
 | A1 Schwingung | ψᵢ(t) = cos(2πfᵢt + φᵢ) |
 | A2 Superposition | Φ = (1−ε)·ψ₁ + ε·ψ₂ + ε·ψ₁·ψ₂ |
 | A3 Resonanzbedingung | Prüfung ob f₁/f₂ ≈ n/m |
-| A4 Kopplungsenergie | E_eff = π · ε(Δφ) · h · f_res |
+| A4 Kopplungseffizienz | ε(Δφ) = cos²(Δφ/2), E_eff = π·ε·h·f_res |
 
 ---
 
@@ -26,7 +26,7 @@ KI-naher Modellbildung.
 
 Zwei Akteure (Oszillatoren, Agenten, Systeme) schwingen mit
 eigenen Frequenzen f₁ und f₂. Die Kopplungseffizienz ε(Δφ)
-bestimmt, wie stark sie sich gegenseitig beeinflussen:
+bestimmt den Anteil der übertragenen Resonanzenergie:
 
 $$
 \varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi / 2) \in [0, 1]
@@ -55,8 +55,8 @@ des gekoppelten Systems.
 
 | Δφ | ε | Bedeutung |
 |----|---|-----------|
-| 0 | 1.0 | Perfekte Kopplung (Phasengleichheit) |
-| π/2 | 0.5 | Halbe Kopplung |
+| 0 | 1.0 | Maximale Effizienz (Phasengleichheit) |
+| π/2 | 0.5 | Halbe Effizienz |
 | π | 0.0 | Keine Kopplung (Gegenphase) |
 
 ---
@@ -99,7 +99,9 @@ Alle Parameter sind in `init_parameter()` zentral konfigurierbar:
 | t | 0–20 s | Zeitbereich (2000 Punkte) |
 
 Die Kopplungseffizienz ε wird aus der Phasendifferenz
-Δφ = φ₂ − φ₁ automatisch berechnet.
+Δφ = φ₂ − φ₁ automatisch berechnet — kein manueller
+Parameter, sondern eine physikalische Konsequenz des
+Systemzustands.
 
 ---
 

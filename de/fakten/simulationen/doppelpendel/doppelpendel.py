@@ -1,8 +1,8 @@
 """
-Doppelpendel-Simulation — Resonanzfeldtheorie (Axiome A1, A2)
+Doppelpendel-Simulation — Resonanzfeldtheorie (Axiome A1, A2, A4)
 
-Interaktive Simulation eines Doppelpendels mit zusätzlichem
-Kopplungsoperator ε als externe Resonanzkopplung.
+Interaktive Simulation eines Doppelpendels mit dynamischer
+Kopplungseffizienz ε(Δφ) = cos²(Δφ/2) nach Axiom 4.
 
 Abhängigkeiten: numpy, matplotlib, scipy
 Ausführung: python doppelpendel.py
@@ -19,13 +19,27 @@ dt = 0.02
 DEFAULT_TRAIL_LENGTH = 200
 
 
-class DoublePendulumSim:
-    """Doppelpendel mit optionalem Resonanz-Kopplungsterm.
+# --- Kopplungseffizienz (Axiom 4) ---
 
-    Die Lagrange-Gleichungen enthalten die natürliche Kopplung
-    zwischen den Pendeln. Zusätzlich wird ein externer
-    Kopplungsterm ε·sin(θ₂−θ₁) als Resonanzkopplung
-    modelliert (Axiom A4: Kopplung durch Resonanz).
+def kopplungseffizienz(delta_phi):
+    """ε(Δφ) = cos²(Δφ/2) ∈ [0, 1]
+
+    Maximale Kopplung bei Phasengleichheit (Δφ = 0),
+    keine Kopplung bei Gegenphase (Δφ = π).
+    """
+    return np.cos(delta_phi / 2) ** 2
+
+
+class DoublePendulumSim:
+    """Doppelpendel mit dynamischer Kopplungseffizienz.
+
+    Die Lagrange-Gleichungen enthalten die natürliche mechanische
+    Kopplung. Zusätzlich moduliert die Kopplungseffizienz
+    ε(θ₂−θ₁) = cos²((θ₂−θ₁)/2) einen Resonanz-Kopplungsterm
+    mit Amplitude A (Slider-Parameter).
+
+    Effektiver Kopplungsterm:
+        τ = ± A · ε(θ₂−θ₁) · sin(θ₂−θ₁)
     """
 
     def __init__(self):
@@ -38,21 +52,20 @@ class DoublePendulumSim:
         self.m1 = 1.0
         self.m2 = 1.0
         self.trail_length = DEFAULT_TRAIL_LENGTH
+        self.current_epsilon = 1.0  # wird pro Schritt aktualisiert
         self.reset()
 
-    def derivatives(self, t, state, m1, m2, L1, L2, epsilon):
-        """Bewegungsgleichungen mit Resonanz-Kopplungsterm.
-
-        Der Kopplungsterm ε·sin(δ) wirkt als zusätzliches
-        Drehmoment zwischen den Pendeln — analog zu einem
-        externen Resonanzfeld, das die Synchronisation
-        der Oszillatoren beeinflusst.
-        """
+    def derivatives(self, t, state, m1, m2, L1, L2, amplitude):
         theta1, omega1, theta2, omega2 = state
         delta = theta2 - theta1
 
+        # Kopplungseffizienz (Axiom 4)
+        eps = kopplungseffizienz(delta)
+
         denom1 = (m1 + m2) * L1 - m2 * L1 * np.cos(delta)**2
-        coupling = epsilon * np.sin(delta)
+
+        # Resonanz-Kopplungsterm: A · ε(Δφ) · sin(Δφ)
+        coupling = amplitude * eps * np.sin(delta)
 
         dtheta1_dt = omega1
         domega1_dt = (
@@ -85,17 +98,24 @@ class DoublePendulumSim:
         self.trail1_y = []
         self.trail2_x = []
         self.trail2_y = []
+        self.current_epsilon = kopplungseffizienz(
+            self.theta2_0 - self.theta1_0)
 
-    def step(self, dt_step, epsilon):
+    def step(self, dt_step, amplitude):
         sol = solve_ivp(
             self.derivatives,
             (0, dt_step),
             self.state,
-            args=(self.m1, self.m2, self.L1, self.L2, epsilon),
+            args=(self.m1, self.m2, self.L1, self.L2, amplitude),
             t_eval=[dt_step],
             method='RK45'
         )
         self.state = sol.y[:, -1]
+
+        # Kopplungseffizienz aktualisieren
+        delta = self.state[2] - self.state[0]
+        self.current_epsilon = kopplungseffizienz(delta)
+
         x1, y1, x2, y2 = self.get_positions()
         self.trail1_x.append(x1)
         self.trail1_y.append(y1)
@@ -115,12 +135,11 @@ class DoublePendulumSim:
         y2 = y1 - self.L2 * np.cos(theta2)
         return x1, y1, x2, y2
 
-    def get_energies(self, epsilon):
+    def get_energies(self, amplitude):
         """Kinetische, potentielle und Kopplungsenergie."""
         theta1, omega1, theta2, omega2 = self.state
         delta = theta1 - theta2
 
-        # Kinetische Energie
         T = (0.5 * self.m1 * (self.L1 * omega1)**2
              + 0.5 * self.m2 * (
                  (self.L1 * omega1)**2
@@ -128,19 +147,18 @@ class DoublePendulumSim:
                  + 2 * self.L1 * self.L2 * omega1 * omega2
                  * np.cos(delta)))
 
-        # Potentielle Energie
         V = (-(self.m1 + self.m2) * g * self.L1 * np.cos(theta1)
              - self.m2 * g * self.L2 * np.cos(theta2))
 
-        # Kopplungsenergie (Resonanzterm)
-        E_coupling = 0.5 * epsilon * (
+        # Kopplungsenergie skaliert mit ε und Amplitude
+        E_coupling = 0.5 * amplitude * self.current_epsilon * (
             self.L2 * theta2 - self.L1 * theta1)**2
 
         return T, V, E_coupling
 
-    def get_kappa(self, epsilon):
+    def get_kappa(self, amplitude):
         """Kopplungsverhältnis κ = E_coupling / |E_total|."""
-        T, V, E_coupling = self.get_energies(epsilon)
+        T, V, E_coupling = self.get_energies(amplitude)
         E_total = abs(T + V + E_coupling)
         return E_coupling / E_total if E_total > 0 else 0.0
 
@@ -151,7 +169,7 @@ sim = DoublePendulumSim()
 # --- Layout ---
 fig = plt.figure(figsize=(12, 7))
 fig.canvas.manager.set_window_title(
-    'Doppelpendel — Resonanzfeldtheorie (A1, A2)')
+    'Doppelpendel — Resonanzfeldtheorie (A1, A2, A4)')
 plt.subplots_adjust(left=0.33, right=0.98, top=0.93, bottom=0.07)
 
 panel = plt.axes([0.03, 0.07, 0.28, 0.86], frameon=True)
@@ -170,10 +188,12 @@ info_text_header = (
     r"$\theta_1$, $\theta_2$: Winkel | "
     r"$m_1$, $m_2$: Massen | "
     r"$L_1$, $L_2$: Längen | "
-    r"$\varepsilon$: Kopplungsstärke (Resonanz-Kopplungsoperator)"
+    r"$A$: Kopplungsamplitude | "
+    r"$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$: "
+    r"Kopplungseffizienz (dynamisch)"
 )
 fig.text(0.5, 0.954, info_text_header,
-         ha='center', va='top', fontsize=10, color="#224488")
+         ha='center', va='top', fontsize=9, color="#224488")
 
 line, = ax.plot([], [], 'o-', lw=2, color='blue')
 trail1, = ax.plot([], [], 'r-', lw=1, alpha=0.5)
@@ -193,7 +213,7 @@ slider_labels = [
     (r'$m_2$ (kg)', 0.1, 5.0, 'm2'),
     (r'$L_1$ (m)', 0.1, 2.0, 'L1'),
     (r'$L_2$ (m)', 0.1, 2.0, 'L2'),
-    (r'$\varepsilon$', 0.0, np.e, 'epsilon'),
+    (r'$A$ (Amplitude)', 0.0, 5.0, 'amplitude'),
     ('Spurlänge', 50, 1000, 'trail_length'),
 ]
 
@@ -203,7 +223,7 @@ for label, vmin, vmax, key in slider_labels:
     if key == 'trail_length':
         slider = Slider(ax_slider, label, vmin, vmax,
                         valinit=DEFAULT_TRAIL_LENGTH, valstep=10)
-    elif key == 'epsilon':
+    elif key == 'amplitude':
         slider = Slider(ax_slider, label, vmin, vmax, valinit=1.0)
     else:
         slider = Slider(ax_slider, label, vmin, vmax,
@@ -219,19 +239,22 @@ s_m1 = slider_objects['m1']
 s_m2 = slider_objects['m2']
 s_L1 = slider_objects['L1']
 s_L2 = slider_objects['L2']
-s_eps = slider_objects['epsilon']
+s_amp = slider_objects['amplitude']
 s_trail = slider_objects['trail_length']
 
 
 # --- Energieanzeige ---
 def update_info_text():
-    eps = s_eps.val
-    T, V, E_c = sim.get_energies(eps)
-    kappa = sim.get_kappa(eps)
+    amp = s_amp.val
+    T, V, E_c = sim.get_energies(amp)
+    kappa = sim.get_kappa(amp)
+    eps = sim.current_epsilon
+    delta = sim.state[2] - sim.state[0]
     return (
         f"T = {T:.2f} J | V = {V:.2f} J | "
         f"E_kopplung = {E_c:.2f} J | "
-        f"κ = {kappa:.3f} | ε = {eps:.3f}"
+        f"κ = {kappa:.3f} | "
+        f"ε = {eps:.3f} (Δφ = {delta:.2f} rad)"
     )
 
 
@@ -249,7 +272,7 @@ def init():
 
 
 def update(frame):
-    sim.step(dt, s_eps.val)
+    sim.step(dt, s_amp.val)
     x1, y1, x2, y2 = sim.get_positions()
     line.set_data([0, x1, x2], [0, y1, y2])
     trail1.set_data(sim.trail1_x, sim.trail1_y)
@@ -293,7 +316,7 @@ def export_gif(event):
     interval_ms = dt * 1000
 
     def update_frame(frame):
-        sim.step(dt, s_eps.val)
+        sim.step(dt, s_amp.val)
         x1, y1, x2, y2 = sim.get_positions()
         line.set_data([0, x1, x2], [0, y1, y2])
         trail1.set_data(sim.trail1_x, sim.trail1_y)
