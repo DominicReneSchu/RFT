@@ -1,7 +1,7 @@
-# Resonanzfeldtheorie — Numerische Analyse (API-Dokumentation)
+# Resonanzfeldtheorie — Numerische Demonstration (API-Dokumentation)
 
-Python-Toolkit zur numerischen Simulation und Visualisierung
-der Resonanzfeldtheorie: Resonanzenergie (Lorentz-Profil),
+Python-Toolkit zur numerischen Demonstration der
+Resonanzfeldtheorie: Resonanzenergie (Lorentz-Profil),
 Kopplungseffizienz und Resonanzentropie.
 
 ---
@@ -50,8 +50,6 @@ $$
 
 mit ω_ext = ω₀ · (1 + sin(τ)).
 
-**Parameter:**
-
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | `A` | ndarray (1D) | Amplituden, positiv |
@@ -59,7 +57,7 @@ mit ω_ext = ω₀ · (1 + sin(τ)).
 | `omega_0` | float | Eigenfrequenz (Default: 1.0) |
 | `gamma` | float | Dämpfungskonstante (Default: 0.2) |
 
-**Rückgabe:** `(E_res, tau_grid, A_grid)` — jeweils 2D-Arrays
+**Rückgabe:** `(E_res, tau_grid, A_grid)`
 
 **Raises:** `ValueError` bei negativen Werten oder nicht-1D-Input
 
@@ -73,45 +71,34 @@ $$
 \varepsilon = \frac{E_{\mathrm{res}}}{A} \in (0, 1]
 $$
 
-Amplitudenunabhängig — zeigt die reine Resonanzstruktur.
-
-**Parameter:**
-
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | `E_res` | ndarray | Resonanzenergie |
 | `A_grid` | ndarray | Amplituden-Gitter |
 
-**Rückgabe:** `eps` — ndarray, geclippt auf (1e-8, 1.0]
+**Rückgabe:** `eps` — geclippt auf (1e-8, 1.0]
 
 ---
 
 ### `berechne_resonanzentropie(eps)`
 
-Resonanzentropie als Informationsmaß über der
-Kopplungseffizienz (Axiom A5).
+Resonanzentropie als Informationsmaß (Axiom A5).
 
 $$
 S = -\varepsilon \cdot \ln(\varepsilon), \quad \varepsilon \in (0, 1]
 $$
 
-S ≥ 0 garantiert. Maximum bei ε = 1/e ≈ 0.368.
-
-**Parameter:**
-
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | `eps` | ndarray | Kopplungseffizienz ∈ (0, 1] |
 
-**Rückgabe:** `S` — ndarray
+**Rückgabe:** `S` — ndarray, S ≥ 0
 
 ---
 
 ### `plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S, save_path=None, show=True)`
 
 Drei 3D-Oberflächen: E_res, ε, S.
-
-**Parameter:**
 
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
@@ -128,16 +115,18 @@ Drei 3D-Oberflächen: E_res, ε, S.
 ## Tests
 
 ```bash
-cd mathematischer_beweis
-pytest tests/
+cd numerische_demonstration
+python tests/test_resonanzfeld.py
+# oder:
+pytest tests/ -v
 ```
 
 ---
 
 ## Axiom-Bezug
 
-| Funktion | Axiom | Was wird berechnet |
-|----------|-------|-------------------|
+| Funktion | Axiom | Was wird demonstriert |
+|----------|-------|---------------------|
 | `berechne_resonanzenergie` | A3 | Lorentz-Resonanzkurve |
 | `berechne_kopplungseffizienz` | A4 | ε = E_res / A |
 | `berechne_resonanzentropie` | A5 | S = −ε·ln(ε) |

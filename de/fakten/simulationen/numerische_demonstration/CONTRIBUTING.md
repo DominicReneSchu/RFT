@@ -1,4 +1,4 @@
-# Beitrag zur Resonanzfeldtheorie — Numerische Analyse
+# Beitrag zur Resonanzfeldtheorie — Numerische Demonstration
 
 Hinweise zur Mitarbeit am numerischen Toolkit.
 
@@ -14,7 +14,7 @@ Hinweise zur Mitarbeit am numerischen Toolkit.
 1. Fork & Clone
 2. Branch erstellen: `git checkout -b verbesserung`
 3. Code schreiben, Tests ergänzen
-4. `pytest tests/` muss durchlaufen
+4. `python tests/test_resonanzfeld.py` muss durchlaufen
 5. Pull Request mit Beschreibung
 
 ## Style

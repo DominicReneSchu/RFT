@@ -1,8 +1,13 @@
-# Resonanzfeldtheorie — Numerische Analyse
+# Resonanzfeldtheorie — Numerische Demonstration
 
-Numerische Simulation und Visualisierung der Resonanzfeldtheorie:
-Resonanzenergie, Kopplungseffizienz und Resonanzentropie über dem
+Numerische Analyse und Visualisierung: Resonanzenergie,
+Kopplungseffizienz und Resonanzentropie über dem
 (A, τ)-Parameterraum.
+
+> **Einordnung:** Diese Simulation demonstriert die interne
+> Konsistenz der Axiome A3–A5. Sie ist keine empirische
+> Validierung. Für den empirischen Test siehe die
+> [Monte-Carlo-Analyse](../../empirisch/monte_carlo_test/monte_carlo.md).
 
 ---
 
@@ -23,16 +28,9 @@ pip install numpy matplotlib
 python resonanzfeld.py
 ```
 
-Erzeugt `plot.png` und Konsolen-Output:
-
-```
-Resonanzfeldtheorie — Numerische Analyse
-==================================================
-A ∈ [0.1, 5.0], τ ∈ [0.1, 5.0]
-E_res ∈ [0.0000, 5.0000]
-ε ∈ [0.0000, 1.0000]
-S ∈ [0.0000, 0.3679]
-==================================================
+Tests:
+```bash
+python tests/test_resonanzfeld.py
 ```
 
 ---
@@ -42,9 +40,11 @@ S ∈ [0.0000, 0.3679]
 | Datei | Funktion |
 |-------|----------|
 | [`resonanzfeld.py`](resonanzfeld.py) | Hauptmodul: Berechnung + Visualisierung |
-| [`begleitkapitel_resonanzfeld.md`](begleitkapitel_resonanzfeld.md) | Physikalische Erläuterung |
+| [`begleitkapitel_resonanzfeld.md`](begleitkapitel_resonanzfeld.md) | Erläuterung und Einordnung |
+| [`tests/test_resonanzfeld.py`](tests/test_resonanzfeld.py) | 16 Unit-Tests (standalone + pytest) |
 | [`requirements.txt`](requirements.txt) | Abhängigkeiten |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Beitragsrichtlinien |
+| [`docs/index.md`](docs/index.md) | API-Dokumentation |
 
 ---
 
@@ -57,16 +57,6 @@ from resonanzfeld import (
     berechne_resonanzentropie,
     plot_resonanzfeld,
 )
-
-A = np.linspace(0.1, 5.0, 500)
-tau = np.linspace(0.1, 5.0, 500)
-
-E_res, tau_grid, A_grid = berechne_resonanzenergie(A, tau)
-eps = berechne_kopplungseffizienz(E_res, A_grid)
-S = berechne_resonanzentropie(eps)
-
-plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S,
-                  save_path="plot.png")
 ```
 
 ---

@@ -1,8 +1,13 @@
 """
-Resonanzfeldtheorie — Numerische Analyse
+Resonanzfeldtheorie — Numerische Demonstration
 
-Berechnet Resonanzenergie (Lorentz-Profil), Kopplungseffizienz
-und Resonanzentropie über dem (A, τ)-Parameterraum.
+Demonstriert die Konsistenz von Resonanzenergie (Lorentz-Profil),
+Kopplungseffizienz und Resonanzentropie über dem (A, τ)-Parameterraum.
+
+Diese Simulation ist kein Beweis der Resonanzfeldtheorie, sondern
+eine numerische Demonstration der internen Konsistenz der Axiome
+A3–A5. Die empirische Validierung erfolgt separat über die
+Monte-Carlo-Analyse mit unabhängigen Daten.
 
 Axiom-Bezug:
   A3: Resonanzbedingung — Peak bei ω_ext ≈ ω₀
@@ -103,7 +108,7 @@ def plot_resonanzfeld(
 
     fig = plt.figure(figsize=(18, 5.5))
     fig.canvas.manager.set_window_title(
-        'Resonanzfeldtheorie — Numerische Analyse (A3, A4, A5)')
+        'Resonanzfeldtheorie — Numerische Demonstration (A3, A4, A5)')
 
     # --- Plot 1: Resonanzenergie ---
     ax1 = fig.add_subplot(131, projection='3d')
@@ -166,7 +171,7 @@ if __name__ == "__main__":
     S = berechne_resonanzentropie(eps)
 
     # Konsolen-Output
-    print("Resonanzfeldtheorie — Numerische Analyse")
+    print("Resonanzfeldtheorie — Numerische Demonstration")
     print("=" * 50)
     print(f"A ∈ [{A[0]:.1f}, {A[-1]:.1f}], "
           f"τ ∈ [{tau[0]:.1f}, {tau[-1]:.1f}]")
@@ -175,6 +180,10 @@ if __name__ == "__main__":
     print(f"S ∈ [{S.min():.4f}, {S.max():.4f}]")
     print(f"S_max bei ε = 1/e ≈ {1/np.e:.4f}: "
           f"S = {1/np.e:.4f}")
+    print()
+    print("Hinweis: Dies ist eine numerische Demonstration")
+    print("der Axiom-Konsistenz, kein empirischer Beweis.")
+    print("Für empirische Validierung siehe Monte-Carlo-Analyse.")
     print("=" * 50)
 
     # Visualisierung
