@@ -4,6 +4,18 @@ Dieses Framework bietet eine modulare, moderne Infrastruktur zur Simulation und 
 
 ---
 
+> **Einordnung:** Dieses Framework nutzt etablierte Physik
+> (Klein-Gordon-Gleichung, FLRW-Kosmologie, Scalar-Tensor-Theorie)
+> als numerische Basis. Die nichtminimale Kopplung α·R·ε² ist ein
+> Standardansatz in modifizierter Gravitation (vgl. Brans-Dicke).
+> Die Bezeichnung „Resonanzfeld" betont den Schwingungscharakter
+> des skalaren Felds — die Interpretation als Resonanzfeldtheorie
+> (Axiome A1, A4) ist ein eigener theoretischer Rahmen, der über
+> die Standardphysik hinausgeht.
+
+---
+
+
 ## Inhalt und Motivation
 
 **Was ist die Resonanzfeldtheorie?**  
@@ -112,7 +124,7 @@ relativitaet_verbindung/
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+*© Dominic-René Schu, 2025/2026 – Alle Rechte vorbehalten.*
 
 ---
 
