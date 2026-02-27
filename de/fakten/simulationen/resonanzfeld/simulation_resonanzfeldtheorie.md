@@ -1,64 +1,86 @@
-# Resonanzfeld-Simulation mit Resonanzfeld-Gleichung
+# Resonanzfeld-Simulation
 
-Diese interaktive Simulation visualisiert die Energieübertragung zwischen zwei schwingenden Oszillatoren basierend auf der **Resonanzfeld-Gleichung**:
+Interaktive Simulation der Resonanzfeldtheorie (RFT). Visualisiert
+die Energieübertragung zwischen zwei gekoppelten Oszillatoren
+basierend auf der Grundformel (Axiom 4):
 
 $$
-**E = \pi \cdot 𝓔 \cdot h \cdot (f_1 + f_2)**
+E_{\text{eff}} = \pi \cdot \varepsilon(\Delta\varphi) \cdot h \cdot f
+$$
+
+mit der Kopplungseffizienz:
+
+$$
+\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi / 2) \in [0, 1]
 $$
 
 ---
 
-## 🧭 Axiome der Resonanzfeldtheorie
+## Axiome der Resonanzfeldtheorie
 
-1. **Alles ist Schwingung.**  
-   Jede Form von Energie und Materie basiert auf Schwingungen eines zugrunde liegenden Resonanzfeldes.
+| Axiom | Kernaussage | Formel |
+|-------|-------------|--------|
+| A1 | Universelle Schwingung | ψ = A·cos(kx − ωt + φ) |
+| A2 | Superposition | Φ = Σ ψᵢ |
+| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ |
+| A4 | Kopplungsenergie | E = π·ε(Δφ)·h·f |
+| A5 | Energierichtung | E⃗ = E·ê(Δφ, ∇Φ) |
+| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 |
+| A7 | Invarianz | Resonanzstruktur ist transformationsinvariant |
 
-2. **Resonanz koppelt.**  
-   Systeme treten dann in Wechselwirkung, wenn ihre Schwingungen in ein ganzzahliges Verhältnis treten – das ist Resonanz.
-
-3. **Energieübertragung folgt der Kopplung.**  
-   Die effektive Energie einer resonanten Kopplung ist $$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot h \cdot f$$, wobei die Kopplungseffizienz $$\varepsilon \in [0, 1]$$ den Anteil der übertragenen Resonanzenergie beschreibt.
-
-4. **π ist der Maßstab für zyklische Kopplungsgeometrie.**  
-   Der Faktor $$\pi$$ entsteht aus der Integration der Kopplungseffizienz über einen Halbzyklus des Resonanzpfads — er ist kein freier Parameter, sondern geometrisch hergeleitet.
-
-5. **h ist die Informationsquantelung des Feldes.**  
-   Das Plancksche Wirkungsquantum $$h$$ beschreibt die minimale Wirkungseinheit im Resonanzfeld.
-
-6. **ε bestimmt die Kopplungsqualität.**  
-   Die Kopplungseffizienz $$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$$ ist phasenabhängig: maximal bei Phasengleichheit ($$\varepsilon = 1$$), null bei Gegenphase ($$\varepsilon = 0$$). Der Spezialfall $$\varepsilon = 1/e \approx 0.368$$ beschreibt natürliche Dämpfung nach einer Relaxationszeit.
+Vollständige Axiomatik:
+[axiomatische_grundlegung.md](../docs/definitionen/axiomatische_grundlegung.md)
 
 ---
 
-## Features
+## Was die Simulation zeigt
 
-Auswahl der Kopplungsart:
+### Schwingungen und Superposition (A1, A2)
 
-- **Linear**:  
-  
-$$
-E_\mathrm{trans} = 𝓔 \cdot \psi_1 \cdot \psi_2
-$$
-	
-- **Quadratisch**:  
-    
-$$
-E_\mathrm{trans} = 𝓔 \cdot \psi_1^2 \cdot \psi_2
-$$
-- **Trigonometrisch**:  
-    
-$$
-E_\mathrm{trans} = 𝓔 \cdot \sin(\psi_1) \cdot \sin(\psi_2)
-$$
+Zwei Oszillatoren mit Frequenzen f₁ und f₂ schwingen unabhängig.
+Ihre Superposition erzeugt Interferenzmuster — konstruktiv bei
+Resonanz, destruktiv bei Verstimmung.
 
-- Anzeige der **Resonanzbedingung** bei rationalem Frequenzverhältnis  
-  
-$$
-\frac{f_1}{f_2} = \frac{n}{m}
-$$
+### Resonanzbedingung (A3)
 
-- Optionale Verwendung einer neuen Naturkonstante $$\eta$$ statt $$h$$  
-- Interaktive Visualisierung mit `ipywidgets`
+Die Simulation prüft automatisch, ob f₁/f₂ ein rationales
+Verhältnis n/m bildet (innerhalb einer Toleranz δ = 1%).
+Bei Resonanz wird die Kopplung aktiviert.
+
+### Kopplungseffizienz (A4)
+
+Die Kopplungseffizienz ε(Δφ) = cos²(Δφ/2) bestimmt den
+Anteil der übertragenen Resonanzenergie:
+
+- Δφ = 0 → ε = 1 (perfekte Kopplung, Phasengleichheit)
+- Δφ = π/2 → ε = 0.5 (halbe Kopplung)
+- Δφ = π → ε = 0 (keine Kopplung, Gegenphase)
+
+### Energierichtung (A5)
+
+Der Energierichtungsvektor wird als Differenz der
+Momentanenergien auf zwei Zeitskalen berechnet und
+zeigt, in welche Richtung Energie fließt.
+
+### Kopplungsarten
+
+Drei Modelle der Energieübertragung:
+
+- **Linear:** E_trans = ε · ψ₁ · ψ₂
+- **Quadratisch:** E_trans = ε · ψ₁² · ψ₂
+- **Trigonometrisch:** E_trans = ε · sin(ψ₁) · sin(ψ₂)
+
+---
+
+## Grenzfälle der Kopplungseffizienz
+
+| Bedingung | ε | Energie | Physik |
+|-----------|---|---------|--------|
+| Perfekte Kopplung (Δφ = 0) | 1 | π·h·f | Maximale Resonanzenergie |
+| Klassischer Grenzfall (ε = 1/π) | 0.318 | h·f | Planck-Gleichung |
+| Natürliche Dämpfung (ε = 1/e) | 0.368 | (π/e)·h·f | Nach Relaxationszeit |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | π·h·f/2 | 90° Phasenverschiebung |
+| Keine Kopplung (Δφ = π) | 0 | 0 | Entkoppelte Systeme |
 
 ---
 
@@ -68,14 +90,14 @@ $$
 
 ---
 
-[Link zur Python](../../simulationen/resonanzfeld/simulation_resonanzfeldtheorie.py)
+[Link zum Python-Skript](../../simulationen/resonanzfeld/simulation_resonanzfeldtheorie.py)
 
 ---
 
 ## Voraussetzungen
 
-- Python ≥ 3.8  
-- Jupyter Notebook / JupyterLab  
+- Python ≥ 3.8
+- Jupyter Notebook / JupyterLab
 - Installierte Pakete:
 
 ```bash
@@ -84,7 +106,18 @@ pip install numpy matplotlib ipywidgets
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+## Ausführung
+
+```bash
+jupyter notebook simulation_resonanzfeldtheorie.py
+```
+
+Oder direkt in JupyterLab öffnen. Die interaktiven Slider
+ermöglichen Echtzeit-Variation aller Parameter.
+
+---
+
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
 
 ---
 
