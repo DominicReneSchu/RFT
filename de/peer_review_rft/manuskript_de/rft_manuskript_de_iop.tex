@@ -33,15 +33,17 @@
 		empirisch validiert: (1)~Monte-Carlo-Simulation auf
 		CMS-Open-Data-Dielectron-Daten, die vier bekannte
 		Teilchenresonanzen (J/$\psi$, $\Upsilon$(1S), $\Upsilon$(2S),
-		Z-Boson) mit empirischem p-Wert~$= 0$ \"uber $10\,000$
-		Simulationen detektiert; (2)~gekoppelte FLRW-Simulationen,
+		Z-Boson) mit empirischem p-Wert~$= 0$ \"uber $50\,000$
+		Simulationen detektiert; (2)~gekoppelte FLRW-Simulationen
+		($1\,530$~Einzell\"aufe, $t = 0$--$120$, 30~Phasenwerte),
 		in denen die Kopplungseffizienz
-		$\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ als emergente
-		Eigenschaft aus der Klein-Gordon-Gleichung in expandierender
-		Raumzeit folgt, mit linearer Skalierung
-		$\mathrm{d}d_\eta/\mathrm{d}H_0 = 0{,}00204$~(km/s/Mpc)$^{-1}$
-		\"uber 330~Simulationen und Verbesserung
-		$\Delta\chi^2 = +16$ gegen\"uber Planck-2018-CMB-Daten;
+		$\eta(\Delta\varphi) \approx \cos^2(\Delta\varphi/2)$ als
+		emergente Eigenschaft aus der Klein-Gordon-Gleichung in
+		expandierender Raumzeit folgt, mit Skalierung
+		$\mathrm{d}d_\eta/\mathrm{d}H_0
+		= (0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$
+		und Verbesserung $\Delta\chi^2 = +16$ gegen\"uber
+		Planck-2018-CMB-Daten;
 		(3)~ResoTrade, ein resonanzfeldtheoretisches Trading-System,
 		das \"uber 24~Monate in vier Marktregimen $+26{,}1\%$
 		gegen\"uber HODL erzielt.
@@ -51,7 +53,7 @@
 	
 	\noindent\textbf{Schl\"usselbegriffe:} Resonanz, Feldtheorie,
 	Kopplungsoperator, Axiomatik, Monte-Carlo-Simulation,
-	empirische Validierung, Open Science
+	FLRW-Kosmologie, empirische Validierung, Open Science
 	
 	\medskip
 	
@@ -217,7 +219,7 @@
 	\end{equation}
 	
 	\textit{Beispiel:} Monte-Carlo-Ergebnisse stabil \"uber
-	$10\,000$ Durchl\"aufe. ResoTrade konsistent \"uber
+	$50\,000$ Durchl\"aufe. ResoTrade konsistent \"uber
 	vier Marktregime.
 	
 	
@@ -331,21 +333,25 @@
 	Z: $\pm 4{,}0$~GeV). Erwartete Trefferraten werden
 	$\Delta$-abh\"angig aus dem KDE-Modell vorberechnet.
 	
-	F\"ur jedes der $10\,000$ Pseudo-Experimente wird die
+	F\"ur jedes der $50\,000$ Pseudo-Experimente wird die
 	vollst\"andige Resonanzanalyse durchgef\"uhrt: Binomialtest
 	mit Bonferroni-Korrektur \"uber 68~Fensterbreiten
 	($\Delta = 0{,}02$--$10{,}0$~GeV).
-	Bootstrap-Konfidenzintervalle ($5\,000$~Wiederholungen)
+	Bootstrap-Konfidenzintervalle ($10\,000$~Wiederholungen)
 	quantifizieren die statistische Stabilit\"at.
+	Systematik-Checks \"uber drei KDE-Bandbreiten
+	($0{,}3$, $0{,}5$, $0{,}7$~GeV) und zehn unabh\"angige
+	Seeds best\"atigen die Robustheit der Ergebnisse.
 	
 	\subsubsection{Ergebnisse.}
 	
 	\begin{table}[ht]
 		\centering
-		\caption{Monte-Carlo-Ergebnisse ($10\,000$ Simulationen,
-			26.02.2026). Empirischer p-Wert~$= 0$: In keinem
+		\caption{Monte-Carlo-Ergebnisse ($50\,000$ Simulationen,
+			27.02.2026). Empirischer p-Wert~$= 0$: In keinem
 			Pseudo-Experiment wurde ein vergleichbarer \"Uberschuss
-			durch reinen Hintergrund erzeugt.}
+			durch reinen Hintergrund erzeugt. Ergebnisse stabil
+			\"uber drei KDE-Bandbreiten und zehn Seeds.}
 		\label{tab:mc_results}
 		\begin{tabular}{llrrrl}
 			\hline
@@ -459,9 +465,10 @@
 			Equity-Kurve gegen\"uber HODL in vier Marktregimen.}
 		\label{fig:resotrade}
 	\end{figure}
-		
+	
 	%% ============================================================
-	\subsection{Gekoppelte FLRW-Simulation: Kosmologische Validierung}
+	\subsection{Gekoppelte FLRW-Simulation: Kosmologische
+		Validierung}
 	\label{sec:flrw}
 	%% ============================================================
 	
@@ -502,12 +509,17 @@
 	Die mittlere Abweichung
 	$d_\eta = \langle|\eta_{\mathrm{sim}}
 	- \eta_{\mathrm{theo}}|\rangle$ quantifiziert den
-	Einfluss der Raumzeitexpansion.
+	Einfluss der Raumzeitexpansion. Fehlerbalken werden
+	durch Jackknife-Resampling \"uber Phasengruppen
+	bestimmt.
 	
-	\subsubsection{Stufe 5: Falsifizierbare Vorhersage.}
+	\subsubsection{Kontrolltest: F\"unf Expansionsszenarien.}
 	
-	Ein Kontrolltest \"uber drei Szenarien zeigt, dass die
-	Abweichung systematisch von der Expansionsrate abh\"angt:
+	Ein erweiterter Kontrolltest \"uber f\"unf Szenarien zeigt,
+	dass die Abweichung $d_\eta$ mit der Expansionsrate
+	ansteigt, bei sehr hohen Raten jedoch nichtlineare Effekte
+	($\lambda\varepsilon^4$-Selbstwechselwirkung,
+	nichtminimale Kopplung) zu einer S\"attigung f\"uhren:
 	
 	\begin{center}
 		\begin{tabular}{lrl}
@@ -515,21 +527,33 @@
 			\textbf{Szenario} & $\langle|d_\eta|\rangle$
 			& \textbf{Interpretation} \\
 			\hline
-			Flach ($H = 0$) & $0{,}0438$
+			Flach ($H = 0$) & $0{,}0430 \pm 0{,}0076$
 			& $\cos^2$ fast exakt \\
-			FLRW ($\dot{a}_0 = 0{,}3$) & $0{,}1375$
-			& $3\times$ gr\"o\ss{}er \\
-			Schnell ($\dot{a}_0 = 1{,}0$) & $0{,}1812$
-			& $4\times$ gr\"o\ss{}er \\
+			Langsam ($\dot{a}_0 = 0{,}1$) & $0{,}1003$
+			& $2{,}3\times$ gr\"o\ss{}er \\
+			FLRW ($\dot{a}_0 = 0{,}3$) & $0{,}1385$
+			& $3{,}2\times$ gr\"o\ss{}er \\
+			Mittel ($\dot{a}_0 = 0{,}6$) & $0{,}2139$
+			& $5{,}0\times$ gr\"o\ss{}er \\
+			Schnell ($\dot{a}_0 = 1{,}0$) & $0{,}1822$
+			& S\"attigung \\
 			\hline
 		\end{tabular}
 	\end{center}
 	
 	\noindent
-	\textbf{Best\"atigt:}
-	$d_\eta(H{=}0) < d_\eta(H{>}0) < d_\eta(H{\gg}0)$.
-	Die Hubble-Reibung ($3H\dot{\varepsilon}$-Term) reduziert
-	$\eta$ systematisch unter $\cos^2(\Delta\varphi/2)$.
+	\textbf{Interpretation:}
+	F\"ur $\dot{a}_0 \leq 0{,}6$ steigt $d_\eta$ monoton
+	mit der Expansionsrate. Bei $\dot{a}_0 = 1{,}0$ tritt
+	eine S\"attigung ein: Die nichtlineare
+	$\lambda\varepsilon^4$-Selbstwechselwirkung und die
+	nichtminimale Kopplung ($\alpha R\varepsilon^2$-Term)
+	f\"uhren zu Amplitudend\"ampfung, die den Hubble-Reibungseffekt
+	teilweise kompensiert.
+	Im kosmologisch relevanten Bereich
+	($H_0 = 60$--$80$~km/s/Mpc, entsprechend
+	$\dot{a}_0 \approx 0{,}27$--$0{,}36$) ist der
+	Zusammenhang linear (vgl.\ Stufe~6a).
 	
 	\begin{figure}[ht]
 		\centering
@@ -547,60 +571,69 @@
 		\centering
 		\includegraphics[width=0.7\textwidth]%
 		{figures/figure_2.png}
-		\caption{Phasenscan \"uber 20 initiale Phasendifferenzen
+		\caption{Phasenscan \"uber 30 initiale Phasendifferenzen
 			$\Delta\varphi_0$: Simulationspunkte (blau) folgen der
-			analytischen $\cos^2$-Kurve (rot) mit mittlerer
-			Abweichung $d_\eta = 0{,}1394$.}
+			analytischen $\cos^2$-Kurve (rot). St\"arkere Expansion
+			verschiebt $\eta$ systematisch unter $\cos^2$.}
 		\label{fig:phase_scan}
 	\end{figure}
 	
 	\subsubsection{Stufe 6a: Kosmologische Skalierung.}
 	
-	Ein $H_0$-Scan \"uber 330~Einzelsimulationen
-	($H_0 = 0$--$100$~km/s/Mpc, je 15~Phasenwerte) zeigt
-	lineares Skalierungsverhalten:
+	Ein $H_0$-Scan \"uber $1\,530$~Einzelsimulationen
+	($H_0 = 0$--$100$~km/s/Mpc in 51~Schritten,
+	je 30~Phasenwerte, $t = 0$--$120$) zeigt im
+	kosmologisch relevanten Bereich lineares
+	Skalierungsverhalten:
 	\begin{equation}
-		d_\eta(H_0) = (0{,}00204 \pm 0{,}00003)\,
+		d_\eta(H_0) = (0{,}00113 \pm 0{,}00017)\,
 		\frac{H_0}{\mathrm{km/s/Mpc}} + \mathrm{const}
 		\label{eq:d_eta_h0}
 	\end{equation}
+	wobei der Fehler auf die Steigung durch
+	Bootstrap-Resampling ($1\,000$~Wiederholungen)
+	bestimmt wird.
 	
 	\begin{table}[ht]
 		\centering
-		\caption{Ergebnisse des $H_0$-Scans (330 Simulationen).
-			Die Differenz zwischen Planck und SH0ES ist die erste
-			quantitative Vorhersage der RFT f\"ur eine
-			kosmologische Observable.}
+		\caption{Ergebnisse des $H_0$-Scans
+			($1\,530$~Simulationen, $t = 0$--$120$,
+			30~Phasenwerte, Jackknife-Fehler).}
 		\label{tab:h0_scan}
 		\begin{tabular}{lr}
 			\hline
 			\textbf{Messgr\"o\ss{}e} & \textbf{Wert} \\
 			\hline
 			Steigung $\mathrm{d}d_\eta / \mathrm{d}H_0$
-			& $0{,}00204\;\mathrm{(km/s/Mpc)}^{-1}$ \\
+			& $(0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$ \\
+			$d_\eta$ (Flach, $H_0 = 0$)
+			& $0{,}0430 \pm 0{,}0076$ \\
 			$d_\eta$ (Planck, $H_0 = 67{,}4$)
-			& $0{,}1334$ \\
+			& $0{,}1399 \pm 0{,}0248$ \\
 			$d_\eta$ (SH0ES, $H_0 = 73{,}0$)
-			& $0{,}1448$ \\
+			& $0{,}1488 \pm 0{,}0263$ \\
 			$\Delta d_\eta$ (SH0ES $-$ Planck)
-			& $0{,}0114$ \\
+			& $0{,}0063 \pm 0{,}0010$ \\
 			Relative Verschiebung
-			& $\approx 8{,}6\%$ \\
+			& $\approx 4{,}6\%$ \\
 			\hline
 		\end{tabular}
 	\end{table}
 	
-	Die Differenz $\Delta d_\eta = 0{,}0114$ zwischen
-	Planck~\cite{planck2018vi} und SH0ES~\cite{riess2022}
-	stellt eine prinzipiell pr\"ufbare Vorhersage dar.
+	Die Differenz $\Delta d_\eta = 0{,}0063 \pm 0{,}0010$
+	zwischen Planck~\cite{planck2018vi} und
+	SH0ES~\cite{riess2022} ist mit $>6\sigma$ signifikant
+	und stellt eine prinzipiell pr\"ufbare Vorhersage dar.
 	
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=0.7\textwidth]%
 		{figures/h0_scan.png}
-		\caption{$H_0$-Scan \"uber 330~Simulationen. Links:
-			$d_\eta$ als Funktion von~$H_0$ mit linearem Fit,
-			Planck- und SH0ES-Markierungen. Rechts: Phasenscans
+		\caption{$H_0$-Scan \"uber $1\,530$~Simulationen. Links:
+			$d_\eta$ als Funktion von~$H_0$ mit linearem Fit
+			(Steigung $0{,}00113 \pm 0{,}00017$),
+			Jackknife-Fehlerbalken, Planck- und
+			SH0ES-Markierungen. Rechts: Phasenscans
 			bei verschiedenen $H_0$-Werten -- st\"arkere Expansion
 			verschiebt $\eta$ systematisch unter $\cos^2$.}
 		\label{fig:h0_scan}
@@ -611,10 +644,12 @@
 		\includegraphics[width=0.7\textwidth]%
 		{figures/hubble_tension.png}
 		\caption{Resonanzfeld-Signatur der Hubble-Spannung:
-			Die Differenz $\Delta d_\eta = 0{,}0114$ zwischen
-			Planck ($H_0 = 67{,}4 \pm 0{,}5$) und SH0ES
-			($H_0 = 73{,}0 \pm 1{,}0$) ist die erste quantitative
-			Vorhersage der RFT f\"ur eine kosmologische Observable.}
+			$d_\eta$ als Funktion von~$H_0$ \"uber
+			$1\,530$~Simulationen. Die Differenz
+			$\Delta d_\eta = 0{,}0063 \pm 0{,}0010$ zwischen
+			Planck ($H_0 = 67{,}4$) und SH0ES
+			($H_0 = 73{,}0$) entspricht $4{,}6\%$
+			relativer Verschiebung ($>6\sigma$).}
 		\label{fig:hubble_tension}
 	\end{figure}
 	
@@ -665,11 +700,12 @@
 	\begin{itemize}
 		\item A1: Felder $\varepsilon_1$, $\varepsilon_2$
 		schwingen (Klein-Gordon)
-		\item A3: $\eta = 1{,}0$ bei $\Delta\varphi = 0$
-		\item A4: $\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
-		emergiert
+		\item A3: $\eta \approx 1{,}0$ bei $\Delta\varphi = 0$
+		\item A4: $\eta(\Delta\varphi)
+		\approx \cos^2(\Delta\varphi/2)$ emergiert
 		\item A5: $a(t)$ reagiert auf Gesamtenergiedichte
-		\item A7: Ergebnisse stabil \"uber 330~Simulationen
+		\item A7: Ergebnisse stabil \"uber
+		$1\,530$~Simulationen
 	\end{itemize}
 	
 	\begin{figure}[ht]
@@ -740,14 +776,14 @@
 			& FLRW + Friedmann \\
 			Felder & Inflatonfeld (einzeln)
 			& Zwei gekoppelte Skalarfelder \\
-			Kopplung & Keine Phasenabh\"angigkeit
-			& $\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ \\
-			$H_0$-Abh\"angigkeit & Parametersch\"atzung
+			Kopplung & Keine Phasenabh.
+			& $\eta(\Delta\varphi) \approx
+			\cos^2(\Delta\varphi/2)$ \\
+			$H_0$-Abh. & Parametersch\"atzung
 			& $d_\eta$ skaliert linear mit $H_0$ \\
 			Vorhersage & $H_0 = 67{,}4 \pm 0{,}5$
-			& $\Delta d_\eta = 0{,}0114$ (Planck $\leftrightarrow$
-			SH0ES) \\
-			CMB-Fit & $\chi^2/\mathrm{dof} \approx 1$ (CAMB)
+			& $\Delta d_\eta = 0{,}0063 \pm 0{,}0010$ \\
+			CMB-Fit & $\chi^2/\mathrm{dof} \approx 1$
 			& $\Delta\chi^2 = +16$ (parametrisch) \\
 			\hline
 		\end{tabular}
@@ -759,7 +795,8 @@
 	(\textsc{camb}/\textsc{class}). Die $\chi^2$-Werte sind
 	daher nicht direkt mit Planck-Fits vergleichbar. Die
 	Kernaussage ist die \textit{relative} Verbesserung durch
-	die $\eta$-Korrektur ($\Delta\chi^2 > 0$, Pearson~$r = 0{,}626$).
+	die $\eta$-Korrektur ($\Delta\chi^2 > 0$,
+	Pearson~$r = 0{,}626$).
 	
 	%% ============================================================
 	\section{Offene Fragen und Ausblick}
@@ -784,10 +821,17 @@
 		
 		\item \textbf{Hubble-Spannung:}
 		Die vorhergesagte Differenz
-		$\Delta d_\eta = 0{,}0114$ zwischen Planck und SH0ES
-		muss in einen beobachtbaren Effekt auf das
-		CMB-Leistungsspektrum oder die BAO-Skala
+		$\Delta d_\eta = 0{,}0063 \pm 0{,}0010$ zwischen
+		Planck und SH0ES muss in einen beobachtbaren Effekt
+		auf das CMB-Leistungsspektrum oder die BAO-Skala
 		\"ubersetzt werden.
+		
+		\item \textbf{Nichtlineare S\"attigung:}
+		Die beobachtete S\"attigung von $d_\eta$ bei
+		$\dot{a}_0 > 0{,}6$ erfordert eine analytische
+		Behandlung der $\lambda\varepsilon^4$- und
+		$\alpha R\varepsilon^2$-Terme im stark
+		expandierenden Regime.
 		
 		\item \textbf{Live-Validierung:}
 		ResoTrade l\"auft seit Februar 2026 live.
@@ -824,17 +868,24 @@
 	
 	\textbf{Teilchenphysik:} Monte-Carlo-Simulation detektiert
 	vier bekannte Resonanzen mit empirischem p-Wert~$= 0$
-	\"uber $10\,000$~Durchl\"aufe (Axiom~3, 7).
+	\"uber $50\,000$~Durchl\"aufe, stabil \"uber drei
+	KDE-Bandbreiten und zehn Seeds (Axiom~3, 7).
 	
-	\textbf{Kosmologie:} Gekoppelte FLRW-Simulationen zeigen,
-	dass die Kopplungseffizienz $\eta$ durch
+	\textbf{Kosmologie:} Gekoppelte FLRW-Simulationen
+	($1\,530$~L\"aufe, $t = 0$--$120$, 30~Phasenwerte)
+	zeigen, dass die Kopplungseffizienz $\eta$ durch
 	Hubble-Reibung systematisch unter
 	$\cos^2(\Delta\varphi/2)$ gedr\"uckt wird.
-	Die Skalierung $\mathrm{d}d_\eta/\mathrm{d}H_0 = 0{,}00204$
-	\"uber 330~Simulationen und die Verbesserung
-	$\Delta\chi^2 = +16$ gegen\"uber Planck-Daten
-	stellen die erste kosmologische Vorhersage der RFT dar
-	(Axiom~1, 3, 4, 5, 7).
+	Die Skalierung
+	$\mathrm{d}d_\eta/\mathrm{d}H_0
+	= (0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$
+	und die Differenz
+	$\Delta d_\eta = 0{,}0063 \pm 0{,}0010$ zwischen
+	Planck und SH0ES ($>6\sigma$) stellen die erste
+	kosmologische Vorhersage der RFT dar.
+	Die Verbesserung $\Delta\chi^2 = +16$ gegen\"uber
+	Planck-2018-CMB-Daten best\"atigt die Relevanz der
+	$\eta$-Korrektur (Axiom~1, 3, 4, 5, 7).
 	
 	\textbf{Finanzm\"arkte:} ResoTrade \"ubertrifft HODL
 	um $+26{,}1\%$ in vier Marktregimen \"uber 24~Monate
@@ -845,7 +896,9 @@
 	Standardmodell abweicht; eine unabh\"angige Methode zur
 	Bestimmung von~$\varepsilon$ ohne Kenntnis des
 	Ergebnisses; ein CMB-Vergleich mit vollem
-	$\ell$-Bereich und Boltzmann-Solver; und mehrj\"ahrige
+	$\ell$-Bereich und Boltzmann-Solver; eine analytische
+	Behandlung der nichtlinearen S\"attigung bei hohen
+	Expansionsraten; und mehrj\"ahrige
 	Live-Validierung von ResoTrade.
 	
 	Alle Herleitungen, Quellcodes, Simulationen und Daten
