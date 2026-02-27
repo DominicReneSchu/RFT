@@ -9,7 +9,7 @@
 Die Resonanzfeldtheorie beschreibt Energieübertragung als Resultat
 kohärenter Resonanzkopplung zwischen Feldern. Die axiomatische
 Grundlage liefert Axiom 4 (Kopplungsenergie), formalisiert in der
-[../definitionen/axiomatischen Grundlegung](axiomatische_grundlegung.md).
+[axiomatischen Grundlegung](../definitionen/axiomatische_grundlegung.md).
 
 ---
 
