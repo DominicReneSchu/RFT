@@ -6,7 +6,7 @@ sind hier definiert. Module importieren diese Werte als Defaults.
 
 Axiom-Bezug:
     - A1: Schwingungsparameter (m, Potential)
-    - A4: Kopplungsparameter (alpha, kappa)
+    - A4: Kopplungsparameter (alpha, kappa, g)
 """
 
 # Modellparameter (Standardwerte)
@@ -15,6 +15,7 @@ MODEL_PARAMS = {
     "lmbda": 0.1,       # Selbstkopplungskonstante (λε⁴)
     "alpha": 0.5,       # Nichtminimale Kopplung an Raumzeit
     "kappa": 1.0,       # Gravitationskopplung (κ = 8πG)
+    "g": 0.2,           # Feld-Feld-Kopplung (g·ε₁·ε₂)
 }
 
 # Anfangsbedingungen (1D FLRW) — stabilisiert
@@ -22,7 +23,7 @@ INITIAL_CONDITIONS = {
     "eps0": 0.3,         # ε(0)
     "epsdot0": 0.0,      # dε/dt(0)
     "a0": 1.0,           # Skalenfaktor a(0)
-    "adot0": 0.3,        # da/dt(0) — stärkere Anfangsexpansion
+    "adot0": 0.3,        # da/dt(0)
 }
 
 # Numerische Parameter
@@ -30,7 +31,9 @@ NUMERIC_PARAMS = {
     "rtol": 1e-10,
     "atol": 1e-12,
     "t_span_1d": (0, 20),
+    "t_span_coupled": (0, 40),
     "steps_1d": 2000,
+    "steps_coupled": 4000,
     "steps_3d": 300,
     "grid_3d": 64,
     "L_3d": 10.0,
@@ -42,7 +45,7 @@ VIS_PARAMS = {
     "colormap": "RdBu",
     "vmin": -1,
     "vmax": 1,
-    "slice_idx": None,   # Default: Mitte
+    "slice_idx": None,
     "update_interval": 10,
 }
 
