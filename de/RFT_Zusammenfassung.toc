@@ -1,0 +1,17 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung und Zielsetzung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Theoretischer Hintergrund}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Begriffsunterscheidung}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spezialfall Planck}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Die sieben Axiome}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Methodik und Softwarearchitektur}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Monte-Carlo-Resonanzanalyse}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Gekoppelte FLRW-Simulationen}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}ResoTrade}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Ergebnisse}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Monte-Carlo auf CMS-Dielectron-Daten}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Gekoppelte FLRW-Simulationen}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}ResoTrade}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Dynamische Simulationen}{4}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Mathematische Beweise}{4}{section.5}%
+\contentsline {section}{\numberline {6}Ausblick und offene Fragen}{4}{section.6}%
