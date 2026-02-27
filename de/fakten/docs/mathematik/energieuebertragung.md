@@ -16,7 +16,7 @@ Phasenlage und Kopplungseffizienz.
 ## 2. Axiomatische Grundlage
 
 Die Energieübertragung beruht auf folgenden Axiomen
-(siehe [axiomatische Grundlegung](axiomatische_grundlegung.md)):
+(siehe [axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md)):
 
 - **Axiom 1 (Universelle Schwingung):** Jede Entität besitzt
   mindestens eine periodische Schwingungsmode.
@@ -40,7 +40,7 @@ Die Energie, die durch Resonanz von einem System auf ein anderes
 
 - **π**: Geometrischer Faktor der zyklischen Kopplungsgeometrie
 - **ε(Δφ)**: Kopplungseffizienz, ε ∈ [0, 1]
-  (siehe [Vereinheitlichte Definition](kopplungseffizienz.md))
+  (siehe [Vereinheitlichte Definition](../definitionen/kopplungseffizienz.md))
 - **h**: Planck-Konstante
 - **f_res**: Resonanzfrequenz der gekoppelten Systeme
 
