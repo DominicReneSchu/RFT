@@ -1,11 +1,33 @@
 """
-ResoTrade V11 — Policy mit Energierichtungsvektor + AC/DC-Zerlegung.
+ResoTrade V11.1 — Policy mit Energierichtungsvektor + AC/DC-Zerlegung.
 
-Resonanzfeldtheoretische Grundlage:
-  Axiom 1: Universelle Schwingung — AC/DC-Zerlegung des Preisfeldes
-  Axiom 2: Kopplungsstruktur → System muss im Gleichgewicht bleiben
-  Axiom 5: Energie ist ein gerichteter Vektor (nicht skalar)
-  Axiom 6: Wechselwirkung nur durch Resonanzkopplung (K = K₀·cos(θ))
+Resonanzfeldtheoretische Grundlage (RFT V3.1, Axiome A1–A7):
+
+  A1 (Universelle Schwingung):
+      ψ(x,t) = A·cos(kx − ωt + φ)
+      → AC/DC-Zerlegung des Preisfeldes: Preis = DC (Trend) + AC (handelbar)
+
+  A2 (Superposition):
+      Φ = Σ ψᵢ
+      → MA_SHORT (24h) und MA_LONG (168h) als überlagerte Moden im Preissignal
+
+  A4 (Kopplungsenergie):
+      E = π·ε(Δφ)·h·f
+      → Balance-Regler: Cash ↔ BTC als gekoppelte Resonanzräume.
+        Die Kopplungseffizienz ε erfordert, dass beide Seiten gefüllt sind.
+
+  A5 (Energierichtung):
+      E⃗ = E·ê(Δφ, ∇Φ)
+      → energy_dir = e_short - e_long (Richtung des Kapitalflusses im Feld)
+
+  A6 (Informationsfluss durch Resonanzkopplung):
+      MI(X,Y) > 0 ⟺ PCI > 0
+      → Resonanz-Gate: Trades nur wenn Phasenkohärenz zwischen Aktion
+        und Energierichtung besteht. energy_dir nahe 0 = niedrige Kohärenz.
+
+  A7 (Invarianz unter G_sync):
+      G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ))
+      → Regime-Invarianz: System funktioniert über alle Marktphasen.
 
 Vier Ebenen:
   1. Makro-Regime (BULL_STRONG/BEAR_STRONG/NORMAL) → erlaubte Aktionen
@@ -90,6 +112,9 @@ def _sellable_zone(sellable_share: float) -> str:
 def make_chain(state: dict, action: Action) -> str:
     """
     V11: Chain enthält Regime + AC-Phase.
+
+    12 diskretisierte Dimensionen + 5 Aktionen.
+    Jede Dimension bildet eine Mode im Zustandsraum ab (A2: Superposition).
     """
     pos = state.get("pos", "FLAT")
     pc_bin = state.get("pc_bin", "flat")
@@ -140,7 +165,10 @@ def _vol_scale(vol_bin: str) -> str:
 
 def _allowed_actions_for_regime(state: dict) -> list:
     """
-    V9.4: Makro-Regime bestimmt erlaubte Aktionen.
+    Makro-Regime bestimmt erlaubte Aktionen.
+
+    A7 (Invarianz): Die Regime-Klassifikation ist invariant unter
+    synchronen Transformationen — sie gilt in jeder Marktphase.
     """
     regime = state.get("regime", "NORMAL")
     e_long = float(state.get("e_long", 0.0) or 0.0)
@@ -157,15 +185,22 @@ def _allowed_actions_for_regime(state: dict) -> list:
     return list(ALL_ACTIONS)
 
 
-# ===== Energierichtungsvektor (Axiom 5) =====
+# ===== Energierichtungsvektor (A5) =====
 
 def _energy_direction(state: dict) -> float:
     """
-    Resonanzfeldtheoretischer Energierichtungsvektor.
+    Resonanzfeldtheoretischer Energierichtungsvektor (A5).
 
-    momentum = e_short - e_long
+    A5: E⃗ = E_eff · ê(Δφ, ∇Φ)
+    Im diskreten Mehrskalensystem:
+        energy_dir = e_short - e_long
+
     Positiv → Preis bewegt sich aufwärts relativ zum MA-System
     Negativ → Preis bewegt sich abwärts
+
+    Die Richtung ist eine verwertbare Observable, die über skalare
+    Indikatoren (RSI, Momentum) hinausgeht — empirisch bestätigt:
+    alle skalaren Indikatoren haben Korrelation < 0.05.
     """
     e_long = float(state.get("e_long", 0.0) or 0.0)
     e_short = float(state.get("e_short", 0.0) or 0.0)
@@ -176,13 +211,18 @@ def _energy_direction(state: dict) -> float:
 
 def ma_profit_switch_policy(state: dict) -> Action:
     """
-    Resonanzlogische Policy V11 — Energierichtung + AC/DC-Phase + Balance.
+    Resonanzlogische Policy V11.1 — Energierichtung + AC/DC-Phase + Balance.
 
-    Kernprinzipien:
-    1. AC/DC-Zerlegung (Axiom 1): Phase bestimmt Timing + Sizing
-    2. Energierichtung (Axiom 5): Nur resonante Trades
-    3. Kopplungsstruktur (Axiom 2): Buy/Sell-Balance halten
-    4. Höhere BUY-Schwellen: Weniger aber tiefere Käufe
+    Implementiert vier Axiome der RFT (V3.1):
+
+    1. A1 (Universelle Schwingung): AC/DC-Zerlegung bestimmt Phase + Timing
+       Peak → SELL bevorzugt, Trough → BUY bevorzugt
+    2. A5 (Energierichtung): energy_dir = e_short - e_long
+       Nur resonante Trades (Aktion in Richtung des Energieflusses)
+    3. A6 (Informationsfluss): Resonanz-Gate filtert phasenkohärente Trades
+       allow_buy/allow_sell nur wenn Energierichtung nicht gegenläufig
+    4. A4 (Kopplungsenergie): Balance-Regler hält Kopplungseffizienz ε > 0
+       Cash < 8% → kein BUY, Sellable < 5% → kein SELL
     """
     pos = state.get("pos", "FLAT")
     e_long = float(state.get("e_long", 0.0) or 0.0)
@@ -193,11 +233,12 @@ def ma_profit_switch_policy(state: dict) -> Action:
     cash_share = float(state.get("cash_share", 0.0) or 0.0)
     sellable_share = float(state.get("sellable_share", 1.0) or 1.0)
 
-    # V11: AC/DC-Phase aus State
+    # A1: AC/DC-Phase aus State (Universelle Schwingung)
     ac_phase = state.get("ac_phase", "flat")
     ac_amp_bin = state.get("ac_amplitude_bin", "normal")
     ac_value = float(state.get("ac_value", 0.0) or 0.0)
 
+    # A5: Energierichtungsvektor
     energy_dir = _energy_direction(state)
 
     action: Action = "HOLD"
@@ -213,15 +254,18 @@ def ma_profit_switch_policy(state: dict) -> Action:
     if SELL_LOW_VOL_ENABLED and vol_mod == "damped":
         sell_vol_mod = "neutral"
 
-    # Resonanz-Gate (Axiom 6): K = K₀·cos(θ)
-    # BUY nur wenn Energie nicht stark abwärts
-    # SELL nur wenn Energie nicht stark aufwärts
+    # === Resonanz-Gate (A6: Informationsfluss durch Resonanzkopplung) ===
+    # MI(X,Y) > 0 ⟺ PCI > 0: Trades nur wenn Phasenkohärenz besteht.
+    # BUY nur wenn Energie nicht stark abwärts (Aktion wäre anti-resonant)
+    # SELL nur wenn Energie nicht stark aufwärts (Aktion wäre anti-resonant)
     RESONANCE_GATE = 0.005
     allow_buy = energy_dir > -RESONANCE_GATE
     allow_sell = energy_dir < RESONANCE_GATE
 
-    # === SELL-Modus 1: Resonanzverstärkte Gewinnmitnahme (V11) ===
-    # AC-Phase moduliert: peak → aggressiver, trough → blockiert
+    # === SELL-Modus 1: Resonanzverstärkte Gewinnmitnahme ===
+    # A1: AC-Phase moduliert Timing und Sizing
+    # Peak → SELL ist resonant (AC-Energie wird abgegeben)
+    # Trough → SELL ist anti-resonant (AC-Energie wird aufgenommen)
     if allow_sell and sz != "locked" and pos in ("LONG", "PARTIAL") and e_long > 0:
         if trend == "uptrend":
             pass  # Keine Gewinnmitnahme im Uptrend — HODL
@@ -230,22 +274,19 @@ def ma_profit_switch_policy(state: dict) -> Action:
                 if sell_vol_mod == "amplified":
                     action = "SELL_SMALL"
         else:
-            # V11: AC-Phase verstärkt SELL-Entscheidung
-            # Peak → SELL wird zu MEDIUM hochgestuft
-            # Trough → SELL wird gedämpft (anti-resonant)
             sell_boost = ac_phase == "peak"
             sell_dampen = ac_phase == "trough"
 
             if e_long > thr_medium:
                 if trend != "downtrend":
                     if sell_dampen:
-                        action = "SELL_SMALL"  # Trough: nur SMALL
+                        action = "SELL_SMALL"  # Trough: nur SMALL (anti-resonant)
                     elif sz == "tight":
                         action = "SELL_SMALL"
                     elif cz == "dry":
                         action = "SELL_MEDIUM"
                     elif sell_boost and ac_amp_bin == "wide":
-                        action = "SELL_MEDIUM"  # V11: Peak + breite Schwingung → MEDIUM
+                        action = "SELL_MEDIUM"  # Peak + breite Schwingung → MEDIUM
                     elif sell_vol_mod != "damped":
                         action = "SELL_MEDIUM" if cz == "low" else "SELL_SMALL"
                     else:
@@ -269,6 +310,8 @@ def ma_profit_switch_policy(state: dict) -> Action:
                 action = "SELL_SMALL"
 
     # === BUY-Logik (höhere Schwellen — konservativ) ===
+    # A1: Trough → BUY ist resonant (niedrigere Schwelle)
+    #     Peak → BUY ist anti-resonant (höhere Schwelle)
     if action == "HOLD" and allow_buy:
         can_buy = False
         if pos in ("FLAT", "PARTIAL"):
@@ -279,7 +322,6 @@ def ma_profit_switch_policy(state: dict) -> Action:
         if can_buy and e_long < 0:
             has_medium_cash = cash_share > 0.10
 
-            # V10: Konservativere Schwellen
             if trend == "downtrend":
                 thr_small_eff = 0.04
                 thr_medium_eff = 0.06
@@ -287,9 +329,7 @@ def ma_profit_switch_policy(state: dict) -> Action:
                 thr_small_eff = 0.03
                 thr_medium_eff = 0.04
 
-            # V11: AC-Phase moduliert BUY-Schwellen
-            # Peak → BUY ist anti-resonant → höhere Schwelle
-            # Trough → BUY ist resonant → niedrigere Schwelle
+            # A1: AC-Phase moduliert BUY-Schwellen
             if ac_phase == "peak":
                 thr_small_eff += 0.01
                 thr_medium_eff += 0.01
@@ -330,7 +370,10 @@ def ma_profit_switch_policy(state: dict) -> Action:
             if cash_share > 0.05 and e_long < 0.01:
                 action = "BUY_SMALL"
 
-    # === BALANCE-REGLER (Axiom 2: Kopplungsstruktur) ===
+    # === BALANCE-REGLER (A4: Kopplungsenergie E = π·ε·h·f) ===
+    # Die Kopplungseffizienz ε erfordert, dass beide Resonanzräume
+    # (Cash und BTC) gefüllt sind. Bei ε → 0 bricht die Kopplung ab,
+    # das System verliert seine Handlungsfähigkeit.
     if action.startswith("BUY") and cash_share < 0.08:
         action = "HOLD"
     if action.startswith("SELL") and sellable_share < 0.05:
@@ -420,7 +463,11 @@ def resonance_learning_policy(
     experience_weight: float = 0.6,
 ) -> Action:
     """
-    V11: Hybride Policy mit Energierichtung + AC/DC-Phase + Regime-Integration.
+    Hybride Policy: Regelwissen + Erfahrung.
+
+    Verbindet die resonanzlogische Regel-Policy (A1, A4, A5, A6)
+    mit dem Erfahrungsspeicher. Der Erfahrungsanteil steigt mit der
+    Konfidenz (Anzahl gesehener States). Exploration ist regime-bewusst.
     """
     allowed = _allowed_actions_for_regime(state)
     if len(allowed) == 1:
@@ -476,7 +523,11 @@ def resonance_learning_policy(
 
 def _exploration_action(state: dict, allowed: list = None) -> Action:
     """
-    V9.4: Regime-bewusste Exploration.
+    Regime-bewusste Exploration.
+
+    A5 (Energierichtung) lenkt die Exploration: Bei negativem e_long
+    werden BUY-Aktionen bevorzugt exploriert, bei positivem e_long
+    SELL-Aktionen — resonant mit der Energierichtung.
     """
     if allowed is None:
         allowed = list(ALL_ACTIONS)

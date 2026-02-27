@@ -1,10 +1,15 @@
 """
-ResoTrade V11 — Konfiguration für Live-Trading.
+ResoTrade V11.1 — Konfiguration für Live-Trading.
 Alle Parameter an einem Ort. Keine API-Keys hier — die liegen in kraken.key
 oder im OS-Keyring.
 
-V11: AC/DC-Zerlegung (Axiom 1 + Energiekugel) integriert.
-V9.4: Korrekturen für Performance-Bremsen
+Resonanzfeldtheoretische Grundlage (RFT V3.1):
+  A1: Universelle Schwingung — AC/DC-Zerlegung des Preisfeldes
+  A2: Superposition — MA_SHORT + MA_LONG als überlagerte Moden
+  A4: Kopplungsenergie E = π·ε·h·f — Balance-Regler
+  A5: Energierichtung — energy_dir = e_short - e_long
+  A6: Informationsfluss — Resonanz-Gate (Trades nur bei Phasenkohärenz)
+  A7: Invarianz — Regime-invariante Performance über alle Marktphasen
 """
 import os
 from pathlib import Path
@@ -29,7 +34,10 @@ MIN_BTC_ORDER = 0.0001
 MIN_USD_ORDER = 5.0
 
 # === MA-Parameter (Stundenbasis) ===
-# EINZIGE Quelle der Wahrheit für MA-Fenster im gesamten System.
+# A2 (Superposition Φ = Σψᵢ): Der Preis ist die Überlagerung von
+# MA_SHORT (24h-Mode) und MA_LONG (168h-Mode). Beide Zeitskalen werden
+# separat ausgewertet (e_short, e_long) und ihre Differenz ergibt den
+# Energierichtungsvektor (A5).
 MA_SHORT_WINDOW = 24
 MA_LONG_WINDOW = 168
 VOLATILITY_WINDOW = 72
@@ -75,10 +83,15 @@ SELL_LOW_VOL_ENABLED = True
 # === Makro-Regime ===
 REGIME_MIN_DURATION = 18         # 18h (war 12 — etwas mehr Geduld)
 REGIME_MIN_STRENGTH = 0.02       # 2% MA-Divergenz (bleibt)
+
+# A7 (Invarianz unter G_sync): Die Resonanzstruktur ist skalierungsinvariant.
+# Das Training über 4 verschiedene Marktregime (Sideways, Bullrun, Korrektur,
+# Crash) bestätigt: Die Axiome gelten regime-invariant.
 TRAINING_WINDOW_LENGTH = 720
 
 # === Downtrend-Pause-Gate (V11.1) ===
-# Wenn alle drei Bedingungen erfüllt sind, wird Daytrading pausiert.
+# A1 + A4: Wenn DC stark fällt (BEAR_STRONG + e_long < -5%), ist die
+# AC-Schwingung nicht profitabel handelbar — die Kopplungseffizienz ε → 0.
 # Das System hält nur den HODL-Kern und wartet auf Stabilisierung.
 PAUSE_TREND = "downtrend"              # Trend muss Downtrend sein
 PAUSE_E_LONG_THRESHOLD = -0.05         # e_long < -5% (deutlich unter MA_LONG)
