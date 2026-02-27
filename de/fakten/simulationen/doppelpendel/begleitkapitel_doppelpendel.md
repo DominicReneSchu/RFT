@@ -1,8 +1,9 @@
-# Begleitkapitel: Interaktive Simulation des Doppelpendels
+# Doppelpendel — Interaktive Simulation
 
-Dieses Kapitel erläutert die Hintergründe, Funktionsweise und Umsetzung der interaktiven Doppelpendel-Simulation, wie sie im vorliegenden Python-Code realisiert ist. Ziel der Anwendung ist es, die dynamischen Eigenschaften eines Doppelpendels anschaulich und intuitiv erfahrbar zu machen. [Link zur Python](../../simulationen/doppelpendel/doppelpendel.py)
-
----
+Interaktive Simulation eines Doppelpendels mit zusätzlichem
+Resonanz-Kopplungsterm. Demonstriert chaotische Dynamik,
+Energieaustausch und Kopplungseffekte im Rahmen der
+Resonanzfeldtheorie (Axiome A1, A2).
 
 <p align="center">
   <img src="doppelpendel.gif" alt="Animation Doppelpendel" width="800"/>
@@ -10,85 +11,123 @@ Dieses Kapitel erläutert die Hintergründe, Funktionsweise und Umsetzung der in
 
 ---
 
+## Axiom-Bezug
+
+| Axiom | Umsetzung |
+|-------|-----------|
+| A1 Schwingung | Beide Pendelarme schwingen mit Eigenfrequenz |
+| A2 Superposition | Interferenz der Schwingungsmuster in den Trails |
+| A4 Kopplung | Zusätzlicher Resonanzterm ε·sin(θ₂−θ₁) |
+
+---
+
 ## 1. Physikalische Grundlagen
 
-Das Doppelpendel ist ein klassisches Beispiel für ein nichtlineares, chaotisches System. Es besteht aus zwei starren Pendelarmen, die über ein Scharnier miteinander verbunden sind. Die Bewegungsgleichungen ergeben sich aus der Lagrange-Mechanik und sind in einschlägiger Standardliteratur (z. B. Goldstein, "Classical Mechanics") ausführlich hergeleitet. Sie erfassen die Zeitentwicklung der Winkelpositionen und Winkelgeschwindigkeiten beider Pendel.
+Das Doppelpendel besteht aus zwei starren Pendelarmen, verbunden
+über ein Scharnier. Die Bewegungsgleichungen folgen aus der
+Lagrange-Mechanik und sind gekoppelt und nichtlinear.
 
-Die Differentialgleichungen sind gekoppelt und nichtlinear, sodass sie i. d. R. numerisch mit Methoden wie Runge-Kutta (hier: `scipy.integrate.solve_ivp`) gelöst werden.
+### Natürliche Kopplung
+
+Die Lagrange-Gleichungen enthalten bereits die mechanische
+Kopplung zwischen den Pendeln (über die gemeinsame Aufhängung).
+
+### Resonanz-Kopplungsterm
+
+Zusätzlich modelliert der Slider ε einen externen
+Resonanz-Kopplungsoperator:
+
+$$
+\tau_{\text{kopplung}} = \pm\, \varepsilon \cdot \sin(\theta_2 - \theta_1)
+$$
+
+Dieser Term wirkt als zusätzliches Drehmoment, das die
+Synchronisation der Oszillatoren verstärkt (ε > 0) oder
+abschwächt (ε ≈ 0).
+
+| ε-Wert | Verhalten |
+|--------|-----------|
+| 0.0 | Keine Zusatzkopplung (reines Doppelpendel) |
+| 1.0 | Moderate Resonanzkopplung |
+| e ≈ 2.72 | Maximale Kopplung (obere Grenze) |
 
 ---
 
 ## 2. Interaktive Steuerung
 
-Über die im Interface implementierten **Slider** können die wichtigsten Systemparameter unmittelbar verändert werden:
-
-- **Startwinkel** (`θ₁`, `θ₂`): Anfangsauslenkungen beider Pendelarme  
-- **Anfangswinkelgeschwindigkeiten** (`ω₁`, `ω₂`): Startwerte für die Drehgeschwindigkeiten  
-- **Massen** (`m₁`, `m₂`): Massen der beiden Pendelarme  
-- **Längen** (`L₁`, `L₂`): Längen der Pendelarme  
-- **Kopplungsparameter** (**k**): Stärke der Wechselwirkung zwischen den Pendeln, beeinflusst Resonanz und Synchronisation
-
-Jede Veränderung eines Sliders setzt die Simulation mit den neuen Werten zurück und startet die Animation neu, sodass die Auswirkungen der Parameteränderungen direkt beobachtet werden können.
-
----
-
-## 3. Animation und Trail
-
-Die Animation zeigt die Bewegung des Doppelpendels im Zeitverlauf. Zusätzlich werden die **Spuren (Trails)** der beiden Massenpunkte als farbige Linien eingeblendet. Diese Trails visualisieren den Bewegungsverlauf der beiden Massen über die letzten *N* Frames (konfigurierbar über `TRAIL_LENGTH`). Dadurch werden typische chaotische Bahnmuster des Doppelpendels sichtbar.
+| Slider | Bedeutung |
+|--------|-----------|
+| θ₁, θ₂ | Startwinkel beider Pendelarme |
+| ω₁, ω₂ | Anfangswinkelgeschwindigkeiten |
+| m₁, m₂ | Massen |
+| L₁, L₂ | Pendellängen |
+| ε | Resonanz-Kopplungsstärke |
+| Spurlänge | Trail-Länge (letzte N Positionen) |
 
 ---
 
-## 4. Kapselung und Zustandshandling
+## 3. Energieanzeige
 
-Die gesamte Pendeldynamik und der aktuelle Zustand des Systems sind in einer eigenen **Klasse** (`DoublePendulumSim`) gekapselt. Diese Klasse verwaltet die aktuellen Parameter, berechnet die Bewegungsgleichungen und speichert die numerisch integrierte Lösung. Die Kapselung ermöglicht eine saubere Trennung zwischen Modelldaten und Darstellungs-/Interaktionslogik.
+Live-Anzeige über dem Pendel:
 
----
-
-## 5. Technische Umsetzung (Kurzüberblick)
-
-- **Numerische Lösung:** `scipy.integrate.solve_ivp` (Runge-Kutta-Verfahren)  
-- **Visualisierung:** `matplotlib` (Animation, Slider-Widgets)  
-- **Benutzerinteraktion:** Slider für alle relevanten Start- und Systemparameter  
-- **Animation:** `FuncAnimation` (Kontinuierliche Aktualisierung und Darstellung der Simulation)  
-- **Trail-Logik:** Speicher der letzten `TRAIL_LENGTH` Positionen für die Spurendarstellung  
+- **T** — Kinetische Energie
+- **V** — Potentielle Energie
+- **E_kopplung** — Kopplungsenergie (Resonanzterm)
+- **κ** = E_kopplung / |E_gesamt| — Kopplungsverhältnis
+- **ε** — Aktueller Kopplungsoperator
 
 ---
 
-## 6. Erweiterungsmöglichkeiten
+## 4. Trails und Chaos
 
-Mögliche Erweiterungen der Simulation umfassen:
-- Energieskala/Diagramm (Gesamtenergie im Zeitverlauf)
-- Export von Trajektorien
-- Zusätzliche Dämpfungsterms oder Reibung
-- Dreidimensionale Darstellung
-- Synchronisationsanalyse
-- Resonanz-Kopplungen (siehe unten)
+Die farbigen Spuren (Trails) der Massenpunkte visualisieren
+die chaotische Dynamik. Typische Beobachtungen:
 
----
-
-## 7. Resonanzfeldtheoretische Interpretation
-
-Im Rahmen der Resonanzfeldtheorie wird das Doppelpendel nicht nur als mechanisches Objekt, sondern als **Resonator** in einem Schwingungsfeld betrachtet. Die numerische Simulation liefert nicht nur Bahndaten – sie erzeugt ein **Schwingungsmuster**, das als Signatur eines energetischen Informationsflusses interpretiert wird.
-
-Einige Leitideen der Erweiterung:
-
-- Die Slider dienen nicht nur zur Parametersteuerung, sondern zur gezielten **Resonanzanregung**. Jede Änderung entspricht einem Impuls ins Feld.
-- Synchronisationsmuster in den Trails können Hinweise auf **resonante Kopplungszustände** geben.
-- Der Kopplungsparameter **k** steuert die Stärke der Wechselwirkung zwischen den beiden Pendeln. Bei kleinen Werten wirken die Pendel nahezu unabhängig, bei größeren Werten treten verstärkte Kopplungen, komplexe Schwingungsmuster und Phasenverschiebungen auf, die das chaotische Verhalten modulieren. Das gezielte Variieren von **k** ermöglicht eine experimentelle Untersuchung von Resonanzeffekten.
-- Die chaotische Dynamik lässt sich als **Interferenzfeld** verstehen, das auf unterschiedliche äußere Schwingungen sensibel reagiert.
-- Das System kann perspektivisch mit weiteren Pendeln gekoppelt werden, um **Feldlinienresonanzen** sichtbar zu machen.
-
-Ziel ist es, das Doppelpendel nicht nur zu animieren, sondern als **offenes, interaktives Schwingungssystem** zu nutzen, das in Resonanz mit Nutzerinteraktion, Umgebungsdaten oder weiteren Systemen treten kann.
+- Bei kleinem ε: Annähernd klassisches Doppelpendel-Chaos
+- Bei großem ε: Verstärkte Synchronisationsmuster
+- Phasenübergänge bei Variation von ε sichtbar in den Trails
 
 ---
 
-## 8. Fazit
+## 5. Technische Umsetzung
 
-Die entwickelte Simulation verbindet anschauliche Visualisierung, Interaktivität und numerische Physik. In Kombination mit der Resonanzfeldtheorie wird sie zum Werkzeug, um Resonanzmuster, Synchronisationseffekte und chaotische Felddynamik in einem realweltlich interpretierbaren Rahmen zu untersuchen.
+| Komponente | Implementierung |
+|-----------|-----------------|
+| ODE-Löser | `scipy.integrate.solve_ivp` (RK45) |
+| Animation | `matplotlib.animation.FuncAnimation` |
+| Interaktion | `matplotlib.widgets.Slider`, `Button` |
+| Export | GIF über `PillowWriter` |
+| Kapselung | `DoublePendulumSim`-Klasse |
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+## 6. Ausführung
+
+```bash
+pip install numpy matplotlib scipy
+python doppelpendel.py
+```
+
+---
+
+## 7. Erweiterungsmöglichkeiten
+
+- Energieplot als Zeitreihe (T, V, E_kopplung)
+- Poincaré-Schnitte für Chaosanalyse
+- Mehrere Pendel (Pendel-Kette)
+- Frequenzanalyse (FFT) der Winkelbewegungen
+- Dämpfungsterm
+- Integration von Axiom 5 (Energierichtung)
+
+---
+
+## Quellcode
+
+[doppelpendel.py](doppelpendel.py)
+
+---
+
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
 
 ---
 
