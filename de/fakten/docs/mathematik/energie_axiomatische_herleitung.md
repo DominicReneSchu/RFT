@@ -23,7 +23,7 @@ Die effektive Energie einer resonanten Kopplung lautet:
 
 Dabei ist:
 - ε(Δφ) die Kopplungseffizienz, ε ∈ [0, 1]
-  (siehe [Vereinheitlichte Definition](kopplungseffizienz.md))
+  (siehe [Vereinheitlichte Definition](../definitionen/kopplungseffizienz.md))
 - π der geometrische Faktor aus der zyklischen Kopplungsgeometrie
 - h das Plancksche Wirkungsquantum
 - f die Frequenz der gekoppelten Mode
