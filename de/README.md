@@ -96,7 +96,7 @@ Zusätzlich gibt es zwei interpretative Erweiterungen:
 - **E1 (Beobachter als Resonator):** Folgt aus A1, A3, A6
 - **E2 (Resonanz-Inklusion):** Gruppenzugehörigkeit ist systemisch invariant
 
-Vollständige Formalisierung: [Axiomatische Grundlegung](fakten/docs/mathematik/axiomatische_grundlegung.md)
+Vollständige Formalisierung: [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md)
 
 ---
 
