@@ -90,18 +90,13 @@ Drei Modelle der Energieübertragung:
 
 ---
 
-[Link zum Python-Skript](../../simulationen/resonanzfeld/simulation_resonanzfeldtheorie.py)
-
----
-
 ## Voraussetzungen
 
 - Python ≥ 3.8
-- Jupyter Notebook / JupyterLab
 - Installierte Pakete:
 
 ```bash
-pip install numpy matplotlib ipywidgets
+pip install numpy matplotlib
 ```
 
 ---
@@ -109,11 +104,22 @@ pip install numpy matplotlib ipywidgets
 ## Ausführung
 
 ```bash
-jupyter notebook simulation_resonanzfeldtheorie.py
+python simulation_resonanzfeldtheorie.py
 ```
 
-Oder direkt in JupyterLab öffnen. Die interaktiven Slider
-ermöglichen Echtzeit-Variation aller Parameter.
+Die interaktiven Slider im matplotlib-Fenster ermöglichen
+Echtzeit-Variation aller Parameter:
+
+- **f₁, f₂** — Frequenzen der beiden Oszillatoren
+- **Δφ** — Phasendifferenz (bestimmt ε über cos²(Δφ/2))
+- **t_max** — Simulationsdauer
+- **Kopplung** — Kopplungsmodell (linear, quadratisch, trigonometrisch)
+
+---
+
+## Quellcode
+
+[simulation_resonanzfeldtheorie.py](simulation_resonanzfeldtheorie.py)
 
 ---
 
