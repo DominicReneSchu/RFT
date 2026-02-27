@@ -8,7 +8,7 @@
 
 Die Resonanzfeldtheorie beschreibt physikalische Prozesse als
 Kopplungs- und Resonanzphänomene (siehe [axiomatische Grundlegung](
-../mathematik/axiomatische_grundlegung.md)). Daraus ergibt sich eine
+../definitionen/axiomatische_grundlegung.md)). Daraus ergibt sich eine
 philosophische Frage:
 
 **Ist Mathematik ein Werkzeug, das wir auf die Natur anwenden —
@@ -187,13 +187,13 @@ Konzept, kein physikalisches Axiom.
 
 ## Weiterführende Dokumente
 
-- [Axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md)
+- [Axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md)
   — Das formale Fundament (Axiome A1–A7)
 - [Energiekugel](../mathematik/energiekugel.md)
   — Geometrisches Modell der Phasenstruktur
 - [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
   — Analytische Methoden und das Dirichlet-Integral
-- [Kopplungseffizienz](../mathematik/kopplungseffizienz.md)
+- [Kopplungseffizienz](../definitionen/kopplungseffizienz.md)
   — Vereinheitlichte Definition von ε
 
 ---
