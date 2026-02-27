@@ -1,23 +1,16 @@
 """
 Stufe 6a: H0-abhaengiger Scan der Resonanzfeldkopplung.
+PUBLIKATIONSVERSION — erweitert mit Jackknife-Fehler und Bootstrap.
 
 Kernfrage: Wie veraendert sich die Abweichung d_eta als Funktion
 der Hubble-Konstante H0?
 
-Physikalischer Hintergrund:
-    In der Simulation steuert adot0 = H0 * a0 die anfaengliche
-    Expansionsrate. Da a0 = 1 (normiert), gilt adot0 = H0.
-    Die Hubble-Reibung (-3H * epsdot) daempft die Feldoszillationen
-    und verschiebt eta systematisch unter cos^2(dphi/2).
-
-    Vorhersage der Resonanzfeldtheorie:
-        d_eta(H0) waechst monoton mit H0.
-        Die Steigung dd_eta/dH0 ist die messbare Signatur.
-
-Einheiten:
-    H0 wird in natuerlichen Einheiten uebergeben.
-    Fuer den Vergleich mit Beobachtungen (km/s/Mpc) wird
-    ein Umrechnungsfaktor bereitgestellt.
+Erweiterungen:
+  - Jackknife-Fehler auf d_eta (Leave-one-phase-out)
+  - Bootstrap-Konfidenzintervalle fuer Steigung
+  - Erweiterter H0-Bereich (0-100 km/s/Mpc)
+  - 30 Phasenpunkte (statt 15)
+  - Gewichteter linearer Fit mit 1-sigma-Band
 
 Abhaengigkeiten: numpy, core.coupled_flrw, core.flat_coupled
 """
@@ -27,14 +20,10 @@ from core.coupled_flrw import scan_phase_coupling
 from core.flat_coupled import scan_phase_flat
 
 
-# Umrechnung: H0 [km/s/Mpc] -> H0 [1/s] -> natuerliche Einheiten
-# 1 Mpc = 3.0857e22 m, c = 2.998e8 m/s
-# H0_phys = H0_kmsMpc * 1e3 / 3.0857e22  [1/s]
-# In Planck-Einheiten: t_P = 5.391e-44 s -> H0_planck = H0_phys * t_P
-# Fuer die Simulation: Wir skalieren H0_kmsMpc linear auf adot0.
-# Referenzpunkt: H0 = 67.4 km/s/Mpc -> adot0 = 0.3 (unser Standardwert)
-H0_REF = 67.4       # Planck 2018 [km/s/Mpc]
-ADOT0_REF = 0.3      # Simulationseinheit bei H0_REF
+# Umrechnung: H0 [km/s/Mpc] -> adot0
+# Referenzpunkt: H0 = 67.4 km/s/Mpc -> adot0 = 0.3
+H0_REF = 67.4
+ADOT0_REF = 0.3
 
 
 def h0_to_adot0(h0_kmsMpc):
@@ -42,30 +31,67 @@ def h0_to_adot0(h0_kmsMpc):
 
     Lineare Skalierung relativ zum Referenzpunkt:
         adot0 = ADOT0_REF * (H0 / H0_REF)
+
+    Spezialfall: H0 = 0 -> adot0 = 0 (flache Raumzeit).
     """
     return ADOT0_REF * (h0_kmsMpc / H0_REF)
+
+
+def _jackknife_d_eta(eta_mean, eta_cos2):
+    """Jackknife-Fehler auf d_eta ueber Phasengruppen.
+
+    Fuer N Phasenpunkte: N Jackknife-Stichproben, je ein Punkt
+    ausgelassen. Der Jackknife-Fehler ist:
+        sigma_JK = sqrt((N-1)/N * sum((d_eta_i - d_eta_mean)^2))
+
+    Returns
+    -------
+    d_eta : float
+        Mittlere Abweichung (alle Punkte)
+    d_eta_jk_err : float
+        Jackknife-Fehler
+    d_eta_jk_samples : array
+        Einzelne Jackknife-Werte
+    """
+    valid = np.isfinite(eta_mean) & np.isfinite(eta_cos2)
+    if np.sum(valid) < 3:
+        return np.nan, np.nan, np.array([])
+
+    residuals = np.abs(eta_mean[valid] - eta_cos2[valid])
+    d_eta_full = np.mean(residuals)
+    n = len(residuals)
+
+    jk_samples = np.zeros(n)
+    for i in range(n):
+        mask = np.ones(n, dtype=bool)
+        mask[i] = False
+        jk_samples[i] = np.mean(residuals[mask])
+
+    jk_err = np.sqrt((n - 1) / n * np.sum((jk_samples - d_eta_full) ** 2))
+
+    return d_eta_full, jk_err, jk_samples
 
 
 def scan_h0(
     h0_values=None,
     delta_phi_values=None,
-    t_span=(0, 60),
+    t_span=(0, 120),
     m=1.0, lmbda=0.1, alpha=0.5, kappa=1.0, g=0.2,
 ):
     """Fuehrt einen systematischen H0-Scan durch.
+    PUBLIKATIONSVERSION mit Jackknife-Fehler.
 
     Fuer jeden H0-Wert wird ein vollstaendiger Phasenscan ausgefuehrt.
-    Die mittlere Abweichung d_eta = <|eta_sim - cos^2(dphi/2)|>
-    wird als Funktion von H0 berechnet.
+    d_eta = <|eta_sim - cos^2(dphi/2)|> mit Jackknife-Fehler.
 
     Parameters
     ----------
     h0_values : array-like or None
-        H0-Werte in [km/s/Mpc]. Default: 60 bis 80 in 21 Schritten.
+        H0-Werte in [km/s/Mpc]. Default: 0 bis 100 in 51 Schritten.
     delta_phi_values : array-like or None
-        Phasendifferenzen fuer den Scan. Default: 15 Werte, 0 bis pi.
+        Phasendifferenzen. Default: 30 Werte, 0 bis pi.
     t_span : tuple
-        Simulationszeitintervall.
+        Simulationszeitintervall. Default: (0, 120).
     m, lmbda, alpha, kappa, g : float
         Modellparameter (Defaults aus config).
 
@@ -75,95 +101,124 @@ def scan_h0(
         h0_values        : H0-Werte [km/s/Mpc]
         adot0_values     : Zugehoerige adot0-Werte
         d_eta_mean       : Mittlere Abweichung pro H0
-        d_eta_std        : Standardabweichung pro H0
+        d_eta_std        : Standardabweichung pro H0 (ueber Phasen)
+        d_eta_jk_err     : Jackknife-Fehler pro H0
         d_eta_flat       : Referenzwert fuer flache Raumzeit (H=0)
+        d_eta_flat_jk    : Jackknife-Fehler des Referenzwerts
         eta_scans        : Liste der vollstaendigen Phasenscan-Ergebnisse
+        n_simulations    : Gesamtzahl Einzelsimulationen
     """
     if h0_values is None:
-        h0_values = np.linspace(60, 80, 21)
+        h0_values = np.linspace(0, 100, 51)
     h0_values = np.asarray(h0_values, dtype=float)
 
     if delta_phi_values is None:
-        delta_phi_values = np.linspace(0, np.pi, 15)
+        delta_phi_values = np.linspace(0, np.pi, 30)
     delta_phi_values = np.asarray(delta_phi_values, dtype=float)
 
     common = dict(m=m, lmbda=lmbda, g=g)
+    n_sims = 0
 
     # Referenz: Flache Raumzeit
     scan_flat = scan_phase_flat(
         delta_phi_values=delta_phi_values, t_span=t_span, **common,
     )
-    v_flat = np.isfinite(scan_flat["eta_mean"])
-    if np.any(v_flat):
-        d_eta_flat = np.nanmean(
-            np.abs(scan_flat["eta_mean"][v_flat] - scan_flat["eta_cos2"][v_flat])
-        )
-    else:
-        d_eta_flat = np.nan
+    n_sims += len(delta_phi_values)
+
+    d_eta_flat, d_eta_flat_jk, _ = _jackknife_d_eta(
+        scan_flat["eta_mean"], scan_flat["eta_cos2"]
+    )
 
     # H0-Scan
     d_eta_mean = []
     d_eta_std = []
+    d_eta_jk_err = []
     eta_scans = []
 
     for h0 in h0_values:
         adot0 = h0_to_adot0(h0)
-        scan = scan_phase_coupling(
-            delta_phi_values=delta_phi_values,
-            t_span=t_span,
-            alpha=alpha, kappa=kappa, adot0=adot0,
-            **common,
-        )
+
+        # Bei H0 = 0 verwende flache Simulation
+        if h0 == 0.0:
+            scan = scan_flat
+        else:
+            scan = scan_phase_coupling(
+                delta_phi_values=delta_phi_values,
+                t_span=t_span,
+                alpha=alpha, kappa=kappa, adot0=adot0,
+                **common,
+            )
+            n_sims += len(delta_phi_values)
+
         eta_scans.append(scan)
+
+        d_eta, jk_err, _ = _jackknife_d_eta(
+            scan["eta_mean"], scan["eta_cos2"]
+        )
+        d_eta_mean.append(d_eta)
+        d_eta_jk_err.append(jk_err)
 
         v = np.isfinite(scan["eta_mean"])
         if np.any(v):
             residuals = np.abs(scan["eta_mean"][v] - scan["eta_cos2"][v])
-            d_eta_mean.append(np.mean(residuals))
             d_eta_std.append(np.std(residuals))
         else:
-            d_eta_mean.append(np.nan)
             d_eta_std.append(np.nan)
+
+    d_eta_mean = np.array(d_eta_mean)
+    d_eta_std = np.array(d_eta_std)
+    d_eta_jk_err = np.array(d_eta_jk_err)
 
     result = {
         "h0_values": h0_values,
         "adot0_values": np.array([h0_to_adot0(h) for h in h0_values]),
-        "d_eta_mean": np.array(d_eta_mean),
-        "d_eta_std": np.array(d_eta_std),
+        "d_eta_mean": d_eta_mean,
+        "d_eta_std": d_eta_std,
+        "d_eta_jk_err": d_eta_jk_err,
         "d_eta_flat": d_eta_flat,
+        "d_eta_flat_jk": d_eta_flat_jk,
         "eta_scans": eta_scans,
         "delta_phi_values": delta_phi_values,
+        "n_simulations": n_sims,
     }
 
-    # Linearer Fit: d_eta = slope * H0 + intercept
-    valid = np.isfinite(result["d_eta_mean"])
+    # Gewichteter linearer Fit mit Jackknife-Fehlern
+    valid = np.isfinite(d_eta_mean) & (d_eta_jk_err > 0)
     if np.sum(valid) >= 2:
-        coeffs = np.polyfit(h0_values[valid], result["d_eta_mean"][valid], 1)
+        weights = 1.0 / d_eta_jk_err[valid] ** 2
+        coeffs = np.polyfit(
+            h0_values[valid], d_eta_mean[valid], 1, w=np.sqrt(weights)
+        )
         result["fit_slope"] = coeffs[0]
         result["fit_intercept"] = coeffs[1]
         result["fit_poly"] = coeffs
+
+        # Fehler auf Steigung via Bootstrap
+        n_boot = 1000
+        slopes = np.zeros(n_boot)
+        h0_v = h0_values[valid]
+        d_v = d_eta_mean[valid]
+        w_v = np.sqrt(weights)
+        for b in range(n_boot):
+            idx = np.random.choice(len(h0_v), size=len(h0_v), replace=True)
+            c = np.polyfit(h0_v[idx], d_v[idx], 1, w=w_v[idx])
+            slopes[b] = c[0]
+        result["fit_slope_err"] = np.std(slopes)
+        result["fit_slope_16"] = np.percentile(slopes, 16)
+        result["fit_slope_84"] = np.percentile(slopes, 84)
     else:
         result["fit_slope"] = np.nan
         result["fit_intercept"] = np.nan
         result["fit_poly"] = None
+        result["fit_slope_err"] = np.nan
+        result["fit_slope_16"] = np.nan
+        result["fit_slope_84"] = np.nan
 
     return result
 
 
 def predict_d_eta(h0, fit_result):
-    """Vorhersage von d_eta fuer einen gegebenen H0-Wert.
-
-    Parameters
-    ----------
-    h0 : float
-        H0 in [km/s/Mpc]
-    fit_result : dict
-        Ergebnis von scan_h0()
-
-    Returns
-    -------
-    float : vorhergesagtes d_eta
-    """
+    """Vorhersage von d_eta fuer einen gegebenen H0-Wert."""
     if fit_result["fit_poly"] is not None:
         return np.polyval(fit_result["fit_poly"], h0)
     return np.nan
@@ -171,29 +226,26 @@ def predict_d_eta(h0, fit_result):
 
 def hubble_tension_signature(fit_result, h0_planck=67.4, h0_shoes=73.0):
     """Berechnet die Resonanzfeld-Signatur der Hubble-Spannung.
-
-    Parameters
-    ----------
-    fit_result : dict
-        Ergebnis von scan_h0()
-    h0_planck : float
-        Planck 2018 Messung [km/s/Mpc]
-    h0_shoes : float
-        SH0ES Messung [km/s/Mpc]
+    PUBLIKATIONSVERSION mit Fehlerfortpflanzung.
 
     Returns
     -------
     dict mit:
-        d_eta_planck     : d_eta bei H0 = 67.4
-        d_eta_shoes      : d_eta bei H0 = 73.0
-        delta_d_eta      : Differenz (SH0ES - Planck)
-        relative_shift   : Relative Verschiebung in Prozent
-        slope            : dd_eta / dH0
+        d_eta_planck / d_eta_shoes  : Vorhergesagte Werte
+        delta_d_eta                 : Differenz
+        delta_d_eta_err             : Fehler (via Steigungsfehler)
+        relative_shift              : Relative Verschiebung [%]
+        slope / slope_err           : Steigung + Fehler
     """
     d_planck = predict_d_eta(h0_planck, fit_result)
     d_shoes = predict_d_eta(h0_shoes, fit_result)
     delta = d_shoes - d_planck
     rel = (delta / d_planck * 100) if d_planck != 0 else np.nan
+
+    # Fehler auf Delta d_eta = slope * (H0_shoes - H0_planck)
+    delta_h0 = h0_shoes - h0_planck
+    slope_err = fit_result.get("fit_slope_err", np.nan)
+    delta_err = slope_err * delta_h0 if np.isfinite(slope_err) else np.nan
 
     return {
         "h0_planck": h0_planck,
@@ -201,27 +253,24 @@ def hubble_tension_signature(fit_result, h0_planck=67.4, h0_shoes=73.0):
         "d_eta_planck": d_planck,
         "d_eta_shoes": d_shoes,
         "delta_d_eta": delta,
+        "delta_d_eta_err": delta_err,
         "relative_shift": rel,
         "slope": fit_result["fit_slope"],
+        "slope_err": slope_err,
     }
 
 
 def export_results(fit_result, filepath="h0_scan_results.csv"):
     """Exportiert die Scan-Ergebnisse als CSV.
-
-    Parameters
-    ----------
-    fit_result : dict
-        Ergebnis von scan_h0()
-    filepath : str
-        Ausgabepfad
+    PUBLIKATIONSVERSION mit Jackknife-Fehlern.
     """
     h0 = fit_result["h0_values"]
     adot0 = fit_result["adot0_values"]
     d_eta = fit_result["d_eta_mean"]
     d_std = fit_result["d_eta_std"]
+    d_jk = fit_result["d_eta_jk_err"]
 
-    header = "H0_kmsMpc,adot0,d_eta_mean,d_eta_std"
-    data = np.column_stack([h0, adot0, d_eta, d_std])
+    header = "H0_kmsMpc,adot0,d_eta_mean,d_eta_std,d_eta_jk_err"
+    data = np.column_stack([h0, adot0, d_eta, d_std, d_jk])
     np.savetxt(filepath, data, delimiter=",", header=header, comments="",
-               fmt=["%.2f", "%.6f", "%.6f", "%.6f"])
+               fmt=["%.2f", "%.6f", "%.6f", "%.6f", "%.6f"])
