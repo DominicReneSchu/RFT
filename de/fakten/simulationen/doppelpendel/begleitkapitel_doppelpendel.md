@@ -1,9 +1,9 @@
 # Doppelpendel — Interaktive Simulation
 
-Interaktive Simulation eines Doppelpendels mit zusätzlichem
-Resonanz-Kopplungsterm. Demonstriert chaotische Dynamik,
-Energieaustausch und Kopplungseffekte im Rahmen der
-Resonanzfeldtheorie (Axiome A1, A2).
+Interaktive Simulation eines Doppelpendels mit dynamischer
+Kopplungseffizienz ε(Δφ) = cos²(Δφ/2) nach Axiom 4.
+Demonstriert chaotische Dynamik, Energieaustausch und
+Resonanzkopplung.
 
 <p align="center">
   <img src="doppelpendel.gif" alt="Animation Doppelpendel" width="800"/>
@@ -17,39 +17,43 @@ Resonanzfeldtheorie (Axiome A1, A2).
 |-------|-----------|
 | A1 Schwingung | Beide Pendelarme schwingen mit Eigenfrequenz |
 | A2 Superposition | Interferenz der Schwingungsmuster in den Trails |
-| A4 Kopplung | Zusätzlicher Resonanzterm ε·sin(θ₂−θ₁) |
+| A4 Kopplungseffizienz | ε(Δφ) = cos²((θ₂−θ₁)/2) berechnet sich dynamisch aus dem Zustand |
 
 ---
 
-## 1. Physikalische Grundlagen
+## 1. Kopplungseffizienz (Axiom 4)
 
-Das Doppelpendel besteht aus zwei starren Pendelarmen, verbunden
-über ein Scharnier. Die Bewegungsgleichungen folgen aus der
-Lagrange-Mechanik und sind gekoppelt und nichtlinear.
-
-### Natürliche Kopplung
-
-Die Lagrange-Gleichungen enthalten bereits die mechanische
-Kopplung zwischen den Pendeln (über die gemeinsame Aufhängung).
-
-### Resonanz-Kopplungsterm
-
-Zusätzlich modelliert der Slider ε einen externen
-Resonanz-Kopplungsoperator:
+Die Kopplungseffizienz ε bestimmt den Anteil der übertragenen
+Resonanzenergie und wird **dynamisch** aus der Phasendifferenz
+der Pendelarme berechnet:
 
 $$
-\tau_{\text{kopplung}} = \pm\, \varepsilon \cdot \sin(\theta_2 - \theta_1)
+\varepsilon(\Delta\varphi) = \cos^2\!\left(\frac{\theta_2 - \theta_1}{2}\right) \in [0, 1]
 $$
 
-Dieser Term wirkt als zusätzliches Drehmoment, das die
-Synchronisation der Oszillatoren verstärkt (ε > 0) oder
-abschwächt (ε ≈ 0).
+### Grenzfälle
 
-| ε-Wert | Verhalten |
-|--------|-----------|
-| 0.0 | Keine Zusatzkopplung (reines Doppelpendel) |
-| 1.0 | Moderate Resonanzkopplung |
-| e ≈ 2.72 | Maximale Kopplung (obere Grenze) |
+| Δφ = θ₂ − θ₁ | ε | Bedeutung |
+|---------------|---|-----------|
+| 0 | 1.0 | Perfekte Kopplung — Pendel in Phase |
+| π/2 | 0.5 | Halbe Kopplung |
+| π | 0.0 | Keine Kopplung — Pendel in Gegenphase |
+
+### Effektiver Kopplungsterm
+
+Der Resonanz-Kopplungsterm in den Bewegungsgleichungen lautet:
+
+$$
+\tau_{\text{kopplung}} = \pm\, A \cdot \varepsilon(\theta_2 - \theta_1) \cdot \sin(\theta_2 - \theta_1)
+$$
+
+- **A** (Slider): Kopplungsamplitude — skaliert die Stärke
+- **ε** (dynamisch): Kopplungseffizienz — bestimmt den Anteil
+- **sin(Δφ)**: Richtung des Kopplungsdrehmoments
+
+Da ε bei Phasengleichheit maximal ist und bei Gegenphase
+verschwindet, wird Energie bevorzugt übertragen, wenn die
+Pendel ähnliche Phase haben — genau wie Axiom 4 es fordert.
 
 ---
 
@@ -61,43 +65,51 @@ abschwächt (ε ≈ 0).
 | ω₁, ω₂ | Anfangswinkelgeschwindigkeiten |
 | m₁, m₂ | Massen |
 | L₁, L₂ | Pendellängen |
-| ε | Resonanz-Kopplungsstärke |
+| A | Kopplungsamplitude (Stärke des Resonanzterms) |
 | Spurlänge | Trail-Länge (letzte N Positionen) |
+
+**Wichtig:** ε ist kein Slider — die Kopplungseffizienz wird
+in jedem Zeitschritt automatisch aus dem aktuellen Zustand
+berechnet und live angezeigt.
 
 ---
 
 ## 3. Energieanzeige
 
-Live-Anzeige über dem Pendel:
+Live über dem Pendel:
 
 - **T** — Kinetische Energie
 - **V** — Potentielle Energie
-- **E_kopplung** — Kopplungsenergie (Resonanzterm)
+- **E_kopplung** — Kopplungsenergie (skaliert mit A · ε)
 - **κ** = E_kopplung / |E_gesamt| — Kopplungsverhältnis
-- **ε** — Aktueller Kopplungsoperator
+- **ε** — Aktuelle Kopplungseffizienz + Phasendifferenz Δφ
 
 ---
 
 ## 4. Trails und Chaos
 
-Die farbigen Spuren (Trails) der Massenpunkte visualisieren
-die chaotische Dynamik. Typische Beobachtungen:
+Die farbigen Spuren der Massenpunkte visualisieren die
+chaotische Dynamik:
 
-- Bei kleinem ε: Annähernd klassisches Doppelpendel-Chaos
-- Bei großem ε: Verstärkte Synchronisationsmuster
-- Phasenübergänge bei Variation von ε sichtbar in den Trails
+- **A = 0:** Reines Doppelpendel ohne Zusatzkopplung
+- **A klein:** Schwache Resonanzkopplung, klassisches Chaos
+- **A groß:** Starke Synchronisationstendenz, Trails werden
+  regelmäßiger wenn ε ≈ 1 (Pendel in Phase)
 
 ---
 
-## 5. Technische Umsetzung
+## 5. Physikalischer Hintergrund
 
-| Komponente | Implementierung |
-|-----------|-----------------|
-| ODE-Löser | `scipy.integrate.solve_ivp` (RK45) |
-| Animation | `matplotlib.animation.FuncAnimation` |
-| Interaktion | `matplotlib.widgets.Slider`, `Button` |
-| Export | GIF über `PillowWriter` |
-| Kapselung | `DoublePendulumSim`-Klasse |
+Das Doppelpendel ist ein klassisches nichtlineares, chaotisches
+System. Die Bewegungsgleichungen folgen aus der Lagrange-Mechanik
+und sind in Standardliteratur (z.B. Goldstein, "Classical
+Mechanics") hergeleitet.
+
+Die **natürliche mechanische Kopplung** ist bereits in den
+Lagrange-Gleichungen enthalten (gemeinsame Aufhängung). Der
+Resonanz-Kopplungsterm A · ε · sin(Δφ) modelliert eine
+**zusätzliche** Wechselwirkung, die die Interpretation als
+Resonanzsystem im Sinne der RFT ermöglicht.
 
 ---
 
@@ -112,12 +124,12 @@ python doppelpendel.py
 
 ## 7. Erweiterungsmöglichkeiten
 
-- Energieplot als Zeitreihe (T, V, E_kopplung)
+- Energieplot als Zeitreihe (T, V, E_kopplung, ε)
 - Poincaré-Schnitte für Chaosanalyse
-- Mehrere Pendel (Pendel-Kette)
-- Frequenzanalyse (FFT) der Winkelbewegungen
+- Pendel-Kette (mehr als zwei Pendel)
+- FFT der Winkelbewegungen
 - Dämpfungsterm
-- Integration von Axiom 5 (Energierichtung)
+- Axiom 5: Energierichtung als Vektor
 
 ---
 
