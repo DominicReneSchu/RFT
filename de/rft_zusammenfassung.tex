@@ -1,0 +1,333 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, top=2cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}
+\usepackage{tikz}
+\usepackage{qrcode}
+\usepackage{background}
+\usepackage{booktabs}
+
+\setlength{\parindent}{0pt}
+
+% Wasserzeichen
+\backgroundsetup{
+	scale=1,
+	color=black!15,
+	opacity=0.15,
+	angle=45,
+	position=current page.center,
+	vshift=0pt,
+	hshift=0pt,
+	contents={%
+		\Huge
+		Dominic-Ren\'{e} Schu --- \today --- \url{https://github.com/DominicReneSchu/public}
+	}
+}
+
+\title{Zusammenfassung der Resonanzfeldtheorie\\
+	und empirischer Ergebnisse}
+\author{Dominic-Ren\'{e} Schu\\[0.3em]
+	\small Unabh\"{a}ngiger Forscher, Deutschland\\
+	\small ORCID: 0009-0004-9769-9061\\
+	\small \href{mailto:dominic.rene.schu@gmail.com}{dominic.rene.schu@gmail.com}}
+\date{\today}
+
+\begin{document}
+	
+	\BgThispage
+	\maketitle
+	
+	% QR-Code unten rechts
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=south east,xshift=-1cm,yshift=1cm] at (current page.south east)
+		{\qrcode{https://github.com/DominicReneSchu/public}};
+	\end{tikzpicture}
+	
+	%% ============================================================
+	\section*{Einleitung}
+	%% ============================================================
+	
+	Die Resonanzfeldtheorie (RFT) ist ein axiomatisches Rahmenwerk,
+	das Schwingungskopplung als universelles Organisationsprinzip
+	physikalischer und systemischer Ph\"{a}nomene beschreibt. Sie
+	formuliert sieben Axiome, aus denen eine parametrische
+	Erweiterung der Quantenmechanik, eine vereinheitlichte
+	Differentialgleichungsstruktur und prüfbare empirische
+	Vorhersagen folgen.
+	
+	Dieses Dokument fasst Theorie, Methodik und Ergebnisse zusammen.
+	Alle Herleitungen, Quellcodes und Daten sind offen verf\"{u}gbar
+	unter \url{https://github.com/DominicReneSchu/public}.
+	
+	%% ============================================================
+	\section*{Axiomatische Grundlegung}
+	%% ============================================================
+	
+	Die RFT basiert auf sieben Axiomen, die hierarchisch aufgebaut sind:
+	
+	\begin{enumerate}
+		\item[\textbf{A1}] \textbf{Universelle Schwingung.}
+		Jede physikalische Entit\"{a}t ist durch eine
+		Schwingungsfunktion $\psi(x,t)$ beschreibbar.
+		
+		\item[\textbf{A2}] \textbf{Superposition und Interferenz.}
+		Schwingungen \"{u}berlagern sich linear:
+		$\Psi = \sum_i \psi_i$.
+		
+		\item[\textbf{A3}] \textbf{Resonanzbedingung.}
+		Kopplung zwischen Systemen tritt auf, wenn ihre Frequenzen
+		in rationalem Verh\"{a}ltnis stehen:
+		$f_1/f_2 = n/m$, \; $n,m \in \mathbb{Z}^+$.
+		
+		\item[\textbf{A4}] \textbf{Kopplungsenergie.}
+		Die durch Resonanz \"{u}bertragene Energie ist:
+		\begin{equation}
+			E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
+			\label{eq:grundformel}
+		\end{equation}
+		mit dem phasenabh\"{a}ngigen Kopplungsoperator
+		$\varepsilon(\Delta\varphi) \in [0,1]$.
+		
+		\item[\textbf{A5}] \textbf{Energierichtung.}
+		Energie ist eine vektorielle Gr\"{o}\ss{}e mit Betrag und
+		Richtung im Resonanzfeld.
+		
+		\item[\textbf{A6}] \textbf{Informationsfluss.}
+		Information propagiert ausschlie\ss{}lich entlang koh\"{a}renter
+		Resonanzpfade (Phasen- und Frequenzsynchronisation).
+		
+		\item[\textbf{A7}] \textbf{Invarianz.}
+		Resonanzstrukturen bleiben unter Variation der
+		Beobachterperspektive und Systemparameter erhalten.
+	\end{enumerate}
+	
+	%% ============================================================
+	\section*{Die Grundformel}
+	%% ============================================================
+	
+	Die zentrale Gleichung der RFT erweitert die Planck-Relation
+	$E = \hbar\omega$ um einen Kopplungsterm:
+	\[
+	E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
+	\]
+	
+	\textbf{Dimensionsanalyse:}
+	$[\,] \cdot [\,] \cdot [\mathrm{J \cdot s}] \cdot [\mathrm{s}^{-1}]
+	= [\mathrm{J}]$ \checkmark
+	
+	\textbf{Spezialfall Planck:}
+	F\"{u}r $\varepsilon = 1/(2\pi)$ folgt
+	$E = \pi \cdot \frac{1}{2\pi} \cdot \hbar \cdot f
+	= \frac{1}{2} \hbar f$, konsistent mit der
+	Grundzustandsenergie des harmonischen Oszillators.
+	
+	Der Kopplungsoperator $\varepsilon(\Delta\varphi)$ quantifiziert die
+	Effizienz der Resonanzkopplung als Funktion der Phasendifferenz
+	$\Delta\varphi$ zwischen zwei gekoppelten Systemen:
+	\begin{itemize}
+		\item $\varepsilon = 0$: keine Kopplung (destruktive Interferenz)
+		\item $\varepsilon = 1$: maximale Kopplung (vollst\"{a}ndige
+		Phasenkoh\"{a}renz)
+	\end{itemize}
+	
+	%% ============================================================
+	\section*{Resonanz-Differentialgleichung (rDGL)}
+	%% ============================================================
+	
+	Die RFT vereinheitlicht klassische Differentialgleichungen als
+	Spezialf\"{a}lle einer allgemeinen Resonanzkopplungsrelation:
+	\[
+	\mathcal{R}(x, \dot{x}, \ddot{x}, t, \Phi) = 0
+	\]
+	wobei $\Phi$ den Kopplungsterm des Resonanzfeldes beschreibt.
+	
+	\medskip
+	\textbf{Ableitungsbaum (Spezialf\"{a}lle):}
+	
+	\begin{center}
+		\begin{tabular}{lll}
+			\toprule
+			\textbf{Spezialfall} & \textbf{Kopplung $\Phi$} & \textbf{Gleichung} \\
+			\midrule
+			Harmonischer Oszillator & $\Phi = -\omega_0^2 x$ & $\ddot{x} + \omega_0^2 x = 0$ \\
+			Ged\"{a}mpfter Oszillator & $\Phi = -2\gamma\dot{x} - \omega_0^2 x$ & $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$ \\
+			Van-der-Pol & $\Phi = -\mu(1-x^2)\dot{x} - x$ & Selbsterregte Schwingung \\
+			Stochastische DGL & $\Phi = \Phi_{\det} + \xi(t)$ & Langevin-Typ \\
+			Netzwerkdynamik & $\Phi = \sum_j K_{ij}\sin(\theta_j - \theta_i)$ & Kuramoto-Modell \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	%% ============================================================
+	\section*{Empirische Validierung I: Monte-Carlo-Simulation}
+	%% ============================================================
+	
+	Die Vorhersagen der RFT wurden anhand von CMS-Open-Data
+	(Dielectron-Kanal, 99.915 Ereignisse) \"{u}berpr\"{u}ft. Gesucht
+	wurde nach Resonanz\"{u}bersch\"{u}ssen an vier bekannten
+	Teilchenmassenstellen \"{u}ber einem KDE-modellierten Hintergrund.
+	
+	\medskip
+	\textbf{Methodik:}
+	\begin{itemize}
+		\item KDE-Hintergrundmodell (Bandbreite 0.5\,GeV) mit schmalem
+		Signalausschluss
+		\item Binomialtest mit Bonferroni-Korrektur \"{u}ber 68
+		Fensterbreiten
+		\item 10.000 Monte-Carlo-Pseudo-Experimente
+		\item Bootstrap-Konfidenzintervalle (5.000 Wiederholungen)
+	\end{itemize}
+	
+	\medskip
+	\textbf{Ergebnisse (26.02.2026):}
+	
+	\begin{center}
+		\begin{tabular}{llrrrl}
+			\toprule
+			\textbf{$M_0$ (GeV)} & \textbf{Resonanz} & \textbf{$\Delta_\mathrm{opt}$ (GeV)}
+			& \textbf{Hits} & \textbf{$p_\mathrm{corr}$} & \textbf{empir.\ $p$} \\
+			\midrule
+			3.10  & J/$\psi$   & 0.440 & 3256 & $1.0 \times 10^{-121}$ & 0 \\
+			9.46  & $\Upsilon$(1S) & 0.780 & 4186 & $3.0 \times 10^{-201}$ & 0 \\
+			10.02 & $\Upsilon$(2S) & 0.840 & 4625 & $5.2 \times 10^{-188}$ & 0 \\
+			91.20 & Z-Boson    & 0.040 & 52   & $< 10^{-300}$          & 0 \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	\smallskip
+	Alle vier Resonanzen werden mit extremer Signifikanz detektiert.
+	In keinem der 10.000 Pseudo-Experimente wurde ein vergleichbarer
+	\"{U}berschuss durch reinen Hintergrund erzeugt. Dies best\"{a}tigt
+	Axiom~3 (Resonanzbedingung) und Axiom~7 (Invarianz).
+	
+	Vollst\"{a}ndiger Report und Quellcode:
+	\url{https://github.com/DominicReneSchu/public/tree/main/de/fakten/empirisch/monte_carlo_test}
+	
+	%% ============================================================
+	\section*{Empirische Validierung II: ResoTrade}
+	%% ============================================================
+	
+	ResoTrade ist ein Trading-System, das die Axiome der RFT auf den
+	BTC-Markt anwendet. Es zerlegt den Preis in DC-Komponente
+	(langfristiger Trend) und AC-Komponente (handelbare Schwingung)
+	und trifft Entscheidungen auf Basis des Energierichtungsvektors.
+	
+	\medskip
+	\textbf{Axiom-Zuordnung:}
+	\begin{center}
+		\begin{tabular}{lll}
+			\toprule
+			\textbf{Axiom} & \textbf{Prinzip} & \textbf{Implementierung} \\
+			\midrule
+			A1 & Universelle Schwingung & AC/DC-Zerlegung: Preis $=$ DC $+$ AC \\
+			A4 & Kopplungsenergie & Balance-Regler: Cash $\leftrightarrow$ BTC \\
+			A5 & Energierichtung & \texttt{energy\_dir = e\_short - e\_long} \\
+			A6 & Informationsfluss & Resonanz-Gate: Trades nur in Phase \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	\medskip
+	\textbf{Ergebnisse (24 Monate, 4 Marktregime):}
+	
+	\begin{center}
+		\begin{tabular}{llrl}
+			\toprule
+			\textbf{Marktphase} & \textbf{Zeitraum} & \textbf{Trades}
+			& \textbf{vs.\ HODL} \\
+			\midrule
+			Sideways (60k--70k)       & M\"{a}r--Sep 2024 & 437 & $+33.3\%$ \\
+			Bullrun (60k--110k)       & Sep 2024--M\"{a}r 2025 & 429 & $+19.8\%$ \\
+			Korrektur (Whipsaw)       & M\"{a}r--Sep 2025 & 247 & $+4.3\%$ \\
+			Crash (110k$\to$63k)      & Sep 2025--Feb 2026 & 279 & $+46.8\%$ \\
+			\midrule
+			\textbf{Durchschnitt}     & \textbf{24 Monate} & \textbf{1392}
+			& $\mathbf{+26.1\%}$ \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	\smallskip
+	ResoTrade \"{u}bertrifft HODL in allen vier Marktregimen.
+	Kein klassischer Indikator (RSI, MACD, Bollinger) erreicht auf
+	demselben Datensatz eine Korrelation \"{u}ber 0.05. Die
+	Altcoin-Analyse best\"{a}tigt Axiom~3 negativ: Systeme ohne
+	eigene Eigenfrequenz erzeugen keine Resonanz.
+	
+	Seit Februar 2026 l\"{a}uft ResoTrade live \"{u}ber Kraken.
+	
+	Dokumentation:
+	\url{https://github.com/DominicReneSchu/public/blob/main/de/fakten/empirisch/resotrade_trading_ki.md}
+	
+	%% ============================================================
+	\section*{Zusammenfassung der Evidenz}
+	%% ============================================================
+	
+	\begin{center}
+		\begin{tabular}{llll}
+			\toprule
+			\textbf{Dom\"{a}ne} & \textbf{Methode} & \textbf{Ergebnis}
+			& \textbf{Best\"{a}tigte Axiome} \\
+			\midrule
+			Teilchenphysik & Monte-Carlo (10k Sim.) & $p = 0$ f\"{u}r 4 Resonanzen
+			& A3, A7 \\
+			Finanzm\"{a}rkte & ResoTrade (24 Mo.) & $+26.1\%$ vs.\ HODL
+			& A1, A4, A5, A6 \\
+			Altcoins & Negativ-Test (200k Ep.) & Keine Resonanz
+			& A3 (Falsifikation) \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+	%% ============================================================
+	\section*{Offene Fragen und Ausblick}
+	%% ============================================================
+	
+	\begin{enumerate}
+		\item \textbf{Unabh\"{a}ngige Bestimmung von $\varepsilon$:}
+		Kann $\varepsilon(\Delta\varphi)$ aus der Systemgeometrie
+		\textit{vor} der Messung berechnet werden?
+		
+		\item \textbf{Neue Vorhersagen:}
+		Kann die RFT eine bisher unbekannte Resonanz vorhersagen,
+		die dann experimentell best\"{a}tigt wird?
+		
+		\item \textbf{Live-Validierung von ResoTrade:}
+		6--12 Monate verifizierbare Live-Performance als
+		unabh\"{a}ngiger Pr\"{u}fstein.
+		
+		\item \textbf{Weitere Dom\"{a}nen:}
+		\"{U}bertragbarkeit der Resonanzlogik auf Akustik, Biologie,
+		Netzwerktheorie.
+		
+		\item \textbf{Vergleich mit konventionellen Systemen:}
+		Direkter Benchmark: ResoTrade vs.\ state-of-the-art ML-Trading
+		auf identischen Daten.
+	\end{enumerate}
+	
+	%% ============================================================
+	\section*{Reproduzierbarkeit}
+	%% ============================================================
+	
+	Alle Axiome, Herleitungen, Quellcodes, Datens\"{a}tze und
+	Simulationsergebnisse sind vollst\"{a}ndig offen zug\"{a}nglich:
+	
+	\begin{center}
+		\url{https://github.com/DominicReneSchu/public}
+		
+		\bigskip
+		\qrcode[height=2cm]{https://github.com/DominicReneSchu/public}
+	\end{center}
+	
+	\medskip
+	\noindent
+	\textcopyright{} Dominic-Ren\'{e} Schu --- Resonanzfeldtheorie 2025/2026
+	
+\end{document}

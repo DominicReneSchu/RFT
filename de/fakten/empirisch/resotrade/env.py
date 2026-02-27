@@ -1,8 +1,17 @@
 """
 ResoTrade V11.1 — Trading-Environment mit Downtrend-Pause-Gate.
 
+Resonanzfeldtheoretische Grundlage (RFT V3.1):
+
+  A1 (Universelle Schwingung): AC/DC-Zerlegung des Preisfeldes
+  A2 (Superposition): MA_SHORT + MA_LONG als überlagerte Moden
+  A4 (Kopplungsenergie): Balance-Regler hält ε > 0
+  A5 (Energierichtung): energy_dir = e_short - e_long
+  A6 (Informationsfluss): MA-SELL-Guard prüft Phasenkohärenz
+  A7 (Invarianz): Regelkette gilt regime-invariant
+
 Regelkette:
-  1. Downtrend-Pause-Gate (NEU V11.1) — komplette Trading-Pause
+  1. Downtrend-Pause-Gate (V11.1) — komplette Trading-Pause
   2. Regime-Rule (BULL_STRONG/BEAR_STRONG)
   3. MA-SELL-Guard (resonanzlogisch, Peak-Exception)
   4. ATH-Rule (kein BUY nahe Allzeithoch)
@@ -51,15 +60,20 @@ class TradingEnv:
     """
     Offline-Umgebung über einen BTC-Preis-DataFrame.
 
+    Implementiert die Regelkette als resonanzlogischen Filter (A6):
+    Jede Regel prüft, ob die vorgeschlagene Aktion phasenkohärent
+    mit dem aktuellen Marktzustand ist. Nicht-resonante Aktionen
+    werden blockiert → HOLD.
+
     V11.1-Änderungen:
       - Downtrend-Pause-Gate: Komplettes Trading-Aussetzen bei
-        BEAR_STRONG + downtrend + e_long < -5%
+        BEAR_STRONG + downtrend + e_long < -5% (A1 + A4: ε → 0)
       - Wiederaufnahme bei Stabilisierung (e_long > -3%,
         ac_phase=trough, oder Regime-Wechsel)
-      - AC/DC-Zerlegung im State
-      - Energierichtungsvektor
-      - Resonanzlogischer MA-SELL-Guard mit Peak-Exception
-      - Balance-Regler
+      - AC/DC-Zerlegung im State (A1)
+      - Energierichtungsvektor (A5)
+      - Resonanzlogischer MA-SELL-Guard mit Peak-Exception (A6)
+      - Balance-Regler (A4)
       - Cooldown
     """
 
@@ -105,10 +119,10 @@ class TradingEnv:
         self._hist_high_price: float = 0.0
         self._start_total_btc_equiv: float = 0.0
 
-        # V9: Blockade-Tracking
+        # Blockade-Tracking
         self._last_block_reason: str = BLOCK_NONE
 
-        # V10: Cooldown-Tracking
+        # Cooldown-Tracking
         self._last_trade_step: int = -100
         self._consecutive_trades: int = 0
 
@@ -131,8 +145,14 @@ class TradingEnv:
 
     def _prepare_ac_dc(self):
         """
-        V11: AC/DC-Zerlegung des Preisfeldes.
-        DC = MA_LONG (Grundton), AC = Preis - DC (Oberton).
+        A1 (Universelle Schwingung): AC/DC-Zerlegung des Preisfeldes.
+
+        ψ_Preis(t) = DC(t) + AC(t)
+          DC = MA_LONG (168h) — Grundton (langfristiger Trend)
+          AC = Preis - DC   — Obertöne (handelbare Schwingung)
+
+        A2 (Superposition): Der Preis ist die Überlagerung aller Moden.
+        Die AC-Amplitude misst die Stärke der handelbaren Schwingung.
         """
         prices = self.df[self.price_col].astype(float)
 
@@ -245,6 +265,15 @@ class TradingEnv:
         return free / btc
 
     def _rel_to_ma(self, cur_price: float) -> tuple:
+        """
+        A2 (Superposition): Preis relativ zu beiden MA-Moden.
+
+        e_short = (Preis - MA_SHORT) / MA_SHORT  → Kurzzeit-Mode (24h)
+        e_long  = (Preis - MA_LONG)  / MA_LONG   → Langzeit-Mode (168h)
+
+        Die Differenz energy_dir = e_short - e_long ist der
+        Energierichtungsvektor (A5).
+        """
         rel_short = 0.0
         rel_long = 0.0
 
@@ -269,7 +298,12 @@ class TradingEnv:
         return "high"
 
     def _regime(self, e_long: float, trend: str) -> str:
-        """V10: Makro-Regime-Erkennung."""
+        """
+        Makro-Regime-Erkennung.
+
+        A7 (Invarianz): Die Regime-Klassifikation ist invariant unter
+        synchronen Transformationen — gilt in jeder Marktphase.
+        """
         if trend == "uptrend" and e_long > 0.05:
             return "BULL_STRONG"
         if trend == "downtrend" and e_long < -0.05:
@@ -278,7 +312,17 @@ class TradingEnv:
 
     def _ac_phase(self) -> tuple:
         """
-        V11: AC-Phasenerkennung.
+        A1 (Universelle Schwingung): AC-Phasenerkennung.
+
+        Der AC-Zyklus wird in 4 Phasen unterteilt:
+          peak:       AC/Amplitude > +0.3 → SELL resonant
+          trough:     AC/Amplitude < -0.3 → BUY resonant
+          transition: dazwischen → Erfahrung entscheidet
+          flat:       Amplitude < 0.1% → kein Signal
+
+        Nulldurchgang (|AC/Amplitude| < 0.1): Zone maximaler
+        Kopplungseffizienz (aus Energiekugel-Analyse).
+
         Returns: (phase, amplitude_bin, near_zero)
         """
         ac = float(self.df.loc[self._idx_global, "ac_value"])
@@ -312,7 +356,14 @@ class TradingEnv:
         return phase, amp_bin, near_zero
 
     def _energy_direction(self, e_short: float, e_long: float) -> float:
-        """V10: Energierichtungsvektor (Axiom 5)."""
+        """
+        A5 (Energierichtung): E⃗ = E_eff · ê(Δφ, ∇Φ)
+
+        Im diskreten Mehrskalensystem:
+            energy_dir = e_short - e_long
+
+        Die Richtung des Kapitalflusses im Resonanzfeld.
+        """
         return e_short - e_long
 
     @staticmethod
@@ -395,18 +446,19 @@ class TradingEnv:
         """
         V11.1: Downtrend-Pause-Gate.
 
-        Resonanzfeldtheoretische Begründung:
+        Resonanzfeldtheoretische Begründung (A1 + A4):
         Wenn die DC-Komponente stark fällt (BEAR_STRONG + e_long < -5%),
         ist die AC-Schwingung nicht profitabel handelbar — die Amplitude
-        wird von der fallenden DC überlagert. Jeder Trade in dieser Phase
-        hat negative Erwartung nach Fees.
+        wird von der fallenden DC überlagert. Die Kopplungseffizienz
+        ε(Δφ) → 0, d.h. E_eff = π·ε·h·f → 0. Jeder Trade in dieser
+        Phase hat negative Erwartung nach Fees.
 
         Das Gate pausiert das gesamte Daytrading, nicht einzelne Trades.
 
         Wiederaufnahme wenn:
         - e_long > -3% (Preis nähert sich MA wieder an) ODER
-        - ac_phase == "trough" (Wendepunkt im AC-Zyklus erkannt) ODER
-        - regime wechselt von BEAR_STRONG zu NORMAL
+        - ac_phase == "trough" (Wendepunkt im AC-Zyklus, A1) ODER
+        - regime wechselt von BEAR_STRONG zu NORMAL (A7)
         """
         trend = state.get("trend_bin", "sideways")
         e_long = float(state.get("e_long", 0.0))
@@ -447,7 +499,13 @@ class TradingEnv:
     # ---------------- Regel-Module ----------------
 
     def _apply_regime_rule(self, action: str, state: dict) -> str:
-        """V10: Regime-basierte Blockade."""
+        """
+        Regime-basierte Blockade.
+
+        A7 (Invarianz): Die Regime-Klassifikation ist regime-invariant.
+        BULL_STRONG → kein SELL (Kopplungseffizienz für SELL nahe 0)
+        BEAR_STRONG → kein BUY (Kopplungseffizienz für BUY nahe 0)
+        """
         regime = state.get("regime", "NORMAL")
         if regime == "BULL_STRONG" and action.startswith("SELL"):
             self._last_block_reason = BLOCK_REGIME
@@ -459,9 +517,14 @@ class TradingEnv:
 
     def _apply_ma_sell_guard(self, action: str, state: dict) -> str:
         """
-        V11: Resonanzlogischer MA-SELL-Guard.
-        Blockiert SELL nur wenn unter MA UND Energie aufwärts.
-        Exception: Nicht blockieren am AC-Peak.
+        Resonanzlogischer MA-SELL-Guard (A6: Informationsfluss).
+
+        A6: MI(X,Y) > 0 ⟺ PCI > 0 — Information nur bei Phasenkohärenz.
+        Blockiert SELL nur wenn unter MA UND Energie aufwärts:
+        In diesem Zustand wäre SELL anti-resonant (gegen den Energiefluss).
+
+        Exception: Am AC-Peak (A1) immer SELL erlauben — dort ist SELL
+        phasenkohärent mit dem Schwingungszyklus.
         """
         if not action.startswith("SELL"):
             return action
@@ -470,11 +533,11 @@ class TradingEnv:
         energy_dir = float(state.get("energy_dir", 0.0))
         ac_phase = state.get("ac_phase", "flat")
 
-        # Peak-Exception: Am AC-Peak immer SELL erlauben
+        # A1: Peak-Exception — Am AC-Peak immer SELL erlauben
         if ac_phase == "peak":
             return action
 
-        # Unter MA UND Energie aufwärts → SELL blockieren
+        # A6: Unter MA UND Energie aufwärts → SELL blockieren (anti-resonant)
         if e_long < 0 and energy_dir > 0.005:
             self._last_block_reason = BLOCK_MA_SELL_GUARD
             return "HOLD"
@@ -543,7 +606,7 @@ class TradingEnv:
         return action
 
     def _apply_cooldown(self, action: str) -> str:
-        """V10: Overtrading-Schutz. MEDIUM→SMALL bei zu schnellem Handeln."""
+        """Overtrading-Schutz. MEDIUM→SMALL bei zu schnellem Handeln."""
         if action == "HOLD":
             return action
 
@@ -567,7 +630,17 @@ class TradingEnv:
         return action
 
     def _apply_balance_regler(self, action: str, state: dict) -> str:
-        """V10: Balance-Regler (Axiom 2 — Kopplungsstruktur)."""
+        """
+        Balance-Regler (A4: Kopplungsenergie E = π·ε·h·f).
+
+        Cash und BTC sind gekoppelte Resonanzräume. Die Kopplungs-
+        effizienz ε erfordert, dass beide Seiten gefüllt sind:
+          Cash < 8% → ε für BUY → 0 → kein BUY
+          Sellable < 5% → ε für SELL → 0 → kein SELL
+
+        Ohne Balance verliert das System seine Handlungsfähigkeit —
+        die Kopplung bricht ab.
+        """
         cash_share = float(state.get("cash_share", 0.0))
         sellable_share = float(state.get("sellable_share", 1.0))
 
@@ -602,14 +675,14 @@ class TradingEnv:
 
     @property
     def last_block_reason(self) -> str:
-        """V9: Gibt den Blockade-Grund des letzten step()-Aufrufs zurück."""
+        """Gibt den Blockade-Grund des letzten step()-Aufrufs zurück."""
         return self._last_block_reason
 
     def step(self, action: str) -> tuple:
         if self.portfolio is None:
             raise RuntimeError("Env not reset")
 
-        # V9: Blockade-Grund zurücksetzen
+        # Blockade-Grund zurücksetzen
         self._last_block_reason = BLOCK_NONE
 
         cur_price = float(self.df.loc[self._idx_global, self.price_col])
@@ -621,6 +694,7 @@ class TradingEnv:
         state = self._build_state()
 
         # === V11.1: Downtrend-Pause-Gate (VOR allen anderen Regeln) ===
+        # A1 + A4: Wenn DC stark fällt, ist ε → 0 → kein Trade sinnvoll
         if action != "HOLD" and self._check_downtrend_pause(state):
             self._last_block_reason = BLOCK_DOWNTREND_PAUSE
             self.portfolio.price = cur_price
@@ -634,7 +708,7 @@ class TradingEnv:
             next_state = self._build_state()
             return next_state, done
 
-        # === Regelkette V11 ===
+        # === Regelkette (A6: Jede Regel prüft Phasenkohärenz) ===
         effective_action = self._apply_regime_rule(action, state)
         effective_action = self._apply_ma_sell_guard(effective_action, state)
         effective_action = self._apply_ath_rule(effective_action, cur_price)
