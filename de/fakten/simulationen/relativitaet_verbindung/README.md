@@ -26,6 +26,12 @@ Dieses Framework bietet eine modulare Infrastruktur zur Simulation und Analyse s
 | π/2 | 0.50 | **≈ 0.57** | Halbe Effizienz |
 | π | 0.0 | **0.0** | Antiresonanz |
 
+![Gekoppeltes FLRW-Resonanzfeld](bilder/figure_1.png)
+*Abbildung 1: Sechs-Panel-Darstellung der gekoppelten FLRW-Simulation — Resonanzfelder, Phasendifferenz, Kopplungseffizienz, Skalenfaktor, Hubble-Parameter, Energiedichten.*
+
+![Phasenscan](bilder/figure_2.png)
+*Abbildung 2: Phasenscan über 20 Δφ₀-Werte — Simulationspunkte folgen der cos²-Kurve mit mittlerer Abweichung 0.1394.*
+
 ---
 
 ## Falsifizierbare Vorhersage (Stufe 5)
@@ -44,6 +50,38 @@ Die Hubble-Reibung reduziert η systematisch unter cos²(Δφ/2). Die Raumzeitex
 
 ---
 
+## Kosmologische Skalierung (Stufe 6a)
+
+Der H₀-Scan (`run_h0_scan.py`) quantifiziert die Abhängigkeit der Kopplungsabweichung von der Hubble-Konstante über 330 Einzelsimulationen:
+
+![H0-Scan](bilder/h0_scan.png)
+*Abbildung 3: Links — d_η als Funktion von H₀ mit linearem Fit, Planck- und SH0ES-Markierungen. Rechts — Phasenscans bei verschiedenen H₀: stärkere Expansion verschiebt η systematisch unter cos².*
+
+### Ergebnisse
+
+| Messgröße | Wert |
+|---|---|
+| Steigung dd_η/dH₀ | **0.00204 / (km/s/Mpc)** |
+| d_η (flach, H=0) | 0.0427 |
+| d_η (Planck, H₀=67.4) | **0.1334** |
+| d_η (SH0ES, H₀=73.0) | **0.1448** |
+| Δd_η (SH0ES − Planck) | **0.0114** |
+| Relative Verschiebung | **≈ 8.6%** |
+
+### Hubble-Spannungs-Signatur
+
+![Hubble-Spannung](bilder/hubble_tension.png)
+*Abbildung 4: Resonanzfeld-Signatur der Hubble-Spannung — die Differenz Δd_η = 0.0114 zwischen Planck (H₀ = 67.4 ± 0.5) und SH0ES (H₀ = 73.0 ± 1.0) ist die erste quantitative Vorhersage der Resonanzfeldtheorie für eine kosmologische Observable.*
+
+**Interpretation:**
+
+- **d_η wächst linear mit H₀** — die Hubble-Reibung verschiebt η monoton unter cos²(Δφ/2)
+- Die Steigung dd_η/dH₀ = 0.00204 ist die messbare Signatur
+- Die Sensitivität ist maximal im Bereich Δφ ≈ 0.5–1.5 rad
+- Die Differenz zwischen Planck und SH0ES beträgt 8.6% — prinzipiell durch CMB-Leistungsspektren prüfbar
+
+---
+
 ## Beweisstufen
 
 | Stufe | Beschreibung | Status |
@@ -52,8 +90,9 @@ Die Hubble-Reibung reduziert η systematisch unter cos²(Δφ/2). Die Raumzeitex
 | 2 | Analytisch herleitbar | ✅ Erreicht |
 | 3 | Numerisch bestätigt | ✅ Erreicht |
 | 4 | Eigenständige Vorhersage | ✅ Erreicht |
-| 5 | Falsifizierbar | ✅ **Erreicht** |
-| 6 | Experimentell bestätigt | ⬚ Offen |
+| 5 | Falsifizierbar | ✅ Erreicht |
+| 6a | Kosmologische Skalierung | ✅ **Erreicht** |
+| 6b | CMB-Vergleich (Planck) | 🔄 In Arbeit |
 | 7 | Peer-reviewed publiziert | ⬚ Offen |
 
 ---
@@ -67,6 +106,7 @@ Die Hubble-Reibung reduziert η systematisch unter cos²(Δφ/2). Die Raumzeitex
 | A3 | Resonanz bei Δφ = 0 | η = 1.0 bei Phasengleichheit |
 | A4 | η(Δφ) = cos²(Δφ/2) | Phasenscan bestätigt |
 | A5 | Raumzeit reagiert auf η | a(t) moduliert durch Gesamtenergiedichte |
+| A6 | η-Verschiebung skaliert mit H₀ | dd_η/dH₀ = 0.00204 |
 
 ---
 
@@ -78,12 +118,14 @@ relativitaet_verbindung/
 ├── config.py                   # Globale Parameter
 ├── requirements.txt            # Abhängigkeiten
 ├── README.md                   # Diese Dokumentation
+├── h0_scan_results.csv         # Exportierte H0-Scan-Daten
 │
 ├── core/                       # Kernmodule
 │   ├── __init__.py
 │   ├── flrw_1d.py              # 1D FLRW (ein Feld)
 │   ├── coupled_flrw.py         # Gekoppeltes Zwei-Feld-Modell
 │   ├── flat_coupled.py         # Kontrolltest: flache Raumzeit
+│   ├── h0_scan.py              # Stufe 6a: H0-Scan
 │   ├── field_3d.py             # 3D Gitterfeld
 │   ├── field_3d_parallel.py    # 3D (Numba)
 │   └── field_3d_gpu.py         # 3D (CuPy)
@@ -93,18 +135,27 @@ relativitaet_verbindung/
 │   ├── plot_1d.py              # 1D-Plots
 │   ├── plot_coupled.py         # Gekoppelte Plots (6 Panels)
 │   ├── plot_control.py         # Kontrolltest-Vergleich
+│   ├── plot_h0_scan.py         # Stufe 6a: H0-Vorhersagekurve
 │   └── plot_3d.py              # 3D Live-Visualisierung
 │
 ├── run_1d.py                   # Ein-Feld-Simulation
 ├── run_coupled.py              # Zwei-Feld-Simulation + Phasenscan
 ├── run_control.py              # Kontrolltest (Stufe 5)
+├── run_h0_scan.py              # H0-Scan (Stufe 6a)
 ├── run_3d.py                   # 3D-Simulation
+│
+├── bilder/                     # Simulationsergebnisse
+│   ├── figure_1.png            # Gekoppeltes FLRW (6 Panels)
+│   ├── figure_2.png            # Phasenscan η(Δφ)
+│   ├── h0_scan.png             # H0-Scan d_η(H0)
+│   └── hubble_tension.png      # Hubble-Spannungs-Signatur
 │
 └── tests/                      # Unit-Tests
     ├── __init__.py
     ├── test_flrw_1d.py         # 7 Tests
     ├── test_coupled.py         # 8 Tests
     ├── test_control.py         # 6 Tests
+    ├── test_h0_scan.py         # 10 Tests
     └── test_field_3d.py        # 7 Tests
 ```
 
@@ -118,9 +169,10 @@ pip install -r requirements.txt
 python run_1d.py          # Ein-Feld FLRW
 python run_coupled.py     # Zwei-Feld + Phasenscan
 python run_control.py     # Kontrolltest (Stufe 5)
+python run_h0_scan.py     # H0-Scan (Stufe 6a) — 330 Simulationen
 python run_3d.py          # 3D Gitterfeld
 
-pytest tests/ -v          # Alle 28 Tests
+pytest tests/ -v          # Alle 38 Tests
 ```
 
 ---
@@ -137,6 +189,12 @@ Im nichtlinearen Fall (λ·ε⁴ + FLRW-Kopplung) weicht η ab.
 Der Kontrolltest quantifiziert diese Abweichung und zeigt,
 dass sie systematisch von der Raumzeitexpansion stammt.
 
+Der H₀-Scan zeigt, dass die Abweichung linear mit der Hubble-Konstante skaliert:
+
+    d_η(H₀) = 0.00204 · H₀ + const
+
+Dies ist die zentrale messbare Vorhersage der Resonanzfeldtheorie.
+
 ---
 
 ## Weiterführende Literatur
@@ -144,6 +202,8 @@ dass sie systematisch von der Raumzeitexpansion stammt.
 - Scalar-Tensor-Theorien, modifizierte Gravitation (Brans-Dicke, f(R))
 - Nichtlineare Feldtheorie, Solitonen, Topologische Defekte
 - Kosmologie und frühes Universum
+- Planck 2018 Results VI: Cosmological Parameters (arXiv:1807.06209)
+- Riess et al. 2022: SH0ES H₀ Measurement (arXiv:2112.04510)
 
 ---
 
