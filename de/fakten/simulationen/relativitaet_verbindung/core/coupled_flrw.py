@@ -1,5 +1,6 @@
 """
 Gekoppelte FLRW-Resonanzfeldsimulation — zwei skalare Felder.
+PUBLIKATIONSVERSION — t_eval auf 12000 Punkte, parametrierbar.
 
 Zwei Resonanzfelder e1(t) und e2(t) mit Phasendifferenz dphi(t),
 gekoppelt an den kosmologischen Skalenfaktor a(t).
@@ -23,9 +24,40 @@ def coupled_flrw_sim(
     delta_phi_0=0.0,
     a0=1.0, adot0=0.3,
     m=1.0, lmbda=0.1, alpha=0.5, kappa=1.0, g=0.2,
-    t_span=(0, 40), t_eval=None,
+    t_span=(0, 120), t_eval=None,
+    n_eval=12000,
     rtol=1e-10, atol=1e-12,
 ):
+    """Gekoppelte FLRW-Simulation mit zwei skalaren Resonanzfeldern.
+
+    Parameters
+    ----------
+    eps1_0, eps2_0 : float
+        Anfangsamplituden der Felder.
+    epsdot1_0, epsdot2_0 : float
+        Anfangsgeschwindigkeiten.
+    delta_phi_0 : float
+        Initiale Phasendifferenz.
+    a0, adot0 : float
+        Skalenfaktor und dessen Ableitung bei t=0.
+    m, lmbda, alpha, kappa, g : float
+        Modellparameter.
+    t_span : tuple
+        Integrationsintervall.
+    t_eval : array or None
+        Auswertungszeitpunkte. Wenn None, wird n_eval verwendet.
+    n_eval : int
+        Anzahl Auswertungspunkte (Standard: 12000).
+    rtol, atol : float
+        Relative/absolute Toleranz des Integrators.
+
+    Returns
+    -------
+    sol : OdeResult
+        Loesung des ODE-Systems.
+    results : dict
+        Abgeleitete Groessen (eta, Phasen, Energien, ...).
+    """
     omega_0 = m
     if epsdot2_0 == 0.0 and delta_phi_0 != 0.0:
         epsdot1_0 = 0.0
@@ -59,9 +91,12 @@ def coupled_flrw_sim(
 
     y0 = [eps1_0, epsdot1_0, eps2_0, epsdot2_0, a0, adot0]
     if t_eval is None:
-        t_eval = np.linspace(*t_span, 4000)
+        t_eval = np.linspace(*t_span, n_eval)
 
-    sol = solve_ivp(rhs, t_span, y0, t_eval=t_eval, rtol=rtol, atol=atol, method="DOP853")
+    sol = solve_ivp(
+        rhs, t_span, y0, t_eval=t_eval,
+        rtol=rtol, atol=atol, method="DOP853",
+    )
 
     eps1 = sol.y[0]
     epsdot1 = sol.y[1]
@@ -81,7 +116,7 @@ def coupled_flrw_sim(
     amp_max = max(np.max(amp1), np.max(amp2))
     amp_threshold = 0.01 * amp_max
     valid_mask = (amp1 > amp_threshold) & (amp2 > amp_threshold)
-    eta_theorie = np.cos(delta_phi / 2)**2
+    eta_theorie = np.cos(delta_phi / 2) ** 2
 
     window = max(int(2 * np.pi / m / (sol.t[1] - sol.t[0])), 20)
     n = len(eps1)
@@ -115,12 +150,25 @@ def coupled_flrw_sim(
     return sol, results
 
 
-def scan_phase_coupling(delta_phi_values=None, t_span=(0, 40), **kwargs):
+def scan_phase_coupling(delta_phi_values=None, t_span=(0, 120), **kwargs):
+    """Phasenscan ueber delta_phi_0.
+
+    Parameters
+    ----------
+    delta_phi_values : array or None
+        Phasendifferenzen. Default: 30 Werte, 0 bis pi.
+    t_span : tuple
+        Integrationsintervall.
+    **kwargs : dict
+        Weitere Parameter fuer coupled_flrw_sim.
+    """
     if delta_phi_values is None:
-        delta_phi_values = np.linspace(0, np.pi, 20)
+        delta_phi_values = np.linspace(0, np.pi, 30)
     eta_mean = []
     for dphi in delta_phi_values:
-        sol, results = coupled_flrw_sim(delta_phi_0=dphi, t_span=t_span, **kwargs)
+        sol, results = coupled_flrw_sim(
+            delta_phi_0=dphi, t_span=t_span, **kwargs,
+        )
         mask = results["valid_mask"]
         eta = results["eta_gemessen"]
         combined_mask = mask & np.isfinite(eta)
@@ -131,5 +179,5 @@ def scan_phase_coupling(delta_phi_values=None, t_span=(0, 40), **kwargs):
     return {
         "delta_phi_values": np.array(delta_phi_values),
         "eta_mean": np.array(eta_mean),
-        "eta_cos2": np.cos(delta_phi_values / 2)**2,
+        "eta_cos2": np.cos(delta_phi_values / 2) ** 2,
     }
