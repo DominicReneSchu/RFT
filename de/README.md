@@ -271,14 +271,6 @@ Dieses Projekt steht unter der **Schu-Lizenz 1.4**
 
 ---
 
-## Beteiligung und Partnerschaft
-
-Beiträge, Kritik und neue Perspektiven sind willkommen.
-Pull-Requests, Issues oder direkte Kontaktaufnahme.
-
-→ [Strategische Partnerschaft](./calling_for_partner.md)
-
----
 
 ## Kontakt
 
