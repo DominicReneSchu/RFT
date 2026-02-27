@@ -1,13 +1,6 @@
 # run.py
 # © Dominic-René Schu, 2025/2026 – Resonanzfeldtheorie
-# Resonanzreaktor: Publikationslauf
-#
-# Erzeugt:
-# 1. Isotopendaten und RFT-Frequenzen
-# 2. Energiescan: GDR-Profil mit/ohne Phasenkohärenz
-# 3. Phasenscan: λ_eff(Δφ) – analog zu FLRW
-# 4. Zerfallsvergleich: Standard vs. RFT
-# 5. Alle Plots als PNG
+# Resonanzreaktor: Publikationslauf (κ=1, mit Energiebilanz)
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +8,8 @@ import os
 from material import (plutonium_239, americium_241,
                        uranium_235, thorium_232, PI)
 from resonance import (simulate_decay, phase_scan, energy_scan,
-                        coupling_efficiency, effective_decay_rate)
+                        coupling_efficiency, effective_decay_rate,
+                        energy_balance, gdr_cross_section_rft)
 
 
 def ensure_dir(path):
@@ -23,44 +17,50 @@ def ensure_dir(path):
 
 
 def plot_energy_scan(isotope, output_dir):
-    """Plot 1: GDR-Wirkungsquerschnitt mit RFT-Korrektur."""
+    """Plot 1: GDR-Profil mit RFT-Kopplung (ε statt 1+κ)."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     
-    # Links: σ(E) für verschiedene Phasen
     ax = axes[0]
     for dp, label, color in [(0, 'Δφ=0 (Resonanz)', 'red'),
                               (PI/2, 'Δφ=π/2', 'orange'),
                               (PI, 'Δφ=π (Anti)', 'blue')]:
         result = energy_scan(isotope, delta_phi=dp)
         ax.plot(result['E_gamma_MeV'], result['sigma_rft_mb'],
-                color=color, label=f'{label}, η={result["eta"]:.2f}')
+                color=color, label=f'{label}, ε={result["eta"]:.2f}')
     
-    # Standard (ohne RFT)
-    result_std = energy_scan(isotope, delta_phi=PI)  # η=0
-    ax.plot(result_std['E_gamma_MeV'], result_std['sigma_standard_mb'],
-            'k--', label='Standard (ohne RFT)', linewidth=1)
+    # Unmodifiziert (ε=1, Standardphysik bei kohärenter Quelle)
+    result_full = energy_scan(isotope, delta_phi=0)
+    ax.plot(result_full['E_gamma_MeV'], result_full['sigma_standard_mb'],
+            'k--', label='σ_GDR (Literatur)', linewidth=1)
     
     ax.set_xlabel('E_γ (MeV)')
     ax.set_ylabel('σ (mb)')
-    ax.set_title(f'GDR-Wirkungsquerschnitt: {isotope.name}')
+    ax.set_title(f'GDR mit RFT-Kopplung: {isotope.name}')
     ax.legend(fontsize=8)
     ax.set_xlim(5, 25)
     ax.grid(True, alpha=0.3)
-    
-    # GDR-Peak-Markierungen
     for E in isotope.E_gdr_peaks:
         ax.axvline(E, color='gray', linestyle=':', alpha=0.5)
     
-    # Rechts: Verhältnis σ_RFT / σ_Standard
+    # Verhältnis
     ax = axes[1]
-    result_res = energy_scan(isotope, delta_phi=0)
-    ratio = result_res['sigma_rft_mb'] / result_res['sigma_standard_mb']
-    ax.plot(result_res['E_gamma_MeV'], ratio, 'r-')
+    for dp, label, color in [(0, 'Δφ=0 (ε=1)', 'red'),
+                              (PI/4, 'Δφ=π/4 (ε=0.85)', 'orange'),
+                              (PI/2, 'Δφ=π/2 (ε=0.5)', 'green'),
+                              (PI, 'Δφ=π (ε=0)', 'blue')]:
+        result = energy_scan(isotope, delta_phi=dp)
+        with np.errstate(divide='ignore', invalid='ignore'):
+            ratio = result['sigma_rft_mb'] / result['sigma_standard_mb']
+        ax.plot(result['E_gamma_MeV'], ratio,
+                color=color, label=label)
+    
     ax.axhline(1.0, color='k', linestyle='--', alpha=0.5)
     ax.set_xlabel('E_γ (MeV)')
-    ax.set_ylabel('σ_RFT / σ_Standard')
-    ax.set_title(f'RFT-Verstärkung bei Δφ=0: {isotope.name}')
+    ax.set_ylabel('σ_RFT / σ_GDR')
+    ax.set_title(f'RFT-Kopplung = ε(Δφ): {isotope.name}')
+    ax.legend(fontsize=8)
     ax.set_xlim(5, 25)
+    ax.set_ylim(-0.05, 1.15)
     ax.grid(True, alpha=0.3)
     
     plt.tight_layout()
@@ -71,23 +71,21 @@ def plot_energy_scan(isotope, output_dir):
 
 
 def plot_phase_scan(isotope, output_dir):
-    """Plot 2: Phasenscan – analog zu FLRW."""
+    """Plot 2: Phasenscan."""
     result = phase_scan(isotope, n_phases=100, photon_flux=1e12)
     
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     
-    # Links: η(Δφ) und λ_eff/λ₀
     ax = axes[0]
     ax.plot(result['delta_phi'] / PI, result['eta'],
-            'b-', label='η(Δφ) = cos²(Δφ/2)', linewidth=2)
+            'b-', label='η(Δφ) = cos²(Δφ/2) = ε(Δφ)', linewidth=2)
     ax.set_xlabel('Δφ / π')
-    ax.set_ylabel('η (Kopplungseffizienz)')
-    ax.set_title(f'Kopplungseffizienz: {isotope.name}')
+    ax.set_ylabel('η = ε (Kopplungsoperator)')
+    ax.set_title(f'Kopplungsoperator: {isotope.name}')
     ax.legend()
     ax.set_xlim(0, 2)
     ax.grid(True, alpha=0.3)
     
-    # Rechts: λ_eff / λ₀
     ax = axes[1]
     ax.plot(result['delta_phi'] / PI, result['ratio'],
             'r-', linewidth=2)
@@ -96,7 +94,7 @@ def plot_phase_scan(isotope, output_dir):
     ax.set_xlabel('Δφ / π')
     ax.set_ylabel('λ_eff / λ₀')
     ax.set_title(f'Effektive Zerfallsrate: {isotope.name}\n'
-                 f'Φ_γ = 10¹² γ/(cm²·s)')
+                 f'Φ_γ = 10¹² γ/(cm²·s), κ=1 (RFT)')
     ax.legend()
     ax.set_xlim(0, 2)
     ax.grid(True, alpha=0.3)
@@ -109,15 +107,12 @@ def plot_phase_scan(isotope, output_dir):
 
 
 def plot_decay_comparison(isotope, output_dir):
-    """Plot 3: Zerfallsvergleich Standard vs. RFT."""
-    # Zeitraum: 5 Halbwertszeiten
-    t_max = 5 * isotope.half_life
+    """Plot 3: Zerfall Standard vs. RFT."""
+    t_max = min(5 * isotope.half_life, 1e8)
     
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     
-    # Links: N(t) für verschiedene Szenarien
     ax = axes[0]
-    
     scenarios = [
         (0.0, 0.0, 'Kein Feld (Standard)', 'black', '--'),
         (1e12, 0.0, 'Φ=10¹², Δφ=0 (Resonanz)', 'red', '-'),
@@ -134,17 +129,16 @@ def plot_decay_comparison(isotope, output_dir):
     
     ax.set_xlabel(f't / t½ (t½ = {isotope.half_life:.0f} Jahre)')
     ax.set_ylabel('N(t) / N₀')
-    ax.set_title(f'Zerfall: {isotope.name}')
+    ax.set_title(f'Zerfall: {isotope.name} (κ=1)')
     ax.legend(fontsize=8)
     ax.set_xlim(0, 5)
     ax.set_ylim(0, 1)
     ax.grid(True, alpha=0.3)
     
-    # Rechts: Halbwertszeit-Reduktion als Funktion der Fluenz
+    # Halbwertszeit-Reduktion
     ax = axes[1]
     fluxes = np.logspace(8, 16, 100)
     t_half_ratios = []
-    
     for flux in fluxes:
         lam_eff = effective_decay_rate(isotope, delta_phi=0.0,
                                         photon_flux=flux)
@@ -155,8 +149,7 @@ def plot_decay_comparison(isotope, output_dir):
     ax.axhline(1.0, color='k', linestyle='--', alpha=0.5)
     ax.set_xlabel('Photonenfluenz Φ_γ [γ/(cm²·s)]')
     ax.set_ylabel('t½_eff / t½_Standard')
-    ax.set_title(f'Halbwertszeit-Reduktion bei Resonanz (Δφ=0)\n'
-                 f'{isotope.name}')
+    ax.set_title(f'Halbwertszeit-Reduktion (Δφ=0, κ=1)\n{isotope.name}')
     ax.grid(True, alpha=0.3)
     
     plt.tight_layout()
@@ -166,10 +159,62 @@ def plot_decay_comparison(isotope, output_dir):
     print(f"  → decay_comparison_{isotope.name}.png")
 
 
+def plot_energy_balance(output_dir):
+    """Plot 4: Energiebilanz – Q-Faktor als Funktion der Fluenz."""
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    
+    fluxes = np.logspace(8, 16, 200)
+    
+    # Links: Q(Φ) für Alpha-Zerfall
+    ax = axes[0]
+    for iso, color in [(uranium_235, 'green'),
+                        (plutonium_239, 'red'),
+                        (americium_241, 'blue')]:
+        Qs = []
+        for flux in fluxes:
+            eb = energy_balance(iso, delta_phi=0.0, photon_flux=flux)
+            Qs.append(eb['Q_alpha'])
+        ax.loglog(fluxes, Qs, color=color, label=iso.name, linewidth=2)
+    
+    ax.axhline(1.0, color='k', linestyle='--', alpha=0.5,
+               label='Q = 1 (Break-even)')
+    ax.set_xlabel('Photonenfluenz Φ_γ [γ/(cm²·s)]')
+    ax.set_ylabel('Q = P_out / P_in')
+    ax.set_title('Energiebilanz: α-Zerfall\n1 kg Target, Δφ=0')
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.3)
+    ax.set_xlim(1e8, 1e16)
+    
+    # Rechts: Q(Φ) für Spaltung (nur U-235, Pu-239)
+    ax = axes[1]
+    for iso, color in [(uranium_235, 'green'),
+                        (plutonium_239, 'red')]:
+        Qs = []
+        for flux in fluxes:
+            eb = energy_balance(iso, delta_phi=0.0, photon_flux=flux)
+            Qs.append(eb['Q_fission'])
+        ax.loglog(fluxes, Qs, color=color, label=iso.name, linewidth=2)
+    
+    ax.axhline(1.0, color='k', linestyle='--', alpha=0.5,
+               label='Q = 1 (Break-even)')
+    ax.set_xlabel('Photonenfluenz Φ_γ [γ/(cm²·s)]')
+    ax.set_ylabel('Q = P_out(Spaltung) / P_in')
+    ax.set_title('Energiebilanz: Spaltung (200 MeV/Zerfall)\n'
+                 '1 kg Target, Δφ=0')
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.3)
+    ax.set_xlim(1e8, 1e16)
+    
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'energy_balance.png'), dpi=150)
+    plt.close()
+    print(f"  → energy_balance.png")
+
+
 def main():
     print("=" * 60)
     print("RESONANZREAKTOR: Publikationslauf")
-    print("RFT-fundierte Simulation resonanter Transmutation")
+    print("κ = 1 (aus RFT-Grundformel, kein freier Parameter)")
     print("=" * 60)
     
     output_dir = "figures"
@@ -177,48 +222,52 @@ def main():
     
     isotopes = [uranium_235, plutonium_239, americium_241]
     
-    # --- 1. Isotopendaten ---
-    print("\n=== 1. Isotopendaten mit RFT-Frequenzen ===\n")
+    # 1. Isotopendaten
+    print("\n=== 1. Isotopendaten ===\n")
     for iso in isotopes:
         iso.info()
         print()
     
-    # --- 2. Energiescans ---
-    print("=== 2. Energiescans (GDR-Profile) ===")
+    # 2. Energiescans
+    print("=== 2. Energiescans ===")
     for iso in isotopes:
         plot_energy_scan(iso, output_dir)
     
-    # --- 3. Phasenscans ---
-    print("\n=== 3. Phasenscans (η → λ_eff) ===")
+    # 3. Phasenscans
+    print("\n=== 3. Phasenscans ===")
     for iso in isotopes:
         plot_phase_scan(iso, output_dir)
     
-    # --- 4. Zerfallsvergleiche ---
-    print("\n=== 4. Zerfallsvergleiche (Standard vs. RFT) ===")
+    # 4. Zerfallsvergleiche
+    print("\n=== 4. Zerfallsvergleiche ===")
     for iso in isotopes:
         plot_decay_comparison(iso, output_dir)
     
-    # --- 5. Zusammenfassung ---
+    # 5. Energiebilanz
+    print("\n=== 5. Energiebilanz ===")
+    plot_energy_balance(output_dir)
+    
+    # 6. Zusammenfassung
     print("\n" + "=" * 60)
-    print("ZUSAMMENFASSUNG")
+    print("ZUSAMMENFASSUNG (κ=1, aus RFT)")
     print("=" * 60)
     
-    print("\nRFT-Vorhersage (falsifizierbar):")
-    print("  σ_coh > σ_incoh bei gleicher Photonenfluenz")
-    print("  am GDR-Peak der Aktiniden (12-15 MeV)")
-    print()
+    print("\nHerleitung: ε(Δφ) = η(Δφ) = cos²(Δφ/2) → κ = 1")
+    print("Kein freier Parameter.\n")
     
     for iso in isotopes:
         lam_0 = iso.decay_constant / (365.25 * 24 * 3600)
         lam_res = effective_decay_rate(iso, delta_phi=0.0,
                                         photon_flux=1e12)
-        lam_anti = effective_decay_rate(iso, delta_phi=PI,
-                                         photon_flux=1e12)
         print(f"  {iso.name}:")
-        print(f"    GDR-Zentroid: {iso.E_gdr_centroid:.1f} MeV")
-        print(f"    f_RFT: {iso.f_gdr_centroid:.3e} Hz")
-        print(f"    λ_eff/λ₀ (Resonanz):     {lam_res/lam_0:.6f}")
-        print(f"    λ_eff/λ₀ (Antiresonanz): {lam_anti/lam_0:.6f}")
+        print(f"    GDR: {iso.E_gdr_centroid:.1f} MeV, "
+              f"f = {iso.f_gdr_centroid:.3e} Hz")
+        print(f"    λ_eff/λ₀ (Resonanz): {lam_res/lam_0:.1f}")
+        
+        eb = energy_balance(iso, delta_phi=0.0, photon_flux=1e12)
+        print(f"    Q(α): {eb['Q_alpha']:.4f}")
+        if eb['Q_fission'] > 0:
+            print(f"    Q(Spaltung): {eb['Q_fission']:.2f}")
         print()
     
     print("Plots gespeichert unter:", output_dir)
