@@ -17,19 +17,16 @@ $$
    Systeme treten dann in Wechselwirkung, wenn ihre Schwingungen in ein ganzzahliges Verhältnis treten – das ist Resonanz.
 
 3. **Energieübertragung folgt der Kopplung.**  
-   Je stärker die Resonanz (Kopplungsgrad $$𝓔$$), desto größer die Energieübertragung zwischen den Feldern.
+   Die effektive Energie einer resonanten Kopplung ist $$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot h \cdot f$$, wobei die Kopplungseffizienz $$\varepsilon \in [0, 1]$$ den Anteil der übertragenen Resonanzenergie beschreibt.
 
-4. **π ist der Maßstab für kreisförmige Resonanzen.**  
-   Die Konstante $$\pi$$ ist nicht nur geometrisch, sondern auch resonanzdynamisch grundlegend – sie beschreibt das Maß der perfekten Rückkopplung.
+4. **π ist der Maßstab für zyklische Kopplungsgeometrie.**  
+   Der Faktor $$\pi$$ entsteht aus der Integration der Kopplungseffizienz über einen Halbzyklus des Resonanzpfads — er ist kein freier Parameter, sondern geometrisch hergeleitet.
 
 5. **h ist die Informationsquantelung des Feldes.**  
-   Das Plancksche Wirkungsquantum $$h$$ (oder alternativ $$\eta$$) beschreibt die minimale Wirkungseinheit im Resonanzfeld.
+   Das Plancksche Wirkungsquantum $$h$$ beschreibt die minimale Wirkungseinheit im Resonanzfeld.
 
-6. **e wird zur Resonanzkopplungskonstanten.**  
-   Die klassische Eulersche Zahl $$e$$ wird als eigene Naturkonstante für Resonanzkopplung interpretiert – im System durch $$𝓔$$ ersetzt.
-
-7. **Beobachtung erzeugt Resonanz.**  
-   Der bewusste Beobachter wirkt als Filter, der selektiv mit Feldern in Resonanz tritt und dadurch Wirklichkeit formt.
+6. **ε bestimmt die Kopplungsqualität.**  
+   Die Kopplungseffizienz $$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$$ ist phasenabhängig: maximal bei Phasengleichheit ($$\varepsilon = 1$$), null bei Gegenphase ($$\varepsilon = 0$$). Der Spezialfall $$\varepsilon = 1/e \approx 0.368$$ beschreibt natürliche Dämpfung nach einer Relaxationszeit.
 
 ---
 
