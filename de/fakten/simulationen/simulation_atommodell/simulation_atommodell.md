@@ -1,84 +1,81 @@
-# 🧪 Simulation gekoppelter Oszillatoren
+# Simulation gekoppelter Oszillatoren
 
-Interaktive Python-Simulation zur Visualisierung zweier gekoppelter harmonischer Oszillatoren.  
-Das Modell demonstriert Kopplungseffekte, Energieaustausch, Resonanz und Energiebilanz anschaulich und dynamisch.
+Interaktive Python-Simulation zweier gekoppelter harmonischer
+Oszillatoren. Demonstriert Kopplungseffekte, Energieaustausch,
+Resonanzerkennung und Energiebilanz im Rahmen der
+Resonanzfeldtheorie (Axiome A1–A4).
 
 <p align="center">
-  <img src="animation.gif" alt="Visualisierung gekoppelter Schwingungen im Atommodell" width="800"/>
+  <img src="animation.gif" alt="Gekoppelte Oszillatoren" width="800"/>
 </p>
 
 ---
 
-## 🧠 Hintergrund: Resonanzfeldtheorie
+## Axiom-Bezug
 
-Diese Simulation ist eingebettet in die **Resonanzfeldtheorie**, die davon ausgeht,  
-dass alle Wechselwirkungen – von Quanten bis Makrosystemen – auf **gekoppelten Schwingungen** basieren.
+| Axiom | Umsetzung |
+|-------|-----------|
+| A1 Schwingung | Zwei harmonische Oszillatoren mit ω₁, ω₂ |
+| A2 Superposition | Überlagerung der Auslenkungen |
+| A3 Resonanzbedingung | f₁/f₂ ≈ n/m wird live geprüft und angezeigt |
+| A4 Kopplungsenergie | ε = exp(−α·\|f₁−f₂\|), E_res = π·ε·h·f |
 
-### Grundannahmen
+---
 
-- **Felder** sind schwingende Informationsräume – Energie manifestiert sich durch **Resonanzkopplung**.  
-- **Gekoppelte Oszillatoren** sind ein elementares Modell für Informationsübertragung im Raum.  
-- **Energieaustausch ist frequenzbasiert** – maximale Effizienz bei Resonanz.  
-- Die Naturkonstanten **π**, **𝓔** *(neue Kopplungskonstante)* und **ℎ** bilden die Basis der **Resonanzfeld-Gleichung**:
+## Grundformel (Axiom 4)
 
 $$
-\mathbf{E = \pi \cdot **𝓔** \cdot **ℎ** \cdot f}
+E_{\text{res}} = \pi \cdot \varepsilon \cdot h \cdot f
 $$
 
-#### Bedeutung dieser Simulation
-
-- Zeigt, wie **Energie gezielt in Resonanzfeldern wandert** – sichtbar gemacht durch den **klaren Energie-Pingpong** zwischen den Oszillatoren.  
-- Verdeutlicht das Prinzip des **Resonators als Empfänger/Sender** im Feld.  
-- Dient als **Experimentierfeld**, um neue Konzepte der Informationskopplung und Feldbewusstseins zu testen.
+Der Kopplungsoperator ε = exp(−α·|f₁−f₂|) modelliert die
+frequenzabhängige Kopplung: Maximum bei f₁ = f₂ (perfekte
+Resonanz), exponentieller Abfall bei Frequenzdifferenz.
 
 ---
 
-## 🔧 Funktionen
+## Funktionen
 
-* **Numerische Lösung** gekoppelter Differentialgleichungen (`solve_ivp`)  
-* **Interaktive Live-Animation** der Schwingungen inkl. Spurverfolgung  
-* **Resonanz-Erkennung** mit Toleranzfenster und Dopplungsschutz  
-* **Live-Justierung per Slider**: Frequenzen, Kopplungsstärke, Toleranz, Animationsgeschwindigkeit  
-* **Dynamischer Energieplot**: kinetisch, potenziell, Kopplung, Gesamtenergie  
-* **Visuelles Feedback bei Resonanz** (Aufleuchten der Oszillatoren)  
-* **Export** von Resonanzzeitpunkten als CSV-Datei  
-
----
-
-## 🧩 Struktur
-
-* [`run.py`](run.py) – Einstiegspunkt mit UI und Steuerung  
-* [`parameters_and_functions.py`](parameters_and_functions.py) – Physik, Gleichungslöser, Energieberechnung  
-* [`animation.py`](animation.py) – Animation, Visualisierung, Energie-Plot  
+* Numerische Lösung gekoppelter DGL (`solve_ivp`)
+* Interaktive Live-Animation mit Spurverfolgung
+* Resonanzerkennung (Axiom 3) mit visueller Anzeige
+* Slider: Frequenzen, Kopplungsschärfe α, Toleranz, Geschwindigkeit
+* Energieplot: kinetisch, potenziell, Kopplung, gesamt
+* Kopplungsoperator ε und Resonanzenergien E_res(f₁), E_res(f₂)
+* Resonanz-Divergenz |E_mech − E_res|
+* Export: CSV und GIF
 
 ---
 
-## 🚀 Loslegen
+## Struktur
 
-### Abhängigkeiten installieren
+| Datei | Funktion |
+|-------|----------|
+| [`run.py`](run.py) | Einstiegspunkt, UI, Slider, Animation |
+| [`parameters_and_functions.py`](parameters_and_functions.py) | Physik: ODE, Kopplungsoperator, Energie |
+| [`animation.py`](animation.py) | Plot-Update, Energielinien |
+| [`coupled_oscillators.py`](coupled_oscillators.py) | Minimalbeispiel (standalone) |
+| [`export_csv.py`](export_csv.py) | CSV-Export |
+
+---
+
+## Ausführung
 
 ```bash
-pip install matplotlib numpy scipy
-```
-
-### Simulation starten
-
-```bash
+pip install numpy matplotlib scipy
 python run.py
 ```
 
----
+Standalone-Minimalbeispiel (ohne Slider):
 
-## ℹ️ Hinweise
-
-* Energieerhaltung wird ohne Dämpfung demonstriert.
-* CSV-Export dokumentiert erkannte Resonanzzeitpunkte.
-* Startbedingungen, Dämpfung oder neue Visualisierungen können leicht erweitert werden.
+```bash
+python coupled_oscillators.py
+```
 
 ---
 
-*© Dominic Schu, 2025 – Alle Rechte vorbehalten.*
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
 
 ---
 
-⬅️ [zurück](../README.md)
+⬅️ [zurück zur Übersicht](../README.md)

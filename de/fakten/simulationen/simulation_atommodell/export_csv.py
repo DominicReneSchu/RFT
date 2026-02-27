@@ -1,4 +1,7 @@
+"""Export von Resonanzzeitpunkten als CSV."""
+
 import csv
+
 
 def export_resonances(filename, resonance_history):
     with open(filename, 'w', newline='') as f:
