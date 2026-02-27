@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  24 JUN 2025 16:20
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  26 FEB 2026 23:04
  restricted system commands enabled.
 **rft_manuskript_de_iop.tex
 (./rft_manuskript_de_iop.tex
@@ -227,24 +227,25 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty
-Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
-\LTleft=\skip53
-\LTright=\skip54
-\LTpre=\skip55
-\LTpost=\skip56
-\LTchunksize=\count294
-\LTcapwidth=\dimen154
-\LT@head=\box53
-\LT@firsthead=\box54
-\LT@foot=\box55
-\LT@lastfoot=\box56
-\LT@gbox=\box57
-\LT@cols=\count295
-\LT@rows=\count296
-\c@LT@tables=\count297
-\c@LT@chunks=\count298
-\LT@p@ftn=\toks19
+(C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count294
+\@cmidlb=\count295
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count296
+\@lastruleclass=\count297
+\@thisrulewidth=\dimen166
 )
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/qrcode/qrcode.sty
 Package: qrcode 2015/01/08 v1.51 QR code generation
@@ -272,82 +273,93 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks20
-\XKV@tempa@toks=\toks21
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
 )
-\XKV@depth=\count299
+\XKV@depth=\count298
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@qr@i=\count300
-\c@qr@j=\count301
-\qr@a=\count302
-\qr@b=\count303
-\qr@c=\count304
-\qr@for@depth=\count305
-\qr@for@maxdepth=\count306
-\qr@for@start=\count307
-\qr@for@end=\count308
-\qr@for@step=\count309
+\c@qr@i=\count299
+\c@qr@j=\count300
+\qr@a=\count301
+\qr@b=\count302
+\qr@c=\count303
+\qr@for@depth=\count304
+\qr@for@maxdepth=\count305
+\qr@for@start=\count306
+\qr@for@end=\count307
+\qr@for@step=\count308
+\qr@newforcount=\count309
 \qr@newforcount=\count310
-\qr@newforcount=\count311
-\qr@desiredheight=\skip57
-\qr@modulesize=\skip58
-\qr@minipagewidth=\skip59
-\c@maski=\count312
-\c@maskj=\count313
-\c@totalones=\count314
-\c@penaltyi=\count315
-\c@penaltyii=\count316
-\c@penaltyiii=\count317
-\c@penaltyiv=\count318
-\c@qr@hexchars=\count319
-\qr@newforcount=\count320
-\c@qr@divisionsremaining=\count321
-)
+\qr@desiredheight=\skip53
+\qr@modulesize=\skip54
+\qr@minipagewidth=\skip55
+\c@maski=\count311
+\c@maskj=\count312
+\c@totalones=\count313
+\c@penaltyi=\count314
+\c@penaltyii=\count315
+\c@penaltyiii=\count316
+\c@penaltyiv=\count317
+\c@qr@hexchars=\count318
+\qr@newforcount=\count319
+\c@qr@divisionsremaining=\count320
+) (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks21
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-luat
 ex.def
 File: l3backend-luatex.def 2025-04-14 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count322
+\l__color_backend_stack_int=\count321
 Inserting `l3color' in `luaotfload.parse_color'.) (./rft_manuskript_de_iop.aux
 <Reading QR code for "https://github.com/DominicReneSchu/public" at level 3-M f
 rom aux file.>
 )
 \openout1 = rft_manuskript_de_iop.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count323
-\scratchdimen=\dimen155
-\scratchbox=\box58
-\nofMPsegments=\count324
-\nofMParguments=\count325
+\scratchcounter=\count322
+\scratchdimen=\dimen167
+\scratchbox=\box53
+\nofMPsegments=\count323
+\nofMParguments=\count324
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count326
-\MPscratchDim=\dimen156
-\MPnumerator=\count327
-\makeMPintoPDFobject=\count328
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen168
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
 \everyMPtoPDFconversion=\toks23
 )
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-ba
@@ -360,60 +372,32 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 12.
  (./rft_manuskript_de_iop.out) (./rft_manuskript_de_iop.out)
 \@outlinefile=\write3
 
 \openout3 = rft_manuskript_de_iop.out
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
-Underfull \hbox (badness 2837) in paragraph at lines 29--31
-[]\TU/lmr/bx/n/10 Ab-stract. \TU/lmr/m/n/10 Die Res-o-nanzfeldthe-o-rie (RFT) wi
-rd als neuar-tiges ax-ioma-tis-ches
+
+(C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+
+
+(C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 1226) in paragraph at lines 65--73
+\TU/lmr/m/n/12 cher Sys-teme pos-tuliert. Die RFT for-muliert sieben Ax-iome, au
+s de-nen eine
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 29--31
-\TU/lmr/m/n/10 Rah-men-werk vorgestellt, das physikalis-che und sys-temis-che Ph
-änomene über
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 29--31
-\TU/lmr/m/n/10 beschreibt. Zen-trales Ax-iom ist die Res-o-nanzregel: Grup-pen-z
-uge-hörigkeit ist
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 32.
-
-Underfull \hbox (badness 1270) in paragraph at lines 32--33
-\TU/lmtt/m/n/10 public$[]\TU/lmr/m/n/10 ). Damit wird kollek-tive Res-o-nanz, Kr
-i-tik und Fortschritt sys-temisch
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
-
-Underfull \hbox (badness 1810) in paragraph at lines 43--44
-\TU/lmr/m/n/12 Ma-te-ri-alien sind of-fen zugänglich unter []$\TU/lmtt/m/n/12 
-https://github.com/DominicReneSchu/
- []
-
-<figures/plot.png, id=150, 1011.78pt x 433.62pt>
-File: figures/plot.png Graphic file (type png)
-<use figures/plot.png>
-Package luatex.def Info: figures/plot.png  used on input line 47.
-(luatex.def)             Requested size: 379.44269pt x 162.62033pt.
-
-Underfull \hbox (badness 1490) in paragraph at lines 55--55
-\TU/lmr/m/n/10 Jeder Git-ter-punkt ak-tiviert gemäß der Res-o-nanzregel das ge
-samte Feld: Die
+Underfull \hbox (badness 3428) in paragraph at lines 74--79
+[]\TU/lmr/m/n/12 Im Un-ter-schied zu beste-hen-den An-sätzen zielt die RFT nich
+t auf eine
  []
 
 
@@ -421,1061 +405,93 @@ samte Feld: Die
 [1
 
 {C:/Users/info/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 4291) in paragraph at lines 62--63
-\TU/lmr/m/n/12 ent-fal-ten enorme Vorher-sagekraft, doch ihre be-grif-flichen Gr
-und-la-gen bleiben
+Underfull \hbox (badness 1810) in paragraph at lines 92--96
+\TU/lmr/m/n/12 Die RFT basiert auf sieben hi-er-ar-chisch aufge-bauten Ax-iomen.
+ Die Ax-iome
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 64--65
-\TU/lmr/m/n/12 bis zu kom-plexen Sys-te-men – als struk-turi-erte Teil-sys-tem
-e eines uni-versellen
+Underfull \hbox (badness 1668) in paragraph at lines 92--96
+\TU/lmr/m/n/12 sind nicht un-ab-hängig, son-dern kon-sti-tu-tiv ver-schränkt: A1--A3 definieren die
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 141--145
+\TU/lmr/m/n/12 mit dem phasen-ab-hängi-gen Kop-plung-sop-er-a-tor $\OML/cmm/m/
+it/12 "\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 [0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1]$\TU/lmr/m/n/12 , wobei $\OT1/cmr/m/n/12 \OML/cmm/m/it/12 '$ \TU/lmr/m/n/12 die
  []
 
 
 
-[2<./figures/plot.png>]
-Underfull \hbox (badness 4416) in paragraph at lines 68--69
-[]\TU/lmr/m/n/12 Das Ergeb-nis ist ein ko-härenter Rah-men, der die Logik physi
-kalis-cher
- []
-
-
-Underfull \hbox (badness 4608) in paragraph at lines 70--71
-\TU/lmr/m/n/12 Im-p-lika-tio-nen und for-muliert die Res-o-nanz-gle-ichung. Ab-s
-chnitt 5 skizziert
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 76--77
-\TU/lmr/m/n/12 Theorie-Landschaft: Das Stan-dard-mod-ell und die All-ge-meine Re
-l-a-tiv-ität-s-the-o-rie
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 83--84
-[]\TU/lmr/bx/n/12 Epis-temis-che Voll-ständigkeit\TU/lmr/m/n/12 : Der Beobachte
-r ist nicht ex-tern, son-dern
+[2]
+Underfull \hbox (badness 1721) in paragraph at lines 219--225
+\TU/lmr/m/n/12 Die zen-trale Gle-ichung ([]4[]) er-weit-ert die Planck-Relation $\OML/cmm/m/it/12 E \OT1/cmr/m/n/12 = \U/msb/m/n/12 ~\OML/cmm/m/it/12 !$ \TU/lmr/m/n/12 um einen
  []
 
 
 
 [3]
-Underfull \hbox (badness 1117) in paragraph at lines 88--89
-\TU/lmr/m/n/12 Sym-me-trien von Inklu-sion und Res-o-nanz of-fen-zule-gen, die 
-kom-plexen Sys-te-men
+Underfull \hbox (badness 2970) in paragraph at lines 239--242
+\TU/lmr/m/n/12 Die RFT vere-in-heitlicht klas-sis-che Dif-fer-en-tial-gle-ichun-
+gen als Spezialfälle einer
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 90--91
-[]\TU/lmr/m/n/12 Im Ein-klang mit der Res-o-nanzregel – Grup-pen-zuge-hörigke
-it ist sys-temisch
- []
-
-
-Underfull \hbox (badness 3849) in paragraph at lines 110--112
-\TU/lmr/m/n/12 Ein Elek-tron zeigt quan-tisierte Bahn-Oszillationen; ein Pen-del
- schwingt mit
+Underfull \hbox (badness 1242) in paragraph at lines 271--276
+\TU/lmr/m/n/12 Die binäre Res-o-nanzre-la-tion $\OML/cmm/m/it/12 R \OMS/cmsy/m
+/n/12  G  G$ \TU/lmr/m/n/12 ist eine Äquiv-alen-zre-la-tion (re-flexiv,
  []
 
 
 
 [4]
-Underfull \hbox (badness 3746) in paragraph at lines 137--139
-\TU/lmr/m/n/12 Resonanz ist struk-turell fundierte Kop-plung – nur möglich be
-i kom-pat-i-blen
- []
+<figures/hist_mc_vs_real_hits.png, id=148, 1292.9103pt x 715.473pt>
+File: figures/hist_mc_vs_real_hits.png Graphic file (type png)
+<use figures/hist_mc_vs_real_hits.png>
+Package luatex.def Info: figures/hist_mc_vs_real_hits.png  used on input line 3
+63.
+(luatex.def)             Requested size: 312.4786pt x 172.91792pt.
+<figures/pvalue_curves.png, id=149, 1292.9103pt x 715.473pt>
+File: figures/pvalue_curves.png Graphic file (type png)
+<use figures/pvalue_curves.png>
+Package luatex.def Info: figures/pvalue_curves.png  used on input line 373.
+(luatex.def)             Requested size: 312.4786pt x 172.91792pt.
+<figures/heatmaps_hits.png, id=150, 1190.2869pt x 427.8384pt>
+File: figures/heatmaps_hits.png Graphic file (type png)
+<use figures/heatmaps_hits.png>
+Package luatex.def Info: figures/heatmaps_hits.png  used on input line 384.
+(luatex.def)             Requested size: 312.4786pt x 112.31252pt.
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 154--156
-\TU/lmr/m/n/12 Funkübertragung benötigt fre-quen-zangepasste Kop-plung; bei Qu
-an-ten-sprün-gen
- []
-
-
-
-[5]
-Underfull \hbox (badness 1902) in paragraph at lines 179--180
-[]\TU/lmr/bx/n/12 Siehe auch: \TU/lmr/m/n/12 [[]5[]] und []$\TU/lmtt/m/n/12 http
-s://github.com/DominicReneSchu/public/blob/
- []
-
-
-Underfull \hbox (badness 1910) in paragraph at lines 189--191
-\TU/lmr/m/n/12 Kohärenz und Sys-tem-sta-bil-ität beruhen auf struk-turi-erter 
-Über-lagerung. Das
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 192--194
-\TU/lmr/m/n/12 Ein Laser erzeugt ko-härentes Licht durch ste-hende elek-tro-mag
--netis-che Wellen;
+[5<./figures/hist_mc_vs_real_hits.png>]
+Underfull \hbox (badness 1642) in paragraph at lines 427--432
+[]\TU/lmr/m/n/12 Kein klas-sis-cher In-dika-tor (RSI, MACD, Bollinger) er-re-ich
+t auf dem-sel-ben
  []
 
 
 
-[6]
-Underfull \hbox (badness 2119) in paragraph at lines 247--248
-[]\TU/lmr/m/n/12 Alle Ax-iome, Her-leitun-gen und Beispiele sind of-fen zugängl
-ich ([]$\TU/lmtt/m/n/12 https://
+[6<./figures/pvalue_curves.png><./figures/heatmaps_hits.png>]
+Underfull \hbox (badness 3029) in paragraph at lines 487--490
+[]\TU/lmr/bx/n/12 Neue Vorher-sagen: \TU/lmr/m/n/12 Die RFT muss eine bisher un-
+bekan-nte Res-o-nanz
  []
 
 
 
 [7]
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:+tlig;!
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:+tlig;!
-
-Underfull \hbox (badness 1067) in paragraph at lines 265--266
-\TU/lmr/m/n/12 mit $\OML/cmm/m/it/12 h$ \TU/lmr/m/n/12 als Planck-Konstante, $\
-OML/cmm/m/it/12 f$ \TU/lmr/m/n/12 als Fre-quenz, $\OML/cmm/m/it/12 $ \TU/lmr/m
-/n/12 als zyk-lis-che Ge-ome-trie, $\OML/cmm/m/it/12 "$ \TU/lmr/m/n/12 als
- []
-
-
-Overfull \hbox (4.7395pt too wide) in paragraph at lines 280--281
-\TU/lmtt/m/n/12 DominicReneSchu/public/blob/main/de/fakten/docs/definitionen/ene
-rgie_als_
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 284--285
-\TU/lmr/m/n/12 Ax-iome—Os-zil-la-tion, Su-per-po-si-tion, Kop-plung, Inklu-sio
-n, In-for-ma-tions-fluss und
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 284--285
-\TU/lmr/m/n/12 Beobachter-res-o-nanz—im voll-ständi-gen Res-o-nanzfeld in-te-
-gri-ert. Der For-mal-is-mus
- []
-
-
-
-[8
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:+tlig;!
-]
-Underfull \hbox (badness 1845) in paragraph at lines 296--297
-\TU/lmr/m/n/12 Res-o-nanz zwis-chen Teil-sys-te-men entsteht, wenn ihre Fre-quen
--zen im ra-tio-nalen
- []
-
-
-
-[9]
-
-[10]
-Underfull \hbox (badness 3168) in paragraph at lines 418--419
-\TU/lmr/m/n/12 Die RFT er-weit-ert etablierte The-o-rien sys-temisch und adressi
-ert of-fene Fra-
- []
-
-
-
-[11]
-Underfull \hbox (badness 2809) in paragraph at lines 431--433
-\TU/lmr/m/n/12 des Res-o-nanzfelds: Klas-sis-che und mod-erne Physik, In-for-ma-
-tionsver-ar-beitung,
- []
-
-
-Overfull \hbox (4.7395pt too wide) in paragraph at lines 434--436
-\TU/lmtt/m/n/12 DominicReneSchu/public/blob/main/de/fakten/docs/definitionen/ene
-rgie_als_
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 439--440
-\TU/lmr/m/n/12 RFT vere-inigt Feld-, Teilchen- und In-for-ma-tions-dy-namiken du
-rch fun-da-men-tale
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 443--444
-[]\TU/lmr/m/n/12 Ex-per-i-mentelle Pro-tokolle: gekop-pelte Os-zil-la-toren, Net
--zw-erksyn-chro-ni-sa-tion,
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 450--451
-[]\TU/lmr/m/n/12 Ex-plizite Darstel-lung von Ver-net-ztheit, Emer-genz und selb-
-stin-kludieren-der
- []
-
-
-
-[12]
-Underfull \hbox (badness 1142) in paragraph at lines 452--453
-[]\TU/lmr/m/n/12 Förderung nicht-lin-earer, ganzheitlicher Denkweisen jen-seits
- re-duk-tion-is-tis-cher
- []
-
-
-Underfull \hbox (badness 2680) in paragraph at lines 457--458
-\TU/lmr/m/n/12 Soziale Phänomene er-scheinen als Res-o-nanz-muster struk-turell
-er Kop-plung und
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 468--469
-[]\TU/lmr/m/n/12 Gestal-tung ro-buster, adap-tiver In-for-ma-tion-snet-zw-erke 
-durch selb-stin-klu-sive
- []
-
-
-
-[13]
-
-[14]
-Underfull \hbox (badness 2126) in paragraph at lines 505--506
-\TU/lmr/m/n/12 Die sys-temis-che Of-fen-heit und Fal-si-fizier-barkeit der Res-o
--nanzfeldthe-o-rie (RFT)
- []
-
-
-Underfull \hbox (badness 3417) in paragraph at lines 507--509
-\TU/lmr/m/n/12 Wiederholte Sim-u-la-tion von Hin-ter-grund-szenar-ien, unter ex-
-plizitem Auss-chluss
- []
-
-
-Overfull \hbox (1.42429pt too wide) in paragraph at lines 513--514
-[]\TU/lmr/m/n/12 Er-stel-lung einer geglät-teten Wahrschein-lichkeits-dichte mi
-t-tels Kerndicht-eschätzung. 
- []
-
-<figures/hist_mc_vs_real_hits.png, id=272, 1148.3703pt x 570.933pt>
-File: figures/hist_mc_vs_real_hits.png Graphic file (type png)
-<use figures/hist_mc_vs_real_hits.png>
-Package luatex.def Info: figures/hist_mc_vs_real_hits.png  used on input line 5
-23.
-(luatex.def)             Requested size: 312.4786pt x 155.35619pt.
-<figures/pvalue_curves.png, id=273, 1293.633pt x 570.933pt>
-File: figures/pvalue_curves.png Graphic file (type png)
-<use figures/pvalue_curves.png>
-Package luatex.def Info: figures/pvalue_curves.png  used on input line 530.
-(luatex.def)             Requested size: 312.4786pt x 137.9066pt.
-<figures/heatmaps_hits.png, id=274, 1170.774pt x 427.8384pt>
-File: figures/heatmaps_hits.png Graphic file (type png)
-<use figures/heatmaps_hits.png>
-Package luatex.def Info: figures/heatmaps_hits.png  used on input line 537.
-(luatex.def)             Requested size: 312.4786pt x 114.18613pt.
-
-Overfull \hbox (17.09949pt too wide) in paragraph at lines 542--545
-[]$\TU/lmtt/m/n/12 https://github.com/DominicReneSchu/public/tree/main/fakten/em
-pirisch/monte_
- []
-
-
-Overfull \hbox (17.09949pt too wide) in paragraph at lines 542--545
-[]$\TU/lmtt/m/n/12 https://github.com/DominicReneSchu/public/blob/main/fakten/em
-pirisch/monte_
- []
-
-
-
-[15]
-
-[16<./figures/hist_mc_vs_real_hits.png><./figures/pvalue_curves.png><./figures/h
-eatmaps_hits.png>]
-Underfull \hbox (badness 2057) in paragraph at lines 555--556
-\TU/lmr/m/n/12 bi-etet RFT ein ro-bustes, inklu-sives Fun-da-ment für in-ter-di
-szi-plinäre Forschung
- []
-
-
-Underfull \hbox (badness 3623) in paragraph at lines 555--556
-\TU/lmr/m/n/12 und trans-for-ma-tive In-no-va-tion. Die sys-temis-che Per-spek-t
-ive markiert einen
- []
-
-
-Overfull \hbox (12.19626pt too wide) in paragraph at lines 564--565
-[]\TU/lmr/m/n/12 Nach-haltige Of-fen-heit und Par-tizipa-tion aller wis-senschaf
-tlichen und gesellschaftlichen
- []
-
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:+tlig;!
-
-Underfull \hbox (badness 4713) in paragraph at lines 573--574
-\TU/lmr/m/n/12 Repos-i-tory []$\TU/lmtt/m/n/12 https://github.com/DominicReneSch
-u/public$[]\TU/lmr/m/n/12 . Dort finden sich
- []
-
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:+tlig;!
-
-Underfull \hbox (badness 1881) in paragraph at lines 573--574
-\TU/lmr/m/n/12 willkom-men – gemäß der Res-o-nanzregel ak-tiviert jede Teil-
-nahme das gesamte
- []
-
-
-Underfull \hbox (badness 1292) in paragraph at lines 573--574
-\TU/lmr/m/n/12 Res-o-nanzfeld. Grup-pen-zuge-hörigkeit bleibt sys-temisch in-va
-ri-ant, inkludiert alle
- []
-
-
-
-[17
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:+tlig;!
-]
-Underfull \hbox (badness 3492) in paragraph at lines 586--587
-[]\TU/lmr/m/n/12 Sys-temisch in-vari-ante Grup-pen-zuge-hörigkeit aller Mit-gli
-eder –
- []
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 601--602
-[]\TU/lmr/m/n/12 Maß geord-neter, phasen-syn-chroner Wech-sel-wirkun-gen, Ba-si
-s sta-biler
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 604--605
-[]\TU/lmr/m/n/12 Kom-plexe Größe des Wider-stands gegen os-zil-la-torische An-
-re-gung,
- []
-
-
-Underfull \hbox (badness 4899) in paragraph at lines 604--605
-\TU/lmr/m/n/12 bes-timmt durch Sys-tem-pa-ra-m-e-ter (Trägheit, Spe-icher-fähi
-gkeit, Of-fen-heit).
- []
-
-
-
-[18]
-Underfull \hbox (badness 2790) in paragraph at lines 607--608
-[]\TU/lmr/m/n/12 Prinzip, dass jede Bezug-nahme auf einen Teil das gesamte
- []
-
-
-Overfull \hbox (13.51297pt too wide) in paragraph at lines 610--611
-[]\TU/lmr/m/n/12 Diskrete Stufen des Kop-plung-sop-er-a-tors, beobacht-
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 619--620
-[]\TU/lmr/m/n/12 Ganzheitliche, of-fene und dy-namis-che Struk-tur aller gekop-p
-el-ten
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 625--626
-[]\TU/lmr/m/n/12 Op-er-a-tor, der auf das Res-o-nanzfeld oder eine Gruppe
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 635--638
-\TU/lmr/m/n/12 Für weit-er-führende Def-i-ni-tio-nen, Il-lus-tra-tio-nen, Op-e
-r-a-torlis-ten und di-dak-tis-che
- []
-
-
-Overfull \hbox (29.45947pt too wide) in paragraph at lines 635--638
-[]$\TU/lmtt/m/n/12 https://github.com/DominicReneSchu/public/blob/main/fakten/do
-cs/definitionen/
- []
-
-
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 647--647
-[]|\TU/lmr/bx/n/12 Quan-ten-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--647
-\TU/lmr/bx/n/12 mechanik
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
-[]|\TU/lmr/bx/n/12 Klas-sis-che
- []
-
-
-Overfull \hbox (68.8441pt too wide) in alignment at lines 645--649
- [][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\TU/lmr/bx/n/12 Quan-ten-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-\TU/lmr/bx/n/12 mechanik
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
-[]|\TU/lmr/bx/n/12 Klas-sis-che
- []
-
-
-Overfull \hbox (68.8441pt too wide) in alignment at lines 649--654
- [][][][][] 
- []
-
-
-Overfull \hbox (68.8441pt too wide) in alignment at lines 654--657
- [][][][][] 
- []
-
-
-Overfull \hbox (68.8441pt too wide) in alignment at lines 657--660
- [][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-[]|\TU/lmr/bx/n/12 Rolle des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-[]|\TU/lmr/m/n/12 Sys-temisch
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 662--662
-\TU/lmr/m/n/12 inkludierter ak-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 un-trennbar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 vom Feld;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-[]|\TU/lmr/m/n/12 Ex-tern; Rolle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 auss-chließlich
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 bei Mes-sung;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 Zu-s-tand-skol-laps
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-[]|\TU/lmr/m/n/12 Ex-tern;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 Bezugssys-teme
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
-\TU/lmr/m/n/12 ohne ak-tiven
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
-\TU/lmr/m/n/12 Ref-eren-zrah-men
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-[]|\TU/lmr/m/n/12 Voll-ständige
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 sys-temis-che
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 Inklu-sion aller
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 Per-spek-tiven;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 Grup-pen-zuge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-[]|\TU/lmr/m/n/12 Tren-nung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 Beobachter-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 System; Mes-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 sung als sin-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-[]|\TU/lmr/m/n/12 In-er-tial-sys-teme
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--665
-\TU/lmr/m/n/12 durch Sym-me-
- []
-
-
-Underfull \hbox (badness 5681) in paragraph at lines 665--666
-[]|\TU/lmr/m/n/12 Felder definiert
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--666
-\TU/lmr/m/n/12 auf statis-chem
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--666
-\TU/lmr/m/n/12 Hin-ter-grun-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 665--666
-\TU/lmr/m/n/12 draum; keine
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 668--668
-[]|\TU/lmr/m/n/12 Kollek-tive Res-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 o-nanz und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 rekur-sive Selb-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 stor-gan-i-sa-tion;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 Emer-genz als
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 sys-temis-ches
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-[]|\TU/lmr/m/n/12 Su-per-po-si-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 Ver-schränkung;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 prob-a-bilis-tis-che
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 Emer-genz bei
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-[]|\TU/lmr/m/n/12 Ge-ometrische
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
-\TU/lmr/m/n/12 Raumzeitkrüm-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
-[]|\TU/lmr/m/n/12 Summe lokaler
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
-\TU/lmr/m/n/12 Ef-fekte; lin-ear
+Underfull \hbox (badness 1038) in paragraph at lines 524--530
+[]\TU/lmr/m/n/12 Die Monte-Carlo-Simulation de-tek-tiert vier bekan-nte Teilchen
+-res-o-nanzen mit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-[]|\TU/lmr/m/n/12 Res-o-nanz-gruppe
+Underfull \hbox (badness 1436) in paragraph at lines 524--530
+\TU/lmr/m/n/12 em-pirischem p-Wert $\OT1/cmr/m/n/12 = 0$\TU/lmr/m/n/12 . Re-so-T
+rade über-trifft HODL in vier Mark-treg-i-men
  []
 
-
-Underfull \hbox (badness 1215) in paragraph at lines 671--671
-\TU/lmr/m/n/12 Bezug auf Per-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-\TU/lmr/m/n/12 spek-tiven und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-[]|\TU/lmr/m/n/12 Sym-me-triegrup-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-\TU/lmr/m/n/12 pen (z.B.
- []
-
-
-Underfull \hbox (badness 6094) in paragraph at lines 671--671
-\TU/lmr/m/n/12 SU(2), SU(3));
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 671--671
-\TU/lmr/m/n/12 Beobachter und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-[]|\TU/lmr/m/n/12 Lorentz- und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-\TU/lmr/m/n/12 Poincaré-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-\TU/lmr/m/n/12 Gruppen;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
-\TU/lmr/m/n/12 Ko-or-di-naten-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--672
-[]|\TU/lmr/m/n/12 Eich-grup-pen;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--672
-\TU/lmr/m/n/12 ex-tern zum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\TU/lmr/m/n/12 Über struk-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\TU/lmr/m/n/12 turi-erte Res-o-
- []
-
-
-Underfull \hbox (badness 2856) in paragraph at lines 674--674
-\TU/lmr/m/n/12 nanzp-fade; nur
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\TU/lmr/m/n/12 bei Mes-sung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\TU/lmr/m/n/12 Be-gren-zung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\TU/lmr/m/n/12 durch Licht-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\TU/lmr/m/n/12 geschwindigkeit;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\TU/lmr/m/n/12 ge-ometrische
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 674--675
-[]|\TU/lmr/m/n/12 Lokale Aus-bre-
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 674--675
-\TU/lmr/m/n/12 itung via Feld-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-[]|\TU/lmr/m/n/12 Durch kollek-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-\TU/lmr/m/n/12 tive Res-o-nanz
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-\TU/lmr/m/n/12 und sys-temis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-\TU/lmr/m/n/12 che Inklu-sion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-\TU/lmr/m/n/12 Eigen-zustände;
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 677--677
-\TU/lmr/m/n/12 Deko-härenz als
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-[]|\TU/lmr/m/n/12 Ge-ometrische
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-[]|\TU/lmr/m/n/12 Sta-bil-ität aus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\TU/lmr/m/n/12 En-ergiebi-lanz
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\TU/lmr/m/n/12 und lin-earen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-[]|\TU/lmr/m/n/12 Ex-plizit pos-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-\TU/lmr/m/n/12 tuliert; rekur-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-\TU/lmr/m/n/12 sive Selb-stak-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-\TU/lmr/m/n/12 tivierung des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-\TU/lmr/m/n/12 Mess-pos-tu-lat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[]|\TU/lmr/bx/n/12 Of-fen-heit/Par-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[]|\TU/lmr/m/n/12 Of-fen und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 inklu-siv; jede
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 Bezug-nahme
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 oder Kri-tik
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 ak-tiviert sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 temisch das
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[]|\TU/lmr/m/n/12 Of-fen-heit nur
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 in-ter-pre-ta-tiv
- []
-
-
-Underfull \hbox (badness 6047) in paragraph at lines 683--683
-\TU/lmr/m/n/12 oder über Er-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[]|\TU/lmr/m/n/12 Of-fen-heit bei
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 Wahl des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 Bezugssys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\TU/lmr/m/n/12 tems; keine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
-[]|\TU/lmr/m/n/12 Geschlossener
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
-\TU/lmr/m/n/12 For-mal-is-mus,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
-\TU/lmr/m/n/12 Of-fen-heit nur
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
-\TU/lmr/m/n/12 über Randbe-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-[]|\TU/lmr/m/n/12 Sys-temis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 ches Ax-iom:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 Grup-pen-zuge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 hörigkeit und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 Fel-dak-tivierung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 in-vari-ant
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 686--686
-\TU/lmr/m/n/12 gegenüber allen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 Per-spek-tiven
- []
-
-
-Underfull \hbox (badness 6445) in paragraph at lines 686--686
-\TU/lmr/m/n/12 und Bezug-nah-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-[]|\TU/lmr/m/n/12 Nicht vorhan-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\TU/lmr/m/n/12 den; Sym-me-
- []
-
-
-Underfull \hbox (badness 6808) in paragraph at lines 686--686
-\TU/lmr/m/n/12 trien gekop-pelt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-[]|\TU/lmr/m/n/12 Nicht vorhan-
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 686--686
-\TU/lmr/m/n/12 den; In-var-i-anz
- []
-
-
-Underfull \hbox (badness 6842) in paragraph at lines 686--687
-[]|\TU/lmr/m/n/12 Nicht definiert;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
-\TU/lmr/m/n/12 turell nicht
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-[]|\TU/lmr/m/n/12 Dy-namis-che
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-\TU/lmr/m/n/12 Rekon-fig-u-ra-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-\TU/lmr/m/n/12 Ler-nen und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-[]|\TU/lmr/m/n/12 Adap-tiv-ität
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 689--689
-\TU/lmr/m/n/12 durch Mes-sung;
- []
-
-
-Underfull \hbox (badness 7099) in paragraph at lines 689--689
-[]|\TU/lmr/m/n/12 Beschränkt auf
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 689--689
-\TU/lmr/m/n/12 Geometrie- und
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-\TU/lmr/m/n/12 Ko-or-di-naten-
- []
-
-
-Underfull \hbox (badness 7344) in paragraph at lines 689--690
-[]|\TU/lmr/m/n/12 An-pas-sung nur
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
-\TU/lmr/m/n/12 durch Randbe-
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 689--690
-\TU/lmr/m/n/12 din-gun-gen oder
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
-\TU/lmr/m/n/12 ex-terne An-re-
- []
-
-
-Underfull \hbox (badness 2318) in paragraph at lines 692--692
-\TU/lmr/m/n/12 Emer-genz, Grup-pen-struk-tur, In-for-ma-tions-fluss, Sta-
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 692--692
-\TU/lmr/m/n/12 Adap-tiv-ität. In der RFT gewährleis-tet die Res-o-
- []
-
-
-Overfull \hbox (68.8441pt too wide) in alignment at lines 660--694
- [][][][][] 
- []
 
-[20] [21]
 
 
 <QR code requested for "https://github.com/DominicReneSchu/public" in version 0
@@ -1485,9 +501,7 @@ Overfull \hbox (68.8441pt too wide) in alignment at lines 660--694
  3-M as previously calculated.>
 
 
-[22]
-
-[23] (./rft_manuskript_de_iop.aux
+[8] (./rft_manuskript_de_iop.aux
 <Reading QR code for "https://github.com/DominicReneSchu/public" at level 3-M f
 rom aux file.>
 )
@@ -1496,20 +510,19 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
 Package rerunfilecheck Info: File `rft_manuskript_de_iop.out' has not changed.
-(rerunfilecheck)             Checksum: B627116CB6F9C73C48711D0D1628A21D;8168.
+(rerunfilecheck)             Checksum: 422139D10B35FB16085CEC96DCA04063;4368.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11483 strings out of 470203
- 156270,662416 words of node,token memory allocated
- 645 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 3 glue, 3 kern, 1 glyph, 27 attribute, 58 glue_spec
-, 27 attribute_list, 1 write, 15 pdf_action nodes
-   avail lists: 1:1,2:2152,3:530,4:66,5:518,6:116,7:9146,8:106,9:5564,10:20,11:7
-59
- 39554 multiletter control sequences out of 65536+600000
- 50 fonts using 3583471 bytes
- 72i,7n,75p,1028b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 11951 strings out of 470203
+ 125009,662416 words of node,token memory allocated
+ 446 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 54 glue_spec,
+ 5 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 2:2144,3:253,4:52,5:475,6:121,7:7946,8:73,9:5376,10:21,11:659
+ 40027 multiletter control sequences out of 65536+600000
+ 67 fonts using 4634695 bytes
+ 72i,12n,75p,950b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/info/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
 italic.otf><c:/users/info/appdata/local/programs/miktex/fonts/opentype/public/lm
 /lmroman12-italic.otf><c:/users/info/appdata/local/programs/miktex/fonts/opentyp
@@ -1524,22 +537,19 @@ m/cmbx12.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmmi12.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/info/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/info/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/info/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/info/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/info/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
-info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/U
-sers/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8
-.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy5.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb>
-Output written on rft_manuskript_de_iop.pdf (23 pages, 739071 bytes).
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/info/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/info/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/info/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/info/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/info/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/i
+nfo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/U
+sers/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam
+10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on rft_manuskript_de_iop.pdf (8 pages, 389625 bytes).
 
-PDF statistics: 461 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 131072)
- 289 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 296 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 131072)
+ 177 words of extra memory for PDF output out of 10000 (max. 100000000)
 
