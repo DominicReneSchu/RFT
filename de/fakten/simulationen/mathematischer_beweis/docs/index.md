@@ -1,112 +1,151 @@
-# Resonanzfeldtheorie – Python Toolkit
+# Resonanzfeldtheorie — Numerische Analyse (API-Dokumentation)
 
-Willkommen zur offiziellen Dokumentation des Python-Toolkits zur **Resonanzfeldtheorie**.  
-Dieses Paket ermöglicht die numerische Simulation, Analyse und Visualisierung von Resonanzphänomenen gemäß der Theorie von Dominic-René Schu.
-
----
-
-## Übersicht
-
-- **Berechnung der Resonanzenergie** auf Basis normierter Amplitude (A), Temperatur (T), Eigenfrequenz (omega₀) und Dämpfung (gamma).
-- **Entropie-Berechnung** als Maß für die Ordnung im Resonanzfeld.
-- **Batch- und Parameterstudien**: Systematische Scans und Export der Ergebnisse.
-- **Modulare Struktur**: Leicht erweiterbar für neue Modelle, Kopplungen und Visualisierungen.
-- **Wissenschaftlicher Standard**: Typisierung, Fehlerprüfung und klare Dokumentation.
-- **Interaktive Notebooks** und Visualisierungsmöglichkeiten.
+Python-Toolkit zur numerischen Simulation und Visualisierung
+der Resonanzfeldtheorie: Resonanzenergie (Lorentz-Profil),
+Kopplungseffizienz und Resonanzentropie.
 
 ---
 
 ## Installation
 
 ```bash
-pip install numpy matplotlib pandas
+pip install numpy matplotlib
 ```
-
-(Optionale Visualisierung: `seaborn`)
 
 ---
 
-## Erste Schritte
-
-### 1. Import
-
-```python
-from schu_resonanzfeld import (
-    berechne_resonanzenergie,
-    berechne_resonanzentropie,
-    plot_resonanzfeld,
-)
-```
-
-### 2. Beispiel: Resonanzfeld berechnen und plotten
+## Schnellstart
 
 ```python
 import numpy as np
+from resonanzfeld import (
+    berechne_resonanzenergie,
+    berechne_kopplungseffizienz,
+    berechne_resonanzentropie,
+    plot_resonanzfeld,
+)
 
 A = np.linspace(0.1, 5.0, 500)
-T = np.linspace(0.1, 5.0, 500)
+tau = np.linspace(0.1, 5.0, 500)
 
-E_res, T_grid, A_grid = berechne_resonanzenergie(A, T)
-S = berechne_resonanzentropie(E_res)
+E_res, tau_grid, A_grid = berechne_resonanzenergie(A, tau)
+eps = berechne_kopplungseffizienz(E_res, A_grid)
+S = berechne_resonanzentropie(eps)
 
-plot_resonanzfeld(T_grid, A_grid, E_res, S)
+plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S,
+                  save_path="plot.png")
 ```
-
-### 3. Batch-Studien und CSV-Export
-
-Siehe [examples/demo_batch_study.ipynb](../examples/demo_batch_study.ipynb) für eine Schritt-für-Schritt-Anleitung.
 
 ---
 
 ## API-Referenz
 
-### `berechne_resonanzenergie(A, T, omega_0=1.0, gamma=0.2)`
+### `berechne_resonanzenergie(A, tau, omega_0=1.0, gamma=0.2)`
 
-Berechnet das Resonanzfeld für die Gitter aus $A$ und $T$.
+Resonanzenergie als Lorentz-Profil über dem (A, τ)-Gitter.
+
+$$
+E_{\mathrm{res}} = \frac{A}{1 + \left(\frac{\omega_{\mathrm{ext}} - \omega_0}{\gamma}\right)^2}
+$$
+
+mit ω_ext = ω₀ · (1 + sin(τ)).
 
 **Parameter:**
-- `A` (`ndarray`): Amplituden (1D, positiv)
-- `T` (`ndarray`): Temperaturen (1D, positiv)
-- `omega_0` (`float`): Eigenfrequenz (Standard: 1.0)
-- `gamma` (`float`): Dämpfung (Standard: 0.2)
 
-**Rückgabe:**
-- `E_res` (`ndarray`): Resonanzenergie
-- `T_grid`, `A_grid` (`ndarray`): Gitter für $T$ und $A$
+| Name | Typ | Beschreibung |
+|------|-----|-------------|
+| `A` | ndarray (1D) | Amplituden, positiv |
+| `tau` | ndarray (1D) | Verstimmungsparameter, positiv |
+| `omega_0` | float | Eigenfrequenz (Default: 1.0) |
+| `gamma` | float | Dämpfungskonstante (Default: 0.2) |
 
----
+**Rückgabe:** `(E_res, tau_grid, A_grid)` — jeweils 2D-Arrays
 
-### `berechne_resonanzentropie(E_res)`
-
-Berechnet die Resonanzentropie S = –E_res · ln(E_res).
-
-**Parameter:**  
-- `E_res` (`ndarray`): Resonanzenergie (muss > 0 sein)
-
-**Rückgabe:**  
-- `S` (`ndarray`): Entropie
+**Raises:** `ValueError` bei negativen Werten oder nicht-1D-Input
 
 ---
 
-### `plot_resonanzfeld(T_grid, A_grid, E_res, S, save_path=None, show=True)`
+### `berechne_kopplungseffizienz(E_res, A_grid)`
 
-3D-Visualisierung der Resonanzenergie und Entropie.
+Kopplungseffizienz als normierte Resonanzenergie (Axiom A4).
 
-**Parameter:**  
-- `T_grid`, `A_grid`: Gitter (wie aus `berechne_resonanzenergie`)
-- `E_res`, `S`: Felder
-- `save_path` (optional): Dateiname für PNG-Speicherung
-- `show` (optional): Anzeigeplot (Standard: `True`)
+$$
+\varepsilon = \frac{E_{\mathrm{res}}}{A} \in (0, 1]
+$$
+
+Amplitudenunabhängig — zeigt die reine Resonanzstruktur.
+
+**Parameter:**
+
+| Name | Typ | Beschreibung |
+|------|-----|-------------|
+| `E_res` | ndarray | Resonanzenergie |
+| `A_grid` | ndarray | Amplituden-Gitter |
+
+**Rückgabe:** `eps` — ndarray, geclippt auf (1e-8, 1.0]
 
 ---
 
-## Lizenz
+### `berechne_resonanzentropie(eps)`
 
-Dein Beitrag steht unter derselben Lizenz wie das Hauptprojekt (siehe [README.md](../../../../README.md)).
+Resonanzentropie als Informationsmaß über der
+Kopplungseffizienz (Axiom A5).
 
-© Dominic Schu, 2025 – Alle Rechte vorbehalten.  
-Nutzung für Forschungs- und Bildungszwecke gestattet.
+$$
+S = -\varepsilon \cdot \ln(\varepsilon), \quad \varepsilon \in (0, 1]
+$$
+
+S ≥ 0 garantiert. Maximum bei ε = 1/e ≈ 0.368.
+
+**Parameter:**
+
+| Name | Typ | Beschreibung |
+|------|-----|-------------|
+| `eps` | ndarray | Kopplungseffizienz ∈ (0, 1] |
+
+**Rückgabe:** `S` — ndarray
 
 ---
 
-➡️ [zurück](../README.md)
+### `plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S, save_path=None, show=True)`
+
+Drei 3D-Oberflächen: E_res, ε, S.
+
+**Parameter:**
+
+| Name | Typ | Beschreibung |
+|------|-----|-------------|
+| `tau_grid` | ndarray | Verstimmungs-Gitter |
+| `A_grid` | ndarray | Amplituden-Gitter |
+| `E_res` | ndarray | Resonanzenergie |
+| `eps` | ndarray | Kopplungseffizienz |
+| `S` | ndarray | Resonanzentropie |
+| `save_path` | str, optional | PNG-Dateipfad |
+| `show` | bool | Plot anzeigen (Default: True) |
+
+---
+
+## Tests
+
+```bash
+cd mathematischer_beweis
+pytest tests/
+```
+
+---
+
+## Axiom-Bezug
+
+| Funktion | Axiom | Was wird berechnet |
+|----------|-------|-------------------|
+| `berechne_resonanzenergie` | A3 | Lorentz-Resonanzkurve |
+| `berechne_kopplungseffizienz` | A4 | ε = E_res / A |
+| `berechne_resonanzentropie` | A5 | S = −ε·ln(ε) |
+
+---
+
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
+
+---
+
+⬅️ [zurück](../README.md)
