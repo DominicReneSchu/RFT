@@ -26,7 +26,7 @@
 
 Die resonanzlogische Differentialgleichung (rDGL) baut auf
 folgenden Axiomen der RFT auf
-(siehe [axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md)):
+(siehe [axiomatische Grundlegung](axiomatische_grundlegung.md)):
 
 - **Axiom 1 (Universelle Schwingung):** Jede Entität besitzt
   periodische Schwingungsmoden → der Zustand x(t) ist
