@@ -2,5 +2,8 @@ numpy
 scipy
 matplotlib
 pytest
-numba
-cupy
+
+# Optional (GPU-Beschleunigung, nur mit CUDA):
+# cupy
+# Optional (CPU-Parallelisierung):
+# numba
