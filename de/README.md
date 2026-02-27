@@ -120,8 +120,8 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 | # | Dokument | Beschreibung |
 |---|----------|-------------|
-| 1 | [Axiomatische Grundlegung](fakten/docs/mathematik/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
-| 2 | [Kopplungseffizienz ε](fakten/docs/mathematik/kopplungseffizienz.md) | Vereinheitlichte Definition der zentralen Größe |
+| 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
+| 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | Vereinheitlichte Definition der zentralen Größe |
 | 3 | [RFT-Übersicht und Kopplungsoperator](fakten/docs/definitionen/paper_resonanzfeldtheorie.md) | Gesamtübersicht der Theorie |
 | 4 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
 | 5 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
