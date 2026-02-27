@@ -67,7 +67,7 @@ Der Faktor π entsteht aus der Integration der Kopplungseffizienz
 über einen Halbzyklus des Phasenraums — nicht als freier Parameter.
 Die klassische Planck-Gleichung E = h·f ist der Spezialfall ε = 1/π.
 
-Vollständige Definition: [Kopplungseffizienz](fakten/docs/mathematik/kopplungseffizienz.md)
+Vollständige Definition: [Kopplungseffizienz](fakten/docs/definitionen/kopplungseffizienz.md)
 
 ---
 
