@@ -311,8 +311,9 @@
 	\label{sec:empirics}
 	%% ============================================================
 	
-	Die RFT wird an zwei unabh\"angigen Dom\"anen gepr\"uft:
-	Teilchenphysik (Abschnitt~\ref{sec:monte_carlo}) und
+	Die RFT wird an drei unabh\"angigen Dom\"anen gepr\"uft:
+	Teilchenphysik (Abschnitt~\ref{sec:monte_carlo}),
+	Kosmologie (Abschnitt~\ref{sec:flrw}) und
 	Finanzm\"arkte (Abschnitt~\ref{sec:resotrade}).
 	
 	\subsection{Monte-Carlo-Simulation auf CMS-Dielectron-Daten}
@@ -449,6 +450,15 @@
 		(\texttt{energy\_dir = e\_short - e\_long})
 		\item A6: Resonanz-Gate (Trades nur in Phase)
 	\end{itemize}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/plot.png}
+		\caption{ResoTrade V11.1 Performance \"uber 24~Monate:
+			Equity-Kurve gegen\"uber HODL in vier Marktregimen.}
+		\label{fig:resotrade}
+	\end{figure}
 		
 	%% ============================================================
 	\subsection{Gekoppelte FLRW-Simulation: Kosmologische Validierung}
@@ -521,6 +531,29 @@
 	Die Hubble-Reibung ($3H\dot{\varepsilon}$-Term) reduziert
 	$\eta$ systematisch unter $\cos^2(\Delta\varphi/2)$.
 	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/figure_1.png}
+		\caption{Gekoppeltes FLRW-Resonanzfeld: Sechs-Panel-Darstellung
+			mit Resonanzfeldern $\varepsilon_1(t)$, $\varepsilon_2(t)$,
+			Phasendifferenz, Kopplungseffizienz~$\eta$,
+			Skalenfaktor~$a(t)$, Hubble-Parameter~$H(t)$ und
+			Energiedichten.}
+		\label{fig:flrw_coupled}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/figure_2.png}
+		\caption{Phasenscan \"uber 20 initiale Phasendifferenzen
+			$\Delta\varphi_0$: Simulationspunkte (blau) folgen der
+			analytischen $\cos^2$-Kurve (rot) mit mittlerer
+			Abweichung $d_\eta = 0{,}1394$.}
+		\label{fig:phase_scan}
+	\end{figure}
+	
 	\subsubsection{Stufe 6a: Kosmologische Skalierung.}
 	
 	Ein $H_0$-Scan \"uber 330~Einzelsimulationen
@@ -560,6 +593,30 @@
 	Die Differenz $\Delta d_\eta = 0{,}0114$ zwischen
 	Planck~\cite{planck2018vi} und SH0ES~\cite{riess2022}
 	stellt eine prinzipiell pr\"ufbare Vorhersage dar.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/h0_scan.png}
+		\caption{$H_0$-Scan \"uber 330~Simulationen. Links:
+			$d_\eta$ als Funktion von~$H_0$ mit linearem Fit,
+			Planck- und SH0ES-Markierungen. Rechts: Phasenscans
+			bei verschiedenen $H_0$-Werten -- st\"arkere Expansion
+			verschiebt $\eta$ systematisch unter $\cos^2$.}
+		\label{fig:h0_scan}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/hubble_tension.png}
+		\caption{Resonanzfeld-Signatur der Hubble-Spannung:
+			Die Differenz $\Delta d_\eta = 0{,}0114$ zwischen
+			Planck ($H_0 = 67{,}4 \pm 0{,}5$) und SH0ES
+			($H_0 = 73{,}0 \pm 1{,}0$) ist die erste quantitative
+			Vorhersage der RFT f\"ur eine kosmologische Observable.}
+		\label{fig:hubble_tension}
+	\end{figure}
 	
 	\subsubsection{Stufe 6b: Vergleich mit Planck-2018-CMB-Daten.}
 	
@@ -614,6 +671,29 @@
 		\item A5: $a(t)$ reagiert auf Gesamtenergiedichte
 		\item A7: Ergebnisse stabil \"uber 330~Simulationen
 	\end{itemize}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/cmb_comparison.png}
+		\caption{CMB-Vergleich mit Planck-2018-Daten
+			(83~Punkte, $\ell = 764$--$1280$). Oben: TT-Spektrum
+			mit $\Lambda$CDM-Best-Fit und Resonanzfeld-Korrektur.
+			Mitte: Residuen. Unten: $\eta$-Korrektursignal vs.\
+			Planck-Residuen.}
+		\label{fig:cmb_comparison}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]%
+		{figures/cmb_chi2_scan.png}
+		\caption{$\chi^2$-Analyse. Links: $\chi^2(H_0)$ f\"ur
+			$\Lambda$CDM und Resonanzfeld. Rechts:
+			$\Delta\chi^2(H_0)$ -- die $\eta$-Korrektur verbessert
+			den Fit \"uber den gesamten $H_0$-Bereich.}
+		\label{fig:cmb_chi2}
+	\end{figure}
 	
 	
 	%% ============================================================
