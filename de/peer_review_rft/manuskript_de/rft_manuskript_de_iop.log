@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  27 FEB 2026 16:06
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  27 FEB 2026 16:10
  restricted system commands enabled.
 **rft_manuskript_de_iop.tex
 (./rft_manuskript_de_iop.tex
@@ -389,13 +389,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 (C:/Users/info/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1226) in paragraph at lines 65--73
+Underfull \hbox (badness 1226) in paragraph at lines 73--81
 \TU/lmr/m/n/12 cher Sys-teme pos-tuliert. Die RFT for-muliert sieben Ax-iome, au
 s de-nen eine
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 74--79
+Underfull \hbox (badness 3428) in paragraph at lines 82--87
 []\TU/lmr/m/n/12 Im Un-ter-schied zu beste-hen-den An-sätzen zielt die RFT nich
 t auf eine
  []
@@ -405,39 +405,39 @@ t auf eine
 [1
 
 {C:/Users/info/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 1810) in paragraph at lines 92--96
+Underfull \hbox (badness 1810) in paragraph at lines 103--107
 \TU/lmr/m/n/12 Die RFT basiert auf sieben hi-er-ar-chisch aufge-bauten Ax-iomen.
  Die Ax-iome
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 92--96
+Underfull \hbox (badness 1668) in paragraph at lines 103--107
 \TU/lmr/m/n/12 sind nicht un-ab-hängig, son-dern kon-sti-tu-tiv ver-schränkt: A1--A3 definieren die
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 141--145
-\TU/lmr/m/n/12 mit dem phasen-ab-hängi-gen Kop-plung-sop-er-a-tor $\OML/cmm/m/
-it/12 "\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 [0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1]$\TU/lmr/m/n/12 , wobei $\OT1/cmr/m/n/12 \OML/cmm/m/it/12 '$ \TU/lmr/m/n/12 die
  []
 
 
 
 [2]
-Underfull \hbox (badness 1721) in paragraph at lines 219--225
+Underfull \hbox (badness 1635) in paragraph at lines 152--156
+\TU/lmr/m/n/12 mit dem phasen-ab-hängi-gen Kop-plung-sop-er-a-tor $\OML/cmm/m/
+it/12 "\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 [0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1]$\TU/lmr/m/n/12 , wobei $\OT1/cmr/m/n/12 \OML/cmm/m/it/12 '$ \TU/lmr/m/n/12 die
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 230--236
 \TU/lmr/m/n/12 Die zen-trale Gle-ichung ([]4[]) er-weit-ert die Planck-Relation $\OML/cmm/m/it/12 E \OT1/cmr/m/n/12 = \U/msb/m/n/12 ~\OML/cmm/m/it/12 !$ \TU/lmr/m/n/12 um einen
  []
 
 
 
 [3]
-Underfull \hbox (badness 2970) in paragraph at lines 239--242
+Underfull \hbox (badness 2970) in paragraph at lines 250--253
 \TU/lmr/m/n/12 Die RFT vere-in-heitlicht klas-sis-che Dif-fer-en-tial-gle-ichun-
 gen als Spezialfälle einer
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 271--276
+Underfull \hbox (badness 1242) in paragraph at lines 282--287
 \TU/lmr/m/n/12 Die binäre Res-o-nanzre-la-tion $\OML/cmm/m/it/12 R \OMS/cmsy/m
 /n/12  G  G$ \TU/lmr/m/n/12 ist eine Äquiv-alen-zre-la-tion (re-flexiv,
  []
@@ -445,36 +445,37 @@ Underfull \hbox (badness 1242) in paragraph at lines 271--276
 
 
 [4]
-<figures/hist_mc_vs_real_hits.png, id=168, 1292.9103pt x 715.473pt>
+<figures/hist_mc_vs_real_hits.png, id=170, 1292.9103pt x 715.473pt>
 File: figures/hist_mc_vs_real_hits.png Graphic file (type png)
 <use figures/hist_mc_vs_real_hits.png>
 Package luatex.def Info: figures/hist_mc_vs_real_hits.png  used on input line 3
-63.
+74.
 (luatex.def)             Requested size: 312.4786pt x 172.91792pt.
-<figures/pvalue_curves.png, id=169, 1292.9103pt x 715.473pt>
+<figures/pvalue_curves.png, id=171, 1292.9103pt x 715.473pt>
 File: figures/pvalue_curves.png Graphic file (type png)
 <use figures/pvalue_curves.png>
-Package luatex.def Info: figures/pvalue_curves.png  used on input line 373.
+Package luatex.def Info: figures/pvalue_curves.png  used on input line 384.
 (luatex.def)             Requested size: 312.4786pt x 172.91792pt.
-<figures/heatmaps_hits.png, id=170, 1190.2869pt x 427.8384pt>
+<figures/heatmaps_hits.png, id=172, 1190.2869pt x 427.8384pt>
 File: figures/heatmaps_hits.png Graphic file (type png)
 <use figures/heatmaps_hits.png>
-Package luatex.def Info: figures/heatmaps_hits.png  used on input line 384.
+Package luatex.def Info: figures/heatmaps_hits.png  used on input line 395.
 (luatex.def)             Requested size: 312.4786pt x 112.31252pt.
 
-
-[5<./figures/hist_mc_vs_real_hits.png>]
-Underfull \hbox (badness 1642) in paragraph at lines 427--432
+Underfull \hbox (badness 1642) in paragraph at lines 438--443
 []\TU/lmr/m/n/12 Kein klas-sis-cher In-dika-tor (RSI, MACD, Bollinger) er-re-ich
 t auf dem-sel-ben
  []
 
 
 
-[6<./figures/pvalue_curves.png><./figures/heatmaps_hits.png>]
+[5]
+
+[6<./figures/hist_mc_vs_real_hits.png><./figures/pvalue_curves.png><./figures/he
+atmaps_hits.png>]
 
 [7]
-Underfull \hbox (badness 1867) in paragraph at lines 581--589
+Underfull \hbox (badness 1867) in paragraph at lines 592--600
 \TU/lmr/bx/n/12 In-ter-pre-ta-tion: \TU/lmr/m/n/12 Die $\OML/cmm/m/it/12 $\TU/
 lmr/m/n/12 -Korrektur \TU/lmr/m/it/12 verbessert \TU/lmr/m/n/12 den Fit um $\OT
 1/cmr/m/n/12 \OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 = +16[]0$ \TU/lmr/m/n/12 bei
@@ -483,7 +484,7 @@ lmr/m/n/12 -Korrektur \TU/lmr/m/it/12 verbessert \TU/lmr/m/n/12 den Fit um $\OT
 
 
 [8]
-Underfull \hbox (badness 3029) in paragraph at lines 652--655
+Underfull \hbox (badness 3029) in paragraph at lines 695--698
 []\TU/lmr/bx/n/12 Neue Vorher-sagen: \TU/lmr/m/n/12 Die RFT muss eine bisher un-
 bekan-nte Res-o-nanz
  []
@@ -491,7 +492,7 @@ bekan-nte Res-o-nanz
 
 
 [9]
-Underfull \hbox (badness 2837) in paragraph at lines 707--714
+Underfull \hbox (badness 2837) in paragraph at lines 763--770
 []\TU/lmr/m/n/12 Für wis-senschaftliche An-erken-nung als physikalis-che The-o-
 rie fehlen: eine
  []
@@ -519,15 +520,15 @@ Package rerunfilecheck Info: File `rft_manuskript_de_iop.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11984 strings out of 470203
- 125009,662416 words of node,token memory allocated
+ 11986 strings out of 470203
+ 156270,662416 words of node,token memory allocated
  446 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 54 glue_spec,
  5 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 2:2210,3:245,4:60,5:478,6:123,7:7947,8:73,9:5384,10:21,11:659
+   avail lists: 2:2314,3:319,4:56,5:509,6:136,7:8653,8:73,9:5460,10:18,11:692
  40044 multiletter control sequences out of 65536+600000
  68 fonts using 4765263 bytes
- 72i,12n,75p,950b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,75p,950b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/info/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
 italic.otf><c:/users/info/appdata/local/programs/miktex/fonts/opentype/public/lm
 /lmromancaps10-regular.otf><c:/users/info/appdata/local/programs/miktex/fonts/op
@@ -543,19 +544,21 @@ ublic/amsfonts/cm/cmbx12.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/info/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/info/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/info/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/info/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/in
-fo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Use
-rs/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/symbols/msam10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on rft_manuskript_de_iop.pdf (10 pages, 412717 bytes).
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/info/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/info/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/in
+fo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
+ers/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/symbols/msam10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on rft_manuskript_de_iop.pdf (10 pages, 433176 bytes).
 
-PDF statistics: 345 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 131072)
+PDF statistics: 353 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 131072)
  217 words of extra memory for PDF output out of 10000 (max. 100000000)
 
