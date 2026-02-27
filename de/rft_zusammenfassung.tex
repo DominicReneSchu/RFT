@@ -11,11 +11,10 @@
 \usepackage{tikz}
 \usepackage{qrcode}
 \usepackage{background}
-\usepackage{booktabs}
 
 \setlength{\parindent}{0pt}
 
-% Wasserzeichen
+% Wasserzeichen Einstellungen
 \backgroundsetup{
 	scale=1,
 	color=black!15,
@@ -26,308 +25,384 @@
 	hshift=0pt,
 	contents={%
 		\Huge
-		Dominic-Ren\'{e} Schu --- \today --- \url{https://github.com/DominicReneSchu/public}
+		Dominic-Ren\'e Schu --- \today --- \url{https://github.com/DominicReneSchu/public}
 	}
 }
 
-\title{Zusammenfassung der Resonanzfeldtheorie\\
-	und empirischer Ergebnisse}
-\author{Dominic-Ren\'{e} Schu\\[0.3em]
-	\small Unabh\"{a}ngiger Forscher, Deutschland\\
-	\small ORCID: 0009-0004-9769-9061\\
-	\small \href{mailto:dominic.rene.schu@gmail.com}{dominic.rene.schu@gmail.com}}
+\title{Zusammenfassung der Resonanzfeldtheorie \\ und empirischer Ergebnisse}
+\author{Dominic-Ren\'e Schu}
 \date{\today}
 
 \begin{document}
 	
 	\BgThispage
+	
 	\maketitle
 	
 	% QR-Code unten rechts
 	\begin{tikzpicture}[remember picture,overlay]
-		\node[anchor=south east,xshift=-1cm,yshift=1cm] at (current page.south east)
+		\node[anchor=south east,xshift=-1cm,yshift=1cm]
+		at (current page.south east)
 		{\qrcode{https://github.com/DominicReneSchu/public}};
 	\end{tikzpicture}
 	
+	\tableofcontents
+	\newpage
+	
 	%% ============================================================
-	\section*{Einleitung}
+	\section{Einleitung und Zielsetzung}
 	%% ============================================================
 	
 	Die Resonanzfeldtheorie (RFT) ist ein axiomatisches Rahmenwerk,
 	das Schwingungskopplung als universelles Organisationsprinzip
-	physikalischer und systemischer Ph\"{a}nomene beschreibt. Sie
-	formuliert sieben Axiome, aus denen eine parametrische
-	Erweiterung der Quantenmechanik, eine vereinheitlichte
-	Differentialgleichungsstruktur und prüfbare empirische
-	Vorhersagen folgen.
+	physikalischer und systemischer Ph\"anomene beschreibt.
+	Ziel ist eine parametrische Erweiterung der Planck-Relation,
+	die Resonanzph\"anomene \"uber Skalen und Dom\"anen hinweg
+	einheitlich erfasst -- von Teilchenphysik \"uber Kosmologie
+	bis zu Finanzm\"arkten.
 	
-	Dieses Dokument fasst Theorie, Methodik und Ergebnisse zusammen.
-	Alle Herleitungen, Quellcodes und Daten sind offen verf\"{u}gbar
-	unter \url{https://github.com/DominicReneSchu/public}.
+	Dieses Dokument fasst die theoretischen Grundlagen, die
+	Methodik und die empirischen Ergebnisse zusammen. Das
+	vollst\"andige Manuskript im IOP-Format ist unter
+	\texttt{rft\_manuskript\_de\_iop.tex} verf\"ugbar.
+	Alle Herleitungen, Quellcodes und Daten sind offen
+	zug\"anglich unter
+	\url{https://github.com/DominicReneSchu/public}.
+	
+	Philosophische und metaphysische Erweiterungen der RFT
+	sind in einem separaten Dokument dokumentiert
+	(\texttt{RFT\_Philosophie.tex}) und explizit als
+	spekulative Perspektiven gekennzeichnet.
 	
 	%% ============================================================
-	\section*{Axiomatische Grundlegung}
+	\section{Theoretischer Hintergrund}
 	%% ============================================================
 	
-	Die RFT basiert auf sieben Axiomen, die hierarchisch aufgebaut sind:
+	Die RFT formuliert sieben hierarchisch aufgebaute Axiome
+	(A1--A7), aus denen die zentrale
+	\textit{Resonanzfeld-Gleichung} folgt:
+	\begin{equation}
+		E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
+	\end{equation}
+	Dabei ist:
+	\begin{itemize}
+		\item $\pi$ die Kreiszahl als Ma\ss{} zyklischer Struktur,
+		\item $\hbar$ das reduzierte plancksche Wirkungsquantum,
+		\item $f$ die Resonanzfrequenz des Systems,
+		\item $\varepsilon(\Delta\varphi) \in [0,1]$ der
+		phasenabh\"angige \textbf{Kopplungsoperator}, der die
+		St\"arke der Resonanzkopplung zwischen zwei Systemen
+		als Funktion ihrer Phasendifferenz $\Delta\varphi$
+		beschreibt.
+	\end{itemize}
+	
+	\subsection{Begriffsunterscheidung}
+	
+	\begin{itemize}
+		\item \textbf{Kopplungsoperator}
+		$\varepsilon(\Delta\varphi)$:
+		Dimensionsloser Parameter in der Grundformel.
+		Einfachstes Modell:
+		$\varepsilon = \frac{1}{2}(1 + \cos\Delta\varphi)$.
+		Grenzwerte: $\varepsilon = 0$ (Antiresonanz,
+		destruktive Interferenz),
+		$\varepsilon = 1$ (vollst\"andige Phasenkoh\"arenz).
+		\item \textbf{Kopplungseffizienz}
+		$\eta(\Delta\varphi)$:
+		Messgr\"o\ss{}e in den FLRW-Simulationen. Wird aus dem
+		zeitgemittelten Kreuzterm zweier gekoppelter Skalarfelder
+		extrahiert. Analytische Erwartung:
+		$\eta_{\mathrm{theo}} = \cos^2(\Delta\varphi/2)$.
+		$\eta$ emergiert als Observable, $\varepsilon$ ist der
+		theoretische Operator.
+	\end{itemize}
+	
+	\subsection{Spezialfall Planck}
+	
+	F\"ur $\varepsilon = 1/(2\pi)$ folgt
+	$E = \frac{1}{2}\hbar f$, konsistent mit der
+	Grundzustandsenergie des harmonischen Oszillators.
+	Die Planck-Relation $E = \hbar\omega$ ist damit ein
+	Spezialfall der RFT-Grundformel.
+	
+	\subsection{Die sieben Axiome}
 	
 	\begin{enumerate}
-		\item[\textbf{A1}] \textbf{Universelle Schwingung.}
-		Jede physikalische Entit\"{a}t ist durch eine
-		Schwingungsfunktion $\psi(x,t)$ beschreibbar.
-		
-		\item[\textbf{A2}] \textbf{Superposition und Interferenz.}
-		Schwingungen \"{u}berlagern sich linear:
-		$\Psi = \sum_i \psi_i$.
-		
-		\item[\textbf{A3}] \textbf{Resonanzbedingung.}
-		Kopplung zwischen Systemen tritt auf, wenn ihre Frequenzen
-		in rationalem Verh\"{a}ltnis stehen:
-		$f_1/f_2 = n/m$, \; $n,m \in \mathbb{Z}^+$.
-		
-		\item[\textbf{A4}] \textbf{Kopplungsenergie.}
-		Die durch Resonanz \"{u}bertragene Energie ist:
-		\begin{equation}
-			E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
-			\label{eq:grundformel}
-		\end{equation}
-		mit dem phasenabh\"{a}ngigen Kopplungsoperator
-		$\varepsilon(\Delta\varphi) \in [0,1]$.
-		
-		\item[\textbf{A5}] \textbf{Energierichtung.}
-		Energie ist eine vektorielle Gr\"{o}\ss{}e mit Betrag und
-		Richtung im Resonanzfeld.
-		
-		\item[\textbf{A6}] \textbf{Informationsfluss.}
-		Information propagiert ausschlie\ss{}lich entlang koh\"{a}renter
-		Resonanzpfade (Phasen- und Frequenzsynchronisation).
-		
-		\item[\textbf{A7}] \textbf{Invarianz.}
+		\item[A1] \textbf{Universelle Schwingung:}
+		Jede physikalische Entit\"at ist durch eine
+		Schwingungsfunktion beschreibbar.
+		\item[A2] \textbf{Superposition und Interferenz:}
+		Schwingungen \"uberlagern sich linear.
+		\item[A3] \textbf{Resonanzbedingung:}
+		Kopplung tritt auf, wenn Frequenzen in rationalem
+		Verh\"altnis stehen ($f_1/f_2 = n/m$).
+		\item[A4] \textbf{Kopplungsenergie:}
+		$E = \pi \cdot \varepsilon(\Delta\varphi)
+		\cdot \hbar \cdot f$.
+		\item[A5] \textbf{Energierichtung:}
+		Energie ist eine vektorielle Gr\"o\ss{}e mit Betrag
+		und Richtung im Resonanzfeld.
+		\item[A6] \textbf{Informationsfluss:}
+		Information propagiert ausschlie\ss{}lich entlang
+		koh\"arenter Resonanzpfade.
+		\item[A7] \textbf{Invarianz:}
 		Resonanzstrukturen bleiben unter Variation der
 		Beobachterperspektive und Systemparameter erhalten.
 	\end{enumerate}
 	
 	%% ============================================================
-	\section*{Die Grundformel}
+	\section{Methodik und Softwarearchitektur}
 	%% ============================================================
 	
-	Die zentrale Gleichung der RFT erweitert die Planck-Relation
-	$E = \hbar\omega$ um einen Kopplungsterm:
-	\[
-	E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
-	\]
+	Die empirische Validierung erfolgt durch drei unabh\"angige
+	Simulationspipelines, alle in Python implementiert und
+	vollst\"andig im Repository dokumentiert:
 	
-	\textbf{Dimensionsanalyse:}
-	$[\,] \cdot [\,] \cdot [\mathrm{J \cdot s}] \cdot [\mathrm{s}^{-1}]
-	= [\mathrm{J}]$ \checkmark
+	\subsection{Monte-Carlo-Resonanzanalyse}
 	
-	\textbf{Spezialfall Planck:}
-	F\"{u}r $\varepsilon = 1/(2\pi)$ folgt
-	$E = \pi \cdot \frac{1}{2\pi} \cdot \hbar \cdot f
-	= \frac{1}{2} \hbar f$, konsistent mit der
-	Grundzustandsenergie des harmonischen Oszillators.
-	
-	Der Kopplungsoperator $\varepsilon(\Delta\varphi)$ quantifiziert die
-	Effizienz der Resonanzkopplung als Funktion der Phasendifferenz
-	$\Delta\varphi$ zwischen zwei gekoppelten Systemen:
 	\begin{itemize}
-		\item $\varepsilon = 0$: keine Kopplung (destruktive Interferenz)
-		\item $\varepsilon = 1$: maximale Kopplung (vollst\"{a}ndige
-		Phasenkoh\"{a}renz)
+		\item $50\,000$ Pseudo-Experimente auf CMS-Open-Data
+		($99\,915$ Dielectron-Ereignisse)
+		\item KDE-Hintergrundmodell mit schmalem Signalausschluss
+		\item Binomialtest mit Bonferroni-Korrektur \"uber
+		68~Fensterbreiten
+		\item Bootstrap-Konfidenzintervalle
+		($10\,000$~Wiederholungen)
+		\item Systematik-Checks \"uber drei KDE-Bandbreiten
+		($0{,}3$, $0{,}5$, $0{,}7$~GeV) und zehn unabh\"angige
+		Seeds
+	\end{itemize}
+	
+	\subsection{Gekoppelte FLRW-Simulationen}
+	
+	\begin{itemize}
+		\item $1\,530$~Einzelsimulationen
+		(51~$H_0$-Punkte $\times$ 30~Phasenwerte)
+		\item Klein-Gordon-Gleichung in expandierender Raumzeit
+		\item DOP853-Integrator, $t = 0$--$120$,
+		$12\,000$~Auswertungspunkte
+		\item Jackknife-Fehler auf $d_\eta$,
+		Bootstrap-Fehler auf Steigung
+	\end{itemize}
+	
+	\subsection{ResoTrade}
+	
+	\begin{itemize}
+		\item Resonanzfeldtheoretisches Trading-System
+		f\"ur den BTC-Markt
+		\item AC/DC-Zerlegung (Axiom~1),
+		Energierichtungsvektor (Axiom~5),
+		Resonanz-Gate (Axiom~6)
+		\item 24~Monate Backtest + Live seit Februar 2026
+		\"uber Kraken
 	\end{itemize}
 	
 	%% ============================================================
-	\section*{Resonanz-Differentialgleichung (rDGL)}
+	\section{Ergebnisse}
 	%% ============================================================
 	
-	Die RFT vereinheitlicht klassische Differentialgleichungen als
-	Spezialf\"{a}lle einer allgemeinen Resonanzkopplungsrelation:
-	\[
-	\mathcal{R}(x, \dot{x}, \ddot{x}, t, \Phi) = 0
-	\]
-	wobei $\Phi$ den Kopplungsterm des Resonanzfeldes beschreibt.
+	\subsection{Monte-Carlo auf CMS-Dielectron-Daten}
 	
-	\medskip
-	\textbf{Ableitungsbaum (Spezialf\"{a}lle):}
+	F\"unf Resonanzen mit empirischem p-Wert~$= 0$ detektiert
+	(\"uber $50\,000$ Simulationen, stabil \"uber drei
+	Bandbreiten und zehn Seeds):
 	
 	\begin{center}
-		\begin{tabular}{lll}
-			\toprule
-			\textbf{Spezialfall} & \textbf{Kopplung $\Phi$} & \textbf{Gleichung} \\
-			\midrule
-			Harmonischer Oszillator & $\Phi = -\omega_0^2 x$ & $\ddot{x} + \omega_0^2 x = 0$ \\
-			Ged\"{a}mpfter Oszillator & $\Phi = -2\gamma\dot{x} - \omega_0^2 x$ & $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$ \\
-			Van-der-Pol & $\Phi = -\mu(1-x^2)\dot{x} - x$ & Selbsterregte Schwingung \\
-			Stochastische DGL & $\Phi = \Phi_{\det} + \xi(t)$ & Langevin-Typ \\
-			Netzwerkdynamik & $\Phi = \sum_j K_{ij}\sin(\theta_j - \theta_i)$ & Kuramoto-Modell \\
-			\bottomrule
+		\begin{tabular}{llrrl}
+			\hline
+			\textbf{Resonanz} & $M_0$ (GeV)
+			& \textbf{Hits} & $p_{\mathrm{corr}}$
+			& \textbf{emp.\ $p$} \\
+			\hline
+			$\phi$(1020) & $1{,}020$ & $19\,869$
+			& $1{,}07 \times 10^{-54}$ & $0$ \\
+			J/$\psi$ & $3{,}100$ & $3\,256$
+			& $1{,}02 \times 10^{-121}$ & $0$ \\
+			$\Upsilon$(1S) & $9{,}460$ & $4\,186$
+			& $3{,}01 \times 10^{-201}$ & $0$ \\
+			$\Upsilon$(2S) & $10{,}020$ & $4\,625$
+			& $5{,}16 \times 10^{-188}$ & $0$ \\
+			Z-Boson & $91{,}200$ & $52$
+			& $< 10^{-300}$ & $0$ \\
+			\hline
 		\end{tabular}
 	\end{center}
 	
-	%% ============================================================
-	\section*{Empirische Validierung I: Monte-Carlo-Simulation}
-	%% ============================================================
+	Best\"atigt Axiom~3 (Resonanzbedingung) und Axiom~7
+	(Invarianz \"uber Simulationsdurchl\"aufe).
 	
-	Die Vorhersagen der RFT wurden anhand von CMS-Open-Data
-	(Dielectron-Kanal, 99.915 Ereignisse) \"{u}berpr\"{u}ft. Gesucht
-	wurde nach Resonanz\"{u}bersch\"{u}ssen an vier bekannten
-	Teilchenmassenstellen \"{u}ber einem KDE-modellierten Hintergrund.
+	\subsection{Gekoppelte FLRW-Simulationen}
 	
-	\medskip
-	\textbf{Methodik:}
-	\begin{itemize}
-		\item KDE-Hintergrundmodell (Bandbreite 0.5\,GeV) mit schmalem
-		Signalausschluss
-		\item Binomialtest mit Bonferroni-Korrektur \"{u}ber 68
-		Fensterbreiten
-		\item 10.000 Monte-Carlo-Pseudo-Experimente
-		\item Bootstrap-Konfidenzintervalle (5.000 Wiederholungen)
-	\end{itemize}
-	
-	\medskip
-	\textbf{Ergebnisse (26.02.2026):}
+	Zwei skalare Resonanzfelder in expandierender Raumzeit.
+	Die Kopplungseffizienz $\eta(\Delta\varphi)$ emergiert
+	als Observable und folgt n\"aherungsweise
+	$\cos^2(\Delta\varphi/2)$, mit systematischer Abweichung
+	durch Hubble-Reibung:
 	
 	\begin{center}
-		\begin{tabular}{llrrrl}
-			\toprule
-			\textbf{$M_0$ (GeV)} & \textbf{Resonanz} & \textbf{$\Delta_\mathrm{opt}$ (GeV)}
-			& \textbf{Hits} & \textbf{$p_\mathrm{corr}$} & \textbf{empir.\ $p$} \\
-			\midrule
-			3.10  & J/$\psi$   & 0.440 & 3256 & $1.0 \times 10^{-121}$ & 0 \\
-			9.46  & $\Upsilon$(1S) & 0.780 & 4186 & $3.0 \times 10^{-201}$ & 0 \\
-			10.02 & $\Upsilon$(2S) & 0.840 & 4625 & $5.2 \times 10^{-188}$ & 0 \\
-			91.20 & Z-Boson    & 0.040 & 52   & $< 10^{-300}$          & 0 \\
-			\bottomrule
+		\begin{tabular}{lr}
+			\hline
+			\textbf{Messgr\"o\ss{}e} & \textbf{Wert} \\
+			\hline
+			Einzelsimulationen & $1\,530$ \\
+			Steigung $\mathrm{d}d_\eta / \mathrm{d}H_0$
+			& $(0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$ \\
+			$d_\eta$ (Flach, $H_0 = 0$)
+			& $0{,}0430 \pm 0{,}0076$ \\
+			$d_\eta$ (Planck, $H_0 = 67{,}4$)
+			& $0{,}1399 \pm 0{,}0248$ \\
+			$d_\eta$ (SH0ES, $H_0 = 73{,}0$)
+			& $0{,}1488 \pm 0{,}0263$ \\
+			$\Delta d_\eta$ (SH0ES $-$ Planck)
+			& $0{,}0063 \pm 0{,}0010$ ($>6\sigma$) \\
+			$\Delta\chi^2$ vs.\ Planck-2018-CMB
+			& $+16{,}0$ \\
+			\hline
 		\end{tabular}
 	\end{center}
 	
-	\smallskip
-	Alle vier Resonanzen werden mit extremer Signifikanz detektiert.
-	In keinem der 10.000 Pseudo-Experimente wurde ein vergleichbarer
-	\"{U}berschuss durch reinen Hintergrund erzeugt. Dies best\"{a}tigt
-	Axiom~3 (Resonanzbedingung) und Axiom~7 (Invarianz).
+	Kontrolltest \"uber f\"unf Expansionsszenarien zeigt
+	Anstieg von $d_\eta$ mit $H_0$ im kosmologisch
+	relevanten Bereich, mit S\"attigung bei sehr hohen
+	Expansionsraten ($\dot{a}_0 > 0{,}6$).
 	
-	Vollst\"{a}ndiger Report und Quellcode:
-	\url{https://github.com/DominicReneSchu/public/tree/main/de/fakten/empirisch/monte_carlo_test}
+	Best\"atigt Axiom~1, 3, 4, 5, 7.
 	
-	%% ============================================================
-	\section*{Empirische Validierung II: ResoTrade}
-	%% ============================================================
-	
-	ResoTrade ist ein Trading-System, das die Axiome der RFT auf den
-	BTC-Markt anwendet. Es zerlegt den Preis in DC-Komponente
-	(langfristiger Trend) und AC-Komponente (handelbare Schwingung)
-	und trifft Entscheidungen auf Basis des Energierichtungsvektors.
-	
-	\medskip
-	\textbf{Axiom-Zuordnung:}
-	\begin{center}
-		\begin{tabular}{lll}
-			\toprule
-			\textbf{Axiom} & \textbf{Prinzip} & \textbf{Implementierung} \\
-			\midrule
-			A1 & Universelle Schwingung & AC/DC-Zerlegung: Preis $=$ DC $+$ AC \\
-			A4 & Kopplungsenergie & Balance-Regler: Cash $\leftrightarrow$ BTC \\
-			A5 & Energierichtung & \texttt{energy\_dir = e\_short - e\_long} \\
-			A6 & Informationsfluss & Resonanz-Gate: Trades nur in Phase \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
-	
-	\medskip
-	\textbf{Ergebnisse (24 Monate, 4 Marktregime):}
+	\subsection{ResoTrade}
 	
 	\begin{center}
 		\begin{tabular}{llrl}
-			\toprule
-			\textbf{Marktphase} & \textbf{Zeitraum} & \textbf{Trades}
-			& \textbf{vs.\ HODL} \\
-			\midrule
-			Sideways (60k--70k)       & M\"{a}r--Sep 2024 & 437 & $+33.3\%$ \\
-			Bullrun (60k--110k)       & Sep 2024--M\"{a}r 2025 & 429 & $+19.8\%$ \\
-			Korrektur (Whipsaw)       & M\"{a}r--Sep 2025 & 247 & $+4.3\%$ \\
-			Crash (110k$\to$63k)      & Sep 2025--Feb 2026 & 279 & $+46.8\%$ \\
-			\midrule
-			\textbf{Durchschnitt}     & \textbf{24 Monate} & \textbf{1392}
-			& $\mathbf{+26.1\%}$ \\
-			\bottomrule
+			\hline
+			\textbf{Marktphase} & \textbf{Zeitraum}
+			& \textbf{Trades} & \textbf{vs.\ HODL} \\
+			\hline
+			Sideways (60k--70k) & M\"ar--Sep 2024
+			& 437 & $+33{,}3\%$ \\
+			Bullrun (60k--110k) & Sep 2024--M\"ar 2025
+			& 429 & $+19{,}8\%$ \\
+			Korrektur & M\"ar--Sep 2025
+			& 247 & $+4{,}3\%$ \\
+			Crash (110k$\to$63k) & Sep 2025--Feb 2026
+			& 279 & $+46{,}8\%$ \\
+			\hline
+			\textbf{Durchschnitt} & \textbf{24 Monate}
+			& \textbf{1392} & $\mathbf{+26{,}1\%}$ \\
+			\hline
 		\end{tabular}
 	\end{center}
 	
-	\smallskip
-	ResoTrade \"{u}bertrifft HODL in allen vier Marktregimen.
-	Kein klassischer Indikator (RSI, MACD, Bollinger) erreicht auf
-	demselben Datensatz eine Korrelation \"{u}ber 0.05. Die
-	Altcoin-Analyse best\"{a}tigt Axiom~3 negativ: Systeme ohne
-	eigene Eigenfrequenz erzeugen keine Resonanz.
+	Best\"atigt Axiom~1, 4, 5, 6.
 	
-	Seit Februar 2026 l\"{a}uft ResoTrade live \"{u}ber Kraken.
+	\subsection{Dynamische Simulationen}
 	
-	Dokumentation:
-	\url{https://github.com/DominicReneSchu/public/blob/main/de/fakten/empirisch/resotrade_trading_ki.md}
-	
-	%% ============================================================
-	\section*{Zusammenfassung der Evidenz}
-	%% ============================================================
-	
-	\begin{center}
-		\begin{tabular}{llll}
-			\toprule
-			\textbf{Dom\"{a}ne} & \textbf{Methode} & \textbf{Ergebnis}
-			& \textbf{Best\"{a}tigte Axiome} \\
-			\midrule
-			Teilchenphysik & Monte-Carlo (10k Sim.) & $p = 0$ f\"{u}r 4 Resonanzen
-			& A3, A7 \\
-			Finanzm\"{a}rkte & ResoTrade (24 Mo.) & $+26.1\%$ vs.\ HODL
-			& A1, A4, A5, A6 \\
-			Altcoins & Negativ-Test (200k Ep.) & Keine Resonanz
-			& A3 (Falsifikation) \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
+	Doppelpendelmodell zur Visualisierung komplexer
+	Kopplungszust\"ande:
+	\begin{itemize}
+		\item Bekannte Bewegungsmuster der klassischen
+		Mechanik best\"atigt
+		\item Neuartige Resonanzmodi identifiziert
+		\item Resonanzpfade und energetische
+		Stabilit\"atsr\"aume visualisiert
+	\end{itemize}
 	
 	%% ============================================================
-	\section*{Offene Fragen und Ausblick}
+	\section{Mathematische Beweise}
+	%% ============================================================
+	
+	Durch neue Methoden der Reihenentwicklung konnten:
+	\begin{itemize}
+		\item bisher ungel\"oste Integrale analytisch
+		erschlossen werden,
+		\item systemische Zusammenh\"ange zwischen Frequenz,
+		Kopplung und Energie hergestellt werden,
+		\item Br\"ucken zwischen klassischer und
+		quantenmechanischer Mathematik geschlagen werden.
+	\end{itemize}
+	
+	%% ============================================================
+	\section{Ausblick und offene Fragen}
 	%% ============================================================
 	
 	\begin{enumerate}
-		\item \textbf{Unabh\"{a}ngige Bestimmung von $\varepsilon$:}
-		Kann $\varepsilon(\Delta\varphi)$ aus der Systemgeometrie
-		\textit{vor} der Messung berechnet werden?
+		\item \textbf{Unabh\"angige Bestimmung von
+			$\varepsilon$:}
+		Ab-initio-Herleitung aus der Systemgeometrie.
 		
-		\item \textbf{Neue Vorhersagen:}
-		Kann die RFT eine bisher unbekannte Resonanz vorhersagen,
-		die dann experimentell best\"{a}tigt wird?
+		\item \textbf{Neue Vorhersage:}
+		Vorhersage einer bisher unbekannten Resonanz oder
+		eines messbaren Effekts, der nur aus der RFT folgt.
 		
-		\item \textbf{Live-Validierung von ResoTrade:}
-		6--12 Monate verifizierbare Live-Performance als
-		unabh\"{a}ngiger Pr\"{u}fstein.
+		\item \textbf{Resonanzreaktor:}
+		Resonant gesteuerte Transmutation von Atomm\"ull
+		als technologische Anwendung. Die RFT sagt vorher,
+		dass durch resonante Anregung bei der Eigenfrequenz
+		eines Isotops die Zerfallsrate modulierbar ist --
+		im Gegensatz zum Standardmodell, das Kernzerfall
+		als rein stochastisch betrachtet. Erste Simulationen
+		unter
+		\texttt{de/fakten/konzepte/resonanzreaktor/}.
 		
-		\item \textbf{Weitere Dom\"{a}nen:}
-		\"{U}bertragbarkeit der Resonanzlogik auf Akustik, Biologie,
-		Netzwerktheorie.
+		\item \textbf{CMB mit Boltzmann-Solver:}
+		Voller $\ell$-Bereich ($\ell = 2$--$2500$) mit
+		\textsc{camb} oder \textsc{class} als
+		$\Lambda$CDM-Referenz.
 		
-		\item \textbf{Vergleich mit konventionellen Systemen:}
-		Direkter Benchmark: ResoTrade vs.\ state-of-the-art ML-Trading
-		auf identischen Daten.
+		\item \textbf{Nichtlineare S\"attigung:}
+		Analytische Behandlung der
+		$\lambda\varepsilon^4$- und
+		$\alpha R\varepsilon^2$-Terme im stark
+		expandierenden Regime.
+		
+		\item \textbf{Live-Validierung:}
+		6--12~Monate verifizierbare Live-Performance
+		von ResoTrade.
+		
+		\item \textbf{Weitere Dom\"anen:}
+		\"Ubertragbarkeit auf Akustik, Biologie,
+		Netzwerktheorie, gekoppelte Oszillatoren.
 	\end{enumerate}
 	
 	%% ============================================================
-	\section*{Reproduzierbarkeit}
+	\section*{Dokumenten\"ubersicht}
 	%% ============================================================
 	
-	Alle Axiome, Herleitungen, Quellcodes, Datens\"{a}tze und
-	Simulationsergebnisse sind vollst\"{a}ndig offen zug\"{a}nglich:
-	
 	\begin{center}
-		\url{https://github.com/DominicReneSchu/public}
-		
-		\bigskip
-		\qrcode[height=2cm]{https://github.com/DominicReneSchu/public}
+		\begin{tabular}{ll}
+			\hline
+			\textbf{Dokument} & \textbf{Inhalt} \\
+			\hline
+			\texttt{rft\_manuskript\_de\_iop.tex}
+			& Physik, Simulationen, Peer Review \\
+			\texttt{RFT\_Zusammenfassung.tex}
+			& Technische Gesamt\"ubersicht (dieses Dokument) \\
+			\texttt{RFT\_Philosophie.tex}
+			& Metaphysische Erweiterungen (spekulativ) \\
+			\hline
+		\end{tabular}
 	\end{center}
 	
-	\medskip
-	\noindent
-	\textcopyright{} Dominic-Ren\'{e} Schu --- Resonanzfeldtheorie 2025/2026
+	\section*{Anhang: Verzeichnisstruktur}
+	
+	\textbf{Monte-Carlo-Simulation:}
+	\texttt{de/fakten/empirisch/monte\_carlo\_test/}
+	
+	\textbf{FLRW-Simulationen:}
+	\texttt{de/fakten/simulationen/relativitaet\_verbindung/}
+	
+	\textbf{ResoTrade:}
+	\texttt{de/fakten/empirisch/resotrade/}
+	
+	\textbf{Resonanzreaktor:}
+	\texttt{de/fakten/konzepte/resonanzreaktor/}
+	
+	\textbf{Dynamische Simulationen:}
+	\texttt{de/fakten/simulationen/simulation\_atommodell/}
+	
+	\vspace{2em}
+	
+	\textbf{Repository:}
+	\url{https://github.com/DominicReneSchu/public}
+	\hfill
+	\qrcode{https://github.com/DominicReneSchu/public}
 	
 \end{document}

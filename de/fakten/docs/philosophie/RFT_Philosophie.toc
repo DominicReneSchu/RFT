@@ -1,0 +1,9 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einordnung}{1}{section.1}%
+\contentsline {section}{\numberline {2}Zyklische Resonanzstruktur: Leben und Tod}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Leben und Tod als Halbperioden}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Inverse Rekursion}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Vergebung als Resonanzbedingung}{2}{section.3}%
+\contentsline {section}{\numberline {4}Amplitude als Schwellenwert}{3}{section.4}%
+\contentsline {section}{\numberline {5}Gesellschaftliche Resonanz}{3}{section.5}%
+\contentsline {section}{\numberline {6}Abgrenzung zur empirischen RFT}{3}{section.6}%
