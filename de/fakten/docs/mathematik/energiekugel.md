@@ -28,7 +28,7 @@ Resonanzsymmetrie.
 ## 2. Axiomatische Grundlage
 
 Das Modell gründet auf folgenden Axiomen der RFT
-(siehe [axiomatische Grundlegung](axiomatische_grundlegung.md)):
+(siehe [axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md)):
 
 - **Axiom 1 (Universelle Schwingung):** Jede Entität besitzt
   periodische Schwingungsmoden
@@ -167,8 +167,8 @@ einer Sinusfunktion entsprechen.
 
 ## Weiterführende Literatur
 
-- [Axiomatische Grundlegung](axiomatische_grundlegung.md)
-- [Kopplungseffizienz ε](kopplungseffizienz.md)
+- [Axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md)
+- [Kopplungseffizienz ε](../definitionen/kopplungseffizienz.md)
 - [Energierichtung in realen Systemen](energierichtung.md)
 
 ---
