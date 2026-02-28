@@ -1,0 +1,99 @@
+PS C:\Users\info\Desktop\ResoShift\Resonanzfeldtehorie\public\de\fakten\empirisch\monte_carlo_test> python run_publication.py
+======================================================================
+PUBLIKATIONSLAUF: Monte-Carlo-Resonanzanalyse
+======================================================================
+Datensatz: 99915 Ereignisse
+Massenbereich: 2.00 - 110.00 GeV
+Resonanzen: [1.02, 3.1, 9.46, 10.02, 91.2]
+Simulationen pro Lauf: 50000
+Bootstrap-Wiederholungen: 10000
+KDE-Bandbreiten: [0.3, 0.5, 0.7]
+Seeds: [42, 137, 256, 314, 577, 691, 823, 947, 1024, 1337]
+Gesamtzahl MC-Laeufe: 3 x 10 = 30
+Gesamtzahl Simulationen: 1,500,000
+
+=== HAUPTLAUF (bw=0.5, seed=42) ===
+MC bw=0.5 seed=42: 100%|███████████████████| 50000/50000 [52:46<00:00, 15.79it/s]
+
+Hauptlauf-Ergebnisse (50000 Simulationen):
+      M0     Resonanz    D_opt   Hits       p_corr    emp_p
+   1.020    phi(1020)    9.500  19869     1.07e-54   0.0000
+   3.100        J/psi    0.440   3256    1.02e-121   0.0000
+   9.460        Y(1S)    0.780   4186    3.01e-201   0.0000
+  10.020        Y(2S)    0.840   4625    5.16e-188   0.0000
+  91.200      Z-Boson    0.040     52     0.00e+00   0.0000
+Report gespeichert unter: C:\Users\info\Desktop\ResoShift\Resonanzfeldtehorie\public\de\fakten\empirisch\monte_carlo_test\publication_results\main_report\resonanz_report.md
+
+=== SYSTEMATIK-CHECK: KDE-Bandbreiten ===
+
+--- Bandbreite = 0.3 GeV ---
+MC bw=0.3 seed=42: 100%|███████████████████| 50000/50000 [52:52<00:00, 15.76it/s]
+  M0=1.020: emp_p = 0.0000
+  M0=3.100: emp_p = 0.0000
+  M0=9.460: emp_p = 0.0000
+  M0=10.020: emp_p = 0.0000
+  M0=91.200: emp_p = 0.0000
+
+--- Bandbreite = 0.5 GeV ---
+MC bw=0.5 seed=42: 100%|███████████████████| 50000/50000 [52:46<00:00, 15.79it/s]
+  M0=1.020: emp_p = 0.0000
+  M0=3.100: emp_p = 0.0000
+  M0=9.460: emp_p = 0.0000
+  M0=10.020: emp_p = 0.0000
+  M0=91.200: emp_p = 0.0000
+
+--- Bandbreite = 0.7 GeV ---
+MC bw=0.7 seed=42: 100%|███████████████████| 50000/50000 [53:07<00:00, 15.69it/s]
+  M0=1.020: emp_p = 0.0000
+  M0=3.100: emp_p = 0.0000
+  M0=9.460: emp_p = 0.0000
+  M0=10.020: emp_p = 0.0000
+  M0=91.200: emp_p = 0.0000
+
+=== SEED-VARIATION (bw=0.5) ===
+
+--- Seed = 42 ---
+MC bw=0.5 seed=42: 100%|███████████████████| 50000/50000 [53:14<00:00, 15.65it/s]
+
+--- Seed = 137 ---
+MC bw=0.5 seed=137: 100%|██████████████████| 50000/50000 [53:04<00:00, 15.70it/s]
+
+--- Seed = 256 ---
+MC bw=0.5 seed=256: 100%|██████████████████| 50000/50000 [52:54<00:00, 15.75it/s]
+
+--- Seed = 314 ---
+MC bw=0.5 seed=314: 100%|██████████████████| 50000/50000 [53:14<00:00, 15.65it/s]
+
+--- Seed = 577 ---
+MC bw=0.5 seed=577: 100%|██████████████████| 50000/50000 [52:55<00:00, 15.75it/s]
+
+--- Seed = 691 ---
+MC bw=0.5 seed=691: 100%|██████████████████| 50000/50000 [52:47<00:00, 15.78it/s]
+
+--- Seed = 823 ---
+MC bw=0.5 seed=823: 100%|██████████████████| 50000/50000 [52:47<00:00, 15.79it/s]
+
+--- Seed = 947 ---
+MC bw=0.5 seed=947: 100%|██████████████████| 50000/50000 [52:59<00:00, 15.73it/s]
+
+--- Seed = 1024 ---
+MC bw=0.5 seed=1024: 100%|█████████████████| 50000/50000 [52:51<00:00, 15.76it/s]
+
+--- Seed = 1337 ---
+MC bw=0.5 seed=1337: 100%|█████████████████| 50000/50000 [53:02<00:00, 15.71it/s]
+
+=== ZUSAMMENFASSUNG SEED-VARIATION ===
+      M0 emp_p (mean)  emp_p (std)  emp_p (max)
+   1.020     0.000000     0.000000     0.000000
+   3.100     0.000000     0.000000     0.000000
+   9.460     0.000000     0.000000     0.000000
+  10.020     0.000000     0.000000     0.000000
+  91.200     0.000000     0.000000     0.000000
+
+Ergebnisse exportiert: C:\Users\info\Desktop\ResoShift\Resonanzfeldtehorie\public\de\fakten\empirisch\monte_carlo_test\publication_results\publication_results.json
+CSV exportiert: C:\Users\info\Desktop\ResoShift\Resonanzfeldtehorie\public\de\fakten\empirisch\monte_carlo_test\publication_results\publication_results.csv
+
+======================================================================
+PUBLIKATIONSLAUF ABGESCHLOSSEN
+======================================================================
+PS C:\Users\info\Desktop\ResoShift\Resonanzfeldtehorie\public\de\fakten\empirisch\monte_carlo_test>
