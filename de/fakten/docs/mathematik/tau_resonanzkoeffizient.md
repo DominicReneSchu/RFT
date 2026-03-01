@@ -20,6 +20,16 @@ beschreibt die Zeitskala der Resonanzkopplung: Wie viele
 Kopplungszyklen sind nötig, um eine vollständige Energieübertragung
 zu erreichen?
 
+τ* ist eine **Funktion** der Phasendifferenz, keine Konstante.
+Mit ε(Δφ) = cos²(Δφ/2) (Standardmodell) ergibt sich:
+
+```
+    τ*(Δφ) = π / cos²(Δφ/2)
+```
+
+Da ε = η (Identität aus FLRW-Simulationen), ist τ* direkt
+mit der messbaren Kopplungseffizienz verknüpft.
+
 ---
 
 ## 2. Definition und Wertebereich
@@ -32,13 +42,19 @@ zu erreichen?
 |------------------|---|-----|-----------|
 | Perfekte Kopplung | 1 | π ≈ 3.14 | Minimale Transferzeit |
 | Halbe Kopplung | 0.5 | 2π ≈ 6.28 | Doppelte Transferzeit |
-| Natürliche Dämpfung | 1/e ≈ 0.368 | π·e ≈ 8.54 | Nach Relaxation |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | π·e ≈ 8.54 | Nach Relaxation (Spezialfall) |
+| Planck (1. Anregung) | 1/π ≈ 0.318 | π² ≈ 9.87 | E = ℏ·f (Spezialfall) |
+| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | 2π² ≈ 19.74 | E = ½ℏ·f (Spezialfall) |
 | Schwache Kopplung | 0.1 | 10π ≈ 31.4 | Langsamer Transfer |
 | Keine Kopplung | 0 | → ∞ | Kein Transfer möglich |
 
 **Physikalische Interpretation:** τ* ist invers proportional zur
 Kopplungseffizienz. Je schwächer die Kopplung, desto mehr Zyklen
 werden benötigt, um Energie zu übertragen.
+
+**Bemerkenswert:** Beim Planck-Grundzustand (ε = 1/(2π)) beträgt
+die Transferzeit τ* = 2π² — ein Produkt der beiden fundamentalen
+geometrischen Konstanten der RFT.
 
 ---
 
@@ -47,7 +63,7 @@ werden benötigt, um Energie zu übertragen.
 Die klassische Einheit der Energienormierung:
 
 ```
-    E / (h·f) = 1
+    E / (ℏ·f) = π · ε
 ```
 
 wird in der RFT geometrisch als Hypotenuse eines Zeit-Zeit-Dreiecks
@@ -65,11 +81,11 @@ Der Winkel α beschreibt die Phasenlage zwischen gekoppelten Systemen.
 Die komplexe Energieprojektion:
 
 ```
-    E = π · ε · h · f · (cos(α) + i · sin(α))
+    E = π · ε · ℏ · f · (cos(α) + i · sin(α))
 ```
 
-Die klassische Formel E = h·f nutzt nur den Realteil bei ε = 1/π
-und verliert die Phasenstruktur.
+Die Planck-Grundzustandsenergie E = ½ℏf nutzt nur den Realteil
+bei ε = 1/(2π) und verliert die Phasenstruktur.
 
 ---
 
@@ -95,16 +111,17 @@ Für den symmetrischen Fall (ε_S = ε_E = ε):
     η_ges = ε²
 ```
 
-**Beispiel:** Bei ε = 1/e (natürliche Dämpfung):
+**Beispiel:** Bei ε = 1/e (natürliche Dämpfung, Spezialfall):
 
 ```
     η_ges = (1/e)² = 1/e² ≈ 0.135 (13.5%)
 ```
 
-Bei ε = 0.86 (leichte Verstimmung, Δφ ≈ π/4):
+Bei ε = 0.85 (leichte Verstimmung, Δφ ≈ π/4):
 
 ```
-    η_ges = 0.86² ≈ 0.74 (74%)
+    ε(π/4) = cos²(π/8) ≈ 0.85
+    η_ges = 0.85² ≈ 0.73 (73%)
 ```
 
 ---
@@ -126,7 +143,7 @@ Die zeitliche Änderung:
 Für exponentiellen Kopplungszerfall (gedämpftes System):
 
 ```
-    ε(t) = ε₀ · e^{−λt}    →    dε/dt = −λ · ε
+    ε(t) = ε₀ · e^(−λt)    →    dε/dt = −λ · ε
 ```
 
 folgt:
@@ -142,22 +159,50 @@ abnimmt — konsistent mit der physikalischen Intuition.
 Für anwachsende Kopplung (Einschwingvorgang):
 
 ```
-    ε(t) = 1 − e^{−λt}    →    τ*(t) = π / (1 − e^{−λt})
+    ε(t) = 1 − e^(−λt)    →    τ*(t) = π / (1 − e^(−λt))
 ```
 
 τ* fällt von ∞ (keine Kopplung) auf π (perfekte Kopplung).
 
 ---
 
-## 6. Fazit
+## 6. Empirische Verankerung
 
-Der Resonanzzeitkoeffizient τ* = π/ε verbindet die Kopplungseffizienz
-mit der Zeitskala des Energietransfers:
+| Domäne | τ*-Bezug | Beobachtung |
+|--------|----------|-------------|
+| FLRW | τ*(0) = π | η = 1.0 bei Δφ = 0, minimale Transferzeit |
+| FLRW | τ*(π) → ∞ | η = 0.0 bei Δφ = π, kein Transfer |
+| FLRW | τ* wächst mit H₀ | Hubble-Reibung erhöht d_η → effektiv höheres τ* |
+| Resonanzreaktor | τ* = π (bei Resonanz) | κ = 1, ε = η = 1 bei Δφ = 0 |
+| ResoTrade | τ* → ∞ im Crash | ε → 0, Pause-Gate, kein Trade |
+| ResoTrade | τ* ≈ π in Phase | ε ≈ 1, schneller Energietransfer, Trade aktiv |
+| ResoTrade | Einschwingen | Konvergenz nach 3 Zyklen (Δ < 1%), konsistent mit τ*(t) = π/(1−e^(−λt)) |
+
+Die Hubble-Reibung in FLRW-Simulationen lässt sich als
+effektive Erhöhung von τ* interpretieren: Stärkere Expansion
+verschiebt η systematisch unter cos²(Δφ/2), was einem
+langsameren Energietransfer zwischen den Resonanzfeldern
+entspricht.
+
+---
+
+## 7. Fazit
+
+Der Resonanzzeitkoeffizient τ*(Δφ) = π/ε(Δφ) verbindet die
+Kopplungseffizienz mit der Zeitskala des Energietransfers:
 
 1. τ* ist eine **Funktion** der Phasendifferenz, keine Konstante
 2. Perfekte Kopplung (ε = 1) ergibt die minimale Transferzeit τ* = π
-3. Die Sender-Empfänger-Asymmetrie ergibt η_ges = ε_S · ε_E
-4. Die Dynamik dτ*/dt = λ·τ* beschreibt den Kopplungszerfall
+3. Planck-Grundzustand (ε = 1/(2π)) ergibt τ* = 2π²
+4. Die Sender-Empfänger-Asymmetrie ergibt η_ges = ε_S · ε_E
+5. Die Dynamik dτ*/dt = λ·τ* beschreibt den Kopplungszerfall
+6. Hubble-Reibung erhöht τ* effektiv (FLRW-Simulationen)
+
+**Korrektur gegenüber früherer Fassung:** In einer früheren
+Version wurde τ* = π/𝓔 als Konstante (mit 𝓔 = 1) definiert.
+Das ist nicht korrekt. τ* ist eine Funktion: τ*(Δφ) = π/ε(Δφ).
+Der Fall τ* = π (bei ε = 1) ist der Spezialfall perfekter
+Kopplung, nicht der allgemeine Zustand.
 
 ---
 
