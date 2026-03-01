@@ -1,4 +1,4 @@
-# Nichtlineare Resonanzanalyse – Interaktive Simulation
+# Nichtlineare Resonanzanalyse
 
 *Dominic-René Schu, 2025/2026*
 
@@ -6,167 +6,153 @@
 
 ![Simulation nichtlineare Resonanzfeldanalyse](./nichtlineare_resonanzanalyse.png)
 
-*Abb. 1: Nichtlineare Resonanzanalyse – 6-Panel-Dashboard (Streamlit)*
+*Abb. 1: 6-Panel-Dashboard der nichtlinearen Resonanzanalyse*
 
 ---
 
 ## 1. Überblick
 
 Die nichtlineare Resonanzanalyse erweitert den linearen
-Resonanzgenerator um energieabhängige Dämpfung und
-frequenzmodulierte Kopplung. Damit werden Phänomene sichtbar,
-die im linearen Modell nicht auftreten:
+Resonanzgenerator um zwei physikalische Effekte:
 
-- Chaosübergänge (periodisch → quasiperiodisch → chaotisch)
-- Resonanzinseln im Phasenraum
-- Breitband-Frequenzspektren bei starker Anregung
-- Intermittenz und plötzliche Regimewechsel
+- **Duffing-Nichtlinearität (β):** Kubischer Term β·x³ in der
+  Rückstellkraft → Frequenzverschiebung, Chaosübergang
+- **Energieabhängige Dämpfung (α_d):** d(E) = d₀·(1 + α_d·E)
+  → Amplitudensättigung bei hoher Energie
 
-Die Simulation ist als interaktive Streamlit-App realisiert.
+Die zentrale Frage: **Bleibt ε(Δφ) = cos²(Δφ/2) auch im
+nichtlinearen Regime gültig?**
+
+Antwort: **Ja.** Die Phasenkopplung bestimmt den Energieeintrag
+unabhängig von der internen Dynamik des Systems.
 
 ---
 
 ## 2. Physik
 
-### 2.1 Nichtlinearer Oszillator
+### 2.1 Bewegungsgleichung
 
 ```
-    m · ẍ + d(E) · ẋ + k · x = A_f · cos(ω_f · t · (1 + δt))
+    m·ẍ + d(E)·ẋ + k·x + β·x³ = F₀·cos²(Δφ/2)·cos(ω_f·t)
 
-    Energieabhängige Dämpfung:
-    d(E) = d₀ · exp(−0.1·E) / (1 + 0.05·E² + 0.001·E⁴)
-
-    Frequenzmodulation (Phasenraum-Rückkopplung):
-    δt = β · (v/v₀)² · sin(θ)
-    θ  = arctan(v/x)
+    d(E) = d₀ · (1 + α_d · E)      (energieabhängige Dämpfung)
+    ε(Δφ) = cos²(Δφ/2)             (RFT-Kopplungseffizienz)
 ```
 
-### 2.2 Interpretation im RFT-Rahmen
+### 2.2 Nichtlineare Effekte
 
-Die nichtlineare Dämpfung d(E) modelliert die energieabhängige
-Resonanzeffizienz: Bei hoher Systemenergie wird die Kopplung
-schwächer — analog zur Sättigung der GDR bei hohem Photonenfluss.
-
-Die Frequenzmodulation δt modelliert die phasenraumabhängige
-Kopplung — die Effektivität der Feldkopplung hängt vom
-momentanen Zustand (x, v) des Systems ab.
-
----
-
-## 3. Visualisierungen
-
-### 3.1 Zeitverlauf x(t)
-Periodisch bei schwacher Anregung, chaotisch bei starker.
-Amplitude und Frequenz variieren mit den Systemparametern.
-
-### 3.2 Phasenraumdiagramm (x, v)
-Geschlossene Ellipsen → periodisch.
-Gefüllte Flächen → chaotisch.
-Strukturierte Muster → quasiperiodisch (Resonanzinseln).
-
-### 3.3 Poincaré-Schnitt
-Stroboskopische Abtastung bei Anregungsphase = 0 (mod 2π).
-Einzelpunkte → Periode-1. Inseln → höhere Perioden.
-Staubwolke → Chaos.
-
-### 3.4 Frequenzspektrum (FFT)
-Einzelner Peak → periodisch. Harmonische → nichtlinear.
-Breites Spektrum → chaotisch.
-
-### 3.5 Spektrogramm (STFT)
-Zeit-Frequenz-Analyse: Zeigt Übergänge zwischen Regimen.
-
-### 3.6 Wavelet-Skalogramm (Morlet)
-Hohe Auflösung für nichtstationäre Phänomene.
+| β = 0 (linear) | β > 0 (Duffing) |
+|-----------------|-----------------|
+| Eigenfrequenz f₀ = const | f₀ verschiebt sich mit Amplitude |
+| Phasenraum: Ellipse | Phasenraum: deformiert |
+| Immer periodisch | Periodisch → quasiperiodisch → chaotisch |
+| A ∝ 1/d (exakt) | A begrenzt durch β·x³ |
 
 ---
 
-## 4. Parametersteuerung
+## 3. Ergebnisse
 
-| Parameter | Bereich | Beschreibung |
-|-----------|---------|-------------|
-| A_f | 0.1–5.0 | Anregungsamplitude |
-| ω_f | 0.1–5.0 | Anregungsfrequenz |
-| d₀ | 0.01–1.0 | Grunddämpfung |
-| k | 0.1–5.0 | Federkonstante |
-| v₀ | 0.01–5.0 | Normgeschwindigkeit (Rückkopplung) |
-| T | 10–500 | Simulationsdauer [s] |
+### 3.1 Duffing-Scan (β = 0 → 50)
 
-### Optimale Parameter für maximale Energieübertragung
+| β | A_stat [mm] | E_stat [µJ] | Regime |
+|---|------------|------------|--------|
+| 0.0 | 200.0 | 200.000 | Periodisch |
+| 1.0 | 199.7 | 199.436 | Periodisch |
+| 5.0 | 192.8 | 186.245 | Periodisch |
+| 20.0 | 159.4 | 127.850 | Periodisch |
+| 50.0 | 127.4 | 82.012 | Periodisch |
 
-| Parameter | Empfehlung | Begründung |
-|-----------|-----------|-----------|
-| A_f | 1.0–1.5 | Genügend Energie, aber kein Chaos |
-| ω_f | 1.0–1.05 | Nahe Eigenfrequenz ω₀ = √k |
-| d₀ | 0.05–0.1 | Unterkritische Dämpfung |
-| k | 1.0 | Standard-Eigenfrequenz |
+**Erkenntnis:** Nichtlinearität reduziert die Amplitude, aber
+die Phasenkopplung ε(Δφ) = cos²(Δφ/2) bleibt exakt gültig.
+Der Duffing-Term wirkt wie eine zusätzliche amplitudenabhängige
+Federkonstante — er verändert die interne Dynamik, nicht die
+externe Kopplung.
 
-### Anzeichen effektiver Resonanz
-
-- Große, regelmäßige Auslenkungen im Zeitplot
-- Hauptpeak im FFT bei der Anregungsfrequenz
-- Klare Resonanzinseln im Poincaré-Schnitt
-- Hoher Wirkungsgrad η (angezeigt nach Simulation)
-
----
-
-## 5. Wirkungsgrad
+### 3.2 Energieabhängige Dämpfung (α_d = 0 → 1.0)
 
 ```
-    η = ⟨E_mech⟩ / W_in
-
-    E_mech = ½mv² + ½kx²     (mittlere mechanische Energie)
-    W_in = ∫ F_feld · v dt    (eingebrachte Feldarbeit)
+    α_d = 0.0:   A = 200 mm (unbegrenzt durch Dämpfung)
+    α_d = 0.01:  A ≈ 190 mm (leichte Sättigung)
+    α_d = 0.1:   A ≈ 175 mm (moderate Sättigung)
+    α_d = 0.5:   A ≈ 150 mm (starke Sättigung)
+    α_d = 1.0:   A ≈ 125 mm (dominante Sättigung)
 ```
 
-Typische Werte:
+**Erkenntnis:** Energieabhängige Dämpfung begrenzt die maximale
+Schwingungsamplitude — physikalisch sinnvoll, da reale Systeme
+bei hoher Energie mehr Verluste haben. Das Sättigungsniveau
+hängt von α_d ab, aber die Phasenabhängigkeit bleibt cos²(Δφ/2).
 
-| Regime | η | Beschreibung |
-|--------|---|-------------|
-| Resonanz (ω_f ≈ ω₀, niedrige A_f) | 5–30% | Effizient, periodisch |
-| Nichtlineare Resonanz (moderate A_f) | 10–50% | Optimal durch Rückkopplung |
-| Chaotisch (hohe A_f) | 1–5% | Energie verteilt sich breitbandig |
-| Off-Resonanz (ω_f ≠ ω₀) | <1% | Keine Kopplung |
+### 3.3 Phasenscan (nichtlinear, β = 0)
 
----
+```
+    E(Δφ=0) / ⟨E⟩_inkohärent = 2.5000
+    Theorie:                     2.5000  → EXAKT
 
-## 6. Verbindung zur linearen Simulation
-
-| Aspekt | Linearer Generator | Nichtlineare Analyse |
-|--------|-------------------|---------------------|
-| Dämpfung | d = const | d(E) energieabhängig |
-| Frequenz | ω_f = const | ω_f · (1 + δt) moduliert |
-| Verhalten | Immer periodisch | Periodisch → chaotisch |
-| Kopplung | ε(Δφ) = cos²(Δφ/2) | ε(Δφ, E, x, v) nichtlinear |
-| Analyse | Frequenz-Sweep, Phasenscan | Poincaré, Wavelet, Spektrogramm |
-| Simulation | `resonanzgenerator.py` | `nichtlineare_resonanzanalyse.py` |
-
-Beide Simulationen bestätigen das Grundprinzip:
-**Resonanz maximiert den Energietransfer.**
+    Amplitude folgt cos²(Δφ/2)          → EXAKT
+    Energie folgt cos⁴(Δφ/2)           → EXAKT
+```
 
 ---
 
-## 7. Nutzung
+## 4. Relevanz für die Maschinenresonanz
+
+Die nichtlineare Analyse bestätigt, dass die RFT-Phasensteuerung
+auch unter realen Bedingungen funktioniert:
+
+| Realer Effekt | Modellparameter | Auswirkung auf ε(Δφ) |
+|---------------|----------------|---------------------|
+| Materialnichtlinearität | β > 0 | Keine (ε bleibt cos²) |
+| Energieverluste bei hoher Amplitude | α_d > 0 | Keine (ε bleibt cos²) |
+| Schwankende Anregungsfrequenz | ω_f ≠ ω₀ | Reduziert Amplitude, ε unverändert |
+| Chaotische Dynamik | β >> 1 | Breitband-FFT, aber ε(Δφ) steuert den Energieeintrag |
+
+**Kernaussage:** Die Phasensteuerung Δφ → π unterbindet die
+Resonanzkopplung unabhängig von der internen Nichtlinearität.
+
+---
+
+## 5. Simulation
+
+### 5.1 Ausführung
 
 ```bash
-pip install streamlit numpy matplotlib scipy pywt
+# Matplotlib-Modus (4 Plots als PNG)
+python nichtlineare_resonanzanalyse.py
+
+# Interaktiver Modus (optional, benötigt Streamlit)
 streamlit run nichtlineare_resonanzanalyse.py
 ```
 
-Die App läuft im Browser. Parameter einstellen → „Start Simulation"
-→ 6-Panel-Dashboard + Wirkungsgrad werden angezeigt.
+### 5.2 Erzeugte Plots
+
+| Plot | Inhalt |
+|------|--------|
+| `nichtlinear_dashboard.png` | 6-Panel: Zeit, Phasenraum, Poincaré, FFT, STFT, Energie |
+| `nichtlinear_phasenscan.png` | RFT-Signatur: cos², cos⁴, Verhältnis koh/ink |
+| `nichtlinear_duffing.png` | β-Scan: 5 Stärken, Phasenraum, Ergebnistabelle |
+| `nichtlinear_daempfung.png` | α_d-Scan: Sättigung bei hoher Energie |
 
 ---
 
-## 8. Weiterführend
+## 6. Zusammenfassung
 
-- Lyapunov-Exponenten (Chaosmaß) → geplant
-- Batch-Parameter-Scans (Bifurkationsdiagramme) → geplant
-- Kopplung an Phasenscan aus resonanzgenerator.py → geplant
+```
+    Frage:  Gilt ε(Δφ) = cos²(Δφ/2) auch nichtlinear?
+    Antwort: Ja. Die Kopplung ist eine Eigenschaft der
+             Feld-System-Schnittstelle, nicht der internen Dynamik.
+
+    Nichtlinearität (β):     Verändert Amplitude und Frequenz
+    Energiedämpfung (α_d):   Begrenzt die maximale Energie
+    Phasenkopplung ε(Δφ):    Bleibt exakt cos²(Δφ/2)
+
+    → Die RFT-Grundgleichung ist robust gegen Nichtlinearitäten.
+    → Maschinenresonanz kann durch Δφ → π unterbunden werden,
+      unabhängig von der internen Systemdynamik.
+```
 
 ---
 
-→ [Python-Simulation](nichtlineare_resonanzanalyse.py)
 → [Linearer Resonanzgenerator](resonanzgenerator.md)
 → [Zurück zur Übersicht](README.md)
 
