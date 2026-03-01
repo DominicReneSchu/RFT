@@ -269,7 +269,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 3 | [ResoChess](fakten/konzepte/ResoChess/reso_chess.md) | Resonanzlogische KI |
 | 4 | [Resonanzgenerator](fakten/konzepte/resonanzgenerator/README.md) | Energiegewinnung |
 | 5 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
-| 6 | [Kraftfeldgenerator](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md) | Feldtechnologie |
+| 6 | [Kraftfeldgenerator](fakten/konzepte/kraftfeldgenerator/README.md) | Feldtechnologie |
 | 7 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
 | 8 | [Wetter-Warnsystem](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md) | Frühwarnung |
 
