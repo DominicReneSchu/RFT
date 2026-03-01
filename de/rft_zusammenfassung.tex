@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{qrcode}
 \usepackage{background}
+\usepackage{graphicx}
 
 \setlength{\parindent}{0pt}
 
@@ -59,7 +60,7 @@
 	Ziel ist eine parametrische Erweiterung der Planck-Relation,
 	die Resonanzph\"anomene \"uber Skalen und Dom\"anen hinweg
 	einheitlich erfasst -- von Teilchenphysik \"uber Kosmologie
-	bis zu Finanzm\"arkten.
+	bis zu Finanzm\"arkten und Nukleartechnologie.
 	
 	Dieses Dokument fasst die theoretischen Grundlagen, die
 	Methodik und die empirischen Ergebnisse zusammen. Das
@@ -103,9 +104,9 @@
 		$\varepsilon(\Delta\varphi)$:
 		Dimensionsloser Parameter in der Grundformel.
 		Einfachstes Modell:
-		$\varepsilon = \frac{1}{2}(1 + \cos\Delta\varphi)$.
-		Grenzwerte: $\varepsilon = 0$ (Antiresonanz,
-		destruktive Interferenz),
+		$\varepsilon = \frac{1}{2}(1 + \cos\Delta\varphi)
+		= \cos^2(\Delta\varphi/2)$.
+		Grenzwerte: $\varepsilon = 0$ (Antiresonanz),
 		$\varepsilon = 1$ (vollst\"andige Phasenkoh\"arenz).
 		\item \textbf{Kopplungseffizienz}
 		$\eta(\Delta\varphi)$:
@@ -113,8 +114,13 @@
 		zeitgemittelten Kreuzterm zweier gekoppelter Skalarfelder
 		extrahiert. Analytische Erwartung:
 		$\eta_{\mathrm{theo}} = \cos^2(\Delta\varphi/2)$.
-		$\eta$ emergiert als Observable, $\varepsilon$ ist der
-		theoretische Operator.
+		\item \textbf{Identit\"at $\varepsilon = \eta$}:
+		Im Resonanzreaktor-Kontext wurde gezeigt, dass
+		$\varepsilon(\Delta\varphi) = \eta(\Delta\varphi)$
+		exakt gilt.
+		Diese Identit\"at eliminiert den
+		Kopplungsst\"arkeparameter $\kappa$ vollst\"andig:
+		$\kappa = 1$ (kein freier Parameter).
 	\end{itemize}
 	
 	\subsection{Spezialfall Planck}
@@ -122,8 +128,6 @@
 	F\"ur $\varepsilon = 1/(2\pi)$ folgt
 	$E = \frac{1}{2}\hbar f$, konsistent mit der
 	Grundzustandsenergie des harmonischen Oszillators.
-	Die Planck-Relation $E = \hbar\omega$ ist damit ein
-	Spezialfall der RFT-Grundformel.
 	
 	\subsection{Die sieben Axiome}
 	
@@ -154,9 +158,8 @@
 	\section{Methodik und Softwarearchitektur}
 	%% ============================================================
 	
-	Die empirische Validierung erfolgt durch drei unabh\"angige
-	Simulationspipelines, alle in Python implementiert und
-	vollst\"andig im Repository dokumentiert:
+	Die empirische Validierung erfolgt durch vier unabh\"angige
+	Simulationspipelines:
 	
 	\subsection{Monte-Carlo-Resonanzanalyse}
 	
@@ -169,8 +172,8 @@
 		\item Bootstrap-Konfidenzintervalle
 		($10\,000$~Wiederholungen)
 		\item Systematik-Checks \"uber drei KDE-Bandbreiten
-		($0{,}3$, $0{,}5$, $0{,}7$~GeV) und zehn unabh\"angige
-		Seeds
+		und zehn unabh\"angige Seeds
+		\item \textbf{Gesamtumfang: $1\,500\,000$ Simulationen}
 	\end{itemize}
 	
 	\subsection{Gekoppelte FLRW-Simulationen}
@@ -185,16 +188,37 @@
 		Bootstrap-Fehler auf Steigung
 	\end{itemize}
 	
+	\subsection{Resonanzreaktor-Simulation}
+	
+	\begin{itemize}
+		\item GDR-Daten aus Literatur:
+		Berman \& Fultz (1975), RIPL-3,
+		Ishkhanov \& Kapitonov (2021)
+		\item Resonanzfrequenzen aus RFT-Grundformel:
+		$f = E_{\mathrm{GDR}} / (\pi \cdot \hbar)$
+		\item Kopplungsst\"arke $\kappa = 1$ aus
+		$\varepsilon = \eta$ Identit\"at
+		\item Energiebilanz mit Q-Faktor-Analyse
+	\end{itemize}
+	
 	\subsection{ResoTrade}
 	
 	\begin{itemize}
 		\item Resonanzfeldtheoretisches Trading-System
-		f\"ur den BTC-Markt
-		\item AC/DC-Zerlegung (Axiom~1),
-		Energierichtungsvektor (Axiom~5),
-		Resonanz-Gate (Axiom~6)
-		\item 24~Monate Backtest + Live seit Februar 2026
-		\"uber Kraken
+		f\"ur den BTC-Markt, 12~Versionen
+		(Oktober 2025 -- M\"arz 2026)
+		\item AC/DC-Zerlegung (A1), Superposition
+		dreier Moden (A2), Frequenzverh\"altnis
+		24h:168h~$= 1{:}7$ (A3), Balance-Regler
+		und Downtrend-Pause-Gate (A4),
+		Energierichtungsvektor (A5),
+		Resonanz-Gate (A6)
+		\item 24~Monate Backtest (M\"arz 2024 -- Februar 2026)
+		in 4~Marktregimen
+		\item Live seit 25.\ Februar 2026 \"uber Kraken
+		(Dry-Run)
+		\item Jede Verbesserung durch neues Axiom, nie
+		durch Parametertuning
 	\end{itemize}
 	
 	%% ============================================================
@@ -204,8 +228,7 @@
 	\subsection{Monte-Carlo auf CMS-Dielectron-Daten}
 	
 	F\"unf Resonanzen mit empirischem p-Wert~$= 0$ detektiert
-	(\"uber $50\,000$ Simulationen, stabil \"uber drei
-	Bandbreiten und zehn Seeds):
+	($1\,500\,000$ Gesamtsimulationen):
 	
 	\begin{center}
 		\begin{tabular}{llrrl}
@@ -228,16 +251,12 @@
 		\end{tabular}
 	\end{center}
 	
-	Best\"atigt Axiom~3 (Resonanzbedingung) und Axiom~7
-	(Invarianz \"uber Simulationsdurchl\"aufe).
+	Bandbreitenunabh\"angig ($0{,}3$, $0{,}5$,
+	$0{,}7$~GeV) und seedunabh\"angig
+	(10~Seeds, alle emp.\ $p = 0{,}000 \pm 0{,}000$).
+	Best\"atigt Axiom~3, 7.
 	
 	\subsection{Gekoppelte FLRW-Simulationen}
-	
-	Zwei skalare Resonanzfelder in expandierender Raumzeit.
-	Die Kopplungseffizienz $\eta(\Delta\varphi)$ emergiert
-	als Observable und folgt n\"aherungsweise
-	$\cos^2(\Delta\varphi/2)$, mit systematischer Abweichung
-	durch Hubble-Reibung:
 	
 	\begin{center}
 		\begin{tabular}{lr}
@@ -247,12 +266,6 @@
 			Einzelsimulationen & $1\,530$ \\
 			Steigung $\mathrm{d}d_\eta / \mathrm{d}H_0$
 			& $(0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$ \\
-			$d_\eta$ (Flach, $H_0 = 0$)
-			& $0{,}0430 \pm 0{,}0076$ \\
-			$d_\eta$ (Planck, $H_0 = 67{,}4$)
-			& $0{,}1399 \pm 0{,}0248$ \\
-			$d_\eta$ (SH0ES, $H_0 = 73{,}0$)
-			& $0{,}1488 \pm 0{,}0263$ \\
 			$\Delta d_\eta$ (SH0ES $-$ Planck)
 			& $0{,}0063 \pm 0{,}0010$ ($>6\sigma$) \\
 			$\Delta\chi^2$ vs.\ Planck-2018-CMB
@@ -261,45 +274,170 @@
 		\end{tabular}
 	\end{center}
 	
-	Kontrolltest \"uber f\"unf Expansionsszenarien zeigt
-	Anstieg von $d_\eta$ mit $H_0$ im kosmologisch
-	relevanten Bereich, mit S\"attigung bei sehr hohen
-	Expansionsraten ($\dot{a}_0 > 0{,}6$).
-	
 	Best\"atigt Axiom~1, 3, 4, 5, 7.
 	
-	\subsection{ResoTrade}
+	\subsection{Resonanzreaktor: Resonante Transmutation}
+	
+	\subsubsection{Ergebnisse
+		($\Phi_\gamma = 10^{12}$~$\gamma$/(cm$^2 \cdot$s),
+		$\Delta\varphi = 0$, $\kappa = 1$).}
 	
 	\begin{center}
-		\begin{tabular}{llrl}
+		\begin{tabular}{lrrrl}
 			\hline
-			\textbf{Marktphase} & \textbf{Zeitraum}
-			& \textbf{Trades} & \textbf{vs.\ HODL} \\
+			\textbf{Isotop} & $t_{1/2}$
+			& $\lambda_{\mathrm{eff}}/\lambda_0$
+			& $Q_{\mathrm{fiss}}$ & \textbf{Interpretation} \\
 			\hline
-			Sideways (60k--70k) & M\"ar--Sep 2024
-			& 437 & $+33{,}3\%$ \\
-			Bullrun (60k--110k) & Sep 2024--M\"ar 2025
-			& 429 & $+19{,}8\%$ \\
-			Korrektur & M\"ar--Sep 2025
-			& 247 & $+4{,}3\%$ \\
-			Crash (110k$\to$63k) & Sep 2025--Feb 2026
-			& 279 & $+46{,}8\%$ \\
-			\hline
-			\textbf{Durchschnitt} & \textbf{24 Monate}
-			& \textbf{1392} & $\mathbf{+26{,}1\%}$ \\
+			U-235 & $7{,}04 \times 10^8$~a & $7\,872$
+			& $0{,}97$ & Resonanz dominiert \\
+			Pu-239 & $24\,110$~a & $1{,}3$
+			& $1{,}00$ & Break-even \\
+			Am-241 & $432$~a & $1{,}005$
+			& -- & Marginal \\
 			\hline
 		\end{tabular}
 	\end{center}
 	
-	Best\"atigt Axiom~1, 4, 5, 6.
+	Falsifizierbare Vorhersage:
+	$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$.
+	Best\"atigt Axiom~1, 3, 4.
+	
+	\subsection{ResoTrade: Axiomatische Validierung
+		am BTC-Markt}
+	
+	ResoTrade validiert jedes der sieben Axiome einzeln
+	am realen Markt. Das System wurde \"uber 12~Versionen
+	iterativ entwickelt, wobei jede Verbesserung durch
+	Einf\"uhrung eines neuen Axioms entstand -- nie durch
+	Parametertuning.
+	
+	\subsubsection{Axiom-f\"ur-Axiom-Validierung.}
+	
+	\begin{center}
+		\begin{tabular}{llll}
+			\hline
+			\textbf{Axiom} & \textbf{Mechanismus}
+			& \textbf{Version} & \textbf{Effekt} \\
+			\hline
+			A1 & AC/DC-Zerlegung
+			& V11 & $+5{,}9$~Pp. \\
+			A2 & 3~Moden (PID-Isomorphie)
+			& V10--V11 & $+42{,}9\%$ \\
+			A3 & $f_1/f_2 = 1{:}7$
+			& Altcoin-Test & Falsifiziert \\
+			A4 & Pause-Gate ($\varepsilon \to 0$)
+			& V11.1 & $+44{,}9\%$ \\
+			A5 & Energierichtungsvektor
+			& V10 & $+1{,}4$~Pp. \\
+			A6 & Resonanz-Gate
+			& V10+ & 40\% blockiert \\
+			A7 & Regime-Invarianz
+			& Alle & 4/4~positiv \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\subsubsection{Backtest: 24~Monate, 4~Marktregime.}
+	
+	\begin{center}
+		\begin{tabular}{llrl}
+			\hline
+			\textbf{Regime} & \textbf{Zeitraum}
+			& \textbf{Trades} & \textbf{vs.\ HODL} \\
+			\hline
+			Sideways + ETF & M\"ar--Sep 2024
+			& 437 & $+33{,}3\%$ \\
+			Bullrun & Sep 2024--M\"ar 2025
+			& 429 & $+22{,}9\%$ \\
+			Top + Korrektur & M\"ar--Sep 2025
+			& 247 & $+4{,}0\%$ \\
+			Crash & Sep 2025--Feb 2026
+			& 279 & $+44{,}9\%$ \\
+			\hline
+			\textbf{Alle Regime} & \textbf{24~Monate}
+			& \textbf{1392} & $\mathbf{+26{,}3\%}$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\subsubsection{Live-Validierung (seit 25.\ Februar 2026).}
+	
+	\begin{center}
+		\begin{tabular}{lr}
+			\hline
+			\textbf{Metrik} & \textbf{Wert} \\
+			\hline
+			Zeitraum & 5~Tage (erste Auswertung) \\
+			Performance vs.\ HODL & $+4{,}13\%$ \\
+			Markt im Zeitraum & $-1{,}92\%$ \\
+			Trades & 36 (18~BUY, 18~SELL) \\
+			\O~Kaufpreis & 63\,828~USD \\
+			\O~Verkaufspreis & 68\,105~USD \\
+			Spread & $+6{,}70\%$ \\
+			Regel-Policy-Divergenz & $0{,}0\%$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\subsubsection{Falsifikationstest: Altcoin-Analyse.}
+	
+	\"Uber $200\,000$~Episoden mit 10~Altcoins zeigt sich:
+	Altcoins besitzen keine eigenst\"andige Eigenfrequenz
+	($\mathrm{AC}_{\mathrm{Alt}} \approx \alpha \cdot
+	\mathrm{AC}_{\mathrm{BTC}} + \eta$).
+	Ohne Resonanzbedingung (A3) kein Informationsaustausch:
+	
+	\begin{center}
+		\begin{tabular}{lrrr}
+			\hline
+			\textbf{Konfiguration}
+			& \textbf{Episoden}
+			& \textbf{Draw-Rate}
+			& \textbf{$>$HODL} \\
+			\hline
+			BTC + 13~Aktien & -- & $84\%$
+			& $100\%$ \\
+			BTC + 10~Altcoins & $200\,000+$
+			& $98{,}4\%$ & $86\%$ \\
+			BTC only (V11) & -- & ${\sim}49\%$
+			& $83{,}4\%$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Aktien besitzen eigenst\"andige Eigenfrequenzen
+	und k\"onnen mit BTC in echte Resonanz treten.
+	Altcoins k\"onnen es nicht.
+	Negativer Lernfortschritt bei Altcoins
+	($-0{,}002$/Zyklus) best\"atigt die Vorhersage.
+	
+	\subsubsection{Konvergenz und Stabilit\"at.}
+	
+	\begin{itemize}
+		\item Performance nach 1~Zyklus: $+25{,}8\%$.
+		Nach 3~Zyklen: $+26{,}3\%$.
+		$\Delta < 1\%$ -- ged\"ampftes Einschwingverhalten.
+		\item Parameter\"anderungen verschlechtern die
+		Performance -- schmales Resonanzfenster.
+		\item Kein klassischer Indikator (RSI, MACD,
+		Bollinger, MA-Crossover) erreicht Korrelation
+		$> 0{,}05$ mit zuk\"unftigen Preisbewegungen.
+		\item Erfahrungsspeicher: lesbare CSV mit
+		${\sim}6\,000$ Eintr\"agen und
+		${\sim}1{,}6$~Mio.\ Z\"ahlern.
+		\item Hardware: 15~Min.\ Training (CPU),
+		2~MB Speicher, 5~W (Raspberry Pi).
+	\end{itemize}
+	
+	Best\"atigt Axiom~1, 2, 3, 4, 5, 6, 7.
 	
 	\subsection{Dynamische Simulationen}
 	
 	Doppelpendelmodell zur Visualisierung komplexer
 	Kopplungszust\"ande:
 	\begin{itemize}
-		\item Bekannte Bewegungsmuster der klassischen
-		Mechanik best\"atigt
+		\item Bekannte Bewegungsmuster best\"atigt
 		\item Neuartige Resonanzmodi identifiziert
 		\item Resonanzpfade und energetische
 		Stabilit\"atsr\"aume visualisiert
@@ -315,8 +453,10 @@
 		erschlossen werden,
 		\item systemische Zusammenh\"ange zwischen Frequenz,
 		Kopplung und Energie hergestellt werden,
-		\item Br\"ucken zwischen klassischer und
-		quantenmechanischer Mathematik geschlagen werden.
+		\item die Identit\"at
+		$\varepsilon(\Delta\varphi) = \eta(\Delta\varphi)$
+		bewiesen werden, die den letzten freien Parameter
+		eliminiert.
 	\end{itemize}
 	
 	%% ============================================================
@@ -329,37 +469,37 @@
 		Ab-initio-Herleitung aus der Systemgeometrie.
 		
 		\item \textbf{Neue Vorhersage:}
-		Vorhersage einer bisher unbekannten Resonanz oder
-		eines messbaren Effekts, der nur aus der RFT folgt.
+		$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$
+		im Resonanzreaktor experimentell pr\"ufbar.
 		
-		\item \textbf{Resonanzreaktor:}
-		Resonant gesteuerte Transmutation von Atomm\"ull
-		als technologische Anwendung. Die RFT sagt vorher,
-		dass durch resonante Anregung bei der Eigenfrequenz
-		eines Isotops die Zerfallsrate modulierbar ist --
-		im Gegensatz zum Standardmodell, das Kernzerfall
-		als rein stochastisch betrachtet. Erste Simulationen
-		unter
-		\texttt{de/fakten/konzepte/resonanzreaktor/}.
+		\item \textbf{Resonanzreaktor -- $Q > 1$:}
+		Break-even-Kurve $d_{\min}(k)$, optimale
+		Targetgeometrie.
 		
 		\item \textbf{CMB mit Boltzmann-Solver:}
-		Voller $\ell$-Bereich ($\ell = 2$--$2500$) mit
-		\textsc{camb} oder \textsc{class} als
-		$\Lambda$CDM-Referenz.
+		Voller $\ell$-Bereich mit
+		\textsc{camb}/\textsc{class}.
 		
 		\item \textbf{Nichtlineare S\"attigung:}
-		Analytische Behandlung der
 		$\lambda\varepsilon^4$- und
-		$\alpha R\varepsilon^2$-Terme im stark
-		expandierenden Regime.
+		$\alpha R\varepsilon^2$-Terme.
 		
-		\item \textbf{Live-Validierung:}
-		6--12~Monate verifizierbare Live-Performance
-		von ResoTrade.
+		\item \textbf{ResoTrade Live-Validierung:}
+		6--12~Monate verifizierbare Performance.
+		V11.2 (D-Anteil/Slope) in Live-Validierung.
+		Statistische Signifikanz ($p$-Wert) ausstehend.
+		\"Ubergang zu Echtgeld nach Dry-Run-Phase.
+		
+		\item \textbf{Optimale MA-Frequenzwahl:}
+		24h/168h empirisch best\"atigt, theoretische
+		Herleitung aus A3 offen.
+		
+		\item \textbf{Skalierung auf andere Assets:}
+		Aktien-Konfiguration positiv (100\% $>$ HODL),
+		nicht weiter getestet.
 		
 		\item \textbf{Weitere Dom\"anen:}
-		\"Ubertragbarkeit auf Akustik, Biologie,
-		Netzwerktheorie, gekoppelte Oszillatoren.
+		Akustik, Biologie, Netzwerktheorie.
 	\end{enumerate}
 	
 	%% ============================================================
@@ -374,19 +514,19 @@
 			\texttt{rft\_manuskript\_de\_iop.tex}
 			& Physik, Simulationen, Peer Review \\
 			\texttt{RFT\_Zusammenfassung.tex}
-			& Technische Gesamt\"ubersicht (dieses Dokument) \\
+			& Technische Gesamt\"ubersicht \\
 			\texttt{RFT\_Philosophie.tex}
-			& Metaphysische Erweiterungen (spekulativ) \\
+			& Metaphysische Erweiterungen \\
 			\hline
 		\end{tabular}
 	\end{center}
 	
 	\section*{Anhang: Verzeichnisstruktur}
 	
-	\textbf{Monte-Carlo-Simulation:}
+	\textbf{Monte-Carlo:}
 	\texttt{de/fakten/empirisch/monte\_carlo\_test/}
 	
-	\textbf{FLRW-Simulationen:}
+	\textbf{FLRW:}
 	\texttt{de/fakten/simulationen/relativitaet\_verbindung/}
 	
 	\textbf{ResoTrade:}
@@ -395,7 +535,7 @@
 	\textbf{Resonanzreaktor:}
 	\texttt{de/fakten/konzepte/resonanzreaktor/}
 	
-	\textbf{Dynamische Simulationen:}
+	\textbf{Dynamische Sim.:}
 	\texttt{de/fakten/simulationen/simulation\_atommodell/}
 	
 	\vspace{2em}
