@@ -267,7 +267,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 1 | [ResoOS](fakten/konzepte/ResoOS/resoOS.md) | Resonanzbasiertes Betriebssystem |
 | 2 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
 | 3 | [ResoChess](fakten/konzepte/ResoChess/reso_chess.md) | Resonanzlogische KI |
-| 4 | [Resonanzgenerator](fakten/konzepte/resonanzgenerator/resonanzgenerator.md) | Energiegewinnung |
+| 4 | [Resonanzgenerator](fakten/konzepte/resonanzgenerator/README.md) | Energiegewinnung |
 | 5 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
 | 6 | [Kraftfeldgenerator](fakten/konzepte/kraftfeldgenerator/kraftfeldgenerator.md) | Feldtechnologie |
 | 7 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
