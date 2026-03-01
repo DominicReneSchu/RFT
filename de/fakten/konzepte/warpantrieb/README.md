@@ -2,14 +2,28 @@
 
 *Dominic-René Schu, 2025/2026*
 
-Der **Warpantrieb** nutzt eine dreistufige Kaskade:
-Resonanzreaktoren (Spaltung) treiben Trägheitsfusion,
-die Fusionsenergie erzeugt lokale Raumzeitkrümmung —
-steuerbar über ε(Δφ) = cos²(Δφ/2).
+Der **Warpantrieb** nutzt ein Zwei-Feld-Modell:
+Fusionsfeld (Kontraktion) + Plateau-Feld (Expansion),
+gesteuert über ε(Δφ) = cos²(Δφ/2).
+Keine negative Energie nötig.
 
-> **Gleiche Gleichung. Der Resonanzreaktor liefert die
-> Treiberenergie. Der Kraftfeldgenerator schützt das Schiff.
-> Die Fusion liefert die Dichte. Die Phase steuert alles.**
+> **Δφ = 0 → Kontraktion (vorn). Δφ = π/2 → Expansion (hinten).
+> Δφ = π → Warp aus. ρ > 0 überall.**
+
+---
+
+## Kern-Ergebnis
+
+| Messgröße | Wert |
+|-----------|------|
+| w(Δφ=0) | **+0.006** (Kontraktion) |
+| w(Δφ=π/2) | **−0.013** (Expansion) |
+| Vorzeichenwechsel | Δφ ≈ π/3 |
+| Gradient Δw | +0.019 |
+| Peak-Krümmung | 299× Sonnenmitte |
+| Negative Energie? | **Nicht nötig** (ρ > 0 überall) |
+| RFT-Signatur | 2.5806 (exakt) |
+| κ | 1 (parameterfrei) |
 
 ---
 
@@ -17,27 +31,11 @@ steuerbar über ε(Δφ) = cos²(Δφ/2).
 
 | Stufe | Inhalt | Status |
 |-------|--------|--------|
-| 1. Etabliert | RFT + ART: η = cos² in FLRW-Raumzeit | ✅ Simuliert |
-| 2. Extrapolation | Spaltung → Fusion → lokale Krümmung | ⚠️ Simuliert |
-| 3. Vision | Alcubierre-Blase (Lücke: ~10⁵ Peak) | ❌ Offen |
-
----
-
-## Zentrale Ergebnisse
-
-| Messgröße | Wert |
-|-----------|------|
-| Treiberleistung | 12 × 100 MW = 1.2 GW |
-| Fusionsenergie | 180 MJ / Puls (Gain 1.5×) |
-| ρ_Pellet (zeitgemittelt) | 4.3 × 10¹⁶ J/m³ |
-| ρ_Peak (während Burn, 10 ns) | 4.3 × 10²⁴ W/m³ |
-| R_Pellet | 8.0 × 10⁻¹⁰ 1/m² |
-| R_Peak | 8.0 × 10⁻² 1/m² (300× Sonnenmitte) |
-| Phasenscan | ρ(Δφ) ∝ cos⁴(Δφ/2) bestätigt |
-| RFT-Signatur | ρ(0)/⟨ρ⟩ = 2.5806 (exakt) |
-| Asymmetrie | ρ_vorn >> ρ_hinten (Warp-Geometrie) |
-| Energielücke zu Alcubierre | ~10⁵ (Peak), ~10¹³ (stetig) |
-| κ | 1 (parameterfrei) |
+| 1. Kaskade | Spaltung → Fusion → Energiedichte | ✅ Simuliert |
+| 2. Zwei-Feld | Kontraktion (ε₁) + Expansion (ε₂) | ✅ Simuliert |
+| 3. Warp-Profil | Vorzeichenwechsel w(Δφ) bestätigt | ✅ Simuliert |
+| 4. Energielücke | ~10⁵ Peak, Skalierungsproblem | ⚠️ Offen |
+| 5. Alcubierre | Vollständige Blase | ❌ Nächster Schritt |
 
 ---
 
@@ -45,15 +43,15 @@ steuerbar über ε(Δφ) = cos²(Δφ/2).
 
 | Datei | Beschreibung |
 |-------|-------------|
-| [warpantrieb.md](warpantrieb.md) | Physik, Kaskade, Ergebnisse, Energielücke |
-| [warpantrieb.py](warpantrieb.py) | Simulation: 4 Experimente, 4 Plots |
+| [warpantrieb.md](warpantrieb.md) | Physik, Zwei-Feld-Modell, Ergebnisse |
+| [warpantrieb.py](warpantrieb.py) | Simulation: 4 Experimente, 5 Plots |
 
 ---
 
 ## Ausführung
 
 ```bash
-python warpantrieb.py    # → figures/ (4 Plots)
+python warpantrieb.py    # → figures/ (5 Plots)
 ```
 
 ---
