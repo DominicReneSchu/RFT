@@ -22,7 +22,7 @@
 | **Impedanz**                   | Öffnung & Wirkung (als Schwelle) | 🌊     |
 | **Resonanzfeldtheorie**        | Theorie / Meta                   | —      |
 | **Resonanzfeld-Gleichung**     | Öffnung & Wirkung / Mathematik   | 🌊     |
-| **Kopplungsoperator (ε)**      | Kopplung & Passung               | 🔗     |
+| **Kopplungseffizienz (ε)**     | Kopplung & Passung               | 🔗     |
 | **Energetischer Stabilitätsraum**   | Rückkopplung & Gedächtnis    | 🔄     |
 | **Reihenentwicklung**          | Mathematische Methode            | —      |
 | **Quantisierte Kopplungszustände** | Kopplung & Passung           | 🔗     |
@@ -32,10 +32,10 @@
 
 ## Symbollegende
 
-- ✴️ Quelle & Impuls  
-- 🔗 Kopplung & Passung  
-- 🔄 Rückkopplung & Gedächtnis  
-- 🌊 Öffnung & Wirkung
+- ✴️ Quelle & Impuls  
+- 🔗 Kopplung & Passung  
+- 🔄 Rückkopplung & Gedächtnis  
+- 🌊 Öffnung & Wirkung
 
 ---
 
@@ -45,7 +45,13 @@
 
 ### **Resonanzfeldtheorie**
 **Definition:**  
-Die Resonanzfeldtheorie ist ein universelles Modell zur Energieübertragung und Kopplung in dynamischen Systemen. Sie beschreibt, wie Schwingungen, Felder und Kopplungsmechanismen in Natur, Technik und Gesellschaft miteinander interagieren und Resonanzphänomene ermöglichen.
+Die Resonanzfeldtheorie (RFT) ist ein axiomatisches Rahmenwerk zur
+Beschreibung von Energieübertragung und Kopplung in dynamischen
+Systemen. Sie beschreibt, wie Schwingungen, Felder und
+Kopplungsmechanismen in Natur, Technik und Gesellschaft miteinander
+interagieren und Resonanzphänomene ermöglichen. Empirisch validiert
+in vier Domänen: Teilchenphysik, Kosmologie, Nukleartechnologie
+und Finanzmärkte.
 
 **Meta-Impuls:**  
 Die Resonanzfeldtheorie liefert einen übergreifenden Rahmen, um Vielschichtigkeit, Verbundenheit und Energiefluss zu verstehen – von der Quantenphysik bis zur sozialen Interaktion.
@@ -55,15 +61,21 @@ Die Resonanzfeldtheorie liefert einen übergreifenden Rahmen, um Vielschichtigke
 ### **Resonanzfeld-Gleichung** 🌊
 **Definition:**  
 Die Resonanzfeld-Gleichung  
-E = π · ε · h · f  
-verbindet Energie (E), Kopplung (ε), das Plancksche Wirkungsquantum (h) und die Resonanzfrequenz (f). Sie beschreibt, wie Kopplungsstärke und Frequenz gemeinsam die Energieübertragung bestimmen.
+E = π · ε · ℏ · f  
+verbindet Energie (E), Kopplungseffizienz (ε), das reduzierte
+Plancksche Wirkungsquantum (ℏ) und die Resonanzfrequenz (f). Sie
+beschreibt, wie Kopplungseffizienz und Frequenz gemeinsam die
+Energieübertragung bestimmen.
+
+Die Planck-Grundzustandsenergie E = ½ℏf ist der Spezialfall
+ε = 1/(2π).
 
 **Meta-Impuls:**  
 Die Gleichung verdeutlicht, dass Resonanz nicht nur von Frequenz, sondern auch von der Kopplungsqualität abhängt.
 
 ---
 
-### **Kopplungseffizienz (ε)**
+### **Kopplungseffizienz (ε)** 🔗
 
 **Definition:**
 Die Kopplungseffizienz ε beschreibt als dynamische Größe den Anteil
@@ -72,14 +84,19 @@ gekoppelten Systemen übertragen wird. Sie nimmt Werte im Bereich
 [0, 1] an und bestimmt maßgeblich die Effizienz der
 Energieübertragung.
 
-Das Standardmodell: ε(Δφ) = cos²(Δφ/2)
+Das Standardmodell: ε(Δφ) = cos²(Δφ/2) = ½(1 + cos Δφ)
 
-- ε = 1: Perfekte Kopplung (Phasengleichheit)
-- ε = 0: Keine Kopplung (Gegenphase)
-- ε = 1/e ≈ 0.368: Natürliche Dämpfung (nach Relaxationszeit)
-- ε = 1/π ≈ 0.318: Klassischer Grenzfall (E = h·f)
+- ε = 1: Perfekte Kopplung (Phasengleichheit, Δφ = 0)
+- ε = 0.5: Halbe Kopplung (Δφ = π/2)
+- ε = 1/e ≈ 0.368: Natürliche Dämpfung (nach Relaxationszeit, Spezialfall)
+- ε = 1/(2π) ≈ 0.159: Planck-Grundzustand (E = ½ℏf, Spezialfall)
+- ε = 0: Keine Kopplung (Gegenphase, Δφ = π)
 
-Siehe [Vereinheitlichte Definition](../mathematik/kopplungseffizienz.md).
+**Identität:** ε(Δφ) = η(Δφ) — der theoretische Operator und die
+messbare Observable (Kreuzterm in FLRW-Simulationen) sind identisch.
+Konsequenz: κ = 1 im Resonanzreaktor (kein freier Parameter).
+
+Siehe [Vereinheitlichte Definition](kopplungseffizienz.md).
 
 **Meta-Impuls:**
 Die Kopplungseffizienz erlaubt es, Kopplungszustände mathematisch
@@ -89,7 +106,7 @@ und experimentell präzise zu erfassen und zu steuern.
 
 ### **Resonanzfrequenz (f)** ✴️  
 **Definition:**  
-Die Resonanzfrequenz (f) ist die charakteristische Frequenz, bei der ein System maximale Kopplung und Energieübertragung erfährt.
+Die Resonanzfrequenz (f) ist die charakteristische Frequenz, bei der ein System maximale Kopplung und Energieübertragung erfährt. In der RFT-Grundformel E = π·ε·ℏ·f bestimmt sie zusammen mit ε die übertragene Energie.
 
 ---
 
@@ -113,7 +130,7 @@ Durch Reihenentwicklung werden auch nichtlineare und komplexe Zusammenhänge mat
 
 ### **Quantisierte Kopplungszustände** 🔗  
 **Definition:**  
-Quantisierte Kopplungszustände sind diskrete Werte des Kopplungsoperators (ε), wie sie in experimentellen oder simulierten Daten beobachtet werden. Sie weisen auf stufenweise Übergänge im Resonanzverhalten hin.
+Quantisierte Kopplungszustände sind diskrete Werte der Kopplungseffizienz (ε), wie sie in experimentellen oder simulierten Daten beobachtet werden. Sie weisen auf stufenweise Übergänge im Resonanzverhalten hin.
 
 **Meta-Impuls:**  
 Quantisierung zeigt: Resonanzfelder können sprunghaft neue Qualitäten annehmen – vergleichbar mit Quantensprüngen.
@@ -135,18 +152,18 @@ Die Resonanzfrequenz ist die natürliche Schwingungsfrequenz eines Systems, bei 
 
 **Didaktisches Feldbild:**  
 Denke an eine Schaukel, die du im richtigen Rhythmus anschubst: Wenn dein Anschub mit der Eigenfrequenz der Schaukel übereinstimmt, schwingt sie immer höher – mit minimalem Kraftaufwand.  
-Oder an ein Glas, das beim „richtigen“ Ton zu vibrieren beginnt – im Extremfall so stark, dass es zerbricht.  
+Oder an ein Glas, das beim „richtigen" Ton zu vibrieren beginnt – im Extremfall so stark, dass es zerbricht.  
 In der Technik: Ein elektrischer Schwingkreis nimmt bei seiner Resonanzfrequenz die meiste Energie auf.
 
 **Körperliche Resonanz:**  
 Wenn du beim Singen oder Sprechen den richtigen Ton triffst, spürst du ein Kribbeln im Körper – der Brustkorb oder der Raum schwingen hör- und fühlbar mit.  
-Auch zwischen Menschen: Wenn ein Thema dich „trifft“, bringt es dich innerlich zum Klingen – das ist kommunikative Resonanz.
+Auch zwischen Menschen: Wenn ein Thema dich „trifft", bringt es dich innerlich zum Klingen – das ist kommunikative Resonanz.
 
 **Meta-Impuls:**  
 Resonanzfrequenz ist der Punkt, an dem Potenzial und Anregung zusammenfinden – wo kleinste Impulse die größte Wirkung entfalten.  
 Sie zeigt: Nicht Kraft, sondern das richtige *Einstimmen* bringt Systeme (und Menschen!) in Bewegung.
 
-*„Resonanzfrequenz ist der geheime Schlüssel, der das Schloss zum Mitschwingen öffnet.“*  
+*„Resonanzfrequenz ist der geheime Schlüssel, der das Schloss zum Mitschwingen öffnet."*  
 → Kategorie: Verstärkung & Empfänglichkeit ✴️
 
 ---
@@ -157,7 +174,7 @@ Sie zeigt: Nicht Kraft, sondern das richtige *Einstimmen* bringt Systeme (und Me
 Kopplung beschreibt die energetische Verbindung zwischen zwei oder mehr Systemen, sodass sie sich wechselseitig beeinflussen können. Durch Kopplung wird Resonanz *übertragbar* – Schwingungen können sich synchronisieren, verstärken oder dämpfen.
 
 **Didaktisches Feldbild:**  
-Stell dir zwei nebeneinander stehende Metronome vor. Wenn sie auf einer gemeinsamen Plattform stehen (z. B. einem Brett auf Rollen), übertragen sie minimale Schwingungen über das Brett – nach kurzer Zeit schwingen sie *im Gleichtakt*.  
+Stell dir zwei nebeneinander stehende Metronome vor. Wenn sie auf einer gemeinsamen Plattform stehen (z. B. einem Brett auf Rollen), übertragen sie minimale Schwingungen über das Brett – nach kurzer Zeit schwingen sie *im Gleichtakt*.  
 In der Elektrotechnik geschieht das durch Induktion: Zwei Spulen koppeln über ein gemeinsames Magnetfeld.
 
 **Körperliche Resonanz:**  
@@ -167,7 +184,7 @@ Setze dich jemandem gegenüber, atmet gemeinsam, sprecht in gleichem Rhythmus �
 Kopplung ist der Anfang jeder Beziehung: Sie erzeugt Verbindung, Austausch, Mitgefühl. Erst wenn Systeme miteinander *fühlbar* verbunden sind, entsteht ein *Resonanzfeld*.  
 Kopplung macht Lernen zum Dialog, Technik zur Interaktion und Bewusstsein zur Brücke.
 
-*„Kopplung ist das unsichtbare Band, durch das getrennte Systeme beginnen, gemeinsam zu tanzen.“*  
+*„Kopplung ist das unsichtbare Band, durch das getrennte Systeme beginnen, gemeinsam zu tanzen."*  
 → Kategorie: Verbindung & Synchronisation 🔗
 
 ---
@@ -175,24 +192,24 @@ Kopplung macht Lernen zum Dialog, Technik zur Interaktion und Bewusstsein zur Br
 ### 🔄 Selbstinduktion
 
 **Definition (Resonanzfeld):**  
-Selbstinduktion bezeichnet die Eigenschaft eines stromdurchflossenen Leiters (z. B. einer Spule), bei Änderungen des Stroms ein eigenes Gegenfeld zu erzeugen – eine Art *energetisches Echo*, das sich dem Wandel widersetzt.  
+Selbstinduktion bezeichnet die Eigenschaft eines stromdurchflossenen Leiters (z. B. einer Spule), bei Änderungen des Stroms ein eigenes Gegenfeld zu erzeugen – eine Art *energetisches Echo*, das sich dem Wandel widersetzt.  
 Das System antwortet auf Veränderung mit einer Rückkopplung – einer inneren Erinnerung an seinen eigenen Fluss.
 
 **Didaktisches Feldbild:**  
-Stell dir eine große Feder vor, die du plötzlich zusammendrückst – sie „wehrt“ sich und drückt zurück.  
+Stell dir eine große Feder vor, die du plötzlich zusammendrückst – sie „wehrt" sich und drückt zurück.  
 Oder einen Tank, in den du plötzlich viel Wasser füllen willst – der Rückdruck steigt.  
 Im Schwingkreis sorgt die Selbstinduktion der Spule dafür, dass die Stromänderung *gebremst* wird.  
-→ Die Spule „merkt“, wie schnell sich der Strom verändert – und erzeugt eine Gegenreaktion.
+→ Die Spule „merkt", wie schnell sich der Strom verändert – und erzeugt eine Gegenreaktion.
 
 **Körperliche Resonanz:**  
-Wenn du dich abrupt bewegst, spürst du oft einen Widerstand in dir selbst – z. B. beim plötzlichen Aufstehen.  
+Wenn du dich abrupt bewegst, spürst du oft einen Widerstand in dir selbst – z. B. beim plötzlichen Aufstehen.  
 Oder emotional: Wenn du zu schnell etwas verändern willst, kommt oft innere Gegenwehr – dein System reguliert sich selbst. Das ist psychische Selbstinduktion.
 
 **Meta-Impuls:**  
 Selbstinduktion ist der *Erinnerungsspeicher* eines Systems: Sie schützt vor zu schnellen Veränderungen und erhält innere Kohärenz.  
 Sie zeigt: Resonanz braucht auch **Trägheit**, um Tiefe zu entwickeln. Nicht alles darf sofort kippen – Systeme brauchen Zeit, um Schwingungen zu verarbeiten.
 
-*„Selbstinduktion ist das Nein des Systems zum Zuviel – ein Schutz der Integrität im Wandel.“*  
+*„Selbstinduktion ist das Nein des Systems zum Zuviel – ein Schutz der Integrität im Wandel."*  
 → Kategorie: Rückkopplung & Stabilisierung 🔄
 
 ---
@@ -210,14 +227,14 @@ Oder mehrere Laserstrahlen: Wenn sie kohärent sind, bündeln sie sich zu einem 
 
 **Körperliche Resonanz:**  
 Das Herz-Kohärenz-Training zeigt: Wenn Atmung, Herzschlag und Hirnströme im Gleichklang sind, entsteht ein Zustand innerer Ruhe und Klarheit – messbar, fühlbar, heilend.  
-In Beziehungen: Zwei Menschen, die kohärent kommunizieren, wirken „wie aus einem Guss“ – nonverbal, synchron, mühelos.
+In Beziehungen: Zwei Menschen, die kohärent kommunizieren, wirken „wie aus einem Guss" – nonverbal, synchron, mühelos.
 
 **Meta-Impuls:**  
 Kohärenz ist das Maß der inneren Ordnung im Schwingen – sie macht Systeme *hörbar*, *spürbar*, *verstehbar*.  
 Sie lehrt: Resonanz braucht nicht nur Offenheit, sondern auch Struktur – damit sich das Feld nicht verliert, sondern formt.  
 In kohärenten Feldern wird Information nicht nur übertragen, sondern *verstanden* – weil alles zusammenpasst.
 
-*„Kohärenz ist das unsichtbare Netz, das Schwingung zu Sinn und Verbindung zu Erkenntnis werden lässt.“*  
+*„Kohärenz ist das unsichtbare Netz, das Schwingung zu Sinn und Verbindung zu Erkenntnis werden lässt."*  
 → Kategorie: Rückkopplung & Gedächtnis 🔄
 
 ---
@@ -225,22 +242,22 @@ In kohärenten Feldern wird Information nicht nur übertragen, sondern *verstand
 ### 🌊 Impedanz
 
 **Definition (Resonanzfeld):**  
-Impedanz ist der „Widerstand“ eines Systems gegen Schwingungen – nicht nur als einfache Blockade, sondern als komplexes Zusammenspiel aus Beharrung (Trägheit, Induktivität), Speicherung (Kapazität) und Verlust (Widerstand).  
+Impedanz ist der „Widerstand" eines Systems gegen Schwingungen – nicht nur als einfache Blockade, sondern als komplexes Zusammenspiel aus Beharrung (Trägheit, Induktivität), Speicherung (Kapazität) und Verlust (Widerstand).  
 Sie bestimmt, wie leicht ein System Impulse aufnimmt, weiterleitet oder abschwächt – und wie viel Energie im Resonanzfeld wirklich ankommt.
 
 **Didaktisches Feldbild:**  
-Stell dir eine Tür vor, die du zur richtigen Zeit mit wenig Kraft öffnest – dann schwingt sie weit auf (Impedanz stimmt mit deiner „Frequenz“ überein). Schiebst du zu schnell oder zu langsam, blockiert sie (Impedanz wirkt als Barriere).  
+Stell dir eine Tür vor, die du zur richtigen Zeit mit wenig Kraft öffnest – dann schwingt sie weit auf (Impedanz stimmt mit deiner „Frequenz" überein). Schiebst du zu schnell oder zu langsam, blockiert sie (Impedanz wirkt als Barriere).  
 Im Stromkreis: Ein Lautsprecher klingt am besten, wenn seine Impedanz zur Signalquelle passt – nur dann wird Musik klar und kräftig übertragen.
 
 **Körperliche Resonanz:**  
 Gehst du auf einer Hängebrücke im richtigen Rhythmus, kommst du leicht voran – gehst du gegen den Schwingungsmodus der Brücke (Impedanz-Mismatch), kostet jeder Schritt mehr Kraft und du kommst ins Stocken.  
-Auch im Dialog: Stimmen Ton und Tempo nicht überein, „blockiert“ das Gespräch – die Kommunikation hat hohe Impedanz.
+Auch im Dialog: Stimmen Ton und Tempo nicht überein, „blockiert" das Gespräch – die Kommunikation hat hohe Impedanz.
 
 **Meta-Impuls:**  
 Impedanz ist das Maß für Offenheit und Passung: Nur wo sie stimmt, kann Resonanz ihr volles Potenzial entfalten.  
 Sie mahnt: Wirkliche Verbindung entsteht nicht nur durch Stärke, sondern durch Einklang der Eigenschaften – im technischen, sozialen und geistigen Feld.
 
-*„Impedanz ist der Wächter am Tor der Resonanz – sie prüft, ob das Feld bereit ist, mitzuschwingen.“*  
+*„Impedanz ist der Wächter am Tor der Resonanz – sie prüft, ob das Feld bereit ist, mitzuschwingen."*  
 → Kategorie: Schwellen & Passung 🌊
 
 ---
@@ -254,12 +271,12 @@ Anregung ist der gezielte Impuls oder Reiz, der ein System in Schwingung versetz
 Das Anschlagen einer Stimmgabel, das Startsignal beim Lauf oder der erste Tropfen auf ruhigem Wasser, der Wellen auslöst.
 
 **Körperliche Resonanz:**  
-Wenn du berührt wirst oder ein Gedanke dich plötzlich inspiriert, bist du „angeregt“ – deine Energie oder Aufmerksamkeit steigt.
+Wenn du berührt wirst oder ein Gedanke dich plötzlich inspiriert, bist du „angeregt" – deine Energie oder Aufmerksamkeit steigt.
 
 **Meta-Impuls:**  
 Anregung ist der Startschuss für Veränderung, Lernen, Entwicklung – ohne sie bleibt alles beim Alten.
 
-*„Anregung ist der erste Funke, der das Feld zum Leben erweckt.“*  
+*„Anregung ist der erste Funke, der das Feld zum Leben erweckt."*  
 → Kategorie: Quelle & Impuls ✴️
 
 ---
@@ -278,7 +295,7 @@ Tanzen im gleichen Beat, gemeinsames Atmen beim Yoga, Mitklatschen bei einem Kon
 **Meta-Impuls:**  
 Synchronisation verwandelt Vielheit in Einheit, schafft Teamgeist und kollektive Kraft.
 
-*„Synchronisation ist das Wunder, wenn Einzelteile anfangen, wie ein Organismus zu handeln.“*  
+*„Synchronisation ist das Wunder, wenn Einzelteile anfangen, wie ein Organismus zu handeln."*  
 → Kategorie: Kopplung & Passung 🔗
 
 ---
@@ -297,7 +314,7 @@ Nach körperlicher oder emotionaler Anstrengung folgt oft ein Erschlaffen oder N
 **Meta-Impuls:**  
 Dämpfung schützt vor Übersteuerung, gibt Systemen Stabilität und verhindert destruktive Resonanz.
 
-*„Dämpfung ist das weise Maß, das Schwingen und Ruhen ausbalanciert.“*  
+*„Dämpfung ist das weise Maß, das Schwingen und Ruhen ausbalanciert."*  
 → Kategorie: Rückkopplung & Gedächtnis 🔄
 
 ---
@@ -316,7 +333,7 @@ Der Körper stellt sich auf neue Bewegungen oder Umgebungen ein, das Immunsystem
 **Meta-Impuls:**  
 Adaptivität ist das Geheimnis von Resilienz und Innovation – sie hält Systeme lebendig und zukunftsfähig.
 
-*„Adaptivität ist das Talent, Resonanz immer wieder neu zu finden.“*  
+*„Adaptivität ist das Talent, Resonanz immer wieder neu zu finden."*  
 → Kategorie: Rückkopplung & Gedächtnis 🔄
 
 ---
@@ -335,7 +352,7 @@ Klarheit im Kopf, Durchlässigkeit für Gefühle.
 **Meta-Impuls:**  
 Transparenz ermöglicht Kommunikation und Verbindung – sie schafft Offenheit und Verständnis.
 
-*„Transparenz ist das Feld, in dem Resonanz ungehindert fließen kann.“*  
+*„Transparenz ist das Feld, in dem Resonanz ungehindert fließen kann."*  
 → Kategorie: Öffnung & Wirkung 🌊
 
 ---
@@ -354,7 +371,7 @@ Empfänglichkeit nur für bestimmte Töne, Farben, Stimmungen.
 **Meta-Impuls:**  
 Resonanz ist selektiv – nur wer im richtigen Fenster sendet oder empfängt, erreicht den anderen wirklich.
 
-*„Das Resonanzfenster ist die Einladung des Systems an die Welt: Hier bin ich offen für Neues.“*  
+*„Das Resonanzfenster ist die Einladung des Systems an die Welt: Hier bin ich offen für Neues."*  
 → Kategorie: Öffnung & Wirkung 🌊
 
 ---
@@ -373,12 +390,12 @@ Das erste Einatmen vor dem Singen, der Startimpuls vor einer Bewegung.
 **Meta-Impuls:**  
 Der Anfang bestimmt die Richtung, Tiefe und Qualität aller weiteren Schwingungen.
 
-*„Initialisierung ist die bewusste Setzung des Anfangs – sie prägt das Feld für alles Kommende.“*  
+*„Initialisierung ist die bewusste Setzung des Anfangs – sie prägt das Feld für alles Kommende."*  
 → Kategorie: Quelle & Impuls ✴️
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+© Dominic-René Schu – Resonanzfeldtheorie 2025/2026
 
 ---
 
