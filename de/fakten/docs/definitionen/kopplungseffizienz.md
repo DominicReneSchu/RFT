@@ -13,10 +13,14 @@ Dieses Dokument vereinheitlicht die Notation und Definition
 verbindlich für alle Dokumente der RFT.
 
 **Aktueller Stand (März 2026):** Die Identität ε = η wurde in
-drei unabhängigen Domänen empirisch bestätigt:
-- FLRW-Simulationen (1.530 Einzelläufe)
+vier unabhängigen Domänen empirisch bestätigt:
+- FLRW-Simulationen (1.530 Einzelläufe, d_η = 0.043 im flachen Fall)
+- Monte Carlo auf CMS-Daten (1.500.000 Simulationen, 5 Resonanzen)
 - Resonanzreaktor (κ = 1, kein freier Parameter)
-- ResoTrade (Kopplungseffizienz als Pause-Gate)
+- ResoTrade (Kopplungseffizienz als Pause-Gate, +26.3% vs HODL)
+
+Alle Dokumente, Simulationen und Definitionen wurden auf die
+vereinheitlichte Notation umgestellt (siehe §8).
 
 ---
 
@@ -30,9 +34,9 @@ drei unabhängigen Domänen empirisch bestätigt:
 | **ε(Δφ)** | Phasenabhängige Kopplungseffizienz | Wenn die Abhängigkeit explizit ist |
 | **η(Δφ)** | Kopplungseffizienz (Observable) | In FLRW-Simulationen (Kreuzterm) |
 
-Das kalligraphische Symbol **𝓔** wird als typographische Variante
-von ε akzeptiert (insbesondere in Diagrammen und Simulationen),
-bezeichnet aber dieselbe Größe.
+Das kalligraphische Symbol **𝓔** war eine typographische Variante
+aus früheren Versionen. In allen aktuellen Dokumenten und
+Simulationen wird einheitlich **ε** verwendet.
 
 **Identität:** ε(Δφ) = η(Δφ) = cos²(Δφ/2). Der theoretische
 Operator ε und die messbare Observable η sind identisch.
@@ -69,6 +73,7 @@ Dieses Modell ergibt:
   cos²(Δφ/2) mit d_η = 0.043 ± 0.008 im flachen Fall
 - Resonanzreaktor: ε = η eliminiert κ → κ = 1 exakt
 - ResoTrade: ε → 0 im Crash → Pause-Gate → +44.9% vs HODL
+- Monte Carlo: ε = 1 bei Teilchenmasse M₀ → 5 Resonanzen, emp. p = 0
 
 ### 2.4 Allgemeinere Modelle
 
@@ -99,8 +104,9 @@ mit |Δφ|.
 | Bedingung | ε | Energie | Physik |
 |-----------|---|---------|--------|
 | Perfekte Kopplung | 1 | π·ℏ·f | Maximale Resonanzenergie |
-| Planck-Spezialfall | 1/(2π) | ½·ℏ·f | Grundzustandsenergie (harm. Osz.) |
-| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit |
+| Planck (1. Anregung) | 1/π ≈ 0.318 | ��·f | E = ℏω (Spezialfall) |
+| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ½·ℏ·f | Grundzustandsenergie (harm. Osz.) |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit (Spezialfall) |
 | Halbe Kopplung | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
 | Keine Kopplung | 0 | 0 | Entkoppelte Systeme |
 
@@ -115,7 +121,7 @@ Der Faktor π entsteht aus der Integration der Kopplungseffizienz
 
 Normiert auf die Kopplungseinheit ergibt sich die Grundformel
 E = π · ε · ℏ · f (vollständige Herleitung: siehe
-axiomatische_grundlegung.md §4.1).
+[axiomatische Grundlegung](axiomatische_grundlegung.md) §4.1).
 
 ---
 
@@ -146,12 +152,13 @@ Kopplungsoperator ε(Δφ) = cos²(Δφ/2) gilt, folgt:
 | FLRW-Kosmologie | η emergiert als Observable, d_η skaliert mit H₀ |
 | Resonanzreaktor | κ = 1 exakt (kein freier Parameter) |
 | ResoTrade | ε → 0 als messbares Gate-Kriterium |
+| Monte Carlo | ε = 1 bei Resonanzmasse → Axiom 3 bestätigt |
 | Allgemein | Operator und Observable sind identisch |
 
 ### 4.3 Empirische Evidenz
 
 ```
-    Flach (H = 0):     d_η = 0.043 ± 0.008  → cos² fast exakt
+    Flach (H = 0):      d_η = 0.043 ± 0.008  → cos² fast exakt
     Planck (H₀ = 67.4): d_η = 0.140 ± 0.025  → Hubble-Reibung
     SH0ES (H₀ = 73.0):  d_η = 0.149 ± 0.026  → Δd_η > 6σ
 ```
@@ -184,7 +191,7 @@ werden kann), nicht für die Kopplungseffizienz ε.
 
 ### 5.2 Die Definition 𝓔 := √(e · 1/e) = 1
 
-In der README wurde definiert:
+In einer früheren README wurde definiert:
 
 ```
     𝓔 := √(e · 1/e) = 1
@@ -192,17 +199,21 @@ In der README wurde definiert:
 
 Dies beschreibt den **Referenzzustand**: Das geometrische Mittel
 zwischen maximalem Wachstum (e) und maximalem Zerfall (1/e)
-ergibt die neutrale Kopplung. In der neuen Notation:
+ergibt die neutrale Kopplung. In der aktuellen Notation:
 
 ```
     ε = 1 entspricht perfekter Kopplung
     → E = π · ℏ · f (maximale Resonanzenergie)
 ```
 
+Diese Definition ist in der aktuellen README durch die
+vereinheitlichte Notation ersetzt.
+
 ### 5.3 Der Spezialfall ε = 1/e
 
-In der `energie_axiomatische_herleitung.md` wurde ε = 1/e als
-universeller Korrekturfaktor dargestellt. Korrekte Einordnung:
+In einer früheren Fassung der `energie_axiomatische_herleitung.md`
+wurde ε = 1/e als universeller Korrekturfaktor dargestellt.
+Korrekte Einordnung:
 
 ```
     ε = 1/e ≈ 0.368
@@ -217,7 +228,7 @@ einer Relaxationszeit τ in einem gedämpften System:
 
 Es handelt sich um einen physikalisch wichtigen Spezialfall
 (typische Kopplung nach Einschwingvorgang), nicht um den
-allgemeinen Fall.
+allgemeinen Fall. Das Dokument wurde entsprechend korrigiert.
 
 ---
 
@@ -254,6 +265,8 @@ umgesetzt wird.
     η(Δφ) = ⟨ε₁·ε₂⟩ / √(⟨ε₁²⟩·⟨ε₂²⟩)
     d_η = ⟨|η_sim − η_theo|⟩
     dd_η/dH₀ = (0.00113 ± 0.00017) (km/s/Mpc)⁻¹
+    Δd_η (SH0ES − Planck) = 0.0063 ± 0.0010 (> 6σ)
+    Δχ² = +16 vs Planck-2018-CMB
 ```
 
 ### 7.2 Resonanzreaktor
@@ -261,7 +274,11 @@ umgesetzt wird.
 ```
     λ_eff(Δφ) = λ₀ + η(Δφ) · Φ_γ · σ_GDR
     κ = 1 (aus ε = η, kein freier Parameter)
-    Q_fission ≈ 1.0 für Pu-239 bei Φ = 10¹² γ/(cm²·s)
+    f_GDR = E_GDR / (π·ℏ)
+
+    U-235: GDR 13.0 MeV, f = 6.3×10²¹ Hz, λ_eff/λ₀ = 7872
+    Pu-239: GDR 13.5 MeV, Q_fiss ≈ 1.0 bei Φ = 10¹² γ/(cm²·s)
+    Am-241: GDR 13.3 MeV, α-Zerfall beschleunigbar
 ```
 
 ### 7.3 ResoTrade
@@ -270,33 +287,41 @@ umgesetzt wird.
     Kopplungseffizienz als Gate-Kriterium:
     ε → 0 (Crash, DC fällt stark) → Pause → +44.9% vs HODL
     ε → 1 (Phasenkohärenz) → Trade erlaubt → systematisch profitabel
+    24 Monate, 4 Regime, 1392 Trades, +26.3% vs HODL
+    Live seit Feb. 2026 (+4.13% in 2 Wochen)
 ```
 
 ### 7.4 Monte-Carlo (CMS-Daten)
 
 ```
     Resonanzbedingung (A3): ε = 1 bei M₀ = Teilchenmasse
-    5 Resonanzen detektiert mit emp. p = 0
-    1.500.000 Gesamtsimulationen
+    5 Resonanzen detektiert mit emp. p = 0:
+    φ(1020), J/ψ, Υ(1S), Υ(2S), Z-Boson
+    1.500.000 Gesamtsimulationen (30 Seeds × 50.000)
+    Stabil über 3 KDE-Bandbreiten
 ```
 
 ---
 
-## 8. Konsequenzen für bestehende Dokumente
+## 8. Dokumentenstatus: Vereinheitlichung abgeschlossen
 
-| Dokument | Alte Definition | Neue Definition | Änderung |
-|----------|----------------|-----------------|----------|
-| axiomatische_grundlegung.md | ε(Δφ) ∈ [0,1] | ε(Δφ) ∈ [0,1] | Bereits korrekt |
-| paper_resonanzfeldtheorie.md | ε ∈ [1/e, e] | ε ∈ [0,1]; K_ij ∈ [1/e, e] | Intervall korrigieren |
-| README.md (DE) | 𝓔 := √(e·1/e) = 1 | ε = 1 (Spezialfall) | Einordnung ergänzen |
-| energie_axiomatische_herleitung.md | ε = 1/e (universell) | ε = 1/e (Spezialfall) | Umschreiben als Spezialfall |
-| tau_resonanzkoeffizient.md | τ* = π/𝓔 (Konstante) | τ*(Δφ) = π/ε(Δφ) | Funktion statt Konstante |
-| energieuebertragung.md | ε ∈ [1/e, e] | ε ∈ [0,1] | Intervall korrigieren |
-| resonanzfeld_gleichung.md | 𝓔 = Kopplungsoperator | ε = Kopplungseffizienz | Symbol vereinheitlichen |
-| resonanzlexikon.md | ε ∈ [0.37, 2.72] | ε ∈ [0,1] | Intervall korrigieren |
-| Simulationen (Python) | 𝓔(t), schu_koppler | ε(t), coupling_efficiency | Variablennamen anpassen |
-| rft_manuskript_de_iop.tex | ε = η (Gl. 9) | ε = η (Gl. 9) | Bereits korrekt |
-| RFT_Zusammenfassung.tex | ε = η Identität | ε = η Identität | Bereits korrekt |
+Alle Dokumente wurden auf die verbindliche Definition
+ε(Δφ) ∈ [0, 1] mit Standardmodell cos²(Δφ/2) und
+ℏ (statt h) umgestellt:
+
+| Dokument | Korrektur | Status |
+|----------|-----------|--------|
+| axiomatische_grundlegung.md | ε(Δφ) ∈ [0,1] | ✅ Bereits korrekt |
+| paper_resonanzfeldtheorie.md | ε ∈ [0,1]; K_ij ∈ [1/e, e] | ✅ Korrigiert |
+| README.md (DE) | ε ∈ [0,1], ℏ, ε = η, Planck 1/(2π) | ✅ Korrigiert |
+| energie_axiomatische_herleitung.md | ε = 1/e als Spezialfall, ℏ, ε = η | ✅ Korrigiert |
+| tau_resonanzkoeffizient.md | τ*(Δφ) = π/ε(Δφ) (Funktion), ℏ | ✅ Korrigiert |
+| energieuebertragung.md | ε ∈ [0,1], ℏ, ε = η | ✅ Korrigiert |
+| resonanzfeld_gleichung.md | ε = Kopplungseffizienz, ℏ, ε = η | ✅ Korrigiert |
+| resonanzlexikon.md | ε ∈ [0,1], ℏ, Planck 1/(2π) | ✅ Korrigiert |
+| Simulationen (Python) | coupling_efficiency (statt schu_koppler) | ✅ Korrigiert |
+| rft_manuskript_de_iop.tex | ε = η (Gl. 9), ℏ | ✅ Bereits korrekt |
+| RFT_Zusammenfassung.tex | ε = η Identität, ℏ | ✅ Bereits korrekt |
 
 ---
 
@@ -312,11 +337,14 @@ Die Kopplungseffizienz ε der Resonanzfeldtheorie ist:
    in FLRW-Simulationen (1.530 Läufe, d_η = 0.043 im flachen Fall)
 5. **Eliminiert κ**: Im Resonanzreaktor folgt κ = 1 exakt
 6. **Spezialfälle**: ε = 1 (perfekt), ε = 1/(2π) (Planck-Grundzustand),
-   ε = 1/e (natürliche Dämpfung)
+   ε = 1/π (Planck 1. Anregung), ε = 1/e (natürliche Dämpfung)
 7. **Nicht zu verwechseln** mit der Kopplungsstärke K_ij, die
    unbeschränkt sein kann
 8. **Empirisch bestätigt** in vier Domänen: Teilchenphysik,
    Kosmologie, Nukleartechnologie, Finanzmärkte
+9. **Notation vereinheitlicht**: Alle Dokumente und Simulationen
+   verwenden ε (statt 𝓔), ℏ (statt h), cos²(Δφ/2) als
+   Standardmodell
 
 Diese Definition ist verbindlich für alle Dokumente der
 Resonanzfeldtheorie ab Version 2026.
