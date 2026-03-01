@@ -103,12 +103,12 @@ mit |Δφ|.
 
 | Bedingung | ε | Energie | Physik |
 |-----------|---|---------|--------|
-| Perfekte Kopplung | 1 | π·ℏ·f | Maximale Resonanzenergie |
-| Planck (1. Anregung) | 1/π ≈ 0.318 | ��·f | E = ℏω (Spezialfall) |
-| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ½·ℏ·f | Grundzustandsenergie (harm. Osz.) |
-| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit (Spezialfall) |
-| Halbe Kopplung | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
-| Keine Kopplung | 0 | 0 | Entkoppelte Systeme |
+| Perfekte Kopplung (Δφ = 0) | 1 | E = π · ℏ · f | Maximale Resonanzenergie |
+| Planck (1. Anregung) | 1/π ≈ 0.318 | E = ℏ · f | E = ℏω (Spezialfall) |
+| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | E = ℏ · f / 2 | Grundzustandsenergie (harm. Osz.) |
+| Natuerliche Daempfung | 1/e ≈ 0.368 | E = (π/e) · ℏ · f | Nach Relaxationszeit (Spezialfall) |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | E = π · ℏ · f / 2 | 90° Phasenverschiebung |
+| Keine Kopplung (Δφ = π) | 0 | E = 0 | Entkoppelte Systeme |
 
 ### 3.3 Herleitung des Faktors π
 
@@ -234,11 +234,11 @@ allgemeinen Fall. Das Dokument wurde entsprechend korrigiert.
 
 ## 6. Abgrenzung: ε vs. η vs. K_ij vs. G
 
-| Größe | Symbol | Wertebereich | Bedeutung |
-|-------|--------|-------------|-----------|
+| Groesse | Symbol | Wertebereich | Bedeutung |
+|---------|--------|-------------|-----------|
 | Kopplungseffizienz (Operator) | ε(Δφ) | [0, 1] | Theoretischer Kopplungsoperator |
 | Kopplungseffizienz (Observable) | η(Δφ) | [0, 1] | Messbarer Kreuzterm (FLRW) |
-| Kopplungsstärke | K_ij | [0, ∞) | Absolutwert der Kopplung zwischen Moden |
+| Kopplungsstaerke | K_ij | [0, ∞) | Absolutwert der Kopplung zwischen Moden |
 | Resonanzgewichtung | G(f₁/f₂) | [0, 1] | Frequenz-Resonanzfenster (Axiom 3) |
 
 **Identität:** ε = η (bewiesen durch cos²-Identität, validiert
@@ -276,7 +276,7 @@ umgesetzt wird.
     κ = 1 (aus ε = η, kein freier Parameter)
     f_GDR = E_GDR / (π·ℏ)
 
-    U-235: GDR 13.0 MeV, f = 6.3×10²¹ Hz, λ_eff/λ₀ = 7872
+    U-235: GDR 13.0 MeV, f = 6.3×10²¹ Hz, λ_eff/λ��� = 7872
     Pu-239: GDR 13.5 MeV, Q_fiss ≈ 1.0 bei Φ = 10¹² γ/(cm²·s)
     Am-241: GDR 13.3 MeV, α-Zerfall beschleunigbar
 ```
@@ -285,8 +285,8 @@ umgesetzt wird.
 
 ```
     Kopplungseffizienz als Gate-Kriterium:
-    ε → 0 (Crash, DC fällt stark) → Pause → +44.9% vs HODL
-    ε → 1 (Phasenkohärenz) → Trade erlaubt → systematisch profitabel
+    ε → 0 (Crash, DC faellt stark) → Pause → +44.9% vs HODL
+    ε → 1 (Phasenkohaerenz) → Trade erlaubt → systematisch profitabel
     24 Monate, 4 Regime, 1392 Trades, +26.3% vs HODL
     Live seit Feb. 2026 (+4.13% in 2 Wochen)
 ```
@@ -298,7 +298,7 @@ umgesetzt wird.
     5 Resonanzen detektiert mit emp. p = 0:
     φ(1020), J/ψ, Υ(1S), Υ(2S), Z-Boson
     1.500.000 Gesamtsimulationen (30 Seeds × 50.000)
-    Stabil über 3 KDE-Bandbreiten
+    Stabil ueber 3 KDE-Bandbreiten
 ```
 
 ---
