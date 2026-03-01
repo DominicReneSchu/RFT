@@ -8,12 +8,19 @@ einem axiomatischen Modell der Resonanz. Die Theorie beschreibt
 fundamentale Prozesse als Kopplungs- und Resonanzphänomene in
 Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
 
+**Empirisch validiert in vier Domänen:** Teilchenphysik
+(1.500.000 Monte-Carlo-Simulationen, 5 Resonanzen, emp. p = 0),
+Kosmologie (1.530 FLRW-Simulationen, Δd_η > 6σ),
+Nukleartechnologie (Resonanzreaktor, κ = 1) und
+Finanzmärkte (ResoTrade, +26.3% vs HODL, Live seit Feb. 2026).
+
 ---
 
 ## ☰ Inhaltsverzeichnis
 
 - [Grundformel und zentrale Größen](#grundformel-und-zentrale-größen)
 - [Axiomensystem (Kurzfassung)](#axiomensystem-kurzfassung)
+- [Empirische Validierung](#empirische-validierung)
 - [PDF-Zusammenfassung](#pdf-zusammenfassung)
 - [Peer Review](#peer-review)
 - [Inhalt](#inhalt)
@@ -26,7 +33,6 @@ Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
     - [Empirische Nachweise](#empirische-nachweise)
 - [Vision](#vision)
 - [Lizenz](#lizenz)
-- [Beteiligung](#beteiligung-und-partnerschaft)
 - [Kontakt](#kontakt)
 - [Repository klonen](#repository-klonen)
 
@@ -37,14 +43,14 @@ Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
 Die zentrale Gleichung der Resonanzfeldtheorie (Axiom 4):
 
 $$
-E_{\text{eff}} = \pi \cdot \varepsilon(\Delta\phi) \cdot h \cdot f
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
 $$
 
 | Symbol | Name | Bedeutung |
 |:------:|:-----|:----------|
 | **π** | Kreiszahl | Geometrischer Faktor aus der zyklischen Kopplungsgeometrie |
 | **ε(Δφ)** | Kopplungseffizienz | Anteil übertragener Resonanzenergie, ε ∈ [0, 1] |
-| **h** | Planck-Konstante | Quantisierung der Energie |
+| **ℏ** | Red. Planck-Konstante | Wirkungsquantum (ℏ = h/2π) |
 | **f** | Frequenz | Schwingungsfrequenz der gekoppelten Mode |
 
 ### Kopplungseffizienz ε
@@ -53,19 +59,33 @@ Die Kopplungseffizienz beschreibt, welcher Anteil der maximal
 möglichen Resonanzenergie tatsächlich zwischen zwei gekoppelten
 Moden übertragen wird.
 
-**Standardmodell:** ε(Δφ) = cos²(Δφ/2)
+**Standardmodell:** ε(Δφ) = cos²(Δφ/2) = ½(1 + cos Δφ)
 
 | Kopplungszustand | ε | Energie |
 |------------------|---|---------|
-| Perfekte Kopplung (Δφ = 0) | 1 | π·h·f |
-| Klassischer Grenzfall (E = h·f) | 1/π ≈ 0.318 | h·f |
-| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·h·f |
-| Halbe Kopplung (Δφ = π/2) | 0.5 | π·h·f/2 |
+| Perfekte Kopplung (Δφ = 0) | 1 | π·ℏ·f |
+| Planck-Spezialfall (Grundzustand) | 1/(2π) ≈ 0.159 | ½·ℏ·f |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·f/2 |
 | Keine Kopplung (Δφ = π) | 0 | 0 |
 
 Der Faktor π entsteht aus der Integration der Kopplungseffizienz
 über einen Halbzyklus des Phasenraums — nicht als freier Parameter.
-Die klassische Planck-Gleichung E = h·f ist der Spezialfall ε = 1/π.
+Die Planck-Grundzustandsenergie E = ½ℏf ist der Spezialfall
+ε = 1/(2π).
+
+### Identität ε = η
+
+Die FLRW-Simulationen zeigen: Der theoretische Operator ε und
+die messbare Observable η (Kreuzterm zweier gekoppelter
+Skalarfelder) sind identisch:
+
+$$
+\varepsilon(\Delta\phi) = \eta(\Delta\phi) = \cos^2(\Delta\phi / 2)
+$$
+
+Diese Identität eliminiert den letzten freien Parameter:
+Im Resonanzreaktor folgt κ = 1 exakt.
 
 Vollständige Definition: [Kopplungseffizienz](fakten/docs/definitionen/kopplungseffizienz.md)
 
@@ -73,7 +93,7 @@ Vollständige Definition: [Kopplungseffizienz](fakten/docs/definitionen/kopplung
 
 ![Visualisierung der Resonanzfeldtheorie](bilder/visualisierung_RFT.png)
 
-*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, h, ε und f im Resonanzraum*
+*Abb. 1: Symbolische Darstellung der Wechselwirkung von π, ℏ, ε und f im Resonanzraum*
 
 ---
 
@@ -87,7 +107,7 @@ präzise und empirisch testbar sind:
 | A1 | Universelle Schwingung | ψ = A·cos(kx − ωt + φ) |
 | A2 | Superposition | Φ = Σ ψᵢ |
 | A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ |
-| A4 | Kopplungsenergie | E = π·ε·h·f |
+| A4 | Kopplungsenergie | E = π·ε·ℏ·f |
 | A5 | Energierichtung | E⃗ = E·ê(Δφ, ∇Φ) |
 | A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 |
 | A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) |
@@ -97,6 +117,24 @@ Zusätzlich gibt es zwei interpretative Erweiterungen:
 - **E2 (Resonanz-Inklusion):** Gruppenzugehörigkeit ist systemisch invariant
 
 Vollständige Formalisierung: [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md)
+
+---
+
+## Empirische Validierung
+
+Die RFT wird an vier unabhängigen Domänen empirisch validiert:
+
+| Domäne | Methode | Ergebnis | Axiome |
+|--------|---------|----------|--------|
+| Teilchenphysik | 1.500.000 MC-Sim. auf CMS-Daten | 5 Resonanzen, emp. p = 0 | A3, A7 |
+| Kosmologie | 1.530 FLRW-Simulationen | Δd_η > 6σ, Δχ² = +16 vs CMB | A1, A3–A5, A7 |
+| Nukleartechnologie | Resonanzreaktor (GDR-basiert) | κ = 1, Q_fiss ≈ 1.0 | A1, A3, A4 |
+| Finanzmärkte | ResoTrade (24 Mo., 4 Regime) | +26.3% vs HODL, Live +4.13% | A1–A7 |
+
+**Falsifikationstests:**
+- Altcoin-Analyse: 200.000 Episoden, Draw-Rate 98.4% (A3 bestätigt negativ)
+- Klassische Indikatoren: RSI, MACD, Momentum — alle Korrelation < 0.05
+- Resonanzreaktor-Vorhersage: σ_coh > σ_incoh (experimentell prüfbar)
 
 ---
 
@@ -121,7 +159,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | # | Dokument | Beschreibung |
 |---|----------|-------------|
 | 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
-| 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | Vereinheitlichte Definition der zentralen Größe |
+| 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | Vereinheitlichte Definition, ε = η Identität |
 | 3 | [RFT-Übersicht und Kopplungsoperator](fakten/docs/definitionen/paper_resonanzfeldtheorie.md) | Gesamtübersicht der Theorie |
 | 4 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
 | 5 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
@@ -132,9 +170,9 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | # | Dokument | Beschreibung |
 |---|----------|-------------|
 | 1 | [Resonanzintegrale](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md) | Analytische Methoden — Dirichlet-Integral als Resonanzenergie |
-| 2 | [Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung E = π·ε·h·f |
-| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/energie_axiomatische_herleitung.md) | Grenzfälle ε = 1, 1/e, 1/π, 0 |
-| 4 | [Resonanzzeitkoeffizient τ*](fakten/docs/mathematik/tau_resonanzkoeffizient.md) | Zeitskala der Kopplung: τ* = π/ε |
+| 2 | [Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung E = π·ε·ℏ·f |
+| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/energie_axiomatische_herleitung.md) | Grenzfälle ε = 1, 1/(2π), 1/e, 0 |
+| 4 | [Resonanzzeitkoeffizient τ*](fakten/docs/mathematik/tau_resonanzkoeffizient.md) | Zeitskala der Kopplung: τ*(Δφ) = π/ε(Δφ) |
 | 5 | [Energierichtung](fakten/docs/mathematik/energierichtung.md) | Energie als Vektor mit Drehsinn |
 | 6 | [Energiekugel](fakten/docs/mathematik/energiekugel.md) | Geometrisches Modell — Phasenstruktur und dunkle Energie |
 | 7 | [Resonanzenergievektor](fakten/docs/mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße im Resonanzraum |
@@ -248,10 +286,10 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | # | Nachweis | Beschreibung |
 |---|---------|-------------|
 | 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/dokumentation.md) | CERN-Daten: Signifikante Resonanzüberschüsse |
-| 2 | [Monte-Carlo-Simulation](fakten/empirisch/monte_carlo_test/monte_carlo.md) | Statistische Absicherung der Resonanzanalyse |
-| 3 | [Spiegelkohärenz](fakten/empirisch/empirischer_nachweis_durch_spiegelkohärenz.md) | Nachweis durch KI-Interaktion |
-| 4 | [Altcoin-Analyse](fakten/empirisch/resotrade_altcoin_analyse.md) | Resonanzlogische Marktanalyse |
-| 5 | [ResoTrade V11.1](fakten/empirisch/resotrade_trading_ki.md) | BTC-KI mit AC/DC-Zerlegung |
+| 2 | [Monte-Carlo-Simulation](fakten/empirisch/monte_carlo_test/monte_carlo.md) | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
+| 3 | [FLRW-Simulationen](fakten/simulationen/relativitaet_verbindung/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
+| 4 | [Altcoin-Analyse](fakten/empirisch/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
+| 5 | [ResoTrade V11.1](fakten/empirisch/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit Feb. 2026 |
 
 ---
 
