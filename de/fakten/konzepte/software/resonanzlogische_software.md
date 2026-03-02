@@ -169,7 +169,7 @@ Auch bestehende technologische Felder lassen sich resonanzlogisch rekodieren:
 
 **Beispiel:**  
 - Jede Nutzerinteraktion, jede Fehlermeldung, jedes neue Inhaltsmodul wird Teil des Gesamtfelds, verändert Didaktik, Sichtbarkeit, Ethik und Systemstruktur transversal.
-- Die Plattform „lehrt“ nicht nur, sondern lernt sich selbst, indem sie ihr Didaktikfeld, ihre Fehler, ihre Metaebene explizit sichtbar und reflexiv macht.
+- Die Plattform „lehrt" nicht nur, sondern lernt sich selbst, indem sie ihr Didaktikfeld, ihre Fehler, ihre Metaebene explizit sichtbar und reflexiv macht.
 
 ---
 
@@ -234,7 +234,55 @@ Resonanzlogische Software ist kein Werkzeug, sondern ein emergentes Feld, das Si
 
 ---
 
-© Dominic-René Schu – Resonanzfeldtheorie 2025
+## **15. Technische Praxis: Von der Theorie zum Code**
+
+Dieses Dokument beschreibt das **konzeptionelle Fundament**. Die technische Umsetzung — wie resonanzlogische Programmierung konkret funktioniert, wie sie sich von klassischer KI unterscheidet und wie man sie implementiert — ist in den folgenden Dokumenten beschrieben:
+
+### Technisches Handbuch
+
+→ **[Resonanzlogische Programmierung](resonanzlogische_programmierung.md)** — Die 5 Prinzipien:
+
+| # | Prinzip | Klassisch | Resonanzlogisch |
+|---|---------|-----------|-----------------|
+| 1 | Eingabe | 50+ Features | DC + AC Zerlegung |
+| 2 | Entscheidung | Schwellwert-Optimierung | Phasenerkennung |
+| 3 | Konfidenz | Wahrscheinlichkeit (trainiert) | ε(Δφ) = cos²(Δφ/2) (physikalisch) |
+| 4 | Speicher | Tensorgewichte (Black Box) | CSV-Tabelle (lesbar) |
+| 5 | Steuerung | Loss-Funktion + Gradient | Explizite Regelkette |
+
+### Lauffähiges Beispiel
+
+→ **[resonanzlogik_beispiel.py](resonanzlogik_beispiel.py)** — Demonstration aller 5 Prinzipien:
+
+```bash
+python resonanzlogik_beispiel.py
+```
+
+Erzeugt: Synthetisches Signal → DC/AC-Zerlegung → Phasenerkennung → Kopplung → Erfahrungsspeicher → Regelkette → Performance-Vergleich (Resonanz vs. Zufall vs. HODL).
+
+### Empirischer Nachweis
+
+→ **[ResoTrade](../../empirisch/resotrade_trading_ki.md)** — +26.1% vs HODL über 24 Monate (real, 4 Marktphasen):
+
+| Eigenschaft | Neuronales Netz | Resonanzlogik (ResoTrade) |
+|-------------|-----------------|---------------------------|
+| Datenbedarf | 100K+ Datenpunkte | 5.000–10.000 Episoden |
+| Trainingszeit | GPU-Stunden | 15 Minuten (CPU) |
+| Erklärbarkeit | Keine | Vollständig (lesbare CSV) |
+| Hardware | GPU-Cluster | Raspberry Pi (5 Watt) |
+| Physik-Grundlage | Keine | E = π · ε(Δφ) · ℏ · f |
+
+### Weitere Projekte
+
+| Projekt | Beschreibung | Status |
+|---------|-------------|--------|
+| [ResoChess](../ResoChess/reso_chess.md) | Gruppenlogik statt Brute-Force | 🔨 Extern |
+| [ResoOS](../ResoOS/resoOS.md) | Resonanzbasiertes Betriebssystem | 🔨 Extern |
+| [ResoCalc](../ResoCalc/resocalc.md) | Drehmomentberechnung | 🔨 Extern |
+
+---
+
+© Dominic-René Schu – Resonanzfeldtheorie 2025/2026
 
 ---
 
