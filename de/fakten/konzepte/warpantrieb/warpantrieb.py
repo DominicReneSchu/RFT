@@ -578,7 +578,6 @@ def plot_optimization(opt_results, out):
     ax.grid(True, alpha=0.3, axis='x')
 
     ax = axes[1]
-    V0_vals = sorted(set(r['V0'] for r in opt_results))
     for lam in sorted(set(r['lam1'] for r in opt_results)):
         sub = [r for r in opt_results if r['lam1'] == lam]
         v0_dw = {}
@@ -684,7 +683,7 @@ def main():
     rho_mean = plot_phase_scan(phis, rho_focus, out)
     print(f"  RFT-Signatur: ρ(0)/⟨ρ⟩ = {rho_focus[0] / rho_mean:.4f}")
 
-    # Exp 3: Zwei-Feld-Scan
+    # Exp 3
     print("\n=== Experiment 3: Zwei-Feld w(Δφ) Scan ===")
     print(f"  Parameter: V₀={OPT_V0}, λ₁={OPT_LAM1},"
           f" ε₂₀={OPT_EPS2_0}, g={OPT_G}")
@@ -729,7 +728,7 @@ def main():
     w_front, w_rear = plot_w_scan(modes, out)
     dw_std = w_front - w_rear
 
-    # Exp 4: Optimierung
+    # Exp 4
     print("\n=== Experiment 4: Parameteroptimierung ===")
     print("  Scan: V₀ × λ₁ × ε₂₀ → maximaler Δw")
     opt = experiment_parameter_optimization()
@@ -744,7 +743,7 @@ def main():
               f" {r['dw']:+8.4f}")
     plot_optimization(opt, out)
 
-    # Exp 5: Skalierung
+    # Exp 5
     print("\n=== Experiment 5: Skalierung ===")
     results = experiment_scaling()
     for r in results:
@@ -774,10 +773,9 @@ def main():
     w(Δφ=π/2) = {best['w_rear']:+.4f}  → EXPANSION (hinten)
     Δw        = {best['dw']:+.4f}
 
-  PHYSIK:
-    Vorn:   ε₁ dominiert → schnelle Oszillation → w > 0
-    Hinten: ε₂ dominiert → Slow Roll auf Plateau → w < 0
-    Δφ = π: Warp aus → a stagniert bei stabiler Expansion
+    Raum vorn schrumpft, Raum hinten wächst.
+    Schiff ruht lokal — keine Beschleunigung.
+    Effektive Geschwindigkeit: unbegrenzt.
 
     ρ > 0 überall. Keine negative Energie.
     Expansion durch negativen DRUCK, nicht negative ENERGIE.
