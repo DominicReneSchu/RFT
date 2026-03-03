@@ -1,6 +1,0 @@
-Diagnostics generated at 2026-02-24T11:10:09.732758
-Data timeframe: 2024-09-01 00:00:00+00:00 .. 2025-02-28 23:00:00+00:00 (4343 rows)
-Zoom window: last 168h -> 2025-02-21 23:00:00+00:00 .. 2025-02-28 23:00:00+00:00
-MA params (from config.py): MA_SHORT=24, MA_LONG=168, VOL=72
-Trad signals (last 168h): {'hold': 168, 'sell': 1}
-Res signals  (last 168h): {'hold': 89, 'buy': 75, 'sell': 5}
