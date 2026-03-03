@@ -1,1 +1,76 @@
+# ========================
+# 🔒 Sensible Daten
+# ========================
 *.key
+*.pem
+*.env
+.env
+*.secret
+*credentials*
+
+# ========================
+# 🐍 Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ========================
+# 📦 Virtual Environments
+# ========================
+env/
+venv/
+.venv/
+ENV/
+
+# ========================
+# 🏗️ Distribution / Packaging
+# ========================
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ========================
+# 🧪 Tests / Coverage
+# ========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ========================
+# 📓 Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# 🛠️ IDEs / Editoren
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# 💻 Betriebssystem-Dateien
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# 📝 Logs & Datenbanken
+# ========================
+*.log
+*.sqlite3
+*.db
+
+# ========================
+# 🔧 Sonstiges
+# ========================
+.mypy_cache/
+.cache/
