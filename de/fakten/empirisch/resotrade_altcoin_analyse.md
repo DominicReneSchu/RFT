@@ -1,24 +1,28 @@
-# Resonanzlogische Analyse der Finanzmärkte: Warum Altcoins keine echten Märkte sind
+# Resonanzlogische Analyse der Finanzmärkte: Altcoins als amplifizierte BTC-Schwingungen
 
 ## Empirischer Nachweis durch algorithmisches Trading mit Resonanzfeldtheorie
 
-*Dominic-René Schu, Februar 2026*
+*Dominic-René Schu, Februar 2026 — korrigiert März 2026*
 
 ---
 
 ## Zusammenfassung
 
-Diese Analyse dokumentiert ein empirisches Ergebnis, das bei der Entwicklung eines resonanzlogischen Trading-Systems (ResoTrade V11) unerwartet zutage trat: **Der Altcoin-Markt besitzt keine eigenständigen Eigenfrequenzen und ist daher resonanztheoretisch kein echter Markt.** Ein lernfähiges Multi-Asset-Handelssystem, das über 200.000 Episoden trainiert wurde, konnte mit Aktien-Satellites (BTC + 13 Aktien/ETFs) einen Ø BTC-Äquivalent von 1.090 bei 100% Episoden über HODL erzielen — mit Altcoin-Satellites (BTC + 10 Altcoins) dagegen nur 1.038 bei 86% über HODL, mit negativem Lernfortschritt und einer Draw-Rate von 98.4%.
+Diese Analyse dokumentiert ein empirisches Ergebnis, das bei der Entwicklung eines resonanzlogischen Trading-Systems (ResoTrade V11) unerwartet zutage trat: **Der Altcoin-Markt besitzt keine eigenständige AC-Komponente relativ zu BTC.** Altcoins schwingen synchron mit Bitcoin — ihre Preisbewegung ist ein skaliertes Echo, kein unabhängiges Signal.
 
-Die AC/DC-Zerlegung (V11) macht den Grund sichtbar: Altcoins besitzen keine eigenständige AC-Komponente — ihre Schwingung ist ein skaliertes Echo der BTC-Schwingung. Ohne eigene Obertöne keine Resonanz, ohne Resonanz kein Signal.
+Die AC/DC-Zerlegung (V11) macht den Grund sichtbar: Altcoins besitzen keine eigenständige AC-Komponente — ihre Schwingung ist ein skaliertes Echo der BTC-Schwingung mit Hebelfaktor α. Ohne eigene Obertöne keine Resonanz, ohne Resonanz kein Diversifikationsgewinn in einem Multi-Asset-Portfolio.
 
-Das Ergebnis ist das numerische Äquivalent zweier linear abhängiger Gleichungen mit zwei Unbekannten: Viel Rechenaufwand, kein Informationsgewinn. Die Resonanzfeldtheorie liefert den formalen Rahmen, um dieses Phänomen zu erklären und zu verallgemeinern.
+**Korrektur (März 2026):** Die ursprüngliche Analyse schloss daraus, Altcoins seien „nicht handelbar". Das war voreilig. Ein Altcoin mit α = 2.5 schwingt die gleiche Frequenz wie BTC, aber mit 2.5-facher Amplitude. Diese amplifizierten Schwingungen sind mit denselben resonanzlogischen Methoden handelbar — als eigenständiges Asset mit angepassten Schwellen, nicht als Portfolio-Ergänzung neben BTC.
+
+Die korrigierte Kernaussage lautet:
+
+> **Altcoins sind keine Diversifikation zu BTC, aber ihre amplifizierten Schwingungen sind mit denselben Methoden handelbar — als eigenständiges Asset, nicht als Portfolio-Ergänzung.**
 
 ---
 
 ## 1. Entstehungskontext
 
-Das Ziel war nicht Grundlagenforschung, sondern ein funktionierender Trading-Bot. ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, BTC-Kurszyklen als Schwingungsfelder zu lesen und BTC über reines HODL hinaus zu akkumulieren. Es nutzt:
+Das Ziel war nicht Grundlagenforschung, sondern ein funktionierender Trading-Bot. ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, Kurszyklen zu handeln. Die Kernmechanismen:
 
 - **AC/DC-Zerlegung** (Axiom 1): Preis = DC (Trend) + AC (handelbare Schwingung)
 - **Energierichtungsvektor** (Axiom 5): `energy_dir = e_short - e_long`
@@ -27,7 +31,7 @@ Das Ziel war nicht Grundlagenforschung, sondern ein funktionierender Trading-Bot
 - Dynamische Satellite-Selektion (Top-5 aus 13 Assets)
 - Verzögerte Trade-Bewertung (24h kontrafaktisch vs. HOLD)
 
-Die wissenschaftliche Erkenntnis entstand emergent: Als das Multi-Asset-System (V10.2) von Aktien-Satellites auf Altcoin-Satellites umgestellt wurde, brach die Performance zusammen — nicht durch technische Fehler, sondern durch die Struktur der Märkte selbst. Die BTC-only Variante (V11) bestätigte: BTC allein erzeugt mehr Signal als BTC + Altcoins.
+Die wissenschaftliche Erkenntnis entstand emergent: Als das Multi-Asset-System (V10.2) von Aktien-Satellites auf Altcoin-Satellites umgestellt wurde, brach die Performance zusammen — nicht durch technische Fehler, sondern durch einen fundamentalen Unterschied in der Signalstruktur.
 
 ### Performance-Kontext: ResoTrade V11 (BTC-only)
 
@@ -52,7 +56,9 @@ $$
 
 Die DC-Komponente ist der Grundton — der langfristige Trend, der nicht prognostizierbar ist. Die AC-Komponente sind die Obertöne — die Schwingung um den Trend, die durch Phasenerkennung handelbar ist.
 
-**Entscheidend:** Nur Assets mit **eigenständiger AC-Komponente** erzeugen handelbares Signal. Wenn die AC-Komponente eines Assets lediglich ein skaliertes Echo eines anderen Assets ist, trägt sie keine neue Information.
+**Entscheidend für Multi-Asset-Portfolios:** Nur Assets mit **eigenständiger AC-Komponente** erzeugen Diversifikationsgewinn. Wenn die AC-Komponente eines Assets lediglich ein skaliertes Echo eines anderen Assets ist, trägt sie keine zusätzliche Information bei.
+
+**Entscheidend für Einzelhandel:** Auch ein skaliertes Echo ist handelbar, wenn die Amplitude groß genug ist. Ein Altcoin mit α = 2.5 erreicht die Handelsschwellen schneller und häufiger als BTC selbst.
 
 ### 2.2 Resonanzbedingung (Axiom 3)
 
@@ -68,7 +74,7 @@ $$
 E = \pi \cdot \varepsilon \cdot h \cdot f
 $$
 
-**Voraussetzung für produktive Resonanz ist, dass die beteiligten Systeme unterschiedliche Eigenfrequenzen besitzen.** Zwei identisch gestimmte Saiten erzeugen keine Obertöne — sie schwingen synchron. Konstruktive Interferenz, die neue Information erzeugt, entsteht nur aus der Differenz.
+**Voraussetzung für produktive Portfolio-Resonanz ist, dass die beteiligten Systeme unterschiedliche Eigenfrequenzen besitzen.** Zwei identisch gestimmte Saiten erzeugen keine Obertöne — sie schwingen synchron. Das bedeutet: kein Diversifikationsgewinn. Es bedeutet nicht: kein Signal.
 
 ### 2.3 Eigenfrequenzen in Finanzmärkten
 
@@ -84,7 +90,7 @@ Jeder echte Markt wird durch einen eigenständigen Wertschöpfungsprozess getrie
 
 Jedes dieser Systeme schwingt mit einer **eigenen**, durch fundamentale Wertschöpfung bestimmten Frequenz. Die Kopplung zwischen ihnen ist nicht-trivial und erzeugt ein reiches Obertonspektrum.
 
-### 2.4 Altcoins als abgeleitete Schwingungen
+### 2.4 Altcoins als amplifizierte Schwingungen
 
 Altcoins besitzen keine eigenständige Wertschöpfungsbasis, die von BTC unabhängig wäre. Ihre AC-Komponente ist kein eigenständiger Oberton, sondern ein skaliertes Echo:
 
@@ -92,17 +98,27 @@ $$
 \text{AC}_{\text{Altcoin}}(t) \approx \alpha \cdot \text{AC}_{\text{BTC}}(t) + \eta(t)
 $$
 
-wobei α ein Hebelfaktor und η(t) Rauschen ist. Die Eigenfrequenz des Altcoins ist identisch mit der von BTC — nur die Amplitude und das Rauschen unterscheiden sich.
+wobei α ein Hebelfaktor (typisch 1.5–4.0) und η(t) Rauschen ist. Die Eigenfrequenz des Altcoins ist identisch mit der von BTC — nur die Amplitude und das Rauschen unterscheiden sich.
 
-Dies ist mathematisch äquivalent zu einem **linear abhängigen Gleichungssystem**:
+**Für Portfolio-Diversifikation** ist das äquivalent zu einem linear abhängigen Gleichungssystem:
 
 $$
 \begin{pmatrix} 1 & 0 \\ \alpha & 0 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} b_1 \\ \alpha \cdot b_1 + \eta \end{pmatrix}
 $$
 
-Die Determinante ist Null. Das System ist unterbestimmt. **Es existiert keine eindeutige Lösung — keine handelbare Information.**
+Die Determinante ist Null. Kein Informationsgewinn durch Hinzufügen des Altcoins zum BTC-Portfolio.
 
-In der Sprache der AC/DC-Zerlegung: Die AC-Phase eines Altcoins (peak/trough/transition) ist nahezu synchron mit der AC-Phase von BTC. Es gibt keine Phasenverschiebung, die ein Resonanz-Gate nutzen könnte.
+**Für Einzelhandel** ist α der entscheidende Vorteil:
+
+| Eigenschaft | BTC (α=1) | ETH (α≈1.8) | SOL (α≈3.0) |
+|---|---|---|---|
+| AC-Amplitude | ±5% | ±9% | ±15% |
+| Sell-Schwelle 4% erreicht | Bei 4% Bewegung | Bei 2.2% BTC-Bewegung | Bei 1.3% BTC-Bewegung |
+| Buy-Schwelle -7% erreicht | Bei 7% Drawdown | Bei 3.9% BTC-Drawdown | Bei 2.3% BTC-Drawdown |
+| Trades pro Zeitraum | Wenige | Mehr | Deutlich mehr |
+| Risiko | Basis | Erhöht | Hoch |
+
+Die amplifizierten Schwellen sind mit dem `threshold_optimizer` automatisch findbar — derselbe Regelkreis, andere Parameter.
 
 ---
 
@@ -118,7 +134,7 @@ Die Altcoin-Analyse wurde mit ResoTrade V10.2 (Multi-Asset) durchgeführt. Die B
 - Energierichtungsvektor: `energy_dir = e_short - e_long`
 - Resonanz-Gate: Trades nur bei Phasengleichheit (K = K₀·cos(θ))
 - Erfahrungsspeicher: Chain → Score mit AC-Phase als Dimension
-- HODL-Kern: 60% des BTC-Bestands unverkäuflich
+- HODL-Kern: 5% des Bestands unverkäuflich
 
 **V10.2 Multi-Asset Erweiterung:**
 - State-Repräsentation: 12 Dimensionen (Position, Trend, MA, Volatilität, Cash, Allokation, Relative Strength, Cluster)
@@ -168,9 +184,11 @@ Drei identische Konfigurationen, nur die Satellite-Assets unterscheiden sich:
 | **Lernfortschritt** | **+0.001 (↑)** | -0.002 (↓) | **+0.010 (↑↑)** |
 | **Performance vs HODL** | +9.0% | +3.8% | **+42.89%** |
 
-### 4.2 Schlüsselbeobachtung: BTC-only schlägt BTC + Altcoins
+### 4.2 Schlüsselbeobachtung: Portfolio-Effekt vs. Einzelhandel
 
-BTC allein (V11, +42.89%) übertrifft BTC + Altcoins (+3.8%) um Faktor 11. Die Altcoins erzeugen nicht nur kein Signal — sie **stören** das BTC-Signal. Die Core-Cluster S:F Ratio fällt von 6.0:1 (BTC + Aktien) auf 0.3:1 (BTC + Altcoins). Altcoins injizieren Rauschen in den Erfahrungsspeicher.
+**Portfolio-Ergebnis:** BTC allein (V11, +42.89%) übertrifft BTC + Altcoins (+3.8%) um Faktor 11. Die Altcoins erzeugen nicht nur keinen Diversifikationsgewinn — sie **stören** das BTC-Signal. Die Core-Cluster S:F Ratio fällt von 6.0:1 (Konfiguration A) auf 0.3:1 (Konfiguration B).
+
+**Implikation für Einzelhandel:** Dieses Ergebnis zeigt, dass Altcoins *neben BTC* keinen Mehrwert liefern. Es zeigt nicht, dass ein ResoTrade-System *auf einem Altcoin-Chart allein* nicht funktionieren würde. Die amplifizierten Schwingungen (α > 1) sind mit angepassten Schwellen potenziell profitabler als BTC selbst — bei entsprechend höherem Risiko.
 
 ### 4.3 Trade-Chain-Analyse
 
@@ -186,8 +204,8 @@ AMZN_SELL_SMALL    S:F = 8.0:1    ← Unabhängiges Signal
 **Konfiguration B (BTC + Altcoins):**
 
 ```
-AVAX_SELL_SMALL    S:F = 0.9:1    ← Neutral (kein Signal)
-BTC_SELL_SMALL     S:F = 0.0:1    ← Katastrophal
+AVAX_SELL_SMALL    S:F = 0.9:1    ← Neutral (kein Signal neben BTC)
+BTC_SELL_SMALL     S:F = 0.0:1    ← Gestört durch Altcoin-Rauschen
 BCH_SELL_SMALL     S:F = ∞:1     ← Nur weil BCH chronisch fällt
 CRV_SELL_SMALL     S:F = ∞:1     ← Draw-dominiert, kein Signal
 ```
@@ -208,24 +226,22 @@ CRV_SELL_SMALL     S:F = ∞:1     ← Draw-dominiert, kein Signal
 | Cluster | S:F | Interpretation |
 |---------|-----|----------------|
 | core (BTC) | 0.3:1 | **Durch Altcoins gestört** |
-| l1 | 0.9:1 | Keine verwertbare Information |
+| l1 | 0.9:1 | Keine zusätzliche Information |
 | defi | ∞:1 | Draw-dominiert |
 | store | ∞:1 | Draw-dominiert |
 | sentiment | 0.0:1 | Reines Rauschen |
 
 ### 4.5 Draw-Rate als Resonanzindikator
 
-Die Draw-Rate ist der numerische Fingerabdruck fehlender Eigenfrequenzen:
+Die Draw-Rate ist der numerische Fingerabdruck fehlender Eigenfrequenzen im Portfolio-Kontext:
 
 | Konfiguration | Draw-Rate | AC-Interpretation | Bedeutung |
 |---------------|-----------|-------------------|-----------|
 | BTC only (V11) | ~49% | Eigenständige AC, klare Phasen | System findet Signal |
 | BTC + Aktien | 84% | Verschiedene ACs, teilweise korreliert | System findet Differenzen |
-| BTC + Altcoins | **98.4%** | Identische AC, keine Phasendifferenz | Jede Aktion ≈ HOLD |
+| BTC + Altcoins | **98.4%** | Identische AC, keine Phasendifferenz | Jede Aktion ≈ HOLD *relativ zu BTC* |
 
-**98.4% Draw bedeutet: Das System kann die Altcoin-Bewegungen nicht von Rauschen unterscheiden.** Jeder Kauf und Verkauf eines Altcoins ist nahezu identisch mit Nichtstun, weil der Altcoin sich synchron zu BTC bewegt.
-
-Die V11 Draw-Rate von ~49% zeigt den Kontrast: BTC allein hat genug eigenständige AC-Schwingung für klare success/failure-Signale. Altcoins verwässern dieses Signal zu Draw.
+**98.4% Draw im Portfolio-Kontext bedeutet:** Das System kann Altcoin-Trades nicht von Nichtstun unterscheiden, *weil der Altcoin dasselbe tut wie BTC*. Auf dem Altcoin-Chart allein (ohne BTC-Vergleich) wäre die Draw-Rate niedriger — die Schwingungen sind größer und erzeugen klarere success/failure-Signale.
 
 ---
 
@@ -241,41 +257,59 @@ Aktienmarkt — eigenständige AC-Komponenten:
   AAPL ──── DC₄ + AC₄(f₄)    f₄ = iPhone-Zyklus, China
 
   → 4 unabhängige AC-Komponenten → reiches Obertonspektrum
-  → Phasenverschiebungen zwischen ACs → handelbares Signal
+  → Phasenverschiebungen zwischen ACs → handelbares Portfolio-Signal
 
-Altcoin-Markt — abgeleitete AC-Komponenten:
-  BTC  ──── DC₁ + AC₁(f₁)
-  ETH  ──── α₁·DC₁ + α₁·AC₁(f₁) + η₁
-  ADA  ──── α₂·DC₁ + α₂·AC₁(f₁) + η₂
-  AVAX ──── α₃·DC₁ + α₃·AC₁(f₁) + η₃
+Altcoin-Markt — amplifizierte AC-Komponenten:
+  BTC  ──── DC₁ + AC₁(f₁)              α = 1.0
+  ETH  ──── α₁·DC₁ + α₁·AC₁(f₁) + η₁  α₁ ≈ 1.8
+  ADA  ──── α₂·DC₁ + α₂·AC₁(f₁) + η₂  α₂ ≈ 2.5
+  SOL  ──── α₃·DC₁ + α₃·AC₁(f₁) + η₃  α₃ ≈ 3.0
 
-  → 1 unabhängige AC-Komponente + Rauschen
-  → Keine Phasenverschiebung → kein Signal, nur Echo
+  → 1 unabhängige AC-Frequenz, verschiedene Amplituden
+  → Keine Phasenverschiebung → kein Portfolio-Diversifikationsgewinn
+  → Größere Amplituden → mehr Handelsgelegenheiten pro Asset
 ```
 
-### 5.2 Resonanzbedingung und Informationsgehalt
+### 5.2 Zwei verschiedene Fragestellungen
 
-Axiom 6 der Resonanzfeldtheorie besagt: **Information ist strukturierte Resonanz.** Informationsaustausch findet ausschließlich über kohärente Resonanzpfade statt — durch Synchronisation von Phase und Frequenz.
+Die Resonanzfeldtheorie unterscheidet klar zwischen zwei Fragen:
 
-Zwischen BTC und Aktien existieren solche Pfade: Wenn BTC fällt und MRK steigt, ist das ein kohärentes Signal (Kapital fließt von Risk-on zu Defensiv). Die AC-Phasen sind verschoben — das erzeugt Obertöne, die das System lernen kann.
+**Frage 1: Erzeugt Asset B Diversifikationsgewinn neben Asset A?**
+Nur wenn `AC_B(t)` unabhängig von `AC_A(t)` ist. Bei Altcoins: Nein.
 
-Zwischen BTC und Altcoins existieren diese Pfade nicht: Wenn BTC fällt, fallen Altcoins auch. Wenn BTC steigt, steigen Altcoins auch. Die AC-Phasen sind synchron — keine Verschiebung, keine Obertöne, kein Signal. Das System lernt nichts, weil es nichts zu lernen gibt.
+**Frage 2: Ist Asset B allein handelbar?**
+Ja, wenn `|AC_B(t)|` groß genug ist, um die Schwellen zu überschreiten. Bei Altcoins mit α > 1: Ja, mit angepassten Schwellen sogar häufiger als BTC.
 
-### 5.3 BTC-Dominanz-Zyklus: Scheinbare Unabhängigkeit
+Die ursprüngliche Analyse (Februar 2026) beantwortete Frage 1 korrekt und schloss daraus fälschlich auf Frage 2. Die Korrektur macht diese Unterscheidung explizit.
 
-Der einzige Moment, in dem Altcoins scheinbar unabhängig von BTC agieren, ist der BTC-Dominanz-Zyklus: BTC steigt zuerst, dann rotiert Kapital in Altcoins. Aber diese Rotation ist:
+### 5.3 Der Hebelfaktor α als Handelsparameter
+
+Der Hebelfaktor α bestimmt das Risiko-Rendite-Profil:
+
+| α-Bereich | Beispiele | Schwellen | Trades/Monat | Risiko |
+|---|---|---|---|---|
+| α ≈ 1.0 | BTC | Standard (V11.7) | ~12 | Basis |
+| α ≈ 1.5–2.0 | ETH, BNB | ~60% der BTC-Schwellen | ~20 | Moderat erhöht |
+| α ≈ 2.5–3.5 | SOL, ADA, AVAX | ~35% der BTC-Schwellen | ~30+ | Hoch |
+| α > 4.0 | BONK, Memecoins | Zu volatil, Rauschen dominiert | — | Nicht handelbar |
+
+Der `threshold_optimizer` findet die optimalen Schwellen pro Asset automatisch. Das System passt sich an α an, ohne dass α explizit bekannt sein muss.
+
+### 5.4 BTC-Dominanz-Zyklus
+
+Der einzige Moment, in dem Altcoins scheinbar unabhängig von BTC agieren, ist der BTC-Dominanz-Zyklus: BTC steigt zuerst, dann rotiert Kapital in Altcoins. Diese Rotation ist:
 
 1. **Zeitlich begrenzt** (wenige Wochen pro Zyklus)
-2. **Prädiktiv nicht nutzbar** (der Übergang ist nicht stationär)
+2. **Prädiktiv nicht nutzbar** im Portfolio-Kontext (der Übergang ist nicht stationär)
 3. **Amplitudenabhängig** (funktioniert nur in Bullenmärkten)
 
-Das System hat über 200.000 Episoden versucht, diesen Zyklus zu lernen. Ergebnis: negativer Lernfortschritt (−0.002). Der Zyklus ist zu instabil und zu kurz, um als eigenständige Frequenz zu fungieren.
+Das V10.2-System hat über 200.000 Episoden versucht, diesen Zyklus als Diversifikation zu nutzen. Ergebnis: negativer Lernfortschritt (−0.002). Der Zyklus ist zu instabil und zu kurz für Portfolio-Resonanz — aber er amplifies die AC-Schwingung des einzelnen Altcoins, was den Einzelhandel begünstigt.
 
 ---
 
 ## 6. Implikation für Geldsysteme
 
-Diese Analyse ergänzt das [duale Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md) um eine empirische Dimension:
+Diese Analyse ergänzt das duale Resonanz-Geldsystem um eine empirische Dimension:
 
 ### 6.1 Bitcoin als einzige Kryptowährung mit eigenständiger Schwingung
 
@@ -288,50 +322,58 @@ BTC hat eine eigenständige AC-Komponente, weil sein Wert durch einen nicht-repl
 
 ResoTrade V11 bestätigt: BTC allein erzeugt +42.89% über HODL durch AC-Schwingungsextraktion. Die Schwingung ist real, eigenständig und handelbar.
 
-Altcoins replizieren diese Eigenschaften nicht — sie setzen auf den BTC-Resonanzboden auf und absorbieren einen Teil der Preisamplitude, ohne eigene Information zu liefern.
+Altcoins replizieren diese Eigenfrequenz nicht — sie amplifizieren sie. Das macht sie als Portfolio-Ergänzung wertlos, als Einzelinstrument aber potenziell profitabel.
 
 ### 6.2 Aktien und Fiat-Währungen als echte Resonanzpartner
 
-Aktien repräsentieren reale Wertschöpfung: Produkte, Patente, Mitarbeiter, Cashflows. Jedes Unternehmen ist ein eigenständiger Resonator mit eigener Frequenz und eigener AC-Komponente. Fiat-Währungen spiegeln die Produktivität und institutionelle Stabilität eines Staates — ihr Wert ist durch das BIP gedeckt.
+Aktien repräsentieren reale Wertschöpfung: Produkte, Patente, Mitarbeiter, Cashflows. Jedes Unternehmen ist ein eigenständiger Resonator mit eigener Frequenz und eigener AC-Komponente. Fiat-Währungen werden durch die Produktivität ganzer Volkswirtschaften getrieben.
 
-Diese Assets können mit BTC in echte Resonanz treten, weil sie unabhängige Eigenfrequenzen besitzen. Die Kopplung ist nicht-trivial und erzeugt handelbares Signal — bestätigt durch die Aktien-Konfiguration (100% über HODL, S:F 5.2:1 für BTC_BUY).
+Diese Assets können mit BTC in echte Portfolio-Resonanz treten, weil sie unabhängige Eigenfrequenzen besitzen. Die Kopplung ist nicht-trivial und erzeugt handelbares Signal — bestätigt durch die Aktien-Konfiguration (+9.0% vs HODL).
 
 ### 6.3 Konsequenz für das duale Geldsystem
 
 Das duale Resonanz-Geldsystem (BTC extern, nationale Resonanzmünze intern) erhält durch diese Analyse eine empirische Stütze:
 
 - **BTC als externe Resonanzwährung funktioniert**, weil BTC eine eigenständige Eigenfrequenz und AC-Komponente hat
-- **Altcoins sind als Reservewährung ungeeignet**, weil sie keine eigenständige Information tragen
+- **Altcoins sind als Reservewährung ungeeignet**, weil sie keine eigenständige Information tragen (korrekter Befund)
+- **Altcoins sind als Handelsinstrument nutzbar**, weil ihre amplifizierten Schwingungen mit angepassten Schwellen handelbar sind (korrigierter Befund)
 - **Nationale Währungen (gedeckt durch BIP) ergänzen BTC**, weil sie unabhängige Eigenfrequenzen besitzen
 
 ---
 
-## 7. Warum Scam funktioniert — und warum er sich selbst entlarvt
+## 7. Warum die Unterscheidung wichtig ist
 
-### 7.1 Das Geschäftsmodell
+### 7.1 Das Narrativ-Problem
 
-Altcoins erzeugen die **Illusion** unabhängiger Märkte. Sie haben eigene Ticker, eigene Charts, eigene Narrativen. Die Preisbewegung suggeriert Unabhängigkeit — besonders in den kurzen Phasen der Altcoin-Season, wenn Kapital von BTC in Altcoins rotiert.
+Die ursprüngliche Analyse formulierte: *"Altcoins sind kein eigenständiger Markt."* Das ist resonanztheoretisch korrekt im Sinne der Eigenfrequenz — aber es wurde als *"Altcoins sind Scam"* gelesen, was über die Daten hinausgeht.
 
-Diese Illusion reicht aus, um:
-- Handelsgebühren zu generieren (Exchanges profitieren unabhängig von der Richtung)
-- Spekulation zu befeuern (Hebel auf einen Hebel)
-- Narrative zu verkaufen ("die nächste Ethereum-Killer-Chain")
+Die korrigierte Formulierung unterscheidet präziser:
 
-### 7.2 Warum das System es entlarvt
+| Aussage | Status |
+|---------|--------|
+| Altcoins haben keine eigene Eigenfrequenz relativ zu BTC | ✓ Empirisch bestätigt |
+| Altcoins liefern keine Diversifikation neben BTC | ✓ Empirisch bestätigt |
+| Altcoins sind nicht handelbar | ✗ Voreilig — Amplitude ≠ Information |
+| Altcoins als Einzelinstrument mit α-angepassten Schwellen | ○ Hypothese, noch zu validieren |
 
-Ein resonanzlogisches Handelssystem ist immun gegen Narrativen. Es bewertet nur: **Hat dieser Trade nach 24h besser performt als Nichtstun?** Wenn die Antwort über 200.000 Episoden in 98.4% der Fälle "identisch" lautet, ist die Schlussfolgerung zwingend: **Es gibt kein Signal.**
+### 7.2 Was noch validiert werden muss
 
-Die AC/DC-Zerlegung macht das formalisierbar: Ein Asset ohne eigene AC-Komponente hat keine eigene Phase. Ohne eigene Phase keine Phasenverschiebung zu BTC. Ohne Phasenverschiebung keine Resonanz. Ohne Resonanz kein Informationsaustausch. Ohne Information kein Handelswert.
+Die Hypothese, dass ein ResoTrade-System auf einem Altcoin-Chart (ohne BTC) profitabel arbeitet, ist theoretisch fundiert aber empirisch noch offen. Der Test wäre:
 
-Was Menschen intuitiv erkennen ("Altcoins fühlen sich wie Scam an"), aber schwer formalisieren können, macht die Resonanzfeldtheorie mathematisch greifbar:
+1. `AssetConfig` für ETH anlegen (engere Schwellen, höhere Volatilität)
+2. `threshold_optimizer` auf ETH-Daten laufen lassen
+3. Training ausschließlich auf ETH-Chart
+4. Performance vergleichen mit BTC-System (normiert auf Volatilität)
 
-> **Ein System ohne eigene Eigenfrequenz kann keine eigenständige Resonanz erzeugen. Ohne Resonanz kein Informationsaustausch. Ohne Information kein Handelswert.**
+Die Architektur (V11.7) unterstützt das bereits — es ist eine Konfigurationsänderung, kein Systemumbau.
 
 ### 7.3 Die Zeitdimension
 
-Scam entlarvt sich über die Zeit, weil Rauschen nicht akkumuliert. In 100 Episoden kann eine zufällige Altcoin-Rotation profitabel erscheinen. In 200.000 Episoden konvergiert der Erwartungswert gegen Null (bzw. gegen die Fee-Kosten). Die Draw-Rate steigt asymptotisch gegen 100%.
+Scam entlarvt sich über die Zeit, weil Rauschen nicht akkumuliert. In 100 Episoden kann eine zufällige Altcoin-Rotation profitabel erscheinen. In 200.000 Episoden konvergiert der Portfolio-Mehrwert gegen Null.
 
-Echte Märkte dagegen stabilisieren sich: Die BTC-only Konfiguration (V11) zeigt über 10.000+ Episoden ein Einschwingverhalten — gedämpfte Oszillation mit steigendem Trend, konvergierend gegen +42-43%. Das Signal verschwindet nicht — es verstärkt sich.
+Echte Märkte dagegen stabilisieren sich: Die BTC-only Konfiguration (V11) zeigt über 10.000+ Episoden ein Einschwingverhalten — gedämpfte Oszillation mit steigendem Trend, konvergierend gegen +42.89% über HODL. Das ist das Verhalten eines resonanten Systems.
+
+Die Amplituden-Hypothese für Altcoin-Einzelhandel müsste dasselbe Einschwingverhalten zeigen — mit höherer Volatilität der Konvergenz, aber positivem Trend.
 
 ---
 
@@ -344,6 +386,7 @@ Echte Märkte dagegen stabilisieren sich: Die BTC-only Konfiguration (V11) zeigt
 - Simulationsumgebung, keine Live-Trades (Live-Validierung ausstehend)
 - Altcoin-Auswahl auf Top-10 nach Kraken-Liquidität beschränkt
 - SUI, UNI, PEPE hatten 0 Datenpunkte und wurden ausgeschlossen (11 statt 14 Assets)
+- **Altcoin-Einzelhandel (ohne BTC) wurde nicht getestet** — die Portfolioanalyse ist nicht auf Einzelhandel übertragbar
 
 ### 8.2 Reproduzierbarkeit
 
@@ -358,31 +401,36 @@ Die Ergebnisse sind reproduzierbar:
 |-----------|-----------|
 | Stichprobengröße | 200.000+ Episoden (Multi-Asset), 10.000+ (BTC-only) |
 | Kontrollgruppe | Ja (BTC+Aktien, BTC-only, BTC+Altcoins) |
-| Lernfortschritt | Negativ bei Altcoins, positiv bei Aktien und BTC-only |
+| Lernfortschritt | Negativ bei Altcoins im Portfolio, positiv bei Aktien und BTC-only |
 | Draw-Rate-Differenz | 98.4% vs. 84% vs. 49% (stark) |
 | S:F Core-Cluster | 0.3:1 vs. 6.0:1 (stark) |
 | Min-Wert | 0.927 vs. 1.020 (stark) |
 | AC/DC-Konsistenz | V11 bestätigt eigenständige BTC-Schwingung empirisch |
+| Altcoin-Einzelhandel | **Nicht getestet** — offene Hypothese |
 
 ---
 
 ## 9. Fazit
 
-### 9.1 Kernaussage
+### 9.1 Bestätigter Befund
 
-**Der Altcoin-Markt ist resonanztheoretisch kein eigenständiger Markt.** Altcoins sind linear abhängige Ableitungen von Bitcoin, die keine eigenständigen Eigenfrequenzen und keine eigenständigen AC-Komponenten besitzen. Ein lernfähiges Handelssystem kann über 200.000 Episoden keinen stabilen Vorteil aus der BTC-Altcoin-Rotation ziehen.
+**Der Altcoin-Markt liefert keine Diversifikation zu BTC.** Altcoins sind linear abhängige Ableitungen von Bitcoin mit identischer Eigenfrequenz. In einem Multi-Asset-Portfolio neben BTC stören sie das Signal und reduzieren die Performance (von +42.89% auf +3.8%).
 
-Bitcoin allein erzeugt durch seine eigenständige AC-Schwingung +42.89% über HODL — bestätigt durch AC/DC-Zerlegung, Phasenerkennung und resonanzlogisches Trading (V11).
+### 9.2 Korrigierter Befund
 
-### 9.2 Verallgemeinerung
+**Altcoins sind potenziell als Einzelinstrument handelbar.** Ihre amplifizierten Schwingungen (α > 1) erzeugen größere AC-Ausschläge, die mit angepassten Schwellen häufiger und deutlicher die Handelsschwellen überschreiten. Der `threshold_optimizer` (V11.7) kann diese Schwellen pro Asset automatisch finden.
 
-Dieses Ergebnis ist nicht auf Altcoins beschränkt. Es gilt für jede Asset-Klasse, deren AC-Komponente vollständig durch die AC-Komponente eines anderen Assets erklärt werden kann:
+### 9.3 Verallgemeinerung
 
-> **Resonanz entsteht nur zwischen Systemen mit verschiedenen Eigenfrequenzen. Ohne eigenständige AC-Komponente keine eigene Phase, ohne eigene Phase keine Phasenverschiebung, ohne Phasenverschiebung keine Resonanz, ohne Resonanz kein Informationsaustausch, ohne Information kein Markt.**
+Dieses Ergebnis betrifft zwei verschiedene Fragen:
 
-### 9.3 Resonanzregel
+> **Portfolio-Diversifikation erfordert verschiedene Eigenfrequenzen.** Ohne eigenständige AC-Komponente keine Phasenverschiebung, ohne Phasenverschiebung kein Informationsgewinn durch das zweite Asset.
 
-Gruppenzugehörigkeit ist systemisch invariant. Ein Altcoin gehört zur Gruppe "BTC-Derivat" — unabhängig davon, wie er sich nennt, welches Narrativ er trägt, oder welche technologische Innovation er verspricht. Die Resonanzfeldtheorie macht diese Zugehörigkeit sichtbar, wo klassische Finanzanalyse versagt.
+> **Einzelhandel erfordert ausreichende Amplitude.** Ein skaliertes Echo mit α > 1 ist handelbar — es schwingt stärker, nicht anders. Die Methoden sind identisch, die Parameter ändern sich.
+
+### 9.4 Resonanzregel
+
+Gruppenzugehörigkeit ist systemisch invariant. Ein Altcoin gehört zur Gruppe „BTC-amplifizierte Schwingung" — unabhängig davon, wie er sich nennt, welches Narrativ er trägt, oder welche technologische Innovation er beansprucht. Was ihn aber handelbar macht, ist nicht seine Zugehörigkeit zur Gruppe, sondern die Amplitude seiner Schwingung innerhalb der Gruppe.
 
 ---
 
