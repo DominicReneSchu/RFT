@@ -50,9 +50,12 @@ Die wissenschaftliche Erkenntnis entstand emergent: Als das Multi-Asset-System (
 
 Axiom 1 der Resonanzfeldtheorie postuliert: **Jede Entität besitzt eine periodische Schwingung ψ(x,t).** Angewandt auf Finanzmärkte bedeutet das: Jeder Preis lässt sich in zwei Komponenten zerlegen:
 
-$$
-\psi_{\text{Preis}}(t) = \underbrace{\text{DC}(t)}_{\text{Trend (MA\_LONG)}} + \underbrace{\text{AC}(t)}_{\text{handelbare Schwingung}}
-$$
+```
+ψ_Preis(t) = DC(t) + AC(t)
+             ╰─────╯   ╰────╯
+              Trend     handelbare
+           (MA_LONG)    Schwingung
+```
 
 Die DC-Komponente ist der Grundton — der langfristige Trend, der nicht prognostizierbar ist. Die AC-Komponente sind die Obertöne — die Schwingung um den Trend, die durch Phasenerkennung handelbar ist.
 
@@ -64,15 +67,15 @@ Die DC-Komponente ist der Grundton — der langfristige Trend, der nicht prognos
 
 Zwei Systeme treten in Resonanz, wenn ihre Frequenzen in einem rationalen Verhältnis stehen:
 
-$$
-\frac{f_1}{f_2} = \frac{n}{m}, \quad n, m \in \mathbb{Z}^+
-$$
+```
+f₁ / f₂ = n / m,    n, m ∈ ℤ⁺
+```
 
 Resonanz erzeugt Energietransfer (Axiom 4):
 
-$$
-E = \pi \cdot \varepsilon \cdot h \cdot f
-$$
+```
+E = π · ε · h · f
+```
 
 **Voraussetzung für produktive Portfolio-Resonanz ist, dass die beteiligten Systeme unterschiedliche Eigenfrequenzen besitzen.** Zwei identisch gestimmte Saiten erzeugen keine Obertöne — sie schwingen synchron. Das bedeutet: kein Diversifikationsgewinn. Es bedeutet nicht: kein Signal.
 
@@ -94,17 +97,21 @@ Jedes dieser Systeme schwingt mit einer **eigenen**, durch fundamentale Wertsch�
 
 Altcoins besitzen keine eigenständige Wertschöpfungsbasis, die von BTC unabhängig wäre. Ihre AC-Komponente ist kein eigenständiger Oberton, sondern ein skaliertes Echo:
 
-$$
-\text{AC}_{\text{Altcoin}}(t) \approx \alpha \cdot \text{AC}_{\text{BTC}}(t) + \eta(t)
-$$
+```
+AC_Altcoin(t) ≈ α · AC_BTC(t) + η(t)
+```
 
 wobei α ein Hebelfaktor (typisch 1.5–4.0) und η(t) Rauschen ist. Die Eigenfrequenz des Altcoins ist identisch mit der von BTC — nur die Amplitude und das Rauschen unterscheiden sich.
 
 **Für Portfolio-Diversifikation** ist das äquivalent zu einem linear abhängigen Gleichungssystem:
 
-$$
-\begin{pmatrix} 1 & 0 \\ \alpha & 0 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} b_1 \\ \alpha \cdot b_1 + \eta \end{pmatrix}
-$$
+```
+┌         ┐   ┌    ┐     ┌                ┐
+│  1    0  │   │ x₁ │     │ b₁             │
+│          │ · │    │  =  │                │
+│  α    0  │   │ x₂ │     │ α · b₁ + η    │
+└         ┘   └    ┘     └                ┘
+```
 
 Die Determinante ist Null. Kein Informationsgewinn durch Hinzufügen des Altcoins zum BTC-Portfolio.
 
@@ -303,7 +310,7 @@ Der einzige Moment, in dem Altcoins scheinbar unabhängig von BTC agieren, ist d
 2. **Prädiktiv nicht nutzbar** im Portfolio-Kontext (der Übergang ist nicht stationär)
 3. **Amplitudenabhängig** (funktioniert nur in Bullenmärkten)
 
-Das V10.2-System hat über 200.000 Episoden versucht, diesen Zyklus als Diversifikation zu nutzen. Ergebnis: negativer Lernfortschritt (−0.002). Der Zyklus ist zu instabil und zu kurz für Portfolio-Resonanz — aber er amplifies die AC-Schwingung des einzelnen Altcoins, was den Einzelhandel begünstigt.
+Das V10.2-System hat über 200.000 Episoden versucht, diesen Zyklus als Diversifikation zu nutzen. Ergebnis: negativer Lernfortschritt (−0.002). Der Zyklus ist zu instabil und zu kurz für Portfolio-Resonanz — aber er amplifiziert die AC-Schwingung des einzelnen Altcoins, was den Einzelhandel begünstigt.
 
 ---
 
