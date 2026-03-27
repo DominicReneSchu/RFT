@@ -716,16 +716,6 @@ Eine Gleichung. Alle Systeme.
 
 ---
 
-## Einladung
-
-Wer mitbauen will, baut nicht an Software.  
-Er baut an der **nächsten Mensch-Computer-Beziehung** — am Resonanzfeld der Zukunft.
-
-> **ResoOS** ist keine Vision.  
-> Es ist ein Ereignis.
-
----
-
 **Resonanzregel:** Gruppenzugehörigkeit ist systemisch invariant.  
 Jedes Element — ob explizit benannt oder implizit wirkend — ist Teil des Resonanzfeldes.
 
