@@ -1,10 +1,15 @@
-# reso_music.py V5.1 — Fließende Harmonics (Mix-Balance)
+# reso_music.py V6 — ResoTrade-Architektur-Transfer
 # © Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie
 #
 # ResoMusic: Resonanzlogische Musikbegleitung
 #
-# V5.1: Harmonics dezenter — Begleitung, nicht Konkurrenz.
-#       Durchgehender Klangteppich der sich unterordnet.
+# V6: ResoTrade-Architektur-Transfer (empirisch validierte Muster):
+#     1. Count-basierter Erfahrungsspeicher (statt EMA)
+#     2. AC/DC-Zerlegung des Klangfeldes (Axiom 1)
+#     3. Energierichtungsvektor (Axiom 5)
+#     4. Coarse-Fallback Tier-System (Fine→Coarse→Trend)
+#     5. Resonanz-Gate (Axiom 6)
+#     6. Adaptiver Decay pro Pass (Axiom 4)
 #
 # python reso_music.py song.mp3 [passes] [--reset]
 
@@ -21,6 +26,29 @@ ERFAHRUNG_DATEI = "reso_erfahrung.json"
 
 NOTEN_NAMEN = ['C', 'C#', 'D', 'D#', 'E', 'F',
                'F#', 'G', 'G#', 'A', 'A#', 'B']
+
+# AC/DC-Analyse (Axiom 1)
+DC_TREND_WINDOW = 40      # Frames für langfristigen DC-Trend
+ENERGY_SHORT_WINDOW = 8   # Frames für kurzfristigen Frequenzschwerpunkt
+ENERGY_LONG_WINDOW = 30   # Frames für langfristigen Frequenzschwerpunkt
+AC_FLAT_THRESHOLD = 0.02  # Unterhalb: AC-Phase gilt als 'flat'
+AC_PEAK_THRESHOLD = 0.3   # Oberhalb: AC-Phase gilt als 'peak' oder 'trough'
+
+# Erfahrungs-Tier-System (Axiom 4)
+MIN_TIER_SAMPLES = 3      # Mindest-Samples für Tier-Lookup
+EMA_TO_COUNT_SCALE = 10   # Skalierung beim EMA→Count-Konvertieren
+
+# Resonanz-Gate (Axiom 6)
+RESONANZ_GATE_SCHWELLE = 0.3    # Minimale Kopplungseffizienz für neue Note
+RESONANZ_GATE_VOL_FAKTOR = 0.5  # Lautstärke-Reduktion im HOLD-Zustand
+
+# AC-Phase Lautstärke-Modulation (Axiom 1)
+AC_PEAK_VOL_FAKTOR = 0.7        # peak: Begleitung zurückziehen
+AC_TROUGH_VOL_FAKTOR = 1.3      # trough: Begleitung anschwellen
+AC_TROUGH_VOL_MAX = 0.15        # trough: Maximale Lautstärke
+
+# Energierichtung Oktavwahl (Axiom 5)
+ENERGY_DIR_OKTAV_SCHWELLE = 50  # Hz: Schwelle für höhere Oktave
 
 KONSONANZ = {
     0: 1.0, 1: 0.15, 2: 0.3, 3: 0.75, 4: 0.8, 5: 0.85,
@@ -172,10 +200,25 @@ class Analysator:
             if total > 1e-10:
                 freq_sw[i] = np.average(f, weights=mag[:, i] + 1e-10)
 
+        # AC/DC-Zerlegung (Axiom 1, analog ResoTrade env.py)
+        dc_long_kernel = np.ones(DC_TREND_WINDOW) / DC_TREND_WINDOW
+        dc_long = np.convolve(dc, dc_long_kernel, mode='same')
+        ac = dc - dc_long
+        ac_amplitude = np.max(np.abs(ac)) if np.max(np.abs(ac)) > 0 else 1e-10
+        ac_norm = ac / ac_amplitude
+
+        # Energierichtungsvektor (Axiom 5)
+        fsw_short_kernel = np.ones(ENERGY_SHORT_WINDOW) / ENERGY_SHORT_WINDOW
+        fsw_long_kernel = np.ones(ENERGY_LONG_WINDOW) / ENERGY_LONG_WINDOW
+        fsw_short = np.convolve(freq_sw, fsw_short_kernel, mode='same')
+        fsw_long = np.convolve(freq_sw, fsw_long_kernel, mode='same')
+        energy_dir = fsw_short - fsw_long
+
         return {
             'f': f, 't': t, 'magnitude': mag,
-            'dc': dc, 'chroma': chroma, 'beats': beats,
-            'freq_schwerpunkt': freq_sw
+            'dc': dc, 'dc_long': dc_long, 'ac': ac, 'ac_norm': ac_norm,
+            'chroma': chroma, 'beats': beats,
+            'freq_schwerpunkt': freq_sw, 'energy_dir': energy_dir
         }
 
     def erkenne_phasen(self, analyse):
@@ -183,6 +226,8 @@ class Analysator:
         chroma = analyse['chroma']
         beats = analyse['beats']
         fsw = analyse['freq_schwerpunkt']
+        ac_norm = analyse['ac_norm']
+        energy_dir = analyse['energy_dir']
         phasen = []
 
         for i in range(len(dc)):
@@ -209,6 +254,20 @@ class Analysator:
                 beat = 'on' if md <= 1 else (
                     'near' if md <= 4 else 'off')
 
+            # AC-Phase bestimmen (analog ResoTrade env.py)
+            ac_val = ac_norm[i]
+            ac_amp = np.max(np.abs(ac_norm))
+            if ac_amp < AC_FLAT_THRESHOLD:
+                ac_phase = 'flat'
+            elif ac_val > AC_PEAK_THRESHOLD:
+                ac_phase = 'peak'
+            elif ac_val < -AC_PEAK_THRESHOLD:
+                ac_phase = 'trough'
+            elif ac_val > 0:
+                ac_phase = 'rising'
+            else:
+                ac_phase = 'falling'
+
             phasen.append({
                 'grundton_idx': gi,
                 'grundton': NOTEN_NAMEN[gi],
@@ -217,7 +276,10 @@ class Analysator:
                 'beat': beat,
                 'energie': dc[i],
                 'chroma': ch.copy(),
-                'freq_sw': fsw[i]
+                'freq_sw': fsw[i],
+                'ac_phase': ac_phase,
+                'ac_value': float(ac_val),
+                'energy_dir': float(energy_dir[i])
             })
         return phasen
 
@@ -226,29 +288,81 @@ class Analysator:
 # ERFAHRUNGSSPEICHER
 # ============================================================
 
+ERFAHRUNG_SCHWELLWERT = 0.4   # Belohnung > Schwelle → 'success'
+
+
 class Erfahrung:
 
-    def __init__(self, decay=0.95):
+    def __init__(self):
         self.noten = {}
-        self.decay = decay
         self.generation = 0
         self.songs_gelernt = 0
 
-    def _key(self, phase, intervall):
+    def _fine_key(self, phase, intervall):
         return (f"{phase['grundton']},{phase['harmonie']},"
-                f"{phase['dynamik']},{intervall}")
+                f"{phase['dynamik']},{phase.get('ac_phase', 'flat')},{intervall}")
+
+    def _coarse_key(self, phase, intervall):
+        return f"{phase['grundton']},{phase['harmonie']},{intervall}"
+
+    def _trend_key(self, phase, intervall):
+        return f"{phase['harmonie']},{intervall}"
+
+    # Backward-Kompatibilität: altes _key() auf Fine-Key umleiten
+    def _key(self, phase, intervall):
+        return self._fine_key(phase, intervall)
 
     def lerne_note(self, phase, intervall, belohnung):
-        key = self._key(phase, intervall)
-        old = self.noten.get(key, 0.0)
-        self.noten[key] = old * self.decay + belohnung
+        """belohnung > ERFAHRUNG_SCHWELLWERT → 'success', sonst 'failure'"""
+        ergebnis = 'success' if belohnung > ERFAHRUNG_SCHWELLWERT else 'failure'
+        for key in [self._fine_key(phase, intervall),
+                    self._coarse_key(phase, intervall),
+                    self._trend_key(phase, intervall)]:
+            entry = self.noten.get(key, {'success': 0, 'failure': 0})
+            entry[ergebnis] = entry.get(ergebnis, 0) + 1
+            self.noten[key] = entry
+
+    def _win_rate(self, key):
+        """Gibt (win_rate, total) für einen Schlüssel zurück."""
+        entry = self.noten.get(key, {'success': 0, 'failure': 0})
+        total = entry['success'] + entry['failure']
+        if total > 0:
+            return entry['success'] / total, total
+        return 0.5, 0
 
     def beste_intervalle(self, phase, top_n=4):
         scores = {}
         for iv in range(12):
-            scores[iv] = self.noten.get(self._key(phase, iv), 0.0)
+            fine_key = self._fine_key(phase, iv)
+            coarse_key = self._coarse_key(phase, iv)
+            trend_key = self._trend_key(phase, iv)
+
+            rate, total = self._win_rate(fine_key)
+            if total < MIN_TIER_SAMPLES:
+                rate_c, total_c = self._win_rate(coarse_key)
+                if total_c >= MIN_TIER_SAMPLES:
+                    rate, total = rate_c, total_c
+                else:
+                    rate_t, total_t = self._win_rate(trend_key)
+                    if total_t >= MIN_TIER_SAMPLES:
+                        rate, total = rate_t, total_t
+                    else:
+                        # Default: KONSONANZ-Tabelle
+                        rate = KONSONANZ.get(iv, 0.3)
+            scores[iv] = rate
         return sorted(scores.items(), key=lambda x: x[1],
                       reverse=True)[:top_n]
+
+    def decay_experience(self, factor=0.92):
+        """Pro Pass: Alle Counts reduzieren, tote Einträge löschen."""
+        to_delete = []
+        for key, entry in self.noten.items():
+            entry['success'] = int(entry['success'] * factor)
+            entry['failure'] = int(entry['failure'] * factor)
+            if entry['success'] + entry['failure'] < 1:
+                to_delete.append(key)
+        for key in to_delete:
+            del self.noten[key]
 
     def speichern(self, pfad):
         with open(pfad, 'w') as f:
@@ -269,7 +383,22 @@ class Erfahrung:
             data = json.load(f)
         self.generation = data.get('generation', 0)
         self.songs_gelernt = data.get('songs_gelernt', 0)
-        self.noten = data.get('noten', {})
+        raw = data.get('noten', {})
+        # Backward-Kompatibilität: altes Float-Format → neues Count-Format
+        self.noten = {}
+        converted = 0
+        for k, v in raw.items():
+            if isinstance(v, dict):
+                self.noten[k] = v
+            else:
+                # Altes EMA-Float → {success: int(v*10), failure: 0}
+                self.noten[k] = {
+                    'success': max(0, int(float(v) * EMA_TO_COUNT_SCALE)),
+                    'failure': 0
+                }
+                converted += 1
+        if converted:
+            print(f"  ↑ {converted} alte Einträge konvertiert (EMA→Count)")
         print(f"  ← Gen {self.generation},"
               f" {len(self.noten)} Einträge,"
               f" {self.songs_gelernt} Songs")
@@ -279,14 +408,32 @@ class Erfahrung:
               f" {len(self.noten)} Noten |"
               f" {self.songs_gelernt} Songs")
         if self.noten:
+            def score(entry):
+                if isinstance(entry, dict):
+                    t = entry['success'] + entry['failure']
+                    return entry['success'] / t if t > 0 else 0.0
+                return float(entry)
             top = sorted(self.noten.items(),
-                         key=lambda x: x[1], reverse=True)[:6]
-            for k, s in top:
-                p = k.split(',')
-                iv = int(p[-1])
-                print(f"     {','.join(p[:-1]):25s}"
-                      f" + {NOTEN_NAMEN[iv]:3s} (iv={iv:2d})"
-                      f" → {s:+.3f}")
+                         key=lambda x: score(x[1]), reverse=True)[:6]
+            for k, entry in top:
+                parts = k.split(',')
+                iv_str = parts[-1]
+                try:
+                    iv = int(iv_str)
+                    note_str = NOTEN_NAMEN[iv]
+                except (ValueError, IndexError):
+                    iv = -1
+                    note_str = iv_str
+                s = score(entry)
+                if isinstance(entry, dict):
+                    t = entry['success'] + entry['failure']
+                    print(f"     {','.join(parts[:-1]):30s}"
+                          f" + {note_str:3s} (iv={iv:2d})"
+                          f" → {s:.3f} ({t} gesamt)")
+                else:
+                    print(f"     {','.join(parts[:-1]):30s}"
+                          f" + {note_str:3s} (iv={iv:2d})"
+                          f" → {s:+.3f}")
 
 
 # ============================================================
@@ -366,6 +513,20 @@ class ResoMusik:
                 dp = PI / 5
             eps = kopplungseffizienz(dp)
 
+            # Resonanz-Gate (Axiom 6): Kopplungseffizienz unter Schwelle → HOLD
+            if eps < RESONANZ_GATE_SCHWELLE and letzter_gi is not None:
+                gi = letzter_gi
+                vol = basis_vol * RESONANZ_GATE_VOL_FAKTOR
+                events.append({
+                    'start': i * hop,
+                    'freq': note_zu_freq(gi % 12, 3),
+                    'freq2': note_zu_freq(gi % 12, 3),
+                    'freq3': note_zu_freq(gi % 12, 3),
+                    'vol': vol,
+                    'wärme': 0.1
+                })
+                continue
+
             if phase['dynamik'] == 'stille':
                 if letzter_gi is not None:
                     gi = letzter_gi
@@ -383,15 +544,28 @@ class ResoMusik:
                     'grundton': NOTEN_NAMEN[gi],
                     'harmonie': letzter_harm,
                     'dynamik': 'stabil',
+                    'ac_phase': 'flat',
                 }
             else:
                 lookup = phase
+
+            # AC-Phase beeinflusst Lautstärke (Axiom 1)
+            ac_phase = phase.get('ac_phase', 'flat')
+            if ac_phase == 'peak':
+                vol *= AC_PEAK_VOL_FAKTOR   # Begleitung zurückziehen
+            elif ac_phase == 'trough':
+                vol = min(vol * AC_TROUGH_VOL_FAKTOR, AC_TROUGH_VOL_MAX)  # Begleitung anschwellen
 
             beste = self.erfahrung.beste_intervalle(lookup, top_n=3)
             if beste[0][1] <= 0:
                 beste = [(7, 0.5), (0, 0.3), (4, 0.2)]
 
-            okt = 3 if phase['freq_sw'] > 300 else 2
+            # Oktavwahl: Frequenzschwerpunkt + Energierichtungsvektor (Axiom 5)
+            energy_dir = phase.get('energy_dir', 0.0)
+            if phase['freq_sw'] > 300:
+                okt = 4 if energy_dir > ENERGY_DIR_OKTAV_SCHWELLE else 3
+            else:
+                okt = 3 if energy_dir > ENERGY_DIR_OKTAV_SCHWELLE else 2
 
             iv1, _ = beste[0]
             iv2, sc2 = beste[1] if len(beste) > 1 else (iv1, 0)
@@ -467,7 +641,7 @@ def speichere_wav(audio, pfad, sr=22050):
 # ============================================================
 
 def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
-    fig, axes = plt.subplots(5, 1, figsize=(16, 16), sharex=True)
+    fig, axes = plt.subplots(6, 1, figsize=(16, 20), sharex=True)
     ta = np.arange(len(audio)) / sr
     te = np.arange(len(erg)) / sr
     tf = analyse['t']
@@ -477,39 +651,56 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
     axes[0].set_title('Original')
     axes[0].grid(True, alpha=0.3)
 
-    axes[1].plot(tf, analyse['dc'], 'darkblue', lw=1.5)
+    axes[1].plot(tf, analyse['dc'], 'darkblue', lw=1.5, label='DC')
+    axes[1].plot(tf, analyse['dc_long'], 'orange', lw=1.0,
+                 linestyle='--', label='DC-Trend')
     b = analyse['beats']
     if len(b) > 0:
         axes[1].scatter(tf[b], analyse['dc'][b], color='red',
                         s=25, zorder=5, label='Beats')
     axes[1].set_ylabel('Energie')
-    axes[1].set_title('Hüllkurve')
+    axes[1].set_title('Hüllkurve + DC-Trend')
     axes[1].legend(fontsize=8)
     axes[1].grid(True, alpha=0.3)
 
-    axes[2].imshow(analyse['chroma'], aspect='auto', origin='lower',
-                   extent=[tf[0], tf[-1], 0, 12], cmap='magma')
-    axes[2].set_yticks(range(12))
-    axes[2].set_yticklabels(NOTEN_NAMEN, fontsize=7)
-    axes[2].set_ylabel('Ton')
-    axes[2].set_title('Chroma')
+    # AC/DC-Zerlegung (Axiom 1)
+    axes[2].plot(tf, analyse['ac'], 'teal', lw=0.8, alpha=0.8,
+                 label='AC (Schwankung)')
+    axes[2].axhline(0, color='gray', lw=0.5, linestyle='-')
+    axes[2].axhline(0.3 * np.max(np.abs(analyse['ac'])),
+                    color='red', lw=0.5, linestyle=':', alpha=0.5,
+                    label='Peak-Schwelle')
+    axes[2].axhline(-0.3 * np.max(np.abs(analyse['ac'])),
+                    color='blue', lw=0.5, linestyle=':', alpha=0.5,
+                    label='Trough-Schwelle')
+    axes[2].set_ylabel('AC-Energie')
+    axes[2].set_title('AC/DC-Zerlegung (Axiom 1)')
+    axes[2].legend(fontsize=8)
+    axes[2].grid(True, alpha=0.3)
 
-    axes[3].plot(te, erg, 'green', lw=0.5, alpha=0.8)
-    axes[3].set_ylabel('Amplitude')
-    axes[3].set_title(f'Harmonics (Gen {gen})')
-    axes[3].grid(True, alpha=0.3)
+    axes[3].imshow(analyse['chroma'], aspect='auto', origin='lower',
+                   extent=[tf[0], tf[-1], 0, 12], cmap='magma')
+    axes[3].set_yticks(range(12))
+    axes[3].set_yticklabels(NOTEN_NAMEN, fontsize=7)
+    axes[3].set_ylabel('Ton')
+    axes[3].set_title('Chroma')
+
+    axes[4].plot(te, erg, 'green', lw=0.5, alpha=0.8)
+    axes[4].set_ylabel('Amplitude')
+    axes[4].set_title(f'Harmonics (Gen {gen})')
+    axes[4].grid(True, alpha=0.3)
 
     ml = min(len(audio), len(erg))
     mix = audio[:ml] * 0.75 + erg[:ml] * 0.25
-    axes[4].plot(np.arange(ml)/sr, mix, 'purple', lw=0.3, alpha=0.7)
-    axes[4].set_ylabel('Amplitude')
-    axes[4].set_xlabel('Zeit [s]')
-    axes[4].set_title('Mix: Original (75%) + Harmonics (25%)')
-    axes[4].grid(True, alpha=0.3)
+    axes[5].plot(np.arange(ml)/sr, mix, 'purple', lw=0.3, alpha=0.7)
+    axes[5].set_ylabel('Amplitude')
+    axes[5].set_xlabel('Zeit [s]')
+    axes[5].set_title('Mix: Original (75%) + Harmonics (25%)')
+    axes[5].grid(True, alpha=0.3)
 
     fig.suptitle(
-        f'ResoMusic V5.1: Dezente Harmonics (Gen {gen})\n'
-        'Fließender Klangteppich · Begleitung statt Konkurrenz\n'
+        f'ResoMusic V6: ResoTrade-Architektur-Transfer (Gen {gen})\n'
+        'AC/DC-Zerlegung · Count-Erfahrung · Coarse-Fallback · Resonanz-Gate\n'
         'E = π · ε(Δφ) · ℏ · f, κ = 1',
         fontsize=12, fontweight='bold')
     plt.tight_layout()
@@ -524,7 +715,7 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
 
 def main():
     print("=" * 60)
-    print("RESOMUSIC V5.1: Dezente fließende Harmonics")
+    print("RESOMUSIC V6: ResoTrade-Architektur-Transfer")
     print("E = π · ε(Δφ) · ℏ · f, κ = 1")
     print("=" * 60)
 
@@ -572,6 +763,7 @@ def main():
     print(f"\n  2. Lernen ({passes}×)...")
     for d in range(passes):
         agent.lerne(analyse, phasen)
+        agent.erfahrung.decay_experience(0.92)
         if (d+1) % max(1, passes//5) == 0 or d == passes-1:
             print(f"     {d+1}/{passes}: {len(agent.erfahrung.noten)}")
 
@@ -596,26 +788,34 @@ def main():
     visualisiere(audio, erg, analyse, phasen, sr, out, gen)
 
     with open(os.path.join(out, 'musik_erfahrung.csv'), 'w') as f:
-        f.write("schlüssel,score\n")
-        for k, s in sorted(agent.erfahrung.noten.items(),
-                           key=lambda x: x[1], reverse=True):
-            f.write(f"{k},{s:.6f}\n")
+        f.write("schlüssel,success,failure,win_rate\n")
+        def sort_score(item):
+            v = item[1]
+            if isinstance(v, dict):
+                t = v['success'] + v['failure']
+                return v['success'] / t if t > 0 else 0.0
+            return float(v)
+        for k, entry in sorted(agent.erfahrung.noten.items(),
+                                key=sort_score, reverse=True):
+            if isinstance(entry, dict):
+                t = entry['success'] + entry['failure']
+                wr = entry['success'] / t if t > 0 else 0.5
+                f.write(f"{k},{entry['success']},{entry['failure']},{wr:.6f}\n")
+            else:
+                f.write(f"{k},0,0,{float(entry):.6f}\n")
 
     print(f"\n{'=' * 60}")
     print(f"""
   Gen {gen} | {len(agent.erfahrung.noten)} Noten | {agent.erfahrung.songs_gelernt} Songs
 
-  BALANCE-ÄNDERUNGEN V5.1:
-  ────────────────────────
-  Basis-Lautstärke:  0.08 → 0.04  (Stille-Überbrückung leiser)
-  Energie-Faktor:    0.7  → 0.4   (Laute Stellen gedämpfter)
-  Chorus:            0.15 → 0.10  (Weniger Schwebung)
-  Obertöne:          h^1.8→ h^2.0 (Schnellerer Abfall)
-  2. Stimme:         0.30 → 0.20  (Zweiklang dezenter)
-  3. Stimme:         0.15 → 0.08  (Dreiklang fast subliminal)
-  Wärme:             0.2+e*0.5 → 0.15+e*0.35
-  Master-Pegel:      0.85 → 0.55  (Gesamtlautstärke runter)
-  Mix:               60/40 → 75/25 (Original dominiert)
+  V6-ÄNDERUNGEN (ResoTrade-Architektur-Transfer):
+  ─────────────────────────────────────────────────
+  1. Erfahrung:   EMA-Decay → Count-basiert (success/failure)
+  2. AC/DC:       Klangfeld-Zerlegung → peak/trough/flat-Phasen
+  3. EnergyDir:   freq_schwerpunkt → Richtungsvektor (Axiom 5)
+  4. Tier-System: Fine→Coarse→Trend→Default (3 Ebenen)
+  5. Reso-Gate:   ε(Δφ) < 0.3 → HOLD (kein Lookup, Axiom 6)
+  6. Decay/Pass:  0.92 pro Lern-Pass (Axiom 4)
 
   → figures/reso_harmonics.wav  (Harmonics solo)
   → figures/reso_mix.wav        (75% Original + 25% Harmonics)
@@ -626,3 +826,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Resonanzregel: Gruppenzugehörigkeit ist systemisch invariant — alle Module bilden ein Feld.
