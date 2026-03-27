@@ -8,9 +8,9 @@
 
 ## Zusammenfassung
 
-ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, BTC-Kurszyklen als Schwingungsfelder zu lesen und BTC über reines HODL hinaus zu akkumulieren. Es ist der erste empirische Nachweis, dass die Axiome der Resonanzfeldtheorie in einem realen, chaotischen System — dem BTC-Markt — strukturell überlegene Entscheidungen erzeugen.
+ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, Kurszyklen als Schwingungsfelder zu lesen und Assets über reines HODL hinaus zu akkumulieren. Es ist der erste empirische Nachweis, dass die Axiome der Resonanzfeldtheorie in einem realen, chaotischen System — dem Finanzmarkt — strukturell überlegene Entscheidungen erzeugen.
 
-Seit V14.2 ist ResoTrade ein generisches Multi-Asset-System (BTC, Gold, ETH, EURUSD) mit adaptiven Schwellen, parallelem Training und Dashboard-gesteuertem Betrieb. Die Kernarchitektur — Erfahrungslernen durch resonante Phasenkopplung — ist über alle Versionen invariant.
+Seit V14.2 ist ResoTrade ein generisches Multi-Asset-System (BTC, Gold, ETH, EURUSD) mit 12-dimensionaler Fine-Chain, adaptiven Schwellen (V14 Feldzustand), parallelem Training und Dashboard-gesteuertem Betrieb über Streamlit. Die Kernarchitektur — Erfahrungslernen durch resonante Phasenkopplung — ist über alle Versionen und alle Asset-Klassen invariant.
 
 **Kernergebnis:** +26.1% vs HODL im Durchschnitt über 4 verschiedene Marktphasen (24 Monate), validiert über Sideways, Bullrun, Korrektur und Crash. Kein klassischer Indikator auf demselben Datensatz erreicht eine Korrelation über 0.05.
 
@@ -20,16 +20,19 @@ Seit V14.2 ist ResoTrade ein generisches Multi-Asset-System (BTC, Gold, ETH, EUR
 
 ## Einordnung in die Resonanzfeldtheorie
 
-ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung von vier Axiomen der [Resonanzfeldtheorie](../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
+ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
 
-| Axiom | Prinzip | Anwendung in ResoTrade | Empirischer Nachweis |
-|-------|---------|------------------------|---------------------|
+| Axiom | Prinzip | Anwendung in ResoTrade V14.2 | Empirischer Nachweis |
+|-------|---------|------------------------------|---------------------|
 | [**Axiom 1**](../docs/mathematik/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
-| [**Axiom 4**](../docs/mathematik/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Balance-Regler: Cash ↔ BTC | System bleibt über 24 Monate handlungsfähig |
-| [**Axiom 5**](../docs/mathematik/energierichtung.md) | Energie ist vektoriell | `energy_dir = e_short - e_long` | Richtung schlägt Prognose |
-| [**Axiom 6**](../docs/mathematik/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
+| [**Axiom 2**](../docs/mathematik/axiomatische_grundlegung.md) | Superposition der Moden | MA_SHORT + MA_LONG als überlagerte Moden | Multi-Zeitskalen-Analyse verbessert Timing |
+| [**Axiom 3**](../docs/mathematik/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Symmetrische BUY/SELL-Schwellen (V14-Fix) | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
+| [**Axiom 4**](../docs/mathematik/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Konsolidierter Decay (0.92), Balance-Regler | System bleibt über 24 Monate handlungsfähig |
+| [**Axiom 5**](../docs/mathematik/energierichtung.md) | Energie ist vektoriell | `energy_dir = e_short - e_long`, reduzierte Chain-Dimensionalität | Richtung schlägt Prognose |
+| [**Axiom 6**](../docs/mathematik/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Pattern-Gate, Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
+| [**Axiom 7**](../docs/mathematik/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: BTC, Gold, ETH, EURUSD über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
 
-Zusätzlich bestätigt die [Altcoin-Analyse](resotrade_altcoin_analyse.md) Axiom 3 (Resonanzbedingung) und Axiom 6 (Informationsgehalt) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
+Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
 
 ### Weiterführende theoretische Grundlagen
 
@@ -226,9 +229,10 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 | V10 | Energierichtungsvektor (Axiom 5+6) | +37.03% (180d) |
 | V11 | AC/DC-Zerlegung (Axiom 1) | +42.89% (180d) |
 | **V11.1** | **Downtrend-Pause-Gate, Multi-Zyklus, Human-Hint** | **+26.1% Ø (4×6M)** |
-| V12 | Energievektor-Engine, erfahrungsbasierte Policy | ~0.95 Ø (500ep) |
-| V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 Ø (Lernplateau) |
-| **V14.2** | **Symmetrische Schwellen, 12-Dim Chain, konsolidierter Decay, Multi-Asset** | **>1.0 Ø (erwartet)** |
+| V12 | Energievektor-Engine MA'(t), MA''(t), MA'''(t) | Architektur-Umbau |
+| V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 HODL-Äquiv (Plateau) |
+| **V14** | **12 Inkonsistenzen behoben, alle 7 Axiome, Multi-Asset** | **Lernkurve >1.0 (Ziel)** |
+| **V14.2** | **Generische Asset-Architektur, Dashboard, paralleles Training** | **Aktuell in Validierung** |
 
 ---
 
@@ -301,7 +305,7 @@ Seit V14.2.4 ist das Training parallelisierbar: Die 4 Marktphasen-Abschnitte kö
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│          RESONANZ-POLICY V11.1 (Axiome 1,4,5,6)             │
+│          RESONANZ-POLICY V14.2 (Axiome 1–7)                 │
 │                                                              │
 │   State ──→ AC/DC-Zerlegung (Axiom 1)                       │
 │     │          DC = MA_LONG, AC = Preis - DC                 │
@@ -422,7 +426,7 @@ pos:X,pc:X,trend:X,step:X,high:X,vol:X,ma_s:X,ma_l:X,
 cz:X,sz:X,regime:X,ac:X,action:X
 ```
 
-12 diskretisierte Dimensionen + 5 Aktionen ≈ 200.000 mögliche Chains.
+12 diskretisierte Dimensionen ≈ 200.000 mögliche Chains.
 
 ---
 
@@ -433,20 +437,28 @@ cz:X,sz:X,regime:X,ac:X,action:X
 KRAKEN_FEE_PCT = 0.0026           # 0.26% Taker-Fee
 
 # Portfolio
-HODL_SHARE = 0.10                 # 10% HODL-Kern (DC-Schutz)
+HODL_SHARE = 0.05                 # 5% HODL-Kern (deprecated, durch Investment-Limits ersetzt)
 TRADE_FRACTION_SMALL = 0.10       # 10% pro Small-Trade
 TRADE_FRACTION_MEDIUM = 0.25      # 25% pro Medium-Trade
 
 # MA-Parameter (Stundenbasis)
-MA_SHORT_WINDOW = 24              # 24h (Kurzzeit-Oszillator)
-MA_LONG_WINDOW = 168              # 7d (DC-Komponente)
+MA_SHORT_WINDOW = 24              # 24h (Kurzzeit-Oszillator, Axiom 2)
+MA_LONG_WINDOW = 168              # 7d (DC-Komponente, Axiom 1)
 VOLATILITY_WINDOW = 72            # 3d
 
 # Training
 TRAINING_WINDOW_LENGTH = 720      # 30 Tage
-EXPERIENCE_DECAY_PER_PASS = 0.80  # Vergessen: 20% pro Pass
+EXPERIENCE_DECAY_PER_PASS = 0.92  # Vergessen: 8% pro Pass (konsolidiert, Axiom 4)
 
-# Downtrend-Pause-Gate (V11.1)
+# Symmetrische Schwellen V14 (Axiom 3)
+MIN_EXPECTED_GAIN = 0.025         # 2.5% Mindesterwartung BUY
+MIN_EXPECTED_DROP = 0.020         # 2.0% Mindesterwartung SELL
+
+# Erfahrungsspeicher
+FINE_CHAIN_DIMS = 12              # 12 diskretisierte Dimensionen
+PATTERN_MATCH_THRESHOLD = 0.95    # Adaptiver Mustermatch-Schwellenwert
+
+# Downtrend-Pause-Gate (V11.1+)
 PAUSE_E_LONG_THRESHOLD = -0.05    # Pause wenn e_long < -5%
 RESUME_E_LONG_THRESHOLD = -0.03   # Wiederaufnahme wenn e_long > -3%
 RESUME_AC_PHASE = "trough"        # ODER AC-Phase = trough
@@ -473,17 +485,20 @@ RESUME_AC_PHASE = "trough"        # ODER AC-Phase = trough
 
 | Datei | Funktion |
 |-------|----------|
-| `config.py` | Zentrale Konfiguration |
-| `main.py` | Multi-Pass-Training |
-| `policy.py` | AC/DC-Policy mit Resonanz-Gate |
+| `asset_config.py` | Generische Asset-Registry (BTC, Gold, ETH, EURUSD) |
+| `config.py` | Zentrale Konfiguration (asset-übergreifend) |
+| `main.py` | Multi-Pass-Training (parallelisierbar, 1–4 Worker) |
+| `policy.py` | AC/DC-Policy mit Resonanz-Gate (alle 7 Axiome) |
 | `env.py` | Regelkette + Downtrend-Pause-Gate |
-| `experience.py` | Erfahrungsspeicher (getrennt: Offline/Live/Merged) |
+| `experience.py` | Erfahrungsspeicher pro Asset (Offline/Live/Merged) |
 | `live_signal.py` | Live-Generator mit Human-Hint + Expectation |
 | `human_hint.py` | Human-Hint CLI |
 | `hint_evaluator.py` | Hint-Qualitätsbewertung |
 | `data_loader.py` | Multi-Source Pipeline (yfinance → Binance → CoinGecko) |
 | `kraken_client.py` | Kraken REST API |
 | `analyze_logs.py` | Live-Performance-Analyse |
+| `dashboard.py` | Streamlit-Dashboard (6 Tabs, pro-Asset-Ansicht) |
+| `v14_field_state_{asset}.json` | Adaptiver Feldzustand pro Asset |
 
 ---
 
@@ -524,9 +539,10 @@ python hint_evaluator.py               # Hint-Qualität
 | V10 | Energierichtungsvektor (Axiom 5+6) | +37.03% (180d) |
 | V11 | AC/DC-Zerlegung (Axiom 1) | +42.89% (180d) |
 | **V11.1** | **Pause-Gate, Multi-Zyklus, Human-Hint** | **+26.1% Ø (4×6M)** |
-| V12 | Energievektor-Engine, erfahrungsbasierte Policy | ~0.95 Ø (500ep) |
-| V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 Ø (Lernplateau) |
-| **V14.2** | **Multi-Asset, adaptive Schwellen, paralleles Training** | **>1.0 Ø (erwartet)** |
+| V12 | Energievektor-Engine MA'(t), MA''(t), MA'''(t) | Architektur-Umbau |
+| V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 HODL-Äquiv (Plateau) |
+| **V14** | **12 Inkonsistenzen behoben, alle 7 Axiome, Multi-Asset** | **Lernkurve >1.0 (Ziel)** |
+| **V14.2** | **Generische Asset-Architektur, Dashboard, paralleles Training** | **Aktuell in Validierung** |
 
 ---
 
