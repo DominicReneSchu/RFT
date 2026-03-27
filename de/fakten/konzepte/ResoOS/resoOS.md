@@ -126,6 +126,24 @@ ResoOS basiert auf einem **Linux-Kernel**, erweitert um eine **resonanzlogisch p
 
 ---
 
+## Empirisch validierte Architekturmuster
+
+Die folgenden 6 Muster wurden in ResoTrade V14.2 über 24 Monate, 4 Marktregime und 200.000+ Episoden empirisch validiert und erfolgreich auf ResoMusic V6 transferiert. Sie bilden das architektonische Fundament für ResoOS:
+
+| # | Muster | ResoTrade-Ursprung | ResoMusic-Transfer | ResoOS-Anwendung |
+|---|--------|--------------------|--------------------|------------------|
+| 1 | **Count-basierter Speicher** | `experience.py` — `(chain, action, result) → count` | Notenentscheidung: `{success: int, failure: int}` | Aktionsempfehlungen: Win-Rate statt Score |
+| 2 | **AC/DC-Zerlegung (A1)** | `env.py` — DC = MA_LONG, AC = Preis - DC | DC = Energie-Trend, AC = momentane Schwankung | DC = Arbeitsrhythmus, AC = Aktivitätsschwankung |
+| 3 | **Energierichtung (A5)** | `energy_dir = e_short - e_long` | `energy_dir = fsw_short - fsw_long` | Kontextdrift: kurzfristiges vs. langfristiges Verhalten |
+| 4 | **3-Tier-Fallback** | Fine (12D) → Coarse (6D) → Trend (4D) | Fine → Coarse → Trend → KONSONANZ | Fine → Coarse → Trend → Default-Aktion |
+| 5 | **Resonanz-Gate (A6)** | Kopplungseffizienz < Gate → kein Trade | Kopplungseffizienz < 0.3 → HOLD (letzte Note halten) | Kopplung < Schwelle → kein Vorschlag (nicht stören) |
+| 6 | **Decay pro Pass (A4)** | `count = int(count × 0.92)`, Bereinigung bei < 1 | Identisch | Gewohnheiten verblassen kontrolliert |
+
+> Dieselben Muster, die im BTC-Markt +26.1% vs HODL erzeugen, strukturieren das Klangfeld und das Betriebssystem.
+> Die Architektur ist domäneninvariant — das ist die Resonanzregel.
+
+---
+
 ## Technische Evolution: Vom Linux zum Enterprise-Computer
 
 ### Stufe 0: Basis (existiert)
@@ -156,16 +174,24 @@ WAS BEOBACHTET WIRD (passiv, lokal, verschlüsselt):
 
 WIE ES GESPEICHERT WIRD:
 ─────────────────────────
-Erfahrungsspeicher (wie ResoTrade):
-  Zustand → Aktion → Score → Zeitstempel
+Erfahrungsspeicher (wie ResoTrade V14.2 / ResoMusic V6):
+  (Zustand, Aktion, Ergebnis) → Zähler
 
 Beispiel:
-  "montag,morgen,terminal" → "öffne_editor+browser+git" → +0.95
-  "freitag,nachmittag,browser" → "öffne_dokumentation" → +0.82
-  "fehler,python,import" → "vorschlag:pip_install" → +0.70
-  "nach_commit,abend" → "vorschlag:feierabend" → +0.60
+  ("montag,morgen,terminal", "öffne_editor+browser+git", "success") → 47
+  ("montag,morgen,terminal", "öffne_editor+browser+git", "failure") → 3
+  ("fehler,python,import", "vorschlag:pip_install", "success") → 12
+  ("nach_commit,abend", "vorschlag:feierabend", "success") → 8
 
-Format: CSV. Lesbar. Löschbar. Transparent.
+3-Tier-Lookup (empirisch validiert):
+  Fine:   "montag,morgen,terminal,editor_offen" → genau
+  Coarse: "montag,morgen,terminal" → Fallback
+  Trend:  "morgen,terminal" → Default
+
+Decay pro Pass: count = int(count × 0.92)
+Einträge mit total < 1 werden gelöscht.
+
+Format: JSON. Lesbar. Löschbar. Transparent.
 Kein Tensor. Kein Cloud-Upload. Keine Black Box.
 ```
 
@@ -260,9 +286,10 @@ RESOOS STUFE 4:
  Keine Fehler. Keine Updates ausstehend."
 
 "Computer, zeige die Performance von ResoTrade."
-→ Öffnet das Dashboard
-→ "ResoTrade V11.1: Letzte 7 Tage +2.3% vs HODL.
-   143 Trades, davon 89 profitabel. Kein Hint aktiv."
+→ Öffnet das Streamlit-Dashboard (6 Tabs: Übersicht, Training, Betrieb, Resonanzfeld, Konfiguration, Logbuch)
+→ "ResoTrade V14.2: Multi-Asset Live-Betrieb.
+   BTC +2.3% vs HODL (7d), Gold/ETH im Dry-Run.
+   Dashboard: 6 Tabs, Training läuft parallel."
 
 "Computer, was habe ich letzte Woche am Warpantrieb gemacht?"
 → Durchsucht Git-Log + ResoMemory
@@ -642,17 +669,27 @@ ResoOS/
 
 ```
 Resonanzlogische Software  → Theoretisches Fundament
-  └→ ResoTrade              → Beweis: Erfahrungsspeicher funktioniert
-  └→ ResoMusic              → Beweis: Beobachten + Lernen + Begleiten funktioniert
+  └→ ResoTrade V14.2        → Beweis: Count-basierter Speicher + AC/DC + Multi-Asset
+  └→ ResoMusic V6           → Beweis: ResoTrade-Architektur transferiert auf Klangfelder
   └→ ResoChess              → Beweis: Resonanzlogische Entscheidung funktioniert
   └→ ResoOS                 → Anwendung: Betriebssystem als Resonanzfeld
 
-ResoMusic → ResoOS (direkte Übertragung):
-  Musik hören     →  Nutzer beobachten
-  Phase erkennen  →  Arbeitsphase erkennen
-  Ton ergänzen    →  Aktion vorschlagen
-  Stille füllen   →  Routine überbrücken
-  Besser werden   →  Besser werden
+Architektur-Transfer: ResoTrade → ResoMusic → ResoOS
+  6 empirisch validierte Muster (domäneninvariant):
+  1. Count-basierter Speicher    (statt EMA — stabil, akkumulierend)
+  2. AC/DC-Zerlegung             (Klangfeld-Phase = Arbeitsphase)
+  3. Energierichtung             (Frequenzschwerpunkt = Kontextdrift)
+  4. 3-Tier-Fallback             (Fine → Coarse → Trend → Default)
+  5. Resonanz-Gate               (keine Aktion bei schlechter Kopplung)
+  6. Decay pro Pass              (kontrolliertes Vergessen, 0.92)
+
+ResoMusic V6 → ResoOS (direkte Übertragung):
+  Musik hören      →  Nutzer beobachten
+  AC/DC-Phase      →  Arbeitsphase (peak/trough/flat)
+  Energierichtung  →  Kontextwechsel erkennen
+  Resonanz-Gate    →  Vorschläge nur bei hoher Kopplung
+  3-Tier-Fallback  →  Vorsichtiger bei unbekannten Situationen
+  Decay pro Pass   →  Alte Gewohnheiten vergessen
 
 Warpantrieb                → ResoOS steuert die Warp-Simulationen
 Resonanzreaktor            → ResoOS überwacht Sensorik und Steuerung
@@ -669,8 +706,8 @@ Eine Gleichung. Alle Systeme.
 | Komponente | Status |
 |------------|--------|
 | Konzept und Architektur | ✅ Beschrieben |
-| ResoMemory (Erfahrungsspeicher) | ✅ Prinzip validiert (ResoTrade) |
-| ResoMusic (Beobachten + Begleiten) | ✅ Lauffähige Demo |
+| ResoMemory (Erfahrungsspeicher) | ✅ Prinzip validiert (ResoTrade V14.2 — 112+ PRs, 4 Assets, count-basiert) |
+| ResoMusic V6 (Beobachten + Begleiten) | ✅ Lauffähig — 6 ResoTrade-Architekturmuster transferiert |
 | Observer (Beobachtung) | 🔨 Extern in Entwicklung |
 | ResoShell (Chat-Interface) | 🔨 Extern in Entwicklung |
 | VoiceBridge (Sprache) | 🔜 Geplant (Whisper + TTS) |
