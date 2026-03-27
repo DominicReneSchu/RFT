@@ -41,6 +41,7 @@ Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanz
 - [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
 - [Resonanzanalyse in Massendaten](dokumentation.md) — Methodik der empirischen Validierung
 - [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md) — Gesellschaftliche Implikation
+- [ResoMusic — Domänen-Transfer](../konzepte/ResoOS/resoOS.md#empirische-ergebnisse-resomusic-v7-märz-2026) — Dieselben 6 Architekturmuster in der Klangdomäne validiert
 
 ---
 
@@ -232,7 +233,7 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 | V12 | Energievektor-Engine MA'(t), MA''(t), MA'''(t) | Architektur-Umbau |
 | V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 HODL-Äquiv (Plateau) |
 | **V14** | **12 Inkonsistenzen behoben, alle 7 Axiome, Multi-Asset** | **Lernkurve >1.0 (Ziel)** |
-| **V14.2** | **Generische Asset-Architektur, Dashboard, paralleles Training** | **Aktuell in Validierung** |
+| **V14.2** | **Multi-Asset (BTC/Gold/ETH/EURUSD), Per-Asset Isolation, Adaptive Schwellen** | **Live-Betrieb (4 Assets)** |
 
 ---
 
@@ -542,7 +543,7 @@ python hint_evaluator.py               # Hint-Qualität
 | V12 | Energievektor-Engine MA'(t), MA''(t), MA'''(t) | Architektur-Umbau |
 | V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 HODL-Äquiv (Plateau) |
 | **V14** | **12 Inkonsistenzen behoben, alle 7 Axiome, Multi-Asset** | **Lernkurve >1.0 (Ziel)** |
-| **V14.2** | **Generische Asset-Architektur, Dashboard, paralleles Training** | **Aktuell in Validierung** |
+| **V14.2** | **Multi-Asset (BTC/Gold/ETH/EURUSD), Per-Asset Isolation, Adaptive Schwellen** | **Live-Betrieb (4 Assets)** |
 
 ---
 
