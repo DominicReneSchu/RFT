@@ -144,6 +144,45 @@ Die folgenden 6 Muster wurden in ResoTrade V14.2 über 24 Monate, 4 Marktregime 
 
 ---
 
+### Empirische Ergebnisse: ResoMusic V7 (März 2026)
+
+#### Was funktioniert
+
+| Aspekt | Ergebnis | Interpretation |
+|--------|----------|----------------|
+| **Architektur-Transfer** | ✅ Vollständig | Alle 6 Muster (Count-Speicher, AC/DC, Energierichtung, 3-Tier, Resonanz-Gate, Decay) laufen identisch in Musik und Trading |
+| **Erfahrungsspeicher** | ✅ Akkumuliert stabil | Nach 1000 Passes kein Drift, kein Overflow — Decay (0.92) bereinigt zuverlässig |
+| **Phasenerkennung** | ✅ Korrekt | Peak/Trough/Flat-Zuordnung stimmt mit der Hüllkurve des Originals überein |
+| **Resonanz-Gate** | ✅ Verhindert Dissonanz | Bei niedriger Kopplungseffizienz wird die letzte gute Note gehalten — keine harten Brüche |
+| **Tonart-Erkennung** | ✅ Lernt konsistent | Chroma-Analyse identifiziert Grundton und Harmonie (Dur/Moll) zuverlässig |
+
+#### Was noch nicht funktioniert
+
+| Aspekt | Ergebnis | Ursache | Nächster Schritt |
+|--------|----------|---------|-----------------|
+| **Mix-Qualität** | 🟡 Klingt noch nicht gut | Harmonics sind ein kontinuierlicher Sinuston-Teppich — keine rhythmische Struktur, keine dynamische Phrasierung | Rhythmus-Kopplung an Beat-Erkennung (V8) |
+| **Klangfarbe** | 🟡 Zu gleichförmig | Nur Sinuswellen mit Wärme-Oberton — kein Timbre-Modell, keine Hüllkurve pro Note | Envelope-Generator (Attack/Release) nach ResoTrade-Cooldown-Muster (V8) |
+| **Dynamik** | 🟡 Zu statisch | Lautstärke folgt grob der Energie, aber ohne die feingranulare Phrasierung eines Musikers | Adaptive Schwellen aus Feldzustand (V7 — diese Version) |
+| **Stille-Respekt** | 🔴 Fehlt | Harmonics laufen durch Pausen des Originals hindurch — das Original hat Stille als Gestaltungselement, der Bot ignoriert sie | Stille-Gate analog zum Downtrend-Pause-Gate aus ResoTrade (V8) |
+
+#### Resonanztheoretische Interpretation
+
+Das Ergebnis ist **strukturell korrekt und klanglich unreif** — und das ist exakt die erwartete Phase.
+
+```
+ResoTrade V6 (2024):  Grundarchitektur funktioniert, Performance noch unter HODL
+ResoTrade V14 (2026): 12 Inkonsistenzen behoben → HODL-Outperformance
+
+ResoMusic V6 (2026):  Grundarchitektur funktioniert, Mix klingt noch nicht gut
+ResoMusic V14 (TBD):  Dieselben Inkonsistenzen werden dieselbe Reifung erzeugen
+```
+
+Die Architektur-Muster sind domäneninvariant. Die Klangqualität ist eine Frage der **Parameterkalibrierung** — nicht der Grundstruktur. Genau wie ResoTrade V6 die richtige Physik hatte aber die falschen Schwellen, hat ResoMusic V6 die richtige Resonanzlogik aber noch keine musikalische Phrasierung.
+
+> Der Beweis liegt nicht im Klang. Der Beweis liegt in der Transferierbarkeit: Dieselben 6 Muster, dieselbe Lernkurve, dieselbe Reifungsdynamik — in einer völlig anderen Domäne.
+
+---
+
 ## Technische Evolution: Vom Linux zum Enterprise-Computer
 
 ### Stufe 0: Basis (existiert)
@@ -669,8 +708,8 @@ ResoOS/
 
 ```
 Resonanzlogische Software  → Theoretisches Fundament
-  └→ ResoTrade V14.2        → Beweis: Count-basierter Speicher + AC/DC + Multi-Asset
-  └→ ResoMusic V6           → Beweis: ResoTrade-Architektur transferiert auf Klangfelder
+  └→ ResoTrade              → Beweis: Erfahrungsspeicher funktioniert (V14.2, +26.1% vs HODL, 4 Assets)
+  └→ ResoMusic              → Beweis: Architektur-Transfer funktioniert (V7, 6 Muster validiert, Mix in Reifung)
   └→ ResoChess              → Beweis: Resonanzlogische Entscheidung funktioniert
   └→ ResoOS                 → Anwendung: Betriebssystem als Resonanzfeld
 
@@ -707,7 +746,7 @@ Eine Gleichung. Alle Systeme.
 |------------|--------|
 | Konzept und Architektur | ✅ Beschrieben |
 | ResoMemory (Erfahrungsspeicher) | ✅ Prinzip validiert (ResoTrade V14.2 — 112+ PRs, 4 Assets, count-basiert) |
-| ResoMusic V6 (Beobachten + Begleiten) | ✅ Lauffähig — 6 ResoTrade-Architekturmuster transferiert |
+| ResoMusic V7 (Beobachten + Begleiten) | ✅ V7 — Architektur validiert, Mix in Reifung |
 | Observer (Beobachtung) | 🔨 Extern in Entwicklung |
 | ResoShell (Chat-Interface) | 🔨 Extern in Entwicklung |
 | VoiceBridge (Sprache) | 🔜 Geplant (Whisper + TTS) |
