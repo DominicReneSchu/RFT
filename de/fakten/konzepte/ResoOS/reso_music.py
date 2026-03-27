@@ -1,19 +1,23 @@
-# reso_music.py V7 — ResoTrade V14.2 Architektur-Transfer
+# reso_music.py V8 — ResoTrade V14.2 Architektur-Transfer + Musikalische Integration
 # © Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie
 #
 # ResoMusic: Resonanzlogische Musikbegleitung
 #
-# V7: ResoTrade V14.2 Architektur-Transfer (empirisch validierte Muster):
+# V8: Vollständige Integration der empirisch validierten ResoTrade-Muster
+#     (24 Monate, 4 Marktregime, 200.000+ Episoden, +26.1% vs HODL):
 #     1. Count-basierter Erfahrungsspeicher (statt EMA)
 #     2. AC/DC-Zerlegung des Klangfeldes (Axiom 1)
-#     3. Energierichtungsvektor (Axiom 5)
-#     4. Coarse-Fallback Tier-System (Fine→Coarse→Trend)
-#     5. Resonanz-Gate (Axiom 6)
+#     3. Energierichtungsvektor (Axiom 5) — jetzt vollständig in Klangerzeugung
+#     4. Dynamische Tier-Gewichtung (Fine×1.2/1.0, Coarse×1.0/0.8, Trend×0.6)
+#     5. Adaptives Resonanz-Gate (median(ε)×0.7 statt fixe 0.3, Axiom 6)
 #     6. Adaptiver Decay pro Pass (Axiom 4)
-#     7. Asymmetrische Schwellen (V14.4 — Peak/Trough getrennt)
+#     7. Asymmetrische AC-Schwellen (V14.4 — Peak/Trough getrennt)
 #     8. Adaptive Schwellen aus Feldzustand (V14.2 adaptive_thresholds)
 #     9. Per-Song Isolation (V14.2 per-asset, optional --per-song)
 #    10. Robuste Amplitude-Kalibrierung (V14.2.3 — Median statt Max)
+#    11. Harmonische Kohärenz-Metrik (Chroma-Entropie als Feld-Volatilität)
+#    12. AC-Phase vollständige Lautstärke-Dynamik (peak/trough/rising/falling)
+#    13. Erweiterte Erfahrungs-Statistik (Tier-spezifisch, Harmonie-Typ)
 #
 # python reso_music.py song.mp3 [passes] [--reset] [--per-song]
 
@@ -31,6 +35,9 @@ ERFAHRUNG_DATEI = "reso_erfahrung.json"
 NOTEN_NAMEN = ['C', 'C#', 'D', 'D#', 'E', 'F',
                'F#', 'G', 'G#', 'A', 'A#', 'B']
 
+# Vorberechnete Konstante (nie geändert)
+LOG12 = np.log(12.0)  # log(Anzahl Chroma-Bins) für Kohärenz-Normierung
+
 # AC/DC-Analyse (Axiom 1)
 DC_TREND_WINDOW = 40      # Frames für langfristigen DC-Trend
 ENERGY_SHORT_WINDOW = 8   # Frames für kurzfristigen Frequenzschwerpunkt
@@ -45,16 +52,25 @@ MIN_TIER_SAMPLES = 3      # Mindest-Samples für Tier-Lookup
 EMA_TO_COUNT_SCALE = 10   # Skalierung beim EMA→Count-Konvertieren
 
 # Resonanz-Gate (Axiom 6)
-RESONANZ_GATE_SCHWELLE = 0.3    # Minimale Kopplungseffizienz für neue Note
+RESONANZ_GATE_SCHWELLE = 0.3    # Fallback-Schwelle (wird adaptiv überschrieben, V8)
 RESONANZ_GATE_VOL_FAKTOR = 0.5  # Lautstärke-Reduktion im HOLD-Zustand
+ADAPTIVE_GATE_WINDOW = 30       # Frames für adaptiven Resonanz-Gate-Median (V8)
+MIN_ADAPTIVE_GATE_SAMPLES = 5   # Mindest-Samples für zuverlässigen Median im Gate
+COHERENCE_GATE_FACTOR = 0.5     # Kohärenz-Modulation: 0 = kein Effekt, 1 = max. Verstärkung
 
-# AC-Phase Lautstärke-Modulation (Axiom 1)
-AC_PEAK_VOL_FAKTOR = 0.7        # peak: Begleitung zurückziehen
-AC_TROUGH_VOL_FAKTOR = 1.3      # trough: Begleitung anschwellen
-AC_TROUGH_VOL_MAX = 0.15        # trough: Maximale Lautstärke
+# AC-Phase vollständige Lautstärke-Dynamik (V8 — Axiom 1, alle 4 Phasen)
+# V8 kehrt V7-Semantik um: peak = Crescendo-Maximum (in V7 war peak = zurückziehen)
+# Begründung: Begleitung "atmet" mit dem Stück statt gegen es (musikalische Kohärenz)
+AC_PEAK_VOL_FAKTOR = 1.3        # peak: Crescendo-Höhepunkt (Maximum) — V7 war 0.7
+AC_TROUGH_VOL_FAKTOR = 0.6      # trough: Stille vor Neuanfang (Minimum) — V7 war 1.3
+AC_RISING_VOL_FAKTOR = 1.1      # rising: Aufbau (steigend)
+AC_FALLING_VOL_FAKTOR = 0.85    # falling: Ausklingen (fallend)
 
-# Energierichtung Oktavwahl (Axiom 5)
-ENERGY_DIR_OKTAV_SCHWELLE = 50  # Hz: Schwelle für höhere Oktave
+# Energierichtung Klangfarbe (V8 — Axiom 5, vollständige Nutzung)
+ENERGY_DIR_OKTAV_SCHWELLE = 50  # Hz: Schwelle für Oktavverschiebung
+ENERGY_DIR_WÄRME_PLUS = 0.10    # energy_dir < 0: wärmere Grundtöne
+ENERGY_DIR_WÄRME_MINUS = 0.05   # energy_dir > 0: hellere Obertöne (abziehen)
+ENERGY_DIR_FLAT_VOL = 0.9       # energy_dir ≈ 0: Lautstärke leicht reduzieren
 
 KONSONANZ = {
     0: 1.0, 1: 0.15, 2: 0.3, 3: 0.75, 4: 0.8, 5: 0.85,
@@ -228,11 +244,24 @@ class Analysator:
         fsw_long = np.convolve(freq_sw, fsw_long_kernel, mode='same')
         energy_dir = fsw_short - fsw_long
 
+        # Harmonische Kohärenz (V8 — Chroma-Entropie als Feld-Volatilität)
+        # kohärenz = 1 - (entropy(chroma) / log(12))
+        # Hohe Kohärenz → klarer Akkord, niedrige → Rauschen/Übergang
+        kohärenz = np.zeros(mag.shape[1])
+        for i in range(mag.shape[1]):
+            ch = chroma[:, i]
+            ch_sum = np.sum(ch)
+            if ch_sum > 1e-10:
+                ch_norm = ch / ch_sum
+                ent = -np.sum(ch_norm * np.log(ch_norm + 1e-10))
+                kohärenz[i] = max(0.0, 1.0 - (ent / LOG12))
+
         return {
             'f': f, 't': t, 'magnitude': mag,
             'dc': dc, 'dc_long': dc_long, 'ac': ac, 'ac_norm': ac_norm,
             'chroma': chroma, 'beats': beats,
-            'freq_schwerpunkt': freq_sw, 'energy_dir': energy_dir
+            'freq_schwerpunkt': freq_sw, 'energy_dir': energy_dir,
+            'kohärenz': kohärenz
         }
 
     def erkenne_phasen(self, analyse):
@@ -242,6 +271,7 @@ class Analysator:
         fsw = analyse['freq_schwerpunkt']
         ac_norm = analyse['ac_norm']
         energy_dir = analyse['energy_dir']
+        kohärenz_arr = analyse['kohärenz']
         phasen = []
 
         for i in range(len(dc)):
@@ -294,7 +324,8 @@ class Analysator:
                 'freq_sw': fsw[i],
                 'ac_phase': ac_phase,
                 'ac_value': float(ac_val),
-                'energy_dir': float(energy_dir[i])
+                'energy_dir': float(energy_dir[i]),
+                'kohärenz': float(kohärenz_arr[i])
             })
         return phasen
 
@@ -327,6 +358,20 @@ class Erfahrung:
     def _key(self, phase, intervall):
         return self._fine_key(phase, intervall)
 
+    def _classify_tier(self, key):
+        """Bestimmt den Tier-Typ eines Schlüssels anhand der bekannten Key-Struktur."""
+        # Fine-Key: "Grundton,Harmonie,Dynamik,AC-Phase,Intervall" (4 Kommas)
+        # Coarse-Key: "Grundton,Harmonie,Intervall" (2 Kommas)
+        # Trend-Key: "Harmonie,Intervall" (1 Komma)
+        comma_count = key.count(',')
+        if comma_count >= 4:
+            return 'fine'
+        elif comma_count == 2:
+            return 'coarse'
+        elif comma_count == 1:
+            return 'trend'
+        return 'unknown'
+
     def lerne_note(self, phase, intervall, belohnung):
         """belohnung > ERFAHRUNG_SCHWELLWERT → 'success', sonst 'failure'"""
         ergebnis = 'success' if belohnung > ERFAHRUNG_SCHWELLWERT else 'failure'
@@ -346,14 +391,15 @@ class Erfahrung:
         return 0.5, 0
 
     def beste_intervalle(self, phase, top_n=4, field_state=None):
-        """3-Tier-Lookup mit optionalem Feldzustand für adaptive Schwellen.
+        """3-Tier-Lookup mit dynamischer Tier-Gewichtung (V8).
 
-        V7 (aus ResoTrade V14.2 adaptive_thresholds + PR #112 ResoGrid):
-        - Wenn field_state vorhanden, wird die Schwelle aus dem beobachteten
-          Klangfeld berechnet (Median statt Mean — robust gegen Ausreisser).
-        - field_state['median_win_rate'] ersetzt den KONSONANZ-Default.
+        V8 (aus ResoTrade V14.2 adaptive_thresholds + dynamische Tier-Gewichtung):
+        - Fine dominiert bei viel Daten (> MIN_TIER_SAMPLES×3): Gewicht 1.2
+        - Coarse-Gewicht steigt wenn Fine schwach (kein Fine → 1.0, wenig Fine → 0.8)
+        - Trend dominiert bei wenig Daten: frühes Lernen → breite Marktregeln
+        - field_state['median_win_rate'] skaliert den Default-Score (V7 beibehalten)
         """
-        # Adaptive Schwelle aus Feldzustand (V7)
+        # Adaptive Schwelle aus Feldzustand (V7 beibehalten)
         if field_state is not None:
             all_rates = []
             for iv in range(12):
@@ -372,26 +418,32 @@ class Erfahrung:
             coarse_key = self._coarse_key(phase, iv)
             trend_key = self._trend_key(phase, iv)
 
-            rate, total = self._win_rate(fine_key)
-            if total < MIN_TIER_SAMPLES:
-                rate_c, total_c = self._win_rate(coarse_key)
-                if total_c >= MIN_TIER_SAMPLES:
-                    rate, total = rate_c, total_c
+            rate_f, total_f = self._win_rate(fine_key)
+            rate_c, total_c = self._win_rate(coarse_key)
+            rate_t, total_t = self._win_rate(trend_key)
+
+            # Dynamische Tier-Gewichtung (V8):
+            # Viel Fine-Daten → Fine dominiert mit Boost (1.2)
+            # Kein Fine → Coarse mit erhöhtem Gewicht (1.0)
+            # Nur Trend → konservative Schätzung (0.6)
+            if total_f >= MIN_TIER_SAMPLES * 3:
+                rate, tier_w = rate_f, 1.2
+            elif total_f >= MIN_TIER_SAMPLES:
+                rate, tier_w = rate_f, 1.0
+            elif total_c >= MIN_TIER_SAMPLES:
+                coarse_w = 1.0 if total_f == 0 else 0.8
+                rate, tier_w = rate_c, coarse_w
+            elif total_t >= MIN_TIER_SAMPLES:
+                rate, tier_w = rate_t, 0.6
+            else:
+                # Kein Daten: Default aus Feldzustand oder KONSONANZ-Tabelle
+                tier_w = 1.0
+                if default_rate is not None:
+                    rate = default_rate * KONSONANZ.get(iv, 0.3) * 2.0
                 else:
-                    rate_t, total_t = self._win_rate(trend_key)
-                    if total_t >= MIN_TIER_SAMPLES:
-                        rate, total = rate_t, total_t
-                    else:
-                        # Default: adaptiv aus Feldzustand oder KONSONANZ-Tabelle
-                        if default_rate is not None:
-                            # Skalierung: median_win_rate (0..1) × KONSONANZ × 2.0
-                            # → 2.0 hebt den Median auf KONSONANZ-Skala an,
-                            #   da KONSONANZ-Werte maximal 1.0 erreichen und
-                            #   der Median typisch bei 0.5 liegt (analog PR #103)
-                            rate = default_rate * KONSONANZ.get(iv, 0.3) * 2.0
-                        else:
-                            rate = KONSONANZ.get(iv, 0.3)
-            scores[iv] = rate
+                    rate = KONSONANZ.get(iv, 0.3)
+            scores[iv] = rate * tier_w
+
         return sorted(scores.items(), key=lambda x: x[1],
                       reverse=True)[:top_n]
 
@@ -469,33 +521,67 @@ class Erfahrung:
         print(f"\n  📊 Gen {self.generation} |"
               f" {len(self.noten)} Noten |"
               f" {self.songs_gelernt} Songs")
-        if self.noten:
-            def score(entry):
-                if isinstance(entry, dict):
-                    t = entry['success'] + entry['failure']
-                    return entry['success'] / t if t > 0 else 0.0
-                return float(entry)
-            top = sorted(self.noten.items(),
-                         key=lambda x: score(x[1]), reverse=True)[:6]
-            for k, entry in top:
-                parts = k.split(',')
-                iv_str = parts[-1]
-                try:
-                    iv = int(iv_str)
-                    note_str = NOTEN_NAMEN[iv]
-                except (ValueError, IndexError):
-                    iv = -1
-                    note_str = iv_str
-                s = score(entry)
-                if isinstance(entry, dict):
-                    t = entry['success'] + entry['failure']
-                    print(f"     {','.join(parts[:-1]):30s}"
-                          f" + {note_str:3s} (iv={iv:2d})"
-                          f" → {s:.3f} ({t} gesamt)")
-                else:
-                    print(f"     {','.join(parts[:-1]):30s}"
-                          f" + {note_str:3s} (iv={iv:2d})"
-                          f" → {s:+.3f}")
+
+        if not self.noten:
+            return
+
+        def score(entry):
+            if isinstance(entry, dict):
+                t = entry['success'] + entry['failure']
+                return entry['success'] / t if t > 0 else 0.0
+            return float(entry)
+
+        # Tier-spezifische Statistiken (V8)
+        tier_counts = {'fine': 0, 'coarse': 0, 'trend': 0, 'unknown': 0}
+        for k in self.noten:
+            tier_counts[self._classify_tier(k)] += 1
+        print(f"  Tier-Einträge: Fine={tier_counts['fine']}"
+              f" | Coarse={tier_counts['coarse']}"
+              f" | Trend={tier_counts['trend']}")
+
+        # Durchschnittliche Win-Rate pro Harmonie-Typ
+        # Trend-Keys haben Format "harmonie,intervall" → exakt parsen
+        harm_rates = {'dur': [], 'moll': [], 'neutral': []}
+        for k, entry in self.noten.items():
+            parts = k.split(',')
+            s = score(entry)
+            for harm in harm_rates:
+                # Fine-Key: parts[1] = harmonie; Coarse: parts[1]; Trend: parts[0]
+                tier = self._classify_tier(k)
+                if tier == 'fine' and len(parts) >= 2 and parts[1] == harm:
+                    harm_rates[harm].append(s)
+                elif tier == 'coarse' and len(parts) >= 2 and parts[1] == harm:
+                    harm_rates[harm].append(s)
+                elif tier == 'trend' and len(parts) >= 1 and parts[0] == harm:
+                    harm_rates[harm].append(s)
+        for harm, rates in harm_rates.items():
+            if rates:
+                print(f"  ⌀ Win-Rate {harm:7s}: {np.mean(rates):.3f}"
+                      f" ({len(rates)} Einträge)")
+
+        # Top-5 Win-Rate-Einträge gesamt
+        top = sorted(self.noten.items(),
+                     key=lambda x: score(x[1]), reverse=True)[:5]
+        print("  Top-5:")
+        for k, entry in top:
+            parts = k.split(',')
+            iv_str = parts[-1]
+            try:
+                iv = int(iv_str)
+                note_str = NOTEN_NAMEN[iv]
+            except (ValueError, IndexError):
+                iv = -1
+                note_str = iv_str
+            s = score(entry)
+            if isinstance(entry, dict):
+                t = entry['success'] + entry['failure']
+                print(f"     {','.join(parts[:-1]):30s}"
+                      f" + {note_str:3s} (iv={iv:2d})"
+                      f" → {s:.3f} ({t} gesamt)")
+            else:
+                print(f"     {','.join(parts[:-1]):30s}"
+                      f" + {note_str:3s} (iv={iv:2d})"
+                      f" → {s:+.3f}")
 
 
 # ============================================================
@@ -563,6 +649,9 @@ class ResoMusik:
         letzter_gi = None
         letzter_harm = 'neutral'
 
+        # Adaptives Resonanz-Gate (V8 — Axiom 6): gleitendes Median-Fenster
+        eps_verlauf = []
+
         for i in range(0, nf, max(1, event_abstand // 2)):
             phase = phasen[i]
             gi = phase['grundton_idx']
@@ -575,8 +664,20 @@ class ResoMusik:
                 dp = PI / 5
             eps = kopplungseffizienz(dp)
 
-            # Resonanz-Gate (Axiom 6): Kopplungseffizienz unter Schwelle → HOLD
-            if eps < RESONANZ_GATE_SCHWELLE and letzter_gi is not None:
+            # Adaptives Resonanz-Gate (V8): Schwelle aus median(ε) × 0.7
+            eps_verlauf.append(eps)
+            if len(eps_verlauf) > ADAPTIVE_GATE_WINDOW:
+                eps_verlauf.pop(0)
+            if len(eps_verlauf) >= MIN_ADAPTIVE_GATE_SAMPLES:
+                gate_basis = float(np.median(eps_verlauf)) * 0.7
+            else:
+                gate_basis = RESONANZ_GATE_SCHWELLE
+            # Kohärenz-Modulation: niedrige Kohärenz → konservativeres Gate
+            kohärenz = phase.get('kohärenz', 0.5)
+            adaptive_gate = gate_basis * (1.0 + (1.0 - kohärenz) * COHERENCE_GATE_FACTOR)
+
+            # Resonanz-Gate (Axiom 6): Kopplungseffizienz unter adaptiver Schwelle → HOLD
+            if eps < adaptive_gate and letzter_gi is not None:
                 gi = letzter_gi
                 vol = basis_vol * RESONANZ_GATE_VOL_FAKTOR
                 events.append({
@@ -611,24 +712,37 @@ class ResoMusik:
             else:
                 lookup = phase
 
-            # AC-Phase beeinflusst Lautstärke (Axiom 1)
+            # AC-Phase vollständige Lautstärke-Dynamik (V8 — Axiom 1, alle 4 Phasen)
             ac_phase = phase.get('ac_phase', 'flat')
             if ac_phase == 'peak':
-                vol *= AC_PEAK_VOL_FAKTOR   # Begleitung zurückziehen
+                vol *= AC_PEAK_VOL_FAKTOR       # Maximum (Crescendo-Höhepunkt)
             elif ac_phase == 'trough':
-                vol = min(vol * AC_TROUGH_VOL_FAKTOR, AC_TROUGH_VOL_MAX)  # Begleitung anschwellen
+                vol *= AC_TROUGH_VOL_FAKTOR     # Minimum (Stille vor Neuanfang)
+            elif ac_phase == 'rising':
+                vol *= AC_RISING_VOL_FAKTOR     # Aufbau (steigend)
+            elif ac_phase == 'falling':
+                vol *= AC_FALLING_VOL_FAKTOR    # Ausklingen (fallend)
+            # flat → neutrale Klangfarbe, keine Modulation
 
             beste = self.erfahrung.beste_intervalle(
                 lookup, top_n=3, field_state=getattr(self, '_field_state', None))
             if beste[0][1] <= 0:
                 beste = [(7, 0.5), (0, 0.3), (4, 0.2)]
 
-            # Oktavwahl: Frequenzschwerpunkt + Energierichtungsvektor (Axiom 5)
+            # Energierichtung Klangfarbe (V8 — Axiom 5, vollständige Nutzung)
             energy_dir = phase.get('energy_dir', 0.0)
             if phase['freq_sw'] > 300:
-                okt = 4 if energy_dir > ENERGY_DIR_OKTAV_SCHWELLE else 3
+                okt_basis = 3
             else:
-                okt = 3 if energy_dir > ENERGY_DIR_OKTAV_SCHWELLE else 2
+                okt_basis = 2
+
+            if energy_dir > ENERGY_DIR_OKTAV_SCHWELLE:
+                okt = okt_basis + 1          # Steigendes Feld → höhere Oktave (hellere Obertöne)
+            elif energy_dir < -ENERGY_DIR_OKTAV_SCHWELLE:
+                okt = max(1, okt_basis - 1)  # Fallendes Feld → tiefere Oktave (wärmere Grundtöne)
+            else:
+                okt = okt_basis              # Flaches Feld → neutrale Oktave, vol leicht gedämpft
+                vol *= ENERGY_DIR_FLAT_VOL
 
             iv1, _ = beste[0]
             iv2, sc2 = beste[1] if len(beste) > 1 else (iv1, 0)
@@ -640,8 +754,15 @@ class ResoMusik:
             freq3 = (note_zu_freq((gi + iv3) % 12, okt)
                      if sc3 > 0 else freq1)
 
-            # Wärme auch gedämpfter
-            wärme = 0.15 + phase['energie'] * 0.35
+            # Wärme: Klangfarbe via energy_dir (V8 — Axiom 5)
+            wärme_basis = 0.15 + phase['energie'] * 0.35
+            if energy_dir > ENERGY_DIR_OKTAV_SCHWELLE:
+                wärme = wärme_basis - ENERGY_DIR_WÄRME_MINUS  # Hellere Obertöne
+            elif energy_dir < -ENERGY_DIR_OKTAV_SCHWELLE:
+                wärme = wärme_basis + ENERGY_DIR_WÄRME_PLUS   # Wärmere Grundtöne
+            else:
+                wärme = wärme_basis
+            wärme = float(np.clip(wärme, 0.1, 0.5))
 
             events.append({
                 'start': i * hop,
@@ -763,8 +884,8 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
     axes[5].grid(True, alpha=0.3)
 
     fig.suptitle(
-        f'ResoMusic V7: ResoTrade V14.2 Architektur-Transfer (Gen {gen})\n'
-        'AC/DC · Asymm.Schwellen · Median-Kalibrierung · 3-Tier · Resonanz-Gate\n'
+        f'ResoMusic V8: ResoTrade V14.2 + Musikalische Integration (Gen {gen})\n'
+        'Kohärenz · Adaptives Gate · energy_dir Klangfarbe · AC-Dynamik · Dyn.Tier-Gewichtung\n'
         'E = π · ε(Δφ) · ℏ · f, κ = 1',
         fontsize=12, fontweight='bold')
     plt.tight_layout()
@@ -779,7 +900,7 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
 
 def main():
     print("=" * 60)
-    print("RESOMUSIC V7: ResoTrade V14.2 Architektur-Transfer")
+    print("RESOMUSIC V8: ResoTrade V14.2 + Musikalische Integration")
     print("E = π · ε(Δφ) · ℏ · f, κ = 1")
     print("=" * 60)
 
@@ -884,18 +1005,21 @@ def main():
     print(f"""
   Gen {gen} | {len(agent.erfahrung.noten)} Noten | {agent.erfahrung.songs_gelernt} Songs
 
-  V7-ÄNDERUNGEN (ResoTrade V14.2 Architektur-Transfer):
-  ─────────────────────────────────────────────────────
+  V8-ÄNDERUNGEN (ResoTrade V14.2 + Musikalische Integration):
+  ─────────────────────────────────────────────────────────────
   1. Erfahrung:    EMA-Decay → Count-basiert (success/failure)
   2. AC/DC:        Klangfeld-Zerlegung → peak/trough/flat-Phasen
-  3. EnergyDir:    freq_schwerpunkt → Richtungsvektor (Axiom 5)
-  4. Tier-System:  Fine→Coarse→Trend→Default (3 Ebenen)
-  5. Reso-Gate:    ε(Δφ) < 0.3 → HOLD (kein Lookup, Axiom 6)
+  3. EnergyDir:    Vollständig in Klangerzeugung (Wärme + Oktave, Axiom 5)
+  4. Tier-System:  Dynamische Gewichtung Fine×1.2/1.0, Coarse×1.0/0.8, Trend×0.6
+  5. Reso-Gate:    Adaptiv median(ε)×0.7 + Kohärenz-Modulation (Axiom 6)
   6. Decay/Pass:   0.92 pro Lern-Pass (Axiom 4)
   7. Asymm.Schwellen: Peak=0.25 / Trough=0.35 (V14.4-Transfer)
   8. Feldzustand:  Adaptive Schwellen aus Median (V14.2 adaptive_thresholds)
   9. Per-Song:     --per-song isoliert Erfahrung pro Song (V14.2 per-asset)
  10. Amplitude:    Median×2.0 statt Max (robust, V14.2.3)
+ 11. Kohärenz:     Chroma-Entropie als Feld-Volatilität (Rauschen→Gate-Verstärkung)
+ 12. AC-Dynamik:   Alle 4 Phasen (peak/trough/rising/falling) modulieren Lautstärke
+ 13. Statistik:    Tier-spezifisch, Harmonie-Typ, Top-5 Win-Rate
 
   → figures/reso_harmonics.wav  (Harmonics solo)
   → figures/reso_mix.wav        (75% Original + 25% Harmonics)
