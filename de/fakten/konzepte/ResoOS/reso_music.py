@@ -1,17 +1,21 @@
-# reso_music.py V6 — ResoTrade-Architektur-Transfer
+# reso_music.py V7 — ResoTrade V14.2 Architektur-Transfer
 # © Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie
 #
 # ResoMusic: Resonanzlogische Musikbegleitung
 #
-# V6: ResoTrade-Architektur-Transfer (empirisch validierte Muster):
+# V7: ResoTrade V14.2 Architektur-Transfer (empirisch validierte Muster):
 #     1. Count-basierter Erfahrungsspeicher (statt EMA)
 #     2. AC/DC-Zerlegung des Klangfeldes (Axiom 1)
 #     3. Energierichtungsvektor (Axiom 5)
 #     4. Coarse-Fallback Tier-System (Fine→Coarse→Trend)
 #     5. Resonanz-Gate (Axiom 6)
 #     6. Adaptiver Decay pro Pass (Axiom 4)
+#     7. Asymmetrische Schwellen (V14.4 — Peak/Trough getrennt)
+#     8. Adaptive Schwellen aus Feldzustand (V14.2 adaptive_thresholds)
+#     9. Per-Song Isolation (V14.2 per-asset, optional --per-song)
+#    10. Robuste Amplitude-Kalibrierung (V14.2.3 — Median statt Max)
 #
-# python reso_music.py song.mp3 [passes] [--reset]
+# python reso_music.py song.mp3 [passes] [--reset] [--per-song]
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -32,7 +36,9 @@ DC_TREND_WINDOW = 40      # Frames für langfristigen DC-Trend
 ENERGY_SHORT_WINDOW = 8   # Frames für kurzfristigen Frequenzschwerpunkt
 ENERGY_LONG_WINDOW = 30   # Frames für langfristigen Frequenzschwerpunkt
 AC_FLAT_THRESHOLD = 0.02  # Unterhalb: AC-Phase gilt als 'flat'
-AC_PEAK_THRESHOLD = 0.3   # Oberhalb: AC-Phase gilt als 'peak' oder 'trough'
+# Asymmetrische Schwellen (V7, aus ResoTrade V14.4 BUY/SELL-Asymmetrie):
+AC_PEAK_THRESHOLD = 0.25    # Peak: leiser zurücktreten (SELL-analog)
+AC_TROUGH_THRESHOLD = 0.35  # Trough: stärker einsetzen (BUY-analog)
 
 # Erfahrungs-Tier-System (Axiom 4)
 MIN_TIER_SAMPLES = 3      # Mindest-Samples für Tier-Lookup
@@ -204,7 +210,15 @@ class Analysator:
         dc_long_kernel = np.ones(DC_TREND_WINDOW) / DC_TREND_WINDOW
         dc_long = np.convolve(dc, dc_long_kernel, mode='same')
         ac = dc - dc_long
-        ac_amplitude = np.max(np.abs(ac)) if np.max(np.abs(ac)) > 0 else 1e-10
+        # Robuste Amplitude-Kalibrierung (V7 aus ResoTrade V14.2.3):
+        # Median statt Max → robust gegen Spikes (analog Gold-Gap-Effekt)
+        ac_nonzero = ac[ac != 0]
+        if len(ac_nonzero) > 0:
+            ac_amplitude = np.median(np.abs(ac_nonzero)) * 2.0
+        else:
+            ac_amplitude = 1e-10
+        if ac_amplitude < 1e-10:
+            ac_amplitude = 1e-10
         ac_norm = ac / ac_amplitude
 
         # Energierichtungsvektor (Axiom 5)
@@ -255,13 +269,14 @@ class Analysator:
                     'near' if md <= 4 else 'off')
 
             # AC-Phase bestimmen (analog ResoTrade env.py)
+            # V7: asymmetrische Schwellen (Peak/Trough getrennt)
             ac_val = ac_norm[i]
             ac_amp = np.max(np.abs(ac_norm))
             if ac_amp < AC_FLAT_THRESHOLD:
                 ac_phase = 'flat'
             elif ac_val > AC_PEAK_THRESHOLD:
                 ac_phase = 'peak'
-            elif ac_val < -AC_PEAK_THRESHOLD:
+            elif ac_val < -AC_TROUGH_THRESHOLD:
                 ac_phase = 'trough'
             elif ac_val > 0:
                 ac_phase = 'rising'
@@ -330,7 +345,27 @@ class Erfahrung:
             return entry['success'] / total, total
         return 0.5, 0
 
-    def beste_intervalle(self, phase, top_n=4):
+    def beste_intervalle(self, phase, top_n=4, field_state=None):
+        """3-Tier-Lookup mit optionalem Feldzustand für adaptive Schwellen.
+
+        V7 (aus ResoTrade V14.2 adaptive_thresholds + PR #112 ResoGrid):
+        - Wenn field_state vorhanden, wird die Schwelle aus dem beobachteten
+          Klangfeld berechnet (Median statt Mean — robust gegen Ausreisser).
+        - field_state['median_win_rate'] ersetzt den KONSONANZ-Default.
+        """
+        # Adaptive Schwelle aus Feldzustand (V7)
+        if field_state is not None:
+            all_rates = []
+            for iv in range(12):
+                r, t = self._win_rate(self._fine_key(phase, iv))
+                if t >= MIN_TIER_SAMPLES:
+                    all_rates.append(r)
+            if len(all_rates) >= 3:
+                field_state['median_win_rate'] = float(np.median(all_rates))
+
+        default_rate = (field_state.get('median_win_rate', None)
+                        if field_state else None)
+
         scores = {}
         for iv in range(12):
             fine_key = self._fine_key(phase, iv)
@@ -347,8 +382,15 @@ class Erfahrung:
                     if total_t >= MIN_TIER_SAMPLES:
                         rate, total = rate_t, total_t
                     else:
-                        # Default: KONSONANZ-Tabelle
-                        rate = KONSONANZ.get(iv, 0.3)
+                        # Default: adaptiv aus Feldzustand oder KONSONANZ-Tabelle
+                        if default_rate is not None:
+                            # Skalierung: median_win_rate (0..1) × KONSONANZ × 2.0
+                            # → 2.0 hebt den Median auf KONSONANZ-Skala an,
+                            #   da KONSONANZ-Werte maximal 1.0 erreichen und
+                            #   der Median typisch bei 0.5 liegt (analog PR #103)
+                            rate = default_rate * KONSONANZ.get(iv, 0.3) * 2.0
+                        else:
+                            rate = KONSONANZ.get(iv, 0.3)
             scores[iv] = rate
         return sorted(scores.items(), key=lambda x: x[1],
                       reverse=True)[:top_n]
@@ -364,7 +406,7 @@ class Erfahrung:
         for key in to_delete:
             del self.noten[key]
 
-    def speichern(self, pfad):
+    def speichern(self, pfad, field_state=None):
         with open(pfad, 'w') as f:
             json.dump({
                 'generation': self.generation,
@@ -374,6 +416,14 @@ class Erfahrung:
         print(f"  💾 Gen {self.generation},"
               f" {len(self.noten)} Einträge,"
               f" {self.songs_gelernt} Songs")
+        # Feldzustand speichern (V7 — adaptive Schwellen)
+        if field_state is not None:
+            state_pfad = pfad.replace('.json', '_field_state.json')
+            with open(state_pfad, 'w') as f:
+                json.dump(field_state, f, indent=2)
+            mwr = field_state.get('median_win_rate')
+            mwr_str = f"{mwr:.4f}" if isinstance(mwr, float) else 'nicht verfügbar'
+            print(f"  💾 Feldzustand: {state_pfad} (median_win_rate={mwr_str})")
 
     def laden(self, pfad):
         if not os.path.exists(pfad):
@@ -402,6 +452,18 @@ class Erfahrung:
         print(f"  ← Gen {self.generation},"
               f" {len(self.noten)} Einträge,"
               f" {self.songs_gelernt} Songs")
+
+    def lade_field_state(self, pfad):
+        """Lädt den gespeicherten Feldzustand (adaptive Schwellen, V7)."""
+        state_pfad = pfad.replace('.json', '_field_state.json')
+        if os.path.exists(state_pfad):
+            with open(state_pfad, 'r') as f:
+                state = json.load(f)
+            mwr = state.get('median_win_rate')
+            mwr_str = f"{mwr:.4f}" if isinstance(mwr, float) else 'nicht verfügbar'
+            print(f"  ← Feldzustand geladen: median_win_rate={mwr_str}")
+            return state
+        return {}
 
     def statistik(self):
         print(f"\n  📊 Gen {self.generation} |"
@@ -556,7 +618,8 @@ class ResoMusik:
             elif ac_phase == 'trough':
                 vol = min(vol * AC_TROUGH_VOL_FAKTOR, AC_TROUGH_VOL_MAX)  # Begleitung anschwellen
 
-            beste = self.erfahrung.beste_intervalle(lookup, top_n=3)
+            beste = self.erfahrung.beste_intervalle(
+                lookup, top_n=3, field_state=getattr(self, '_field_state', None))
             if beste[0][1] <= 0:
                 beste = [(7, 0.5), (0, 0.3), (4, 0.2)]
 
@@ -663,16 +726,17 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
     axes[1].legend(fontsize=8)
     axes[1].grid(True, alpha=0.3)
 
-    # AC/DC-Zerlegung (Axiom 1)
+    # AC/DC-Zerlegung (Axiom 1) — asymmetrische Schwellen (V7)
+    ac_abs_max = np.max(np.abs(analyse['ac']))
     axes[2].plot(tf, analyse['ac'], 'teal', lw=0.8, alpha=0.8,
                  label='AC (Schwankung)')
     axes[2].axhline(0, color='gray', lw=0.5, linestyle='-')
-    axes[2].axhline(0.3 * np.max(np.abs(analyse['ac'])),
+    axes[2].axhline(AC_PEAK_THRESHOLD * ac_abs_max,
                     color='red', lw=0.5, linestyle=':', alpha=0.5,
-                    label='Peak-Schwelle')
-    axes[2].axhline(-0.3 * np.max(np.abs(analyse['ac'])),
+                    label=f'Peak-Schwelle ({AC_PEAK_THRESHOLD})')
+    axes[2].axhline(-AC_TROUGH_THRESHOLD * ac_abs_max,
                     color='blue', lw=0.5, linestyle=':', alpha=0.5,
-                    label='Trough-Schwelle')
+                    label=f'Trough-Schwelle ({AC_TROUGH_THRESHOLD})')
     axes[2].set_ylabel('AC-Energie')
     axes[2].set_title('AC/DC-Zerlegung (Axiom 1)')
     axes[2].legend(fontsize=8)
@@ -699,8 +763,8 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
     axes[5].grid(True, alpha=0.3)
 
     fig.suptitle(
-        f'ResoMusic V6: ResoTrade-Architektur-Transfer (Gen {gen})\n'
-        'AC/DC-Zerlegung · Count-Erfahrung · Coarse-Fallback · Resonanz-Gate\n'
+        f'ResoMusic V7: ResoTrade V14.2 Architektur-Transfer (Gen {gen})\n'
+        'AC/DC · Asymm.Schwellen · Median-Kalibrierung · 3-Tier · Resonanz-Gate\n'
         'E = π · ε(Δφ) · ℏ · f, κ = 1',
         fontsize=12, fontweight='bold')
     plt.tight_layout()
@@ -715,7 +779,7 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
 
 def main():
     print("=" * 60)
-    print("RESOMUSIC V6: ResoTrade-Architektur-Transfer")
+    print("RESOMUSIC V7: ResoTrade V14.2 Architektur-Transfer")
     print("E = π · ε(Δφ) · ℏ · f, κ = 1")
     print("=" * 60)
 
@@ -726,16 +790,19 @@ def main():
     pfad = None
     passes = 5
     reset = False
+    per_song = False
     for arg in sys.argv[1:]:
         if arg == '--reset':
             reset = True
+        elif arg == '--per-song':
+            per_song = True
         elif arg.isdigit():
             passes = int(arg)
         else:
             pfad = arg
 
     if not pfad:
-        print("\n  python reso_music.py song.mp3 [passes] [--reset]")
+        print("\n  python reso_music.py song.mp3 [passes] [--reset] [--per-song]")
         sys.exit(0)
 
     print(f"\n  Lade: {pfad}")
@@ -744,10 +811,19 @@ def main():
 
     agent = ResoMusik(sr=sr)
 
-    erf_pfad = os.path.join(out, ERFAHRUNG_DATEI)
+    # Per-Song Isolation (V7 — analog ResoTrade V14.2 per-asset)
+    if per_song:
+        songname = os.path.splitext(os.path.basename(pfad))[0]
+        erf_pfad = os.path.join(out, f"reso_erfahrung_{songname}.json")
+        print(f"  Modus: Per-Song ({songname})")
+    else:
+        erf_pfad = os.path.join(out, ERFAHRUNG_DATEI)
+
     if not reset:
         agent.erfahrung.laden(erf_pfad)
+        agent._field_state = agent.erfahrung.lade_field_state(erf_pfad)
     else:
+        agent._field_state = {}
         print("  → Reset")
 
     print("\n  1. Analyse...")
@@ -770,7 +846,7 @@ def main():
     agent.erfahrung.generation += 1
     agent.erfahrung.songs_gelernt += 1
     agent.erfahrung.statistik()
-    agent.erfahrung.speichern(erf_pfad)
+    agent.erfahrung.speichern(erf_pfad, field_state=agent._field_state)
 
     gen = agent.erfahrung.generation
     print(f"\n  3. Harmonics (Gen {gen})...")
@@ -808,14 +884,18 @@ def main():
     print(f"""
   Gen {gen} | {len(agent.erfahrung.noten)} Noten | {agent.erfahrung.songs_gelernt} Songs
 
-  V6-ÄNDERUNGEN (ResoTrade-Architektur-Transfer):
-  ─────────────────────────────────────────────────
-  1. Erfahrung:   EMA-Decay → Count-basiert (success/failure)
-  2. AC/DC:       Klangfeld-Zerlegung → peak/trough/flat-Phasen
-  3. EnergyDir:   freq_schwerpunkt → Richtungsvektor (Axiom 5)
-  4. Tier-System: Fine→Coarse→Trend→Default (3 Ebenen)
-  5. Reso-Gate:   ε(Δφ) < 0.3 → HOLD (kein Lookup, Axiom 6)
-  6. Decay/Pass:  0.92 pro Lern-Pass (Axiom 4)
+  V7-ÄNDERUNGEN (ResoTrade V14.2 Architektur-Transfer):
+  ─────────────────────────────────────────────────────
+  1. Erfahrung:    EMA-Decay → Count-basiert (success/failure)
+  2. AC/DC:        Klangfeld-Zerlegung → peak/trough/flat-Phasen
+  3. EnergyDir:    freq_schwerpunkt → Richtungsvektor (Axiom 5)
+  4. Tier-System:  Fine→Coarse→Trend→Default (3 Ebenen)
+  5. Reso-Gate:    ε(Δφ) < 0.3 → HOLD (kein Lookup, Axiom 6)
+  6. Decay/Pass:   0.92 pro Lern-Pass (Axiom 4)
+  7. Asymm.Schwellen: Peak=0.25 / Trough=0.35 (V14.4-Transfer)
+  8. Feldzustand:  Adaptive Schwellen aus Median (V14.2 adaptive_thresholds)
+  9. Per-Song:     --per-song isoliert Erfahrung pro Song (V14.2 per-asset)
+ 10. Amplitude:    Median×2.0 statt Max (robust, V14.2.3)
 
   → figures/reso_harmonics.wav  (Harmonics solo)
   → figures/reso_mix.wav        (75% Original + 25% Harmonics)
