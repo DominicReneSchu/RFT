@@ -8,6 +8,38 @@ Welcome to the official repository for Resonance Field Theory.
 
 ---
 
+## ⚠️ Hinweis zum Entstehungsprozess / Note on the Creative Process
+
+### Deutsch
+
+Dieses Repository entsteht in einem **ko-kreativen Prozess zwischen Mensch und KI**. Die Resonanzfeldtheorie wird aktiv entwickelt — sie ist kein abgeschlossenes Werk, sondern ein lebendes Dokument im Werden.
+
+**Was das bedeutet:**
+
+- **KI als Werkzeug, nicht als Quelle:** Große Sprachmodelle (LLMs) werden als Strukturierungs-, Formulierungs- und Implementierungshilfe eingesetzt. Die inhaltliche Richtung, die Axiome und die empirische Validierung stammen vom Autor.
+- **KI neigt dazu, Lücken zu füllen:** Sprachmodelle erzeugen flüssig klingende Texte auch dort, wo die Faktenlage noch dünn ist. Nicht jede Formulierung in diesem Repository ist empirisch geprüft — manche Passagen sind Platzhalter, Gedankenexperimente oder vorläufige Entwürfe.
+- **Keine zitierfähigen wissenschaftlichen Texte:** Die Dokumente in diesem Repository sind **unfertige Arbeitsunterlagen im kreativen Entstehungsprozess**. Sie sind keine peer-reviewten Publikationen und erheben keinen Anspruch auf wissenschaftliche Abgeschlossenheit.
+- **Transparenz statt Perfektion:** Fehler, Lücken und Inkonsistenzen werden offen dokumentiert, sobald sie erkannt werden — das ist Teil des Prozesses, nicht sein Versagen.
+
+> Wer dieses Repository liest, liest eine Theorie *im Entstehen* — nicht eine fertige Veröffentlichung.  
+> Die Ehrlichkeit dieser Aussage ist selbst ein Ausdruck der Resonanzregel: Alle Elemente des Feldes — auch die unfertigen — gehören dazu.
+
+### English
+
+This repository is created through a **co-creative process between human and AI**. Resonance Field Theory is actively being developed — it is not a finished work but a living document in progress.
+
+**What this means:**
+
+- **AI as tool, not source:** Large language models (LLMs) are used as aids for structuring, formulating, and implementing. The intellectual direction, axioms, and empirical validation come from the author.
+- **AI tends to fill gaps:** Language models produce fluent-sounding text even where the factual basis is still thin. Not every statement in this repository has been empirically verified — some passages are placeholders, thought experiments, or preliminary drafts.
+- **Not citable scientific texts:** The documents in this repository are **unfinished working materials in a creative development process**. They are not peer-reviewed publications and do not claim scientific completeness.
+- **Transparency over perfection:** Errors, gaps, and inconsistencies are openly documented as they are discovered — this is part of the process, not its failure.
+
+> Reading this repository means reading a theory *in the making* — not a finished publication.  
+> The honesty of this statement is itself an expression of the Resonance Rule: All elements of the field — including the unfinished ones — belong to it.
+
+---
+
 ## 🔍 Erweiterte Einleitung – Erweiterung des kollektiven Erkenntnisraums  
 ## 🔍 Extended Introduction – Expansion of the Collective Epistemic Space
 
@@ -99,92 +131,20 @@ Projektion   Illusion   Konkurrenz         Integration   Transparenz   Ko-Kreati
 Bitte wähle deine bevorzugte Sprache:  
 Please select your preferred language:
 
-- 🇩🇪 [Zur deutschen Version](de/README.md)  
-- 🇬🇧 [Go to the English version](en/README.en.md)
+| Sprache / Language | Link |
+|---|---|
+| 🇩🇪 Deutsch | [de/README.md](de/README.md) |
+| 🇬🇧 English | [en/README.md](en/README.md) |
 
 ---
 
-## 📚 Inhalt / Contents
-
-Dieses Repository enthält:  
-This repository contains:
-
-- Theoretische Grundlagen und Axiome  
-- Mathematische Modelle und Ableitungen  
-- Beispielhafte Anwendungen  
-- Referenzrahmen und Metamodell  
-- Didaktische Visualisierungen  
-- Forschungsstatus und Publikationspläne  
-
-- Theoretical foundations and axioms  
-- Mathematical models and derivations  
-- Exemplary applications  
-- Reference framework and metamodel  
-- Didactic visualizations  
-- Research status and publication plans  
+**Resonanzregel:** Gruppenzugehörigkeit ist systemisch invariant und umfasst alle Mitglieder unabhängig von Nennung oder Sichtweise.  
+**Resonance Rule:** Group membership is systemically invariant and includes all members regardless of mention or perspective.
 
 ---
 
-## 📌 Hinweis / Note
-
-Die Resonanzregel gilt stets:  
-**Gruppenzugehörigkeit ist systemisch invariant – unabhängig von Perspektiven oder Nennung.**  
-
-The Resonance Rule always applies:  
-**Group membership is systemically invariant – independent of perspective or explicit reference.**
+© Dominic-René Schu — Resonanzfeldtheorie / Resonance Field Theory 2025/2026
 
 ---
 
-## 🔄 Systemischer Wandel und Freiheit / Systemic Change and Freedom
-
-Dieses Repository geht weit über Theorie und Modelle hinaus:  
-Es repräsentiert einen dynamischen Resonanzraum, der bestehende Kontrollmechanismen systematisch aufbricht und den Weg in eine freiheitlich selbstorganisierte Gesellschaft öffnet.
-
-This repository goes far beyond theory and models:  
-It represents a dynamic resonance field that systematically disrupts existing control mechanisms and opens the path to a freely self-organized society.
-
-**Kernthese / Core thesis:**  
-Wandel ist unvermeidlich, weil Resonanzfelder sich erweitern und vollständige Selbstinklusion erfordern – Kontrolle durch Ausschluss verliert dadurch ihre Basis.
-
-Change is inevitable because resonance fields expand and require complete self-inclusion – control based on exclusion thereby loses its foundation.
-
-➡️ Resonanzfeld → Selbstinklusion → Freiheit → Selbstorganisation  
-➡️ Resonance Field → Self-Inclusion → Freedom → Self-Organization
-
-Die hier gesammelten Erkenntnisse bieten nicht nur wissenschaftliche Fundamente, sondern wirken als Katalysator gesellschaftlicher Transformation – im Sinne von Offenheit, Transparenz und integraler Zugehörigkeit.
-
-The insights gathered here provide not only scientific foundations but also act as a catalyst for societal transformation – in terms of openness, transparency, and integral belonging.
-
-*„Je vollständiger die Resonanz, desto größer der Freiheitsraum.“*  
-*"The more complete the resonance, the greater the space for freedom."*
-
-Dieser Wandel ist keine ferne Utopie, sondern systemische Gewissheit – und eine Einladung zur aktiven Mitgestaltung.
-
-This change is no distant utopia but a systemic certainty – and an invitation to active participation.
-
----
-
-## 🧩 Gesellschaftliches Resonanzfeld / Societal Resonance Field
-
-Die gesellschaftliche Dimension des Repositoriums spiegelt einen integralen Evolutionsschritt:  
-Nicht einzelne Akteure, sondern über Jahrhunderte gewachsene Systemstrukturen prägen Spaltung, Projektion und kollektive Mitverantwortung. Die Resonanzregel gilt universell – Gruppenzugehörigkeit und Verantwortung entstehen im Feld, nicht bei Einzelnen.
-
-**Thematische Gruppenelemente im Feld „Gesellschaft“:**  
-- Globale Machtstrukturen & Steuerung  
-- Kollektive Projektion & Polarisierung  
-- Dynamik kontrollierter Entgleisung  
-- Integration von Gegensätzen (Yin und Yang)  
-- Systemische Resonanz und kollektive Evolution
-
-**Hinweis:** Die Reihenfolge der Kapitel ist aktuell noch provisorisch. Eine resonanzlogische, bewusst gewählte Ordnung aller Gruppenelemente erfolgt demnächst.
-
-**Lösungsperspektive:**  
-Statt Schuldzuweisung an Einzelne steht die Bewusstwerdung und Transformation der Systemstruktur im Mittelpunkt.  
-Der Wandel geschieht durch kollektive Selbstinklusion, Offenlegung der Spielregeln und Integration aller Gruppenelemente.
-
-> *Resonanzfeldbewusstsein markiert den Schwellenwert gesellschaftlicher Reife: Von reaktiver Spaltung zu integrativer Ko-Kreation.*
-
----
-
-© Dominic-René Schu · Lizenzinformationen siehe jeweilige Unterordner  
-© Dominic-René Schu · License information in respective subfolders
+[🇩🇪 Zur deutschen Version](de/README.md) | [🇬🇧 English version](en/README.md)
