@@ -1,14 +1,16 @@
-# ResoTrade V11.1 — Resonanzfeldtheoretische BTC-KI mit AC/DC-Zerlegung
+# ResoTrade — Resonanzfeldtheoretische Multi-Asset-KI mit AC/DC-Zerlegung
 
 *Empirischer Nachweis der Resonanzfeldtheorie in realen Finanzmärkten*
 
-*Dominic-René Schu, Februar 2026*
+*Dominic-René Schu, Februar 2026 — aktualisiert März 2026*
 
 ---
 
 ## Zusammenfassung
 
 ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, BTC-Kurszyklen als Schwingungsfelder zu lesen und BTC über reines HODL hinaus zu akkumulieren. Es ist der erste empirische Nachweis, dass die Axiome der Resonanzfeldtheorie in einem realen, chaotischen System — dem BTC-Markt — strukturell überlegene Entscheidungen erzeugen.
+
+Seit V14.2 ist ResoTrade ein generisches Multi-Asset-System (BTC, Gold, ETH, EURUSD) mit adaptiven Schwellen, parallelem Training und Dashboard-gesteuertem Betrieb. Die Kernarchitektur — Erfahrungslernen durch resonante Phasenkopplung — ist über alle Versionen invariant.
 
 **Kernergebnis:** +26.1% vs HODL im Durchschnitt über 4 verschiedene Marktphasen (24 Monate), validiert über Sideways, Bullrun, Korrektur und Crash. Kein klassischer Indikator auf demselben Datensatz erreicht eine Korrelation über 0.05.
 
@@ -224,6 +226,9 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 | V10 | Energierichtungsvektor (Axiom 5+6) | +37.03% (180d) |
 | V11 | AC/DC-Zerlegung (Axiom 1) | +42.89% (180d) |
 | **V11.1** | **Downtrend-Pause-Gate, Multi-Zyklus, Human-Hint** | **+26.1% Ø (4×6M)** |
+| V12 | Energievektor-Engine, erfahrungsbasierte Policy | ~0.95 Ø (500ep) |
+| V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 Ø (Lernplateau) |
+| **V14.2** | **Symmetrische Schwellen, 12-Dim Chain, konsolidierter Decay, Multi-Asset** | **>1.0 Ø (erwartet)** |
 
 ---
 
@@ -256,6 +261,37 @@ P_eff = (AC_amplitude / DC_level) · f_trade · η(Δφ) · (1 − γ_fee)
 | Erklärbarkeit | Keine | Vollständig (lesbare CSV) |
 | Physik-Grundlage | Keine | Resonanzfeldtheorie |
 | Marktverständnis | Korrelationen | Schwingungsstruktur |
+
+### Biologisches Vorbild: Erfahrungslernen statt Gewichtsoptimierung
+
+ResoTrade arbeitet dem biologischen Vorbild des Gehirns strukturell näher als konventionelle KI. Das ist keine Metapher — es ist eine architektonische Korrespondenz.
+
+Das Gehirn speichert keine Gewichtsmatrizen. Es speichert Assoziationen — Situationsmuster verknüpft mit Ergebnissen, verstärkt durch Wiederholung, abgeschwächt durch Zeit. Ein neuronales Netz komprimiert Erfahrung in opake Gewichte — das Modell *ist* die Erfahrung, aber sie ist nicht mehr rekonstruierbar. ResoTrade trennt beides: Die Erfahrung bleibt **als Erfahrung** erhalten — lesbar, nachvollziehbar, korrigierbar.
+
+```
+Training (offline, rechenintensiv)       Live (Echtzeit, leichtgewichtig)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+30h × 100% CPU                           Dict-Lookup: O(1)
+40.000 Episoden                          Chain → Result → Count
+720-Step-Fenster je Episode              Kein Modell, kein Gradient
+Experience akkumuliert                   Erfahrung liegt als CSV vor
+```
+
+Die Rechenintensität verlagert sich ins Training — wie beim Gehirn, das Jahre braucht, um Erfahrungen aufzubauen, dann aber in Millisekunden entscheidet. Offline-Training ist die Kindheit: intensive Erfahrungssammlung unter kontrollierten Bedingungen. Live-Betrieb ist das Erwachsenenleben: schnelle Entscheidungen auf Basis gesammelter Erfahrung, mit fortlaufendem Lernen über den Live-Experience-Kanal (`btc_experience_live.csv`).
+
+| Eigenschaft | Gehirn | ResoTrade | Konventionelle KI (NN) |
+|---|---|---|---|
+| Wissensform | Assoziationen, Erfahrungen | Experience-CSV (chain → count) | Gewichtsmatrizen (opak) |
+| Entscheidung | Mustererkennung + Bauchgefühl | Chain-Lookup O(1) + Asymmetrie | Forward-Pass O(n²) |
+| Vergessen | Graduell, kontrolliert | Decay 0.92/Pass | Catastrophic Forgetting |
+| Lernen nach Training | Ja, lebenslang | Ja, Live-Experience-Kanal | Nein (Retraining nötig) |
+| Erklärbarkeit | Teilweise ("Erfahrung sagt...") | Vollständig (Chain nachvollziehbar) | Kaum |
+| Rechenkosten live | Gering (Synapsen-Lookup) | Gering (Dict-Lookup) | Hoch (GPU/CPU) |
+| Training | Jahre intensives Erleben | 30h CPU (parallelisierbar auf ~8h) | GPU-Stunden |
+
+Der Decay (0.92 pro Pass) ist biologisch ehrlicher als Catastrophic Forgetting: Das Gehirn vergisst graduell und kontrolliert. ResoTrade decayed mit konstantem Faktor — alte Erfahrung wird leiser, aber nie abrupt gelöscht. Ein neuronales Netz hingegen überschreibt beim Retraining unkontrolliert.
+
+Seit V14.2.4 ist das Training parallelisierbar: Die 4 Marktphasen-Abschnitte können gleichzeitig trainiert werden (konfigurierbare Worker-Anzahl 1–4). Das reduziert die Trainingszeit von ~30h auf ~8h bei 4 Workern — ohne Qualitätsverlust, da jeder Worker in einem isolierten Erfahrungsraum arbeitet und die Teilerfahrungen nach Abschluss zusammengeführt werden.
 
 ---
 
@@ -488,6 +524,9 @@ python hint_evaluator.py               # Hint-Qualität
 | V10 | Energierichtungsvektor (Axiom 5+6) | +37.03% (180d) |
 | V11 | AC/DC-Zerlegung (Axiom 1) | +42.89% (180d) |
 | **V11.1** | **Pause-Gate, Multi-Zyklus, Human-Hint** | **+26.1% Ø (4×6M)** |
+| V12 | Energievektor-Engine, erfahrungsbasierte Policy | ~0.95 Ø (500ep) |
+| V13 | Multi-Horizont Experience (48h/14d/28d) | ~0.97 Ø (Lernplateau) |
+| **V14.2** | **Multi-Asset, adaptive Schwellen, paralleles Training** | **>1.0 Ø (erwartet)** |
 
 ---
 
@@ -499,10 +538,12 @@ python hint_evaluator.py               # Hint-Qualität
 - [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md)
 - [Resonanzanalyse in Massendaten](dokumentation.md)
 - [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md)
+- [ResoTrade V14.2 README](https://github.com/DominicReneSchu/ResoGrid/blob/main/ResoTrade/Multi-Asset/V14.2/README.md) — Aktuelle Systemdokumentation
+- [ResoTrade V14 Changelog](https://github.com/DominicReneSchu/ResoGrid/blob/main/ResoTrade/Multi-Asset/V14.2/CHANGELOG_V14.md) — Alle V13→V14 Inkonsistenzen und Auflösungen
 
 ---
 
-*© Dominic-René Schu — Resonanzfeldtheorie 2025*
+*© Dominic-René Schu — Resonanzfeldtheorie 2025–2026*
 
 ---
 
