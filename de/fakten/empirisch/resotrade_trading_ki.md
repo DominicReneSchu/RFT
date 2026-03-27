@@ -538,8 +538,6 @@ python hint_evaluator.py               # Hint-Qualität
 - [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md)
 - [Resonanzanalyse in Massendaten](dokumentation.md)
 - [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md)
-- [ResoTrade V14.2 README](https://github.com/DominicReneSchu/ResoGrid/blob/main/ResoTrade/Multi-Asset/V14.2/README.md) — Aktuelle Systemdokumentation
-- [ResoTrade V14 Changelog](https://github.com/DominicReneSchu/ResoGrid/blob/main/ResoTrade/Multi-Asset/V14.2/CHANGELOG_V14.md) — Alle V13→V14 Inkonsistenzen und Auflösungen
 
 ---
 
