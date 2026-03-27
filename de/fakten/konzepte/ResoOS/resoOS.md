@@ -170,7 +170,7 @@ Die folgenden 6 Muster wurden in ResoTrade V14.2 über 24 Monate, 4 Marktregime 
 Das Ergebnis ist **strukturell korrekt und klanglich unreif** — und das ist exakt die erwartete Phase.
 
 ```
-ResoTrade V6 (2024):  Grundarchitektur funktioniert, Performance noch unter HODL
+ResoTrade V6 (2025):  Grundarchitektur funktioniert, Performance noch unter HODL
 ResoTrade V14 (2026): 12 Inkonsistenzen behoben → HODL-Outperformance
 
 ResoMusic V6 (2026):  Grundarchitektur funktioniert, Mix klingt noch nicht gut
