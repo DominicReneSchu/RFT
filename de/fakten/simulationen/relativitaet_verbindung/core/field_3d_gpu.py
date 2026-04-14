@@ -9,16 +9,22 @@ Voraussetzung: pip install cupy (+ CUDA-fähige GPU)
 Abhängigkeiten: cupy
 """
 
+from __future__ import annotations
+
+from collections.abc import Callable
+
 try:
     import cupy as cp
 except ImportError:
     cp = None
 
+import numpy as np
+
 
 def field_3d_sim_gpu(
-    N=64, L=10.0, dt=0.004, steps=300, m=1.0, lmbda=0.2,
-    initial_bump_size=5, bump_value=1.0, callback=None
-):
+    N: int = 64, L: float = 10.0, dt: float = 0.004, steps: int = 300, m: float = 1.0, lmbda: float = 0.2,
+    initial_bump_size: int = 5, bump_value: float = 1.0, callback: Callable[[np.ndarray, int], None] | None = None
+) -> np.ndarray:
     """3D-Simulation auf der GPU via CuPy.
 
     Parameter identisch zu field_3d.field_3d_sim.

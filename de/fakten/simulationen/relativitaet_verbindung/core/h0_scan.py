@@ -15,6 +15,10 @@ Erweiterungen:
 Abhaengigkeiten: numpy, core.coupled_flrw, core.flat_coupled
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 from core.coupled_flrw import scan_phase_coupling
 from core.flat_coupled import scan_phase_flat
@@ -26,7 +30,7 @@ H0_REF = 67.4
 ADOT0_REF = 0.3
 
 
-def h0_to_adot0(h0_kmsMpc):
+def h0_to_adot0(h0_kmsMpc: float) -> float:
     """Konvertiert H0 [km/s/Mpc] in Simulationseinheit adot0.
 
     Lineare Skalierung relativ zum Referenzpunkt:
@@ -37,7 +41,7 @@ def h0_to_adot0(h0_kmsMpc):
     return ADOT0_REF * (h0_kmsMpc / H0_REF)
 
 
-def _jackknife_d_eta(eta_mean, eta_cos2):
+def _jackknife_d_eta(eta_mean: np.ndarray, eta_cos2: np.ndarray) -> tuple[float, float, np.ndarray]:
     """Jackknife-Fehler auf d_eta ueber Phasengruppen.
 
     Fuer N Phasenpunkte: N Jackknife-Stichproben, je ein Punkt
@@ -73,11 +77,11 @@ def _jackknife_d_eta(eta_mean, eta_cos2):
 
 
 def scan_h0(
-    h0_values=None,
-    delta_phi_values=None,
-    t_span=(0, 120),
-    m=1.0, lmbda=0.1, alpha=0.5, kappa=1.0, g=0.2,
-):
+    h0_values: np.ndarray | None = None,
+    delta_phi_values: np.ndarray | None = None,
+    t_span: tuple[float, float] = (0, 120),
+    m: float = 1.0, lmbda: float = 0.1, alpha: float = 0.5, kappa: float = 1.0, g: float = 0.2,
+) -> dict[str, Any]:
     """Fuehrt einen systematischen H0-Scan durch.
     PUBLIKATIONSVERSION mit Jackknife-Fehler.
 
@@ -217,14 +221,14 @@ def scan_h0(
     return result
 
 
-def predict_d_eta(h0, fit_result):
+def predict_d_eta(h0: float, fit_result: dict[str, Any]) -> float:
     """Vorhersage von d_eta fuer einen gegebenen H0-Wert."""
     if fit_result["fit_poly"] is not None:
         return np.polyval(fit_result["fit_poly"], h0)
     return np.nan
 
 
-def hubble_tension_signature(fit_result, h0_planck=67.4, h0_shoes=73.0):
+def hubble_tension_signature(fit_result: dict[str, Any], h0_planck: float = 67.4, h0_shoes: float = 73.0) -> dict[str, float]:
     """Berechnet die Resonanzfeld-Signatur der Hubble-Spannung.
     PUBLIKATIONSVERSION mit Fehlerfortpflanzung.
 
@@ -260,7 +264,7 @@ def hubble_tension_signature(fit_result, h0_planck=67.4, h0_shoes=73.0):
     }
 
 
-def export_results(fit_result, filepath="h0_scan_results.csv"):
+def export_results(fit_result: dict[str, Any], filepath: str = "h0_scan_results.csv") -> None:
     """Exportiert die Scan-Ergebnisse als CSV.
     PUBLIKATIONSVERSION mit Jackknife-Fehlern.
     """
