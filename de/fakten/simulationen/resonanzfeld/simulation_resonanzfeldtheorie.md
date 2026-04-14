@@ -29,7 +29,7 @@ $$
 | A7 | Invarianz | Resonanzstruktur ist transformationsinvariant |
 
 Vollständige Axiomatik:
-[axiomatische_grundlegung.md](../docs/definitionen/axiomatische_grundlegung.md)
+[axiomatische_grundlegung.md](../../docs/definitionen/axiomatische_grundlegung.md)
 
 ---
 

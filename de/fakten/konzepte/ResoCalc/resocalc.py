@@ -19,6 +19,10 @@
 #
 # pip install numpy matplotlib
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -31,7 +35,7 @@ PI = np.pi
 # AXIOM 4: Kopplungseffizienz — das Herzstück
 # ============================================================
 
-def kopplungseffizienz(delta_phi):
+def kopplungseffizienz(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """
     ε(Δφ) = cos²(Δφ/2)
 
@@ -45,7 +49,7 @@ def kopplungseffizienz(delta_phi):
     return np.cos(delta_phi / 2.0) ** 2
 
 
-def resonanzverstaerkung(f, f_r, daempfung=0.0001):
+def resonanzverstaerkung(f: float | np.ndarray, f_r: float, daempfung: float = 0.0001) -> float | np.ndarray:
     """
     Resonanzverstärkung V(f, f_r).
 
@@ -66,7 +70,7 @@ def resonanzverstaerkung(f, f_r, daempfung=0.0001):
 # KONVENTIONELLE BERECHNUNG
 # ============================================================
 
-def drehmoment_konventionell(m, l, f, theta_max):
+def drehmoment_konventionell(m: float, l: float, f: float | np.ndarray, theta_max: float) -> float | np.ndarray:
     """
     Konventionelles effektives Drehmoment.
 
@@ -84,7 +88,7 @@ def drehmoment_konventionell(m, l, f, theta_max):
 # RESOCALC-BERECHNUNG
 # ============================================================
 
-def drehmoment_resocalc(m, l, f, f_r, epsilon):
+def drehmoment_resocalc(m: float, l: float, f: float | np.ndarray, f_r: float, epsilon: float) -> float | np.ndarray:
     """
     Resonanzlogisches effektives Drehmoment.
 
@@ -152,7 +156,7 @@ BEISPIELE = {
 # VERGLEICHSBERECHNUNG
 # ============================================================
 
-def berechne_vergleich(beispiel):
+def berechne_vergleich(beispiel: dict[str, Any]) -> dict[str, Any]:
     """
     Führt Vergleich Konventionell vs. ResoCalc durch.
     Gibt Ergebnisse als Dictionary zurück.
@@ -196,7 +200,7 @@ def berechne_vergleich(beispiel):
 # VISUALISIERUNG
 # ============================================================
 
-def plot_vergleich(beispiel, out_dir='figures'):
+def plot_vergleich(beispiel: dict[str, Any], out_dir: str = 'figures') -> str:
     """
     Erzeugt Vergleichsplot: Konventionell vs. ResoCalc
     über den gesamten Frequenzbereich.
@@ -283,7 +287,7 @@ def plot_vergleich(beispiel, out_dir='figures'):
 # JUPYTER-NOTEBOOK MODUS
 # ============================================================
 
-def notebook_modus():
+def notebook_modus() -> None:
     """Startet interaktives Widget im Jupyter-Notebook."""
     try:
         from ipywidgets import interact, FloatSlider, VBox, HBox, Layout
@@ -296,7 +300,7 @@ def notebook_modus():
     style = {'description_width': '100px'}
     layout = Layout(width='70%')
 
-    def reso_sim(m=2.0, l=1.0, f_r=5.0, kopplung=0.2, theta_max=0.087):
+    def reso_sim(m: float = 2.0, l: float = 1.0, f_r: float = 5.0, kopplung: float = 0.2, theta_max: float = 0.087) -> None:
         frequenzen = np.linspace(0.5, f_r * 4, 500)
 
         M_konv = drehmoment_konventionell(m, l, frequenzen, theta_max)
@@ -354,7 +358,7 @@ def notebook_modus():
 # HAUPTPROGRAMM
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("RESOCALC: Resonanzbasiertes Ingenieurswerkzeug")
     print("ε(Δφ) ersetzt θ_max — Physik statt Schätzung")

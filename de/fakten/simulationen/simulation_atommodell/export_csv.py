@@ -1,9 +1,11 @@
 """Export von Resonanzzeitpunkten als CSV."""
 
+from __future__ import annotations
+
 import csv
 
 
-def export_resonances(filename, resonance_history):
+def export_resonances(filename: str, resonance_history: list[float]) -> None:
     with open(filename, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['Resonanzzeitpunkt'])

@@ -24,13 +24,13 @@ ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller siebe
 
 | Axiom | Prinzip | Anwendung in ResoTrade V14.2 | Empirischer Nachweis |
 |-------|---------|------------------------------|---------------------|
-| [**Axiom 1**](../docs/mathematik/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
-| [**Axiom 2**](../docs/mathematik/axiomatische_grundlegung.md) | Superposition der Moden | MA_SHORT + MA_LONG als überlagerte Moden | Multi-Zeitskalen-Analyse verbessert Timing |
-| [**Axiom 3**](../docs/mathematik/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Symmetrische BUY/SELL-Schwellen (V14-Fix) | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
-| [**Axiom 4**](../docs/mathematik/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Konsolidierter Decay (0.92), Balance-Regler | System bleibt über 24 Monate handlungsfähig |
+| [**Axiom 1**](../docs/definitionen/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
+| [**Axiom 2**](../docs/definitionen/axiomatische_grundlegung.md) | Superposition der Moden | MA_SHORT + MA_LONG als überlagerte Moden | Multi-Zeitskalen-Analyse verbessert Timing |
+| [**Axiom 3**](../docs/definitionen/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Symmetrische BUY/SELL-Schwellen (V14-Fix) | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
+| [**Axiom 4**](../docs/definitionen/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Konsolidierter Decay (0.92), Balance-Regler | System bleibt über 24 Monate handlungsfähig |
 | [**Axiom 5**](../docs/mathematik/energierichtung.md) | Energie ist vektoriell | `energy_dir = e_short - e_long`, reduzierte Chain-Dimensionalität | Richtung schlägt Prognose |
-| [**Axiom 6**](../docs/mathematik/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Pattern-Gate, Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
-| [**Axiom 7**](../docs/mathematik/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: BTC, Gold, ETH, EURUSD über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
+| [**Axiom 6**](../docs/definitionen/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Pattern-Gate, Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
+| [**Axiom 7**](../docs/definitionen/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: BTC, Gold, ETH, EURUSD über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
 
 Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
 
@@ -40,7 +40,7 @@ Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanz
 - [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md) — Axiom 5 formalisiert
 - [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
 - [Resonanzanalyse in Massendaten](dokumentation.md) — Methodik der empirischen Validierung
-- [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md) — Gesellschaftliche Implikation
+- Duales Resonanz-Geldsystem — Gesellschaftliche Implikation (in Vorbereitung)
 - [ResoMusic — Domänen-Transfer](../konzepte/ResoOS/resoOS.md#empirische-ergebnisse-resomusic-v7-märz-2026) — Dieselben 6 Architekturmuster in der Klangdomäne validiert
 
 ---
@@ -140,7 +140,7 @@ Eine Million Raspberry Pis, die resonant handeln, wirken als **dezentraler Stabi
 
 ### Warum das Geldsystem dadurch gerechter wird
 
-Das heutige Fiat-System hat eine strukturelle Asymmetrie — den [Cantillon-Effekt](../docs/gesellschaft/duales_resonanzgeldsystem.md):
+Das heutige Fiat-System hat eine strukturelle Asymmetrie — den Cantillon-Effekt:
 
 ```
 Fiat-System:
@@ -554,7 +554,7 @@ python hint_evaluator.py               # Hint-Qualität
 - [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md)
 - [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md)
 - [Resonanzanalyse in Massendaten](dokumentation.md)
-- [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md)
+- Duales Resonanz-Geldsystem (in Vorbereitung)
 
 ---
 

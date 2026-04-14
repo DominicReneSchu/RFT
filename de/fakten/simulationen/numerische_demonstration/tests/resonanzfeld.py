@@ -20,6 +20,8 @@ Ausführung: python resonanzfeld.py
 © Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie
 """
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
@@ -101,9 +103,9 @@ def plot_resonanzfeld(
     E_res: np.ndarray,
     eps: np.ndarray,
     S: np.ndarray,
-    save_path: str = None,
+    save_path: str | None = None,
     show: bool = True
-):
+) -> None:
     """Drei 3D-Plots: Resonanzenergie, Kopplungseffizienz, Entropie."""
 
     fig = plt.figure(figsize=(18, 5.5))

@@ -370,6 +370,13 @@
 	ist. F\"ur $\varepsilon = 0$ entkoppelt das System;
 	f\"ur $\varepsilon = 1$ ist die Kopplung maximal.
 	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/plot.png}
+		\caption{Numerische Demonstration: Resonanzfeld-Simulation mit Phasenverschiebung und Kopplungseffizienz.}
+		\label{fig:resonanzfeld_demo}
+	\end{figure}
+	
 	
 	%% ============================================================
 	\section{Empirische Validierung}
@@ -446,6 +453,27 @@
 	(emp.\ $p = 0{,}000 \pm 0{,}000$ \"uber zehn Seeds).
 	Best\"atigt Axiom~3 und Axiom~7.
 	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/hist_mc_vs_real_hits.png}
+		\caption{Histogramm: Vergleich simulierter und realer Trefferanzahlen f\"ur f\"unf Resonanzstellen.}
+		\label{fig:mc_histogram}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/pvalue_curves.png}
+		\caption{p-Wert-Verl\"aufe \"uber drei KDE-Bandbreiten und zehn Seeds. Empirischer p-Wert = 0 f\"ur alle f\"unf Resonanzen.}
+		\label{fig:mc_pvalues}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/heatmaps_hits.png}
+		\caption{Heatmaps der Trefferanzahl pro Resonanz \"uber Bandbreite und Seed.}
+		\label{fig:mc_heatmaps}
+	\end{figure}
+	
 	\subsection{Gekoppelte FLRW-Simulation}
 	\label{sec:flrw}
 	
@@ -485,6 +513,20 @@
 	Einfluss der Raumzeitexpansion. Fehlerbalken werden
 	durch Jackknife-Resampling \"uber Phasengruppen
 	bestimmt.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/figure_1.png}
+		\caption{Gekoppeltes FLRW-Resonanzfeld: Zeitentwicklung beider Skalarfelder, Kopplungseffizienz und Energiedichte (sechs Panels).}
+		\label{fig:flrw_coupled}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/figure_2.png}
+		\caption{Phasenscan: Kopplungseffizienz $\eta(\Delta\varphi)$ vs.\ analytische Erwartung $\cos^2(\Delta\varphi/2)$ \"uber 30 Phasenwerte.}
+		\label{fig:flrw_phasescan}
+	\end{figure}
 	
 	\subsubsection{Kontrolltest: F\"unf
 		Expansionsszenarien.}
@@ -567,6 +609,20 @@
 		\end{tabular}
 	\end{table}
 	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/h0_scan.png}
+		\caption{H$_0$-Scan: Kopplungsabweichung $d_\eta$ als Funktion der Hubble-Konstanten \"uber 1\,530 Simulationen.}
+		\label{fig:h0_scan}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/hubble_tension.png}
+		\caption{Visualisierung der Hubble-Spannung: Differenz der Kopplungsabweichung $\Delta d_\eta$ zwischen Planck ($H_0 = 67{,}4$) und SH0ES ($H_0 = 73{,}0$).}
+		\label{fig:hubble_tension}
+	\end{figure}
+	
 	\subsubsection{CMB-Vergleich.}
 	
 	Die $\eta$-Korrektur wird gegen das Planck-2018
@@ -594,6 +650,20 @@
 			\hline
 		\end{tabular}
 	\end{table}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/cmb_comparison.png}
+		\caption{CMB-Vergleich: Planck-2018-TT-Spektrum mit $\Lambda$CDM- und Resonanzfeld-Modell.}
+		\label{fig:cmb_comparison}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/cmb_chi2_scan.png}
+		\caption{$\chi^2$-Scan \"uber verschiedene $H_0$-Werte: $\Lambda$CDM (gestrichelt) vs.\ Resonanzfeld (durchgezogen).}
+		\label{fig:cmb_chi2}
+	\end{figure}
 	
 	\noindent
 	\textbf{Einschr\"ankung:} Das parametrische

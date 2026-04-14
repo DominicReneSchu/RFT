@@ -21,6 +21,10 @@
 #     → w(Δφ=π/2) = −0.024 (Expansion)
 #     → ρ > 0 überall (keine negative Energie)
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
@@ -58,7 +62,7 @@ OPT_EPS1_0 = 1.5   # Startamplitude Feld 1
 OPT_EPS2_0 = 3.0   # Startamplitude Feld 2
 
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2) — universelle RFT-Kopplung."""
     return np.cos(delta_phi / 2.0) ** 2
 
@@ -67,11 +71,11 @@ def coupling_efficiency(delta_phi):
 # 2. Zwei-Feld Klein-Gordon in FLRW
 # ============================================================
 
-def two_field_warp(delta_phi, m1=OPT_M1, m2=OPT_M2,
-                   lmbda1=OPT_LAM1, g_coupling=OPT_G,
-                   kappa=1.0, V0_plateau=OPT_V0,
-                   eps1_0=OPT_EPS1_0, eps2_0=OPT_EPS2_0,
-                   t_max=60.0, n_eval=8000):
+def two_field_warp(delta_phi: float, m1: float = OPT_M1, m2: float = OPT_M2,
+                   lmbda1: float = OPT_LAM1, g_coupling: float = OPT_G,
+                   kappa: float = 1.0, V0_plateau: float = OPT_V0,
+                   eps1_0: float = OPT_EPS1_0, eps2_0: float = OPT_EPS2_0,
+                   t_max: float = 60.0, n_eval: int = 8000) -> dict[str, Any]:
     """
     Zwei gekoppelte Skalarfelder in selbstkonsistenter FLRW-Raumzeit.
 
@@ -91,16 +95,16 @@ def two_field_warp(delta_phi, m1=OPT_M1, m2=OPT_M2,
 
     alpha_sr = np.sqrt(2.0 / 3.0)
 
-    def V1(eps):
+    def V1(eps: float | np.ndarray) -> float | np.ndarray:
         return 0.5 * m1 ** 2 * eps ** 2 + 0.25 * lmbda1 * eps ** 4
 
-    def V1p(eps):
+    def V1p(eps: float | np.ndarray) -> float | np.ndarray:
         return m1 ** 2 * eps + lmbda1 * eps ** 3
 
-    def V2(eps):
+    def V2(eps: float | np.ndarray) -> float | np.ndarray:
         return V0_plateau * (1.0 - np.exp(-alpha_sr * abs(eps))) ** 2
 
-    def V2p(eps):
+    def V2p(eps: float) -> float:
         ae = abs(eps)
         if ae < 1e-30:
             return 0.0
@@ -108,7 +112,7 @@ def two_field_warp(delta_phi, m1=OPT_M1, m2=OPT_M2,
         return 2.0 * V0_plateau * alpha_sr * exp_val * \
             (1.0 - exp_val) * np.sign(eps)
 
-    def rhs(t, y):
+    def rhs(t: float, y: list[float]) -> list[float]:
         e1, ed1, e2, ed2, a = y
         if a < 1e-30:
             return [0.0, 0.0, 0.0, 0.0, 0.0]
@@ -184,9 +188,10 @@ def two_field_warp(delta_phi, m1=OPT_M1, m2=OPT_M2,
 # ============================================================
 
 class FusionWarpSystem:
-    def __init__(self, n_drive=12, n_focus_front=6, n_focus_rear=6,
-                 p_reactor=P_REACTOR, gain=1.5, pulse_rate=10.0,
-                 focus_distance=100.0, sigma=5.0):
+    def __init__(self, n_drive: int = 12, n_focus_front: int = 6,
+                 n_focus_rear: int = 6, p_reactor: float = P_REACTOR,
+                 gain: float = 1.5, pulse_rate: float = 10.0,
+                 focus_distance: float = 100.0, sigma: float = 5.0) -> None:
         self.n_drive = n_drive
         self.n_focus_front = n_focus_front
         self.n_focus_rear = n_focus_rear
@@ -202,8 +207,9 @@ class FusionWarpSystem:
         self.rho_P_pellet = self.rho_E_pellet / TAU_BURN
         self.R_pellet = 8 * PI * G / C ** 2 * self.rho_E_pellet
 
-    def energy_density_field(self, x_grid, y_grid,
-                              delta_phi_front=0.0, delta_phi_rear=0.0):
+    def energy_density_field(self, x_grid: np.ndarray, y_grid: np.ndarray,
+                              delta_phi_front: float = 0.0,
+                              delta_phi_rear: float = 0.0) -> np.ndarray:
         eps_f = coupling_efficiency(delta_phi_front)
         eps_r = coupling_efficiency(delta_phi_rear)
         dx_f = x_grid - self.focus_distance
@@ -216,7 +222,7 @@ class FusionWarpSystem:
             + (A_r * eps_r) ** 2 * self.rho_E_pellet / self.n_focus_rear ** 2
         return rho
 
-    def info(self):
+    def info(self) -> None:
         R_sun = 8 * PI * G * 1.6e5
         print("=" * 60)
         print("WARPANTRIEB: Fusions-Warp-System (Zwei-Feld, v3)")
@@ -236,7 +242,7 @@ class FusionWarpSystem:
 # 4. Experimente
 # ============================================================
 
-def experiment_energy_cascade():
+def experiment_energy_cascade() -> list[dict[str, Any]]:
     return [
         {"name": "Spaltung (1 Reaktor)",
          "rho_E": PI * HBAR * F_GDR / V_PELLET},
@@ -252,7 +258,8 @@ def experiment_energy_cascade():
     ]
 
 
-def experiment_phase_scan(system, n_phi=50):
+def experiment_phase_scan(system: FusionWarpSystem,
+                          n_phi: int = 50) -> tuple[np.ndarray, np.ndarray]:
     phis = np.linspace(0, 2 * PI, n_phi)
     rho_focus = np.zeros(n_phi)
     x_pt = np.array([[float(system.focus_distance)]])
@@ -263,13 +270,13 @@ def experiment_phase_scan(system, n_phi=50):
     return phis, rho_focus
 
 
-def experiment_two_field_scan():
+def experiment_two_field_scan() -> list[dict[str, Any]]:
     """w(Δφ) Scan mit optimalen Parametern."""
     delta_phis = np.linspace(0, PI, 13)
     return [two_field_warp(dp) for dp in delta_phis]
 
 
-def experiment_parameter_optimization():
+def experiment_parameter_optimization() -> list[dict[str, Any]]:
     """Systematische Suche: maximaler Δw."""
     results = []
     for V0 in [0.3, 0.5, 0.8, 1.0, 2.0]:
@@ -294,7 +301,7 @@ def experiment_parameter_optimization():
     return results
 
 
-def experiment_scaling():
+def experiment_scaling() -> list[dict[str, Any]]:
     configs = [
         (6, 1.0, "6×100MW, G=1"), (6, 1.5, "6×100MW, G=1.5"),
         (12, 1.5, "12×100MW, G=1.5"), (12, 5.0, "12×100MW, G=5"),
@@ -318,11 +325,11 @@ def experiment_scaling():
 # 5. Plots
 # ============================================================
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_energy_cascade(scenarios, out):
+def plot_energy_cascade(scenarios: list[dict[str, Any]], out: str) -> None:
     for s in scenarios:
         s.setdefault("R", 8 * PI * G / C ** 2 * s["rho_E"])
     fig, ax = plt.subplots(1, 1, figsize=(14, 7))
@@ -347,7 +354,8 @@ def plot_energy_cascade(scenarios, out):
     print("  → warp_energiestufen.png")
 
 
-def plot_phase_scan(phis, rho_focus, out):
+def plot_phase_scan(phis: np.ndarray, rho_focus: np.ndarray,
+                    out: str) -> float:
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
     eps4n = coupling_efficiency(phis) ** 2
     eps4n = eps4n / np.max(eps4n)
@@ -383,7 +391,7 @@ def plot_phase_scan(phis, rho_focus, out):
     return rm
 
 
-def plot_two_field_details(modes, out):
+def plot_two_field_details(modes: list[dict[str, Any]], out: str) -> None:
     """Drei Schlüsselmodi: Δφ=0, π/2, π."""
     key_dps = [0.0, PI / 2, PI]
     key_modes = []
@@ -468,7 +476,7 @@ def plot_two_field_details(modes, out):
     print("  → warp_zwei_feld.png")
 
 
-def plot_w_scan(modes, out):
+def plot_w_scan(modes: list[dict[str, Any]], out: str) -> tuple[float, float]:
     """w(Δφ) Kern-Plot."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -560,7 +568,7 @@ def plot_w_scan(modes, out):
     return w_front, w_rear
 
 
-def plot_optimization(opt_results, out):
+def plot_optimization(opt_results: list[dict[str, Any]], out: str) -> None:
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
     top = opt_results[:min(15, len(opt_results))]
@@ -618,7 +626,7 @@ def plot_optimization(opt_results, out):
     print("  → warp_optimierung.png")
 
 
-def plot_scaling(results, out):
+def plot_scaling(results: list[dict[str, Any]], out: str) -> None:
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
     labels = [r['label'] for r in results]
     rhos = [r['rho_E'] for r in results]
@@ -655,7 +663,7 @@ def plot_scaling(results, out):
 # 6. Hauptprogramm
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("WARPANTRIEB: Zwei-Feld-Modell (v3, optimiert)")
     print(f"Optimale Parameter: V₀={OPT_V0}, λ₁={OPT_LAM1},"

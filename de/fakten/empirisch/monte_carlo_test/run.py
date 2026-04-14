@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import os
 import numpy as np
 import pandas as pd
@@ -30,7 +32,7 @@ from config import (
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-def main():
+def main() -> None:
     # --- Daten laden ---
     data_path = os.path.join(SCRIPT_DIR, "dielectron.csv")
     df = pd.read_csv(data_path)

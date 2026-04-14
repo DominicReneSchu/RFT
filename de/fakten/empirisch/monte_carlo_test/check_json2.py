@@ -1,5 +1,10 @@
+from __future__ import annotations
+
 import json
-with open("publication_results/publication_results.json", 'r') as f:
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(SCRIPT_DIR, "publication_results", "publication_results.json"), 'r') as f:
     data = json.load(f)
 
 # main_results Struktur

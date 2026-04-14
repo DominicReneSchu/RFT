@@ -7,6 +7,8 @@ ohne interaktive Slider. Nutzt feste Parameter.
 Ausführung: python coupled_oscillators.py
 """
 
+from __future__ import annotations
+
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
@@ -19,7 +21,7 @@ omega1, omega2 = 2 * np.pi * f1, 2 * np.pi * f2
 alpha = 3.0
 eps = kopplungsoperator(f1, f2, alpha)
 
-def coupled_oscillators(t, y):
+def coupled_oscillators(t: float, y: list[float]) -> list[float]:
     x1, v1, x2, v2 = y
     k = eps
     dx1dt = v1

@@ -18,24 +18,29 @@ Axiom-Bezug:
 Abhängigkeiten: numpy, scipy
 """
 
+from __future__ import annotations
+
+from collections.abc import Callable
+from typing import Any
+
 import numpy as np
 from scipy.integrate import solve_ivp
 
 
 def flrw_1d_sim(
-    eps0=0.5,
-    epsdot0=0.0,
-    a0=1.0,
-    adot0=0.1,
-    m=1.0,
-    lmbda=0.1,
-    alpha=0.5,
-    kappa=1.0,
-    t_span=(0, 30),
-    t_eval=None,
-    rtol=1e-8,
-    atol=1e-10,
-):
+    eps0: float = 0.5,
+    epsdot0: float = 0.0,
+    a0: float = 1.0,
+    adot0: float = 0.1,
+    m: float = 1.0,
+    lmbda: float = 0.1,
+    alpha: float = 0.5,
+    kappa: float = 1.0,
+    t_span: tuple[float, float] = (0, 30),
+    t_eval: np.ndarray | None = None,
+    rtol: float = 1e-8,
+    atol: float = 1e-10,
+) -> tuple[Any, Callable[[float | np.ndarray], float | np.ndarray]]:
     """Löst die gekoppelte Feldgleichung + Friedmann-Gleichung.
 
     Parameters
@@ -65,15 +70,15 @@ def flrw_1d_sim(
         Potentialfunktion V(ε)
     """
 
-    def V(eps):
+    def V(eps: float | np.ndarray) -> float | np.ndarray:
         """Potential: V(ε) = ½m²ε² + ¼λε⁴"""
         return 0.5 * m**2 * eps**2 + 0.25 * lmbda * eps**4
 
-    def Vp(eps):
+    def Vp(eps: float | np.ndarray) -> float | np.ndarray:
         """dV/dε = m²ε + λε³"""
         return m**2 * eps + lmbda * eps**3
 
-    def rhs(t, y):
+    def rhs(t: float, y: np.ndarray) -> list[float]:
         eps, epsdot, a, adot = y
         H = adot / a  # Hubble-Parameter
         rho_eps = 0.5 * epsdot**2 + V(eps)

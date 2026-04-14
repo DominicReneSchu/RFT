@@ -12,7 +12,7 @@ signifikante Überschüsse von Ereignissen um bestimmte invariante
 Massenwerte M₀ nachzuweisen und statistisch abzusichern.
 
 Die Methodik folgt dem Prinzip von Axiom 3 (Resonanzbedingung)
-der [Resonanzfeldtheorie](../docs/mathematik/axiomatische_grundlegung.md):
+der [Resonanzfeldtheorie](../docs/definitionen/axiomatische_grundlegung.md):
 Resonanz tritt auf, wenn Frequenzen — hier: Energiewerte — in
 bestimmten Verhältnissen stehen. Die Analyse sucht nach
 Ereignisüberschüssen in Fenstern um vermutete Resonanzmassenstellen,

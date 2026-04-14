@@ -1,5 +1,8 @@
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
 from scipy.integrate import solve_ivp
 import tkinter as tk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -12,7 +15,7 @@ l2 = 1.0  # Länge des zweiten Pendels
 g = 9.81  # Gravitationskonstante
 
 # Gleichungen für das Doppelpendel
-def equations(t, state):
+def equations(t: float, state: np.ndarray) -> list[float]:
     θ1, θ2, ω1, ω2 = state
     Δθ = θ2 - θ1
     denom1 = (m1 + m2) * l1 - m2 * l1 * np.cos(Δθ)**2
@@ -48,7 +51,7 @@ x2 = x1 + l2 * np.sin(sol.y[1])
 y2 = y1 - l2 * np.cos(sol.y[1])
 
 # Erstellen der interaktiven Plot-Anzeige
-def plot_doppelpendel():
+def plot_doppelpendel() -> Figure:
     fig, ax = plt.subplots(figsize=(6, 5), dpi=100)
     ax.plot(x1, y1, label="Pendulum 1", color="b")
     ax.plot(x2, y2, label="Pendulum 2", color="r")
