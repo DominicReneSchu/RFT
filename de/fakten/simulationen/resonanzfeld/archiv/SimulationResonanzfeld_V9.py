@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
@@ -12,7 +16,7 @@ matplotlib.use('TkAgg')  # Wähle den TkAgg-Backend, wenn du nicht in einer Note
 g = 9.81  # Erdbeschleunigung
 
 # Differentialgleichungen für das Doppelpendel
-def derivatives(t, state, l1, l2, m1, m2):
+def derivatives(t: float, state: np.ndarray, l1: float, l2: float, m1: float, m2: float) -> list[float]:
     theta1, z1, theta2, z2 = state
     delta_theta = theta2 - theta1
     den1 = (m1 + m2) * l1 - m2 * l1 * np.cos(delta_theta) ** 2
@@ -33,7 +37,7 @@ def derivatives(t, state, l1, l2, m1, m2):
     return [z1, dz1, z2, dz2]
 
 # Berechne die Positionen der Pendel
-def calculate_positions(l1, l2, m1, m2, theta1_init, theta2_init, z1_init, z2_init, t_span, t_eval):
+def calculate_positions(l1: float, l2: float, m1: float, m2: float, theta1_init: float, theta2_init: float, z1_init: float, z2_init: float, t_span: tuple[float, float], t_eval: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     state_init = [theta1_init, z1_init, theta2_init, z2_init]
     sol = solve_ivp(derivatives, t_span, state_init, args=(l1, l2, m1, m2), t_eval=t_eval)
     x1 = l1 * np.sin(sol.y[0])
@@ -71,7 +75,7 @@ ax_button = plt.axes([0.1, 0.26, 0.15, 0.04])
 button = Button(ax_button, 'Start Simulation', color='lightgoldenrodyellow', hovercolor='yellow')
 
 # Funktionsweise der Animation
-def animate(i, l1, l2, m1, m2, theta1_init, theta2_init):
+def animate(i: int, l1: float, l2: float, m1: float, m2: float, theta1_init: float, theta2_init: float) -> tuple[Any, Any]:
     t_span = (0, 10)
     t_eval = np.linspace(0, 10, 200)
 
@@ -90,7 +94,7 @@ def animate(i, l1, l2, m1, m2, theta1_init, theta2_init):
     return ax.plot(x1, y1, label='Pendulum 1'), ax.plot(x2, y2, label='Pendulum 2')
 
 # Button-Event zum Starten der Animation
-def on_button_click(event):
+def on_button_click(event: Any) -> None:
     try:
         # Eingabewerte aus den Feldern
         l1 = float(entry_l1.text)
