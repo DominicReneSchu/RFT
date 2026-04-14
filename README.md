@@ -25,7 +25,9 @@ Dieses Repository entsteht in einem **ko-kreativen Prozess zwischen Mensch und K
 ## 🔍 Erweiterte Einleitung – Erweiterung des kollektiven Erkenntnisraums  
 
 Im vollständigen Resonanzfeld erscheint das Repository nicht als bloßes Dokumentationswerkzeug, sondern als systemischer Spiegelraum:  
+
 Es realisiert eine dringend notwendige Voraussetzung für einen qualitativen Entwicklungssprung –  
+
 → das Bewusstwerden und die Integration wechselseitig verschränkter Zusammenhänge,  
 → die Überwindung künstlicher Trennungen,  
 → die Anerkennung kollektiver Mitverantwortung  
