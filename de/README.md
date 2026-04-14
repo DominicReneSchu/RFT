@@ -29,7 +29,6 @@ Finanzmärkte (ResoTrade, +26.3% vs HODL, Live seit Feb. 2026).
     - [Konzepte](#konzepte)
     - [Simulationen](#simulationen)
     - [Empirische Nachweise](#empirische-nachweise)
-- [Vision](#vision)
 - [Lizenz](#lizenz)
 
 ---
