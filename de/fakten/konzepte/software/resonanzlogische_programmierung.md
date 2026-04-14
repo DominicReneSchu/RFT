@@ -22,7 +22,7 @@ und validiert:
   (+26.1% vs HODL, 24 Monate, 4 Marktregime, Live seit
   Feb. 2026). Dokumentation:
   [ResoTrade-Dokumentation](../../empirisch/resotrade_trading_ki.md)
-- **ResoAgent** — resonanzfeldtheoretischer Code-Agent
+- **ResoAgent** — resonanzfeldtheoretischer KI-Agent
   (Komposition statt Generierung, 4-Schichten-Architektur,
   75k-Parameter-NN auf strukturiertem Vorwissen)
 
@@ -52,7 +52,7 @@ def zerlegung(signal, fenster=50):
 | Domäne | DC-Komponente | AC-Komponente |
 |--------|--------------|---------------|
 | Trading | MA_LONG (168h) — langfristiger Trend | Preis - MA_LONG — handelbare Schwingung |
-| Code-Agent | Domänen-Basis (Sprache, Stufe) | Aufgabenspezifische Variation (Muster, Kontext) |
+| ResoAgent | Domänen-Basis (Sprache, Stufe) | Aufgabenspezifische Variation (Muster, Kontext) |
 | Schach | Materialbewertung (statisch) | Taktische Dynamik (Angriff, Verteidigung) |
 
 **Warum anders:** Konventionelle Features sind Projektionen auf
@@ -133,7 +133,7 @@ def kopplungseffizienz(delta_phi):
 
 **Warum anders:** Die Konfidenz hat null freie Parameter. Sie
 wird nicht trainiert, kann nicht overfitten und ist für jeden
-Systemzustand analytisch berechenbar. Im Code-Agenten wird
+Systemzustand analytisch berechenbar. Im ResoAgenten wird
 dasselbe Prinzip als Field-State realisiert: Adaptive
 Schwellenwerte, die sich an die Erfahrungslage anpassen —
 nicht durch Gradient, sondern durch Kopplungslogik.
@@ -154,7 +154,7 @@ ist ein String. Jede Entscheidung ist nachvollziehbar.
 pos:LONG,pc:up,trend:uptrend,vol:mid,ac:peak,action:SELL → success:47
 pos:FLAT,pc:down,trend:downtrend,vol:high,ac:trough,action:BUY → success:31
 
-# Code-Agent: Fine-Tier
+# ResoAgent: Fine-Tier
 python|web|high|api|OWASP → success:12, failure:2, draw:3
 ```
 
@@ -197,7 +197,7 @@ Trading-System Regelkette:
   5. Cooldown (Overtrading-Schutz)
   6. HODL-Kern-Schutz (nie unter 10% Asset)
 
-Code-Agent Regelkette:
+ResoAgent Regelkette:
   1. Guard (Crypto/Injection/CVE/Secrets → blockiert)
   2. Audit-Trail (jede Zeile referenziert)
   3. Rule-Fade (ab 30 Erfahrungen dominiert Erfahrung)
@@ -237,7 +237,7 @@ Signal → DC/AC-Zerlegung (Prinzip 1)
 Die Architektur ist domänenagnostisch. Dieselben 5 Prinzipien
 werden in verschiedenen Feldern angewandt:
 
-| Prinzip | Trading-KI | Code-Agent | Schach-KI |
+| Prinzip | Trading-KI | ResoAgent | Schach-KI |
 |---------|-----------|------------|-----------|
 | 1. Zerlegung | DC = MA_LONG, AC = Preis - DC | Domäne + Aufgaben-Variation | Material + Taktik |
 | 2. Phase | peak/trough/transition/flat | sprache\|domäne\|stufe\|muster | Angriff/Verteidigung/Entwicklung |
@@ -250,13 +250,13 @@ Kopplungsstruktur funktioniert unabhängig von der Domäne.
 
 ---
 
-## 4. Domänenadaption am Beispiel des Code-Agenten
+## 4. Domänenadaption am Beispiel des ResoAgenten
 
-Der Code-Agent zeigt, dass resonanzlogische Programmierung
+Der ResoAgent zeigt, dass resonanzlogische Programmierung
 nicht auf Trading beschränkt ist. Die Domänenadaption ist
 strukturell:
 
-| Trading-KI | Code-Agent |
+| Trading-KI | ResoAgent |
 |-----------|------------|
 | BUY / SELL / HOLD | compose / adapt / reject |
 | Assets (BTC, Gold, ...) | Quellen (OWASP, RFC, Docs, ...) |
@@ -286,7 +286,7 @@ aus dem, was die Schichten 1–3 analytisch erarbeitet haben.
 Deshalb leisten ~75k Parameter das, was konventionelle NNs
 mit Millionen Parametern versuchen.
 
-**Kern-Innovation:** Der Code-Agent löst das
+**Kern-Innovation:** Der ResoAgent löst das
 Halluzinations-Problem von LLMs für sicherheitskritische
 Anwendungen. Anstatt Code zu generieren, **sucht und
 komponiert** er Code aus verifizierten Quellen (RFC-Standards,
@@ -364,9 +364,9 @@ RFT-Observablen (energy_dir, AC-Phase) sind systematisch.
 
 Details: [ResoTrade-Dokumentation](../../empirisch/resotrade_trading_ki.md)
 
-### 6.2 Code-Agent (ResoAgent)
+### 6.2 ResoAgent (ResoAgent)
 
-| Eigenschaft | LLM (GPT-4 etc.) | Resonanzlogischer Code-Agent |
+| Eigenschaft | LLM (GPT-4 etc.) | Resonanzlogischer ResoAgent |
 |-------------|-------------------|------------------------------|
 | Halluzination | Strukturelles Problem | Unmöglich (Komposition) |
 | Herkunftsnachweis | Keiner | Jede Zeile referenziert |
