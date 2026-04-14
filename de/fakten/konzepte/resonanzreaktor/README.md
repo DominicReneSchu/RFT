@@ -75,11 +75,11 @@ validiert:
 
 ## Dokumente
 
-➡️ [Resonanzreaktor — Physik und Formeln](resonanzreaktor.md)
-➡️ [Simulationsergebnisse](simulationsergebnisse.md)
-➡️ [Kosten-Nutzen-Rechnung (national bis global)](kosten_nutzen_rechnung_resonanzreaktor.md)
-🚀 [Resonanz-Impulsantrieb — Raumfahrt](impulsantrieb.md)
-📋 [Experimentalvorschlag: Am-241 an ELI-NP](experimentalvorschlag_am241.md)
+1. ➡️ [Resonanzreaktor — Physik und Formeln](resonanzreaktor.md)
+2. ➡️ [Simulationsergebnisse](simulationsergebnisse.md)
+3. ➡️ [Kosten-Nutzen-Rechnung (national bis global)](kosten_nutzen_rechnung_resonanzreaktor.md)
+4. 🚀 [Resonanz-Impulsantrieb — Raumfahrt](impulsantrieb.md)
+5. 📋 [Experimentalvorschlag: Am-241 an ELI-NP](experimentalvorschlag_am241.md)
 
 ---
 
