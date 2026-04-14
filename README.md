@@ -147,4 +147,4 @@ Please select your preferred language:
 
 ---
 
-[🇩🇪 Zur deutschen Version](de/README.md) | [🇬🇧 English version](en/README.md)
+[🇩🇪 Zur deutschen Version](de/README.md) | [🇬🇧 English version](en/README.md)# RFT
