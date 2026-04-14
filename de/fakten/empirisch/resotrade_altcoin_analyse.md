@@ -435,10 +435,6 @@ Dieses Ergebnis betrifft zwei verschiedene Fragen:
 
 > **Einzelhandel erfordert ausreichende Amplitude.** Ein skaliertes Echo mit α > 1 ist handelbar — es schwingt stärker, nicht anders. Die Methoden sind identisch, die Parameter ändern sich.
 
-### 9.4 Resonanzregel
-
-Gruppenzugehörigkeit ist systemisch invariant. Ein Altcoin gehört zur Gruppe „BTC-amplifizierte Schwingung" — unabhängig davon, wie er sich nennt, welches Narrativ er trägt, oder welche technologische Innovation er beansprucht. Was ihn aber handelbar macht, ist nicht seine Zugehörigkeit zur Gruppe, sondern die Amplitude seiner Schwingung innerhalb der Gruppe.
-
 ---
 
 ## Referenzen

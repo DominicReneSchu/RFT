@@ -117,9 +117,6 @@ physikalischen Axiomatik gehören:
 
 - **E1 (Beobachter als Resonator):** Der Beobachter kann als
   gekoppelte Mode modelliert werden (folgt aus A1, A3, A6)
-- **E2 (Resonanz-Inklusionsaxiom):** Gruppenzugehörigkeit in
-  einem Resonanzfeld ist systemisch invariant (mengentheoretisch
-  formulierbar, logisch unabhängig von A1–A7)
 
 ---
 
