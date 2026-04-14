@@ -48,7 +48,7 @@ Resonanzreaktor (kein freier Parameter).
 | Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
 | Entkoppelt (Δφ = π) | 0 | 0 | Destruktive Interferenz |
 
-Vollständige Herleitung: [Kopplungsenergie: Spezialfälle](energie_axiomatische_herleitung.md)
+Vollständige Herleitung: [Kopplungsenergie: Spezialfälle](kopplungsenergie.md)
 
 ---
 
