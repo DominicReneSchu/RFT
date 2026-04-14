@@ -467,7 +467,7 @@ bei der Eigenfrequenz des Systems.
 - Dietrich, S.S., Berman, B.L. (1988): Atomic Data and Nuclear
   Data Tables 38, 199
 - Schu, D.-R. (2025/2026): Resonanzfeldtheorie
-  ([GitHub](https://github.com/DominicReneSchu/public))
+  ([GitHub](https://github.com/DominicReneSchu/RFT))
 
 ---
 
