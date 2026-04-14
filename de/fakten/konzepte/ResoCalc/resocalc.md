@@ -213,10 +213,6 @@ pip install numpy matplotlib ipywidgets
 jupyter notebook resocalc.ipynb
 ```
 
-Oder direkt im Browser:
-
-👉 **[⚡ ResoCalc starten](https://resoshift.com/)**
-
 ---
 
 ## Technologie-Stack
