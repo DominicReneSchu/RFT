@@ -5,14 +5,18 @@ Zeigt einen z-Schnitt des Felds und den zeitlichen Verlauf
 der mittleren Feldamplitude.
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 
 def live_slice_and_mean(
-    eps, step, slice_idx=None, means=None, fig_ax=None,
-    update_interval=10
-):
+    eps: np.ndarray, step: int, slice_idx: int | None = None, means: list[float] | None = None, fig_ax: tuple[Any, Any, Any, Any] | None = None,
+    update_interval: int = 10
+) -> None:
     """Aktualisiert die Live-Plots während der 3D-Simulation.
 
     Parameters

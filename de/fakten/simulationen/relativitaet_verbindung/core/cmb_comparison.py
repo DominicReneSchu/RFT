@@ -18,6 +18,11 @@ Datenquelle:
 Abhaengigkeiten: numpy
 """
 
+from __future__ import annotations
+
+from collections.abc import Callable
+from typing import Any
+
 import numpy as np
 import os
 import urllib.request
@@ -30,7 +35,7 @@ PLANCK_BINNED_URL = (
 )
 
 
-def download_planck_tt(filepath="data/planck_tt_binned.txt", force=False):
+def download_planck_tt(filepath: str = "data/planck_tt_binned.txt", force: bool = False) -> str:
     """Laedt das Planck 2018 TT-Leistungsspektrum herunter."""
     if os.path.exists(filepath) and not force:
         print(f"  Planck-Daten vorhanden: {filepath}")
@@ -48,7 +53,7 @@ def download_planck_tt(filepath="data/planck_tt_binned.txt", force=False):
         raise
 
 
-def load_planck_tt(filepath="data/planck_tt_binned.txt"):
+def load_planck_tt(filepath: str = "data/planck_tt_binned.txt") -> dict[str, np.ndarray]:
     """Liest das Planck TT-Spektrum ein.
 
     Planck binned Format: ell_min ell_max D_ell err_minus err_plus
@@ -93,7 +98,7 @@ def load_planck_tt(filepath="data/planck_tt_binned.txt"):
     }
 
 
-def generate_lcdm_bestfit(ell):
+def generate_lcdm_bestfit(ell: np.ndarray) -> np.ndarray:
     """Erzeugt das Planck 2018 best-fit LCDM-Spektrum.
 
     Parametrisches Modell kalibriert auf Planck 2018 best-fit:
@@ -142,7 +147,7 @@ def generate_lcdm_bestfit(ell):
     return D_total
 
 
-def eta_correction(ell, d_eta, h0=67.4):
+def eta_correction(ell: np.ndarray, d_eta: float, h0: float = 67.4) -> np.ndarray:
     """Resonanzfeld-Korrektur zum Leistungsspektrum.
 
     Die eta-Verschiebung modifiziert die effektive Energiedichte
@@ -178,7 +183,7 @@ def eta_correction(ell, d_eta, h0=67.4):
     return correction
 
 
-def compare_with_planck(planck_data, h0=67.4, d_eta=0.1334):
+def compare_with_planck(planck_data: dict[str, np.ndarray], h0: float = 67.4, d_eta: float = 0.1334) -> dict[str, Any]:
     """Vergleicht best-fit LCDM und LCDM+Resonanzfeld mit Planck.
 
     Returns
@@ -237,7 +242,7 @@ def compare_with_planck(planck_data, h0=67.4, d_eta=0.1334):
     }
 
 
-def scan_h0_chi2(planck_data, h0_values=None, d_eta_func=None):
+def scan_h0_chi2(planck_data: dict[str, np.ndarray], h0_values: np.ndarray | None = None, d_eta_func: Callable[[float], float] | None = None) -> dict[str, np.ndarray]:
     """Scannt Chi^2 als Funktion von H0."""
     if h0_values is None:
         h0_values = np.linspace(60, 80, 41)

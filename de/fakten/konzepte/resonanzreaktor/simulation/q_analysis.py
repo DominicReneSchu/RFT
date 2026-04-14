@@ -1,5 +1,6 @@
 # q_analysis.py
 # © Dominic-René Schu, 2025/2026 – Resonanzfeldtheorie
+from __future__ import annotations
 # Q > 1 Analyse: Unter welchen Bedingungen liefert der
 # Resonanzreaktor netto Energie?
 #
@@ -19,7 +20,7 @@ from resonance import (coupling_efficiency, effective_decay_rate,
                         energy_balance)
 
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
@@ -27,8 +28,8 @@ def ensure_dir(path):
 # 1. Analytische Q-Formel
 # ============================================================
 
-def Q_analytical(isotope, E_decay_MeV, target_thickness_cm=1.0,
-                 density_g_cm3=19.1, delta_phi=0.0, k_mult=1.0):
+def Q_analytical(isotope: Isotope, E_decay_MeV: float, target_thickness_cm: float = 1.0,
+                 density_g_cm3: float = 19.1, delta_phi: float = 0.0, k_mult: float = 1.0) -> float:
     """
     Analytischer Q-Faktor.
     
@@ -77,8 +78,8 @@ def Q_analytical(isotope, E_decay_MeV, target_thickness_cm=1.0,
     return Q
 
 
-def Q_with_absorption(isotope, E_decay_MeV, target_thickness_cm=1.0,
-                       density_g_cm3=19.1, delta_phi=0.0, k_mult=1.0):
+def Q_with_absorption(isotope: Isotope, E_decay_MeV: float, target_thickness_cm: float = 1.0,
+                       density_g_cm3: float = 19.1, delta_phi: float = 0.0, k_mult: float = 1.0) -> dict[str, float]:
     """
     Q-Faktor mit Photonenabsorption im Target.
     
@@ -132,9 +133,9 @@ def Q_with_absorption(isotope, E_decay_MeV, target_thickness_cm=1.0,
 # 2. Parameterstudien
 # ============================================================
 
-def scan_thickness(isotope, E_decay_MeV, density_g_cm3,
-                   d_range_cm=(0.01, 100), n_points=200,
-                   k_mult=1.0, delta_phi=0.0):
+def scan_thickness(isotope: Isotope, E_decay_MeV: float, density_g_cm3: float,
+                   d_range_cm: tuple[float, float] = (0.01, 100), n_points: int = 200,
+                   k_mult: float = 1.0, delta_phi: float = 0.0) -> tuple[np.ndarray, list[dict[str, float]]]:
     """Q als Funktion der Targetdicke."""
     d_values = np.logspace(np.log10(d_range_cm[0]),
                             np.log10(d_range_cm[1]), n_points)
@@ -150,10 +151,10 @@ def scan_thickness(isotope, E_decay_MeV, density_g_cm3,
     return d_values, results
 
 
-def scan_k_mult(isotope, E_decay_MeV, density_g_cm3,
-                target_thickness_cm=10.0,
-                k_range=(1.0, 3.0), n_points=200,
-                delta_phi=0.0):
+def scan_k_mult(isotope: Isotope, E_decay_MeV: float, density_g_cm3: float,
+                target_thickness_cm: float = 10.0,
+                k_range: tuple[float, float] = (1.0, 3.0), n_points: int = 200,
+                delta_phi: float = 0.0) -> tuple[np.ndarray, list[dict[str, float]]]:
     """Q als Funktion des Neutronenmultiplikationsfaktors."""
     k_values = np.linspace(k_range[0], k_range[1], n_points)
     results = []
@@ -168,8 +169,8 @@ def scan_k_mult(isotope, E_decay_MeV, density_g_cm3,
     return k_values, results
 
 
-def scan_phase_and_thickness(isotope, E_decay_MeV, density_g_cm3,
-                              k_mult=1.5):
+def scan_phase_and_thickness(isotope: Isotope, E_decay_MeV: float, density_g_cm3: float,
+                              k_mult: float = 1.5) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Q als 2D-Funktion von Δφ und Targetdicke."""
     d_values = np.logspace(-1, 2, 100)  # 0.1 - 100 cm
     phi_values = np.linspace(0, PI, 50)
@@ -192,7 +193,7 @@ def scan_phase_and_thickness(isotope, E_decay_MeV, density_g_cm3,
 # 3. Plots
 # ============================================================
 
-def plot_q_vs_thickness(output_dir):
+def plot_q_vs_thickness(output_dir: str) -> None:
     """Q(d) für verschiedene k_mult."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
     
@@ -248,7 +249,7 @@ def plot_q_vs_thickness(output_dir):
     print("  → q_vs_thickness.png")
 
 
-def plot_q_vs_k(output_dir):
+def plot_q_vs_k(output_dir: str) -> None:
     """Q(k_mult) für verschiedene Targetdicken."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
     
@@ -300,7 +301,7 @@ def plot_q_vs_k(output_dir):
     print("  → q_vs_k_mult.png")
 
 
-def plot_q_heatmap(output_dir):
+def plot_q_heatmap(output_dir: str) -> None:
     """Q als 2D-Heatmap: Δφ vs. Targetdicke."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     
@@ -333,7 +334,7 @@ def plot_q_heatmap(output_dir):
     print("  → q_heatmap.png")
 
 
-def plot_break_even_curve(output_dir):
+def plot_break_even_curve(output_dir: str) -> None:
     """Minimale Targetdicke für Q=1 als Funktion von k."""
     fig, ax = plt.subplots(1, 1, figsize=(8, 6))
     
@@ -386,7 +387,7 @@ def plot_break_even_curve(output_dir):
 # Hauptlauf
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("Q > 1 ANALYSE: Resonanzreaktor")
     print("Unter welchen Bedingungen: Netto-Energiegewinn?")

@@ -1,5 +1,7 @@
 """Startskript Stufe 6b: CMB-Vergleich mit Planck 2018."""
 
+from __future__ import annotations
+
 import numpy as np
 from core.cmb_comparison import (
     download_planck_tt, load_planck_tt,

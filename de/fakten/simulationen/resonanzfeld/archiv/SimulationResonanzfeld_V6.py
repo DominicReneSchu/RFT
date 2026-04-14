@@ -1,11 +1,14 @@
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
 from scipy.integrate import solve_ivp
 import tkinter as tk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 # Gleichungen für das Doppelpendel
-def equations(t, state, m1, m2, l1, l2, g):
+def equations(t: float, state: np.ndarray, m1: float, m2: float, l1: float, l2: float, g: float) -> list[float]:
     θ1, θ2, ω1, ω2 = state
     Δθ = θ2 - θ1
     denom1 = (m1 + m2) * l1 - m2 * l1 * np.cos(Δθ)**2
@@ -24,7 +27,7 @@ def equations(t, state, m1, m2, l1, l2, g):
     return [ω1, ω2, dω1_dt, dω2_dt]
 
 # Funktion zur Simulation
-def simulate(m1, m2, l1, l2, θ1, θ2):
+def simulate(m1: float, m2: float, l1: float, l2: float, θ1: float, θ2: float) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     initial_state = [θ1, θ2, 0, 0]
     t_span = (0, 20)
     t_eval = np.linspace(0, 20, 500)
@@ -41,7 +44,7 @@ def simulate(m1, m2, l1, l2, θ1, θ2):
     return x1, y1, x2, y2, sol.t
 
 # Funktion zur Erstellung des Plots
-def plot_doppelpendel(m1, m2, l1, l2, θ1, θ2):
+def plot_doppelpendel(m1: float, m2: float, l1: float, l2: float, θ1: float, θ2: float) -> Figure:
     x1, y1, x2, y2, t = simulate(m1, m2, l1, l2, θ1, θ2)
 
     fig, ax = plt.subplots(figsize=(6, 5), dpi=100)
@@ -58,7 +61,7 @@ def plot_doppelpendel(m1, m2, l1, l2, θ1, θ2):
     return fig
 
 # Funktion zur Aktualisierung des Plots
-def update_plot():
+def update_plot() -> None:
     m1 = float(m1_slider.get())
     m2 = float(m2_slider.get())
     l1 = float(l1_slider.get())

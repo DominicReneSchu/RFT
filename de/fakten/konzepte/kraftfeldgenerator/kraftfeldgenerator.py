@@ -22,6 +22,10 @@
 #   3. Barrierebildung: Stehende Welle als „Kraftfeld"
 #   4. Vergleich: Kohärent vs. inkohärent, Arraygrößen
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -42,7 +46,7 @@ C_AIR = 343.0              # Schallgeschwindigkeit [m/s]
 # 2. RFT-Kopplungseffizienz
 # ============================================================
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2) — universelle Kopplungsfunktion."""
     return np.cos(delta_phi / 2.0) ** 2
 
@@ -65,8 +69,9 @@ class TransducerArray:
         |P|² ∝ cos²(Δφ/2) = ε(Δφ)
     """
 
-    def __init__(self, nx=16, ny=16, spacing=0.01, freq=40000.0,
-                 p0=1.0, radius=0.005):
+    def __init__(self, nx: int = 16, ny: int = 16, spacing: float = 0.01,
+                 freq: float = 40000.0, p0: float = 1.0,
+                 radius: float = 0.005) -> None:
         self.nx = nx
         self.ny = ny
         self.spacing = spacing
@@ -104,8 +109,9 @@ class TransducerArray:
         self.group_A = np.array(self.group_A)
         self.group_B = np.array(self.group_B)
 
-    def compute_pressure_field(self, x_grid, y_grid, z_focus,
-                                phases=None, t=0.0):
+    def compute_pressure_field(self, x_grid: np.ndarray, y_grid: np.ndarray,
+                                z_focus: float, phases: np.ndarray | None = None,
+                                t: float = 0.0) -> np.ndarray:
         """Berechnet das Druckfeld P(x, y) in einer Ebene bei z = z_focus."""
         if phases is None:
             phases = self._focus_phases(0.0, 0.0, z_focus)
@@ -122,7 +128,7 @@ class TransducerArray:
 
         return P
 
-    def _focus_phases(self, x_f, y_f, z_f):
+    def _focus_phases(self, x_f: float, y_f: float, z_f: float) -> np.ndarray:
         """Phasen, die alle Wellen am Fokuspunkt konstruktiv überlagern."""
         phases = np.zeros(self.n_total)
         for i, (xi, yi) in enumerate(self.positions):
@@ -130,7 +136,8 @@ class TransducerArray:
             phases[i] = self.k * r_i
         return phases
 
-    def focus_split_phase(self, x_f, y_f, z_f, delta_phi=0.0):
+    def focus_split_phase(self, x_f: float, y_f: float, z_f: float,
+                           delta_phi: float = 0.0) -> np.ndarray:
         """
         Fokusphasen mit Phasendifferenz Δφ zwischen Gruppe A und B.
 
@@ -149,11 +156,11 @@ class TransducerArray:
             phases[i] += delta_phi
         return phases
 
-    def barrier_phases(self, z_f, barrier_y=0.0):
+    def barrier_phases(self, z_f: float, barrier_y: float = 0.0) -> np.ndarray:
         """Fokusphasen für Linienfokus bei y = barrier_y."""
         return self._focus_phases(0.0, barrier_y, z_f)
 
-    def info(self):
+    def info(self) -> None:
         print("=" * 60)
         print("KRAFTFELDGENERATOR: Transducer-Array")
         print("=" * 60)
@@ -174,8 +181,9 @@ class TransducerArray:
 # 4. Experiment 1: Fokussierung
 # ============================================================
 
-def experiment_focus(array, z_focus=0.1, grid_size=0.05,
-                     n_grid=200):
+def experiment_focus(array: TransducerArray, z_focus: float = 0.1,
+                     grid_size: float = 0.05,
+                     n_grid: int = 200) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Kohärent vs. inkohärent."""
     x = np.linspace(-grid_size, grid_size, n_grid)
     y = np.linspace(-grid_size, grid_size, n_grid)
@@ -200,7 +208,8 @@ def experiment_focus(array, z_focus=0.1, grid_size=0.05,
 # 5. Experiment 2: Phasenscan (RFT-Signatur)
 # ============================================================
 
-def experiment_phase_scan(array, z_focus=0.1, n_phi=50):
+def experiment_phase_scan(array: TransducerArray, z_focus: float = 0.1,
+                          n_phi: int = 50) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Scannt Δφ zwischen Gruppe A und B.
 
@@ -233,8 +242,9 @@ def experiment_phase_scan(array, z_focus=0.1, n_phi=50):
 # 6. Experiment 3: Barrierebildung
 # ============================================================
 
-def experiment_barrier(array, z_focus=0.1, grid_size=0.05,
-                       n_grid=200):
+def experiment_barrier(array: TransducerArray, z_focus: float = 0.1,
+                       grid_size: float = 0.05,
+                       n_grid: int = 200) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Linienförmige Barriere."""
     x = np.linspace(-grid_size, grid_size, n_grid)
     y = np.linspace(-grid_size, grid_size, n_grid)
@@ -251,7 +261,7 @@ def experiment_barrier(array, z_focus=0.1, grid_size=0.05,
 # 7. Experiment 4: Arraygröße-Vergleich
 # ============================================================
 
-def experiment_array_comparison(z_focus=0.1):
+def experiment_array_comparison(z_focus: float = 0.1) -> list[dict[str, Any]]:
     """Verschiedene Arraygrößen."""
     configs = [
         (4, 4, "4×4 (16)"),
@@ -297,11 +307,13 @@ def experiment_array_comparison(z_focus=0.1):
 # 8. Plots
 # ============================================================
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_focus(array, X, Y, P_koh, P_ink, I_koh, I_ink, output_dir):
+def plot_focus(array: TransducerArray, X: np.ndarray, Y: np.ndarray,
+               P_koh: np.ndarray, P_ink: np.ndarray, I_koh: np.ndarray,
+               I_ink: np.ndarray, output_dir: str) -> None:
     """Plot 1: Fokussiertes Druckfeld."""
     fig, axes = plt.subplots(2, 2, figsize=(14, 12))
 
@@ -356,7 +368,8 @@ def plot_focus(array, X, Y, P_koh, P_ink, I_koh, I_ink, output_dir):
     print("  → fokussierung.png")
 
 
-def plot_phase_scan(phis, P_focus, I_focus, output_dir):
+def plot_phase_scan(phis: np.ndarray, P_focus: np.ndarray, I_focus: np.ndarray,
+                    output_dir: str) -> float:
     """Plot 2: Phasenscan — RFT-Signatur."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -416,7 +429,9 @@ def plot_phase_scan(phis, P_focus, I_focus, output_dir):
     return I_mean
 
 
-def plot_barrier(X, Y, P, P_rad, array, output_dir):
+def plot_barrier(X: np.ndarray, Y: np.ndarray, P: np.ndarray,
+                 P_rad: np.ndarray, array: TransducerArray,
+                 output_dir: str) -> None:
     """Plot 3: Akustische Barriere."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -472,7 +487,8 @@ def plot_barrier(X, Y, P, P_rad, array, output_dir):
     print("  → barriere.png")
 
 
-def plot_array_comparison(results, output_dir):
+def plot_array_comparison(results: list[dict[str, Any]],
+                          output_dir: str) -> None:
     """Plot 4: Arraygröße vs. Fokusgewinn."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -530,7 +546,7 @@ def plot_array_comparison(results, output_dir):
 # 9. Hauptprogramm
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("KRAFTFELDGENERATOR: Akustische Barrieren")
     print("Resonanzfeldtheorie: E = π · ε(Δφ) · ℏ · f")

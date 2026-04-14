@@ -1,10 +1,14 @@
 """Visualisierung Stufe 6b: CMB-Leistungsspektrum-Vergleich."""
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_cmb_comparison(result, save_path=None, show=True):
+def plot_cmb_comparison(result: dict[str, Any], save_path: str | None = None, show: bool = True) -> None:
     """Drei-Panel-Plot: Spektrum, Residuen, Korrektur-Signal."""
     ell = result["ell"]
     D_planck = result["D_planck"]
@@ -91,7 +95,7 @@ def plot_cmb_comparison(result, save_path=None, show=True):
     plt.close(fig)
 
 
-def plot_chi2_scan(chi2_result, save_path=None, show=True):
+def plot_chi2_scan(chi2_result: dict[str, Any], save_path: str | None = None, show: bool = True) -> None:
     """Delta-Chi^2(H0)-Vergleich."""
     h0 = chi2_result["h0_values"]
     delta = chi2_result["delta_chi2"]

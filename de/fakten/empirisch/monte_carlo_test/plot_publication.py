@@ -2,6 +2,10 @@
 # Erzeugt Publikations-Plots aus den gespeicherten MC-Ergebnissen
 # Kein erneutes Simulieren nötig.
 
+from __future__ import annotations
+
+from typing import Any
+
 import json
 import numpy as np
 import matplotlib.pyplot as plt
@@ -34,7 +38,7 @@ RESONANZ_FARBEN = {
 M0_ORDER = ["1.02", "3.1", "9.46", "10.02", "91.2"]
 
 
-def load_results():
+def load_results() -> dict[str, Any]:
     json_path = os.path.join(RESULTS_DIR, "publication_results.json")
     with open(json_path, 'r') as f:
         data = json.load(f)
@@ -46,7 +50,7 @@ def load_results():
 # Plot 1: Hauptergebnisse – p-Werte und Hits
 # ============================================================
 
-def plot_main_results(data):
+def plot_main_results(data: dict[str, Any]) -> None:
     main = data['main_results']
 
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
@@ -121,7 +125,7 @@ def plot_main_results(data):
 # Plot 2: Systematik – KDE-Bandbreiten
 # ============================================================
 
-def plot_bandwidth_check(data):
+def plot_bandwidth_check(data: dict[str, Any]) -> None:
     syst = data['systematik']
     bandwidths = sorted(syst.keys(), key=float)
 
@@ -166,7 +170,7 @@ def plot_bandwidth_check(data):
 # Plot 3: Seed-Variation
 # ============================================================
 
-def plot_seed_variation(data):
+def plot_seed_variation(data: dict[str, Any]) -> None:
     seeds = data['seed_variation']
 
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -202,7 +206,7 @@ def plot_seed_variation(data):
 # Plot 4: Zusammenfassung
 # ============================================================
 
-def plot_summary(data):
+def plot_summary(data: dict[str, Any]) -> None:
     main = data['main_results']
 
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
@@ -289,7 +293,7 @@ def plot_summary(data):
 # Hauptprogramm
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("PLOT-ERSTELLUNG aus gespeicherten MC-Ergebnissen")
     print("Keine neue Simulation nötig.")

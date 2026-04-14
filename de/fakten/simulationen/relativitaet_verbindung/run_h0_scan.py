@@ -1,5 +1,7 @@
 """Startskript Stufe 6a: H0-Scan — Kosmologische Skalierung."""
 
+from __future__ import annotations
+
 import numpy as np
 from config import MODEL_PARAMS
 from core.h0_scan import scan_h0, hubble_tension_signature, export_results

@@ -1,10 +1,14 @@
 """Vergleichsplot: Flache Raumzeit vs. FLRW-Expansion."""
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_control_comparison(scan_flat, scan_flrw, scan_fast=None, save_path=None, show=True):
+def plot_control_comparison(scan_flat: dict[str, Any], scan_flrw: dict[str, Any], scan_fast: dict[str, Any] | None = None, save_path: str | None = None, show: bool = True) -> None:
     dphi = scan_flat["delta_phi_values"]
     fig, axes = plt.subplots(1, 2, figsize=(16, 7))
 

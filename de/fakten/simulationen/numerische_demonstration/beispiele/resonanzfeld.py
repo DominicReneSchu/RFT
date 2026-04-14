@@ -3,6 +3,8 @@
 # © Dominic Schu, 2025 – Alle Rechte vorbehalten.
 # Theorie siehe auch: https://github.com/DominicReneSchu/Resoshift und Pi-e-Theorie
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
@@ -58,9 +60,9 @@ def plot_resonanzfeld(
     A_grid: np.ndarray,
     E_res: np.ndarray,
     S: np.ndarray,
-    save_path: str = None,
+    save_path: str | None = None,
     show: bool = True
-):
+) -> None:
     """
     Erstellt zwei 3D-Plots: Schu-Resonanzenergie und Resonanzentropie.
 

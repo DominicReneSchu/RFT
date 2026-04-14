@@ -3,31 +3,35 @@ Gekoppelte Zwei-Feld-Simulation in FLACHER Raumzeit.
 Kontrollexperiment: a = const = 1, H = 0, R = 0.
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 from scipy.integrate import solve_ivp
 
 
 def flat_coupled_sim(
-    eps1_0=0.3, eps2_0=0.3,
-    epsdot1_0=0.0, epsdot2_0=0.0,
-    delta_phi_0=0.0,
-    m=1.0, lmbda=0.1, g=0.2,
-    t_span=(0, 40), t_eval=None,
-    rtol=1e-10, atol=1e-12,
-):
+    eps1_0: float = 0.3, eps2_0: float = 0.3,
+    epsdot1_0: float = 0.0, epsdot2_0: float = 0.0,
+    delta_phi_0: float = 0.0,
+    m: float = 1.0, lmbda: float = 0.1, g: float = 0.2,
+    t_span: tuple[float, float] = (0, 40), t_eval: np.ndarray | None = None,
+    rtol: float = 1e-10, atol: float = 1e-12,
+) -> tuple[Any, dict[str, Any]]:
     omega_0 = m
     if epsdot2_0 == 0.0 and delta_phi_0 != 0.0:
         epsdot1_0 = 0.0
         epsdot2_0 = -eps2_0 * omega_0 * np.sin(delta_phi_0)
         eps2_0 = eps2_0 * np.cos(delta_phi_0)
 
-    def V(eps):
+    def V(eps: float | np.ndarray) -> float | np.ndarray:
         return 0.5 * m**2 * eps**2 + 0.25 * lmbda * eps**4
 
-    def Vp(eps):
+    def Vp(eps: float | np.ndarray) -> float | np.ndarray:
         return m**2 * eps + lmbda * eps**3
 
-    def rhs(t, y):
+    def rhs(t: float, y: np.ndarray) -> list[float]:
         eps1, epsdot1, eps2, epsdot2 = y
         epsddot1 = -Vp(eps1) - g * eps2
         epsddot2 = -Vp(eps2) - g * eps1
@@ -85,7 +89,7 @@ def flat_coupled_sim(
     return sol, results
 
 
-def scan_phase_flat(delta_phi_values=None, t_span=(0, 40), **kwargs):
+def scan_phase_flat(delta_phi_values: np.ndarray | None = None, t_span: tuple[float, float] = (0, 40), **kwargs: Any) -> dict[str, np.ndarray]:
     if delta_phi_values is None:
         delta_phi_values = np.linspace(0, np.pi, 20)
     eta_mean = []

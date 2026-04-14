@@ -1,8 +1,12 @@
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import plotly.graph_objs as go
 
 
-def interactive_hits_histogram(sim_hits, real_hits, m0_values):
+def interactive_hits_histogram(sim_hits: dict[float, list[int]], real_hits: dict[float, dict[str, Any]], m0_values: list[float]) -> list[go.Figure]:
     """Interaktive Histogramme: MC-Hits vs. echte Hits pro M₀."""
     figs = []
     for m0 in m0_values:
@@ -35,8 +39,8 @@ def interactive_hits_histogram(sim_hits, real_hits, m0_values):
 
 
 def interactive_pval_curve(
-    deltas, sim_pvals_per_m0_delta, real_pvals_matrix, real_results, m0_values
-):
+    deltas: list[float], sim_pvals_per_m0_delta: dict[float, np.ndarray], real_pvals_matrix: dict[float, np.ndarray], real_results: dict[float, dict[str, Any]], m0_values: list[float]
+) -> list[go.Figure]:
     """Interaktive p-Wert-Verläufe über Δ pro M₀."""
     figs = []
     for m0 in m0_values:
@@ -105,16 +109,16 @@ def interactive_pval_curve(
 
 
 def interactive_heatmap(
-    matrix,
-    xvals,
-    yvals,
-    xlabel,
-    ylabel,
-    title,
-    colorbar_title="Hits",
-    annot=False,
-    colorscale="Viridis",
-):
+    matrix: np.ndarray,
+    xvals: list[str] | list[float],
+    yvals: list[str] | list[float],
+    xlabel: str,
+    ylabel: str,
+    title: str,
+    colorbar_title: str = "Hits",
+    annot: bool = False,
+    colorscale: str = "Viridis",
+) -> go.Figure:
     """Interaktive Heatmap."""
     fig = go.Figure(
         data=go.Heatmap(
@@ -138,15 +142,15 @@ def interactive_heatmap(
 
 
 def interactive_heatmap_contrast(
-    matrix,
-    xvals,
-    yvals,
-    xlabel,
-    ylabel,
-    title,
-    colorbar_title="Hits",
-    annot=False,
-):
+    matrix: np.ndarray,
+    xvals: list[str] | list[float],
+    yvals: list[str] | list[float],
+    xlabel: str,
+    ylabel: str,
+    title: str,
+    colorbar_title: str = "Hits",
+    annot: bool = False,
+) -> go.Figure:
     """Interaktive Heatmap mit Cividis-Farbskala."""
     return interactive_heatmap(
         matrix,

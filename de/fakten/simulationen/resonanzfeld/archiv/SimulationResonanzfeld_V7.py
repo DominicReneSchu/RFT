@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
@@ -10,7 +14,7 @@ m1 = 1.0  # Masse des ersten Pendels
 m2 = 1.0  # Masse des zweiten Pendels
 
 # Differentialgleichungen für das Doppelpendel
-def derivatives(t, state):
+def derivatives(t: float, state: np.ndarray) -> list[float]:
     theta1, z1, theta2, z2 = state
     delta_theta = theta2 - theta1
     den1 = (m1 + m2) * l1 - m2 * l1 * np.cos(delta_theta) ** 2
@@ -60,7 +64,7 @@ line1, = ax.plot([], [], lw=2, label='Pendulum 1')
 line2, = ax.plot([], [], lw=2, label='Pendulum 2')
 
 # Funktion zur Aktualisierung der Animation
-def update_plot(frame):
+def update_plot(frame: int) -> tuple[Any, Any]:
     line1.set_data(x1[:frame], y1[:frame])
     line2.set_data(x2[:frame], y2[:frame])
     return line1, line2

@@ -1,6 +1,8 @@
+from __future__ import annotations
+
 import numpy as np
 #© Dominic Schu, 2025 – Alle Rechte vorbehalten.
-def multi_dimensional_time(t, dimension=2, time_scale=1.0):
+def multi_dimensional_time(t: float, dimension: int = 2, time_scale: float = 1.0) -> float:
     """
     Berechnet den Zeitfaktor in mehreren Dimensionen basierend auf der Zeit t.
     

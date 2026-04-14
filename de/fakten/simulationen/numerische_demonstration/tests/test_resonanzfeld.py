@@ -13,6 +13,8 @@ Ausführung (standalone, ohne pytest):
     python tests/test_resonanzfeld.py
 """
 
+from __future__ import annotations
+
 import numpy as np
 import sys
 import os
@@ -37,7 +39,7 @@ except ImportError:
 
 # === Hilfsfunktion für standalone-Modus ===
 
-def assert_close(actual, expected, rtol=1e-6, atol=0, msg=""):
+def assert_close(actual: float | np.ndarray, expected: float | np.ndarray, rtol: float = 1e-6, atol: float = 0, msg: str = "") -> None:
     """numpy.testing.assert_allclose Wrapper."""
     if not np.allclose(actual, expected, rtol=rtol, atol=atol):
         raise AssertionError(
@@ -48,7 +50,7 @@ def assert_close(actual, expected, rtol=1e-6, atol=0, msg=""):
 
 # === Resonanzenergie ===
 
-def test_resonanzenergie_shape():
+def test_resonanzenergie_shape() -> None:
     A = np.array([0.5, 1.0, 2.0])
     tau = np.array([0.5, 1.0])
     E_res, tau_grid, A_grid = berechne_resonanzenergie(A, tau)
@@ -57,14 +59,14 @@ def test_resonanzenergie_shape():
     assert A_grid.shape == (3, 2)
 
 
-def test_resonanzenergie_positive():
+def test_resonanzenergie_positive() -> None:
     A = np.array([0.5, 1.0, 2.0])
     tau = np.array([0.5, 1.0])
     E_res, _, _ = berechne_resonanzenergie(A, tau)
     assert np.all(E_res > 0)
 
 
-def test_resonanzenergie_amplitude_monotonie():
+def test_resonanzenergie_amplitude_monotonie() -> None:
     """Höhere Amplitude → höhere Resonanzenergie."""
     A = np.array([0.5, 1.0, 2.0])
     tau = np.array([1.0])
@@ -72,7 +74,7 @@ def test_resonanzenergie_amplitude_monotonie():
     assert E_res[0, 0] < E_res[1, 0] < E_res[2, 0]
 
 
-def test_resonanzenergie_maximum():
+def test_resonanzenergie_maximum() -> None:
     """Bei sin(τ) = 0 ist ω_ext = ω₀ → E_res = A."""
     A = np.array([1.0, 2.0, 3.0])
     tau = np.array([np.pi])  # sin(π) ≈ 0
@@ -80,7 +82,7 @@ def test_resonanzenergie_maximum():
     np.testing.assert_allclose(E_res[:, 0], A, rtol=1e-6)
 
 
-def test_resonanzenergie_negative_A():
+def test_resonanzenergie_negative_A() -> None:
     """Negative Amplitude → ValueError."""
     try:
         berechne_resonanzenergie(np.array([-1.0, 1.0]),
@@ -90,7 +92,7 @@ def test_resonanzenergie_negative_A():
         pass
 
 
-def test_resonanzenergie_negative_tau():
+def test_resonanzenergie_negative_tau() -> None:
     """Negativer Verstimmungsparameter → ValueError."""
     try:
         berechne_resonanzenergie(np.array([1.0, 2.0]),
@@ -100,7 +102,7 @@ def test_resonanzenergie_negative_tau():
         pass
 
 
-def test_resonanzenergie_2d_input():
+def test_resonanzenergie_2d_input() -> None:
     """2D-Input → ValueError."""
     try:
         berechne_resonanzenergie(np.array([[1.0, 2.0]]),
@@ -112,7 +114,7 @@ def test_resonanzenergie_2d_input():
 
 # === Kopplungseffizienz ===
 
-def test_kopplungseffizienz_range():
+def test_kopplungseffizienz_range() -> None:
     """ε ∈ (0, 1]."""
     A = np.linspace(0.1, 5, 50)
     tau = np.linspace(0.1, 5, 50)
@@ -122,7 +124,7 @@ def test_kopplungseffizienz_range():
     assert np.all(eps <= 1.0)
 
 
-def test_kopplungseffizienz_resonanz():
+def test_kopplungseffizienz_resonanz() -> None:
     """Bei exakter Resonanz: ε = 1."""
     A = np.array([1.0])
     tau = np.array([np.pi])
@@ -131,7 +133,7 @@ def test_kopplungseffizienz_resonanz():
     np.testing.assert_allclose(eps[0, 0], 1.0, rtol=1e-6)
 
 
-def test_kopplungseffizienz_amplitude_unabhaengig():
+def test_kopplungseffizienz_amplitude_unabhaengig() -> None:
     """ε ist unabhängig von der Amplitude."""
     A = np.array([0.5, 1.0, 5.0])
     tau = np.array([1.0])
@@ -143,13 +145,13 @@ def test_kopplungseffizienz_amplitude_unabhaengig():
 
 # === Resonanzentropie ===
 
-def test_entropie_shape():
+def test_entropie_shape() -> None:
     eps = np.array([[0.5, 0.8], [0.2, 0.9]])
     S = berechne_resonanzentropie(eps)
     assert S.shape == eps.shape
 
 
-def test_entropie_non_negative():
+def test_entropie_non_negative() -> None:
     """S ≥ 0 für ε ∈ (0, 1]."""
     eps = np.linspace(0.01, 1.0, 100)
     S = berechne_resonanzentropie(eps)
@@ -157,7 +159,7 @@ def test_entropie_non_negative():
     assert np.all(np.isfinite(S))
 
 
-def test_entropie_maximum_bei_inverse_e():
+def test_entropie_maximum_bei_inverse_e() -> None:
     """S ist maximal bei ε = 1/e."""
     eps = np.linspace(0.01, 1.0, 10000)
     S = berechne_resonanzentropie(eps)
@@ -166,7 +168,7 @@ def test_entropie_maximum_bei_inverse_e():
     np.testing.assert_allclose(eps_at_max, 1 / np.e, atol=0.001)
 
 
-def test_entropie_null_an_grenzen():
+def test_entropie_null_an_grenzen() -> None:
     """S = 0 bei ε = 1 und S → 0 für ε → 0."""
     S_at_one = berechne_resonanzentropie(np.array([1.0]))
     assert np.isclose(S_at_one[0], 0.0, atol=1e-10)
@@ -175,7 +177,7 @@ def test_entropie_null_an_grenzen():
     assert S_near_zero[0] < 0.001
 
 
-def test_entropie_monotonie():
+def test_entropie_monotonie() -> None:
     """Für ε > 1/e: höhere ε → kleinere S."""
     eps = np.array([0.5, 0.9])
     S = berechne_resonanzentropie(eps)
@@ -184,7 +186,7 @@ def test_entropie_monotonie():
 
 # === Plot (Smoke Test) ===
 
-def test_plot_runs():
+def test_plot_runs() -> None:
     """Plot erzeugen und als Datei speichern."""
     import tempfile
     A = np.linspace(0.1, 1, 10)
@@ -201,7 +203,7 @@ def test_plot_runs():
 
 # === Standalone-Runner ===
 
-def run_all_tests():
+def run_all_tests() -> bool:
     """Führt alle Tests ohne pytest aus."""
     tests = [
         test_resonanzenergie_shape,
