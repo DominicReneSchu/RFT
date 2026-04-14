@@ -52,8 +52,8 @@ Ein Chart ist kein Verlaufsdiagramm — er ist ein Schwingungsbild.
 
 Die klassische Sicht behandelt Geld als Tauschmittel und Charts als Handelsergebnisse. ResoTrade betrachtet den Markt als physikalisches Schwingungsfeld:
 
-- **DC-Komponente** (Grundton) → Langfristiger Trend = HODL-Kern, wird nie gehandelt
-- **AC-Komponente** (Obertöne) → Handelbare Schwingung um den Trend, liefert Rendite
+- **DC-Komponente** (Grundton) → Fundamentales Wachstum des Gleichgewichtspreises: bei Aktien durch reale Wertschöpfung (investiertes Kapital → Unternehmenswachstum), bei Gold/BTC durch strukturelle Knappheit (begrenztes Angebot bei steigender Nachfrage); auch künstlich erzeugbare DC-Strukturen via Investition + OTC-Verkauf. ResoTrade schützt diesen Kern.
+- **AC-Komponente** (Obertöne) → Spekulative Schwingung um den Trend, erzeugt durch Marktteilnehmer, die auf steigende oder fallende Kurse hoffen; nur dieser Anteil wird gehandelt und liefert Rendite
 - **Resonanzkopplung** → Trades nur wenn Bot und Markt in Phase stehen
 - **Energierichtung** → Preisfluss ist ein Vektor, nicht ein Skalar
 
@@ -200,8 +200,8 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 | Energie | Kapital (BTC + Cash) | Portfolio-Äquivalent in Basiswährung |
 | Zeit | Transaktionssequenz | Zeitschritt im Trainingsfenster |
 | Leistung | Rendite pro Zeiteinheit | Portfolio-Äquivalent pro Zeitschritt |
-| DC (Grundschwingung) | Langfristiger Trend | Langfristiger gleitender Durchschnitt |
-| AC (Oberschwingung) | Handelbare Abweichung | Preis minus langfristiger Durchschnitt |
+| DC (Grundschwingung) | Fundamentales Wachstum (Wertschöpfung / Knappheit) | Langfristiger gleitender Durchschnitt |
+| AC (Oberschwingung) | Spekulative Schwankung (durch Marktteilnehmer mit Long/Short-Erwartung) | Preis minus langfristiger Durchschnitt |
 | Amplitude | Preisschwingung um Durchschnitt | AC-Amplitude |
 | Phase | Position im Zyklus | Zyklusphase (peak/trough/transition/flat) |
 | Resonanz | Timing-Kopplung Bot ↔ Markt | Kopplungsfaktor K = K₀·cos(θ) |
