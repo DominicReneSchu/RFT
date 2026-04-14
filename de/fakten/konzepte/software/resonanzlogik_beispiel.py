@@ -16,6 +16,8 @@
 # Ausführung: python resonanzlogik_beispiel.py
 # Abhängigkeiten: numpy, matplotlib
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -27,7 +29,7 @@ PI = np.pi
 # 1. Kopplungseffizienz (Axiom 4)
 # ============================================================
 
-def kopplungseffizienz(delta_phi):
+def kopplungseffizienz(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2) — universelle RFT-Kopplung."""
     return np.cos(delta_phi / 2.0) ** 2
 
@@ -36,7 +38,7 @@ def kopplungseffizienz(delta_phi):
 # 2. Signalerzeugung
 # ============================================================
 
-def erzeuge_signal(n=2000, seed=42):
+def erzeuge_signal(n: int = 2000, seed: int = 42) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     Synthetisches Preissignal: DC-Trend + AC-Schwingungen + Rauschen.
     Simuliert einen typischen Markt mit Zyklen.
@@ -63,7 +65,7 @@ def erzeuge_signal(n=2000, seed=42):
 # 3. Schwingungszerlegung (Prinzip 1)
 # ============================================================
 
-def zerlegung(preis, fenster_lang=50):
+def zerlegung(preis: np.ndarray, fenster_lang: int = 50) -> tuple[np.ndarray, np.ndarray]:
     """DC/AC-Zerlegung: DC = gleitender Mittelwert, AC = Preis - DC."""
     dc = np.convolve(preis, np.ones(fenster_lang) / fenster_lang,
                      mode='same')
@@ -75,7 +77,7 @@ def zerlegung(preis, fenster_lang=50):
 # 4. Phasenerkennung (Prinzip 2)
 # ============================================================
 
-def erkenne_phase(ac, amplitude_schwelle=0.3):
+def erkenne_phase(ac: np.ndarray, amplitude_schwelle: float = 0.3) -> tuple[np.ndarray, np.ndarray]:
     """
     Bestimmt die Phase im Schwingungszyklus.
 
@@ -117,29 +119,29 @@ class ErfahrungsSpeicher:
     Kein Tensor. Keine Gewichte. Keine Black Box.
     """
 
-    def __init__(self, decay=0.90):
+    def __init__(self, decay: float = 0.90) -> None:
         self.speicher = {}  # "zustand,aktion" → score
         self.decay = decay
 
-    def schlüssel(self, phase, trend, aktion):
+    def schlüssel(self, phase: str, trend: str, aktion: str) -> str:
         return f"{phase},{trend},{aktion}"
 
-    def aktualisiere(self, phase, trend, aktion, belohnung):
+    def aktualisiere(self, phase: str, trend: str, aktion: str, belohnung: float) -> None:
         key = self.schlüssel(phase, trend, aktion)
         if key not in self.speicher:
             self.speicher[key] = 0.0
         self.speicher[key] = self.speicher[key] * self.decay + belohnung
 
-    def score(self, phase, trend, aktion):
+    def score(self, phase: str, trend: str, aktion: str) -> float:
         key = self.schlüssel(phase, trend, aktion)
         return self.speicher.get(key, 0.0)
 
-    def beste_aktion(self, phase, trend):
+    def beste_aktion(self, phase: str, trend: str) -> tuple[str, dict[str, float]]:
         aktionen = ['BUY', 'SELL', 'HOLD']
         scores = {a: self.score(phase, trend, a) for a in aktionen}
         return max(scores, key=scores.get), scores
 
-    def statistik(self):
+    def statistik(self) -> None:
         print(f"\n  Erfahrungsspeicher: {len(self.speicher)} Einträge")
         if self.speicher:
             top = sorted(self.speicher.items(),
@@ -148,7 +150,7 @@ class ErfahrungsSpeicher:
             for key, score in top:
                 print(f"    {key:40s} → {score:+.4f}")
 
-    def export_csv(self, pfad):
+    def export_csv(self, pfad: str) -> None:
         with open(pfad, 'w') as f:
             f.write("zustand_aktion,score\n")
             for key, score in sorted(self.speicher.items()):
@@ -167,15 +169,15 @@ class RegelKette:
     Physikalisch motiviert.
     """
 
-    def __init__(self, min_cash_anteil=0.10, min_asset_anteil=0.05,
-                 cooldown=3):
+    def __init__(self, min_cash_anteil: float = 0.10, min_asset_anteil: float = 0.05,
+                 cooldown: int = 3) -> None:
         self.min_cash = min_cash_anteil
         self.min_asset = min_asset_anteil
         self.cooldown = cooldown
         self.letzte_trades = []
         self.blockiert = 0
 
-    def prüfe(self, vorschlag, cash, portfolio_wert, epsilon):
+    def prüfe(self, vorschlag: str, cash: float, portfolio_wert: float, epsilon: float) -> tuple[str, list[str]]:
         """Filtert Vorschlag durch Regelkette."""
         gründe = []
 
@@ -228,18 +230,18 @@ class ResonanzAgent:
     Demonstriert alle 5 Prinzipien.
     """
 
-    def __init__(self, startkapital=1000.0, trade_anteil=0.15):
+    def __init__(self, startkapital: float = 1000.0, trade_anteil: float = 0.15) -> None:
         self.cash = startkapital
         self.asset = 0.0
         self.trade_anteil = trade_anteil
         self.erfahrung = ErfahrungsSpeicher()
         self.regeln = RegelKette()
-        self.historie = []
+        self.historie: list[dict[str, object]] = []
 
-    def portfolio_wert(self, preis):
+    def portfolio_wert(self, preis: float) -> float:
         return self.cash + self.asset * preis
 
-    def trend_erkennung(self, dc, i, fenster=20):
+    def trend_erkennung(self, dc: np.ndarray, i: int, fenster: int = 20) -> str:
         if i < fenster:
             return 'sideways'
         steigung = (dc[i] - dc[i - fenster]) / max(dc[i - fenster], 1e-10)
@@ -249,7 +251,7 @@ class ResonanzAgent:
             return 'downtrend'
         return 'sideways'
 
-    def schritt(self, i, preis, dc, ac, phasen):
+    def schritt(self, i: int, preis: np.ndarray, dc: np.ndarray, ac: np.ndarray, phasen: np.ndarray) -> str:
         """Ein Entscheidungsschritt."""
         phase = phasen[i]
         trend = self.trend_erkennung(dc, i)
@@ -323,17 +325,17 @@ class ResonanzAgent:
 # ============================================================
 
 class ZufallsAgent:
-    def __init__(self, startkapital=1000.0, trade_anteil=0.15, seed=123):
+    def __init__(self, startkapital: float = 1000.0, trade_anteil: float = 0.15, seed: int = 123) -> None:
         self.cash = startkapital
         self.asset = 0.0
         self.trade_anteil = trade_anteil
         self.rng = np.random.RandomState(seed)
-        self.historie = []
+        self.historie: list[dict[str, object]] = []
 
-    def portfolio_wert(self, preis):
+    def portfolio_wert(self, preis: float) -> float:
         return self.cash + self.asset * preis
 
-    def schritt(self, i, preis):
+    def schritt(self, i: int, preis: np.ndarray) -> None:
         aktueller_preis = preis[i]
         pw = self.portfolio_wert(aktueller_preis)
         aktion = self.rng.choice(['BUY', 'SELL', 'HOLD'],
@@ -356,7 +358,7 @@ class ZufallsAgent:
 # 9. Hauptsimulation
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("RESONANZLOGISCHE PROGRAMMIERUNG — BEISPIEL")
     print("E = π · ε(Δφ) · ℏ · f, κ = 1")
