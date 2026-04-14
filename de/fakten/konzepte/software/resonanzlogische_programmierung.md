@@ -22,7 +22,7 @@ und validiert:
   (+26.1% vs HODL, 24 Monate, 4 Marktregime, Live seit
   Feb. 2026). Dokumentation:
   [ResoTrade-Dokumentation](../../empirisch/resotrade_trading_ki.md)
-- **ResoCodeAgent** — resonanzfeldtheoretischer Code-Agent
+- **ResoAgent** — resonanzfeldtheoretischer Code-Agent
   (Komposition statt Generierung, 4-Schichten-Architektur,
   75k-Parameter-NN auf strukturiertem Vorwissen)
 
@@ -364,7 +364,7 @@ RFT-Observablen (energy_dir, AC-Phase) sind systematisch.
 
 Details: [ResoTrade-Dokumentation](../../empirisch/resotrade_trading_ki.md)
 
-### 6.2 Code-Agent (ResoCodeAgent)
+### 6.2 Code-Agent (ResoAgent)
 
 | Eigenschaft | LLM (GPT-4 etc.) | Resonanzlogischer Code-Agent |
 |-------------|-------------------|------------------------------|
@@ -415,7 +415,7 @@ angewandt werden:
 | Anwendungsfeld | DC-Komponente | AC-Komponente | Status |
 |---------------|--------------|---------------|--------|
 | Finanzmärkte (ResoTrade) | Langfristtrend | Handelbare Schwingung | ✅ Live-validiert |
-| Code-Komposition (ResoCodeAgent) | Domänen-Basis | Aufgaben-Variation | ✅ Aktiv |
+| Code-Komposition (ResoAgent) | Domänen-Basis | Aufgaben-Variation | ✅ Aktiv |
 | Schach (ResoChess) | Materialbewertung | Taktische Dynamik | 🔨 In Entwicklung |
 | Betriebssysteme (ResoOS) | Systemlast-Basis | Prozess-Schwingungen | 🔨 Konzept |
 | Musik (ResoMusic) | Grundton | Obertöne, Modulation | 🔨 Konzept |
