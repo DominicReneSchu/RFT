@@ -21,6 +21,10 @@
 #
 # python reso_music.py song.mp3 [passes] [--reset] [--per-song]
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -78,11 +82,11 @@ KONSONANZ = {
 }
 
 
-def kopplungseffizienz(delta_phi):
+def kopplungseffizienz(delta_phi: float | np.ndarray) -> float | np.ndarray:
     return np.cos(delta_phi / 2.0) ** 2
 
 
-def note_zu_freq(note_idx, oktave=3):
+def note_zu_freq(note_idx: int, oktave: int = 3) -> float:
     midi = 12 * (oktave + 1) + note_idx
     return 440.0 * 2 ** ((midi - 69) / 12.0)
 
@@ -93,10 +97,10 @@ def note_zu_freq(note_idx, oktave=3):
 
 class KlangErzeuger:
 
-    def __init__(self, sr=22050):
+    def __init__(self, sr: int = 22050) -> None:
         self.sr = sr
 
-    def erzeuge_strom(self, events, n_samples):
+    def erzeuge_strom(self, events: list[dict[str, Any]], n_samples: int) -> np.ndarray:
         if not events:
             return np.zeros(n_samples)
 
@@ -192,12 +196,12 @@ class KlangErzeuger:
 
 class Analysator:
 
-    def __init__(self, sr=22050, hop=512, n_fft=2048):
+    def __init__(self, sr: int = 22050, hop: int = 512, n_fft: int = 2048) -> None:
         self.sr = sr
         self.hop = hop
         self.n_fft = n_fft
 
-    def analysiere(self, audio):
+    def analysiere(self, audio: np.ndarray) -> dict[str, Any]:
         f, t, Zxx = stft(audio, fs=self.sr, nperseg=self.n_fft,
                          noverlap=self.n_fft - self.hop)
         mag = np.abs(Zxx)
@@ -264,7 +268,7 @@ class Analysator:
             'kohärenz': kohärenz
         }
 
-    def erkenne_phasen(self, analyse):
+    def erkenne_phasen(self, analyse: dict[str, Any]) -> list[dict[str, Any]]:
         dc = analyse['dc']
         chroma = analyse['chroma']
         beats = analyse['beats']
@@ -339,26 +343,26 @@ ERFAHRUNG_SCHWELLWERT = 0.4   # Belohnung > Schwelle → 'success'
 
 class Erfahrung:
 
-    def __init__(self):
-        self.noten = {}
-        self.generation = 0
-        self.songs_gelernt = 0
+    def __init__(self) -> None:
+        self.noten: dict[str, dict[str, int]] = {}
+        self.generation: int = 0
+        self.songs_gelernt: int = 0
 
-    def _fine_key(self, phase, intervall):
+    def _fine_key(self, phase: dict[str, Any], intervall: int) -> str:
         return (f"{phase['grundton']},{phase['harmonie']},"
                 f"{phase['dynamik']},{phase.get('ac_phase', 'flat')},{intervall}")
 
-    def _coarse_key(self, phase, intervall):
+    def _coarse_key(self, phase: dict[str, Any], intervall: int) -> str:
         return f"{phase['grundton']},{phase['harmonie']},{intervall}"
 
-    def _trend_key(self, phase, intervall):
+    def _trend_key(self, phase: dict[str, Any], intervall: int) -> str:
         return f"{phase['harmonie']},{intervall}"
 
     # Backward-Kompatibilität: altes _key() auf Fine-Key umleiten
-    def _key(self, phase, intervall):
+    def _key(self, phase: dict[str, Any], intervall: int) -> str:
         return self._fine_key(phase, intervall)
 
-    def _classify_tier(self, key):
+    def _classify_tier(self, key: str) -> str:
         """Bestimmt den Tier-Typ eines Schlüssels anhand der bekannten Key-Struktur."""
         # Fine-Key: "Grundton,Harmonie,Dynamik,AC-Phase,Intervall" (4 Kommas)
         # Coarse-Key: "Grundton,Harmonie,Intervall" (2 Kommas)
@@ -372,7 +376,7 @@ class Erfahrung:
             return 'trend'
         return 'unknown'
 
-    def lerne_note(self, phase, intervall, belohnung):
+    def lerne_note(self, phase: dict[str, Any], intervall: int, belohnung: float) -> None:
         """belohnung > ERFAHRUNG_SCHWELLWERT → 'success', sonst 'failure'"""
         ergebnis = 'success' if belohnung > ERFAHRUNG_SCHWELLWERT else 'failure'
         for key in [self._fine_key(phase, intervall),
@@ -382,7 +386,7 @@ class Erfahrung:
             entry[ergebnis] = entry.get(ergebnis, 0) + 1
             self.noten[key] = entry
 
-    def _win_rate(self, key):
+    def _win_rate(self, key: str) -> tuple[float, int]:
         """Gibt (win_rate, total) für einen Schlüssel zurück."""
         entry = self.noten.get(key, {'success': 0, 'failure': 0})
         total = entry['success'] + entry['failure']
@@ -390,7 +394,7 @@ class Erfahrung:
             return entry['success'] / total, total
         return 0.5, 0
 
-    def beste_intervalle(self, phase, top_n=4, field_state=None):
+    def beste_intervalle(self, phase: dict[str, Any], top_n: int = 4, field_state: dict[str, Any] | None = None) -> list[tuple[int, float]]:
         """3-Tier-Lookup mit dynamischer Tier-Gewichtung (V8).
 
         V8 (aus ResoTrade V14.2 adaptive_thresholds + dynamische Tier-Gewichtung):
@@ -447,7 +451,7 @@ class Erfahrung:
         return sorted(scores.items(), key=lambda x: x[1],
                       reverse=True)[:top_n]
 
-    def decay_experience(self, factor=0.92):
+    def decay_experience(self, factor: float = 0.92) -> None:
         """Pro Pass: Alle Counts reduzieren, tote Einträge löschen."""
         to_delete = []
         for key, entry in self.noten.items():
@@ -458,7 +462,7 @@ class Erfahrung:
         for key in to_delete:
             del self.noten[key]
 
-    def speichern(self, pfad, field_state=None):
+    def speichern(self, pfad: str, field_state: dict[str, Any] | None = None) -> None:
         with open(pfad, 'w') as f:
             json.dump({
                 'generation': self.generation,
@@ -477,7 +481,7 @@ class Erfahrung:
             mwr_str = f"{mwr:.4f}" if isinstance(mwr, float) else 'nicht verfügbar'
             print(f"  💾 Feldzustand: {state_pfad} (median_win_rate={mwr_str})")
 
-    def laden(self, pfad):
+    def laden(self, pfad: str) -> None:
         if not os.path.exists(pfad):
             print("  Keine Erfahrung → frisch")
             return
@@ -505,7 +509,7 @@ class Erfahrung:
               f" {len(self.noten)} Einträge,"
               f" {self.songs_gelernt} Songs")
 
-    def lade_field_state(self, pfad):
+    def lade_field_state(self, pfad: str) -> dict[str, Any]:
         """Lädt den gespeicherten Feldzustand (adaptive Schwellen, V7)."""
         state_pfad = pfad.replace('.json', '_field_state.json')
         if os.path.exists(state_pfad):
@@ -517,7 +521,7 @@ class Erfahrung:
             return state
         return {}
 
-    def statistik(self):
+    def statistik(self) -> None:
         print(f"\n  📊 Gen {self.generation} |"
               f" {len(self.noten)} Noten |"
               f" {self.songs_gelernt} Songs")
@@ -525,7 +529,7 @@ class Erfahrung:
         if not self.noten:
             return
 
-        def score(entry):
+        def score(entry: dict[str, int] | float) -> float:
             if isinstance(entry, dict):
                 t = entry['success'] + entry['failure']
                 return entry['success'] / t if t > 0 else 0.0
@@ -590,18 +594,18 @@ class Erfahrung:
 
 class ResoMusik:
 
-    def __init__(self, sr=22050):
+    def __init__(self, sr: int = 22050) -> None:
         self.sr = sr
         self.analysator = Analysator(sr=sr)
         self.erfahrung = Erfahrung()
         self.klang = KlangErzeuger(sr=sr)
 
-    def analysiere(self, audio):
+    def analysiere(self, audio: np.ndarray) -> tuple[dict[str, Any], list[dict[str, Any]]]:
         analyse = self.analysator.analysiere(audio)
         phasen = self.analysator.erkenne_phasen(analyse)
         return analyse, phasen
 
-    def lerne(self, analyse, phasen):
+    def lerne(self, analyse: dict[str, Any], phasen: list[dict[str, Any]]) -> None:
         chroma = analyse['chroma']
         nf = len(phasen)
         lookahead = min(15, nf // 40)
@@ -635,7 +639,7 @@ class ResoMusik:
 
                 self.erfahrung.lerne_note(phase, iv, belohnung)
 
-    def erzeuge(self, analyse, phasen):
+    def erzeuge(self, analyse: dict[str, Any], phasen: list[dict[str, Any]]) -> np.ndarray:
         nf = len(phasen)
         hop = self.analysator.hop
         ns = int(nf * hop)
@@ -789,7 +793,7 @@ class ResoMusik:
 # AUDIO I/O
 # ============================================================
 
-def lade_audio(pfad, sr=22050):
+def lade_audio(pfad: str, sr: int = 22050) -> np.ndarray:
     ext = os.path.splitext(pfad)[1].lower()
     if ext == '.wav':
         sr_f, a = wavfile.read(pfad)
@@ -814,7 +818,7 @@ def lade_audio(pfad, sr=22050):
     print(f"  '{ext}' nicht unterstützt."); sys.exit(1)
 
 
-def speichere_wav(audio, pfad, sr=22050):
+def speichere_wav(audio: np.ndarray, pfad: str, sr: int = 22050) -> None:
     ai = np.clip(audio * 32767, -32768, 32767).astype(np.int16)
     wavfile.write(pfad, sr, ai)
     print(f"  → {pfad}")
@@ -824,7 +828,7 @@ def speichere_wav(audio, pfad, sr=22050):
 # VISUALISIERUNG
 # ============================================================
 
-def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
+def visualisiere(audio: np.ndarray, erg: np.ndarray, analyse: dict[str, Any], phasen: list[dict[str, Any]], sr: int, out: str, gen: int) -> None:
     fig, axes = plt.subplots(6, 1, figsize=(16, 20), sharex=True)
     ta = np.arange(len(audio)) / sr
     te = np.arange(len(erg)) / sr
@@ -898,7 +902,7 @@ def visualisiere(audio, erg, analyse, phasen, sr, out, gen):
 # MAIN
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("RESOMUSIC V8: ResoTrade V14.2 + Musikalische Integration")
     print("E = π · ε(Δφ) · ℏ · f, κ = 1")
@@ -986,7 +990,7 @@ def main():
 
     with open(os.path.join(out, 'musik_erfahrung.csv'), 'w') as f:
         f.write("schlüssel,success,failure,win_rate\n")
-        def sort_score(item):
+        def sort_score(item: tuple[str, dict[str, int] | float]) -> float:
             v = item[1]
             if isinstance(v, dict):
                 t = v['success'] + v['failure']
