@@ -12,6 +12,8 @@
 # Ziel: Vorhersage der messbaren Größen für ein reales Experiment
 #       und Vergleich RFT-Vorhersage vs. Standardmodell
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -90,7 +92,7 @@ class Am241_Literature:
 # 3. GDR-Wirkungsquerschnitt: Doppel-Lorentz-Modell
 # ============================================================
 
-def gdr_cross_section(E_MeV, am=Am241_Literature):
+def gdr_cross_section(E_MeV: float | np.ndarray, am: type = Am241_Literature) -> float:
     """
     GDR-Photoabsorptions-Wirkungsquerschnitt für Am-241.
     Doppel-Lorentz-Profil (prolate Deformation).
@@ -116,7 +118,7 @@ def gdr_cross_section(E_MeV, am=Am241_Literature):
     return sigma
 
 
-def gdr_cross_section_rft(E_MeV, delta_phi=0.0):
+def gdr_cross_section_rft(E_MeV: float | np.ndarray, delta_phi: float = 0.0) -> float | np.ndarray:
     """
     RFT-modulierter Wirkungsquerschnitt.
 
@@ -131,12 +133,12 @@ def gdr_cross_section_rft(E_MeV, delta_phi=0.0):
 # 4. RFT-Kopplungseffizienz
 # ============================================================
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """η(Δφ) = ε(Δφ) = cos²(Δφ/2)"""
     return np.cos(delta_phi / 2) ** 2
 
 
-def gdr_frequency_rft(E_MeV):
+def gdr_frequency_rft(E_MeV: float) -> float:
     """f = E / (π · ℏ) aus RFT-Grundformel"""
     return (E_MeV * MEV_TO_J) / (PI * HBAR_J)
 
@@ -145,8 +147,8 @@ def gdr_frequency_rft(E_MeV):
 # 5. Effektive Zerfallsrate
 # ============================================================
 
-def effective_decay_rate(delta_phi, photon_flux, E_gamma_MeV=None,
-                          am=Am241_Literature):
+def effective_decay_rate(delta_phi: float, photon_flux: float, E_gamma_MeV: float | None = None,
+                          am: type = Am241_Literature) -> float:
     """
     λ_eff = λ₀ + η(Δφ) · Φ_γ · σ_GDR(E_γ)
 
@@ -233,8 +235,8 @@ FACILITIES = [ELI_NP, HIgS, SLEGS]
 class ExperimentConfig:
     """Konfiguration für ein reales Am-241-Experiment."""
 
-    def __init__(self, facility, E_gamma_MeV, target_mass_mg,
-                 measurement_time_hours):
+    def __init__(self, facility: Facility, E_gamma_MeV: float, target_mass_mg: float,
+                 measurement_time_hours: float) -> None:
         self.facility = facility
         self.E_gamma_MeV = E_gamma_MeV
         self.target_mass_mg = target_mass_mg
@@ -306,7 +308,7 @@ class ExperimentConfig:
         self.sigma_diff = (self.signal_diff / np.sqrt(self.counts_rft)
                            if self.counts_rft > 0 else 0)
 
-    def report(self):
+    def report(self) -> None:
         """Druckt vollständigen Experiment-Report."""
         am = Am241_Literature
         print("=" * 70)
@@ -384,11 +386,11 @@ class ExperimentConfig:
 # 8. Plots
 # ============================================================
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_gdr_profile(output_dir):
+def plot_gdr_profile(output_dir: str) -> None:
     """Plot 1: GDR-Profil mit Literaturdaten und RFT-Modulation."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     E = np.linspace(5, 25, 500)
@@ -449,7 +451,7 @@ def plot_gdr_profile(output_dir):
     print("  → am241_gdr_profile.png")
 
 
-def plot_phase_prediction(output_dir):
+def plot_phase_prediction(output_dir: str) -> None:
     """Plot 2: Phasenscan — die testbare RFT-Signatur."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -499,7 +501,7 @@ def plot_phase_prediction(output_dir):
     print("  → am241_phase_prediction.png")
 
 
-def plot_facility_comparison(output_dir):
+def plot_facility_comparison(output_dir: str) -> None:
     """Plot 3: Vergleich der Einrichtungen — Signifikanz vs. Messzeit."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -585,7 +587,7 @@ def plot_facility_comparison(output_dir):
     print("  → am241_facility_comparison.png")
 
 
-def plot_signal_ratio(output_dir):
+def plot_signal_ratio(output_dir: str) -> None:
     """Plot 4: Das entscheidende Experiment — Signal_koh / Signal_ink."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -659,7 +661,7 @@ def plot_signal_ratio(output_dir):
 # 9. Hauptprogramm
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 70)
     print("RESONANZREAKTOR: Experimentelle Vorhersage Am-241")
     print("Literaturbasierte Simulation (Soldatov, Berman, NNDC, ELI-NP)")

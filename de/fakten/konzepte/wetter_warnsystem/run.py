@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import os
 import sys
 from simulation.weather_data import get_weather_data
@@ -6,7 +8,7 @@ from simulation.resonance_theory import resonance_field_interaction
 from simulation.schu_equation import schu_equation
 from simulation.time_dynamics import multi_dimensional_time
 #© Dominic Schu, 2025 – Alle Rechte vorbehalten.
-def main():
+def main() -> None:
     # Schritt 1: Frage nach dem OpenWeather API-Schlüssel
     api_key = input("Bitte gib deinen OpenWeather API-Schlüssel ein: ").strip()
 
