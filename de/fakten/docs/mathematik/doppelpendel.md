@@ -2,7 +2,7 @@
 
 ## Einleitung
 
-Das Doppelpendel ist ein mechanisches System aus zwei beweglich gekoppelten Pendeln und steht exemplarisch für komplexe, nichtlineare Dynamik. Es zeigt, wie aus einfachen physikalischen Grundprinzipien vielschichtige Bewegungsmuster und Resonanzphänomene entstehen. Im Kontext der [Resonanzfeldtheorie (RFT)](../definitionen/paper_resonanzfeldtheorie.md) dient das Doppelpendel als Modell, um Übergänge zwischen klassischem Chaos, periodischer Bewegung und kollektiven Schwingungsmoden zu untersuchen. Das Doppelpendel zeigt exemplarisch, wie klassische nichtlineare Mechanik durch das Verständnis von Resonanzfeldern erweitert wird. Die Resonanzfeldtheorie eröffnet neue Perspektiven, indem sie lokale Pendelbewegungen als Teil umfassender Schwingungs- und Kopplungsnetzwerke betrachtet. 
+Das Doppelpendel ist ein mechanisches System aus zwei beweglich gekoppelten Pendeln und steht exemplarisch für komplexe, nichtlineare Dynamik. Es zeigt, wie aus einfachen physikalischen Grundprinzipien vielschichtige Bewegungsmuster und Resonanzphänomene entstehen. Im Kontext der [Resonanzfeldtheorie (RFT)](../definitionen/axiomatische_grundlegung.md) dient das Doppelpendel als Modell, um Übergänge zwischen klassischem Chaos, periodischer Bewegung und kollektiven Schwingungsmoden zu untersuchen. Das Doppelpendel zeigt exemplarisch, wie klassische nichtlineare Mechanik durch das Verständnis von Resonanzfeldern erweitert wird. Die Resonanzfeldtheorie eröffnet neue Perspektiven, indem sie lokale Pendelbewegungen als Teil umfassender Schwingungs- und Kopplungsnetzwerke betrachtet. 
 
 ## Klassische Beschreibung
 
