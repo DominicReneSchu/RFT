@@ -104,7 +104,7 @@ ResoOS basiert auf einem **Linux-Kernel**, erweitert um eine **resonanzlogisch p
 │   │   └────┬──────┘  └──────┬───┘  └──────┬────────┘    │   │
 │   │        │                │             │             │   │
 │   │        └────────────────┼─────────────┘             │   │
-│   │                      ▼                              │   │
+│   │                         ▼                           │   │
 │   │   ┌────────────────────────────────────────────┐    │   │
 │   │   │            ResoMemory                      │    │   │
 │   │   │  Erfahrungsspeicher (CSV/JSON, lesbar)     │    │   │
