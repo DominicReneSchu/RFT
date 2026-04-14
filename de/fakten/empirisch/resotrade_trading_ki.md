@@ -40,8 +40,6 @@ Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanz
 - [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md) — Axiom 5 formalisiert
 - [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
 - [Resonanzanalyse in Massendaten](dokumentation.md) — Methodik der empirischen Validierung
-- Duales Resonanz-Geldsystem — Gesellschaftliche Implikation (in Vorbereitung)
-- [ResoMusic — Domänen-Transfer](../konzepte/ResoOS/resoOS.md#empirische-ergebnisse-resomusic-v7-märz-2026) — Dieselben 6 Architekturmuster in der Klangdomäne validiert
 
 ---
 

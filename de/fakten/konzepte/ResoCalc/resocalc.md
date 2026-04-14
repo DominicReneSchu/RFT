@@ -267,11 +267,6 @@ Wo heute verschiedene Ingenieure verschiedene Ergebnisse erhalten, liefert ResoC
 
 ---
 
-**Resonanzregel:** Gruppenzugehörigkeit ist systemisch invariant.  
-Jedes Element — ob explizit benannt oder implizit wirkend — ist Teil des Resonanzfeldes.
-
----
-
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
 
 ---

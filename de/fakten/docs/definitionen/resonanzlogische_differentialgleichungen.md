@@ -40,11 +40,6 @@ folgenden Axiomen der RFT auf
 - **Axiom 7 (Invarianz):** Die Kopplungsstruktur ist
   skalierungsinvariant → die rDGL gilt auf allen Zeitskalen
 
-Zusätzlich gilt die interpretative Erweiterung E2
-(Resonanz-Inklusion, siehe axiomatische Grundlegung §5.2):
-Alle Systemanteile — explizit und implizit — sind durch
-Resonanzkopplung verschränkt.
-
 ---
 
 ## 3. Allgemeine Form der rDGL

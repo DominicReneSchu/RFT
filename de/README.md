@@ -107,9 +107,8 @@ präzise und empirisch testbar sind:
 | A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 |
 | A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) |
 
-Zusätzlich gibt es zwei interpretative Erweiterungen:
+Zusätzlich gibt es eine interpretative Erweiterung:
 - **E1 (Beobachter als Resonator):** Folgt aus A1, A3, A6
-- **E2 (Resonanz-Inklusion):** Gruppenzugehörigkeit ist systemisch invariant
 
 Vollständige Formalisierung: [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md)
 
@@ -180,15 +179,9 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 | # | Konzept | Beschreibung |
 |---|---------|-------------|
-| 0 | [Resonanzlogische Software](fakten/konzepte/software/resonanzlogische_software.md) | Systemfeld statt Funktionsstruktur |
-| 1 | [ResoOS](fakten/konzepte/ResoOS/resoOS.md) | Resonanzbasiertes Betriebssystem |
-| 2 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
-| 3 | [ResoChess](fakten/konzepte/ResoChess/reso_chess.md) | Resonanzlogische KI |
-| 4 | [Resonanzgenerator](fakten/konzepte/resonanzgenerator/README.md) | Energiegewinnung |
-| 5 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
-| 6 | [Kraftfeldgenerator](fakten/konzepte/kraftfeldgenerator/README.md) | Feldtechnologie |
-| 7 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
-| 8 | [Wetter-Warnsystem](fakten/konzepte/wetter_warnsystem/wetter_warnsystem.md) | Frühwarnung |
+| 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
+| 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
+| 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
 
 ---
 
