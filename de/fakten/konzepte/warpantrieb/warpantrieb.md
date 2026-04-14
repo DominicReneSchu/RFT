@@ -215,8 +215,8 @@ Seiten (θ=π/2): h ≈ 0 → neutral
 
 ```
 HINTEN                 SCHIFF              VORN
-┌────────────┐   ┌──────────────┐   ┌────────────┐
-│ Δφ = π/2   │   │              │   │ Δφ = 0     │
+┌─────────────┐   ┌──────────────┐   ┌────────────┐
+│ Δφ = π/2    │   │              │   │ Δφ = 0     │
 │ ε₂ dominiert│   │  Lokal flach │   │ ε₁ dominiert│
 │ Slow Roll  │   │  Kräftefrei  │   │ Oszillier. │
 │ w = −0.024 │   │  v_lokal = 0 │   │ w = +0.034 │
@@ -358,7 +358,7 @@ python warp_3d.py        # → figures/ (4 Plots, 3D-Warp-Blase)
 5. Starobinsky, A. (1980). Isotropic cosmological model. PLB, 91(1).
 6. Hurricane, O.A. et al. (2024). Ignition at NIF. PRL.
 7. Schu, D.-R. (2025/2026): Resonanzfeldtheorie.
-   https://github.com/DominicReneSchu/public
+   https://github.com/DominicReneSchu/RFT
 
 ---
 
