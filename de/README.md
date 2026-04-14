@@ -155,10 +155,9 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 |---|----------|-------------|
 | 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
 | 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | Vereinheitlichte Definition, ε = η Identität |
-| 3 | [RFT-Übersicht und Kopplungsoperator](fakten/docs/definitionen/kopplungsoperator.md) | Gesamtübersicht der Theorie |
-| 4 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
-| 5 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
-| 6 | [Resonanzlogische DGL](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md) | Klassische DGLs als Projektionen der rDGL |
+| 3 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
+| 4 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
+| 5 | [Resonanzlogische DGL](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md) | Klassische DGLs als Projektionen der rDGL |
 
 ## Mathematik und Physik
 
