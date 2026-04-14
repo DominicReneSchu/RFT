@@ -302,7 +302,7 @@ die der Energiekugel-Geometrie eine kosmologische Skala gibt:
 - [Axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md)
 - [Kopplungseffizienz ε](../definitionen/kopplungseffizienz.md)
 - [Energierichtung in realen Systemen](energierichtung.md)
-- [Warpantrieb — Zwei-Feld-Modell](../konzepte/warpantrieb/warpantrieb.md)
+- [Warpantrieb — Zwei-Feld-Modell](../../konzepte/warpantrieb/warpantrieb.md)
 
 ---
 
