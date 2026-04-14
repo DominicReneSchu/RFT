@@ -454,7 +454,7 @@ $$
   Oszillatoren, [Doppelpendel](../mathematik/doppelpendel.md)
 - **Biophysik:** Neuronale Synchronisation, Proteinfaltung
 - **Informationstheorie:** Resonanzbasierte Kanalkapazität
-- **Analytische Mathematik:** [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
+- **Analytische Mathematik:** [Resonanzintegrale](../mathematik/resonanzintegrale.md)
 
 ---
 
