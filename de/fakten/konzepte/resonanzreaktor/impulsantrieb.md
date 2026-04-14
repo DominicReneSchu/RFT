@@ -303,36 +303,36 @@ wiederverwendbar. 170 Gramm Pu-239 für Erde↔Mars↔Erde.
 
 ```
     ┌─────────────────────────────────────────────────┐
-    │                 RESONANZ-SHUTTLE                 │
+    │                 RESONANZ-SHUTTLE                │
     │                                                 │
-    │  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
-    │  │  Crew-   │  │ Nutzlast │  │ Lebens-  │     │
-    │  │  modul   │  │  (Fracht)│  │ erhaltung│     │
-    │  └────┬─────┘  └────┬─────┘  └────┬─────┘     │
-    │       │              │              │           │
-    │  ┌────┴──────────────┴──────────────┴────┐     │
-    │  │        Schattenabschirmung             │     │
-    │  │    (Wolfram/Polyethylen, ~5 t)        │     │
-    │  └───────────────────┬───────────────────┘     │
+    │  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
+    │  │  Crew-   │  │ Nutzlast │  │ Lebens-  │       │
+    │  │  modul   │  │  (Fracht)│  │ erhaltung│       │
+    │  └────┬─────┘  └────┬─────┘  └────┬─────┘       │
+    │       │             │             │             │
+    │  ┌────┴─────────────┴─────────────┴────┐        │
+    │  │        Schattenabschirmung          │        │
+    │  │    (Wolfram/Polyethylen, ~5 t)      │        │
+    │  └───────────────────┬─────────────────┘        │
     │                      │                          │
-    │  ┌───────────────────┴───────────────────┐     │
-    │  │         Kompakter FEL                  │     │
-    │  │  (Inverse-Compton, 13 MeV, ~10 t)     │     │
-    │  │  Phasensteuerung (PLL/FPGA)           │     │
-    │  └───────────────────┬───────────────────┘     │
+    │  ┌───────────────────┴───────────────────┐      │
+    │  │         Kompakter FEL                 │      │
+    │  │  (Inverse-Compton, 13 MeV, ~10 t)     │      │
+    │  │  Phasensteuerung (PLL/FPGA)           │      │
+    │  └───────────────────┬───────────────────┘      │
     │                      │ γ-Strahl                 │
-    │  ┌───────────────────┴───────────────────┐     │
-    │  │     Spaltungskammer (Target)           │     │
-    │  │  Pu-239 / Am-241 (100 kg, ~0,005 m³)  │     │
-    │  │  Abgeschirmt, gekühlt                  │     │
-    │  └───────────────────┬───────────────────┘     │
+    │  ┌───────────────────┴───────────────────┐      │
+    │  │     Spaltungskammer (Target)          │      │
+    │  │  Pu-239 / Am-241 (100 kg, ~0,005 m³)  │      │
+    │  │  Abgeschirmt, gekühlt                 │      │
+    │  └───────────────────┬───────────────────┘      │
     │                      │ Spaltfragmente           │
-    │  ┌───────────────────┴───────────────────┐     │
-    │  │     Magnetische Düse                   │     │
-    │  │  Supraleitende Spulen (~5 t)           │     │
-    │  │  Kollimation: θ < 15°                  │     │
-    │  │  Schubvektor: steuerbar über B-Feld    │     │
-    │  └───────────────────┬───────────────────┘     │
+    │  ┌───────────────────┴───────────────────┐      │
+    │  │     Magnetische Düse                  │      │
+    │  │  Supraleitende Spulen (~5 t)          │      │
+    │  │  Kollimation: θ < 15°                 │      │
+    │  │  Schubvektor: steuerbar über B-Feld   │      │
+    │  └───────────────────┬───────────────────┘      │
     │                      │                          │
     │                      ▼ Schub                    │
     └─────────────────────────────────────────────────┘
