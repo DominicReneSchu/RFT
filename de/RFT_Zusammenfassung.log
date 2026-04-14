@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  1 MAR 2026 10:17
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  14 APR 2026 12:07
  restricted system commands enabled.
 **RFT_Zusammenfassung.tex
 (./RFT_Zusammenfassung.tex
@@ -1693,38 +1693,22 @@ rom aux file.>
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-Package rerunfilecheck Warning: File `RFT_Zusammenfassung.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RFT_Zusammenfassung.out':
-(rerunfilecheck)             Before: AC1FA72439EC38B6F210E4F18C8204A9;3970
-(rerunfilecheck)             After:  527E8555CE813AC18C88CDD0E6AC9423;4844.
+Package rerunfilecheck Info: File `RFT_Zusammenfassung.out' has not changed.
+(rerunfilecheck)             Checksum: 527E8555CE813AC18C88CDD0E6AC9423;4844.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31659 strings out of 470203
- 156561,1144653 words of node,token memory allocated
- 3537 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 434 kern, 1 penalty, 1 margin_
-kern, 4 glyph, 268 attribute, 56 glue_spec, 136 attribute_list, 3 write, 1 pdf_a
+ 31658 strings out of 470203
+ 156559,1144653 words of node,token memory allocated
+ 3501 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 428 kern, 1 penalty, 1 margin_
+kern, 4 glyph, 266 attribute, 56 glue_spec, 135 attribute_list, 3 write, 1 pdf_a
 ction nodes
-   avail lists: 1:3,2:3723,3:763,4:136,5:454,6:228,7:6845,8:42,9:7682,10:9,11:75
+   avail lists: 1:3,2:3798,3:794,4:147,5:440,6:232,7:6849,8:42,9:7730,10:9,11:75
 8
- 58968 multiletter control sequences out of 65536+600000
+ 58970 multiletter control sequences out of 65536+600000
  235 fonts using 19401759 bytes
  102i,12n,101p,1015b,867s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.4.3.4'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.4.3.3'
-
-
-warning  (pdf backend): unreferenced destination with name 'subsubsection.4.3.2'
-
 <C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/opentype/public/newtx/TeXGyre
 TermesX-Regular.otf>{C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /newtx/ntx-ot1-tlf.enc}<C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/openty
@@ -1740,9 +1724,9 @@ e1/public/newtx/txmiaX.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/newtx/txsys.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/newtx/ztmb.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/newtx/ztmr.pfb>
-Output written on RFT_Zusammenfassung.pdf (6 pages, 178907 bytes).
+Output written on RFT_Zusammenfassung.pdf (6 pages, 180397 bytes).
 
-PDF statistics: 250 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 131072)
- 192 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 255 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 131072)
+ 208 words of extra memory for PDF output out of 10000 (max. 100000000)
 
