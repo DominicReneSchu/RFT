@@ -294,6 +294,7 @@ def plot_summary(data: dict[str, Any]) -> None:
 # ============================================================
 
 def main() -> None:
+    print("=" * 60)
     print("PLOT-ERSTELLUNG aus gespeicherten MC-Ergebnissen")
     print("Keine neue Simulation nötig.")
     print("=" * 60)
