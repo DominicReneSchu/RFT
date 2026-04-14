@@ -106,11 +106,11 @@ wobei α ein Hebelfaktor (typisch 1.5–4.0) und η(t) Rauschen ist. Die Eigenfr
 **Für Portfolio-Diversifikation** ist das äquivalent zu einem linear abhängigen Gleichungssystem:
 
 ```
-┌         ┐   ┌    ┐     ┌                ┐
-│  1    0  │   │ x₁ │     │ b₁             │
-│          │ · │    │  =  │                │
-│  α    0  │   │ x₂ │     │ α · b₁ + η    │
-└         ┘   └    ┘     └                ┘
+┌          ┐   ┌    ┐      ┌                ┐
+│  1    0  │   │ x₁  │      │ b₁             │
+│          │ · │     │  =  │                │
+│  α    0  │   │ x₂  │     │ α · b₁ + η      │
+└          ┘   └     ┘     └                ┘
 ```
 
 Die Determinante ist Null. Kein Informationsgewinn durch Hinzufügen des Altcoins zum BTC-Portfolio.
@@ -440,9 +440,8 @@ Dieses Ergebnis betrifft zwei verschiedene Fragen:
 ## Referenzen
 
 - Schu, D.-R. (2025). *Resonanzfeldtheorie: Axiomatische Grundlage, Kopplungsoperator und mathematische Konsequenzen.*
-- Schu, D.-R. (2025). *Duales Resonanz-Geldsystem.*
 - Schu, D.-R. (2026). *Energiekugel und AC/DC-Zerlegung.* [GitHub](https://github.com/DominicReneSchu/public/blob/main/de/fakten/docs/mathematik/energiekugel.md)
-- Schu, D.-R. (2026). *ResoTrade V11 — Resonanzfeldtheoretische BTC-KI mit AC/DC-Zerlegung.* (Systemdokumentation)
+- Schu, D.-R. (2026). *ResoTrade V15 — Resonanzfeldtheoretische BTC-KI mit AC/DC-Zerlegung.* (Systemdokumentation)
 
 ---
 
