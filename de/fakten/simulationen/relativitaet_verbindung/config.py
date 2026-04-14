@@ -16,6 +16,8 @@ Axiom-Bezug:
     - A4: Kopplungsparameter (alpha, kappa, g)
 """
 
+from __future__ import annotations
+
 # Modellparameter (Standardwerte)
 MODEL_PARAMS = {
     "m": 1.0,           # Masse des skalaren Felds

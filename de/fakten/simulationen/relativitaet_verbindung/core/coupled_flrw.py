@@ -14,20 +14,24 @@ Zentrale Erweiterung gegenueber Standard-Scalar-Tensor-Theorie:
 Abhaengigkeiten: numpy, scipy
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 from scipy.integrate import solve_ivp
 
 
 def coupled_flrw_sim(
-    eps1_0=0.3, eps2_0=0.3,
-    epsdot1_0=0.0, epsdot2_0=0.0,
-    delta_phi_0=0.0,
-    a0=1.0, adot0=0.3,
-    m=1.0, lmbda=0.1, alpha=0.5, kappa=1.0, g=0.2,
-    t_span=(0, 120), t_eval=None,
-    n_eval=12000,
-    rtol=1e-10, atol=1e-12,
-):
+    eps1_0: float = 0.3, eps2_0: float = 0.3,
+    epsdot1_0: float = 0.0, epsdot2_0: float = 0.0,
+    delta_phi_0: float = 0.0,
+    a0: float = 1.0, adot0: float = 0.3,
+    m: float = 1.0, lmbda: float = 0.1, alpha: float = 0.5, kappa: float = 1.0, g: float = 0.2,
+    t_span: tuple[float, float] = (0, 120), t_eval: np.ndarray | None = None,
+    n_eval: int = 12000,
+    rtol: float = 1e-10, atol: float = 1e-12,
+) -> tuple[Any, dict[str, Any]]:
     """Gekoppelte FLRW-Simulation mit zwei skalaren Resonanzfeldern.
 
     Parameters
@@ -64,13 +68,13 @@ def coupled_flrw_sim(
         epsdot2_0 = -eps2_0 * omega_0 * np.sin(delta_phi_0)
         eps2_0 = eps2_0 * np.cos(delta_phi_0)
 
-    def V(eps):
+    def V(eps: float | np.ndarray) -> float | np.ndarray:
         return 0.5 * m**2 * eps**2 + 0.25 * lmbda * eps**4
 
-    def Vp(eps):
+    def Vp(eps: float | np.ndarray) -> float | np.ndarray:
         return m**2 * eps + lmbda * eps**3
 
-    def rhs(t, y):
+    def rhs(t: float, y: np.ndarray) -> list[float]:
         eps1, epsdot1, eps2, epsdot2, a, adot = y
         H = adot / a
         rho1 = 0.5 * epsdot1**2 + V(eps1)
@@ -150,7 +154,7 @@ def coupled_flrw_sim(
     return sol, results
 
 
-def scan_phase_coupling(delta_phi_values=None, t_span=(0, 120), **kwargs):
+def scan_phase_coupling(delta_phi_values: np.ndarray | None = None, t_span: tuple[float, float] = (0, 120), **kwargs: Any) -> dict[str, np.ndarray]:
     """Phasenscan ueber delta_phi_0.
 
     Parameters

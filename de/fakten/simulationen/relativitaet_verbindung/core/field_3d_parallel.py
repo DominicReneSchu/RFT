@@ -9,12 +9,16 @@ Voraussetzung: pip install numba
 Abhängigkeiten: numpy, numba
 """
 
+from __future__ import annotations
+
+from collections.abc import Callable
+
 import numpy as np
 from numba import njit, prange
 
 
 @njit(parallel=True)
-def step_field_3d_parallel(eps, eps_old, m, lmbda, dt, dx):
+def step_field_3d_parallel(eps: np.ndarray, eps_old: np.ndarray, m: float, lmbda: float, dt: float, dx: float) -> np.ndarray:
     """Ein Zeitschritt der 3D-Wellengleichung (parallelisiert).
 
     Parameters
@@ -50,9 +54,9 @@ def step_field_3d_parallel(eps, eps_old, m, lmbda, dt, dx):
 
 
 def field_3d_sim_parallel(
-    N=64, L=10.0, dt=0.004, steps=300, m=1.0, lmbda=0.2,
-    initial_bump_size=5, bump_value=1.0, callback=None
-):
+    N: int = 64, L: float = 10.0, dt: float = 0.004, steps: int = 300, m: float = 1.0, lmbda: float = 0.2,
+    initial_bump_size: int = 5, bump_value: float = 1.0, callback: Callable[[np.ndarray, int], None] | None = None
+) -> np.ndarray:
     """3D-Simulation mit Numba-Parallelisierung.
 
     Parameter und Rückgabe identisch zu field_3d.field_3d_sim.
