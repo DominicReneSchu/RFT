@@ -26,15 +26,11 @@ Finanzmärkte (ResoTrade, +26.3% vs HODL, Live seit Feb. 2026).
 - [Inhalt](#inhalt)
     - [Axiomatik und Definitionen](#axiomatik-und-definitionen)
     - [Mathematik und Physik](#mathematik-und-physik)
-    - [Philosophie](#philosophie)
-    - [Gesellschaft](#gesellschaft)
     - [Konzepte](#konzepte)
     - [Simulationen](#simulationen)
     - [Empirische Nachweise](#empirische-nachweise)
 - [Vision](#vision)
 - [Lizenz](#lizenz)
-- [Kontakt](#kontakt)
-- [Repository klonen](#repository-klonen)
 
 ---
 
