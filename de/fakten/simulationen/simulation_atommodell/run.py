@@ -7,6 +7,10 @@ Abhängigkeiten: numpy, matplotlib, scipy
 Ausführung: python run.py
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -18,7 +22,7 @@ from parameters_and_functions import (
 from animation import update, init
 
 
-def main():
+def main() -> None:
     t = np.linspace(0, 50, 4000)
     m = 1.0
 
@@ -72,7 +76,7 @@ def main():
                      color='lightgreen', hovercolor='limegreen')
 
     # --- Initiale Lösung ---
-    def current_omegas():
+    def current_omegas() -> tuple[float, float]:
         return 2 * np.pi * f1_slider.val, 2 * np.pi * f2_slider.val
 
     t_num, x1_num, v1_num, x2_num, v2_num = \
@@ -160,7 +164,7 @@ def main():
     resonance_history = []
 
     # --- Animation-Funktionen ---
-    def wrapped_init():
+    def wrapped_init() -> tuple[Any, ...]:
         resonance_history.clear()
         return init(
             line1, line2, line1_path, line2_path,
@@ -169,7 +173,7 @@ def main():
             eps_line, e_res1_line, e_res2_line, resdiv_line
         )
 
-    def recalc_interpolators():
+    def recalc_interpolators() -> None:
         nonlocal x1_interp, v1_interp, x2_interp, v2_interp
         nonlocal t_num, x1_num, v1_num, x2_num, v2_num
         params['omega1'] = 2 * np.pi * f1_slider.val
@@ -199,7 +203,7 @@ def main():
             make_interpolators(t_num, x1_num, v1_num, x2_num, v2_num)
         resonance_history.clear()
 
-    def update_wrapper(frame, *args):
+    def update_wrapper(frame: int, *args: Any) -> tuple[Any, ...]:
         return update(
             frame, *args,
             t, x1_interp, v1_interp, x2_interp, v2_interp,
@@ -224,10 +228,10 @@ def main():
     )
 
     # --- Callbacks ---
-    def update_params(val):
+    def update_params(val: float) -> None:
         recalc_interpolators()
 
-    def update_speed(val):
+    def update_speed(val: float) -> None:
         ani.event_source.interval = 1000 / speed_slider.val
 
     f1_slider.on_changed(update_params)
@@ -236,7 +240,7 @@ def main():
     tol_slider.on_changed(lambda val: None)
     speed_slider.on_changed(update_speed)
 
-    def on_export(event):
+    def on_export(event: Any) -> None:
         import csv
         filename = "resonanzzeiten.csv"
         with open(filename, 'w', newline='') as f:
@@ -248,7 +252,7 @@ def main():
 
     btn_export.on_clicked(on_export)
 
-    def on_export_gif(event):
+    def on_export_gif(event: Any) -> None:
         btn_gif.label.set_text("Export läuft...")
         fig.canvas.draw()
         gif_frames = 500

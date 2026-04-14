@@ -8,13 +8,15 @@ und in Jupyter Notebook.
 Abhängigkeiten: numpy, matplotlib
 """
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, RadioButtons
 from fractions import Fraction
 
 
-def epsilon_model(delta_phi):
+def epsilon_model(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """Kopplungseffizienz als Funktion der Phasendifferenz (Axiom 4).
 
     Standardmodell: ε(Δφ) = cos²(Δφ/2)
@@ -27,7 +29,7 @@ def epsilon_model(delta_phi):
     return np.cos(delta_phi / 2) ** 2
 
 
-def check_resonance(f1, f2, tolerance=0.01):
+def check_resonance(f1: float, f2: float, tolerance: float = 0.01) -> tuple[bool, int, int]:
     """Prüfe Resonanzbedingung (Axiom 3).
 
     Resonanz tritt auf, wenn f1/f2 ≈ n/m mit n, m ∈ ℤ⁺.
@@ -40,7 +42,7 @@ def check_resonance(f1, f2, tolerance=0.01):
     return is_resonant, n, m
 
 
-def energy_direction(psi, window_short=50, window_long=200):
+def energy_direction(psi: np.ndarray, window_short: int = 50, window_long: int = 200) -> np.ndarray:
     """Berechne Energierichtungsvektor (Axiom 5).
 
     energy_dir = e_short - e_long
@@ -57,7 +59,7 @@ class ResonanzfeldSimulation:
 
     H = 6.626e-34  # Plancksches Wirkungsquantum
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.t_max = 10
         self.n_points = 1000
         self.coupling_type = 'linear'
@@ -107,11 +109,11 @@ class ResonanzfeldSimulation:
         # Erster Plot
         self._update(None)
 
-    def _set_coupling(self, label):
+    def _set_coupling(self, label: str) -> None:
         self.coupling_type = label
         self._update(None)
 
-    def _update(self, _val):
+    def _update(self, _val: float | None) -> None:
         f1 = self.sl_f1.val
         f2 = self.sl_f2.val
         delta_phi = self.sl_dp.val
@@ -199,7 +201,7 @@ class ResonanzfeldSimulation:
 
         self.fig.canvas.draw_idle()
 
-    def show(self):
+    def show(self) -> None:
         plt.show()
 
 
