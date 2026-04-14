@@ -458,8 +458,8 @@ $$
 - [resonanzlogik_beispiel.py — Lauffähiges Beispiel](resonanzlogik_beispiel.py)
 - [ResoTrade — Empirischer Nachweis](../../empirisch/resotrade_trading_ki.md)
 - [Altcoin-Analyse — Falsifikationstest](../../empirisch/resotrade_altcoin_analyse.md)
-- [Kopplungseffizienz ε — Vereinheitlichte Definition](../../docs/mathematik/kopplungseffizienz.md)
-- [Axiomatische Grundlegung](../../docs/mathematik/axiomatische_grundlegung.md)
+- [Kopplungseffizienz ε — Vereinheitlichte Definition](../../docs/definitionen/kopplungseffizienz.md)
+- [Axiomatische Grundlegung](../../docs/definitionen/axiomatische_grundlegung.md)
 
 ---
 

@@ -74,3 +74,16 @@ desktop.ini
 # ========================
 .mypy_cache/
 .cache/
+
+# ========================
+# 📄 LaTeX-Artefakte
+# ========================
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls

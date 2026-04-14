@@ -27,7 +27,7 @@ oder nicht-trivialen Suchverfahren wie in dieser Resonanzanalyse.
 
 Diese Simulation validiert die Vorhersagen von Axiom 3
 (Resonanzbedingung) der
-[Resonanzfeldtheorie](../../docs/mathematik/axiomatische_grundlegung.md):
+[Resonanzfeldtheorie](../../docs/definitionen/axiomatische_grundlegung.md):
 Wenn Resonanzstellen physikalisch real sind, müssen die
 beobachteten Überschüsse signifikant über dem Hintergrund liegen
 — auch unter konservativer Simulation der Nullhypothese.

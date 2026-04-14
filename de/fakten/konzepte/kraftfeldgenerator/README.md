@@ -72,7 +72,7 @@ Lokale Barriere um empfindliche Objekte
 |-------|-------------|
 | [kraftfeldgenerator.md](kraftfeldgenerator.md) | Physik, Ergebnisse, Anwendungen |
 | [kraftfeldgenerator.py](kraftfeldgenerator.py) | Simulation: Transducer-Array, Phasenscan, Barriere |
-| [wand_animation_ultimate.py](wand_animation_ultimate.py) | Visualisierung: 2D-Feldanimation (Legacy) |
+| ~~wand_animation_ultimate.py~~ | Visualisierung: 2D-Feldanimation (Legacy, entfernt) |
 
 ---
 

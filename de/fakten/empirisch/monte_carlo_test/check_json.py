@@ -1,5 +1,8 @@
 import json
-with open("publication_results/publication_results.json", 'r') as f:
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(SCRIPT_DIR, "publication_results", "publication_results.json"), 'r') as f:
     data = json.load(f)
 print("Top-Level Keys:", list(data.keys()))
 for key in data.keys():

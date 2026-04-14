@@ -11,10 +11,15 @@ def get_weather_data(latitude, longitude, api_key):
     
     Rückgabe:
         dict: Wetterdaten (Temperatur, Windgeschwindigkeit, Luftfeuchtigkeit) als Dictionary.
+              None bei Fehlern.
     """
     url = f"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&APPID={api_key}&units=metric"
     
-    response = requests.get(url)
+    try:
+        response = requests.get(url, timeout=10)
+    except requests.RequestException as e:
+        print(f"Netzwerkfehler bei der API-Anfrage: {e}")
+        return None
     
     if response.status_code == 200:
         data = response.json()
