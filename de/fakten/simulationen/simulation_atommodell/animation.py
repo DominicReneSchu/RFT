@@ -4,10 +4,15 @@ Animation und Visualisierung der gekoppelten Oszillatoren.
 Abhängigkeiten: numpy
 """
 
+from __future__ import annotations
+
+from collections.abc import Callable
+from typing import Any
+
 import numpy as np
 
 
-def smooth_max(arr, window):
+def smooth_max(arr: float | np.ndarray, window: int) -> float | np.ndarray:
     """Maximum der letzten window Werte. Funktioniert auch für Skalare."""
     arr = np.asarray(arr)
     if arr.ndim == 0:
@@ -18,11 +23,11 @@ def smooth_max(arr, window):
 
 
 def init(
-    line1, line2, line1_path, line2_path,
-    sinus_line1, sinus_line2, resonance_line,
-    kin_line, pot_line, coup_line, tot_line,
-    eps_line, e_res1_line, e_res2_line, resdiv_line
-):
+    line1: Any, line2: Any, line1_path: Any, line2_path: Any,
+    sinus_line1: Any, sinus_line2: Any, resonance_line: Any,
+    kin_line: Any, pot_line: Any, coup_line: Any, tot_line: Any,
+    eps_line: Any, e_res1_line: Any, e_res2_line: Any, resdiv_line: Any,
+) -> tuple[Any, ...]:
     """Setze alle Plotelemente auf Startzustand."""
     for line in [
         line1, line2, line1_path, line2_path,
@@ -40,16 +45,20 @@ def init(
 
 
 def update(
-    frame,
-    line1, line2, line1_path, line2_path,
-    sinus_line1, sinus_line2, resonance_line,
-    kin_line, pot_line, coup_line, tot_line,
-    eps_line, e_res1_line, e_res2_line, resdiv_line,
-    energy_ax, coupling_ax, resdiv_ax,
-    t, x1_interp, v1_interp, x2_interp, v2_interp,
-    ax_traj, ax_sin, resonance_condition_func,
-    params, resonance_history
-):
+    frame: int,
+    line1: Any, line2: Any, line1_path: Any, line2_path: Any,
+    sinus_line1: Any, sinus_line2: Any, resonance_line: Any,
+    kin_line: Any, pot_line: Any, coup_line: Any, tot_line: Any,
+    eps_line: Any, e_res1_line: Any, e_res2_line: Any, resdiv_line: Any,
+    energy_ax: Any, coupling_ax: Any, resdiv_ax: Any,
+    t: np.ndarray, x1_interp: Callable[[np.ndarray], np.ndarray],
+    v1_interp: Callable[[np.ndarray], np.ndarray],
+    x2_interp: Callable[[np.ndarray], np.ndarray],
+    v2_interp: Callable[[np.ndarray], np.ndarray],
+    ax_traj: Any, ax_sin: Any,
+    resonance_condition_func: Callable[..., bool | np.ndarray],
+    params: dict[str, Any], resonance_history: list[float],
+) -> tuple[Any, ...]:
     omega1 = params['omega1']
     omega2 = params['omega2']
     alpha = params['alpha']
