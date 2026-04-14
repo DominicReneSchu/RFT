@@ -1,4 +1,4 @@
-# Resonanzfeldtheorie (Version 3.1)
+# Resonanzfeldtheorie (Version 4.0)
 
 [![Lizenz: Schu-Lizenz 1.4](https://img.shields.io/badge/Lizenz-Schu--Lizenz%201.4-blue.svg)](lizenz/schu-lizenz_v1.4.md)
 
