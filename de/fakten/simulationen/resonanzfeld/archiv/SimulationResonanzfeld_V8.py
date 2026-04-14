@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
@@ -7,7 +11,7 @@ from matplotlib.widgets import Button
 g = 9.81  # Erdbeschleunigung
 
 # Differentialgleichungen für das Doppelpendel
-def derivatives(t, state, l1, l2, m1, m2):
+def derivatives(t: float, state: np.ndarray, l1: float, l2: float, m1: float, m2: float) -> list[float]:
     theta1, z1, theta2, z2 = state
     delta_theta = theta2 - theta1
     den1 = (m1 + m2) * l1 - m2 * l1 * np.cos(delta_theta) ** 2
@@ -37,7 +41,7 @@ line1, = ax.plot([], [], lw=2, label='Pendulum 1')
 line2, = ax.plot([], [], lw=2, label='Pendulum 2')
 
 # Berechne die Positionen der Pendel
-def calculate_positions(l1, l2, m1, m2, theta1_init, theta2_init, z1_init, z2_init, t_span, t_eval):
+def calculate_positions(l1: float, l2: float, m1: float, m2: float, theta1_init: float, theta2_init: float, z1_init: float, z2_init: float, t_span: tuple[float, float], t_eval: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     state_init = [theta1_init, z1_init, theta2_init, z2_init]
     sol = solve_ivp(derivatives, t_span, state_init, args=(l1, l2, m1, m2), t_eval=t_eval)
     x1 = l1 * np.sin(sol.y[0])
@@ -47,7 +51,7 @@ def calculate_positions(l1, l2, m1, m2, theta1_init, theta2_init, z1_init, z2_in
     return x1, y1, x2, y2
 
 # Funktion zur Aktualisierung der Animation
-def update_plot(l1, l2, m1, m2, theta1_init, theta2_init, z1_init, z2_init):
+def update_plot(l1: float, l2: float, m1: float, m2: float, theta1_init: float, theta2_init: float, z1_init: float, z2_init: float) -> None:
     t_span = (0, 10)
     t_eval = np.linspace(0, 10, 200)
     x1, y1, x2, y2 = calculate_positions(l1, l2, m1, m2, theta1_init, theta2_init, z1_init, z2_init, t_span, t_eval)
@@ -56,7 +60,7 @@ def update_plot(l1, l2, m1, m2, theta1_init, theta2_init, z1_init, z2_init):
     plt.draw()
 
 # Funktion, die beim Drücken des Buttons aufgerufen wird
-def on_button_click(event):
+def on_button_click(event: Any) -> None:
     try:
         # Eingabewerte aus den Feldern
         l1 = float(entry_l1.text)

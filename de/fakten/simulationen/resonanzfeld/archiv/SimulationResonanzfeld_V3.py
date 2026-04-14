@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
@@ -16,7 +18,7 @@ omega1_0 = 0.0  # Anfangsgeschwindigkeit des ersten Pendels
 omega2_0 = 0.0  # Anfangsgeschwindigkeit des zweiten Pendels
 
 # Differentialgleichung für das Doppelpendel
-def equations(Y, t, m1, m2, L1, L2, g):
+def equations(Y: np.ndarray, t: float, m1: float, m2: float, L1: float, L2: float, g: float) -> list[float]:
     theta1, theta2, omega1, omega2 = Y
     delta_theta = theta2 - theta1
     
