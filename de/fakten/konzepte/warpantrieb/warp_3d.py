@@ -17,6 +17,8 @@
 #   f_RFT(r_s, θ) = f(r_s) · [ε(Δφ_vorn)·cos²(θ/2) − ε(Δφ_hinten)·sin²(θ/2)]
 #   → Asymmetrische Blase: Kontraktion vorn, Expansion hinten
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
@@ -47,7 +49,7 @@ RHO_FUSION = 4.30e16  # J/m³ (12×100MW, G=1.5)
 R_CURVATURE_SCALE = 8 * PI * G / C ** 2
 
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2)"""
     return np.cos(delta_phi / 2.0) ** 2
 
@@ -56,7 +58,7 @@ def coupling_efficiency(delta_phi):
 # 2. Alcubierre-Formfunktion
 # ============================================================
 
-def alcubierre_f(r_s, R=R_BUBBLE, sigma=SIGMA_WALL):
+def alcubierre_f(r_s: np.ndarray, R: float = R_BUBBLE, sigma: float = SIGMA_WALL) -> np.ndarray:
     """
     Alcubierre-Formfunktion f(r_s).
     f ≈ 1 innerhalb der Blase, f ≈ 0 außerhalb.
@@ -69,7 +71,7 @@ def alcubierre_f(r_s, R=R_BUBBLE, sigma=SIGMA_WALL):
     return (np.tanh(sigma * (r_s + R)) - np.tanh(sigma * (r_s - R))) / denom
 
 
-def alcubierre_df_dr(r_s, R=R_BUBBLE, sigma=SIGMA_WALL):
+def alcubierre_df_dr(r_s: np.ndarray, R: float = R_BUBBLE, sigma: float = SIGMA_WALL) -> np.ndarray:
     """Ableitung df/dr_s für Krümmungsberechnung."""
     sig_R = sigma * R
     denom = 2.0 * np.tanh(sig_R)
@@ -97,8 +99,8 @@ class WarpBubble3D:
       - w(θ) aus Zwei-Feld-Modell (interpoliert)
     """
 
-    def __init__(self, R=R_BUBBLE, sigma=SIGMA_WALL, v_s=V_SHIP,
-                 rho_scale=RHO_FUSION):
+    def __init__(self, R: float = R_BUBBLE, sigma: float = SIGMA_WALL,
+                 v_s: float = V_SHIP, rho_scale: float = RHO_FUSION) -> None:
         self.R = R
         self.sigma = sigma
         self.v_s = v_s
@@ -114,7 +116,7 @@ class WarpBubble3D:
             [+0.034, +0.034, +0.033, +0.030, +0.006, +0.019, -0.024,
              +0.023, -0.030, -0.055, -0.049, +0.026, -0.014])
 
-    def delta_phi_of_theta(self, theta):
+    def delta_phi_of_theta(self, theta: float | np.ndarray) -> float | np.ndarray:
         """
         Phasenwinkel als Funktion des Polarwinkels θ.
         θ = 0 (Flugrichtung, vorn) → Δφ = 0
@@ -123,12 +125,13 @@ class WarpBubble3D:
         """
         return (PI / 2.0) * np.sin(theta / 2.0) ** 2
 
-    def w_of_theta(self, theta):
+    def w_of_theta(self, theta: float | np.ndarray) -> float | np.ndarray:
         """Interpolierte Zustandsgleichung w(θ)."""
         dphi = self.delta_phi_of_theta(theta)
         return np.interp(dphi, self.dphi_table, self.w_table)
 
-    def energy_density(self, x, y, z):
+    def energy_density(self, x: float | np.ndarray, y: float | np.ndarray,
+                       z: float | np.ndarray) -> float | np.ndarray:
         """
         Energiedichte ρ(x,y,z) der Warp-Blase.
 
@@ -155,16 +158,20 @@ class WarpBubble3D:
 
         return rho
 
-    def equation_of_state(self, x, y, z):
+    def equation_of_state(self, x: float | np.ndarray, y: float | np.ndarray,
+                          z: float | np.ndarray) -> float | np.ndarray:
         """w(x,y,z) — räumlich aufgelöste Zustandsgleichung."""
         theta = np.arctan2(np.sqrt(y ** 2 + z ** 2), x)
         return self.w_of_theta(theta)
 
-    def ricci_scalar(self, x, y, z):
+    def ricci_scalar(self, x: float | np.ndarray, y: float | np.ndarray,
+                     z: float | np.ndarray) -> float | np.ndarray:
         """Ricci-Skalar R(x,y,z) = 8πG/c² · ρ(x,y,z)."""
         return R_CURVATURE_SCALE * self.energy_density(x, y, z)
 
-    def metric_perturbation(self, x, y, z):
+    def metric_perturbation(self, x: float | np.ndarray,
+                            y: float | np.ndarray,
+                            z: float | np.ndarray) -> float | np.ndarray:
         """
         Metrikstörung h(x,y,z).
         h ~ v_s · f(r_s) · cos(θ)  (führende Ordnung)
@@ -178,7 +185,7 @@ class WarpBubble3D:
         # Asymmetrisch: vorn positiv, hinten negativ
         return self.v_s * f * np.cos(theta) * eps
 
-    def info(self):
+    def info(self) -> None:
         print("=" * 60)
         print("WARP-BLASE 3D: RFT-gesteuerte Alcubierre-Geometrie")
         print("=" * 60)
@@ -198,11 +205,11 @@ class WarpBubble3D:
 # 4. Plots
 # ============================================================
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_bubble_slices(bubble, out):
+def plot_bubble_slices(bubble: WarpBubble3D, out: str) -> None:
     """Schnitte durch die 3D-Blase: xy-Ebene (z=0)."""
     L = 2.5 * bubble.R
     N = 300
@@ -295,7 +302,7 @@ def plot_bubble_slices(bubble, out):
     print("  → warp_3d_schnitte.png")
 
 
-def plot_bubble_profiles(bubble, out):
+def plot_bubble_profiles(bubble: WarpBubble3D, out: str) -> None:
     """Radiale und Winkel-Profile der Blase."""
     fig, axes = plt.subplots(2, 3, figsize=(18, 10))
 
@@ -401,7 +408,7 @@ def plot_bubble_profiles(bubble, out):
     print("  → warp_3d_profile.png")
 
 
-def plot_bubble_3d_surface(bubble, out):
+def plot_bubble_3d_surface(bubble: WarpBubble3D, out: str) -> None:
     """3D-Visualisierung der Blasenoberfläche."""
     fig = plt.figure(figsize=(16, 7))
 
@@ -460,7 +467,7 @@ def plot_bubble_3d_surface(bubble, out):
     print("  → warp_3d_oberflaeche.png")
 
 
-def plot_energy_budget(bubble, out):
+def plot_energy_budget(bubble: WarpBubble3D, out: str) -> None:
     """Gesamtenergie der Warp-Blase (integriert)."""
     # Numerische Integration über die Blase
     N = 100
@@ -538,7 +545,7 @@ def plot_energy_budget(bubble, out):
 # 5. Hauptprogramm
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("WARP-BLASE 3D: RFT-gesteuerte Alcubierre-Geometrie")
     print("E = π · ε(Δφ) · ℏ · f, κ = 1")
