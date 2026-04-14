@@ -1,418 +1,362 @@
-# Axiomatische Grundlegung der Resonanzfeldtheorie
+# Kopplungsoperator ε
 
 *Dominic-René Schu, 2025/2026*
 
 ---
 
+## Zusammenfassung
+
+Die Resonanzfeldtheorie (RFT) beschreibt fundamentale Prozesse in
+Natur, Technik und Informationssystemen als Kopplungs- und
+Resonanzphänomene in Schwingungsfeldern. Dieses Paper gibt eine
+Gesamtübersicht der Theorie, fasst das axiomatische Fundament
+zusammen und führt die Kopplungseffizienz ε als zentrale Größe ein.
+
+Die Identität ε(Δφ) = η(Δφ) = cos²(Δφ/2) wurde in vier
+unabhängigen Domänen empirisch validiert: Teilchenphysik
+(1.500.000 Monte-Carlo-Simulationen), Kosmologie
+(1.530 FLRW-Simulationen), Nukleartechnologie
+(Resonanzreaktor, κ = 1) und Finanzmärkte
+(ResoTrade, +26.3% vs HODL, Live seit Februar 2026).
+
+Für die vollständige formale Axiomatik siehe die
+[axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md).
+
+---
+
 ## 1. Einleitung
 
-Die Resonanzfeldtheorie (RFT) beschreibt fundamentale Prozesse in Natur, Technik
-und Informationssystemen als Kopplungs- und Resonanzphänomene in Schwingungsfeldern.
-
-Dieses Dokument legt das axiomatische Fundament der Theorie dar. Die Axiome sind
-so gewählt, dass sie:
-
-- **minimal** sind (kein Axiom folgt aus den übrigen),
-- **formal präzise** formuliert sind (jedes Axiom enthält eine mathematische Aussage),
-- **empirisch testbar** sind (jedes Axiom macht eine überprüfbare Vorhersage).
+Die Resonanzfeldtheorie postuliert, dass alle fundamentalen
+Prozesse auf Schwingung, Kopplung und Resonanz beruhen. Sie
+vereint Konzepte aus klassischer Schwingungslehre, Quantenphysik,
+Informationstheorie und Netzwerktheorie in einem axiomatischen
+Rahmenwerk.
 
 ---
 
-## 2. Symboltabelle
+## 2. Axiomensystem (Kurzfassung)
 
-### 2.1 Energie und Schwingung
-
-| Symbol | Bedeutung |
-|:------:|:----------|
-| h | Plancksches Wirkungsquantum |
-| f | Frequenz |
-| ω | Kreisfrequenz, ω = 2πf |
-| k | Wellenzahl |
-| A | Amplitude |
-| φ | Phase |
-| ψ(x,t) | Schwingungsfunktion (Mode) |
-| Φ(x,t) | Gesamtfeldfunktion (Superposition aller Moden) |
-| E | Energie (Vektor im Resonanzfeld) |
-| E₀ | Charakteristische Energie (Normierung) |
-
-### 2.2 Kopplung und Struktur
-
-| Symbol | Bedeutung |
-|:------:|:----------|
-| ε(Δφ) | Kopplungseffizienz, Funktion der Phasendifferenz |
-| K_ij | Kopplungsstärke zwischen Moden i und j |
-| δ | Breite des Resonanzfensters |
-| m, n | Resonanzquantenzahlen (m, n ∈ ℤ⁺) |
-| Δφ | Phasendifferenz zwischen gekoppelten Moden |
-| G(f₁/f₂) | Gewichtungsfunktion des Resonanzfensters |
-
-### 2.3 Information und Ordnung
-
-| Symbol | Bedeutung |
-|:------:|:----------|
-| S | Entropie einer Resonanzkonfiguration |
-| MI(X,Y) | Mutual Information: H(X) + H(Y) − H(X,Y) |
-| PCI | Phase Coherence Index: |⟨exp(i(φ₁−φ₂))⟩| ∈ [0,1] |
-
-### 2.4 Symmetrie
-
-| Symbol | Bedeutung |
-|:------:|:----------|
-| G_sync | Gruppe synchroner Transformationen |
-| T | Element von G_sync: T(f_i, φ_i, t) = (λf_i, φ_i + φ₀, at + b) |
-| Λ | Frequenzskalierungsoperator |
-
----
-
-## 3. Axiomensystem
+Die RFT besteht aus 7 Kern-Axiomen. Jedes Axiom ist minimal,
+formal präzise und empirisch testbar. Die vollständige
+Formalisierung mit Beweisen und empirischen Tests findet sich
+in der [axiomatischen Grundlegung](../mathematik/axiomatische_grundlegung.md).
 
 ### Axiom 1 — Universelle Schwingung
 
-**Aussage:** Jede physikalische Entität besitzt mindestens eine periodische
-Schwingungsmode.
+Jede physikalische Entität besitzt mindestens eine periodische
+Schwingungsmode:
 
-**Formalisierung:**
-
-```
-(A1)    ψ(x, t) = A · cos(kx − ωt + φ)
-```
-
-**Testbare Vorhersage:** Jedes System lässt sich in periodische Komponenten
-zerlegen (Fourier-Zerlegung). In Finanzmärkten: Der Preis lässt sich in
-DC-Komponente (Trend) und AC-Komponente (handelbare Schwingung) zerlegen.
-
-**Physikalisches Beispiel:** Eigenschwingungen eines Mikrowellenresonators.
-
-**Empirischer Nachweis (ResoTrade):** Die AC/DC-Zerlegung des BTC-Preises
-erzeugt handelbares Signal: +26.1% vs. HODL über 4 Marktregime.
-
----
+$$
+\psi(x, t) = A \cdot \cos(kx - \omega t + \phi)
+$$
 
 ### Axiom 2 — Superposition
 
-**Aussage:** Schwingungsmoden überlagern sich linear in Feldern.
+Schwingungsmoden überlagern sich linear in Feldern:
 
-**Formalisierung:**
-
-```
-(A2)    Φ(x, t) = Σᵢ ψᵢ(x, t) = Σᵢ Aᵢ · cos(kᵢx − ωᵢt + φᵢ)
-```
-
-**Testbare Vorhersage:** Die Überlagerung mehrerer Moden erzeugt
-Interferenzmuster. In Finanzmärkten: Kurzfristige und langfristige
-Schwingungen überlagern sich im Preissignal.
-
-**Physikalisches Beispiel:** Interferenz zweier kohärenter Laserstrahlen.
-
----
+$$
+\Phi(x, t) = \sum_i \psi_i(x, t)
+$$
 
 ### Axiom 3 — Resonanzbedingung
 
-**Aussage:** Resonanz zwischen zwei Systemen tritt auf, wenn ihre Frequenzen
-in einem rationalen Verhältnis stehen, innerhalb eines Toleranzfensters δ.
+Resonanz tritt auf bei rationalen Frequenzverhältnissen innerhalb
+eines Toleranzfensters δ:
 
-**Formalisierung:**
-
-```
-(A3)    |f₁/f₂ − m/n| < δ,    m, n ∈ ℤ⁺
-
-        G(f₁/f₂) = exp(−(|f₁/f₂ − m/n| / δ)²)
-```
-
-G ist die Gewichtungsfunktion: maximal bei exakter Resonanz, abfallend
-mit der Verstimmung.
-
-**Testbare Vorhersage:** Systeme mit verschiedenen Eigenfrequenzen können
-resonant koppeln. Systeme mit identischen Eigenfrequenzen schwingen synchron —
-keine Obertöne, kein Informationsaustausch.
-
-**Empirischer Nachweis (ResoTrade):** BTC und Aktien (verschiedene
-Eigenfrequenzen) erzeugen Resonanz: S:F = 5.2:1. BTC und Altcoins
-(identische Eigenfrequenzen) erzeugen keine Resonanz: Draw-Rate 98.4%.
-
----
+$$
+|f_1/f_2 - m/n| < \delta, \quad m, n \in \mathbb{Z}^+
+$$
 
 ### Axiom 4 — Kopplungsenergie
 
-**Aussage:** Die effektive Energie einer resonanten Kopplung ist bestimmt
-durch Frequenz, Kopplungseffizienz und die zyklische Geometrie des
-Resonanzpfads.
+Die effektive Energie einer resonanten Kopplung:
 
-**Formalisierung:**
+$$
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+$$
 
-```
-(A4)    E_eff = π · ε(Δφ) · h · f
-
-        Bei Mehrmodenkopplung:
-        E_eff = π · ε(Δφ_ij) · h · ⟨f_ij⟩
-```
-
-Dabei ist:
-- ε(Δφ) die Kopplungseffizienz als Funktion der Phasendifferenz,
-  z.B. ε(Δφ) = cos²(Δφ/2)
-- π der geometrische Faktor aus der Integration über einen Halbzyklus
-  des Resonanzpfads (Herleitung: siehe §4.1)
-- h das Plancksche Wirkungsquantum
-- f die Frequenz der gekoppelten Mode
-
-**Herleitung von π:** Die Kopplung zwischen zwei Resonatoren erfolgt
-nicht instantan, sondern über einen Pfad im Phasenraum. Die Integration
-der Kopplungseffizienz über einen vollständigen Halbzyklus ergibt:
-
-```
-        ∫₀^π cos²(φ/2) dφ = π/2
-
-        Normiert auf die maximale Kopplung (Δφ = 0):
-        E_eff / E_max = π · ε · h · f / (h · f) = π · ε
-```
-
-Der Faktor π entsteht somit aus der zyklischen Geometrie der Kopplung,
-nicht als freier Parameter.
-
-**Testbare Vorhersage:** Die Energieübertragung ist maximal bei
-Phasengleichheit (ε = 1) und null bei Phasenorthogonalität (ε = 0).
-
-**Physikalisches Beispiel:** Josephson-Kontakt — Energieübertragung
-zwischen Supraleitern über phasenkohärente Kopplung.
-
----
+wobei ε(Δφ) ∈ [0, 1] die Kopplungseffizienz ist.
 
 ### Axiom 5 — Energierichtung
 
-**Aussage:** Energie in einem Resonanzfeld ist keine skalare Größe,
-sondern ein Vektor: Sie hat Betrag und Richtung im Feld.
+Energie ist ein Vektor im Resonanzfeld:
 
-**Formalisierung:**
-
-```
-(A5)    E⃗ = E_eff · ê(Δφ, ∇Φ)
-
-        Die Richtung ê wird bestimmt durch:
-        - den Phasengradienten ∇Φ des Resonanzfelds
-        - die Phasendifferenz Δφ zwischen gekoppelten Moden
-```
-
-In einem diskreten Mehrskalensystem (z.B. Finanzmärkte) ergibt sich
-der Energierichtungsvektor als Differenz der relativen Energien auf
-verschiedenen Zeitskalen:
-
-```
-        energy_dir = e_short − e_long
-
-        e_short = (Preis − MA_SHORT) / MA_SHORT
-        e_long  = (Preis − MA_LONG)  / MA_LONG
-```
-
-**Testbare Vorhersage:** Die Richtung des Energieflusses ist eine
-verwertbare Observable, die über skalare Indikatoren hinausgeht.
-
-**Empirischer Nachweis (ResoTrade):** V10 (mit Energierichtung) erreicht
-+37.03%, V9.4 (ohne) +35.61%. Alle skalaren Indikatoren (RSI, Momentum,
-MA-Crossover) haben Korrelation < 0.05 mit dem Preisverlauf.
-
----
+$$
+\vec{E} = E_{\text{eff}} \cdot \hat{e}(\Delta\phi, \nabla\Phi)
+$$
 
 ### Axiom 6 — Informationsfluss durch Resonanzkopplung
 
-**Aussage:** Information wird ausschließlich durch kohärente Phasen- und
-Frequenzrelationen übertragen. Die Qualität des Informationsflusses ist
-messbar durch Mutual Information und Phase Coherence Index.
+Information wird ausschließlich durch kohärente Phasen- und
+Frequenzrelationen übertragen:
 
-**Formalisierung:**
+$$
+MI(X, Y) = H(X) + H(Y) - H(X, Y)
+$$
 
-```
-(A6)    MI(X, Y) = H(X) + H(Y) − H(X, Y)
-
-        PCI = |⟨exp(i(φ₁ − φ₂))⟩| ∈ [0, 1]
-
-        Informationsfluss I(X → Y) > 0  ⟺  PCI > 0 ∧ MI > 0
-```
-
-**Testbare Vorhersage:** Systeme ohne Phasenkohärenz (PCI ≈ 0) können
-keine Information austauschen — unabhängig von der Amplitude der
-Einzelschwingungen.
-
-**Empirischer Nachweis (ResoTrade):** Das Resonanz-Gate filtert 92%
-der Zyklen als nicht-resonant. Die verbleibenden 8% sind profitabel.
-Altcoins (PCI ≈ 1 zu BTC, keine Phasenverschiebung) erzeugen keinen
-Informationsfluss: 98.4% Draw-Rate.
-
----
+$$
+PCI = |\langle e^{i(\phi_1 - \phi_2)} \rangle| \in [0, 1]
+$$
 
 ### Axiom 7 — Invarianz unter synchronen Transformationen
 
-**Aussage:** Die Kopplungsstruktur des Resonanzfelds bleibt invariant
-unter synchronen Transformationen der Gruppe G_sync.
+Die Kopplungsstruktur bleibt invariant unter Transformationen
+der Gruppe G_sync:
 
-**Formalisierung:**
+$$
+T(f_i, \phi_i, t) = (\lambda f_i, \phi_i + \phi_0, at + b)
+$$
 
-```
-(A7)    T ∈ G_sync:  T(fᵢ, φᵢ, t) = (λfᵢ, φᵢ + φ₀, at + b)
+### Interpretative Erweiterungen
 
-        Invarianzbedingungen:
-        G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ))
-        ε(Δφ_ij) = ε(T(φᵢ) − T(φⱼ))
-```
+Zusätzlich gibt es zwei interpretative Erweiterungen, die auf
+dem axiomatischen Fundament aufbauen, aber nicht zur
+physikalischen Axiomatik gehören:
 
-**Testbare Vorhersage:** Die Resonanzstruktur ist skalierungsinvariant —
-sie gilt auf allen Zeitskalen und Energieskalen.
+- **E1 (Beobachter als Resonator):** Der Beobachter kann als
+  gekoppelte Mode modelliert werden (folgt aus A1, A3, A6)
+- **E2 (Resonanz-Inklusionsaxiom):** Gruppenzugehörigkeit in
+  einem Resonanzfeld ist systemisch invariant (mengentheoretisch
+  formulierbar, logisch unabhängig von A1–A7)
 
-**Empirischer Nachweis (ResoTrade):** Die AC/DC-Zerlegung funktioniert
-über alle 4 Marktphasen (Sideways, Bullrun, Korrektur, Crash) mit
-konsistenter Performance. Die Axiome sind regime-invariant.
+---
+
+## 3. Der Kopplungsoperator ε
+
+### 3.1 Definition
+
+Die Kopplungseffizienz ε beschreibt, welcher Anteil der maximal
+möglichen Resonanzenergie tatsächlich zwischen zwei gekoppelten
+Moden übertragen wird.
+
+$$
+\varepsilon : \text{Zustandsraum} \to [0, 1]
+$$
+
+Das Standardmodell:
+
+$$
+\varepsilon(\Delta\phi) = \cos^2(\Delta\phi / 2) = \frac{1}{2}(1 + \cos\Delta\phi)
+$$
+
+### 3.2 Identität ε = η
+
+In der FLRW-Simulation emergiert die Kopplungseffizienz η(Δφ) als
+messbarer Kreuzterm zweier gekoppelter Skalarfelder:
+
+$$
+\eta(\Delta\phi) = \frac{\langle \varepsilon_1 \cdot \varepsilon_2 \rangle}{\sqrt{\langle \varepsilon_1^2 \rangle \cdot \langle \varepsilon_2^2 \rangle}}
+$$
+
+Da gleichzeitig ε(Δφ) = cos²(Δφ/2) gilt, folgt die exakte
+Identität:
+
+$$
+\varepsilon(\Delta\phi) = \eta(\Delta\phi) = \cos^2(\Delta\phi / 2)
+$$
+
+**Konsequenzen:**
+- Der theoretische Operator und die messbare Observable sind
+  identisch
+- Im Resonanzreaktor folgt κ = 1 exakt (kein freier Parameter)
+- In ResoTrade: ε → 0 als messbares Gate-Kriterium
+
+Für die vollständige Definition, Abgrenzung und Einordnung
+früherer Definitionen siehe die
+[Vereinheitlichte Definition](kopplungseffizienz.md).
+
+### 3.3 Eigenschaften
+
+| Eigenschaft | Wert |
+|------------|------|
+| Wertebereich | [0, 1] |
+| Bei Phasengleichheit (Δφ = 0) | ε = 1 (perfekte Kopplung) |
+| Bei Gegenphase (Δφ = π) | ε = 0 (keine Kopplung) |
+| Bei 90° Verschiebung (Δφ = π/2) | ε = 0.5 (halbe Kopplung) |
+
+ε ist keine Konstante, sondern hängt ab von:
+- Phasendifferenz Δφ zwischen gekoppelten Moden
+- Kohärenz der Kopplung
+- Dämpfung und Dissipation
+
+### 3.4 Funktion in der Energieformel
+
+$$
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+$$
+
+| Bedingung | ε | Energie | Physik |
+|-----------|---|---------|--------|
+| Perfekte Kopplung | 1 | π·ℏ·f | Maximale Resonanzenergie |
+| Planck-Spezialfall | 1/(2π) ≈ 0.159 | ½·ℏ·f | Grundzustandsenergie (harm. Osz.) |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit |
+| Halbe Kopplung | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
+| Keine Kopplung | 0 | 0 | Entkoppelte Systeme |
+
+### 3.5 Abgrenzung
+
+| Größe | Symbol | Wertebereich | Bedeutung |
+|-------|--------|-------------|-----------|
+| Kopplungseffizienz (Operator) | ε(Δφ) | [0, 1] | Theoretischer Kopplungsoperator |
+| Kopplungseffizienz (Observable) | η(Δφ) | [0, 1] | Messbarer Kreuzterm (FLRW) |
+| Kopplungsstärke | K_ij | [0, ∞) | Absolute Wechselwirkung |
+| Resonanzgewichtung | G(f₁/f₂) | [0, 1] | Frequenz-Resonanzfenster (A3) |
+
+**Identität:** ε = η (bewiesen durch cos²-Identität, validiert
+in FLRW mit 1.530 Simulationen).
 
 ---
 
 ## 4. Mathematische Konsequenzen
 
-### 4.1 Herleitung des Faktors π in der Energieformel
+### 4.1 Stabile Resonanzfelder (Satz)
 
-Aus Axiom 1 (Schwingung) und Axiom 4 (Kopplungsenergie) folgt:
+Aus A1, A2 und A3 folgt: Ein Feld Φ(x,t) ist genau dann stabil,
+wenn seine Fourier-Komponenten in rationalen Frequenzverhältnissen
+stehen. (Beweis: axiomatische Grundlegung §4.2)
 
-Die Energieübertragung zwischen zwei resonant gekoppelten Moden
-mit Kopplungseffizienz ε(Δφ) = cos²(Δφ/2) über einen vollständigen
-Kopplungszyklus ist:
+### 4.2 Kopplungsdynamik
 
-```
-    E_zyklus = h · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-             = h · f · π / (2π)
-             = h · f / 2
-```
+$$
+\frac{dK_{ij}}{dt} = \alpha \cdot G(f_i/f_j) \cdot \cos(\Delta\phi_{ij}) - \beta \cdot K_{ij}
+$$
 
-Die effektive Kopplungsenergie für einen Halbzyklus (die minimale
-Einheit kohärenter Übertragung) beträgt:
+### 4.3 Resonanz als Informationsselektion
 
-```
-    E_eff = h · f · ∫₀^π cos²(φ/2) dφ / π
-          = h · f · (π/2) / π
-          = h · f / 2
-```
-
-Normiert auf die Kopplungseinheit ergibt sich:
-
-```
-    E_eff = π · ε(Δφ) · h · f
-```
-
-wobei der Faktor π die zyklische Geometrie des Kopplungspfads
-kodiert und ε ∈ [0, 1] die effektive Kopplungsstärke.
-
-### 4.2 Stabilität als Konsequenz (kein eigenes Axiom)
-
-Aus A1 (Schwingung), A2 (Superposition) und A3 (Resonanzbedingung) folgt:
-
-**Satz (Stabile Resonanzfelder):** Ein Feld Φ(x,t) ist genau dann stabil,
-wenn seine Fourier-Komponenten ωₙ in rationalen Verhältnissen stehen:
-
-```
-    Φ_stabil(x, t) = Σₙ cₙ · exp(i(kₙx − ωₙt))
-    mit ωₙ/ω₀ ∈ ℚ  für alle n
-```
-
-*Beweis:* Konstruktive Interferenz (stehende Wellen) erfordert periodische
-Wiederkehr des Feldmusters. Dies ist nur bei rationalen Frequenzverhältnissen
-gegeben (Satz von Weyl über Gleichverteilung).
-
-**Anmerkung:** In der alten Version war dies Axiom 5. Es ist aber eine
-Konsequenz der Axiome 1–3 und daher kein unabhängiges Axiom.
-
-### 4.3 Kopplungsdynamik
-
-Aus A3 (Resonanzbedingung) und A4 (Kopplungsenergie) folgt die
-zeitliche Entwicklung der Kopplungsstärke:
-
-```
-    dK_ij/dt = α · G(fᵢ/fⱼ) · cos(Δφ_ij) − β · K_ij
-```
-
-(α: Anregungsrate, β: Dämpfungsrate)
-
-### 4.4 Resonanzlandschaft und Attraktoren
-
-Das effektive Potenzial der Kopplung:
-
-```
-    V(f) = −π · ε(Δφ(f)) · h · f
-```
-
-Lokale Minima von V entsprechen stabilen Resonanzen (Attraktoren).
-
-### 4.5 Resonanz als Informationsselektion
-
-Aus A6 (Informationsfluss) folgt, dass Resonanz als Bayesscher
-Informationsfilter wirkt:
-
-```
-    P(ψ | Φ) ∝ P(Φ | ψ) · P(ψ)
-```
+$$
+P(\psi | \Phi) \propto P(\Phi | \psi) \cdot P(\psi)
+$$
 
 Kohärente Zustände (hoher PCI) werden selektiv verstärkt.
 
----
+### 4.4 Entropie einer Resonanzkonfiguration
 
-## 5. Interpretative Erweiterungen
-
-Die folgenden Aussagen sind **keine Axiome** der RFT, sondern
-interpretative Ergänzungen, die auf dem axiomatischen Fundament aufbauen.
-
-### 5.1 Beobachter als Resonator (E1)
-
-Der Beobachter kann als gekoppelte Mode im Resonanzfeld modelliert werden.
-Durch Resonanzkopplung (A6) prägt der Messprozess die Feldstruktur mit.
-
-Dies ist konsistent mit der Quantenmechanik (Messproblem), wird hier aber
-nicht als Axiom gesetzt, da es aus A1–A7 folgt: Ein Beobachter ist ein
-System mit Eigenfrequenz (A1), das durch Resonanzkopplung (A3, A6)
-Information mit dem Feld austauscht.
-
-### 5.2 Resonanz-Inklusionsaxiom (E2)
-
-Gruppenzugehörigkeit in einem Resonanzfeld ist systemisch invariant:
-Ein Element gehört zu einer Resonanzgruppe unabhängig von externer
-Nennung oder Perspektive.
-
-Diese Erweiterung ist mengentheoretisch formulierbar, aber logisch
-unabhängig von der physikalischen Axiomatik (A1–A7).
+$$
+S(x) = -x \cdot \ln(x) \quad \text{mit } x = E/E_0 \in (0, 1]
+$$
 
 ---
 
-## 6. Übersicht: Axiome und ihre empirischen Tests
+## 5. Empirische Validierung
 
-| Axiom | Kernaussage | Formale Kernformel | Empirischer Test (ResoTrade) |
-|-------|-------------|-------------------|------------------------------|
-| A1 | Universelle Schwingung | ψ = A·cos(kx−ωt+φ) | AC/DC-Zerlegung: +26.1% vs HODL |
-| A2 | Superposition | Φ = Σ ψᵢ | Multiskalen-Überlagerung (MA_SHORT + MA_LONG) |
-| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ | BTC↔Aktien: resonant. BTC↔Altcoins: nicht resonant |
-| A4 | Kopplungsenergie | E = π·ε·h·f | Balance-Regler hält Kopplung über 24 Monate stabil |
-| A5 | Energierichtung | E⃗ = E·ê(Δφ,∇Φ) | energy_dir bringt +1.42% Verbesserung (V10 vs V9.4) |
-| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Resonanz-Gate filtert 92% als nicht-resonant |
-| A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Konsistente Performance über 4 Marktregime |
+Die RFT wird an vier unabhängigen Domänen empirisch validiert.
+Jedes Axiom hat mindestens einen dokumentierten Test:
+
+### 5.1 Axiom-für-Axiom-Validierung
+
+| Axiom | Test (ResoTrade) | Ergebnis |
+|-------|-----------------|----------|
+| A1 | AC/DC-Zerlegung des BTC-Preises | +5.9 Pp. (V10→V11) |
+| A2 | 3-Moden-Superposition (PID-Isomorphie) | +42.9% vs HODL |
+| A3 | Altcoin-Analyse: 200.000 Ep., Draw 98.4% | Falsifiziert |
+| A4 | Pause-Gate (ε → 0 im Crash) | +44.9% vs HODL |
+| A5 | Energierichtungsvektor (e_short − e_long) | +1.4 Pp. (V9.4→V10) |
+| A6 | Resonanz-Gate filtert 40% der Trades | 97% HOLD im Live |
+| A7 | 4/4 Marktregime positiv, identische Parameter | +26.3% Ø |
+
+### 5.2 Vier Validierungsdomänen
+
+| Domäne | Methode | Ergebnis |
+|--------|---------|----------|
+| Teilchenphysik | 1.500.000 MC-Sim. auf CMS-Daten | 5 Resonanzen, emp. p = 0 |
+| Kosmologie | 1.530 FLRW-Simulationen | Δd_η > 6σ, Δχ² = +16 |
+| Nukleartechnologie | Resonanzreaktor (GDR) | κ = 1, Q_fiss ≈ 1.0 |
+| Finanzmärkte | ResoTrade (24 Mo., 4 Regime) | +26.3% vs HODL, Live +4.13% |
+
+### 5.3 Falsifikationstests
+
+- **Altcoin-Analyse (A3):** 200.000 Episoden, 10 Altcoins.
+  Vorhersage: Ohne Eigenfrequenz keine Resonanz.
+  Ergebnis: Draw-Rate 98.4%, negativer Lernfortschritt.
+  Aktien (Eigenfrequenz vorhanden): 100% > HODL.
+- **Klassische Indikatoren:** RSI, Momentum, MA-Crossover,
+  Posterior-Wahrscheinlichkeiten — alle Korrelation < 0.05.
+  RFT-Observablen (energy_dir, AC-Phase) systematisch.
+- **Resonanzreaktor:** σ_coh > σ_incoh (RFT-Vorhersage)
+  vs. σ_coh = σ_incoh (Standardmodell). Experimentell prüfbar.
+
+Details in der [axiomatischen Grundlegung](../mathematik/axiomatische_grundlegung.md) §6 und der
+[ResoTrade-Dokumentation](../../empirisch/resotrade/README.md).
 
 ---
 
-## 7. Anwendungsfelder
+## 6. Anwendungsfelder
 
-- **Quantenphysik:** Superposition, Quantisierung durch rationale Frequenzverhältnisse
-- **Klassische Mechanik:** Synchronisation gekoppelter Oszillatoren
-- **Finanzmärkte:** Resonanzbasiertes Trading (ResoTrade)
+- **Teilchenphysik:** Monte-Carlo-Resonanzanalyse auf
+  CMS-Open-Data (5 Resonanzen, 1.500.000 Simulationen)
+- **Kosmologie:** Gekoppelte FLRW-Simulationen, Hubble-Spannung,
+  CMB-Vergleich mit Planck-2018-Daten
+- **Nukleartechnologie:** Resonanzreaktor — resonante
+  Transmutation von Aktiniden (GDR-basiert, κ = 1)
+- **Finanzmärkte:** ResoTrade — resonanzbasiertes BTC-Trading
+  mit Live-Validierung
+- **Klassische Mechanik:** Synchronisation gekoppelter
+  Oszillatoren, [Doppelpendel](../mathematik/doppelpendel.md)
 - **Biophysik:** Neuronale Synchronisation, Proteinfaltung
 - **Informationstheorie:** Resonanzbasierte Kanalkapazität
-- **Kosmologie:** Harmonische Musterbildung
+- **Analytische Mathematik:** [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md)
+
+---
+
+## 7. Abgrenzung
+
+Gegenüber klassischen Feldtheorien (Maxwell, Yang-Mills) ist
+die RFT nicht auf bestimmte Wechselwirkungsarten beschränkt,
+sondern betont die universelle Kopplungsstruktur aller Felder.
+
+Gegenüber der Informationstheorie (Shannon) werden
+Informationspakete nicht als isolierte Bits, sondern als
+kohärente Feldstrukturen betrachtet (Axiom 6).
+
+Gegenüber konventionellem algorithmischem Trading (ML, RSI,
+MACD) basiert ResoTrade nicht auf Preisprognose, sondern auf
+Phasenerkennung im Schwingungsfeld. Kein klassischer Indikator
+erreicht Korrelation > 0.05 auf dem 24-Monats-Datensatz.
 
 ---
 
 ## 8. Fazit
 
-Die Resonanzfeldtheorie besteht aus 7 Kern-Axiomen (A1–A7), die:
+Die Resonanzfeldtheorie besteht aus 7 Kern-Axiomen (A1–A7),
+die minimal, unabhängig, formal präzise und empirisch testbar
+sind. Die Kopplungseffizienz ε ∈ [0, 1] ist die zentrale Größe
+der Theorie — sie bestimmt, wie viel Resonanzenergie tatsächlich
+übertragen wird.
 
-1. **Minimal** sind: Das stabile Resonanzfeld (altes A5) ist als Satz ableitbar
-2. **Unabhängig** sind: Kein Axiom folgt aus den übrigen
-3. **Formal präzise** sind: Jedes Axiom enthält eine mathematische Formel
-4. **Empirisch testbar** sind: Jedes Axiom hat einen dokumentierten Test (ResoTrade)
+Die Identität ε = η verbindet den theoretischen Operator mit
+der messbaren Observable und eliminiert den letzten freien
+Parameter (κ = 1 im Resonanzreaktor). Die Validierung über
+vier unabhängige Domänen — Teilchenphysik, Kosmologie,
+Nukleartechnologie und Finanzmärkte — bestätigt alle sieben
+Axiome empirisch.
 
-Die Erweiterungen E1 (Beobachter) und E2 (Resonanz-Inklusion) sind
-interpretative Ergänzungen, die auf dem Fundament aufbauen, aber nicht
-zur physikalischen Axiomatik gehören.
+---
+
+## Literatur
+
+1. L. Boltzmann: *Vorlesungen über Gastheorie*, Leipzig, 1896.
+2. M. Born, E. Wolf: *Principles of Optics*, Cambridge, 1999.
+3. C. E. Shannon: *A Mathematical Theory of Communication*, 1948.
+4. N. Wiener: *Cybernetics*, 1948.
+5. R. P. Feynman et al.: *The Feynman Lectures on Physics*, 1964.
+6. Planck Collaboration: *Astron. Astrophys.* **641** A5, A6 (2020).
+7. CMS Collaboration: *CMS Open Data Portal*, opendata.cern.ch (2016).
+8. Berman B L, Fultz S C: *Rev. Mod. Phys.* **47** 713 (1975).
+9. Riess A G et al.: *Astrophys. J. Lett.* **934** L7 (2022).
+
+---
+
+## Dokumentenstruktur der RFT
+
+| Dokument | Inhalt |
+|----------|--------|
+| [Axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und Tests |
+| [Kopplungseffizienz](kopplungseffizienz.md) | Vereinheitlichte ε-Definition, ε = η Identität |
+| [Resonanzfeld-Gleichung](../mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung |
+| [Energiekugel](../mathematik/energiekugel.md) | Geometrisches Modell |
+| [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md) | Analytische Methoden |
+| [Resonanzenergievektor](../mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße |
+| [Empirische Nachweise](../../empirisch/) | ResoTrade, Monte Carlo, FLRW, Resonanzreaktor |
 
 ---
 
