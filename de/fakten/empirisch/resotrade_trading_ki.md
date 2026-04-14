@@ -199,7 +199,7 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 |--------|---------|-----------|
 | Energie | Kapital (BTC + Cash) | Portfolio-Äquivalent in Basiswährung |
 | Zeit | Transaktionssequenz | Zeitschritt im Trainingsfenster |
-| Leistung | Rendite pro Zeiteinheit | Portfolio-Äquivalent pro Zeitschritte |
+| Leistung | Rendite pro Zeiteinheit | Portfolio-Äquivalent pro Zeitschritt |
 | DC (Grundschwingung) | Langfristiger Trend | Langfristiger gleitender Durchschnitt |
 | AC (Oberschwingung) | Handelbare Abweichung | Preis minus langfristiger Durchschnitt |
 | Amplitude | Preisschwingung um Durchschnitt | AC-Amplitude |
