@@ -80,7 +80,7 @@ logische Struktur wie in R.
 ## 4. Bezug zur axiomatischen Grundlegung
 
 Die Konsistenzbeobachtung bezieht sich auf die 7 Kern-Axiome
-(siehe [axiomatische Grundlegung](../docs/mathematik/axiomatische_grundlegung.md)):
+(siehe [axiomatische Grundlegung](../docs/definitionen/axiomatische_grundlegung.md)):
 
 | Axiom | Konsistenzprüfung |
 |-------|-------------------|

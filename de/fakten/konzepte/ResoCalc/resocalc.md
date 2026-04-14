@@ -201,7 +201,7 @@ Das Anwendungsfeld bestimmt die Interpretation.
 
 ## Interaktive Simulation
 
-Die mitgelieferte [Jupyter-Notebook-Simulation](resocalc.ipynb) erlaubt interaktive Exploration:
+Die mitgelieferte Python-Simulation ([resocalc.py](resocalc.py)) erlaubt interaktive Exploration:
 
 - **Masse, Länge, Resonanzfrequenz** variieren
 - **Kopplungsfaktor** anpassen und den Effekt beobachten
@@ -210,7 +210,7 @@ Die mitgelieferte [Jupyter-Notebook-Simulation](resocalc.ipynb) erlaubt interakt
 
 ```bash
 pip install numpy matplotlib ipywidgets
-jupyter notebook resocalc.ipynb
+python resocalc.py
 ```
 
 ---
