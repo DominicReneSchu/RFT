@@ -28,6 +28,8 @@ HIST_BINS:      Anzahl der Bins fuer Histogramme.
 KDE_BANDWIDTH:  Bandbreite fuer den Kernel-Density-Estimator.
 """
 
+from __future__ import annotations
+
 # Resonanzmassenstellen M0 (in GeV) — erweitert um phi(1020)
 M0_VALUES = [1.020, 3.1, 9.46, 10.02, 91.2]
 
