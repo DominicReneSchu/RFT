@@ -1,4 +1,4 @@
-# 🌀 Resonanzfeldtheorie – Resonance Field Theory
+# 🌀 Resonanzfeldtheorie (RFT)
 
 Willkommen im offiziellen Repository zur Resonanzfeldtheorie.  
 
