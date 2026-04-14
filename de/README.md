@@ -199,7 +199,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 2 | [Monte-Carlo-Simulation](fakten/empirisch/monte_carlo_test/monte_carlo.md) | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
 | 3 | [FLRW-Simulationen](fakten/simulationen/relativitaet_verbindung/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
 | 4 | [Altcoin-Analyse](fakten/empirisch/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
-| 5 | [ResoTrade V11.1](fakten/empirisch/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit Feb. 2026 |
+| 5 | [ResoTrade V15.6](fakten/empirisch/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit April 2026 |
 
 ---
 
