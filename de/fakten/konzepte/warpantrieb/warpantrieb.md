@@ -81,7 +81,7 @@ Feld 1 (Fusionsfeld):
   Potential: V₁(ε₁) = ½m²ε₁² + ¼λε₁⁴
   → Harmonisch + nichtlinear
   → Oszilliert schnell: ½ε̇₁² ≈ V₁
-  → ⟨w��⟩ ≈ +0.03 (Materie-artig, Kontraktion)
+  → ⟨w₁⟩ ≈ +0.03 (Materie-artig, Kontraktion)
 
 Feld 2 (Expansionsfeld):
   Potential: V₂(ε₂) = V₀(1 − e^(−αε₂))²
