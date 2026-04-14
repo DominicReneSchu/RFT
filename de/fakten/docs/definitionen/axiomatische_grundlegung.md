@@ -365,15 +365,6 @@ nicht als Axiom gesetzt, da es aus A1–A7 folgt: Ein Beobachter ist ein
 System mit Eigenfrequenz (A1), das durch Resonanzkopplung (A3, A6)
 Information mit dem Feld austauscht.
 
-### 5.2 Resonanz-Inklusionsaxiom (E2)
-
-Gruppenzugehörigkeit in einem Resonanzfeld ist systemisch invariant:
-Ein Element gehört zu einer Resonanzgruppe unabhängig von externer
-Nennung oder Perspektive.
-
-Diese Erweiterung ist mengentheoretisch formulierbar, aber logisch
-unabhängig von der physikalischen Axiomatik (A1–A7).
-
 ---
 
 ## 6. Übersicht: Axiome und ihre empirischen Tests
@@ -410,9 +401,9 @@ Die Resonanzfeldtheorie besteht aus 7 Kern-Axiomen (A1–A7), die:
 3. **Formal präzise** sind: Jedes Axiom enthält eine mathematische Formel
 4. **Empirisch testbar** sind: Jedes Axiom hat einen dokumentierten Test (ResoTrade)
 
-Die Erweiterungen E1 (Beobachter) und E2 (Resonanz-Inklusion) sind
-interpretative Ergänzungen, die auf dem Fundament aufbauen, aber nicht
-zur physikalischen Axiomatik gehören.
+Die Erweiterung E1 (Beobachter als Resonator) ist eine interpretative
+Ergänzung, die auf dem Fundament aufbaut, aber nicht zur physikalischen
+Axiomatik gehört.
 
 ---
 
