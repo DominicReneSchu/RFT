@@ -12,6 +12,10 @@
 #   python nichtlineare_resonanzanalyse.py          → Matplotlib (4 Plots)
 #   streamlit run nichtlineare_resonanzanalyse.py   → Interaktive App
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
@@ -25,7 +29,7 @@ import os
 PI = np.pi
 
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2) — universelle Kopplungsfunktion (RFT)."""
     return np.cos(delta_phi / 2.0) ** 2
 
@@ -44,8 +48,9 @@ class NonlinearOscillator:
     ε(Δφ) = cos²(Δφ/2)
     """
 
-    def __init__(self, m=0.1, k=10.0, d0=0.05, F0=0.1,
-                 beta=0.0, alpha_d=0.0):
+    def __init__(self, m: float = 0.1, k: float = 10.0, d0: float = 0.05,
+                 F0: float = 0.1, beta: float = 0.0,
+                 alpha_d: float = 0.0) -> None:
         self.m = m
         self.k = k
         self.d0 = d0
@@ -58,7 +63,8 @@ class NonlinearOscillator:
         self.f_0 = self.omega_0 / (2 * PI)
         self.Q_theo = np.sqrt(m * k) / d0
 
-    def equations(self, t, y, omega_f, delta_phi):
+    def equations(self, t: float, y: list[float], omega_f: float,
+                  delta_phi: float) -> list[float]:
         """Bewegungsgleichung für solve_ivp."""
         x, v = y
 
@@ -79,7 +85,8 @@ class NonlinearOscillator:
         a = (F_drive + F_spring + F_damp) / self.m
         return [v, a]
 
-    def simulate(self, omega_f, delta_phi, T=100.0, dt=0.005):
+    def simulate(self, omega_f: float, delta_phi: float, T: float = 100.0,
+                 dt: float = 0.005) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
         """Simuliert das System. Gibt t, x, v zurück."""
         t_eval = np.arange(0, T, dt)
         sol = solve_ivp(
@@ -90,7 +97,7 @@ class NonlinearOscillator:
         )
         return sol.t, sol.y[0], sol.y[1]
 
-    def info(self):
+    def info(self) -> None:
         print(f"  m = {self.m} kg, k = {self.k} N/m, d₀ = {self.d0} N·s/m")
         print(f"  F₀ = {self.F0} N, β = {self.beta}, α_d = {self.alpha_d}")
         print(f"  f₀ = {self.f_0:.4f} Hz, ω₀ = {self.omega_0:.4f} rad/s")
@@ -101,7 +108,9 @@ class NonlinearOscillator:
 # 3. Analyse-Funktionen
 # ============================================================
 
-def analyze(sys, t, x, v, omega_f, delta_phi):
+def analyze(sys: NonlinearOscillator, t: np.ndarray, x: np.ndarray,
+            v: np.ndarray, omega_f: float,
+            delta_phi: float) -> dict[str, Any]:
     """Berechnet Energien, Feldarbeit, Kenngrößen."""
     E_kin = 0.5 * sys.m * v**2
     E_pot = 0.5 * sys.k * x**2
@@ -126,7 +135,9 @@ def analyze(sys, t, x, v, omega_f, delta_phi):
     }
 
 
-def phase_scan(sys, omega_f, T=100.0, dt=0.005, n_phi=25):
+def phase_scan(sys: NonlinearOscillator, omega_f: float, T: float = 100.0,
+               dt: float = 0.005,
+               n_phi: int = 25) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Phasenscan: Δφ von 0 bis 2π."""
     phi_vals = np.linspace(0, 2 * PI, n_phi)
     amp = np.zeros(n_phi)
@@ -145,7 +156,9 @@ def phase_scan(sys, omega_f, T=100.0, dt=0.005, n_phi=25):
     return phi_vals, amp, energy
 
 
-def duffing_scan(sys, omega_f, delta_phi=0.0, T=100.0, dt=0.005):
+def duffing_scan(sys: NonlinearOscillator, omega_f: float,
+                 delta_phi: float = 0.0, T: float = 100.0,
+                 dt: float = 0.005) -> list[dict[str, Any]]:
     """Scannt β von 0 bis 50, zeigt Nichtlinearitäts-Effekt."""
     betas = [0.0, 1.0, 5.0, 20.0, 50.0]
     results = []
@@ -189,11 +202,14 @@ def duffing_scan(sys, omega_f, delta_phi=0.0, T=100.0, dt=0.005):
 # 4. Plots (Matplotlib, direkt via python)
 # ============================================================
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_main_dashboard(sys, t, x, v, res, omega_f, delta_phi, output_dir):
+def plot_main_dashboard(sys: NonlinearOscillator, t: np.ndarray,
+                        x: np.ndarray, v: np.ndarray,
+                        res: dict[str, Any], omega_f: float,
+                        delta_phi: float, output_dir: str) -> None:
     """Plot 1: 6-Panel-Dashboard."""
     fig, axes = plt.subplots(2, 3, figsize=(18, 10))
 
@@ -300,7 +316,9 @@ def plot_main_dashboard(sys, t, x, v, res, omega_f, delta_phi, output_dir):
     print("  → nichtlinear_dashboard.png")
 
 
-def plot_phase_scan(sys, phis, amp, energy, output_dir):
+def plot_phase_scan(sys: NonlinearOscillator, phis: np.ndarray,
+                    amp: np.ndarray, energy: np.ndarray,
+                    output_dir: str) -> float:
     """Plot 2: Phasenscan — RFT-Signatur."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -363,7 +381,9 @@ def plot_phase_scan(sys, phis, amp, energy, output_dir):
     return mean_ink
 
 
-def plot_duffing_comparison(results, sys, output_dir):
+def plot_duffing_comparison(results: list[dict[str, Any]],
+                           sys: NonlinearOscillator,
+                           output_dir: str) -> None:
     """Plot 3: Duffing-Nichtlinearität — β-Scan."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -424,7 +444,8 @@ def plot_duffing_comparison(results, sys, output_dir):
     print("  → nichtlinear_duffing.png")
 
 
-def plot_damping_energy(sys, output_dir):
+def plot_damping_energy(sys: NonlinearOscillator,
+                       output_dir: str) -> None:
     """Plot 4: Energieabhängige Dämpfung — α_d-Scan."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -478,7 +499,7 @@ def plot_damping_energy(sys, output_dir):
 # 5. Hauptprogramm (python nichtlineare_resonanzanalyse.py)
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("NICHTLINEARE RESONANZANALYSE")
     print("Resonanzfeldtheorie: E = π · ε(Δφ) · ℏ · f")
@@ -581,7 +602,7 @@ def main():
 # 6. Streamlit-Modus (optional)
 # ============================================================
 
-def run_streamlit():
+def run_streamlit() -> None:
     """Interaktive Streamlit-App (falls installiert)."""
     import streamlit as st
 

@@ -15,6 +15,8 @@
 #   2. Phasenscan: ε(Δφ) = cos²(Δφ/2) als messbare Signatur
 #   3. Vergleich: Resonanz vs. Off-Resonanz, kohärent vs. inkohärent
 
+from __future__ import annotations
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.fft import rfft, rfftfreq
@@ -32,7 +34,7 @@ PI = np.pi
 # 2. RFT-Kopplungseffizienz
 # ============================================================
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """
     ε(Δφ) = cos²(Δφ/2)
 
@@ -60,7 +62,8 @@ class OscillatorSystem:
     auf einem Schwingungstisch).
     """
 
-    def __init__(self, m=0.1, k=10.0, d=0.05, F0=0.1):
+    def __init__(self, m: float = 0.1, k: float = 10.0, d: float = 0.05,
+                 F0: float = 0.1) -> None:
         self.m = m          # Masse [kg]
         self.k = k          # Federkonstante [N/m]
         self.d = d          # Dämpfungskoeffizient [N·s/m]
@@ -79,7 +82,8 @@ class OscillatorSystem:
         # F₀ direkt als physikalische Kraftamplitude.
         self.F0 = F0        # Kraftamplitude [N]
 
-    def resonance_force(self, t, omega, delta_phi=0.0):
+    def resonance_force(self, t: float | np.ndarray, omega: float,
+                        delta_phi: float = 0.0) -> float | np.ndarray:
         """
         F_feld(t, Δφ) = F₀ · ε(Δφ) · cos(ω·t)
 
@@ -94,7 +98,7 @@ class OscillatorSystem:
         eps = coupling_efficiency(delta_phi)
         return self.F0 * eps * np.cos(omega * t)
 
-    def rft_energy(self, f, delta_phi=0.0):
+    def rft_energy(self, f: float, delta_phi: float = 0.0) -> float:
         """
         E_RFT = π · ε(Δφ) · ℏ · f
 
@@ -102,7 +106,7 @@ class OscillatorSystem:
         """
         return PI * coupling_efficiency(delta_phi) * HBAR * f
 
-    def info(self):
+    def info(self) -> None:
         """Druckt Systemparameter."""
         print("=" * 60)
         print("RESONANZGENERATOR: Systemparameter")
@@ -123,7 +127,9 @@ class OscillatorSystem:
 # 4. Simulation: Euler-Integration
 # ============================================================
 
-def simulate(sys, omega, delta_phi, x0, v0, t_array, dt):
+def simulate(sys: OscillatorSystem, omega: float, delta_phi: float,
+             x0: float, v0: float, t_array: np.ndarray,
+             dt: float) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     Simuliert den gedämpften Oszillator mit Resonanzfeldkopplung.
 
@@ -169,8 +175,10 @@ def simulate(sys, omega, delta_phi, x0, v0, t_array, dt):
 # 5. Experiment 1: Frequenz-Sweep
 # ============================================================
 
-def frequency_sweep(sys, f_min=0.5, f_max=15.0, n_f=200,
-                    t_max=20.0, dt=0.0005, delta_phi=0.0):
+def frequency_sweep(sys: OscillatorSystem, f_min: float = 0.5,
+                    f_max: float = 15.0, n_f: int = 200,
+                    t_max: float = 20.0, dt: float = 0.0005,
+                    delta_phi: float = 0.0) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     Scannt die Anregungsfrequenz und misst:
     - Maximale Amplitude (stationär)
@@ -203,7 +211,8 @@ def frequency_sweep(sys, f_min=0.5, f_max=15.0, n_f=200,
 # 6. Experiment 2: Phasenscan (RFT-Signatur)
 # ============================================================
 
-def phase_scan(sys, n_phi=50, t_max=20.0, dt=0.0005):
+def phase_scan(sys: OscillatorSystem, n_phi: int = 50, t_max: float = 20.0,
+               dt: float = 0.0005) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     Scannt Δφ von 0 bis 2π bei f = f₀.
     Misst die stationäre Amplitude und Energie.
@@ -234,7 +243,9 @@ def phase_scan(sys, n_phi=50, t_max=20.0, dt=0.0005):
 # 7. Experiment 3: Detailanalyse am Resonanzpunkt
 # ============================================================
 
-def resonance_detail(sys, delta_phi=0.0, t_max=20.0, dt=0.0005):
+def resonance_detail(sys: OscillatorSystem, delta_phi: float = 0.0,
+                     t_max: float = 20.0,
+                     dt: float = 0.0005) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     Detaillierte Analyse bei f = f₀ und gegebenem Δφ.
     Zeigt: Zeitsignal, Energieverlauf, Phasenraum, FFT.
@@ -252,11 +263,13 @@ def resonance_detail(sys, delta_phi=0.0, t_max=20.0, dt=0.0005):
 # 8. Plots
 # ============================================================
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_frequency_sweep(sys, freqs, amp, energy, work, output_dir):
+def plot_frequency_sweep(sys: OscillatorSystem, freqs: np.ndarray,
+                        amp: np.ndarray, energy: np.ndarray,
+                        work: np.ndarray, output_dir: str) -> None:
     """Plot 1: Resonanzkurve + Energieanalyse."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -316,7 +329,9 @@ def plot_frequency_sweep(sys, freqs, amp, energy, work, output_dir):
     print("  → frequenz_sweep.png")
 
 
-def plot_phase_scan(sys, phis, amp, energy, work, output_dir):
+def plot_phase_scan(sys: OscillatorSystem, phis: np.ndarray,
+                    amp: np.ndarray, energy: np.ndarray,
+                    work: np.ndarray, output_dir: str) -> None:
     """Plot 2: Phasenscan — die RFT-Signatur."""
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
@@ -380,7 +395,10 @@ def plot_phase_scan(sys, phis, amp, energy, work, output_dir):
     print("  → phasenscan.png")
 
 
-def plot_resonance_detail(sys, t, x, v, Ek, Ep, Ef, Ff, output_dir):
+def plot_resonance_detail(sys: OscillatorSystem, t: np.ndarray,
+                         x: np.ndarray, v: np.ndarray, Ek: np.ndarray,
+                         Ep: np.ndarray, Ef: np.ndarray,
+                         Ff: np.ndarray, output_dir: str) -> None:
     """Plot 3: Detailanalyse am Resonanzpunkt."""
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
 
@@ -438,7 +456,8 @@ def plot_resonance_detail(sys, t, x, v, Ek, Ep, Ef, Ff, output_dir):
     print("  → resonanz_detail.png")
 
 
-def plot_damping_comparison(sys, output_dir):
+def plot_damping_comparison(sys: OscillatorSystem,
+                           output_dir: str) -> None:
     """Plot 4: Vergleich verschiedener Dämpfungen."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -480,7 +499,7 @@ def plot_damping_comparison(sys, output_dir):
 # 9. Hauptprogramm
 # ============================================================
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("RESONANZGENERATOR: Frequenz-Sweep + Phasenscan")
     print("Resonanzfeldtheorie: E = π · ε(Δφ) · ℏ · f")
