@@ -9,11 +9,15 @@ exakt erhaltene Größe — es findet Energietransfer zwischen
 dem skalaren Feld und der Raumzeitgeometrie statt.
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_1d_results(sol, V, alpha=0.5, kappa=1.0, save_path=None, show=True):
+def plot_1d_results(sol: Any, V: Any, alpha: float = 0.5, kappa: float = 1.0, save_path: str | None = None, show: bool = True) -> None:
     """Plottet die Ergebnisse der 1D-FLRW-Simulation.
 
     Parameters

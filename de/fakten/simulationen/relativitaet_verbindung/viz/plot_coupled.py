@@ -1,10 +1,14 @@
 """Visualisierung der gekoppelten FLRW-Resonanzfeldsimulation."""
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_coupled_results(sol, results, alpha=0.5, kappa=1.0, g=0.2, save_path=None, show=True):
+def plot_coupled_results(sol: Any, results: dict[str, Any], alpha: float = 0.5, kappa: float = 1.0, g: float = 0.2, save_path: str | None = None, show: bool = True) -> None:
     t = sol.t
     eps1 = sol.y[0]
     eps2 = sol.y[2]
@@ -76,7 +80,7 @@ def plot_coupled_results(sol, results, alpha=0.5, kappa=1.0, g=0.2, save_path=No
     plt.close(fig)
 
 
-def plot_phase_scan(scan, save_path=None, show=True):
+def plot_phase_scan(scan: dict[str, Any], save_path: str | None = None, show: bool = True) -> None:
     dphi = scan["delta_phi_values"]
     eta_sim = scan["eta_mean"]
     valid = np.isfinite(eta_sim)

@@ -1,5 +1,7 @@
 """Startskript: Gekoppelte FLRW-Resonanzfeldsimulation."""
 
+from __future__ import annotations
+
 import numpy as np
 from config import MODEL_PARAMS, NUMERIC_PARAMS
 from core.coupled_flrw import coupled_flrw_sim, scan_phase_coupling

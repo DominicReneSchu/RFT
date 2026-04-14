@@ -1,5 +1,7 @@
 """Kontrolltest: Falsifizierbare Vorhersage der Resonanzfeldtheorie."""
 
+from __future__ import annotations
+
 import numpy as np
 from config import MODEL_PARAMS
 from core.flat_coupled import scan_phase_flat

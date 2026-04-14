@@ -1,5 +1,7 @@
 """Startskript: 3D-Resonanzfeldsimulation mit Live-Visualisierung."""
 
+from __future__ import annotations
+
 import matplotlib.pyplot as plt
 import numpy as np
 from config import MODEL_PARAMS, NUMERIC_PARAMS, VIS_PARAMS

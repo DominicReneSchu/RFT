@@ -10,6 +10,8 @@ Erweiterungen:
   - Erweiterter Kontrolltest (3 Szenarien + 2 Zwischenstufen)
 """
 
+from __future__ import annotations
+
 import os
 import json
 import numpy as np
