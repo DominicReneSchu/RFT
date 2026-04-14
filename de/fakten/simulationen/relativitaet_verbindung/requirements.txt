@@ -3,7 +3,24 @@ scipy
 matplotlib
 pytest
 
-# Optional (GPU-Beschleunigung, nur mit CUDA):
-# cupy
-# Optional (CPU-Parallelisierung):
-# numba
+# ============================================================
+# Optionale GPU-/Parallelisierungsabhängigkeiten
+# ============================================================
+#
+# Die folgenden Pakete sind NICHT erforderlich für die
+# Standardausführung. Sie beschleunigen ausschließlich die
+# 3D-Feldsimulationen (field_3d_gpu.py, field_3d_parallel.py).
+#
+# --- GPU-Beschleunigung (erfordert NVIDIA CUDA Toolkit) ---
+# cupy>=12.0
+#   Wird in: core/field_3d_gpu.py verwendet
+#   Installation: pip install cupy-cuda12x
+#   Voraussetzung: CUDA Toolkit >= 11.2, NVIDIA-Treiber
+#   Dokumentation: https://docs.cupy.dev/en/stable/install.html
+#
+# --- CPU-Parallelisierung (JIT-Kompilierung via LLVM) ---
+# numba>=0.58
+#   Wird in: core/field_3d_parallel.py verwendet
+#   Installation: pip install numba
+#   Nutzt @njit und prange für parallele Schleifen
+#   Dokumentation: https://numba.readthedocs.io/
