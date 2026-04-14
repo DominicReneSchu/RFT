@@ -22,7 +22,7 @@ Kosmologie (1.530 FLRW-Simulationen), Nukleartechnologie
 vs HODL, Live seit Februar 2026).
 
 Für die vollständige formale Axiomatik siehe die
-[axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md).
+[axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md).
 
 ---
 
@@ -41,7 +41,7 @@ Rahmenwerk.
 Die RFT besteht aus 7 Kern-Axiomen. Jedes Axiom ist minimal,
 formal präzise und empirisch testbar. Die vollständige
 Formalisierung mit Beweisen und empirischen Tests findet sich
-in der [axiomatischen Grundlegung](../mathematik/axiomatische_grundlegung.md).
+in der [axiomatischen Grundlegung](../definitionen/axiomatische_grundlegung.md).
 
 ### Axiom 1 — Universelle Schwingung
 
@@ -219,7 +219,7 @@ $$
 
 Normiert auf die Kopplungseinheit ergibt sich die Grundformel
 E = π · ε · ℏ · f (vollständige Herleitung: siehe
-[axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md) §4.1).
+[axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md) §4.1).
 
 ---
 
@@ -541,7 +541,7 @@ Resonanzfeldtheorie ab Version 2026.
 
 | Dokument | Inhalt |
 |----------|--------|
-| [Axiomatische Grundlegung](../mathematik/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und Tests |
+| [Axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und Tests |
 | [Kopplungseffizienz](kopplungseffizienz.md) | Dieses Dokument |
 | [Resonanzfeld-Gleichung](../mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung |
 | [Energiekugel](../mathematik/energiekugel.md) | Geometrisches Modell |
