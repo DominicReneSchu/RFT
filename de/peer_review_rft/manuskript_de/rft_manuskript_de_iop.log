@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  1 MAR 2026 10:24
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.6.24)  14 APR 2026 12:17
  restricted system commands enabled.
 **rft_manuskript_de_iop.tex
 (./rft_manuskript_de_iop.tex
@@ -389,8 +389,8 @@ ex.def
 File: l3backend-luatex.def 2025-04-14 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count333
 Inserting `l3color' in `luaotfload.parse_color'.) (./rft_manuskript_de_iop.aux
-<Reading QR code for "https://github.com/DominicReneSchu/public" at level 3-M f
-rom aux file.>
+<Reading QR code for "https://github.com/DominicReneSchu/RFT" at level 3-M from
+ aux file.>
 )
 \openout1 = rft_manuskript_de_iop.aux
 
@@ -597,16 +597,16 @@ n $\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 1[]0$\TU/lmr/m/n/12 .
 [12]
 
 
-<QR code requested for "https://github.com/DominicReneSchu/public" in version 0
--M.>
+<QR code requested for "https://github.com/DominicReneSchu/RFT" in version 0-M.
+>
 
-<Copying the QR code for "https://github.com/DominicReneSchu/public" in version
- 3-M as previously calculated.>
+<Copying the QR code for "https://github.com/DominicReneSchu/RFT" in version 3-
+M as previously calculated.>
 
 
 [13] (./rft_manuskript_de_iop.aux
-<Reading QR code for "https://github.com/DominicReneSchu/public" at level 3-M f
-rom aux file.>
+<Reading QR code for "https://github.com/DominicReneSchu/RFT" at level 3-M from
+ aux file.>
 )
  ***********
 LaTeX2e <2025-06-01> patch level 1
@@ -622,11 +622,10 @@ Here is how much of LuaTeX's memory you used:
  675 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 46 attribute, 57 glue_spec
 , 46 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:1,2:2292,3:261,4:60,5:493,6:127,7:8503,8:69,9:5398,10:19,11:65
-1
+   avail lists: 2:2292,3:261,4:60,5:493,6:127,7:8470,8:69,9:5398,10:19,11:647
  40757 multiletter control sequences out of 65536+600000
  78 fonts using 5594591 bytes
- 72i,13n,75p,950b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,13n,75p,947b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/info/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
 italic.otf><c:/users/info/appdata/local/programs/miktex/fonts/opentype/public/lm
 /lmromancaps10-regular.otf><c:/users/info/appdata/local/programs/miktex/fonts/op
@@ -654,7 +653,7 @@ nts/cm/cmsy7.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmsy8.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/symbols/msam10.pfb><C:/Users/info/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rft_manuskript_de_iop.pdf (13 pages, 308843 bytes).
+Output written on rft_manuskript_de_iop.pdf (13 pages, 309058 bytes).
 
 PDF statistics: 434 PDF objects out of 1000 (max. 8388607)
  104 named destinations out of 1000 (max. 131072)
