@@ -527,14 +527,14 @@ Alle Simulationen sind öffentlich zugänglich:
 ### Resonanzfeldtheorie
 
 10. Schu, D.-R. (2025/2026): Resonanzfeldtheorie.
-    https://github.com/DominicReneSchu/public
+    https://github.com/DominicReneSchu/RFT
 
 ---
 
 ## Kontakt
 
 Dominic-René Schu
-GitHub: https://github.com/DominicReneSchu/public
+GitHub: https://github.com/DominicReneSchu/RFT
 Theorie, Simulation und Experimentdesign: Resonanzfeldtheorie
 
 ---
