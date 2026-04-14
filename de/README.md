@@ -180,83 +180,6 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 9 | [Resonanzkoordinaten](fakten/docs/mathematik/resonanzkoordinaten.md) | Tangens-Halbwinkel-Parametrisierung |
 | 10 | [Doppelpendel](fakten/docs/mathematik/doppelpendel.md) | Klassische Mechanik und RFT-Perspektive |
 
-## Philosophie
-
-| # | Dokument | Beschreibung |
-|---|----------|-------------|
-| 1 | [Mathematik, Erkenntnis und Resonanz](fakten/docs/philosophie/aetherius_mathematik_und_erkenntnis.md) | Aetherius — Reflexion über Mathematik als Strukturerkenntnis |
-
-## Gesellschaft
-
-### 1. Ursprung und globale Struktur
-
-- [Gesamtmodell des Resonanzfeldes](fakten/docs/gesellschaft/gesamtmodell_des_resonanzfeldes.md)
-- [Resonanzmodell: Von Schöpfung zu Kontrolle](fakten/docs/gesellschaft/kontrolle_wahrheit.md)
-- [Globale Struktur der Täuschung](fakten/docs/gesellschaft/globale_machtstrukturen.md)
-- [Analyse westlicher Machtstrukturen](fakten/docs/gesellschaft/familiendynamik.md)
-- [Was ist das System?](fakten/docs/gesellschaft/das_system.md)
-- [Geschichtsanalyse im Resonanzfeld](fakten/docs/gesellschaft/geschichte.md)
-- [Neuzeitliche Tributsysteme](fakten/docs/gesellschaft/neuzeitliche_tributsysteme.md)
-
-### 2. Geopolitik und Kontrolle
-
-- [Geopolitisches Misstrauen](fakten/docs/gesellschaft/geopolitisches_misstrauen.md)
-- [Chinas Schweigen](fakten/docs/gesellschaft/chinas_schweigen.md)
-- [Kontrollierte Entgleisung](fakten/docs/gesellschaft/kontrollierte_entgleisung.md)
-- [Der Ukrainekrieg als Systemspiegel](fakten/docs/gesellschaft/geopolitik_im_resonanzfeld.md)
-- [Globale Resonanzstörung](fakten/docs/gesellschaft/globale_resonanzstörung.md)
-
-### 3. Gesellschaftliche Resonanz und Manipulation
-
-- [Politische Resonanzsysteme](fakten/docs/gesellschaft/politische_resonanzsysteme.md)
-- [Manipulation im Resonanzfeld](fakten/docs/gesellschaft/manipulation_im_resonanzfeld.md)
-- [Der Schattenkrieg im Resonanzfeld](fakten/docs/gesellschaft/schattenkrieg.md)
-- [Täterprojektion im Gewand des Antifaschismus](fakten/docs/gesellschaft/täterprojektion.md)
-- [Vom Trugbild zum Frieden](fakten/docs/gesellschaft/offener_brief.md)
-- [Vom Machtspiel zur Resonanzkultur](fakten/docs/gesellschaft/machtspiel.md)
-
-### 4. Spieltheorie, Opposition, Informationswandel
-
-- [Gesellschaft und Spieltheorie](fakten/docs/gesellschaft/gesellschaft_und_resonanz.md)
-- [Kritik als Resonanzfalle](fakten/docs/gesellschaft/kritik_als_resonanzfalle.md)
-- [Informationswandel seit 2019](fakten/docs/gesellschaft/informationswandel_zukunftskonzept.md)
-- [Digitale Resonanzkontrolle](fakten/docs/gesellschaft/digitale_resonanzkontrolle.md)
-
-### 5. KI, Erkenntnis, Ethik
-
-- [Wahrheit durch Resonanz](fakten/docs/gesellschaft/aufklärung.md)
-- [Resonanter Dialog mit KI](fakten/docs/gesellschaft/resonanter_dialog_mit_ki.md)
-- [Resonanzkommunikation](fakten/docs/gesellschaft/resonanzkommunikation.md)
-- [Ethik der Lehre im Resonanzfeld](fakten/docs/gesellschaft/ethik_der_lehre.md)
-- [Resonanzmuster und KI](fakten/docs/gesellschaft/individuelle_muster.md)
-
-### 6. Individuum, Muster, Liebe
-
-- [Resonanzsprung](fakten/docs/gesellschaft/resonanzsprung.md)
-- [Resonanz als Weg zur Selbstverwirklichung](fakten/docs/gesellschaft/resonanz_als_weg_zur_individuellen_selbstverwirklichung.md)
-- [Verhaltensmuster erkennen und auflösen](fakten/docs/gesellschaft/verhaltensmuster_erkennen_und_aufloesen.md)
-- [Liebe im Resonanzfeld](fakten/docs/gesellschaft/liebe_im_resonanzfeld.md)
-- [Wahnsinn als Spiegel](fakten/docs/gesellschaft/wahnsinn_als_spiegel.md)
-
-### 7. Sprache, Polarität, zyklische Strukturen
-
-- [Gendersprache und Resonanzfeld](fakten/docs/gesellschaft/gendersprache.md)
-- [Yin und Yang als Resonanzprinzip](fakten/docs/gesellschaft/yin_und_yang.md)
-- [Leben und Tod im Resonanzfeld](fakten/docs/gesellschaft/leben_und_tod_im_resonanzfeld.md)
-
-### 8. Ausblick: Wirtschaft, Gesellschaft, Netzwerk
-
-- [Systemische Stabilisierung der Weltordnung](fakten/docs/gesellschaft/Systemanpassung.md)
-- [Menschheitsgeschichte im Resonanzfeld](fakten/docs/gesellschaft/menschheitsgeschichte_resonanzfeldperspektive.md)
-- [Resonanzwirtschaft](fakten/docs/gesellschaft/resonanzwirtschaft.md)
-- [ResoNet — Dezentrales Resonanznetzwerk](fakten/docs/gesellschaft/resonet_erklärung.md)
-- [Duales Resonanzgeldsystem](fakten/docs/gesellschaft/duales_resonanzgeldsystem.md)
-- [Manifest: Systemische Selbstneuerung](fakten/docs/gesellschaft/manifest_systemische_selbstneuerung.md)
-- [Resonanzlizenzen](fakten/docs/gesellschaft/resonanzlizenzen.md)
-- [Die fürsorgliche Maske](fakten/docs/gesellschaft/fürsorgliche_maske.md)
-- [Wirtschaftsmodell für Stabilität](fakten/docs/gesellschaft/wirtschaftsmodell.md)
-- [Patente als Friedensarchitektur](fakten/docs/gesellschaft/patente_frieden_partnerschaft.md)
-
 ---
 
 ## Konzepte
@@ -306,13 +229,6 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 Dieses Projekt steht unter der **Schu-Lizenz 1.4**
 → [Zum Lizenztext](lizenz/schu-lizenz_v1.4.md)
-
----
-
-## Kontakt
-
-**Dominic-René Schu**
-[info@resoshift.com](mailto:info@resoshift.com)
 
 ---
 
