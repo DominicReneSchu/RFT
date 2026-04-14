@@ -8,6 +8,10 @@ Abhängigkeiten: numpy, matplotlib, scipy
 Ausführung: python doppelpendel.py
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
@@ -21,7 +25,7 @@ DEFAULT_TRAIL_LENGTH = 200
 
 # --- Kopplungseffizienz (Axiom 4) ---
 
-def kopplungseffizienz(delta_phi):
+def kopplungseffizienz(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2) ∈ [0, 1]
 
     Maximale Kopplung bei Phasengleichheit (Δφ = 0),
@@ -42,7 +46,7 @@ class DoublePendulumSim:
         τ = ± A · ε(θ₂−θ₁) · sin(θ₂−θ₁)
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.theta1_0 = np.pi / 2
         self.omega1_0 = 0.0
         self.theta2_0 = np.pi / 2
@@ -55,7 +59,7 @@ class DoublePendulumSim:
         self.current_epsilon = 1.0  # wird pro Schritt aktualisiert
         self.reset()
 
-    def derivatives(self, t, state, m1, m2, L1, L2, amplitude):
+    def derivatives(self, t: float, state: np.ndarray, m1: float, m2: float, L1: float, L2: float, amplitude: float) -> list[float]:
         theta1, omega1, theta2, omega2 = state
         delta = theta2 - theta1
 
@@ -89,7 +93,7 @@ class DoublePendulumSim:
 
         return [dtheta1_dt, domega1_dt, dtheta2_dt, domega2_dt]
 
-    def reset(self):
+    def reset(self) -> None:
         self.state = np.array([
             self.theta1_0, self.omega1_0,
             self.theta2_0, self.omega2_0
@@ -101,7 +105,7 @@ class DoublePendulumSim:
         self.current_epsilon = kopplungseffizienz(
             self.theta2_0 - self.theta1_0)
 
-    def step(self, dt_step, amplitude):
+    def step(self, dt_step: float, amplitude: float) -> None:
         sol = solve_ivp(
             self.derivatives,
             (0, dt_step),
@@ -127,7 +131,7 @@ class DoublePendulumSim:
             self.trail2_x.pop(0)
             self.trail2_y.pop(0)
 
-    def get_positions(self):
+    def get_positions(self) -> tuple[float, float, float, float]:
         theta1, _, theta2, _ = self.state
         x1 = self.L1 * np.sin(theta1)
         y1 = -self.L1 * np.cos(theta1)
@@ -135,7 +139,7 @@ class DoublePendulumSim:
         y2 = y1 - self.L2 * np.cos(theta2)
         return x1, y1, x2, y2
 
-    def get_energies(self, amplitude):
+    def get_energies(self, amplitude: float) -> tuple[float, float, float]:
         """Kinetische, potentielle und Kopplungsenergie."""
         theta1, omega1, theta2, omega2 = self.state
         delta = theta1 - theta2
@@ -156,7 +160,7 @@ class DoublePendulumSim:
 
         return T, V, E_coupling
 
-    def get_kappa(self, amplitude):
+    def get_kappa(self, amplitude: float) -> float:
         """Kopplungsverhältnis κ = E_coupling / |E_total|."""
         T, V, E_coupling = self.get_energies(amplitude)
         E_total = abs(T + V + E_coupling)
@@ -244,7 +248,7 @@ s_trail = slider_objects['trail_length']
 
 
 # --- Energieanzeige ---
-def update_info_text():
+def update_info_text() -> str:
     amp = s_amp.val
     T, V, E_c = sim.get_energies(amp)
     kappa = sim.get_kappa(amp)
@@ -263,7 +267,7 @@ energy_text = ax.text(0, 2.05, update_info_text(),
 
 
 # --- Animation ---
-def init():
+def init() -> tuple[Any, ...]:
     line.set_data([], [])
     trail1.set_data([], [])
     trail2.set_data([], [])
@@ -271,7 +275,7 @@ def init():
     return line, trail1, trail2, energy_text
 
 
-def update(frame):
+def update(frame: int) -> tuple[Any, ...]:
     sim.step(dt, s_amp.val)
     x1, y1, x2, y2 = sim.get_positions()
     line.set_data([0, x1, x2], [0, y1, y2])
@@ -281,7 +285,7 @@ def update(frame):
     return line, trail1, trail2, energy_text
 
 
-def reset(event=None):
+def reset(event: Any | None = None) -> None:
     sim.theta1_0 = s_theta1.val
     sim.omega1_0 = s_omega1.val
     sim.theta2_0 = s_theta2.val
@@ -294,7 +298,7 @@ def reset(event=None):
     sim.reset()
 
 
-def sliders_on_changed(val):
+def sliders_on_changed(val: float) -> None:
     reset()
 
 
@@ -310,12 +314,12 @@ gif_button_ax = plt.axes([0.18, 0.05, 0.1, 0.04])
 gif_button = Button(gif_button_ax, 'GIF exportieren')
 
 
-def export_gif(event):
+def export_gif(event: Any) -> None:
     reset()
     frames = 500
     interval_ms = dt * 1000
 
-    def update_frame(frame):
+    def update_frame(frame: int) -> tuple[Any, ...]:
         sim.step(dt, s_amp.val)
         x1, y1, x2, y2 = sim.get_positions()
         line.set_data([0, x1, x2], [0, y1, y2])

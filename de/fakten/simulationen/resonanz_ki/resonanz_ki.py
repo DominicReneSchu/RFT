@@ -11,6 +11,10 @@ Abhängigkeiten: numpy, matplotlib
 Ausführung: python resonanz_ki.py
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 from fractions import Fraction
@@ -18,7 +22,7 @@ from fractions import Fraction
 
 # --- Kopplungseffizienz (Axiom 4) ---
 
-def kopplungseffizienz(delta_phi):
+def kopplungseffizienz(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """ε(Δφ) = cos²(Δφ/2) ∈ [0, 1]
 
     Maximale Effizienz bei Phasengleichheit (Δφ = 0),
@@ -29,7 +33,7 @@ def kopplungseffizienz(delta_phi):
 
 # --- Resonanzbedingung (Axiom 3) ---
 
-def check_resonance(f1, f2, tolerance=0.02):
+def check_resonance(f1: float, f2: float, tolerance: float = 0.02) -> tuple[bool, int, int]:
     """Prüfe ob f1/f2 ≈ n/m mit n, m ∈ ℤ⁺."""
     if f2 == 0:
         return False, 0, 1
@@ -41,7 +45,7 @@ def check_resonance(f1, f2, tolerance=0.02):
 
 # --- Parameter ---
 
-def init_parameter():
+def init_parameter() -> dict[str, Any]:
     return {
         "f_akteur1": 1.0,
         "f_akteur2": 1.3,
@@ -54,14 +58,14 @@ def init_parameter():
 
 # --- Schwingung (Axiom 1) ---
 
-def berechne_schwingung(f, t, phi=0.0):
+def berechne_schwingung(f: float, t: np.ndarray, phi: float = 0.0) -> np.ndarray:
     """ψ(t) = cos(2πft + φ)"""
     return np.cos(2 * np.pi * f * t + phi)
 
 
 # --- Resonanzfeld (Axiom 2: Superposition + Axiom 4: Kopplung) ---
 
-def berechne_resonanzfeld(psi1, psi2, eps):
+def berechne_resonanzfeld(psi1: np.ndarray, psi2: np.ndarray, eps: float) -> np.ndarray:
     """Symmetrische Kopplung mit Kreuzterm.
 
     Φ = (1−ε)·ψ₁ + ε·ψ₂ + ε·ψ₁·ψ₂
@@ -75,7 +79,7 @@ def berechne_resonanzfeld(psi1, psi2, eps):
 
 # --- Resonanzenergie (Axiom 4) ---
 
-def resonanzenergie(f1, f2, eps, h=1.0):
+def resonanzenergie(f1: float, f2: float, eps: float, h: float = 1.0) -> float:
     """E_eff = π · ε · h · f_res
 
     f_res = (f1 + f2) / 2 als mittlere Resonanzfrequenz.
@@ -86,7 +90,7 @@ def resonanzenergie(f1, f2, eps, h=1.0):
 
 # --- Fourier-Analyse ---
 
-def fourier_analyse(signal, t):
+def fourier_analyse(signal: np.ndarray, t: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     """Normiertes Amplitudenspektrum."""
     n = len(t)
     dt_val = t[1] - t[0]
@@ -97,8 +101,9 @@ def fourier_analyse(signal, t):
 
 # --- Visualisierung ---
 
-def plot_resonanzmodell(t, psi1, psi2, resonanzfeld, params,
-                        f, fft_abs):
+def plot_resonanzmodell(t: np.ndarray, psi1: np.ndarray, psi2: np.ndarray,
+                        resonanzfeld: np.ndarray, params: dict[str, Any],
+                        f: np.ndarray, fft_abs: np.ndarray) -> None:
     eps = params["eps"]
     delta_phi = params["delta_phi"]
     E_res = params["E_res"]
@@ -167,7 +172,7 @@ def plot_resonanzmodell(t, psi1, psi2, resonanzfeld, params,
 
 # --- Hauptfunktion ---
 
-def main():
+def main() -> None:
     p = init_parameter()
 
     # Phasendifferenz und Kopplungseffizienz (Axiom 4)
