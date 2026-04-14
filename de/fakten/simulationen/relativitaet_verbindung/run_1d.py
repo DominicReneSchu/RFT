@@ -1,5 +1,7 @@
 """Startskript: 1D-FLRW-Resonanzfeldsimulation."""
 
+from __future__ import annotations
+
 from config import MODEL_PARAMS, INITIAL_CONDITIONS, NUMERIC_PARAMS
 from core.flrw_1d import flrw_1d_sim
 from viz.plot_1d import plot_1d_results

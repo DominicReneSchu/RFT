@@ -1,10 +1,14 @@
 """Visualisierung Stufe 6a: d_eta(H0) — Vorhersagekurve."""
 
+from __future__ import annotations
+
+from typing import Any
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_h0_scan(fit_result, save_path=None, show=True):
+def plot_h0_scan(fit_result: dict[str, Any], save_path: str | None = None, show: bool = True) -> None:
     """Plottet d_eta als Funktion von H0 mit linearem Fit.
 
     Zwei Panels:
@@ -121,7 +125,7 @@ def plot_h0_scan(fit_result, save_path=None, show=True):
     plt.close(fig)
 
 
-def plot_hubble_tension(tension, fit_result, save_path=None, show=True):
+def plot_hubble_tension(tension: dict[str, Any], fit_result: dict[str, Any], save_path: str | None = None, show: bool = True) -> None:
     """Detailplot: Hubble-Spannungs-Signatur."""
     fig, ax = plt.subplots(figsize=(10, 7))
 
