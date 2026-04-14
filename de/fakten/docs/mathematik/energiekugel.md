@@ -184,7 +184,7 @@ sphärisch geschlossene Energiekonfiguration:
        |    der Energiedichte, nur des Drucks
 ```
 
-### 6.1 Winkelabh��ngige Realisierung (Warp-Geometrie)
+### 6.1 Winkelabhängige Realisierung (Warp-Geometrie)
 
 In der 3D-Warp-Blase bildet die Energiekugel eine konkrete
 räumliche Struktur. Der Polarwinkel θ übernimmt die Rolle
