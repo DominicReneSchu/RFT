@@ -309,20 +309,10 @@ Dieses Projekt steht unter der **Schu-Lizenz 1.4**
 
 ---
 
-
 ## Kontakt
 
 **Dominic-René Schu**
 [info@resoshift.com](mailto:info@resoshift.com)
-
----
-
-## Repository klonen
-
-```bash
-git clone https://github.com/DominicReneSchu/public.git
-cd public
-```
 
 ---
 
