@@ -155,7 +155,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 |---|----------|-------------|
 | 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
 | 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | Vereinheitlichte Definition, ε = η Identität |
-| 3 | [RFT-Übersicht und Kopplungsoperator](fakten/docs/definitionen/paper_resonanzfeldtheorie.md) | Gesamtübersicht der Theorie |
+| 3 | [RFT-Übersicht und Kopplungsoperator](fakten/docs/definitionen/kopplungsoperator.md) | Gesamtübersicht der Theorie |
 | 4 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
 | 5 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
 | 6 | [Resonanzlogische DGL](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md) | Klassische DGLs als Projektionen der rDGL |
@@ -164,9 +164,9 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 | # | Dokument | Beschreibung |
 |---|----------|-------------|
-| 1 | [Resonanzintegrale](fakten/docs/mathematik/manifest_zur_neustrukturierung_der_mathematik.md) | Analytische Methoden — Dirichlet-Integral als Resonanzenergie |
+| 1 | [Resonanzintegrale](fakten/docs/mathematik/resonanzintegrale.md) | Analytische Methoden — Dirichlet-Integral als Resonanzenergie |
 | 2 | [Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung E = π·ε·ℏ·f |
-| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/energie_axiomatische_herleitung.md) | Grenzfälle ε = 1, 1/(2π), 1/e, 0 |
+| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/kopplungsenergie.md) | Grenzfälle ε = 1, 1/(2π), 1/e, 0 |
 | 4 | [Resonanzzeitkoeffizient τ*](fakten/docs/mathematik/tau_resonanzkoeffizient.md) | Zeitskala der Kopplung: τ*(Δφ) = π/ε(Δφ) |
 | 5 | [Energierichtung](fakten/docs/mathematik/energierichtung.md) | Energie als Vektor mit Drehsinn |
 | 6 | [Energiekugel](fakten/docs/mathematik/energiekugel.md) | Geometrisches Modell — Phasenstruktur und dunkle Energie |
@@ -208,15 +208,6 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 3 | [FLRW-Simulationen](fakten/simulationen/relativitaet_verbindung/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
 | 4 | [Altcoin-Analyse](fakten/empirisch/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
 | 5 | [ResoTrade V11.1](fakten/empirisch/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit Feb. 2026 |
-
----
-
-## Vision
-
-- [Globale Wohlstandsschere](vision/docs/globale_wohlstandsschere.md)
-- [Generationenvertrag der Zukunft](vision/docs/generationenvertrag_der_zukunft.md)
-- [Die Welt von morgen](vision/docs/welt_von_morgen.md)
-- [Vision einer möglichen Zukunft](vision/docs/vision3000.md)
 
 ---
 
