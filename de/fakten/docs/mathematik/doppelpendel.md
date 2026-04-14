@@ -45,7 +45,7 @@ Interaktive Simulationen finden sich in [simulationen/doppelpendel/doppelpendel.
 - **Resonanzmuster:** Bei bestimmten Kopplungen und Energien stimmen Schwingungsmoden überein oder es entstehen charakteristische Muster.
 - **Kollektive Moden:** Übergänge vom individuellen zum kollektiven Schwingen der Pendel.
 
-Mehr dazu im Kapitel [Simulationen](../../simulationen/).
+Mehr dazu im Kapitel [Simulationen](../../simulationen/README.md).
 
 ## Resonanzfeldtheoretische Perspektive
 
