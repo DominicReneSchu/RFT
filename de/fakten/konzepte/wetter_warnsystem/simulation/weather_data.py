@@ -1,6 +1,8 @@
+from __future__ import annotations
+
 import requests
 #© Dominic Schu, 2025 – Alle Rechte vorbehalten.
-def get_weather_data(latitude, longitude, api_key):
+def get_weather_data(latitude: float, longitude: float, api_key: str) -> dict[str, float] | None:
     """
     Holt aktuelle Wetterdaten von OpenWeather API anhand von geografischen Koordinaten.
     

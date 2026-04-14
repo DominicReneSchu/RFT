@@ -1,5 +1,6 @@
 # run.py
 # © Dominic-René Schu, 2025/2026 – Resonanzfeldtheorie
+from __future__ import annotations
 # Resonanzreaktor: Publikationslauf (κ=1, mit Energiebilanz)
 # Erweitert: 8 Isotope, Flussscan, Transmutationsketten
 
@@ -16,11 +17,11 @@ from resonance import (simulate_decay, phase_scan, energy_scan,
                         energy_balance, gdr_cross_section_rft)
 
 
-def ensure_dir(path):
+def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def plot_energy_scan(isotope, output_dir):
+def plot_energy_scan(isotope: Isotope, output_dir: str) -> None:
     """Plot 1: GDR-Profil mit RFT-Kopplung."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -72,7 +73,7 @@ def plot_energy_scan(isotope, output_dir):
     print(f"  → energy_scan_{isotope.name}.png")
 
 
-def plot_phase_scan(isotope, output_dir):
+def plot_phase_scan(isotope: Isotope, output_dir: str) -> None:
     """Plot 2: Phasenscan."""
     result = phase_scan(isotope, n_phases=100, photon_flux=1e12)
 
@@ -108,7 +109,7 @@ def plot_phase_scan(isotope, output_dir):
     print(f"  → phase_scan_{isotope.name}.png")
 
 
-def plot_decay_comparison(isotope, output_dir):
+def plot_decay_comparison(isotope: Isotope, output_dir: str) -> None:
     """Plot 3: Zerfall Standard vs. RFT."""
     t_max = min(5 * isotope.half_life, 1e8)
 
@@ -159,7 +160,7 @@ def plot_decay_comparison(isotope, output_dir):
     print(f"  → decay_comparison_{isotope.name}.png")
 
 
-def plot_flux_scan(output_dir):
+def plot_flux_scan(output_dir: str) -> None:
     """Plot NEU: λ_eff/λ₀ als Funktion von Φ für alle Isotope."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     fluxes = np.logspace(8, 16, 200)
@@ -207,7 +208,7 @@ def plot_flux_scan(output_dir):
     print(f"  → flux_scan.png")
 
 
-def plot_energy_balance(output_dir):
+def plot_energy_balance(output_dir: str) -> None:
     """Plot 4: Energiebilanz – Q-Faktor als Funktion der Fluenz."""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     fluxes = np.logspace(8, 16, 200)
@@ -259,7 +260,7 @@ def plot_energy_balance(output_dir):
     print(f"  → energy_balance.png")
 
 
-def print_summary_table():
+def print_summary_table() -> None:
     """Druckt die vollständige Ergebnistabelle für alle Isotope."""
     print("\n" + "=" * 90)
     print("ERGEBNISTABELLE: Alle Isotope bei Φ = 10¹² γ/(cm²·s), Δφ = 0, κ = 1")
@@ -286,7 +287,7 @@ def print_summary_table():
     print("-" * 90)
 
 
-def main():
+def main() -> None:
     print("=" * 60)
     print("RESONANZREAKTOR: Publikationslauf V2")
     print("κ = 1 (aus RFT-Grundformel, kein freier Parameter)")

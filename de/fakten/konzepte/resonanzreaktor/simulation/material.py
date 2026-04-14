@@ -1,5 +1,6 @@
 # material.py
 # © Dominic-René Schu, 2025/2026 – Resonanzfeldtheorie
+from __future__ import annotations
 # Resonanzreaktor: Physikalisch fundierte Isotopendaten
 #
 # GDR-Daten aus:
@@ -20,7 +21,7 @@ N_A = 6.02214076e23         # Avogadro
 SECONDS_PER_YEAR = 365.25 * 24 * 3600
 
 
-def gdr_frequency(E_gdr_MeV):
+def gdr_frequency(E_gdr_MeV: float) -> float:
     """
     Berechnet die Resonanzfrequenz aus der GDR-Energie
     über die RFT-Grundformel: E = π · ε · ℏ · f
@@ -49,14 +50,14 @@ class Isotope:
     - Resonanzfrequenzen aus RFT-Grundformel hergeleitet
     """
 
-    def __init__(self, name, A, Z, half_life_years,
-                 E_gdr_peaks_MeV, Gamma_gdr_MeV,
-                 decay_constant, energy_per_decay_MeV,
-                 sigma_gdr_peak_mb=None,
-                 transmutations=None,
-                 decay_type="alpha",
-                 fissile=False,
-                 fission_energy_MeV=200.0):
+    def __init__(self, name: str, A: int, Z: int, half_life_years: float,
+                 E_gdr_peaks_MeV: list[float], Gamma_gdr_MeV: list[float],
+                 decay_constant: float, energy_per_decay_MeV: float,
+                 sigma_gdr_peak_mb: float | None = None,
+                 transmutations: list[Isotope] | None = None,
+                 decay_type: str = "alpha",
+                 fissile: bool = False,
+                 fission_energy_MeV: float = 200.0) -> None:
         """
         Args:
             name: Isotopenname
@@ -97,15 +98,15 @@ class Isotope:
         # Zerfallskonstante in 1/s
         self.lambda_0_per_s = decay_constant / SECONDS_PER_YEAR
 
-    def decay(self, time_years):
+    def decay(self, time_years: float) -> float | np.ndarray:
         """Exponentieller Zerfall: N(t)/N₀ = exp(-λt)"""
         return np.exp(-self.decay_constant * time_years)
 
-    def energy_released(self, time_years):
+    def energy_released(self, time_years: float) -> float | np.ndarray:
         """Freigesetzte Energie über Zeitspanne in MeV"""
         return self.decay(time_years) * self.energy_per_decay
 
-    def gdr_cross_section(self, E_gamma_MeV):
+    def gdr_cross_section(self, E_gamma_MeV: float) -> float:
         """
         GDR-Photoabsorptions-Wirkungsquerschnitt als
         Summe von Lorentz-Profilen.
@@ -127,18 +128,18 @@ class Isotope:
 
         return sigma
 
-    def sigma_gdr_at_centroid_barn(self):
+    def sigma_gdr_at_centroid_barn(self) -> float:
         """σ_GDR am Zentroid in barn (für λ_eff-Berechnungen)."""
         sigma_mb = self.gdr_cross_section(self.E_gdr_centroid)
         return sigma_mb * 1e-3  # mb → barn (1 barn = 10⁻²⁴ cm²)
 
-    def transmute(self):
+    def transmute(self) -> Isotope:
         """Gibt das nächste Transmutationsprodukt zurück."""
         if self.transmutations:
             return self.transmutations[0]
         return self
 
-    def info(self):
+    def info(self) -> None:
         """Gibt Zusammenfassung der Isotopendaten aus."""
         print(f"=== {self.name} (A={self.A}, Z={self.Z}) ===")
         print(f"  Halbwertszeit: {self.half_life:.4g} Jahre")

@@ -1,6 +1,7 @@
 # generate_diagram.py
 # © Dominic-René Schu, 2025/2026 – Resonanzfeldtheorie
 # Erzeugt das aktualisierte Resonanzreaktor-Schemadiagramm
+from __future__ import annotations
 
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -9,7 +10,7 @@ import numpy as np
 import os
 
 
-def draw_resonanzreaktor():
+def draw_resonanzreaktor() -> None:
     fig, ax = plt.subplots(1, 1, figsize=(14, 8))
     ax.set_xlim(0, 14)
     ax.set_ylim(0, 8)

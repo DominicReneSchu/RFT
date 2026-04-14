@@ -1,5 +1,6 @@
 # resonance.py
 # © Dominic-René Schu, 2025/2026 – Resonanzfeldtheorie
+from __future__ import annotations
 # Resonanzreaktor: RFT-Kopplungsmodell für resonante Transmutation
 #
 # Kernidee:
@@ -23,7 +24,7 @@ from material import (HBAR, HBAR_MEV, PI, MEV_TO_J, K_B,
 # 1. Kopplungseffizienz η(Δφ) – aus RFT-Axiom 4
 # ============================================================
 
-def coupling_efficiency(delta_phi):
+def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """
     Kopplungseffizienz zwischen externem Feld und Kernzustand.
     
@@ -44,7 +45,7 @@ def coupling_efficiency(delta_phi):
     return np.cos(delta_phi / 2) ** 2
 
 
-def coupling_operator(delta_phi):
+def coupling_operator(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """
     Kopplungsoperator ε(Δφ) der RFT-Grundformel.
     
@@ -68,7 +69,7 @@ def coupling_operator(delta_phi):
 # 2. GDR-Wirkungsquerschnitt mit RFT-Kopplung
 # ============================================================
 
-def gdr_cross_section_rft(isotope, E_gamma_MeV, delta_phi=0.0):
+def gdr_cross_section_rft(isotope: Isotope, E_gamma_MeV: float, delta_phi: float = 0.0) -> float:
     """
     GDR-Wirkungsquerschnitt mit RFT-Kopplungsoperator.
     
@@ -101,8 +102,8 @@ def gdr_cross_section_rft(isotope, E_gamma_MeV, delta_phi=0.0):
 # 3. Effektive Zerfallsrate – kein freier Parameter
 # ============================================================
 
-def effective_decay_rate(isotope, delta_phi, photon_flux=0.0,
-                         E_gamma_MeV=None):
+def effective_decay_rate(isotope: Isotope, delta_phi: float, photon_flux: float = 0.0,
+                         E_gamma_MeV: float | None = None) -> float:
     """
     Effektive Zerfallsrate unter resonanter Anregung.
     
@@ -155,9 +156,9 @@ def effective_decay_rate(isotope, delta_phi, photon_flux=0.0,
 # 4. Energiebilanz
 # ============================================================
 
-def energy_balance(isotope, delta_phi=0.0, photon_flux=1e12,
-                   E_gamma_MeV=None, target_mass_kg=1.0,
-                   time_seconds=3600):
+def energy_balance(isotope: Isotope, delta_phi: float = 0.0, photon_flux: float = 1e12,
+                   E_gamma_MeV: float | None = None, target_mass_kg: float = 1.0,
+                   time_seconds: float = 3600) -> dict[str, float | str]:
     """
     Energiebilanz: Eingestrahlt vs. freigesetzt.
     
@@ -246,9 +247,9 @@ def energy_balance(isotope, delta_phi=0.0, photon_flux=1e12,
 # 5. Simulationsfunktionen (wie vorher, κ entfernt)
 # ============================================================
 
-def simulate_decay(isotope, time_years, n_points=1000,
-                   photon_flux=0.0, E_gamma_MeV=None,
-                   delta_phi=0.0):
+def simulate_decay(isotope: Isotope, time_years: float, n_points: int = 1000,
+                   photon_flux: float = 0.0, E_gamma_MeV: float | None = None,
+                   delta_phi: float = 0.0) -> dict[str, float | np.ndarray]:
     """Simuliert Zerfall: Standard vs. RFT."""
     t_years = np.linspace(0, time_years, n_points)
     t_seconds = t_years * 365.25 * 24 * 3600
@@ -277,8 +278,8 @@ def simulate_decay(isotope, time_years, n_points=1000,
     }
 
 
-def phase_scan(isotope, n_phases=30, photon_flux=1e12,
-               E_gamma_MeV=None):
+def phase_scan(isotope: Isotope, n_phases: int = 30, photon_flux: float = 1e12,
+               E_gamma_MeV: float | None = None) -> dict[str, float | np.ndarray]:
     """Phasenscan: λ_eff als Funktion von Δφ."""
     delta_phis = np.linspace(0, 2 * PI, n_phases)
     etas = coupling_efficiency(delta_phis)
@@ -299,8 +300,8 @@ def phase_scan(isotope, n_phases=30, photon_flux=1e12,
     }
 
 
-def energy_scan(isotope, E_range_MeV=(5, 25), n_energies=200,
-                delta_phi=0.0):
+def energy_scan(isotope: Isotope, E_range_MeV: tuple[float, float] = (5, 25), n_energies: int = 200,
+                delta_phi: float = 0.0) -> dict[str, float | np.ndarray]:
     """Energiescan: σ als Funktion von E_γ."""
     E_gamma = np.linspace(E_range_MeV[0], E_range_MeV[1], n_energies)
     
