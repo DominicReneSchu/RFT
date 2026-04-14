@@ -1,32 +1,36 @@
+from __future__ import annotations
+
+from typing import Any
+
 import matplotlib.pyplot as plt
 import numpy as np
 import os
 from datetime import datetime
 
 
-def ensure_dir(directory):
+def ensure_dir(directory: str) -> None:
     if not os.path.exists(directory):
         os.makedirs(directory)
 
 
-def save_figure(fig, path):
+def save_figure(fig: Any, path: str) -> None:
     fig.savefig(path, bbox_inches="tight")
     plt.close(fig)
 
 
 def generate_report(
-    output_dir,
-    real_results,
-    sim_hits,
-    empirical_p_values,
-    m0_values,
-    deltas,
-    sim_pvals_per_m0_delta,
-    real_pvals_matrix,
-    real_hits_matrix,
-    sim_hits_heatmap,
-    blind_results=None,
-):
+    output_dir: str,
+    real_results: dict[float, dict[str, Any]],
+    sim_hits: dict[float, list[int]],
+    empirical_p_values: dict[float, float],
+    m0_values: list[float],
+    deltas: list[float],
+    sim_pvals_per_m0_delta: dict[float, np.ndarray],
+    real_pvals_matrix: dict[float, np.ndarray],
+    real_hits_matrix: dict[float, np.ndarray],
+    sim_hits_heatmap: np.ndarray,
+    blind_results: dict[str, Any] | None = None,
+) -> None:
     """
     Automatische Report-Generierung (Markdown mit eingebundenen Grafiken
     und Kurz-Interpretation).

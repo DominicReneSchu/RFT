@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import pandas as pd
 from scipy.stats import binomtest
 import matplotlib.pyplot as plt

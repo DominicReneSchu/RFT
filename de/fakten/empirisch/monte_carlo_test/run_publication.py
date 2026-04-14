@@ -10,6 +10,10 @@ Erweiterungen gegenueber run.py:
   - Automatischer Export aller Ergebnisse als CSV + JSON
 """
 
+from __future__ import annotations
+
+from typing import Any
+
 import os
 import json
 import numpy as np
@@ -40,7 +44,7 @@ from config import (
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-def run_single_analysis(mass_data, n, bandwidth, seed, m0_values, deltas):
+def run_single_analysis(mass_data: np.ndarray, n: int, bandwidth: float, seed: int, m0_values: list[float], deltas: list[float]) -> dict[str, Any]:
     """Fuehrt eine vollstaendige MC-Analyse fuer einen Seed + Bandbreite durch."""
     rng = np.random.RandomState(seed)
 
@@ -122,7 +126,7 @@ def run_single_analysis(mass_data, n, bandwidth, seed, m0_values, deltas):
     }
 
 
-def main():
+def main() -> None:
     # Daten laden
     data_path = os.path.join(SCRIPT_DIR, "dielectron.csv")
     df = pd.read_csv(data_path)
