@@ -3,7 +3,7 @@
 [![Lizenz: Schu-Lizenz 1.4](https://img.shields.io/badge/Lizenz-Schu--Lizenz%201.4-blue.svg)](lizenz/schu-lizenz_v1.4.md)
 
 Willkommen im offiziellen Repository der **Resonanzfeldtheorie (RFT)**.
-Dieses Projekt vereint Mathematik, Physik, Technik und Philosophie zu
+Dieses Projekt vereint Mathematik, Physik und Technik zu
 einem axiomatischen Modell der Resonanz. Die Theorie beschreibt
 fundamentale Prozesse als Kopplungs- und Resonanzphänomene in
 Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
