@@ -81,6 +81,13 @@ Projektion   Illusion   Konkurrenz         Integration   Transparenz   Ko-Kreati
 
 ---
 
+## Zur deutschen Version
+
+→ [Deutsche Version](de/README.md)
+
+
+---
+
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
 
 ---
