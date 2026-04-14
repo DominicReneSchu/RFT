@@ -109,7 +109,7 @@ Die konventionelle Methode **unterschätzt** das Resonanzdrehmoment um den Fakto
 
 ### Visualisierung
 
-![Vergleich: ResoCalc vs. Konventionell](resocalcVSkonv.png)
+![Vergleich: ResoCalc vs. Konventionell](rresocalc_standard-drehmoment.png.png)
 
 ---
 
