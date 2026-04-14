@@ -204,9 +204,9 @@ GSD Activities Report 2023/2024.
 
 ```
     ┌─────────────────────────────────────────────────┐
-    │              EXPERIMENTAUFBAU                    │
+    │              EXPERIMENTAUFBAU                   │
     │                                                 │
-    │  VEGA γ-Strahl ──→ [Depolarisator] ──→ Target  │
+    │  VEGA γ-Strahl ──→ [Depolarisator] ──→ Target   │
     │  (14 MeV, pol.)     (einschaltbar)    (Am-241)  │
     │                                                 │
     │                                    ┌──→ ELIGANT │
