@@ -475,29 +475,7 @@ erreicht Korrelation > 0.05 auf dem 24-Monats-Datensatz.
 
 ---
 
-## 12. Dokumentenstatus: Vereinheitlichung abgeschlossen
-
-Alle Dokumente wurden auf die verbindliche Definition
-ε(Δφ) ∈ [0, 1] mit Standardmodell cos²(Δφ/2) und
-ℏ (statt h) umgestellt:
-
-| Dokument | Korrektur | Status |
-|----------|-----------|--------|
-| axiomatische_grundlegung.md | ε(Δφ) ∈ [0,1] | ✅ Bereits korrekt |
-| paper_resonanzfeldtheorie.md | ε ∈ [0,1]; K_ij ∈ [1/e, e] | ✅ Korrigiert |
-| README.md (DE) | ε ∈ [0,1], ℏ, ε = η, Planck 1/(2π) | ✅ Korrigiert |
-| energie_axiomatische_herleitung.md | ε = 1/e als Spezialfall, ℏ, ε = η | ✅ Korrigiert |
-| tau_resonanzkoeffizient.md | τ*(Δφ) = π/ε(Δφ) (Funktion), ℏ | ✅ Korrigiert |
-| energieuebertragung.md | ε ∈ [0,1], ℏ, ε = η | ✅ Korrigiert |
-| resonanzfeld_gleichung.md | ε = Kopplungseffizienz, ℏ, ε = η | ✅ Korrigiert |
-| resonanzlexikon.md | ε ∈ [0,1], ℏ, Planck 1/(2π) | ✅ Korrigiert |
-| Simulationen (Python) | coupling_efficiency (statt schu_koppler) | ✅ Korrigiert |
-| rft_manuskript_de_iop.tex | ε = η (Gl. 9), ℏ | ✅ Bereits korrekt |
-| RFT_Zusammenfassung.tex | ε = η Identität, ℏ | ✅ Bereits korrekt |
-
----
-
-## 13. Fazit
+## 12. Fazit
 
 Die Kopplungseffizienz ε der Resonanzfeldtheorie ist:
 
@@ -545,7 +523,7 @@ Resonanzfeldtheorie ab Version 2026.
 | [Kopplungseffizienz](kopplungseffizienz.md) | Dieses Dokument |
 | [Resonanzfeld-Gleichung](../mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung |
 | [Energiekugel](../mathematik/energiekugel.md) | Geometrisches Modell |
-| [Resonanzintegrale](../mathematik/manifest_zur_neustrukturierung_der_mathematik.md) | Analytische Methoden |
+| [Resonanzintegrale](../mathematik/resonanzintegrale.md) | Analytische Methoden |
 | [Resonanzenergievektor](../mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße |
 | [Empirische Nachweise](../../empirisch/) | ResoTrade, Monte Carlo, FLRW, Resonanzreaktor |
 
