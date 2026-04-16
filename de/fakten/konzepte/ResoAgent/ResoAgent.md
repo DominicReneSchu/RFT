@@ -46,7 +46,7 @@ Bibliotheken). Jede Code-Zeile hat eine nachweisbare Herkunft.
 │                SCHICHT 3 — Guard & Audit                    │
 │   Schutzregeln (Crypto/Injection/CVE/Secrets/Lizenz)        │
 │   Vollständiger Audit-Trail (ISO 27001 / SOC2 ready)        │
-└────────��──────────────┬─────────────────────────────────────┘
+└───────────────────────┬─────────────────────────────────────┘
                         │ Guard-Features → NN Input
 ┌───────────────────────┴─────────────────────────────────────┐
 │             SCHICHT 2 — Erfahrung & Policy                  │
