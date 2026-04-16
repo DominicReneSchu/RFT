@@ -1,1 +1,0 @@
-"""Visualisierungsmodule des Resonanzfeld-Frameworks."""

@@ -195,10 +195,9 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 2 | [Doppelpendel](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | Klassisches Doppelpendel mit dynamischer Kopplungseffizienz ε(θ₂−θ₁) |
 | 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) | Energieaustausch, Resonanzerkennung, Live-Animation ε(θ₂−θ₁) |
 | 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/README.md) | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
-| 5 | [Raumzeit-Resonanzfeld](fakten/simulationen/raumzeit_resonanzfeld/README.md) | A1–A7 | Skalare Resonanzfelder in flacher und gekrümmter Raumzeit |
-| 6 | [FLRW-Simulationen](fakten/simulationen/FLRW-Simulationen/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
-| 7 | [Altcoin-Analyse](fakten/simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
-| 8 | [Schrödinger](fakten/simulationen/schrödinger/README.md) | Ableitung der Schrödinger-Gleichung aus Axiom 4 |
+| 5 | [FLRW-Simulationen](fakten/simulationen/FLRW-Simulationen/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
+| 6 | [Altcoin-Analyse](fakten/simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
+| 7 | [Schrödinger](fakten/simulationen/schrödinger/README.md) | Ableitung der Schrödinger-Gleichung aus Axiom 4 |
 
 ---
 
