@@ -182,7 +182,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
 | 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
 | 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
-| 4 | [ResoTrade V15.6](fakten//resotrade/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit April 2026 |
+| 4 | [ResoTrade V15.6](fakten/konzepte/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit April 2026 |
 | 5 | [ResoAgent](fakten/konzepte/ResoAgent/ResoAgent.md) | Resonanzlogische Agenten-KI |
 
 ---
