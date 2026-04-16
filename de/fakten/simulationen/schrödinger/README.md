@@ -86,6 +86,26 @@ $$
   ψ → Δφ → V_eff → ψ erzeugt nichtlineare, zustandsabhängige Dynamik,
   die messbar über Fidelity, ⟨x⟩, ⟨p⟩ von Standard-QM abweicht.
 
+### Störungstheorie (`schrodinger_1d_rft_perturbation.py`)
+
+> **Gutachter-Empfehlung:** „Im Limit λ → 0 muss die dynamische RFT gegen
+> Standard-QM konvergieren, mit führenden Korrekturen O(λ). Das wäre die
+> Störungstheorie der RFT."
+
+Systematischer λ-Scan über mehrere Größenordnungen (10⁻⁴ … 10⁰) mit
+Potenzgesetz-Analyse und analytischer Störungstheorie 1. Ordnung:
+
+| Observable | Skalierung | Interpretation |
+|------------|-----------|----------------|
+| 1 − Fidelity | ~ λ² | Zustandstreue: quadratische Konvergenz |
+| \|Δ⟨x⟩\| | ~ λ | Erwartungswert: lineare Korrektur |
+| \|Δ⟨p⟩\| | ~ λ | Erwartungswert: lineare Korrektur |
+| max\|Δψ\| | ~ λ | Wellenfunktion: lineare Korrektur |
+
+→ **Standard-QM ist exakter Grenzfall der RFT.** Die Störungstheorie
+  bestätigt: RFT ist eine wohldefinierte, kontrollierte Erweiterung
+  mit λ als einzigem freien Parameter.
+
 ---
 
 ## Dateistruktur
@@ -95,6 +115,7 @@ $$
 | [`python/schrodinger_1d_reference.py`](python/schrodinger_1d_reference.py) | Referenz: Standard-Schrödinger (Split-Operator, FFT) |
 | [`python/schrodinger_1d_rft.py`](python/schrodinger_1d_rft.py) | RFT: Resonanz-Hamiltonoperator + Korrespondenznachweis |
 | [`python/schrodinger_1d_rft_dynamic.py`](python/schrodinger_1d_rft_dynamic.py) | RFT-Dynamisch: Δφ(t) mit Rückkopplung an ψ |
+| [`python/schrodinger_1d_rft_perturbation.py`](python/schrodinger_1d_rft_perturbation.py) | Störungstheorie: λ→0 Konvergenz, Skalierungsanalyse |
 | [`docs/schrodinger_roadmap.md`](docs/schrodinger_roadmap.md) | Forschungsprogramm: Diskretes Feld → Schrödinger |
 | [`requirements.txt`](requirements.txt) | Abhängigkeiten |
 
@@ -117,6 +138,10 @@ python python/schrodinger_1d_rft.py --plot
 python python/schrodinger_1d_rft_dynamic.py --checks
 python python/schrodinger_1d_rft_dynamic.py --model density --lambda_coupling 5.0
 python python/schrodinger_1d_rft_dynamic.py --model position --plot
+
+# Störungstheorie (λ → 0 Konvergenz)
+python python/schrodinger_1d_rft_perturbation.py --checks
+python python/schrodinger_1d_rft_perturbation.py --plot
 
 # Referenz mit Potential
 python python/schrodinger_1d_reference.py --V harmonic --Vstrength 0.01 --steps 3000 --plot
