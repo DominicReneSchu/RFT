@@ -159,7 +159,6 @@ def main() -> int:
     ap.add_argument(
         "--checks",
         action="store_true",
-        default=False,
         help="Enable extended smoke checks (energy drift, position drift) for free particle",
     )
     args = ap.parse_args()
