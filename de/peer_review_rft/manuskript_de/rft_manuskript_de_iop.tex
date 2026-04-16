@@ -54,6 +54,15 @@
 		($+4{,}13\%$ in 5~Tagen) und Falsifikationstest \"uber
 		$200\,000$~Altcoin-Episoden. Jedes der 7~Axiome wird
 		einzeln am Markt validiert.
+		Zwei falsifizierbare Experimentalvorschl\"age werden
+		pr\"asentiert: (I)~phasenabh\"angige Photoanregung von
+		Am-241 an der ELI-NP (Kernphysik, 0~freie Parameter,
+		$>50\,000\,\sigma$) und (II)~Schwerpunktsverschiebung
+		eines ${}^{87}$Rb-BEC in harmonischer Falle
+		(Quantenmechanik, 1~freier Parameter~$\lambda$). Beide
+		Experimente testen die Kopplungsfunktion
+		$\cos^2(\Delta\varphi/2)$ \"uber 19~Gr\"o\ss{}enordnungen
+		in der Energie und sind unabh\"angig voneinander falsifizierbar.
 		Alle Herleitungen, Quellcodes und Daten sind offen verf\"ugbar
 		unter \url{https://github.com/DominicReneSchu/RFT}.
 	\end{abstract}
@@ -104,8 +113,10 @@
 	FLRW-Simulationen mit Planck-2018-Vergleich),
 	Nukleartechnologie (Resonanzreaktor) und
 	Finanzm\"arkte (ResoTrade). Abschnitt~5 diskutiert den
-	Vergleich mit etablierten Theorien. Abschnitt~6 benennt
-	offene Fragen. Abschnitt~7 fasst zusammen.
+	Vergleich mit etablierten Theorien. Abschnitt~6
+	pr\"asentiert zwei falsifizierbare Experimentalvorschl\"age.
+	Abschnitt~7 benennt offene Fragen. Abschnitt~8 fasst
+	zusammen.
 	
 	
 	%% ============================================================
@@ -1114,15 +1125,275 @@
 	
 	
 	%% ============================================================
+	\section{Experimentelle Vorhersagen}
+	\label{sec:experimente}
+	%% ============================================================
+	
+	Die RFT enth\"alt zwei zentrale Kopplungsfunktionen, die in
+	unabh\"angigen Dom\"anen experimentell \"uberpr\"ufbar sind:
+	den Kopplungsoperator
+	$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ und
+	die Kopplungseffizienz
+	$\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$. Im Folgenden
+	werden zwei Experimentalvorschl\"age vorgestellt, die diese
+	Vorhersagen \"uber 19~Gr\"o\ss{}enordnungen in der Energie
+	testen.
+	
+	\subsection{Experiment~I: Am-241 an ELI-NP (Kernphysik)}
+	\label{sec:exp_am241}
+	
+	\subsubsection{Vorhersage.}
+	
+	Die effektive Zerfallsrate unter resonanter Bestrahlung bei der
+	Giant Dipole Resonance (GDR) ist:
+	\begin{equation}
+		\lambda_{\mathrm{eff}}(\Delta\varphi)
+		= \lambda_0
+		+ \eta(\Delta\varphi) \cdot \Phi_\gamma
+		\cdot \sigma_{\mathrm{GDR}}
+		\label{eq:lambda_eff_exp}
+	\end{equation}
+	Aus der Identit\"at~(\ref{eq:eps_eta_identity}) folgt
+	$\kappa = 1$ ohne freien Parameter. Die zentrale Vorhersage ist
+	das Verh\"altnis der Signalraten bei koh\"arenter
+	($\Delta\varphi \approx 0$, $\eta = 1$) und inkoh\"arenter
+	($\eta = 0{,}5$) Bestrahlung:
+	\[
+		\frac{\mathrm{Signal}(\text{koh\"arent})}%
+		{\mathrm{Signal}(\text{inkoh\"arent})} = 2{,}0
+		\quad\text{(RFT)} \qquad\text{vs.}\qquad 1{,}0
+		\quad\text{(SM)}
+	\]
+	Dieses Verh\"altnis ist unabh\"angig vom absoluten Photonenfluss,
+	von der Targetmasse und von der Messzeit. Es h\"angt
+	ausschlie\ss{}lich von der Phasenabh\"angigkeit der Kopplung
+	ab -- einer Gr\"o\ss{}e, die im Standardmodell der Kernphysik
+	kein Analogon hat.
+	
+	\subsubsection{System.}
+	
+	Target: 100~mg ${}^{241}$Am (d\"unn, auf Pt-Folie,
+	$N = 2{,}50 \times 10^{20}$~Kerne). GDR-Zentroid:
+	$E_{\mathrm{GDR}} = 14{,}0$~MeV (Doppelpeak-Struktur bei
+	$12{,}4$ und $15{,}6$~MeV,
+	Dietrich \& Berman~\cite{dietrich1988}).
+	$\sigma_{\mathrm{GDR}} \approx 300$--$360$~mb am Peak.
+	
+	\subsubsection{Einrichtung.}
+	
+	ELI-NP VEGA Gamma-Beam-Facility
+	(M\u{a}gurele, Rum\"anien,~\cite{elinp2024}):
+	$\Phi > 10^{11}\;\gamma$/s, $\Delta E/E < 0{,}5\%$,
+	Polarisation ${>}\,95\%$. Der Photonenstrahl wird durch
+	inverse Compton-Streuung erzeugt und ist stufenlos im Bereich
+	$0{,}2$--$19{,}5$~MeV einstellbar.
+	
+	\subsubsection{Messprotokoll.}
+	
+	F\"unf Messpunkte mit variierender Phasenkoh\"arenz:
+	
+	\begin{center}
+		\small
+		\begin{tabular}{llrrl}
+			\hline
+			\textbf{Messung} & \textbf{Konfiguration}
+			& $\eta$ \textbf{(RFT)} & $\eta$ \textbf{(SM)}
+			& \textbf{Signal/Signal$_{\mathrm{ink}}$} \\
+			\hline
+			M1 & Koh\"arent ($\Delta\varphi \approx 0$)
+			& $1{,}0$ & $0{,}5$ & $2{,}0$ / $1{,}0$ \\
+			M2 & Teilkoh\"arent ($\Delta\varphi \approx \pi/4$)
+			& $0{,}854$ & $0{,}5$ & $1{,}71$ / $1{,}0$ \\
+			M3 & Teilkoh\"arent ($\Delta\varphi \approx \pi/2$)
+			& $0{,}5$ & $0{,}5$ & $1{,}0$ / $1{,}0$ \\
+			M4 & Teilkoh\"arent ($\Delta\varphi \approx 3\pi/4$)
+			& $0{,}146$ & $0{,}5$ & $0{,}29$ / $1{,}0$ \\
+			M5 & Inkoh\"arent (Referenz)
+			& $0{,}5$ & $0{,}5$ & $1{,}0$ / $1{,}0$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Die RFT sagt: Das Signalmuster folgt $\cos^2(\Delta\varphi/2)$
+	\"uber M1--M5. Das Standardmodell sagt: Alle f\"unf Messungen
+	ergeben das gleiche Signal.
+	
+	\subsubsection{Signifikanz und Ressourcen.}
+	
+	Bei $\Phi = 10^{11}\;\gamma$/s und 4~h Messzeit pro Punkt
+	betr\"agt die erwartete Signifikanz der Differenz
+	$> 50\,000\,\sigma$. Gesamte Strahlzeit: ${\sim}30$~h,
+	Kosten: ${\sim}50\,000$~EUR.
+	
+	\subsubsection{Zusammenfassung.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Experiment~I: Am-241 an ELI-NP.}
+		\label{tab:exp_am241}
+		\begin{tabular}{ll}
+			\hline
+			\textbf{Aspekt} & \textbf{Wert} \\
+			\hline
+			Target & 100~mg ${}^{241}$Am \\
+			Einrichtung & ELI-NP VEGA
+			(M\u{a}gurele, Rum\"anien) \\
+			$E_\gamma$ & 14{,}0~MeV (GDR-Zentroid) \\
+			Vorhersage RFT & Signal$_{\mathrm{koh}}$ /
+			Signal$_{\mathrm{ink}}$ $= 2{,}0$ \\
+			Vorhersage SM & Signal$_{\mathrm{koh}}$ /
+			Signal$_{\mathrm{ink}}$ $= 1{,}0$ \\
+			Signifikanz & $> 50\,000\,\sigma$ \\
+			Freie Parameter & $0$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{Experiment~II: ${}^{87}$Rb-BEC in harmonischer
+		Falle (Quantenmechanik)}
+	\label{sec:exp_rb87}
+	
+	\subsubsection{Vorhersage.}
+	
+	Die RFT-R\"uckkopplung im Schr\"odinger-Sektor moduliert
+	die Fallenpotentialst\"arke \"uber
+	$\varepsilon(\Delta\varphi(t)) \cdot V$ und erzeugt eine
+	Schwerpunktsverschiebung:
+	\begin{equation}
+		|\Delta\langle x\rangle|_{\mathrm{SI}}
+		= C_x \cdot \lambda \cdot \ell
+		\approx 2{,}0 \cdot \lambda\;\mu\mathrm{m}
+		\label{eq:dx_rft}
+	\end{equation}
+	wobei $C_x \approx 4{,}9$ der numerisch bestimmte
+	Pr\"afaktor ist und $\ell \approx 0{,}41\;\mu$m die
+	L\"angeneinheit f\"ur $\omega = 2\pi \times 100$~Hz.
+	Die Standard-Quantenmechanik sagt:
+	$\Delta\langle x\rangle = 0$. Der Parameter~$\lambda$
+	ist der einzige freie Parameter.
+	
+	\subsubsection{System.}
+	
+	Ultrakalte ${}^{87}$Rb-Atome in einer harmonischen Falle
+	($\omega = 2\pi \times 100$~Hz, $T < 200$~nK,
+	$N \sim 10^5$~Atome). Die SI-Kalibrierung erfolgt \"uber
+	$\ell = \sqrt[4]{V_{\mathrm{strength}}} \cdot
+	\sqrt{\hbar/(m\omega)} = 0{,}41\;\mu$m und
+	$\tau = \sqrt{V_{\mathrm{strength}}} / \omega
+	= 0{,}225$~ms.
+	Die Konsistenz wird \"uber sechs unabh\"angige
+	Relationen verifiziert
+	($\hbar = m \cdot \ell^2 / \tau$ etc.).
+	
+	\subsubsection{St\"orungstheorie.}
+	
+	Numerisch verifiziert \"uber $\lambda$-Scan
+	($10^{-4}$\,\ldots\,$5$):
+	$1 - F \sim \lambda^{2{,}00}$,
+	$|\Delta\langle O\rangle| \sim \lambda^{1{,}00}$.
+	Die analytische Vorhersage 1.\ Ordnung stimmt mit der
+	Numerik bis auf einen relativen Fehler von
+	$1{,}3 \times 10^{-4}$ \"uberein.
+	
+	\subsubsection{Kohn-Theorem und Signalunterscheidung.}
+	
+	In einer rein harmonischen Falle gilt das Kohn-Theorem:
+	Die Gross-Pitaevskii-Wechselwirkung ($g|\psi|^2\psi$)
+	verschiebt den Schwerpunkt $\langle x\rangle$ nicht
+	(Kohn-gesch\"utzt). Die RFT-R\"uckkopplung bricht die
+	Kohn-Bedingung durch zeitabh\"angige Modulierung
+	$\varepsilon(\Delta\varphi(t)) \cdot V$ und erzeugt
+	ein konzeptuell verschiedenes Signal:
+	$|\Delta\langle x\rangle| = C_x \cdot \lambda \cdot
+	\ell \neq 0$.
+	
+	\subsubsection{Sensitivit\"at.}
+	
+	$\lambda \gtrsim 0{,}05$ nach 100~Wiederholungen,
+	$\lambda \gtrsim 0{,}005$ nach $10\,000$~Wiederholungen
+	(bei $\omega = 2\pi \times 100$~Hz, r\"aumliche
+	Aufl\"osung~${\sim}1\;\mu$m).
+	
+	\subsubsection{Zusammenfassung.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Experiment~II:
+			${}^{87}$Rb-BEC in harmonischer Falle.}
+		\label{tab:exp_rb87}
+		\begin{tabular}{ll}
+			\hline
+			\textbf{Aspekt} & \textbf{Wert} \\
+			\hline
+			System & ${}^{87}$Rb-BEC,
+			$\omega = 2\pi \times 100$~Hz \\
+			Messgr\"o\ss{}e &
+			$|\Delta\langle x\rangle|$ \\
+			Vorhersage RFT &
+			$2{,}0 \cdot \lambda\;\mu$m \\
+			Vorhersage QM & $0$ \\
+			Freie Parameter & $1$ ($\lambda$) \\
+			Sensitivit\"at &
+			$\lambda \gtrsim 0{,}05$ (100~Schuss) \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{Vergleich beider Experimente}
+	\label{sec:exp_vergleich}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Gegen\"uberstellung der beiden
+			Experimentalvorschl\"age.}
+		\label{tab:exp_comparison}
+		\begin{tabular}{lll}
+			\hline
+			& \textbf{Am-241 (Kernphysik)}
+			& \textbf{${}^{87}$Rb-BEC (QM)} \\
+			\hline
+			Dom\"ane & Kernphysik (GDR, 14~MeV)
+			& QM ($\mu$eV) \\
+			Energieskala & $10^7$~eV
+			& $10^{-12}$~eV \\
+			Messgr\"o\ss{}e
+			& Signal$_{\mathrm{koh}}$ /
+			Signal$_{\mathrm{ink}}$
+			& $\Delta\langle x\rangle$ \\
+			RFT-Vorhersage & $2{,}0$ (exakt)
+			& $2{,}0 \cdot \lambda\;\mu$m \\
+			SM-Vorhersage & $1{,}0$
+			& $0$ \\
+			Freie Parameter & $0$
+			& $1$ ($\lambda$) \\
+			Getestete Gr\"o\ss{}e
+			& $\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
+			& $\varepsilon(\Delta\varphi(t))$ dynamisch \\
+			Testtyp & Ja/Nein (Verh\"altnis)
+			& Kontinuierlich ($\lambda$-Scan) \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	Beide Experimente testen denselben Kern der RFT -- die
+	Kopplungsfunktion $\cos^2(\Delta\varphi/2)$ -- \"uber
+	19~Gr\"o\ss{}enordnungen in der Energie
+	($10^{-12}$~eV bis $10^7$~eV). Sie sind unabh\"angig
+	voneinander falsifizierbar: Das Am-241-Experiment ist ein
+	parameterfreier Ja/Nein-Test, w\"ahrend das
+	${}^{87}$Rb-Experiment einen kontinuierlichen
+	$\lambda$-Scan erm\"oglicht. Die detaillierten
+	Experimentbeschreibungen sind unter~\cite{rftrepo}
+	dokumentiert.
+	
+	
+	%% ============================================================
 	\section{Offene Fragen und Ausblick}
 	%% ============================================================
 	
 	\begin{enumerate}
 		\item \textbf{Bestimmung von $\varepsilon$:}
 		Ab-initio-Herleitung aus Systemgeometrie.
-		
-		\item \textbf{Experimentelle Vorhersage:}
-		Gl.~(\ref{eq:prediction}) direkt pr\"ufbar.
 		
 		\item \textbf{Resonanzreaktor:}
 		Parameterstudie $d$ und $k$ f\"ur $Q > 1$.
@@ -1205,11 +1476,16 @@
 	und eliminiert den letzten freien Parameter.
 	
 	F\"ur wissenschaftliche Anerkennung als physikalische
-	Theorie fehlen: experimentelle Best\"atigung von
-	Gl.~(\ref{eq:prediction}); CMB-Vergleich mit vollem
+	Theorie fehlen: experimentelle Best\"atigung der
+	Vorhersagen aus Abschnitt~\ref{sec:experimente}
+	(Am-241-Phasentest und ${}^{87}$Rb-BEC-Schwerpunkts\-verschiebung);
+	CMB-Vergleich mit vollem
 	$\ell$-Bereich und Boltzmann-Solver; mehrj\"ahrige
 	Live-Validierung von ResoTrade; und statistische
 	Signifikanztests f\"ur die Trading-Performance.
+	Die RFT ist damit aus zwei unabh\"angigen Dom\"anen
+	-- Kernphysik ($10^7$~eV) und Quantenmechanik
+	($10^{-12}$~eV) -- experimentell testbar.
 	
 	Alle Herleitungen, Quellcodes, Simulationen und Daten
 	sind vollst\"andig offen verf\"ugbar.
@@ -1300,6 +1576,16 @@
 		Berman B L and Fultz S C 1975
 		\textit{Rev.\ Mod.\ Phys.}\
 		\textbf{47} 713
+		
+		\bibitem{dietrich1988}
+		Dietrich S S and Berman B L 1988
+		\textit{Atomic Data and Nuclear Data Tables}
+		\textbf{38} 199
+		
+		\bibitem{elinp2024}
+		ELI-NP Collaboration 2024
+		\textit{Phys.\ Rev.\ Accel.\ Beams}\
+		\textbf{27} 021601
 		
 	\end{thebibliography}
 	
