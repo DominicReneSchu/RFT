@@ -591,7 +591,8 @@ def compare_overdamped_vs_density(
     if np.std(dphi_od_norm) > 1e-15 and np.std(dphi_ad_norm) > 1e-15:
         correlation = float(np.corrcoef(dphi_od_norm, dphi_ad_norm)[0, 1])
     else:
-        correlation = 1.0  # trivial (keine Änderung)
+        # Konstante Verläufe: triviale Übereinstimmung (kein Δφ-Drift)
+        correlation = 1.0
 
     # Fidelity-Vergleich
     overlap = np.sum(np.conj(od["psi_final"]) * ad["psi_final"]) * dx

@@ -201,7 +201,7 @@ def evolve_rft_pure(
         if n < steps:
             psi = split_operator_step(psi, V_eff, k, dt, hbar, m)
             # Δφ-Update mit density-Modell
-            pr = participation_ratio(psi, dx)
+            pr = participation_ratio(psi, dx)  # ∫|ψ|⁴dx
             delta_phi = delta_phi + lam * pr * dt
 
     return {
@@ -314,14 +314,14 @@ def gisin_protocol(
         dphi_finals[basis_name] = dphi_list
 
     # Spurnorm-Abstand
-    td = 0.5 * float(np.sum(np.abs(rho_B["X"] - rho_B["Z"]))) * dx
+    trace_dist = 0.5 * float(np.sum(np.abs(rho_B["X"] - rho_B["Z"]))) * dx
 
     return {
         "rho_B": rho_B,
         "evolved_states": evolved_states,
         "dphi_finals": dphi_finals,
-        "trace_distance": td,
-        "signaling_detected": td > 1e-6,
+        "trace_distance": trace_dist,
+        "signaling_detected": trace_dist > 1e-6,
     }
 
 
