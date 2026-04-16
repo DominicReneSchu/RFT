@@ -49,9 +49,28 @@ def expectation_x(x: np.ndarray, psi: np.ndarray, dx: float) -> float:
     return float(np.sum(np.conj(psi) * x * psi).real * dx)
 
 
-def expectation_p(k: np.ndarray, psi_k: np.ndarray, dk: float, hbar: float) -> float:
-    # <p> = ∫ ħ k |psi_k|^2 dk
-    return float(np.sum((hbar * k) * (np.abs(psi_k) ** 2)) * dk)
+def psi_k_continuum(psi_x: np.ndarray, dx: float, dk: float) -> np.ndarray:
+    """
+    Build a k-space wavefunction ψ(k) that is normalized in the *continuum* sense:
+        ∑ |ψ(k)|^2 dk  ≈  ∑ |ψ(x)|^2 dx
+
+    Notes on conventions:
+    - numpy.fft.fft returns unnormalized discrete coefficients.
+    - If ψ(x) is normalized with ∑|ψ|^2 dx = 1, then the raw FFT coefficients
+      must be rescaled to represent a continuum ψ(k) for expectation values.
+    """
+    # raw discrete FFT coefficients
+    psi_k_raw = np.fft.fft(psi_x)
+    # scaling chosen so that (Σ |psi_k_cont|^2 dk) matches (Σ |psi_x|^2 dx)
+    # With numpy's FFT conventions this is achieved by:
+    #   psi_k_cont = (dx / sqrt(2π)) * psi_k_raw
+    # and using k-grid with dk = 2π/L.
+    return (dx / math.sqrt(2.0 * math.pi)) * psi_k_raw
+
+
+def expectation_p_from_k(k: np.ndarray, psi_k_cont: np.ndarray, dk: float, hbar: float) -> float:
+    # <p> = ∫ ħ k |ψ(k)|^2 dk
+    return float(np.sum((hbar * k) * (np.abs(psi_k_cont) ** 2)) * dk)
 
 
 def split_operator_step(
@@ -114,9 +133,9 @@ def main() -> int:
     psi = normalize(psi, dx)
 
     # initial diagnostics
-    psi_k0 = np.fft.fft(psi)
+    psi_k0 = psi_k_continuum(psi, dx=dx, dk=dk)
     x_mean0 = expectation_x(x, psi, dx)
-    p_mean0 = expectation_p(k, psi_k0, dk, args.hbar)
+    p_mean0 = expectation_p_from_k(k, psi_k0, dk, args.hbar)
     norm0 = float(np.sum(np.abs(psi) ** 2) * dx)
 
     # evolve
@@ -130,10 +149,10 @@ def main() -> int:
     for n in range(args.steps + 1):
         t = n * args.dt
         if n % record_every == 0:
-            psi_k = np.fft.fft(psi)
+            psi_k = psi_k_continuum(psi, dx=dx, dk=dk)
             norm = float(np.sum(np.abs(psi) ** 2) * dx)
             x_mean = expectation_x(x, psi, dx)
-            p_mean = expectation_p(k, psi_k, dk, args.hbar)
+            p_mean = expectation_p_from_k(k, psi_k, dk, args.hbar)
 
             ts.append(t)
             norms.append(norm)
@@ -189,6 +208,16 @@ def main() -> int:
     if max_norm_dev > 5e-4:
         # threshold chosen loose enough for default dt; tighten later
         return 2
+
+    # optional physics-smoke for the default free packet:
+    # momentum expectation should be close to ħ*k0 (within discretization error)
+    if args.V == "free":
+        target_p = args.hbar * args.k0
+        # loose threshold; tighten once mapping/stability is pinned down
+        if abs(p_means[-1] - target_p) > 0.5:
+            print(f"[smoke] unexpected <p>: got {p_means[-1]:.6f}, expected ~ {target_p:.6f}")
+            return 3
+
     return 0
 
 
