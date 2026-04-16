@@ -24,6 +24,7 @@ mit ε(Δφ) = cos²(Δφ/2) ∈ [0, 1] als Kopplungseffizienz.
 | [Numerische Demonstration](numerische_demonstration/README.md) | A3, A4, A5 | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
 | [Resonanz-KI](resonanz_ki/begleitkapitel_resonanz_ki.md) | A1–A4 | Zwei gekoppelte Akteure, Fourier-Analyse des Resonanzfelds |
 | [Raumzeit-Resonanzfeld](relativitaet_verbindung/README.md) | A1–A7 | Skalare Resonanzfelder in flacher und gekrümmter Raumzeit |
+| [Schrödinger (1D)](schrödinger/README.md) | A1, A2, A4 | Referenz-QM und RFT-Resonanz-Hamiltonoperator — Korrespondenzprinzip |
 
 ---
 
@@ -59,6 +60,12 @@ python resonanz_ki.py
 cd relativitaet_verbindung
 pip install -r requirements.txt
 python run_1d.py
+
+# Schrödinger (Referenz + RFT-Korrespondenz)
+cd schrödinger
+pip install numpy matplotlib
+python python/schrodinger_1d_reference.py --checks
+python python/schrodinger_1d_rft.py --checks
 ```
 
 ---
@@ -71,7 +78,7 @@ Realisierungen:
 
 | Modell | Formel | Abhängigkeit | Simulation |
 |--------|--------|-------------|------------|
-| Phasenbasiert | cos²(Δφ/2) | Phasendifferenz | Resonanzfeld, Resonanz-KI, Doppelpendel |
+| Phasenbasiert | cos²(Δφ/2) | Phasendifferenz | Resonanzfeld, Resonanz-KI, Doppelpendel, Schrödinger |
 | Frequenzbasiert (Lorentz) | 1/(1+(Δω/γ)²) | Frequenzverstimmung | Numerische Demonstration |
 | Exponentiell | exp(−α·\|Δf\|) | Frequenzdifferenz | Gekoppelte Oszillatoren |
 
@@ -82,7 +89,7 @@ Realisierungen:
 | Axiom | Simulation | Was wird demonstriert |
 |-------|-----------|----------------------|
 | A1 Schwingung | Alle | Periodische Oszillation als Grundstruktur |
-| A2 Superposition | Resonanzfeld, Doppelpendel, Resonanz-KI | Interferenz und Schwebung |
+| A2 Superposition | Resonanzfeld, Doppelpendel, Resonanz-KI, Schrödinger | Interferenz und Schwebung |
 | A3 Resonanzbedingung | Resonanzfeld, Oszillatoren, Num. Demo | Rationale Frequenzverhältnisse / Lorentz-Profil |
 | A4 Kopplungseffizienz | Alle außer Raumzeit | ε bestimmt Anteil der übertragenen Energie |
 | A5 Energierichtung | Resonanzfeld, Num. Demo | Entropie und Energiefluss |
