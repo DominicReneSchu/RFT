@@ -73,6 +73,24 @@ def expectation_p_from_k(k: np.ndarray, psi_k_cont: np.ndarray, dk: float, hbar:
     return float(np.sum((hbar * k) * (np.abs(psi_k_cont) ** 2)) * dk)
 
 
+def expectation_p_from_x(psi_x: np.ndarray, k: np.ndarray, dx: float, hbar: float) -> float:
+    """
+    Zweite unabhängige Kontrolle von <p> direkt im Ortsraum via Ableitungsoperator.
+
+    Berechnet <p> = Re( ∫ ψ*(x) (-iħ ∂_x) ψ(x) dx ).
+
+    Implementierung: Ableitung über FFT (spektral exakt für periodische Randbedingungen):
+        ∂_x ψ = IFFT( i k · FFT(ψ) )
+
+    Hinweis: Das x-Gitter hat periodische Randbedingungen (impliziert durch FFT).
+    Für ein gut lokalisiertes Wellenpaket, das den Rand nicht erreicht, stimmt
+    dieses Ergebnis mit dem k-Raum-Erwartungswert überein.
+    """
+    dpsi_dx = np.fft.ifft(1j * k * np.fft.fft(psi_x))
+    integrand = np.conj(psi_x) * (-1j * hbar) * dpsi_dx
+    return float(np.sum(integrand).real * dx)
+
+
 def split_operator_step(
     psi_x: np.ndarray,
     Vx: np.ndarray,
@@ -136,6 +154,7 @@ def main() -> int:
     psi_k0 = psi_k_continuum(psi, dx=dx, dk=dk)
     x_mean0 = expectation_x(x, psi, dx)
     p_mean0 = expectation_p_from_k(k, psi_k0, dk, args.hbar)
+    p_mean0_x = expectation_p_from_x(psi, k, dx, args.hbar)
     norm0 = float(np.sum(np.abs(psi) ** 2) * dx)
 
     # evolve
@@ -144,6 +163,7 @@ def main() -> int:
     norms = []
     x_means = []
     p_means = []
+    p_means_x = []
     ts = []
 
     for n in range(args.steps + 1):
@@ -153,11 +173,13 @@ def main() -> int:
             norm = float(np.sum(np.abs(psi) ** 2) * dx)
             x_mean = expectation_x(x, psi, dx)
             p_mean = expectation_p_from_k(k, psi_k, dk, args.hbar)
+            p_mean_x = expectation_p_from_x(psi, k, dx, args.hbar)
 
             ts.append(t)
             norms.append(norm)
             x_means.append(x_mean)
             p_means.append(p_mean)
+            p_means_x.append(p_mean_x)
             # store a snapshot of |psi|^2 occasionally (downsample)
             xs.append(np.abs(psi) ** 2)
 
@@ -176,7 +198,8 @@ def main() -> int:
     print(f"norm(t_end)={norm1:.12f}")
     print(f"max |norm - norm(t0)| over run: {max_norm_dev:.3e}")
     print(f"<x>(t0)={x_mean0:.6f}  <x>(t_end)={x_means[-1]:.6f}")
-    print(f"<p>(t0)={p_mean0:.6f}  <p>(t_end)={p_means[-1]:.6f}")
+    print(f"<p>(t0)={p_mean0:.6f}  <p>(t_end)={p_means[-1]:.6f}  [k-Raum]")
+    print(f"<p>(t0)={p_mean0_x:.6f}  <p>(t_end)={p_means_x[-1]:.6f}  [x-Raum via Ableitung]")
 
     if args.plot:
         import matplotlib.pyplot as plt
@@ -215,7 +238,10 @@ def main() -> int:
         target_p = args.hbar * args.k0
         # loose threshold; tighten once mapping/stability is pinned down
         if abs(p_means[-1] - target_p) > 0.5:
-            print(f"[smoke] unexpected <p>: got {p_means[-1]:.6f}, expected ~ {target_p:.6f}")
+            print(f"[smoke] unexpected <p> (k-Raum): got {p_means[-1]:.6f}, expected ~ {target_p:.6f}")
+            return 3
+        if abs(p_means_x[-1] - target_p) > 0.5:
+            print(f"[smoke] unexpected <p> (x-Raum): got {p_means_x[-1]:.6f}, expected ~ {target_p:.6f}")
             return 3
 
     return 0
