@@ -62,6 +62,30 @@ Standard-Schrödinger-Gleichung übereinstimmt.
 → **Korrespondenzprinzip numerisch belegt:** Standard-QM ist
   Spezialfall der RFT mit V_eff = ε(Δφ)·V_Kopplung.
 
+### RFT-Dynamisch (`schrodinger_1d_rft_dynamic.py`)
+
+> **Gutachter-Kritikpunkt:** Die statische RFT-Simulation ist mathematisch
+> eine Tautologie – der Split-Operator sieht nur V_eff, egal ob ε·V als
+> Kopplung oder direkt als Potential hereingegeben wird.
+
+Macht Δφ(t) zu einem **dynamischen Feld**, das an ψ rückkoppelt:
+
+$$
+\Delta\varphi(t+\mathrm{d}t) = \Delta\varphi(t) + \lambda \cdot F[\psi] \cdot \mathrm{d}t
+$$
+
+**Drei Rückkopplungs-Modelle:**
+
+| Modell | F[ψ] | Physikalische Interpretation |
+|--------|------|----------------------------|
+| `density` | ∫\|ψ\|⁴ dx | Kopplung an Lokalisierung |
+| `position` | ⟨x⟩ | Kopplung an mittlere Position |
+| `energy` | ⟨H⟩ − E₀ | Kopplung an Energieabweichung |
+
+→ **Erstmals unterscheidbar von Standard-QM:** Die Rückkopplung
+  ψ → Δφ → V_eff → ψ erzeugt nichtlineare, zustandsabhängige Dynamik,
+  die messbar über Fidelity, ⟨x⟩, ⟨p⟩ von Standard-QM abweicht.
+
 ---
 
 ## Dateistruktur
@@ -70,6 +94,7 @@ Standard-Schrödinger-Gleichung übereinstimmt.
 |-------|----------|
 | [`python/schrodinger_1d_reference.py`](python/schrodinger_1d_reference.py) | Referenz: Standard-Schrödinger (Split-Operator, FFT) |
 | [`python/schrodinger_1d_rft.py`](python/schrodinger_1d_rft.py) | RFT: Resonanz-Hamiltonoperator + Korrespondenznachweis |
+| [`python/schrodinger_1d_rft_dynamic.py`](python/schrodinger_1d_rft_dynamic.py) | RFT-Dynamisch: Δφ(t) mit Rückkopplung an ψ |
 | [`docs/schrodinger_roadmap.md`](docs/schrodinger_roadmap.md) | Forschungsprogramm: Diskretes Feld → Schrödinger |
 | [`requirements.txt`](requirements.txt) | Abhängigkeiten |
 
@@ -87,6 +112,11 @@ python python/schrodinger_1d_reference.py --plot
 # RFT-Korrespondenznachweis
 python python/schrodinger_1d_rft.py --checks
 python python/schrodinger_1d_rft.py --plot
+
+# RFT-Dynamisch (Δφ koppelt rück an ψ)
+python python/schrodinger_1d_rft_dynamic.py --checks
+python python/schrodinger_1d_rft_dynamic.py --model density --lambda_coupling 5.0
+python python/schrodinger_1d_rft_dynamic.py --model position --plot
 
 # Referenz mit Potential
 python python/schrodinger_1d_reference.py --V harmonic --Vstrength 0.01 --steps 3000 --plot
