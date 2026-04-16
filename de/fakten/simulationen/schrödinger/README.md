@@ -64,7 +64,7 @@ Standard-Schrödinger-Gleichung übereinstimmt.
 
 ### RFT-Dynamisch (`schrodinger_1d_rft_dynamic.py`)
 
-> **Gutachter-Kritikpunkt:** Die statische RFT-Simulation ist mathematisch
+> **Kritikpunkt:** Die statische RFT-Simulation ist mathematisch
 > eine Tautologie – der Split-Operator sieht nur V_eff, egal ob ε·V als
 > Kopplung oder direkt als Potential hereingegeben wird.
 
@@ -88,7 +88,7 @@ $$
 
 ### Störungstheorie (`schrodinger_1d_rft_perturbation.py`)
 
-> **Gutachter-Empfehlung:** „Im Limit λ → 0 muss die dynamische RFT gegen
+> **Empfehlung:** „Im Limit λ → 0 muss die dynamische RFT gegen
 > Standard-QM konvergieren, mit führenden Korrekturen O(λ). Das wäre die
 > Störungstheorie der RFT."
 
@@ -114,7 +114,7 @@ Konsistenzcheck.
 
 ### Experimenteller Vorschlag (`schrodinger_1d_rft_experiment.py`)
 
-> **Gutachter-Kritikpunkt 3.1:** „SI-Einheiten / Kalibrierung —
+> **Kritikpunkt 3.1:** „SI-Einheiten / Kalibrierung —
 > Dimensionslose Parameter auf ein physikalisches System abbilden."
 
 Bildet die Störungstheorie-Ergebnisse auf **ultrakalte ⁸⁷Rb-Atome
@@ -162,7 +162,7 @@ Fallenstärke zeitabhängig und *bricht* die Kohn-Bedingung
 
 **Gesamtbilanz vs. Peer-Review:**
 
-| Gutachter-Forderung | Status |
+| Forderung | Status |
 |---------------------|--------|
 | 1.1 Lagrange-Dichte | ⚠️ Motiviert, nicht abgeleitet |
 | 1.2 Spezifikation ε(Δφ) | ✅ cos²(Δφ/2) |
