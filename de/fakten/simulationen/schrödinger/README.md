@@ -95,16 +95,54 @@ $$
 Systematischer λ-Scan über mehrere Größenordnungen (10⁻⁴ … 10⁰) mit
 Potenzgesetz-Analyse und analytischer Störungstheorie 1. Ordnung:
 
-| Observable | Skalierung | Interpretation |
-|------------|-----------|----------------|
-| 1 − Fidelity | ~ λ² | Zustandstreue: quadratische Konvergenz |
-| \|Δ⟨x⟩\| | ~ λ | Erwartungswert: lineare Korrektur |
-| \|Δ⟨p⟩\| | ~ λ | Erwartungswert: lineare Korrektur |
-| max\|Δψ\| | ~ λ | Wellenfunktion: lineare Korrektur |
+| Observable | Exponent (numerisch) | Exponent (Theorie) | Abweichung |
+|------------|---------------------:|-------------------:|-----------:|
+| 1 − Fidelity | 2.001 | 2 | 0.05 % |
+| \|Δ⟨x⟩\| | 1.001 | 1 | 0.1 % |
+| \|Δ⟨p⟩\| | 1.001 | 1 | 0.1 % |
+| max\|Δψ\| | 0.999 | 1 | 0.1 % |
+
+Dass $1 - F \sim \lambda^2$ folgt direkt aus
+$|\langle\psi_0|\psi_0 + \lambda\psi_1\rangle|^2 = 1 - \lambda^2\|\psi_1\|^2 + \mathcal{O}(\lambda^3)$.
+Die analytische Vorhersage 1. Ordnung stimmt mit der Numerik bis auf
+relativen Fehler $1.3 \times 10^{-4}$ überein — ein harter, unabhängiger
+Konsistenzcheck.
 
 → **Standard-QM ist exakter Grenzfall der RFT.** Die Störungstheorie
   bestätigt: RFT ist eine wohldefinierte, kontrollierte Erweiterung
   mit λ als einzigem freien Parameter.
+
+### Experimenteller Vorschlag (`schrodinger_1d_rft_experiment.py`)
+
+> **Gutachter-Kritikpunkt 3.1:** „SI-Einheiten / Kalibrierung —
+> Dimensionslose Parameter auf ein physikalisches System abbilden."
+
+Bildet die Störungstheorie-Ergebnisse auf **ultrakalte ⁸⁷Rb-Atome
+in einer harmonischen Falle** ab — das experimentelle Standardsystem
+für Präzisionsmessungen in der Quantenmechanik:
+
+**SI-Kalibrierung:**
+
+| Größe | Formel | Wert (ω = 2π × 100 Hz) |
+|-------|--------|------------------------:|
+| Oszillatorlänge | $a_\mathrm{ho} = \sqrt{\hbar/(m\omega)}$ | 1.08 µm |
+| Längeneinheit | $\ell = V_s^{1/4} \cdot a_\mathrm{ho}$ | 0.41 µm |
+| Zeiteinheit | $\tau = \sqrt{V_s} / \omega$ | 0.225 ms |
+
+**Falsifizierbare Vorhersage:**
+
+$$
+|\Delta\langle x\rangle|_\mathrm{SI} = 4.9 \cdot \lambda \cdot \ell
+\approx 2.0 \cdot \lambda\;\mu\mathrm{m}
+$$
+
+messbar über Absorptionsbildgebung (Auflösung ~ 1 µm).
+Detektierbarkeitsgrenze: λ ≳ 0.05 nach 100 Wiederholungen.
+
+→ **Die RFT liefert eine testbare Vorhersage.** Entweder wird ein
+  Positionsshift $\propto \lambda$ gemessen (RFT bestätigt), oder
+  eine obere Schranke für λ gesetzt (Parameterraum eingeschränkt).
+  Details im [Experimentellen Vorschlag](docs/experimental_proposal.md).
 
 ---
 
@@ -116,6 +154,8 @@ Potenzgesetz-Analyse und analytischer Störungstheorie 1. Ordnung:
 | [`python/schrodinger_1d_rft.py`](python/schrodinger_1d_rft.py) | RFT: Resonanz-Hamiltonoperator + Korrespondenznachweis |
 | [`python/schrodinger_1d_rft_dynamic.py`](python/schrodinger_1d_rft_dynamic.py) | RFT-Dynamisch: Δφ(t) mit Rückkopplung an ψ |
 | [`python/schrodinger_1d_rft_perturbation.py`](python/schrodinger_1d_rft_perturbation.py) | Störungstheorie: λ→0 Konvergenz, Skalierungsanalyse |
+| [`python/schrodinger_1d_rft_experiment.py`](python/schrodinger_1d_rft_experiment.py) | Experimenteller Vorschlag: SI-Kalibrierung für ⁸⁷Rb |
+| [`docs/experimental_proposal.md`](docs/experimental_proposal.md) | Experimenteller Vorschlag: Falsifizierbare Vorhersage |
 | [`docs/schrodinger_roadmap.md`](docs/schrodinger_roadmap.md) | Forschungsprogramm: Diskretes Feld → Schrödinger |
 | [`requirements.txt`](requirements.txt) | Abhängigkeiten |
 
@@ -142,6 +182,11 @@ python python/schrodinger_1d_rft_dynamic.py --model position --plot
 # Störungstheorie (λ → 0 Konvergenz)
 python python/schrodinger_1d_rft_perturbation.py --checks
 python python/schrodinger_1d_rft_perturbation.py --plot
+
+# Experimenteller Vorschlag (SI-Kalibrierung)
+python python/schrodinger_1d_rft_experiment.py --checks
+python python/schrodinger_1d_rft_experiment.py --omega 50
+python python/schrodinger_1d_rft_experiment.py --plot
 
 # Referenz mit Potential
 python python/schrodinger_1d_reference.py --V harmonic --Vstrength 0.01 --steps 3000 --plot

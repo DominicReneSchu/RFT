@@ -68,6 +68,7 @@ python python/schrodinger_1d_reference.py --checks
 python python/schrodinger_1d_rft.py --checks
 python python/schrodinger_1d_rft_dynamic.py --checks
 python python/schrodinger_1d_rft_perturbation.py --checks
+python python/schrodinger_1d_rft_experiment.py --checks
 ```
 
 ---
