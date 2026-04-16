@@ -1,1 +1,0 @@
-"""Kernmodule des Resonanzfeld-Frameworks: Modelle und numerische Methoden."""
