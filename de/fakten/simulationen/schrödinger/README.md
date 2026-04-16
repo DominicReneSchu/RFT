@@ -146,6 +146,68 @@ $$
 | 100 Wiederholungen | 0.05 | σ/√N |
 | 10 000 Wiederholungen | 0.005 | Statistik |
 
+### Lagrange-Dichte / Wirkungsprinzip (`schrodinger_1d_rft_lagrangian.py`)
+
+> **Gutachter-Kritikpunkt 1.1:** „Ohne Wirkungsprinzip bleibt das
+> density-Modell motiviert, nicht abgeleitet."
+
+Definiert das RFT-Wirkungsfunktional $S[\psi, \Delta\varphi]$ und leitet
+die Δφ-Dynamik aus den Euler-Lagrange-Gleichungen ab:
+
+$$
+S = \int \mathrm{d}t \left[ \langle\psi|i\hbar\partial_t - \hat{H}_0|\psi\rangle
+- \varepsilon(\Delta\varphi)\langle V\rangle_\psi
++ \frac{\mu}{2}(\dot{\Delta\varphi})^2 \right]
+$$
+
+**Zwei Regime:**
+
+| Regime | Gleichung | Physik |
+|--------|-----------|--------|
+| Inertial (μ > 0) | μ·Δφ̈ = ½ sin(Δφ) · ⟨V⟩_ψ | Phasenfeld mit eigener Trägheit |
+| Überdämpft (γ) | γ·Δφ̇ = ½ sin(Δφ) · ⟨V⟩_ψ | → density-Modell als Grenzfall |
+
+→ **Das density-Modell ist ein effektiver Grenzfall des Wirkungsprinzips.**
+  Noether-Energie E = ⟨Ĥ_res⟩ + μ/2·(Δφ̇)² ist numerisch erhalten.
+
+### 2-Teilchen / Gisin-Theorem (`schrodinger_1d_rft_two_particle.py`)
+
+> **Gutachter-Kritikpunkt (Gisin):** „Nichtlineare QM erlaubt
+> prinzipiell superluminale Signalisierung (Gisin 1990).
+> Ist die RFT konsistent?"
+
+Implementiert das vollständige Gisin-Protokoll:
+
+1. Präpariere verschränkten Zustand |Ψ⟩ = (|L⟩_A|↑⟩_B + |R⟩_A|↓⟩_B) / √2
+2. Alice misst in zwei verschiedenen Basen (X: L/R, Z: +/−)
+3. Bobs Zustände werden mit RFT-Dynamik propagiert
+4. Vergleiche ρ_B(t) für beide Basen
+
+**Ergebnis:** Globales Δφ verletzt No-Signaling (D ~ λ¹).
+Lokales Δφ (getrennte Felder Δφ_A, Δφ_B) erhält No-Signaling.
+
+→ **Die RFT erfordert lokale Kopplungsstruktur:** φ(x,t) ist ein
+  lokales Feld (wie das EM-Feld). Dies ist physikalisch natürlich
+  und konsistent mit ART.
+
+### Theoretische λ-Erwartung (`schrodinger_1d_rft_lambda_bounds.py`)
+
+> **Gutachter-Kritikpunkt:** „Ohne Größenordnung für λ bleibt unklar,
+> ob das Experiment Chancen hat."
+
+Systematische Größenordnungsabschätzung aus fünf Perspektiven:
+
+| Ansatz | λ (Größenordnung) | Erreichbar? |
+|--------|-------------------:|-------------|
+| Gravitativ (Penrose/Diósi) | 10⁻³⁵ | nein |
+| BSM (elektroschwach α²) | 10⁻⁴ | nein (10⁴ Schuss) |
+| Dekohärenz (Spontanemission) | 10⁻⁶ | nein |
+| Experiment (100 Schuss) | 0.62 | Grenze |
+| Experiment (10 000 Schuss) | 0.062 | Grenze |
+
+→ **Das Experiment ist ein Schranken-Experiment:** Entweder wird λ
+  gemessen (Entdeckung) oder eine obere Schranke gesetzt (Ausschluss).
+
 ### Kritische Einordnung (`--critical`)
 
 > **Was ein Gutachter fragen wird** — und die Antworten darauf.
@@ -164,12 +226,14 @@ Fallenstärke zeitabhängig und *bricht* die Kohn-Bedingung
 
 | Gutachter-Forderung | Status |
 |---------------------|--------|
-| 1.1 Lagrange-Dichte | ⚠️ Motiviert, nicht abgeleitet |
+| 1.1 Lagrange-Dichte | ✅ Wirkungsprinzip S[ψ,Δφ] + Euler-Lagrange |
 | 1.2 Spezifikation ε(Δφ) | ✅ cos²(Δφ/2) |
 | 2.1 ART-Grenzwert | ❌ Bewusst abgegrenzt |
 | 2.2 Eichinvarianz | ❌ Offen |
+| 2.3 Gisin-Theorem / No-Signaling | ✅ Lokale Kopplung → konsistent |
 | 3.1 SI-Einheiten / Kalibrierung | ✅ Vollständig |
 | 3.2 Statistische Signifikanz ΛCDM | ❌ Anderer Sektor |
+| 3.3 Theoretische Erwartung für λ | ✅ Größenordnungsabschätzung |
 | 4.1 Wirkungsgrad κ=1 | ❌ Anderer Sektor |
 | „Schrödinger aus Axiom 4" | ✅ Fünf Stufen |
 | Falsifizierbare Vorhersage | ✅ ⁸⁷Rb-Experiment |
@@ -191,6 +255,9 @@ Fallenstärke zeitabhängig und *bricht* die Kohn-Bedingung
 | [`python/schrodinger_1d_rft_dynamic.py`](python/schrodinger_1d_rft_dynamic.py) | RFT-Dynamisch: Δφ(t) mit Rückkopplung an ψ |
 | [`python/schrodinger_1d_rft_perturbation.py`](python/schrodinger_1d_rft_perturbation.py) | Störungstheorie: λ→0 Konvergenz, Skalierungsanalyse |
 | [`python/schrodinger_1d_rft_experiment.py`](python/schrodinger_1d_rft_experiment.py) | Experimenteller Vorschlag: SI-Kalibrierung für ⁸⁷Rb |
+| [`python/schrodinger_1d_rft_lagrangian.py`](python/schrodinger_1d_rft_lagrangian.py) | Lagrange-Dichte: Wirkungsprinzip für Δφ-Dynamik |
+| [`python/schrodinger_1d_rft_two_particle.py`](python/schrodinger_1d_rft_two_particle.py) | 2-Teilchen: Gisin-Theorem, No-Signaling-Analyse |
+| [`python/schrodinger_1d_rft_lambda_bounds.py`](python/schrodinger_1d_rft_lambda_bounds.py) | Theoretische Erwartung für λ: Größenordnungsabschätzung |
 | [`docs/experimental_proposal.md`](docs/experimental_proposal.md) | Experimenteller Vorschlag: Falsifizierbare Vorhersage |
 | [`docs/schrodinger_roadmap.md`](docs/schrodinger_roadmap.md) | Forschungsprogramm: Diskretes Feld → Schrödinger |
 | [`requirements.txt`](requirements.txt) | Abhängigkeiten |
@@ -224,6 +291,19 @@ python python/schrodinger_1d_rft_experiment.py --checks
 python python/schrodinger_1d_rft_experiment.py --omega 50
 python python/schrodinger_1d_rft_experiment.py --critical
 python python/schrodinger_1d_rft_experiment.py --plot
+
+# Lagrange-Dichte (Wirkungsprinzip)
+python python/schrodinger_1d_rft_lagrangian.py --checks
+python python/schrodinger_1d_rft_lagrangian.py --regime inertial --mu 0.1
+python python/schrodinger_1d_rft_lagrangian.py --plot
+
+# 2-Teilchen / Gisin-Theorem
+python python/schrodinger_1d_rft_two_particle.py --checks
+python python/schrodinger_1d_rft_two_particle.py --plot
+
+# Theoretische λ-Erwartung
+python python/schrodinger_1d_rft_lambda_bounds.py --checks
+python python/schrodinger_1d_rft_lambda_bounds.py --omega 50
 
 # Referenz mit Potential
 python python/schrodinger_1d_reference.py --V harmonic --Vstrength 0.01 --steps 3000 --plot
