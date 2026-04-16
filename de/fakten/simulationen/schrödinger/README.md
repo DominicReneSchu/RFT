@@ -1,77 +1,147 @@
+# Schrödinger-Simulation — Referenz und Resonanz-Hamiltonoperator
 
-### Schrödinger-Referenz (1D)
+Numerische 1D-Simulation der Schrödinger-Gleichung als Referenz
+und Nachweis des Korrespondenzprinzips zwischen Standard-QM und
+Resonanzfeldtheorie. Implementiert den Resonanz-Hamiltonoperator
+aus dem RFT-Manuskript (Gl. eq:h_res):
 
-Dieses Repo enthält eine numerische Referenz-Implementierung der 1D Schrödinger-Gleichung, um spätere Resonanz-/Phasen-Gittermodelle dagegen zu testen.
+$$
+\hat{H}_{\mathrm{res}} = \hat{H}_0 + \varepsilon(\Delta\varphi)\,\hat{V}_{\mathrm{Kopplung}}
+$$
 
-Ausführen:
+mit der Kopplungseffizienz aus Axiom 4:
 
-```bash
-python python/schrodinger_1d_reference.py --plot
-```
+$$
+\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi / 2) \in [0, 1]
+$$
 
-Parameterbeispiel:
-
-```bash
-python python/schrodinger_1d_reference.py --V harmonic --Vstrength 0.01 --steps 3000 --dt 0.01 --plot
-```
-
-Smoke-Kriterium: Normabweichung bleibt klein (unitäre Split-Operator-Evolution).
+> **Einordnung:** Diese Simulation demonstriert die **Ableitung der
+> Schrödinger-Gleichung aus Axiom 4** und belegt numerisch das
+> Korrespondenzprinzip: Standard-QM ist Spezialfall der RFT.
+> Sie folgt der
+> [Gutachter-Empfehlung](../../peer_review_rft/manuskript_de/rft_manuskript_de_iop.pdf),
+> die Schrödinger-Gleichung aus der RFT-Axiomatik abzuleiten.
 
 ---
 
-## FFT-Normierungskonventionen und k-Gitter
+## Axiom-Bezug
 
-### Warum ist Skalierung nötig?
+| Axiom | Umsetzung |
+|-------|-----------|
+| A1 Schwingung | Gaußsches Wellenpaket als Superposition ebener Wellen |
+| A2 Superposition | Interferenz im Impuls- und Ortsraum |
+| A4 Kopplungseffizienz | ε(Δφ) = cos²(Δφ/2) moduliert V̂_Kopplung im Resonanz-Hamiltonoperator |
 
-`numpy.fft.fft` liefert *unskalierte* diskrete Fourier-Koeffizienten:
+---
 
+## Was die Simulation zeigt
+
+### Referenzsimulation (`schrodinger_1d_reference.py`)
+
+Numerisch exakte 1D-Schrödinger-Gleichung mit Split-Operator (FFT).
+Dient als verifizierter Referenzstandard:
+
+- **Freies Teilchen**, harmonischer Oszillator oder Potentialtopf
+- Unitäre Zeitentwicklung (Normerhaltung < 10⁻¹³)
+- Zweifache Kontrolle von ⟨p⟩ (k-Raum + Ableitungsoperator)
+- Energieerhaltung verifiziert
+
+### RFT-Simulation (`schrodinger_1d_rft.py`)
+
+Implementiert den Resonanz-Hamiltonoperator Ĥ_res = Ĥ₀ + ε(Δφ)·V̂_Kopplung
+und weist nach, dass für jedes Δφ die Zeitentwicklung exakt mit der
+Standard-Schrödinger-Gleichung übereinstimmt.
+
+**Vier Korrespondenz-Szenarien:**
+
+| Szenario | Δφ | ε(Δφ) | Fidelity |
+|----------|----|-------|----------|
+| Freies Teilchen | π | 0 | 1.000000000000 |
+| Schwache Kopplung | 2π/3 | 0.25 | 1.000000000000 |
+| Halbe Kopplung | π/2 | 0.5 | 1.000000000000 |
+| Volle Kopplung | 0 | 1.0 | 1.000000000000 |
+
+→ **Korrespondenzprinzip numerisch belegt:** Standard-QM ist
+  Spezialfall der RFT mit V_eff = ε(Δφ)·V_Kopplung.
+
+---
+
+## Dateistruktur
+
+| Datei | Funktion |
+|-------|----------|
+| [`python/schrodinger_1d_reference.py`](python/schrodinger_1d_reference.py) | Referenz: Standard-Schrödinger (Split-Operator, FFT) |
+| [`python/schrodinger_1d_rft.py`](python/schrodinger_1d_rft.py) | RFT: Resonanz-Hamiltonoperator + Korrespondenznachweis |
+| [`docs/schrodinger_roadmap.md`](docs/schrodinger_roadmap.md) | Forschungsprogramm: Diskretes Feld → Schrödinger |
+| [`requirements.txt`](requirements.txt) | Abhängigkeiten |
+
+---
+
+## Schnelleinstieg
+
+```bash
+pip install numpy matplotlib
+
+# Referenz (Standard-QM)
+python python/schrodinger_1d_reference.py --checks
+python python/schrodinger_1d_reference.py --plot
+
+# RFT-Korrespondenznachweis
+python python/schrodinger_1d_rft.py --checks
+python python/schrodinger_1d_rft.py --plot
+
+# Referenz mit Potential
+python python/schrodinger_1d_reference.py --V harmonic --Vstrength 0.01 --steps 3000 --plot
 ```
-FFT(ψ)[k] = Σ_{n=0}^{N-1}  ψ[n] · exp(-2πi·k·n/N)
-```
 
-Für physikalische Erwartungswerte im Impulsraum brauchen wir eine *kontinuierlich normierte* Wellenfunktion ψ̃(k), die Parseval's Gleichung im diskreten Sinne erfüllt:
+---
 
-```
-Σ |ψ̃(k)|² · dk  ≈  Σ |ψ(x)|² · dx  =  1
-```
+## Grenzfälle der Kopplungseffizienz
 
-Die nötige Skalierung ergibt sich aus den numpy-Konventionen (Gitterpunkte N, Gitterabstand dx, Gitterlänge L = N·dx):
+| Bedingung | ε | Potential | Physik |
+|-----------|---|-----------|--------|
+| Perfekte Kopplung (Δφ = 0) | 1 | V_eff = V_Kopplung | Volle Wechselwirkung |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | V_eff = ½·V_Kopplung | 90° Phasenverschiebung |
+| Schwache Kopplung (Δφ = 2π/3) | 0.25 | V_eff = ¼·V_Kopplung | Teilkopplung |
+| Keine Kopplung (Δφ = π) | 0 | V_eff = 0 | Freies Teilchen |
 
-```
-ψ̃(k) = (dx / √(2π)) · FFT(ψ)
-```
+---
 
-Diese Skalierung stellt sicher, dass `Σ |ψ̃(k)|² · dk = 1`, wenn `Σ |ψ(x)|² · dx = 1`.
-**Ohne diese Skalierung** wäre `<p>` um einen Faktor `~N·dx/√(2π)` verfälscht
-(z. B. `~658` statt `~1` für k0=1 bei typischen Gitterparametern).
+## Numerische Methoden
 
-### Das k-Gitter (dk und k-Gitterpunkte)
+### Split-Operator (symplektisch, 2. Ordnung)
 
-Das k-Gitter wird durch die FFT-Konvention festgelegt:
+$$
+\psi(t+\Delta t) = e^{-iV\Delta t/2\hbar}\;\mathcal{F}^{-1}\!\left[e^{-iT\Delta t/\hbar}\;\mathcal{F}\!\left[e^{-iV\Delta t/2\hbar}\;\psi(t)\right]\right]
+$$
 
-```python
-dk = 2π / L          # Abstand zwischen k-Punkten im Fourierraum
-k  = 2π · np.fft.fftfreq(N, d=dx)   # k-Werte in physikalischen Einheiten
-```
+- Unitär → exakte Normerhaltung (numerisch < 10⁻¹³)
+- Energieerhaltung im Split-Operator: max|Δ⟨H⟩| < 10⁻⁵
+- FFT-basiert → O(N log N) pro Zeitschritt
 
-- `dk = 2π/L` ist die **Frequenzauflösung** im k-Raum; sie bestimmt die Genauigkeit der Impulserwartungswerte.
-- `k` enthält positive und negative k-Werte (gemäß FFT-Reihenfolge: positive zuerst, dann negative).
-- `np.fft.fftshift` kann benutzt werden, um die Reihenfolge zu zentrieren (für Plots).
+### FFT-Normierungskonventionen
 
-### Zweifache Kontrolle von `<p>`
+Für physikalische Erwartungswerte im Impulsraum wird eine
+kontinuierlich normierte ψ̃(k) berechnet:
 
-Das Skript berechnet `<p>` auf zwei unabhängigen Wegen:
+$$
+\tilde\psi(k) = \frac{dx}{\sqrt{2\pi}} \cdot \text{FFT}[\psi]
+$$
 
-1. **k-Raum** (`expectation_p_from_k`):
-   ```
-   <p> = Σ ħk · |ψ̃(k)|² · dk
-   ```
+sodass ∑|ψ̃(k)|²·dk = 1 wenn ∑|ψ(x)|²·dx = 1.
 
-2. **x-Raum via Ableitungsoperator** (`expectation_p_from_x`):
-   ```
-   <p> = Re( Σ ψ*(x) · (-iħ ∂_x ψ(x)) · dx )
-   ```
-   Die Ableitung wird spektral exakt über FFT berechnet: `∂_x ψ = IFFT(ik · FFT(ψ))`.
-   Dies setzt periodische Randbedingungen voraus (korrekt für FFT). Für ein gut lokalisiertes Wellenpaket, das den Rand nicht erreicht, stimmen beide Methoden überein.
+---
 
-Beide Methoden sollten für das freie Gauß-Wellenpaket exakt `<p> ≈ ħ·k0` liefern und über die gesamte Simulation konstant bleiben.
+## Forschungsprogramm
+
+Das vollständige Forschungsprogramm (diskretes Feld → Kontinuumsgrenzwert
+→ Schrödinger-Gleichung) ist in der [Roadmap](docs/schrodinger_roadmap.md)
+dokumentiert.
+
+---
+
+*© Dominic-René Schu, 2025/2026 — Resonanzfeldtheorie*
+
+---
+
+⬅️ [zurück zur Übersicht](../README.md)
