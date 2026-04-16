@@ -283,7 +283,7 @@ Zusätzliche experimentelle Unterscheidungsmerkmale:
 
 ## 7. Bilanz gegenüber der Peer-Review
 
-| Gutachter-Forderung | Status |
+| Forderung | Status |
 |---------------------|--------|
 | 1.1 Lagrange-Dichte / Wirkungsprinzip | ⚠️ Motiviert, nicht abgeleitet |
 | 1.2 Spezifikation $\varepsilon(\Delta\varphi)$ | ✅ $\cos^2(\Delta\varphi/2)$, analytisch, invertierbar |

@@ -161,7 +161,7 @@ Das ist auch der Punkt, an dem Kritikpunkt 2.1 (ART-Grenzwert) und 2.2 (Eichinva
 
 ## G. Störungstheorie der RFT — Konvergenz gegen Standard-QM
 
-### Gutachter-Empfehlung (adressiert)
+### Empfehlung (adressiert)
 
 > Im Limit λ → 0 (schwache Rückkopplung) muss die dynamische RFT gegen
 > Standard-QM konvergieren, und die führenden Korrekturen müssen von
