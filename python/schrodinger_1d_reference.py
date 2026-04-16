@@ -20,10 +20,8 @@ import numpy as np
 
 
 def gaussian_wavepacket(x: np.ndarray, x0: float, k0: float, sigma: float) -> np.ndarray:
-    """Normalized (continuous-inspired) Gaussian wavepacket."""
-    # unnormalized
+    """Unnormalized Gaussian wavepacket; caller must normalize separately."""
     psi = np.exp(-0.5 * ((x - x0) / sigma) ** 2) * np.exp(1j * k0 * x)
-    # discrete normalization
     return psi
 
 
