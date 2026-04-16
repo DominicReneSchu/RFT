@@ -586,7 +586,7 @@ def _plot_results(
     n_scenarios = len(results)
     fig, axs = plt.subplots(n_scenarios, 3, figsize=(16, 4 * n_scenarios))
     if n_scenarios == 1:
-        axs = axs[np.newaxis, :]
+        axs = axs.reshape(1, -1)
 
     for i, r in enumerate(results):
         ref = r["ref"]
