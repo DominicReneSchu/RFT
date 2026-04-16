@@ -231,7 +231,7 @@ In realen BEC-Experimenten dominieren systematische Effekte:
 
 | Fehlerquelle | Geschätzte Verschiebung | Skalierung |
 |-------------|------------------------:|------------|
-| GP-Mean-Field auf $\langle x\rangle$ | **0 (Kohn-Theorem)** | — |
+| GP-Mean-Field auf $\langle x\rangle$ | **0 (Kohn-Theorem)** | nicht anwendbar |
 | Potentialanharmonizitäten | ~ 1 nm | $\delta\omega/\omega$ |
 | Magnetfeldgradienten (0.1 mG/cm) | ~ 650 nm | $\mu_B \cdot \nabla B$ |
 | Drei-Körper-Verluste | ~ 11 nm | $\Delta N / N$ |
