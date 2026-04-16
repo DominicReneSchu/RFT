@@ -127,7 +127,40 @@ Diese Referenz dient als Regressionstest: Resonanzmodell muss (im passenden Para
 
 ---
 
+## E′. Kritikpunkt: Was der Gutachter als nächstes fragen wird
+
+### Das Tautologie-Problem
+
+Die bisherige Ableitung zeigt:
+
+$$
+\hat{H}_{\mathrm{res}} = \hat{H}_0 + \varepsilon(\Delta\varphi)\,\hat{V}_{\mathrm{Kopplung}}
+$$
+
+reproduziert die Standard-QM mit $V_{\mathrm{eff}} = \varepsilon \cdot V_{\mathrm{Kopplung}}$.
+
+Das ist mathematisch eine **Tautologie**: Der Split-Operator sieht nur $V_{\mathrm{eff}}$, egal ob dieses als $\varepsilon(\Delta\varphi) \cdot V$ über eine Kopplung oder direkt als Potential hereingegeben wird. Ein kritischer Gutachter wird das sofort bemerken.
+
+### Die entscheidende offene Frage: Woher kommt $\Delta\varphi$?
+
+| Frage | Warum entscheidend |
+|-------|-------------------|
+| Ist $\Delta\varphi$ ein externer Parameter oder ein dynamisches Feld? | Wenn extern → RFT ist nur Umparametrisierung der Standard-QM |
+| Hat $\Delta\varphi$ eine eigene Bewegungsgleichung? | Wenn ja → neue Physik möglich (und testbar) |
+| Wie koppelt $\Delta\varphi$ an den Zustand $\psi$? | Rückkopplung $\psi \to \Delta\varphi \to V_{\mathrm{eff}} \to \psi$ wäre nicht-trivial |
+
+### Konkrete Empfehlung
+
+Ein `schrodinger_1d_rft_dynamic.py`, in dem $\Delta\varphi(t)$ **selbst dynamisch** ist – z. B. gekoppelt an $|\psi|^2$ oder an $\langle x \rangle$ – würde die RFT erstmals von Standard-QM **unterscheidbar** machen. Erst dann kann man sagen: *"RFT ist nicht nur eine Umschreibung, sondern eine Erweiterung."*
+
+Das ist auch der Punkt, an dem Kritikpunkt 2.1 (ART-Grenzwert) und 2.2 (Eichinvarianz) erstmals angreifbar werden – sobald die Dynamik von $\Delta\varphi$ feststeht, lassen sich Vorhersagen ableiten, die experimentell testbar sind.
+
+**Status:** Implementiert in [`python/schrodinger_1d_rft_dynamic.py`](../python/schrodinger_1d_rft_dynamic.py).
+
+---
+
 ## F. Nächster Schritt (konkret)
-- Implementiere `schrodinger_1d_free_particle.py` als Referenz.
-- Ergänze Smoke-Test: Normabweichung nach N Schritten < Toleranz.
-- Danach: Baue ein minimales Phasen-Kopplungsmodell und vergleiche numerisch gegen die Referenz.
+- ~~Implementiere `schrodinger_1d_free_particle.py` als Referenz.~~ ✓ (`schrodinger_1d_reference.py`)
+- ~~Ergänze Smoke-Test: Normabweichung nach N Schritten < Toleranz.~~ ✓
+- ~~Baue ein minimales Phasen-Kopplungsmodell und vergleiche numerisch gegen die Referenz.~~ ✓ (`schrodinger_1d_rft.py`)
+- **Neu:** Dynamische Phasenkopplung $\Delta\varphi(t)$ mit Rückkopplung an $|\psi|^2$ implementieren und gegen Standard-QM vergleichen. → `schrodinger_1d_rft_dynamic.py`
