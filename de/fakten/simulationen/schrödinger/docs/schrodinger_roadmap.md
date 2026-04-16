@@ -309,6 +309,7 @@ $\lambda \gtrsim 0.05$ nach 100 Wiederholungen.
 |---------|-------------|--------|
 | Kalibrierung | Dimensionslose Parameter auf SI-Einheiten abbilden | ✅ [`schrodinger_1d_rft_experiment.py`](../python/schrodinger_1d_rft_experiment.py) |
 | Experimenteller Vorschlag | Falsifizierbare Vorhersage für ⁸⁷Rb | ✅ [`experimental_proposal.md`](experimental_proposal.md) |
+| Kritische Einordnung | GP-Problem (Kohn), Systematik, Gutachterfragen | ✅ `--critical` Flag + [Abschnitt 6](experimental_proposal.md#6-kritische-einordnung) |
 | ART-Grenzwert | Kopplung von φ an die Metrik | ❌ Offen (bewusst abgegrenzt) |
 
 ---
@@ -320,5 +321,6 @@ $\lambda \gtrsim 0.05$ nach 100 Wiederholungen.
 - ~~Dynamische Phasenkopplung $\Delta\varphi(t)$ mit Rückkopplung an $|\psi|^2$ implementieren.~~ ✓ (`schrodinger_1d_rft_dynamic.py`)
 - ~~Störungstheorie: λ-Scan, Skalierungsanalyse, analytische Vorhersage.~~ ✓ (`schrodinger_1d_rft_perturbation.py`)
 - ~~SI-Kalibrierung und experimenteller Vorschlag.~~ ✓ (`schrodinger_1d_rft_experiment.py`)
+- ~~Kritische Einordnung: GP-Problem, Systematik, Peer-Review-Bilanz.~~ ✓ (`--critical`)
 - **Offen:** 2-Teilchen-Erweiterung für Gisin-Theorem / No-Signaling
 - **Offen:** Wirkungsprinzip (Lagrange-Dichte) für die Rückkopplung

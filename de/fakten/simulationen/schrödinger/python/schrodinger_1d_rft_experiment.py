@@ -61,6 +61,7 @@ import numpy as np
 HBAR_SI: float = 1.054571817e-34      # ℏ [J·s]
 M_RB87_SI: float = 86.909180520 * 1.66053906660e-27  # ⁸⁷Rb Masse [kg]
 K_B_SI: float = 1.380649e-23          # Boltzmann-Konstante [J/K]
+A_S_RB87: float = 5.77e-9             # ⁸⁷Rb s-Wellen-Streulänge [m]
 
 # Simulationsparameter (identisch mit schrodinger_1d_rft_perturbation.py)
 V_STRENGTH_SIM: float = 0.02          # ½ · V_strength · x² (dimensionslos)
@@ -206,6 +207,134 @@ def detectable_lambda_range(
     ell = simulation_length_unit(m_si, omega_si, v_strength)
     sigma_eff = resolution_m / math.sqrt(n_repetitions)
     return sigma_eff / (c_x * ell)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  Gross-Pitaevskii-Vergleich und systematische Fehler
+# ═══════════════════════════════════════════════════════════════════════════════
+
+
+def gross_pitaevskii_coupling(
+    m_si: float,
+    a_s: float = A_S_RB87,
+) -> float:
+    """Gross-Pitaevskii-Kopplungskonstante g = 4π·ℏ²·a_s / m  [J·m³]."""
+    return 4.0 * math.pi * HBAR_SI ** 2 * a_s / m_si
+
+
+def gp_mean_field_shift(
+    m_si: float,
+    omega_si: float,
+    n_atoms: int = 100_000,
+    a_s: float = A_S_RB87,
+) -> dict[str, float]:
+    """Analyse der GP-Mean-Field-Effekte auf ⟨x⟩ [m].
+
+    Kohn-Theorem: In einer rein harmonischen Falle ist die
+    Schwerpunktsbewegung exakt bei ω, unabhängig von Wechselwirkungen.
+    → GP-Mean-Field verschiebt ⟨x⟩ NICHT in perfekter harmonischer Falle!
+
+    Effekte auf ⟨x⟩ kommen nur von:
+    1. Anharmonizitäten (Trap-Imperfektionen)
+    2. Positionsabhängige Verluste
+
+    GP-Effekte auf höhere Momente (⟨x²⟩, Breite) sind vorhanden,
+    aber interferieren nicht mit der ⟨x⟩-Messung.
+    """
+    a_ho = harmonic_oscillator_length(m_si, omega_si)
+    r_tf = a_ho * (15.0 * n_atoms * a_s / a_ho) ** 0.2
+    mu = 0.5 * m_si * omega_si ** 2 * r_tf ** 2
+    mu_over_hbar_omega = mu / (HBAR_SI * omega_si)
+
+    return {
+        "r_tf_m": r_tf,
+        "mu_j": mu,
+        "mu_over_hbar_omega": mu_over_hbar_omega,
+        "dx_shift_m": 0.0,  # Kohn-Theorem: exakt Null
+        "kohn_protected": True,
+    }
+
+
+def systematic_error_budget(
+    m_si: float,
+    omega_si: float,
+    n_atoms: int = 100_000,
+    a_s: float = A_S_RB87,
+) -> dict[str, float]:
+    """Abschätzung systematischer Fehlerquellen [m].
+
+    Returns
+    -------
+    Dictionary mit geschätzten systematischen Verschiebungen.
+    """
+    a_ho = harmonic_oscillator_length(m_si, omega_si)
+
+    # GP-Mean-Field: Kohn-geschützt in harmonischer Falle
+    dx_gp = 0.0
+
+    # Potentialanharmonizität (typisch: δω/ω ~ 10⁻³ → δx ~ 10⁻³ · a_ho)
+    dx_anharmonicity = 1e-3 * a_ho
+
+    # Magnetfeldgradienten (gut kompensiertes Experiment: 0.1 mG/cm)
+    mu_b = 9.274e-24  # Bohrsches Magneton [J/T]
+    db_dx = 1e-3  # 0.1 mG/cm = 10⁻³ T/m (kompensierte Spulen)
+    f_mag = mu_b * db_dx
+    tau = simulation_time_unit(m_si, omega_si)
+    t_sim = 20.0 * tau
+    dx_magnetic = 0.5 * f_mag / m_si * t_sim ** 2
+
+    # Drei-Körper-Verluste (Atomzahlverlust → Schwerpunktdrift)
+    dx_three_body = 0.01 * a_ho
+
+    return {
+        "gp_mean_field_m": dx_gp,
+        "anharmonicity_m": dx_anharmonicity,
+        "magnetic_gradient_m": dx_magnetic,
+        "three_body_loss_m": dx_three_body,
+        "total_systematic_m": math.sqrt(
+            dx_gp ** 2 + dx_anharmonicity ** 2
+            + dx_magnetic ** 2 + dx_three_body ** 2
+        ),
+    }
+
+
+def gp_rft_discriminability(
+    lam: float,
+    m_si: float,
+    omega_si: float,
+    n_atoms: int = 100_000,
+    v_strength: float = V_STRENGTH_SIM,
+) -> dict[str, float]:
+    """Vergleich: RFT-Verschiebung vs. GP-Mean-Field-Effekt.
+
+    Zentrales Argument (Kohn-Theorem):
+    In einer rein harmonischen Falle verschiebt die GP-Wechselwirkung
+    den Schwerpunkt ⟨x⟩ NICHT. Die Schwerpunktsbewegung ist exakt
+    harmonisch bei ω, unabhängig von g, N, a_s.
+
+    Die RFT-Rückkopplung ε(Δφ(t))·V hingegen erzeugt eine
+    zeitabhängige Modulierung der Fallenstärke, die ⟨x⟩ verschiebt.
+    → RFT-Effekt auf ⟨x⟩ ist konzeptuell verschieden von GP.
+
+    Protokoll zur zusätzlichen experimentellen Unterscheidung:
+    1. N-Scan: GP-Breite ∝ N^(2/5), RFT-Shift ⟨x⟩ unabhängig von N
+    2. a_s-Scan: Feshbach-Resonanz zum Tunen von a_s
+    3. ω-Scan: Verschiedene Skalierungsgesetze
+    4. Δφ₀-Scan: Nur RFT hängt von Anfangsphasendifferenz ab
+    """
+    ell = simulation_length_unit(m_si, omega_si, v_strength)
+    dx_rft = C_X_PREFACTOR * lam * ell
+
+    gp = gp_mean_field_shift(m_si, omega_si, n_atoms)
+    dx_gp_on_mean_x = gp["dx_shift_m"]
+
+    return {
+        "dx_rft_m": dx_rft,
+        "dx_gp_on_mean_x_m": dx_gp_on_mean_x,
+        "kohn_protected": gp["kohn_protected"],
+        "mu_over_hbar_omega": gp["mu_over_hbar_omega"],
+        "r_tf_m": gp["r_tf_m"],
+    }
 
 
 def experimental_parameters(
@@ -486,6 +615,10 @@ def main() -> int:
         "--verify", action="store_true",
         help="Numerische Verifikation der Präfaktoren",
     )
+    ap.add_argument(
+        "--critical", action="store_true",
+        help="Kritische Einordnung: GP-Vergleich, systematische Fehler",
+    )
     args = ap.parse_args()
 
     omega_hz: float = args.omega
@@ -648,6 +781,107 @@ def main() -> int:
             print(f"  [WARN] C_x weicht um >{5}% ab — Präfaktor prüfen!")
         if rel_p > 0.05:
             print(f"  [WARN] C_p weicht um >{5}% ab — Präfaktor prüfen!")
+
+    # ─── Kritische Einordnung ─────────────────────────────────────────
+    if args.critical:
+        print(f"\n{'=' * 74}")
+        print("  Kritische Einordnung: GP-Vergleich & Systematische Fehler")
+        print(f"{'=' * 74}")
+
+        # Systematische Fehler
+        syst = systematic_error_budget(m_si, omega_si)
+        print(f"\n  Systematische Fehlerquellen:")
+        print(f"  {'─' * 60}")
+        print(f"  {'Quelle':<30s}  {'Δx [µm]':>10s}  {'Δx [nm]':>10s}")
+        print(f"  {'─' * 60}")
+        for label, key in [
+            ("GP-Mean-Field", "gp_mean_field_m"),
+            ("Anharmonizität", "anharmonicity_m"),
+            ("Magnetfeldgradient", "magnetic_gradient_m"),
+            ("Drei-Körper-Verluste", "three_body_loss_m"),
+            ("Gesamt (quadratisch)", "total_systematic_m"),
+        ]:
+            val_m = syst[key]
+            print(f"  {label:<30s}  {val_m * 1e6:10.4f}  {val_m * 1e9:10.2f}")
+
+        # GP vs. RFT Vergleich — Kohn-Theorem
+        comp_ref = gp_rft_discriminability(0.1, m_si, omega_si)
+        print(f"\n  Kohn-Theorem — Schutz von ⟨x⟩:")
+        print(f"  {'─' * 60}")
+        print("  In einer rein harmonischen Falle gilt das Kohn-Theorem:")
+        print("  Die Schwerpunktsbewegung ⟨x⟩(t) ist exakt harmonisch")
+        print("  bei ω — UNABHÄNGIG von Atom-Atom-Wechselwirkungen.")
+        print(f"  → GP-Wechselwirkung verschiebt ⟨x⟩ NICHT.")
+        print(f"  → Kohn-geschützt: {comp_ref['kohn_protected']}")
+        print(f"  → µ/(ℏω) = {comp_ref['mu_over_hbar_omega']:.1f}  "
+              f"(Thomas-Fermi-Regime)")
+        print(f"  → R_TF = {comp_ref['r_tf_m'] * 1e6:.2f} µm")
+        print()
+        print("  RFT-Rückkopplung ε(Δφ(t))·V moduliert die Fallenstärke")
+        print("  zeitabhängig → bricht die Kohn-Bedingung → ⟨x⟩-Shift.")
+        print()
+        print(f"  {'λ':>8s}  {'Δx_RFT [µm]':>12s}  {'Δx_GP(⟨x⟩)':>12s}  "
+              f"{'Kommentar':>20s}")
+        print(f"  {'─' * 60}")
+        for lam in [0.01, 0.05, 0.1, 0.5, 1.0]:
+            comp = gp_rft_discriminability(lam, m_si, omega_si)
+            print(f"  {lam:8.2f}  {comp['dx_rft_m'] * 1e6:12.4f}  "
+                  f"{'0 (Kohn)':>12s}  {'RFT einzigartig':>20s}")
+
+        print(f"\n  Zusätzliches Unterscheidungsprotokoll:")
+        print(f"  {'─' * 60}")
+        print("  1. N-Scan: GP ändert Breite ∝ N^(2/5), RFT ⟨x⟩ ≠ f(N)")
+        print("  2. a_s-Scan: GP ∝ a_s via Feshbach, RFT unabhängig von a_s")
+        print("  3. ω-Scan: RFT ∝ ω^(-1/2), GP-Breite ∝ ω^(-3/5)")
+        print("  4. Δφ₀-Scan: Nur RFT hängt von der Anfangsphasendifferenz ab")
+
+        # Gutachterfragen
+        print(f"\n  Offene Gutachterfragen:")
+        print(f"  {'─' * 60}")
+        print("  Q1: Ist λ = 0.05 physikalisch plausibel?")
+        print("      → Keine theoretische Vorhersage für λ. Wenn λ < 10⁻¹⁰")
+        print("        (typisch für BSM-Korrekturen), wäre das Experiment")
+        print("        chancenlos. Das Experiment setzt obere Schranken.")
+        print()
+        print("  Q2: Systematische vs. statistische Fehler?")
+        dx_rft_01 = predict_delta_x_si(0.1, m_si, omega_si) * 1e6
+        print(f"      → Δx_RFT(λ=0.1) = {dx_rft_01:.3f} µm")
+        print(f"      → Δx_syst(total) = {syst['total_systematic_m'] * 1e6:.3f} µm")
+        if syst["total_systematic_m"] > predict_delta_x_si(0.1, m_si, omega_si):
+            print("      ⚠ Systematik dominiert für λ ≲ 0.1!")
+        else:
+            print("      ✓ RFT-Signal bei λ = 0.1 übersteigt Systematik.")
+        print()
+        print("  Q3: Gross-Pitaevskii-Problem:")
+        print("      → RFT-Rückkopplung Δφ̇ ∝ ∫|ψ|⁴dx hat dieselbe")
+        print("        funktionale Form wie GP-Kontaktwechselwirkung g|ψ|²ψ.")
+        print("      → ABER: Kohn-Theorem schützt ⟨x⟩ in harmonischer Falle")
+        print("        vor GP-Verschiebungen. GP ändert nur die Breite,")
+        print("        nicht den Schwerpunkt.")
+        print("      → RFT moduliert ε(Δφ(t))·V zeitabhängig → bricht Kohn")
+        print("        → verschiebt ⟨x⟩. Konzeptuell verschiedener Effekt.")
+        print("      → Zusätzlich: Skalierungsverhalten (N, a_s, ω, Δφ₀)")
+        print("        unterscheidet RFT und GP experimentell.")
+
+        # Bilanz
+        print(f"\n  Gesamtbilanz vs. Peer-Review:")
+        print(f"  {'─' * 60}")
+        print(f"  {'Gutachter-Forderung':<40s}  {'Status':>10s}")
+        print(f"  {'─' * 60}")
+        for label, status in [
+            ("1.1 Lagrange-Dichte", "⚠️ Motiviert"),
+            ("1.2 Spezifikation ε(Δφ)", "✅"),
+            ("2.1 ART-Grenzwert", "❌ Abgegrenzt"),
+            ("2.2 Eichinvarianz", "❌ Offen"),
+            ("3.1 SI-Einheiten / Kalibrierung", "✅"),
+            ("3.2 Statistische Signifikanz ΛCDM", "❌ Anderer Sektor"),
+            ("4.1 Wirkungsgrad κ=1", "❌ Anderer Sektor"),
+            ("Schrödinger aus Axiom 4", "✅ Fünf Stufen"),
+            ("Falsifizierbare Vorhersage", "✅ ⁸⁷Rb-Experiment"),
+            ("Kritische Einordnung (GP/Syst.)", "✅ Hier adressiert"),
+        ]:
+            print(f"  {label:<40s}  {status:>10s}")
+
 
     # ─── Zusammenfassung ──────────────────────────────────────────────
     print(f"\n{'=' * 74}")

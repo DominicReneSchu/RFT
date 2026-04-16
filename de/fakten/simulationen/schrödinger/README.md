@@ -123,11 +123,15 @@ für Präzisionsmessungen in der Quantenmechanik:
 
 **SI-Kalibrierung:**
 
-| Größe | Formel | Wert (ω = 2π × 100 Hz) |
-|-------|--------|------------------------:|
-| Oszillatorlänge | $a_\mathrm{ho} = \sqrt{\hbar/(m\omega)}$ | 1.08 µm |
-| Längeneinheit | $\ell = V_s^{1/4} \cdot a_\mathrm{ho}$ | 0.41 µm |
-| Zeiteinheit | $\tau = \sqrt{V_s} / \omega$ | 0.225 ms |
+| Dimensionslose Größe | SI-Pendant | Formel | Wert (ω = 2π × 100 Hz) |
+|---------------------|-----------|--------|------------------------:|
+| x = 1 | ℓ | $V_s^{1/4} \cdot a_\mathrm{ho}$ | 0.41 µm |
+| t = 1 | τ | $\sqrt{V_s} / \omega$ | 0.225 ms |
+| E = 1 | ℏ/τ | $\hbar \cdot \omega / \sqrt{V_s}$ | 2.92 × 10⁻¹² eV |
+| p = 1 | ℏ/ℓ | $\hbar / \ell$ | 2.60 × 10⁻²⁸ kg·m/s |
+
+Die Kalibrierungskette ist sauber: $\hbar = m \cdot \ell^2 / \tau$ wird
+als Konsistenzcheck verifiziert (6 unabhängige Relationen).
 
 **Falsifizierbare Vorhersage:**
 
@@ -136,8 +140,40 @@ $$
 \approx 2.0 \cdot \lambda\;\mu\mathrm{m}
 $$
 
-messbar über Absorptionsbildgebung (Auflösung ~ 1 µm).
-Detektierbarkeitsgrenze: λ ≳ 0.05 nach 100 Wiederholungen.
+| Szenario | λ_min | Methode |
+|----------|------:|---------|
+| Einzelschuss | 0.50 | 1 µm Auflösung direkt |
+| 100 Wiederholungen | 0.05 | σ/√N |
+| 10 000 Wiederholungen | 0.005 | Statistik |
+
+### Kritische Einordnung (`--critical`)
+
+> **Was ein Gutachter fragen wird** — und die Antworten darauf.
+
+**Kohn-Theorem als Schlüsselargument:** In einer rein harmonischen
+Falle verschiebt die GP-Wechselwirkung den Schwerpunkt ⟨x⟩ *nicht*
+(Kohn-Theorem). Die RFT-Rückkopplung ε(Δφ(t))·V moduliert die
+Fallenstärke zeitabhängig und *bricht* die Kohn-Bedingung
+→ der ⟨x⟩-Shift ist ein *einzigartiges* RFT-Signal.
+
+**Systematische Fehler:** Der dominante Fehler ist der Magnetfeldgradient
+(~650 nm bei 0.1 mG/cm). Anharmonizitäten (~1 nm) und Drei-Körper-Verluste
+(~11 nm) sind subdominant.
+
+**Gesamtbilanz vs. Peer-Review:**
+
+| Gutachter-Forderung | Status |
+|---------------------|--------|
+| 1.1 Lagrange-Dichte | ⚠️ Motiviert, nicht abgeleitet |
+| 1.2 Spezifikation ε(Δφ) | ✅ cos²(Δφ/2) |
+| 2.1 ART-Grenzwert | ❌ Bewusst abgegrenzt |
+| 2.2 Eichinvarianz | ❌ Offen |
+| 3.1 SI-Einheiten / Kalibrierung | ✅ Vollständig |
+| 3.2 Statistische Signifikanz ΛCDM | ❌ Anderer Sektor |
+| 4.1 Wirkungsgrad κ=1 | ❌ Anderer Sektor |
+| „Schrödinger aus Axiom 4" | ✅ Fünf Stufen |
+| Falsifizierbare Vorhersage | ✅ ⁸⁷Rb-Experiment |
+| Kritische Einordnung (GP/Syst.) | ✅ Kohn-Theorem + Fehlerbudget |
 
 → **Die RFT liefert eine testbare Vorhersage.** Entweder wird ein
   Positionsshift $\propto \lambda$ gemessen (RFT bestätigt), oder
@@ -186,6 +222,7 @@ python python/schrodinger_1d_rft_perturbation.py --plot
 # Experimenteller Vorschlag (SI-Kalibrierung)
 python python/schrodinger_1d_rft_experiment.py --checks
 python python/schrodinger_1d_rft_experiment.py --omega 50
+python python/schrodinger_1d_rft_experiment.py --critical
 python python/schrodinger_1d_rft_experiment.py --plot
 
 # Referenz mit Potential
