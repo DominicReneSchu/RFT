@@ -547,7 +547,7 @@ def main() -> int:
     print(f"  {'─' * 60}")
     print(f"  1. BEC aus ⁸⁷Rb präparieren (T < {params['t_bec_typical_nK']:.0f} nK)")
     print(f"  2. Harmonische Falle mit ω = 2π × {omega_hz:.0f} Hz")
-    print(f"  3. Wellenpaket initalisieren (Impuls-Kick: k₀ = 1.0 / ℓ)")
+    print(f"  3. Wellenpaket initialisieren (Impuls-Kick: k₀ = 1.0 / ℓ)")
     print(f"  4. Frei propagieren lassen für t = {params['t_phys_s'] * 1e3:.1f} ms")
     print(f"  5. Absorptionsbildgebung: ⟨x⟩ messen")
     print(f"  6. Wiederhole N = 100–10000 mal")
