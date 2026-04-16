@@ -193,7 +193,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 |---|---------|-------------|
 | 1 | [Resonanzfeld](fakten/simulationen/resonanzfeld/simulation_resonanzfeldtheorie.md) | A1–A5 - Zwei Oszillatoren, Kopplungseffizienz, Energierichtung |
 | 2 | [Doppelpendel](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | A1, A2, A4 - Klassisches Doppelpendel mit dynamischer Kopplungseffizienz ε(θ₂−θ₁) |
-| 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) - A1–A4 | Energieaustausch, Resonanzerkennung, Live-Animation |
+| 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) | A1–A4 - Energieaustausch, Resonanzerkennung, Live-Animation |
 | 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/README.md) | A3, A4, A5 - Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
 | 5 | [FLRW-Simulationen](fakten/simulationen/FLRW-Simulationen/README.md) | A1–A7 - 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
 | 6 | [Altcoin-Analyse](fakten/simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) | A3 - 200.000 Episoden, Falsifikationstest |
