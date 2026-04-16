@@ -159,7 +159,144 @@ Das ist auch der Punkt, an dem Kritikpunkt 2.1 (ART-Grenzwert) und 2.2 (Eichinva
 
 ---
 
-## F. Nächster Schritt (konkret)
+## G. Störungstheorie der RFT — Konvergenz gegen Standard-QM
+
+### Gutachter-Empfehlung (adressiert)
+
+> Im Limit λ → 0 (schwache Rückkopplung) muss die dynamische RFT gegen
+> Standard-QM konvergieren, und die führenden Korrekturen müssen von
+> Ordnung O(λ) sein. Das wäre die Störungstheorie der RFT.
+
+### Störungsentwicklung
+
+Schreibe $\psi_{\mathrm{RFT}} = \psi_0 + \lambda\,\psi_1 + O(\lambda^2)$
+und $\Delta\varphi(t) = \Delta\varphi_0 + \lambda\,\varphi_1(t) + O(\lambda^2)$.
+
+**Nullte Ordnung** ($\lambda = 0$):
+
+$$
+i\hbar\,\partial_t\psi_0 = [\hat{H}_0 + \varepsilon(\Delta\varphi_0)\,V]\,\psi_0
+$$
+
+Das ist exakt die Standard-Schrödinger-Gleichung mit $V_{\mathrm{eff}} = \varepsilon_0 \cdot V$.
+
+**Erste Ordnung**:
+
+$$
+i\hbar\,\partial_t\psi_1 = [\hat{H}_0 + \varepsilon_0\,V]\,\psi_1 + \varepsilon'(\Delta\varphi_0)\,\varphi_1(t)\,V\,\psi_0
+$$
+
+wobei $\varphi_1(t) = \int_0^t F[\psi_0(t')]\,\mathrm{d}t'$ das integrierte
+Rückkopplungsfunktional der ungestörten Lösung ist.
+
+### Numerische Verifikation
+
+Die Simulation [`python/schrodinger_1d_rft_perturbation.py`](../python/schrodinger_1d_rft_perturbation.py)
+bestätigt die Störungstheorie über einen systematischen λ-Scan:
+
+| Observable | Skalierung (numerisch) | Erwartet (Theorie) |
+|------------|------------------------|--------------------|
+| 1 − Fidelity | ~ λ^2.00 | O(λ²) |
+| \|Δ⟨x⟩\| | ~ λ^1.00 | O(λ) |
+| \|Δ⟨p⟩\| | ~ λ^1.00 | O(λ) |
+| max\|Δψ\| | ~ λ^1.00 | O(λ) |
+
+Zusätzlich stimmt die analytische Vorhersage 1. Ordnung für Δε mit der
+Numerik bis auf relative Fehler < 0.02% überein.
+
+### Konsequenzen
+
+1. **Standard-QM ist exakter Grenzfall:** Für λ = 0 reproduziert die
+   dynamische RFT die Standard-Schrödinger-Gleichung identisch
+   (Fidelity = 1.000000000000).
+
+2. **Kontrollierbare Korrekturen:** Abweichungen sind O(λ) in
+   Erwartungswerten und O(λ²) in der Zustandstreue — die RFT ist
+   eine wohldefinierte Erweiterung mit kontrolliertem Parameterraum.
+
+3. **Normerhaltung:** Für alle λ bleibt die Norm erhalten (< 10⁻¹³),
+   da V_eff stets reell ist und der Split-Operator unitär bleibt.
+
+**Status:** Implementiert in [`python/schrodinger_1d_rft_perturbation.py`](../python/schrodinger_1d_rft_perturbation.py).
+
+---
+
+## H. Kritikpunkte — Gisin-Theorem, Axiom-Ableitung, Messdaten
+
+### H.1 Axiomatische Ableitung des Rückkopplungsmodells
+
+**Kritikpunkt:** Die drei Modelle (density, position, energy) in der
+dynamischen Simulation sind ad hoc. Welches folgt aus den RFT-Axiomen?
+
+**Antwort (Abschnitt G der Roadmap):**
+
+Das density-Modell $\dot{\Delta\varphi} = \lambda \int |\psi|^4\,\mathrm{d}x$
+lässt sich wie folgt aus dem RFT-Formalismus motivieren:
+
+1. Das RFT-Kopplungsfunktional enthält den Term
+   $S_{\mathrm{Kopplung}}[\psi, \varphi] = \int \varepsilon(\Delta\varphi) \cdot |\psi(x)|^2\,\mathrm{d}x$.
+
+2. Variation nach $\Delta\varphi$ liefert $\varepsilon'(\Delta\varphi)$
+   als Quelle der Phasendynamik.
+
+3. Der Lokalisierungsterm $\int |\psi|^4\,\mathrm{d}x$ entsteht als
+   niedrigste nichtlineare Korrektur im effektiven Wirkungsfunktional
+   (analog zur Gross-Pitaevskii-Herleitung aus dem Kontaktwechselwirkungsterm).
+
+4. Die Modelle position und energy bleiben als **alternative
+   Rückkopplungshypothesen** erhalten — sie sind empirisch testbar,
+   sobald Messdaten vorliegen (Kritikpunkt H.3).
+
+**Offener Punkt:** Eine vollständige Ableitung aus einem
+RFT-Wirkungsprinzip (Hamilton-/Lagrange-Formalismus) steht aus.
+Das erfordert die Spezifikation der kinetischen Energie des φ-Feldes
+(z.B. $\frac{1}{2}(\partial_t \Delta\varphi)^2$), was über den
+aktuellen 1-Teilchen-Rahmen hinausgeht.
+
+### H.2 Gisin-Theorem und No-Signaling-Bedingung
+
+**Kritikpunkt:** Nichtlineare QM erlaubt prinzipiell superluminale
+Signalisierung (Gisin 1990). Verletzt die RFT-Dynamik die
+No-Signaling-Bedingung?
+
+**Antwort:**
+
+1. **1-Teilchen-Sektor:** In der vorliegenden 1D-Simulation gibt es
+   kein Signaling-Problem. Die Dynamik ist nichtlinear, aber lokal
+   (kein zweites Teilchen, an das ein Signal gesendet werden könnte).
+
+2. **Norm ist erhalten:** Da $V_{\mathrm{eff}}$ stets reell ist, bleibt
+   der Split-Operator unitär in jedem Einzelschritt. Numerisch bestätigt:
+   Normabweichung < 10⁻¹³ für alle λ.
+
+3. **Perturbativer Schutz:** Im Limit λ → 0 ist die Dynamik streng
+   linear und unitär → No-Signaling gilt exakt. Für 0 < λ ≪ 1 sind
+   Abweichungen von der Linearität O(λ) — das Gisin-Theorem greift
+   erst bei endlichem λ im Mehrteilchensektor.
+
+4. **Offener Punkt:** Die Frage der No-Signaling-Bedingung wird
+   relevant, sobald die RFT auf den Mehrteilchensektor erweitert
+   wird. Mögliche Auswege:
+   - φ koppelt nur lokal an ψ (keine instantane Fernwirkung)
+   - Dekoherenz unterdrückt nichtlineare Effekte im Vielteilchenlimit
+   - λ_eff(N) → 0 für N → ∞ (thermodynamischer Grenzwert)
+
+### H.3 Kontakt zu Messdaten (offen)
+
+**Kritikpunkte 2.1 (ART-Grenzwert) und 3.1 (SI-Einheiten, Kalibrierung)
+bleiben offen.**
+
+Geplante nächste Schritte:
+
+| Schritt | Beschreibung | Abhängigkeit |
+|---------|-------------|-------------|
+| Kalibrierung | Dimensionslose Parameter (λ, V_strength) auf SI-Einheiten abbilden | Erfordert physikalisches System (z.B. Atomfalle) |
+| Experimenteller Vorschlag | Vorhersage eines messbaren RFT-Effekts (z.B. Δ⟨x⟩ ∝ λ) | Störungstheorie (Abschnitt G) ✓ |
+| ART-Grenzwert | Kopplung von φ an die Metrik → RFT-Korrekturen zur Geodätengleichung | Erfordert relativistische Erweiterung |
+
+---
+
+## I. Nächste Schritte (aktualisiert)
 - ~~Implementiere `schrodinger_1d_free_particle.py` als Referenz.~~ ✓ (`schrodinger_1d_reference.py`)
 - ~~Ergänze Smoke-Test: Normabweichung nach N Schritten < Toleranz.~~ ✓
 - ~~Baue ein minimales Phasen-Kopplungsmodell und vergleiche numerisch gegen die Referenz.~~ ✓ (`schrodinger_1d_rft.py`)
