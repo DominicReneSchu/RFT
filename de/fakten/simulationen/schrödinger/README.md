@@ -18,9 +18,7 @@ $$
 > **Einordnung:** Diese Simulation demonstriert die **Ableitung der
 > Schrödinger-Gleichung aus Axiom 4** und belegt numerisch das
 > Korrespondenzprinzip: Standard-QM ist Spezialfall der RFT.
-> Sie folgt der
-> [Gutachter-Empfehlung](../../peer_review_rft/manuskript_de/rft_manuskript_de_iop.pdf),
-> die Schrödinger-Gleichung aus der RFT-Axiomatik abzuleiten.
+> Sie folgt der Empfehlung, die Schrödinger-Gleichung aus der RFT-Axiomatik abzuleiten.
 
 ---
 
