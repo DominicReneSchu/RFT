@@ -281,18 +281,35 @@ No-Signaling-Bedingung?
    - Dekoherenz unterdrückt nichtlineare Effekte im Vielteilchenlimit
    - λ_eff(N) → 0 für N → ∞ (thermodynamischer Grenzwert)
 
-### H.3 Kontakt zu Messdaten (offen)
+### H.3 Kontakt zu Messdaten (adressiert)
 
-**Kritikpunkte 2.1 (ART-Grenzwert) und 3.1 (SI-Einheiten, Kalibrierung)
-bleiben offen.**
+**Kritikpunkt 3.1 (SI-Einheiten, Kalibrierung) ist adressiert.**
+Kritikpunkt 2.1 (ART-Grenzwert) bleibt offen.
 
-Geplante nächste Schritte:
+Die Störungstheorie-Ergebnisse wurden auf ein konkretes physikalisches
+System abgebildet: **ultrakalte ⁸⁷Rb-Atome in einer harmonischen Falle**.
 
-| Schritt | Beschreibung | Abhängigkeit |
-|---------|-------------|-------------|
-| Kalibrierung | Dimensionslose Parameter (λ, V_strength) auf SI-Einheiten abbilden | Erfordert physikalisches System (z.B. Atomfalle) |
-| Experimenteller Vorschlag | Vorhersage eines messbaren RFT-Effekts (z.B. Δ⟨x⟩ ∝ λ) | Störungstheorie (Abschnitt G) ✓ |
-| ART-Grenzwert | Kopplung von φ an die Metrik → RFT-Korrekturen zur Geodätengleichung | Erfordert relativistische Erweiterung |
+**Falsifizierbare Vorhersage:**
+
+$$
+|\Delta\langle x\rangle|_\mathrm{SI} = 4.9 \cdot \lambda \cdot \ell
+\approx 2.0 \cdot \lambda\;\mu\mathrm{m}
+$$
+
+wobei $\ell = V_\mathrm{strength}^{1/4} \cdot a_\mathrm{ho}$ die
+Längeneinheit der Simulation ist. Für $\omega = 2\pi \times 100\;\mathrm{Hz}$
+ergibt sich $a_\mathrm{ho} \approx 1.08\;\mu\mathrm{m}$ und
+$\ell \approx 0.41\;\mu\mathrm{m}$.
+
+Die Vorhersage ist messbar über Absorptionsbildgebung (Time-of-Flight)
+mit räumlicher Auflösung ~ 1 µm. Detektierbarkeitsgrenze:
+$\lambda \gtrsim 0.05$ nach 100 Wiederholungen.
+
+| Schritt | Beschreibung | Status |
+|---------|-------------|--------|
+| Kalibrierung | Dimensionslose Parameter auf SI-Einheiten abbilden | ✅ [`schrodinger_1d_rft_experiment.py`](../python/schrodinger_1d_rft_experiment.py) |
+| Experimenteller Vorschlag | Falsifizierbare Vorhersage für ⁸⁷Rb | ✅ [`experimental_proposal.md`](experimental_proposal.md) |
+| ART-Grenzwert | Kopplung von φ an die Metrik | ❌ Offen (bewusst abgegrenzt) |
 
 ---
 
@@ -300,4 +317,8 @@ Geplante nächste Schritte:
 - ~~Implementiere `schrodinger_1d_free_particle.py` als Referenz.~~ ✓ (`schrodinger_1d_reference.py`)
 - ~~Ergänze Smoke-Test: Normabweichung nach N Schritten < Toleranz.~~ ✓
 - ~~Baue ein minimales Phasen-Kopplungsmodell und vergleiche numerisch gegen die Referenz.~~ ✓ (`schrodinger_1d_rft.py`)
-- **Neu:** Dynamische Phasenkopplung $\Delta\varphi(t)$ mit Rückkopplung an $|\psi|^2$ implementieren und gegen Standard-QM vergleichen. → `schrodinger_1d_rft_dynamic.py`
+- ~~Dynamische Phasenkopplung $\Delta\varphi(t)$ mit Rückkopplung an $|\psi|^2$ implementieren.~~ ✓ (`schrodinger_1d_rft_dynamic.py`)
+- ~~Störungstheorie: λ-Scan, Skalierungsanalyse, analytische Vorhersage.~~ ✓ (`schrodinger_1d_rft_perturbation.py`)
+- ~~SI-Kalibrierung und experimenteller Vorschlag.~~ ✓ (`schrodinger_1d_rft_experiment.py`)
+- **Offen:** 2-Teilchen-Erweiterung für Gisin-Theorem / No-Signaling
+- **Offen:** Wirkungsprinzip (Lagrange-Dichte) für die Rückkopplung
