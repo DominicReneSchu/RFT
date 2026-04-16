@@ -182,6 +182,8 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
 | 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
 | 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
+| 4 | [ResoTrade](fakten/konzepte/resotrade/ResoTrade.md) | Trading-KI |
+| 5 | [ResoAgent](fakten/konzepte/ResoAgent/ResoAgent.md) | Resonanzlogische Agenten-KI |
 
 ---
 
@@ -192,8 +194,11 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 1 | [Resonanzfeld](fakten/simulationen/resonanzfeld/simulation_resonanzfeldtheorie.md) | Zwei Oszillatoren, Kopplungseffizienz, Energierichtung |
 | 2 | [Doppelpendel](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | Klassisches Doppelpendel mit dynamischer Kopplungseffizienz ε(θ₂−θ₁) |
 | 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) | Energieaustausch, Resonanzerkennung, Live-Animation ε(θ₂−θ₁) |
-| 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/numerische_demonstration.md) | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
-| 5 | [Resonanz-KI](fakten/simulationen/resonanz_ki/resonanz_ki.md) | Zwei gekoppelte Akteure, Fourier-Analyse des Resonanzfelds |
+| 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/README.md) | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
+| 5 | [Raumzeit-Resonanzfeld](fakten/simulationen/raumzeit_resonanzfeld/README.md) | A1–A7 | Skalare Resonanzfelder in flacher und gekrümmter Raumzeit |
+| 6 | [FLRW-Simulationen](fakten/simulationen/FLRW-Simulationen/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
+| 7 | [Altcoin-Analyse](fakten/simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
+| 8 | [Schrödinger](fakten/simulationen/schrödinger/README.md) | Ableitung der Schrödinger-Gleichung aus Axiom 4 |
 
 ---
 
@@ -201,11 +206,9 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 | # | Nachweis | Beschreibung |
 |---|---------|-------------|
-| 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/dokumentation.md) | CERN-Daten: Signifikante Resonanzüberschüsse |
-| 2 | [Monte-Carlo-Simulation](fakten/empirisch/monte_carlo_test/monte_carlo.md) | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
-| 3 | [FLRW-Simulationen](fakten/simulationen/relativitaet_verbindung/README.md) | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
-| 4 | [Altcoin-Analyse](fakten/empirisch/resotrade_altcoin_analyse.md) | 200.000 Episoden, Falsifikationstest A3 |
-| 5 | [ResoTrade V15.6](fakten/empirisch/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit April 2026 |
+| 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/cern/dokumentation.md) | CERN-Daten: Signifikante Resonanzüberschüsse |
+| 2 | [Monte-Carlo-Simulation](fakten/empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
+| 5 | [ResoTrade V15.6](fakten/empirisch/resotrade/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit April 2026 |
 
 ---
 
