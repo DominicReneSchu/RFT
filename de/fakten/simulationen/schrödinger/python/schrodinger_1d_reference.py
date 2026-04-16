@@ -91,6 +91,28 @@ def expectation_p_from_x(psi_x: np.ndarray, k: np.ndarray, dx: float, hbar: floa
     return float(np.sum(integrand).real * dx)
 
 
+def expectation_energy_from_k_and_x(
+    k: np.ndarray,
+    psi_k_cont: np.ndarray,
+    dk: float,
+    Vx: np.ndarray,
+    psi_x: np.ndarray,
+    dx: float,
+    hbar: float,
+    m: float,
+) -> float:
+    """
+    Berechnet den Energieerwartungswert ⟨H⟩ = ⟨T⟩ + ⟨V⟩.
+
+    ⟨T⟩ wird im k-Raum berechnet:  ⟨T⟩ = ∫ (ħk)²/(2m) |ψ(k)|² dk
+    ⟨V⟩ wird im Ortsraum berechnet: ⟨V⟩ = ∫ V(x) |ψ(x)|² dx
+    """
+    T_k = (hbar * k) ** 2 / (2.0 * m)
+    E_kin = float(np.sum(T_k * np.abs(psi_k_cont) ** 2).real * dk)
+    E_pot = float(np.sum(Vx * np.abs(psi_x) ** 2).real * dx)
+    return E_kin + E_pot
+
+
 def split_operator_step(
     psi_x: np.ndarray,
     Vx: np.ndarray,
@@ -134,6 +156,11 @@ def main() -> int:
     ap.add_argument("--Vstrength", type=float, default=0.02)
 
     ap.add_argument("--plot", action="store_true")
+    ap.add_argument(
+        "--checks",
+        action="store_true",
+        help="Enable extended smoke checks (energy drift, position drift) for free particle",
+    )
     args = ap.parse_args()
 
     N = args.N
@@ -155,6 +182,7 @@ def main() -> int:
     x_mean0 = expectation_x(x, psi, dx)
     p_mean0 = expectation_p_from_k(k, psi_k0, dk, args.hbar)
     p_mean0_x = expectation_p_from_x(psi, k, dx, args.hbar)
+    E_mean0 = expectation_energy_from_k_and_x(k, psi_k0, dk, Vx, psi, dx, args.hbar, args.m)
     norm0 = float(np.sum(np.abs(psi) ** 2) * dx)
 
     # evolve
@@ -164,6 +192,7 @@ def main() -> int:
     x_means = []
     p_means = []
     p_means_x = []
+    E_means = []
     ts = []
 
     for n in range(args.steps + 1):
@@ -174,12 +203,16 @@ def main() -> int:
             x_mean = expectation_x(x, psi, dx)
             p_mean = expectation_p_from_k(k, psi_k, dk, args.hbar)
             p_mean_x = expectation_p_from_x(psi, k, dx, args.hbar)
+            E_mean = expectation_energy_from_k_and_x(
+                k, psi_k, dk, Vx, psi, dx, args.hbar, args.m,
+            )
 
             ts.append(t)
             norms.append(norm)
             x_means.append(x_mean)
             p_means.append(p_mean)
             p_means_x.append(p_mean_x)
+            E_means.append(E_mean)
             # store a snapshot of |psi|^2 occasionally (downsample)
             xs.append(np.abs(psi) ** 2)
 
@@ -189,6 +222,8 @@ def main() -> int:
     # final diagnostics
     norm1 = norms[-1]
     max_norm_dev = float(np.max(np.abs(np.array(norms) - norm0)))
+    E_mean_end = E_means[-1]
+    max_E_dev = float(np.max(np.abs(np.array(E_means) - E_mean0)))
 
     print("== Schrödinger 1D Reference ==")
     print(f"N={N}  L={L}  dx={dx:g}  dt={args.dt:g}  steps={args.steps}")
@@ -200,6 +235,8 @@ def main() -> int:
     print(f"<x>(t0)={x_mean0:.6f}  <x>(t_end)={x_means[-1]:.6f}")
     print(f"<p>(t0)={p_mean0:.6f}  <p>(t_end)={p_means[-1]:.6f}  [k-Raum]")
     print(f"<p>(t0)={p_mean0_x:.6f}  <p>(t_end)={p_means_x[-1]:.6f}  [x-Raum via Ableitung]")
+    print(f"<H>(t0)={E_mean0:.6f}  <H>(t_end)={E_mean_end:.6f}  drift={E_mean_end - E_mean0:.3e}")
+    print(f"max |<H> - <H>(t0)| over run: {max_E_dev:.3e}")
 
     if args.plot:
         import matplotlib.pyplot as plt
@@ -208,8 +245,9 @@ def main() -> int:
         norms_arr = np.array(norms)
         x_means_arr = np.array(x_means)
         p_means_arr = np.array(p_means)
+        E_means_arr = np.array(E_means)
 
-        fig, axs = plt.subplots(3, 1, figsize=(10, 10), sharex=True)
+        fig, axs = plt.subplots(4, 1, figsize=(10, 12), sharex=True)
 
         axs[0].plot(ts_arr, norms_arr, lw=2)
         axs[0].set_ylabel("Norm ∫|ψ|² dx")
@@ -221,8 +259,12 @@ def main() -> int:
 
         axs[2].plot(ts_arr, p_means_arr, lw=2)
         axs[2].set_ylabel("<p>")
-        axs[2].set_xlabel("t")
         axs[2].grid(True)
+
+        axs[3].plot(ts_arr, E_means_arr, lw=2)
+        axs[3].set_ylabel("<H>")
+        axs[3].set_xlabel("t")
+        axs[3].grid(True)
 
         plt.tight_layout()
         plt.show()
@@ -243,6 +285,23 @@ def main() -> int:
         if abs(p_means_x[-1] - target_p) > 0.5:
             print(f"[smoke] unexpected <p> (x-Raum): got {p_means_x[-1]:.6f}, expected ~ {target_p:.6f}")
             return 3
+
+    # extended checks (opt-in via --checks)
+    if args.checks and args.V == "free":
+        t_end = args.steps * args.dt
+        # position drift: <x>(t_end) ≈ <x>(t0) + (<p>/m) * t_end
+        expected_x_end = x_mean0 + (p_mean0 / args.m) * t_end
+        x_drift_err = abs(x_means[-1] - expected_x_end)
+        print(f"[check] <x> drift: expected={expected_x_end:.6f}  got={x_means[-1]:.6f}  err={x_drift_err:.3e}")
+        if x_drift_err > 0.5:
+            print(f"[smoke] unexpected <x> drift: err={x_drift_err:.3e} > 0.5")
+            return 4
+
+        # energy conservation: <H> should stay constant for free particle
+        print(f"[check] <H> drift: max |<H>-<H>(t0)|={max_E_dev:.3e}")
+        if max_E_dev > 1e-6:
+            print(f"[smoke] unexpected <H> drift: {max_E_dev:.3e} > 1e-6")
+            return 5
 
     return 0
 
