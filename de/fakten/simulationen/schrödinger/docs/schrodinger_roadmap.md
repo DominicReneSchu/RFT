@@ -247,11 +247,27 @@ lässt sich wie folgt aus dem RFT-Formalismus motivieren:
    Rückkopplungshypothesen** erhalten — sie sind empirisch testbar,
    sobald Messdaten vorliegen (Kritikpunkt H.3).
 
-**Offener Punkt:** Eine vollständige Ableitung aus einem
-RFT-Wirkungsprinzip (Hamilton-/Lagrange-Formalismus) steht aus.
-Das erfordert die Spezifikation der kinetischen Energie des φ-Feldes
-(z.B. $\frac{1}{2}(\partial_t \Delta\varphi)^2$), was über den
-aktuellen 1-Teilchen-Rahmen hinausgeht.
+**Offener Punkt:** ~~Eine vollständige Ableitung aus einem
+RFT-Wirkungsprinzip (Hamilton-/Lagrange-Formalismus) steht aus.~~
+→ **Adressiert** in [`schrodinger_1d_rft_lagrangian.py`](../python/schrodinger_1d_rft_lagrangian.py):
+
+Das Wirkungsfunktional der RFT ist:
+
+$$
+S[\psi, \Delta\varphi] = \int \mathrm{d}t \left[
+\langle\psi|i\hbar\partial_t - \hat{H}_0|\psi\rangle
+- \varepsilon(\Delta\varphi)\langle V\rangle_\psi
++ \frac{\mu}{2}(\dot{\Delta\varphi})^2
+\right]
+$$
+
+Die Euler-Lagrange-Gleichung für Δφ liefert:
+- **Inertiales Regime (μ > 0):** $\mu\ddot{\Delta\varphi} = \frac{1}{2}\sin(\Delta\varphi)\cdot\langle V\rangle_\psi$
+- **Überdämpftes Regime (γ):** $\gamma\dot{\Delta\varphi} = \frac{1}{2}\sin(\Delta\varphi)\cdot\langle V\rangle_\psi$
+
+Das density-Modell ist als effektiver Grenzfall des überdämpften Regimes
+identifiziert. Die Noether-Energie $E = \langle\hat{H}_\mathrm{res}\rangle + \frac{\mu}{2}(\dot{\Delta\varphi})^2$
+ist numerisch erhalten (rel. Abweichung < 0.3%).
 
 ### H.2 Gisin-Theorem und No-Signaling-Bedingung
 
@@ -274,12 +290,47 @@ No-Signaling-Bedingung?
    Abweichungen von der Linearität O(λ) — das Gisin-Theorem greift
    erst bei endlichem λ im Mehrteilchensektor.
 
-4. **Offener Punkt:** Die Frage der No-Signaling-Bedingung wird
-   relevant, sobald die RFT auf den Mehrteilchensektor erweitert
-   wird. Mögliche Auswege:
-   - φ koppelt nur lokal an ψ (keine instantane Fernwirkung)
-   - Dekoherenz unterdrückt nichtlineare Effekte im Vielteilchenlimit
-   - λ_eff(N) → 0 für N → ∞ (thermodynamischer Grenzwert)
+4. **2-Teilchen-Analyse (adressiert):**
+   → Implementiert in [`schrodinger_1d_rft_two_particle.py`](../python/schrodinger_1d_rft_two_particle.py)
+
+   Das vollständige Gisin-Protokoll wurde numerisch umgesetzt:
+   - Verschränkter Zustand |Ψ⟩ = (|L⟩_A|↑⟩_B + |R⟩_A|↓⟩_B) / √2
+   - Alice misst in zwei verschiedenen Basen (X: L/R, Z: +/−)
+   - Bobs Zustände werden mit RFT-Dynamik propagiert
+   - Vergleich von ρ_B(t) für beide Basen
+
+   **Ergebnisse:**
+   - λ = 0 (Standard-QM): No-Signaling exakt (D ~ 10⁻¹⁵) ✓
+   - **Globales Δφ:** No-Signaling **verletzt** (D ~ 0.58 bei λ = 2)
+     → Verschiedene Messbasen erzeugen verschiedene ∫|ψ|⁴dx
+     → Verschiedene Δφ-Verläufe → verschiedene ε(t) → verschiedene ρ_B
+   - **Lokales Δφ:** No-Signaling **erhalten** (per Konstruktion)
+     → Δφ_B hängt nur von ρ_B ab, nicht von Alices Basis
+
+   **Konsequenz:** Die RFT muss **lokale Kopplungsstruktur** verwenden:
+   φ(x,t) ist ein lokales Feld (wie das EM-Feld), kein globaler Parameter.
+   Dies ist physikalisch natürlich und konsistent mit der ART-Lokalität.
+
+### H.2b Theoretische Erwartung für λ
+
+**Kritikpunkt:** Ohne Größenordnung bleibt unklar, ob das Experiment
+Chancen hat.
+
+→ Implementiert in [`schrodinger_1d_rft_lambda_bounds.py`](../python/schrodinger_1d_rft_lambda_bounds.py)
+
+**Ergebnis:** Fünf Perspektiven auf λ:
+
+| Ansatz | λ (Größenordnung) | Erreichbar? |
+|--------|-------------------:|-------------|
+| Gravitativ (Penrose/Diósi) | 10⁻³⁵ | nein |
+| BSM (elektroschwach α²) | 10⁻⁴ | nein (10⁴ Schuss) |
+| Dekohärenz (Spontanemission) | 10⁻⁶ | nein |
+| Experiment (100 Schuss) | 0.62 | Grenze |
+| Experiment (10 000 Schuss) | 0.062 | Grenze |
+
+**Empfehlung:** Das Experiment ist sinnvoll als **Schranken-Experiment**.
+Wenn kein Effekt gesehen wird → obere Grenze für λ.
+Wenn Effekt gesehen wird → Entdeckung!
 
 ### H.3 Kontakt zu Messdaten (adressiert)
 
@@ -322,5 +373,8 @@ $\lambda \gtrsim 0.05$ nach 100 Wiederholungen.
 - ~~Störungstheorie: λ-Scan, Skalierungsanalyse, analytische Vorhersage.~~ ✓ (`schrodinger_1d_rft_perturbation.py`)
 - ~~SI-Kalibrierung und experimenteller Vorschlag.~~ ✓ (`schrodinger_1d_rft_experiment.py`)
 - ~~Kritische Einordnung: GP-Problem, Systematik, Peer-Review-Bilanz.~~ ✓ (`--critical`)
-- **Offen:** 2-Teilchen-Erweiterung für Gisin-Theorem / No-Signaling
-- **Offen:** Wirkungsprinzip (Lagrange-Dichte) für die Rückkopplung
+- ~~2-Teilchen-Erweiterung für Gisin-Theorem / No-Signaling~~ ✓ (`schrodinger_1d_rft_two_particle.py`)
+- ~~Wirkungsprinzip (Lagrange-Dichte) für die Rückkopplung~~ ✓ (`schrodinger_1d_rft_lagrangian.py`)
+- ~~Theoretische Erwartung für λ~~ ✓ (`schrodinger_1d_rft_lambda_bounds.py`)
+- **Offen:** ART-Grenzwert (bewusst abgegrenzt)
+- **Offen:** Eichinvarianz der Δφ-Dynamik
