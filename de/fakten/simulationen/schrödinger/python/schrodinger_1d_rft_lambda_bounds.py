@@ -110,9 +110,9 @@ def lambda_gravitational(m_si: float) -> dict[str, float]:
     Dies ist die natürliche Skala für Gravitationseffekte
     in der Quantenmechanik (Penrose/Diósi-Regime).
     """
-    # Dimensionsloser Gravitationsparameter
+    # Dimensionsloses Gravitationsverhältnis
     m_ratio = m_si / M_PLANCK
-    lambda_dim = m_ratio ** 2
+    lambda_grav_ratio = m_ratio ** 2
 
     # In Simulationseinheiten (mit ℏ = 1, m = 1):
     # λ_sim = λ_phys · τ · ℓ (Einheitenumrechnung)
@@ -132,7 +132,7 @@ def lambda_gravitational(m_si: float) -> dict[str, float]:
     return {
         "m_over_m_planck": m_ratio,
         "m_over_m_planck_sq": m_ratio ** 2,
-        "lambda_dimensionless": lambda_dim,
+        "lambda_dimensionless": lambda_grav_ratio,
         "lambda_penrose_rate_per_m": lambda_penrose_rate,
         "comment": "Extrem klein — gravitative Kopplung unerreichbar",
     }
