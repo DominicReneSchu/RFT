@@ -187,7 +187,13 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 ## Simulationen
 
-[**Weiterführende Simulationen**](fakten/simulationen/README.md)
+| # | Simulationen | Beschreibung |
+|---|---------|-------------|
+| 1 | [Resonanzfeld](fakten/simulationen/resonanzfeld/simulation_resonanzfeldtheorie.md) | Zwei Oszillatoren, Kopplungseffizienz, Energierichtung |
+| 2 | [Doppelpendel](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | Klassisches Doppelpendel mit dynamischer Kopplungseffizienz ε(θ₂−θ₁) |
+| 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) | Energieaustausch, Resonanzerkennung, Live-Animation ε(θ₂−θ₁) |
+| 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/numerische_demonstration.md) | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
+| 5 | [Resonanz-KI](fakten/simulationen/resonanz_ki/resonanz_ki.md) | Zwei gekoppelte Akteure, Fourier-Analyse des Resonanzfelds |
 
 ---
 
