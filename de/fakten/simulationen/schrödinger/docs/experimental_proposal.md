@@ -197,24 +197,116 @@ Für $N = 100$ Wiederholungen: $\sigma_\mathrm{eff} = 1\;\mu\mathrm{m} / \sqrt{1
 
 ---
 
-## 6. Bilanz gegenüber der Peer-Review
+## 6. Kritische Einordnung
 
-| Gutachter-Kritikpunkt | Status |
-|-----------------------|--------|
-| 1.2 Spezifikation $\varepsilon(\Delta\varphi)$ | ✅ $\cos^2(\Delta\varphi/2)$, analytisch, invertierbar |
-| Schrödinger aus Axiom 4 ableiten | ✅ Vier Stufen, numerisch verifiziert |
-| QM eines einzelnen Teilchens | ✅ Vollständig |
-| Korrespondenzprinzip | ✅ Statisch + dynamisch ($\lambda \to 0$) |
-| Störungstheorie | ✅ Skalierung exakt, analytisch verifiziert |
-| **3.1 SI-Einheiten / Kalibrierung** | ✅ **Hier adressiert** |
-| 1.1 Lagrange-Dichte / Wirkungsprinzip | ⚠️ Motiviert, nicht abgeleitet |
-| 2.1 ART-Grenzwert | ❌ Offen (bewusst abgegrenzt) |
-| 2.2 Eichinvarianz / U(1) | ❌ Offen |
-| Gisin-Theorem / No-Signaling | ⚠️ 1-Teilchen adressiert, Mehrteilchen offen |
+### 6.1 Was stark ist
+
+- **Konkretes System:** ⁸⁷Rb-BEC in harmonischer Falle — das
+  experimentelle Arbeitspferd dutzender Labore weltweit (MIT, MPQ, JILA, …)
+- **Realistisches Protokoll:** Impuls-Kick + freie Propagation +
+  Absorptionsbildgebung — Standardexperimentierphysik
+- **Frequenz-Scan:** Die Sensitivitätsanalyse zeigt, dass niedrigere
+  $\omega$ bessere Empfindlichkeit geben ($a_\mathrm{ho} \propto \omega^{-1/2}$)
+- **Null- und Alternativhypothese** sauber formuliert — die Sprache,
+  die ein experimenteller Gutachter erwartet
+- **SI-Kalibrierungskette** konsistent: $\hbar = m \cdot \ell^2 / \tau$
+  wird als Konsistenzcheck verifiziert (6 unabhängige Relationen)
+
+### 6.2 Was ein Gutachter noch fragen wird
+
+#### Frage 1: Ist $\lambda = 0.05$ physikalisch plausibel?
+
+Die Simulation zeigt, dass man $\lambda$ messen *könnte*, aber nicht
+*warum* $\lambda$ einen bestimmten Wert haben sollte. Ein Gutachter wird
+fragen: Gibt es eine theoretische Erwartung für die Größenordnung von $\lambda$?
+
+Wenn $\lambda < 10^{-10}$ (typisch für BSM-Korrekturen), wäre das
+Experiment chancenlos. **Das Experiment liefert obere Schranken**, nicht
+einen garantierten Nachweis.
+
+#### Frage 2: Systematische Fehler
+
+Die Analyse nimmt nur statistische Fehler an ($\sigma / \sqrt{N}$).
+In realen BEC-Experimenten dominieren systematische Effekte:
+
+| Fehlerquelle | Geschätzte Verschiebung | Skalierung |
+|-------------|------------------------:|------------|
+| GP-Mean-Field auf $\langle x\rangle$ | **0 (Kohn-Theorem)** | nicht anwendbar |
+| Potentialanharmonizitäten | ~ 1 nm | $\delta\omega/\omega$ |
+| Magnetfeldgradienten (0.1 mG/cm) | ~ 650 nm | $\mu_B \cdot \nabla B$ |
+| Drei-Körper-Verluste | ~ 11 nm | $\Delta N / N$ |
+| **Gesamt (quadratisch)** | **~ 650 nm** | |
+
+→ Für $\lambda \lesssim 0.3$ dominieren die Magnetfeldgradienten.
+Bessere Magnetfeldkompensation (< 0.01 mG/cm) würde die Systematik
+um eine Größenordnung reduzieren.
+
+#### Frage 3: Das Gross-Pitaevskii-Problem
+
+Die RFT-Rückkopplung $\dot{\Delta\varphi} \propto \int |\psi|^4\,\mathrm{d}x$
+hat exakt dieselbe funktionale Form wie der Kontaktwechselwirkungsterm
+in der Gross-Pitaevskii-Gleichung ($g|\psi|^2\psi$).
+
+**Zentrale Antwort: Das Kohn-Theorem**
+
+In einer *rein harmonischen* Falle gilt das Kohn-Theorem (auch:
+verallgemeinertes Kohn-Theorem): Die Schwerpunktsbewegung $\langle x\rangle(t)$
+ist exakt harmonisch bei $\omega$, **unabhängig von Atom-Atom-Wechselwirkungen**.
+
+$$
+\text{GP: } \Delta\langle x\rangle = 0 \quad\text{(Kohn-geschützt)}
+$$
+
+Die RFT-Rückkopplung hingegen moduliert die Fallenstärke zeitabhängig
+über $\varepsilon(\Delta\varphi(t)) \cdot V$. Diese zeitabhängige
+Modulierung bricht die Kohn-Bedingung und erzeugt einen
+$\langle x\rangle$-Shift:
+
+$$
+\text{RFT: } |\Delta\langle x\rangle| = C_x \cdot \lambda \cdot \ell \neq 0
+$$
+
+→ **Der RFT-Effekt auf $\langle x\rangle$ ist konzeptuell verschieden
+vom GP-Mean-Field.** Der GP-Term ändert die *Breite* des Kondensats,
+nicht den *Schwerpunkt*.
+
+Zusätzliche experimentelle Unterscheidungsmerkmale:
+
+| Protokoll | GP-Abhängigkeit | RFT-Abhängigkeit |
+|-----------|----------------|-------------------|
+| N-Scan | Breite $\propto N^{2/5}$ | $\langle x\rangle$-Shift $\neq f(N)$ |
+| $a_s$-Scan (Feshbach) | $\propto a_s$ | unabhängig von $a_s$ |
+| $\omega$-Scan | Breite $\propto \omega^{-3/5}$ | Shift $\propto \omega^{-1/2}$ |
+| $\Delta\varphi_0$-Scan | unabhängig | $\propto \varepsilon'(\Delta\varphi_0)$ |
 
 ---
 
-## 7. Empfohlener nächster Schritt
+## 7. Bilanz gegenüber der Peer-Review
+
+| Gutachter-Forderung | Status |
+|---------------------|--------|
+| 1.1 Lagrange-Dichte / Wirkungsprinzip | ⚠️ Motiviert, nicht abgeleitet |
+| 1.2 Spezifikation $\varepsilon(\Delta\varphi)$ | ✅ $\cos^2(\Delta\varphi/2)$, analytisch, invertierbar |
+| 2.1 ART-Grenzwert | ❌ Offen (bewusst abgegrenzt) |
+| 2.2 Eichinvarianz / U(1) | ❌ Offen |
+| 3.1 SI-Einheiten / Kalibrierung | ✅ Vollständig (6 Konsistenzrelationen) |
+| 3.2 Statistische Signifikanz ΛCDM | ❌ Anderer Sektor |
+| 4.1 Wirkungsgrad κ=1 | ❌ Anderer Sektor |
+| Schrödinger aus Axiom 4 | ✅ Fünf Stufen, numerisch verifiziert |
+| Korrespondenzprinzip | ✅ Statisch + dynamisch ($\lambda \to 0$) |
+| Störungstheorie | ✅ Skalierung exakt, analytisch verifiziert |
+| Falsifizierbare Vorhersage | ✅ ⁸⁷Rb-Experiment |
+| Kritische Einordnung | ✅ GP-Problem (Kohn-Theorem), Systematik |
+| Gisin-Theorem / No-Signaling | ⚠️ 1-Teilchen adressiert, Mehrteilchen offen |
+
+Die Arbeit ist im 1-Teilchen-QM-Sektor in einem Zustand, der eine
+Einreichung als *„Forschungsprogramm mit konkretem experimentellem
+Vorschlag"* rechtfertigt — genau die Repositionierung, die der
+Gutachter empfohlen hat.
+
+---
+
+## 8. Empfohlener nächster Schritt
 
 Das Simulationspaket ist mit diesem experimentellen Vorschlag für den
 1-Teilchen-Sektor **abgeschlossen und falsifizierbar**. Der logische
@@ -228,6 +320,11 @@ nächste Punkt wäre:
 2. **2-Teilchen-Erweiterung:** Für das Gisin-Theorem und No-Signaling
    muss die Simulation auf verschränkte 2-Teilchen-Zustände erweitert
    werden (nächste theoretische Hürde).
+
+3. **Magnetfeldkompensation:** Für Sensitivität $\lambda < 0.1$ muss
+   der dominante systematische Fehler (Magnetfeldgradient) durch bessere
+   Kompensation (< 0.01 mG/cm) oder differenzielle Messungen reduziert
+   werden.
 
 ---
 
