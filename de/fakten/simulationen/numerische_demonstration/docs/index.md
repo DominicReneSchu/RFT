@@ -18,11 +18,11 @@ pip install numpy matplotlib
 
 ```python
 import numpy as np
-from resonanzfeld import (
+from numerische_demonstration import (
     berechne_resonanzenergie,
     berechne_kopplungseffizienz,
     berechne_resonanzentropie,
-    plot_resonanzfeld,
+    plot_numerische_demonstration,
 )
 
 A = np.linspace(0.1, 5.0, 500)
@@ -32,7 +32,7 @@ E_res, tau_grid, A_grid = berechne_resonanzenergie(A, tau)
 eps = berechne_kopplungseffizienz(E_res, A_grid)
 S = berechne_resonanzentropie(eps)
 
-plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S,
+plot_numerische_demonstration(tau_grid, A_grid, E_res, eps, S,
                   save_path="plot.png")
 ```
 
@@ -96,7 +96,7 @@ $$
 
 ---
 
-### `plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S, save_path=None, show=True)`
+### `plot_numerische_demonstration(tau_grid, A_grid, E_res, eps, S, save_path=None, show=True)`
 
 Drei 3D-Oberflächen: E_res, ε, S.
 
@@ -116,7 +116,7 @@ Drei 3D-Oberflächen: E_res, ε, S.
 
 ```bash
 cd numerische_demonstration
-python tests/test_resonanzfeld.py
+python tests/test_numerische_demonstration.py
 # oder:
 pytest tests/ -v
 ```

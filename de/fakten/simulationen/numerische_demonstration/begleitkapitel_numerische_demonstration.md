@@ -140,12 +140,12 @@ die statistische Signifikanz quantifiziert:
 
 ```bash
 pip install numpy matplotlib
-python resonanzfeld.py
+python numerische_demonstration.py
 ```
 
 Tests:
 ```bash
-python tests/test_resonanzfeld.py
+python tests/test_numerische_demonstration.py
 # oder mit pytest:
 pip install pytest
 pytest tests/ -v
@@ -155,7 +155,7 @@ pytest tests/ -v
 
 ## Quellcode
 
-[resonanzfeld.py](resonanzfeld.py)
+[numerische_demonstration.py](numerische_demonstration.py)
 
 ---
 

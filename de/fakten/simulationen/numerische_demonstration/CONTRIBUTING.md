@@ -14,7 +14,7 @@ Hinweise zur Mitarbeit am numerischen Toolkit.
 1. Fork & Clone
 2. Branch erstellen: `git checkout -b verbesserung`
 3. Code schreiben, Tests ergänzen
-4. `python tests/test_resonanzfeld.py` muss durchlaufen
+4. `python tests/test_numerische_demonstration.py` muss durchlaufen
 5. Pull Request mit Beschreibung
 
 ## Style

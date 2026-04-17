@@ -10,7 +10,7 @@ Axiom-Bezug:
   A5: Stabiles Resonanzfeld — Entropie-Plateau bei Resonanz
 
 Abhängigkeiten: numpy, matplotlib
-Ausführung: python resonanzfeld.py
+Ausführung: python numerische_demonstration.py
 """
 
 from __future__ import annotations
@@ -88,7 +88,7 @@ def berechne_resonanzentropie(eps: np.ndarray) -> np.ndarray:
     return -eps_safe * np.log(eps_safe)
 
 
-def plot_resonanzfeld(
+def plot_numerische_demonstration(
     tau_grid: np.ndarray,
     A_grid: np.ndarray,
     E_res: np.ndarray,
@@ -168,5 +168,5 @@ if __name__ == "__main__":
     print("=" * 50)
 
     # Visualisierung
-    plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S,
+    plot_numerische_demonstration(tau_grid, A_grid, E_res, eps, S,
                       save_path="plot.png", show=True)
