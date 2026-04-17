@@ -135,7 +135,7 @@ The RFT is empirically validated across four independent domains:
 ## PDF Summary
 
 The detailed summary of Resonance Field Theory as a PDF:
-[**RFT_Summary.pdf**](./RFT_Summary.pdf)
+[**RFT_Summary.pdf**](./rft_summary.pdf)
 
 ---
 
