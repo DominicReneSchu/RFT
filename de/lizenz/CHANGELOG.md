@@ -1,6 +1,6 @@
-# 📝 Änderungsprotokoll (Changelog) – Schu-Lizenz
+# 📝 Änderungsprotokoll (Changelog) – RFT-Lizenz
 
-Alle signifikanten Änderungen und Anpassungen der Schu-Lizenz werden hier dokumentiert.
+Alle signifikanten Änderungen und Anpassungen der RFT-Lizenz werden hier dokumentiert.
 
 ---
 
