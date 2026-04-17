@@ -54,7 +54,7 @@ def energy_direction(psi: np.ndarray, window_short: int = 50, window_long: int =
     return e_short - e_long
 
 
-class ResonanzfeldSimulation:
+class ResonanceFieldSimulation:
     """Interactive Resonance Field Simulation with matplotlib sliders."""
 
     H = 6.626e-34  # Planck's constant
@@ -214,5 +214,5 @@ if __name__ == '__main__':
     print("Move sliders to change parameters.")
     print("=" * 50)
 
-    sim = ResonanzfeldSimulation()
+    sim = ResonanceFieldSimulation()
     sim.show()
