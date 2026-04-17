@@ -1,6 +1,6 @@
 # Resonanzfeldtheorie (Version 4.0)
 
-[![Lizenz: Schu-Lizenz 1.4](https://img.shields.io/badge/Lizenz-Schu--Lizenz%201.4-blue.svg)](lizenz/schu-lizenz_v1.4.md)
+[![Lizenz: RFT-Lizenz 1.4](https://img.shields.io/badge/Lizenz-RFT--Lizenz%201.4-blue.svg)](lizenz/RFT-lizenz_v1.4.md)
 
 Willkommen im offiziellen Repository der **Resonanzfeldtheorie (RFT)**.
 Dieses Projekt vereint Mathematik, Physik und Technik zu
@@ -213,8 +213,8 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 ## Lizenz
 
-Dieses Projekt steht unter der **Schu-Lizenz 1.4**
-→ [Zum Lizenztext](lizenz/schu-lizenz_v1.4.md)
+Dieses Projekt steht unter der **RFT-Lizenz 1.4**
+→ [Zum Lizenztext](lizenz/RFT-lizenz_v1.4.md)
 
 ---
 
