@@ -25,12 +25,12 @@ Kopplungseffizienz und Resonanzentropie über dem
 
 ```bash
 pip install numpy matplotlib
-python resonanzfeld.py
+python numerische_demonstration.py
 ```
 
 Tests:
 ```bash
-python tests/test_resonanzfeld.py
+python tests/test_numerische_demonstration.py
 ```
 
 ---
@@ -39,9 +39,9 @@ python tests/test_resonanzfeld.py
 
 | Datei | Funktion |
 |-------|----------|
-| [`resonanzfeld.py`](resonanzfeld.py) | Hauptmodul: Berechnung + Visualisierung |
-| [`begleitkapitel_resonanzfeld.md`](begleitkapitel_resonanzfeld.md) | Erläuterung und Einordnung |
-| [`tests/test_resonanzfeld.py`](tests/test_resonanzfeld.py) | 16 Unit-Tests (standalone + pytest) |
+| [`numerische_demonstration.py`](numerische_demonstration.py) | Hauptmodul: Berechnung + Visualisierung |
+| [`begleitkapitel_numerische_demonstration.md`](begleitkapitel_numerische_demonstration.md) | Erläuterung und Einordnung |
+| [`tests/test_numerische_demonstration.py`](tests/test_numerische_demonstration.py) | 16 Unit-Tests (standalone + pytest) |
 | [`requirements.txt`](requirements.txt) | Abhängigkeiten |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Beitragsrichtlinien |
 | [`docs/index.md`](docs/index.md) | API-Dokumentation |
@@ -51,11 +51,11 @@ python tests/test_resonanzfeld.py
 ## API
 
 ```python
-from resonanzfeld import (
+from numerische_demonstration import (
     berechne_resonanzenergie,
     berechne_kopplungseffizienz,
     berechne_resonanzentropie,
-    plot_resonanzfeld,
+    plot_numerische_demonstration,
 )
 ```
 

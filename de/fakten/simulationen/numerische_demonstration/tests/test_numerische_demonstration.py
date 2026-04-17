@@ -1,5 +1,5 @@
 """
-Unit-Tests für resonanzfeld.py
+Unit-Tests für numerische_demonstration.py
 
 Testet Resonanzenergie, Kopplungseffizienz und Resonanzentropie.
 
@@ -10,7 +10,7 @@ Ausführung (empfohlen):
 
 Ausführung (standalone, ohne pytest):
     cd numerische_demonstration
-    python tests/test_resonanzfeld.py
+    python tests/test_numerische_demonstration.py
 """
 
 from __future__ import annotations
@@ -22,11 +22,11 @@ import os
 # Elternverzeichnis zum Pfad hinzufügen
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from resonanzfeld import (
+from numerische_demonstration import (
     berechne_resonanzenergie,
     berechne_kopplungseffizienz,
     berechne_resonanzentropie,
-    plot_resonanzfeld,
+    plot_numerische_demonstration,
 )
 
 # pytest optional importieren
@@ -196,7 +196,7 @@ def test_plot_runs() -> None:
     S = berechne_resonanzentropie(eps)
     with tempfile.TemporaryDirectory() as tmp:
         savefile = os.path.join(tmp, "plot.png")
-        plot_resonanzfeld(tau_grid, A_grid, E_res, eps, S,
+        plot_numerische_demonstration(tau_grid, A_grid, E_res, eps, S,
                           save_path=savefile, show=False)
         assert os.path.exists(savefile)
 
