@@ -14,32 +14,32 @@ Seit V15 basiert ResoTrade auf einer 4-Schichten-Architektur (Resonanzfeld-Analy
 
 **Kernergebnis:** +26.1% vs HODL im Durchschnitt über 4 verschiedene Marktphasen (24 Monate), validiert über Sideways, Bullrun, Korrektur und Crash. Kein klassischer Indikator auf demselben Datensatz erreicht eine Korrelation über 0.05.
 
-**Begleitdokument:** Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) zeigt, warum Altcoins resonanztheoretisch keine eigenständigen Märkte sind — und bestätigt damit die Axiome der Resonanzfeldtheorie aus einer zweiten, unabhängigen Richtung.
+**Begleitdokument:** Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) zeigt, warum Altcoins resonanztheoretisch keine eigenständigen Märkte sind — und bestätigt damit die Axiome der Resonanzfeldtheorie aus einer zweiten, unabhängigen Richtung.
 
 ---
 
 ## Einordnung in die Resonanzfeldtheorie
 
-ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
+ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
 
 | Axiom | Prinzip | Anwendung in ResoTrade V15 | Empirischer Nachweis |
 |-------|---------|----------------------------|---------------------|
-| [**Axiom 1**](../docs/definitionen/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | Schicht 1: Ableitungs-Policy über gleitende Durchschnitte, Zyklusphase als Dimension | Phasenerkennung schlägt alle Indikatoren |
-| [**Axiom 2**](../docs/definitionen/axiomatische_grundlegung.md) | Superposition der Moden | Schicht 1: Mehrere Zeitskalen als überlagerte Moden in der Ableitungs-Policy | Multi-Zeitskalen-Analyse verbessert Timing |
-| [**Axiom 3**](../docs/definitionen/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Schicht 3: Proof-of-Resonance — 3-stufige Signalkaskade als Resonanzkriterium | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
-| [**Axiom 4**](../docs/definitionen/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Schicht 2: Adaptiver Decay im Erfahrungsspeicher, Balance-Regler | System bleibt über 24 Monate handlungsfähig |
-| [**Axiom 5**](../docs/mathematik/energierichtung.md) | Energie ist vektoriell | Schicht 1: Energierichtungsvektor aus kurz- und langfristiger Energiedifferenz | Richtung schlägt Prognose |
-| [**Axiom 6**](../docs/definitionen/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Schicht 3: Pattern-Library + Proof-of-Resonance — Trades nur bei Signalkaskaden-Übereinstimmung | +26.1% vs HODL über alle Marktregime |
-| [**Axiom 7**](../docs/definitionen/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: Krypto, Forex, Rohstoffe über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
+| [**Axiom 1**](../../docs/definitionen/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | Schicht 1: Ableitungs-Policy über gleitende Durchschnitte, Zyklusphase als Dimension | Phasenerkennung schlägt alle Indikatoren |
+| [**Axiom 2**](../../docs/definitionen/axiomatische_grundlegung.md) | Superposition der Moden | Schicht 1: Mehrere Zeitskalen als überlagerte Moden in der Ableitungs-Policy | Multi-Zeitskalen-Analyse verbessert Timing |
+| [**Axiom 3**](../../docs/definitionen/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Schicht 3: Proof-of-Resonance — 3-stufige Signalkaskade als Resonanzkriterium | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
+| [**Axiom 4**](../../docs/definitionen/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Schicht 2: Adaptiver Decay im Erfahrungsspeicher, Balance-Regler | System bleibt über 24 Monate handlungsfähig |
+| [**Axiom 5**](../../docs/mathematik/energierichtung.md) | Energie ist vektoriell | Schicht 1: Energierichtungsvektor aus kurz- und langfristiger Energiedifferenz | Richtung schlägt Prognose |
+| [**Axiom 6**](../../docs/definitionen/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Schicht 3: Pattern-Library + Proof-of-Resonance — Trades nur bei Signalkaskaden-Übereinstimmung | +26.1% vs HODL über alle Marktregime |
+| [**Axiom 7**](../../docs/definitionen/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: Krypto, Forex, Rohstoffe über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
 
-Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
+Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
 
 ### Weiterführende theoretische Grundlagen
 
-- [Energiekugel und AC/DC-Zerlegung](../docs/mathematik/energiekugel.md) — Axiom 1 formalisiert
-- [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md) — Axiom 5 formalisiert
-- [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
-- [Resonanzanalyse in Massendaten](dokumentation.md) — Methodik der empirischen Validierung
+- [Energiekugel und AC/DC-Zerlegung](../../docs/mathematik/energiekugel.md) — Axiom 1 formalisiert
+- [Energierichtung in realen Systemen](../../docs/mathematik/energierichtung.md) — Axiom 5 formalisiert
+- [Resonanzzeitkoeffizient τ*](../../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
+- [Resonanzanalyse in Massendaten](../../empirisch/cern/dokumentation.md) — Methodik der empirischen Validierung
 
 ---
 
@@ -174,7 +174,7 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 2. **Gewinn kommt aus resonanter Energieextraktion**, nicht aus Prognose
 3. **AC/DC-Zerlegung identifiziert den richtigen Zeitpunkt** im Zyklus
 4. **Multi-Zyklus-Training zeigt kein Overfitting** (Δ < 1% nach Zyklus 1 vs 3)
-5. **Altcoins stören das Signal** — siehe [Altcoin-Analyse](resotrade_altcoin_analyse.md)
+5. **Altcoins stören das Signal** — siehe [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md)
 
 ### Performance-Historie
 
@@ -248,11 +248,11 @@ ResoTrade arbeitet dem biologischen Vorbild des Gehirns strukturell näher als k
 
 ## Verwandte Dokumente
 
-- [Altcoin-Analyse: Warum Altcoins keine echten Märkte sind](resotrade_altcoin_analyse.md)
-- [Energiekugel und AC/DC-Zerlegung](../docs/mathematik/energiekugel.md)
-- [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md)
-- [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md)
-- [Resonanzanalyse in Massendaten](dokumentation.md)
+- [Altcoin-Analyse: Warum Altcoins keine echten Märkte sind](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md)
+- [Energiekugel und AC/DC-Zerlegung](../../docs/mathematik/energiekugel.md)
+- [Energierichtung in realen Systemen](../../docs/mathematik/energierichtung.md)
+- [Resonanzzeitkoeffizient τ*](../../docs/mathematik/tau_resonanzkoeffizient.md)
+- [Resonanzanalyse in Massendaten](../../empirisch/cern/dokumentation.md)
 
 ---
 
@@ -260,4 +260,4 @@ ResoTrade arbeitet dem biologischen Vorbild des Gehirns strukturell näher als k
 
 ---
 
-⬅️ [zurück zur Übersicht](../../README.md)
+⬅️ [zurück zur Übersicht](../../../README.md)

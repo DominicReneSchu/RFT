@@ -12,7 +12,7 @@ signifikante Überschüsse von Ereignissen um bestimmte invariante
 Massenwerte M₀ nachzuweisen und statistisch abzusichern.
 
 Die Methodik folgt dem Prinzip von Axiom 3 (Resonanzbedingung)
-der [Resonanzfeldtheorie](../docs/definitionen/axiomatische_grundlegung.md):
+der [Resonanzfeldtheorie](../../docs/definitionen/axiomatische_grundlegung.md):
 Resonanz tritt auf, wenn Frequenzen — hier: Energiewerte — in
 bestimmten Verhältnissen stehen. Die Analyse sucht nach
 Ereignisüberschüssen in Fenstern um vermutete Resonanzmassenstellen,
@@ -93,7 +93,7 @@ Mit vielen Hintergrund-Samples wird die Verteilung der maximalen
 Signifikanz unter der Nullhypothese empirisch bestimmt. Daraus
 ergibt sich ein empirischer p-Wert für das reale Ergebnis.
 
-Siehe auch: [Monte-Carlo-Simulation zur Resonanzanalyse](monte_carlo_test/monte_carlo.md)
+Siehe auch: [Monte-Carlo-Simulation zur Resonanzanalyse](../monte_carlo/monte_carlo_test/monte_carlo.md)
 
 ---
 
@@ -257,4 +257,4 @@ um die Ergebnisse weiter zu festigen.
 
 ---
 
-[Zurück zur Übersicht](../../README.md)
+[Zurück zur Übersicht](../../../README.md)
