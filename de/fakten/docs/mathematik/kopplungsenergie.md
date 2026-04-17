@@ -58,7 +58,7 @@ Resonanzenergie übertragen:
 ```
 
 **Empirisch:** In FLRW-Simulationen emergiert η ≈ 1.0 bei Δφ = 0
-(Tabelle in [FLRW-Dokumentation](../../simulationen/relativitaet_verbindung/README.md)).
+(Tabelle in [FLRW-Dokumentation](../../simulationen/FLRW-Simulationen/README.md)).
 
 ### 3.2 Planck-Spezialfall (ε = 1/(2π))
 

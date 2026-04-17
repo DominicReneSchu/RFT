@@ -150,47 +150,47 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 ## Axiomatik und Definitionen
 
-| # | Dokument | Beschreibung |
-|---|----------|-------------|
-| 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
-| 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | Vereinheitlichte Definition, ε = η Identität |
-| 3 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | Interpretative Hypothese: Alle Größen aus E |
-| 4 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | Glossar der RFT-Begriffe |
-| 5 | [Resonanzlogische DGL](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md) | Klassische DGLs als Projektionen der rDGL |
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | A1–A7 | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
+| 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | A1–A7 | Vereinheitlichte Definition, ε = η Identität |
+| 3 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | A1–A5, A7 | Interpretative Hypothese: Alle Größen aus E |
+| 4 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | A1–A7 | Glossar der RFT-Begriffe |
+| 5 | [Resonanzlogische DGL](fakten/docs/definitionen/resonanzlogische_differentialgleichungen.md) | A1–A4, A6, A7 | Klassische DGLs als Projektionen der rDGL |
 
 ## Mathematik und Physik
 
-| # | Dokument | Beschreibung |
-|---|----------|-------------|
-| 1 | [Resonanzintegrale](fakten/docs/mathematik/resonanzintegrale.md) | Analytische Methoden — Dirichlet-Integral als Resonanzenergie |
-| 2 | [Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md) | Zentrale Energiegleichung E = π·ε·ℏ·f |
-| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/kopplungsenergie.md) | Grenzfälle ε = 1, 1/(2π), 1/e, 0 |
-| 4 | [Resonanzzeitkoeffizient τ*](fakten/docs/mathematik/tau_resonanzkoeffizient.md) | Zeitskala der Kopplung: τ*(Δφ) = π/ε(Δφ) |
-| 5 | [Energierichtung](fakten/docs/mathematik/energierichtung.md) | Energie als Vektor mit Drehsinn |
-| 6 | [Energiekugel](fakten/docs/mathematik/energiekugel.md) | Geometrisches Modell — Phasenstruktur und dunkle Energie |
-| 7 | [Resonanzenergievektor](fakten/docs/mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße im Resonanzraum |
-| 8 | [Energieübertragung](fakten/docs/mathematik/energieuebertragung.md) | Prinzipien und Gleichungen der Übertragung |
-| 9 | [Resonanzkoordinaten](fakten/docs/mathematik/resonanzkoordinaten.md) | Tangens-Halbwinkel-Parametrisierung |
-| 10 | [Doppelpendel](fakten/docs/mathematik/doppelpendel.md) | Klassische Mechanik und RFT-Perspektive |
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [Resonanzintegrale](fakten/docs/mathematik/resonanzintegrale.md) | A1–A4, A7 | Analytische Methoden — Dirichlet-Integral als Resonanzenergie |
+| 2 | [Resonanzfeld-Gleichung](fakten/docs/mathematik/resonanzfeld_gleichung.md) | A1, A3, A5, A6 | Zentrale Energiegleichung E = π·ε·ℏ·f |
+| 3 | [Kopplungsenergie: Spezialfälle](fakten/docs/mathematik/kopplungsenergie.md) | A4 | Grenzfälle ε = 1, 1/(2π), 1/e, 0 |
+| 4 | [Resonanzzeitkoeffizient τ*](fakten/docs/mathematik/tau_resonanzkoeffizient.md) | A4 | Zeitskala der Kopplung: τ*(Δφ) = π/ε(Δφ) |
+| 5 | [Energierichtung](fakten/docs/mathematik/energierichtung.md) | A2, A4, A5, A6 | Energie als Vektor mit Drehsinn |
+| 6 | [Energiekugel](fakten/docs/mathematik/energiekugel.md) | A1, A2, A4, A5, A7 | Geometrisches Modell — Phasenstruktur und dunkle Energie |
+| 7 | [Resonanzenergievektor](fakten/docs/mathematik/resonanzenergievektor.md) | A4, A5 | Energie als Richtungsgröße im Resonanzraum |
+| 8 | [Energieübertragung](fakten/docs/mathematik/energieuebertragung.md) | A1, A3, A4, A6 | Prinzipien und Gleichungen der Übertragung |
+| 9 | [Resonanzkoordinaten](fakten/docs/mathematik/resonanzkoordinaten.md) | A1, A4 | Tangens-Halbwinkel-Parametrisierung |
+| 10 | [Doppelpendel](fakten/docs/mathematik/doppelpendel.md) | A1, A2, A4 | Klassische Mechanik und RFT-Perspektive |
 
 ---
 
 ## Konzepte
 
-| # | Konzept | Beschreibung |
-|---|---------|-------------|
-| 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | Drehmomentberechnung im Resonanzfeld |
-| 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | Reaktorkonzept |
-| 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | Antriebskonzept |
-| 4 | [ResoTrade V15.6](fakten/konzepte/ResoTrade/resotrade_trading_ki.md) | +26.3% vs HODL, Live seit April 2026 |
-| 5 | [ResoAgent](fakten/konzepte/ResoAgent/ResoAgent.md) | Resonanzlogische Agenten-KI |
+| # | Konzept | Axiome | Beschreibung |
+|---|---------|--------|-------------|
+| 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | A1, A3, A4 | Drehmomentberechnung im Resonanzfeld |
+| 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | A1, A3–A7 | Reaktorkonzept |
+| 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | A1, A4, A5 | Antriebskonzept |
+| 4 | [ResoTrade V15.6](fakten/konzepte/ResoTrade/resotrade_trading_ki.md) | A1–A7 | +26.3% vs HODL, Live seit April 2026 |
+| 5 | [ResoAgent](fakten/konzepte/ResoAgent/ResoAgent.md) | A1–A7 | Resonanzlogische Agenten-KI |
 
 ---
 
 ## Simulationen
 
 | # | Simulationen | Axiome | Beschreibung |
-|---|---------|-------------|
+|---|---------|--------|-------------|
 | 1 | [Resonanzfeld](fakten/simulationen/resonanzfeld/simulation_resonanzfeldtheorie.md) | A1–A5 | Zwei Oszillatoren, Kopplungseffizienz, Energierichtung |
 | 2 | [Doppelpendel](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | A1, A2, A4 | Klassisches Doppelpendel mit dynamischer Kopplungseffizienz ε(θ₂−θ₁) |
 | 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) | A1–A4 | Energieaustausch, Resonanzerkennung, Live-Animation |
@@ -203,10 +203,10 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 ## Empirische Nachweise
 
-| # | Nachweis | Beschreibung |
-|---|---------|-------------|
-| 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/cern/dokumentation.md) | CERN-Daten: Signifikante Resonanzüberschüsse |
-| 2 | [Monte-Carlo-Test](fakten/empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
+| # | Nachweis | Axiome | Beschreibung |
+|---|---------|--------|-------------|
+| 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/cern/dokumentation.md) | A1, A3, A7 | CERN-Daten: Signifikante Resonanzüberschüsse |
+| 2 | [Monte-Carlo-Test](fakten/empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) | A1, A3, A7 | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
 
 
 ---

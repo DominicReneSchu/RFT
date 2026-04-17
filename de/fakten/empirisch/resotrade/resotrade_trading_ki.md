@@ -14,34 +14,34 @@ Seit V14.2 ist ResoTrade ein generisches Multi-Asset-System (BTC, Gold, ETH, EUR
 
 **Kernergebnis:** +26.1% vs HODL im Durchschnitt über 4 verschiedene Marktphasen (24 Monate), validiert über Sideways, Bullrun, Korrektur und Crash. Kein klassischer Indikator auf demselben Datensatz erreicht eine Korrelation über 0.05.
 
-**Begleitdokument:** Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) zeigt, warum Altcoins resonanztheoretisch keine eigenständigen Märkte sind — und bestätigt damit die Axiome der Resonanzfeldtheorie aus einer zweiten, unabhängigen Richtung.
+**Begleitdokument:** Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) zeigt, warum Altcoins resonanztheoretisch keine eigenständigen Märkte sind — und bestätigt damit die Axiome der Resonanzfeldtheorie aus einer zweiten, unabhängigen Richtung.
 
 ---
 
 ## Einordnung in die Resonanzfeldtheorie
 
-ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
+ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
 
 | Axiom | Prinzip | Anwendung in ResoTrade V14.2 | Empirischer Nachweis |
 |-------|---------|------------------------------|---------------------|
-| [**Axiom 1**](../docs/mathematik/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
-| [**Axiom 2**](../docs/mathematik/axiomatische_grundlegung.md) | Superposition der Moden | MA_SHORT + MA_LONG als überlagerte Moden | Multi-Zeitskalen-Analyse verbessert Timing |
-| [**Axiom 3**](../docs/mathematik/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Symmetrische BUY/SELL-Schwellen (V14-Fix) | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
-| [**Axiom 4**](../docs/mathematik/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Konsolidierter Decay (0.92), Balance-Regler | System bleibt über 24 Monate handlungsfähig |
-| [**Axiom 5**](../docs/mathematik/energierichtung.md) | Energie ist vektoriell | `energy_dir = e_short - e_long`, reduzierte Chain-Dimensionalität | Richtung schlägt Prognose |
-| [**Axiom 6**](../docs/mathematik/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Pattern-Gate, Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
-| [**Axiom 7**](../docs/mathematik/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: BTC, Gold, ETH, EURUSD über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
+| [**Axiom 1**](../../docs/definitionen/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | AC/DC-Zerlegung: Preis = DC + AC | Phasenerkennung schlägt alle Indikatoren |
+| [**Axiom 2**](../../docs/definitionen/axiomatische_grundlegung.md) | Superposition der Moden | MA_SHORT + MA_LONG als überlagerte Moden | Multi-Zeitskalen-Analyse verbessert Timing |
+| [**Axiom 3**](../../docs/definitionen/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Symmetrische BUY/SELL-Schwellen (V14-Fix) | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
+| [**Axiom 4**](../../docs/definitionen/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Konsolidierter Decay (0.92), Balance-Regler | System bleibt über 24 Monate handlungsfähig |
+| [**Axiom 5**](../../docs/mathematik/energierichtung.md) | Energie ist vektoriell | `energy_dir = e_short - e_long`, reduzierte Chain-Dimensionalität | Richtung schlägt Prognose |
+| [**Axiom 6**](../../docs/definitionen/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Pattern-Gate, Resonanz-Gate: Trades nur in Phase | +26.1% vs HODL über alle Marktregime |
+| [**Axiom 7**](../../docs/definitionen/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: BTC, Gold, ETH, EURUSD über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
 
-Die [Altcoin-Analyse](resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
+Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
 
 ### Weiterführende theoretische Grundlagen
 
-- [Energiekugel und AC/DC-Zerlegung](../docs/mathematik/energiekugel.md) — Axiom 1 formalisiert
-- [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md) — Axiom 5 formalisiert
-- [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
-- [Resonanzanalyse in Massendaten](dokumentation.md) — Methodik der empirischen Validierung
-- [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md) — Gesellschaftliche Implikation
-- [ResoMusic — Domänen-Transfer](../konzepte/ResoOS/resoOS.md#empirische-ergebnisse-resomusic-v7-märz-2026) — Dieselben 6 Architekturmuster in der Klangdomäne validiert
+- [Energiekugel und AC/DC-Zerlegung](../../docs/mathematik/energiekugel.md) — Axiom 1 formalisiert
+- [Energierichtung in realen Systemen](../../docs/mathematik/energierichtung.md) — Axiom 5 formalisiert
+- [Resonanzzeitkoeffizient τ*](../../docs/mathematik/tau_resonanzkoeffizient.md) — Zeitskalen der Kopplung
+- [Resonanzanalyse in Massendaten](../cern/dokumentation.md) — Methodik der empirischen Validierung
+- Duales Resonanz-Geldsystem — Gesellschaftliche Implikation
+- ResoMusic — Domänen-Transfer — Dieselben 6 Architekturmuster in der Klangdomäne validiert
 
 ---
 
@@ -140,7 +140,7 @@ Eine Million Raspberry Pis, die resonant handeln, wirken als **dezentraler Stabi
 
 ### Warum das Geldsystem dadurch gerechter wird
 
-Das heutige Fiat-System hat eine strukturelle Asymmetrie — den [Cantillon-Effekt](../docs/gesellschaft/duales_resonanzgeldsystem.md):
+Das heutige Fiat-System hat eine strukturelle Asymmetrie — den Cantillon-Effekt:
 
 ```
 Fiat-System:
@@ -219,7 +219,7 @@ Das System verkaufte am Peak in Sideways, generierte keine BUYs bei fallendem Pr
 2. **Gewinn kommt aus resonanter Energieextraktion**, nicht aus Prognose
 3. **AC/DC-Zerlegung identifiziert den richtigen Zeitpunkt** im Zyklus
 4. **Multi-Zyklus-Training zeigt kein Overfitting** (Δ < 1% nach Zyklus 1 vs 3)
-5. **Altcoins stören das Signal** — siehe [Altcoin-Analyse](resotrade_altcoin_analyse.md)
+5. **Altcoins stören das Signal** — siehe [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md)
 
 ### Performance-Historie
 
@@ -549,12 +549,12 @@ python hint_evaluator.py               # Hint-Qualität
 
 ## Verwandte Dokumente
 
-- [Altcoin-Analyse: Warum Altcoins keine echten Märkte sind](resotrade_altcoin_analyse.md)
-- [Energiekugel und AC/DC-Zerlegung](../docs/mathematik/energiekugel.md)
-- [Energierichtung in realen Systemen](../docs/mathematik/energierichtung.md)
-- [Resonanzzeitkoeffizient τ*](../docs/mathematik/tau_resonanzkoeffizient.md)
-- [Resonanzanalyse in Massendaten](dokumentation.md)
-- [Duales Resonanz-Geldsystem](../docs/gesellschaft/duales_resonanzgeldsystem.md)
+- [Altcoin-Analyse: Warum Altcoins keine echten Märkte sind](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md)
+- [Energiekugel und AC/DC-Zerlegung](../../docs/mathematik/energiekugel.md)
+- [Energierichtung in realen Systemen](../../docs/mathematik/energierichtung.md)
+- [Resonanzzeitkoeffizient τ*](../../docs/mathematik/tau_resonanzkoeffizient.md)
+- [Resonanzanalyse in Massendaten](../cern/dokumentation.md)
+- Duales Resonanz-Geldsystem
 
 ---
 
@@ -562,4 +562,4 @@ python hint_evaluator.py               # Hint-Qualität
 
 ---
 
-⬅️ [zurück zur Übersicht](../../README.md)
+⬅️ [zurück zur Übersicht](../../../README.md)

@@ -27,7 +27,7 @@ oder nicht-trivialen Suchverfahren wie in dieser Resonanzanalyse.
 
 Diese Simulation validiert die Vorhersagen von Axiom 3
 (Resonanzbedingung) der
-[Resonanzfeldtheorie](../../docs/definitionen/axiomatische_grundlegung.md):
+[Resonanzfeldtheorie](../../../docs/definitionen/axiomatische_grundlegung.md):
 Wenn Resonanzstellen physikalisch real sind, müssen die
 beobachteten Überschüsse signifikant über dem Hintergrund liegen
 — auch unter konservativer Simulation der Nullhypothese.
@@ -37,7 +37,7 @@ ist konsistent mit Axiom 7 (Invarianz): Die Resonanzstruktur
 bleibt unter Variation der Simulationsparameter erhalten.
 
 Diese Analyse bildet gemeinsam mit
-[ResoTrade](../resotrade_trading_ki.md) die empirische Basis
+[ResoTrade](../../resotrade/resotrade_trading_ki.md) die empirische Basis
 der Resonanzfeldtheorie — Teilchenphysik und Finanzmärkte als
 zwei unabhängige Domänen, in denen Resonanzstrukturen
 nachgewiesen werden.
@@ -211,7 +211,7 @@ durch kein Hintergrundmodell reproduziert werden können. Die
 Invarianz der Ergebnisse über 10.000 Simulationsdurchläufe ist
 konsistent mit Axiom 7.
 
-Im Zusammenspiel mit [ResoTrade](../resotrade_trading_ki.md) zeigt
+Im Zusammenspiel mit [ResoTrade](../../resotrade/resotrade_trading_ki.md) zeigt
 sich: Resonanzstrukturen sind nicht auf die Teilchenphysik
 beschränkt — sie manifestieren sich überall dort, wo Schwingungen
 mit ausgeprägter Eigenfrequenz vorliegen (Axiom 1).
@@ -267,4 +267,4 @@ mit vermuteten Resonanzstrukturen übertragbar.
 
 ---
 
-[Zurück zur Übersicht](../../../README.md)
+[Zurück zur Übersicht](../../../../README.md)

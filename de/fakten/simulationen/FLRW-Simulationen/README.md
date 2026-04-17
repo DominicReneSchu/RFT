@@ -260,4 +260,4 @@ an echte Planck-Daten um Δχ² = +16 (Pearson r = 0.626).
 
 ---
 
-⬅️ [zurück zur Übersicht](../README.md)
+⬅️ [zurück zur Übersicht](../../../README.md#simulationen)
