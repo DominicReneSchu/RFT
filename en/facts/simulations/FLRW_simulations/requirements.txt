@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+pytest
+
+# Optional (GPU acceleration, requires CUDA):
+# cupy
+# Optional (CPU parallelisation):
+# numba
