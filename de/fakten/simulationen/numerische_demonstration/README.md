@@ -7,7 +7,7 @@ Kopplungseffizienz und Resonanzentropie über dem
 > **Einordnung:** Diese Simulation demonstriert die interne
 > Konsistenz der Axiome A3–A5. Sie ist keine empirische
 > Validierung. Für den empirischen Test siehe die
-> [Monte-Carlo-Analyse](../../empirisch/monte_carlo_test/monte_carlo.md).
+> [Monte-Carlo-Analyse](../../empirisch/monte_carlo/monte_carlo_test/monte_carlo.md).
 
 ---
 
@@ -65,4 +65,4 @@ from numerische_demonstration import (
 
 ---
 
-⬅️ [zurück](../README.md)
+⬅️ [zurück](../../../README.md#simulationen)

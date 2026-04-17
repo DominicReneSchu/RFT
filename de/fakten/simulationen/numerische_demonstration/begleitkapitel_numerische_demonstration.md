@@ -11,7 +11,7 @@ und Resonanzentropie über dem (A, τ)-Parameterraum.
 > die erwarteten mathematischen Eigenschaften aufweisen.
 >
 > Für die empirische Validierung mit unabhängigen Daten
-> siehe die [Monte-Carlo-Analyse](../../empirisch/monte_carlo_test/monte_carlo.md).
+> siehe die [Monte-Carlo-Analyse](../../empirisch/monte_carlo/monte_carlo_test/monte_carlo.md).
 
 <p align="center">
   <img src="plot.png" alt="Resonanzfeldtheorie — Numerische Demonstration" width="900"/>
@@ -132,7 +132,7 @@ Die eigentliche Beweisführung liegt in der **Monte-Carlo-Analyse**,
 die Resonanzstrukturen in unabhängigen Daten identifiziert und
 die statistische Signifikanz quantifiziert:
 
-→ [Monte-Carlo-Analyse](../../empirisch/monte_carlo_test/monte_carlo.md)
+→ [Monte-Carlo-Analyse](../../empirisch/monte_carlo/monte_carlo_test/monte_carlo.md)
 
 ---
 
