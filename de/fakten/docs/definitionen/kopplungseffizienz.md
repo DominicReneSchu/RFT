@@ -522,7 +522,7 @@ Resonanzfeldtheorie ab Version 2026.
 | [Energiekugel](../mathematik/energiekugel.md) | Geometrisches Modell |
 | [Resonanzintegrale](../mathematik/resonanzintegrale.md) | Analytische Methoden |
 | [Resonanzenergievektor](../mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße |
-| [Empirische Nachweise](../../empirisch/) | ResoTrade, Monte Carlo, FLRW, Resonanzreaktor |
+| [Empirische Nachweise](../../empirisch/) | Cern-Auswertung, Monte Carlo, ResoTrade |
 
 ---
 
