@@ -82,4 +82,10 @@ richtigen Strukturen zu sehen.
 
 ---
 
+## English Version
+
+→ [English Version](en/README.md)
+
+---
+
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
