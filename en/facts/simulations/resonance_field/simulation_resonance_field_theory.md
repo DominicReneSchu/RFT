@@ -29,7 +29,7 @@ $$
 | A7 | Invariance | Resonance structure is transformation-invariant |
 
 Complete axiomatics:
-[axiomatische_grundlegung.md](../../docs/definitionen/axiomatische_grundlegung.md)
+[axiomatic_foundation.md](../../docs/definitions/axiomatic_foundation.md)
 
 ---
 
