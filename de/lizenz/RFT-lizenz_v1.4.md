@@ -1,8 +1,8 @@
-# 📜 Schu-Lizenz (Version 1.4)  
-© Dominic Schu, 2025. Alle Rechte vorbehalten.
+# 📜 RFT-Lizenz (Version 1.4)  
+© Dominic-René Schu, 2025. Alle Rechte vorbehalten.
 
 ## Präambel  
-Diese Lizenz ermöglicht die Nutzung, Bearbeitung und Verbreitung der Schu-Theorien und -Technologien im Rahmen der Resonanzfeldtheorie unter Beachtung der ethischen Grundsätze (siehe §6 und Glossar).  
+Diese Lizenz ermöglicht die Nutzung, Bearbeitung und Verbreitung der RF-Theorien und -Technologien im Rahmen der Resonanzfeldtheorie unter Beachtung der ethischen Grundsätze (siehe §6 und Glossar).  
 
 ---
 
@@ -12,7 +12,7 @@ Der Lizenzgeber räumt ein nicht-ausschließliches, weltweites Recht zur Nutzung
 ---
 
 ## §2 - Namensnennung  
-Bei jeder Nutzung ist der Name „Dominic Schu, Resonanzfeldtheorie“ gut sichtbar und nachvollziehbar zu nennen.  
+Bei jeder Nutzung ist der Name „Dominic-René Schu, Resonanzfeldtheorie“ gut sichtbar und nachvollziehbar zu nennen.  
 
 ---
 
