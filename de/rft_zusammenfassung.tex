@@ -201,24 +201,21 @@
 		\item Energiebilanz mit Q-Faktor-Analyse
 	\end{itemize}
 	
-	\subsection{ResoTrade}
+	\subsection{ResoTrade (Anwendungskonzept)}
 	
 	\begin{itemize}
 		\item Resonanzfeldtheoretisches Trading-System
-		f\"ur den BTC-Markt, 12~Versionen
-		(Oktober 2025 -- M\"arz 2026)
+		f\"ur den BTC-Markt -- demonstriert Anwendbarkeit
+		der RFT-Axiome in einem realen Marktumfeld
 		\item AC/DC-Zerlegung (A1), Superposition
 		dreier Moden (A2), Frequenzverh\"altnis
 		24h:168h~$= 1{:}7$ (A3), Balance-Regler
 		und Downtrend-Pause-Gate (A4),
 		Energierichtungsvektor (A5),
 		Resonanz-Gate (A6)
-		\item 24~Monate Backtest (M\"arz 2024 -- Februar 2026)
-		in 4~Marktregimen
-		\item Live seit 25.\ Februar 2026 \"uber Kraken
-		(Dry-Run)
-		\item Jede Verbesserung durch neues Axiom, nie
-		durch Parametertuning
+		\item Prim\"are Axiom-Belege stammen aus
+		RFT-internen Simulationen (FLRW, Monte Carlo,
+		Doppelpendel, Resonanzreaktor)
 	\end{itemize}
 	
 	%% ============================================================
@@ -303,132 +300,37 @@
 	$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$.
 	Best\"atigt Axiom~1, 3, 4.
 	
-	\subsection{ResoTrade: Axiomatische Validierung
-		am BTC-Markt}
+	\subsection{ResoTrade: Anwendungskonzept
+		im BTC-Markt}
 	
-	ResoTrade validiert jedes der sieben Axiome einzeln
-	am realen Markt. Das System wurde \"uber 12~Versionen
-	iterativ entwickelt, wobei jede Verbesserung durch
-	Einf\"uhrung eines neuen Axioms entstand -- nie durch
-	Parametertuning.
+	ResoTrade ist ein resonanzfeldtheoretisches Trading-System,
+	das alle sieben Axiome auf das konkrete Problem des
+	algorithmischen Handels anwendet.
+	Es demonstriert die Anwendbarkeit der RFT-Axiome in
+	einem realen, chaotischen System -- dient jedoch nicht
+	als prim\"arer Axiom-Beweis, da die zugeh\"orige
+	Implementierung nicht \"offentlich nachpr\"ufbar ist.
 	
-	\subsubsection{Axiom-f\"ur-Axiom-Validierung.}
+	\subsubsection{Dynamische Simulationen.}
+	
+	Die RFT-internen Simulationen best\"atigen die Axiome
+	unabh\"angig und nachpr\"ufbar:
 	
 	\begin{center}
-		\begin{tabular}{llll}
+		\begin{tabular}{lll}
 			\hline
-			\textbf{Axiom} & \textbf{Mechanismus}
-			& \textbf{Version} & \textbf{Effekt} \\
+			\textbf{Axiom} & \textbf{Simulation} & \textbf{Ergebnis} \\
 			\hline
-			A1 & AC/DC-Zerlegung
-			& V11 & $+5{,}9$~Pp. \\
-			A2 & 3~Moden (PID-Isomorphie)
-			& V10--V11 & $+42{,}9\%$ \\
-			A3 & $f_1/f_2 = 1{:}7$
-			& Altcoin-Test & Falsifiziert \\
-			A4 & Pause-Gate ($\varepsilon \to 0$)
-			& V11.1 & $+44{,}9\%$ \\
-			A5 & Energierichtungsvektor
-			& V10 & $+1{,}4$~Pp. \\
-			A6 & Resonanz-Gate
-			& V10+ & 40\% blockiert \\
-			A7 & Regime-Invarianz
-			& Alle & 4/4~positiv \\
+			A1 & FLRW (1\,530 L\"aufe) & $\eta \approx \cos^2(\Delta\phi/2)$, $\Delta d_\eta > 6\sigma$ \\
+			A2 & Gek.\ Oszillatoren & Mehrfrequenz-Superposition best\"atigt \\
+			A3 & Monte Carlo (1\,500\,000 Sim.) & 5 Resonanzen, emp.\ $p = 0$ \\
+			A4 & FLRW: $\varepsilon = \eta$ Identit\"at & $\kappa = 1$, kein freier Parameter \\
+			A5 & Resonanzfeld-Sim. & Energierichtungsvektor best\"atigt \\
+			A6 & Resonanzfeld-Sim. & Kopplungseffizienz und Energiefluss \\
+			A7 & Monte Carlo & bandbrei\-ten\-un\-ab\-h\"angig (3 KDE) \\
 			\hline
 		\end{tabular}
 	\end{center}
-	
-	\subsubsection{Backtest: 24~Monate, 4~Marktregime.}
-	
-	\begin{center}
-		\begin{tabular}{llrl}
-			\hline
-			\textbf{Regime} & \textbf{Zeitraum}
-			& \textbf{Trades} & \textbf{vs.\ HODL} \\
-			\hline
-			Sideways + ETF & M\"ar--Sep 2024
-			& 437 & $+33{,}3\%$ \\
-			Bullrun & Sep 2024--M\"ar 2025
-			& 429 & $+22{,}9\%$ \\
-			Top + Korrektur & M\"ar--Sep 2025
-			& 247 & $+4{,}0\%$ \\
-			Crash & Sep 2025--Feb 2026
-			& 279 & $+44{,}9\%$ \\
-			\hline
-			\textbf{Alle Regime} & \textbf{24~Monate}
-			& \textbf{1392} & $\mathbf{+26{,}3\%}$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\subsubsection{Live-Validierung (seit 25.\ Februar 2026).}
-	
-	\begin{center}
-		\begin{tabular}{lr}
-			\hline
-			\textbf{Metrik} & \textbf{Wert} \\
-			\hline
-			Zeitraum & 5~Tage (erste Auswertung) \\
-			Performance vs.\ HODL & $+4{,}13\%$ \\
-			Markt im Zeitraum & $-1{,}92\%$ \\
-			Trades & 36 (18~BUY, 18~SELL) \\
-			\O~Kaufpreis & 63\,828~USD \\
-			\O~Verkaufspreis & 68\,105~USD \\
-			Spread & $+6{,}70\%$ \\
-			Regel-Policy-Divergenz & $0{,}0\%$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\subsubsection{Falsifikationstest: Altcoin-Analyse.}
-	
-	\"Uber $200\,000$~Episoden mit 10~Altcoins zeigt sich:
-	Altcoins besitzen keine eigenst\"andige Eigenfrequenz
-	($\mathrm{AC}_{\mathrm{Alt}} \approx \alpha \cdot
-	\mathrm{AC}_{\mathrm{BTC}} + \eta$).
-	Ohne Resonanzbedingung (A3) kein Informationsaustausch:
-	
-	\begin{center}
-		\begin{tabular}{lrrr}
-			\hline
-			\textbf{Konfiguration}
-			& \textbf{Episoden}
-			& \textbf{Draw-Rate}
-			& \textbf{$>$HODL} \\
-			\hline
-			BTC + 13~Aktien & -- & $84\%$
-			& $100\%$ \\
-			BTC + 10~Altcoins & $200\,000+$
-			& $98{,}4\%$ & $86\%$ \\
-			BTC only (V11) & -- & ${\sim}49\%$
-			& $83{,}4\%$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Aktien besitzen eigenst\"andige Eigenfrequenzen
-	und k\"onnen mit BTC in echte Resonanz treten.
-	Altcoins k\"onnen es nicht.
-	Negativer Lernfortschritt bei Altcoins
-	($-0{,}002$/Zyklus) best\"atigt die Vorhersage.
-	
-	\subsubsection{Konvergenz und Stabilit\"at.}
-	
-	\begin{itemize}
-		\item Performance nach 1~Zyklus: $+25{,}8\%$.
-		Nach 3~Zyklen: $+26{,}3\%$.
-		$\Delta < 1\%$ -- ged\"ampftes Einschwingverhalten.
-		\item Parameter\"anderungen verschlechtern die
-		Performance -- schmales Resonanzfenster.
-		\item Kein klassischer Indikator (RSI, MACD,
-		Bollinger, MA-Crossover) erreicht Korrelation
-		$> 0{,}05$ mit zuk\"unftigen Preisbewegungen.
-		\item Erfahrungsspeicher: lesbare CSV mit
-		${\sim}6\,000$ Eintr\"agen und
-		${\sim}1{,}6$~Mio.\ Z\"ahlern.
-		\item Hardware: 15~Min.\ Training (CPU),
-		2~MB Speicher, 5~W (Raspberry Pi).
-	\end{itemize}
 	
 	Best\"atigt Axiom~1, 2, 3, 4, 5, 6, 7.
 	
@@ -484,10 +386,9 @@
 		$\lambda\varepsilon^4$- und
 		$\alpha R\varepsilon^2$-Terme.
 		
-		\item \textbf{ResoTrade Live-Validierung:}
-		6--12~Monate verifizierbare Performance.
-		V11.2 (D-Anteil/Slope) in Live-Validierung.
-		Statistische Signifikanz ($p$-Wert) ausstehend.
+		\item \textbf{ResoTrade-Anwendung:}
+		Langzeit-Validierung des Anwendungskonzepts
+		\"uber verifizierbare Zeitr\"aume.
 		\"Ubergang zu Echtgeld nach Dry-Run-Phase.
 		
 		\item \textbf{Optimale MA-Frequenzwahl:}

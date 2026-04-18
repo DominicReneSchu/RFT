@@ -83,8 +83,9 @@ DC-Komponente (Trend) und AC-Komponente (handelbare Schwingung) zerlegen.
 
 **Physikalisches Beispiel:** Eigenschwingungen eines Mikrowellenresonators.
 
-**Empirischer Nachweis (ResoTrade):** Die AC/DC-Zerlegung des BTC-Preises
-erzeugt handelbares Signal: +26.1% vs. HODL über 4 Marktregime.
+**Empirischer Nachweis (RFT-intern):** FLRW-Simulation: η ≈ cos²(Δφ/2),
+Δd_η > 6σ (1.530 Läufe). Die Eigenfrequenz jedes physikalischen Systems
+ist messbar (Fourier-Zerlegung).
 
 ---
 
@@ -126,9 +127,9 @@ mit der Verstimmung.
 resonant koppeln. Systeme mit identischen Eigenfrequenzen schwingen synchron —
 keine Obertöne, kein Informationsaustausch.
 
-**Empirischer Nachweis (ResoTrade):** BTC und Aktien (verschiedene
-Eigenfrequenzen) erzeugen Resonanz: S:F = 5.2:1. BTC und Altcoins
-(identische Eigenfrequenzen) erzeugen keine Resonanz: Draw-Rate 98.4%.
+**Empirischer Nachweis (RFT-intern):** Monte-Carlo-Test auf CMS-Dielektron-Daten:
+5 Resonanzen bei Teilchenmassen, emp. p = 0 (1.500.000 Simulationen, 3 KDE,
+30 Seeds). CERN-Resonanzanalyse: signifikante Resonanzüberschüsse in Massendaten.
 
 ---
 
@@ -206,9 +207,9 @@ verschiedenen Zeitskalen:
 **Testbare Vorhersage:** Die Richtung des Energieflusses ist eine
 verwertbare Observable, die über skalare Indikatoren hinausgeht.
 
-**Empirischer Nachweis (ResoTrade):** V10 (mit Energierichtung) erreicht
-+37.03%, V9.4 (ohne) +35.61%. Alle skalaren Indikatoren (RSI, Momentum,
-MA-Crossover) haben Korrelation < 0.05 mit dem Preisverlauf.
+**Empirischer Nachweis (RFT-intern):** Resonanzfeld-Simulation: Energierichtungsvektor
+(A5) bestätigt — PCI → MI zeigt direktionale Energieflusskontrolle.
+FLRW-Simulation: Energiefluss-Direktion bestätigt in kosmologischem Kontext.
 
 ---
 
@@ -232,10 +233,9 @@ messbar durch Mutual Information und Phase Coherence Index.
 keine Information austauschen — unabhängig von der Amplitude der
 Einzelschwingungen.
 
-**Empirischer Nachweis (ResoTrade):** Das Resonanz-Gate filtert 92%
-der Zyklen als nicht-resonant. Die verbleibenden 8% sind profitabel.
-Altcoins (PCI ≈ 1 zu BTC, keine Phasenverschiebung) erzeugen keinen
-Informationsfluss: 98.4% Draw-Rate.
+**Empirischer Nachweis (RFT-intern):** Resonanzfeld-Simulation: Informationsfluss
+durch Kopplungseffizienz und PCI bestätigt. Monte-Carlo-Test: emp. p = 0
+(Resonanz nur bei Resonanzbedingung, A3).
 
 ---
 
@@ -257,9 +257,9 @@ unter synchronen Transformationen der Gruppe G_sync.
 **Testbare Vorhersage:** Die Resonanzstruktur ist skalierungsinvariant —
 sie gilt auf allen Zeitskalen und Energieskalen.
 
-**Empirischer Nachweis (ResoTrade):** Die AC/DC-Zerlegung funktioniert
-über alle 4 Marktphasen (Sideways, Bullrun, Korrektur, Crash) mit
-konsistenter Performance. Die Axiome sind regime-invariant.
+**Empirischer Nachweis (RFT-intern):** Monte-Carlo-Test stabil über 3 KDE-Bandbreiten
+und 30 Seeds (A7 bestätigt). FLRW-Simulation: Kopplungsstruktur invariant über
+verschiedene H₀-Werte (4 Regime). CERN-Daten: stabiles Resonanzmuster.
 
 ---
 
@@ -369,15 +369,15 @@ Information mit dem Feld austauscht.
 
 ## 6. Übersicht: Axiome und ihre empirischen Tests
 
-| Axiom | Kernaussage | Formale Kernformel | Empirischer Test (ResoTrade) |
-|-------|-------------|-------------------|------------------------------|
-| A1 | Universelle Schwingung | ψ = A·cos(kx−ωt+φ) | AC/DC-Zerlegung: +26.1% vs HODL |
-| A2 | Superposition | Φ = Σ ψᵢ | Multiskalen-Überlagerung (MA_SHORT + MA_LONG) |
-| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ | BTC↔Aktien: resonant. BTC↔Altcoins: nicht resonant |
-| A4 | Kopplungsenergie | E = π·ε·h·f | Balance-Regler hält Kopplung über 24 Monate stabil |
-| A5 | Energierichtung | E⃗ = E·ê(Δφ,∇Φ) | energy_dir bringt +1.42% Verbesserung (V10 vs V9.4) |
-| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Resonanz-Gate filtert 92% als nicht-resonant |
-| A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Konsistente Performance über 4 Marktregime |
+| Axiom | Kernaussage | Formale Kernformel | RFT-interner Nachweis |
+|-------|-------------|-------------------|----------------------|
+| A1 | Universelle Schwingung | ψ = A·cos(kx−ωt+φ) | FLRW-Simulationen: η ≈ cos²(Δφ/2), Δd_η > 6σ |
+| A2 | Superposition | Φ = Σ ψᵢ | Gekoppelte Oszillatoren: Mehrfrequenz-Überlagerung simuliert |
+| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ | Monte-Carlo-Test: 5 Resonanzen bei Teilchenmasse, emp. p = 0 |
+| A4 | Kopplungsenergie | E = π·ε·h·f | FLRW: ε = η Identität (κ = 1), Schrödinger-Simulation: Ableitung aus A4 |
+| A5 | Energierichtung | E⃗ = E·ê(Δφ,∇Φ) | Resonanzfeld-Simulation: Energierichtungsvektor, Doppelpendel: ε(θ₂−θ₁) |
+| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Resonanzfeld-Simulation: Kopplungseffizienz und Energiefluss |
+| A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte-Carlo-Test: bandbrei­tenunabhängig (3 KDE), CERN-Daten: stabiles Resonanzmuster |
 
 ---
 
@@ -385,7 +385,7 @@ Information mit dem Feld austauscht.
 
 - **Quantenphysik:** Superposition, Quantisierung durch rationale Frequenzverhältnisse
 - **Klassische Mechanik:** Synchronisation gekoppelter Oszillatoren
-- **Finanzmärkte:** Resonanzbasiertes Trading (ResoTrade)
+- **Finanzmärkte:** Resonanzbasiertes Trading (ResoTrade — Anwendungskonzept)
 - **Biophysik:** Neuronale Synchronisation, Proteinfaltung
 - **Informationstheorie:** Resonanzbasierte Kanalkapazität
 - **Kosmologie:** Harmonische Musterbildung
@@ -399,7 +399,7 @@ Die Resonanzfeldtheorie besteht aus 7 Kern-Axiomen (A1–A7), die:
 1. **Minimal** sind: Das stabile Resonanzfeld (altes A5) ist als Satz ableitbar
 2. **Unabhängig** sind: Kein Axiom folgt aus den übrigen
 3. **Formal präzise** sind: Jedes Axiom enthält eine mathematische Formel
-4. **Empirisch testbar** sind: Jedes Axiom hat einen dokumentierten Test (ResoTrade)
+4. **Empirisch testbar** sind: Jedes Axiom hat einen dokumentierten Test (FLRW-Simulationen, Monte-Carlo, CERN-Daten, Resonanzreaktor)
 
 Die Erweiterung E1 (Beobachter als Resonator) ist eine interpretative
 Ergänzung, die auf dem Fundament aufbaut, aber nicht zur physikalischen

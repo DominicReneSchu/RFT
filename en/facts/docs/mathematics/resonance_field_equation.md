@@ -149,7 +149,7 @@ For constant ε and negligible dissipation:
 | Particle physics | Resonance condition at M₀ | 5 resonances, emp. p = 0 |
 | Cosmology | Klein-Gordon in FLRW | η ≈ cos², Δχ² = +16 |
 | Resonance reactor | f_GDR = E_GDR/(π·ℏ) | κ = 1, Q_fiss ≈ 1.0 |
-| ResoTrade | AC/DC decomposition, energy direction | +26.3% vs HODL |
+| Double pendulum | Dynamic coupling efficiency ε(θ₂−θ₁) | ε = cos²(Δθ/2) confirmed |
 | Energy storage | Phase control → loss minimization | Axiom 6 |
 | Measurement technology | Phase modulation → energy flow monitoring | Axioms 5, 6 |
 
@@ -167,7 +167,7 @@ classical Planck relation through:
 5. The Planck ground state as a special case ε = 1/(2π)
 
 Empirically validated in four domains: particle physics, cosmology,
-nuclear technology, and financial markets.
+nuclear technology, and classical mechanics.
 
 ---
 

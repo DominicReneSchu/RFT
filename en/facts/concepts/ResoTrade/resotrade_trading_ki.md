@@ -1,6 +1,6 @@
 # ResoTrade — Resonance Field Theoretic Multi-Layer Multi-Asset AI
 
-*Empirical proof of Resonance Field Theory in real financial markets*
+*Application concept of Resonance Field Theory in real financial markets*
 
 *Dominic-René Schu, February 2026 — updated April 2026*
 
@@ -8,31 +8,31 @@
 
 ## Summary
 
-ResoTrade is a resonance field theoretic trading system that learns through repeated offline simulation to read price cycles as oscillation fields and to accumulate assets beyond pure HODL. It is the first empirical proof that the axioms of Resonance Field Theory produce structurally superior decisions in a real, chaotic system — the financial market.
+ResoTrade is a resonance field theoretic trading system that learns through repeated offline simulation to read price cycles as oscillation fields and to accumulate assets beyond pure HODL. It demonstrates the applicability of the axioms of Resonance Field Theory in a real, chaotic system — the financial market. Primary axiom evidence comes from RFT-internal simulations (FLRW, Monte Carlo, double pendulum, resonance reactor); ResoTrade shows as an application concept that these axioms enable structurally superior decisions in a dynamic market environment.
 
 Since V15, ResoTrade is based on a 4-layer architecture (resonance field analysis, experience store, pattern library with proof-of-resonance, neural chart pattern recognition) and operates as a generic multi-asset system across crypto, forex, and commodities. The core architecture — experience learning through resonant phase coupling — is invariant across all versions and all asset classes.
 
 **Key result:** +26.1% vs HODL on average across 4 different market phases (24 months), validated across sideways, bull run, correction, and crash. No classical indicator on the same dataset achieves a correlation above 0.05.
 
-**Accompanying document:** The [altcoin analysis](../../simulations/altcoin_analysis/resotrade_altcoin_analysis.md) shows why altcoins are not independent markets from a resonance-theoretic perspective — thereby confirming the axioms of Resonance Field Theory from a second, independent direction.
+**Accompanying document:** The [altcoin analysis](../../simulations/altcoin_analysis/resotrade_altcoin_analysis.md) shows why altcoins are not independent markets from a resonance-theoretic perspective — documented in the ResoTrade development context (not an independent RFT axiom evidence source).
 
 ---
 
 ## Classification within Resonance Field Theory
 
-ResoTrade is not an isolated trading software. It is the application of all seven axioms of [Resonance Field Theory](../../../README.md) to a concrete problem — and the empirical proof that these axioms work in reality:
+ResoTrade is not an isolated trading software. It is the application of all seven axioms of [Resonance Field Theory](../../../README.md) to a concrete problem — and demonstrates that these axioms work in reality. The axiom mapping table shows how each axiom is implemented in the system; primary, independently verifiable evidence comes from the RFT-internal simulations:
 
 | Axiom | Principle | Application in ResoTrade V15 | Empirical Proof |
 |-------|-----------|------------------------------|-----------------|
 | [**Axiom 1**](../../docs/definitions/axiomatic_foundation.md) | Universal oscillation ψ(x,t) | Layer 1: Derivative policy via moving averages, cycle phase as dimension | Phase detection beats all indicators |
 | [**Axiom 2**](../../docs/definitions/axiomatic_foundation.md) | Superposition of modes | Layer 1: Multiple time scales as superimposed modes in the derivative policy | Multi-time-scale analysis improves timing |
-| [**Axiom 3**](../../docs/definitions/axiomatic_foundation.md) | Resonance condition (phase difference) | Layer 3: Proof-of-Resonance — 3-stage signal cascade as resonance criterion | Altcoin analysis confirms: without own natural frequency, no resonance |
+| [**Axiom 3**](../../docs/definitions/axiomatic_foundation.md) | Resonance condition (phase difference) | Layer 3: Proof-of-Resonance — 3-stage signal cascade as resonance criterion | Monte Carlo test: 5 resonances at particle mass, emp. p = 0 |
 | [**Axiom 4**](../../docs/definitions/axiomatic_foundation.md) | Coupling energy E = π·ε·h·f | Layer 2: Adaptive decay in experience store, balance controller | System remains operational over 24 months |
 | [**Axiom 5**](../../docs/mathematics/energy_direction.md) | Energy is vectorial | Layer 1: Energy direction vector from short- and long-term energy difference | Direction beats prediction |
 | [**Axiom 6**](../../docs/definitions/axiomatic_foundation.md) | Information flow through resonance coupling | Layer 3: Pattern library + proof-of-resonance — trades only when signal cascades match | +26.1% vs HODL across all market regimes |
 | [**Axiom 7**](../../docs/definitions/axiomatic_foundation.md) | Invariance of field structure | Asset-agnostic architecture: crypto, forex, commodities via the same code path | Same system works for all asset classes |
 
-The [altcoin analysis](../../simulations/altcoin_analysis/resotrade_altcoin_analysis.md) confirms Axiom 3 (resonance condition) negatively: systems without their own natural frequency produce no resonance — empirically proven over 200,000 episodes.
+Primary evidence for Axiom 3 (resonance condition) comes from the [Monte Carlo test](../../empirical/monte_carlo/README.md): 5 resonances at particle masses, emp. p = 0 (1,500,000 simulations, 3 KDE bandwidths, 30 seeds).
 
 ### Further Theoretical Foundations
 

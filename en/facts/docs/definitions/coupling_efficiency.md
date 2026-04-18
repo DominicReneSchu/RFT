@@ -359,17 +359,17 @@ $$
 
 ## 9. Empirical Validation
 
-### 9.1 Axiom-by-Axiom Validation (ResoTrade)
+### 9.1 Axiom-by-Axiom Evidence from RFT-Internal Simulations
 
 | Axiom | Test | Result |
 |-------|------|--------|
-| A1 | AC/DC decomposition of BTC price | +5.9 pp. (V10→V11) |
-| A2 | 3-mode superposition (PID isomorphism) | +42.9% vs HODL |
-| A3 | Altcoin analysis: 200,000 ep., draw 98.4% | Falsified |
-| A4 | Pause gate (ε → 0 in crash) | +44.9% vs HODL |
-| A5 | Energy direction vector (e_short − e_long) | +1.4 pp. (V9.4→V10) |
-| A6 | Resonance gate filters 40% of trades | 97% HOLD in live |
-| A7 | 4/4 market regimes positive, identical parameters | +26.3% avg. |
+| A1 | FLRW simulations: η ≈ cos²(Δφ/2) | Δd_η > 6σ, Δχ² = +16 vs CMB |
+| A2 | Coupled Oscillators: multi-frequency superposition | Energy exchange confirmed at resonance |
+| A3 | Monte Carlo: 1,500,000 sim. on CMS data | 5 resonances, emp. p = 0 |
+| A4 | FLRW: ε = η identity, resonance reactor κ = 1 | No free parameter |
+| A5 | Resonance field simulation: energy direction vector | Energy directionality confirmed |
+| A6 | Resonance field simulation: coupling efficiency and energy flow | PCI → MI confirmed |
+| A7 | Monte Carlo: bandwidth-independent (3 KDE); CERN data | Stable resonance pattern across seeds |
 
 ### 9.2 Four Validation Domains
 
@@ -378,7 +378,7 @@ $$
 | Particle physics | 1,500,000 MC sim. on CMS data | 5 resonances, emp. p = 0 |
 | Cosmology | 1,530 FLRW simulations | Δd_η > 6σ, Δχ² = +16 |
 | Nuclear technology | Resonance reactor (GDR) | κ = 1, Q_fiss ≈ 1.0 |
-| Financial markets | ResoTrade (24 mo., 4 regimes) | +26.3% vs HODL, Live +4.13% |
+| Classical mechanics | Double pendulum + coupled oscillators | ε(θ₂−θ₁) = cos²(Δθ/2) confirmed |
 
 ### 9.3 Detailed Results per Domain
 
@@ -402,12 +402,18 @@ $$
     Am-241: GDR 13.3 MeV, α-decay accelerable
 ```
 
-**ResoTrade:**
+**Double Pendulum:**
 ```
-    ε → 0 (crash, DC falls strongly) → pause → +44.9% vs HODL
-    ε → 1 (phase coherence) → trade allowed → systematically profitable
-    24 months, 4 regimes, 1392 trades, +26.3% vs HODL
-    Live since Feb. 2026 (+4.13% in 2 weeks)
+    ε(θ₂−θ₁) = cos²((θ₂−θ₁)/2)
+    ε = 1 at Δθ = 0 (synchronized), ε = 0 at Δθ = π (antiphase)
+    Dynamic coupling efficiency confirms cos²-model
+```
+
+**Coupled Oscillators:**
+```
+    Resonance condition (A3): ε = 1 at frequency ratio n:m
+    Energy exchange confined to resonant modes
+    Multi-frequency superposition (A2) confirmed
 ```
 
 **Monte Carlo (CMS data):**
@@ -421,10 +427,9 @@ $$
 
 ### 9.4 Falsification Tests
 
-- **Altcoin analysis (A3):** 200,000 episodes, 10 altcoins.
-  Prediction: without eigenfrequency no resonance.
-  Result: draw rate 98.4%, negative learning progress.
-  Stocks (eigenfrequency present): 100% > HODL.
+- **Resonance condition (A3):** Monte Carlo test on CMS dielectron data.
+  Prediction: resonance peaks at particle masses. Result: 5 resonances,
+  emp. p = 0 (1,500,000 simulations, 3 KDE bandwidths, 30 seeds).
 - **Classical indicators:** RSI, Momentum, MA-crossover,
   posterior probabilities — all correlation < 0.05.
   RFT observables (energy_dir, AC-phase) systematic.
@@ -442,7 +447,7 @@ $$
 - **Nuclear technology:** Resonance reactor — resonant
   transmutation of actinides (GDR-based, κ = 1)
 - **Financial markets:** ResoTrade — resonance-based BTC trading
-  with live validation
+  (application concept; demonstrates applicability of RFT axioms)
 - **Classical mechanics:** Synchronization of coupled
   oscillators, [double pendulum](../mathematics/double_pendulum.md)
 - **Biophysics:** Neural synchronization, protein folding
@@ -483,7 +488,7 @@ The coupling efficiency ε of Resonance Field Theory is:
 7. **Not to be confused** with the coupling strength K_ij, which
    can be unbounded
 8. **Empirically confirmed** in four domains: particle physics,
-   cosmology, nuclear technology, financial markets
+   cosmology, nuclear technology, classical mechanics
 9. **Notation unified**: All documents and simulations
    use ε (instead of 𝓔), ℏ (instead of h), cos²(Δφ/2) as
    standard model
@@ -517,7 +522,7 @@ Resonance Field Theory from version 2026 onwards.
 | [Energy Sphere](../mathematics/energy_sphere.md) | Geometric model |
 | [Resonance Integrals](../mathematics/resonance_integrals.md) | Analytical methods |
 | [Resonance Energy Vector](../mathematics/resonance_energy_vector.md) | Energy as directional quantity |
-| [Empirical Evidence](../../empirical/) | CERN evaluation, Monte Carlo, ResoTrade |
+| [Empirical Evidence](../../empirical/) | CERN evaluation, Monte Carlo |
 
 ---
 

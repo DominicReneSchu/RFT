@@ -1,6 +1,8 @@
 # Resonanzlogische Analyse der Finanzmärkte: Altcoins als amplifizierte BTC-Schwingungen
 
-## Empirischer Nachweis durch algorithmisches Trading mit Resonanzfeldtheorie
+## Analyse aus dem ResoTrade-Entwicklungskontext
+
+> **Einordnung:** Diese Analyse ist Teil des [ResoTrade](../../../konzepte/ResoTrade/resotrade_trading_ki.md)-Anwendungskonzepts und dient nicht als unabhängiger RFT-Axiom-Beleg. Die primären Axiom-Belege stammen aus den RFT-internen Simulationen (FLRW, Monte Carlo, Doppelpendel, Resonanzreaktor).
 
 *Dominic-René Schu, Februar 2026 — korrigiert März 2026*
 
