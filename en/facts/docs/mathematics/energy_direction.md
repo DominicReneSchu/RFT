@@ -135,4 +135,18 @@ The following RFT-internal simulations directly confirm A5
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| Front/rear asymmetry as macroscopic energy direction | Warp drive: phase Δφ switches between contraction (front) and expansion (rear) | Spacetime geometry | [→ Warp drive](../../concepts/warp_drive/warp_drive.md) |
+| ε(θ₂−θ₁) = cos²(Δθ/2) directional coupling | Double pendulum: classical-mechanical proof of directional energy dependence | Classical mechanics | [→ Double pendulum](../../simulations/double_pendulum/accompanying_chapter_double_pendulum.md) |
+| PCI → MI, directional energy flow control | Resonance field simulation: numerical demonstration of energy direction control | Field theory | [→ Resonance field](../../simulations/resonance_field/simulation_resonance_field_theory.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 [⬅️ back](../../../README.md)

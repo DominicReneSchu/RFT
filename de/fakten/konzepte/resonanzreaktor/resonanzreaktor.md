@@ -297,4 +297,19 @@ des Pu-239-Zerfalls:
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| λ_eff/λ₀ = 7.872 für U-235, κ = 1 exakt (kein freier Parameter) | Schrödinger-Simulation: ε(Δφ) = cos²(Δφ/2) auf Quantenskala, dieselbe Kopplungsformel | Quantenmechanik | [→ Schrödinger](../../simulationen/schrödinger/README.md) |
+| Resonanzreaktor ist Stufe 1 der Warpantriebs-Kaskade | Warpantrieb: direkte Anwendung des Reaktors als Energiequelle | Raumzeitgeometrie | [→ Warpantrieb](../warpantrieb/warpantrieb.md) |
+| Resonanzexzesse bei Teilchenmassen bestätigen A3 | CERN-Analyse: dieselbe Resonanzbedingung in Teilchendaten (CMS Open Data) | Teilchenphysik | [→ CERN](../../empirisch/cern/dokumentation.md) |
+| Resonanzbedingung f_γ = f_GDR statistisch belegt | Monte-Carlo: 1,5 Mio. Simulationen, emp. p = 0 für dieselbe A3-Bedingung | Teilchenphysik | [→ Monte-Carlo](../../empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](README.md)

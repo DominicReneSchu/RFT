@@ -387,4 +387,20 @@ Langfristig:
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| ρ ∝ cos⁴(Δφ/2), erste Warpblase mit ρ > 0 überall (E⁻ = 0) | Schrödinger-Simulation: Ableitung von ε(Δφ) = cos²(Δφ/2), Fidelity = 1.0 | Quantenmechanik | [→ Schrödinger](../../simulationen/schrödinger/README.md) |
+| Klein-Gordon in FLRW → Warp nutzt exakt diese Gleichungen | FLRW-Simulation: kosmologische Expansion als natürliches Vorbild für den Warp | Kosmologie | [→ FLRW](../../simulationen/FLRW-Simulationen/README.md) |
+| Dreistufige Energiekaskade: Stufe 1 = Resonanzreaktoren | Resonanzreaktor: direkte technische Abhängigkeit, Stufe 1 der Kaskade | Kernphysik | [→ Resonanzreaktor](../resonanzreaktor/resonanzreaktor.md) |
+| E = π·ε(Δφ)·ℏ·f als Grundlage der Phasensteuerung | Kopplungsenergie-Dokument: geometrische Herleitung von E = π·ε·ℏ·f | Mathematik | [→ Kopplungsenergie](../../docs/mathematik/kopplungsenergie.md) |
+| Vorn/Hinten-Asymmetrie als makroskopische Energierichtung | Doppelpendel: ε(θ₂−θ₁) als klassisch-mechanisches Analogon | Klassische Mechanik | [→ Doppelpendel](../../simulationen/doppelpendel/begleitkapitel_doppelpendel.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](README.md)

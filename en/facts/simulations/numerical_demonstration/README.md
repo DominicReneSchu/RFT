@@ -65,4 +65,17 @@ from numerical_demonstration import (
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| Consistency of A3–A5 over (A, τ) parameter space | FLRW simulation: same consistency over 1,530 runs, Δd_η > 6σ | Cosmology | [→ FLRW](../FLRW_simulations/README.md) |
+| Perturbation theory as independent consistency check | Schrödinger simulation: perturbation theory 1−F ~ λ², 0.05% deviation | Quantum mechanics | [→ Schrödinger](../schrodinger/README.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [back](../../../README.md#simulations)

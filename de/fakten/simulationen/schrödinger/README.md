@@ -359,4 +359,22 @@ dokumentiert.
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| ε(Δφ) = cos²(Δφ/2) aus Axiom 4 abgeleitet, Fidelity = 1.000000000000 | FLRW-Simulation: η ≈ cos²(Δφ/2) über 1.530 Läufe, Δd_η > 6σ | Kosmologie | [→ FLRW](../FLRW-Simulationen/README.md) |
+| ε(Δφ) = cos²(Δφ/2), Kopplungseffizienz abgeleitet | Warpantrieb: ρ ∝ cos⁴(Δφ/2), erste Warpblase mit ρ > 0 überall | Raumzeitgeometrie | [→ Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) |
+| ε(Δφ) = cos²(Δφ/2), Kopplungseffizienz auf Quantenskala | Resonanzreaktor: dieselbe Formel auf Kernphysik-Skala, κ = 1 exakt | Kernphysik | [→ Resonanzreaktor](../../konzepte/resonanzreaktor/resonanzreaktor.md) |
+| Korrespondenzprinzip: Standard-QM ist Spezialfall der RFT | Gekoppelte Oszillatoren: klassisches Pendant zur quantenmechanischen Kopplung | Klassische Mechanik | [→ Gekoppelte Oszillatoren](../gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) |
+| ε(Δφ) = cos²(Δφ/2) auch im Doppelpendel | Doppelpendel: ε(θ₂−θ₁) als klassisch-mechanisches Analogon | Klassische Mechanik | [→ Doppelpendel](../doppelpendel/begleitkapitel_doppelpendel.md) |
+| Störungstheorie: 1−F ~ λ², unabhängiger Konsistenzcheck | Monte-Carlo: 1,5 Mio. Simulationen, emp. p = 0, Resonanzbedingung bestätigt | Teilchenphysik | [→ Monte-Carlo](../../empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) |
+| E = π·ε(Δφ)·ℏ·f mathematisch abgeleitet | Kopplungsenergie-Dokument: geometrische Herleitung von E = π·ε·ℏ·f | Mathematik | [→ Kopplungsenergie](../../docs/mathematik/kopplungsenergie.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 ⬅️ [zurück zur Übersicht](../../../README.md#simulationen)

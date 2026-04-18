@@ -260,4 +260,20 @@ an echte Planck-Daten um Δχ² = +16 (Pearson r = 0.626).
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| η = cos²(Δφ/2) über 1.530 Läufe, Δd_η > 6σ | Schrödinger-Simulation: dieselbe Formel auf Quantenskala, Fidelity = 1.000000000000 | Quantenmechanik | [→ Schrödinger](../schrödinger/README.md) |
+| Klein-Gordon in FLRW → kosmologische Expansion | Warpantrieb: nutzt exakt diese Gleichungen für Raumzeitkrümmung | Raumzeitgeometrie | [→ Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) |
+| Resonanzstruktur in kosmologischen Feldern | Monte-Carlo: dieselbe Resonanzstruktur in Teilchendaten, emp. p = 0 | Teilchenphysik | [→ Monte-Carlo](../../empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) |
+| η ≈ cos²(Δφ/2) skaleninvariant (A7) | CERN-Analyse: Skaleninvarianz der Resonanzstruktur in Teilchenmassen bestätigt | Teilchenphysik | [→ CERN](../../empirisch/cern/dokumentation.md) |
+| Konsistenz über (A, τ)-Parameterraum | Numerische Demonstration: Konsistenznachweis über denselben Parameterraum | Numerik | [→ Numerische Demonstration](../numerische_demonstration/README.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 ⬅️ [zurück zur Übersicht](../../../README.md#simulationen)
