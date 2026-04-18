@@ -264,6 +264,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | # | Erklärung | Axiome | Beschreibung |
 |---|-----------|--------|-------------|
 | 1 | [Schwarmresonanz](fakten/docs/erklaerungen/schwarmresonanz.md) | A1–A7 | Warum Vogelschwärme nicht kollidieren — und warum die RFT neue Türen öffnet |
+| 2 | [Resonanz in der Physik](fakten/docs/erklaerungen/resonanz_in_der_physik.md) | A1–A7 | Wie ein Muster Mechanik, Thermodynamik, Elektrodynamik, QM und Relativität verbindet |
 
 ---
 

@@ -412,6 +412,7 @@ through resonance coupling (A3, A6).
 - **Classical mechanics:** Synchronization of coupled oscillators
 - **Financial markets:** Resonance-based trading (ResoTrade — application concept)
 - **Biophysics / Swarm behavior:** Resonance-based explanation of flocking and schooling — why swarm organisms synchronize and how they achieve extreme maneuverability through phase coupling in the medium. See [Swarm Resonance](../explanations/swarm_resonance.md).
+- **Cross-disciplinary:** Resonance as connecting pattern across all physics disciplines — mechanics, thermodynamics, electrodynamics, quantum mechanics, relativity. See [Resonance Across Physics](../explanations/resonance_across_physics.md).
 - **Information theory:** Resonance-based channel capacity
 - **Cosmology:** Harmonic pattern formation
 
