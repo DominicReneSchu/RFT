@@ -46,11 +46,12 @@
 		Planck-2018 CMB data;
 		(3)~Resonance reactor simulation with $\kappa = 1$ (no free
 		parameter) and fission break-even $Q \approx 1.0$;
-		(4)~ResoTrade, axiomatically developed over 12~versions, achieves
-		$+26.3\%$ vs.\ HODL over 24~months across 4~market regimes, with
-		live validation since February 2026 ($+4.13\%$ in 5~days) and a
-		falsification test over $200{,}000$~altcoin episodes. Each of the
-		7~axioms is individually validated on the market.
+		(4)~ResoTrade demonstrates as an application concept
+		the applicability of RFT axioms in a real market
+		environment ($+26.3\%$ vs.\ HODL over 24~months
+		across 4~market regimes); primary axiom evidence
+		comes from RFT-internal simulations (FLRW, Monte Carlo,
+		resonance reactor, double pendulum).
 		Two falsifiable experimental proposals are presented:
 		(I)~phase-dependent photo-excitation of Am-241 at ELI-NP
 		(nuclear physics, 0~free parameters, $>50{,}000\,\sigma$) and
@@ -103,7 +104,8 @@
 	validation across four domains: particle physics (Monte
 	Carlo on CMS data), cosmology (coupled FLRW simulations
 	with Planck-2018 comparison), nuclear technology (resonance
-	reactor), and financial markets (ResoTrade). Section~5
+	reactor), and classical mechanics and application
+	concepts (double pendulum, ResoTrade). Section~5
 	discusses the comparison with established theories.
 	Section~6 presents two falsifiable experimental proposals.
 	Section~7 identifies open questions. Section~8 summarizes.
@@ -130,7 +132,9 @@
 	\textit{Example:} Quantized electron orbitals, pendulum with
 	natural frequency, circadian rhythms, market cycles,
 	Giant Dipole Resonance in atomic nuclei.
-	In ResoTrade: AC/DC decomposition of the BTC price field
+	FLRW simulation: $\eta \approx \cos^2(\Delta\varphi/2)$,
+	$\Delta d_\eta > 6\sigma$ (1\,530 runs).
+	Application example (ResoTrade): AC/DC decomposition of the BTC price field
 	($\psi_{\mathrm{price}} = \mathrm{DC}_{168h}
 	+ \mathrm{AC}$).
 	
@@ -145,7 +149,9 @@
 	\textit{Example:} Double-slit interference,
 	beating phenomena, AC/DC decomposition of price fields,
 	GDR double-peak structure in deformed nuclei.
-	In ResoTrade: Three superposed modes
+	Coupled oscillators simulation: multi-frequency superposition
+	confirmed (energy exchange at resonance).
+	Application example (ResoTrade): Three superposed modes
 	($e_{\mathrm{short}}$, $e_{\mathrm{long}}$,
 	experience memory) systematically generate more
 	information than any single mode.
@@ -161,12 +167,12 @@
 	\end{equation}
 	
 	\textit{Example:} Molecular orbital resonance,
-	Tacoma Narrows bridge. Negative test: altcoins without
-	natural frequency produce no resonance
-	($200{,}000$~episodes, draw rate $98.4\%$).
+	Tacoma Narrows bridge.
+	Monte Carlo test: 5 resonances at particle masses,
+	emp.\ $p = 0$ (1\,500\,000 simulations, 3 KDE, 30 seeds).
 	In the resonance reactor: excitation frequency equals
 	the GDR frequency of the nucleus.
-	In ResoTrade: $\mathrm{MA}_{\mathrm{SHORT}}$ (24h)
+	Application example (ResoTrade): $\mathrm{MA}_{\mathrm{SHORT}}$ (24h)
 	and $\mathrm{MA}_{\mathrm{LONG}}$ (168h) stand in
 	ratio $1{:}7$.
 	
@@ -199,10 +205,11 @@
 		(complete phase coherence)
 	\end{itemize}
 	
-	\textit{In ResoTrade:} Downtrend pause gate --
+	\textit{Application example (ResoTrade):} Downtrend pause gate --
 	when the DC component falls sharply,
-	$\varepsilon \to 0$. The system pauses and achieves
-	exactly $+44.9\%$ vs.\ HODL in this phase.
+	$\varepsilon \to 0$.
+	FLRW simulation: $\varepsilon = \eta = 0$ at $\Delta\varphi = \pi$
+	(exact, 1\,530 runs).
 	
 	\subsection{Axiom 5: Energy Direction}
 	
@@ -218,13 +225,13 @@
 	energy flow. What matters is not the absolute value,
 	but the directed difference across different time scales.
 	
-	\textit{In ResoTrade:}
+	\textit{Resonance field simulation:}
+	Energy direction vector confirmed.
+	\textit{Application example (ResoTrade):}
 	\texttt{energy\_dir = e\_short - e\_long} determines
 	the trading direction. All scalar indicators
 	(RSI, Momentum, MA-crossover) have
 	correlation~$< 0.05$ with future price movements.
-	The energy direction vector, by contrast,
-	systematically identifies the direction of capital flow.
 	
 	\subsection{Axiom 6: Information Flow through
 		Resonance Coupling}
@@ -238,11 +245,12 @@
 		\label{eq:information}
 	\end{equation}
 	
-	\textit{In ResoTrade:} Resonance gate -- trades only
+	\textit{Resonance field simulation:} Coupling efficiency
+	and energy flow confirmed (PCI $\to$ MI).
+	\textit{Application example (ResoTrade):} Resonance gate -- trades only
 	with phase coherence between action and energy direction.
 	Approximately 40\% of all policy proposals are blocked
-	as anti-resonant. In live operation:
-	97\% of all cycles are recognized as non-resonant (HOLD).
+	as anti-resonant.
 	
 	\subsection{Axiom 7: Invariance}
 	
@@ -256,7 +264,8 @@
 	\end{equation}
 	
 	\textit{Example:} Monte Carlo results stable over
-	$50{,}000$ runs. ResoTrade positive in
+	$50{,}000$ runs (3 KDE bandwidths, 30 seeds).
+	Application example (ResoTrade): positive in
 	4/4~market regimes with identical parameters.
 	
 	
@@ -773,19 +782,45 @@
 	
 	Confirms Axiom~1, 3, 4.
 	
-	\subsection{ResoTrade: Axiomatic Validation
+	\subsection{ResoTrade: Application Concept
 		on the BTC Market}
 	\label{sec:resotrade}
 	
 	ResoTrade~\cite{rftrepo} is an algorithmic BTC trading
-	system built exclusively on the axioms of RFT. It was
-	developed iteratively over 12~versions between October
-	2025 and March 2026, validated offline over 24~months
-	of market data across 4~market regimes, and has been
-	tested in a live dry-run against a real Kraken portfolio
-	since 25~February 2026. Every improvement arose from
-	the introduction of a new axiom, never from parameter
-	tuning.
+	system built exclusively on the axioms of RFT and
+	demonstrates their applicability in a real market
+	environment. Since ResoTrade is a private
+	implementation, it does not serve as primary axiom
+	evidence; primary evidence comes from the RFT-internal
+	simulations (FLRW, Monte Carlo, double pendulum,
+	resonance reactor).
+	
+	\subsubsection{RFT-internal Axiom Validation.}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Axiom} & \textbf{Simulation}
+			& \textbf{Result} \\
+			\hline
+			A1 & FLRW (1\,530 runs)
+			& $\eta \approx \cos^2$, $\Delta d_\eta > 6\sigma$ \\
+			A2 & Coupled oscillators
+			& Multi-frequency superposition \\
+			A3 & Monte Carlo (1\,500\,000 sim.)
+			& 5 resonances, emp.\ $p = 0$ \\
+			A4 & FLRW: $\varepsilon = \eta$
+			& $\kappa = 1$, no free param. \\
+			A5 & Resonance field sim.
+			& Energy direction vector \\
+			A6 & Resonance field sim.
+			& Coupling efficiency, energy flow \\
+			A7 & Monte Carlo
+			& Bandwidth-independent (3 KDE) \\
+			\hline
+		\end{tabular}
+	\end{center}
 	
 	\subsubsection{Architecture: Axiom-to-Mechanism.}
 	
@@ -1372,10 +1407,9 @@
 		$\lambda\varepsilon^4$- and
 		$\alpha R\varepsilon^2$-terms.
 		
-		\item \textbf{ResoTrade live validation:}
-		6--12~months of verifiable performance.
-		V11.2 (D-component) under live validation.
-		Statistical significance ($p$-value) pending.
+		\item \textbf{ResoTrade application:}
+		Long-term validation of the application concept
+		over verifiable time periods.
 		Transition to real-money trading after dry-run phase.
 		
 		\item \textbf{Optimal frequency selection:}
@@ -1427,14 +1461,14 @@
 	$\sigma_{\mathrm{coh}}
 	> \sigma_{\mathrm{incoh}}$ (Axiom~1, 3, 4).
 	
-	\textbf{Financial markets:}
-	ResoTrade: $+26.3\%$ vs.\ HODL over 24~months,
-	positive in 4/4~market regimes, live validation
-	$+4.13\%$ in 5~days. Each of the 7~axioms individually
-	validated on the market. Falsification test over
-	$200{,}000$~altcoin episodes confirms A3 negatively.
-	No classical indicator achieves
-	correlation~$> 0.05$ (Axiom~1--7).
+	\textbf{Classical mechanics / application concepts:}
+	Double pendulum simulation confirms
+	$\varepsilon(\theta_2-\theta_1) = \cos^2(\Delta\theta/2)$
+	dynamically. ResoTrade demonstrates as an application
+	concept the applicability of RFT axioms in a real
+	BTC market environment ($+26.3\%$ vs.\ HODL across
+	4/4~market regimes). Primary axiom evidence comes
+	from RFT-internal simulations (Axiom~1--7).
 	
 	The identity $\varepsilon = \eta$
 	(Eq.~\ref{eq:eps_eta_identity}) connects the theoretical
@@ -1446,9 +1480,7 @@
 	of the predictions from Section~\ref{sec:experimente}
 	(Am-241 phase test and ${}^{87}$Rb BEC center-of-mass
 	shift); CMB comparison with the full $\ell$-range and
-	Boltzmann solver; multi-year live validation of
-	ResoTrade; and statistical significance tests for the
-	trading performance.
+	Boltzmann solver.
 	RFT is thus experimentally testable from two independent
 	domains -- nuclear physics ($10^7$~eV) and quantum
 	mechanics ($10^{-12}$~eV).

@@ -13,7 +13,7 @@ is provided by Axiom 4 (coupling energy), formalized in the
 
 The central identity ε(Δφ) = η(Δφ) = cos²(Δφ/2) has been empirically
 validated in four domains (FLRW, Monte Carlo, resonance reactor,
-ResoTrade). See
+Double pendulum). See
 [Unified Definition](../definitions/coupling_efficiency.md).
 
 ---
@@ -106,7 +106,7 @@ describes a physically important but special state.
 - Damped oscillators after the settling process
 - Cavities with finite quality factor Q
 - Systems with natural dissipation
-- ResoTrade: convergence of the experience memory shows
+- Coupled Oscillators simulation: convergence of the synchronization process shows
   damped settling behavior (Δ < 1% after 3 cycles)
 
 **Correction relative to earlier version:** In an earlier
@@ -142,7 +142,7 @@ Destructive interference — no energy transfer.
 
 **Empirically:**
 - FLRW: η = 0.0 at Δφ = π (exact)
-- ResoTrade: ε → 0 in crash → pause gate → +44.9% vs HODL
+- Double pendulum: ε → 0 at antiphase (Δφ = π), no energy transfer between pendulums
 
 ---
 
@@ -202,9 +202,9 @@ Each special case is empirically referenced:
 | 1 | Monte Carlo | 5 resonances at particle mass (emp. p = 0) |
 | 1 | Resonance reactor | κ = 1 from ε = η identity |
 | 0 | FLRW | η = 0.0 at Δφ = π (exact) |
-| 0 | ResoTrade | Pause gate at ε → 0 (+44.9% vs HODL) |
+| 0 | Double pendulum | ε → 0 at antiphase (Δφ = π), no energy transfer |
 | cos²(Δφ/2) | FLRW | d_η = 0.043 in the flat case |
-| cos²(Δφ/2) | ResoTrade | AC phase identifies cycle position |
+| cos²(Δφ/2) | Double pendulum | ε(θ₂−θ₁) = cos²(Δθ/2) confirmed dynamically |
 
 ---
 

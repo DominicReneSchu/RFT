@@ -174,9 +174,9 @@ Für anwachsende Kopplung (Einschwingvorgang):
 | FLRW | τ*(π) → ∞ | η = 0.0 bei Δφ = π, kein Transfer |
 | FLRW | τ* wächst mit H₀ | Hubble-Reibung erhöht d_η → effektiv höheres τ* |
 | Resonanzreaktor | τ* = π (bei Resonanz) | κ = 1, ε = η = 1 bei Δφ = 0 |
-| ResoTrade | τ* → ∞ im Crash | ε → 0, Pause-Gate, kein Trade |
-| ResoTrade | τ* ≈ π in Phase | ε ≈ 1, schneller Energietransfer, Trade aktiv |
-| ResoTrade | Einschwingen | Konvergenz nach 3 Zyklen (Δ < 1%), konsistent mit τ*(t) = π/(1−e^(−λt)) |
+| Doppelpendel | τ* → ∞ bei Gegenphase | ε → 0 bei Δφ = π, kein Energietransfer |
+| Doppelpendel | τ* ≈ π bei Synchronisation | ε ≈ 1, schneller Energietransfer |
+| Gekoppelte Oszillatoren | Einschwingen | Konvergenz nach 3 Zyklen (Δ < 1%), konsistent mit τ*(t) = π/(1−e^(−λt)) |
 
 Die Hubble-Reibung in FLRW-Simulationen lässt sich als
 effektive Erhöhung von τ* interpretieren: Stärkere Expansion
