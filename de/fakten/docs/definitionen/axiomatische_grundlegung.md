@@ -412,6 +412,7 @@ Information mit dem Feld austauscht.
 - **Klassische Mechanik:** Synchronisation gekoppelter Oszillatoren
 - **Finanzmärkte:** Resonanzbasiertes Trading (ResoTrade — Anwendungskonzept)
 - **Biophysik / Schwarmverhalten:** Resonanzbasierte Erklärung von Vogel- und Fischschwärmen — warum Schwarmlebewesen sich synchronisieren und wie sie durch Phasenkopplung im Medium extreme Wendigkeit erreichen. Siehe [Schwarmresonanz](../erklaerungen/schwarmresonanz.md).
+- **Disziplinübergreifend:** Resonanz als verbindendes Muster durch alle Disziplinen der Physik — Mechanik, Thermodynamik, Elektrodynamik, Quantenmechanik, Relativität. Siehe [Resonanz in der Physik](../erklaerungen/resonanz_in_der_physik.md).
 - **Informationstheorie:** Resonanzbasierte Kanalkapazität
 - **Kosmologie:** Harmonische Musterbildung
 

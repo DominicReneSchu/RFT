@@ -264,6 +264,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | # | Explanation | Axioms | Description |
 |---|-------------|--------|-------------|
 | 1 | [Swarm Resonance](facts/docs/explanations/swarm_resonance.md) | A1–A7 | Why flocks of birds don't collide — and why RFT opens new doors |
+| 2 | [Resonance Across Physics](facts/docs/explanations/resonance_across_physics.md) | A1–A7 | How one pattern connects mechanics, thermodynamics, electrodynamics, QM, and relativity |
 
 ---
 
