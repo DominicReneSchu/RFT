@@ -68,7 +68,7 @@ has been validated in three independent domains:
 |--------|----------|
 | FLRW Cosmology | η emerges as cos²(Δφ/2), d_η = 0.043 in the flat case, 1,530 runs |
 | Monte Carlo (CMS) | 5 resonances at emp. p = 0, 1,500,000 simulations |
-| ResoTrade | ε → 0 as gate criterion, +26.3% vs HODL over 24 months |
+| Schrödinger simulation | ε(Δφ) → 0 at Δφ = π, Fidelity = 1.0 (all 4 scenarios) |
 
 ---
 
