@@ -411,7 +411,7 @@ Information mit dem Feld austauscht.
 - **Quantenphysik:** Superposition, Quantisierung durch rationale Frequenzverhältnisse
 - **Klassische Mechanik:** Synchronisation gekoppelter Oszillatoren
 - **Finanzmärkte:** Resonanzbasiertes Trading (ResoTrade — Anwendungskonzept)
-- **Biophysik:** Neuronale Synchronisation, Proteinfaltung
+- **Biophysik / Schwarmverhalten:** Resonanzbasierte Erklärung von Vogel- und Fischschwärmen — warum Schwarmlebewesen sich synchronisieren und wie sie durch Phasenkopplung im Medium extreme Wendigkeit erreichen. Siehe [Schwarmresonanz](../erklaerungen/schwarmresonanz.md).
 - **Informationstheorie:** Resonanzbasierte Kanalkapazität
 - **Kosmologie:** Harmonische Musterbildung
 
