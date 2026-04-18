@@ -1,6 +1,8 @@
 # Resonance-Logical Analysis of Financial Markets: Altcoins as Amplified BTC Oscillations
 
-## Empirical Evidence through Algorithmic Trading with Resonance Field Theory
+## Analysis from the ResoTrade Development Context
+
+> **Classification:** This analysis is part of the [ResoTrade](../../../concepts/ResoTrade/resotrade_trading_ki.md) application concept and does not serve as an independent RFT axiom evidence source. Primary axiom evidence comes from RFT-internal simulations (FLRW, Monte Carlo, double pendulum, resonance reactor).
 
 *Dominic-René Schu, February 2026 — corrected March 2026*
 

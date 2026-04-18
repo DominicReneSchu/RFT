@@ -149,7 +149,7 @@ Für konstantes ε und vernachlässigbare Dissipation:
 | Teilchenphysik | Resonanzbedingung bei M₀ | 5 Resonanzen, emp. p = 0 |
 | Kosmologie | Klein-Gordon in FLRW | η ≈ cos², Δχ² = +16 |
 | Resonanzreaktor | f_GDR = E_GDR/(π·ℏ) | κ = 1, Q_fiss ≈ 1.0 |
-| ResoTrade | AC/DC-Zerlegung, Energierichtung | +26.3% vs HODL |
+| Doppelpendel | Dynamische Kopplungseffizienz ε(θ₂−θ₁) | ε = cos²(Δθ/2) bestätigt |
 | Energiespeicherung | Phasensteuerung → Verlustminimierung | Axiom 6 |
 | Messtechnik | Phasenmodulation → Energiefluss-Monitoring | Axiome 5, 6 |
 
@@ -167,7 +167,7 @@ klassische Planck-Relation durch:
 5. Den Planck-Grundzustand als Spezialfall ε = 1/(2π)
 
 Empirisch validiert in vier Domänen: Teilchenphysik, Kosmologie,
-Nukleartechnologie und Finanzmärkte.
+Nukleartechnologie und Klassische Mechanik.
 
 ---
 

@@ -1,6 +1,6 @@
 # ResoTrade — Resonanzfeldtheoretische Mehrschichtige Multi-Asset-KI
 
-*Empirischer Nachweis der Resonanzfeldtheorie in realen Finanzmärkten*
+*Anwendungskonzept der Resonanzfeldtheorie in realen Finanzmärkten*
 
 *Dominic-René Schu, Februar 2026 — aktualisiert April 2026*
 
@@ -8,31 +8,31 @@
 
 ## Zusammenfassung
 
-ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, Kurszyklen als Schwingungsfelder zu lesen und Assets über reines HODL hinaus zu akkumulieren. Es ist der erste empirische Nachweis, dass die Axiome der Resonanzfeldtheorie in einem realen, chaotischen System — dem Finanzmarkt — strukturell überlegene Entscheidungen erzeugen.
+ResoTrade ist ein resonanzfeldtheoretisches Trading-System, das durch wiederholte Offline-Simulation lernt, Kurszyklen als Schwingungsfelder zu lesen und Assets über reines HODL hinaus zu akkumulieren. Es demonstriert die Anwendbarkeit der Axiome der Resonanzfeldtheorie in einem realen, chaotischen System — dem Finanzmarkt. Die primären Axiom-Belege stammen aus RFT-internen Simulationen (FLRW, Monte Carlo, Doppelpendel, Resonanzreaktor); ResoTrade zeigt als Anwendungskonzept, dass diese Axiome in einem dynamischen Marktsystem strukturell überlegene Entscheidungen ermöglichen.
 
 Seit V15 basiert ResoTrade auf einer 4-Schichten-Architektur (Resonanzfeld-Analyse, Erfahrungsspeicher, Pattern-Library mit Proof-of-Resonance, neuronale Chart-Muster-Erkennung) und operiert als generisches Multi-Asset-System über Krypto, Forex und Rohstoffe. Die Kernarchitektur — Erfahrungslernen durch resonante Phasenkopplung — ist über alle Versionen und alle Asset-Klassen invariant.
 
 **Kernergebnis:** +26.1% vs HODL im Durchschnitt über 4 verschiedene Marktphasen (24 Monate), validiert über Sideways, Bullrun, Korrektur und Crash. Kein klassischer Indikator auf demselben Datensatz erreicht eine Korrelation über 0.05.
 
-**Begleitdokument:** Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) zeigt, warum Altcoins resonanztheoretisch keine eigenständigen Märkte sind — und bestätigt damit die Axiome der Resonanzfeldtheorie aus einer zweiten, unabhängigen Richtung.
+**Begleitdokument:** Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) zeigt, warum Altcoins resonanztheoretisch keine eigenständigen Märkte sind — dokumentiert im ResoTrade-Entwicklungskontext (kein unabhängiger RFT-Axiom-Beleg).
 
 ---
 
 ## Einordnung in die Resonanzfeldtheorie
 
-ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../../README.md) auf ein konkretes Problem — und der empirische Beweis, dass diese Axiome in der Realität funktionieren:
+ResoTrade ist keine isolierte Trading-Software. Es ist die Anwendung aller sieben Axiome der [Resonanzfeldtheorie](../../../README.md) auf ein konkretes Problem — und demonstriert damit, dass diese Axiome in der Realität funktionieren. Die Axiom-Belegtabelle zeigt, wie jedes Axiom im System abgebildet ist; die primären, unabhängig nachprüfbaren Belege stammen aus den RFT-internen Simulationen:
 
 | Axiom | Prinzip | Anwendung in ResoTrade V15 | Empirischer Nachweis |
 |-------|---------|----------------------------|---------------------|
 | [**Axiom 1**](../../docs/definitionen/axiomatische_grundlegung.md) | Universelle Schwingung ψ(x,t) | Schicht 1: Ableitungs-Policy über gleitende Durchschnitte, Zyklusphase als Dimension | Phasenerkennung schlägt alle Indikatoren |
 | [**Axiom 2**](../../docs/definitionen/axiomatische_grundlegung.md) | Superposition der Moden | Schicht 1: Mehrere Zeitskalen als überlagerte Moden in der Ableitungs-Policy | Multi-Zeitskalen-Analyse verbessert Timing |
-| [**Axiom 3**](../../docs/definitionen/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Schicht 3: Proof-of-Resonance — 3-stufige Signalkaskade als Resonanzkriterium | Altcoin-Analyse bestätigt: ohne eigene Eigenfrequenz keine Resonanz |
+| [**Axiom 3**](../../docs/definitionen/axiomatische_grundlegung.md) | Resonanzbedingung (Phasendifferenz) | Schicht 3: Proof-of-Resonance — 3-stufige Signalkaskade als Resonanzkriterium | Monte-Carlo-Test: 5 Resonanzen bei Teilchenmasse, emp. p = 0 |
 | [**Axiom 4**](../../docs/definitionen/axiomatische_grundlegung.md) | Kopplungsenergie E = π·ε·h·f | Schicht 2: Adaptiver Decay im Erfahrungsspeicher, Balance-Regler | System bleibt über 24 Monate handlungsfähig |
 | [**Axiom 5**](../../docs/mathematik/energierichtung.md) | Energie ist vektoriell | Schicht 1: Energierichtungsvektor aus kurz- und langfristiger Energiedifferenz | Richtung schlägt Prognose |
 | [**Axiom 6**](../../docs/definitionen/axiomatische_grundlegung.md) | Informationsfluss durch Resonanzkopplung | Schicht 3: Pattern-Library + Proof-of-Resonance — Trades nur bei Signalkaskaden-Übereinstimmung | +26.1% vs HODL über alle Marktregime |
 | [**Axiom 7**](../../docs/definitionen/axiomatische_grundlegung.md) | Invarianz der Feldstruktur | Asset-agnostische Architektur: Krypto, Forex, Rohstoffe über denselben Codepfad | Gleiches System funktioniert für alle Asset-Klassen |
 
-Die [Altcoin-Analyse](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) bestätigt Axiom 3 (Resonanzbedingung) negativ: Systeme ohne eigene Eigenfrequenz erzeugen keine Resonanz — empirisch nachgewiesen über 200.000 Episoden.
+Die primären Belege für Axiom 3 (Resonanzbedingung) stammen aus dem [Monte-Carlo-Test](../../empirisch/monte_carlo/README.md): 5 Resonanzen bei Teilchenmassen, emp. p = 0 (1.500.000 Simulationen, 3 KDE-Bandbreiten, 30 Seeds).
 
 ### Weiterführende theoretische Grundlagen
 

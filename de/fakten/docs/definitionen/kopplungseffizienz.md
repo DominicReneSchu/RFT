@@ -363,17 +363,17 @@ $$
 
 ## 9. Empirische Validierung
 
-### 9.1 Axiom-für-Axiom-Validierung (ResoTrade)
+### 9.1 Axiom-für-Axiom-Nachweis aus RFT-internen Simulationen
 
 | Axiom | Test | Ergebnis |
 |-------|------|----------|
-| A1 | AC/DC-Zerlegung des BTC-Preises | +5.9 Pp. (V10→V11) |
-| A2 | 3-Moden-Superposition (PID-Isomorphie) | +42.9% vs HODL |
-| A3 | Altcoin-Analyse: 200.000 Ep., Draw 98.4% | Falsifiziert |
-| A4 | Pause-Gate (ε → 0 im Crash) | +44.9% vs HODL |
-| A5 | Energierichtungsvektor (e_short − e_long) | +1.4 Pp. (V9.4→V10) |
-| A6 | Resonanz-Gate filtert 40% der Trades | 97% HOLD im Live |
-| A7 | 4/4 Marktregime positiv, identische Parameter | +26.3% Ø |
+| A1 | FLRW-Simulationen: η ≈ cos²(Δφ/2) | Δd_η > 6σ, Δχ² = +16 vs CMB |
+| A2 | Gekoppelte Oszillatoren: Mehrfrequenz-Überlagerung | Energieaustausch bei Resonanz bestätigt |
+| A3 | Monte-Carlo: 1.500.000 Sim. auf CMS-Daten | 5 Resonanzen, emp. p = 0 |
+| A4 | FLRW: ε = η Identität, Resonanzreaktor κ = 1 | Kein freier Parameter |
+| A5 | Resonanzfeld-Simulation: Energierichtungsvektor | Energie-Vektorialität bestätigt |
+| A6 | Resonanzfeld-Simulation: Kopplungseffizienz und Energiefluss | PCI → MI bestätigt |
+| A7 | Monte-Carlo: bandbrei­tenunabhängig (3 KDE); CERN-Daten | Stabiles Resonanzmuster über Seeds |
 
 ### 9.2 Vier Validierungsdomänen
 
@@ -382,7 +382,7 @@ $$
 | Teilchenphysik | 1.500.000 MC-Sim. auf CMS-Daten | 5 Resonanzen, emp. p = 0 |
 | Kosmologie | 1.530 FLRW-Simulationen | Δd_η > 6σ, Δχ² = +16 |
 | Nukleartechnologie | Resonanzreaktor (GDR) | κ = 1, Q_fiss ≈ 1.0 |
-| Finanzmärkte | ResoTrade (24 Mo., 4 Regime) | +26.3% vs HODL, Live +4.13% |
+| Klassische Mechanik | Doppelpendel + Gekoppelte Oszillatoren | ε(θ₂−θ₁) = cos²(Δθ/2) bestätigt |
 
 ### 9.3 Detailergebnisse pro Domäne
 
@@ -406,12 +406,18 @@ $$
     Am-241: GDR 13.3 MeV, α-Zerfall beschleunigbar
 ```
 
-**ResoTrade:**
+**Doppelpendel:**
 ```
-    ε → 0 (Crash, DC fällt stark) → Pause → +44.9% vs HODL
-    ε → 1 (Phasenkohärenz) → Trade erlaubt → systematisch profitabel
-    24 Monate, 4 Regime, 1392 Trades, +26.3% vs HODL
-    Live seit Feb. 2026 (+4.13% in 2 Wochen)
+    ε(θ₂−θ₁) = cos²((θ₂−θ₁)/2)
+    ε = 1 bei Δθ = 0 (synchron), ε = 0 bei Δθ = π (Gegenphase)
+    Dynamische Kopplungseffizienz bestätigt cos²-Modell
+```
+
+**Gekoppelte Oszillatoren:**
+```
+    Resonanzbedingung (A3): ε = 1 bei Frequenzverhältnis n:m
+    Energieaustausch auf resonante Moden beschränkt
+    Mehrfrequenz-Superposition (A2) bestätigt
 ```
 
 **Monte-Carlo (CMS-Daten):**
@@ -425,10 +431,9 @@ $$
 
 ### 9.4 Falsifikationstests
 
-- **Altcoin-Analyse (A3):** 200.000 Episoden, 10 Altcoins.
-  Vorhersage: Ohne Eigenfrequenz keine Resonanz.
-  Ergebnis: Draw-Rate 98.4%, negativer Lernfortschritt.
-  Aktien (Eigenfrequenz vorhanden): 100% > HODL.
+- **Resonanzbedingung (A3):** Monte-Carlo-Test auf CMS-Dielektron-Daten.
+  Vorhersage: Resonanzpeaks bei Teilchenmassen. Ergebnis: 5 Resonanzen,
+  emp. p = 0 (1.500.000 Simulationen, 3 KDE-Bandbreiten, 30 Seeds).
 - **Klassische Indikatoren:** RSI, Momentum, MA-Crossover,
   Posterior-Wahrscheinlichkeiten — alle Korrelation < 0.05.
   RFT-Observablen (energy_dir, AC-Phase) systematisch.
@@ -446,7 +451,7 @@ $$
 - **Nukleartechnologie:** Resonanzreaktor — resonante
   Transmutation von Aktiniden (GDR-basiert, κ = 1)
 - **Finanzmärkte:** ResoTrade — resonanzbasiertes BTC-Trading
-  mit Live-Validierung
+  (Anwendungskonzept; demonstriert Anwendbarkeit der RFT-Axiome)
 - **Klassische Mechanik:** Synchronisation gekoppelter
   Oszillatoren, [Doppelpendel](../mathematik/doppelpendel.md)
 - **Biophysik:** Neuronale Synchronisation, Proteinfaltung
@@ -488,7 +493,7 @@ Die Kopplungseffizienz ε der Resonanzfeldtheorie ist:
 7. **Nicht zu verwechseln** mit der Kopplungsstärke K_ij, die
    unbeschränkt sein kann
 8. **Empirisch bestätigt** in vier Domänen: Teilchenphysik,
-   Kosmologie, Nukleartechnologie, Finanzmärkte
+   Kosmologie, Nukleartechnologie, Klassische Mechanik
 9. **Notation vereinheitlicht**: Alle Dokumente und Simulationen
    verwenden ε (statt 𝓔), ℏ (statt h), cos²(Δφ/2) als
    Standardmodell
@@ -522,7 +527,7 @@ Resonanzfeldtheorie ab Version 2026.
 | [Energiekugel](../mathematik/energiekugel.md) | Geometrisches Modell |
 | [Resonanzintegrale](../mathematik/resonanzintegrale.md) | Analytische Methoden |
 | [Resonanzenergievektor](../mathematik/resonanzenergievektor.md) | Energie als Richtungsgröße |
-| [Empirische Nachweise](../../empirisch/) | Cern-Auswertung, Monte Carlo, ResoTrade |
+| [Empirische Nachweise](../../empirisch/) | Cern-Auswertung, Monte Carlo |
 
 ---
 
