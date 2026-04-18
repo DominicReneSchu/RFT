@@ -151,6 +151,48 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 
 ---
 
+## Wie Ergebnisse sich gegenseitig bestätigen
+
+Die Resonanzfeldtheorie sagt aus, dass Resonanz das **verbindende Element der Physik** ist.
+Diese Verbindung wird sichtbar, weil dieselbe Formel in völlig unabhängigen Bereichen
+bestätigt wird — aus verschiedenen Richtungen, auf verschiedenen Skalen.
+
+### ε(Δφ) = cos²(Δφ/2) — eine Formel, drei Skalen
+
+| Bereich | Simulation/Nachweis | Ergebnis | Link |
+|---------|---------------------|----------|------|
+| Quantenmechanik | Schrödinger-Simulation | Fidelity = 1.000000000000 für alle 4 Δφ-Szenarien | [→](fakten/simulationen/schrödinger/README.md) |
+| Kosmologie | FLRW-Simulation (1.530 Läufe) | η = cos²(Δφ/2) exakt, Δd_η > 6σ | [→](fakten/simulationen/FLRW-Simulationen/README.md) |
+| Kernphysik | Resonanzreaktor (U-235) | κ = 1 exakt, λ_eff/λ₀ = 7.872 | [→](fakten/konzepte/resonanzreaktor/resonanzreaktor.md) |
+| Klassische Mechanik | Doppelpendel, Gekoppelte Oszillatoren | ε(θ₂−θ₁) = cos²(Δθ/2) | [→](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) |
+| Raumzeitgeometrie | Warpantriebs-Simulation | ρ ∝ cos⁴(Δφ/2), E⁻ = 0 | [→](fakten/konzepte/warpantrieb/warpantrieb.md) |
+
+### Resonanzbedingung (A3) — aus drei unabhängigen Richtungen
+
+| Nachweis | Methode | Ergebnis | Link |
+|---------|---------|----------|------|
+| CERN-Resonanzanalyse | CMS Open Data | Signifikante Resonanzüberschüsse, A7 bestätigt | [→](fakten/empirisch/cern/dokumentation.md) |
+| Monte-Carlo-Test | 1.500.000 Simulationen | 5 Resonanzen, emp. p = 0 | [→](fakten/empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) |
+| Resonanzreaktor | GDR-basiert | f_γ = f_GDR Bedingung, σ_coh > σ_incoh | [→](fakten/konzepte/resonanzreaktor/resonanzreaktor.md) |
+
+### Querverbindungen im Detail
+
+```
+Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrieb
+     │                    │                         │
+  Fidelity=1          η = cos²              ρ ∝ cos⁴, E⁻=0
+     │                    │                         │
+     └──Störungstheorie──→ Numerische Demo    Kaskade Stufe 3
+                          │                         │
+                     Konsistenz A3–A5    Resonanzreaktor (Stufe 1)
+                                                     │
+                     CERN ←─ A3 ─→ Monte-Carlo ──────┘
+```
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 # Inhalt
 
 ## Axiomatik und Definitionen

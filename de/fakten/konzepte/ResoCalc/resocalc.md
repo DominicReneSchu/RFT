@@ -279,7 +279,7 @@ Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus 
 |---|---|---|---|
 | Drehmoment als Spezialfall der Oszillatorkopplung | Gekoppelte Oszillatoren: direkte Entsprechung — Kopplung zwischen zwei Systemen | Klassische Mechanik | [→ Gekoppelte Oszillatoren](../../simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) |
 | Kopplungseffizienz im makroskopischen Bereich | Resonanzreaktor: dieselbe Kopplungseffizienz auf Kernphysik-Skala | Kernphysik | [→ Resonanzreaktor](../resonanzreaktor/resonanzreaktor.md) |
-| E = π·ε·ℏ·f als berechnungsgrundlage | Kopplungsenergie-Dokument: geometrische Herleitung der Grundformel | Mathematik | [→ Kopplungsenergie](../../docs/mathematik/kopplungsenergie.md) |
+| E = π·ε·ℏ·f als Berechnungsgrundlage | Kopplungsenergie-Dokument: geometrische Herleitung der Grundformel | Mathematik | [→ Kopplungsenergie](../../docs/mathematik/kopplungsenergie.md) |
 
 > **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
 
