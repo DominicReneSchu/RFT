@@ -354,4 +354,22 @@ The complete research program (discrete field → continuum limit
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| ε(Δφ) = cos²(Δφ/2) derived from Axiom 4, Fidelity = 1.000000000000 | FLRW simulation: η ≈ cos²(Δφ/2) over 1,530 runs, Δd_η > 6σ | Cosmology | [→ FLRW](../FLRW_simulations/README.md) |
+| ε(Δφ) = cos²(Δφ/2), coupling efficiency derived | Warp drive: ρ ∝ cos⁴(Δφ/2), first warp bubble with ρ > 0 everywhere | Spacetime geometry | [→ Warp drive](../../concepts/warp_drive/warp_drive.md) |
+| ε(Δφ) = cos²(Δφ/2), coupling efficiency at quantum scale | Resonance reactor: same formula at nuclear-physics scale, κ = 1 exact | Nuclear physics | [→ Resonance reactor](../../concepts/resonance_reactor/resonance_reactor.md) |
+| Correspondence principle: standard QM is a special case of RFT | Coupled oscillators: classical counterpart to quantum-mechanical coupling | Classical mechanics | [→ Coupled oscillators](../coupled_oscillators/coupled_oscillators.md) |
+| ε(Δφ) = cos²(Δφ/2) also in the double pendulum | Double pendulum: ε(θ₂−θ₁) as classical-mechanical analogue | Classical mechanics | [→ Double pendulum](../double_pendulum/accompanying_chapter_double_pendulum.md) |
+| Perturbation theory: 1−F ~ λ², independent consistency check | Monte Carlo: 1.5 M simulations, emp. p = 0, resonance condition confirmed | Particle physics | [→ Monte Carlo](../../empirical/monte_carlo/monte_carlo_test/monte_carlo.md) |
+| E = π·ε(Δφ)·ℏ·f mathematically derived | Coupling energy document: geometric derivation of E = π·ε·ℏ·f | Mathematics | [→ Coupling energy](../../docs/mathematics/coupling_energy.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [Back to Overview](../../../README.md#simulations)

@@ -259,4 +259,19 @@ with suspected resonance structures.
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| 4 resonances (J/ψ, Υ(1S), Υ(2S), Z) confirmed with emp. p = 0 | CERN analysis: same resonances, complementary method (KDE + binomial test) | Particle physics | [→ CERN](../../cern/documentation.md) |
+| Resonance structure in particle data (A1, A3, A7) | FLRW simulation: resonance structure at cosmological scale — A7 (scale invariance) confirmed | Cosmology | [→ FLRW](../../../simulations/FLRW_simulations/README.md) |
+| Resonance condition also empirically detectable | Schrödinger simulation: resonance condition effective at quantum level, Fidelity = 1.0 | Quantum mechanics | [→ Schrödinger](../../../simulations/schrodinger/README.md) |
+| Nuclear-physics resonance, A3 condition | Resonance reactor: same A3 condition at nuclear-physics scale | Nuclear physics | [→ Resonance reactor](../../../concepts/resonance_reactor/resonance_reactor.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [back](../../../../README.md)

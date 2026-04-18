@@ -259,4 +259,20 @@ to real Planck data by Δχ² = +16 (Pearson r = 0.626).
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| η = cos²(Δφ/2) over 1,530 runs, Δd_η > 6σ | Schrödinger simulation: same formula at quantum scale, Fidelity = 1.000000000000 | Quantum mechanics | [→ Schrödinger](../schrodinger/README.md) |
+| Klein-Gordon in FLRW → cosmological expansion | Warp drive: uses exactly these equations for spacetime curvature | Spacetime geometry | [→ Warp drive](../../concepts/warp_drive/warp_drive.md) |
+| Resonance structure in cosmological fields | Monte Carlo: same resonance structure in particle data, emp. p = 0 | Particle physics | [→ Monte Carlo](../../empirical/monte_carlo/monte_carlo_test/monte_carlo.md) |
+| η ≈ cos²(Δφ/2) scale-invariant (A7) | CERN analysis: scale invariance of resonance structure in particle masses confirmed | Particle physics | [→ CERN](../../empirical/cern/documentation.md) |
+| Consistency over (A, τ) parameter space | Numerical demonstration: consistency proof over the same parameter space | Numerics | [→ Numerical demonstration](../numerical_demonstration/README.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [back to overview](../../../README.md#simulations)

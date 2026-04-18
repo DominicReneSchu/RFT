@@ -143,4 +143,18 @@ python doppelpendel.py
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| ε(θ₂−θ₁) = cos²(Δθ/2) als klassisch-mechanisches Analogon | Gekoppelte Oszillatoren: lineares klassisches Pendant | Klassische Mechanik | [→ Gekoppelte Oszillatoren](../gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) |
+| Energierichtung und Phasenabhängigkeit | Warpantrieb: Vorn/Hinten-Asymmetrie als makroskopische Energierichtung | Raumzeitgeometrie | [→ Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) |
+| ε(Δφ) = cos²(Δφ/2) auch im Doppelpendel bestätigt | Schrödinger-Simulation: dieselbe Formel auf Quantenskala, Fidelity = 1.000000000000 | Quantenmechanik | [→ Schrödinger](../schrödinger/README.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 ⬅️ [zurück zur Übersicht](../../../README.md#simulationen)

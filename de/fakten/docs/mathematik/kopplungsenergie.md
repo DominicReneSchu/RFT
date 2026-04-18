@@ -235,4 +235,19 @@ ein universeller Korrekturfaktor.
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| E = π·ε(Δφ)·ℏ·f geometrisch hergeleitet | Schrödinger-Simulation: numerischer Nachweis, Fidelity = 1.000000000000 für alle Δφ | Quantenmechanik | [→ Schrödinger](../../simulationen/schrödinger/README.md) |
+| ε = η (Operator = Observable, kein freier Parameter) | FLRW-Simulation: η = cos²(Δφ/2) über 1.530 Läufe, Δd_η > 6σ | Kosmologie | [→ FLRW](../../simulationen/FLRW-Simulationen/README.md) |
+| E = π·ε(Δφ)·ℏ·f, cos⁴-Signatur im Warpantrieb | Warpantrieb: ρ ∝ cos⁴(Δφ/2), erste Warpblase mit ρ > 0 überall | Raumzeitgeometrie | [→ Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) |
+| Grundformel bestimmt f_GDR = E_GDR/(π·ℏ) | Resonanzreaktor: λ_eff/λ₀ = 7.872 für U-235 direkt aus der Grundformel | Kernphysik | [→ Resonanzreaktor](../../konzepte/resonanzreaktor/resonanzreaktor.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](../../../README.md)

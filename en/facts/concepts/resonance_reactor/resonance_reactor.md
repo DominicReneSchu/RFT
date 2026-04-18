@@ -296,4 +296,19 @@ of the Pu-239 decay:
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| λ_eff/λ₀ = 7.872 for U-235, κ = 1 exact (no free parameter) | Schrödinger simulation: ε(Δφ) = cos²(Δφ/2) at quantum scale, same coupling formula | Quantum mechanics | [→ Schrödinger](../../simulations/schrodinger/README.md) |
+| Resonance reactor is Stage 1 of the warp drive cascade | Warp drive: direct application of the reactor as energy source | Spacetime geometry | [→ Warp drive](../warp_drive/warp_drive.md) |
+| Resonance excesses in particle masses confirm A3 | CERN analysis: same resonance condition in particle data (CMS Open Data) | Particle physics | [→ CERN](../../empirical/cern/documentation.md) |
+| Resonance condition f_γ = f_GDR statistically confirmed | Monte Carlo: 1.5 M simulations, emp. p = 0 for the same A3 condition | Particle physics | [→ Monte Carlo](../../empirical/monte_carlo/monte_carlo_test/monte_carlo.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 [Back to overview](README.md)

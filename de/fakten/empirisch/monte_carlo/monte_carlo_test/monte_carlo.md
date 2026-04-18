@@ -267,4 +267,19 @@ mit vermuteten Resonanzstrukturen übertragbar.
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| 4 Resonanzen (J/ψ, Υ(1S), Υ(2S), Z) mit emp. p = 0 bestätigt | CERN-Analyse: dieselben Resonanzen, komplementäre Methode (KDE + Binomialtest) | Teilchenphysik | [→ CERN](../../cern/dokumentation.md) |
+| Resonanzstruktur in Teilchendaten (A1, A3, A7) | FLRW-Simulation: Resonanzstruktur auf kosmologischer Skala — A7 (Skaleninvarianz) bestätigt | Kosmologie | [→ FLRW](../../../simulationen/FLRW-Simulationen/README.md) |
+| Resonanzbedingung auch empirisch nachweisbar | Schrödinger-Simulation: Resonanzbedingung quantenmechanisch wirksam, Fidelity = 1.0 | Quantenmechanik | [→ Schrödinger](../../../simulationen/schrödinger/README.md) |
+| Kernphysikalische Resonanz, A3-Bedingung | Resonanzreaktor: dieselbe A3-Bedingung auf Kernphysik-Skala | Kernphysik | [→ Resonanzreaktor](../../../konzepte/resonanzreaktor/resonanzreaktor.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](../../../../README.md)
