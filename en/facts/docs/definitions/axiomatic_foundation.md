@@ -83,8 +83,9 @@ DC component (trend) and an AC component (tradeable oscillation).
 
 **Physical example:** Natural oscillations of a microwave resonator.
 
-**Empirical evidence (ResoTrade):** The AC/DC decomposition of the BTC price
-generates a tradeable signal: +26.1% vs. HODL over 4 market regimes.
+**Empirical evidence (RFT-internal):** FLRW simulation: η ≈ cos²(Δφ/2),
+Δd_η > 6σ (1,530 runs). The natural frequency of any physical system
+is measurable (Fourier decomposition).
 
 ---
 
@@ -126,9 +127,9 @@ with detuning.
 couple resonantly. Systems with identical eigenfrequencies oscillate
 synchronously — no overtones, no information exchange.
 
-**Empirical evidence (ResoTrade):** BTC and stocks (different eigenfrequencies)
-produce resonance: S:F = 5.2:1. BTC and altcoins (identical eigenfrequencies)
-produce no resonance: draw rate 98.4%.
+**Empirical evidence (RFT-internal):** Monte Carlo test on CMS dielectron data:
+5 resonances at particle masses, emp. p = 0 (1,500,000 simulations, 3 KDE,
+30 seeds). CERN resonance analysis: significant resonance excesses in mass data.
 
 ---
 
@@ -206,9 +207,9 @@ different time scales:
 **Testable prediction:** The direction of energy flow is a useful
 observable that goes beyond scalar indicators.
 
-**Empirical evidence (ResoTrade):** V10 (with energy direction) achieves
-+37.03%, V9.4 (without) +35.61%. All scalar indicators (RSI, Momentum,
-MA-crossover) have correlation < 0.05 with the price path.
+**Empirical evidence (RFT-internal):** Resonance field simulation: energy direction
+vector (A5) confirmed — PCI → MI shows directional energy flow control.
+FLRW simulation: energy flow direction confirmed in cosmological context.
 
 ---
 
@@ -232,10 +233,9 @@ Mutual Information and Phase Coherence Index.
 exchange information — regardless of the amplitude of the individual
 oscillations.
 
-**Empirical evidence (ResoTrade):** The resonance gate filters out 92%
-of cycles as non-resonant. The remaining 8% are profitable.
-Altcoins (PCI ≈ 1 to BTC, no phase shift) produce no information flow:
-98.4% draw rate.
+**Empirical evidence (RFT-internal):** Resonance field simulation: information flow
+through coupling efficiency and PCI confirmed. Monte Carlo test: emp. p = 0
+(resonance only when resonance condition A3 is met).
 
 ---
 
@@ -257,9 +257,9 @@ under synchronous transformations of the group G_sync.
 **Testable prediction:** The resonance structure is scale-invariant —
 it holds on all time scales and energy scales.
 
-**Empirical evidence (ResoTrade):** The AC/DC decomposition works
-across all 4 market phases (sideways, bull run, correction, crash) with
-consistent performance. The axioms are regime-invariant.
+**Empirical evidence (RFT-internal):** Monte Carlo test stable over 3 KDE bandwidths
+and 30 seeds (A7 confirmed). FLRW simulation: coupling structure invariant over
+various H₀ values (4 regimes). CERN data: stable resonance pattern.
 
 ---
 
@@ -369,15 +369,15 @@ through resonance coupling (A3, A6).
 
 ## 6. Overview: Axioms and Their Empirical Tests
 
-| Axiom | Core statement | Core formula | Empirical test (ResoTrade) |
-|-------|----------------|--------------|---------------------------|
-| A1 | Universal oscillation | ψ = A·cos(kx−ωt+φ) | AC/DC decomposition: +26.1% vs HODL |
-| A2 | Superposition | Φ = Σ ψᵢ | Multi-scale superposition (MA_SHORT + MA_LONG) |
-| A3 | Resonance condition | \|f₁/f₂ − m/n\| < δ | BTC↔stocks: resonant. BTC↔altcoins: not resonant |
-| A4 | Coupling energy | E = π·ε·h·f | Balance regulator holds coupling stable over 24 months |
-| A5 | Energy direction | E⃗ = E·ê(Δφ,∇Φ) | energy_dir brings +1.42% improvement (V10 vs V9.4) |
-| A6 | Information flow | MI > 0 ⟺ PCI > 0 | Resonance gate filters 92% as non-resonant |
-| A7 | Invariance (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Consistent performance across 4 market regimes |
+| Axiom | Core statement | Core formula | RFT-internal evidence |
+|-------|----------------|--------------|----------------------|
+| A1 | Universal oscillation | ψ = A·cos(kx−ωt+φ) | FLRW simulations: η ≈ cos²(Δφ/2), Δd_η > 6σ |
+| A2 | Superposition | Φ = Σ ψᵢ | Coupled Oscillators: multi-frequency superposition simulated |
+| A3 | Resonance condition | \|f₁/f₂ − m/n\| < δ | Monte Carlo test: 5 resonances at particle mass, emp. p = 0 |
+| A4 | Coupling energy | E = π·ε·h·f | FLRW: ε = η identity (κ = 1), Schrödinger simulation: derived from A4 |
+| A5 | Energy direction | E⃗ = E·ê(Δφ,∇Φ) | Resonance field simulation: energy direction vector; Double pendulum: ε(θ₂−θ₁) |
+| A6 | Information flow | MI > 0 ⟺ PCI > 0 | Resonance field simulation: coupling efficiency and energy flow |
+| A7 | Invariance (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte Carlo test: bandwidth-independent (3 KDE); CERN data: stable resonance pattern |
 
 ---
 
@@ -385,7 +385,7 @@ through resonance coupling (A3, A6).
 
 - **Quantum physics:** Superposition, quantization through rational frequency ratios
 - **Classical mechanics:** Synchronization of coupled oscillators
-- **Financial markets:** Resonance-based trading (ResoTrade)
+- **Financial markets:** Resonance-based trading (ResoTrade — application concept)
 - **Biophysics:** Neural synchronization, protein folding
 - **Information theory:** Resonance-based channel capacity
 - **Cosmology:** Harmonic pattern formation
@@ -399,7 +399,7 @@ Resonance Field Theory consists of 7 core axioms (A1–A7) that are:
 1. **Minimal**: The stable resonance field (old A5) is derivable as a theorem
 2. **Independent**: No axiom follows from the others
 3. **Formally precise**: Each axiom contains a mathematical formula
-4. **Empirically testable**: Each axiom has a documented test (ResoTrade)
+4. **Empirically testable**: Each axiom has a documented test (FLRW simulations, Monte Carlo, CERN data, resonance reactor)
 
 The extension E1 (observer as resonator) is an interpretative supplement
 that builds on the foundation, but does not belong to the physical axiomatics.

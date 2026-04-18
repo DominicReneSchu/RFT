@@ -172,9 +172,9 @@ For growing coupling (settling process):
 | FLRW | τ*(π) → ∞ | η = 0.0 at Δφ = π, no transfer |
 | FLRW | τ* grows with H₀ | Hubble friction increases d_η → effectively higher τ* |
 | Resonance reactor | τ* = π (at resonance) | κ = 1, ε = η = 1 at Δφ = 0 |
-| ResoTrade | τ* → ∞ in crash | ε → 0, pause gate, no trade |
-| ResoTrade | τ* ≈ π in phase | ε ≈ 1, fast energy transfer, trade active |
-| ResoTrade | Settling | Convergence after 3 cycles (Δ < 1%), consistent with τ*(t) = π/(1−e^(−λt)) |
+| Double pendulum | τ* → ∞ at antiphase | ε → 0 at Δφ = π, no energy transfer |
+| Double pendulum | τ* ≈ π at synchronization | ε ≈ 1, fast energy transfer |
+| Coupled oscillators | Settling | Convergence after 3 cycles (Δ < 1%), consistent with τ*(t) = π/(1−e^(−λt)) |
 
 Hubble friction in FLRW simulations can be interpreted as an
 effective increase in τ*: stronger expansion shifts η systematically

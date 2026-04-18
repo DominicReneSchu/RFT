@@ -13,7 +13,7 @@ Grundlage liefert Axiom 4 (Kopplungsenergie), formalisiert in der
 
 Die zentrale Identität ε(Δφ) = η(Δφ) = cos²(Δφ/2) wurde in
 vier Domänen empirisch validiert (FLRW, Monte Carlo,
-Resonanzreaktor, ResoTrade). Siehe
+Resonanzreaktor, Doppelpendel). Siehe
 [Vereinheitlichte Definition](../definitionen/kopplungseffizienz.md).
 
 ---
@@ -107,7 +107,7 @@ beschreibt einen physikalisch wichtigen, aber speziellen Zustand.
 - Gedämpften Oszillatoren nach dem Einschwingvorgang
 - Kavitäten mit endlicher Güte Q
 - Systemen mit natürlicher Dissipation
-- ResoTrade: Konvergenz des Erfahrungsspeichers zeigt
+- Gekoppelte-Oszillatoren-Simulation: Konvergenz des Synchronisationsprozesses zeigt
   gedämpftes Einschwingverhalten (Δ < 1% nach 3 Zyklen)
 
 **Korrektur gegenüber früherer Fassung:** In einer früheren
@@ -143,7 +143,7 @@ Destruktive Interferenz — keine Energieübertragung.
 
 **Empirisch:**
 - FLRW: η = 0.0 bei Δφ = π (exakt)
-- ResoTrade: ε → 0 im Crash → Pause-Gate → +44.9% vs HODL
+- Doppelpendel: ε → 0 bei Gegenphase (Δφ = π), kein Energietransfer zwischen den Pendeln
 
 ---
 
@@ -204,9 +204,9 @@ Jeder Spezialfall ist empirisch referenzierbar:
 | 1 | Monte Carlo | 5 Resonanzen bei Teilchenmasse (emp. p = 0) |
 | 1 | Resonanzreaktor | κ = 1 aus ε = η Identität |
 | 0 | FLRW | η = 0.0 bei Δφ = π (exakt) |
-| 0 | ResoTrade | Pause-Gate bei ε → 0 (+44.9% vs HODL) |
+| 0 | Doppelpendel | ε → 0 bei Gegenphase (Δφ = π), kein Energietransfer |
 | cos²(Δφ/2) | FLRW | d_η = 0.043 im flachen Fall |
-| cos²(Δφ/2) | ResoTrade | AC-Phase identifiziert Zyklusposition |
+| cos²(Δφ/2) | Doppelpendel | ε(θ₂−θ₁) = cos²(Δθ/2) dynamisch bestätigt |
 
 ---
 

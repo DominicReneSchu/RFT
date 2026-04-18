@@ -163,7 +163,7 @@ Für konstantes ε ergibt sich:
 |--------|-------------------|-----------|----------|
 | FLRW-Kosmologie | Kreuzterm ε₁·ε₂ | [0, 1] | η ≈ cos², d_η skaliert mit H₀ |
 | Resonanzreaktor | Photonenfluss → GDR | ε = 1 (Resonanz) | κ = 1, Q_fiss ≈ 1.0 |
-| ResoTrade | Kapitalfluss BTC | ε → 0 (Crash) | Pause-Gate, +44.9% vs HODL |
+| Doppelpendel | Mechanische Kopplung | ε(θ₂−θ₁) ∈ [0, 1] | ε → 0 bei Gegenphase, ε = 1 bei Synchronisation |
 | Monte Carlo | Teilchenresonanzen | ε = 1 (bei M₀) | 5 Resonanzen, emp. p = 0 |
 
 ---

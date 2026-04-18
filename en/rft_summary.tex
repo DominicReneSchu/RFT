@@ -200,24 +200,21 @@
 		\item Energy balance with Q-factor analysis
 	\end{itemize}
 	
-	\subsection{ResoTrade}
+	\subsection{ResoTrade (Application Concept)}
 	
 	\begin{itemize}
 		\item Resonance field theory trading system
-		for the BTC market, 12~versions
-		(October 2025 -- March 2026)
+		for the BTC market -- demonstrates applicability
+		of RFT axioms in a real market environment
 		\item AC/DC decomposition (A1), superposition
 		of three modes (A2), frequency ratio
 		24h:168h~$= 1{:}7$ (A3), balance regulator
 		and downtrend pause gate (A4),
 		energy direction vector (A5),
 		resonance gate (A6)
-		\item 24-month backtest (March 2024 -- February 2026)
-		in 4~market regimes
-		\item Live since 25 February 2026 via Kraken
-		(dry-run)
-		\item Every improvement through a new axiom, never
-		through parameter tuning
+		\item Primary axiom evidence comes from
+		RFT-internal simulations (FLRW, Monte Carlo,
+		double pendulum, resonance reactor)
 	\end{itemize}
 	
 	%% ============================================================
@@ -302,131 +299,37 @@
 	$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$.
 	Confirms Axioms~1, 3, 4.
 	
-	\subsection{ResoTrade: Axiomatic Validation
+	\subsection{ResoTrade: Application Concept
 		on the BTC Market}
 	
-	ResoTrade validates each of the seven axioms individually
-	on the real market. The system was developed iteratively
-	over 12~versions, with every improvement arising from
-	the introduction of a new axiom -- never from parameter tuning.
+	ResoTrade is a resonance field theory trading system
+	that applies all seven axioms to the concrete problem
+	of algorithmic trading.
+	It demonstrates the applicability of the RFT axioms
+	in a real, chaotic system -- but does not serve as
+	primary axiom evidence, since the underlying
+	implementation is not publicly verifiable.
 	
-	\subsubsection{Axiom-by-axiom validation.}
+	\subsubsection{Dynamic simulations.}
+	
+	The RFT-internal simulations confirm the axioms
+	independently and verifiably:
 	
 	\begin{center}
-		\begin{tabular}{llll}
+		\begin{tabular}{lll}
 			\hline
-			\textbf{Axiom} & \textbf{Mechanism}
-			& \textbf{Version} & \textbf{Effect} \\
+			\textbf{Axiom} & \textbf{Simulation} & \textbf{Result} \\
 			\hline
-			A1 & AC/DC decomposition
-			& V11 & $+5{,}9$~pp. \\
-			A2 & 3~modes (PID isomorphism)
-			& V10--V11 & $+42{,}9\%$ \\
-			A3 & $f_1/f_2 = 1{:}7$
-			& Altcoin test & Falsified \\
-			A4 & Pause gate ($\varepsilon \to 0$)
-			& V11.1 & $+44{,}9\%$ \\
-			A5 & Energy direction vector
-			& V10 & $+1{,}4$~pp. \\
-			A6 & Resonance gate
-			& V10+ & 40\% blocked \\
-			A7 & Regime invariance
-			& All & 4/4~positive \\
+			A1 & FLRW (1\,530 runs) & $\eta \approx \cos^2(\Delta\phi/2)$, $\Delta d_\eta > 6\sigma$ \\
+			A2 & Coupled oscillators & Multi-frequency superposition confirmed \\
+			A3 & Monte Carlo (1\,500\,000 sim.) & 5 resonances, emp.\ $p = 0$ \\
+			A4 & FLRW: $\varepsilon = \eta$ identity & $\kappa = 1$, no free parameter \\
+			A5 & Resonance field sim. & Energy direction vector confirmed \\
+			A6 & Resonance field sim. & Coupling efficiency and energy flow \\
+			A7 & Monte Carlo & bandwidth-independent (3 KDE) \\
 			\hline
 		\end{tabular}
 	\end{center}
-	
-	\subsubsection{Backtest: 24~months, 4~market regimes.}
-	
-	\begin{center}
-		\begin{tabular}{llrl}
-			\hline
-			\textbf{Regime} & \textbf{Period}
-			& \textbf{Trades} & \textbf{vs.\ HODL} \\
-			\hline
-			Sideways + ETF & Mar--Sep 2024
-			& 437 & $+33{,}3\%$ \\
-			Bull run & Sep 2024--Mar 2025
-			& 429 & $+22{,}9\%$ \\
-			Top + correction & Mar--Sep 2025
-			& 247 & $+4{,}0\%$ \\
-			Crash & Sep 2025--Feb 2026
-			& 279 & $+44{,}9\%$ \\
-			\hline
-			\textbf{All regimes} & \textbf{24~months}
-			& \textbf{1392} & $\mathbf{+26{,}3\%}$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\subsubsection{Live validation (since 25 February 2026).}
-	
-	\begin{center}
-		\begin{tabular}{lr}
-			\hline
-			\textbf{Metric} & \textbf{Value} \\
-			\hline
-			Period & 5~days (first evaluation) \\
-			Performance vs.\ HODL & $+4{,}13\%$ \\
-			Market in period & $-1{,}92\%$ \\
-			Trades & 36 (18~BUY, 18~SELL) \\
-			Avg.\ buy price & 63\,828~USD \\
-			Avg.\ sell price & 68\,105~USD \\
-			Spread & $+6{,}70\%$ \\
-			Rule-policy divergence & $0{,}0\%$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\subsubsection{Falsification test: Altcoin analysis.}
-	
-	Over $200\,000$~episodes with 10~altcoins it is shown:
-	Altcoins have no independent eigenfrequency
-	($\mathrm{AC}_{\mathrm{Alt}} \approx \alpha \cdot
-	\mathrm{AC}_{\mathrm{BTC}} + \eta$).
-	Without the resonance condition (A3) no information exchange:
-	
-	\begin{center}
-		\begin{tabular}{lrrr}
-			\hline
-			\textbf{Configuration}
-			& \textbf{Episodes}
-			& \textbf{Draw rate}
-			& \textbf{$>$HODL} \\
-			\hline
-			BTC + 13 stocks & -- & $84\%$
-			& $100\%$ \\
-			BTC + 10 altcoins & $200\,000+$
-			& $98{,}4\%$ & $86\%$ \\
-			BTC only (V11) & -- & ${\sim}49\%$
-			& $83{,}4\%$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Stocks have independent eigenfrequencies
-	and can enter genuine resonance with BTC.
-	Altcoins cannot.
-	Negative learning progress for altcoins
-	($-0{,}002$/cycle) confirms the prediction.
-	
-	\subsubsection{Convergence and stability.}
-	
-	\begin{itemize}
-		\item Performance after 1~cycle: $+25{,}8\%$.
-		After 3~cycles: $+26{,}3\%$.
-		$\Delta < 1\%$ -- damped settling behavior.
-		\item Parameter changes degrade performance --
-		narrow resonance window.
-		\item No classical indicator (RSI, MACD,
-		Bollinger, MA crossover) achieves correlation
-		$> 0{,}05$ with future price movements.
-		\item Experience memory: readable CSV with
-		${\sim}6\,000$ entries and
-		${\sim}1{,}6$~million counters.
-		\item Hardware: 15~min.\ training (CPU),
-		2~MB memory, 5~W (Raspberry Pi).
-	\end{itemize}
 	
 	Confirms Axioms~1, 2, 3, 4, 5, 6, 7.
 	
@@ -480,10 +383,9 @@
 		$\lambda\varepsilon^4$- and
 		$\alpha R\varepsilon^2$-terms.
 		
-		\item \textbf{ResoTrade live validation:}
-		6--12~months verifiable performance.
-		V11.2 (D-component/slope) in live validation.
-		Statistical significance ($p$-value) pending.
+		\item \textbf{ResoTrade application:}
+		Long-term validation of the application concept
+		over verifiable time periods.
 		Transition to real money after dry-run phase.
 		
 		\item \textbf{Optimal MA frequency choice:}

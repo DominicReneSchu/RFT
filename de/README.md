@@ -12,7 +12,7 @@ Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
 (1.500.000 Monte-Carlo-Simulationen, 5 Resonanzen, emp. p = 0),
 Kosmologie (1.530 FLRW-Simulationen, Δd_η > 6σ),
 Nukleartechnologie (Resonanzreaktor, κ = 1) und
-Finanzmärkte (ResoTrade, +26.3% vs HODL, Live seit Feb. 2026).
+Klassische Mechanik (Doppelpendel, ε(θ₂−θ₁) = cos²(Δθ/2)).
 
 ---
 
@@ -123,11 +123,11 @@ Die RFT wird an vier unabhängigen Domänen empirisch validiert:
 | Teilchenphysik | 1.500.000 MC-Sim. auf CMS-Daten | 5 Resonanzen, emp. p = 0 | A3, A7 |
 | Kosmologie | 1.530 FLRW-Simulationen | Δd_η > 6σ, Δχ² = +16 vs CMB | A1, A3–A5, A7 |
 | Nukleartechnologie | Resonanzreaktor (GDR-basiert) | κ = 1, Q_fiss ≈ 1.0 | A1, A3, A4 |
-| Finanzmärkte | ResoTrade (24 Mo., 4 Regime) | +26.3% vs HODL, Live +4.13% | A1–A7 |
+| Klassische Mechanik | Doppelpendel + Gekoppelte Oszillatoren | ε(θ₂−θ₁) = cos²(Δθ/2) | A1, A2, A4 |
 
 **Falsifikationstests:**
-- Altcoin-Analyse: 200.000 Episoden, Draw-Rate 98.4% (A3 bestätigt negativ)
-- Klassische Indikatoren: RSI, MACD, Momentum — alle Korrelation < 0.05
+- Monte-Carlo-Test: 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 (A3 bestätigt)
+- CERN-Resonanzanalyse: Signifikante Resonanzüberschüsse in Massendaten (A1, A3, A7)
 - Resonanzreaktor-Vorhersage: σ_coh > σ_incoh (experimentell prüfbar)
 
 ---

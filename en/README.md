@@ -12,7 +12,7 @@ oscillation fields — formally grounded in 7 axioms (A1–A7).
 (1,500,000 Monte Carlo simulations, 5 resonances, emp. p = 0),
 Cosmology (1,530 FLRW simulations, Δd_η > 6σ),
 Nuclear technology (resonance reactor, κ = 1) and
-Financial markets (ResoTrade, +26.3% vs HODL, live since Feb. 2026).
+Classical mechanics (double pendulum, ε(θ₂−θ₁) = cos²(Δθ/2)).
 
 ---
 
@@ -123,11 +123,11 @@ The RFT is empirically validated across four independent domains:
 | Particle physics | 1,500,000 MC sim. on CMS data | 5 resonances, emp. p = 0 | A3, A7 |
 | Cosmology | 1,530 FLRW simulations | Δd_η > 6σ, Δχ² = +16 vs CMB | A1, A3–A5, A7 |
 | Nuclear technology | Resonance reactor (GDR-based) | κ = 1, Q_fiss ≈ 1.0 | A1, A3, A4 |
-| Financial markets | ResoTrade (24 mo., 4 regimes) | +26.3% vs HODL, Live +4.13% | A1–A7 |
+| Classical mechanics | Double pendulum + coupled oscillators | ε(θ₂−θ₁) = cos²(Δθ/2) | A1, A2, A4 |
 
 **Falsification tests:**
-- Altcoin analysis: 200,000 episodes, draw rate 98.4% (A3 confirmed negative)
-- Classical indicators: RSI, MACD, Momentum — all correlation < 0.05
+- Monte Carlo test: 1,500,000 simulations, 5 resonances, emp. p = 0 (A3 confirmed)
+- CERN resonance analysis: significant resonance excesses in mass data (A1, A3, A7)
 - Resonance reactor prediction: σ_coh > σ_incoh (experimentally testable)
 
 ---

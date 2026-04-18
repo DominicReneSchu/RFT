@@ -161,7 +161,7 @@ For constant ε:
 |--------|----------------|---------|--------|
 | FLRW cosmology | Cross-term ε₁·ε₂ | [0, 1] | η ≈ cos², d_η scales with H₀ |
 | Resonance reactor | Photon flux → GDR | ε = 1 (resonance) | κ = 1, Q_fiss ≈ 1.0 |
-| ResoTrade | Capital flow BTC | ε → 0 (crash) | Pause gate, +44.9% vs HODL |
+| Double pendulum | Mechanical coupling | ε(θ₂−θ₁) ∈ [0, 1] | ε → 0 at antiphase, ε = 1 at synchronization |
 | Monte Carlo | Particle resonances | ε = 1 (at M₀) | 5 resonances, emp. p = 0 |
 
 ---
