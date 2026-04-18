@@ -120,6 +120,19 @@ Drehmoment, Spin, Energieübertragung und Impuls.
 
 ---
 
+## 6. Simulations-Querverweise
+
+Die folgenden RFT-internen Simulationen bestätigen A5
+(Energie als gerichtete Größe) direkt:
+
+| Simulation | A5-Nachweis |
+|------------|-------------|
+| [Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) | Energierichtung bestimmt Kontraktion (vorn, w > 0) vs. Expansion (hinten, w < 0); Vorn-/Hinten-Asymmetrie ist direkte Folge der gerichteten Energie (A5) |
+| [Doppelpendel](../../simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | ε(θ₂−θ₁) = cos²(Δθ/2) bestätigt direktionale Kopplung — Energietransfer hängt von der relativen Ausrichtung ab |
+| [Resonanzfeld-Simulation](../../simulationen/resonanzfeld/simulation_resonanzfeldtheorie.md) | PCI → MI zeigt direktionale Energieflusskontrolle |
+
+---
+
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
 
 ---

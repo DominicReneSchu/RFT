@@ -118,6 +118,19 @@ and momentum.
 
 ---
 
+## 6. Simulation Cross-References
+
+The following RFT-internal simulations directly confirm A5
+(energy as a directed quantity):
+
+| Simulation | A5 Evidence |
+|------------|-------------|
+| [Warp drive](../../concepts/warp_drive/warp_drive.md) | Energy direction determines contraction (front, w > 0) vs. expansion (rear, w < 0); front/rear asymmetry is a direct consequence of directed energy (A5) |
+| [Double pendulum](../../simulations/double_pendulum/accompanying_chapter_double_pendulum.md) | ε(θ₂−θ₁) = cos²(Δθ/2) confirms directional coupling — energy transfer depends on relative orientation |
+| [Resonance field simulation](../../simulations/resonance_field/simulation_resonance_field_theory.md) | PCI → MI shows directional energy flow control |
+
+---
+
 © Dominic-René Schu — Resonance Field Theory 2025/2026
 
 ---

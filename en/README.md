@@ -8,11 +8,13 @@ an axiomatic model of resonance. The theory describes
 fundamental processes as coupling and resonance phenomena in
 oscillation fields — formally grounded in 7 axioms (A1–A7).
 
-**Empirically validated in four domains:** Particle physics
+**Empirically validated in six domains:** Particle physics
 (1,500,000 Monte Carlo simulations, 5 resonances, emp. p = 0),
 Cosmology (1,530 FLRW simulations, Δd_η > 6σ),
-Nuclear technology (resonance reactor, κ = 1) and
-Classical mechanics (double pendulum, ε(θ₂−θ₁) = cos²(Δθ/2)).
+Nuclear technology (resonance reactor, κ = 1, λ_eff/λ₀ = 7,872 for U-235),
+Classical mechanics (double pendulum, ε(θ₂−θ₁) = cos²(Δθ/2)),
+Quantum mechanics (Schrödinger simulation, Fidelity = 1.0, 1−F ~ λ²) and
+Spacetime physics (warp drive — first positive-energy warp bubble).
 
 ---
 
@@ -122,13 +124,16 @@ The RFT is empirically validated across four independent domains:
 |--------|--------|--------|--------|
 | Particle physics | 1,500,000 MC sim. on CMS data | 5 resonances, emp. p = 0 | A3, A7 |
 | Cosmology | 1,530 FLRW simulations | Δd_η > 6σ, Δχ² = +16 vs CMB | A1, A3–A5, A7 |
-| Nuclear technology | Resonance reactor (GDR-based) | κ = 1, Q_fiss ≈ 1.0 | A1, A3, A4 |
+| Nuclear technology | Resonance reactor (GDR-based) | κ = 1, λ_eff/λ₀ = 7,872 (U-235) | A1, A3, A4 |
 | Classical mechanics | Double pendulum + coupled oscillators | ε(θ₂−θ₁) = cos²(Δθ/2) | A1, A2, A4 |
+| Quantum mechanics | Schrödinger simulation | Derivation of Schrödinger eq. from A4; Fidelity = 1.0 (4 scenarios); 1−F ~ λ² confirmed | A4 |
+| Spacetime physics | Warp drive simulation | First positive-energy warp bubble; w sign change via ε(Δφ) phase control | A4, A5 |
 
 **Falsification tests:**
 - Monte Carlo test: 1,500,000 simulations, 5 resonances, emp. p = 0 (A3 confirmed)
 - CERN resonance analysis: significant resonance excesses in mass data (A1, A3, A7)
 - Resonance reactor prediction: σ_coh > σ_incoh (experimentally testable)
+- Schrödinger simulation: falsifiable prediction |Δ⟨x⟩| ≈ 2.0·λ µm for ⁸⁷Rb atoms
 
 ---
 
@@ -181,7 +186,7 @@ A peer review process is actively being pursued:
 |---|---------|--------|-------------|
 | 1 | [ResoCalc](facts/concepts/ResoCalc/resocalc.md) | A1, A3, A4 | Torque calculation in resonance field |
 | 2 | [Resonance Reactor](facts/concepts/resonance_reactor/README.md) | A1, A3–A7 | Reactor concept |
-| 3 | [Warp Drive](facts/concepts/warp_drive/warp_drive.md) | A1, A4, A5 | Propulsion concept |
+| 3 | [Warp Drive](facts/concepts/warp_drive/warp_drive.md) | A1, A4, A5 | Propulsion concept — **first positive-energy warp bubble simulation** (E⁻ = 0); w sign change via ε(Δφ) phase control |
 | 4 | [ResoTrade V15.6](facts/concepts/ResoTrade/resotrade_trading_ai.md) | A1–A7 | +26.3% vs HODL, live since April 2026 |
 | 5 | [ResoAgent](facts/concepts/ResoAgent/ResoAgent.md) | A1–A7 | Resonance-logical agent AI |
 
@@ -197,7 +202,7 @@ A peer review process is actively being pursued:
 | 4 | [Numerical Demonstration](facts/simulations/numerical_demonstration/README.md) | A3, A4, A5 | Consistency demonstration: resonance energy, coupling efficiency, and entropy over (A, τ) |
 | 5 | [FLRW Simulations](facts/simulations/FLRW-simulations/README.md) | A1–A7 | 1,530 runs, η ≈ cos², Δd_η > 6σ |
 | 6 | [Altcoin Analysis](facts/simulations/altcoin_analysis/resotrade_altcoin_analysis.md) | A3 | 200,000 episodes, falsification test |
-| 7 | [Schrödinger Simulation](facts/simulations/schrodinger/README.md) | A4 | Derivation of the Schrödinger equation from Axiom 4 |
+| 7 | [Schrödinger Simulation](facts/simulations/schrodinger/README.md) | A4 | Derivation of Schrödinger eq. from Axiom 4; Fidelity = 1.0 (all 4 scenarios); perturbation theory 1−F ~ λ² confirmed; falsifiable prediction for ⁸⁷Rb |
 
 ---
 
