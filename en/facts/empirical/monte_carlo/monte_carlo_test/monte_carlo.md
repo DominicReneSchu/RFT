@@ -35,10 +35,11 @@ The stability of the results over many simulation runs
 is consistent with Axiom 7 (Invariance): The resonance structure
 is preserved under variation of the simulation parameters.
 
-This analysis forms, together with
-[ResoTrade](../../resotrade/resotrade_trading_ki.md), the empirical basis
-of the Resonance Field Theory — particle physics and financial
-markets as two independent domains in which resonance structures
+This analysis forms, together with the
+[FLRW simulations](../../../simulations/FLRW-simulations/README.md) and the
+[Schrödinger simulation](../../../simulations/schrodinger/README.md), the empirical basis
+of the Resonance Field Theory — particle physics, cosmology, and quantum mechanics
+as three independent domains in which resonance structures
 are demonstrated.
 
 ---
@@ -204,10 +205,11 @@ Resonance points produce measurable, significant excesses that
 cannot be reproduced by any background model. The invariance of
 the results over 10,000 simulation runs is consistent with Axiom 7.
 
-Together with [ResoTrade](../../resotrade/resotrade_trading_ki.md),
+Together with the [FLRW simulations](../../../simulations/FLRW-simulations/README.md),
 it becomes clear: resonance structures are not restricted to
-particle physics — they manifest wherever oscillations with a
-pronounced natural frequency are present (Axiom 1).
+particle physics — they manifest across domains, from
+cosmology (Hubble tension, Δd_η > 6σ) to quantum mechanics
+(Schrödinger simulation, Fidelity = 1.0) (Axiom 1).
 
 ---
 

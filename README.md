@@ -13,8 +13,8 @@ wobei ε(Δφ) die Kopplungseffizienz zwischen zwei Moden ist.
 
 **Empirische Validierung:** Teilchenphysik (1.500.000 Monte-Carlo-Simulationen,
 emp. p = 0), Kosmologie (1.530 FLRW-Simulationen, Δd_η > 6σ),
-Nukleartechnologie (Resonanzreaktor, κ = 1) und Finanzmärkte
-(ResoTrade, +26.3 % vs HODL).
+Nukleartechnologie (Resonanzreaktor, κ = 1) und Quantenmechanik
+(Schrödinger-Simulation, Fidelity = 1,0, ⁸⁷Rb-Vorhersage).
 
 **Falsifizierbare Vorhersagen:** Zwei unabhängige Experimentalvorschläge —
 Am-241 an ELI-NP (Kernphysik, Signal_koh/Signal_ink = 2,0 vs. 1,0, >50.000 σ)

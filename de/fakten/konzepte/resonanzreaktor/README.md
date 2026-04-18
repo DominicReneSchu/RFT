@@ -69,7 +69,7 @@ validiert:
 |--------|---------|
 | FLRW-Kosmologie | η emergiert als cos²(Δφ/2), d_η = 0.043 im flachen Fall, 1.530 Läufe |
 | Monte Carlo (CMS) | 5 Resonanzen bei emp. p = 0, 1.500.000 Simulationen |
-| ResoTrade | ε → 0 als Gate-Kriterium, +26.3% vs HODL über 24 Monate |
+| Schrödinger-Simulation | ε(Δφ) → 0 bei Δφ = π, Fidelity = 1,0 (alle 4 Szenarien) |
 
 ---
 

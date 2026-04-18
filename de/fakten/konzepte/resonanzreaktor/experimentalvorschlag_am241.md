@@ -50,7 +50,7 @@ Die Identität ε = η wurde in drei unabhängigen Domänen validiert:
 |--------|---------|-------------|
 | FLRW-Kosmologie | η emergiert als cos²(Δφ/2) | 1.530 Läufe |
 | Teilchenphysik (CMS) | 5 Resonanzen bei emp. p = 0 | 1.500.000 |
-| Finanzmärkte (ResoTrade) | +26,3% vs. HODL über 24 Monate | Live seit 2024 |
+| Quantenmechanik (Schrödinger) | Fidelity = 1,0, 1−F ~ λ² bestätigt | 4 Szenarien |
 
 ### 1.2 Anwendung auf den Atomkern
 
