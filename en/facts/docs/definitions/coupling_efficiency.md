@@ -17,8 +17,8 @@ and empirical validation in four independent domains.
 The identity ε(Δφ) = η(Δφ) = cos²(Δφ/2) has been empirically
 validated: particle physics (1,500,000 Monte Carlo simulations),
 cosmology (1,530 FLRW simulations), nuclear technology
-(resonance reactor, κ = 1) and financial markets (ResoTrade, +26.3%
-vs HODL, live since February 2026).
+(resonance reactor, κ = 1) and quantum mechanics
+(Schrödinger simulation, Fidelity = 1.0, ⁸⁷Rb prediction).
 
 For the complete formal axiomatics see the
 [axiomatic foundation](../definitions/axiomatic_foundation.md).
@@ -245,7 +245,7 @@ $$
 | General | Operator and observable are identical |
 | FLRW cosmology | η emerges as observable, d_η scales with H₀ |
 | Resonance reactor | κ = 1 exactly (no free parameter) |
-| ResoTrade | ε → 0 as measurable gate criterion |
+| Schrödinger simulation | ε(Δφ) → 0 at Δφ = π, Fidelity = 1.0 confirmed |
 | Monte Carlo | ε = 1 at resonance mass → Axiom 3 confirmed |
 
 ### 5.3 Empirical Evidence
@@ -447,7 +447,7 @@ $$
 - **Nuclear technology:** Resonance reactor — resonant
   transmutation of actinides (GDR-based, κ = 1)
 - **Financial markets:** ResoTrade — resonance-based BTC trading
-  (application concept; demonstrates applicability of RFT axioms)
+  (application concept)
 - **Classical mechanics:** Synchronization of coupled
   oscillators, [double pendulum](../mathematics/double_pendulum.md)
 - **Biophysics:** Neural synchronization, protein folding
@@ -467,9 +467,9 @@ packets are not treated as isolated bits, but as
 coherent field structures (Axiom 6).
 
 Compared to conventional algorithmic trading (ML, RSI,
-MACD), ResoTrade is not based on price prediction, but on
-phase recognition in the oscillation field. No classical indicator
-achieves correlation > 0.05 on the 24-month dataset.
+MACD), the application concept ResoTrade is not based on
+price prediction, but on phase recognition in the oscillation
+field (see [ResoTrade — application concept](../../concepts/ResoTrade/resotrade_trading_ai.md)).
 
 ---
 
