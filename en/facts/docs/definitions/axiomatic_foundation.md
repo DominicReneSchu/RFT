@@ -176,6 +176,27 @@ not as a free parameter.
 **Physical example:** Josephson junction — energy transfer between
 superconductors via phase-coherent coupling.
 
+**Empirical evidence (RFT-internal):**
+- **Schrödinger simulation** (→ [simulations/schrodinger/README.md](../../simulations/schrodinger/README.md)):
+  5-stage derivation of the Schrödinger equation from Axiom 4;
+  correspondence principle numerically proven — Fidelity = 1.000000000000
+  for all 4 coupling scenarios (Δφ = π, 2π/3, π/2, 0);
+  perturbation theory confirms 1−F ~ λ² (exponent 2.001, deviation 0.05%)
+  and |Δ⟨x⟩| ~ λ¹ (exponent 1.001); standard QM is the exact limit of RFT (λ → 0);
+  action principle S[ψ,Δφ] derived via Euler-Lagrange (density model as effective limit);
+  Gisin theorem: local coupling structure preserves no-signaling (consistent with GR);
+  **falsifiable prediction:** |Δ⟨x⟩| = 4.9·λ·ℓ ≈ 2.0·λ µm for ⁸⁷Rb atoms.
+- **Warp drive** (→ [concepts/warp_drive/warp_drive.md](../../concepts/warp_drive/warp_drive.md)):
+  phase control ε(Δφ) = cos²(Δφ/2) produces sign change in equation of state —
+  w(Δφ=0) = +0.034 (contraction) → w(Δφ=π/2) = −0.024 (expansion);
+  **first warp bubble simulation with purely positive energy density** (E⁻ = 0,
+  confirmed by 3D integration); RFT signature: ρ(Δφ) ∝ cos⁴(Δφ/2),
+  ρ(0)/⟨ρ⟩ = 2.5806, κ = 1.
+- **Resonance reactor** (→ [concepts/resonance_reactor/README.md](../../concepts/resonance_reactor/README.md)):
+  λ_eff/λ₀ = 7,872 for U-235 at perfect resonance (Δφ=0, κ=1);
+  **falsifiable prediction:** σ_coh > σ_incoh.
+- FLRW simulations: ε = η identity (κ = 1), 1,530 runs.
+
 ---
 
 ### Axiom 5 — Energy Direction
@@ -210,6 +231,10 @@ observable that goes beyond scalar indicators.
 **Empirical evidence (RFT-internal):** Resonance field simulation: energy direction
 vector (A5) confirmed — PCI → MI shows directional energy flow control.
 FLRW simulation: energy flow direction confirmed in cosmological context.
+Warp drive (→ [concepts/warp_drive/warp_drive.md](../../concepts/warp_drive/warp_drive.md)):
+energy direction determines contraction (front, w > 0) vs. expansion (rear, w < 0) —
+front/rear asymmetry as direct consequence of A5.
+Double pendulum: ε(θ₂−θ₁) confirms directional coupling.
 
 ---
 
@@ -374,8 +399,8 @@ through resonance coupling (A3, A6).
 | A1 | Universal oscillation | ψ = A·cos(kx−ωt+φ) | FLRW simulations: η ≈ cos²(Δφ/2), Δd_η > 6σ |
 | A2 | Superposition | Φ = Σ ψᵢ | Coupled Oscillators: multi-frequency superposition simulated |
 | A3 | Resonance condition | \|f₁/f₂ − m/n\| < δ | Monte Carlo test: 5 resonances at particle mass, emp. p = 0 |
-| A4 | Coupling energy | E = π·ε·h·f | FLRW: ε = η identity (κ = 1), Schrödinger simulation: derived from A4 |
-| A5 | Energy direction | E⃗ = E·ê(Δφ,∇Φ) | Resonance field simulation: energy direction vector; Double pendulum: ε(θ₂−θ₁) |
+| A4 | Coupling energy | E = π·ε·h·f | Schrödinger simulation: 5-stage derivation from A4, Fidelity = 1.0, 1−F ~ λ² confirmed; Warp drive: first positive-energy warp bubble via ε(Δφ) phase control; Resonance reactor: λ_eff/λ₀ = 7,872 (U-235); FLRW: ε = η identity (κ = 1) |
+| A5 | Energy direction | E⃗ = E·ê(Δφ,∇Φ) | Resonance field simulation: energy direction vector; Double pendulum: ε(θ₂−θ₁); Warp drive: front/rear asymmetry (contraction vs. expansion) |
 | A6 | Information flow | MI > 0 ⟺ PCI > 0 | Resonance field simulation: coupling efficiency and energy flow |
 | A7 | Invariance (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte Carlo test: bandwidth-independent (3 KDE); CERN data: stable resonance pattern |
 

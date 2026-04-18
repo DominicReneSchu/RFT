@@ -202,11 +202,13 @@ Jeder Spezialfall ist empirisch referenzierbar:
 |---|--------|---------|
 | 1 | FLRW | η = 1.0 bei Δφ = 0 (1.530 Simulationen) |
 | 1 | Monte Carlo | 5 Resonanzen bei Teilchenmasse (emp. p = 0) |
-| 1 | Resonanzreaktor | κ = 1 aus ε = η Identität |
+| 1 | Resonanzreaktor | λ_eff/λ₀ = 7.872 für U-235 bei Δφ=0, κ = 1 (→ [resonanzreaktor/README.md](../../konzepte/resonanzreaktor/README.md)) |
 | 0 | FLRW | η = 0.0 bei Δφ = π (exakt) |
 | 0 | Doppelpendel | ε → 0 bei Gegenphase (Δφ = π), kein Energietransfer |
 | cos²(Δφ/2) | FLRW | d_η = 0.043 im flachen Fall |
 | cos²(Δφ/2) | Doppelpendel | ε(θ₂−θ₁) = cos²(Δθ/2) dynamisch bestätigt |
+| cos²(Δφ/2) | Schrödinger-Simulation | Fidelity = 1.000000000000 für alle 4 Δφ-Szenarien (Δφ = π, 2π/3, π/2, 0) — Korrespondenzprinzip bewiesen (→ [simulationen/schrödinger/README.md](../../simulationen/schrödinger/README.md)) |
+| cos²(Δφ/2) | Warpantrieb | ρ ∝ cos⁴(Δφ/2), Vorzeichenwechsel w(Δφ=0)=+0,034 → w(Δφ=π/2)=−0,024; erste Warpblase mit positiver Energiedichte (→ [konzepte/warpantrieb/warpantrieb.md](../../konzepte/warpantrieb/warpantrieb.md)) |
 
 ---
 
