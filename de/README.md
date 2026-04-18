@@ -31,6 +31,7 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
     - [Konzepte](#konzepte)
     - [Simulationen](#simulationen)
     - [Empirische Nachweise](#empirische-nachweise)
+    - [Erklärungen](#erklärungen)
 - [Lizenz](#lizenz)
 
 ---
@@ -255,6 +256,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/cern/dokumentation.md) | A1, A3, A7 | CERN-Daten: Signifikante Resonanzüberschüsse |
 | 2 | [Monte-Carlo-Test](fakten/empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) | A1, A3, A7 | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
 
+
+---
+
+## Erklärungen
+
+| # | Erklärung | Axiome | Beschreibung |
+|---|-----------|--------|-------------|
+| 1 | [Schwarmresonanz](fakten/docs/erklaerungen/schwarmresonanz.md) | A1–A7 | Warum Vogelschwärme nicht kollidieren — und warum die RFT neue Türen öffnet |
 
 ---
 
