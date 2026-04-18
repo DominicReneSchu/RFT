@@ -411,7 +411,7 @@ through resonance coupling (A3, A6).
 - **Quantum physics:** Superposition, quantization through rational frequency ratios
 - **Classical mechanics:** Synchronization of coupled oscillators
 - **Financial markets:** Resonance-based trading (ResoTrade — application concept)
-- **Biophysics:** Neural synchronization, protein folding
+- **Biophysics / Swarm behavior:** Resonance-based explanation of flocking and schooling — why swarm organisms synchronize and how they achieve extreme maneuverability through phase coupling in the medium. See [Swarm Resonance](../explanations/swarm_resonance.md).
 - **Information theory:** Resonance-based channel capacity
 - **Cosmology:** Harmonic pattern formation
 
