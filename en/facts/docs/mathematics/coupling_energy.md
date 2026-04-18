@@ -200,11 +200,13 @@ Each special case is empirically referenced:
 |---|--------|---------|
 | 1 | FLRW | η = 1.0 at Δφ = 0 (1,530 simulations) |
 | 1 | Monte Carlo | 5 resonances at particle mass (emp. p = 0) |
-| 1 | Resonance reactor | κ = 1 from ε = η identity |
+| 1 | Resonance reactor | λ_eff/λ₀ = 7,872 for U-235 at Δφ=0, κ = 1 (→ [resonance_reactor/README.md](../../concepts/resonance_reactor/README.md)) |
 | 0 | FLRW | η = 0.0 at Δφ = π (exact) |
 | 0 | Double pendulum | ε → 0 at antiphase (Δφ = π), no energy transfer |
 | cos²(Δφ/2) | FLRW | d_η = 0.043 in the flat case |
 | cos²(Δφ/2) | Double pendulum | ε(θ₂−θ₁) = cos²(Δθ/2) confirmed dynamically |
+| cos²(Δφ/2) | Schrödinger simulation | Fidelity = 1.000000000000 for all 4 Δφ scenarios (Δφ = π, 2π/3, π/2, 0) — correspondence principle proven (→ [simulations/schrodinger/README.md](../../simulations/schrodinger/README.md)) |
+| cos²(Δφ/2) | Warp drive | ρ ∝ cos⁴(Δφ/2), sign change w(Δφ=0)=+0.034 → w(Δφ=π/2)=−0.024; first positive-energy warp bubble (→ [concepts/warp_drive/warp_drive.md](../../concepts/warp_drive/warp_drive.md)) |
 
 ---
 
