@@ -31,6 +31,7 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
     - [Concepts](#concepts)
     - [Simulations](#simulations)
     - [Empirical Evidence](#empirical-evidence)
+    - [Explanations](#explanations)
 - [License](#license)
 
 ---
@@ -255,6 +256,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | 1 | [Resonance Analysis in Mass Data](facts/empirical/cern/documentation.md) | A1, A3, A7 | CERN data: significant resonance excesses |
 | 2 | [Monte Carlo Test](facts/empirical/monte_carlo/monte_carlo_test/monte_carlo.md) | A1, A3, A7 | 1,500,000 simulations, 5 resonances, emp. p = 0 |
 
+
+---
+
+## Explanations
+
+| # | Explanation | Axioms | Description |
+|---|-------------|--------|-------------|
+| 1 | [Swarm Resonance](facts/docs/explanations/swarm_resonance.md) | A1–A7 | Why flocks of birds don't collide — and why RFT opens new doors |
 
 ---
 
