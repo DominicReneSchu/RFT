@@ -8,11 +8,13 @@ einem axiomatischen Modell der Resonanz. Die Theorie beschreibt
 fundamentale Prozesse als Kopplungs- und Resonanzphänomene in
 Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
 
-**Empirisch validiert in vier Domänen:** Teilchenphysik
+**Empirisch validiert in sechs Domänen:** Teilchenphysik
 (1.500.000 Monte-Carlo-Simulationen, 5 Resonanzen, emp. p = 0),
 Kosmologie (1.530 FLRW-Simulationen, Δd_η > 6σ),
-Nukleartechnologie (Resonanzreaktor, κ = 1) und
-Klassische Mechanik (Doppelpendel, ε(θ₂−θ₁) = cos²(Δθ/2)).
+Nukleartechnologie (Resonanzreaktor, κ = 1, λ_eff/λ₀ = 7.872 für U-235),
+Klassische Mechanik (Doppelpendel, ε(θ₂−θ₁) = cos²(Δθ/2)),
+Quantenmechanik (Schrödinger-Simulation, Fidelity = 1,0, 1−F ~ λ²) und
+Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
 
 ---
 
@@ -122,13 +124,16 @@ Die RFT wird an vier unabhängigen Domänen empirisch validiert:
 |--------|---------|----------|--------|
 | Teilchenphysik | 1.500.000 MC-Sim. auf CMS-Daten | 5 Resonanzen, emp. p = 0 | A3, A7 |
 | Kosmologie | 1.530 FLRW-Simulationen | Δd_η > 6σ, Δχ² = +16 vs CMB | A1, A3–A5, A7 |
-| Nukleartechnologie | Resonanzreaktor (GDR-basiert) | κ = 1, Q_fiss ≈ 1.0 | A1, A3, A4 |
+| Nukleartechnologie | Resonanzreaktor (GDR-basiert) | κ = 1, λ_eff/λ₀ = 7.872 (U-235) | A1, A3, A4 |
 | Klassische Mechanik | Doppelpendel + Gekoppelte Oszillatoren | ε(θ₂−θ₁) = cos²(Δθ/2) | A1, A2, A4 |
+| Quantenmechanik | Schrödinger-Simulation | Ableitung der Schrödinger-Gl. aus A4; Fidelity = 1,0 (4 Szenarien); 1−F ~ λ² bestätigt | A4 |
+| Raumzeitphysik | Warpantriebs-Simulation | Erste Warpblase mit positiver Energiedichte; w-Vorzeichenwechsel via ε(Δφ)-Phasensteuerung | A4, A5 |
 
 **Falsifikationstests:**
 - Monte-Carlo-Test: 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 (A3 bestätigt)
 - CERN-Resonanzanalyse: Signifikante Resonanzüberschüsse in Massendaten (A1, A3, A7)
 - Resonanzreaktor-Vorhersage: σ_coh > σ_incoh (experimentell prüfbar)
+- Schrödinger-Simulation: falsifizierbare Vorhersage |Δ⟨x⟩| ≈ 2,0·λ µm für ⁸⁷Rb-Atome
 
 ---
 
@@ -181,7 +186,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 |---|---------|--------|-------------|
 | 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | A1, A3, A4 | Drehmomentberechnung im Resonanzfeld |
 | 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | A1, A3–A7 | Reaktorkonzept |
-| 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | A1, A4, A5 | Antriebskonzept |
+| 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | A1, A4, A5 | Antriebskonzept — **erste Warpblasensimulation mit positiver Energiedichte** (E⁻ = 0); w-Vorzeichenwechsel via ε(Δφ)-Phasensteuerung |
 | 4 | [ResoTrade V15.6](fakten/konzepte/ResoTrade/resotrade_trading_ki.md) | A1–A7 | +26.3% vs HODL, Live seit April 2026 |
 | 5 | [ResoAgent](fakten/konzepte/ResoAgent/ResoAgent.md) | A1–A7 | Resonanzlogische Agenten-KI |
 
@@ -197,7 +202,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 | 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/README.md) | A3, A4, A5 | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
 | 5 | [FLRW-Simulationen](fakten/simulationen/FLRW-Simulationen/README.md) | A1–A7 | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
 | 6 | [Altcoin-Analyse](fakten/simulationen/altcoin_analyse/resotrade_altcoin_analyse.md) | A3 | 200.000 Episoden, Falsifikationstest |
-| 7 | [Schrödinger-Simulation](fakten/simulationen/schrödinger/README.md) | A4 | Ableitung der Schrödinger-Gleichung aus Axiom 4 |
+| 7 | [Schrödinger-Simulation](fakten/simulationen/schrödinger/README.md) | A4 | Ableitung der Schrödinger-Gl. aus Axiom 4; Fidelity = 1,0 (alle 4 Szenarien); Störungstheorie 1−F ~ λ² bestätigt; falsifizierbare Vorhersage für ⁸⁷Rb |
 
 ---
 

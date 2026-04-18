@@ -176,6 +176,27 @@ Phasengleichheit (ε = 1) und null bei Phasenorthogonalität (ε = 0).
 **Physikalisches Beispiel:** Josephson-Kontakt — Energieübertragung
 zwischen Supraleitern über phasenkohärente Kopplung.
 
+**Empirischer Nachweis (RFT-intern):**
+- **Schrödinger-Simulation** (→ [simulationen/schrödinger/README.md](../../simulationen/schrödinger/README.md)):
+  5-stufige Ableitung der Schrödinger-Gleichung aus Axiom 4;
+  Korrespondenzprinzip numerisch bewiesen — Fidelity = 1.000000000000
+  für alle 4 Kopplungsszenarien (Δφ = π, 2π/3, π/2, 0);
+  Störungstheorie bestätigt 1−F ~ λ² (Exponent 2.001, Abweichung 0,05%)
+  und |Δ⟨x⟩| ~ λ¹ (Exponent 1.001); Standard-QM ist der exakte Grenzfall der RFT (λ → 0);
+  Wirkungsprinzip S[ψ,Δφ] über Euler-Lagrange abgeleitet (Dichtemodell als effektiver Grenzfall);
+  Gisin-Theorem: lokale Kopplungsstruktur bewahrt No-Signaling (konsistent mit ART);
+  **falsifizierbare Vorhersage:** |Δ⟨x⟩| = 4,9·λ·ℓ ≈ 2,0·λ µm für ⁸⁷Rb-Atome.
+- **Warpantrieb** (→ [konzepte/warpantrieb/warpantrieb.md](../../konzepte/warpantrieb/warpantrieb.md)):
+  Phasensteuerung ε(Δφ) = cos²(Δφ/2) erzeugt Vorzeichenwechsel in der Zustandsgleichung —
+  w(Δφ=0) = +0,034 (Kontraktion) → w(Δφ=π/2) = −0,024 (Expansion);
+  **erste Warpblasensimulation mit rein positiver Energiedichte** (E⁻ = 0,
+  bestätigt durch 3D-Integration); RFT-Signatur: ρ(Δφ) ∝ cos⁴(Δφ/2),
+  ρ(0)/⟨ρ⟩ = 2,5806, κ = 1.
+- **Resonanzreaktor** (→ [konzepte/resonanzreaktor/README.md](../../konzepte/resonanzreaktor/README.md)):
+  λ_eff/λ₀ = 7.872 für U-235 bei perfekter Resonanz (Δφ=0, κ=1);
+  **falsifizierbare Vorhersage:** σ_coh > σ_incoh.
+- FLRW-Simulationen: ε = η Identität (κ = 1), 1.530 Läufe.
+
 ---
 
 ### Axiom 5 — Energierichtung
@@ -210,6 +231,10 @@ verwertbare Observable, die über skalare Indikatoren hinausgeht.
 **Empirischer Nachweis (RFT-intern):** Resonanzfeld-Simulation: Energierichtungsvektor
 (A5) bestätigt — PCI → MI zeigt direktionale Energieflusskontrolle.
 FLRW-Simulation: Energiefluss-Direktion bestätigt in kosmologischem Kontext.
+Warpantrieb (→ [konzepte/warpantrieb/warpantrieb.md](../../konzepte/warpantrieb/warpantrieb.md)):
+Energierichtung bestimmt Kontraktion (vorn, w > 0) vs. Expansion (hinten, w < 0) —
+Vorn-/Hinten-Asymmetrie als direkte Folge von A5.
+Doppelpendel: ε(θ₂−θ₁) bestätigt direktionale Kopplung.
 
 ---
 
@@ -374,8 +399,8 @@ Information mit dem Feld austauscht.
 | A1 | Universelle Schwingung | ψ = A·cos(kx−ωt+φ) | FLRW-Simulationen: η ≈ cos²(Δφ/2), Δd_η > 6σ |
 | A2 | Superposition | Φ = Σ ψᵢ | Gekoppelte Oszillatoren: Mehrfrequenz-Überlagerung simuliert |
 | A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ | Monte-Carlo-Test: 5 Resonanzen bei Teilchenmasse, emp. p = 0 |
-| A4 | Kopplungsenergie | E = π·ε·h·f | FLRW: ε = η Identität (κ = 1), Schrödinger-Simulation: Ableitung aus A4 |
-| A5 | Energierichtung | E⃗ = E·ê(Δφ,∇Φ) | Resonanzfeld-Simulation: Energierichtungsvektor, Doppelpendel: ε(θ₂−θ₁) |
+| A4 | Kopplungsenergie | E = π·ε·h·f | Schrödinger-Simulation: 5-stufige Ableitung aus A4, Fidelity = 1,0, 1−F ~ λ² bestätigt; Warpantrieb: erste Warpblase mit positiver Energiedichte via ε(Δφ)-Phasensteuerung; Resonanzreaktor: λ_eff/λ₀ = 7.872 (U-235); FLRW: ε = η Identität (κ = 1) |
+| A5 | Energierichtung | E⃗ = E·ê(Δφ,∇Φ) | Resonanzfeld-Simulation: Energierichtungsvektor, Doppelpendel: ε(θ₂−θ₁); Warpantrieb: Vorn-/Hinten-Asymmetrie (Kontraktion vs. Expansion) |
 | A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Resonanzfeld-Simulation: Kopplungseffizienz und Energiefluss |
 | A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte-Carlo-Test: bandbrei­tenunabhängig (3 KDE), CERN-Daten: stabiles Resonanzmuster |
 
