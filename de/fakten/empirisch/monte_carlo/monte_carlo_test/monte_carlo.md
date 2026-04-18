@@ -36,10 +36,11 @@ Die Stabilität der Ergebnisse über viele Simulationsdurchläufe
 ist konsistent mit Axiom 7 (Invarianz): Die Resonanzstruktur
 bleibt unter Variation der Simulationsparameter erhalten.
 
-Diese Analyse bildet gemeinsam mit
-[ResoTrade](../../resotrade/resotrade_trading_ki.md) die empirische Basis
-der Resonanzfeldtheorie — Teilchenphysik und Finanzmärkte als
-zwei unabhängige Domänen, in denen Resonanzstrukturen
+Diese Analyse bildet gemeinsam mit den
+[FLRW-Simulationen](../../../simulationen/FLRW-Simulationen/README.md) und der
+[Schrödinger-Simulation](../../../simulationen/schrödinger/README.md) die empirische Basis
+der Resonanzfeldtheorie — Teilchenphysik, Kosmologie und Quantenmechanik als
+drei unabhängige Domänen, in denen Resonanzstrukturen
 nachgewiesen werden.
 
 ---
@@ -211,10 +212,11 @@ durch kein Hintergrundmodell reproduziert werden können. Die
 Invarianz der Ergebnisse über 10.000 Simulationsdurchläufe ist
 konsistent mit Axiom 7.
 
-Im Zusammenspiel mit [ResoTrade](../../resotrade/resotrade_trading_ki.md) zeigt
+Im Zusammenspiel mit den [FLRW-Simulationen](../../../simulationen/FLRW-Simulationen/README.md) zeigt
 sich: Resonanzstrukturen sind nicht auf die Teilchenphysik
-beschränkt — sie manifestieren sich überall dort, wo Schwingungen
-mit ausgeprägter Eigenfrequenz vorliegen (Axiom 1).
+beschränkt — sie manifestieren sich domänenübergreifend, von der
+Kosmologie (Hubble-Spannung, Δd_η > 6σ) bis zur Quantenmechanik
+(Schrödinger-Simulation, Fidelity = 1,0) (Axiom 1).
 
 ---
 
