@@ -387,4 +387,20 @@ Long-term:
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| ρ ∝ cos⁴(Δφ/2), first warp bubble with ρ > 0 everywhere (E⁻ = 0) | Schrödinger simulation: derivation of ε(Δφ) = cos²(Δφ/2), Fidelity = 1.0 | Quantum mechanics | [→ Schrödinger](../../simulations/schrodinger/README.md) |
+| Klein-Gordon in FLRW → warp uses exactly these equations | FLRW simulation: cosmological expansion as natural model for the warp | Cosmology | [→ FLRW](../../simulations/FLRW_simulations/README.md) |
+| Three-stage energy cascade: Stage 1 = resonance reactors | Resonance reactor: direct technical dependency, Stage 1 of the cascade | Nuclear physics | [→ Resonance reactor](../resonance_reactor/resonance_reactor.md) |
+| E = π·ε(Δφ)·ℏ·f as foundation of phase control | Coupling energy document: geometric derivation of E = π·ε·ℏ·f | Mathematics | [→ Coupling energy](../../docs/mathematics/coupling_energy.md) |
+| Front/rear asymmetry as macroscopic energy direction | Double pendulum: ε(θ₂−θ₁) as classical-mechanical analogue | Classical mechanics | [→ Double pendulum](../../simulations/double_pendulum/accompanying_chapter_double_pendulum.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 [⬅️ back](README.md)

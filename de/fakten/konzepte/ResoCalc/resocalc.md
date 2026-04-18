@@ -271,4 +271,18 @@ Wo heute verschiedene Ingenieure verschiedene Ergebnisse erhalten, liefert ResoC
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| Drehmoment als Spezialfall der Oszillatorkopplung | Gekoppelte Oszillatoren: direkte Entsprechung — Kopplung zwischen zwei Systemen | Klassische Mechanik | [→ Gekoppelte Oszillatoren](../../simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) |
+| Kopplungseffizienz im makroskopischen Bereich | Resonanzreaktor: dieselbe Kopplungseffizienz auf Kernphysik-Skala | Kernphysik | [→ Resonanzreaktor](../resonanzreaktor/resonanzreaktor.md) |
+| E = π·ε·ℏ·f als Berechnungsgrundlage | Kopplungsenergie-Dokument: geometrische Herleitung der Grundformel | Mathematik | [→ Kopplungsenergie](../../docs/mathematik/kopplungsenergie.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](../../../README.md)

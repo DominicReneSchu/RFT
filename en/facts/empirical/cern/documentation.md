@@ -251,4 +251,18 @@ the results.
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| Resonance excesses in CMS data, scale invariance A7 | Monte Carlo: statistical confirmation of the same resonances, 1.5 M simulations | Particle physics | [→ Monte Carlo](../monte_carlo/monte_carlo_test/monte_carlo.md) |
+| Nuclear-physics resonance in the same energy range | Resonance reactor: nuclear resonances via GDR frequency, λ_eff/λ₀ = 7.872 | Nuclear physics | [→ Resonance reactor](../../concepts/resonance_reactor/resonance_reactor.md) |
+| Scale invariance of resonance structure (A7) | FLRW simulation: same scale invariance at cosmological scale | Cosmology | [→ FLRW](../../simulations/FLRW_simulations/README.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [back](../../../README.md)

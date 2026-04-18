@@ -65,4 +65,17 @@ from numerische_demonstration import (
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| Konsistenz von A3–A5 über (A, τ)-Parameterraum | FLRW-Simulation: dieselbe Konsistenz über 1.530 Läufe, Δd_η > 6σ | Kosmologie | [→ FLRW](../FLRW-Simulationen/README.md) |
+| Störungstheorie als unabhängiger Konsistenzcheck | Schrödinger-Simulation: Störungstheorie 1−F ~ λ², 0.05% Abweichung | Quantenmechanik | [→ Schrödinger](../schrödinger/README.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 ⬅️ [zurück](../../../README.md#simulationen)

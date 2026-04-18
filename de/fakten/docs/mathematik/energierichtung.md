@@ -137,4 +137,18 @@ Die folgenden RFT-internen Simulationen bestätigen A5
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| Vorn/Hinten-Asymmetrie als makroskopische Energierichtung | Warpantrieb: Phase Δφ schaltet zwischen Kontraktion (vorn) und Expansion (hinten) | Raumzeitgeometrie | [→ Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) |
+| ε(θ₂−θ₁) = cos²(Δθ/2) direktionale Kopplung | Doppelpendel: klassisch-mechanischer Nachweis direktionaler Energieabhängigkeit | Klassische Mechanik | [→ Doppelpendel](../../simulationen/doppelpendel/begleitkapitel_doppelpendel.md) |
+| PCI → MI, direktionale Energieflusskontrolle | Resonanzfeld-Simulation: numerische Demonstration der Energierichtungskontrolle | Feldtheorie | [→ Resonanzfeld](../../simulationen/resonanzfeld/simulation_resonanzfeldtheorie.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](../../../README.md)

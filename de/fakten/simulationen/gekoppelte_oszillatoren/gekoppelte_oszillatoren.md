@@ -78,4 +78,19 @@ python coupled_oscillators.py
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| Energieaustausch bei Resonanz, ε = exp(−α·|f₁−f₂|) | Schrödinger-Simulation: quantenmechanisches Pendant, Fidelity = 1.000000000000 | Quantenmechanik | [→ Schrödinger](../schrödinger/README.md) |
+| Nichtlineare Kopplung zweier Oszillatoren | Doppelpendel: nichtlineare Erweiterung derselben Kopplungslogik | Klassische Mechanik | [→ Doppelpendel](../doppelpendel/begleitkapitel_doppelpendel.md) |
+| PCI und MI aus Kopplungslogik | Resonanzfeld-Simulation: PCI → MI zeigt direktionale Energieflusskontrolle | Feldtheorie | [→ Resonanzfeld](../resonanzfeld/simulation_resonanzfeldtheorie.md) |
+| E_res = π·ε·h·f, klassische Kopplung | ResoCalc: Drehmoment als Spezialfall der Oszillatorkopplung | Ingenieurwesen | [→ ResoCalc](../../konzepte/ResoCalc/resocalc.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 ⬅️ [zurück zur Übersicht](../../../README.md#simulationen)

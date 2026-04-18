@@ -143,4 +143,18 @@ python double_pendulum.py
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| ε(θ₂−θ₁) = cos²(Δθ/2) as classical-mechanical analogue | Coupled oscillators: linear classical counterpart | Classical mechanics | [→ Coupled oscillators](../coupled_oscillators/coupled_oscillators.md) |
+| Energy direction and phase dependence | Warp drive: front/rear asymmetry as macroscopic energy direction | Spacetime geometry | [→ Warp drive](../../concepts/warp_drive/warp_drive.md) |
+| ε(Δφ) = cos²(Δφ/2) also confirmed in double pendulum | Schrödinger simulation: same formula at quantum scale, Fidelity = 1.000000000000 | Quantum mechanics | [→ Schrödinger](../schrodinger/README.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [back to overview](../../../README.md#simulations)

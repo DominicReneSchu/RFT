@@ -233,4 +233,19 @@ a universal correction factor.
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| E = π·ε(Δφ)·ℏ·f geometrically derived | Schrödinger simulation: numerical proof, Fidelity = 1.000000000000 for all Δφ | Quantum mechanics | [→ Schrödinger](../../simulations/schrodinger/README.md) |
+| ε = η (operator = observable, no free parameter) | FLRW simulation: η = cos²(Δφ/2) over 1,530 runs, Δd_η > 6σ | Cosmology | [→ FLRW](../../simulations/FLRW_simulations/README.md) |
+| E = π·ε(Δφ)·ℏ·f, cos⁴ signature in the warp drive | Warp drive: ρ ∝ cos⁴(Δφ/2), first warp bubble with ρ > 0 everywhere | Spacetime geometry | [→ Warp drive](../../concepts/warp_drive/warp_drive.md) |
+| Fundamental formula determines f_GDR = E_GDR/(π·ℏ) | Resonance reactor: λ_eff/λ₀ = 7.872 for U-235 directly from the fundamental formula | Nuclear physics | [→ Resonance reactor](../../concepts/resonance_reactor/resonance_reactor.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 [⬅️ back](../../../README.md)
