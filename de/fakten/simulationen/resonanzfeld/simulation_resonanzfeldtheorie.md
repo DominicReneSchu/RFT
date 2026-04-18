@@ -127,4 +127,18 @@ Echtzeit-Variation aller Parameter:
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| PCI → MI, direktionale Energieflusskontrolle über ε(Δφ) | Gekoppelte Oszillatoren: detailliertere Oszillatorkopplung mit Resonanzerkennung | Klassische Mechanik | [→ Gekoppelte Oszillatoren](../gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) |
+| ε(Δφ) = cos²(Δφ/2) in Resonanzfelddynamik | FLRW-Simulation: dieselbe Kopplungseffizienz auf kosmologischer Skala | Kosmologie | [→ FLRW](../FLRW-Simulationen/README.md) |
+| Kopplungseffizienz steuert Energieaustausch | Schrödinger-Simulation: quantenmechanische Version derselben Kopplung | Quantenmechanik | [→ Schrödinger](../schrödinger/README.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 ⬅️ [zurück zur Übersicht](../../../README.md#simulationen)

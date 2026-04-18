@@ -127,4 +127,18 @@ real-time variation of all parameters:
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| PCI → MI, directional energy flow control via ε(Δφ) | Coupled oscillators: more detailed oscillator coupling with resonance detection | Classical mechanics | [→ Coupled oscillators](../coupled_oscillators/coupled_oscillators.md) |
+| ε(Δφ) = cos²(Δφ/2) in resonance field dynamics | FLRW simulation: same coupling efficiency at cosmological scale | Cosmology | [→ FLRW](../FLRW_simulations/README.md) |
+| Coupling efficiency controls energy exchange | Schrödinger simulation: quantum-mechanical version of the same coupling | Quantum mechanics | [→ Schrödinger](../schrodinger/README.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [Back to Overview](../../../README.md#simulations)

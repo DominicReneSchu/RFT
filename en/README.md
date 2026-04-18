@@ -151,6 +151,48 @@ A peer review process is actively being pursued:
 
 ---
 
+## How Results Confirm Each Other
+
+Resonance Field Theory states that resonance is the **connecting element of physics**.
+This connection becomes visible because the same formula is confirmed in completely
+independent domains — from different directions, at different scales.
+
+### ε(Δφ) = cos²(Δφ/2) — one formula, three scales
+
+| Domain | Simulation/Evidence | Result | Link |
+|--------|---------------------|--------|------|
+| Quantum mechanics | Schrödinger simulation | Fidelity = 1.000000000000 for all 4 Δφ scenarios | [→](facts/simulations/schrodinger/README.md) |
+| Cosmology | FLRW simulation (1,530 runs) | η = cos²(Δφ/2) exact, Δd_η > 6σ | [→](facts/simulations/FLRW_simulations/README.md) |
+| Nuclear physics | Resonance reactor (U-235) | κ = 1 exact, λ_eff/λ₀ = 7.872 | [→](facts/concepts/resonance_reactor/resonance_reactor.md) |
+| Classical mechanics | Double pendulum, coupled oscillators | ε(θ₂−θ₁) = cos²(Δθ/2) | [→](facts/simulations/double_pendulum/accompanying_chapter_double_pendulum.md) |
+| Spacetime geometry | Warp drive simulation | ρ ∝ cos⁴(Δφ/2), E⁻ = 0 | [→](facts/concepts/warp_drive/warp_drive.md) |
+
+### Resonance condition (A3) — confirmed from three independent directions
+
+| Evidence | Method | Result | Link |
+|---------|--------|--------|------|
+| CERN resonance analysis | CMS Open Data | Significant resonance excesses, A7 confirmed | [→](facts/empirical/cern/documentation.md) |
+| Monte Carlo test | 1,500,000 simulations | 5 resonances, emp. p = 0 | [→](facts/empirical/monte_carlo/monte_carlo_test/monte_carlo.md) |
+| Resonance reactor | GDR-based | f_γ = f_GDR condition, σ_coh > σ_incoh | [→](facts/concepts/resonance_reactor/resonance_reactor.md) |
+
+### Cross-connections in detail
+
+```
+Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
+     │                    │                         │
+  Fidelity=1          η = cos²              ρ ∝ cos⁴, E⁻=0
+     │                    │                         │
+     └──Perturbation──→ Numerical Demo    Cascade Stage 3
+                          │                         │
+                     Consistency A3–A5   Resonance reactor (Stage 1)
+                                                     │
+                     CERN ←─ A3 ─→ Monte Carlo ──────┘
+```
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 # Contents
 
 ## Axiomatics and Definitions

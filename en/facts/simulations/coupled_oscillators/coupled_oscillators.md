@@ -78,4 +78,19 @@ python coupled_oscillators.py
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| Energy exchange at resonance, ε = exp(−α·|f₁−f₂|) | Schrödinger simulation: quantum-mechanical counterpart, Fidelity = 1.000000000000 | Quantum mechanics | [→ Schrödinger](../schrodinger/README.md) |
+| Nonlinear coupling of two oscillators | Double pendulum: nonlinear extension of the same coupling logic | Classical mechanics | [→ Double pendulum](../double_pendulum/accompanying_chapter_double_pendulum.md) |
+| PCI and MI from coupling logic | Resonance field simulation: PCI → MI shows directional energy flow control | Field theory | [→ Resonance field](../resonance_field/simulation_resonance_field_theory.md) |
+| E_res = π·ε·h·f, classical coupling | ResoCalc: torque as a special case of oscillator coupling | Engineering | [→ ResoCalc](../../concepts/ResoCalc/resocalc.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 ⬅️ [Back to Overview](../../../README.md#simulations)

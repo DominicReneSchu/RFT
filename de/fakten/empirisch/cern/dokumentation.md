@@ -257,4 +257,18 @@ um die Ergebnisse weiter zu festigen.
 
 ---
 
+## Querbestätigung innerhalb der RFT
+
+Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus anderen Bereichen:
+
+| Ergebnis hier | Bestätigt durch | Bereich | Link |
+|---|---|---|---|
+| Resonanzexzesse in CMS-Daten, Skaleninvarianz A7 | Monte-Carlo: statistische Absicherung derselben Resonanzen, 1,5 Mio. Simulationen | Teilchenphysik | [→ Monte-Carlo](../monte_carlo/monte_carlo_test/monte_carlo.md) |
+| Kernphysikalische Resonanz im selben Energiebereich | Resonanzreaktor: Kernresonanzen über GDR-Frequenz, λ_eff/λ₀ = 7.872 | Kernphysik | [→ Resonanzreaktor](../../konzepte/resonanzreaktor/resonanzreaktor.md) |
+| Skaleninvarianz der Resonanzstruktur (A7) | FLRW-Simulation: dieselbe Skaleninvarianz auf kosmologischer Skala | Kosmologie | [→ FLRW](../../simulationen/FLRW-Simulationen/README.md) |
+
+> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+
+---
+
 [Zurück zur Übersicht](../../../README.md)

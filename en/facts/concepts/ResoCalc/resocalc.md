@@ -271,4 +271,18 @@ Where different engineers obtain different results today, ResoCalc delivers a re
 
 ---
 
+## Cross-Confirmation within RFT
+
+This result confirms and is confirmed by independent results from other domains:
+
+| Result here | Confirmed by | Domain | Link |
+|---|---|---|---|
+| Torque as a special case of oscillator coupling | Coupled oscillators: direct correspondence — coupling between two systems | Classical mechanics | [→ Coupled oscillators](../../simulations/coupled_oscillators/coupled_oscillators.md) |
+| Coupling efficiency in the macroscopic domain | Resonance reactor: same coupling efficiency at nuclear-physics scale | Nuclear physics | [→ Resonance reactor](../resonance_reactor/resonance_reactor.md) |
+| E = π·ε·ℏ·f as computational foundation | Coupling energy document: geometric derivation of the fundamental formula | Mathematics | [→ Coupling energy](../../docs/mathematics/coupling_energy.md) |
+
+> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+
+---
+
 [Back to overview](../../../README.md)
