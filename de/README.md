@@ -180,11 +180,11 @@ bestätigt wird — aus verschiedenen Richtungen, auf verschiedenen Skalen.
 
 ```
 Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrieb
-     │                    │                         │
+     │                    │                          │
   Fidelity=1          η = cos²              ρ ∝ cos⁴, E⁻=0
-     │                    │                         │
+     │                    │                          │
      └──Störungstheorie──→ Numerische Demo    Kaskade Stufe 3
-                          │                         │
+                          │                          │
                      Konsistenz A3–A5    Resonanzreaktor (Stufe 1)
                                                      │
                      CERN ←─ A3 ─→ Monte-Carlo ──────┘
