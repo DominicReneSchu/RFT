@@ -180,11 +180,11 @@ independent domains — from different directions, at different scales.
 
 ```
 Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
-     │                    │                         │
+     │                    │                          │
   Fidelity=1          η = cos²              ρ ∝ cos⁴, E⁻=0
-     │                    │                         │
+     │                    │                          │
      └──Perturbation──→ Numerical Demo    Cascade Stage 3
-                          │                         │
+                          │                          │
                      Consistency A3–A5   Resonance reactor (Stage 1)
                                                      │
                      CERN ←─ A3 ─→ Monte Carlo ──────┘
