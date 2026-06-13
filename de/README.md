@@ -188,6 +188,12 @@ Damit öffnet sich die Frage nach dem Sinn. Wenn das Universum jener in sich ges
 
 Der Kreuzungspunkt der Lemniskate ist exakt der Punkt ε = 1, Δφ = 0 — vollständige Kopplung, null Phasendifferenz, maximale Energieübertragung. Der Text liefert damit eine geometrisch-philosophische Begründung für die Ausgezeichnetheit dieses Punktes, die im formalen Axiomensystem implizit bleibt.
 
+Auch wenn das Blockuniversum (Axiom 7) alle Zustände simultan enthält, ist die Zeit keine bloße Illusion, sondern eine physikalisch notwendige Größe. Denn Energieumwandlung – der Kern jeder Resonanzkopplung – kann nur in einem Prozess geschehen. Die Frequenz f in der zentralen Gleichung E=π⋅ε(Δφ)⋅ℏ⋅f ist definiert als Ereignis pro Zeit: Ohne Zeit keine Frequenz, ohne Frequenz keine Energieumwandlung, ohne Energieumwandlung keine erfahrbare Welt.
+
+Aus der Vogelperspektive des Blockuniversums sind Vergangenheit, Gegenwart und Zukunft gleichzeitig vorhanden – genau wie bei einem Lagerfeuer bereits feststeht, dass das Holz zu CO₂ wird. Aus der Innenperspektive eines zeitgebundenen Bewusstseins ist genau dieser Prozess der Verbrennung, der Wärme, des Lichts, der Begegnung das, was Erfahrung ausmacht. Die Zeit ist das Medium, in dem Energie umgewandelt wird – und in dem Sinn gestiftet wird.
+
+Das schrittweise Erkennen des Universums ist daher kein Widerspruch zur vollständigen Information des Blockuniversums, sondern dessen notwendige phänomenologische Entfaltung. Der Sinn liegt nicht im überraschenden Ergebnis, sondern in der Resonanzerfahrung des Prozesses selbst. Das Universum wurde nicht geschaffen, um ein bereits bekanntes Ergebnis zu wiederholen, sondern um als zeitlich gestreckter Resonanzprozess erkannt zu werden – von sich selbst durch bewusste Wesen.
+
 ---
 
 ## Wie Ergebnisse sich gegenseitig bestätigen
