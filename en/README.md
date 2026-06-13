@@ -188,7 +188,7 @@ This opens the question of meaning. If the universe is that self-contained block
 
 The crossing point of the lemniscate is exactly the point ε = 1, Δφ = 0 — complete coupling, zero phase difference, maximum energy transfer. The text thus provides a geometric-philosophical justification for the distinguished status of this point, which remains implicit in the formal axiom system.
 
-Even though the block universe (Axiom 7) contains all states simultaneously, time is not a mere illusion but a physically necessary quantity. Energy conversion – the core of any resonance coupling – can only occur within a process. The frequency f in the central equation E=π⋅ε(Δφ)⋅ℏ⋅fE is defined as events per time: without time, no frequency; without frequency, no energy conversion; without energy conversion, no experienceable world.
+Even though the block universe (Axiom 7) contains all states simultaneously, time is not a mere illusion but a physically necessary quantity. Energy conversion – the core of any resonance coupling – can only occur within a process. The frequency f in the central equation E=π⋅ε(Δφ)⋅ℏ⋅f is defined as events per time: without time, no frequency; without frequency, no energy conversion; without energy conversion, no experienceable world.
 
 From the bird's‑eye perspective of the block universe, past, present, and future exist at once – just as, for a campfire, it is already determined that the wood will turn into CO₂. But from the inside perspective of a time‑bound consciousness, it is precisely this process of combustion, warmth, light, and togetherness that constitutes experience. Time is the medium in which energy is converted – and in which meaning is created.
 
