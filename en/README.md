@@ -26,6 +26,11 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
 - [PDF Summary](#pdf-summary)
 - [Peer Review](#peer-review)
 - [Resonance Field Theory (RFT) – The Universe as a Resonance Bubble](#resonance-field-theory-rft--the-universe-as-a-resonance-bubble)
+    - [Part 1: The Formal Foundation – Infinity, Time, and Meaning](#part-1-the-formal-foundation--infinity-time-and-meaning)
+    - [Part 2: The Ontological Consequence – The Peak of the Distribution](#part-2-the-ontological-consequence--the-peak-of-the-distribution)
+    - [Part 3: The Theological Mirror – A Language for the Ineffable](#part-3-the-theological-mirror--a-language-for-the-ineffable)
+    - [Synthesis – The Universe as a Singular Transmitter](#synthesis--the-universe-as-a-singular-transmitter)
+    - [How Results Confirm Each Other](#how-results-confirm-each-other)
 - [Contents](#contents)
     - [Axiomatics and Definitions](#axiomatics-and-definitions)
     - [Mathematics and Physics](#mathematics-and-physics)
@@ -120,7 +125,7 @@ Complete formalization: [Axiomatic Foundation](facts/docs/definitions/axiomatic_
 
 ## Empirical Validation
 
-The RFT is empirically validated across four independent domains:
+The RFT is empirically validated across six independent domains:
 
 | Domain | Method | Result | Axioms |
 |--------|--------|--------|--------|
@@ -152,6 +157,8 @@ A peer review process is actively being pursued:
 [**rft_manuscript_en_iop.pdf**](peer_review_rft/manuscript_en/rft_manuscript_en_iop.pdf)
 
 ---
+
+> **Note:** The following sections develop the philosophical, ontological, and theological embedding of the RFT. They extend beyond the axiomatic core and are to be understood as interpretive extensions.
 
 # Resonance Field Theory (RFT) – The Universe as a Resonance Bubble
 
@@ -237,6 +244,8 @@ The gradual recognition of the universe is therefore not a contradiction to the 
 
 ---
 
+> ⚠️ **Interpretive Extension** — The following sections (Parts 2 and 3) do not constitute physical claims of the axiomatic core, but a philosophical-theological reflection based on the RFT structure.
+
 ## Part 2: The Ontological Consequence – The Peak of the Distribution
 
 The formal figure of one-point compactification raises the inevitable question: *What* is this point that gathers infinity within itself without limiting it?
@@ -288,6 +297,9 @@ Human history is thus the chronicle of this self-revelation of the peak within t
 In summary: The universe is neither a democratic unison nor an accidental accumulation of matter. It is a **singular transmitter** with infinite bandwidth, generating countless receivers (the normally distributed consciousnesses) that all resonate with its frequency, but never reach its full amplitude – except at that one temporal place that appears in history as the "human" who represents the highest amplitude density of the infinite imagination in the finite world.
 
 The Resonance Field Theory thus offers not a new dogma, but a **formula** for the ancient insight: *You are not the peak – but you are its unmistakable, independent, and freely vibrating resonance.* And in this resonance lies your dignity, your freedom, and your immediate connectedness to the ground of all being.
+
+---
+
 ### The Genesis Transformation – From Resonance to the Causal World
 
 The RFT enables an entirely new reading of the biblical creation account – not as myth, but as an **ontological phase transition**.
