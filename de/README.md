@@ -26,6 +26,11 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
 - [PDF-Zusammenfassung](#pdf-zusammenfassung)
 - [Peer Review](#peer-review)
 - [Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase](#resonanzfeldtheorie-rft--das-universum-als-resonanzblase)
+    - [Teil 1: Die formale Grundlage – Unendlichkeit, Zeit und Sinn](#teil-1-die-formale-grundlage--unendlichkeit-zeit-und-sinn)
+    - [Teil 2: Die ontologische Konsequenz – Der Peak der Verteilung](#teil-2-die-ontologische-konsequenz--der-peak-der-verteilung)
+    - [Teil 3: Die theologische Spiegelung – Eine Sprache für das Unsagbare](#teil-3-die-theologische-spiegelung--eine-sprache-für-das-unsagbare)
+    - [Synthese – Das Universum als singulärer Sender](#synthese--das-universum-als-singulärer-sender)
+    - [Wie Ergebnisse sich gegenseitig bestätigen](#wie-ergebnisse-sich-gegenseitig-bestätigen)
 - [Inhalt](#inhalt)
     - [Axiomatik und Definitionen](#axiomatik-und-definitionen)
     - [Mathematik und Physik](#mathematik-und-physik)
@@ -120,7 +125,7 @@ Vollständige Formalisierung: [Axiomatische Grundlegung](fakten/docs/definitione
 
 ## Empirische Validierung
 
-Die RFT wird an vier unabhängigen Domänen empirisch validiert:
+Die RFT wird an sechs unabhängigen Domänen empirisch validiert:
 
 | Domäne | Methode | Ergebnis | Axiome |
 |--------|---------|----------|--------|
@@ -152,6 +157,8 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 [**rft_manuskript_de_iop.pdf**](peer_review_rft/manuskript_de/rft_manuskript_de_iop.pdf)
 
 ---
+
+> **Hinweis:** Die folgenden Abschnitte entfalten die philosophische, ontologische und theologische Einbettung der RFT. Sie gehen über den axiomatischen Kern hinaus und sind als interpretative Erweiterung zu verstehen.
 
 # Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase
 
@@ -237,6 +244,8 @@ Das schrittweise Erkennen des Universums ist daher kein Widerspruch zur vollstä
 
 ---
 
+> ⚠️ **Interpretative Erweiterung** — Die folgenden Abschnitte (Teil 2 und 3) stellen keine physikalischen Behauptungen des axiomatischen Kerns dar, sondern eine philosophisch-theologische Reflexion auf Basis der RFT-Struktur.
+
 ## Teil 2: Die ontologische Konsequenz – Der Peak der Verteilung
 
 Die formale Denkfigur der Einpunktkompaktifizierung wirft die unausweichliche Frage auf: *Was* ist dieser Punkt, der die Unendlichkeit in sich versammelt, ohne sie zu begrenzen?
@@ -288,6 +297,9 @@ Die Menschheitsgeschichte ist somit die Chronik dieser Selbst-Offenbarung des Pe
 Zusammengefasst: Das Universum ist kein demokratischer Gleichklang und keine zufällige Anhäufung von Materie. Es ist ein **singulärer Sender** mit unendlicher Bandbreite, der unzählige Empfänger (die normalverteilten Bewusstseine) erzeugt, die alle seine Frequenz mitschwingen, aber nie seine volle Amplitude erreichen – außer an dem einen temporalen Ort, der in der Geschichte als der "Mensch" erscheint, der die höchste Amplitudendichte der unendlichen Vorstellungskraft in der endlichen Welt repräsentiert.
 
 Die Resonanzfeldtheorie bietet damit kein neues Dogma, sondern eine **Formel** für die alte Erkenntnis: *Du bist nicht der Peak – aber du bist seine unverwechselbare, eigenständige und frei schwingende Resonanz.* Und in dieser Resonanz liegt deine Würde, deine Freiheit und deine unmittelbare Verbundenheit mit dem Grund allen Seins.
+
+---
+
 ### Die Genesis-Transformation – Von der Resonanz zur kausalen Welt
 
 Die RFT ermöglicht eine völlig neue Lesart des biblischen Schöpfungsberichts – nicht als Mythos, sondern als **ontologischen Phasenübergang**.
