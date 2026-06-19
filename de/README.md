@@ -276,6 +276,8 @@ Die Menschheitsgeschichte ist das empirische Protokoll dieser Selbst-Erinnerung:
 
 ---
 
+> ⚠️ **Theologische Spiegelung** — Der folgende Abschnitt überträgt die formale RFT-Struktur in theologische Sprache. Er ist als interpretative Brücke zu verstehen, nicht als axiomatische Aussage.
+
 ## Teil 3: Die theologische Spiegelung – Eine Sprache für das Unsagbare
 
 Die hier entwickelte Struktur – der singuläre Peak (μ) und die normalverteilten Abweichungen (σ) – findet ihre klarste und historisch wirkmächtigste sprachliche Entsprechung in der biblischen Beschreibung des Verhältnisses zwischen Schöpfer und Schöpfung.
