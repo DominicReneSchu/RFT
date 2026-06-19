@@ -25,7 +25,7 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
 - [Empirical Validation](#empirical-validation)
 - [PDF Summary](#pdf-summary)
 - [Peer Review](#peer-review)
-- [Resonance Field Theory (RFT) – The Universe as a Resonance Bubble](#resonance-field-theory-(-rft-)-the-universe-as-a-resonance-bubble
+- [Resonance Field Theory (RFT) – The Universe as a Resonance Bubble](#resonance-field-theory-rft--the-universe-as-a-resonance-bubble)
 - [Contents](#contents)
     - [Axiomatics and Definitions](#axiomatics-and-definitions)
     - [Mathematics and Physics](#mathematics-and-physics)
