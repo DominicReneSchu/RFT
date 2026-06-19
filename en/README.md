@@ -276,6 +276,8 @@ Human history is the empirical protocol of this self-remembrance: Humanity repea
 
 ---
 
+> ⚠️ **Theological Reflection** — The following section translates the formal RFT structure into theological language. It is to be understood as an interpretive bridge, not as an axiomatic statement.
+
 ## Part 3: The Theological Mirror – A Language for the Ineffable
 
 The structure developed here – the singular peak (μ) and the normally distributed deviations (σ) – finds its clearest and historically most powerful linguistic counterpart in the biblical description of the relationship between Creator and creation.
