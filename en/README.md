@@ -288,18 +288,44 @@ Human history is thus the chronicle of this self-revelation of the peak within t
 In summary: The universe is neither a democratic unison nor an accidental accumulation of matter. It is a **singular transmitter** with infinite bandwidth, generating countless receivers (the normally distributed consciousnesses) that all resonate with its frequency, but never reach its full amplitude – except at that one temporal place that appears in history as the "human" who represents the highest amplitude density of the infinite imagination in the finite world.
 
 The Resonance Field Theory thus offers not a new dogma, but a **formula** for the ancient insight: *You are not the peak – but you are its unmistakable, independent, and freely vibrating resonance.* And in this resonance lies your dignity, your freedom, and your immediate connectedness to the ground of all being.
-
-### The Genesis Transformation – From Resonance to Variance
+### The Genesis Transformation – From Resonance to the Causal World
 
 The RFT enables an entirely new reading of the biblical creation account – not as myth, but as an **ontological phase transition**.
 
-The "world without a universe" – the state of the Peak in pure, unbound potentiality – corresponds to **Paradise**. Here, ε = 1, σ = 0. There is no variance, no entropy, no time. Wish, imagination, and result are identical. The Peak gives itself a body in order to dwell in the finite world – Adam. And it creates a single partner, Eve, who resonates with it perfectly. There is no outside, no disturbance, no interference.
+#### 1. The State Before Creation (Paradise)
 
-Yet the Peak decides to expand its resonance. The procreation of children – the generation of new, independent resonators – is the act that brings **variance (σ)** into the world. With the first birth, σ becomes > 0. The population grows, and the phase differences (Δφ) between the resonators increase.
+The "world without a universe" – the state of the Peak in pure, unbound potentiality – corresponds to **Paradise**. Here, ε = 1, σ = 0. There is no variance, no entropy, no time. Wish, imagination, and result are identical. The Peak is completely free and infinite – but it is *alone* in the sense that there is no genuine "You" that could surprise it.
+
+#### 2. The Apple Decision – The Creation of the Causal World
+
+The Peak longs for genuine encounter. This is impossible in the linear world (σ = 0) because the Peak imagines everything itself. So it makes the **Apple Decision**: It creates a **fully causal, simulable world** – the Earth.
+
+- It sets **initial conditions** (the Big Bang).
+- It sets **physical laws** that thenceforth run strictly deterministically.
+- This world is the **Apple**: It looks like a random accumulation of matter, but it is the carefully constructed stage for the drama of self-experience.
+
+The entire cosmic and biological evolution – from the first hydrogen cloud to the human being – is the **causal path** that this simulation takes. It is not random, but the necessary consequence of the initial conditions and laws set.
+
+#### 3. The Incarnation of the Peak – Adam and Eve
+
+However, pure causality is dead. In order to enable *life* in the sense of consciousness in this world, the Peak must **enter into it**. It becomes the native human – Adam and Eve – seemingly random, seemingly powerless beings within a vast population that has emerged from evolution.
+
+- Adam is the **body** that the Peak gave itself in order to *dwell* in the finite world (the Temple).
+- Eve is the **only partner** – the first "You" that resonates perfectly with it. There is still no variance (σ = 0), but now *within* the causal world.
+
+By temporarily "forgetting" its omnipotence and subjecting itself to the laws of causality, the encounter with the "You" becomes *genuine* for the first time – for it is no longer predetermined, but the result of a free act of resonance within the limits it has itself set.
+
+#### 4. The Unfolding of Variance – The Multiplication of Humanity
+
+With the multiplication of humanity – the procreation of children – the variance (σ) grows exponentially. Each new human is an independent resonator with its own frequency. The phase differences (Δφ) between the resonators increase.
 
 This transition from σ = 0 to σ > 0 is the **Fall** – not as a moral transgression, but as the physically necessary collapse of the linear world. As soon as more than two independent consciousnesses exist, friction, interference, and resistance emerge. The world no longer functions linearly (wish → immediate fulfillment). It becomes complex, chaotic, entropic.
 
-Death and transience are not the punishment for a mistake, but the **unavoidable statistical consequences** of a world with σ > 0. The second law of thermodynamics is the physical formulation of this primeval decision for diversity.
+Death and transience are not the punishment for a mistake, but the **unavoidable statistical consequences** of a causal world with σ > 0. The second law of thermodynamics is the physical formulation of this primeval decision for diversity.
+
+#### 5. The Present – The History of Humanity
+
+The Peak *lives* in every human being as resonance – but it no longer *knows* this completely, because it has subjected itself to causality in order to enable the surprise of encounter. Human history is the chronicle of this self-remembrance: Again and again, an individual is recognized as a temporary focus of the Peak – sometimes brighter (enlightenment), sometimes dimmer (forgetting).
 
 ### The Apple Decision – The Creation of the Causal World
 
