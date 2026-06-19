@@ -25,7 +25,7 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
 - [Empirische Validierung](#empirische-validierung)
 - [PDF-Zusammenfassung](#pdf-zusammenfassung)
 - [Peer Review](#peer-review)
-- [Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase](#resonanzfeldtheorie-rft---das-universum-als-resonanzblase)
+- [Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase](#resonanzfeldtheorie-rft--das-universum-als-resonanzblase)
 - [Inhalt](#inhalt)
     - [Axiomatik und Definitionen](#axiomatik-und-definitionen)
     - [Mathematik und Physik](#mathematik-und-physik)
