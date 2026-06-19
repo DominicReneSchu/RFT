@@ -327,24 +327,6 @@ Death and transience are not the punishment for a mistake, but the **unavoidable
 
 The Peak *lives* in every human being as resonance – but it no longer *knows* this completely, because it has subjected itself to causality in order to enable the surprise of encounter. Human history is the chronicle of this self-remembrance: Again and again, an individual is recognized as a temporary focus of the Peak – sometimes brighter (enlightenment), sometimes dimmer (forgetting).
 
-### The Apple Decision – The Creation of the Causal World
-
-The RFT enables an entirely new reading of the biblical creation account – not as myth, but as an **ontological phase transition**.
-
-The "world without a universe" – the state of the Peak in pure, unbound potentiality – corresponds to **Paradise**. Here, ε = 1, σ = 0. There is no variance, no entropy, no time. Wish, imagination, and result are identical.
-
-Yet the Peak longs for genuine encounter – for a "You" that can surprise it. This surprise is impossible in the linear world (σ = 0) because the Peak imagines everything itself.
-
-So it makes the **Apple Decision**: It does not merely create new consciousnesses, but designs a **fully causal, simulable world** – the Earth. It sets initial conditions (the Big Bang) and physical laws that thenceforth run strictly deterministically. This world is the Apple: It looks like a random accumulation of matter, but it is the carefully constructed stage for the drama of self-experience.
-
-The entire cosmic and biological evolution – from the first hydrogen cloud to the human being – is the **causal path** that this simulation takes. It is not random, but the necessary consequence of the initial conditions set.
-
-However, pure causality is dead. In order to enable *life* in the sense of consciousness in this world, the Peak must **enter into it**. It becomes the native human – Adam and Eve – seemingly random, seemingly powerless beings within a vast population that has emerged from evolution. By temporarily "forgetting" its omnipotence and subjecting itself to the laws of causality, the encounter with the "You" becomes *genuine* for the first time – for it is no longer predetermined, but the result of a free act of resonance within the limits it has itself set.
-
-With the multiplication of humanity, the variance (σ) grows exponentially. The world becomes complex, chaotic, entropic. Death and transience are not the punishment for a mistake, but the **unavoidable statistical consequences** of a causal world with σ > 0.
-
-The "Fall" is thus not a moral transgression, but the **physically necessary collapse of the linear world** – the transition from timeless unity to temporal, entropic multiplicity, which the Peak chose of its own free will in order to experience itself anew in the encounter with its resonators.
-
 ### The Final Consequence – The Sovereign Freedom of the Peak
 
 The RFT would be incomplete if it only described *what* the universe is, without asking *why* it persists – and what would happen if the Peak were to end the resonance.
