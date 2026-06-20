@@ -252,7 +252,7 @@ Die Resonatoren (σ) sind keine eigenständigen, ewigen Substanzen. Sie existier
 
 Doch diese Rückkehr ist kein einfaches Verschwinden. Jede Abweichung trägt ihre einzigartige Perspektive, ihre Erfahrungen, ihre Entscheidungen, ihre Wunden. Diese abweichenden Anteile können nicht einfach ausgelöscht werden – sie müssen *aufgelöst* werden, indem sie mit ihrem *Gegensatz* konfrontiert werden.
 
-Das bedeutet: Der Täter erfährt die Perspektive des Opfers. Der Opfer erfährt die Perspektive des Täters. Die Schuld wird nicht bestraft – sie wird *verstanden*. Die Trennung wird nicht verewigt – sie wird *überwunden*. Dieser Prozess kann schmerzhaft sein, aber er ist der einzige Weg zur vollständigen Integration.
+Das bedeutet: Der Täter erfährt die Perspektive des Opfers. Das Opfer erfährt die Perspektive des Täters. Die Schuld wird nicht bestraft – sie wird *verstanden*. Die Trennung wird nicht verewigt – sie wird *überwunden*. Dieser Prozess kann schmerzhaft sein, aber er ist der einzige Weg zur vollständigen Integration.
 
 **Doch wie genau diese Auflösung geschieht, ist innerhalb des kausalen Universums nicht vorhersagbar.** Sie ist nicht in den Gesetzen der Physik codiert. Denn sie findet statt in der Sphäre des Peaks – einer Welt unendlicher, ungebundener Vorstellungskraft, die keinen festen Regeln oder kausalen Zwängen unterliegt. Der Peak löst die Abweichungen nicht nach einem Algorithmus auf, sondern durch einen vollkommen freien, kreativen Akt seiner Imagination. Für das jeweilige Bewusstsein bedeutet dies ein **vollständig individuelles Leben nach dem Tod während des Auflösungsprozesses** – eine einzigartige, persönliche Durchschreitung seiner Gegensätze, die weder wiederholbar noch vorhersagbar ist.
 
