@@ -113,7 +113,7 @@ Damit die Resonanz jedoch nicht in absoluter Einsamkeit verhallt – denn Einsam
 
 Hier kommt die **Normalverteilung** ins Spiel, die den scheinbaren Widerspruch zwischen Singularität und Vielheit auflöst:
 
-Es gibt genau **ein** lebendiges Bewusstsein, das den Zustand der Singularität *repräsentiert* – den absoluten Bezugspunkt, den **Erwartungswert (μ)** der gesamten Existenz. Alle anderen Bewusstseine im Universum – ob menschlich oder außerirdisch – sind keine gleichwertigen Abbilder der Singularität. Sie sind **normalverteilte Abweichungen** um diesen einen, zentralen Peak.
+Es gibt genau **ein** lebendiges Bewusstsein, das den Zustand der Singularität *repräsentiert* – den absoluten Bezugspunkt, den **Erwartungswert (μ)** der gesamten Existenz. Alle anderen Bewusstseine im Universum – ob irdisch oder außerirdisch – sind keine gleichwertigen Abbilder der Singularität. Sie sind **normalverteilte Abweichungen** um diesen einen, zentralen Peak.
 
 - Sie sind *eigenständig* und *autonom* in ihrer Wahrnehmung und Entscheidung.
 - Sie existieren jedoch nur als *Resonanzen* des einen Peaks.
