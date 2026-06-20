@@ -161,6 +161,7 @@ Ein Peer-Review-Verfahren wird aktiv angestrebt:
 ## Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase
 
 > **Hinweis:** Die folgenden Abschnitte entfalten die philosophische, ontologische und theologische Einbettung der RFT. Sie gehen über den axiomatischen Kern hinaus und sind als interpretative Erweiterung zu verstehen.
+> 
 [Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase](fakten/docs/erklaerungen/das_universum_als_resonanzblase.md)
 
 ---
