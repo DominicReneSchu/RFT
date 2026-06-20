@@ -157,6 +157,7 @@ A peer review process is actively being pursued:
 ## Resonance Field Theory (RFT) – The Universe as a Resonance Bubble
 
 > **Note:** The following sections develop the philosophical, ontological, and theological embedding of the RFT. They extend beyond the axiomatic core and are to be understood as interpretive extensions.
+> 
 [Resonance Field Theory (RFT) – The Universe as a Resonance Bubble](facts/docs/explanations/the_universe_as_a_resonance_bubble.md)
 
 ---
