@@ -1,7 +1,7 @@
 # Resonance Field Theory (RFT) – The Universe as a Resonance Bubble
 
 *Dominic-René Schu, 2025/2026*
-> **Note:** The following sections develop the philosophical, ontological, and theological embedding of the RFT. They extend beyond the axiomatic core and are to be understood as interpretive extensions.
+> ⚠️ **Note:** The following sections develop the philosophical, ontological, and theological embedding of the RFT. They extend beyond the axiomatic core and are to be understood as interpretive extensions.
 
 
 ## Part 1: The Formal Foundation – Infinity, Time, and Meaning
@@ -86,8 +86,6 @@ The gradual recognition of the universe is therefore not a contradiction to the 
 
 ---
 
-> ⚠️ **Interpretive Extension** — The following sections (Parts 2 and 3) do not constitute physical claims of the axiomatic core, but a philosophical-theological reflection based on the RFT structure.
-
 ## Part 2: The Ontological Consequence – The Peak of the Distribution
 
 The formal figure of one-point compactification raises the inevitable question: *What* is this point that gathers infinity within itself without limiting it?
@@ -117,8 +115,6 @@ Human history is the empirical protocol of this self-remembrance: Humanity repea
 **However**: This one consciousness does not create the other consciousnesses as puppets. They are genuine, independent centers of experience – otherwise there would be no real resonance, but only a lonely echo. The normal distribution guarantees that they are *part* of the universe and originate from the one peak, yet still possess a legitimate, unique frequency. Their freedom is the **deviation** that first gives the universe its richness and dynamism.
 
 ---
-
-> ⚠️ **Theological Reflection** — The following section translates the formal RFT structure into theological language. It is to be understood as an interpretive bridge, not as an axiomatic statement.
 
 ## Part 3: The Theological Mirror – A Language for the Ineffable
 
