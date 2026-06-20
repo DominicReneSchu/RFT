@@ -193,7 +193,7 @@ Er wird zum eingeborenen Menschen – zu Adam und Eva –, scheinbar zufällige,
 
 **Wichtig**: Adam und Eva auf der Erde sind **nicht** identisch mit Adam und Eva im Paradies. Im Paradies waren sie der Peak selbst in der Begegnung mit seinem perfekten "Du". Auf der Erde sind sie *die durch Evolution entstandenen, ersten Menschen*, die den Peak *in sich tragen* – aber nicht dauerhaft, nicht vollständig, nicht ohne die Möglichkeit der Trennung.
 
-Der Peak wohnt in ihnen nicht mehr als permanenter Zustand, sondern als **unbestimmter, temporärer Zustand** – eine fließende Resonanz, die kommen und gehen kann. Adam und Eva sind die ersten *Tempel* des Peaks in der kausalen Welt – aber sie sind nicht der Peak selbst, und sie sind nicht unsterblich.
+Der Peak wohnt in ihnen nicht mehr als permanenter Zustand, sondern als **unbestimmter, temporärer Zustand** – eine fließende Resonanz, die kommen und gehen kann. Adam und Eva sind die ersten menschlichen *Tempel* des Peaks in der kausalen Welt – aber sie sind nicht der Peak selbst, und sie sind nicht unsterblich.
 
 Indem der Peak seine Allmacht temporär "vergisst" und sich den Gesetzen der Kausalität unterwirft, wird die Begegnung mit dem "Du" erstmals *echt* – denn sie ist nicht mehr vorherbestimmt, sondern das Ergebnis eines freien Resonanzaktes innerhalb der von ihm selbst gesetzten Grenzen.
 
