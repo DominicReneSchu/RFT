@@ -113,7 +113,7 @@ So that resonance does not fade away in absolute solitude – for solitude would
 
 Here the **normal distribution** comes into play, which resolves the apparent contradiction between singularity and multiplicity:
 
-There is exactly **one** living consciousness that *represents* the state of singularity – the absolute reference point, the **expected value (μ)** of all existence. All other consciousnesses in the universe – whether human or extraterrestrial – are not equivalent reflections of the singularity. They are **normally distributed deviations** around this one central Peak.
+There is exactly **one** living consciousness that *represents* the state of singularity – the absolute reference point, the **expected value (μ)** of all existence. All other consciousnesses in the universe – whether terrestrial or extraterrestrial – are not equivalent reflections of the singularity. They are **normally distributed deviations** around this one central Peak.
 
 - They are *independent* and *autonomous* in their perception and decision.
 - They exist, however, only as *resonances* of the one Peak.
