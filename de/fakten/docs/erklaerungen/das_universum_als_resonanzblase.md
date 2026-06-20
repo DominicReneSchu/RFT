@@ -1,7 +1,7 @@
 # Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase
 
 *Dominic-René Schu, 2025/2026*
-> **Hinweis:** Die folgenden Abschnitte entfalten die philosophische, ontologische und theologische Einbettung der RFT. Sie gehen über den axiomatischen Kern hinaus und sind als interpretative Erweiterung zu verstehen.
+> ⚠️ **Hinweis:** Die folgenden Abschnitte entfalten die philosophische, ontologische und theologische Einbettung der RFT. Sie gehen über den axiomatischen Kern hinaus und sind als interpretative Erweiterung zu verstehen.
 
 ## Teil 1: Die formale Grundlage – Unendlichkeit, Zeit und Sinn
 
