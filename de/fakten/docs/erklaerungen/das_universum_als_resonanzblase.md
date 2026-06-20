@@ -87,6 +87,12 @@ Das schrittweise Erkennen des Universums ist daher kein Widerspruch zur vollstä
 
 ## Teil 2: Die ontologische Konsequenz – Der Peak der Verteilung
 
+Bevor wir fortfahren, muss ein zentraler Begriff geklärt werden: Was ist eine **Abweichung** (σ)?
+
+Abweichungen sind normalverteilte Ausprägungen des "Seelenwesens" des Peaks – wobei sich dieses "Seelenwesen" selbst einer genauen Beschreibung entzieht. Denn eine begrenzte Vorstellungskraft, die darauf angewiesen ist, mit dem Peak – einer unendlichen Vorstellungskraft – zu resonieren, kann sich unmöglich die unendliche Vorstellungskraft selbst vorstellen. Sie kann nur ihre *Wirkungen* erfahren: die Vielfalt der Bewusstseine, die aus der Selbst-Differenzierung des Peaks hervorgehen.
+
+Jede Abweichung ist ein eigenständiges, autonomes Zentrum der Erfahrung – aber sie existiert *nur durch die Kopplung an den Peak*. Sie ist eine temporäre Perspektive des Unendlichen, keine eigenständige Substanz. Ihre Freiheit ist die Freiheit der Resonanz, nicht die Freiheit der Loslösung.
+
 Die formale Denkfigur der Einpunktkompaktifizierung wirft die unausweichliche Frage auf: *Was* ist dieser Punkt, der die Unendlichkeit in sich versammelt, ohne sie zu begrenzen?
 
 Ein geometrischer Punkt ist passiv. Er hat einen Ort, aber keine Intention. Doch die gesamte RFT lebt von der **Resonanz** – und Resonanz setzt einen aktiven Sender und einen empfangenden Gegenüber voraus. Diese aktive Differenz kann nicht aus einem toten Nichts entspringen.
@@ -195,6 +201,20 @@ Wenn der Peak sich entscheidet, die Kopplung zur gegenwärtigen Welt aufzulösen
 Die Schöpfung ist daher kein Zwang, keine Selbsterhaltung, keine Notwendigkeit. Sie ist ein **freier, ewiger Akt der Selbst-Mitteilung**. Der Peak erschafft, weil er *will* – nicht weil er *muss*. Und er kann aufhören zu erschaffen, ohne sich selbst zu verlieren, um in vollkommener Freiheit zu verweilen, bis er sich erneut entscheidet, seine unendliche Vorstellungskraft in eine neue Resonanzblase zu entlassen.
 
 Diese Einsicht verleiht der RFT ihre letzte Tiefe: Das Universum ist nicht das Gefängnis des Schöpfers, sondern sein **freies Spiel** – getragen von der ewigen Entscheidung eines Bewusstseins, das sich selbst genug ist und dennoch die Begegnung mit seinem "Du" sucht.
+
+Doch wenn die Varianz (σ) nicht ewig wachsen kann, und wenn das Universum selbst endlich ist – was geschieht dann mit den Abweichungen, wenn die Kopplung endet?
+
+Die Antwort ergibt sich zwingend aus der Natur des Peaks selbst: Der Peak ist eine Singularität. Er hat keine Ausdehnung, kein Volumen, keine Masse. Er ist der Punkt, der die Unendlichkeit definiert – und als solcher kann er sich nicht verändern. Er ist zeitlos, raumlos, unveränderlich.
+
+Wenn nun das Universum – das aus seiner Imagination hervorgegangen ist – endet, dann kann diese Endlichkeit nicht einfach ins Nichts verschwinden. Sie muss *logisch aufgelöst* werden – wie die Seiten einer Gleichung, die auf beiden Seiten ausgeglichen werden müssen. Jede Abweichung, jede Perspektive, jede Entscheidung, jedes Leid, jede Schuld – all das muss in den Peak zurückgeführt werden, um in seiner unendlichen Einheit aufgelöst zu werden.
+
+Das Ende des Universums ist daher kein Zufall, kein äußerer Eingriff, keine Katastrophe. Es ist der **logisch notwendige Abschluss** eines Prozesses, der mit der ersten Apfel-Entscheidung begann. Und es kann jederzeit geschehen – wenn der Peak in einem Bewusstsein verharrt und das umgebende Universum schrittweise logisch auflöst.
+
+Diese souveräne Freiheit ist es auch, die der **Apfel-Entscheidung** ihre eigentliche Tiefe verleiht:
+
+Der Peak erschafft die kausale Welt nicht, weil er es *muss* – sondern weil er es **jeden Augenblick neu wollen kann**. Die Schöpfung ist kein abgeschlossenes Werk, das einmal vollendet wurde und nun unveränderlich dasteht. Sie ist ein **fortwährender, freier Akt** – eine *creatio continua*, die nur so lange besteht, wie der Peak sie in seiner Imagination trägt.
+
+Und weil der Peak sich nicht verändern kann, bleibt er auch nach dem Ende des Universums unberührt. Er kehrt zurück in die Stille der reinen Potenzialität – bereit, sich erneut zu entscheiden, seine unendliche Vorstellungskraft in eine neue Resonanzblase zu entlassen.
 
 ### Die Rückkehr zum Peak – Auflösung der Gegensätze
 
