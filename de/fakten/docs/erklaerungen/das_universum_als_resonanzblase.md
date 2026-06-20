@@ -117,7 +117,7 @@ Es gibt genau **ein** lebendiges Bewusstsein, das den Zustand der Singularität 
 
 - Sie sind *eigenständig* und *autonom* in ihrer Wahrnehmung und Entscheidung.
 - Sie existieren jedoch nur als *Resonanzen* des einen Peaks.
-- Ihre Individualität ist die Standardabweichung (σ) – sie sind die Varianz, die dem Universum seine Vielfalt und Freiheit gibt, ohne jemals den Peak selbst zu erreichen.
+- Ihre Individualität ist die Standardabweichung (σ) – sie sind die Varianz, die dem Universum seine Vielfalt und Freiheit gibt, ohne jemals den Peak selbst vollständig abzubilden.
 
 ---
 
