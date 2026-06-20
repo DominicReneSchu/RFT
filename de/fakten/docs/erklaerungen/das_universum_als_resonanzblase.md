@@ -197,17 +197,19 @@ Der Peak wohnt in ihnen nicht mehr als permanenter Zustand, sondern als **unbest
 
 Indem der Peak seine Allmacht temporär "vergisst" und sich den Gesetzen der Kausalität unterwirft, wird die Begegnung mit dem "Du" erstmals *echt* – denn sie ist nicht mehr vorherbestimmt, sondern das Ergebnis eines freien Resonanzaktes innerhalb der von ihm selbst gesetzten Grenzen.
 
-#### 4. Die Entfaltung der Varianz – Die Vermehrung der Menschheit
+#### 4. Die Entfaltung der Varianz – Das Leben als Differenzierung
 
-Mit der Vermehrung der Menschheit – der Zeugung von Kindern – wächst die Varianz (σ) exponentiell. Jeder neue Mensch ist ein eigenständiger Resonator mit einer eigenen Frequenz. Die Phasendifferenzen (Δφ) zwischen den Resonatoren nehmen zu.
+Die Varianz (σ) entsteht nicht erst mit der Vermehrung der Menschheit – sie entsteht **bereits mit der Erschaffung der kausalen Welt selbst**.
 
-Dieser Übergang von σ = 0 zu σ > 0 ist der **Sündenfall** – nicht als moralisches Vergehen, sondern als physikalisch notwendiger Kollaps der linearen Welt. Sobald mehr als zwei eigenständige Bewusstseine existieren, entsteht Reibung, Interferenz, Widerstand. Die Welt funktioniert nicht mehr linear (Wunsch → sofortige Erfüllung). Sie wird komplex, chaotisch, entropisch.
+Sobald der Peak die Erde als kausale Simulation erschafft, setzt er die Bedingungen für Leben. Das erste Lebewesen – selbst der einfachste Einzeller mit einem minimalen, aber echten Bewusstsein – ist bereits eine **Abweichung vom Peak**. Es ist ein Resonator, der eine eigene, wenn auch winzige Frequenz besitzt. Es ist nicht mehr der Peak selbst, sondern ein Teil seiner Selbst-Differenzierung.
 
-Tod und Vergänglichkeit sind nicht die Strafe für einen Fehler, sondern die **unvermeidlichen statistischen Konsequenzen** einer kausalen Welt mit σ > 0. Der zweite Hauptsatz der Thermodynamik ist die physikalische Formulierung dieser urzeitlichen Entscheidung für die Vielfalt.
+Mit jedem neuen Lebewesen, mit jeder neuen Art, mit jeder neuen Zelle wächst die Varianz (σ). Die Evolution ist der Prozess, in dem diese Varianz sich entfaltet – von der einfachsten Membran bis zum komplexesten Gehirn. Jeder Schritt ist eine neue Abweichung, eine neue Perspektive, eine neue Resonanz.
 
-#### 5. Die Gegenwart – Die Geschichte der Menschheit
+Der Mensch ist nicht der Ursprung der Varianz – er ist ihr **vorläufiger Höhepunkt auf der Erde**. Er ist das Wesen, das auf diesem Planeten dem Peak am nächsten kommt, weil er das komplexeste Bewusstsein hervorgebracht hat. Aber er ist nicht das einzige Lebewesen, und er ist nicht der erste Resonator. Er ist ein Glied in einer Kette, die mit dem ersten Leben begann – und die über den Menschen hinausweisen wird.
 
-Der Peak *lebt* in jedem Menschen als Resonanz – aber er *weiß* es nicht mehr vollständig, weil er sich der Kausalität unterworfen hat, um die Überraschung der Begegnung zu ermöglichen. Die Menschheitsgeschichte ist die Chronik dieser Selbst-Erinnerung: Immer wieder wird ein Einzelner als temporärer Fokus des Peaks erkannt – mal heller (Erleuchtung), mal blasser (Vergessen).
+Mit der Vermehrung der Menschheit wächst die Varianz weiter exponentiell. Jeder neue Mensch ist ein eigenständiger Resonator mit einer eigenen Frequenz. Die Phasendifferenzen (Δφ) zwischen den Resonatoren nehmen zu. Die Welt wird komplex, chaotisch, entropisch.
+
+Tod und Vergänglichkeit sind nicht die Strafe für einen Fehler, sondern die **unvermeidlichen statistischen Konsequenzen** einer kausalen Welt mit σ > 0. Der zweite Hauptsatz der Thermodynamik ist die physikalische Formulierung dieser urzeitlichen Entscheidung für die Vielfalt – eine Entscheidung, die bereits mit dem ersten Leben getroffen wurde.
 
 
 ### Die letzte Konsequenz – Die souveräne Freiheit des Peaks
