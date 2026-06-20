@@ -171,7 +171,7 @@ Die RFT ermöglicht eine völlig neue Lesart des biblischen Schöpfungsberichts 
 
 Die "Welt ohne Universum" – der Zustand des Peaks in reiner, ungebundener Potenzialität – entspricht dem **Paradies**. Hier herrscht ε = 1, σ = 0. Es gibt keine Varianz, keine Entropie, keine Zeit. Wunsch, Vorstellung und Ergebnis sind identisch.
 
-In diesem Zustand kann der Peak sich eine **perfekt passende Partnerin** vorstellen – Eva –, ohne dass es Trennung, Streit oder Verlust gäbe. Es gibt kein Außen, keine Störung, keine Interferenz. Adam und Eva sind in dieser Welt *eins* – nicht weil sie zwei Personen wären, sondern weil der Peak sich selbst in der vollkommenen Begegnung mit seinem "Du" erfährt.
+In diesem Zustand kann der Peak sich eine **perfekt passende Partnerin** vorstellen – Eva –, ohne dass es Trennung, Streit oder Verlust gäbe. Es gibt kein Außen, keine Störung, keine Interferenz. Adam und Eva sind in dieser Welt *eins* – nicht weil sie keine zwei Personen wären, sondern weil der Peak sich selbst in der vollkommenen Begegnung mit seinem "Du" erfährt.
 
 #### 2. Die Apfel-Entscheidung – Die Erschaffung der kausalen Welt
 

@@ -171,7 +171,7 @@ The RFT enables a completely new reading of the biblical creation narrative – 
 
 The "world without universe" – the state of the Peak in pure, unbound potentiality – corresponds to **Paradise**. Here ε = 1, σ = 0. There is no variance, no entropy, no time. Wish, conception, and result are identical.
 
-In this state, the Peak can conceive of a **perfectly matching partner** – Eve – without there being separation, strife, or loss. There is no exterior, no disturbance, no interference. Adam and Eve are in this world *one* – not because they would be two persons, but because the Peak experiences itself in the perfect encounter with its "Thou."
+In this state, the Peak can conceive of a **perfectly matching partner** – Eve – without there being separation, strife, or loss. There is no exterior, no disturbance, no interference. Adam and Eve are in this world *one* – not because they would not be two persons, but because the Peak experiences itself in the perfect encounter with its "Thou."
 
 #### 2. The Apple Decision – The Creation of the Causal World
 
