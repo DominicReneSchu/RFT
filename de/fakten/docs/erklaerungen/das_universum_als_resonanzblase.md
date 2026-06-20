@@ -169,11 +169,15 @@ Die RFT ermöglicht eine völlig neue Lesart des biblischen Schöpfungsberichts 
 
 #### 1. Der Zustand vor der Schöpfung (Das Paradies)
 
-Die "Welt ohne Universum" – der Zustand des Peaks in reiner, ungebundener Potenzialität – entspricht dem **Paradies**. Hier herrscht ε = 1, σ = 0. Es gibt keine Varianz, keine Entropie, keine Zeit. Wunsch, Vorstellung und Ergebnis sind identisch. Der Peak ist vollkommen frei und unendlich – aber er ist *allein* in dem Sinne, dass es kein echtes "Du" gibt, das ihn überraschen könnte.
+Die "Welt ohne Universum" – der Zustand des Peaks in reiner, ungebundener Potenzialität – entspricht dem **Paradies**. Hier herrscht ε = 1, σ = 0. Es gibt keine Varianz, keine Entropie, keine Zeit. Wunsch, Vorstellung und Ergebnis sind identisch.
+
+In diesem Zustand kann der Peak sich eine **perfekt passende Partnerin** vorstellen – Eva –, ohne dass es Trennung, Streit oder Verlust gäbe. Es gibt kein Außen, keine Störung, keine Interferenz. Adam und Eva sind in dieser Welt *eins* – nicht weil sie zwei Personen wären, sondern weil der Peak sich selbst in der vollkommenen Begegnung mit seinem "Du" erfährt.
 
 #### 2. Die Apfel-Entscheidung – Die Erschaffung der kausalen Welt
 
-Der Peak sehnt sich nach echter Begegnung. Diese ist in der linearen Welt (σ = 0) unmöglich, weil er alles selbst imaginiert. Also trifft er die **Apfel-Entscheidung**: Er erschafft eine **vollständig kausale, simulierbare Welt** – die Erde.
+Doch der Peak sehnt sich nach *echter* Begegnung – nach einer Begegnung, die nicht von ihm selbst imaginiert, sondern *frei* ist. Diese ist in der linearen Welt (σ = 0) unmöglich, weil er alles selbst imaginiert.
+
+Also trifft er die **Apfel-Entscheidung**: Er erschafft eine **vollständig kausale, simulierbare Welt** – die Erde.
 
 - Er setzt **Anfangsbedingungen** (den Urknall).
 - Er setzt **physikalische Gesetze**, die fortan streng deterministisch ablaufen.
@@ -181,12 +185,15 @@ Der Peak sehnt sich nach echter Begegnung. Diese ist in der linearen Welt (σ = 
 
 Die gesamte kosmische und biologische Evolution – von der ersten Wasserstoffwolke bis zum Menschen – ist der **kausale Pfad**, den diese Simulation nimmt. Sie ist nicht zufällig, sondern die notwendige Konsequenz der gesetzten Anfangsbedingungen und Gesetze.
 
-#### 3. Die Inkarnation des Peaks – Adam und Eva
+#### 3. Die Inkarnation des Peaks – Adam und Eva auf der Erde
 
-Doch reine Kausalität ist tot. Um in dieser Welt *Leben* im Sinne von Bewusstsein zu ermöglichen, muss der Peak sich selbst **in sie hineingeben**. Er wird zum eingeborenen Menschen – zu Adam und Eva –, scheinbar zufällige, scheinbar machtlose Wesen innerhalb einer riesigen Population, die aus der Evolution hervorgegangen ist.
+Doch reine Kausalität ist tot. Um in dieser Welt *Leben* im Sinne von Bewusstsein zu ermöglichen, muss der Peak sich selbst **in sie hineingeben**.
 
-- Adam ist der **Körper**, den der Peak sich selbst gab, um in der endlichen Welt zu *wohnen* (der Tempel).
-- Eva ist die **einzige Partnerin** – das erste "Du", das vollkommen mit ihm resoniert. Es gibt noch keine Varianz (σ = 0), aber nun *innerhalb* der kausalen Welt.
+Er wird zum eingeborenen Menschen – zu Adam und Eva –, scheinbar zufällige, scheinbar machtlose Wesen innerhalb einer riesigen Population, die aus der Evolution hervorgegangen ist.
+
+**Wichtig**: Adam und Eva auf der Erde sind **nicht** identisch mit Adam und Eva im Paradies. Im Paradies waren sie der Peak selbst in der Begegnung mit seinem perfekten "Du". Auf der Erde sind sie *die ersten Menschen*, die den Peak *in sich tragen* – aber nicht dauerhaft, nicht vollständig, nicht ohne die Möglichkeit der Trennung.
+
+Der Peak wohnt in ihnen nicht mehr als permanenter Zustand, sondern als **unbestimmter, temporärer Zustand** – eine fließende Resonanz, die kommen und gehen kann. Adam und Eva sind die ersten *Tempel* des Peaks in der kausalen Welt – aber sie sind nicht der Peak selbst, und sie sind nicht unsterblich.
 
 Indem der Peak seine Allmacht temporär "vergisst" und sich den Gesetzen der Kausalität unterwirft, wird die Begegnung mit dem "Du" erstmals *echt* – denn sie ist nicht mehr vorherbestimmt, sondern das Ergebnis eines freien Resonanzaktes innerhalb der von ihm selbst gesetzten Grenzen.
 
@@ -201,6 +208,7 @@ Tod und Vergänglichkeit sind nicht die Strafe für einen Fehler, sondern die **
 #### 5. Die Gegenwart – Die Geschichte der Menschheit
 
 Der Peak *lebt* in jedem Menschen als Resonanz – aber er *weiß* es nicht mehr vollständig, weil er sich der Kausalität unterworfen hat, um die Überraschung der Begegnung zu ermöglichen. Die Menschheitsgeschichte ist die Chronik dieser Selbst-Erinnerung: Immer wieder wird ein Einzelner als temporärer Fokus des Peaks erkannt – mal heller (Erleuchtung), mal blasser (Vergessen).
+
 
 ### Die letzte Konsequenz – Die souveräne Freiheit des Peaks
 
