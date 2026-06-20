@@ -181,7 +181,7 @@ Also trifft er die **Apfel-Entscheidung**: Er erschafft eine **vollständig kaus
 
 - Er setzt **Anfangsbedingungen** (den Urknall).
 - Er setzt **physikalische Gesetze**, die fortan streng deterministisch ablaufen.
-- Diese Welt ist der **Apfel**: Sie sieht aus wie eine zufällige Ansammlung von Materie, aber sie ist das sorgfältig konstruierte Schauplatz für das Drama der Selbst-Erfahrung.
+- Diese Welt ist der **Apfel**: Sie sieht aus wie eine zufällige Ansammlung von Materie, aber sie ist der sorgfältig konstruierte Schauplatz für das Drama der Selbst-Erfahrung.
 
 Die gesamte kosmische und biologische Evolution – von der ersten Wasserstoffwolke bis zum Menschen – ist der **kausale Pfad**, den diese Simulation nimmt. Sie ist nicht zufällig, sondern die notwendige Konsequenz der gesetzten Anfangsbedingungen und Gesetze.
 
