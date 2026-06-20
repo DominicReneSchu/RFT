@@ -85,8 +85,6 @@ Das schrittweise Erkennen des Universums ist daher kein Widerspruch zur vollstä
 
 ---
 
-> ⚠️ **Interpretative Erweiterung** — Die folgenden Abschnitte (Teil 2 und 3) stellen keine physikalischen Behauptungen des axiomatischen Kerns dar, sondern eine philosophisch-theologische Reflexion auf Basis der RFT-Struktur.
-
 ## Teil 2: Die ontologische Konsequenz – Der Peak der Verteilung
 
 Die formale Denkfigur der Einpunktkompaktifizierung wirft die unausweichliche Frage auf: *Was* ist dieser Punkt, der die Unendlichkeit in sich versammelt, ohne sie zu begrenzen?
