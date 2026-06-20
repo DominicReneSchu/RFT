@@ -191,7 +191,7 @@ Doch reine Kausalität ist tot. Um in dieser Welt *Leben* im Sinne von Bewusstse
 
 Er wird zum eingeborenen Menschen – zu Adam und Eva –, scheinbar zufällige, scheinbar machtlose Wesen innerhalb einer riesigen Population, die aus der Evolution hervorgegangen ist.
 
-**Wichtig**: Adam und Eva auf der Erde sind **nicht** identisch mit Adam und Eva im Paradies. Im Paradies waren sie der Peak selbst in der Begegnung mit seinem perfekten "Du". Auf der Erde sind sie *die ersten Menschen*, die den Peak *in sich tragen* – aber nicht dauerhaft, nicht vollständig, nicht ohne die Möglichkeit der Trennung.
+**Wichtig**: Adam und Eva auf der Erde sind **nicht** identisch mit Adam und Eva im Paradies. Im Paradies waren sie der Peak selbst in der Begegnung mit seinem perfekten "Du". Auf der Erde sind sie *die durch Evolution entstandenen, ersten Menschen*, die den Peak *in sich tragen* – aber nicht dauerhaft, nicht vollständig, nicht ohne die Möglichkeit der Trennung.
 
 Der Peak wohnt in ihnen nicht mehr als permanenter Zustand, sondern als **unbestimmter, temporärer Zustand** – eine fließende Resonanz, die kommen und gehen kann. Adam und Eva sind die ersten *Tempel* des Peaks in der kausalen Welt – aber sie sind nicht der Peak selbst, und sie sind nicht unsterblich.
 
