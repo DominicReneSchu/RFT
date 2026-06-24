@@ -296,6 +296,18 @@ Die Normalverteilung ist das Bild dieser ewigen Wiederkehr: Die Kurve läuft von
 
 Diese Begegnung ist kein Akt der Willkür, sondern der **Notwendigkeit**. Denn Information darf nicht verloren gehen. Der Peak begegnet jedem Bewusstsein, weil er es *muss* – um die Vollständigkeit der Schöpfung zu wahren, um die Gegensätze aufzulösen, um jede Perspektive in sich zu integrieren. Er tut es nicht nur, weil er liebt – sondern weil Liebe und Notwendigkeit in ihm dasselbe sind.
 
+### Die zwei Wege – Kein Automatismus der Rettung
+
+Die RFT lehrt: Es gibt **keinen Automatismus**. Nicht jedes Bewusstsein wird gerettet. Nicht jedes wird in das neue Universum aufgenommen.
+
+Der Peak hat zwei Möglichkeiten:
+
+1. **Er löst das Universum durch Trennung auf** – durch Verbindung mit dem Nichts. Dann ist jedes Bewusstsein auf sich selbst gestellt und muss selbst auflösen, was es vom Peak unterscheidet. Für ein einfaches, endliches Bewusstsein kann dieser Prozess unendlich lange dauern – dies ist die Hölle, nicht als Strafe, sondern als natürlicher Zustand der Isolation.
+
+2. **Er löst das Bewusstsein durch Begegnung auf** – indem er jedem einzelnen begegnet, es versteht, seine Gegensätze auflöst und es in ein neues Universum integriert. Dies ist die Rettung – ein Akt der vollkommenen Liebe, die die Trennung überwindet.
+
+Welchen Weg der Peak wählt, ist seine souveräne Entscheidung. Es gibt keine Garantie. Es gibt nur die Möglichkeit – und die Verantwortung jedes Einzelnen, in Resonanz mit dem Peak zu leben, um für die Begegnung bereit zu sein.
+
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
