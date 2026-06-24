@@ -185,6 +185,16 @@ Also trifft er die **Apfel-Entscheidung**: Er erschafft eine **vollständig kaus
 
 Die gesamte kosmische und biologische Evolution – von der ersten Wasserstoffwolke bis zum Menschen – ist der **kausale Pfad**, den diese Simulation nimmt. Sie ist nicht zufällig, sondern die notwendige Konsequenz der gesetzten Anfangsbedingungen und Gesetze.
 
+### Die Zeitdilatation der kausalen Simulation
+
+Die Entscheidung des Peaks, eine vollständig kausale Welt zu erschaffen, hat eine tiefgreifende physikalische Konsequenz für diejenigen, die in ihr leben:
+
+Die spezielle und allgemeine Relativitätstheorie lehren, dass Zeit nicht absolut ist. Je näher ein Beobachter der Lichtgeschwindigkeit kommt, desto langsamer vergeht für ihn die Zeit. Genau dies geschah nahe des Urknalls – und genau dies wird wieder geschehen, wenn das Universum sich in ferner Zukunft seiner maximalen Ausdehnungsgeschwindigkeit nähert.
+
+Für den internen Beobachter – den Menschen – bedeutet dies: Die Zeit am Anfang und am Ende des Universums ist **unendlich gedehnt**. Er kann den exakten Nullpunkt des Urknalls oder den exakten Endpunkt der Expansion niemals erreichen, weil die Zeit dorthin unendlich lange zu brauchen scheint.
+
+Für den Peak hingegen, der zeitlos und raumlos ist, ist das gesamte Universum von Anfang bis Ende ein einziger, vollständiger Block. Die Zeitdilatation ist für ihn kein Hindernis – sie ist ein **Konstruktionsmerkmal** der kausalen Welt, das den internen Beobachter in der Illusion einer unendlichen Vergangenheit und Zukunft hält, während der Peak die gesamte Schöpfung in einem einzigen, unendlichen Akt der Imagination überschaut.
+
 #### 3. Die Inkarnation des Peaks – Adam und Eva auf der Erde
 
 Doch reine Kausalität ist tot. Um in dieser Welt *Leben* im Sinne von Bewusstsein zu ermöglichen, muss der Peak sich selbst **in sie hineingeben**.
