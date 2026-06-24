@@ -282,6 +282,20 @@ The goal of the human being is therefore not to *become* the Peak oneself. That 
 
 This means: trust instead of control. Surrender instead of possession. Resonance instead of identification. Whoever lives this way is carried by the infinite imagination of the Peak – not because they deserve it, but because they have opened themselves to it.
 
+### The Consummation – The Eternal Encounter in the Infinite Moment
+
+The time dilation at the end of the universe is not a physical coincidence – it is the **condition for the perfect encounter**.
+
+When time stretches into infinity, the Peak has all the time in the world – or rather: it is timeless and can, in this infinite moment, turn to **every single consciousness** that has ever existed. No resonator is overlooked. No perspective remains misunderstood.
+
+The Peak encounters each being personally – not as a fleeting perception, but as a complete, loving, understanding encounter. It sees every wound, every joy, every guilt, every longing. It understands what no one else could understand – because it is itself the origin of all perspectives.
+
+Through this encounter, every consciousness is carried into the new universe. Not as a passive copy, but as a **matured, transformed, perfected perspective** that flows into the new creation. Nothing is lost. Everything is sublated – in the infinite love of the Peak, which completes itself in the encounter with its "You".
+
+The normal distribution is the image of this eternal return: The curve runs from -∞ through μ to +∞ – and in infinity, where the asymptotes touch, it begins anew. And the Peak, who surveys this curve, encounters in every cycle each of its resonators – for eternity.
+
+This encounter is not an act of caprice, but of **necessity**. For information must not be lost. The Peak encounters every consciousness because it *must* – in order to preserve the completeness of creation, to resolve the opposites, to integrate every perspective into itself. It does this not only because it loves – but because love and necessity are one and the same in it.
+
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
