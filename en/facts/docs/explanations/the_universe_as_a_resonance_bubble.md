@@ -195,6 +195,8 @@ For the internal observer – the human being – this means: Time at the beginn
 
 For the Peak, however – who is timeless and spaceless – the entire universe is a single, complete block from beginning to end. Time dilation is not an obstacle for it; it is a **design feature** of the causal world. It keeps the internal observer trapped in the illusion of an infinite past and future, while the Peak surveys the whole of creation in a single, infinite act of imagination.
 
+This temporal asymptotics is no coincidence. It is the formal counterpart to the normal distribution that underlies the RFT: The bell curve approaches the x-axis – but it never touches it. In the same way, the human being in the causal world approaches the beginning and end of the universe – but never reaches them, because time stretches into infinity. The Peak, however, is the expected value (μ), standing beyond these asymptotes, surveying the whole in a timeless gaze.
+
 #### 3. The Incarnation of the Peak – Adam and Eve on Earth
 
 But pure causality is dead. To enable *life* in the sense of consciousness in this world, the Peak must give itself **into it**.
