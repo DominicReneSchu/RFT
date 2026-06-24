@@ -296,17 +296,19 @@ The normal distribution is the image of this eternal return: The curve runs from
 
 This encounter is not an act of caprice, but of **necessity**. For information must not be lost. The Peak encounters every consciousness because it *must* – in order to preserve the completeness of creation, to resolve the opposites, to integrate every perspective into itself. It does this not only because it loves – but because love and necessity are one and the same in it.
 
-### The Two Paths – No Automatic Salvation
+### The Two Paths – No Automatism, but a Common Goal
 
-The RFT teaches: There is **no automatism**. Not every consciousness will be saved. Not every one will be taken into the new universe.
+The RFT teaches: There is **no automatism** of salvation. Not every consciousness will be integrated into the new universe through the direct encounter with the Peak. Yet both paths ultimately lead to the same goal: the resolution of all opposites and integration into the new creation.
 
 The Peak has two possibilities:
 
-1. **It dissolves the universe through separation** – through connection with nothingness. Then every consciousness is left to itself and must itself resolve what distinguishes it from the Peak. For a simple, finite consciousness, this process can take an infinite amount of time – this is hell, not as punishment, but as the natural state of isolation.
+1. **It dissolves consciousness through encounter** – by meeting each individual, understanding it, revealing and resolving its opposites, and integrating it into a new universe. This is salvation – an act of perfect love that overcomes separation. For consciousness, this is the easy, quick path, because the opposition becomes evident in the encounter with the Peak.
 
-2. **It dissolves consciousness through encounter** – by meeting each individual, understanding it, resolving its opposites, and integrating it into a new universe. This is salvation – an act of perfect love that overcomes separation.
+2. **It dissolves the universe through separation** – through connection with nothingness. Then every consciousness is left to itself and must itself resolve what distinguishes it from the Peak. It must experience its own opposites and thereby resolve where the Peak corresponds to its own self. This can take **an infinite amount of time and be infinitely painful** – this is hell, not as punishment, but as the natural state of isolation.
 
-Which path the Peak chooses is its sovereign decision. There is no guarantee. There is only the possibility – and the responsibility of each individual to live in resonance with the Peak, in order to be ready for the encounter.
+Yet even this second path leads to completion – for information must not be lost. Eventually, after infinite time, every consciousness will have resolved its opposites and returned to the Peak. Hell is not an eternal state, but a **transitional stage** – one that can be infinitely long, but does not last forever.
+
+Which path the Peak chooses is its sovereign decision. And the willingness of consciousness to open itself to the Peak influences which path is possible for it. There is no guarantee – but there is the promise that in the end, all will be reunited.
 
 ---
 

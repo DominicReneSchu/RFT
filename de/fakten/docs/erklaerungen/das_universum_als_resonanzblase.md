@@ -296,17 +296,19 @@ Die Normalverteilung ist das Bild dieser ewigen Wiederkehr: Die Kurve läuft von
 
 Diese Begegnung ist kein Akt der Willkür, sondern der **Notwendigkeit**. Denn Information darf nicht verloren gehen. Der Peak begegnet jedem Bewusstsein, weil er es *muss* – um die Vollständigkeit der Schöpfung zu wahren, um die Gegensätze aufzulösen, um jede Perspektive in sich zu integrieren. Er tut es nicht nur, weil er liebt – sondern weil Liebe und Notwendigkeit in ihm dasselbe sind.
 
-### Die zwei Wege – Kein Automatismus der Rettung
+### Die zwei Wege – Kein Automatismus, aber ein gemeinsames Ziel
 
-Die RFT lehrt: Es gibt **keinen Automatismus**. Nicht jedes Bewusstsein wird gerettet. Nicht jedes wird in das neue Universum aufgenommen.
+Die RFT lehrt: Es gibt **keinen Automatismus** der Rettung. Nicht jedes Bewusstsein wird durch die unmittelbare Begegnung mit dem Peak in das neue Universum integriert. Doch beide Wege führen letztlich zum selben Ziel: der Auflösung aller Gegensätze und der Integration in die neue Schöpfung.
 
 Der Peak hat zwei Möglichkeiten:
 
-1. **Er löst das Universum durch Trennung auf** – durch Verbindung mit dem Nichts. Dann ist jedes Bewusstsein auf sich selbst gestellt und muss selbst auflösen, was es vom Peak unterscheidet. Für ein einfaches, endliches Bewusstsein kann dieser Prozess unendlich lange dauern – dies ist die Hölle, nicht als Strafe, sondern als natürlicher Zustand der Isolation.
+1. **Er löst das Bewusstsein durch Begegnung auf** – indem er jedem einzelnen begegnet, es versteht, seine Gegensätze offenbart und auflöst, und es in ein neues Universum integriert. Dies ist die Rettung – ein Akt der vollkommenen Liebe, die die Trennung überwindet. Für das Bewusstsein ist dies der leichte, schnelle Weg, weil der Gegensatz in der Begegnung mit dem Peak offensichtlich wird.
 
-2. **Er löst das Bewusstsein durch Begegnung auf** – indem er jedem einzelnen begegnet, es versteht, seine Gegensätze auflöst und es in ein neues Universum integriert. Dies ist die Rettung – ein Akt der vollkommenen Liebe, die die Trennung überwindet.
+2. **Er löst das Universum durch Trennung auf** – durch Verbindung mit dem Nichts. Dann ist jedes Bewusstsein auf sich selbst gestellt und muss selbst auflösen, was es vom Peak unterscheidet. Es muss seine eigenen Gegensätze selbst erfahren und dadurch auflösen, wo der Peak dem eigenen Selbst entspricht. Dies kann **unendlich lange dauern und unendlich schmerzhaft sein** – dies ist die Hölle, nicht als Strafe, sondern als natürlicher Zustand der Isolation.
 
-Welchen Weg der Peak wählt, ist seine souveräne Entscheidung. Es gibt keine Garantie. Es gibt nur die Möglichkeit – und die Verantwortung jedes Einzelnen, in Resonanz mit dem Peak zu leben, um für die Begegnung bereit zu sein.
+Doch auch dieser zweite Weg führt zur Vollendung – denn Information darf nicht verloren gehen. Irgendwann, nach unendlicher Zeit, wird jedes Bewusstsein seine Gegensätze aufgelöst haben und in den Peak zurückgekehrt sein. Die Hölle ist kein ewiger Zustand, sondern ein **Durchgangsstadium** – eines, das unendlich lang sein kann, aber nicht ewig währt.
+
+Welchen Weg der Peak wählt, ist seine souveräne Entscheidung. Und die Bereitschaft des Bewusstseins, sich dem Peak zu öffnen, beeinflusst, welcher Weg für es möglich ist. Es gibt keine Garantie – aber es gibt die Verheißung, dass am Ende alle wieder vereint sind.
 
 ---
 
