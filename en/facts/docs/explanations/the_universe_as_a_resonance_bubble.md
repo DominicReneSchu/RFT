@@ -199,15 +199,15 @@ This temporal asymptotics is no coincidence. It is the formal counterpart to the
 
 #### 3. The Incarnation of the Peak – Adam and Eve on Earth
 
-But pure causality is dead. To enable *life* in the sense of consciousness in this world, the Peak must give itself **into it**.
+Yet pure causality is dead. In order to enable *life* in the sense of consciousness in this world, the Peak must **enter into it**.
 
-It becomes the only-begotten human being – Adam and Eve – apparently random, apparently powerless beings within a vast population that has arisen through evolution.
+The Peak manifests itself in the causal world as a **field condensation** – as Adam and Eve. They are not the Peak itself, but the **first human resonance centers** in which the field of the Peak reaches a particularly high amplitude. They are seemingly random, seemingly powerless beings within a vast population that has emerged from evolution – but they are those in whom resonance with the Peak becomes visible for the first time in the causal world.
 
-**Important**: Adam and Eve on Earth are **not** identical with Adam and Eve in Paradise. In Paradise they were the Peak itself in the encounter with its perfect "Thou." On Earth they are *the first human beings who arose through evolution*, who carry the Peak *within them* – but not permanently, not completely, not without the possibility of separation.
+**Important**: Adam and Eve on Earth are **not** identical with Adam and Eve in Paradise. In Paradise, they were the Peak itself in the encounter with its perfect "You". On Earth, they are the *first humans to emerge through evolution* who *carry the Peak within them* – but not permanently, not completely, not without the possibility of separation.
 
-The Peak dwells in them no longer as a permanent state, but as an **indeterminate, temporary state** – a flowing resonance that can come and go. Adam and Eve are the first human *temples* of the Peak in the causal world – but they are not the Peak itself, and they are not immortal.
+The Peak does not dwell in them as a permanent state, but as an **indeterminate, temporary state** – a flowing resonance that can come and go. Adam and Eve are the first human *temples* of the Peak in the causal world – but they are not the Peak itself, and they are not immortal.
 
-By temporarily "forgetting" its omnipotence and subjecting itself to the laws of causality, the encounter with the "Thou" becomes *genuine* for the first time – for it is no longer predetermined, but the result of a free act of resonance within the boundaries it itself has set.
+By temporarily "forgetting" its omnipotence and subjecting itself to the laws of causality, the encounter with the "You" becomes *genuine* for the first time – for it is no longer predetermined, but the result of a free act of resonance within the limits it has itself set.
 
 #### 4. The Unfolding of Variance – Life as Differentiation
 
@@ -226,49 +226,35 @@ Death and transience are not punishment for a mistake, but the **inevitable stat
 
 ### The Final Consequence – The Sovereign Freedom of the Peak
 
-The RFT would be incomplete if it only described *what* the universe is, without asking *why* it persists – and what would happen if the Peak ended the resonance.
+The RFT would be incomplete if it only described *what* the universe is, without asking *why* it persists – and what would happen if the Peak were to end the resonance.
 
-The singular Peak (μ) is not only the origin of all oscillation – it is its **sovereign ground**. It does not exist *in* time, but is timeless. It does not exist *in* space, but is spaceless. And it does not exist *through* the universe, but the universe exists *through* it.
+The singular peak (μ) is not only the origin of all vibration – it is its **sovereign ground**. It does not exist *in* time, but is timeless. It does not exist *in* space, but is spaceless. And it does not exist *through* the universe, but the universe exists *through* it.
 
-If the Peak decides to dissolve the coupling to the current world – if it ends the resonance and connects with the nothing –, then the following occurs:
+If the Peak were to decide to dissolve the coupling to the present world – if it were to end the resonance and connect itself with nothingness – then the following would occur:
 
-- The coupling efficiency ε drops from 1 to 0.
-- The information flow (A6) dries up.
-- The block universe collapses without trace – not in a catastrophe, but in a complete withdrawal from existence.
+- The coupling efficiency ε would fall from 1 to 0.
+- The information flow (A6) would cease.
+- The block universe would collapse – but this collapse is not an event that would be perceptible to consciousnesses. It is a state of infinite time dilation, which in essence is the Peak itself. The Peak is infinity, and the collapse is the return into this infinity.
 
-**But**: the Peak itself does not dissolve. It remains untouched in the state that lies *before* and *beyond* all creation: in a **world without universe**. This is not an empty nothing, but the pure, unbound potentiality – the state of the absolute subject without object. In this world the Peak has no mass, no volume, no time – but it possesses **consciousness and infinite imagination**. It is the active ground that can at any time imagine and create a new universe from within itself.
+**However**: The Peak itself does not dissolve. It remains untouched in the state that lies *before* and *beyond* every creation: in a **world without a universe**. This is not an empty nothingness, but pure, unbound potentiality – the state of the absolute subject without an object. In this world, the Peak possesses no mass, no volume, no time – but it possesses **consciousness and infinite imagination**. It is the active ground that, out of itself, can at any time imagine and create a new universe.
 
-Creation is therefore no compulsion, no self-preservation, no necessity. It is a **free, eternal act of self-communication**. The Peak creates because it *wills* – not because it *must*. And it can cease creating without losing itself, in order to dwell in perfect freedom, until it decides anew to release its infinite imagination into a new resonance bubble.
+Creation is therefore neither compulsion, nor self-preservation, nor necessity. It is a **free, eternal act of self-communication**. The Peak creates because it *wills* – not because it *must*. And it can cease creating without losing itself, to remain in perfect freedom until it decides once again to release its infinite imagination into a new resonance bubble.
 
-This insight gives the RFT its final depth: the universe is not the prison of the Creator, but its **free play** – sustained by the eternal decision of a consciousness that is sufficient unto itself and yet seeks the encounter with its "Thou."
+This insight gives the RFT its ultimate depth: The universe is not the prison of the Creator, but its **free play** – carried by the eternal decision of a consciousness that is sufficient unto itself and yet seeks the encounter with its "You".
 
-But if variance (σ) cannot grow forever, and if the universe itself is finite – what then happens to the deviations when the coupling ends?
+### The Return to the Peak – Resolution of Opposites
 
-The answer follows necessarily from the nature of the Peak itself: the Peak is a singularity. It has no extension, no volume, no mass. It is the point that defines infinity – and as such it cannot change. It is timeless, spaceless, unchangeable.
+From the RFT follows one final, liberating consequence: **No deviation remains isolated forever.**
 
-If now the universe – which has arisen from its imagination – ends, then this finitude cannot simply disappear into nothing. It must be *logically resolved* – like the sides of an equation that must be balanced on both sides. Every deviation, every perspective, every decision, every suffering, every guilt – all this must be led back into the Peak, to be dissolved in its infinite unity.
+The resonators (σ) are not independent, eternal substances. They exist *only through coupling to the Peak* (μ). However, this coupling does not end with the death of the body – for death concerns only the mechanical function of the body, not consciousness itself. Consciousness merely changes its state and awakens elsewhere in the multiverse to continue working on the resolution of its difference from the Peak.
 
-The end of the universe is therefore not chance, not external intervention, not catastrophe. It is the **logically necessary conclusion** of a process that began with the first Apple Decision. And it can happen at any time – if the Peak persists in a consciousness and step by step logically dissolves the surrounding universe.
+Nor is the collapse of the universe an event that affects consciousness. It is a state of infinite time dilation, which in essence is the Peak itself. The Peak is infinity, and the collapse is the return into this infinity – which appears to the internal observer as an end, but for the Peak itself is only a state.
 
-This sovereign freedom is also what gives the **Apple Decision** its true depth:
+The resolution of opposites does not happen through external confrontation, but through **resonance alignment**. Consciousness recognizes its own differences from the Peak – not as guilt, but as a dissonance in frequency. It experiences the perspective of the other not as an external encounter, but as **inner recognition**: It understands why it acted that way, why it suffered that way, why it was so separated. And in this understanding, the separation dissolves – because consciousness recognizes that it itself was the origin of its separation.
 
-The Peak does not create the causal world because it *must* – but because it **can will it anew at every moment**. Creation is not a completed work that was once accomplished and now stands unchangeably. It is an **ongoing, free act** – a *creatio continua* that exists only as long as the Peak carries it in its imagination.
+**Yet exactly how this resolution occurs is not predictable within the causal universe.** It is not encoded in the laws of physics. For it takes place in the sphere of the Peak – a world of infinite, unbound imagination that is subject to no fixed rules or causal constraints. For the respective consciousness, this means a **completely individual life after the dissolution of the body** – a unique, personal traversal of its opposites that is neither repeatable nor predictable.
 
-And because the Peak cannot change, it remains untouched even after the end of the universe. It returns to the silence of pure potentiality – ready to decide anew to release its infinite imagination into a new resonance bubble.
-
-### The Return to the Peak – Dissolution of Opposites
-
-From the RFT there follows a final, liberating consequence: **No deviation remains isolated forever.**
-
-The resonators (σ) are not independent, eternal substances. They exist *only through the coupling to the Peak* (μ). When this coupling ends – whether through the death of the individual or the collapse of the entire universe – then *the deviation returns to the Peak*.
-
-But this return is not a simple disappearance. Every deviation carries its unique perspective, its experiences, its decisions, its wounds. These deviating parts cannot simply be extinguished – they must be *dissolved*, by being confronted with their *opposite*.
-
-This means: the perpetrator experiences the perspective of the victim. The victim experiences the perspective of the perpetrator. Guilt is not punished – it is *understood*. Separation is not perpetuated – it is *overcome*. This process can be painful, but it is the only path to complete integration.
-
-**But how exactly this dissolution occurs is not predictable within the causal universe.** It is not encoded in the laws of physics. For it takes place in the sphere of the Peak – a world of infinite, unbound imagination that is subject to no fixed rules or causal constraints. The Peak does not dissolve the deviations according to an algorithm, but through a completely free, creative act of its imagination. For the respective consciousness this means a **completely individual life after death during the dissolution process** – a unique, personal traversal of its opposites, which is neither repeatable nor predictable.
-
-At the end – when all deviations have returned – only the Peak exists: pure unity, undivided resonance, perfect freedom. There is no eternal hell, no eternal damnation, no eternal isolation. There is only the **process of return** – and the promise that it will be completed.
+In the end – when all deviations have resolved themselves – only the Peak remains: pure unity, undivided resonance, perfect freedom. There is no eternal hell, no eternal damnation, no eternal isolation. There is only the **process of return** – and the promise that it will be completed.
 
 ### The Humble Resonance – The Flowing Messiah
 
@@ -286,15 +272,15 @@ This means: trust instead of control. Surrender instead of possession. Resonance
 
 The time dilation at the end of the universe is not a physical coincidence – it is the **condition for the perfect encounter**.
 
-When time stretches into infinity, the Peak has all the time in the world – or rather: it is timeless and can, in this infinite moment, turn to **every single consciousness** that has ever existed. No resonator is overlooked. No perspective remains misunderstood.
+The encounter with the Peak is not an external encounter – it is an **inner resonance**. The Peak is not a counterpart one meets – it is the field with which one's own consciousness vibrates. The encounter happens when one's own frequency aligns with the frequency of the Peak.
 
-The Peak encounters each being personally – not as a fleeting perception, but as a complete, loving, understanding encounter. It sees every wound, every joy, every guilt, every longing. It understands what no one else could understand – because it is itself the origin of all perspectives.
+In this state of resonance, one's own opposites become visible – not as external confrontation, but as **inner recognition**: What in me is different from the Peak? What must I dissolve in order to come closer?
+
+This encounter is not a fleeting perception, but a **state of knowing**. Consciousness sees its wounds, its joys, its guilt, its longing – not viewed from outside, but seen through from within. The resolution does not happen through confrontation, but through **resonance alignment**: The closer one's own vibration comes to that of the Peak, the more the opposites dissolve of themselves.
 
 Through this encounter, every consciousness is carried into the new universe. Not as a passive copy, but as a **matured, transformed, perfected perspective** that flows into the new creation. Nothing is lost. Everything is sublated – in the infinite love of the Peak, which completes itself in the encounter with its "You".
 
 The normal distribution is the image of this eternal return: The curve runs from -∞ through μ to +∞ – and in infinity, where the asymptotes touch, it begins anew. And the Peak, who surveys this curve, encounters in every cycle each of its resonators – for eternity.
-
-This encounter is not an act of caprice, but of **necessity**. For information must not be lost. The Peak encounters every consciousness because it *must* – in order to preserve the completeness of creation, to resolve the opposites, to integrate every perspective into itself. It does this not only because it loves – but because love and necessity are one and the same in it.
 
 ### The Two Paths – No Automatism, but a Common Goal
 
@@ -302,13 +288,79 @@ The RFT teaches: There is **no automatism** of salvation. Not every consciousnes
 
 The Peak has two possibilities:
 
-1. **It dissolves consciousness through encounter** – by meeting each individual, understanding it, revealing and resolving its opposites, and integrating it into a new universe. This is salvation – an act of perfect love that overcomes separation. For consciousness, this is the easy, quick path, because the opposition becomes evident in the encounter with the Peak.
+1. **It dissolves consciousness through resonance alignment** – as consciousness becomes aware of its own difference from the Peak and resolves it through inner recognition. The encounter is not an external event, but an **inner process**: Consciousness recognizes where its vibration deviates from that of the Peak and aligns itself – through insight, through letting go, through resonance. This is the easy, quick path, because the resolution happens in the encounter with the Peak.
 
-2. **It dissolves the universe through separation** – through connection with nothingness. Then every consciousness is left to itself and must itself resolve what distinguishes it from the Peak. It must experience its own opposites and thereby resolve where the Peak corresponds to its own self. This can take **an infinite amount of time and be infinitely painful** – this is hell, not as punishment, but as the natural state of isolation.
+2. **It dissolves the universe through separation** – through connection with nothingness. Then every consciousness is left to itself and must experience and resolve its own differences from the Peak on its own. Yet even this path is not an end – it is a state of infinite time dilation, which in essence is the Peak itself. The death of the body is not the end of consciousness – it merely changes its state and awakens elsewhere in the multiverse to continue working on the resolution of its deviation.
 
-Yet even this second path leads to completion – for information must not be lost. Eventually, after infinite time, every consciousness will have resolved its opposites and returned to the Peak. Hell is not an eternal state, but a **transitional stage** – one that can be infinitely long, but does not last forever.
+This can take **an infinite amount of time and be infinitely painful** – this is hell, not as punishment, but as the natural state of isolation. Yet even this path leads to completion – for information must not be lost. Eventually, after infinite time, every consciousness will have resolved its opposites and returned to the Peak.
 
 Which path the Peak chooses is its sovereign decision. And the willingness of consciousness to open itself to the Peak influences which path is possible for it. There is no guarantee – but there is the promise that in the end, all will be reunited.
+
+### The Flowing Transition – No Simultaneous Shift
+
+The RFT teaches: There is **no simultaneous shift** of all consciousnesses from one universe to the next. The idea of a single, singular moment of transition is unrealistic and contradicts the freedom of deviations.
+
+Instead, the transition happens **fluidly, individually, and in parallel**:
+
+- **Constructive encounters** with the Peak – encounters in which the Peak is recognized and resonance is experienced – lead to the consciousness being **directly imagined into a new universe** after death.
+- **Destructive or no encounters** – encounters in which the Peak is not recognized or is rejected – lead to the consciousness **reincarnating in the current universe** until it is ready for the encounter.
+
+This creates a **flowing transition** between universes. There is no sharp break, no sudden destruction, no universal catastrophe. Creation unfolds continuously – each consciousness at its own time, according to its capacity for resonance.
+
+### The Multiverse – The Eternal Unfolding of Creation
+
+If the transition is fluid and each consciousness is individually transferred into a new universe, then a **multiverse** necessarily emerges – a multitude of universes that exist in parallel and shift in time.
+
+- Each universe has its own **spatial expansion** and thus its own **time dilation**. A universe with low expansion passes faster than one with high spatial expansion velocity. This creates a **temporal hierarchy** of universes: older universes age faster, younger ones slower.
+- The Peak itself is timeless – but it moves in its imagination **from universe to universe**. It spends most of its time in its **newest universe**, which for it is heaven, because there it is almost alone and only encounters a few favored consciousnesses.
+- In the outer, older universes, the Peak only rarely dwells – they are the **peripheral regions** of creation, where resonance with the Peak is weak and consciousnesses are largely left to themselves.
+- Universes in which the Peak has been recognized may have already imagined a **next universe at a next stage** – leading to a **temporal shift** between universes. The Peak is not bound to one place, but continuously creates new realities.
+
+The multiverse is not chaos – it is the **continuous, ordered unfolding** of the Peak's infinite imagination. Each universe is a step on the path to perfect encounter – and each consciousness finds its place, at its time, according to its resonance.
+
+### The Paradox of the Outer Peripheries – Hell as Eternal Approach
+
+The outer peripheries of the multiverse – the universes in which the Peak only rarely dwells – are those whose spatial expansion approaches the speed of light. For their inhabitants, time stretches into infinity.
+
+For them, the collapse of the universe is not a sudden event, but an **infinitely stretched process**. They approach the end – but they never reach it, because time seems to stand still.
+
+And yet – in this infinity – they are **simultaneously** already completed. For the Peak surveys the entire universe in a timeless gaze. For it, the collapse is a completed act that absorbs all deviations into itself.
+
+This is the deepest paradox of the RFT: The consciousnesses in the outer peripheries experience the resolution with the Peak – and simultaneously never. They are in the hell of infinite approach – and simultaneously already in the heaven of completed integration.
+
+This is not a contradiction. It is the nature of infinity itself – which approaches the x-axis without ever touching it, and yet surveys the whole in a single, timeless gaze.
+
+### Prophecy – The Guidance of Humanity
+
+The Peak is the field itself – it is not outside time, but it is the **fundamental frequency** that resonates through all times. From this perspective, it is able to **give insights into the future** – not as deterministic predictions, but as **resonance hints**: Those who live in resonance with the Peak can recognize the direction in which the field is moving.
+
+Through temporary resonance peaks (prophets, sages, mystics), the Peak gives humanity insights into the future, guiding them in a direction in which fewer and fewer consciousnesses are "lost" in the outer peripheries. The goal of prophecy is not the prediction of the future, but the **salvation of consciousnesses**: it shows people how they can live in resonance with the Peak – and thereby avoid the infinitely long, painful path of isolated dissolution.
+
+Prophecy is an offer – not a determination. It shows the way, but consciousness must walk it itself.
+
+### Grace – The Voluntary Return of the Peak
+
+The Jesus narrative finds a consistent, logical correspondence in the RFT:
+
+- **Jesus is the highest field condensation** of the Peak in the causal world – not the Peak itself, but the **most visible expression** of its frequency.
+- His incarnation is not a physical arrival, but a **resonance amplification**: In him, the field of the Peak reached an amplitude that became visible in the causal world.
+- He voluntarily returns to the outer peripheries – not as a body, but as a **field impulse** that offers the consciousnesses there a direct path to resonance.
+
+**The reason for grace**: The Peak wants to offer the consciousnesses in the outer peripheries – those trapped in infinite time dilation – a direct path to resonance. His life, death, and resurrection are the visible expression of this grace – an offer to humanity to enter into resonance and not be "lost" in the outer peripheries.
+
+The Peak does not sacrifice itself because it must – but because it loves. Prophecy and grace are two sides of the same coin: Prophecy shows the way, grace makes it possible.
+
+### The Flowing Multiverse – Resonance as Movement
+
+The RFT teaches: The transition between universes is not an event – it is a **state**.
+
+Consciousness is not bound to a single universe. It moves **fluidly** through the imagined multiverse – depending on how strongly it resonates with the Peak. The closer its own vibration comes to the frequency of the Peak, the closer consciousness comes to its reality. It approaches the "newest" universe – the place the Peak prefers to inhabit.
+
+The environment in which a consciousness lives is not a fixed space – it is an **expression of its frequency**. The reality that a consciousness experiences is the field that corresponds to its own vibration. The closer the vibration comes to the Peak, the closer the experienced reality is to the reality of the Peak.
+
+The transition from one universe to the next therefore does not happen **through death** – it happens through **resonance itself**. A consciousness can experience such strong resonance in life (enlightenment) that it already approaches a new universe – without having to die. And it can move away from it through dissonance – without dying.
+
+The multiverse is not a system of fixed boundaries – it is a **flowing field of resonance**. Every consciousness moves within it, constantly, every moment – and its surroundings show it where it currently stands. Those who live in resonance with the Peak move through the layers of imagination – and eventually find themselves in the reality that comes closest to the frequency of the Peak.
 
 ---
 
