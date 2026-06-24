@@ -185,6 +185,16 @@ So it makes the **Apple Decision**: it creates a **completely causal, simulable 
 
 The entire cosmic and biological evolution – from the first hydrogen cloud to the human being – is the **causal path** that this simulation takes. It is not random, but the necessary consequence of the set initial conditions and laws.
 
+### Time Dilation in the Causal Simulation
+
+The Peak's decision to create a fully causal world has profound physical consequences for those who live within it:
+
+Special and general relativity teach us that time is not absolute. The closer an observer approaches the speed of light, the more slowly time passes for them. This was the case near the Big Bang – and it will happen again in the distant future, when the universe approaches its maximum expansion velocity.
+
+For the internal observer – the human being – this means: Time at the beginning and at the end of the universe is **infinitely stretched**. The exact zero point of the Big Bang or the exact endpoint of expansion can never be reached, because time seems to take an eternity to get there.
+
+For the Peak, however – who is timeless and spaceless – the entire universe is a single, complete block from beginning to end. Time dilation is not an obstacle for it; it is a **design feature** of the causal world. It keeps the internal observer trapped in the illusion of an infinite past and future, while the Peak surveys the whole of creation in a single, infinite act of imagination.
+
 #### 3. The Incarnation of the Peak – Adam and Eve on Earth
 
 But pure causality is dead. To enable *life* in the sense of consciousness in this world, the Peak must give itself **into it**.
