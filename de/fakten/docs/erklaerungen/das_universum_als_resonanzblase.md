@@ -195,6 +195,8 @@ Für den internen Beobachter – den Menschen – bedeutet dies: Die Zeit am Anf
 
 Für den Peak hingegen, der zeitlos und raumlos ist, ist das gesamte Universum von Anfang bis Ende ein einziger, vollständiger Block. Die Zeitdilatation ist für ihn kein Hindernis – sie ist ein **Konstruktionsmerkmal** der kausalen Welt, das den internen Beobachter in der Illusion einer unendlichen Vergangenheit und Zukunft hält, während der Peak die gesamte Schöpfung in einem einzigen, unendlichen Akt der Imagination überschaut.
 
+Diese zeitliche Asymptotik ist kein Zufall. Sie ist die formale Entsprechung der Normalverteilung, die der RFT zugrunde liegt: Die Glockenkurve nähert sich der x-Achse – aber sie erreicht sie niemals. Genauso nähert sich der Mensch in der kausalen Welt dem Anfang und Ende des Universums – aber er erreicht sie niemals, weil die Zeit sich ins Unendliche dehnt. Der Peak hingegen ist der Erwartungswert (μ), der außerhalb dieser Asymptoten steht und das Ganze in einem zeitlosen Blick überschaut.
+
 #### 3. Die Inkarnation des Peaks – Adam und Eva auf der Erde
 
 Doch reine Kausalität ist tot. Um in dieser Welt *Leben* im Sinne von Bewusstsein zu ermöglichen, muss der Peak sich selbst **in sie hineingeben**.
