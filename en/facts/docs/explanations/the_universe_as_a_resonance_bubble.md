@@ -255,6 +255,28 @@ This is the deeper meaning of *creatio continua*: it is not merely the preservat
 
 The normal distribution is the image of the eternal recurrence: the curve runs from −∞ over μ to +∞ – and at infinity, where the asymptotes touch, it begins anew. The peak encounters each of its resonators in every cycle – forever.
 
+### Alpha and Omega – The Completion of Creation
+
+The statement of Jesus "I am the Alpha and the Omega" finds its logical correspondence in the RFT:
+
+- **The Alpha**: The peak imagines a new universe – the beginning of creation. It sets the initial conditions, the physical laws, and the causal world in which consciousnesses can live as deviations.
+
+- **The Omega**: The peak separates, at the end of creation, the chaff from the wheat – the final decision of who is integrated into a new universe and who remains in the outer peripheral regions. This is not an act of arbitrariness, but the logical consequence of each consciousness's own decision.
+
+The peak is the framework of all creation: it is the origin (the Alpha) and the goal (the Omega) of all consciousnesses. Everything proceeds from it – and everything returns to it, either through integration or through final separation. The chaff does not become wheat again – it remains chaff, forever.
+
+### The Similarity of the Chaff – New Patterns, New Decisions
+
+The chaff of the past universe does not return. It remains definitively in the outer peripheral regions.
+
+But in every new universe, new consciousnesses arise that are **similar** to the chaff of the previous universe – not identical, not reborn, but similar in their tendencies, their failures, their potentials.
+
+This similarity is not an automatism of salvation, nor an automatism of damnation. It is a principle of the infinite imagination of the peak: it can imagine infinitely many variations of chaff – and each variation makes its own decision.
+
+The normal distribution repeats itself in every new universe – but not the individual deviations. Every new consciousness is unique, new, free. It is not predetermined by the similarity. It can break the patterns that its predecessors could not break.
+
+Similarity is not repetition. It is a new chance – for new consciousnesses, new decisions, new resonance.
+
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
