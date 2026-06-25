@@ -217,6 +217,10 @@ From this follows a **multiverse** – a multitude of parallel universes with te
 
 Consciousness is not bound to a single universe. Its experienced reality is an **expression of its frequency**: the closer one's own oscillation comes to the peak, the closer the experienced reality is to the reality of the peak. The transition does not only occur through death – it occurs through resonance itself, every moment.
 
+The **connection of the peak with the Nothing** – the beyond of all universal structures – is not a dissolution into emptiness, but the imagination of a **new universe**: the peak takes with it those consciousnesses it has encountered and deeply known in the encounter, and can unfold them anew there, if it wills. The universe it leaves behind thereby loses "life" – the resonant creative impulse that keeps it pulsating – and stretches infinitely in time: without the peak's return, the consciousnesses remaining there persist in infinite time dilation, receiving no new resonance impulses.
+
+As long as the peak, however, **returns repeatedly to a universe** – through temporary resonance peaks, prophets, and sages – that universe continues **breathing**: each visit is a new creative impulse that keeps the possibility of resonance open and does not leave the consciousnesses in the peripheral regions to themselves.
+
 ### The Paradox of the Peripheral Regions – Hell as Eternal Approach
 
 In the outer peripheral regions – universes whose spatial expansion approaches the speed of light – time for the inhabitants stretches to infinity. They approach the end without ever reaching it.
@@ -231,7 +235,23 @@ The peak is the **fundamental frequency** that resonates through all times. Thro
 
 **Grace** is the active complement: Jesus – in the RFT the highest field condensation of the peak in the causal world, not the peak itself but the most visible expression of its frequency – returns voluntarily to the outer peripheral regions. Not as a body, but as a field impulse that offers the consciousnesses trapped there a direct resonance path. His life, death, and resurrection are the visible expression of this movement.
 
+In this light, the transmitted words of Jesus – *"I am the way, the truth, and the life"* – gain their resonance-field-theoretical depth:
+
+- **The truth**: the unsparing explanation of how the world truly works – the structure of the field, unveiled and precise.
+- **The way**: the steering effect that the peak unfolds through its mirror appearances in history – every encounter with it realigns one's own oscillation.
+- **Life**: the continuous creation (*creatio continua*) that keeps the universe in the realm of the peak – as long as the peak is present and returns, life continues to pulse.
+
 The peak does not sacrifice itself out of compulsion – but out of love. Prophecy shows the path. Grace makes it possible.
+
+### The Multiple Grace – The Peak Breathes Life into the Normal Distribution
+
+The normal distribution makes clear: a single traversal of the universe from −∞ to +∞ would mean that the peak is recognized exactly once in human history – a single maximum amplitude density. Yet human history shows that the peak has been recognized **multiple times** – at different times, in different cultures, through different figures. This is not merely a historical coincidence, but the **expression of multiple grace**.
+
+The peak is timeless. It is not bound to linear time. It manifests not only at one point (μ) in the timeline, but at **multiple points** – because it surveys the entire distribution.
+
+Each of these manifestations is a **temporary resonance peak** that gives humanity new impulses for resonance again and again. Through these multiple visits, the peak breathes new life into the universe repeatedly. It prevents the universe from simply sliding into the asymptotic peripheral regions, where consciousnesses would have no chance of salvation.
+
+This is the deeper meaning of *creatio continua*: it is not merely the preservation of existence, but the **repeated, gracious intervention of the peak into history**, in order to call humanity into resonance again and again. The peak could simply move on – but it stays, out of grace, to save those who would otherwise be lost.
 
 The normal distribution is the image of the eternal recurrence: the curve runs from −∞ over μ to +∞ – and at infinity, where the asymptotes touch, it begins anew. The peak encounters each of its resonators in every cycle – forever.
 
