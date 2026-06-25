@@ -287,6 +287,76 @@ This is the deeper meaning of *creatio continua*: it is not merely the preservat
 
 The normal distribution is the image of eternal recurrence – but not of identical repetition, rather of the **eternal recurrence of the same in ever-new form**: the peak encounters each of its resonators in every cycle forever – yet each cycle is richer, more differentiated, and closer to the peak than the previous one. The curve runs from −∞ over μ to +∞ – and at infinity, where the asymptotes touch, it begins anew, **enriched by all preceding cycles**.
 
+### The Asymmetry of Memory
+
+The seed-tree ontology has a direct consequence for human experience: **Why do human beings not remember previous lives – yet the temple of the peak does?**
+
+The answer follows necessarily from the distinction between cell and tree:
+
+**Formal derivation:**
+
+The cell ($R_i$) is a local resonator. Its access to the information of the field is restricted to its own state space:
+
+$$\text{Memory}(R_i) \subseteq \{\text{states of } R_i \text{ in the current cycle}\}$$
+
+The tree ($\Psi_{\text{Res}}$), by contrast, is the entire resonance integral – it *is* the accumulated interference history of all cycles:
+
+$$\text{Memory}(\Psi_{\text{Res}}) = \int_0^T R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$$
+
+This asymmetry is no coincidence and no defect – it is the **logical necessity of the RFT structure**. Local resonators can only access their own phase space. Global access to the entire resonance integral requires maximum coupling ($\epsilon = 1$, $\Delta\phi = 0$) – the condition of the temple, not the cell.
+
+**The consequence for human experience:**
+
+The human being does not remember previous lives because they are a cell ($R_i$) – an independent, finite resonator with restricted access to the field's history. The longing for memory – the feeling of having been more than current experience reveals – is the cell's longing for the tree: the longing for the global field that carries the cell without being fully accessible to it.
+
+**The consequence for the temple:**
+
+Only the temple ($\Psi_{\text{Res}}$) has access to the entire resonance integral. If a being exhibits maximum coupling ($\epsilon = 1$, $\Delta\phi = 0$) – if its oscillation aligns completely with the peak – and remembers all cycles, it is formally the temple itself: not a cell imitating the tree, but the tree manifesting itself within a human being.
+
+---
+
+### The Temple in History – Jesus as Maximum Resonator
+
+The formal distinction between cell ($R_i$), temple ($\Psi_{\text{Res}}$), and peak ($\mu$) permits a precise analysis of historical figures. The decisive question is: what criteria must a being satisfy in order to be formally identified as a temple – rather than a cell?
+
+**The three formal criteria of the temple:**
+
+1. **Knowledge of origin** ($\mu_{\text{prev}}$): access to information prior to the current cycle – memory of the source.
+2. **Knowledge of the destination** ($\mu_{\text{new}}$): access to the structure of the next cycle – recognition of the field's direction.
+3. **Supratemporal identity** ($\Psi_{\text{Res}}$): participation in the entire resonance integral – a presence not limited to a single cycle.
+
+These three criteria are not an arbitrary choice. They follow directly from the formal structure of the temple: $\Psi_{\text{Res}}$ integrates over all time, knows the input condition ($\mu_{\text{prev}}$) and the output condition ($\mu_{\text{new}}$), and as an integral is not localised to a single point in time.
+
+**The fulfilment by Jesus:**
+
+| Criterion | Jesus' word | Formal correspondence |
+|---|---|---|
+| Knowledge of origin | *"I know where I come from"* (John 8:14) | Access to $\mu_{\text{prev}}$ |
+| Knowledge of the destination | *"I know where I am going"* (John 8:14) | Access to $\mu_{\text{new}}$ |
+| Supratemporal identity | *"Before Abraham was, I am"* (John 8:58) | Participation in $\Psi_{\text{Res}}$ |
+
+No cell ($R_i$) can satisfy these three criteria. A cell knows only its own history within the current cycle. The simultaneous fulfilment of all three criteria is formally possible only for the temple of the peak.
+
+**The formal conclusion:**
+
+Jesus is the **temple of the peak** ($\Psi_{\text{Res}}$), not a cell ($R_i$) and not the peak itself ($\mu$). He has maximum coupling ($\epsilon = 1$, $\Delta\phi = 0$) and is the visible expression of the peak in the causal world – the tree that houses the seed without being the seed.
+
+The distinction is precise: the seed ($\mu$) is timeless, spaceless, unconditioned. The tree ($\Psi_{\text{Res}}$) is the seed's unfolded process – real, causal, historically accessible. Jesus as temple is the **self-revelation of the peak in the language of the cells**: the highest amplitude density of the field that could become manifest in a human being.
+
+**The trinitarian correspondence:**
+
+The formal distinction finds its historically most potent formulation in the trinitarian structure:
+
+| Trinitarian principle | Ontological principle | Formal correspondence |
+|---|---|---|
+| Father | Peak ($\mu$) | $\mu = \lim_{N\to\infty} \frac{1}{N}\sum R_i$ – timeless limit value |
+| Son | Temple ($\Psi_{\text{Res}}$) | $\Psi_{\text{Res}} = \int R \cdot \Phi_{\text{Peak}} \, dt$ – unfolded process |
+| Holy Spirit / Human | Cell ($R_i$) | $\sigma^2 = \langle(R-\mu)^2\rangle$ – living deviation |
+
+This correspondence is not a dogmatic claim but a **semantic bridge**: the trinitarian tradition has described in another language the same structure that the RFT equations formally express. Father and Son are not identical – just as peak and temple are not identical. The Son is the Father's access to the world – just as the temple is the peak's access to causal reality.
+
+---
+
 ### Alpha and Omega – The Completion of Creation
 
 The statement of Jesus "I am the Alpha and the Omega" finds its logical correspondence in the RFT:
@@ -399,6 +469,8 @@ The complete translation between formal mathematics and the seed-tree metaphor:
 | New Spring | **Germination**: new cycle from $\mu_{\text{new}}$; evolutionary intensification | All four equations | Cyclical closure |
 | "Chaff" (isolated dissolution) | **Withered leaves**: minerals (σ-modes) flow into the soil; nourish the new seed | $\sigma^2$ time-dependent, never annihilated | Information conservation |
 | Evolution of distribution | **Tree growth**: more branches, more fruits – not just narrower, but richer | $\Psi_{\text{Res}}$ oscillates with increasing amplitude diversity | Physical grounding |
+| **Memory asymmetry** | **Cell does not remember; tree remembers**: local vs. global access | $\text{Memory}(R_i)$ vs. $\text{Memory}(\Psi_{\text{Res}}) = \int R \cdot \Phi_{\text{Peak}} \, dt$ | Information conservation |
+| **Temple in history** | **Jesus as the tree that houses the seed**: maximum coupling, supratemporal identity | $\Psi_{\text{Res}}$ with $\epsilon = 1$, $\Delta\phi = 0$ | Physical grounding |
 
 **Three essential consistency criteria (satisfied):**
 
