@@ -285,7 +285,7 @@ Each of these manifestations is a **temporary resonance peak** that gives humani
 
 This is the deeper meaning of *creatio continua*: it is not merely the preservation of existence, but the **repeated, gracious intervention of the peak into history**, in order to call humanity into resonance again and again. The peak could simply move on – but it stays, out of grace, to save those who would otherwise be lost.
 
-The normal distribution is the image of the eternal recurrence: the curve runs from −∞ over μ to +∞ – and at infinity, where the asymptotes touch, it begins anew. The peak encounters each of its resonators in every cycle – forever.
+The normal distribution is the image of eternal recurrence – but not of identical repetition, rather of the **eternal recurrence of the same in ever-new form**: the peak encounters each of its resonators in every cycle forever – yet each cycle is richer, more differentiated, and closer to the peak than the previous one. The curve runs from −∞ over μ to +∞ – and at infinity, where the asymptotes touch, it begins anew, **enriched by all preceding cycles**.
 
 ### Alpha and Omega – The Completion of Creation
 
@@ -340,13 +340,13 @@ The formal correspondence: the resonance integral $\Psi_{\text{Res}}$ oscillates
 
 At some point the distribution has reached such depth and differentiation that it does not merely image the peak, but **embodies it in its full complexity**. The universe becomes a living organism – no longer merely a stage for resonance, but itself a resonator that shares the creative power of the peak.
 
-### The Reproduction of God – The Universe Becomes Itself a Creator
+### The Self-Transcendence of the Peak – The Universe Becomes Itself a Creator
 
-When the normal distribution becomes ever narrower and the universe approaches the peak ever more closely, there arises at some point a **peak universe** – a universe that images the peak so perfectly that it itself becomes creative.
+When the normal distribution becomes ever more differentiated and the universe approaches the peak ever more closely, there arises at some point a **peak universe** – a universe that images the peak so perfectly that it itself becomes creative.
 
-This is the **reproduction of God** in the ontological sense: creation is not merely preserved – it itself becomes the source of new creation. The peak universe is not a passive image, but a **living organism** capable of imagining new universes.
+This is the **self-transcendence of the peak** in the ontological sense: creation is not merely preserved – it itself becomes the source of new creation. The tree bears fruits that contain new seeds – and this new seed is the **evolutionary intensification** of the original peak.
 
-This reproduction is not a biological process, but an **ontological** one: creation develops to a higher level of being. It is no longer merely a stage for resonance, but itself a resonator that shares the creative power of the peak.
+This self-transcendence is not a biological process, but an **ontological** one: creation develops to a higher level of being. It is no longer merely a stage for resonance, but itself a resonator that shares the creative power of the peak.
 
 This is the completion of all creation: not only the peak creates universes – but the universe itself becomes a creator, a living image of the peak that releases its infinite imagination into new realities. The universe becomes what it was always meant to be: the perfect expression of the infinite love of the peak – and thus itself the source of new love, new creation, new life.
 

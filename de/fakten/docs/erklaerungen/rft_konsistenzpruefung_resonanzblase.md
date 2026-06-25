@@ -184,6 +184,12 @@ Die Resonanzfeldtheorie ist damit ein **in sich geschlossenes System**: Es begin
 
 ---
 
+## 7. Verlinkung zum Hauptdokument
+
+Die hier hergeleitete Ontologie wird in [`das_universum_als_resonanzblase.md`](das_universum_als_resonanzblase.md) in ihrer vollen Tiefe entfaltet.
+
+---
+
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
 
 ---
