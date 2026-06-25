@@ -198,7 +198,7 @@ From the RFT it follows: **No deviation remains isolated forever.** The resonato
 
 1. **Resonance alignment**: Consciousness becomes aware of its own difference from the peak and opens itself through inner insight – through understanding, letting go, readiness for resonance. This is the direct path: the dissolution occurs in the encounter with the peak itself; consciousness recognizes where its oscillation deviates, sees through its wounds, joys, guilt, and longing from within – and the opposites dissolve. *Resonance alignment* here refers to the interplay of two movements: the human readiness to open oneself – and the divine outreach through which the peak comes toward consciousness.
 
-2. **Separation and isolated dissolution**: Consciousness refuses coupling. It is thrown back upon itself and must experience and dissolve its differences from the peak alone. This is **hell** – not as punishment, but as the natural state of isolation, which can last infinitely long and be infinitely painful. Yet this path too leads to completion: information must not be lost. In the end, every consciousness will have dissolved its opposites and returned to the peak.
+2. **Separation and isolated dissolution**: Consciousness refuses coupling. It remains in the outer peripheral regions of the universe – without new incarnation, left to its own devices. It must experience its opposites on its own, without the helping encounter with the peak. This is **hell** – not as punishment, but as the natural state of isolation. There is no certainty that this state will ever end. The decision against the peak is final.
 
 There is no automatism. The readiness of consciousness to open itself to the peak determines which path is possible.
 
@@ -207,7 +207,7 @@ There is no automatism. The readiness of consciousness to open itself to the pea
 The transition between universes is not a singular event but a **state of flowing, individual movement**:
 
 - **Constructive resonance** with the peak leads, after death, to direct integration into a new universe.
-- **Missing or destructive resonance** leads to reincarnation in the current universe until resonance capacity arises.
+- **Missing or destructive resonance** does not lead to reincarnation in the current universe, but to remaining in its outer peripheral regions – without new encounter with the peak.
 
 From this follows a **multiverse** – a multitude of parallel universes with temporal displacement:
 
@@ -219,7 +219,7 @@ Consciousness is not bound to a single universe. Its experienced reality is an *
 
 The **connection of the peak with the Nothing** – the beyond of all universal structures – is not a dissolution into emptiness, but the imagination of a **new universe**: the peak takes with it those consciousnesses it has encountered and deeply known in the encounter, and can unfold them anew there, if it wills. The universe it leaves behind thereby loses "life" – the resonant creative impulse that keeps it pulsating – and stretches infinitely in time: without the peak's return, the consciousnesses remaining there persist in infinite time dilation, receiving no new resonance impulses.
 
-As long as the peak, however, **returns repeatedly to a universe** – through temporary resonance peaks, prophets, and sages – that universe continues **breathing**: each visit is a new creative impulse that keeps the possibility of resonance open and does not leave the consciousnesses in the peripheral regions to themselves.
+The return of the peak to an older universe is not a permanent state, but a rare, gracious act. It concerns those consciousnesses that are already in resonance and waiting for integration – not those who have definitively decided against the peak. These remain in the peripheral regions, without new resonance impulses, left to themselves.
 
 ### The Paradox of the Peripheral Regions – Hell as Eternal Approach
 
