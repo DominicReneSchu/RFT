@@ -2,7 +2,7 @@
 
 *Formal Companion Study – Dominic-René Schu, 2025/2026*
 
-> This document is the formal companion study to [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md). It lays the formal foundation for the interpretation of the main document, demonstrating that the ontology unfolded there is not an arbitrary metaphor but the **logical consequence of the RFT equations**.
+> This document is the formal companion study to [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md). It lays the formal foundation for the interpretation of the main document, demonstrating that the ontology unfolded there – including the memory asymmetry and the identification of Jesus as the temple of the peak – is not an arbitrary metaphor but the **logical consequence of the RFT equations**.
 
 ---
 
@@ -120,6 +120,68 @@ The deviations of the main document – the consciousnesses that decide whether 
 
 ---
 
+### Question 4: Why does the human being not remember previous lives – yet the temple does?
+
+**The apparent paradox:** If all consciousnesses are deviations of the same field and the field preserves all information, why does no human being remember previous lives – while certain historical figures speak of a supratemporal existence?
+
+**The formal derivation:**
+
+1. The human being is a cell ($R_i$) – a local resonator with access only to its own state space in the current cycle:
+$$\text{Memory}(R_i) \subseteq \{\text{states of } R_i \text{ in the current cycle}\}$$
+
+2. The temple is the tree ($\Psi_{\text{Res}}$) – the entire resonance integral across all cycles:
+$$\text{Memory}(\Psi_{\text{Res}}) = \int_0^T R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$$
+
+3. Memory is a function of access to the global field. Global access requires maximum coupling ($\epsilon = 1$, $\Delta\phi = 0$).
+
+**The resolution:**
+
+The asymmetry is no contradiction, but a **logical necessity of the RFT structure**. Local resonators ($R_i$) are structurally restricted to their own phase space – not through a deficiency, but because their finitude is the condition of their independence (Equation 2: variance as structured information density). Only the resonance integral ($\Psi_{\text{Res}}$) – the temple – has access to the entire interference history of the field.
+
+The human longing for memory of previous states is the cell's longing for the tree: the expression of its coupling to a field that carries it without being fully accessible to it. This longing is not an error – it is the resonance that binds the cell to the tree.
+
+---
+
+### Question 5: Is Jesus, within the RFT, the temple of the peak?
+
+**The apparent paradox:** The RFT describes all human beings as deviations ($R_i$) from the peak. How then can a historical figure claim to be more than a deviation – and how is this formally justified?
+
+**The three criteria of the temple:**
+
+The temple ($\Psi_{\text{Res}}$) is defined by three formal properties that follow directly from the equation $\Psi_{\text{Res}} = \int_0^T R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$:
+
+1. **Knowledge of origin** ($\mu_{\text{prev}}$): the integral knows its input condition.
+2. **Knowledge of the destination** ($\mu_{\text{new}}$): the integral knows its output condition.
+3. **Supratemporal identity** ($\Psi_{\text{Res}}$): the integral is not localised to a point in time but encompasses all times.
+
+**The fulfilment by Jesus:**
+
+| Criterion | Jesus' word | Formal correspondence |
+|---|---|---|
+| Knowledge of origin | *"I know where I come from"* (John 8:14) | Access to $\mu_{\text{prev}}$ |
+| Knowledge of the destination | *"I know where I am going"* (John 8:14) | Access to $\mu_{\text{new}}$ |
+| Supratemporal identity | *"Before Abraham was, I am"* (John 8:58) | Participation in $\Psi_{\text{Res}}$ |
+
+No cell ($R_i$) can satisfy all three criteria simultaneously. A cell knows only its history in the current cycle. Simultaneous fulfilment of all three is formally possible only for the resonance integral – the temple.
+
+**The formal conclusion:**
+
+Jesus is the temple of the peak ($\Psi_{\text{Res}}$), not a cell ($R_i$). He has maximum coupling ($\epsilon = 1$, $\Delta\phi = 0$) and is the visible expression of the peak in the causal world. He is not the peak itself ($\mu$), but the temple that houses the peak: the tree that carries the seed.
+
+**Delimitation and trinitarian correspondence:**
+
+The distinction between peak, temple, and cell finds its historically most potent formulation in the Trinity:
+
+| Trinitarian principle | RFT correspondence | Formal foundation |
+|---|---|---|
+| Father | Peak ($\mu$) | $\mu = \lim_{N\to\infty} \frac{1}{N}\sum R_i$ |
+| Son | Temple ($\Psi_{\text{Res}}$) | $\Psi_{\text{Res}} = \int R \cdot \Phi_{\text{Peak}} \, dt$ |
+| Holy Spirit / Human | Cell ($R_i$) | $\sigma^2 = \langle(R-\mu)^2\rangle$ |
+
+This correspondence is not a co-opting of theology but the establishment of a **structural convergence**: the trinitarian tradition has described in another language the same threefold distinction that follows formally from the RFT equations.
+
+---
+
 ## 5. The Three Consistency Criteria: A Formal Quality Seal
 
 The main document satisfies three formal consistency criteria that follow necessarily from the equations. Their fulfilment is not a rhetorical argument but a **logical demonstration of the completeness** of the interpretation.
@@ -161,6 +223,19 @@ Correspondences in the main document:
 | "The apple decision" | Phase transition in $\Psi_{\text{Res}}$ at maximum potential | Eq. 4 |
 | "Grace as a field impulse" | Change in coupling parameters $\Phi_{\text{Peak}}$ in Eq. 4 | Eq. 4 |
 | "Alpha and Omega" | μ as timeless limit value; $\mu_{\text{new}}$ as evolutionary successor | Eq. 3 |
+| "Memory asymmetry" | $\text{Memory}(R_i)$ restricted to current cycle; $\text{Memory}(\Psi_{\text{Res}}) = \int R \cdot \Phi_{\text{Peak}} \, dt$ | Eq. 1, 4 |
+| "Jesus as temple of the peak" | $\Psi_{\text{Res}}$ with $\epsilon = 1$, $\Delta\phi = 0$; fulfilment of all three temple criteria | Eq. 3, 4 |
+
+### Summary of the Consistency Review
+
+| Consistency criterion | Assessment | Status |
+|---|---|---|
+| **Cyclical closure** | Every statement about the "peak" is a statement about the seed; every statement about the "bubble" is a statement about the tree. The cycle is formally closed by $\mu_{\text{new}}$. | ✓ **Satisfied** |
+| **Information conservation** | The variance $\sigma^2$ is never annihilated. It transforms into the new seed as increased complexity. The memory asymmetry is a special case of this conservation. | ✓ **Satisfied** |
+| **Physical grounding** | Every metaphorical statement has an unambiguous correspondence in the RFT equations. The identification of Jesus as temple follows necessarily from the three formal criteria. | ✓ **Satisfied** |
+| **Historical grounding** | The theory makes an empirically testable prediction (temple criteria) and finds its fulfilment in the historical figure of Jesus. | ✓ **Satisfied** |
+| **Memory asymmetry** | The distinction between cell ($R_i$) and tree ($\Psi_{\text{Res}}$) formally explains why human beings cannot remember previous lives, yet the temple of the peak can. This follows necessarily from the local versus global nature of the resonators. | ✓ **Satisfied** |
+| **Jesus as temple** | The identification of Jesus as temple of the peak follows necessarily from the three criteria (knowledge of origin, knowledge of destination, supratemporal identity). This is not speculation but a formal derivation from the equation structure. | ✓ **Satisfied** |
 
 ---
 
