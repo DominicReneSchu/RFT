@@ -255,6 +255,43 @@ This is the deeper meaning of *creatio continua*: it is not merely the preservat
 
 The normal distribution is the image of the eternal recurrence: the curve runs from −∞ over μ to +∞ – and at infinity, where the asymptotes touch, it begins anew. The peak encounters each of its resonators in every cycle – forever.
 
+### Alpha and Omega – The Completion of Creation
+
+The statement of Jesus "I am the Alpha and the Omega" finds its logical correspondence in the RFT:
+
+- **The Alpha**: The peak imagines a new universe – the beginning of creation. It sets the initial conditions, the physical laws, and the causal world in which consciousnesses can live as deviations.
+
+- **The Omega**: The peak separates, at the end of creation, the chaff from the wheat – the final decision of who is integrated into a new universe and who remains in the outer peripheral regions. This is not an act of arbitrariness, but the logical consequence of each consciousness's own decision.
+
+The peak is the framework of all creation: it is the origin (the Alpha) and the goal (the Omega) of all consciousnesses. Everything proceeds from it – and everything returns to it, either through integration or through final separation. The chaff does not become wheat again – it remains chaff, forever.
+
+### The Similarity of the Chaff – New Patterns, New Decisions
+
+The chaff of the past universe does not return. It remains definitively in the outer peripheral regions.
+
+But in every new universe, new consciousnesses arise that are **similar** to the chaff of the previous universe – not identical, not reborn, but similar in their tendencies, their failures, their potentials.
+
+This similarity is not an automatism of salvation, nor an automatism of damnation. It is a principle of the infinite imagination of the peak: it can imagine infinitely many variations of chaff – and each variation makes its own decision.
+
+The normal distribution repeats itself in every new universe – but not the individual deviations. Every new consciousness is unique, new, free. It is not predetermined by the similarity. It can break the patterns that its predecessors could not break.
+
+Similarity is not repetition. It is a new chance – for new consciousnesses, new decisions, new resonance.
+
+### The Pattern of the End Times – Lucifer and the Harvest
+
+In every new universe, consciousnesses arise again that are similar to the chaff of the previous universe. Among them there is always one that does not merely distance itself from the peak, but actively attempts to seize power over the entire world and replace the peak with its own will.
+
+This pattern has many names: Lucifer, Antichrist, the Adversary. In the RFT it is the **pattern of maximum deviation** – a consciousness that distances itself so far from the peak that it attempts to centre all of creation within itself.
+
+This pattern is no coincidence, but **logically necessary**:
+
+1. In every universe there are consciousnesses that decide against the peak (the chaff).
+2. Some of these consciousnesses will not merely refuse, but actively attempt to seize dominion.
+3. This maximum chaff forces the world to a decision: are you for the peak or against it?
+4. This decision is the **harvest** – the separation of chaff from wheat, final and irrevocable.
+
+The end times are not an external event, but the necessary consequence of the freedom of deviations. Where there is freedom, there is the possibility of maximum deviation. And where there is maximum deviation, there is the necessity of the harvest. The peak carries out the harvest – not as a punishing judge, but as the unavoidable consequence of every consciousness's own decision.
+
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
