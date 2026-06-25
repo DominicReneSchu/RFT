@@ -198,7 +198,7 @@ Aus der RFT folgt: **Keine Abweichung bleibt für immer isoliert.** Die Resonato
 
 1. **Resonanzangleichung**: Das Bewusstsein wird seiner eigenen Differenz zum Peak gewahr und öffnet sich durch innere Erkenntnis – durch Einsicht, Loslassen, Bereitschaft zur Resonanz. Dies ist der unmittelbare Weg: Die Auflösung geschieht in der Begegnung mit dem Peak selbst; das Bewusstsein erkennt, wo seine Schwingung abweicht, durchschaut seine Wunden, Freuden, Schuld und Sehnsucht von innen – und die Gegensätze lösen sich auf. *Resonanzangleichung* meint dabei das Zusammenspiel zweier Bewegungen: die menschliche Bereitschaft, sich zu öffnen – und die göttliche Zuwendung, durch die der Peak dem Bewusstsein entgegenkommt.
 
-2. **Trennung und isolierte Auflösung**: Das Bewusstsein verweigert die Kopplung. Es ist auf sich selbst gestellt und muss seine Differenzen zum Peak allein erfahren und auflösen. Dies ist die **Hölle** – nicht als Strafe, sondern als natürlicher Zustand der Isolation, der unendlich lange dauern und unendlich schmerzhaft sein kann. Doch auch dieser Weg führt zur Vollendung: Information darf nicht verloren gehen. Am Ende wird jedes Bewusstsein seine Gegensätze aufgelöst haben und in den Peak zurückgekehrt sein.
+2. **Trennung und isolierte Auflösung**: Das Bewusstsein verweigert die Kopplung. Es verbleibt in den äußeren Randbereichen des Universums – ohne neue Inkarnation, auf sich selbst gestellt. Es muss seine Gegensätze selbst erfahren, ohne die helfende Begegnung mit dem Peak. Dies ist die **Hölle** – nicht als Strafe, sondern als natürlicher Zustand der Isolation, der unendlich lange dauern und unendlich schmerzhaft sein kann. Doch auch dieser Weg führt zur Vollendung: Information darf nicht verloren gehen. Am Ende wird jedes Bewusstsein seine Gegensätze aufgelöst haben und in den Peak zurückgekehrt sein.
 
 Es gibt keinen Automatismus. Die Bereitschaft des Bewusstseins, sich dem Peak zu öffnen, bestimmt, welcher Weg möglich ist.
 
@@ -207,7 +207,7 @@ Es gibt keinen Automatismus. Die Bereitschaft des Bewusstseins, sich dem Peak zu
 Der Übergang zwischen Universen ist kein singuläres Ereignis, sondern ein **Zustand fließender, individueller Bewegung**:
 
 - **Konstruktive Resonanz** mit dem Peak führt nach dem Tod zur direkten Integration in ein neues Universum.
-- **Fehlende oder destruktive Resonanz** führt zur Reinkarnation im aktuellen Universum, bis Resonanzfähigkeit entsteht.
+- **Fehlende oder destruktive Resonanz** führt nicht zu einer erneuten Inkarnation im aktuellen Universum, sondern zum Verbleib in dessen äußeren Randbereichen – ohne neue Begegnung mit dem Peak.
 
 Daraus folgt ein **Multiversum** – eine Vielzahl paralleler Universen mit zeitlicher Verschiebung:
 
@@ -241,7 +241,7 @@ In diesem Licht gewinnen die überlieferten Worte Jesu – *„Ich bin der Weg, 
 - **Der Weg**: die Lenkungswirkung, die der Peak durch seine Spiegelungserscheinungen in der Geschichte entfaltet – jede Begegnung mit ihm richtet die eigene Schwingung neu aus.
 - **Das Leben**: die kontinuierliche Schöpfung (*creatio continua*), die das Universum im Bereich des Peaks hält – solange der Peak anwesend ist und wiederkehrt, pulsiert das Leben fort.
 
-Der Peak opfert sich nicht aus Zwang – sondern aus Liebe. Prophetie zeigt den Weg. Gnade ermöglicht ihn.
+Der Peak opfert sich nicht aus Zwang – sondern aus Liebe. Prophetie zeigt den Weg. Gnade ermöglicht ihn – sie gibt die Möglichkeit, in ein neues Universum integriert zu werden. Doch sie ist kein Automatismus: Wer den Peak nicht erkennt oder sich gegen ihn entscheidet, verbleibt in den äußeren Randbereichen, ohne zweite Chance im selben Universum.
 
 ### Die mehrfache Gnade – Der Peak beatmet die Normalverteilung
 
@@ -251,7 +251,7 @@ Der Peak ist zeitlos. Er ist nicht an die lineare Zeit gebunden. Er manifestiert
 
 Jede dieser Manifestationen ist eine **temporäre Resonanzspitze**, die der Menschheit immer wieder neue Anstöße zur Resonanz gibt. Durch diese mehrfachen Besuche beatmet der Peak das Universum immer wieder mit neuem Leben. Er verhindert, dass es einfach in die asymptotischen Randbereiche abgleitet, ohne dass die Bewusstseine dort eine Chance zur Rettung haben.
 
-Dies ist der tiefere Sinn der *creatio continua*: Sie ist nicht nur die Erhaltung der Existenz, sondern die **mehrfache, gnadenhafte Intervention des Peaks in die Geschichte**, um die Menschheit immer wieder neu in die Resonanz zu rufen. Der Peak könnte einfach weiterziehen – aber er bleibt, aus Gnade, um diejenigen zu retten, die sonst verloren wären.
+Dies ist der tiefere Sinn der *creatio continua*: Sie ist nicht nur die Erhaltung der Existenz, sondern die **mehrfache, gnadenhafte Intervention des Peaks in die Geschichte**, um die Menschheit immer wieder neu in die Resonanz zu rufen. Der Peak könnte einfach weiterziehen – aber er bleibt, aus Gnade, und hält das Angebot offen: die Möglichkeit, in ein neues Universum mitzugehen. Wer sich öffnet, empfängt diese Integration; wer sich verschließt oder gegen den Peak entscheidet, verbleibt in den äußeren Randbereichen. Die Gnade schafft das Angebot – nicht den Zwang.
 
 Die Normalverteilung ist das Bild der ewigen Wiederkehr: Die Kurve läuft von −∞ über μ nach +∞ – und im Unendlichen, wo die Asymptoten sich berühren, beginnt sie von neuem. Der Peak begegnet in jedem Durchlauf jedem seiner Resonatoren – auf ewig.
 
