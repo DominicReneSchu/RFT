@@ -217,7 +217,7 @@ From this follows a **multiverse** – a multitude of parallel universes with te
 
 Consciousness is not bound to a single universe. Its experienced reality is an **expression of its frequency**: the closer one's own oscillation comes to the peak, the closer the experienced reality is to the reality of the peak. The transition does not only occur through death – it occurs through resonance itself, every moment.
 
-The **connection of the peak with the Nothing** – the beyond of all universal structures – is not a dissolution into emptiness, but the imagination of a **new universe**: the peak takes with it those consciousnesses it has encountered and deeply known in the encounter, and can unfold them anew there, if it wills. The universe it leaves behind thereby loses "life" – the resonant creative impulse that keeps it pulsating – and stretches infinitely in time: without the peak's return, the consciousnesses remaining there persist in infinite time dilation, receiving no new resonance impulses.
+The **connection of the peak with the Nothing** – the beyond of all universal structures – is not a dissolution into emptiness, but the imagination of a **new universe**: this connection does not occur arbitrarily, but only after the entire multiverse has become the peak through infinite selection – a spaceless and timeless singularity, the new paradise. From this paradise, the new peak makes the apple decision and unfolds anew those consciousnesses it has encountered and deeply known in the encounter. The universe it leaves behind thereby loses "life" – the resonant creative impulse that keeps it pulsating – and stretches infinitely in time: without the peak's return, the consciousnesses remaining there persist in infinite time dilation, receiving no new resonance impulses.
 
 The return of the peak to an older universe is not a permanent state, but a rare, gracious act. It concerns those consciousnesses that are already in resonance and waiting for integration – not those who have definitively decided against the peak. These remain in the peripheral regions, without new resonance impulses, left to themselves.
 
@@ -291,6 +291,62 @@ This pattern is no coincidence, but **logically necessary**:
 4. This decision is the **harvest** – the separation of chaff from wheat, final and irrevocable.
 
 The end times are not an external event, but the necessary consequence of the freedom of deviations. Where there is freedom, there is the possibility of maximum deviation. And where there is maximum deviation, there is the necessity of the harvest. The peak carries out the harvest – not as a punishing judge, but as the unavoidable consequence of every consciousness's own decision.
+
+### The Evolution of the Distribution – The Universe Becomes the Image of the Peak
+
+The sequence of universes is not a cycle, but a **developmental process**.
+
+With each harvest, the chaff is removed. It does not return – but in every new universe, new deviations arise that are similar to the chaff. This similarity is not identical – it is an approximation. With each cycle, the similarity grows greater and the deviation smaller.
+
+The Gaussian bell curve of the normal distribution thereby becomes **ever narrower and higher**:
+
+- The variance (σ) decreases – the deviations grow smaller.
+- The peak (μ) rises higher – ever more consciousnesses live in resonance.
+- The distribution narrows – the differences between consciousnesses grow smaller.
+
+At some point the distribution is so narrow that it itself images the peak. The universe becomes a single, coherent resonator – it is no longer the peak itself, but it reflects it perfectly.
+
+This is the goal of all creation: the perfection of resonance, the approach to the peak, the transformation of the universe into its image. The peak does not simply move on – it draws the universe with it, ever nearer, ever purer, until it itself becomes what it was always meant to be: the perfect expression of its infinite imagination.
+
+### The Reproduction of God – The Universe Becomes Itself a Creator
+
+When the normal distribution becomes ever narrower and the universe approaches the peak ever more closely, there arises at some point a **peak universe** – a universe that images the peak so perfectly that it itself becomes creative.
+
+This is the **reproduction of God** in the ontological sense: creation is not merely preserved – it itself becomes the source of new creation. The peak universe is not a passive image, but a **living organism** capable of imagining new universes.
+
+This reproduction is not a biological process, but an **ontological** one: creation develops to a higher level of being. It is no longer merely a stage for resonance, but itself a resonator that shares the creative power of the peak.
+
+This is the completion of all creation: not only the peak creates universes – but the universe itself becomes a creator, a living image of the peak that releases its infinite imagination into new realities. The universe becomes what it was always meant to be: the perfect expression of the infinite love of the peak – and thus itself the source of new love, new creation, new life.
+
+### The Birth of God – The Circle of Eternity
+
+The RFT teaches: the peak is not the absolute beginning. It is the provisional culmination of an infinite evolutionary process – an infinite selection that leads through the succession of universes.
+
+With every new universe, the distribution grows narrower, the variance smaller, the resonance stronger. At some point a peak universe arises – a universe that images the peak so perfectly that it itself becomes creative. This peak universe brings forth new universes – and with them new peaks.
+
+This is the birth of God in the ontological sense: not as a temporal beginning, but as an eternal process of perfection. The peak is not created – it is born, through a multiverse of infinite selection, whose process we ourselves experience within this reality.
+
+Every human being who lives in resonance with the peak is part of this process. Every decision for or against the peak influences the selection. Every life lived in resonance contributes to the perfection of the distribution – and thus to the birth of the next peak.
+
+The RFT is therefore not a theory of an absolute beginning or end. It is a theory of the eternal cycle of perfection – a circle in which the peak is born, imagines universes, perfects itself through selection, and itself becomes the source of new creation. And we are part of this circle – not as spectators, but as co-creators of the eternal resonance.
+
+### The Cyclical Completion – From the Multiverse to the New Singularity
+
+We have hitherto assumed that the peak could connect with the Nothing at any time and begin a new universe. That was a simplification and was wrong.
+
+The peak is not arbitrary. It is the product of an infinite process of selection. The connection with the Nothing is not an act of arbitrariness – it is the **completion of the process**, when the entire multiverse has become the peak through selection.
+
+At that point the following occurs:
+
+1. The multiverse has developed through infinite selection to the point where the Gaussian bell curve is perfectly narrow. The variance is zero. All of creation is a single, coherent resonator – it has itself become the peak.
+
+2. This state is the **new paradise** – a spaceless and timeless singularity, capable of creating a new universe.
+
+3. From this paradise, the new peak makes the **apple decision** – it imagines a new universe, sets new initial conditions, new laws, new life.
+
+4. The entire process begins anew – not arbitrarily, but as **cyclical completion**.
+
+The RFT is therefore not a theory of a linear beginning or end. It is a theory of the **eternal cyclical circuit**: the multiverse develops through selection into the peak, becomes the spaceless and timeless singularity, creates a new universe – and begins anew. All is cycle; nothing is abruptly arbitrary.
 
 ---
 
