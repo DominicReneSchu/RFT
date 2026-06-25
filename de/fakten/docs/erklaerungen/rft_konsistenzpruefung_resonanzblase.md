@@ -121,7 +121,7 @@ Jede Aussage über den „Peak" ist nun eine Aussage über den **Samen** ($\mu$ 
 **Prüfung:**
 - „Der Peak imaginiert ein neues Universum" → „Der Samen (μ_neu) keimt in das nächste Frühjahr" ✓
 - „Die Blase kollabiert" → „Der Baum trägt seine Früchte; der Herbst bereitet den neuen Samen vor" ✓
-- „Alpha und Omega" → „Der Samen ist Alpha; die Reifung zur Frucht ist Omega; der neue Samen beginnt das nächste Alfa" ✓
+- „Alpha und Omega" → „Der Samen ist Alpha; die Reifung zur Frucht ist Omega; der neue Samen beginnt das nächste Alpha" ✓
 
 ### Kriterium 2: Informationserhaltung ✓
 
