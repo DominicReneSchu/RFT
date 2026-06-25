@@ -2,7 +2,7 @@
 
 *Dominic-René Schu, 2025/2026*
 
-> ⚠️ **Note:** The following sections unfold the philosophical, ontological, and theological embedding of the RFT. They go beyond the axiomatic core and are to be understood as interpretive extensions.
+> ⚠️ **Note:** The following sections unfold the philosophical, ontological, and theological embedding of the RFT. They go beyond the axiomatic core and are to be understood as interpretive extensions. The formal consistency of this interpretation is derived in detail in the companion document [`rft_consistency_review_resonance_bubble.md`](rft_consistency_review_resonance_bubble.md).
 
 ---
 

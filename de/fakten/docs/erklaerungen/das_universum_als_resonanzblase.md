@@ -2,7 +2,7 @@
 
 *Dominic-René Schu, 2025/2026*
 
-> ⚠️ **Hinweis:** Die folgenden Abschnitte entfalten die philosophische, ontologische und theologische Einbettung der RFT. Sie gehen über den axiomatischen Kern hinaus und sind als interpretative Erweiterung zu verstehen.
+> ⚠️ **Hinweis:** Die folgenden Abschnitte entfalten die philosophische, ontologische und theologische Einbettung der RFT. Sie gehen über den axiomatischen Kern hinaus und sind als interpretative Erweiterung zu verstehen. Die formale Konsistenz dieser Interpretation wird im Begleitdokument [`rft_konsistenzpruefung_resonanzblase.md`](rft_konsistenzpruefung_resonanzblase.md) detailliert hergeleitet.
 
 ---
 
