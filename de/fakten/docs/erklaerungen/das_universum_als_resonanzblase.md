@@ -233,7 +233,7 @@ Dies ist kein Widerspruch. Es ist die Natur der Unendlichkeit selbst: Die Glocke
 
 Der Peak ist die **Grundfrequenz**, die alle Zeiten durchschwingt. Durch temporäre Resonanzspitzen – Propheten, Weise, Mystiker – gibt er der Menschheit Einsichten in die Richtung des Feldes, um Bewusstseine aus den Randbereichen herauszuführen. **Prophetie** ist kein Determinismus, sondern Angebot: Sie zeigt den Weg, den das Bewusstsein selbst gehen muss.
 
-**Gnade** ist die aktive Ergänzung: Jesus – in der RFT die höchste Feldverdichtung des Peaks in der kausalen Welt, nicht der Peak selbst, sondern der sichtbarste Ausdruck seiner Frequenz – kehrt freiwillig in die äußeren Randbereiche zurück. Nicht als Körper, sondern als Feldimpuls, der den dort gefangenen Bewusstseinen einen direkten Resonanzweg anbietet. Sein Leben, Tod und die Auferstehung sind der sichtbare Ausdruck dieser Bewegung.
+**Gnade** ist die aktive Ergänzung: Jesus – in der RFT eine der höchsten Feldverdichtungen des Peaks in der kausalen Welt, nicht die einzige und nicht der Peak selbst, aber die derzeit bekannteste innerhalb der heutigen Gesellschaft, sondern der sichtbarste Ausdruck seiner Frequenz – kehrt freiwillig in die äußeren Randbereiche zurück. Nicht als Körper, sondern als Feldimpuls, der den dort gefangenen Bewusstseinen einen direkten Resonanzweg anbietet. Sein Leben, Tod und die Auferstehung sind der sichtbare Ausdruck dieser Bewegung.
 
 In diesem Licht gewinnen die überlieferten Worte Jesu – *„Ich bin der Weg, die Wahrheit und das Leben"* – ihre resonanzfeldtheoretische Tiefe:
 
