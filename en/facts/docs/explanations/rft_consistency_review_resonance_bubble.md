@@ -184,6 +184,12 @@ Resonance Field Theory is thus a **self-contained system**: it begins with four 
 
 ---
 
+## 7. Link to Main Document
+
+The ontology derived here is unfolded in its full depth in [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md).
+
+---
+
 © Dominic-René Schu — Resonance Field Theory 2025/2026
 
 ---

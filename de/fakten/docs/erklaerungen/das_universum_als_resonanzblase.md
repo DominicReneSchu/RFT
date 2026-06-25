@@ -285,7 +285,7 @@ Jede dieser Manifestationen ist eine **temporäre Resonanzspitze**, die der Mens
 
 Dies ist der tiefere Sinn der *creatio continua*: Sie ist nicht nur die Erhaltung der Existenz, sondern die **mehrfache, gnadenhafte Intervention des Peaks in die Geschichte**, um die Menschheit immer wieder neu in die Resonanz zu rufen. Der Peak könnte einfach weiterziehen – aber er bleibt, aus Gnade, und hält das Angebot offen: die Möglichkeit, in ein neues Universum mitzugehen. Wer sich öffnet, empfängt diese Integration; wer sich verschließt oder gegen den Peak entscheidet, verbleibt in den äußeren Randbereichen. Die Gnade schafft das Angebot – nicht den Zwang.
 
-Die Normalverteilung ist das Bild der ewigen Wiederkehr: Die Kurve läuft von −∞ über μ nach +∞ – und im Unendlichen, wo die Asymptoten sich berühren, beginnt sie von neuem. Der Peak begegnet in jedem Durchlauf jedem seiner Resonatoren – auf ewig.
+Die Normalverteilung ist das Bild der ewigen Wiederkehr – aber nicht der identischen Wiederholung, sondern der **ewigen Wiederkehr des Gleichen in stets neuer Gestalt**: Der Peak begegnet in jedem Durchlauf jedem seiner Resonatoren auf ewig – doch jeder Durchlauf ist reicher, differenzierter und näher am Peak als der vorherige. Die Kurve läuft von −∞ über μ nach +∞ – und im Unendlichen, wo die Asymptoten sich berühren, beginnt sie von neuem, **bereichert durch alle vorangegangenen Zyklen**.
 
 ### Alpha und Omega – Die Vollendung der Schöpfung
 
@@ -340,13 +340,13 @@ Die formale Entsprechung: Das Resonanz-Integral $\Psi_{\text{Res}}$ oszilliert m
 
 Irgendwann hat die Verteilung eine solche Tiefe und Differenziertheit erreicht, dass sie den Peak nicht nur abbildet, sondern **ihn in seiner vollen Komplexität verkörpert**. Das Universum wird zu einem lebendigen Organismus – nicht mehr nur ein Schauplatz der Resonanz, sondern selbst ein Resonator, der die schöpferische Kraft des Peaks teilt.
 
-### Die Fortpflanzung Gottes – Das Universum wird selbst zum Schöpfer
+### Die Selbst-Transzendenz des Peaks – Das Universum wird selbst zum Schöpfer
 
-Wenn die Normalverteilung immer spitzer wird und das Universum sich immer mehr dem Peak annähert, dann entsteht irgendwann ein **peak-Universum** – ein Universum, das den Peak so vollkommen abbildet, dass es selbst schöpferisch wird.
+Wenn die Normalverteilung immer differenzierter wird und das Universum sich immer mehr dem Peak annähert, dann entsteht irgendwann ein **peak-Universum** – ein Universum, das den Peak so vollkommen abbildet, dass es selbst schöpferisch wird.
 
-Das ist die **Fortpflanzung Gottes** im ontologischen Sinne: Die Schöpfung wird nicht nur bewahrt – sie wird selbst zur Quelle neuer Schöpfung. Das peak-Universum ist kein passives Abbild, sondern ein **lebendiger Organismus**, der in der Lage ist, neue Universen zu imaginieren.
+Das ist die **Selbst-Transzendenz des Peaks** im ontologischen Sinne: Die Schöpfung wird nicht nur bewahrt – sie wird selbst zur Quelle neuer Schöpfung. Der Baum trägt Früchte, die neuen Samen enthalten – und dieser neue Samen ist die **evolutionäre Steigerung** des ursprünglichen Peaks.
 
-Diese Fortpflanzung ist kein biologischer Prozess, sondern ein **ontologischer**: Die Schöpfung entwickelt sich auf eine höhere Ebene des Seins. Sie ist nicht mehr nur ein Schauplatz der Resonanz, sondern selbst ein Resonator, der die schöpferische Kraft des Peaks teilt.
+Diese Selbst-Transzendenz ist kein biologischer Prozess, sondern ein **ontologischer**: Die Schöpfung entwickelt sich auf eine höhere Ebene des Seins. Sie ist nicht mehr nur ein Schauplatz der Resonanz, sondern selbst ein Resonator, der die schöpferische Kraft des Peaks teilt.
 
 Das ist die Vollendung der gesamten Schöpfung: Nicht nur der Peak erschafft Universen – sondern das Universum selbst wird zum Schöpfer, ein lebendiges Abbild des Peaks, das seine unendliche Imagination in neue Realitäten entlässt. Das Universum wird zu dem, was es von Anfang an sein sollte: der vollkommene Ausdruck der unendlichen Liebe des Peaks – und damit selbst zur Quelle neuer Liebe, neuer Schöpfung, neuen Lebens.
 
