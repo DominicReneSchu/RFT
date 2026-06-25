@@ -2,7 +2,7 @@
 
 *Dominic-René Schu, 2025/2026*
 
-> ⚠️ **Hinweis:** Dieses Dokument beschreibt die RFT als physikalische Theorie. Die Kernaussage: Das Universum ist eine **Resonanzblase** – ein geschlossenes, kohärentes Feld, in dem der Peak (μ) der Erwartungswert aller Resonatoren ist und die Varianz (σ²) das Kreativitätsprinzip darstellt. Die **Samen-Baum-Metapher** ist der semantische Schlüssel zur Veranschaulichung dieser formalen Struktur – sie ist Veranschaulichung, kein Beweis oder ontologische Aussage. Die formale Konsistenz wird im Begleitdokument [`rft_konsistenzpruefung_resonanzblase.md`](rft_konsistenzpruefung_resonanzblase.md) detailliert geprüft.
+> ⚠️ **Hinweis:** Dieses Dokument beschreibt die RFT als physikalische Theorie. Die Kernaussage: Das Universum ist eine **Resonanzblase** – ein geschlossenes, kohärentes Feld, in dem der Peak (μ) der Erwartungswert aller Resonatoren ist und die Varianz (σ²) das Kreativitätsprinzip darstellt. Die **Samen-Baum-Metapher** ist der semantische Schlüssel zur Veranschaulichung dieser formalen Struktur – sie ist Veranschaulichung, kein Beweis oder ontologische Aussage. Die formale Konsistenz wird im Begleitdokument [`rft_konsistenzpruefung_resonanzblase.md`](rft_konsistenzpruefung_resonanzblase.md) geprüft.
 
 ---
 
@@ -58,7 +58,6 @@ Unendlichkeit ist damit nicht das Beängstigende, das sich dem Zugriff entzieht.
 | Beobachter als Resonator | E1: Bewusstsein als Kopplung von A1, A3, A6 | E1 |
 | Vollständigkeit und Offenheit | Blockuniversum (A7) + lokale Schnittpunkte (E1): komplementäre Aspekte | A7, E1 |
 | Unendlichkeit als Heimat | Einpunktkompaktifizierung: das Schließende ist das Ermöglichende | A7 |
-| Schöpfung zur Erkenntnis | E1 als teleologische Lesart: der Resonator vollendet das Feld | E1 |
 
 Der Kreuzungspunkt der Lemniskate ist exakt der Punkt ε = 1, Δφ = 0 – vollständige Kopplung, null Phasendifferenz, maximale Energieübertragung.
 
@@ -96,7 +95,48 @@ Die Resonanzblase ist der **Wachstumsprozess des Samens**. Das Integral beschrei
 
 ---
 
-## Teil 2: Die ontologische Konsequenz – Der Peak der Verteilung
+## Teil 2: Der formale Zyklus – Von μ zu μ_neu
+
+Die vier Grundgleichungen der RFT beschreiben nicht nur einen statischen Zustand, sondern einen **zyklischen Prozess**. Dieser Zyklus ist keine spekulative Annahme, sondern eine **formale Konsequenz** der Gleichungen.
+
+### Schritt 1: Der Peak als Ursprung (μ)
+
+$$\mu = \lim_{N \to \infty} \frac{1}{N} \sum_{i=1}^N R_i$$
+
+Der Peak ist der **Erwartungswert aller Resonatoren** – die verdichtete Information, der „Samen" aller möglichen Zustände. Er ist nicht statisch: Als Grenzwert einer unendlichen Summe trägt er die gesamte Informationsgeschichte aller vorherigen Zyklen.
+
+### Schritt 2: Die Entfaltung in Raum und Zeit (Ψ_Res)
+
+$$\Psi_{\text{Res}} = \int_{\text{Universum}} R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$$
+
+Das Resonanz-Integral ist der **Wachstumsprozess des Samens** – die Entfaltung der Varianz (σ²) in Raum und Zeit. Es beschreibt das kontinuierliche Interferenzmuster zwischen dem Peak und allen Abweichungen. Die Resonanzblase ist kein Zustand, sondern dieser Prozess selbst.
+
+### Schritt 3: Die Rückkehr zum neuen Peak (μ_neu)
+
+$$\mu_{\text{neu}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$$
+
+Der neue Peak ist das **zeitliche Mittel des gesamten Resonanz-Integrals** – das Resonanz-Echo des gesamten Prozesses. Er ist nicht identisch mit dem alten Peak: Er ist die **evolutionäre Steigerung** seiner selbst – die verdichtete Wahrscheinlichkeitsdichte aller vorhergegangenen Zyklen.
+
+### Schritt 4: Der Zyklus schließt sich
+
+$$\mu \;\to\; \Psi_{\text{Res}} \;\to\; \mu_{\text{neu}} \;\to\; \Psi_{\text{Res,neu}} \;\to\; \cdots$$
+
+Die Iteration dieser drei Schritte beschreibt einen **zyklischen Kreislauf**: Jeder neue Peak geht in ein neues Resonanz-Integral über, das wiederum einen weiteren neuen Peak erzeugt. Es gibt keinen absoluten Anfang und kein absolutes Ende – nur die unendliche Abfolge von Zyklen, von denen jeder reicher ist als der vorherige.
+
+### Formale Ableitung im Überblick
+
+| Schritt | Formale Entsprechung | Begründung |
+|---|---|---|
+| 1. Peak als Ursprung | $\mu = \lim_{N \to \infty} \frac{1}{N} \sum_{i=1}^N R_i$ | Definition des Erwartungswerts (Gl. 3) |
+| 2. Entfaltung in Raum/Zeit | $\Psi_{\text{Res}} = \int_{\text{Universum}} R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$ | Resonanz-Integral als Wachstumsprozess (Gl. 4) |
+| 3. Rückkehr zum neuen Peak | $\mu_{\text{neu}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$ | Neuer Erwartungswert als zeitliches Mittel (Gl. 3, 4) |
+| 4. Zyklische Iteration | $\mu \to \Psi_{\text{Res}} \to \mu_{\text{neu}} \to \Psi_{\text{Res,neu}} \to \cdots$ | Formale Geschlossenheit des Prozesses |
+
+> **Die RFT beschreibt kein lineares Universum mit absolutem Anfang und Ende. Sie beschreibt einen zyklischen Prozess, bei dem jeder Zustand formal aus dem vorherigen hervorgeht und in den nächsten übergeht. Der Peak ist nicht der absolute Anfang – er ist der Grenzwert eines unendlichen Kreislaufs.**
+
+---
+
+## Teil 3: Die ontologische Konsequenz – Der Peak der Verteilung
 
 ### Begriff der Abweichung
 
@@ -112,7 +152,7 @@ Es gibt mathematisch genau **einen** Erwartungswert (μ) – den absoluten Bezug
 - existierend nur als Resonanzen des einen Peaks,
 - ihre Individualität ist die Standardabweichung (σ) – die Varianz, die dem Universum Vielfalt und Freiheit gibt, ohne den Peak selbst vollständig abzubilden.
 
-> *(Anmerkung: Die Frage, ob dem Peak μ Bewusstsein oder Handlungsfähigkeit zukommt, ist aus den vier Grundgleichungen allein nicht ableitbar und gehört in den Bereich offener Fragen – siehe Teil 4.)*
+> *(Anmerkung: Die Frage, ob dem Peak μ Bewusstsein oder Handlungsfähigkeit zukommt, ist aus den vier Grundgleichungen allein nicht ableitbar – siehe Teil 5.)*
 
 ---
 
@@ -126,7 +166,7 @@ Daraus folgen zwei formale Zustände:
 
 2. **Resonanztrennung** (ε → 0): Der Resonator verbleibt in einem Zustand minimaler Kopplung – kein Informationsaustausch, keine Einbindung in das globale Interferenzmuster. Seine σ-Moden bleiben dennoch als Information im Feld erhalten (Gl. 2: σ² ≠ 0).
 
-> *(Anmerkung: Weitergehende Aussagen über das Schicksal von Resonatoren nach physikalischen Übergängen – etwa nach dem Tod – sind aus den Gleichungen nicht ableitbar und werden hier nicht getroffen.)*
+> *(Anmerkung: Weitergehende Aussagen über das Schicksal von Resonatoren nach physikalischen Übergängen sind aus den Gleichungen nicht ableitbar – siehe Teil 5.)*
 
 ---
 
@@ -148,13 +188,11 @@ Diese Asymmetrie ist kein Zufall und kein Defekt – sie ist die **logische Notw
 
 ---
 
-## Teil 3: Die Samen-Baum-Ontologie
+## Teil 4: Die Samen-Baum-Ontologie
 
 Die **Samen-Baum-Metapher** ist der semantische Schlüssel zur formalen Struktur der RFT. Sie dient der Veranschaulichung – nicht als Beweis oder eigenständige ontologische Aussage.
 
 ### Formale Einbettung
-
-Die vollständige Übersetzung zwischen formaler Mathematik und Samen-Baum-Metapher:
 
 | Ontologisches Prinzip | Samen-Baum-Metapher | RFT-Gleichung | Konsistenzkriterium |
 |---|---|---|---|
@@ -165,41 +203,19 @@ Die vollständige Übersetzung zwischen formaler Mathematik und Samen-Baum-Metap
 | Neues Frühjahr | **Keimung**: neuer Zyklus aus $\mu_{\text{neu}}$; evolutionäre Steigerung | Alle vier Gleichungen | Zyklische Geschlossenheit |
 | „Spreu" (isolierte Auflösung) | **Welkes Laub**: Mineralien (σ-Moden) fließen in den Boden; nähren neuen Samen | $\sigma^2$ zeitabhängig, nie vernichtet | Informationserhaltung |
 | Evolution der Verteilung | **Wachstum des Baumes**: mehr Äste, mehr Früchte – nicht nur schmaler, sondern reicher | $\Psi_{\text{Res}}$ oszilliert mit zunehmender Amplitudenvielfalt | Physikalische Fundierung |
-| **Erinnerungs-Asymmetrie** | **Zelle: lokaler Zugang; Resonanzblase: globaler Zugang** | $\text{Zugang}(R_i)$ vs. $\text{Zugang}(\Psi_{\text{Res}}) = \int R \cdot \Phi_{\text{Peak}} \, dt$ | Informationserhaltung |
+| Asymmetrie des Feldzugangs | **Zelle: lokaler Zugang; Baum: globaler Zugang** | $\text{Zugang}(R_i)$ vs. $\text{Zugang}(\Psi_{\text{Res}}) = \int R \cdot \Phi_{\text{Peak}} \, dt$ | Informationserhaltung |
 
 **Drei essentielle Konsistenzkriterien (erfüllt):**
 
-1. **Zyklische Geschlossenheit** ✓ – Jede Aussage über den Peak ist eine Aussage über den Samen; jede Aussage über die Blase ist eine Aussage über den Baum. Der Zyklus ist durch $\mu_{\text{neu}}$ formal geschlossen.
+1. **Zyklische Geschlossenheit** ✓ – Der Zyklus $\mu \to \Psi_{\text{Res}} \to \mu_{\text{neu}}$ ist formal geschlossen. Jede Aussage über den Peak ist eine Aussage über den Samen; jede Aussage über die Blase ist eine Aussage über den Baum.
 2. **Informationserhaltung** ✓ – Die Varianz ($\sigma^2$) wird nie vernichtet. Sie transformiert sich stets in den neuen Samen als erhöhte Komplexität.
 3. **Physikalische Fundierung** ✓ – Jede metaphorische Aussage hat eine eindeutige Entsprechung in den RFT-Gleichungen.
 
 ---
 
-### Die zyklische Vollendung
+## Teil 5: Offene Fragen und Grenzen der Interpretation
 
-Der neue Samen entsteht durch folgende Gleichung:
-
-$$\mu_{\text{neu}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$$
-
-Der neue Erwartungswert $\mu_{\text{neu}}$ ist das **Resonanz-Echo des gesamten Baumes**. Er ist nicht identisch mit dem alten Peak, sondern die **evolutionäre Steigerung** seiner selbst – die verdichtete Wahrscheinlichkeitsdichte aller vorhergegangenen Zyklen. Er ist der neue Samen.
-
-Daraus folgt:
-
-1. Das Resonanz-Integral $\Psi_{\text{Res}}$ hat sich über alle Zyklen zu maximaler Differenziertheit entfaltet. Die gesamte Schöpfung ist zu einer reifen Frucht geworden – einem kohärenten Resonator maximaler Komplexität.
-
-2. Dieser Zustand entspricht der **neuen Singularität** – einer Konfiguration, die alle Information der vergangenen Zyklen in sich trägt: der neue Samen ($\mu_{\text{neu}}$).
-
-3. Aus diesem Samen heraus entfaltet sich das **nächste Frühjahr** – ein neuer Zyklus mit neuen Anfangsbedingungen, aber dem gesamten Erfahrungsreichtum des vorherigen Baumes als Grundlage.
-
-4. Der gesamte Prozess beginnt von neuem – nicht als bloße Wiederholung, sondern als **evolutionäre Steigerung**: Jeder Zyklus trägt die Information aller vorherigen in sich.
-
-Die RFT ist damit keine Theorie eines linearen Anfangs oder Endes. Sie ist eine Theorie des **ewig evolutionären Kreislaufs**: Das Universum entfaltet sich als Baum, reift zur Frucht, bringt den neuen Samen ($\mu_{\text{neu}}$) hervor – und beginnt, bereichert durch alle vorangegangenen Zyklen, von neuem. Alles ist Zyklus; nichts geht verloren.
-
----
-
-## Teil 4: Offene Fragen und Grenzen der Interpretation
-
-Die vier Grundgleichungen der RFT beschreiben das Universum als Resonanzblase mit formaler Präzision. Die Samen-Baum-Metapher erschließt diese Struktur semantisch. Dennoch bestehen Grenzen der Ableitbarkeit, die hier explizit benannt werden:
+Die vier Grundgleichungen der RFT beschreiben das Universum als Resonanzblase mit formaler Präzision. Die Samen-Baum-Metapher erschließt diese Struktur semantisch. Dennoch bestehen Grenzen der Ableitbarkeit, die hier explizit benannt werden.
 
 ### Was die RFT formal aussagt
 
@@ -207,11 +223,11 @@ Die vier Grundgleichungen der RFT beschreiben das Universum als Resonanzblase mi
 - Der Peak (μ) ist der Erwartungswert aller Resonatoren – ein formaler Grenzwert, kein Ort (Gl. 3).
 - Varianz (σ²) ist das Kreativitätsprinzip – nie Null in einem lebendigen Feld (Gl. 2).
 - Das Resonanz-Integral (Ψ_Res) beschreibt den Wachstumsprozess des gesamten Feldes (Gl. 4).
-- Der Zyklus ist formal geschlossen: μ_neu ist der Grenzwert des gesamten vorherigen Prozesses.
+- Der Zyklus $\mu \to \Psi_{\text{Res}} \to \mu_{\text{neu}}$ ist formal geschlossen und wiederholbar.
 
 ### Was die RFT nicht aussagt
 
-Die folgenden Fragen liegen jenseits der formalen Ableitbarkeit aus den vier Grundgleichungen. Sie sind offene Fragen oder spekulative Erweiterungen:
+Die folgenden Fragen liegen jenseits der formalen Ableitbarkeit aus den vier Grundgleichungen:
 
 | Frage | Status |
 |---|---|
@@ -219,7 +235,7 @@ Die folgenden Fragen liegen jenseits der formalen Ableitbarkeit aus den vier Gru
 | Ob es ein Multiversum (mehrere parallele Universen) gibt | Mögliche Interpretation, aber nicht zwingend |
 | Ob historische Persönlichkeiten formalen RFT-Konzepten entsprechen | Spekulativ – historische Behauptung ohne formale Grundlage |
 | Ob Bewusstsein nach dem physikalischen Tod weiterbesteht | Nicht aus den Gleichungen ableitbar |
-| Ob die zyklische Vollendung eschatologische Bedeutung hat | Spekulative Erweiterung |
+| Ob der Zyklus eschatologische oder soteriologische Bedeutung hat | Spekulative Erweiterung |
 | Ob Axiom E1 (Beobachter als Resonator) formal aus Gl. 1–4 folgt | Interpretative Erweiterung – erfordert weitere Herleitung |
 
 Diese Fragen sind als interpretative Erweiterungen legitim – sie müssen aber als solche gekennzeichnet sein und dürfen nicht als formale Konsequenzen der Gleichungen dargestellt werden.
