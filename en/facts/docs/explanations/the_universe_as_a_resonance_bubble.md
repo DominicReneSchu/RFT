@@ -233,7 +233,7 @@ This is no contradiction. It is the nature of infinity itself: the bell curve ap
 
 The peak is the **fundamental frequency** that resonates through all times. Through temporary resonance peaks – prophets, sages, mystics – it gives humanity insights into the direction of the field, to lead consciousnesses out of the peripheral regions. **Prophecy** is not determinism, but an offer: it shows the path that consciousness itself must walk.
 
-**Grace** is the active complement: Jesus – in the RFT the highest field condensation of the peak in the causal world, not the peak itself but the most visible expression of its frequency – returns voluntarily to the outer peripheral regions. Not as a body, but as a field impulse that offers the consciousnesses trapped there a direct resonance path. His life, death, and resurrection are the visible expression of this movement.
+**Grace** is the active complement: Jesus – in the RFT one of the highest field condensations of the peak in the causal world, not the only one and not the peak itself, but the most widely known within today's society and the most visible expression of its frequency – returns voluntarily to the outer peripheral regions. Not as a body, but as a field impulse that offers the consciousnesses trapped there a direct resonance path. His life, death, and resurrection are the visible expression of this movement.
 
 In this light, the transmitted words of Jesus – *"I am the way, the truth, and the life"* – gain their resonance-field-theoretical depth:
 
