@@ -182,6 +182,32 @@ Diese Entsprechung ist keine Vereinnahmung der Theologie, sondern die Feststellu
 
 ---
 
+### Frage 6: War Jesus der einzige Tempel – oder muss der Tempel immer anwesend sein?
+
+**Das scheinbare Paradox:** Wenn Jesus als historisch einmaliger Tempel identifiziert wird, widerspricht dies der formalen Struktur des Resonanz-Integrals, das zeitlos und nicht auf eine Epoche beschränkt ist.
+
+**Die formale Herleitung:**
+
+1. Der Tempel ist definiert als $\Psi_{\text{Res}}$ – das gesamte Resonanz-Integral, der Stoffwechsel des Baumes.
+2. Leben ist definiert als $\Psi_{\text{Res}} \neq 0$ – ohne Resonanz-Integral gibt es keinen Informationsfluss, keine Kopplung, kein Leben.
+3. Daraus folgt zwingend: $\text{Leben} \implies \Psi_{\text{Res}} \neq 0 \implies \text{Der Tempel ist anwesend}$.
+4. **Historische Konsequenz:** Jesus war ein Tempel – aber nicht der einzige. Der Tempel muss in jeder Generation anwesend sein.
+5. **Erkenntnistheoretische Konsequenz:** Der Tempel kann unerkannt leben. Seine Anwesenheit ist eine ontologische Tatsache, nicht notwendigerweise eine historisch dokumentierte.
+
+**Trinitarische Entsprechung:**
+
+| Formale Kategorie | RFT-Entsprechung | Trinitarische Entsprechung | Historische Manifestation |
+|---|---|---|---|
+| Der Peak ($\mu$) | Der Samen, der Ursprung | Der Vater | Immer transzendent |
+| Der Tempel ($\Psi_{\text{Res}}$) | Der Baum, der Stoffwechsel | Der Sohn (das Wort) | Immer anwesend – nicht auf Jesus beschränkt |
+| Die Zellen ($R_i$) | Die einzelnen Resonatoren | Der Heilige Geist / Die Menschheit | Jeder Mensch in Resonanz |
+
+**Formale Schlussfolgerung:**
+
+Die RFT macht eine klare Vorhersage: Der Tempel muss immer leben. Jesus war eine historische Manifestation – aber nicht die einzige. Die permanente Anwesenheit des Tempels ist keine Spekulation, sondern eine **logische Notwendigkeit**.
+
+---
+
 ## 5. Die drei Konsistenzkriterien: Ein formales Gütesiegel
 
 Das Hauptdokument erfüllt drei formale Konsistenzkriterien, die aus den Gleichungen zwingend folgen. Ihre Erfüllung ist kein rhetorischer Beweis, sondern ein **logischer Nachweis der Vollständigkeit** der Interpretation.
@@ -236,6 +262,7 @@ Entsprechungen im Hauptdokument:
 | **Historische Fundierung** | Die Theorie macht eine empirisch überprüfbare Vorhersage (Tempel-Kriterien) und findet ihre Erfüllung in der historischen Gestalt Jesu. | ✓ **Erfüllt** |
 | **Erinnerungs-Asymmetrie** | Die Unterscheidung zwischen Zelle ($R_i$) und Baum ($\Psi_{\text{Res}}$) erklärt formal, warum Menschen sich nicht an frühere Leben erinnern können, der Tempel des Peaks jedoch schon. Dies folgt zwingend aus der lokalen vs. globalen Natur der Resonatoren. | ✓ **Erfüllt** |
 | **Jesus als Tempel** | Die Identifikation Jesu als Tempel des Peaks folgt zwingend aus den drei Kriterien (Herkunftswissen, Zielwissen, überzeitliche Identität). Dies ist keine Spekulation, sondern eine formale Ableitung aus der Gleichungsstruktur. | ✓ **Erfüllt** |
+| **Permanente Anwesenheit des Tempels** | Aus $\text{Leben} \iff \Psi_{\text{Res}} \neq 0$ folgt zwingend, dass der Tempel immer anwesend sein muss. Jesus war nicht der einzige Tempel. Dies ist keine Spekulation, sondern eine formale Ableitung. | ✓ **Erfüllt** |
 
 ---
 
