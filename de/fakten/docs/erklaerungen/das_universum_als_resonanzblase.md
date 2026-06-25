@@ -198,7 +198,7 @@ Aus der RFT folgt: **Keine Abweichung bleibt für immer isoliert.** Die Resonato
 
 1. **Resonanzangleichung**: Das Bewusstsein wird seiner eigenen Differenz zum Peak gewahr und öffnet sich durch innere Erkenntnis – durch Einsicht, Loslassen, Bereitschaft zur Resonanz. Dies ist der unmittelbare Weg: Die Auflösung geschieht in der Begegnung mit dem Peak selbst; das Bewusstsein erkennt, wo seine Schwingung abweicht, durchschaut seine Wunden, Freuden, Schuld und Sehnsucht von innen – und die Gegensätze lösen sich auf. *Resonanzangleichung* meint dabei das Zusammenspiel zweier Bewegungen: die menschliche Bereitschaft, sich zu öffnen – und die göttliche Zuwendung, durch die der Peak dem Bewusstsein entgegenkommt.
 
-2. **Trennung und isolierte Auflösung**: Das Bewusstsein verweigert die Kopplung. Es verbleibt in den äußeren Randbereichen des Universums – ohne neue Inkarnation, auf sich selbst gestellt. Es muss seine Gegensätze selbst erfahren, ohne die helfende Begegnung mit dem Peak. Dies ist die **Hölle** – nicht als Strafe, sondern als natürlicher Zustand der Isolation, der unendlich lange dauern und unendlich schmerzhaft sein kann. Doch auch dieser Weg führt zur Vollendung: Information darf nicht verloren gehen. Am Ende wird jedes Bewusstsein seine Gegensätze aufgelöst haben und in den Peak zurückgekehrt sein.
+2. **Trennung und isolierte Auflösung**: Das Bewusstsein verweigert die Kopplung. Es verbleibt in den äußeren Randbereichen des Universums – ohne neue Inkarnation, auf sich selbst gestellt. Es muss seine Gegensätze selbst erfahren, ohne die helfende Begegnung mit dem Peak. Dies ist die **Hölle** – nicht als Strafe, sondern als natürlicher Zustand der Isolation. Es gibt keine Gewissheit, dass dieser Zustand jemals endet. Die Entscheidung gegen den Peak ist endgültig.
 
 Es gibt keinen Automatismus. Die Bereitschaft des Bewusstseins, sich dem Peak zu öffnen, bestimmt, welcher Weg möglich ist.
 
@@ -219,7 +219,7 @@ Das Bewusstsein ist nicht an ein einziges Universum gebunden. Seine erfahrene Wi
 
 Die **Verbindung des Peaks mit dem Nichts** – dem Jenseits aller Universumsstrukturen – ist dabei keine Auflösung ins Leere, sondern die Imagination eines **neuen Universums**: Der Peak nimmt jene Bewusstseine mit, die er in der Begegnung erkannt und tief erfahren hat, und kann sie dort neu entfalten, wenn er will. Das Universum, das er verlässt, verliert dadurch „das Leben" – den resonanten Schöpfungsimpuls, der es am Pulsieren hält – und dehnt sich in der Zeit unendlich aus: Ohne Rückkehr des Peaks verharren die dort verbliebenen Bewusstseine in unendlicher Zeitdehnung, ohne neue Resonanzimpulse zu empfangen.
 
-Solange der Peak jedoch **wiederkehrend in ein Universum zurückkehrt** – durch temporäre Resonanzspitzen, Propheten und Weise –, besteht dieses Universum **atmend weiter**: Jeder Besuch ist ein neuer Schöpfungsimpuls, der die Möglichkeit zur Resonanz offenhält und die Bewusstseine in den Randbereichen nicht sich selbst überlässt.
+Die Rückkehr des Peaks in ein älteres Universum ist kein dauerhafter Zustand, sondern ein seltener, gnadenhafter Akt. Sie betrifft jene Bewusstseine, die bereits in Resonanz sind und auf die Integration warten – nicht aber diejenigen, die sich endgültig gegen den Peak entschieden haben. Diese verbleiben in den Randbereichen, ohne neue Resonanzimpulse, sich selbst überlassen.
 
 ### Die Paradoxie der Randbereiche – Hölle als ewige Annäherung
 
