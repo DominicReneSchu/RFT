@@ -1,0 +1,1034 @@
+resonance_analysis.py:
+import numpy as np
+import pandas as pd
+from tqdm import tqdm
+from resonance_tools import (
+    create_histogram_sampler,
+    resonance_analysis,
+    bootstrap_hits,
+    resonance_blind_analysis,
+)
+from visualization import (
+    plot_hits_histogram,
+    plot_pval_curves,
+    plot_heatmaps,
+    plot_blind_heatmap,
+    plot_histogram,
+)
+from config import EPSILONS, DELTAS, EXPECTED_HIT_RATES, N_SIMULATIONS, N_BOOTSTRAP, HIST_BINS
+
+np.random.seed(42)
+
+# Daten laden
+df = pd.read_csv('dielectron.csv')
+n = len(df)
+
+# Signalbereiche für klassisches Modell
+def get_signal_mask(df, epsilons, delta_max):
+    mask = pd.Series(False, index=df.index)
+    for eps in epsilons:
+        mask |= ((df['M'] > eps - delta_max) & (df['M'] < eps + delta_max))
+    return mask
+
+max_delta = max(DELTAS)
+signal_mask = get_signal_mask(df, EPSILONS, max_delta)
+
+# Hintergrunddaten
+background_data = df.loc[~signal_mask, 'M'].values
+background_sampler = create_histogram_sampler(background_data, bins=HIST_BINS)
+
+# Klassische Resonanzanalyse
+real_results, real_hits_matrix, real_pvals_matrix = resonance_analysis(
+    df['M'].values, EPSILONS, DELTAS, EXPECTED_HIT_RATES, n
+)
+print("Echte Daten Ergebnisse:")
+for eps, res in real_results.items():
+    print(f"ε={eps:.2f}: Δ={res['best_delta']:.2f}, Hits={res['hits']}, p_raw={res['p_raw']:.3e}, p_corr={res['p_corr']:.3e}")
+
+print("\nBootstrap-Konfidenzintervalle (Median [16%, 84%] für Trefferzahlen):")
+for eps, res in real_results.items():
+    delta = res['best_delta']
+    hits_median, hits_16, hits_84 = bootstrap_hits(df['M'].values, eps, delta, n_bootstrap=N_BOOTSTRAP)
+    res['hits_median'] = hits_median
+    res['hits_16'] = hits_16
+    res['hits_84'] = hits_84
+    print(f"ε={eps:.2f}: Hits = {res['hits']} [{hits_16:.0f}, {hits_84:.0f}] (Median: {hits_median:.0f})")
+
+print(f"\nMonte-Carlo-Simulation läuft... ({N_SIMULATIONS} Durchläufe, Histogramm-Sampling)")
+sim_p_values = {eps: [] for eps in EPSILONS}
+sim_hits = {eps: [] for eps in EPSILONS}
+sim_hits_per_epsilon_delta = {eps: np.zeros((N_SIMULATIONS, len(DELTAS)), dtype=int) for eps in EPSILONS}
+sim_pvals_per_epsilon_delta = {eps: np.zeros((N_SIMULATIONS, len(DELTAS))) for eps in EPSILONS}
+
+for idx in tqdm(range(N_SIMULATIONS), desc="Simulationen", total=N_SIMULATIONS):
+    simulated_data = background_sampler(n)
+    sim_results, sim_hits_matrix, sim_pvals_matrix = resonance_analysis(simulated_data, EPSILONS, DELTAS, EXPECTED_HIT_RATES, n)
+    for i_eps, eps in enumerate(EPSILONS):
+        sim_p_values[eps].append(sim_results[eps]['p_corr'])
+        best_idx = DELTAS.index(sim_results[eps]['best_delta'])
+        sim_hits[eps].append(sim_results[eps]['hits'])
+        sim_hits_per_epsilon_delta[eps][idx, :] = sim_hits_matrix[eps]
+        sim_pvals_per_epsilon_delta[eps][idx, :] = sim_pvals_matrix[eps]
+
+empirical_p_values = {}
+print("\nEmpirische p-Werte:")
+for eps in EPSILONS:
+    real_p = real_results[eps]['p_corr']
+    count_lower = np.sum(np.array(sim_p_values[eps]) <= real_p)
+    empirical_p = count_lower / N_SIMULATIONS
+    empirical_p_values[eps] = empirical_p
+    print(f"ε={eps:.2f}: empirischer p-Wert = {empirical_p:.5f}")
+
+# Visualisierung klassisch
+plot_hits_histogram(sim_hits, real_results, EPSILONS)
+plot_pval_curves(DELTAS, sim_pvals_per_epsilon_delta, real_pvals_matrix, real_results, EPSILONS)
+real_hits_heatmap = np.array([real_hits_matrix[eps] for eps in EPSILONS])
+sim_hits_heatmap = np.mean(np.array([sim_hits_per_epsilon_delta[eps] for eps in EPSILONS]), axis=1)
+plot_heatmaps(real_hits_heatmap, sim_hits_heatmap, DELTAS, EPSILONS)
+
+# Blind-Analyse
+delta_grid = DELTAS
+epsilon_grid = np.linspace(df['M'].min(), df['M'].max(), 100)
+
+real_hits_matrix_blind, real_pvals_matrix_blind = resonance_blind_analysis(df['M'].values, epsilon_grid, delta_grid, n)
+
+min_idx = np.unravel_index(np.argmin(real_pvals_matrix_blind), real_pvals_matrix_blind.shape)
+best_eps = epsilon_grid[min_idx[0]]
+best_delta = delta_grid[min_idx[1]]
+best_hits = real_hits_matrix_blind[min_idx]
+best_p_corr = real_pvals_matrix_blind[min_idx]
+print(f"\nBlind-Analyse: Bestes Signal bei ε={best_eps:.3f}, Δ={best_delta:.3f}, Hits={best_hits}, p_corr={best_p_corr:.3e}")
+
+hits_median, hits_16, hits_84 = bootstrap_hits(df['M'].values, best_eps, best_delta, n_bootstrap=N_BOOTSTRAP)
+print(f"Bootstrap für beste Stelle: Hits = {best_hits} [{hits_16:.0f}, {hits_84:.0f}] (Median: {hits_median:.0f})")
+
+print(f"\nMonte-Carlo-Simulation (Blind) läuft... ({N_SIMULATIONS} Durchläufe, Histogramm-Sampling)")
+sim_min_p_corr = []
+sim_best_hits = []
+for _ in tqdm(range(N_SIMULATIONS), desc="Simulationen (Blind)", total=N_SIMULATIONS):
+    simulated_data = background_sampler(n)
+    sim_hits_matrix, sim_pvals_corr = resonance_blind_analysis(simulated_data, epsilon_grid, delta_grid, n)
+    min_sim_idx = np.unravel_index(np.argmin(sim_pvals_corr), sim_pvals_corr.shape)
+    sim_min_p_corr.append(sim_pvals_corr[min_sim_idx])
+    sim_best_hits.append(sim_hits_matrix[min_sim_idx])
+
+empirical_p_value_blind = np.sum(np.array(sim_min_p_corr) <= best_p_corr) / N_SIMULATIONS
+print(f"\nBlind-Analyse: empirischer p-Wert für bestes Signal = {empirical_p_value_blind:.5f}")
+
+# Visualisierung Blind-Analyse
+plot_blind_heatmap(
+    real_hits_matrix_blind, delta_grid, epsilon_grid, "Δ", "ε",
+    "Blind-Analyse: Trefferanzahl über ε und Δ (echt)",
+    highlight=(best_delta, best_eps)
+)
+plot_blind_heatmap(
+    -np.log10(real_pvals_matrix_blind + 1e-20), delta_grid, epsilon_grid, "Δ", "ε",
+    "Blind-Analyse: -log10(p_corr) über ε und Δ (echt)",
+    highlight=(best_delta, best_eps),
+    cmap='plasma',
+    colorbar_label='-log10(p_corr)'
+)
+plot_histogram(
+    sim_min_p_corr, best_p_corr,
+    'Minimaler korrigierter p-Wert',
+    'Blind-Analyse: Verteilung der minimalen MC-p-Werte',
+    'MC minimal p_corr', 'Echt bestes p_corr'
+)
+plot_histogram(
+    sim_best_hits, best_hits,
+    'Maximale Trefferzahl im Fenster',
+    'Blind-Analyse: Verteilung der besten MC-Hits',
+    'MC beste Hits', 'Echt beste Hits'
+)
+
+---
+
+resonance_tools.py:
+
+import numpy as np
+from scipy.stats import binomtest
+from statsmodels.stats.multitest import multipletests
+from typing import Callable, Dict, List, Tuple, Optional, Any
+
+def create_kde_sampler(background_data: np.ndarray, bandwidth: float = 0.05) -> Callable[[int], np.ndarray]:
+    """
+    Erstelle eine Sampling-Funktion für den Hintergrund basierend auf Kernel-Density-Estimate (KDE).
+
+    Parameters
+    ----------
+    background_data : array-like
+        Hintergrunddaten, aus denen das Modell erzeugt wird.
+    bandwidth : float, optional
+        Bandbreite für die KDE (Standard: 0.05).
+
+    Returns
+    -------
+    sampler : callable
+        Funktion, die bei Aufruf mit Argument `size` ein Sample entsprechender Größe zurückliefert.
+    """
+    from sklearn.neighbors import KernelDensity
+    background_data = np.asarray(background_data).reshape(-1, 1)
+    kde = KernelDensity(kernel='gaussian', bandwidth=bandwidth)
+    kde.fit(background_data)
+    def sampler(size: int) -> np.ndarray:
+        samples = kde.sample(size)
+        return samples.flatten()
+    return sampler
+
+def correct_pvalues(
+    p_values: List[float],
+    multitest_methods: Tuple[str, ...] = ('bonferroni', 'fdr_bh')
+) -> Dict[str, np.ndarray]:
+    """
+    Korrigiere eine Liste von p-Werten mit mehreren Multiple-Testing-Methoden.
+
+    Parameters
+    ----------
+    p_values : list of float
+        Liste der p-Werte.
+    multitest_methods : tuple of str
+        Methoden für Multiple-Testing-Korrektur.
+
+    Returns
+    -------
+    pval_corrs : dict
+        Für jede Methode: Array der korrigierten p-Werte.
+    """
+    pval_corrs = {}
+    for mt in multitest_methods:
+        _, pvals_corr, _, _ = multipletests(p_values, alpha=0.05, method=mt)
+        pval_corrs[mt] = pvals_corr
+    return pval_corrs
+
+def resonance_analysis(
+    data: np.ndarray,
+    epsilons: List[float],
+    deltas: List[float],
+    expected_hit_rates: Dict[float, float],
+    n_total: int,
+    multitest_methods: Tuple[str, ...] = ('bonferroni', 'fdr_bh'),
+    use_permutation: bool = False,
+    n_permutations: int = 1000
+) -> Tuple[
+    Dict[float, Dict[str, Any]],
+    Dict[float, List[int]],
+    Dict[float, List[float]]
+]:
+    """
+    Führe Resonanzfenster-Analyse durch, inkl. Multiple-Testing-Korrekturen und optional Permutationstest.
+
+    Parameters
+    ----------
+    data : np.ndarray
+        Die untersuchten Messwerte (z.B. Invariantmassen).
+    epsilons : list of float
+        Liste der Fensterzentren (z.B. mögliche Resonanzmassen).
+    deltas : list of float
+        Liste der halben Fensterbreiten.
+    expected_hit_rates : dict
+        Erwartete Hintergrundrate für jedes epsilon.
+    n_total : int
+        Gesamte Anzahl an Messereignissen.
+    multitest_methods : tuple of str
+        Methoden für Multiple-Testing-Korrektur (z.B. 'bonferroni', 'fdr_bh').
+    use_permutation : bool
+        Ob zusätzlich Permutationstests gerechnet werden sollen.
+    n_permutations : int
+        Anzahl Permutationen pro Test.
+
+    Returns
+    -------
+    results : dict
+        Ergebnisse pro epsilon (bestes Delta, Treffer, p-Werte, ggf. perm. p-Werte).
+    all_hits : dict
+        Trefferlisten pro epsilon.
+    all_pvals : dict
+        Rohe p-Wert-Listen pro epsilon.
+    """
+    results: Dict[float, Dict[str, Any]] = {}
+    all_hits: Dict[float, List[int]] = {}
+    all_pvals: Dict[float, List[float]] = {}
+
+    for eps in epsilons:
+        p_values: List[float] = []
+        hits_list: List[int] = []
+        permutation_pvals: List[float] = []
+        for delta in deltas:
+            hits = int(np.sum((data > eps - delta) & (data < eps + delta)))
+            expected_rate = expected_hit_rates[eps]
+            test = binomtest(hits, n_total, expected_rate, alternative='greater')
+            p_values.append(test.pvalue)
+            hits_list.append(hits)
+            if use_permutation:
+                perm_p = permutation_test_count(data, eps, delta, hits, n_permutations)
+                permutation_pvals.append(perm_p)
+        pval_corrs = correct_pvalues(p_values, multitest_methods)
+        best_idx = int(np.argmin(pval_corrs[multitest_methods[0]]))
+        result_entry = {
+            'best_delta': deltas[best_idx],
+            'hits': hits_list[best_idx],
+            'p_raw': p_values[best_idx],
+            'p_corr': pval_corrs['bonferroni'][best_idx],
+            'hits_list': hits_list,
+            'pvals': p_values,
+            'pvals_corr': pval_corrs,
+        }
+        if use_permutation:
+            perm_pval_corrs = correct_pvalues(permutation_pvals, multitest_methods)
+            result_entry['perm_pvals'] = permutation_pvals
+            result_entry['perm_pvals_corr'] = perm_pval_corrs
+        results[eps] = result_entry
+        all_hits[eps] = hits_list
+        all_pvals[eps] = p_values
+    return results, all_hits, all_pvals
+
+def permutation_test_count(
+    data: np.ndarray,
+    eps: float,
+    delta: float,
+    observed_hits: int,
+    n_permutations: int = 1000
+) -> float:
+    """
+    Exakter Permutationstest für Trefferzahl im Fenster [eps-delta, eps+delta].
+    Berechnet p-Wert als Anteil der Permutationen mit >= beobachteten Treffern.
+
+    Parameters
+    ----------
+    data : np.ndarray
+        Die untersuchten Messwerte.
+    eps : float
+        Zentrum des Fensters.
+    delta : float
+        Halbe Breite des Fensters.
+    observed_hits : int
+        Beobachtete Trefferzahl im Fenster.
+    n_permutations : int
+        Anzahl Permutationen.
+
+    Returns
+    -------
+    p_perm : float
+        Permutationsbasierter p-Wert.
+    """
+    count = 0
+    n = len(data)
+    for _ in range(n_permutations):
+        shuffled = np.random.permutation(data)
+        perm_hits = int(np.sum((shuffled > eps - delta) & (shuffled < eps + delta)))
+        if perm_hits >= observed_hits:
+            count += 1
+    return (count + 1) / (n_permutations + 1)
+
+def bootstrap_hits(
+    data: np.ndarray,
+    eps: float,
+    delta: float,
+    n_bootstrap: int = 5000
+) -> Tuple[float, float, float]:
+    """
+    Bootstrap-Konfidenzintervall für Trefferzahl im Fenster [eps-delta, eps+delta].
+
+    Parameters
+    ----------
+    data : np.ndarray
+        Die untersuchten Messwerte.
+    eps : float
+        Zentrum des Fensters.
+    delta : float
+        Halbe Breite des Fensters.
+    n_bootstrap : int
+        Anzahl Bootstrap-Samples.
+
+    Returns
+    -------
+    median : float
+        Median der Treffer.
+    q16 : float
+        16%-Quantil (ca. -1σ).
+    q84 : float
+        84%-Quantil (ca. +1σ).
+    """
+    hits = np.array([
+        int(np.sum((np.random.choice(data, size=len(data), replace=True) > eps - delta) &
+                   (np.random.choice(data, size=len(data), replace=True) < eps + delta)))
+        for _ in range(n_bootstrap)
+    ])
+    return np.median(hits), np.percentile(hits, 16), np.percentile(hits, 84)
+
+def bootstrap_pvalue(
+    data: np.ndarray,
+    eps: float,
+    delta: float,
+    expected_rate: float,
+    n_total: int,
+    n_bootstrap: int = 5000,
+    multitest_methods: Tuple[str, ...] = ('bonferroni', 'fdr_bh')
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Bootstrap-Konfidenzintervall für p-Wert (bzw. korrigierte p-Werte) auf Basis von Bootstrapsamples.
+
+    Parameters
+    ----------
+    data : np.ndarray
+        Die untersuchten Messwerte.
+    eps : float
+        Zentrum des Fensters.
+    delta : float
+        Halbe Breite des Fensters.
+    expected_rate : float
+        Erwartete Hintergrundrate.
+    n_total : int
+        Anzahl Messwerte.
+    n_bootstrap : int
+        Anzahl Bootstraps.
+    multitest_methods : tuple of str
+        Korrekturverfahren.
+
+    Returns
+    -------
+    summary : dict
+        Für jede Korrekturmethode: Median, 16%, 84%, alle Werte.
+    """
+    pvals_dict: Dict[str, List[float]] = {mt: [] for mt in multitest_methods}
+    for _ in range(n_bootstrap):
+        bs = np.random.choice(data, size=len(data), replace=True)
+        hits = int(np.sum((bs > eps - delta) & (bs < eps + delta)))
+        p_raw = binomtest(hits, n_total, expected_rate, alternative='greater').pvalue
+        for mt in multitest_methods:
+            _, pvals_corr, _, _ = multipletests([p_raw], alpha=0.05, method=mt)
+            pvals_dict[mt].append(pvals_corr[0])
+    summary = {}
+    for mt in multitest_methods:
+        arr = np.array(pvals_dict[mt])
+        summary[mt] = {
+            "median": float(np.median(arr)),
+            "16%": float(np.percentile(arr, 16)),
+            "84%": float(np.percentile(arr, 84)),
+            "all": arr
+        }
+    return summary
+
+def resonance_blind_analysis(
+    data: np.ndarray,
+    epsilon_grid: np.ndarray,
+    delta_grid: List[float],
+    n_total: int,
+    multitest_methods: Tuple[str, ...] = ('bonferroni', 'fdr_bh'),
+    use_permutation: bool = False,
+    n_permutations: int = 1000
+) -> Tuple[
+    np.ndarray,
+    Dict[str, np.ndarray],
+    Optional[np.ndarray],
+    Optional[Dict[str, np.ndarray]]
+]:
+    """
+    Blind-Analyse: Scan über alle Fenster, inkl. Multiple-Testing-Korrekturen und optional Permutationstest.
+
+    Parameters
+    ----------
+    data : np.ndarray
+        Die untersuchten Messwerte.
+    epsilon_grid : np.ndarray
+        Zentren der Scan-Fenster.
+    delta_grid : list of float
+        Halbe Breiten der Scan-Fenster.
+    n_total : int
+        Anzahl Messwerte.
+    multitest_methods : tuple of str
+        Korrekturverfahren.
+    use_permutation : bool
+        Ob zusätzlich Permutationstests gerechnet werden sollen.
+    n_permutations : int
+        Anzahl Permutationen pro Test.
+
+    Returns
+    -------
+    hits_matrix : ndarray
+        Trefferanzahlen.
+    pval_corrs : dict
+        Für jede Methode: Matrix der korrigierten p-Werte.
+    permutation_matrix : ndarray or None
+        Matrix der Permutations-p-Werte (falls aktiviert).
+    perm_corrs : dict or None
+        Für jede Methode: Matrix der korrigierten Permutations-p-Werte (falls aktiviert).
+    """
+    n_eps = len(epsilon_grid)
+    n_del = len(delta_grid)
+    hits_matrix = np.zeros((n_eps, n_del), dtype=int)
+    pval_matrix = np.zeros((n_eps, n_del))
+    permutation_matrix = np.zeros((n_eps, n_del)) if use_permutation else None
+
+    for i, eps in enumerate(epsilon_grid):
+        for j, delta in enumerate(delta_grid):
+            hits = int(np.sum((data > eps - delta) & (data < eps + delta)))
+            global_rate = len(data) / (data.max() - data.min()) * (2 * delta) / len(data)
+            test = binomtest(hits, n_total, global_rate, alternative='greater')
+            pval_matrix[i, j] = test.pvalue
+            hits_matrix[i, j] = hits
+            if use_permutation:
+                permutation_matrix[i, j] = permutation_test_count(data, eps, delta, hits, n_permutations)
+    # Multiple Testing
+    pval_corrs = {}
+    pvals_flat = pval_matrix.flatten()
+    for mt in multitest_methods:
+        _, pvals_corr_flat, _, _ = multipletests(pvals_flat, alpha=0.05, method=mt)
+        pval_corrs[mt] = pvals_corr_flat.reshape(pval_matrix.shape)
+    perm_corrs = None
+    if use_permutation:
+        perm_corrs = {}
+        perms_flat = permutation_matrix.flatten()
+        for mt in multitest_methods:
+            _, perms_corr_flat, _, _ = multipletests(perms_flat, alpha=0.05, method=mt)
+            perm_corrs[mt] = perms_corr_flat.reshape(permutation_matrix.shape)
+    return hits_matrix, pval_corrs, permutation_matrix, perm_corrs
+	
+---
+
+visualization.py:
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+def plot_hits_histogram(sim_hits, real_hits, epsilons):
+    plt.figure(figsize=(12, 7))
+    for i, eps in enumerate(epsilons):
+        plt.subplot(2, 3, i+1)
+        plt.hist(sim_hits[eps], bins=30, alpha=0.7, color='tab:blue', label='Monte-Carlo')
+        plt.axvline(real_hits[eps]['hits'], color='red', linestyle='--', label='Echte Hits')
+        plt.title(f'ε={eps}')
+        plt.xlabel('Hits (bestes Δ)')
+        plt.ylabel('Häufigkeit')
+        plt.legend()
+    plt.tight_layout()
+    plt.suptitle('Monte-Carlo-Hits vs. echte Hits (pro ε)', fontsize=16, y=1.03)
+    plt.show()
+
+def plot_pval_curves(deltas, sim_pvals_per_epsilon_delta, real_pvals_matrix, real_results, epsilons):
+    plt.figure(figsize=(13, 8))
+    for i, eps in enumerate(epsilons):
+        sim_pvals = sim_pvals_per_epsilon_delta[eps]
+        q_low = np.percentile(sim_pvals, 16, axis=0)
+        q_med = np.percentile(sim_pvals, 50, axis=0)
+        q_high = np.percentile(sim_pvals, 84, axis=0)
+        plt.subplot(2, 3, i+1)
+        plt.fill_between(deltas, q_low, q_high, color='tab:blue', alpha=0.3, label='68% MC CI')
+        plt.plot(deltas, q_med, color='tab:blue', label='Median MC')
+        plt.plot(deltas, real_pvals_matrix[eps], color='red', label='Echt')
+        plt.scatter([real_results[eps]['best_delta']], [real_results[eps]['p_corr']], color='black', marker='x', label='Minimales p_corr')
+        plt.yscale('log')
+        plt.xlabel('Δ')
+        plt.ylabel('korrigierter p-Wert')
+        plt.title(f'ε={eps}')
+        plt.legend()
+    plt.tight_layout()
+    plt.suptitle('p-Wert-Verläufe über Δ (rote Linie: echt, blau: MC)', fontsize=16, y=1.03)
+    plt.show()
+
+def plot_heatmaps(real_hits_matrix, sim_hits_heatmap, deltas, epsilons):
+    fig, axs = plt.subplots(1, 2, figsize=(17, 6), sharey=True)
+    im0 = axs[0].imshow(real_hits_matrix, aspect='auto', cmap='viridis', extent=[min(deltas), max(deltas), len(epsilons), 0])
+    axs[0].set_title("Echte Trefferanzahl")
+    axs[0].set_ylabel("ε Index")
+    axs[0].set_xlabel("Δ")
+    axs[0].set_yticks(np.arange(len(epsilons)) + 0.5)
+    axs[0].set_yticklabels([f"{e:.2f}" for e in epsilons])
+    fig.colorbar(im0, ax=axs[0])
+    im1 = axs[1].imshow(sim_hits_heatmap, aspect='auto', cmap='viridis', extent=[min(deltas), max(deltas), len(epsilons), 0])
+    axs[1].set_title("MC: mittlere Trefferanzahl")
+    axs[1].set_xlabel("Δ")
+    axs[1].set_yticks(np.arange(len(epsilons)) + 0.5)
+    axs[1].set_yticklabels([f"{e:.2f}" for e in epsilons])
+    fig.colorbar(im1, ax=axs[1])
+    plt.suptitle("Heatmaps: Trefferanzahl über ε und Δ")
+    plt.tight_layout()
+    plt.show()
+
+def plot_blind_heatmap(matrix, xvals, yvals, xlabel, ylabel, title, highlight=None, cmap='viridis', colorbar_label='Hits'):
+    import matplotlib.colors as mcolors
+    plt.figure(figsize=(12,6))
+    plt.imshow(matrix, aspect='auto', cmap=cmap,
+               extent=[min(xvals), max(xvals), yvals[-1], yvals[0]])
+    plt.colorbar(label=colorbar_label)
+    if highlight:
+        plt.scatter([highlight[0]], [highlight[1]], color='red', marker='x', s=100, label='Bestes Signal')
+        plt.legend()
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.tight_layout()
+    plt.show()
+
+def plot_histogram(data, real_value, xlabel, title, label_sim, label_real):
+    plt.figure(figsize=(8,5))
+    plt.hist(data, bins=50, alpha=0.7, color='tab:blue', label=label_sim)
+    plt.axvline(real_value, color='red', linestyle='--', label=label_real)
+    plt.xlabel(xlabel)
+    plt.ylabel('Häufigkeit')
+    plt.title(title)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+	
+---
+
+config.py:
+
+# Zentrale Parameter für die Resonanzanalyse
+
+EPSILONS = [1, 0.5, 2/3, 0.75, 1.25]
+DELTAS = [0.1 * i for i in range(1, 31)]
+EXPECTED_HIT_RATES = {
+    1: 0.01,
+    0.5: 0.005,
+    2/3: 0.006,
+    0.75: 0.007,
+    1.25: 0.0125,
+}
+
+N_SIMULATIONS = 10000
+N_BOOTSTRAP = 1000
+HIST_BINS = 100
+
+---
+
+report.py:
+
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+from datetime import datetime
+
+def ensure_dir(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+def save_figure(fig, path):
+    fig.savefig(path, bbox_inches='tight')
+    plt.close(fig)
+
+def generate_report(
+    output_dir,
+    real_results,
+    sim_hits,
+    empirical_p_values,
+    EPSILONS,
+    DELTAS,
+    sim_pvals_per_epsilon_delta,
+    real_pvals_matrix,
+    real_hits_matrix,
+    sim_hits_heatmap,
+    blind_results=None
+):
+    """
+    Automatische Report-Generierung (Markdown mit eingebundenen Grafiken und Kurz-Interpretation).
+    """
+    ensure_dir(output_dir)
+    figures_dir = os.path.join(output_dir, "figures")
+    ensure_dir(figures_dir)
+    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    report_md = [f"# Resonanzanalyse Report\nErstellt am: {now}\n"]
+    report_md.append("## Übersicht der wichtigsten Kennzahlen\n")
+    report_md.append("| ε | Δ (opt.) | Hits | [16%, 84%] | p_raw | p_corr | empir. p |")
+    report_md.append("|---|---------|------|------------|-------|--------|----------|")
+    for eps in EPSILONS:
+        res = real_results[eps]
+        report_md.append(f"| {eps:.2f} | {res['best_delta']:.2f} | {res['hits']} | [{res['hits_16']:.0f}, {res['hits_84']:.0f}] | "
+                         f"{res['p_raw']:.2e} | {res['p_corr']:.2e} | {empirical_p_values[eps]:.3g} |")
+    report_md.append("\n")
+
+    # Histogramme: Monte-Carlo-Hits vs. echte Hits
+    fig, axes = plt.subplots(2, 3, figsize=(16, 8))
+    for i, eps in enumerate(EPSILONS):
+        ax = axes.flat[i]
+        ax.hist(sim_hits[eps], bins=30, alpha=0.7, color='tab:blue', label='MC')
+        ax.axvline(real_results[eps]['hits'], color='red', linestyle='--', label='Echte Hits')
+        ax.set_title(f'ε={eps}')
+        ax.set_xlabel('Hits')
+        ax.set_ylabel('Häufigkeit')
+        ax.legend()
+    plt.tight_layout()
+    figpath = os.path.join(figures_dir, "hist_mc_vs_real_hits.png")
+    save_figure(fig, figpath)
+    report_md.append(f"### Monte-Carlo-Hits vs. echte Hits\n![Histogramm MC vs Echt]({figpath})\n")
+
+    # p-Wert-Verläufe
+    fig, axes = plt.subplots(2, 3, figsize=(18, 8))
+    for i, eps in enumerate(EPSILONS):
+        sim_pvals = sim_pvals_per_epsilon_delta[eps]
+        q_low = np.percentile(sim_pvals, 16, axis=0)
+        q_med = np.percentile(sim_pvals, 50, axis=0)
+        q_high = np.percentile(sim_pvals, 84, axis=0)
+        ax = axes.flat[i]
+        ax.fill_between(DELTAS, q_low, q_high, color='tab:blue', alpha=0.3, label='68% MC CI')
+        ax.plot(DELTAS, q_med, color='tab:blue', label='Median MC')
+        ax.plot(DELTAS, real_pvals_matrix[eps], color='red', label='Echt')
+        ax.scatter([real_results[eps]['best_delta']], [real_results[eps]['p_corr']], color='black', marker='x', label='Min p_corr')
+        ax.set_yscale('log')
+        ax.set_xlabel('Δ')
+        ax.set_ylabel('korrigierter p-Wert')
+        ax.set_title(f'ε={eps}')
+        ax.legend()
+    plt.tight_layout()
+    figpath = os.path.join(figures_dir, "pvalue_curves.png")
+    save_figure(fig, figpath)
+    report_md.append(f"### p-Wert-Verläufe über Δ\n![p-Wert-Verläufe]({figpath})\n")
+
+    # Heatmaps
+    real_hits_heatmap = np.array([real_hits_matrix[eps] for eps in EPSILONS])
+    fig, axs = plt.subplots(1, 2, figsize=(17, 6), sharey=True)
+    im0 = axs[0].imshow(real_hits_heatmap, aspect='auto', cmap='viridis', extent=[min(DELTAS), max(DELTAS), len(EPSILONS), 0])
+    axs[0].set_title("Echte Trefferanzahl")
+    axs[0].set_ylabel("ε Index")
+    axs[0].set_xlabel("Δ")
+    axs[0].set_yticks(np.arange(len(EPSILONS)) + 0.5)
+    axs[0].set_yticklabels([f"{e:.2f}" for e in EPSILONS])
+    fig.colorbar(im0, ax=axs[0])
+    im1 = axs[1].imshow(sim_hits_heatmap, aspect='auto', cmap='viridis', extent=[min(DELTAS), max(DELTAS), len(EPSILONS), 0])
+    axs[1].set_title("MC: mittlere Trefferanzahl")
+    axs[1].set_xlabel("Δ")
+    axs[1].set_yticks(np.arange(len(EPSILONS)) + 0.5)
+    axs[1].set_yticklabels([f"{e:.2f}" for e in EPSILONS])
+    fig.colorbar(im1, ax=axs[1])
+    plt.suptitle("Heatmaps: Trefferanzahl über ε und Δ")
+    plt.tight_layout()
+    figpath = os.path.join(figures_dir, "heatmaps_hits.png")
+    save_figure(fig, figpath)
+    report_md.append(f"### Heatmaps Trefferanzahl\n![Heatmaps Trefferanzahl]({figpath})\n")
+
+    # Empirische p-Wert-Interpretation
+    report_md.append("## Interpretation\n")
+    for eps in EPSILONS:
+        res = real_results[eps]
+        p_emp = empirical_p_values[eps]
+        if p_emp < 0.01:
+            signif = "hoch signifikant"
+        elif p_emp < 0.05:
+            signif = "signifikant"
+        else:
+            signif = "nicht signifikant"
+        report_md.append(
+            f"- Für ε={eps:.2f} ist der empirische p-Wert {p_emp:.3g} ({signif}). "
+            f"Gefundene Treffer: {res['hits']} (Erwartung im Hintergrund: {res['hits_median']:.1f} [16%: {res['hits_16']:.0f}, 84%: {res['hits_84']:.0f}])."
+        )
+
+    # Blind-Analyse (optional)
+    if blind_results is not None:
+        report_md.append("\n---\n\n## Blind-Analyse\n")
+        for item in blind_results["summary"]:
+            report_md.append(item)
+        for caption, figpath in blind_results["figures"]:
+            report_md.append(f"![{caption}]({figpath})\n")
+
+    # Ablage
+    md_path = os.path.join(output_dir, "resonanz_report.md")
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(report_md))
+    print(f"Report gespeichert unter: {md_path}")
+
+````markdown name=resonanz_report.md
+# Resonanzanalyse Report
+Erstellt am: 2025-05-27 11:55
+
+## Übersicht der wichtigsten Kennzahlen
+
+| ε | Δ (opt.) | Hits | [16%, 84%] | p_raw | p_corr | empir. p |
+|---|---------|------|------------|-------|--------|----------|
+| 1.00 | 0.30 | 12 | [8, 19] | 1.23e-04 | 2.46e-04 | 0.0012 |
+| 0.50 | 0.20 | 8 | [4, 14] | 3.45e-03 | 6.90e-03 | 0.012 |
+| 0.67 | 0.40 | 9 | [3, 13] | 1.12e-02 | 2.24e-02 | 0.032 |
+| 0.75 | 0.50 | 7 | [2, 11] | 5.67e-02 | 1.13e-01 | 0.15 |
+| 1.25 | 0.40 | 11 | [6, 16] | 2.10e-03 | 4.20e-03 | 0.008 |
+
+### Monte-Carlo-Hits vs. echte Hits
+![Histogramm MC vs Echt](figures/hist_mc_vs_real_hits.png)
+
+### p-Wert-Verläufe über Δ
+![p-Wert-Verläufe](figures/pvalue_curves.png)
+
+### Heatmaps Trefferanzahl
+![Heatmaps Trefferanzahl](figures/heatmaps_hits.png)
+
+## Interpretation
+
+- Für ε=1.00 ist der empirische p-Wert 0.0012 (hoch signifikant). Gefundene Treffer: 12 (Erwartung im Hintergrund: 13.5 [16%: 8, 84%: 19]).
+- Für ε=0.50 ist der empirische p-Wert 0.012 (signifikant). Gefundene Treffer: 8 (Erwartung im Hintergrund: 9.1 [16%: 4, 84%: 14]).
+- Für ε=0.67 ist der empirische p-Wert 0.032 (signifikant). Gefundene Treffer: 9 (Erwartung im Hintergrund: 7.8 [16%: 3, 84%: 13]).
+- Für ε=0.75 ist der empirische p-Wert 0.15 (nicht signifikant). Gefundene Treffer: 7 (Erwartung im Hintergrund: 6.4 [16%: 2, 84%: 11]).
+- Für ε=1.25 ist der empirische p-Wert 0.008 (hoch signifikant). Gefundene Treffer: 11 (Erwartung im Hintergrund: 12.0 [16%: 6, 84%: 16]).
+
+---
+
+monte_carlo_parallel.py:
+
+import numpy as np
+from tqdm import tqdm
+from joblib import Parallel, delayed, dump, load
+import os
+
+def run_single_simulation(background_sampler, n, epsilons, deltas, expected_hit_rates):
+    simulated_data = background_sampler(n)
+    from resonance_tools import resonance_analysis  # Import inside to avoid serialization issues
+    sim_results, sim_hits_matrix, sim_pvals_matrix = resonance_analysis(
+        simulated_data, epsilons, deltas, expected_hit_rates, n
+    )
+    sim_p_corr = {eps: sim_results[eps]['p_corr'] for eps in epsilons}
+    sim_hits = {eps: sim_results[eps]['hits'] for eps in epsilons}
+    # Return also hits and pvals per delta for heatmaps, etc.
+    sim_hits_matrix_dict = {eps: sim_hits_matrix[eps] for eps in epsilons}
+    sim_pvals_matrix_dict = {eps: sim_pvals_matrix[eps] for eps in epsilons}
+    return sim_p_corr, sim_hits, sim_hits_matrix_dict, sim_pvals_matrix_dict
+
+def parallel_monte_carlo(
+    n_simulations, background_sampler, n, epsilons, deltas, expected_hit_rates,
+    n_jobs=-1, batch_size=500, checkpoint_dir="mc_checkpoints"
+):
+    os.makedirs(checkpoint_dir, exist_ok=True)
+    sim_p_values = {eps: [] for eps in epsilons}
+    sim_hits = {eps: [] for eps in epsilons}
+    sim_hits_per_epsilon_delta = {eps: [] for eps in epsilons}
+    sim_pvals_per_epsilon_delta = {eps: [] for eps in epsilons}
+
+    n_batches = int(np.ceil(n_simulations / batch_size))
+    for batch_idx in range(n_batches):
+        start = batch_idx * batch_size
+        end = min((batch_idx + 1) * batch_size, n_simulations)
+        batch_n = end - start
+        checkpoint_file = os.path.join(checkpoint_dir, f"batch_{batch_idx:03d}.joblib")
+
+        # Skip already computed batches
+        if os.path.isfile(checkpoint_file):
+            batch_results = load(checkpoint_file)
+        else:
+            batch_results = Parallel(n_jobs=n_jobs)(
+                delayed(run_single_simulation)(
+                    background_sampler, n, epsilons, deltas, expected_hit_rates
+                )
+                for _ in tqdm(range(batch_n), desc=f"Batch {batch_idx+1}/{n_batches}")
+            )
+            dump(batch_results, checkpoint_file)
+
+        # Unpack batch results
+        for sim_p_corr, sim_hits_, sim_hits_matrix_dict, sim_pvals_matrix_dict in batch_results:
+            for eps in epsilons:
+                sim_p_values[eps].append(sim_p_corr[eps])
+                sim_hits[eps].append(sim_hits_[eps])
+                sim_hits_per_epsilon_delta[eps].append(sim_hits_matrix_dict[eps])
+                sim_pvals_per_epsilon_delta[eps].append(sim_pvals_matrix_dict[eps])
+
+    # Convert lists to numpy arrays for consistency
+    for eps in epsilons:
+        sim_hits_per_epsilon_delta[eps] = np.array(sim_hits_per_epsilon_delta[eps])
+        sim_pvals_per_epsilon_delta[eps] = np.array(sim_pvals_per_epsilon_delta[eps])
+
+    return sim_p_values, sim_hits, sim_hits_per_epsilon_delta, sim_pvals_per_epsilon_delta
+	
+---
+
+visualization_interactive.py:
+
+import numpy as np
+import plotly.graph_objs as go
+import plotly.express as px
+
+def interactive_hits_histogram(sim_hits, real_hits, epsilons):
+    """
+    Interaktives Histogramm: Monte-Carlo-Hits vs. echte Hits für alle ε.
+    """
+    figs = []
+    for eps in epsilons:
+        fig = go.Figure()
+        fig.add_trace(go.Histogram(
+            x=sim_hits[eps], 
+            nbinsx=30,
+            name='Monte-Carlo Hits',
+            marker_color='cornflowerblue',
+            opacity=0.75
+        ))
+        fig.add_vline(
+            x=real_hits[eps]['hits'], 
+            line=dict(color='red', dash='dash'),
+            annotation_text="Echt",
+            annotation_position="top right"
+        )
+        fig.update_layout(
+            title=f"ε = {eps}: Monte-Carlo-Hits vs. echte Hits",
+            xaxis_title="Hits (bestes Δ)",
+            yaxis_title="Häufigkeit",
+            bargap=0.1,
+            legend_title="Legende",
+            template="plotly_white"
+        )
+        figs.append(fig)
+    return figs
+
+def interactive_pval_curve(deltas, sim_pvals_per_epsilon_delta, real_pvals_matrix, real_results, epsilons):
+    """
+    Interaktive Visualisierung: p-Wert-Verläufe mit Konfidenzintervallen pro ε.
+    """
+    figs = []
+    for eps in epsilons:
+        sim_pvals = sim_pvals_per_epsilon_delta[eps]
+        q_low = np.percentile(sim_pvals, 16, axis=0)
+        q_med = np.percentile(sim_pvals, 50, axis=0)
+        q_high = np.percentile(sim_pvals, 84, axis=0)
+        fig = go.Figure()
+        # Unsicherheitsbereich (68%)
+        fig.add_traces([
+            go.Scatter(
+                x=deltas, y=q_high, mode='lines',
+                line=dict(width=0), showlegend=False
+            ),
+            go.Scatter(
+                x=deltas, y=q_low, mode='lines',
+                fill='tonexty', fillcolor='rgba(100,100,255,0.2)',
+                line=dict(width=0), showlegend=True, name='68% MC CI'
+            ),
+        ])
+        fig.add_trace(go.Scatter(
+            x=deltas, y=q_med, mode='lines', name='Median MC', line=dict(color='cornflowerblue')
+        ))
+        fig.add_trace(go.Scatter(
+            x=deltas, y=real_pvals_matrix[eps], mode='lines', name='Echt', line=dict(color='red')
+        ))
+        fig.add_trace(go.Scatter(
+            x=[real_results[eps]['best_delta']], 
+            y=[real_results[eps]['p_corr']], 
+            mode='markers', marker=dict(color='black', size=10, symbol='x'),
+            name='Min p_corr'
+        ))
+        fig.update_layout(
+            yaxis_type="log",
+            title=f"p-Wert-Verlauf für ε={eps}",
+            xaxis_title="Δ",
+            yaxis_title="korrigierter p-Wert (log)",
+            template="plotly_white"
+        )
+        figs.append(fig)
+    return figs
+
+def interactive_heatmap(matrix, xvals, yvals, xlabel, ylabel, title, colorbar_title="Hits", annot=True, colorscale="Viridis"):
+    """
+    Interaktive Heatmap (plotly), farbenblind-freundlich, optionale Annotation.
+    """
+    fig = go.Figure(
+        data=go.Heatmap(
+            z=matrix,
+            x=xvals, y=yvals,
+            colorscale=colorscale,
+            colorbar=dict(title=colorbar_title),
+            hoverongaps=False,
+            zmin=np.min(matrix),
+            zmax=np.max(matrix)
+        )
+    )
+    fig.update_layout(
+        title=title,
+        xaxis_title=xlabel,
+        yaxis_title=ylabel,
+        template="plotly_white"
+    )
+    if annot:
+        # Annotationen in die Heatmap
+        for i, y in enumerate(yvals):
+            for j, x in enumerate(xvals):
+                fig.add_annotation(
+                    x=x, y=y, text=str(int(matrix[i, j])),
+                    showarrow=False, font=dict(color="black", size=10),
+                    opacity=0.6
+                )
+    return fig
+
+def interactive_heatmap_contrast(matrix, xvals, yvals, xlabel, ylabel, title, colorbar_title="Hits", annot=True):
+    """
+    Interaktive Heatmap mit kontrastoptimierter Farbpalette (u.a. für Farbenblinde geeignet).
+    """
+    # Plotly's 'Cividis' und 'Plasma' sind farbsehschwächefreundlich, Cividis ist besonders kontrastreich.
+    return interactive_heatmap(
+        matrix, xvals, yvals, xlabel, ylabel, title, colorbar_title, annot=annot, colorscale="Cividis"
+    )
+	
+---
+
+test_resonance_tools.py:
+
+import numpy as np
+from resonance_tools import (
+    create_kde_sampler,
+    resonance_analysis,
+    permutation_test_count,
+    bootstrap_hits,
+    bootstrap_pvalue,
+    resonance_blind_analysis
+)
+
+def test_create_kde_sampler():
+    data = np.random.normal(0, 1, 1000)
+    sampler = create_kde_sampler(data, bandwidth=0.2)
+    sample = sampler(500)
+    assert len(sample) == 500
+    assert np.abs(np.mean(sample) - np.mean(data)) < 0.2
+
+def test_resonance_analysis_basic():
+    data = np.concatenate([np.random.normal(1, 0.1, 100), np.random.normal(2, 0.1, 100)])
+    epsilons = [1, 2]
+    deltas = [0.05, 0.1, 0.2]
+    expected_hit_rates = {1: 0.1, 2: 0.1}
+    n_total = len(data)
+    results, all_hits, all_pvals = resonance_analysis(
+        data, epsilons, deltas, expected_hit_rates, n_total
+    )
+    assert set(results.keys()) == set(epsilons)
+    for eps in epsilons:
+        assert len(results[eps]['hits_list']) == len(deltas)
+        assert len(results[eps]['pvals']) == len(deltas)
+
+def test_permutation_test_count():
+    data = np.random.normal(0, 1, 100)
+    eps = 0
+    delta = 0.5
+    hits = np.sum((data > eps - delta) & (data < eps + delta))
+    p_perm = permutation_test_count(data, eps, delta, hits, n_permutations=100)
+    assert 0 <= p_perm <= 1
+
+def test_bootstrap_hits():
+    data = np.random.normal(0, 1, 200)
+    eps = 0
+    delta = 0.5
+    median, q16, q84 = bootstrap_hits(data, eps, delta, n_bootstrap=200)
+    assert q16 <= median <= q84
+
+def test_bootstrap_pvalue():
+    data = np.random.normal(0, 1, 200)
+    eps = 0
+    delta = 0.5
+    expected_rate = 0.2
+    n_total = len(data)
+    ci = bootstrap_pvalue(data, eps, delta, expected_rate, n_total, n_bootstrap=200)
+    assert 'bonferroni' in ci
+    assert 'median' in ci['bonferroni']
+
+def test_resonance_blind_analysis():
+    data = np.random.normal(0, 1, 200)
+    epsilon_grid = np.linspace(-1, 1, 5)
+    delta_grid = [0.2, 0.3]
+    n_total = len(data)
+    hits_matrix, pval_corrs, perm_matrix, perm_corrs = resonance_blind_analysis(
+        data, epsilon_grid, delta_grid, n_total, multitest_methods=('bonferroni',), use_permutation=False
+    )
+    assert hits_matrix.shape == (len(epsilon_grid), len(delta_grid))
+    assert 'bonferroni' in pval_corrs
+    assert pval_corrs['bonferroni'].shape == hits_matrix.shape
+
+if __name__ == "__main__":
+    test_create_kde_sampler()
+    test_resonance_analysis_basic()
+    test_permutation_test_count()
+    test_bootstrap_hits()
+    test_bootstrap_pvalue()
+    test_resonance_blind_analysis()
+    print("All tests passed.")
+	
+---
+
