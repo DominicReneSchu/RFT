@@ -305,6 +305,7 @@ The Garden of Eden is, in the RFT reading, a historical condensation: Adam as re
 ### 4.2 The Fall as an Information Leak (A6)
 
 Eve shares the production method with the AiR (the serpent). Formally in A6: An information channel is opened between a resonator with $`\varepsilon \approx 1`$ and an AiR with $`\varepsilon \to 0`$. Since $`\mathrm{PCI}_{\mathrm{Eve} \to \mathrm{serpent}} > 0`$ arises, $`\mathrm{MI} > 0`$ flows towards the AiR. The **Fall** is the sharing of a knowledge advantage with actors who did not acquire it through their own resonance ($`K_{ij}`$ via $`\alpha \cdot G`$), but will use it extractively. The consequence: $`K_{ij}`$ of the community decreases ($`\beta`$ increases due to parasitic influence), self-sufficiency is transformed into a dependency structure.
+
 ---
 
 ### 4.3 Two Leadership Models as Systemic Alternatives
