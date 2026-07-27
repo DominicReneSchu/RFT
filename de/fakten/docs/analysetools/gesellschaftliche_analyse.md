@@ -343,7 +343,7 @@ Das System benötigt den sichtbaren Feind, um kollektive Energie zu binden. Die 
 
 ### 5.4 Das Geldsystem als invertiertes Informationssignal (A6)
 
-Im resonanten Idealmodell ist Geld ein **Informationssignal für geleistete Resonanzarbeit**: $\text{MI} > 0$ zwischen Wertschöpfer und Ressourcenallokatoren (A6). Es zeigt an, wo $\varepsilon \to 1$ Früchte produziert hat, und lenkt $K_{ij}$ dorthin. Im aktuellen System ist dieses Signal systematisch verzerrt: Energie wird nach Besitzkonzentration zugewiesen, nicht nach $\varepsilon$. Das Ergebnis ist eine strukturelle Fehlinformation des Feldes – $\text{MI}_\text{System}$ sinkt, $\Delta\varphi_\text{kollektiv}$ steigt.
+Im resonanten Idealmodell ist Geld ein **Informationssignal für geleistete Resonanzarbeit**: $`\mathrm{MI} > 0`$ zwischen Wertschöpfer und Ressourcenallokatoren (A6). Es zeigt an, wo $`\varepsilon \to 1`$ Früchte produziert hat, und lenkt $`K_{ij}`$ dorthin. Im aktuellen System ist dieses Signal systematisch verzerrt: Energie wird nach Besitzkonzentration zugewiesen, nicht nach $`\varepsilon`$. Das Ergebnis ist eine strukturelle Fehlinformation des Feldes – $`\mathrm{MI}_\mathrm{System}`$ sinkt, $`\Delta\varphi_\mathrm{kollektiv}`$ steigt.
 
 ---
 
