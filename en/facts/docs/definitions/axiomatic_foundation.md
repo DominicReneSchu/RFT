@@ -337,7 +337,7 @@ its Fourier components ωₙ stand in rational ratios:
 *Proof:* Constructive interference (standing waves) requires periodic
 recurrence of the field pattern. Rational frequency ratios f₁/f₂ = n/m
 generate periodic, discrete coupling states with finite recurrence period
-T = m/f₁ = n/f₂. Weyl's equidistribution theorem shows complementarily
+T = m/f₁ = n/f₂. By contrast, Weyl's equidistribution theorem shows
 that irrational ratios lead to a dense, equidistributed sampling of phase
 space — no stable resonance grid emerges. The RFT therefore uses rational
 ratios to define stable resonance couplings.
