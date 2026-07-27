@@ -48,11 +48,20 @@ def gdr_frequency(E_gdr_MeV: float) -> float:
     parameter of RFT (not a free parameter, as it is physically determined by
     the resonance width Γ_GDR ≈ 4–5 MeV).
 
+    Frequency definition (K-3):
+        f_GDR = E_GDR / (π·ℏ)
+        This RFT resonance frequency corresponds to f = ω/π (not standard Hz).
+        Standard physics: f_Hz = E/h  or  ω = E/ℏ (rad/s).
+        The classical Planck limit E = hf (Hz) corresponds to ε = 1/(2π) ≈ 0.159
+        in the RFT formula — i.e. ε ∈ [0, 1] never reaches E = hf at ε = 1.
+        This discrepancy is an open question (→ RESEARCH_TASKS.md RT-01).
+
     Args:
         E_gdr_MeV: GDR energy in MeV
 
     Returns:
-        Frequency in Hz (= rad/s, angular frequency)
+        Frequency in rad/s (RFT resonance frequency: f = E/(π·ℏ) = ω/π,
+        not standard Hz. Standard angular frequency would be ω = E/ℏ.)
     """
     E_J = E_gdr_MeV * MEV_TO_J
     return E_J / (PI * HBAR)

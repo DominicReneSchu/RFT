@@ -198,14 +198,16 @@ $$
 
 ### 4.2 Limit Cases and Special Values
 
-| Condition | ε | Energy | Physics |
-|-----------|---|--------|---------|
-| Perfect coupling (Δφ = 0) | 1 | π·ℏ·ω | Maximum resonance energy |
-| Planck (1st excitation) | 1/π ≈ 0.318 | ℏ·ω | E = ℏω ✅ (1st excitation) |
-| Planck (ground state) | 1/(2π) ≈ 0.159 | ℏ·ω/2 | = ½ℏω ✅ (harmonic osc. ground state) |
-| Natural damping | 1/e ≈ 0.368 | (π/e)·ℏ·ω | After one relaxation time |
-| Half coupling (Δφ = π/2) | 0.5 | π·ℏ·ω/2 | 90° phase shift |
+| Condition | ε | Energy (f = ω/π, RFT def.) | Physics |
+|-----------|---|----------------------------|---------|
+| Perfect coupling (Δφ = 0) | 1 | π·ℏ·f | RFT maximum (no standard Planck equivalent) |
+| Planck (1st excitation) | 1/π ≈ 0.318 | ℏ·f | ≙ ℏω ✅ (1st excitation) |
+| Planck (ground state) | 1/(2π) ≈ 0.159 | ℏ·f/2 | ≙ ½ℏω ✅ (harmonic osc. ground state) |
+| Natural damping | 1/e ≈ 0.368 | (π/e)·ℏ·f | After one relaxation time |
+| Half coupling (Δφ = π/2) | 0.5 | π·ℏ·f/2 | 90° phase shift |
 | No coupling (Δφ = π) | 0 | 0 | Decoupled systems |
+
+> **Note on frequency definition:** f in the RFT fundamental formula E = π·ε·ℏ·f is the RFT resonance frequency f = ω/π (not standard Hz). The classical Planck limit E = hf_Hz corresponds to ε = 1/(2π) ≈ 0.159 (ground state of the harmonic oscillator). The value ε = 1 (maximum coupling) gives E = π·ℏ·f — this value has no direct correspondence in the standard Planck relation. The exact limit E → hf_Hz for ε ∈ [0, 1] is an open question (→ RESEARCH_TASKS.md RT-01).
 
 ### 4.3 Derivation of the Factor π
 
