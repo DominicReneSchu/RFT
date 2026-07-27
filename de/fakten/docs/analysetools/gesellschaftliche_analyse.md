@@ -483,7 +483,7 @@ Diese beiden Pole markieren die Extrempunkte des politischen Phasenraums (A5: ma
 Das System operiert als technischer Regler:
 
 1. **Ereignis (Testpuls)** → Anschlag, Skandal, Meldung
-2. **Impulsantwort messen** → $\text{PCI}_\text{Empörung}$, $\Delta\varphi_\text{Attribution}$, $K_{ij}^\text{Solidarisierung}$
+2. **Impulsantwort messen** → $`\mathrm{PCI}_{\mathrm{Empörung}}`$, $`\Delta\varphi_{\mathrm{Attribution}}`$, $`K_{ij}^{\mathrm{Solidarisierung}}`$
 3. **Soll/Ist-Vergleich** → Ist $\Delta\varphi_\text{Zielgruppe}$ groß genug für manifesten Hass? ($G(f_\text{Hass}/f_\text{Ziel}) \to 1$?)
 4. **Regeleingriff** → Nächster Testpuls bei Abweichung
 
