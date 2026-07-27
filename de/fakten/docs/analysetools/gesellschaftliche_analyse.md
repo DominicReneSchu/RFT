@@ -558,7 +558,7 @@ Die gesamte biblische und historische Dynamik ist die narrative Entfaltung der W
 | Resonatoren mit $\varepsilon < 1$ | Gesamte Menschheit; $0 < \Delta\varphi < \pi$ | Alle Menschen zwischen Optimum und Anti-Optimum |
 | AiR | $\varepsilon \to 0$, $\Delta\varphi \to \pi$, aktiv; $\vec{E}$ feldauswärts (A5) | Der Verführer, die Schlange |
 
-**Jesu Ethik** ist in dieser formalen Lesart keine moralische Forderung, sondern eine **Anleitung zur Kopplungserhöhung** (A4): *Reduziere $\Delta\varphi$ zu $V_\text{min}$. Erhöhe $\varepsilon$. Werde dem Attraktor ähnlich, und du erhältst Zugang zu $E = \pi \cdot \hbar \cdot f$ – maximale Kopplungsenergie.*
+**Jesu Ethik** ist in dieser formalen Lesart keine moralische Forderung, sondern eine **Anleitung zur Kopplungserhöhung** (A4): *Reduziere $`\Delta\varphi`$ zu $`V_{\mathrm{min}}`$. Erhöhe $`\varepsilon`$. Werde dem Attraktor ähnlich, und du erhältst Zugang zu $`E = \pi \cdot \hbar \cdot f`$ – maximale Kopplungsenergie.*
 
 **Die drei Ich-bin-Worte** sind eine formal präzise, dreidimensionale Definition von $V_\text{min}$:
 - Wahrheit: $\varepsilon(\Delta\varphi) = \eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ – invariant (A7)
