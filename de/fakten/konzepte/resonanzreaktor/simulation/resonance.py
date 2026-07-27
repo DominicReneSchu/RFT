@@ -161,17 +161,34 @@ def energy_balance(isotope: Isotope, delta_phi: float = 0.0, photon_flux: float 
                    time_seconds: float = 3600) -> dict[str, float | str]:
     """
     Energiebilanz: Eingestrahlt vs. freigesetzt.
-    
+
+    Zwei explizite Prozessklassen:
+
+    Prozess 1: α-Zerfall (RFT-Hypothese: Barrierenmodulation)
+    ----------------------------------------------------------
+    Q_alpha = 5.486 MeV (Am-241), 4.679 MeV (U-235)
+    Mechanismus: resonante Phasenkopplung moduliert Tunnelwahrscheinlichkeit.
+    Hinweis: Standardphysik sieht keinen direkten Mechanismus zur
+    α-Zerfallsbeschleunigung durch GDR-Anregung. Dies ist eine RFT-Hypothese.
+
+    Prozess 2: Photospaltung (separater Prozess, wird hier NICHT modelliert)
+    -------------------------------------------------------------------------
+    Q_fiss ≈ 200 MeV — dieser Wert ist nur zur Referenz angegeben.
+    Photospaltung ist ein eigenständiger Kernprozess und wird von dieser
+    Simulation NICHT berechnet oder vorhergesagt. Der Q_fission-Rückgabewert
+    wird der Vollständigkeit halber angegeben, sollte aber nicht als
+    RFT-Vorhersage interpretiert werden.
+
     Eingestrahlt:
         P_in = Φ_γ · A_target · E_γ
-    
-    Freigesetzt (durch beschleunigten Zerfall):
-        P_out = (λ_eff - λ₀) · N · E_decay
-    
+
+    Freigesetzt (durch resonant modulierten α-Zerfall):
+        P_out = (λ_eff - λ₀) · N · E_alpha
+
     Netto:
         P_net = P_out - P_in
         Q = P_out / P_in  (Energiegewinnfaktor)
-    
+
     Args:
         isotope: Isotope-Objekt
         delta_phi: Phasendifferenz
@@ -179,7 +196,7 @@ def energy_balance(isotope: Isotope, delta_phi: float = 0.0, photon_flux: float 
         E_gamma_MeV: Photonenenergie
         target_mass_kg: Targetmasse in kg
         time_seconds: Bestrahlungsdauer in s
-    
+
     Returns:
         dict mit P_in, P_out, P_net, Q und Details
     """

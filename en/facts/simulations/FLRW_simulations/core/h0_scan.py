@@ -12,6 +12,13 @@ Extensions:
   - 30 phase points (instead of 15)
   - Weighted linear fit with 1-sigma band
 
+IMPORTANT — dimensionless model:
+  This model works in dimensionless units (m=1, κ=1). The mapping
+  adot0 = 0.3 · (H₀/67.4) is an ad-hoc proportionality for
+  qualitative H₀ dependence. A physically grounded unit bridge
+  to SI (via the Friedmann equation in SI units) is an open task
+  (see RESEARCH_TASKS.md RT-04).
+
 Dependencies: numpy, core.coupled_flrw, core.flat_coupled
 """
 

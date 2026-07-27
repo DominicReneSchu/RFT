@@ -211,6 +211,14 @@ Seiten (θ=π/2): h ≈ 0 → neutral
 | 0.833 | 0.067 | −0.151 | −0.046 | **−0.049** | 1709 | Expansion |
 | 1.000 | 0.000 | −0.129 | −0.011 | **−0.014** | 5753 | De Sitter |
 
+> **Hinweis zu Δw = 0.057:** Das simulierte Δw = 0.057 entspricht
+> scalar-tensor-kosmologischem Rollverhalten (Quintessenz-artig, bekannt seit
+> den 1990er Jahren). Es ist kein Alcubierre-Warp-Effekt: Letzterer erfordert
+> negative Energiedichte ρ < 0 in der Größenordnung ~10³⁰ J/m³. Die
+> RFT-Simulation zeigt einen Vorzeichenwechsel der Zustandsgleichung durch
+> Phasensteuerung — dies ist eine interessante Eigenschaft des Modells, aber
+> kein Nachweis superluminaler Raumzeitkrümmung.
+
 ### 6.2 Warp-Konfiguration
 
 ```

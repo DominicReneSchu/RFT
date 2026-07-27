@@ -25,8 +25,8 @@ so gewählt, dass sie:
 | Symbol | Bedeutung |
 |:------:|:----------|
 | h | Plancksches Wirkungsquantum |
-| f | Frequenz |
-| ω | Kreisfrequenz, ω = 2πf |
+| f | Frequenz — **definiert als Kreisfrequenz** f := ω (rad/s); sofern nicht anders angegeben, verwenden alle RFT-Formeln f := ω |
+| ω | Kreisfrequenz (rad/s), in der RFT synonymous mit f: f := ω |
 | k | Wellenzahl |
 | A | Amplitude |
 | φ | Phase |
@@ -87,6 +87,12 @@ DC-Komponente (Trend) und AC-Komponente (handelbare Schwingung) zerlegen.
 Δd_η > 6σ (1.530 Läufe). Die Eigenfrequenz jedes physikalischen Systems
 ist messbar (Fourier-Zerlegung).
 
+**Hinweis zum Geltungsbereich:** A1 setzt die Existenz mindestens einer periodischen
+Mode voraus — dies ist äquivalent zur Existenz einer Fourier-Zerlegung (Satz der
+Funktionalanalysis). Die physikalische Aussage ist die Anwendbarkeit dieser Zerlegung
+auf reale Systeme inklusive Finanzmärkte. Die operationale Abgrenzung für
+nicht-physikalische Systeme ist eine offene Forschungsfrage (siehe RESEARCH_TASKS.md).
+
 ---
 
 ### Axiom 2 — Superposition
@@ -123,6 +129,13 @@ in einem rationalen Verhältnis stehen, innerhalb eines Toleranzfensters δ.
 G ist die Gewichtungsfunktion: maximal bei exakter Resonanz, abfallend
 mit der Verstimmung.
 
+**Hinweis zur Toleranz δ:** A3 erfordert keine exakt rationalen Frequenzverhältnisse,
+sondern nur Verhältnisse innerhalb des Toleranzfensters δ: |f₁/f₂ − m/n| < δ.
+Die GDR-Frequenz f_GDR = E_GDR/(π·ℏ) ist irrational, liegt aber innerhalb δ eines
+rationalen Verhältnisses. Das Toleranzfenster δ ist ein Modellparameter der RFT —
+kein freier Parameter, da es physikalisch durch die Resonanzbreite Γ_GDR ≈ 4–5 MeV
+bestimmt wird (siehe material.py).
+
 **Testbare Vorhersage:** Systeme mit verschiedenen Eigenfrequenzen können
 resonant koppeln. Systeme mit identischen Eigenfrequenzen schwingen synchron —
 keine Obertöne, kein Informationsaustausch.
@@ -142,19 +155,22 @@ Resonanzpfads.
 **Formalisierung:**
 
 ```
-(A4)    E_eff = π · ε(Δφ) · h · f
+(A4)    E_eff = π · ε(Δφ) · ℏ · ω
 
         Bei Mehrmodenkopplung:
-        E_eff = π · ε(Δφ_ij) · h · ⟨f_ij⟩
+        E_eff = π · ε(Δφ_ij) · ℏ · ⟨ω_ij⟩
 ```
 
-Dabei ist:
+Dabei ist (mit f := ω, Kreisfrequenz in rad/s):
 - ε(Δφ) die Kopplungseffizienz als Funktion der Phasendifferenz,
   z.B. ε(Δφ) = cos²(Δφ/2)
 - π der geometrische Faktor aus der Integration über einen Halbzyklus
-  des Resonanzpfads (Herleitung: siehe §4.1)
-- h das Plancksche Wirkungsquantum
-- f die Frequenz der gekoppelten Mode
+  des Resonanzpfads (geometrische Motivation: siehe §4.1)
+- ℏ das reduzierte Plancksche Wirkungsquantum
+- ω die Kreisfrequenz der gekoppelten Mode (f := ω)
+
+> **E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT. Sie wird nicht aus
+> den vorangehenden Integralen abgeleitet, sondern axiomatisch gesetzt.**
 
 **Herleitung von π:** Die Kopplung zwischen zwei Resonatoren erfolgt
 nicht instantan, sondern über einen Pfad im Phasenraum. Die Integration
@@ -164,7 +180,7 @@ der Kopplungseffizienz über einen vollständigen Halbzyklus ergibt:
         ∫₀^π cos²(φ/2) dφ = π/2
 
         Normiert auf die maximale Kopplung (Δφ = 0):
-        E_eff / E_max = π · ε · h · f / (h · f) = π · ε
+        E_eff / E_max = π · ε · ℏ · ω / (ℏ · ω) = π · ε
 ```
 
 Der Faktor π entsteht somit aus der zyklischen Geometrie der Kopplung,
@@ -279,6 +295,12 @@ unter synchronen Transformationen der Gruppe G_sync.
         ε(Δφ_ij) = ε(T(φᵢ) − T(φⱼ))
 ```
 
+**Hinweis zum formalen Beweis:** Ein formaler Beweis der Skalentransformation —
+dass die Kopplungsstruktur über CMB-, Kernphysik- und Finanzmarkt-Skalen identisch
+ist — liegt noch nicht vor. Die drei genannten Domänen sind Analogisierungen.
+Ein rigoroser Gruppentheorie-Beweis von G_sync über Skalen ist eine offene Aufgabe
+(siehe RESEARCH_TASKS.md).
+
 **Testbare Vorhersage:** Die Resonanzstruktur ist skalierungsinvariant —
 sie gilt auf allen Zeitskalen und Energieskalen.
 
@@ -290,33 +312,37 @@ verschiedene H₀-Werte (4 Regime). CERN-Daten: stabiles Resonanzmuster.
 
 ## 4. Mathematische Konsequenzen
 
-### 4.1 Herleitung des Faktors π in der Energieformel
+### 4.1 Geometrische Motivation des Faktors π in der Energieformel
 
 Aus Axiom 1 (Schwingung) und Axiom 4 (Kopplungsenergie) folgt:
+
+> *Die folgende Integration motiviert den Faktor π geometrisch, leitet ihn jedoch
+> nicht zwingend ab. Eine vollständige Herleitung über ein Wirkungsintegral S[ψ, Δφ]
+> ist eine offene Forschungsfrage (siehe RESEARCH_TASKS.md).*
 
 Die Energieübertragung zwischen zwei resonant gekoppelten Moden
 mit Kopplungseffizienz ε(Δφ) = cos²(Δφ/2) über einen vollständigen
 Kopplungszyklus ist:
 
 ```
-    E_zyklus = h · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-             = h · f · π / (2π)
-             = h · f / 2
+    E_zyklus = ℏ · ω · ∫₀^(2π) cos²(φ/2) dφ / (2π)
+             = ℏ · ω · π / (2π)
+             = ℏ · ω / 2
 ```
 
 Die effektive Kopplungsenergie für einen Halbzyklus (die minimale
 Einheit kohärenter Übertragung) beträgt:
 
 ```
-    E_eff = h · f · ∫₀^π cos²(φ/2) dφ / π
-          = h · f · (π/2) / π
-          = h · f / 2
+    E_eff = ℏ · ω · ∫₀^π cos²(φ/2) dφ / π
+          = ℏ · ω · (π/2) / π
+          = ℏ · ω / 2
 ```
 
 Normiert auf die Kopplungseinheit ergibt sich:
 
 ```
-    E_eff = π · ε(Δφ) · h · f
+    E_eff = π · ε(Δφ) · ℏ · ω
 ```
 
 wobei der Faktor π die zyklische Geometrie des Kopplungspfads

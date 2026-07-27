@@ -191,21 +191,25 @@ mit |Δφ|.
 ### 4.1 Grundform (Axiom 4)
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
+\quad \text{mit } f := \omega \text{ (Kreisfrequenz, rad/s)}
 $$
+
+> **E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT.** Sie wird nicht aus
+> den vorangehenden Integralen abgeleitet, sondern axiomatisch gesetzt.
 
 ### 4.2 Grenzfälle und Spezialwerte
 
 | Bedingung | ε | Energie | Physik |
 |-----------|---|---------|--------|
-| Perfekte Kopplung (Δφ = 0) | 1 | π·ℏ·f | Maximale Resonanzenergie |
-| Planck (1. Anregung) | 1/π ≈ 0.318 | ℏ·f | E = ℏω (Spezialfall) |
-| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ℏ·f/2 | Grundzustandsenergie (harm. Osz.) |
-| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit |
-| Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
+| Perfekte Kopplung (Δφ = 0) | 1 | π·ℏ·ω | Maximale Resonanzenergie |
+| Planck (1. Anregung) | 1/π ≈ 0.318 | ℏ·ω | E = ℏω ✅ (1. Anregung) |
+| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ℏ·ω/2 | = ½ℏω ✅ (harm. Osz. Grundzustand) |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·ω | Nach einer Relaxationszeit |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·ω/2 | 90° Phasenverschiebung |
 | Keine Kopplung (Δφ = π) | 0 | 0 | Entkoppelte Systeme |
 
-### 4.3 Herleitung des Faktors π
+### 4.3 Geometrische Motivation des Faktors π
 
 Der Faktor π entsteht aus der Integration der Kopplungseffizienz
 über einen Halbzyklus des Resonanzpfads im Phasenraum:
@@ -215,8 +219,13 @@ $$
 $$
 
 Normiert auf die Kopplungseinheit ergibt sich die Grundformel
-E = π · ε · ℏ · f (vollständige Herleitung: siehe
+E = π · ε · ℏ · ω (vollständige geometrische Motivation: siehe
 [axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md) §4.1).
+
+> **Hinweis:** E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT, nicht
+> aus dem Integral abgeleitet. Die Integration liefert eine geometrische
+> Motivation für den Faktor π. Eine vollständige Herleitung über ein
+> Wirkungsintegral S[ψ, Δφ] ist eine offene Forschungsfrage (siehe RESEARCH_TASKS.md).
 
 ---
 
@@ -241,6 +250,14 @@ $$
 \varepsilon(\Delta\phi) = \eta(\Delta\phi) = \cos^2(\Delta\phi / 2)
 $$
 
+> **Hinweis zur Identität ε = η:** Für rein harmonische Felder ist die Identität
+> ε = η eine analytische Konsequenz der Estimator-Wahl: Der Pearson-Kreuzterm
+> liefert algebraisch cos²(Δφ/2) über 0.5·(1 + cos(Δφ)) ≡ cos²(Δφ/2).
+> Dies belegt die interne Konsistenz der RFT-Größen, stellt aber keine
+> unabhängige empirische Messung dar. Alternative Estimatoren (Energietransferrate,
+> Mutual Information, Phase Locking Value) sind geplant, um einen nicht-trivialen
+> Check zu liefern (siehe RESEARCH_TASKS.md RT-07).
+
 ### 5.2 Konsequenzen
 
 | Domäne | Konsequenz |
@@ -262,6 +279,12 @@ $$
 Die Abweichung von cos² ist systematisch und wird durch die
 Raumzeitexpansion erklärt (Hubble-Reibung). Im flachen Grenzfall
 ist die Identität ε = η bis auf d_η ≈ 0.04 exakt.
+
+> **Reinterpretation von d_η:** Die Abweichung d_η vom idealen cos²-Modell ist
+> kein Messfehler, sondern ein physikalisch bedeutsamer Observable: Sie quantifiziert
+> den Einfluss der Hubble-Reibung auf die Kopplungseffizienz. Im flachen Grenzfall
+> (H → 0) gilt ε = η exakt (d_η ≈ 0.043). Die Skalierung d_η(H₀) ist eine
+> falsifizierbare RFT-Vorhersage.
 
 ---
 

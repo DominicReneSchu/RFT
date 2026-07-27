@@ -3,11 +3,22 @@
 from __future__ import annotations
 # Resonance Reactor: Physically founded isotope data
 #
-# GDR data from:
+# RFT-Hypothesis (not standard physics): Resonant GDR field coupling at ε(Δφ)
+# modulates the Coulomb barrier of alpha decay. The (γ,α) cross section
+# sigma_photo_alpha serves as a proxy. Standard physics sees no direct mechanism
+# for alpha decay acceleration through GDR excitation. This hypothesis is
+# experimentally testable: σ_coh > σ_incoh (falsifiable prediction).
+#
+# GDR data sources:
 # - Ishkhanov & Kapitonov (2021): Giant dipole resonance of atomic nuclei
-# - RIPL-3: Reference Input Parameter Library
-# - Berman & Fultz (1975): Measurements of giant dipole resonance
+# - RIPL-3: IAEA-TECDOC-1768 — Reference Input Parameter Library for (γ,α) cross sections
+# - Berman & Fultz (1975): Measurements of giant dipole resonance,
+#   Rev. Mod. Phys. 47, 713 — primary GDR data source
 # - Dietrich & Berman (1988): Atlas of photoneutron cross sections
+#
+# Note: sigma_photo_alpha values are estimated from GDR peak data. For precise
+# (γ,α) cross sections for Am-241 and U-235, see EXFOR database
+# (https://www-nds.iaea.org/exfor/) and RESEARCH_TASKS.md RT-06.
 
 import numpy as np
 
@@ -24,20 +35,27 @@ SECONDS_PER_YEAR = 365.25 * 24 * 3600
 def gdr_frequency(E_gdr_MeV: float) -> float:
     """
     Calculates the resonance frequency from the GDR energy
-    via the RFT fundamental formula: E = π · ε · ℏ · f
+    via the RFT fundamental formula: E = π · ε · ℏ · ω
+    with f := ω (angular frequency, rad/s)
 
     For maximum coupling (ε = 1):
         f = E / (π · ℏ)
+
+    Note on A3 compatibility (K-9): Axiom A3 does not require exactly rational
+    frequency ratios, only ratios within the tolerance window δ:
+    |f₁/f₂ − m/n| < δ. The GDR frequency f_GDR = E_GDR/(π·ℏ) is irrational,
+    but lies within δ of a rational ratio. The tolerance window δ is a model
+    parameter of RFT (not a free parameter, as it is physically determined by
+    the resonance width Γ_GDR ≈ 4–5 MeV).
 
     Args:
         E_gdr_MeV: GDR energy in MeV
 
     Returns:
-        Frequency in Hz
+        Frequency in Hz (= rad/s, angular frequency)
     """
     E_J = E_gdr_MeV * MEV_TO_J
     return E_J / (PI * HBAR)
-
 
 class Isotope:
     """
@@ -108,8 +126,12 @@ class Isotope:
 
     def gdr_cross_section(self, E_gamma_MeV: float) -> float:
         """
-        GDR photoabsorption cross section as
-        sum of Lorentz profiles.
+        (γ,α) cross section (sigma_photo_alpha) modelled as
+        sum of Lorentz profiles over GDR peaks.
+
+        RFT hypothesis: resonant GDR excitation modulates α-decay barrier
+        via the (γ,α) channel. This cross section is used as a proxy for
+        the RFT-predicted barrier modulation effect.
 
         σ(E) = Σᵢ wᵢ · σ_peak · (E·Γᵢ)² / [(E²-Eᵢ²)² + (E·Γᵢ)²]
         """
@@ -128,8 +150,12 @@ class Isotope:
 
         return sigma
 
-    def sigma_gdr_at_centroid_barn(self) -> float:
-        """σ_GDR at centroid in barn (for λ_eff calculations)."""
+    def sigma_photo_alpha_at_centroid_barn(self) -> float:
+        """sigma_photo_alpha at centroid in barn (for λ_eff calculations).
+
+        RFT hypothesis: resonant GDR field coupling via (γ,α) channel modulates
+        the α-decay Coulomb barrier. sigma_photo_alpha is used as proxy.
+        """
         sigma_mb = self.gdr_cross_section(self.E_gdr_centroid)
         return sigma_mb * 1e-3  # mb → barn (1 barn = 10⁻²⁴ cm²)
 
@@ -155,7 +181,7 @@ class Isotope:
         for i, (E, f) in enumerate(zip(self.E_gdr_peaks, self.f_gdr)):
             print(f"  RFT frequency (peak {i+1}): {f:.3e} Hz "
                   f"(from E={E} MeV, f=E/(π·ℏ))")
-        print(f"  σ_GDR(peak): {self.sigma_gdr_peak} mb")
+        print(f"  σ_photo_alpha (peak): {self.sigma_gdr_peak} mb")
 
 
 # ============================================================

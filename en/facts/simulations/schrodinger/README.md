@@ -15,10 +15,13 @@ $$
 \varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi / 2) \in [0, 1]
 $$
 
-> **Classification:** This simulation demonstrates the **derivation of the
-> Schrödinger equation from Axiom 4** and numerically proves the
-> correspondence principle: Standard QM is a special case of RFT.
-> It follows the recommendation to derive the Schrödinger equation from the RFT axioms.
+> **Classification:** This simulation demonstrates the **implementation of the
+> Resonance Hamiltonian** and shows the **internal consistency** between
+> standard QM and RFT. The Fidelity = 1.0 follows from the fact that both paths
+> (standard QM and RFT Hamiltonian) solve the same differential equation with
+> the same effective potential V_eff = ε(Δφ)·V_coupling. This demonstrates
+> internal consistency, not independent agreement. The correspondence principle
+> holds in the sense that standard QM is the exact limit λ → 0 of RFT.
 
 ---
 

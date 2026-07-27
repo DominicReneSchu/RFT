@@ -24,7 +24,13 @@ procedures such as this resonance analysis.
 
 ### Relation to Resonance Field Theory
 
-This simulation validates the predictions of Axiom 3
+**Consistency test:** The RFT resonance condition (Axiom 3) is consistent with
+known particle masses in the CMS dielectron spectrum. The resonances found
+(φ, J/ψ, Υ, Z) are known from the Standard Model and have been established with
+> 50σ significance. This test demonstrates that Axiom 3 correctly identifies
+these masses — it does not prove the energy formula E = π·ε·ℏ·ω.
+
+This simulation tests the predictions of Axiom 3
 (Resonance Condition) of the
 [Resonance Field Theory](../../../docs/definitions/axiomatic_foundation.md):
 If resonance points are physically real, the observed excesses must
@@ -272,7 +278,11 @@ This result confirms and is confirmed by independent results from other domains:
 | Resonance condition also empirically detectable | Schrödinger simulation: resonance condition effective at quantum level, Fidelity = 1.0 | Quantum mechanics | [→ Schrödinger](../../../simulations/schrodinger/README.md) |
 | Nuclear-physics resonance, A3 condition | Resonance reactor: same A3 condition at nuclear-physics scale | Nuclear physics | [→ Resonance reactor](../../../concepts/resonance_reactor/resonance_reactor.md) |
 
-> **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
+> **Consistency test:** The RFT resonance condition (Axiom 3) correctly identifies
+> the known resonances φ, J/ψ, Υ, Z in the CMS dielectron spectrum with > 50σ.
+> These resonances are established Standard Model particles. The test shows that
+> Axiom 3 is consistent with known particle masses — it does not prove the energy
+> formula E = π·ε(Δφ)·ℏ·ω.
 
 ---
 

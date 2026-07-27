@@ -15,10 +15,13 @@ $$
 \varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi / 2) \in [0, 1]
 $$
 
-> **Einordnung:** Diese Simulation demonstriert die **Ableitung der
-> Schrödinger-Gleichung aus Axiom 4** und belegt numerisch das
-> Korrespondenzprinzip: Standard-QM ist Spezialfall der RFT.
-> Sie folgt der Empfehlung, die Schrödinger-Gleichung aus der RFT-Axiomatik abzuleiten.
+> **Einordnung:** Diese Simulation demonstriert die **Implementierung des
+> Resonanz-Hamiltonoperators** und zeigt die **interne Konsistenz** zwischen
+> Standard-QM und RFT. Die Fidelity = 1.0 folgt daraus, dass beide Pfade
+> (Standard-QM und RFT-Hamiltonoperator) dieselbe Differentialgleichung mit
+> demselben effektiven Potential V_eff = ε(Δφ)·V_Kopplung lösen. Dies zeigt
+> interne Konsistenz, nicht unabhängige Übereinstimmung. Das Korrespondenzprinzip
+> gilt in dem Sinne, dass Standard-QM der exakte Grenzfall λ → 0 der RFT ist.
 
 ---
 

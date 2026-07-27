@@ -25,7 +25,13 @@ oder nicht-trivialen Suchverfahren wie in dieser Resonanzanalyse.
 
 ### Bezug zur Resonanzfeldtheorie
 
-Diese Simulation validiert die Vorhersagen von Axiom 3
+**Konsistenztest:** Die RFT-Resonanzbedingung (Axiom 3) ist konsistent mit
+bekannten Teilchenmassen im CMS-Dielectron-Spektrum. Die gefundenen
+Resonanzen (φ, J/ψ, Υ, Z) sind aus dem Standardmodell bekannt und wurden mit
+> 50σ nachgewiesen. Der Test zeigt, dass Axiom 3 diese Massen korrekt
+identifiziert — er beweist nicht die Energieformel E = π·ε·ℏ·ω.
+
+Diese Simulation testet die Vorhersagen von Axiom 3
 (Resonanzbedingung) der
 [Resonanzfeldtheorie](../../../docs/definitionen/axiomatische_grundlegung.md):
 Wenn Resonanzstellen physikalisch real sind, müssen die
@@ -280,7 +286,11 @@ Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus 
 | Resonanzbedingung auch empirisch nachweisbar | Schrödinger-Simulation: Resonanzbedingung quantenmechanisch wirksam, Fidelity = 1.0 | Quantenmechanik | [→ Schrödinger](../../../simulationen/schrödinger/README.md) |
 | Kernphysikalische Resonanz, A3-Bedingung | Resonanzreaktor: dieselbe A3-Bedingung auf Kernphysik-Skala | Kernphysik | [→ Resonanzreaktor](../../../konzepte/resonanzreaktor/resonanzreaktor.md) |
 
-> **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
+> **Konsistenztest:** Die RFT-Resonanzbedingung (Axiom 3) identifiziert die
+> bekannten Resonanzen φ, J/ψ, Υ, Z im CMS-Dielectron-Spektrum korrekt mit > 50σ.
+> Diese Resonanzen sind etablierte Standardmodellteilchen. Der Test zeigt, dass
+> Axiom 3 mit bekannten Teilchenmassen konsistent ist — er beweist nicht die
+> Energieformel E = π·ε(Δφ)·ℏ·ω.
 
 ---
 

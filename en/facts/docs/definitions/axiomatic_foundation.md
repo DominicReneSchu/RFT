@@ -25,8 +25,8 @@ chosen to be:
 | Symbol | Meaning |
 |:------:|:--------|
 | h | Planck action quantum |
-| f | Frequency |
-| ω | Angular frequency, ω = 2πf |
+| f | Frequency — **defined as angular frequency** f := ω (rad/s); unless otherwise stated, all RFT formulas use f := ω |
+| ω | Angular frequency (rad/s), synonymous with f in RFT: f := ω |
 | k | Wave number |
 | A | Amplitude |
 | φ | Phase |
@@ -87,6 +87,12 @@ DC component (trend) and an AC component (tradeable oscillation).
 Δd_η > 6σ (1,530 runs). The natural frequency of any physical system
 is measurable (Fourier decomposition).
 
+**Note on scope:** A1 asserts the existence of at least one periodic mode — this is
+equivalent to the existence of a Fourier decomposition (theorem of functional analysis).
+The physical content is the applicability of this decomposition to real systems
+including financial markets. The operational delimitation for non-physical systems
+is an open research question (see RESEARCH_TASKS.md).
+
 ---
 
 ### Axiom 2 — Superposition
@@ -123,6 +129,12 @@ stand in a rational ratio, within a tolerance window δ.
 G is the weighting function: maximal at exact resonance, decreasing
 with detuning.
 
+**Note on tolerance δ:** A3 requires not exactly rational frequency ratios, but
+only ratios within the tolerance window δ: |f₁/f₂ − m/n| < δ. The GDR frequency
+f_GDR = E_GDR/(π·ℏ) is irrational, but lies within δ of a rational ratio. The
+tolerance window δ is a model parameter of the RFT — not a free parameter, since it
+is physically determined by the resonance width Γ_GDR ≈ 4–5 MeV (see material.py).
+
 **Testable prediction:** Systems with different eigenfrequencies can
 couple resonantly. Systems with identical eigenfrequencies oscillate
 synchronously — no overtones, no information exchange.
@@ -142,19 +154,22 @@ resonance path.
 **Formalization:**
 
 ```
-(A4)    E_eff = π · ε(Δφ) · h · f
+(A4)    E_eff = π · ε(Δφ) · ℏ · ω
 
         For multi-mode coupling:
-        E_eff = π · ε(Δφ_ij) · h · ⟨f_ij⟩
+        E_eff = π · ε(Δφ_ij) · ℏ · ⟨ω_ij⟩
 ```
 
-Here:
+Here (with f := ω, angular frequency in rad/s):
 - ε(Δφ) is the coupling efficiency as a function of the phase difference,
   e.g. ε(Δφ) = cos²(Δφ/2)
 - π is the geometric factor from the integration over a half-cycle
-  of the resonance path (derivation: see §4.1)
-- h is the Planck action quantum
-- f is the frequency of the coupled mode
+  of the resonance path (geometric motivation: see §4.1)
+- ℏ is the reduced Planck constant
+- ω is the angular frequency of the coupled mode (f := ω)
+
+> **E = π·ε·ℏ·ω is a defining postulate of the RFT. It is not derived
+> from the preceding integrals, but set axiomatically.**
 
 **Derivation of π:** The coupling between two resonators does not occur
 instantaneously, but over a path in phase space. The integration of
@@ -164,7 +179,7 @@ the coupling efficiency over a complete half-cycle yields:
         ∫₀^π cos²(φ/2) dφ = π/2
 
         Normalized to maximum coupling (Δφ = 0):
-        E_eff / E_max = π · ε · h · f / (h · f) = π · ε
+        E_eff / E_max = π · ε · ℏ · ω / (ℏ · ω) = π · ε
 ```
 
 The factor π thus arises from the cyclic geometry of the coupling,
@@ -279,6 +294,12 @@ under synchronous transformations of the group G_sync.
         ε(Δφ_ij) = ε(T(φᵢ) − T(φⱼ))
 ```
 
+**Note on formal proof:** A formal proof of the scale transformation — that the
+coupling structure across CMB, nuclear-physics, and financial-market scales is
+identical — is not yet available. The three cited domains are analogisations.
+A rigorous group-theoretic proof of G_sync across scales is an open task
+(see RESEARCH_TASKS.md).
+
 **Testable prediction:** The resonance structure is scale-invariant —
 it holds on all time scales and energy scales.
 
@@ -290,33 +311,37 @@ various H₀ values (4 regimes). CERN data: stable resonance pattern.
 
 ## 4. Mathematical Consequences
 
-### 4.1 Derivation of the Factor π in the Energy Formula
+### 4.1 Geometric Motivation of the Factor π in the Energy Formula
 
 From Axiom 1 (oscillation) and Axiom 4 (coupling energy) it follows:
+
+> *The following integration motivates the factor π geometrically, but does not
+> derive it compulsorily. A complete derivation via an action integral S[ψ, Δφ] is
+> an open research question (see RESEARCH_TASKS.md).*
 
 The energy transfer between two resonantly coupled modes
 with coupling efficiency ε(Δφ) = cos²(Δφ/2) over a complete
 coupling cycle is:
 
 ```
-    E_cycle = h · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-            = h · f · π / (2π)
-            = h · f / 2
+    E_cycle = ℏ · ω · ∫₀^(2π) cos²(φ/2) dφ / (2π)
+            = ℏ · ω · π / (2π)
+            = ℏ · ω / 2
 ```
 
 The effective coupling energy for a half-cycle (the minimal
 unit of coherent transfer) is:
 
 ```
-    E_eff = h · f · ∫₀^π cos²(φ/2) dφ / π
-          = h · f · (π/2) / π
-          = h · f / 2
+    E_eff = ℏ · ω · ∫₀^π cos²(φ/2) dφ / π
+          = ℏ · ω · (π/2) / π
+          = ℏ · ω / 2
 ```
 
 Normalized to the coupling unit:
 
 ```
-    E_eff = π · ε(Δφ) · h · f
+    E_eff = π · ε(Δφ) · ℏ · ω
 ```
 
 where the factor π encodes the cyclic geometry of the coupling path

@@ -211,6 +211,13 @@ Sides (θ=π/2): h ≈ 0 → neutral
 | 0.833 | 0.067 | −0.151 | −0.046 | **−0.049** | 1709 | Expansion |
 | 1.000 | 0.000 | −0.129 | −0.011 | **−0.014** | 5753 | De Sitter |
 
+> **Note on Δw = 0.057:** The simulated Δw = 0.057 corresponds to scalar-tensor
+> cosmological roll behaviour (quintessence-like, known since the 1990s). It is
+> NOT an Alcubierre warp effect: the latter requires negative energy density
+> ρ < 0 of the order ~10³⁰ J/m³. The RFT simulation shows a sign change of the
+> equation of state through phase control — this is an interesting property of
+> the model, but not a demonstration of superluminal spacetime curvature.
+
 ### 6.2 Warp Configuration
 
 ```
