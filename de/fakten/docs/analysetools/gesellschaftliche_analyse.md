@@ -437,6 +437,7 @@ Die Offenbarung des Johannes denkt in **Völker-Lebenszyklen**, nicht in Individ
 - $\vec{E}$ (A5) dauerhaft feldauswärts: Extraktion von $\varepsilon$-Früchten ohne Rückgabe
 
 **Formale Diagnose:**
+
 $$\frac{dK_{ij}^{\mathrm{Umfeld}}}{dt}\bigg|_{\mathrm{Parasit}} < 0 \quad \mathrm{bei\ gleichzeitig\ steigender\ Selbstdarstellungsamplitude\ } A_{\mathrm{Parasit}}$$
 
 Das Muster ist durch A7 skalierungsinvariant: Es tritt in vergleichbarer Struktur bei Einzelakteuren, Institutionen und Mediensystemen auf.
