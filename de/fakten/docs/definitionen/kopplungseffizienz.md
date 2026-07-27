@@ -191,23 +191,29 @@ mit |Δφ|.
 ### 4.1 Grundform (Axiom 4)
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
-\quad \text{mit } f := \omega \text{ (Kreisfrequenz, rad/s)}
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+\quad \text{mit } f = E/(π \cdot \hbar) \text{ (RFT-Resonanzfrequenz, rad/s; K-3)}
 $$
 
-> **E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT.** Sie wird nicht aus
+> **E = π·ε·ℏ·f ist ein definierendes Postulat der RFT.** Sie wird nicht aus
 > den vorangehenden Integralen abgeleitet, sondern axiomatisch gesetzt.
 
 ### 4.2 Grenzfälle und Spezialwerte
 
-| Bedingung | ε | Energie | Physik |
-|-----------|---|---------|--------|
-| Perfekte Kopplung (Δφ = 0) | 1 | π·ℏ·ω | Maximale Resonanzenergie |
-| Planck (1. Anregung) | 1/π ≈ 0.318 | ℏ·ω | E = ℏω ✅ (1. Anregung) |
-| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ℏ·ω/2 | = ½ℏω ✅ (harm. Osz. Grundzustand) |
-| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·ω | Nach einer Relaxationszeit |
-| Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·ω/2 | 90° Phasenverschiebung |
-| Keine Kopplung (Δφ = π) | 0 | 0 | Entkoppelte Systeme |
+| Bedingung | ε | Energie (f = ω/π, RFT-Def.) | Physik |
+|-----------|---|------------------------------|--------|
+| Perfekte Kopplung (Δφ = 0) | 1 | π·ℏ·f | RFT-Maximum (kein Standard-Planck-Äquivalent) |
+| Planck (1. Anregung) | 1/π ≈ 0.318 | ℏ·f | ≙ ℏω (1. Anregung) ✅ |
+| Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ℏ·f/2 | ≙ ½ℏω (Grundzustand) ✅ |
+| Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
+| Keine Kopplung (Δφ = π) | 0 | 0 | Antiresonanz |
+
+> **Hinweis zur Frequenzdefinition:**
+> - f in E = π·ε·ℏ·f ist die RFT-Resonanzfrequenz f = ω/π (keine Standard-Hz-Frequenz).
+> - Der klassische Planck-Grenzwert E = hf_Hz entspricht ε = 1/(2π) ≈ 0.159 (Grundzustand des harmonischen Oszillators).
+> - ε = 1 (maximale Kopplung) ergibt E = π·ℏ·f — kein direktes Äquivalent in der Standard-Planck-Relation.
+> - Die genaue Grenzbeziehung E → hf_Hz für ε ∈ [0, 1] ist eine offene Frage (→ RESEARCH_TASKS.md RT-01).
 
 ### 4.3 Geometrische Motivation des Faktors π
 
@@ -219,10 +225,10 @@ $$
 $$
 
 Normiert auf die Kopplungseinheit ergibt sich die Grundformel
-E = π · ε · ℏ · ω (vollständige geometrische Motivation: siehe
+E = π · ε · ℏ · f (vollständige geometrische Motivation: siehe
 [axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md) §4.1).
 
-> **Hinweis:** E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT, nicht
+> **Hinweis:** E = π·ε·ℏ·f ist ein definierendes Postulat der RFT, nicht
 > aus dem Integral abgeleitet. Die Integration liefert eine geometrische
 > Motivation für den Faktor π. Eine vollständige Herleitung über ein
 > Wirkungsintegral S[ψ, Δφ] ist eine offene Forschungsfrage (siehe RESEARCH_TASKS.md).

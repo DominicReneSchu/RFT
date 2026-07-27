@@ -35,8 +35,8 @@ SECONDS_PER_YEAR = 365.25 * 24 * 3600
 def gdr_frequency(E_gdr_MeV: float) -> float:
     """
     Berechnet die Resonanzfrequenz aus der GDR-Energie
-    über die RFT-Grundformel: E = π · ε · ℏ · ω
-    mit f := ω (Kreisfrequenz, rad/s)
+    über die RFT-Grundformel: E = π · ε · ℏ · f
+    mit f = E_GDR/(π·ℏ) (RFT-Resonanzfrequenz, rad/s; vgl. K-3)
 
     Für maximale Kopplung (ε = 1):
         f = E / (π · ℏ)
@@ -48,11 +48,21 @@ def gdr_frequency(E_gdr_MeV: float) -> float:
     Modellparameter der RFT (nicht freier Parameter, da physikalisch durch die
     Resonanzbreite Γ_GDR ≈ 4–5 MeV bestimmt).
 
+    Frequenzdefinition (K-3):
+        f_GDR = E_GDR / (π·ℏ)
+        Diese RFT-Resonanzfrequenz entspricht f = ω/π (kein Standard-Hz).
+        Standardphysik: f_Hz = E/h  oder  ω = E/ℏ (rad/s).
+        Der klassische Planck-Grenzwert E = hf (Hz) entspricht ε = 1/(2π) ≈ 0.159
+        in der RFT-Formel — d.h. ε ∈ [0, 1] erreicht E = hf nie bei ε = 1.
+        Diese Diskrepanz ist eine offene Frage (→ RESEARCH_TASKS.md RT-01).
+
     Args:
         E_gdr_MeV: GDR-Energie in MeV
 
     Returns:
-        Frequenz in Hz (= rad/s, Kreisfrequenz)
+        float: Frequenz in rad/s — die RFT-Resonanzfrequenz f = E/(π·ℏ) = ω/π.
+            Kein Standard-Hz (f_Hz = E/h) und keine Standard-Kreisfrequenz
+            (ω_std = E/ℏ); siehe K-3 und RESEARCH_TASKS.md RT-01.
     """
     E_J = E_gdr_MeV * MEV_TO_J
     return E_J / (PI * HBAR)

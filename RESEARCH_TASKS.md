@@ -8,11 +8,13 @@ Status: Aktiv
 ## Kategorie 1: Theoretische Herleitungen
 
 ### RT-01 — Wirkungsintegral-Herleitung von π
-**Motivation:** Der Faktor π in E = π·ε·ℏ·ω ist derzeit ein Postulat (K-1).
+**Motivation:** Der Faktor π in E = π·ε·ℏ·f ist derzeit ein Postulat (K-1).
 **Aufgabe:** Herleitung über Wirkungsintegral S[ψ, Δφ] — π soll als
 Sattelpunktsbeitrag der stationären Phase folgen.
 **Ansatz:** Pfadintegral-Formulierung der Kopplungsenergie.
 **Falsifizierung:** Wenn S[ψ, Δφ] keinen π-Beitrag liefert, muss A4 neu formuliert werden.
+
+**RT-01 (Erweiterung):** Der exakte Grenzübergang der RFT-Formel E = π·ε·ℏ·f zur Standard-Planck-Relation E = hf_Hz ist eine offene mathematische Frage. Der nächste Planck-Grenzwert liegt bei ε = 1/(2π), nicht bei ε = 1. Die Frage lautet: Existiert eine physikalisch motivierte Erweiterung des ε-Wertebereichs oder eine alternative Frequenzdefinition, die den sauberen Grenzübergang ermöglicht?
 
 ### RT-02 — Gruppentheoretischer Beweis der Skalentransformation (A7)
 **Motivation:** A7 behauptet Skalentransformation über CMB-, Kern- und Finanzskalen (M-2).
