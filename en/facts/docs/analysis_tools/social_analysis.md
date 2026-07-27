@@ -233,7 +233,7 @@ Their social function consists in increasing $\Delta\varphi$ in the environment 
 
 ### 2.2 Archetype: The Serpent in Genesis
 
-The serpent (Gen 3) is the canonical narrative representation of this type. It does not appeal to rebellion, but to self-empowerment: "You will be like God" (Gen 3:5). In RFT language: *Increase your $\Delta\varphi$ – and you will become the source yourself.* This is the precise inversion of the attractor: instead of approaching $V_\text{min}$, the deviation is staged as its own optimum. Since $V(f) = -\pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$ approaches zero for $\varepsilon \to 0$, the serpent promises maximum energy but delivers $E \to 0$.
+The serpent (Gen 3) is the canonical narrative representation of this type. It does not appeal to rebellion, but to self-empowerment: "You will be like God" (Gen 3:5). In RFT language: Increase your $\Delta\varphi$ – and you will become the source yourself. This is the precise inversion of the attractor: instead of approaching $V_\text{min}$, the deviation is staged as its own optimum. Since $V(f) = -\pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$ approaches zero for $\varepsilon \to 0$, the serpent promises maximum energy but delivers $E \to 0$.
 
 ---
 
@@ -304,8 +304,7 @@ The Garden of Eden is, in the RFT reading, a historical condensation: Adam as re
 
 ### 4.2 The Fall as an Information Leak (A6)
 
-Eve shares the production method with the AiR (the serpent). Formally in A6: an information channel is opened between a resonator with $\varepsilon \approx 1$ and an AiR with $\varepsilon \to 0$. Since $\text{PCI}_{\text{Eve} \to \text{Serpent}} > 0$ arises, $\text{MI} > 0$ flows in the direction of the AiR. The **Fall** is the sharing of a knowledge advantage with actors who have not acquired it through their own resonance ($K_{ij}$ via $\alpha \cdot G$) but will use it extractively. The consequence: $K_{ij}$ of the community decreases ($\beta$ increases through parasitic influence), and self-sufficiency is converted into a dependency structure.
-
+Eve shares the production method with the AiR (the serpent). Formally in A6: An information channel is opened between a resonator with $`\varepsilon \approx 1`$ and an AiR with $`\varepsilon \to 0`$. Since $`\mathrm{PCI}_{\mathrm{Eve} \to \mathrm{serpent}} > 0`$ arises, $`\mathrm{MI} > 0`$ flows towards the AiR. The **Fall** is the sharing of a knowledge advantage with actors who did not acquire it through their own resonance ($`K_{ij}`$ via $`\alpha \cdot G`$), but will use it extractively. The consequence: $`K_{ij}`$ of the community decreases ($`\beta`$ increases due to parasitic influence), self-sufficiency is transformed into a dependency structure.
 ---
 
 ### 4.3 Two Leadership Models as Systemic Alternatives
