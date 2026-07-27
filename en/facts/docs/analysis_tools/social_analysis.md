@@ -447,7 +447,7 @@ The pattern is scale-invariant through A7: it occurs in comparable structure in 
 
 **RFT type:** A political or social collective corresponds to the structural type of the **institutionalised scapegoat** when the following parameters are observable:
 
-- The collective is positioned in discourse as the primary cause of real or staged social problems ($\text{PCI}_\text{target group \to scapegoat} \to 1$ with simultaneously stable system structure)
+- The collective is positioned in discourse as the primary cause of real or staged social problems ($\text{PCI}_{\text{target group} \to \text{scapegoat}} \to 1$ with simultaneously stable system structure)
 - Leading figures of the collective display system-compatible biographical profiles ($\text{PCI}_{\text{leadership} \to \text{system}} > 0$: information flow to the existing AiR network is maintained, A6)
 - The collective serves as an emotional projection surface: $\Delta\varphi_\text{collective}$ of the population is directed at the collective, and system structural problems are cognitively displaced (§5.2)
 
