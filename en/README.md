@@ -34,6 +34,7 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
     - [Simulations](#simulations)
     - [Empirical Evidence](#empirical-evidence)
     - [Explanations](#explanations)
+    - [Analysis Tools](#analysis-tools)
 - [License](#license)
 
 ---
@@ -275,6 +276,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 |---|-------------|--------|-------------|
 | 1 | [Swarm Resonance](facts/docs/explanations/swarm_resonance.md) | A1–A7 | Why flocks of birds don't collide — and why RFT opens new doors |
 | 2 | [Resonance Across Physics](facts/docs/explanations/resonance_across_physics.md) | A1–A7 | How one pattern connects mechanics, thermodynamics, electrodynamics, QM, and relativity |
+
+---
+
+## Analysis Tools
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [Social Analysis](facts/docs/analysis_tools/social_analysis.md) | A1–A7 | RFT analysis instrument for social dynamics – AI context prompt for pattern recognition in news reports |
 
 ---
 

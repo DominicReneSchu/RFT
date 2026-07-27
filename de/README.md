@@ -34,6 +34,7 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
     - [Simulationen](#simulationen)
     - [Empirische Nachweise](#empirische-nachweise)
     - [Erklärungen](#erklärungen)
+    - [Analysetools](#analysetools)
 - [Lizenz](#lizenz)
 
 ---
@@ -275,6 +276,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 |---|-----------|--------|-------------|
 | 1 | [Schwarmresonanz](fakten/docs/erklaerungen/schwarmresonanz.md) | A1–A7 | Warum Vogelschwärme nicht kollidieren — und warum die RFT neue Türen öffnet |
 | 2 | [Resonanz in der Physik](fakten/docs/erklaerungen/resonanz_in_der_physik.md) | A1–A7 | Wie ein Muster Mechanik, Thermodynamik, Elektrodynamik, QM und Relativität verbindet |
+
+---
+
+## Analysetools
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [Gesellschaftliche Analyse](fakten/docs/analysetools/gesellschaftliche_analyse.md) | A1–A7 | RFT-Analyseinstrument für gesellschaftliche Zusammenhänge – KI-Kontext-Prompt zur Mustererkennung in Nachrichtenmeldungen |
 
 ---
 
