@@ -329,7 +329,7 @@ Systems with high institutional weight tend to extract field-optimum fruits ($\v
 
 ### 5.2 The Scapegoat Mechanism (after Girard)
 
-A morally charged single topic is placed at the top of collective outrage. Formally: the collective $\Delta\varphi$ of the group is directed at a target object. PCI (A6) rises – but towards a false coupling target ($\text{PCI}_\text{target} > 0$, while $\text{PCI}_\text{structure} \to 0$ remains). The function: structural system errors are cognitively displaced by the emotional occupation of the scapegoat topic ($\text{MI}$ flows in the wrong direction). The mechanism functions without central control – it is encoded in the system architecture (A7: invariant).
+In the resonant ideal model, money is an **information signal for resonance work performed**: $`\mathrm{MI} > 0`$ between value creators and resource allocators (A6). It indicates where $`\varepsilon \to 1`$ has produced fruits and directs $`K_{ij}`$ there. In the current system, this signal is systematically distorted: energy is allocated according to ownership concentration, not according to $`\varepsilon`$. The result is a structural misinformation of the field – $`\mathrm{MI}_\mathrm{system}`$ decreases, $`\Delta\varphi_\mathrm{collective}`$ increases.
 
 ---
 
@@ -343,7 +343,7 @@ The system needs the visible enemy to bind collective energy. The correspondence
 
 ### 5.4 The Monetary System as an Inverted Information Signal (A6)
 
-In the resonant ideal model, money is an **information signal for performed resonance work**: $\text{MI} > 0$ between value creator and resource allocators (A6). It indicates where $\varepsilon \to 1$ has produced fruits and directs $K_{ij}$ there. In the current system, this signal is systematically distorted: energy is allocated according to concentration of ownership, not $\varepsilon$. The result is structural misinformation of the field – $\text{MI}_\text{system}$ decreases, $\Delta\varphi_\text{collective}$ increases.
+In the resonant ideal model, money is an **information signal for resonance work performed**: $`\mathrm{MI} > 0`$ between value creators and resource allocators (A6). It indicates where $`\varepsilon \to 1`$ has produced fruits and directs $`K_{ij}`$ there. In the current system, this signal is systematically distorted: energy is allocated according to ownership concentration, not according to $`\varepsilon`$. The result is a structural misinformation of the field – $`\mathrm{MI}_\mathrm{system}`$ decreases, $`\Delta\varphi_\mathrm{collective}`$ increases.
 
 ---
 
@@ -437,7 +437,8 @@ The Book of Revelation thinks in **national life cycles**, not individual life c
 - $\vec{E}$ (A5) permanently field-outward: extraction of $\varepsilon$-fruits without return
 
 **Formal diagnosis:**
-$$\frac{dK_{ij}^\text{environment}}{dt}\bigg|_\text{parasite} < 0 \quad \text{at simultaneously rising self-presentation amplitude } A_\text{parasite}$$
+
+$$\frac{dK_{ij}^{\mathrm{environment}}}{dt}\bigg|_{\mathrm{parasite}} < 0 \quad \mathrm{while\ the\ self-display\ amplitude\ } A_{\mathrm{parasite}} \mathrm{\ simultaneously\ increases}$$
 
 The pattern is scale-invariant through A7: it occurs in comparable structure in individual actors, institutions, and media systems.
 
