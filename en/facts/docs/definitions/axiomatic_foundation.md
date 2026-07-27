@@ -142,10 +142,10 @@ resonance path.
 **Formalization:**
 
 ```
-(A4)    E_eff = π · ε(Δφ) · h · f
+(A4)    E_eff = π · ε(Δφ) · ℏ · f
 
         For multi-mode coupling:
-        E_eff = π · ε(Δφ_ij) · h · ⟨f_ij⟩
+        E_eff = π · ε(Δφ_ij) · ℏ · ⟨f_ij⟩
 ```
 
 Here:
@@ -153,7 +153,7 @@ Here:
   e.g. ε(Δφ) = cos²(Δφ/2)
 - π is the geometric factor from the integration over a half-cycle
   of the resonance path (derivation: see §4.1)
-- h is the Planck action quantum
+- ℏ = h/(2π) is the reduced Planck action quantum (canonical notation in RFT)
 - f is the frequency of the coupled mode
 
 **Derivation of π:** The coupling between two resonators does not occur
@@ -164,7 +164,7 @@ the coupling efficiency over a complete half-cycle yields:
         ∫₀^π cos²(φ/2) dφ = π/2
 
         Normalized to maximum coupling (Δφ = 0):
-        E_eff / E_max = π · ε · h · f / (h · f) = π · ε
+        E_eff / E_max = π · ε · ℏ · f / (ℏ · f) = π · ε
 ```
 
 The factor π thus arises from the cyclic geometry of the coupling,
@@ -299,24 +299,24 @@ with coupling efficiency ε(Δφ) = cos²(Δφ/2) over a complete
 coupling cycle is:
 
 ```
-    E_cycle = h · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-            = h · f · π / (2π)
-            = h · f / 2
+    E_cycle = ℏ · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
+            = ℏ · f · π / (2π)
+            = ℏ · f / 2
 ```
 
 The effective coupling energy for a half-cycle (the minimal
 unit of coherent transfer) is:
 
 ```
-    E_eff = h · f · ∫₀^π cos²(φ/2) dφ / π
-          = h · f · (π/2) / π
-          = h · f / 2
+    E_eff = ℏ · f · ∫₀^π cos²(φ/2) dφ / π
+          = ℏ · f · (π/2) / π
+          = ℏ · f / 2
 ```
 
 Normalized to the coupling unit:
 
 ```
-    E_eff = π · ε(Δφ) · h · f
+    E_eff = π · ε(Δφ) · ℏ · f
 ```
 
 where the factor π encodes the cyclic geometry of the coupling path
@@ -335,8 +335,12 @@ its Fourier components ωₙ stand in rational ratios:
 ```
 
 *Proof:* Constructive interference (standing waves) requires periodic
-recurrence of the field pattern. This is only guaranteed for rational
-frequency ratios (Weyl's theorem on equidistribution).
+recurrence of the field pattern. Rational frequency ratios f₁/f₂ = n/m
+generate periodic, discrete coupling states with finite recurrence period
+T = m/f₁ = n/f₂. Weyl's equidistribution theorem shows complementarily
+that irrational ratios lead to a dense, equidistributed sampling of phase
+space — no stable resonance grid emerges. The RFT therefore uses rational
+ratios to define stable resonance couplings.
 
 **Note:** In the earlier version this was Axiom 5. However, it is a
 consequence of Axioms 1–3 and therefore not an independent axiom.
@@ -357,7 +361,7 @@ temporal evolution of the coupling strength follows:
 The effective potential of the coupling:
 
 ```
-    V(f) = −π · ε(Δφ(f)) · h · f
+    V(f) = −π · ε(Δφ(f)) · ℏ · f
 ```
 
 Local minima of V correspond to stable resonances (attractors).
@@ -399,7 +403,7 @@ through resonance coupling (A3, A6).
 | A1 | Universal oscillation | ψ = A·cos(kx−ωt+φ) | FLRW simulations: η ≈ cos²(Δφ/2), Δd_η > 6σ |
 | A2 | Superposition | Φ = Σ ψᵢ | Coupled Oscillators: multi-frequency superposition simulated |
 | A3 | Resonance condition | \|f₁/f₂ − m/n\| < δ | Monte Carlo test: 5 resonances at particle mass, emp. p = 0 |
-| A4 | Coupling energy | E = π·ε·h·f | Schrödinger simulation: 5-stage derivation from A4, Fidelity = 1.0, 1−F ~ λ² confirmed; Warp drive: first positive-energy warp bubble via ε(Δφ) phase control; Resonance reactor: λ_eff/λ₀ = 7,872 (U-235); FLRW: ε = η identity (κ = 1) |
+| A4 | Coupling energy | E = π·ε·ℏ·f | Schrödinger simulation: 5-stage derivation from A4, Fidelity = 1.0, 1−F ~ λ² confirmed; Warp drive: first positive-energy warp bubble via ε(Δφ) phase control; Resonance reactor: λ_eff/λ₀ = 7,872 (U-235); FLRW: ε = η identity (κ = 1) |
 | A5 | Energy direction | E⃗ = E·ê(Δφ,∇Φ) | Resonance field simulation: energy direction vector; Double pendulum: ε(θ₂−θ₁); Warp drive: front/rear asymmetry (contraction vs. expansion) |
 | A6 | Information flow | MI > 0 ⟺ PCI > 0 | Resonance field simulation: coupling efficiency and energy flow |
 | A7 | Invariance (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte Carlo test: bandwidth-independent (3 KDE); CERN data: stable resonance pattern |

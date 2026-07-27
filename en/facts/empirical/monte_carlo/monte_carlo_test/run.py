@@ -27,6 +27,7 @@ from config import (
     N_BOOTSTRAP,
     HIST_BINS,
     KDE_BANDWIDTH,
+    RANDOM_SEEDS,
 )
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -114,6 +115,8 @@ def main() -> None:
     print(
         f"\nMonte Carlo simulation ({N_SIMULATIONS} runs, KDE sampling) ..."
     )
+    # Seed aus config.py für Reproduzierbarkeit
+    np.random.seed(RANDOM_SEEDS[0])
     sim_p_values = {m0: [] for m0 in M0_VALUES}
     sim_hits = {m0: [] for m0 in M0_VALUES}
     sim_hits_per_m0_delta = {m0: [] for m0 in M0_VALUES}
