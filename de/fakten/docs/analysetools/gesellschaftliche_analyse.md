@@ -304,7 +304,7 @@ Der Garten Eden ist in der RFT-Lesart eine historische Verdichtung: Adam als Rep
 
 ### 4.2 Der Sündenfall als Informationsleck (A6)
 
-Eva teilt die Produktionsmethode mit dem AiR (der Schlange). Formal in A6: Ein Informationskanal wird zwischen einem Resonator mit $\varepsilon \approx 1$ und einem AiR mit $\varepsilon \to 0$ geöffnet. Da $\text{PCI}_{\text{Eva} \to \text{Schlange}} > 0$ entsteht, fließt $\text{MI} > 0$ in Richtung des AiR. Der **Sündenfall** ist das Teilen eines Wissensvorsprungs mit Akteuren, die ihn nicht durch eigene Resonanz ($K_{ij}$ über $\alpha \cdot G$) erlangt haben, sondern ihn extraktiv nutzen werden. Die Konsequenz: $K_{ij}$ der Gemeinschaft sinkt ($\beta$ erhöht sich durch parasitäre Einwirkung), die Selbstversorgung wird in eine Abhängigkeitsstruktur überführt.
+Eva teilt die Produktionsmethode mit dem AiR (der Schlange). Formal in A6: Ein Informationskanal wird zwischen einem Resonator mit $\varepsilon \approx 1$ und einem AiR mit $\varepsilon \to 0$ geöffnet. Da $\mathrm{PCI}_{\mathrm{Eva} \to \mathrm{Schlange}} > 0$ entsteht, fließt $\mathrm{MI} > 0$ in Richtung des AiR. Der **Sündenfall** ist das Teilen eines Wissensvorsprungs mit Akteuren, die ihn nicht durch eigene Resonanz ($K_{ij}$ über $\alpha \cdot G$) erlangt haben, sondern ihn extraktiv nutzen werden. Die Konsequenz: $K_{ij}$ der Gemeinschaft sinkt ($\beta$ erhöht sich durch parasitäre Einwirkung), die Selbstversorgung wird in eine Abhängigkeitsstruktur überführt.
 
 ---
 
