@@ -233,7 +233,7 @@ Seine gesellschaftliche Funktion besteht darin, $\Delta\varphi$ im Umfeld zu erh
 
 ### 2.2 Archetypus: Die Schlange in der Genesis
 
-Die Schlange (Gen 3) ist die kanonische narrative Darstellung dieses Typs. Sie appelliert nicht an Auflehnung, sondern an Selbstermächtigung: „Ihr werdet sein wie Gott" (Gen 3,5). In RFT-Sprache: *Vergrößere dein $\Delta\varphi$ – und du wirst selbst zur Quelle.* Dies ist die präzise Inversion des Attraktors: Statt $V_\text{min}$ anzusteuern, wird die Abweichung als eigenes Optimum inszeniert. Da $V(f) = -\pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$ bei $\varepsilon \to 0$ gegen Null geht, verspricht die Schlange maximale Energie, liefert aber $E \to 0$.
+Die Schlange (Gen 3) ist die kanonische narrative Darstellung dieses Typs. Sie appelliert nicht an Auflehnung, sondern an Selbstermächtigung: „Ihr werdet sein wie Gott" (Gen 3,5). In RFT-Sprache: Vergrößere dein $\Delta\varphi$ – und du wirst selbst zur Quelle. Dies ist die präzise Inversion des Attraktors: Statt $V_\text{min}$ anzusteuern, wird die Abweichung als eigenes Optimum inszeniert. Da $V(f) = -\pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$ bei $\varepsilon \to 0$ gegen Null geht, verspricht die Schlange maximale Energie, liefert aber $E \to 0$.
 
 ---
 
