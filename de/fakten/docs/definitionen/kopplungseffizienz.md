@@ -206,8 +206,8 @@ $$
 | Planck (1. Anregung) | 1/π ≈ 0.318 | ℏ·f | ≙ ℏω (1. Anregung) ✅ |
 | Planck (Grundzustand) | 1/(2π) ≈ 0.159 | ℏ·f/2 | ≙ ½ℏω (Grundzustand) ✅ |
 | Natürliche Dämpfung | 1/e ≈ 0.368 | (π/e)·ℏ·f | Nach einer Relaxationszeit |
-| Halbe Kopplung (Δφ = π/2) | 1/2 | π·ℏ·f/2 | Halbkopplung (Δφ = π/2) |
-| Keine Kopplung (Δφ = π) | 0 | 0 | Antiresonanz (Δφ = π) |
+| Halbe Kopplung (Δφ = π/2) | 0.5 | π·ℏ·f/2 | 90° Phasenverschiebung |
+| Keine Kopplung (Δφ = π) | 0 | 0 | Antiresonanz |
 
 > **Hinweis zur Frequenzdefinition:** f in der RFT-Grundformel E = π·ε·ℏ·f ist die RFT-Resonanzfrequenz f = ω/π (keine Standard-Hz-Frequenz). Der klassische Planck-Grenzwert E = hf_Hz entspricht ε = 1/(2π) ≈ 0.159 (Grundzustand des harmonischen Oszillators). Der Wert ε = 1 (maximale Kopplung) ergibt E = π·ℏ·f — dieser Wert hat keine direkte Entsprechung in der Standard-Planck-Relation. Die genaue Grenzbeziehung E → hf_Hz für ε ∈ [0, 1] ist eine offene Frage (→ RESEARCH_TASKS.md RT-01).
 
