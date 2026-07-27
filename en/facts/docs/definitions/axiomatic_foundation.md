@@ -154,35 +154,22 @@ resonance path.
 **Formalization:**
 
 ```
-<<<<<<< HEAD
 (A4)    E_eff = π · ε(Δφ) · ℏ · ω
 
         For multi-mode coupling:
         E_eff = π · ε(Δφ_ij) · ℏ · ⟨ω_ij⟩
-=======
-(A4)    E_eff = π · ε(Δφ) · ℏ · f
-
-        For multi-mode coupling:
-        E_eff = π · ε(Δφ_ij) · ℏ · ⟨f_ij⟩
->>>>>>> origin/main
 ```
 
 Here (with f := ω, angular frequency in rad/s):
 - ε(Δφ) is the coupling efficiency as a function of the phase difference,
   e.g. ε(Δφ) = cos²(Δφ/2)
 - π is the geometric factor from the integration over a half-cycle
-<<<<<<< HEAD
   of the resonance path (geometric motivation: see §4.1)
 - ℏ is the reduced Planck constant
 - ω is the angular frequency of the coupled mode (f := ω)
 
 > **E = π·ε·ℏ·ω is a defining postulate of the RFT. It is not derived
 > from the preceding integrals, but set axiomatically.**
-=======
-  of the resonance path (derivation: see §4.1)
-- ℏ = h/(2π) is the reduced Planck action quantum (canonical notation in RFT)
-- f is the frequency of the coupled mode
->>>>>>> origin/main
 
 **Derivation of π:** The coupling between two resonators does not occur
 instantaneously, but over a path in phase space. The integration of
@@ -192,11 +179,7 @@ the coupling efficiency over a complete half-cycle yields:
         ∫₀^π cos²(φ/2) dφ = π/2
 
         Normalized to maximum coupling (Δφ = 0):
-<<<<<<< HEAD
         E_eff / E_max = π · ε · ℏ · ω / (ℏ · ω) = π · ε
-=======
-        E_eff / E_max = π · ε · ℏ · f / (ℏ · f) = π · ε
->>>>>>> origin/main
 ```
 
 The factor π thus arises from the cyclic geometry of the coupling,
@@ -341,40 +324,24 @@ with coupling efficiency ε(Δφ) = cos²(Δφ/2) over a complete
 coupling cycle is:
 
 ```
-<<<<<<< HEAD
     E_cycle = ℏ · ω · ∫₀^(2π) cos²(φ/2) dφ / (2π)
             = ℏ · ω · π / (2π)
             = ℏ · ω / 2
-=======
-    E_cycle = ℏ · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-            = ℏ · f · π / (2π)
-            = ℏ · f / 2
->>>>>>> origin/main
 ```
 
 The effective coupling energy for a half-cycle (the minimal
 unit of coherent transfer) is:
 
 ```
-<<<<<<< HEAD
     E_eff = ℏ · ω · ∫₀^π cos²(φ/2) dφ / π
           = ℏ · ω · (π/2) / π
           = ℏ · ω / 2
-=======
-    E_eff = ℏ · f · ∫₀^π cos²(φ/2) dφ / π
-          = ℏ · f · (π/2) / π
-          = ℏ · f / 2
->>>>>>> origin/main
 ```
 
 Normalized to the coupling unit:
 
 ```
-<<<<<<< HEAD
     E_eff = π · ε(Δφ) · ℏ · ω
-=======
-    E_eff = π · ε(Δφ) · ℏ · f
->>>>>>> origin/main
 ```
 
 where the factor π encodes the cyclic geometry of the coupling path
