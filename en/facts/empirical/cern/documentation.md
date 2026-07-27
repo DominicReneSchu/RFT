@@ -265,4 +265,18 @@ This result confirms and is confirmed by independent results from other domains:
 
 ---
 
+## Analysis Version History
+
+| Version | Mass points (GeV/c²) | Description | Source |
+|---------|----------------------|-------------|--------|
+| V1 (original) | {0.50, 0.67, 0.75, 1.00, 1.25} | Exploratory analysis on dielectron data; window-width scan over generic mass hypotheses without assignment to known SM resonances | Internal |
+| Current | {1.020, 3.096, 9.460, 10.023, 91.188} | Analysis targeting known Standard Model resonances: φ(1020), J/ψ(3097), Υ(1S), Υ(2S), Z⁰; mass values from PDG 2022 (Workman et al., Prog. Theor. Exp. Phys. 2022, 083C01); data from CMS Open Data (opendata.cern.ch) |  PDG 2022 + CMS Open Data |
+
+The transition from V1 to the current version reflects the shift from
+exploratory mass scanning to a targeted comparison with precisely known
+resonance positions from the Particle Data Group, enabling a direct
+quantitative test of the RFT resonance condition (Axiom 3).
+
+---
+
 ⬅️ [back](../../../README.md)
