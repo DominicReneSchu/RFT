@@ -60,8 +60,9 @@ def gdr_frequency(E_gdr_MeV: float) -> float:
         E_gdr_MeV: GDR energy in MeV
 
     Returns:
-        Frequency in rad/s (RFT resonance frequency: f = E/(π·ℏ) = ω/π,
-        not standard Hz. Standard angular frequency would be ω = E/ℏ.)
+        float: Frequency in rad/s — the RFT resonance frequency f = E/(π·ℏ) = ω/π.
+            Note: this is neither standard Hz (f_Hz = E/h) nor standard angular
+            frequency (ω_std = E/ℏ); see K-3 and RESEARCH_TASKS.md RT-01.
     """
     E_J = E_gdr_MeV * MEV_TO_J
     return E_J / (PI * HBAR)
