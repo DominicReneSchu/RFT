@@ -360,6 +360,124 @@ def run_correspondence_test(
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+#  Analytical Validation
+# ═══════════════════════════════════════════════════════════════════════════════
+
+
+def validate_against_analytical(
+    N: int = 4096,
+    L: float = 40.0,
+    hbar: float = 1.0,
+    m: float = 1.0,
+    omega: float = 1.0,
+    dt: float = 0.005,
+    steps: int = 2000,
+) -> bool:
+    """Validate the split-operator solver against known analytical solutions.
+
+    Two benchmark problems are tested:
+
+    1. **Harmonic oscillator** — V(x) = ½mω²x²
+       The ground-state energy is E₀ = ½ℏω.
+       The ground-state wave function is a Gaussian:
+           ψ₀(x) ∝ exp(−mω x²/(2ℏ))
+       The split-operator evolution of the exact ground state must conserve
+       energy exactly (up to numerical round-off).
+
+    2. **Infinite potential well** — V = 0 for |x| < a, ∞ otherwise
+       The ground-state energy is E₁ = π²ℏ²/(2m(2a)²) = ℏ²π²/(8ma²).
+       The exact ground-state wave function inside the well is:
+           ψ₁(x) ∝ cos(πx/(2a))
+
+    Returns True if both benchmarks pass within tolerance, False otherwise.
+    """
+    dx = L / N
+    x = (np.arange(N) - N // 2) * dx
+    k = 2.0 * math.pi * np.fft.fftfreq(N, d=dx)
+    dk = 2.0 * math.pi / L
+
+    all_pass = True
+
+    # ── 1. Harmonic oscillator ────────────────────────────────────────────
+    # Exact ground state: ψ₀(x) = (mω/(πℏ))^¼ · exp(−mωx²/(2ℏ))
+    V_ho = 0.5 * m * omega ** 2 * x ** 2
+    sigma_ho = math.sqrt(hbar / (m * omega))
+    psi_ho = np.exp(-0.5 * (x / sigma_ho) ** 2).astype(complex)
+    psi_ho = normalize(psi_ho, dx)
+
+    # Analytical ground-state energy
+    E0_analytical = 0.5 * hbar * omega
+
+    # Numerical energy at t=0
+    pk_ho = psi_k_continuum(psi_ho, dx)
+    E0_numerical = expectation_energy(k, pk_ho, dk, V_ho, psi_ho, dx, hbar, m)
+    err_energy = abs(E0_numerical - E0_analytical)
+
+    print(f"\n[validate] Harmonic oscillator ground state E₀ = ½ℏω:")
+    print(f"  Analytical: {E0_analytical:.8f}")
+    print(f"  Numerical : {E0_numerical:.8f}")
+    print(f"  Error     : {err_energy:.3e}")
+
+    if err_energy > 1e-4:
+        print("  [FAIL] Energy error exceeds tolerance 1e-4")
+        all_pass = False
+    else:
+        print("  [OK]")
+
+    # Evolve the harmonic-oscillator ground state; energy must be conserved
+    E_ho_vals: list[float] = []
+    psi_t = psi_ho.copy()
+    for _ in range(steps):
+        psi_t = split_operator_step(psi_t, V_ho, k, dt, hbar, m)
+        pk_t = psi_k_continuum(psi_t, dx)
+        E_ho_vals.append(expectation_energy(k, pk_t, dk, V_ho, psi_t, dx, hbar, m))
+    E_ho_arr = np.array(E_ho_vals)
+    E_ho_drift = float(np.max(np.abs(E_ho_arr - E0_numerical)))
+
+    print(f"  Energy drift over {steps} steps: {E_ho_drift:.3e}")
+    if E_ho_drift > 1e-4:
+        print("  [FAIL] Energy drift in harmonic oscillator too large")
+        all_pass = False
+    else:
+        print("  [OK] Energy conservation confirmed")
+
+    # ── 2. Infinite square well ───────────────────────────────────────────
+    # Box half-width a, well-state cos(πx/(2a)) vanishes at x = ±a
+    a = L / 4.0  # half-width of well (well width = L/2)
+    mask_well = np.abs(x) < a  # interior of well
+
+    # Exact ground-state wave function inside the well
+    psi_well = np.where(mask_well, np.cos(math.pi * x / (2.0 * a)), 0.0).astype(complex)
+    psi_well = normalize(psi_well, dx)
+
+    # Analytical ground-state energy E₁ = ℏ²π²/(2m(2a)²)
+    E1_analytical = (hbar ** 2 * math.pi ** 2) / (2.0 * m * (2.0 * a) ** 2)
+
+    # Approximate numerical energy via kinetic expectation value in k-space
+    # (inside the ideal box the potential is zero, so E = T)
+    pk_well = psi_k_continuum(psi_well, dx)
+    E1_kinetic = float(np.sum(
+        np.conj(pk_well) * ((hbar ** 2 * k ** 2) / (2.0 * m)) * pk_well
+    ).real * dk)
+
+    err_well = abs(E1_kinetic - E1_analytical)
+    print(f"\n[validate] Infinite square well ground state E₁ = ℏ²π²/(8ma²):")
+    print(f"  a = {a:.2f},  well width = {2*a:.2f}")
+    print(f"  Analytical: {E1_analytical:.8f}")
+    print(f"  Numerical : {E1_kinetic:.8f}")
+    print(f"  Error     : {err_well:.3e}")
+
+    # Tolerance is slightly relaxed due to the Gibbs phenomenon at the hard wall
+    if err_well > 0.02 * E1_analytical:
+        print("  [FAIL] Energy error exceeds 2 % relative tolerance")
+        all_pass = False
+    else:
+        print("  [OK]")
+
+    return all_pass
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 #  Main Program
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -545,6 +663,16 @@ def main() -> int:
                   f"max|Δ⟨H⟩|={Ed:.3e} {ok}")
             if Ed > 1e-4:
                 all_pass = False
+
+        # ─── Analytical validation ────────────────────────────────────────
+        print("\n" + "=" * 74)
+        print("  Analytical validation: harmonic oscillator + infinite well")
+        print("=" * 74)
+        analytic_pass = validate_against_analytical(
+            N=args.N, hbar=args.hbar, m=args.m,
+        )
+        if not analytic_pass:
+            all_pass = False
 
     # ─── Result ───────────────────────────────────────────────────────
     if all_pass:

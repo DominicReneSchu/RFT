@@ -194,6 +194,8 @@ def scan_h0(
         result["fit_poly"] = coeffs
 
         # Error on slope via bootstrap
+        # Fixed seed for reproducibility
+        np.random.seed(42)
         n_boot = 1000
         slopes = np.zeros(n_boot)
         h0_v = h0_values[valid]
