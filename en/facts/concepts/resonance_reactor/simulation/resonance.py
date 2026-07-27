@@ -161,17 +161,35 @@ def energy_balance(isotope: Isotope, delta_phi: float = 0.0, photon_flux: float 
                    time_seconds: float = 3600) -> dict[str, float | str]:
     """
     Energy balance: irradiated vs. released.
-    
+
+    Two distinct process classes:
+
+    Process 1: α-decay (RFT hypothesis: barrier modulation)
+    ---------------------------------------------------------
+    RFT hypothesis: resonant phase coupling modulates tunnelling probability.
+    Q_alpha = 5.486 MeV (Am-241), 4.679 MeV (U-235)
+    Mechanism: resonant phase coupling modulates tunnelling probability.
+    Note: Standard physics sees no direct mechanism for alpha decay acceleration
+    through GDR excitation. This is an RFT-specific hypothesis.
+
+    Process 2: Photofission (separate process, NOT modelled here)
+    ---------------------------------------------------------------
+    Q_fiss ≈ 200 MeV — this value is included for reference ONLY.
+    Photofission is a distinct nuclear process and is NOT computed
+    or predicted by this simulation. The Q_fission return value
+    is provided for completeness but should not be interpreted as
+    an RFT prediction.
+
     Irradiated:
         P_in = Φ_γ · A_target · E_γ
-    
-    Released (through accelerated decay):
-        P_out = (λ_eff - λ₀) · N · E_decay
-    
+
+    Released (through resonantly modulated α-decay):
+        P_out = (λ_eff - λ₀) · N · E_alpha
+
     Net:
         P_net = P_out - P_in
         Q = P_out / P_in  (energy gain factor)
-    
+
     Args:
         isotope: Isotope object
         delta_phi: Phase difference
@@ -179,7 +197,7 @@ def energy_balance(isotope: Isotope, delta_phi: float = 0.0, photon_flux: float 
         E_gamma_MeV: Photon energy
         target_mass_kg: Target mass in kg
         time_seconds: Irradiation duration in s
-    
+
     Returns:
         dict with P_in, P_out, P_net, Q and details
     """

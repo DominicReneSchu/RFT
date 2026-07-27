@@ -70,13 +70,16 @@ $$
 
 ### Axiom 4 — Coupling Energy
 
-The effective energy of a resonant coupling:
+The effective energy of a resonant coupling (with f := ω, angular frequency in rad/s):
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
 $$
 
 where ε(Δφ) ∈ [0, 1] is the coupling efficiency.
+
+> **E = π·ε·ℏ·ω is a defining postulate of the RFT.** It is not derived
+> from the preceding integrals, but set axiomatically.
 
 ### Axiom 5 — Energy Direction
 
@@ -189,18 +192,19 @@ with |Δφ|.
 ### 4.1 Basic Form (Axiom 4)
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
+\quad \text{with } f := \omega \text{ (angular frequency, rad/s)}
 $$
 
 ### 4.2 Limit Cases and Special Values
 
 | Condition | ε | Energy | Physics |
 |-----------|---|--------|---------|
-| Perfect coupling (Δφ = 0) | 1 | π·ℏ·f | Maximum resonance energy |
-| Planck (1st excitation) | 1/π ≈ 0.318 | ℏ·f | E = ℏω (special case) |
-| Planck (ground state) | 1/(2π) ≈ 0.159 | ℏ·f/2 | Ground-state energy (harm. osc.) |
-| Natural damping | 1/e ≈ 0.368 | (π/e)·ℏ·f | After one relaxation time |
-| Half coupling (Δφ = π/2) | 0.5 | π·ℏ·f/2 | 90° phase shift |
+| Perfect coupling (Δφ = 0) | 1 | π·ℏ·ω | Maximum resonance energy |
+| Planck (1st excitation) | 1/π ≈ 0.318 | ℏ·ω | E = ℏω ✅ (1st excitation) |
+| Planck (ground state) | 1/(2π) ≈ 0.159 | ℏ·ω/2 | = ½ℏω ✅ (harmonic osc. ground state) |
+| Natural damping | 1/e ≈ 0.368 | (π/e)·ℏ·ω | After one relaxation time |
+| Half coupling (Δφ = π/2) | 0.5 | π·ℏ·ω/2 | 90° phase shift |
 | No coupling (Δφ = π) | 0 | 0 | Decoupled systems |
 
 ### 4.3 Derivation of the Factor π
@@ -213,8 +217,13 @@ $$
 $$
 
 Normalized to the coupling unit the basic formula
-E = π · ε · ℏ · f follows (complete derivation: see
+E = π · ε · ℏ · ω follows (complete geometric motivation: see
 [axiomatic foundation](../definitions/axiomatic_foundation.md) §4.1).
+
+> **Note:** E = π·ε·ℏ·ω is a defining postulate of the RFT, not
+> derived from the integral. The integration provides a geometric
+> motivation for the factor π. A complete derivation via an action
+> integral S[ψ, Δφ] is an open research question (see RESEARCH_TASKS.md).
 
 ---
 
@@ -238,6 +247,14 @@ $$
 \varepsilon(\Delta\phi) = \eta(\Delta\phi) = \cos^2(\Delta\phi / 2)
 $$
 
+> **Note on the identity ε = η:** For purely harmonic fields the identity ε = η
+> is an analytical consequence of the estimator choice: the Pearson cross-term
+> algebraically yields cos²(Δφ/2) via 0.5·(1 + cos(Δφ)) ≡ cos²(Δφ/2).
+> This demonstrates the internal consistency of the RFT quantities, but does not
+> constitute an independent empirical measurement. Alternative estimators
+> (energy transfer rate, mutual information, phase locking value) are planned
+> to provide a non-trivial check (see RESEARCH_TASKS.md RT-07).
+
 ### 5.2 Consequences
 
 | Domain | Consequence |
@@ -259,6 +276,12 @@ $$
 The deviation from cos² is systematic and explained by
 spacetime expansion (Hubble friction). In the flat limit
 the identity ε = η is exact to d_η ≈ 0.04.
+
+> **Reinterpretation of d_η:** The deviation d_η from the ideal cos² model is not
+> a measurement error, but a physically meaningful observable: it quantifies the
+> influence of Hubble friction on coupling efficiency. In the flat limit (H → 0)
+> ε = η holds exactly (d_η ≈ 0.043). The scaling d_η(H₀) is a falsifiable RFT
+> prediction.
 
 ---
 

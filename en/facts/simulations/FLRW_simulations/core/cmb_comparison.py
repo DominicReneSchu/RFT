@@ -96,6 +96,12 @@ def load_planck_tt(filepath="data/planck_tt_binned.txt"):
 def generate_lcdm_bestfit(ell):
     """Generates the Planck 2018 best-fit LCDM spectrum.
 
+    APPROXIMATION MODEL: 7 hand-crafted Gaussian peaks as ΛCDM approximation.
+    This is NOT a physically grounded Boltzmann spectrum. The reported Δχ²
+    is relative to this approximation model, NOT relative to CAMB/CLASS.
+    Use of CAMB/CLASS for a proper comparison is an open task
+    (see RESEARCH_TASKS.md RT-05).
+
     Parametric model calibrated on Planck 2018 best-fit:
         H0=67.36, Omega_b*h^2=0.02237, Omega_c*h^2=0.1200,
         tau=0.0544, A_s=2.1e-9, n_s=0.9649
@@ -171,6 +177,8 @@ def eta_correction(ell, d_eta, h0=67.4):
         peak_window = np.exp(-0.5 * ((ell - ell_p) / width) ** 2)
 
         # Strength: proportional to d_eta, decreasing for higher peaks
+        # Factors 200.0 and 0.3 are fitting parameters without physical
+        # derivation. Tracked in RESEARCH_TASKS.md RT-05 (CAMB/CLASS replacement).
         strength = d_eta * 200.0 * np.exp(-i * 0.3)
 
         correction += sign * strength * peak_window

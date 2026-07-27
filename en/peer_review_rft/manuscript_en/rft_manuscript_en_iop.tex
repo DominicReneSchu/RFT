@@ -885,7 +885,14 @@
 	
 	At no point was an axiom adapted retroactively to the data.
 	
-	\subsubsection{Backtest: 24~Months, 4~Market Regimes.}
+	\subsubsection{Application Concept: Backtest and Live Results.}
+
+	\emph{Note: The 24-month backtest and 5-day live validation
+	results below are not available in the repository (private
+	implementation). This section describes ResoTrade as an
+	application concept of RFT applied to financial markets,
+	not as peer-review-ready empirical evidence. Full
+	reproducibility (code, raw data, trade logs) is an open task.}
 	
 	\begin{table}[ht]
 		\centering
@@ -1222,9 +1229,13 @@
 	\subsubsection{Significance and Resources.}
 	
 	At $\Phi = 10^{11}\;\gamma$/s and 4~h measurement time per
-	point, the expected significance of the difference is
-	$> 50{,}000\,\sigma$. Total beam time: ${\sim}30$~h,
-	cost: ${\sim}50{,}000$~EUR.
+	point, the theoretical significance under ideal phase coherence is
+	$> 50{,}000\,\sigma$. Realistic corrections are required for:
+	detector efficiency, beam divergence, nuclear state width
+	$\Gamma_{\mathrm{GDR}} \approx 4$--5~MeV, and experimentally
+	achievable phase coherence. A complete uncertainty budget is
+	outstanding (see supplementary open research tasks).
+	Total beam time: ${\sim}30$~h, cost: ${\sim}50{,}000$~EUR.
 	
 	\subsubsection{Summary.}
 	
@@ -1244,7 +1255,9 @@
 			Signal$_{\mathrm{inc}}$ $= 2.0$ \\
 			SM prediction & Signal$_{\mathrm{coh}}$ /
 			Signal$_{\mathrm{inc}}$ $= 1.0$ \\
-			Significance & $> 50{,}000\,\sigma$ \\
+			Significance & $> 50{,}000\,\sigma$ (theoretical,
+			ideal phase coherence; full uncertainty budget
+			outstanding) \\
 			Free parameters & $0$ \\
 			\hline
 		\end{tabular}
@@ -1272,6 +1285,13 @@
 	Standard quantum mechanics predicts:
 	$\Delta\langle x\rangle = 0$. The parameter~$\lambda$
 	is the only free parameter.
+
+	\emph{Note on falsifiability: $\lambda$ is a free parameter
+	of RFT without an independently determined value. The
+	prediction is parametric: any measurement result $>0$
+	would be compatible with a suitable $\lambda$. The prediction
+	becomes falsifiable only through independent determination of
+	$\lambda$ from a second, separate experiment.}
 	
 	\subsubsection{System.}
 	
