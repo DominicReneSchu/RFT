@@ -329,7 +329,7 @@ Systeme mit hohem institutionellem Gewicht tendieren dazu, Feldoptimum-Früchte 
 
 ### 5.2 Der Sündenbock-Mechanismus (nach Girard)
 
-Ein moralisch aufgeladenes Einzelthema wird an die Spitze der kollektiven Empörung gesetzt. Formal: Das kollektive $\Delta\varphi$ der Gruppe wird auf ein Zielobjekt ausgerichtet. PCI ($\text{A6}$) steigt – aber auf ein falsches Kopplungsziel ($\text{PCI}_\text{Ziel} > 0$, während $\text{PCI}_\text{Struktur} \to 0$ bleibt). Die Funktion: Strukturelle Systemfehler werden durch emotionale Besetzung des Sündenbock-Themas kognitiv verdrängt ($\text{MI}$ fließt in die falsche Richtung). Der Mechanismus funktioniert ohne zentrale Steuerung – er ist in der Systemarchitektur kodiert (A7: invariant).
+Ein moralisch aufgeladenes Einzelthema wird an die Spitze der kollektiven Empörung gesetzt. Formal: Das kollektive $`\Delta\varphi`$ der Gruppe wird auf ein Zielobjekt ausgerichtet. PCI ($`\mathrm{A6}`$) steigt – aber auf ein falsches Kopplungsziel ($`\mathrm{PCI}_\mathrm{Ziel} > 0`$, während $`\mathrm{PCI}_\mathrm{Struktur} \to 0`$ bleibt). Die Funktion: Strukturelle Systemfehler werden durch emotionale Besetzung des Sündenbock-Themas kognitiv verdrängt ($`\mathrm{MI}`$ fließt in die falsche Richtung). Der Mechanismus funktioniert ohne zentrale Steuerung – er ist in der Systemarchitektur kodiert (A7: invariant).
 
 ---
 
