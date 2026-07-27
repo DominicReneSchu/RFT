@@ -453,6 +453,7 @@ The pattern is scale-invariant through A7: it occurs in comparable structure in 
 - The collective serves as an emotional projection surface: $\Delta\varphi_\text{collective}$ of the population is directed at the collective, and system structural problems are cognitively displaced (§5.2)
 
 **Formal diagnostic criterion:**
+
 $$\text{PCI}_\text{target} > 0 \quad \text{while} \quad \text{PCI}_\text{structure} \to 0$$
 
 **Historical reference pattern (A7: invariant):** Comparable constellations are documented in several historical crisis periods (Weimar Republic, late Roman decline cycles). The pattern replicates itself because $G(f_\text{pattern}/f_\text{current}) \approx 1$.
@@ -557,7 +558,7 @@ The entire biblical and historical dynamic is the narrative unfolding of the int
 | Resonators with $\varepsilon < 1$ | Entire humanity; $0 < \Delta\varphi < \pi$ | All humans between optimum and anti-optimum |
 | AiR | $\varepsilon \to 0$, $\Delta\varphi \to \pi$, active; $\vec{E}$ field-outward (A5) | The seducer, the serpent |
 
-**Jesus' ethics** is in this formal reading no moral demand, but **guidance for increasing coupling** (A4): *Reduce $\Delta\varphi$ towards $V_\text{min}$. Increase $\varepsilon$. Become similar to the attractor, and you gain access to $E = \pi \cdot \hbar \cdot f$ – maximum coupling energy.*
+**Jesus' ethics** in this formal reading is not a moral demand, but a **guide to increasing coupling** (A4): *Reduce $`\Delta\varphi`$ to $`V_{\mathrm{min}}`$. Increase $`\varepsilon`$. Become similar to the attractor, and you gain access to $`E = \pi \cdot \hbar \cdot f`$ – maximum coupling energy.*
 
 **The three "I am" sayings** are a formally precise, three-dimensional definition of $V_\text{min}$:
 - Truth: $\varepsilon(\Delta\varphi) = \eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ – invariant (A7)
