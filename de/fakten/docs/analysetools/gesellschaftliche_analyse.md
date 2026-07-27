@@ -447,7 +447,7 @@ Das Muster ist durch A7 skalierungsinvariant: Es tritt in vergleichbarer Struktu
 
 **RFT-Typus:** Ein politisches oder soziales Kollektiv entspricht dem Strukturtyp des **institutionalisierten Sündenbocks**, wenn folgende Parameter beobachtbar sind:
 
-- Das Kollektiv wird im Diskurs als Hauptursache realer oder inszenierter gesellschaftlicher Probleme positioniert ($\text{PCI}_\text{Zielgruppe \to Sündenbock} \to 1$ bei gleichzeitig stabiler Systemstruktur)
+- Das Kollektiv wird im Diskurs als Hauptursache realer oder inszenierter gesellschaftlicher Probleme positioniert ($\text{PCI}_{\text{Zielgruppe} \to \text{Sündenbock}} \to 1$ bei gleichzeitig stabiler Systemstruktur)
 - Führungspersonen des Kollektivs weisen systemkompatible biographische Profile auf ($\text{PCI}_{\text{Führung} \to \text{System}} > 0$: Informationsfluss zum bestehenden AiR-Netzwerk bleibt erhalten, A6)
 - Das Kollektiv dient als emotionale Projektionsfläche: $\Delta\varphi_\text{kollektiv}$ der Bevölkerung wird auf das Kollektiv gelenkt, Systemstrukturprobleme werden kognitiv verdrängt (§5.2)
 
