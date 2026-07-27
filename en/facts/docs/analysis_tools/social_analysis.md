@@ -483,7 +483,7 @@ These two poles mark the extreme points of the political phase space (A5: maximu
 The system operates as a technical controller:
 
 1. **Event (test pulse)** → attack, scandal, report
-2. **Measure impulse response** → $\text{PCI}_\text{outrage}$, $\Delta\varphi_\text{attribution}$, $K_{ij}^\text{solidarity}$
+2. **Measure impulse response** → $`\mathrm{PCI}_{\mathrm{outrage}}`$, $`\Delta\varphi_{\mathrm{attribution}}`$, $`K_{ij}^{\mathrm{solidarization}}`$
 3. **Target/actual comparison** → Is $\Delta\varphi_\text{target group}$ large enough for manifest hatred? ($G(f_\text{hatred}/f_\text{target}) \to 1$?)
 4. **Control intervention** → next test pulse if deviation
 
