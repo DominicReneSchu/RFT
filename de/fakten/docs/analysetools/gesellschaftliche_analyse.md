@@ -453,6 +453,7 @@ Das Muster ist durch A7 skalierungsinvariant: Es tritt in vergleichbarer Struktu
 - Das Kollektiv dient als emotionale Projektionsfläche: $\Delta\varphi_\text{kollektiv}$ der Bevölkerung wird auf das Kollektiv gelenkt, Systemstrukturprobleme werden kognitiv verdrängt (§5.2)
 
 **Formales Diagnosekriterium:**
+
 $$\text{PCI}_\text{Ziel} > 0 \quad \text{während} \quad \text{PCI}_\text{Struktur} \to 0$$
 
 **Historisches Referenzmuster (A7: invariant):** Vergleichbare Konstellationen sind in mehreren historischen Krisenperioden dokumentiert (Weimarer Republik, spätrömische Verfallszyklen). Das Muster repliziert sich, weil $G(f_\text{Muster}/f_\text{aktuell}) \approx 1$.
