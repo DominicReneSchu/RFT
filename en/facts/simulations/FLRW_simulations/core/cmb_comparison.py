@@ -177,8 +177,8 @@ def eta_correction(ell, d_eta, h0=67.4):
         peak_window = np.exp(-0.5 * ((ell - ell_p) / width) ** 2)
 
         # Strength: proportional to d_eta, decreasing for higher peaks
-        # TODO: Factors 200.0 and 0.3 are fitting parameters without physical
-        # derivation (see RESEARCH_TASKS.md RT-05)
+        # Factors 200.0 and 0.3 are fitting parameters without physical
+        # derivation. Tracked in RESEARCH_TASKS.md RT-05 (CAMB/CLASS replacement).
         strength = d_eta * 200.0 * np.exp(-i * 0.3)
 
         correction += sign * strength * peak_window
