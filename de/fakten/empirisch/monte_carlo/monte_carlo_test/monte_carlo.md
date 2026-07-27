@@ -29,7 +29,7 @@ oder nicht-trivialen Suchverfahren wie in dieser Resonanzanalyse.
 bekannten Teilchenmassen im CMS-Dielectron-Spektrum. Die gefundenen
 Resonanzen (φ, J/ψ, Υ, Z) sind aus dem Standardmodell bekannt und wurden mit
 > 50σ nachgewiesen. Der Test zeigt, dass Axiom 3 diese Massen korrekt
-identifiziert — er beweist nicht die Energieformel E = π·ε·ℏ·ω.
+identifiziert — er beweist nicht die Energieformel E = π·ε·ℏ·f.
 
 Diese Simulation testet die Vorhersagen von Axiom 3
 (Resonanzbedingung) der
@@ -290,7 +290,7 @@ Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus 
 > bekannten Resonanzen φ, J/ψ, Υ, Z im CMS-Dielectron-Spektrum korrekt mit > 50σ.
 > Diese Resonanzen sind etablierte Standardmodellteilchen. Der Test zeigt, dass
 > Axiom 3 mit bekannten Teilchenmassen konsistent ist — er beweist nicht die
-> Energieformel E = π·ε(Δφ)·ℏ·ω.
+> Energieformel E = π·ε(Δφ)·ℏ·f.
 
 ---
 

@@ -191,11 +191,11 @@ mit |Δφ|.
 ### 4.1 Grundform (Axiom 4)
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
-\quad \text{mit } f := \omega \text{ (Kreisfrequenz, rad/s)}
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+\quad \text{mit } f = E/(π \cdot \hbar) \text{ (RFT-Resonanzfrequenz, rad/s; K-3)}
 $$
 
-> **E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT.** Sie wird nicht aus
+> **E = π·ε·ℏ·f ist ein definierendes Postulat der RFT.** Sie wird nicht aus
 > den vorangehenden Integralen abgeleitet, sondern axiomatisch gesetzt.
 
 ### 4.2 Grenzfälle und Spezialwerte
@@ -221,10 +221,10 @@ $$
 $$
 
 Normiert auf die Kopplungseinheit ergibt sich die Grundformel
-E = π · ε · ℏ · ω (vollständige geometrische Motivation: siehe
+E = π · ε · ℏ · f (vollständige geometrische Motivation: siehe
 [axiomatische Grundlegung](../definitionen/axiomatische_grundlegung.md) §4.1).
 
-> **Hinweis:** E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT, nicht
+> **Hinweis:** E = π·ε·ℏ·f ist ein definierendes Postulat der RFT, nicht
 > aus dem Integral abgeleitet. Die Integration liefert eine geometrische
 > Motivation für den Faktor π. Eine vollständige Herleitung über ein
 > Wirkungsintegral S[ψ, Δφ] ist eine offene Forschungsfrage (siehe RESEARCH_TASKS.md).

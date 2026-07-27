@@ -25,8 +25,8 @@ so gewählt, dass sie:
 | Symbol | Bedeutung |
 |:------:|:----------|
 | h | Plancksches Wirkungsquantum |
-| f | Frequenz — **definiert als Kreisfrequenz** f := ω (rad/s); sofern nicht anders angegeben, verwenden alle RFT-Formeln f := ω |
-| ω | Kreisfrequenz (rad/s), in der RFT synonymous mit f: f := ω |
+| f | Frequenz — in der RFT-Grundformel definiert als RFT-Resonanzfrequenz f = E/(π·ℏ) (rad/s); entspricht f = ω/π mit ω = E/ℏ (Standard-Kreisfrequenz). Nicht identisch mit Standard-Hz-Frequenz f_Hz = E/h. Offene Frage: → RESEARCH_TASKS.md RT-01 (K-3) |
+| ω | Standard-Kreisfrequenz (rad/s); in der RFT-Grundformel gilt f = ω/π (nicht f := ω). Für RFT-Rechnungen wird f verwendet |
 | k | Wellenzahl |
 | A | Amplitude |
 | φ | Phase |
@@ -155,21 +155,21 @@ Resonanzpfads.
 **Formalisierung:**
 
 ```
-(A4)    E_eff = π · ε(Δφ) · ℏ · ω
+(A4)    E_eff = π · ε(Δφ) · ℏ · f
 
         Bei Mehrmodenkopplung:
-        E_eff = π · ε(Δφ_ij) · ℏ · ⟨ω_ij⟩
+        E_eff = π · ε(Δφ_ij) · ℏ · ⟨f_ij⟩
 ```
 
-Dabei ist (mit f := ω, Kreisfrequenz in rad/s):
+Dabei ist (f = RFT-Resonanzfrequenz = E/(π·ℏ), rad/s; vgl. K-3):
 - ε(Δφ) die Kopplungseffizienz als Funktion der Phasendifferenz,
   z.B. ε(Δφ) = cos²(Δφ/2)
 - π der geometrische Faktor aus der Integration über einen Halbzyklus
   des Resonanzpfads (geometrische Motivation: siehe §4.1)
 - ℏ das reduzierte Plancksche Wirkungsquantum
-- ω die Kreisfrequenz der gekoppelten Mode (f := ω)
+- f die RFT-Resonanzfrequenz der gekoppelten Mode, f = E/(π·ℏ) = ω/π (K-3)
 
-> **E = π·ε·ℏ·ω ist ein definierendes Postulat der RFT. Sie wird nicht aus
+> **E = π·ε·ℏ·f ist ein definierendes Postulat der RFT. Sie wird nicht aus
 > den vorangehenden Integralen abgeleitet, sondern axiomatisch gesetzt.**
 
 **Herleitung von π:** Die Kopplung zwischen zwei Resonatoren erfolgt
@@ -180,7 +180,7 @@ der Kopplungseffizienz über einen vollständigen Halbzyklus ergibt:
         ∫₀^π cos²(φ/2) dφ = π/2
 
         Normiert auf die maximale Kopplung (Δφ = 0):
-        E_eff / E_max = π · ε · ℏ · ω / (ℏ · ω) = π · ε
+        E_eff / E_max = π · ε · ℏ · f / (ℏ · f) = π · ε
 ```
 
 Der Faktor π entsteht somit aus der zyklischen Geometrie der Kopplung,
@@ -325,24 +325,24 @@ mit Kopplungseffizienz ε(Δφ) = cos²(Δφ/2) über einen vollständigen
 Kopplungszyklus ist:
 
 ```
-    E_zyklus = ℏ · ω · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-             = ℏ · ω · π / (2π)
-             = ℏ · ω / 2
+    E_zyklus = ℏ · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
+             = ℏ · f · π / (2π)
+             = ℏ · f / 2
 ```
 
 Die effektive Kopplungsenergie für einen Halbzyklus (die minimale
 Einheit kohärenter Übertragung) beträgt:
 
 ```
-    E_eff = ℏ · ω · ∫₀^π cos²(φ/2) dφ / π
-          = ℏ · ω · (π/2) / π
-          = ℏ · ω / 2
+    E_eff = ℏ · f · ∫₀^π cos²(φ/2) dφ / π
+          = ℏ · f · (π/2) / π
+          = ℏ · f / 2
 ```
 
 Normiert auf die Kopplungseinheit ergibt sich:
 
 ```
-    E_eff = π · ε(Δφ) · ℏ · ω
+    E_eff = π · ε(Δφ) · ℏ · f
 ```
 
 wobei der Faktor π die zyklische Geometrie des Kopplungspfads

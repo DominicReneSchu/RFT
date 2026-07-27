@@ -8,7 +8,7 @@ Status: Aktiv
 ## Kategorie 1: Theoretische Herleitungen
 
 ### RT-01 — Wirkungsintegral-Herleitung von π
-**Motivation:** Der Faktor π in E = π·ε·ℏ·ω ist derzeit ein Postulat (K-1).
+**Motivation:** Der Faktor π in E = π·ε·ℏ·f ist derzeit ein Postulat (K-1).
 **Aufgabe:** Herleitung über Wirkungsintegral S[ψ, Δφ] — π soll als
 Sattelpunktsbeitrag der stationären Phase folgen.
 **Ansatz:** Pfadintegral-Formulierung der Kopplungsenergie.

@@ -28,7 +28,7 @@ procedures such as this resonance analysis.
 known particle masses in the CMS dielectron spectrum. The resonances found
 (φ, J/ψ, Υ, Z) are known from the Standard Model and have been established with
 > 50σ significance. This test demonstrates that Axiom 3 correctly identifies
-these masses — it does not prove the energy formula E = π·ε·ℏ·ω.
+these masses — it does not prove the energy formula E = π·ε·ℏ·f.
 
 This simulation tests the predictions of Axiom 3
 (Resonance Condition) of the
@@ -282,7 +282,7 @@ This result confirms and is confirmed by independent results from other domains:
 > the known resonances φ, J/ψ, Υ, Z in the CMS dielectron spectrum with > 50σ.
 > These resonances are established Standard Model particles. The test shows that
 > Axiom 3 is consistent with known particle masses — it does not prove the energy
-> formula E = π·ε(Δφ)·ℏ·ω.
+> formula E = π·ε(Δφ)·ℏ·f.
 
 ---
 

@@ -35,8 +35,8 @@ SECONDS_PER_YEAR = 365.25 * 24 * 3600
 def gdr_frequency(E_gdr_MeV: float) -> float:
     """
     Calculates the resonance frequency from the GDR energy
-    via the RFT fundamental formula: E = π · ε · ℏ · ω
-    with f := ω (angular frequency, rad/s)
+    via the RFT fundamental formula: E = π · ε · ℏ · f
+    with f = E_GDR/(π·ℏ) (RFT resonance frequency, rad/s; see K-3)
 
     For maximum coupling (ε = 1):
         f = E / (π · ℏ)

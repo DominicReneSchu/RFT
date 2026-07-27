@@ -25,8 +25,8 @@ chosen to be:
 | Symbol | Meaning |
 |:------:|:--------|
 | h | Planck action quantum |
-| f | Frequency — **defined as angular frequency** f := ω (rad/s); unless otherwise stated, all RFT formulas use f := ω |
-| ω | Angular frequency (rad/s), synonymous with f in RFT: f := ω |
+| f | Frequency — in the RFT fundamental formula defined as RFT resonance frequency f = E/(π·ℏ) (rad/s); corresponds to f = ω/π with ω = E/ℏ (standard angular frequency). Not identical to standard Hz frequency f_Hz = E/h. Open question: → RESEARCH_TASKS.md RT-01 (K-3) |
+| ω | Standard angular frequency (rad/s); in the RFT fundamental formula f = ω/π (not f := ω). RFT calculations use f |
 | k | Wave number |
 | A | Amplitude |
 | φ | Phase |
@@ -154,21 +154,21 @@ resonance path.
 **Formalization:**
 
 ```
-(A4)    E_eff = π · ε(Δφ) · ℏ · ω
+(A4)    E_eff = π · ε(Δφ) · ℏ · f
 
         For multi-mode coupling:
-        E_eff = π · ε(Δφ_ij) · ℏ · ⟨ω_ij⟩
+        E_eff = π · ε(Δφ_ij) · ℏ · ⟨f_ij⟩
 ```
 
-Here (with f := ω, angular frequency in rad/s):
+Here (f = RFT resonance frequency = E/(π·ℏ), rad/s; see K-3):
 - ε(Δφ) is the coupling efficiency as a function of the phase difference,
   e.g. ε(Δφ) = cos²(Δφ/2)
 - π is the geometric factor from the integration over a half-cycle
   of the resonance path (geometric motivation: see §4.1)
 - ℏ is the reduced Planck constant
-- ω is the angular frequency of the coupled mode (f := ω)
+- f is the RFT resonance frequency of the coupled mode, f = E/(π·ℏ) = ω/π (K-3)
 
-> **E = π·ε·ℏ·ω is a defining postulate of the RFT. It is not derived
+> **E = π·ε·ℏ·f is a defining postulate of the RFT. It is not derived
 > from the preceding integrals, but set axiomatically.**
 
 **Derivation of π:** The coupling between two resonators does not occur
@@ -179,7 +179,7 @@ the coupling efficiency over a complete half-cycle yields:
         ∫₀^π cos²(φ/2) dφ = π/2
 
         Normalized to maximum coupling (Δφ = 0):
-        E_eff / E_max = π · ε · ℏ · ω / (ℏ · ω) = π · ε
+        E_eff / E_max = π · ε · ℏ · f / (ℏ · f) = π · ε
 ```
 
 The factor π thus arises from the cyclic geometry of the coupling,
@@ -324,24 +324,24 @@ with coupling efficiency ε(Δφ) = cos²(Δφ/2) over a complete
 coupling cycle is:
 
 ```
-    E_cycle = ℏ · ω · ∫₀^(2π) cos²(φ/2) dφ / (2π)
-            = ℏ · ω · π / (2π)
-            = ℏ · ω / 2
+    E_cycle = ℏ · f · ∫₀^(2π) cos²(φ/2) dφ / (2π)
+            = ℏ · f · π / (2π)
+            = ℏ · f / 2
 ```
 
 The effective coupling energy for a half-cycle (the minimal
 unit of coherent transfer) is:
 
 ```
-    E_eff = ℏ · ω · ∫₀^π cos²(φ/2) dφ / π
-          = ℏ · ω · (π/2) / π
-          = ℏ · ω / 2
+    E_eff = ℏ · f · ∫₀^π cos²(φ/2) dφ / π
+          = ℏ · f · (π/2) / π
+          = ℏ · f / 2
 ```
 
 Normalized to the coupling unit:
 
 ```
-    E_eff = π · ε(Δφ) · ℏ · ω
+    E_eff = π · ε(Δφ) · ℏ · f
 ```
 
 where the factor π encodes the cyclic geometry of the coupling path

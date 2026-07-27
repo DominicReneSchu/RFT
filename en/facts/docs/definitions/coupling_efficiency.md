@@ -70,15 +70,15 @@ $$
 
 ### Axiom 4 — Coupling Energy
 
-The effective energy of a resonant coupling (with f := ω, angular frequency in rad/s):
+The effective energy of a resonant coupling (f = RFT resonance frequency = E/(π·ℏ), rad/s; see K-3):
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
 $$
 
 where ε(Δφ) ∈ [0, 1] is the coupling efficiency.
 
-> **E = π·ε·ℏ·ω is a defining postulate of the RFT.** It is not derived
+> **E = π·ε·ℏ·f is a defining postulate of the RFT.** It is not derived
 > from the preceding integrals, but set axiomatically.
 
 ### Axiom 5 — Energy Direction
@@ -192,8 +192,8 @@ with |Δφ|.
 ### 4.1 Basic Form (Axiom 4)
 
 $$
-E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot \omega
-\quad \text{with } f := \omega \text{ (angular frequency, rad/s)}
+E = \pi \cdot \varepsilon(\Delta\phi) \cdot \hbar \cdot f
+\quad \text{with } f = E/(\pi \cdot \hbar) \text{ (RFT resonance frequency, rad/s; K-3)}
 $$
 
 ### 4.2 Limit Cases and Special Values
@@ -219,10 +219,10 @@ $$
 $$
 
 Normalized to the coupling unit the basic formula
-E = π · ε · ℏ · ω follows (complete geometric motivation: see
+E = π · ε · ℏ · f follows (complete geometric motivation: see
 [axiomatic foundation](../definitions/axiomatic_foundation.md) §4.1).
 
-> **Note:** E = π·ε·ℏ·ω is a defining postulate of the RFT, not
+> **Note:** E = π·ε·ℏ·f is a defining postulate of the RFT, not
 > derived from the integral. The integration provides a geometric
 > motivation for the factor π. A complete derivation via an action
 > integral S[ψ, Δφ] is an open research question (see RESEARCH_TASKS.md).
