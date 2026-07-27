@@ -1,0 +1,1606 @@
+\documentclass[12pt]{iopart}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{qrcode}
+\usepackage{amssymb}
+
+\expandafter\let\csname equation*\endcsname\relax
+\expandafter\let\csname endequation*\endcsname\relax
+\usepackage{amsmath}
+
+\providecommand{\mathbb}[1]{\mathbf{#1}}
+
+\begin{document}
+	
+	\title{Resonanzfeldtheorie: Axiomatik, Grundformel und
+		empirische Validierung}
+	
+	\author{Dominic-Ren\'e Schu}
+	\address{Unabh\"angiger Forscher, Deutschland\\
+		\href{https://github.com/DominicReneSchu/RFT}%
+		{https://github.com/DominicReneSchu/RFT}\\
+		ORCID: 0009-0004-9769-9061\\
+		Email: dominic.rene.schu@gmail.com}
+	
+	\begin{abstract}
+		Die Resonanzfeldtheorie (RFT) wird als axiomatisches Rahmenwerk
+		vorgestellt, das Schwingungskopplung als universelles
+		Organisationsprinzip physikalischer und systemischer Ph\"anomene
+		beschreibt. Aus sieben Axiomen folgt eine parametrische Erweiterung
+		der Planck-Relation um einen phasenabh\"angigen Kopplungsoperator
+		$\varepsilon(\Delta\varphi) \in [0,1]$:
+		$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$.
+		Die Theorie wird an vier unabh\"angigen Dom\"anen
+		empirisch validiert: (1)~$1\,500\,000$~Monte-Carlo-Simulationen
+		auf CMS-Open-Data-Dielectron-Daten detektieren f\"unf bekannte
+		Teilchenresonanzen ($\phi$(1020), J/$\psi$, $\Upsilon$(1S),
+		$\Upsilon$(2S), Z-Boson) mit empirischem p-Wert~$= 0$, stabil
+		\"uber drei KDE-Bandbreiten und zehn Seeds;
+		(2)~$1\,530$~gekoppelte FLRW-Simulationen, in denen die
+		Kopplungseffizienz
+		$\eta(\Delta\varphi) \approx \cos^2(\Delta\varphi/2)$ als
+		emergente Eigenschaft folgt, mit Skalierung
+		$\mathrm{d}d_\eta/\mathrm{d}H_0
+		= (0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$
+		und Verbesserung $\Delta\chi^2 = +16$ gegen\"uber
+		Planck-2018-CMB-Daten;
+		(3)~Resonanzreaktor-Simulation mit $\kappa = 1$ (kein freier
+		Parameter) und Spaltungs-Break-even $Q \approx 1{,}0$;
+		(4)~Schr\"odinger-Simulation (5~Ableitungsschritte) leitet
+		die Schr\"odinger-Gleichung aus Axiom~4 ab mit
+		Fidelity~$= 1{,}0$ (alle~4 Szenarien), St\"orungstheorie
+		best\"atigt $1-F \sim \lambda^2$, und liefert eine
+		falsifizierbare Vorhersage f\"ur ${}^{87}$Rb.
+		Das Anwendungskonzept ResoTrade demonstriert die
+		Anwendbarkeit der RFT-Axiome im realen Marktumfeld;
+		prim\"are Axiom-Nachweise stammen aus den RFT-internen Simulationen.
+		Zwei falsifizierbare Experimentalvorschl\"age werden
+		pr\"asentiert: (I)~phasenabh\"angige Photoanregung von
+		Am-241 an der ELI-NP (Kernphysik, 0~freie Parameter,
+		$>50\,000\,\sigma$) und (II)~Schwerpunktsverschiebung
+		eines ${}^{87}$Rb-BEC in harmonischer Falle
+		(Quantenmechanik, 1~freier Parameter~$\lambda$). Beide
+		Experimente testen die Kopplungsfunktion
+		$\cos^2(\Delta\varphi/2)$ \"uber 19~Gr\"o\ss{}enordnungen
+		in der Energie und sind unabh\"angig voneinander falsifizierbar.
+		Alle Herleitungen, Quellcodes und Daten sind offen verf\"ugbar
+		unter \url{https://github.com/DominicReneSchu/RFT}.
+	\end{abstract}
+	
+	\noindent\textbf{Schl\"usselbegriffe:} Resonanz, Feldtheorie,
+	Kopplungsoperator, Axiomatik, Monte-Carlo-Simulation,
+	FLRW-Kosmologie, Giant Dipole Resonance, Transmutation,
+	algorithmisches Trading, empirische Validierung, Open Science
+	
+	\medskip
+	
+	\noindent\textbf{Daten- und Codeverf\"ugbarkeit:}
+	\url{https://github.com/DominicReneSchu/RFT}
+	
+	
+	%% ============================================================
+	\section{Einleitung}
+	%% ============================================================
+	
+	Die moderne Physik verf\"ugt \"uber Formalismen von enormer
+	Vorhersagekraft, doch ihre begrifflichen Grundlagen bleiben
+	fragmentiert. Quantenmechanik, Relativit\"atstheorie und
+	Thermodynamik operieren in getrennten theoretischen R\"aumen.
+	Programme der Quantengravitation erh\"ohen die mathematische
+	Komplexit\"at, ohne empirische \"Uberpr\"ufbarkeit zu schaffen.
+	
+	Dieses Manuskript f\"uhrt die \textit{Resonanzfeldtheorie}
+	(RFT) ein -- ein axiomatisches Rahmenwerk, das
+	Schwingungskopplung als prim\"ares Organisationsprinzip
+	physikalischer Systeme postuliert. Die RFT formuliert sieben
+	Axiome, aus denen eine parametrische Erweiterung der
+	Quantenmechanik, eine vereinheitlichte
+	Differentialgleichungsstruktur und pr\"ufbare Vorhersagen
+	folgen.
+	
+	Im Unterschied zu bestehenden Ans\"atzen zielt die RFT nicht
+	auf eine Vereinheitlichung der fundamentalen Kr\"afte, sondern
+	auf einen konzeptuellen Rahmen, der Resonanzph\"anomene
+	\"uber Skalen und Dom\"anen hinweg einheitlich beschreibt --
+	von Teilchenphysik \"uber Kosmologie und Nukleartechnologie
+	bis zu Finanzm\"arkten.
+	
+	Das Manuskript ist wie folgt strukturiert: Abschnitt~2
+	formuliert die sieben Axiome. Abschnitt~3 entwickelt die
+	mathematische Struktur. Abschnitt~4 pr\"asentiert die
+	empirische Validierung an vier Dom\"anen: Teilchenphysik
+	(Monte-Carlo auf CMS-Daten), Kosmologie (gekoppelte
+	FLRW-Simulationen mit Planck-2018-Vergleich),
+	Nukleartechnologie (Resonanzreaktor) und
+	Klassische Mechanik und Quantenmechanik
+	(Doppelpendel, Schr\"odinger-Simulation). Abschnitt~5 diskutiert den
+	Vergleich mit etablierten Theorien. Abschnitt~6
+	pr\"asentiert zwei falsifizierbare Experimentalvorschl\"age.
+	Abschnitt~7 benennt offene Fragen. Abschnitt~8 fasst
+	zusammen.
+	
+	
+	%% ============================================================
+	\section{Axiomatische Grundlagen}
+	%% ============================================================
+	
+	Die RFT basiert auf sieben hierarchisch aufgebauten Axiomen.
+	Die Axiome sind nicht unabh\"angig, sondern konstitutiv
+	verschr\"ankt: A1--A3 definieren die Schwingungsstruktur,
+	A4 die Energetik, A5--A6 die Dynamik, A7 die Stabilit\"at.
+	
+	\subsection{Axiom 1: Universelle Schwingung}
+	
+	Jede physikalische Entit\"at ist durch eine
+	Schwingungsfunktion beschreibbar:
+	\begin{equation}
+		\psi(x, t) = A \cos(kx - \omega t + \phi)
+		\label{eq:oscillation}
+	\end{equation}
+	
+	\textit{Beispiel:} Quantisierte Elektronenbahnen, Pendel mit
+	Eigenfrequenz, zirkadiane Rhythmen, Marktzyklen,
+	Giant Dipole Resonance in Atomkernen.
+	FLRW-Simulation: $\eta \approx \cos^2(\Delta\varphi/2)$,
+	$\Delta d_\eta > 6\sigma$ (1\,530 L\"aufe).
+	Schr\"odinger-Simulation: RFT-modifizierte Wellenfunktion
+	best\"atigt mit Fidelity~$= 1{,}0$ (Korrespondenzprinzip, alle~4 Szenarien).
+	
+	\subsection{Axiom 2: Superposition und Interferenz}
+	
+	Schwingungen \"uberlagern sich linear:
+	\begin{equation}
+		\Psi(x, t) = \sum_i \psi_i(x, t)
+		\label{eq:superposition}
+	\end{equation}
+	
+	\textit{Beispiel:} Doppelspalt-Interferenz,
+	Schwebungsph\"anomene, AC/DC-Zerlegung von Preisfeldern,
+	GDR-Doppelpeak-Struktur in deformierten Kernen.
+	Gekoppelte-Oszillatoren-Simulation: Mehrfrequenz-Superposition
+	best\"atigt (Energieaustausch bei Resonanz).
+	Schr\"odinger-Simulation: Mehrmodenüberlagerung in gekoppelten
+	Zwei-Teilchen-Zust\"anden best\"atigt; Gisin-Theorem (No-Signaling) erf\"ullt.
+	
+	\subsection{Axiom 3: Resonanzbedingung}
+	
+	Kopplung zwischen zwei Systemen tritt auf, wenn ihre
+	Frequenzen in rationalem Verh\"altnis stehen:
+	\begin{equation}
+		\frac{f_1}{f_2} = \frac{n}{m}, \quad
+		n, m \in \mathbb{Z}^+
+		\label{eq:resonance_condition}
+	\end{equation}
+	
+	\textit{Beispiel:} Molekulare Orbitalresonanz,
+	Tacoma-Narrows-Br\"ucke.
+	Monte-Carlo-Test: 5 Resonanzen bei Teilchenmassen,
+	emp.\ $p = 0$ (1\,500\,000 Simulationen, 3 KDE, 30 Seeds).
+	Im Resonanzreaktor: Anregungsfrequenz gleich
+	GDR-Frequenz des Kerns.
+	Schr\"odinger-Simulation: RFT-Energieniveaus best\"atigen rationale
+	Frequenzverh\"altnisse bei Resonanzbedingungen.
+	
+	\subsection{Axiom 4: Kopplungsenergie}
+	
+	Die durch Resonanz \"ubertragene Energie ist:
+	\begin{equation}
+		E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
+		\label{eq:grundformel}
+	\end{equation}
+	mit dem phasenabh\"angigen Kopplungsoperator
+	$\varepsilon(\Delta\varphi) \in [0,1]$, wobei
+	$\Delta\varphi$ die Phasendifferenz zwischen gekoppelten
+	Systemen bezeichnet.
+	
+	\textbf{Dimensionsanalyse:}
+	$[\,] \cdot [\,] \cdot [\mathrm{J{\cdot}s}] \cdot
+	[\mathrm{s}^{-1}] = [\mathrm{J}]$ $\checkmark$
+	
+	\textbf{Spezialfall Planck:}
+	F\"ur $\varepsilon = 1/(2\pi)$ folgt
+	$E = \frac{1}{2}\hbar f$, konsistent mit der
+	Grundzustandsenergie des harmonischen Oszillators.
+	
+	\textbf{Grenzwerte:}
+	\begin{itemize}
+		\item $\varepsilon = 0$: keine Kopplung
+		(destruktive Interferenz)
+		\item $\varepsilon = 1$: maximale Kopplung
+		(vollst\"andige Phasenkoh\"arenz)
+	\end{itemize}
+	
+	Schr\"odinger-Simulation: Korrespondenzprinzip mit Fidelity~$= 1{,}0$
+	best\"atigt; St\"orungstheorie $1-F \sim \lambda^2$ best\"atigt.
+	Warpantriebs-Simulation: Vorzeichenwechsel der Zustandsgleichung~$w$
+	\"uber $\varepsilon(\Delta\varphi)$-Phasensteuerung.
+	FLRW-Simulation: $\varepsilon = \eta = 0$ bei $\Delta\varphi = \pi$
+	(exakt, 1\,530 L\"aufe).
+	
+	\subsection{Axiom 5: Energierichtung}
+	
+	Energie ist eine vektorielle Gr\"o\ss{}e mit Betrag und
+	Richtung im Resonanzfeld:
+	\begin{equation}
+		\vec{E}_{\mathrm{dir}} =
+		E_{\mathrm{kurz}} - E_{\mathrm{lang}}
+		\label{eq:energy_direction}
+	\end{equation}
+	
+	Der Energierichtungsvektor bestimmt die Dynamik des
+	Energieflusses. Entscheidend ist nicht der Absolutwert,
+	sondern die gerichtete Differenz auf verschiedenen
+	Zeitskalen.
+	
+	\textit{Resonanzfeld-Simulation:}
+	Energierichtungsvektor best\"atigt.
+	Warpantriebs-Simulation: Vorder-/R\"uckseiten-Asymmetrie
+	(Kontraktion vs.\ Expansion) demonstriert gerichteten Energiefluss.
+	
+	\subsection{Axiom 6: Informationsfluss durch
+		Resonanzkopplung}
+	
+	Information propagiert ausschlie\ss{}lich entlang
+	koh\"arenter Resonanzpfade. Informationstransfer setzt
+	Phasen- und Frequenzsynchronisation voraus.
+	\begin{equation}
+		\mathrm{Informationsfluss} \iff
+		\mathrm{Phasen\textrm{-} und\;Frequenzsynchronisation}
+		\label{eq:information}
+	\end{equation}
+	
+	\textit{Resonanzfeld-Simulation:} Kopplungseffizienz
+	und Energiefluss best\"atigt (PCI $\to$ MI).
+	Schr\"odinger-Simulation: Information propagiert
+	ausschlie\ss{}lich entlang koh\"arenter Phasenpfade --
+	anti-resonante Pfade werden systematisch unterdr\"uckt.
+	
+	\subsection{Axiom 7: Invarianz}
+	
+	Resonanzstrukturen bleiben unter Variation der
+	Beobachterperspektive und Systemparameter erhalten:
+	\begin{equation}
+		\forall\; T : \mathcal{R} \to \mathcal{R}', \quad
+		\mathrm{Struktur}(\mathcal{R})
+		= \mathrm{Struktur}(\mathcal{R}')
+		\label{eq:invariance}
+	\end{equation}
+	
+	\textit{Beispiel:} Monte-Carlo-Ergebnisse stabil \"uber
+	$50\,000$ Durchl\"aufe (3 KDE-Bandbreiten, 30 Seeds).
+	FLRW-Simulation: Resonanzstruktur bleibt \"uber alle
+	1\,530 Parameterkombinationen ($H_0$, $\Omega$) erhalten.
+	
+	
+	%% ============================================================
+	\section{Mathematische Formulierung}
+	%% ============================================================
+	
+	\subsection{Grundformel und Kopplungsoperator}
+	
+	Die zentrale Gleichung~(\ref{eq:grundformel}) erweitert die
+	Planck-Relation $E = \hbar\omega$ um einen
+	Kopplungsterm. Der Faktor $\pi$ reflektiert die
+	zyklische Geometrie der Resonanzkopplung. Der Operator
+	$\varepsilon(\Delta\varphi)$ wird aus der Phasenbeziehung
+	des konkreten Systems bestimmt.
+	
+	F\"ur ein System mit Phasendifferenz $\Delta\varphi$
+	zwischen Anregung und Antwort ist das einfachste Modell:
+	\begin{equation}
+		\varepsilon(\Delta\varphi) =
+		\frac{1}{2}(1 + \cos\Delta\varphi)
+		= \cos^2(\Delta\varphi/2)
+		\label{eq:epsilon_cos}
+	\end{equation}
+	Dies liefert $\varepsilon = 1$ bei $\Delta\varphi = 0$
+	(Resonanz) und $\varepsilon = 0$ bei
+	$\Delta\varphi = \pi$ (Antiresonanz).
+	
+	\subsection{Identit\"at zwischen Operator und Observable}
+	\label{sec:eps_eta}
+	
+	In der FLRW-Simulation emergiert die Kopplungseffizienz
+	$\eta(\Delta\varphi)$ als messbarer Kreuzterm. Die
+	analytische Erwartung ist
+	$\eta_{\mathrm{theo}} = \cos^2(\Delta\varphi/2)$.
+	Da gleichzeitig der theoretische Kopplungsoperator
+	$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
+	gilt, folgt die exakte Identit\"at:
+	\begin{equation}
+		\varepsilon(\Delta\varphi)
+		= \eta(\Delta\varphi)
+		= \cos^2(\Delta\varphi/2)
+		\label{eq:eps_eta_identity}
+	\end{equation}
+	Diese Identit\"at hat eine unmittelbare Konsequenz f\"ur
+	den Resonanzreaktor: Der Kopplungsst\"arkeparameter
+	in der effektiven Zerfallsrate
+	$\lambda_{\mathrm{eff}} = \lambda_0 + \eta \cdot \kappa
+	\cdot \Phi_\gamma \cdot \sigma$ ist kein freier Parameter,
+	sondern exakt $\kappa = 1$.
+	
+	\subsection{Resonanz-Differentialgleichung (rDGL)}
+	
+	Die RFT vereinheitlicht klassische Differentialgleichungen
+	als Spezialf\"alle einer allgemeinen
+	Resonanzkopplungsrelation:
+	\begin{equation}
+		\mathcal{R}(x, \dot{x}, \ddot{x}, t, \Phi) = 0
+		\label{eq:rdgl}
+	\end{equation}
+	wobei $\Phi$ den Kopplungsterm beschreibt. Spezialf\"alle:
+	
+	\medskip
+	\begin{center}
+		\begin{tabular}{lll}
+			\hline
+			\textbf{System} & \textbf{Kopplung $\Phi$}
+			& \textbf{Gleichung} \\
+			\hline
+			Harmon.\ Oszillator & $-\omega_0^2 x$
+			& $\ddot{x} + \omega_0^2 x = 0$ \\
+			Ged\"ampft & $-2\gamma\dot{x} - \omega_0^2 x$
+			& $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$ \\
+			Van-der-Pol & $-\mu(1{-}x^2)\dot{x} - x$
+			& Selbsterregte Schwingung \\
+			Stochastisch & $\Phi_{\det} + \xi(t)$
+			& Langevin-Typ \\
+			Netzwerk & $\sum_j K_{ij}\sin(\theta_j{-}\theta_i)$
+			& Kuramoto-Modell \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\subsection{Resonanzrelation und Feldklassen}
+	
+	Die bin\"are Resonanzrelation
+	$R \subseteq \mathcal{G} \times \mathcal{G}$ ist eine
+	\"Aquivalenzrelation (reflexiv, symmetrisch, transitiv),
+	die eine Resonanzgruppe~$\mathcal{G}$ in disjunkte
+	Resonanzklassen unterteilt.
+	
+	\subsection{Zustandsentwicklung}
+	
+	Die zeitliche Entwicklung des Resonanzfeldes folgt:
+	\begin{equation}
+		i\hbar \frac{\partial}{\partial t} |\psi(t)\rangle
+		= \hat{H}_{\mathrm{res}} |\psi(t)\rangle
+		\label{eq:schroedinger_res}
+	\end{equation}
+	mit dem Resonanz-Hamiltonoperator:
+	\begin{equation}
+		\hat{H}_{\mathrm{res}} = \hat{H}_0
+		+ \varepsilon(\Delta\varphi)\,
+		\hat{V}_{\mathrm{Kopplung}}
+		\label{eq:h_res}
+	\end{equation}
+	wobei $\hat{H}_0$ der freie Hamiltonoperator und
+	$\hat{V}_{\mathrm{Kopplung}}$ das Kopplungspotential
+	ist. F\"ur $\varepsilon = 0$ entkoppelt das System;
+	f\"ur $\varepsilon = 1$ ist die Kopplung maximal.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/plot.png}
+		\caption{Numerische Demonstration: Resonanzfeld-Simulation mit Phasenverschiebung und Kopplungseffizienz.}
+		\label{fig:resonanzfeld_demo}
+	\end{figure}
+	
+	
+	%% ============================================================
+	\section{Empirische Validierung}
+	\label{sec:empirics}
+	%% ============================================================
+	
+	Die RFT wird an vier unabh\"angigen Dom\"anen gepr\"uft:
+	Teilchenphysik (Abschnitt~\ref{sec:monte_carlo}),
+	Kosmologie (Abschnitt~\ref{sec:flrw}),
+	Nukleartechnologie (Abschnitt~\ref{sec:resonanzreaktor})
+	und Finanzm\"arkte (Abschnitt~\ref{sec:resotrade}).
+	
+	\subsection{Monte-Carlo-Simulation auf CMS-Dielectron-Daten}
+	\label{sec:monte_carlo}
+	
+	\subsubsection{Datensatz und Methodik.}
+	CMS-Open-Data-Dielectron-Datensatz~\cite{cms_opendata}:
+	$99\,915$ Ereignisse, invariante Masse~$M$ im Bereich
+	$2{,}00$--$110{,}00$~GeV.
+	
+	Die Hintergrundverteilung wird mittels Kerndichtesch\"atzung
+	(KDE, Bandbreite $0{,}5$~GeV) aus den Daten extrahiert,
+	unter schmalem Ausschluss der Signalbereiche.
+	F\"ur jedes der $50\,000$ Pseudo-Experimente wird die
+	vollst\"andige Resonanzanalyse durchgef\"uhrt: Binomialtest
+	mit Bonferroni-Korrektur \"uber 68~Fensterbreiten.
+	Bootstrap-Konfidenzintervalle ($10\,000$~Wiederholungen)
+	quantifizieren die statistische Stabilit\"at.
+	Systematik-Checks \"uber drei KDE-Bandbreiten
+	($0{,}3$, $0{,}5$, $0{,}7$~GeV) und zehn unabh\"angige
+	Seeds best\"atigen die Robustheit.
+	Gesamtumfang: $1\,500\,000$~Simulationen.
+	
+	\subsubsection{Ergebnisse.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Monte-Carlo-Ergebnisse
+			($1\,500\,000$ Gesamtsimulationen \"uber
+			3~Bandbreiten $\times$ 10~Seeds).
+			Empirischer p-Wert~$= 0$: In keinem
+			Pseudo-Experiment wurde ein vergleichbarer
+			\"Uberschuss durch reinen Hintergrund erzeugt.}
+		\label{tab:mc_results}
+		\begin{tabular}{llrrrl}
+			\hline
+			$M_0$ (GeV) & Resonanz
+			& $\Delta_{\mathrm{opt}}$ (GeV)
+			& Hits & $p_{\mathrm{corr}}$
+			& emp.\ $p$ \\
+			\hline
+			$1{,}02$ & $\phi$(1020) & $9{,}50$
+			& $19\,869$ & $1{,}1 \times 10^{-54}$
+			& $0$ \\
+			$3{,}10$ & J/$\psi$ & $0{,}44$
+			& $3\,256$ & $1{,}0 \times 10^{-121}$
+			& $0$ \\
+			$9{,}46$ & $\Upsilon$(1S) & $0{,}78$
+			& $4\,186$ & $3{,}0 \times 10^{-201}$
+			& $0$ \\
+			$10{,}02$ & $\Upsilon$(2S) & $0{,}84$
+			& $4\,625$ & $5{,}2 \times 10^{-188}$
+			& $0$ \\
+			$91{,}20$ & Z-Boson & $0{,}04$
+			& $52$ & $< 10^{-300}$
+			& $0$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	Alle f\"unf Resonanzen werden mit extremer Signifikanz
+	detektiert. Die Ergebnisse sind bandbreitenunabh\"angig
+	und seedunabh\"angig
+	(emp.\ $p = 0{,}000 \pm 0{,}000$ \"uber zehn Seeds).
+	Best\"atigt Axiom~3 und Axiom~7.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/hist_mc_vs_real_hits.png}
+		\caption{Histogramm: Vergleich simulierter und realer Trefferanzahlen f\"ur f\"unf Resonanzstellen.}
+		\label{fig:mc_histogram}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/pvalue_curves.png}
+		\caption{p-Wert-Verl\"aufe \"uber drei KDE-Bandbreiten und zehn Seeds. Empirischer p-Wert = 0 f\"ur alle f\"unf Resonanzen.}
+		\label{fig:mc_pvalues}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/heatmaps_hits.png}
+		\caption{Heatmaps der Trefferanzahl pro Resonanz \"uber Bandbreite und Seed.}
+		\label{fig:mc_heatmaps}
+	\end{figure}
+	
+	\subsection{Gekoppelte FLRW-Simulation}
+	\label{sec:flrw}
+	
+	\subsubsection{Methodik.}
+	
+	Zwei skalare Resonanzfelder $\varepsilon_1(t)$,
+	$\varepsilon_2(t)$ gehorchen der nichtlinearen
+	Klein-Gordon-Gleichung in FLRW-Raumzeit:
+	\begin{equation}
+		\ddot{\varepsilon}_i + 3H\dot{\varepsilon}_i
+		+ \omega^2 \varepsilon_i
+		+ \lambda \varepsilon_i^3 = 0,
+		\quad H = \frac{\dot{a}}{a}
+		\label{eq:kg_flrw}
+	\end{equation}
+	Die Friedmann-Gleichung koppelt die Raumzeitexpansion
+	an die Gesamtenergiedichte beider Felder:
+	\begin{equation}
+		H^2 = \frac{8\pi G}{3}\,\rho_{\mathrm{total}}
+		\label{eq:friedmann}
+	\end{equation}
+	Die Kopplungseffizienz wird aus dem zeitgemittelten
+	Kreuzterm extrahiert:
+	\begin{equation}
+		\eta(\Delta\varphi)
+		= \frac{\langle\varepsilon_1
+			\cdot \varepsilon_2\rangle}%
+		{\sqrt{\langle\varepsilon_1^2\rangle\,
+				\langle\varepsilon_2^2\rangle}}
+		\label{eq:eta_def}
+	\end{equation}
+	Die analytische Erwartung f\"ur harmonische Felder ist
+	$\eta_{\mathrm{theo}} = \cos^2(\Delta\varphi/2)$.
+	Die mittlere Abweichung
+	$d_\eta = \langle|\eta_{\mathrm{sim}}
+	- \eta_{\mathrm{theo}}|\rangle$ quantifiziert den
+	Einfluss der Raumzeitexpansion. Fehlerbalken werden
+	durch Jackknife-Resampling \"uber Phasengruppen
+	bestimmt.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/figure_1.png}
+		\caption{Gekoppeltes FLRW-Resonanzfeld: Zeitentwicklung beider Skalarfelder, Kopplungseffizienz und Energiedichte (sechs Panels).}
+		\label{fig:flrw_coupled}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/figure_2.png}
+		\caption{Phasenscan: Kopplungseffizienz $\eta(\Delta\varphi)$ vs.\ analytische Erwartung $\cos^2(\Delta\varphi/2)$ \"uber 30 Phasenwerte.}
+		\label{fig:flrw_phasescan}
+	\end{figure}
+	
+	\subsubsection{Kontrolltest: F\"unf
+		Expansionsszenarien.}
+	
+	\begin{center}
+		\begin{tabular}{lrl}
+			\hline
+			\textbf{Szenario}
+			& $\langle|d_\eta|\rangle$
+			& \textbf{Interpretation} \\
+			\hline
+			Flach ($H = 0$)
+			& $0{,}043 \pm 0{,}008$
+			& $\cos^2$ fast exakt \\
+			Langsam ($\dot{a}_0 = 0{,}1$)
+			& $0{,}100$
+			& $2{,}3\times$ gr\"o\ss{}er \\
+			FLRW ($\dot{a}_0 = 0{,}3$)
+			& $0{,}139$
+			& $3{,}2\times$ gr\"o\ss{}er \\
+			Mittel ($\dot{a}_0 = 0{,}6$)
+			& $0{,}214$
+			& $5{,}0\times$ gr\"o\ss{}er \\
+			Schnell ($\dot{a}_0 = 1{,}0$)
+			& $0{,}182$
+			& S\"attigung \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\noindent
+	\textbf{Interpretation:}
+	F\"ur $\dot{a}_0 \leq 0{,}6$ steigt $d_\eta$ monoton
+	mit der Expansionsrate. Bei $\dot{a}_0 = 1{,}0$ tritt
+	S\"attigung ein durch
+	$\lambda\varepsilon^4$-Selbstwechselwirkung.
+	Im kosmologisch relevanten Bereich
+	($H_0 = 60$--$80$~km/s/Mpc) ist der
+	Zusammenhang linear.
+	
+	\subsubsection{Kosmologische Skalierung.}
+	
+	$1\,530$~Einzelsimulationen
+	($H_0 = 0$--$100$~km/s/Mpc, 51~Schritte,
+	30~Phasenwerte):
+	\begin{equation}
+		d_\eta(H_0) = (0{,}00113 \pm 0{,}00017)\,
+		\frac{H_0}{\mathrm{km/s/Mpc}}
+		+ \mathrm{const}
+		\label{eq:d_eta_h0}
+	\end{equation}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Ergebnisse des $H_0$-Scans
+			($1\,530$~Simulationen,
+			Jackknife-Fehler).}
+		\label{tab:h0_scan}
+		\begin{tabular}{lr}
+			\hline
+			\textbf{Messgr\"o\ss{}e}
+			& \textbf{Wert} \\
+			\hline
+			Steigung $\mathrm{d}d_\eta
+			/ \mathrm{d}H_0$
+			& $(0{,}00113 \pm 0{,}00017)$
+			(km/s/Mpc)$^{-1}$ \\
+			$d_\eta$ (Flach, $H_0 = 0$)
+			& $0{,}0430 \pm 0{,}0076$ \\
+			$d_\eta$ (Planck, $H_0 = 67{,}4$)
+			& $0{,}1399 \pm 0{,}0248$ \\
+			$d_\eta$ (SH0ES, $H_0 = 73{,}0$)
+			& $0{,}1488 \pm 0{,}0263$ \\
+			$\Delta d_\eta$ (SH0ES $-$ Planck)
+			& $0{,}0063 \pm 0{,}0010$
+			($>6\sigma$) \\
+			Relative Verschiebung
+			& $\approx 4{,}6\%$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/h0_scan.png}
+		\caption{H$_0$-Scan: Kopplungsabweichung $d_\eta$ als Funktion der Hubble-Konstanten \"uber 1\,530 Simulationen.}
+		\label{fig:h0_scan}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/hubble_tension.png}
+		\caption{Visualisierung der Hubble-Spannung: Differenz der Kopplungsabweichung $\Delta d_\eta$ zwischen Planck ($H_0 = 67{,}4$) und SH0ES ($H_0 = 73{,}0$).}
+		\label{fig:hubble_tension}
+	\end{figure}
+	
+	\subsubsection{CMB-Vergleich.}
+	
+	Die $\eta$-Korrektur wird gegen das Planck-2018
+	TT-Leistungsspektrum~\cite{planck2018v} getestet
+	(83~Datenpunkte, $\ell = 764$--$1280$).
+	
+	\begin{table}[ht]
+		\centering
+		\caption{CMB-Vergleich: $\Lambda$CDM vs.\
+			Resonanzfeld-Korrektur.}
+		\label{tab:cmb}
+		\begin{tabular}{lrr}
+			\hline
+			\textbf{Messgr\"o\ss{}e}
+			& $H_0 = 67{,}4$ & $H_0 = 73{,}0$ \\
+			\hline
+			$\chi^2/\mathrm{dof}$ ($\Lambda$CDM)
+			& $6{,}75$ & $6{,}75$ \\
+			$\chi^2/\mathrm{dof}$ (Res.-Feld)
+			& $6{,}56$ & $6{,}55$ \\
+			$\Delta\chi^2$
+			& $+16{,}0$ & $+17{,}3$ \\
+			Pearson~$r$
+			& $0{,}626$ & $0{,}626$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/cmb_comparison.png}
+		\caption{CMB-Vergleich: Planck-2018-TT-Spektrum mit $\Lambda$CDM- und Resonanzfeld-Modell.}
+		\label{fig:cmb_comparison}
+	\end{figure}
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figures/cmb_chi2_scan.png}
+		\caption{$\chi^2$-Scan \"uber verschiedene $H_0$-Werte: $\Lambda$CDM (gestrichelt) vs.\ Resonanzfeld (durchgezogen).}
+		\label{fig:cmb_chi2}
+	\end{figure}
+	
+	\noindent
+	\textbf{Einschr\"ankung:} Das parametrische
+	$\Lambda$CDM-Modell erreicht nicht das Niveau von
+	\textsc{camb}/\textsc{class}. Die Kernaussage ist
+	die \textit{relative} Verbesserung durch die
+	$\eta$-Korrektur.
+	
+	Best\"atigt Axiom~1, 3, 4, 5, 7.
+	
+	\subsection{Resonanzreaktor}
+	\label{sec:resonanzreaktor}
+	
+	\subsubsection{Physikalische Grundlage.}
+	
+	Die Giant Dipole Resonance (GDR) ist ein experimentell
+	nachgewiesenes kollektives
+	Kernph\"anomen~\cite{gdr_atlas, ishkhanov2021}:
+	Protonen und Neutronen oszillieren gegenphasig als
+	kollektiver Dipol. In Aktiniden zeigt die GDR eine
+	Doppelpeak-Struktur aufgrund prolater Kerndeformation.
+	
+	Die RFT-Grundformel~(\ref{eq:grundformel}) liefert
+	die Resonanzfrequenzen direkt:
+	\begin{equation}
+		f_{\mathrm{GDR}} =
+		\frac{E_{\mathrm{GDR}}}{\pi \cdot \hbar}
+		\label{eq:f_gdr}
+	\end{equation}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{GDR-Daten und RFT-Frequenzen.
+			Quellen:~\cite{gdr_atlas, ishkhanov2021,
+				ripl3}.}
+		\label{tab:gdr}
+		\begin{tabular}{lrrrr}
+			\hline
+			Isotop & $A$
+			& $E_{\mathrm{GDR}}$ (MeV)
+			& $f_{\mathrm{RFT}}$ (Hz)
+			& $\sigma_{\mathrm{GDR}}$ (mb) \\
+			\hline
+			U-235 & 235 & $13{,}0$
+			& $6{,}3 \times 10^{21}$ & 340 \\
+			Pu-239 & 239 & $13{,}5$
+			& $6{,}5 \times 10^{21}$ & 360 \\
+			Am-241 & 241 & $13{,}3$
+			& $6{,}4 \times 10^{21}$ & 350 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsubsection{Herleitung der Kopplungsst\"arke.}
+	
+	Die effektive Zerfallsrate unter resonanter
+	Bestrahlung ist:
+	\begin{equation}
+		\lambda_{\mathrm{eff}}(\Delta\varphi)
+		= \lambda_0
+		+ \eta(\Delta\varphi) \cdot \Phi_\gamma
+		\cdot \sigma_{\mathrm{GDR}}
+		\label{eq:lambda_eff}
+	\end{equation}
+	Aus der Identit\"at~(\ref{eq:eps_eta_identity}) in
+	Abschnitt~\ref{sec:eps_eta} folgt, dass die
+	Kopplungsst\"arke exakt eins ist und kein freier
+	Parameter vorliegt.
+	
+	\subsubsection{Ergebnisse.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Resonanzreaktor-Ergebnisse
+			($\Phi_\gamma = 10^{12}$,
+			$\Delta\varphi = 0$).}
+		\label{tab:reaktor}
+		\begin{tabular}{lrrrr}
+			\hline
+			Isotop & $t_{1/2}$ (a)
+			& $\lambda_{\mathrm{eff}}/\lambda_0$
+			& $Q_\alpha$
+			& $Q_{\mathrm{fiss}}$ \\
+			\hline
+			U-235 & $7{,}04 \times 10^8$
+			& $7\,872$ & $0{,}023$ & $0{,}97$ \\
+			Pu-239 & $24\,110$
+			& $1{,}3$ & $0{,}026$ & $1{,}00$ \\
+			Am-241 & $432$
+			& $1{,}005$ & $0{,}027$ & -- \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\textbf{Physikalische Interpretation:}
+	\begin{itemize}
+		\item $\lambda_{\mathrm{eff}}/\lambda_0$
+		skaliert invers mit der nat\"urlichen
+		Zerfallsrate.
+		\item $Q_\alpha \approx 0{,}025$:
+		$\alpha$-Zerfall erzeugt kein \"Ubergewicht.
+		\item $Q_{\mathrm{fiss}} \approx 1{,}0$:
+		Photospaltung erreicht Break-even.
+		\item $Q$ ist fluenzunabh\"angig.
+		F\"ur $Q > 1$ sind Targetdicke~$d$ und
+		$k > 1$ entscheidend.
+	\end{itemize}
+	
+	\subsubsection{Falsifizierbare Vorhersage.}
+	\begin{equation}
+		\sigma_{\mathrm{coh}}
+		> \sigma_{\mathrm{incoh}}
+		\label{eq:prediction}
+	\end{equation}
+	Das Standardmodell sagt:
+	$\sigma_{\mathrm{coh}}
+	= \sigma_{\mathrm{incoh}}$.
+	
+	Best\"atigt Axiom~1, 3, 4.
+	
+	\subsection{ResoTrade: Anwendungskonzept
+		am BTC-Markt}
+	\label{sec:resotrade}
+	
+	ResoTrade~\cite{rftrepo} ist ein algorithmisches
+	BTC-Trading-System, das ausschlie\ss{}lich auf den
+	Axiomen der RFT aufbaut und deren Anwendbarkeit
+	in einem realen Marktumfeld demonstriert.
+	Da ResoTrade eine private Implementierung ist,
+	dient es nicht als prim\"arer Axiom-Beweis;
+	die prim\"aren Nachweise stammen aus den
+	RFT-internen Simulationen
+	(FLRW, Monte Carlo, Doppelpendel, Resonanzreaktor).
+	
+	\subsubsection{RFT-interne Axiom-Validierung.}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Axiom} & \textbf{Simulation}
+			& \textbf{Ergebnis} \\
+			\hline
+			A1 & FLRW (1\,530 L\"aufe)
+			& $\eta \approx \cos^2$, $\Delta d_\eta > 6\sigma$ \\
+			A2 & Gek.\ Oszillatoren
+			& Mehrfrequenz-Superposition \\
+			A3 & Monte Carlo (1\,500\,000 Sim.)
+			& 5 Resonanzen, emp.\ $p = 0$ \\
+			A4 & FLRW: $\varepsilon = \eta$
+			& $\kappa = 1$, kein freier Param. \\
+			A5 & Resonanzfeld-Sim.
+			& Energierichtungsvektor \\
+			A6 & Resonanzfeld-Sim.
+			& Kopplungseffizienz, Energiefluss \\
+			A7 & Monte Carlo
+			& Bandbreiten-unabh.\ (3 KDE) \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\subsubsection{Architektur: Axiom-zu-Mechanismus.}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Axiom} & \textbf{Mechanismus}
+			& \textbf{Observable} \\
+			\hline
+			A1 & AC/DC-Zerlegung
+			& $\psi = \mathrm{DC}_{168h}
+			+ \mathrm{AC}$ \\
+			A2 & 3-Moden-Superposition
+			& $e_s$, $e_l$, Score \\
+			A3 & $f_1/f_2 = 1{:}7$
+			& 24h / 168h \\
+			A4 & Balance + Pause-Gate
+			& $\varepsilon \to 0$ \\
+			A5 & $\vec{E}_{\mathrm{dir}}
+			= e_s - e_l$
+			& Richtung \\
+			A6 & Resonanz-Gate
+			& 40\% blockiert \\
+			A7 & Regime-Invarianz
+			& 4/4 positiv \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Die drei Moden bilden eine emergente Struktur, die
+	isomorph zum PID-Regler der Regelungstechnik ist:
+	$e_{\mathrm{long}}$, $e_{\mathrm{short}}$
+	(P-Anteil), Erfahrungsspeicher (I-Anteil),
+	MA-Steigung (D-Anteil, V11.2). Diese Isomorphie
+	wurde nicht gesucht, sondern entstand aus der
+	axiomatischen Entwicklung: Jede neue
+	Verarbeitungsschicht f\"ugte genau den fehlenden
+	PID-Anteil hinzu.
+	
+	\subsubsection{Versionshistorie: Vorhersage, dann
+		Messung.}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{llll}
+			\hline
+			\textbf{Version} & \textbf{Axiom}
+			& \textbf{Vorhersage} & \textbf{Effekt} \\
+			\hline
+			V10 & A5
+			& Richtung $>$ Betrag
+			& $+1{,}4$~Pp. \\
+			V11 & A1
+			& Phase verbessert Timing
+			& $+5{,}9$~Pp. \\
+			V11.1 & A4
+			& Kein Trade bei $\varepsilon \to 0$
+			& $+44{,}9\%$ \\
+			V11.2 & A5+
+			& D-Anteil erkennt Wenden
+			& Live l\"auft \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Zu keinem Zeitpunkt wurde ein Axiom nachtr\"aglich an
+	die Daten angepasst.
+	
+	\subsubsection{Backtest: 24~Monate, 4~Marktregime.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{ResoTrade V11.1 Performance \"uber
+			24~Monate. Seit 25.02.2026 live \"uber Kraken.}
+		\label{tab:resotrade}
+		\begin{tabular}{llrl}
+			\hline
+			Regime & Zeitraum
+			& Trades & vs.\ HODL \\
+			\hline
+			Sideways + ETF & M\"ar--Sep 2024
+			& 437 & $+33{,}3\%$ \\
+			Bullrun & Sep 2024--M\"ar 2025
+			& 429 & $+22{,}9\%$ \\
+			Top + Korrektur & M\"ar--Sep 2025
+			& 247 & $+4{,}0\%$ \\
+			Crash & Sep 2025--Feb 2026
+			& 279 & $+44{,}9\%$ \\
+			\hline
+			\textbf{Alle Regime}
+			& \textbf{24~Monate}
+			& \textbf{1392}
+			& $\mathbf{+26{,}3\%}$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	Performance positiv in \textit{jedem} einzelnen
+	Marktregime. Gleiche Axiome, gleiche Parameter,
+	gleicher Algorithmus. Konvergenz:
+	$+25{,}8\%$ nach 1~Zyklus Training,
+	$+26{,}3\%$ nach 3~Zyklen ($\Delta < 1\%$) --
+	ged\"ampftes Einschwingverhalten, konsistent
+	mit dem Stabilit\"atssatz der RFT.
+	
+	\subsubsection{Live-Validierung.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Live-Ergebnisse (Dry-Run,
+			5~Tage ab 25.02.2026).}
+		\label{tab:live}
+		\begin{tabular}{lr}
+			\hline
+			\textbf{Metrik} & \textbf{Wert} \\
+			\hline
+			Performance vs.\ HODL
+			& $+4{,}13\%$ \\
+			Markt im Zeitraum & $-1{,}92\%$ \\
+			Trades & 36 (18 BUY, 18 SELL) \\
+			\O~Kaufpreis & 63\,828~USD \\
+			\O~Verkaufspreis & 68\,105~USD \\
+			Spread & $+6{,}70\%$ \\
+			Regel-Policy-Divergenz & $0{,}0\%$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	Das System funktioniert in einem Marktregime
+	(Crash $\to$ Erholung), das im Training nicht
+	explizit enthalten war. Die Divergenz von $0{,}0\%$
+	zwischen Regel-Policy und finaler Entscheidung
+	zeigt konvergiertes Lernen.
+	
+	\subsubsection{Falsifikationstest: Altcoin-Analyse.}
+	
+	\"Uber $200\,000$~Episoden mit 10~Altcoins:
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lrrl}
+			\hline
+			\textbf{Konfiguration}
+			& \textbf{Draw}
+			& \textbf{$>$HODL}
+			& \textbf{Interpretation} \\
+			\hline
+			BTC + 13 Aktien
+			& $84\%$ & $100\%$
+			& Eigenfrequenz $\checkmark$ \\
+			BTC + 10 Altcoins
+			& $98{,}4\%$ & $86\%$
+			& Kein Signal \\
+			BTC only (V11)
+			& ${\sim}49\%$ & $83{,}4\%$
+			& Resonanz $\checkmark$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Altcoins besitzen keine eigenst\"andige
+	Eigenfrequenz -- ihre AC-Komponente ist ein
+	skaliertes Echo von BTC:
+	$\mathrm{AC}_{\mathrm{Alt}} \approx \alpha \cdot
+	\mathrm{AC}_{\mathrm{BTC}} + \eta$.
+	Ohne Resonanzbedingung (A3) kein
+	Informationsaustausch. Negativer Lernfortschritt
+	bei Altcoins ($-0{,}002$/Zyklus). Aktien dagegen
+	(eigenst\"andige Eigenfrequenzen) erreichen
+	$100\%$ \"uber HODL.
+	
+	Wenn A3 falsch w\"are, m\"ussten Altcoins profitabel
+	handelbar sein. Sie sind es nicht. Dies ist ein
+	echter Falsifikationstest.
+	
+	\subsubsection{Vergleich mit klassischen Indikatoren.}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lrl}
+			\hline
+			\textbf{Indikator}
+			& \textbf{Korrelation}
+			& \textbf{Pr\"adiktive Kraft} \\
+			\hline
+			RSI & $< 0{,}05$ & Keine \\
+			Momentum & $< 0{,}05$ & Keine \\
+			MA-Crossover & $< 0{,}05$ & Keine \\
+			Posterior-WS & Konstant & Keine \\
+			$\vec{E}_{\mathrm{dir}}$ (RFT)
+			& System. & Kapitalfluss \\
+			AC-Phase (RFT) & System.
+			& Zyklusposition \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Kein einziger klassischer Indikator erreicht auf dem
+	24-Monats-Datensatz eine Korrelation \"uber~$0{,}05$
+	mit zuk\"unftigen Preisbewegungen.
+	
+	\subsubsection{Reproduzierbarkeit und Effizienz.}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Ressource}
+			& \textbf{ResoTrade}
+			& \textbf{ML} \\
+			\hline
+			Training & 15~Min (CPU) & Std.\ (GPU) \\
+			Speicher & 2~MB CSV & TB \\
+			Hardware & 5~W (Raspi) & kW \\
+			Daten & $5$--$10$k Ep. & $100$k+ \\
+			Erkl\"arbarkeit & Vollst. & Keine \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Jede Entscheidung ist nachvollziehbar. Der
+	Erfahrungsspeicher ist eine lesbare CSV mit
+	${\sim}6\,000$~Eintr\"agen und
+	${\sim}1{,}6$~Mio.\ Z\"ahlern.
+	Deterministisches Training, dokumentierte Parameter,
+	\"offentliche Datenquellen (yfinance, Binance API).
+	
+	\textbf{Axiom-Zuordnung:}
+	Alle sieben Axiome (A1--A7) best\"atigt.
+	
+	
+	%% ============================================================
+	\section{Vergleich mit etablierten Theorien}
+	%% ============================================================
+	
+	Die RFT ist eine parametrische Erweiterung der
+	Planck-Relation, kein Ersatz der Quantenmechanik
+	oder der allgemeinen Relativit\"atstheorie.
+	
+	\medskip
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Aspekt} & \textbf{Standard}
+			& \textbf{RFT} \\
+			\hline
+			Energie & $E = \hbar\omega$
+			& $E = \pi\varepsilon\hbar f$ \\
+			Kopplung & Extern
+			& Intrinsisch ($\varepsilon$) \\
+			Phase & Implizit
+			& Explizit ($\Delta\varphi$) \\
+			Zerfall & $\lambda = \mathrm{const}$
+			& $\lambda_{\mathrm{eff}}
+			= \lambda_0 + \eta\Phi\sigma$ \\
+			Parameter & --
+			& Keiner \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\medskip
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Aspekt}
+			& \textbf{$\Lambda$CDM}
+			& \textbf{RFT (FLRW)} \\
+			\hline
+			Felder & Inflaton (einzeln)
+			& Zwei gekoppelte \\
+			Kopplung & Keine Phasenabh.
+			& $\eta \approx \cos^2$ \\
+			$H_0$-Abh. & Parametersch.
+			& $d_\eta$ linear \\
+			CMB-Fit & $\chi^2/\mathrm{dof}
+			\approx 1$
+			& $\Delta\chi^2 = +16$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\medskip
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Aspekt}
+			& \textbf{Klass.\ Trading}
+			& \textbf{ResoTrade} \\
+			\hline
+			Signal & Skalar (RSI etc.)
+			& Vektoriell ($\vec{E}_{\mathrm{dir}}$) \\
+			Phase & Nicht ber\"ucks.
+			& Zentral (AC-Phase) \\
+			Falsifikation & Kein Negativtest
+			& $200\,000$~Altcoin-Ep. \\
+			Korrelation & $< 0{,}05$
+			& Systematisch \\
+			Erkl\"arbarkeit & Keine (ML)
+			& Vollst\"andig \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Wichtig:} Der CMB-Vergleich nutzt ein
+	parametrisches $\Lambda$CDM-Modell, nicht den vollen
+	Boltzmann-Solver. Die Kernaussage ist die
+	\textit{relative} Verbesserung durch die
+	$\eta$-Korrektur.
+	
+	
+	%% ============================================================
+	\section{Experimentelle Vorhersagen}
+	\label{sec:experimente}
+	%% ============================================================
+	
+	Die RFT enth\"alt zwei zentrale Kopplungsfunktionen, die in
+	unabh\"angigen Dom\"anen experimentell \"uberpr\"ufbar sind:
+	den Kopplungsoperator
+	$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ und
+	die Kopplungseffizienz
+	$\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$. Im Folgenden
+	werden zwei Experimentalvorschl\"age vorgestellt, die diese
+	Vorhersagen \"uber 19~Gr\"o\ss{}enordnungen in der Energie
+	testen.
+	
+	\subsection{Experiment~I: Am-241 an ELI-NP (Kernphysik)}
+	\label{sec:exp_am241}
+	
+	\subsubsection{Vorhersage.}
+	
+	Die effektive Zerfallsrate unter resonanter Bestrahlung bei der
+	Giant Dipole Resonance (GDR) ist:
+	\begin{equation}
+		\lambda_{\mathrm{eff}}(\Delta\varphi)
+		= \lambda_0
+		+ \eta(\Delta\varphi) \cdot \Phi_\gamma
+		\cdot \sigma_{\mathrm{GDR}}
+		\label{eq:lambda_eff_exp}
+	\end{equation}
+	Aus der Identit\"at~(\ref{eq:eps_eta_identity}) folgt
+	$\kappa = 1$ ohne freien Parameter. Die zentrale Vorhersage ist
+	das Verh\"altnis der Signalraten bei koh\"arenter
+	($\Delta\varphi \approx 0$, $\eta = 1$) und inkoh\"arenter
+	($\eta = 0{,}5$) Bestrahlung:
+	\[
+		\frac{\mathrm{Signal}(\text{koh\"arent})}%
+		{\mathrm{Signal}(\text{inkoh\"arent})} = 2{,}0
+		\quad\text{(RFT)} \qquad\text{vs.}\qquad 1{,}0
+		\quad\text{(SM)}
+	\]
+	Dieses Verh\"altnis ist unabh\"angig vom absoluten Photonenfluss,
+	von der Targetmasse und von der Messzeit. Es h\"angt
+	ausschlie\ss{}lich von der Phasenabh\"angigkeit der Kopplung
+	ab -- einer Gr\"o\ss{}e, die im Standardmodell der Kernphysik
+	kein Analogon hat.
+	
+	\subsubsection{System.}
+	
+	Target: 100~mg ${}^{241}$Am (d\"unn, auf Pt-Folie,
+	$N = 2{,}50 \times 10^{20}$~Kerne). GDR-Zentroid:
+	$E_{\mathrm{GDR}} = 14{,}0$~MeV (Doppelpeak-Struktur bei
+	$12{,}4$ und $15{,}6$~MeV,
+	Dietrich \& Berman~\cite{dietrich1988}).
+	$\sigma_{\mathrm{GDR}} \approx 300$--$360$~mb am Peak.
+	
+	\subsubsection{Einrichtung.}
+	
+	ELI-NP VEGA Gamma-Beam-Facility
+	(M\u{a}gurele, Rum\"anien,~\cite{elinp2024}):
+	$\Phi > 10^{11}\;\gamma$/s, $\Delta E/E < 0{,}5\%$,
+	Polarisation ${>}\,95\%$. Der Photonenstrahl wird durch
+	inverse Compton-Streuung erzeugt und ist stufenlos im Bereich
+	$0{,}2$--$19{,}5$~MeV einstellbar.
+	
+	\subsubsection{Messprotokoll.}
+	
+	F\"unf Messpunkte mit variierender Phasenkoh\"arenz:
+	
+	\begin{center}
+		\small
+		\begin{tabular}{llrrl}
+			\hline
+			\textbf{Messung} & \textbf{Konfiguration}
+			& $\eta$ \textbf{(RFT)} & $\eta$ \textbf{(SM)}
+			& \textbf{Signal/Signal$_{\mathrm{ink}}$} \\
+			\hline
+			M1 & Koh\"arent ($\Delta\varphi \approx 0$)
+			& $1{,}0$ & $0{,}5$ & $2{,}0$ / $1{,}0$ \\
+			M2 & Teilkoh\"arent ($\Delta\varphi \approx \pi/4$)
+			& $0{,}854$ & $0{,}5$ & $1{,}71$ / $1{,}0$ \\
+			M3 & Teilkoh\"arent ($\Delta\varphi \approx \pi/2$)
+			& $0{,}5$ & $0{,}5$ & $1{,}0$ / $1{,}0$ \\
+			M4 & Teilkoh\"arent ($\Delta\varphi \approx 3\pi/4$)
+			& $0{,}146$ & $0{,}5$ & $0{,}29$ / $1{,}0$ \\
+			M5 & Inkoh\"arent (Referenz)
+			& $0{,}5$ & $0{,}5$ & $1{,}0$ / $1{,}0$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Die RFT sagt: Das Signalmuster folgt $\cos^2(\Delta\varphi/2)$
+	\"uber M1--M5. Das Standardmodell sagt: Alle f\"unf Messungen
+	ergeben das gleiche Signal.
+	
+	\subsubsection{Signifikanz und Ressourcen.}
+	
+	Bei $\Phi = 10^{11}\;\gamma$/s und 4~h Messzeit pro Punkt
+	betr\"agt die erwartete Signifikanz der Differenz
+	$> 50\,000\,\sigma$. Gesamte Strahlzeit: ${\sim}30$~h,
+	Kosten: ${\sim}50\,000$~EUR.
+	
+	\subsubsection{Zusammenfassung.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Experiment~I: Am-241 an ELI-NP.}
+		\label{tab:exp_am241}
+		\begin{tabular}{ll}
+			\hline
+			\textbf{Aspekt} & \textbf{Wert} \\
+			\hline
+			Target & 100~mg ${}^{241}$Am \\
+			Einrichtung & ELI-NP VEGA
+			(M\u{a}gurele, Rum\"anien) \\
+			$E_\gamma$ & 14{,}0~MeV (GDR-Zentroid) \\
+			Vorhersage RFT & Signal$_{\mathrm{koh}}$ /
+			Signal$_{\mathrm{ink}}$ $= 2{,}0$ \\
+			Vorhersage SM & Signal$_{\mathrm{koh}}$ /
+			Signal$_{\mathrm{ink}}$ $= 1{,}0$ \\
+			Signifikanz & $> 50\,000\,\sigma$ \\
+			Freie Parameter & $0$ \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{Experiment~II: ${}^{87}$Rb-BEC in harmonischer
+		Falle (Quantenmechanik)}
+	\label{sec:exp_rb87}
+	
+	\subsubsection{Vorhersage.}
+	
+	Die RFT-R\"uckkopplung im Schr\"odinger-Sektor moduliert
+	die Fallenpotentialst\"arke \"uber
+	$\varepsilon(\Delta\varphi(t)) \cdot V$ und erzeugt eine
+	Schwerpunktsverschiebung:
+	\begin{equation}
+		|\Delta\langle x\rangle|_{\mathrm{SI}}
+		= C_x \cdot \lambda \cdot \ell
+		\approx 2{,}0 \cdot \lambda\;\mu\mathrm{m}
+		\label{eq:dx_rft}
+	\end{equation}
+	wobei $C_x \approx 4{,}9$ der numerisch bestimmte
+	Pr\"afaktor ist und $\ell \approx 0{,}41\;\mu$m die
+	L\"angeneinheit f\"ur $\omega = 2\pi \times 100$~Hz.
+	Die Standard-Quantenmechanik sagt:
+	$\Delta\langle x\rangle = 0$. Der Parameter~$\lambda$
+	ist der einzige freie Parameter.
+	
+	\subsubsection{System.}
+	
+	Ultrakalte ${}^{87}$Rb-Atome in einer harmonischen Falle
+	($\omega = 2\pi \times 100$~Hz, $T < 200$~nK,
+	$N \sim 10^5$~Atome). Die SI-Kalibrierung erfolgt \"uber
+	$\ell = \sqrt[4]{V_{\mathrm{strength}}} \cdot
+	\sqrt{\hbar/(m\omega)} = 0{,}41\;\mu$m und
+	$\tau = \sqrt{V_{\mathrm{strength}}} / \omega
+	= 0{,}225$~ms.
+	Die Konsistenz wird \"uber sechs unabh\"angige
+	Relationen verifiziert
+	($\hbar = m \cdot \ell^2 / \tau$ etc.).
+	
+	\subsubsection{St\"orungstheorie.}
+	
+	Numerisch verifiziert \"uber $\lambda$-Scan
+	($10^{-4}$\,\ldots\,$5$):
+	$1 - F \sim \lambda^{2{,}00}$,
+	$|\Delta\langle O\rangle| \sim \lambda^{1{,}00}$.
+	Die analytische Vorhersage 1.\ Ordnung stimmt mit der
+	Numerik bis auf einen relativen Fehler von
+	$1{,}3 \times 10^{-4}$ \"uberein.
+	
+	\subsubsection{Kohn-Theorem und Signalunterscheidung.}
+	
+	In einer rein harmonischen Falle gilt das Kohn-Theorem:
+	Die Gross-Pitaevskii-Wechselwirkung ($g|\psi|^2\psi$)
+	verschiebt den Schwerpunkt $\langle x\rangle$ nicht
+	(Kohn-gesch\"utzt). Die RFT-R\"uckkopplung bricht die
+	Kohn-Bedingung durch zeitabh\"angige Modulierung
+	$\varepsilon(\Delta\varphi(t)) \cdot V$ und erzeugt
+	ein konzeptuell verschiedenes Signal:
+	$|\Delta\langle x\rangle| = C_x \cdot \lambda \cdot
+	\ell \neq 0$.
+	
+	\subsubsection{Sensitivit\"at.}
+	
+	$\lambda \gtrsim 0{,}05$ nach 100~Wiederholungen,
+	$\lambda \gtrsim 0{,}005$ nach $10\,000$~Wiederholungen
+	(bei $\omega = 2\pi \times 100$~Hz, r\"aumliche
+	Aufl\"osung~${\sim}1\;\mu$m).
+	
+	\subsubsection{Zusammenfassung.}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Experiment~II:
+			${}^{87}$Rb-BEC in harmonischer Falle.}
+		\label{tab:exp_rb87}
+		\begin{tabular}{ll}
+			\hline
+			\textbf{Aspekt} & \textbf{Wert} \\
+			\hline
+			System & ${}^{87}$Rb-BEC,
+			$\omega = 2\pi \times 100$~Hz \\
+			Messgr\"o\ss{}e &
+			$|\Delta\langle x\rangle|$ \\
+			Vorhersage RFT &
+			$2{,}0 \cdot \lambda\;\mu$m \\
+			Vorhersage QM & $0$ \\
+			Freie Parameter & $1$ ($\lambda$) \\
+			Sensitivit\"at &
+			$\lambda \gtrsim 0{,}05$ (100~Schuss) \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{Vergleich beider Experimente}
+	\label{sec:exp_vergleich}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Gegen\"uberstellung der beiden
+			Experimentalvorschl\"age.}
+		\label{tab:exp_comparison}
+		\begin{tabular}{lll}
+			\hline
+			& \textbf{Am-241 (Kernphysik)}
+			& \textbf{${}^{87}$Rb-BEC (QM)} \\
+			\hline
+			Dom\"ane & Kernphysik (GDR, 14~MeV)
+			& QM ($\mu$eV) \\
+			Energieskala & $10^7$~eV
+			& $10^{-12}$~eV \\
+			Messgr\"o\ss{}e
+			& Signal$_{\mathrm{koh}}$ /
+			Signal$_{\mathrm{ink}}$
+			& $\Delta\langle x\rangle$ \\
+			RFT-Vorhersage & $2{,}0$ (exakt)
+			& $2{,}0 \cdot \lambda\;\mu$m \\
+			SM-Vorhersage & $1{,}0$
+			& $0$ \\
+			Freie Parameter & $0$
+			& $1$ ($\lambda$) \\
+			Getestete Gr\"o\ss{}e
+			& $\eta(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
+			& $\varepsilon(\Delta\varphi(t))$ dynamisch \\
+			Testtyp & Ja/Nein (Verh\"altnis)
+			& Kontinuierlich ($\lambda$-Scan) \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	Beide Experimente testen denselben Kern der RFT -- die
+	Kopplungsfunktion $\cos^2(\Delta\varphi/2)$ -- \"uber
+	19~Gr\"o\ss{}enordnungen in der Energie
+	($10^{-12}$~eV bis $10^7$~eV). Sie sind unabh\"angig
+	voneinander falsifizierbar: Das Am-241-Experiment ist ein
+	parameterfreier Ja/Nein-Test, w\"ahrend das
+	${}^{87}$Rb-Experiment einen kontinuierlichen
+	$\lambda$-Scan erm\"oglicht. Die detaillierten
+	Experimentbeschreibungen sind unter~\cite{rftrepo}
+	dokumentiert.
+	
+	
+	%% ============================================================
+	\section{Offene Fragen und Ausblick}
+	%% ============================================================
+	
+	\begin{enumerate}
+		\item \textbf{Bestimmung von $\varepsilon$:}
+		Ab-initio-Herleitung aus Systemgeometrie.
+		
+		\item \textbf{Resonanzreaktor:}
+		Parameterstudie $d$ und $k$ f\"ur $Q > 1$.
+		
+		\item \textbf{CMB:}
+		Voller $\ell$-Bereich mit
+		\textsc{camb}/\textsc{class}.
+		
+		\item \textbf{Nichtlineare S\"attigung:}
+		$\lambda\varepsilon^4$- und
+		$\alpha R\varepsilon^2$-Terme.
+		
+		\item \textbf{$\hat{H}_{\mathrm{res}}$:}
+		Resonanz-Hamiltonoperator~(\ref{eq:h_res})
+		f\"ur spezifische Systeme konstruieren.
+		
+		\item \textbf{Weitere Dom\"anen:}
+		Akustik, Biologie, Netzwerktheorie.
+	\end{enumerate}
+	
+	
+	%% ============================================================
+	\section{Schlussfolgerung}
+	%% ============================================================
+	
+	Die Resonanzfeldtheorie formuliert ein axiomatisches
+	Rahmenwerk, das Schwingungskopplung als universelles
+	Organisationsprinzip beschreibt. Die Grundformel
+	$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot
+	\hbar \cdot f$ ist dimensionskonsistent, enth\"alt die
+	Planck-Relation als Spezialfall und wird an vier
+	unabh\"angigen Dom\"anen empirisch validiert.
+	
+	\textbf{Teilchenphysik:}
+	$1\,500\,000$~Monte-Carlo-Simulationen detektieren
+	f\"unf Resonanzen mit emp.\ $p = 0$, stabil \"uber
+	drei Bandbreiten und zehn Seeds (Axiom~3, 7).
+	
+	\textbf{Kosmologie:}
+	$1\,530$~FLRW-Simulationen zeigen
+	$\eta \approx \cos^2(\Delta\varphi/2)$ mit
+	$\Delta d_\eta = 0{,}0063 \pm 0{,}0010$ zwischen
+	Planck und SH0ES ($>6\sigma$),
+	$\Delta\chi^2 = +16$ (Axiom~1, 3, 4, 5, 7).
+	
+	\textbf{Nukleartechnologie:}
+	Resonanzreaktor-Simulation mit $\kappa = 1$ (kein
+	freier Parameter), GDR-basierten Frequenzen und
+	Spaltungs-Break-even $Q \approx 1{,}0$.
+	Falsifizierbare Vorhersage:
+	$\sigma_{\mathrm{coh}}
+	> \sigma_{\mathrm{incoh}}$ (Axiom~1, 3, 4).
+	
+	\textbf{Klassische Mechanik / Quantenmechanik:}
+	Doppelpendel-Simulation best\"atigt
+	$\varepsilon(\theta_2-\theta_1) = \cos^2(\Delta\theta/2)$
+	dynamisch. Schr\"odinger-Simulation leitet die
+	Schr\"odinger-Gleichung aus Axiom~4 ab mit Fidelity~$= 1{,}0$
+	(alle~4 Szenarien), St\"orungstheorie best\"atigt
+	$1-F \sim \lambda^2$, und liefert eine falsifizierbare
+	Vorhersage f\"ur ${}^{87}$Rb (Axiom~1--7).
+	Warpantriebs-Simulation: erste Warpblase mit positiver
+	Energiedichte ($E^- = 0$), Vorzeichenwechsel der
+	Zustandsgleichung~$w$ \"uber Phasensteuerung (Axiom~4, 5).
+	
+	Die Identit\"at $\varepsilon = \eta$
+	(Gl.~\ref{eq:eps_eta_identity}) verbindet den
+	theoretischen Operator mit der messbaren Observable
+	und eliminiert den letzten freien Parameter.
+	
+	F\"ur wissenschaftliche Anerkennung als physikalische
+	Theorie fehlen: experimentelle Best\"atigung der
+	Vorhersagen aus Abschnitt~\ref{sec:experimente}
+	(Am-241-Phasentest und ${}^{87}$Rb-BEC-Schwerpunktsverschiebung);
+	CMB-Vergleich mit vollem
+	$\ell$-Bereich und Boltzmann-Solver.
+	Die RFT ist damit aus zwei unabh\"angigen Dom\"anen
+	-- Kernphysik ($10^7$~eV) und Quantenmechanik
+	($10^{-12}$~eV) -- experimentell testbar.
+	
+	Alle Herleitungen, Quellcodes, Simulationen und Daten
+	sind vollst\"andig offen verf\"ugbar.
+	
+	
+	\section*{Code- und Datenverf\"ugbarkeit}
+	
+	S\"amtliche Quellcodes, Datens\"atze und
+	Simulationsskripte stehen unter
+	\url{https://github.com/DominicReneSchu/RFT}
+	zur Verf\"ugung.
+	
+	\medskip
+	\noindent
+	\qrcode[height=1.5cm]{https://github.com/DominicReneSchu/RFT}
+	\hfill
+	\begin{minipage}[b]{0.7\linewidth}
+		\small QR-Code f\"ur direkten Zugang
+		zum Repository.
+	\end{minipage}
+	
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{planck1901}
+		Planck M 1901 \textit{Annalen der Physik}
+		\textbf{4} 553
+		
+		\bibitem{einstein1905}
+		Einstein A 1905 \textit{Annalen der Physik}
+		\textbf{17} 891
+		
+		\bibitem{bohr1913}
+		Bohr N 1913
+		\textit{Philosophical Magazine}
+		\textbf{26} 1
+		
+		\bibitem{kuramoto1984}
+		Kuramoto Y 1984 \textit{Chemical Oscillations,
+			Waves, and Turbulence}
+		(Berlin: Springer)
+		
+		\bibitem{cms_opendata}
+		CMS Collaboration 2016
+		\textit{CMS Open Data Portal},
+		\url{https://opendata.cern.ch}
+		
+		\bibitem{rftrepo}
+		Schu D-R 2025/2026
+		\textit{Resonanzfeldtheorie: Axiomatik,
+			Quellcode und empirische Validierung},
+		\url{https://github.com/DominicReneSchu/RFT}
+		
+		\bibitem{planck2018v}
+		Planck Collaboration 2020
+		\textit{Astron.\ Astrophys.}\
+		\textbf{641} A5
+		(arXiv:1907.12875)
+		
+		\bibitem{planck2018vi}
+		Planck Collaboration 2020
+		\textit{Astron.\ Astrophys.}\
+		\textbf{641} A6
+		(arXiv:1807.06209)
+		
+		\bibitem{riess2022}
+		Riess A G et al 2022
+		\textit{Astrophys.\ J.\ Lett.}\
+		\textbf{934} L7
+		(arXiv:2112.04510)
+		
+		\bibitem{gdr_atlas}
+		Varlamov V V et al 1999
+		\textit{Atlas of Giant Dipole Resonances},
+		IAEA-TECDOC-1034
+		
+		\bibitem{ishkhanov2021}
+		Ishkhanov B S and Kapitonov I M 2021
+		\textit{Physics-Uspekhi} \textbf{64} 141
+		
+		\bibitem{ripl3}
+		Capote R et al 2009
+		\textit{Nuclear Data Sheets}
+		\textbf{110} 3107
+		(RIPL-3: Reference Input Parameter Library)
+		
+		\bibitem{berman1975}
+		Berman B L and Fultz S C 1975
+		\textit{Rev.\ Mod.\ Phys.}\
+		\textbf{47} 713
+		
+		\bibitem{dietrich1988}
+		Dietrich S S and Berman B L 1988
+		\textit{Atomic Data and Nuclear Data Tables}
+		\textbf{38} 199
+		
+		\bibitem{elinp2024}
+		ELI-NP Collaboration 2024
+		\textit{Phys.\ Rev.\ Accel.\ Beams}\
+		\textbf{27} 021601
+		
+	\end{thebibliography}
+	
+\end{document}

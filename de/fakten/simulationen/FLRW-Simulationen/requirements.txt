@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+pytest
+
+# Optional (GPU-Beschleunigung, nur mit CUDA):
+# cupy
+# Optional (CPU-Parallelisierung):
+# numba
