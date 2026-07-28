@@ -215,7 +215,7 @@ als Richtungskomponente der Kopplungsenergie:
 
 Dies ist analog zur Beziehung zwischen Arbeit und Kraftvektor: 
 
-$W = \vec{F} \cdot \vec{s}$
+$$W = \vec{F} \cdot \vec{s}$$
 
 gibt nur den Betrag — der Kraftvektor $\vec{F}$ selbst hat Richtung. A5 behauptet,
 dass die Energie im Resonanzfeld ebenso eine Richtungseigenschaft besitzt wie die
