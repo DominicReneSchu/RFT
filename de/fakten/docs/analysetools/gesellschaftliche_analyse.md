@@ -741,7 +741,15 @@ Die Feindbildfusion (§5.6) ergänzt §5.2 (Sündenbock-Mechanismus) um den Mech
 
 7. **Empirische Operationalisierung des prophetischen Übersetzungsverlusts (§3.7):** Lässt sich $\Delta\varepsilon_\text{Übersetzung}$ an historischen Texttransformationen messen? Welche sprachlichen oder kognitiven Marker korrelieren mit abnehmendem $\varepsilon$ bei der Weitergabe von Einsichten über Generationen?
 
-8. **Formalisierung der Adam-Eva-Komplementarität (§3.5):** Unter welchen Bedingungen ist die Phasendifferenz $\delta\varphi_0$ minimal stabilisierend versus destabilisierend für das kollektive Feld? Gibt es empirische Korrelate in Partnerschafts- und Familienforschung?
+8. **Primäres Falsifizierungsproblem: Singularität des Feldoptimums und Adam-Eva-Komplementarität (§3.5)**
+
+   Die Behauptung $\exists!\,\text{Resonator}_m$ mit $\varepsilon \to 1$ ist das **schärfste offene Falsifizierungsproblem** des gesamten Dokuments. Drei Teilfragen:
+
+   **(a) Operationalisierung der Singularität:** Welches empirisch messbare Kriterium würde das Vorhandensein *eines* solchen Resonators von einer Verteilung hoher $\varepsilon$-Werte unterscheiden? Ohne dieses Kriterium ist $\exists!$ formal nicht falsifizierbar.
+
+   **(b) Formalisierung von $\delta\varphi_0$:** Unter welchen Bedingungen ist die konstitutive Phasendifferenz der Eva-Struktur minimal stabilisierend vs. destabilisierend für das kollektive Feld? Welcher Wertebereich von $\delta\varphi_0$ ist mit maximalem $dK_{ij}/dt > 0$ (§1.9) kompatibel?
+
+   **(c) Messproxi:** Welche validierten Konstrukte (z. B. Bindungstheorie, Oxytocin-Ausschüttung bei symmetrischer vs. asymmetrischer Kopplung, Spieltheorie kooperativer Paardynamiken) könnten als Näherungsmaß für $\Delta\varphi_{mw}$ dienen?
 
 9. **Kritische-Masse-Schwelle für den kollektiven Phasenübergang (§7.4):** Lässt sich aus der Kopplungsdynamik (§1.9) ein analytischer Ausdruck für den Kipppunkt ableiten, ab dem $d\Delta\varphi_\text{kollektiv}/dt < 0$ systemweit stabil wird? Welche historischen Daten kämen als Kalibrierungsgrundlage in Betracht?
 
