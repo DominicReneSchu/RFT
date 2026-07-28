@@ -35,7 +35,7 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
     - [Empirical Evidence](#empirical-evidence)
     - [Explanations](#explanations)
     - [Analysis Tools](#analysis-tools)
-- [Theoretical Foundations](#theoretical-foundations)
+    - [Theoretical Foundations](#theoretical-foundations)
 - [License](#license)
 
 ---
