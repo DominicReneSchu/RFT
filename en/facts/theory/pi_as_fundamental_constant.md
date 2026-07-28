@@ -88,6 +88,7 @@ energy of a fully coherent resonance state therefore normalises naturally to π.
 ### 2.2 Consequence for A4
 
 Axiom A4 states:
+
 $$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$$
 
 The factor π in this equation is not an arbitrarily chosen numerical constant.
@@ -125,14 +126,18 @@ property. This convention is, however, not entirely internally consistent, as
 three separate structures demonstrate:
 
 **Mechanics:** Work is defined as
+
 $$E = \vec{F} \cdot \vec{s}$$
+
 the scalar product of two vectors. By definition this yields a scalar — but only
 because the directional information is fully collapsed by the projection. The
 deeper question is: why does the directional information collapse completely? Is
 this a fact of nature or a modelling choice?
 
 **Torque:** Torque is defined as
+
 $$\vec{M} = \vec{r} \times \vec{F}$$
+
 with unit N·m = J (joule) — identical to the unit of energy. Yet torque is a
 **vector**, not a scalar. Standard physics assigns torque and energy the same unit
 while treating them as different types of quantity: one vectorial, the other
@@ -186,6 +191,7 @@ the conceptual inconsistency described above.
 ### 4.1 A5 and its Current Justification
 
 Axiom A5 states:
+
 $$\vec{E} = E_{\text{eff}} \cdot \hat{e}(\Delta\varphi, \nabla\Phi)$$
 
 In the current presentation, A5 is not derived from A1–A4. It is an independent
