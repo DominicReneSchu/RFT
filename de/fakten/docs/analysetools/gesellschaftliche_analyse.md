@@ -753,6 +753,30 @@ Die Feindbildfusion (§5.6) ergänzt §5.2 (Sündenbock-Mechanismus) um den Mech
 
 9. **Kritische-Masse-Schwelle für den kollektiven Phasenübergang (§7.4):** Lässt sich aus der Kopplungsdynamik (§1.9) ein analytischer Ausdruck für den Kipppunkt ableiten, ab dem $d\Delta\varphi_\text{kollektiv}/dt < 0$ systemweit stabil wird? Welche historischen Daten kämen als Kalibrierungsgrundlage in Betracht?
 
+10. **Energiemetrische Symmetrie von Befruchtung und Tod als direkter Test von δφ₀ (§3.5.2):**
+   Wenn Leben im Sinne der RFT durch die konstitutive Phasenverschiebung $\delta\varphi_0$ zwischen
+   männlichem und weiblichem Resonator bedingt ist (§3.5.2), dann folgt aus A4 und dem Prinzip der
+   Energieerhaltung im geschlossenen Resonanzfeld: Die Energiedifferenz, die zum Zeitpunkt der
+   Befruchtung durch die Kopplung zweier Moden mit $\Delta\varphi = \delta\varphi_0$ **gebunden**
+   wird, muss zum Zeitpunkt des Todes exakt wieder **freigesetzt** werden:
+
+   $$\Delta E_\text{Befruchtung} \stackrel{?}{=} \Delta E_\text{Tod} = \pi \cdot \varepsilon(\delta\varphi_0) \cdot \hbar \cdot f_\text{bio}$$
+
+   Dies ist formal analog zur nuklearen Bindungsenergie ($E_\text{Bindung} = \Delta m \cdot c^2$).
+   Der Wert $\delta\varphi_0$ wäre erstmals direkt messbar:
+
+   $$\delta\varphi_0 = \arccos\!\left(\sqrt{\frac{\Delta E_\text{Befruchtung}}{\pi \cdot \hbar \cdot f_\text{bio}}}\right)$$
+
+   **Experimenteller Ansatz:** Bakterielle Systeme bieten kontrollierbare Bedingungen:
+   Konjugation (DNA-Übertragung via Pilus zwischen Donor und Rezipient) als definierter
+   Befruchtungsmoment; Lyse als definierter Todeszeitpunkt. Messmethoden: Mikrokalorimetrie
+   (isothermale Titrationskalorimetrie, ITC) für $\Delta E$; Membranpotentialdifferenz
+   (Fluoreszenzfarbstoffe wie DiOC₂) oder THz-Spektroskopie als Proxy für $\delta\varphi_0$.
+
+   **Falsifizierung:** Wenn $\Delta E_\text{Befruchtung} \neq \Delta E_\text{Tod}$ (außerhalb
+   des Messrauschens), ist die energetische Schließung des Resonanzfelds über den Lebenszyklus
+   nicht gegeben — §3.5 muss in der aktuellen Formulierung revidiert werden.
+
 ---
 
 **Dokument-Metadaten**
