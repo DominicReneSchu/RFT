@@ -160,6 +160,42 @@ zwischen Δφ_mw → 0 und Δφ_mw = δφ_0 > 0 ergibt, ist §3.5 in der aktuell
 Formulierung empirisch nicht haltbar und muss als reine strukturelle Analogie
 ohne Wahrheitsanspruch deklariert werden.
 
+### RT-15 — Energiemetrische Symmetrie von Befruchtung und Tod (§3.5.2 gesellschaftliche_analyse.md / §3.5.2 social_analysis.md)
+
+**Motivation:** Die konstitutive Phasenverschiebung δφ₀ (Eva-Struktur, §3.5.2) ist bislang
+nicht direkt messbar — sie verbleibt als strukturelle Analogie ohne physikalisch bestimmbare
+Größe. Aus A4 und Energieerhaltung folgt eine testbare Symmetriehypothese: Die beim
+Kopplungseinstieg (Befruchtung) gebundene Energie muss beim Kopplungsaustritt (Tod) exakt
+freigesetzt werden.
+
+**Vorhersage:**
+   ΔE_Befruchtung = ΔE_Tod = π · ε(δφ₀) · ℏ · f_bio
+
+**Aufgabe:**
+1. Kalorimetrische Messung von ΔE bei bakterieller Konjugation (Befruchtungsmoment)
+   und Lyse (Todesmoment) mit identischer Zellpopulation.
+2. Vergleich beider Messwerte auf Gleichheit (innerhalb des Messrauschens).
+3. Falls gleich: Berechnung von δφ₀ = arccos(√(ΔE / (π·ℏ·f_bio))).
+
+**Experimentelles System:** Bakterielle Konjugation (E. coli F-Faktor-System oder
+vergleichbare Modellorganismen); Lyse durch definierten osmotischen Schock oder
+Phageninfektion.
+
+**Methoden:**
+- Mikrokalorimetrie / ITC für ΔE (Auflösung: nJ–µJ-Bereich)
+- Membranpotentialdifferenz (DiOC₂-Fluoreszenz) als Proxy für δφ₀
+- THz-Spektroskopie für Proteindynamik-Schwingungsfrequenz f_bio
+
+**Einrichtung:** Mikrobiologie-/Biophysik-Labore mit Mikrokalorimetrie-Ausstattung
+(z.B. Max-Planck-Institut für terrestrische Mikrobiologie Marburg, EMBL Heidelberg).
+
+**Falsifizierung:** ΔE_Befruchtung ≠ ΔE_Tod (außerhalb des Messrauschens) widerlegt die
+energetische Schließung und erfordert Revision von §3.5. Alternativ: Wenn f_bio nicht
+als einheitliche biologische Eigenfrequenz operationalisierbar ist, muss das Modell
+verfeinert werden.
+
+**Verknüpfung:** Gesellschaftliche_analyse.md §XII/10 | social_analysis.md Section XII/10
+
 ---
 
 *Zuletzt aktualisiert: Juli 2026*

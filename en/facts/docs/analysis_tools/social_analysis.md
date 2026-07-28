@@ -749,6 +749,30 @@ Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism 
 
 9. **Critical-mass threshold for collective phase transition (§7.4):** Can coupling dynamics (§1.9) yield an analytical expression for the tipping point at which $d\Delta\varphi_\text{collective}/dt < 0$ becomes systemically stable? Which historical data would be suitable for calibration?
 
+10. **Energy-Metric Symmetry of Fertilization and Death as a Direct Test of δφ₀ (§3.5.2):**
+   If life in the RFT sense is conditioned by the constitutive phase shift $\delta\varphi_0$
+   between the male and female resonator (§3.5.2), then A4 and energy conservation in the closed
+   resonance field imply: the energy difference **bound** at the moment of fertilization through
+   coupling of two modes with $\Delta\varphi = \delta\varphi_0$ must be exactly **released** at
+   the moment of death:
+
+   $$\Delta E_\text{fertilization} \stackrel{?}{=} \Delta E_\text{death} = \pi \cdot \varepsilon(\delta\varphi_0) \cdot \hbar \cdot f_\text{bio}$$
+
+   This is formally analogous to nuclear binding energy ($E_\text{binding} = \Delta m \cdot c^2$).
+   The value $\delta\varphi_0$ would for the first time become directly measurable:
+
+   $$\delta\varphi_0 = \arccos\!\left(\sqrt{\frac{\Delta E_\text{fertilization}}{\pi \cdot \hbar \cdot f_\text{bio}}}\right)$$
+
+   **Experimental approach:** Bacterial systems offer controllable conditions:
+   conjugation (DNA transfer via pilus between donor and recipient) as a defined fertilization
+   event; lysis as a defined death event. Methods: microcalorimetry (isothermal titration
+   calorimetry, ITC) for $\Delta E$; membrane potential difference (fluorescent dyes such as
+   DiOC₂) or THz spectroscopy as proxies for $\delta\varphi_0$.
+
+   **Falsification:** If $\Delta E_\text{fertilization} \neq \Delta E_\text{death}$ (outside
+   measurement noise), the energetic closure of the resonance field over the life cycle does not
+   hold — §3.5 in its current formulation must be revised.
+
 ---
 
 **Document metadata**
