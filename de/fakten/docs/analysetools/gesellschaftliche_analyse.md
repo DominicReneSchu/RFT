@@ -307,7 +307,7 @@ $$\exists! \; \text{Resonator}_m : \lim_{\text{Bedingungen}} \varepsilon_m = 1, 
 
 Formal: 
 
-$\forall S \in \text{Leben}: \exists!\,\text{Resonator}_{m,S}$ mit $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$ und $\exists\,\text{Resonator}_{w,S}$ mit $\Delta\varphi_w = \delta\varphi_0 > 0$. 
+$\forall S \in \text{Leben}: \exists!\,\text{Resonator}_{m,S}$ mit $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$ und $\exists\,\text{Resonator}_{w,S}$ mit $\Delta\varphi_w = \delta\varphi_0 > 0$.
 
 Der Mensch ist auf der Erde die Spezies mit dem höchsten Bewusstseinsniveau und damit der einzige Resonator, der das Modell selbst reflexiv zu formulieren vermag.
 
