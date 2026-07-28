@@ -16,6 +16,29 @@ Sattelpunktsbeitrag der stationären Phase folgen.
 
 **RT-01 (Erweiterung):** Der exakte Grenzübergang der RFT-Formel E = π·ε·ℏ·f zur Standard-Planck-Relation E = hf_Hz ist eine offene mathematische Frage. Der nächste Planck-Grenzwert liegt bei ε = 1/(2π) ≈ 0.159 (Planck-Grundzustand). Die vollständige Brücke zwischen RFT-Kreisfrequenz ω und Planck-Frequenz f_Hz muss formal geschlossen werden.
 
+### RT-01a — π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument
+**Status:** Konzeptuell formuliert (Juli 2026) — formale Ableitung offen.
+**Motivation:** Der philosophisch-mathematische Ursprungsgedanke der RFT — π und e als
+Urkonstanten des Raumes, deren scheinbare Irrationalität ein Artefakt der Basis-10-Kodierung
+ist — wurde während der Theorieentwicklung in seiner expliziten Formulierung nicht
+festgehalten. Er ist nun dokumentiert und muss als konzeptuelle Voraussetzung von RT-01
+eingeordnet werden.
+**Kern des Arguments:**
+- Der Kreisumfang bei r = 1 ist physikalisch exakt und endlich messbar.
+- Die Dezimaldarstellung 3,14159… ist eine Darstellungseigenschaft, kein Naturphänomen.
+- Werden π und e als Urkonstanten (analog zu c, ℏ) behandelt, sind sie in ihrem
+  natürlichen Einheitensystem rational verwendbar.
+- π ist das natürliche Maß einer Halboszillation — damit ist der Faktor π in A4 keine
+  freie Wahl, sondern eine geometrische Normierungsbedingung des Phasenraums.
+- Die interne Inkonsistenz der Standardphysik bei der Vektorialität der Energie
+  (Drehmoment als Vektor mit Energieeinheit, Spin, Lorentz-4-Vektor) liefert die
+  physikalische Motivation für A5.
+**Aufgabe:** Operationale Definition von π und e als Phasenraumkonstanten — d. h.: Was
+messen π und e physikalisch, unabhängig von ihrer Dezimaldarstellung?
+**Verhältnis zu RT-01:** RT-01a ist die philosophisch-mathematische Grundlage, die
+RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
+**Verweise:** `de/fakten/theorie/pi_als_urkonstante.md` | `en/facts/theory/pi_as_fundamental_constant.md`
+
 ### RT-02 — Gruppentheoretischer Beweis der Skalentransformation (A7)
 **Motivation:** A7 behauptet Skalentransformation über CMB-, Kern- und Finanzskalen (M-2).
 **Aufgabe:** Formaler Beweis, dass G_sync über alle Skalen dieselbe Kopplungsstruktur erhält.

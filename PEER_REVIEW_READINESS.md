@@ -126,10 +126,17 @@ gegen ein echtes Null-Modell.**
 | G3 | CMB-Δχ² gegen Spielzeugmodell, nicht ΛCDM | **Schwerwiegend** | RT-05 |
 | G4 | Keine einzige neue Vorhersage experimentell getestet | **Kritisch** | RT-12, RT-13 |
 | G5 | λ (Rb) nicht unabhängig bestimmt | **Kritisch** | RT-03 |
-| G6 | Kein Wirkungsprinzip für A4 | Moderat | RT-01 |
+| G6 | Kein Wirkungsprinzip für A4 | **Konzeptuelles Fundament formuliert — formale Ableitung über Wirkungsintegral offen (RT-01)** | RT-01, RT-01a |
 | G7 | A7 ohne gruppentheoretischen Beweis | Moderat | RT-02 |
 | G8 | σ_GDR inkonsistent zwischen Dokumenten (Faktor 2,8) | Moderat | RT-06 |
 | G9 | ResoTrade-Backtest nicht reproduzierbar | Gering | RT-10 |
+
+**Hinweis zu G6 und G1 (Juli 2026):** Der philosophisch-mathematische Ursprungsgedanke der
+RFT — π als geometrische Urkonstante des Phasenraums, die Vektorialität der Energie als
+konzeptuelle Motivation für A5 — ist nun explizit dokumentiert
+(`de/fakten/theorie/pi_als_urkonstante.md` / `en/facts/theory/pi_as_fundamental_constant.md`).
+A4 und A5 sind damit konzeptuell motiviert; die formale Herleitung über ein Wirkungsintegral
+(RT-01) und die unabhängige Frequenzdefinition (G1) bleiben offene Aufgaben.
 
 ---
 
@@ -157,7 +164,8 @@ Trotz der Lücken enthält die RFT substanzielle Elemente:
 
 | Aufgabe gelöst | Lücke geschlossen | Effekt auf Peer-Review |
 |----------------|-------------------|----------------------|
-| RT-01 (π-Herleitung) | G1 teilweise, G6 | Formel erhält physikalische Basis |
+| RT-01a (Ursprungsgedanke) | G6 konzeptuell | A4/A5 erhalten explizite philosophisch-mathematische Motivation |
+| RT-01 (π-Herleitung) | G1 teilweise, G6 vollständig | Formel erhält physikalische Basis |
 | RT-03 + RT-07 | G2, G5 | Zentraler Zirkelschluss aufgelöst |
 | RT-05 (CAMB/CLASS) | G3 | CMB-Aussage wird belastbar |
 | RT-09 (Unsicherheitsbudget) | G4 teilweise | Am-241-Vorhersage wird einreichbar |
