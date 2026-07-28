@@ -35,7 +35,7 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
     - [Empirische Nachweise](#empirische-nachweise)
     - [Erklärungen](#erklärungen)
     - [Analysetools](#analysetools)
-- [Theoretische Grundlagen](#theoretische-grundlagen)
+    - [Theoretische Grundlagen](#theoretische-grundlagen)
 - [Lizenz](#lizenz)
 
 ---
