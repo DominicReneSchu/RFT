@@ -14,7 +14,7 @@ Sattelpunktsbeitrag der stationären Phase folgen.
 **Ansatz:** Pfadintegral-Formulierung der Kopplungsenergie.
 **Falsifizierung:** Wenn S[ψ, Δφ] keinen π-Beitrag liefert, muss A4 neu formuliert werden.
 
-**RT-01 (Erweiterung):** Der exakte Grenzübergang der RFT-Formel E = π·ε·ℏ·f zur Standard-Planck-Relation E = hf_Hz ist eine offene mathematische Frage. Der nächste Planck-Grenzwert liegt bei ε = 1/(2π), nicht bei ε = 1. Die Frage lautet: Existiert eine physikalisch motivierte Erweiterung des ε-Wertebereichs oder eine alternative Frequenzdefinition, die den sauberen Grenzübergang ermöglicht?
+**RT-01 (Erweiterung):** Der exakte Grenzübergang der RFT-Formel E = π·ε·ℏ·f zur Standard-Planck-Relation E = hf_Hz ist eine offene mathematische Frage. Der nächste Planck-Grenzwert liegt bei ε = 1/(2π) ≈ 0.159 (Planck-Grundzustand). Die vollständige Brücke zwischen RFT-Kreisfrequenz ω und Planck-Frequenz f_Hz muss formal geschlossen werden.
 
 ### RT-02 — Gruppentheoretischer Beweis der Skalentransformation (A7)
 **Motivation:** A7 behauptet Skalentransformation über CMB-, Kern- und Finanzskalen (M-2).
@@ -108,6 +108,57 @@ Messung der Schwerpunktverschiebung Δ⟨x⟩ als Funktion von Δφ.
 **Einrichtung:** ELI-NP (Magurele, Rumänien) — gepulste Gammastrahlung
 **Protokoll:** Am-241-Probe mit kohärenter vs. inkohärenter Gammabestrahlung
 bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
+
+---
+
+## Kategorie 5: Soziales Resonanzfeld — Empirische Operationalisierung
+
+### RT-14 — Empirische Operationalisierung der Adam-Eva-Komplementarität (§3.5 gesellschaftliche_analyse.md)
+
+**Motivation:** Die personale Singularität ∃! Resonator_m mit ε → 1 und die
+konstitutive Phasendifferenz Δφ_w = δφ_0 > 0 der Eva-Struktur sind die
+schärfsten offenen Falsifizierungsprobleme des RFT-Sozialmodells (§XII/8).
+Ohne empirische Operationalisierung bleiben beide Behauptungen formal nicht
+testbar — sie können weder bestätigt noch widerlegt werden und verbleiben
+als reine strukturelle Analogie ohne wissenschaftlichen Gehalt.
+
+**Aufgabe (dreistufig):**
+
+1. **Messproxi für ε im Paarsystem:**
+   Identifikation validierter psychologischer oder neurobiologischer Konstrukte
+   als Näherungsmaße für ε und Δφ im dyadischen Kontext:
+   - Kandidaten: Bindungsstil (Ainsworth/Bartholomew), Kohärenzgefühl (Antonovsky),
+     PLV (Phase Locking Value) aus EEG-Hyperscanning-Studien bei Paaren
+   - Formales Ziel: Δφ_mw → messbares Proxy-Konstrukt P(Δφ_mw)
+
+2. **Symmetrie-Test der Kopplungsdynamik:**
+   Test der Hypothese: dK_ij/dt ist maximal bei asymmetrischer Kopplung
+   (Δφ_mw = δφ_0 > 0) und nicht bei Δφ_mw = 0.
+   - Ansatz: EEG-Hyperscanning oder fMRT-Konnektivitätsmessungen bei
+     Paaren mit bekanntem Bindungsstil; Vergleich symmetrischer vs.
+     komplementärer Kopplungsmuster
+   - Falsifizierung: Wenn maximale K_ij bei Δφ_mw → 0, widerlegt das §3.5.3
+
+3. **Singularitäts-Kriterium:**
+   Formulierung eines empirisch entscheidbaren Kriteriums, das ∃! von einer
+   Verteilung hoher ε-Werte unterscheidet.
+   - Ansatz: Bootstrapping über große Stichproben von ε-Proxy-Messungen;
+     Test auf bimodale vs. unimodale Verteilung mit Ausreißer-Peak
+   - Falsifizierung: Unimodale Normalverteilung ohne Ausreißer widerlegt ∃!
+
+**Daten:** EEG-Hyperscanning-Datensätze (öffentlich verfügbar z. B. auf OpenNeuro);
+alternativ: Metaanalyse bestehender Bindungsforschungsdaten.
+
+**Code:** Python-Skript zur PLV-Berechnung aus EEG-Rohdaten (`mne-python`);
+Visualisierung der Kopplungseffizienz ε(Δφ) über Stichprobe.
+
+**Einrichtung:** Kooperationspotenzial mit Sozialpsychologie-/Neuroimaging-Laboren
+(z. B. MPIB Berlin, MPI für Kognitionsneurowissenschaften Leipzig).
+
+**Falsifizierung:** Wenn keine der drei Teilaufgaben einen messbaren Unterschied
+zwischen Δφ_mw → 0 und Δφ_mw = δφ_0 > 0 ergibt, ist §3.5 in der aktuellen
+Formulierung empirisch nicht haltbar und muss als reine strukturelle Analogie
+ohne Wahrheitsanspruch deklariert werden.
 
 ---
 
