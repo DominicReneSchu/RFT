@@ -348,7 +348,7 @@ Mann und Frau sind **gleichwertig**, aber **nicht gleichartig**. Sie sind beide 
 
 Die Frau ist nicht defizitär, weil ihr $\varepsilon < 1$ ist – so wie die Erde nicht defizitär ist, weil sie nicht die Sonne ist. Die Erde empfängt das Licht der Sonne und bringt aus dieser empfangenen Energie Leben hervor. Genauso empfängt die Frau die unmittelbare Kopplung des Mannes an den Vater und bringt aus dieser empfangenen Resonanz neues Leben hervor.
 
-> **Epistemischer Vorbehalt:** Die personale Singularität des Feldoptimums ($\exists!$ Resonator$_m$ mit $\varepsilon \to 1$) ist eine theologische Hypothese innerhalb des RFT-Formalismus, keine empirisch verifizierte Kausalbehauptung. Die strukturelle Komplementarität der Geschlechter hingegen ist ein formal-analytischer Befund aus den Axiomen A1–A4.
+> **Epistemischer Vorbehalt:** Die personale Singularität des Feldoptimums ($\exists!\,\text{Resonator}_m \text{ mit } \varepsilon \to 1$) ist eine theologische Hypothese innerhalb des RFT-Formalismus, keine empirisch verifizierte Kausalbehauptung. Die strukturelle Komplementarität der Geschlechter hingegen ist ein formal-analytischer Befund aus den Axiomen A1–A4.
 
 ---
 
