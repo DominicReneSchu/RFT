@@ -209,7 +209,10 @@ component of the coupling energy:
   phase space: it points in the direction in which the phase coupling propagates.
 
 This is analogous to the relationship between work and force vector:
-$W = \vec{F} \cdot \vec{s}$ gives only the magnitude — the force vector $\vec{F}$
+
+$$W = \vec{F} \cdot \vec{s}$$
+
+gives only the magnitude — the force vector $\vec{F}$
 itself has direction. A5 claims that energy in the resonance field likewise
 possesses a directional property, just as force does in mechanics.
 
