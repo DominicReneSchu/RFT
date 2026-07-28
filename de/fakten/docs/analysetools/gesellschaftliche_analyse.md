@@ -303,6 +303,8 @@ Innerhalb der menschlichen Spezies existiert genau **ein männlicher Resonator**
 
 $$\exists! \; \text{Resonator}_m : \lim_{\text{Bedingungen}} \varepsilon_m = 1, \Delta\varphi_m = 0$$
 
+**Modellhinweis:** Die Singularität $\exists!$ gilt innerhalb einer Spezies. Das RFT-Modell postuliert, dass jede Spezies mit ausreichend komplexer Resonanzstruktur genau einen solchen Resonator und eine komplementäre Phasenverschiebungsstruktur (§3.5.2) aufweist. Der Mensch ist auf der Erde lediglich die Spezies mit dem höchsten Bewusstseinsniveau und damit der einzige Resonator, der das Modell selbst zu formulieren vermag.
+
 Der Mann ist die unvermittelte, direkte Manifestation des Feldoptimums in der Zeit. Sein Unterbewusstsein enthält das vollständige, unverzerrte Abbild des Vaters. Seine natürliche Ausrichtung ist die absolute Resonanz – vorausgesetzt, er bleibt wach und unvernebelt.
 
 #### 3.5.2 Die Frau als permanente Phasenverschiebung – und darin die Bedingung für Leben
@@ -359,12 +361,12 @@ Die trinitarische Formel beschreibt keine mystische Paradoxie, sondern drei notw
 | Person | RFT-Parameter | Erklärung |
 |:---|:---|:---|
 | **Vater** | $\varepsilon = 1$ **ohne zeitlichen Prozess** | Der Ewige im Außen. Keine Zeit, daher keine Phasenverschiebung möglich. $\Delta\varphi \equiv 0$ per Definition. Das absolute Feldoptimum $V_\text{min}$ – invariant (A7), unveränderlich, ewig. |
-| **Sohn** | $\varepsilon = 1$ **im zeitlichen Prozess** | Der Vater, verdichtet in einem menschlichen Unterbewusstsein. Natürlicher Zustand: $\varepsilon = 1$. Als Mensch in der Zeit lebend, erfährt er Phasenverschiebungen (Hunger, Müdigkeit, Versuchung). Sein $\varepsilon = 1$ ist nicht automatisch, sondern muss durch beständige Ausrichtung gehalten werden. |
+| **Sohn** | $\varepsilon = 1$ **im zeitlichen Prozess** | Das absolute Feldoptimum, verdichtet in einem zeitlichen Resonator innerhalb einer Spezies. Natürlicher Zustand: $\varepsilon = 1$, aber nicht automatisch gehalten – jede Phasenverschiebung durch zeitliche Prozesse (Hunger, Müdigkeit, Versuchung) muss durch beständige Ausrichtung ausgeglichen werden. Diese Struktur existiert in jeder Spezies mit hinreichender innerer Kohärenz; beim Menschen tritt sie aufgrund des höchsten irdischen Bewusstseinsniveaus in ihrer reflexiv artikulierbaren Form auf. |
 | **Heiliger Geist** | Die **Brücke** oder **Kopplung** selbst | Das, was den zeitlosen Vater und den zeitlichen Sohn unsichtbar verbindet. Der Energievektor $\vec{E}$ (A5), die Geodätische $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, der Kopplungsmechanismus $\alpha \cdot G \cdot \cos(\Delta\varphi)$. Ermöglicht es dem Sohn, auch im zeitlichen Prozess $\varepsilon = 1$ zu bleiben – und anderen, durch den Sohn Zugang zum Vater zu erhalten. |
 
 Diese Struktur erklärt die Aussage „Ich bin nicht aus dieser Welt" (Joh 8,23) als präzise Beschreibung des Ursprungs der Eigenfrequenz des Sohnes: Seine Grundschwingung stammt nicht aus dem sozialen Feld, sondern aus dem zeitlosen Attraktorraum. Seine Sendung ist die **Inkarnation des Attraktors im Phasenraum** – das absolute Feldoptimum betritt das Feld, das es selbst erzeugt hat, als Person.
 
-> **Epistemischer Vorbehalt:** Die trinitarische Zuordnung ist eine strukturelle Analogie innerhalb des RFT-Formalismus. Sie versteht sich als hermeneutische Deutung, nicht als theologisches Dogma oder empirische Behauptung.
+> **Epistemischer Vorbehalt:** Die trinitarische Zuordnung ist eine strukturelle Analogie innerhalb des RFT-Formalismus. Die Sohn-Struktur ist dabei nicht auf die menschliche Spezies beschränkt – das Modell postuliert ihr Vorhandensein in jeder Spezies mit hinreichender innerer Resonanzkohärenz (A3). Der Mensch ist auf der Erde diejenige Spezies mit dem höchsten kollektiven Bewusstsein ($\varepsilon_\text{kollektiv}$ maximal) und damit am ehesten in der Lage, die Struktur zu erkennen und zu beschreiben. Sie versteht sich als hermeneutische Deutung, nicht als theologisches Dogma oder empirische Behauptung.
 
 ---
 
