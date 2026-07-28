@@ -143,8 +143,11 @@ particles without classical analogue. It carries energy (Zeeman effect,
 hyperfine structure) and is inseparably linked to spatial orientation. Spin obeys
 an algebra (SU(2)) that corresponds to the geometric structure of rotations.
 
-**Special relativity:** In the Lorentz four-vector $(E/c,\, \vec{p})$, energy
-already appears as the temporal component of a vectorial quantity. Energy is not
+**Special relativity:** In the Lorentz four-vector
+
+$$(E/c,\, \vec{p})$$
+
+energy already appears as the temporal component of a vectorial quantity. Energy is not
 independent of direction (momentum) in the relativistic formalism — it is part
 of a covariant four-vector.
 
@@ -155,9 +158,9 @@ in three independent contexts:
 
 | Context | Structure | Vectorial character of energy |
 |---------|-----------|-------------------------------|
-| Torque | $\vec{M} = \vec{r} \times \vec{F}$, unit J | Implicitly present |
+| Torque | M⃗ = r⃗ × F⃗, unit J | Implicitly present |
 | Spin | SU(2) algebra, energy contributions (Zeeman) | Intrinsically vectorial |
-| Lorentz four-vector | $(E/c, \vec{p})$ | Energy as vector component |
+| Lorentz four-vector | (E/c, p⃗) | Energy as vector component |
 
 This inconsistency is not a proof of the RFT — it is an **open question** in the
 foundations of physics that the RFT takes as its starting point in developing an

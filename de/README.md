@@ -35,6 +35,7 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
     - [Empirische Nachweise](#empirische-nachweise)
     - [Erklärungen](#erklärungen)
     - [Analysetools](#analysetools)
+- [Theoretische Grundlagen](#theoretische-grundlagen)
 - [Lizenz](#lizenz)
 
 ---
@@ -284,6 +285,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | # | Dokument | Axiome | Beschreibung |
 |---|----------|--------|-------------|
 | 1 | [Gesellschaftliche Analyse](fakten/docs/analysetools/gesellschaftliche_analyse.md) | A1–A7 | RFT-Analyseinstrument für gesellschaftliche Zusammenhänge – KI-Kontext-Prompt zur Mustererkennung in Nachrichtenmeldungen |
+
+---
+
+## Theoretische Grundlagen
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [π und e als Urkonstanten des Raumes](fakten/theorie/pi_als_urkonstante.md) | A4, A5 | Ursprungsgedanke der RFT: π als geometrische Phasenraumkonstante, Vektorialität der Energie |
 
 ---
 

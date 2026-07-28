@@ -35,6 +35,7 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
     - [Empirical Evidence](#empirical-evidence)
     - [Explanations](#explanations)
     - [Analysis Tools](#analysis-tools)
+- [Theoretical Foundations](#theoretical-foundations)
 - [License](#license)
 
 ---
@@ -284,6 +285,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | # | Document | Axioms | Description |
 |---|----------|--------|-------------|
 | 1 | [Social Analysis](facts/docs/analysis_tools/social_analysis.md) | A1–A7 | RFT analysis instrument for social dynamics – AI context prompt for pattern recognition in news reports |
+
+---
+
+## Theoretical Foundations
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [π and e as Fundamental Constants of Space](facts/theory/pi_as_fundamental_constant.md) | A4, A5 | Founding idea of RFT: π as geometric phase-space constant, vectorial nature of energy |
 
 ---
 

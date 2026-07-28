@@ -151,10 +151,13 @@ quantenmechanischer Teilchen ohne klassisches Analogon. Er trägt Energie (Zeema
 Hyperfeinstruktur) und ist untrennbar mit der Raumrichtung verknüpft. Der Spin folgt
 einer Algebra (SU(2)), die der geometrischen Struktur von Rotationen entspricht.
 
-**Relativitätstheorie:** Im Lorentz-4-Vektor $(E/c,\, \vec{p})$ ist die Energie
-bereits als zeitliche Komponente einer vektoriellen Größe enthalten. Die Energie
-ist im relativistischen Formalismus nicht unabhängig von ihrer Richtung (Impuls)
-— sie ist Teil eines kovarianten Vierers.
+**Relativitätstheorie:** Im Lorentz-4-Vektor
+
+$$(E/c,\, \vec{p})$$
+
+ist die Energie bereits als zeitliche Komponente einer vektoriellen Größe enthalten.
+Die Energie ist im relativistischen Formalismus nicht unabhängig von ihrer Richtung
+(Impuls) — sie ist Teil eines kovarianten Vierers.
 
 ### 3.2 Die interne Inkonsistenz
 
@@ -163,9 +166,9 @@ widersprechen dem in drei voneinander unabhängigen Kontexten:
 
 | Kontext | Struktur | Vektorialität der Energie |
 |---------|----------|---------------------------|
-| Drehmoment | $\vec{M} = \vec{r} \times \vec{F}$, Einheit J | Implizit vorhanden |
+| Drehmoment | M⃗ = r⃗ × F⃗, Einheit J | Implizit vorhanden |
 | Spin | SU(2)-Algebra, Energiebeiträge (Zeeman) | Intrinsisch vektoriell |
-| Lorentz-4-Vektor | $(E/c, \vec{p})$ | Energie als Vektorkomponente |
+| Lorentz-4-Vektor | (E/c, p⃗) | Energie als Vektorkomponente |
 
 Diese Inkonsistenz ist kein Beweis für die RFT — sie ist eine **offene Frage**
 in der Grundlagenphysik, die die RFT zum Ausgangspunkt nimmt, um eine alternative
