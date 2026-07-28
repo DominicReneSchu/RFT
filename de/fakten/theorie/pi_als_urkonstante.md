@@ -213,7 +213,10 @@ als Richtungskomponente der Kopplungsenergie:
 - Die Richtung $\hat{e}(\Delta\varphi, \nabla\Phi)$ folgt aus der Geometrie des
   Phasenraums: Sie zeigt in die Richtung, in die die Phasenkopplung propagiert.
 
-Dies ist analog zur Beziehung zwischen Arbeit und Kraftvektor: $W = \vec{F} \cdot \vec{s}$
+Dies ist analog zur Beziehung zwischen Arbeit und Kraftvektor: 
+
+$W = \vec{F} \cdot \vec{s}$
+
 gibt nur den Betrag — der Kraftvektor $\vec{F}$ selbst hat Richtung. A5 behauptet,
 dass die Energie im Resonanzfeld ebenso eine Richtungseigenschaft besitzt wie die
 Kraft in der Mechanik.
