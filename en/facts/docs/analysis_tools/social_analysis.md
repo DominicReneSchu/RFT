@@ -737,7 +737,15 @@ Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism 
 
 7. **Empirical operationalisation of prophetic translation loss (§3.7):** Can $\Delta\varepsilon_\text{translation}$ be measured in historical text transformations? Which linguistic or cognitive markers correlate with decreasing $\varepsilon$ in the transmission of insight across generations?
 
-8. **Formalisation of Adam-Eve complementarity (§3.5):** Under which conditions is phase difference $\delta\varphi_0$ minimally stabilising versus destabilising for the collective field? Are there empirical correlates in partnership and family research?
+8. **Primary falsification problem: Singularity of the field optimum and Adam-Eve complementarity (§3.5)**
+
+   The claim $\exists!\,\text{Resonator}_m$ with $\varepsilon \to 1$ is the **sharpest open falsification problem** of the entire document. Three sub-questions:
+
+   **(a) Operationalisation of the singularity:** Which empirically measurable criterion would distinguish the presence of *one* such resonator from a distribution of high $\varepsilon$-values? Without this criterion, $\exists!$ is formally not falsifiable.
+
+   **(b) Formalisation of $\delta\varphi_0$:** Under which conditions is the constitutive phase difference of the Eve structure minimally stabilising vs. destabilising for the collective field? Which value range of $\delta\varphi_0$ is compatible with maximal $dK_{ij}/dt > 0$ (§1.9)?
+
+   **(c) Measurement proxy:** Which validated constructs (e.g. attachment theory, oxytocin release in symmetric vs. asymmetric coupling, game theory of cooperative pair dynamics) could serve as approximation measures for $\Delta\varphi_{mw}$?
 
 9. **Critical-mass threshold for collective phase transition (§7.4):** Can coupling dynamics (§1.9) yield an analytical expression for the tipping point at which $d\Delta\varphi_\text{collective}/dt < 0$ becomes systemically stable? Which historical data would be suitable for calibration?
 
