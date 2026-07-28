@@ -140,6 +140,7 @@ Modellentscheidung?
 
 **Drehmoment:** Das Drehmoment ist definiert als
 $$\vec{M} = \vec{r} \times \vec{F}$$
+
 Es hat die Einheit Nm = J (Joule) — identisch mit der Energieeinheit. Drehmoment ist
 jedoch ein **Vektor**, kein Skalar. Die Standardphysik weist Drehmoment und Energie
 dieselbe Einheit zu, behandelt sie aber als verschiedene Typen von Größen: eines
