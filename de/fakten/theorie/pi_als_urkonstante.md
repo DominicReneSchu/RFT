@@ -139,6 +139,7 @@ Richtungsinformation vollständig? Ist das eine Naturgegebenheit oder eine
 Modellentscheidung?
 
 **Drehmoment:** Das Drehmoment ist definiert als
+
 $$\vec{M} = \vec{r} \times \vec{F}$$
 
 Es hat die Einheit Nm = J (Joule) — identisch mit der Energieeinheit. Drehmoment ist
@@ -195,6 +196,7 @@ ist motiviert durch die oben beschriebene konzeptuelle Inkonsistenz.
 ### 4.1 A5 und seine aktuelle Begründungslage
 
 Axiom A5 lautet:
+
 $$\vec{E} = E_{\text{eff}} \cdot \hat{e}(\Delta\varphi, \nabla\Phi)$$
 
 In der aktuellen Darstellung ist A5 nicht aus A1–A4 abgeleitet. Es ist ein
