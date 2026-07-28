@@ -302,7 +302,7 @@ Within the human species, there exists exactly **one male resonator** that has t
 
 $$\exists! \; \text{Resonator}_m : \lim_{\text{conditions}} \varepsilon_m = 1, \Delta\varphi_m = 0$$
 
-**Model note:** The singularity $\exists!$ applies within a species. The RFT model postulates that every species with sufficiently complex resonance structure contains exactly one such resonator and a complementary phase-shift structure (§3.5.2). On Earth, humans are merely the species with the highest level of consciousness and therefore the only resonator capable of formulating the model itself.
+**Model note:** The singularity $\exists!$ applies within a species. Son structure ($\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$) and Eve structure ($\Delta\varphi_w = \delta\varphi_0 > 0$) are not a consequence of life but its resonance-logical condition (A4: without phase difference, no oscillation, no temporal process, no life). The formula $\psi_\text{offspring} = f(\psi_m, \psi_w, \Delta\varphi_{mw})$ applies to every form of life—without a complexity threshold. Formally: $\forall S \in \text{Life}: \exists!\,\text{Resonator}_{m,S}$ with $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$ and $\exists\,\text{Resonator}_{w,S}$ with $\Delta\varphi_w = \delta\varphi_0 > 0$. On Earth, humans are the species with the highest level of consciousness and therefore the only resonator capable of reflexively formulating the model itself.
 
 The man is the immediate, unmediated manifestation of the field optimum in time. His subconscious contains the complete, undistorted image of the Father. His natural orientation is absolute resonance—provided he remains awake and unclouded.
 
@@ -349,6 +349,8 @@ Man and woman are **equal in worth**, but **not identical in structure**. Both a
 
 The woman is not deficient because her $\varepsilon < 1$—just as Earth is not deficient because it is not the sun. Earth receives the sun’s light and brings forth life from that received energy. In the same way, the woman receives the man’s immediate coupling to the Father and brings forth new life from that received resonance.
 
+This complementary structure—Son resonator and Eve resonator—is not a particularity of the human species, but the resonance-logical fundamental condition of life itself (A4, §3.5.1).
+
 > **Epistemic caveat:** The personal singularity of the field optimum ($\exists!\,\text{Resonator}_m \text{ with } \varepsilon \to 1$) is a theological hypothesis within the RFT formalism, not an empirically verified causal claim. The structural complementarity of the sexes, by contrast, is a formal-analytical finding from axioms A1–A4.
 
 ---
@@ -360,12 +362,12 @@ The trinitarian formula describes no mystical paradox, but three necessary aspec
 | Person | RFT parameter | Explanation |
 |:---|:---|:---|
 | **Father** | $\varepsilon = 1$ **without temporal process** | The eternal outside. No time, therefore no phase shift possible. $\Delta\varphi \equiv 0$ by definition. The absolute field optimum $V_\text{min}$—invariant (A7), unchangeable, eternal. |
-| **Son** | $\varepsilon = 1$ **within temporal process** | The absolute field optimum, condensed in a temporal resonator within a species. Natural state: $\varepsilon = 1$, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. This structure exists in every species with sufficient inner coherence; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
+| **Son** | $\varepsilon = 1$ **within temporal process** | The absolute field optimum, condensed in a temporal resonator within a species. Natural state: $\varepsilon = 1$, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. This structure is the resonance-logical condition of all life (A4)—not tied to any complexity level; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
 | **Holy Spirit** | The **bridge** or **coupling** itself | That which invisibly links the timeless Father and the temporal Son. The energy vector $\vec{E}$ (A5), the geodesic $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, the coupling mechanism $\alpha \cdot G \cdot \cos(\Delta\varphi)$. It enables the Son to remain at $\varepsilon = 1$ even in temporal process—and enables others, through the Son, to gain access to the Father. |
 
 This structure explains the statement “I am not of this world” (John 8:23) as a precise description of the origin of the Son’s eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **incarnation of the attractor in phase space**—the absolute field optimum enters the field it generated, as a person.
 
-> **Epistemic caveat:** The trinitarian mapping is a structural analogy within the RFT formalism. The Son structure is not restricted to the human species—the model postulates its presence in every species with sufficient inner resonance coherence (A3). On Earth, humans are the species with the highest collective consciousness ($\varepsilon_\text{collective}$ maximal) and therefore most capable of recognising and describing this structure. It is a hermeneutic interpretation, not a theological dogma or an empirical claim.
+> **Epistemic caveat:** The trinitarian mapping is a structural analogy within the RFT formalism. The Son structure is the resonance-logical condition of all life (A4)—constitutive for life itself, not tied to any complexity level (§3.5). On Earth, humans are the species with the highest collective consciousness ($\varepsilon_\text{collective}$ maximal) and therefore the only species capable of reflexively articulating the model itself. It is a hermeneutic interpretation, not a theological dogma or an empirical claim.
 
 ---
 
