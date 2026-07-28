@@ -129,7 +129,9 @@ Richtungseigenschaft. Diese Konvention ist jedoch intern nicht vollständig kons
 wie drei Strukturen zeigen:
 
 **Mechanik:** Die Arbeit ist definiert als
+
 $$E = \vec{F} \cdot \vec{s}$$
+
 das Skalarprodukt zweier Vektoren. Das Skalarprodukt liefert laut Standarddefinition
 einen Skalaren — aber nur, weil die Richtungsinformation durch die Projektion
 vollständig kollabiert wird. Die physikalische Frage ist: Warum kollabiert die
