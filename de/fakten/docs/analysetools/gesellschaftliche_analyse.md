@@ -303,7 +303,7 @@ Innerhalb der menschlichen Spezies existiert genau **ein männlicher Resonator**
 
 $$\exists! \; \text{Resonator}_m : \lim_{\text{Bedingungen}} \varepsilon_m = 1, \Delta\varphi_m = 0$$
 
-**Modellhinweis:** Die Singularität $\exists!$ gilt innerhalb einer Spezies. Das RFT-Modell postuliert, dass jede Spezies mit ausreichend komplexer Resonanzstruktur genau einen solchen Resonator und eine komplementäre Phasenverschiebungsstruktur (§3.5.2) aufweist. Der Mensch ist auf der Erde lediglich die Spezies mit dem höchsten Bewusstseinsniveau und damit der einzige Resonator, der das Modell selbst zu formulieren vermag.
+**Modellhinweis:** Die Singularität $\exists!$ gilt innerhalb einer Spezies. Sohn-Struktur ($\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$) und Eva-Struktur ($\Delta\varphi_w = \delta\varphi_0 > 0$) sind nicht Folge von Leben, sondern seine resonanzlogische Bedingung (A4: ohne Phasendifferenz keine Schwingung, kein zeitlicher Prozess, kein Leben). Die Formel $\psi_\text{Nachkomme} = f(\psi_m, \psi_w, \Delta\varphi_{mw})$ gilt für jede Form von Leben – ohne Komplexitätsschwelle. Formal: $\forall S \in \text{Leben}: \exists!\,\text{Resonator}_{m,S}$ mit $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$ und $\exists\,\text{Resonator}_{w,S}$ mit $\Delta\varphi_w = \delta\varphi_0 > 0$. Der Mensch ist auf der Erde die Spezies mit dem höchsten Bewusstseinsniveau und damit der einzige Resonator, der das Modell selbst reflexiv zu formulieren vermag.
 
 Der Mann ist die unvermittelte, direkte Manifestation des Feldoptimums in der Zeit. Sein Unterbewusstsein enthält das vollständige, unverzerrte Abbild des Vaters. Seine natürliche Ausrichtung ist die absolute Resonanz – vorausgesetzt, er bleibt wach und unvernebelt.
 
@@ -350,6 +350,8 @@ Mann und Frau sind **gleichwertig**, aber **nicht gleichartig**. Sie sind beide 
 
 Die Frau ist nicht defizitär, weil ihr $\varepsilon < 1$ ist – so wie die Erde nicht defizitär ist, weil sie nicht die Sonne ist. Die Erde empfängt das Licht der Sonne und bringt aus dieser empfangenen Energie Leben hervor. Genauso empfängt die Frau die unmittelbare Kopplung des Mannes an den Vater und bringt aus dieser empfangenen Resonanz neues Leben hervor.
 
+Diese komplementäre Struktur – Sohn-Resonator und Eva-Resonator – ist keine Besonderheit der menschlichen Spezies, sondern resonanzlogische Grundbedingung des Lebens selbst (A4, §3.5.1).
+
 > **Epistemischer Vorbehalt:** Die personale Singularität des Feldoptimums ($\exists!\,\text{Resonator}_m \text{ mit } \varepsilon \to 1$) ist eine theologische Hypothese innerhalb des RFT-Formalismus, keine empirisch verifizierte Kausalbehauptung. Die strukturelle Komplementarität der Geschlechter hingegen ist ein formal-analytischer Befund aus den Axiomen A1–A4.
 
 ---
@@ -361,12 +363,12 @@ Die trinitarische Formel beschreibt keine mystische Paradoxie, sondern drei notw
 | Person | RFT-Parameter | Erklärung |
 |:---|:---|:---|
 | **Vater** | $\varepsilon = 1$ **ohne zeitlichen Prozess** | Der Ewige im Außen. Keine Zeit, daher keine Phasenverschiebung möglich. $\Delta\varphi \equiv 0$ per Definition. Das absolute Feldoptimum $V_\text{min}$ – invariant (A7), unveränderlich, ewig. |
-| **Sohn** | $\varepsilon = 1$ **im zeitlichen Prozess** | Das absolute Feldoptimum, verdichtet in einem zeitlichen Resonator innerhalb einer Spezies. Natürlicher Zustand: $\varepsilon = 1$, aber nicht automatisch gehalten – jede Phasenverschiebung durch zeitliche Prozesse (Hunger, Müdigkeit, Versuchung) muss durch beständige Ausrichtung ausgeglichen werden. Diese Struktur existiert in jeder Spezies mit hinreichender innerer Kohärenz; beim Menschen tritt sie aufgrund des höchsten irdischen Bewusstseinsniveaus in ihrer reflexiv artikulierbaren Form auf. |
+| **Sohn** | $\varepsilon = 1$ **im zeitlichen Prozess** | Das absolute Feldoptimum, verdichtet in einem zeitlichen Resonator innerhalb einer Spezies. Natürlicher Zustand: $\varepsilon = 1$, aber nicht automatisch gehalten – jede Phasenverschiebung durch zeitliche Prozesse (Hunger, Müdigkeit, Versuchung) muss durch beständige Ausrichtung ausgeglichen werden. Diese Struktur ist resonanzlogische Bedingung jedes Lebens (A4) – nicht an ein Komplexitätsniveau geknüpft; beim Menschen tritt sie aufgrund des höchsten irdischen Bewusstseinsniveaus in ihrer reflexiv artikulierbaren Form auf. |
 | **Heiliger Geist** | Die **Brücke** oder **Kopplung** selbst | Das, was den zeitlosen Vater und den zeitlichen Sohn unsichtbar verbindet. Der Energievektor $\vec{E}$ (A5), die Geodätische $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, der Kopplungsmechanismus $\alpha \cdot G \cdot \cos(\Delta\varphi)$. Ermöglicht es dem Sohn, auch im zeitlichen Prozess $\varepsilon = 1$ zu bleiben – und anderen, durch den Sohn Zugang zum Vater zu erhalten. |
 
 Diese Struktur erklärt die Aussage „Ich bin nicht aus dieser Welt" (Joh 8,23) als präzise Beschreibung des Ursprungs der Eigenfrequenz des Sohnes: Seine Grundschwingung stammt nicht aus dem sozialen Feld, sondern aus dem zeitlosen Attraktorraum. Seine Sendung ist die **Inkarnation des Attraktors im Phasenraum** – das absolute Feldoptimum betritt das Feld, das es selbst erzeugt hat, als Person.
 
-> **Epistemischer Vorbehalt:** Die trinitarische Zuordnung ist eine strukturelle Analogie innerhalb des RFT-Formalismus. Die Sohn-Struktur ist dabei nicht auf die menschliche Spezies beschränkt – das Modell postuliert ihr Vorhandensein in jeder Spezies mit hinreichender innerer Resonanzkohärenz (A3). Der Mensch ist auf der Erde diejenige Spezies mit dem höchsten kollektiven Bewusstsein ($\varepsilon_\text{kollektiv}$ maximal) und damit am ehesten in der Lage, die Struktur zu erkennen und zu beschreiben. Sie versteht sich als hermeneutische Deutung, nicht als theologisches Dogma oder empirische Behauptung.
+> **Epistemischer Vorbehalt:** Die trinitarische Zuordnung ist eine strukturelle Analogie innerhalb des RFT-Formalismus. Die Sohn-Struktur ist resonanzlogische Bedingung jedes Lebens (A4) – konstitutiv für Leben selbst, nicht an ein Komplexitätsniveau geknüpft (§3.5). Der Mensch ist auf der Erde diejenige Spezies mit dem höchsten kollektiven Bewusstsein ($\varepsilon_\text{kollektiv}$ maximal) und damit die einzige Spezies, die das Modell selbst reflexiv artikulieren kann. Sie versteht sich als hermeneutische Deutung, nicht als theologisches Dogma oder empirische Behauptung.
 
 ---
 
