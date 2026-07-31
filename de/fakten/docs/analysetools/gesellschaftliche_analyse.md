@@ -255,7 +255,7 @@ $$\varepsilon_\text{kollektiv} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot
 | **Beta (Quell-Modus)** | Fähigkeit, neue Frequenzen zu erzeugen, schöpferisch zu wirken, originäre Energie ins Feld einzuspeisen | Quell-Resonator (Typ Q) | Der Komponist, der schöpferische Geist |
 | **Alpha (mitschwingender Modus)** | Fähigkeit, das Feld zu strukturieren, auf bestehende Frequenzen einzugehen, kollektive Schwingungen zu koordinieren | Mitschwingender Resonator (Typ M) | Der Dirigent, die führungsstarke Struktur |
 
-**Jeder Mensch besitzt beide Dimensionen in einem gewissen Anteil.** Diese Anteile sind normalverteilt: Die meisten Menschen liegen mit beiden Werten im mittleren Bereich, einige haben deutlich mehr Beta als Alpha, andere deutlich mehr Alpha als Beta. Extreme Ausprägungen – sehr hohes Alpha bei sehr niedrigem Beta oder umgekehrt – sind selten und führen zu den charakteristischen Einseitigkeiten, die in §1.14 als isolierte Quelle bzw. parasitärer Mitschwinger beschrieben wurden.
+Jeder Mensch besitzt beide Dimensionen in einem gewissen Anteil. Extreme Ausprägungen – sehr hohes Alpha bei sehr niedrigem Beta oder umgekehrt – sind im Verhältnis zur mittleren Bandbreite selten und führen zu den charakteristischen Einseitigkeiten, die in §1.14 als „isolierte Quelle" bzw. „parasitärer Mitschwinger" beschrieben wurden.
 
 **Die Orchester-Analogie:**
 
@@ -279,6 +279,24 @@ Das bedeutet:
 | **Beta (Quell-Modus)** | Maximaler Anteil – vollständige Fähigkeit, schöpferisch neue Frequenzen zu erzeugen, originäre Energie ins Feld einzuspeisen |
 
 Der Sigma ist der **einzige Resonator, der beide Modi vollständig und gleichzeitig verwirklicht**. Er ist nicht einfach jemand mit hohem Alpha und hohem Beta, sondern derjenige, bei dem beide Werte die absolute Obergrenze erreichen. Damit steht er strukturell außerhalb der Hierarchie, die durch die ungleiche Verteilung von Alpha- und Beta-Anteilen entsteht.
+
+**100 % Beta – Der transparente Kanal**
+
+Die höchste Ausprägung des Beta-Modus ist nicht isoliertes Schöpfen aus eigener Kraft. Der Sigma erreicht $\varepsilon_\text{Beta} = 1$ gerade dadurch, dass er vollständig mit dem Vater mitschwingt (§3.6: Vater als $\varepsilon = 1$ ohne zeitlichen Prozess): Seine schöpferischen Impulse sind nicht „seine" Ideen im egoistischen Sinne, sondern das, was er vom Vater empfängt und ins kollektive Feld einspeist. Die Grenze zwischen Senden und Empfangen verschwindet; der Energievektor $\vec{E}$ (A5) verläuft vollständig durch ihn hindurch – feldeinwärts vom Vater, feldeinwärts ins kollektive Feld. Joh 5,19 – „Der Sohn kann nichts von sich aus tun, außer was er den Vater tun sieht" – ist die präzise axiomatische Beschreibung dieses transparenten Kanals. Es ist keine Schwäche, sondern die formale Bedingung für $\varepsilon_\text{Beta} = 1$:
+
+$$\vec{E}_{\text{Sigma, Beta}} = \vec{E}_{\text{Vater}} \xrightarrow{\,\varepsilon = 1,\;\Delta\varphi = 0\,} \Phi_{\text{kollektiv}}$$
+
+**100 % Alpha – Der unsichtbare Dirigent**
+
+Die höchste Ausprägung des Alpha-Modus ist nicht sichtbare Führung durch Befehl, Geld oder Transaktion. Der Sigma strukturiert das Feld, indem er $V_\text{min}$ selbst neu setzt: Er verändert die Phasenraumgeometrie (§1.10) so, dass andere Resonatoren sich freiwillig in Richtung des globalen Minimums bewegen – ohne zu wissen, dass sie einem Attraktor folgen. Es gibt keinen aktiven $K_{ij}$-Aufbau von außen; die Resonatoren folgen dem Gefälle des Phasenraums, den der Sigma durch seine Existenz verändert hat. Formal:
+
+$$\frac{d\Delta\varphi_{\text{kollektiv}}}{dt} < 0 \quad \text{ohne aktiven } K_{ij}\text{-Eingriff des Sigma} \quad \text{(A7: Invarianz, §1.10)}$$
+
+Das historische Muster ist formal präzise: Das Römische Reich tötete Jesus – und wurde 300 Jahre später christlich. Die einzelnen Akteure folgten dem Gefälle des Phasenraums, den der Sigma durch sein Wirken verändert hatte. Kein Geld, kein Befehl, keine sichtbare Hand. Dies widerspricht der Kopplungsdynamik aus §1.9 nicht: Der Aufbau einzelner $K_{ij}$ zwischen anderen Resonatoren verläuft nach wie vor gemäß $\alpha \cdot G \cdot \cos(\Delta\varphi)$; der Sigma verändert jedoch das Potenzial $V(f)$ (§1.10), das diese Dynamik in eine Richtung zieht.
+
+**Synthese – Der Zimmermann und der König**
+
+Der Sigma ist Zimmermann und König in einer Person: im Kleinen schöpferisch wirkend als transparenter Kanal (Beta, stilles Wirken), im Großen die Feldgeometrie neu setzend ohne Befehl (Alpha). Der König befiehlt nicht – er hat den Thron bereits inne, und der Thron ist $V_\text{min}$. Was als „Führung" erscheint, ist die natürliche Konsequenz der Topologieveränderung des Phasenraums. Wer sich dem Attraktor nähert, findet maximale Kopplungsenergie $E = \pi \cdot \hbar \cdot f$ (A4); wer sich entfernt, findet $\varepsilon \to 0$ und Entropiezunahme. Mehr Lenkung ist nicht nötig.
 
 Das **Feldoptimum** (§1.10) und der **Sigma** sind derselbe Attraktor $V_\text{min}$ – einmal mathematisch, einmal anthropologisch beschrieben. Die drei Ich-bin-Worte (§3.2.2) definieren den Sigma formal:
 
@@ -352,7 +370,7 @@ Die Depression, verstanden als $\varepsilon \to 0$ bei hohem innerem $f$, manife
 
 Das Feldoptimum allein kennt alle diese Leiden, weil es alle Profile in sich trägt und zur Vollendung gebracht hat. Der Sigma hat nicht nur maximales Alpha und maximales Beta – er hat auch jede Kombination dazwischen selbst erfahren und überwunden. Deshalb kann er jedem individuellen Profil den Weg zum Optimum zeigen.
 
-> **Modellhinweis:** Die Mehrdimensionalität des Resonanzfeldes ist eine formale Erweiterung auf Basis der Phasenraumgeometrie. Die Achsen **Alpha** und **Beta** sind die Quantifizierung der beiden Modi aus §1.14 als individuelle Anteile – sie sind keine essentialistische Zuschreibung, sondern beschreiben den in einem gegebenen Lebenskontext dominanten Modus; die Anteile können sich im Lauf eines Lebens verändern. **Terminologische Abgrenzung:** Die Bezeichnungen **Alpha** und **Beta** für die individuellen Modalanteile sind ausdrücklich von den gleichnamigen Parametern $\alpha$ (Resonanzverstärkungsrate) und $\beta$ (Dämpfungsrate) in §1.9 zu unterscheiden; letztere sind kinetische Parameter der Kopplungsdynamik, erstere sind deskriptive Label für individuelle Kopplungsprofile. Weitere Dimensionen des Phasenraums sind wahrscheinlich, aber das zweidimensionale Modell genügt, um die Vielfalt menschlicher Begabungen und die Singularität des Sigma abzubilden. Die apokalyptischen Bezüge in §1.15.4–§1.15.6 sind strukturelle Analogien im Sinne von §3.1 und §7.4 – keine prophetischen Datierungen, sondern formale Mustererkennungen. Die Deutung der Sigma-Kampagne als Ego-Falle (§1.15.4) ist eine analytische Hypothese auf Basis der Strukturmuster von §5.6 (Feindbildfusion) und §2.1 (AiR-Mechanismus); die Intention der Urheber ist damit nicht kausal behauptet.
+> **Modellhinweis:** Die Mehrdimensionalität des Resonanzfeldes ist eine formale Erweiterung auf Basis der Phasenraumgeometrie. Die Achsen **Alpha** und **Beta** sind die Quantifizierung der beiden Modi aus §1.14 als individuelle Anteile – sie sind keine essentialistische Zuschreibung, sondern beschreiben den in einem gegebenen Lebenskontext dominanten Modus; die Anteile können sich im Lauf eines Lebens verändern. **Terminologische Abgrenzung:** Die Bezeichnungen **Alpha** und **Beta** für die individuellen Modalanteile sind ausdrücklich von den gleichnamigen Parametern $\alpha$ (Resonanzverstärkungsrate) und $\beta$ (Dämpfungsrate) in §1.9 zu unterscheiden; letztere sind kinetische Parameter der Kopplungsdynamik, erstere sind deskriptive Label für individuelle Kopplungsprofile. Weitere Dimensionen des Phasenraums sind wahrscheinlich, aber das zweidimensionale Modell genügt, um die Vielfalt menschlicher Begabungen und die Singularität des Sigma abzubilden. Die apokalyptischen Bezüge in §1.15.4–§1.15.6 sind strukturelle Analogien im Sinne von §3.1 und §7.4 – keine prophetischen Datierungen, sondern formale Mustererkennungen. Die Deutung der Sigma-Kampagne als Ego-Falle (§1.15.4) ist eine analytische Hypothese auf Basis der Strukturmuster von §5.6 (Feindbildfusion) und §2.1 (AiR-Mechanismus); die Intention der Urheber ist damit nicht kausal behauptet. Die Annahme einer annähernden Normalverteilung der Alpha- und Beta-Anteile in der Grundgesamtheit ist eine empirische Hypothese und nicht aus A1–A7 ableitbar. Sie dient der intuitiven Veranschaulichung der Seltenheit von Extremausprägungen, erhebt aber keinen axiomatischen Anspruch.
 
 ---
 

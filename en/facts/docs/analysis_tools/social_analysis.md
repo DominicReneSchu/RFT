@@ -255,7 +255,7 @@ $$\varepsilon_\text{collective} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdo
 | **Beta (source mode)** | Capacity to generate new frequencies, to act creatively, to feed original energy into the field | Source resonator (Type Q) | The composer, the creative spirit |
 | **Alpha (co-oscillating mode)** | Capacity to structure the field, to respond to existing frequencies, to coordinate collective oscillations | Co-oscillating resonator (Type M) | The conductor, the leadership-strong structure |
 
-**Every person possesses both dimensions to some degree.** These shares are normally distributed: most people cluster in the middle range on both axes, some have markedly more Beta than Alpha, others markedly more Alpha than Beta. Extreme profiles – very high Alpha at very low Beta or vice versa – are rare and produce the characteristic one-sidedness described in §1.14 as isolated source and parasitic co-oscillator respectively.
+Every person possesses both dimensions to some degree. Extreme profiles – very high Alpha at very low Beta, or vice versa – are rare relative to the middle range and produce the characteristic one-sidedness described in §1.14 as "isolated source" and "parasitic co-oscillator" respectively.
 
 **The orchestra analogy:**
 
@@ -279,6 +279,24 @@ This means:
 | **Beta (source mode)** | Maximum share – complete capacity to generate new frequencies creatively, to feed original energy into the field |
 
 Sigma is the **only resonator who fully and simultaneously realises both modes**. They are not simply someone with high Alpha and high Beta, but the one in whom both values reach the absolute upper limit. This places them structurally outside the hierarchy created by the unequal distribution of Alpha and Beta shares.
+
+**100 % Beta – The Transparent Channel**
+
+The highest expression of Beta mode is not isolated creative output from one's own force. Sigma reaches $\varepsilon_\text{Beta} = 1$ precisely because he oscillates completely with the Father (§3.6: Father as $\varepsilon = 1$ without temporal process): his creative impulses are not "his" ideas in the egotistical sense, but what he receives from the Father and feeds into the collective field. The boundary between sending and receiving disappears; the energy vector $\vec{E}$ (A5) passes completely through him – field-inward from the Father, field-inward into the collective field. Jn 5:19 – "The Son can do nothing of himself, but what he sees the Father do" – is the precise axiomatic description of this transparent channel. This is not a weakness but the formal condition for $\varepsilon_\text{Beta} = 1$:
+
+$$\vec{E}_{\text{Sigma, Beta}} = \vec{E}_{\text{Father}} \xrightarrow{\,\varepsilon = 1,\;\Delta\varphi = 0\,} \Phi_{\text{collective}}$$
+
+**100 % Alpha – The Invisible Conductor**
+
+The highest expression of Alpha mode is not visible leadership through command, money, or transaction. Sigma structures the field by resetting $V_\text{min}$ itself: he alters the phase-space geometry (§1.10) so that other resonators move voluntarily toward the global minimum – without knowing they are following an attractor. There is no active $K_{ij}$-building from outside; resonators follow the gradient of phase space that Sigma has changed through his existence. Formally:
+
+$$\frac{d\Delta\varphi_{\text{collective}}}{dt} < 0 \quad \text{without active } K_{ij}\text{-intervention by Sigma} \quad \text{(A7: invariance, §1.10)}$$
+
+The historical pattern is formally precise: the Roman Empire killed Jesus – and became Christian 300 years later. Individual actors followed the gradient of phase space that Sigma had altered through his action. No money, no command, no visible hand. This does not contradict the coupling dynamics of §1.9: the build-up of individual $K_{ij}$ among other resonators still proceeds according to $\alpha \cdot G \cdot \cos(\Delta\varphi)$; Sigma however alters the potential $V(f)$ (§1.10) that draws this dynamic in one direction.
+
+**Synthesis – The Carpenter and the King**
+
+Sigma is carpenter and king in one person: creatively active in the small as transparent channel (Beta, quiet action), resetting the field geometry in the large without command (Alpha). The king does not command – he already holds the throne, and the throne is $V_\text{min}$. What appears as "leadership" is the natural consequence of the topological transformation of phase space. Those who approach the attractor find maximum coupling energy $E = \pi \cdot \hbar \cdot f$ (A4); those who move away find $\varepsilon \to 0$ and increasing entropy. No further guidance is needed.
 
 The **field optimum** (§1.10) and **Sigma** are the same attractor $V_\text{min}$ – described once mathematically, once anthropologically. The three "I am" sayings (§3.2.2) define Sigma formally:
 
@@ -352,7 +370,7 @@ Depression, understood as $\varepsilon \to 0$ at high internal $f$, manifests di
 
 The field optimum alone knows all these sufferings, because it contains and has brought to completion all profiles. Sigma does not only have maximum Alpha and maximum Beta – he has experienced and overcome every combination in between. This is why he can show each individual profile the path to the optimum.
 
-> **Model note:** The multi-dimensionality of the resonance field is a formal extension based on phase-space geometry. The axes **Alpha** and **Beta** quantify the two modes from §1.14 as individual shares – they are not an essentialist assignment, but describe the dominant coupling mode in a given life context; shares can shift over the course of a lifetime. **Terminological distinction:** The designations **Alpha** and **Beta** for individual modal shares are explicitly distinct from the homonymous parameters $\alpha$ (resonance amplification rate) and $\beta$ (damping rate) in §1.9; the latter are kinetic parameters of coupling dynamics, the former are descriptive labels for individual coupling profiles. Additional dimensions of phase space are probable, but the two-dimensional model suffices to map the diversity of human gifts and the singularity of Sigma. The apocalyptic references in §1.15.4–§1.15.6 are structural analogies in the sense of §3.1 and §7.4 – not prophetic datings, but formal pattern recognitions. The interpretation of the Sigma campaign as an ego-trap (§1.15.4) is an analytical hypothesis based on the structural patterns of §5.6 (enemy-image fusion) and §2.1 (AiR mechanism); the intention of the originators is thereby not causally claimed.
+> **Model note:** The multi-dimensionality of the resonance field is a formal extension based on phase-space geometry. The axes **Alpha** and **Beta** quantify the two modes from §1.14 as individual shares – they are not an essentialist assignment, but describe the dominant coupling mode in a given life context; shares can shift over the course of a lifetime. **Terminological distinction:** The designations **Alpha** and **Beta** for individual modal shares are explicitly distinct from the homonymous parameters $\alpha$ (resonance amplification rate) and $\beta$ (damping rate) in §1.9; the latter are kinetic parameters of coupling dynamics, the former are descriptive labels for individual coupling profiles. Additional dimensions of phase space are probable, but the two-dimensional model suffices to map the diversity of human gifts and the singularity of Sigma. The apocalyptic references in §1.15.4–§1.15.6 are structural analogies in the sense of §3.1 and §7.4 – not prophetic datings, but formal pattern recognitions. The interpretation of the Sigma campaign as an ego-trap (§1.15.4) is an analytical hypothesis based on the structural patterns of §5.6 (enemy-image fusion) and §2.1 (AiR mechanism); the intention of the originators is thereby not causally claimed. The assumption of an approximately normal distribution of Alpha and Beta proportions across the population is an empirical hypothesis and is not derivable from A1–A7. It serves to illustrate intuitively the rarity of extreme profiles, but makes no axiomatic claim.
 
 ---
 
