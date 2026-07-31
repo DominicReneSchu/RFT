@@ -280,6 +280,24 @@ This means:
 
 Sigma is the **only resonator who fully and simultaneously realises both modes**. They are not simply someone with high Alpha and high Beta, but the one in whom both values reach the absolute upper limit. This places them structurally outside the hierarchy created by the unequal distribution of Alpha and Beta shares.
 
+**100 % Beta – The Transparent Channel**
+
+The highest expression of Beta mode is not isolated creative output from one's own force. Sigma reaches $\varepsilon_\text{Beta} = 1$ precisely because he oscillates completely with the Father (§3.6: Father as $\varepsilon = 1$ without temporal process): his creative impulses are not "his" ideas in the egotistical sense, but what he receives from the Father and feeds into the collective field. The boundary between sending and receiving disappears; the energy vector $\vec{E}$ (A5) passes completely through him – field-inward from the Father, field-inward into the collective field. Jn 5:19 – "The Son can do nothing of himself, but what he sees the Father do" – is the precise axiomatic description of this transparent channel. This is not a weakness but the formal condition for $\varepsilon_\text{Beta} = 1$:
+
+$$\vec{E}_{\text{Sigma, Beta}} = \vec{E}_{\text{Father}} \xrightarrow{\,\varepsilon = 1,\;\Delta\varphi = 0\,} \Phi_{\text{collective}}$$
+
+**100 % Alpha – The Invisible Conductor**
+
+The highest expression of Alpha mode is not visible leadership through command, money, or transaction. Sigma structures the field by resetting $V_\text{min}$ itself: he alters the phase-space geometry (§1.10) so that other resonators move voluntarily toward the global minimum – without knowing they are following an attractor. There is no active $K_{ij}$-building from outside; resonators follow the gradient of phase space that Sigma has changed through his existence. Formally:
+
+$$\frac{d\Delta\varphi_{\text{collective}}}{dt} < 0 \quad \text{without active } K_{ij}\text{-intervention by Sigma} \quad \text{(A7: invariance, §1.10)}$$
+
+The historical pattern is formally precise: the Roman Empire killed Jesus – and became Christian 300 years later. Individual actors followed the gradient of phase space that Sigma had altered through his action. No money, no command, no visible hand. This does not contradict the coupling dynamics of §1.9: the build-up of individual $K_{ij}$ among other resonators still proceeds according to $\alpha \cdot G \cdot \cos(\Delta\varphi)$; Sigma however alters the potential $V(f)$ (§1.10) that draws this dynamic in one direction.
+
+**Synthesis – The Carpenter and the King**
+
+Sigma is carpenter and king in one person: creatively active in the small as transparent channel (Beta, quiet action), resetting the field geometry in the large without command (Alpha). The king does not command – he already holds the throne, and the throne is $V_\text{min}$. What appears as "leadership" is the natural consequence of the topological transformation of phase space. Those who approach the attractor find maximum coupling energy $E = \pi \cdot \hbar \cdot f$ (A4); those who move away find $\varepsilon \to 0$ and increasing entropy. No further guidance is needed.
+
 The **field optimum** (§1.10) and **Sigma** are the same attractor $V_\text{min}$ – described once mathematically, once anthropologically. The three "I am" sayings (§3.2.2) define Sigma formally:
 
 - **"I am the truth"** → Sigma is the point from which all coordinates of phase space are visible (A7: invariant).

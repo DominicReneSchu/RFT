@@ -280,6 +280,24 @@ Das bedeutet:
 
 Der Sigma ist der **einzige Resonator, der beide Modi vollständig und gleichzeitig verwirklicht**. Er ist nicht einfach jemand mit hohem Alpha und hohem Beta, sondern derjenige, bei dem beide Werte die absolute Obergrenze erreichen. Damit steht er strukturell außerhalb der Hierarchie, die durch die ungleiche Verteilung von Alpha- und Beta-Anteilen entsteht.
 
+**100 % Beta – Der transparente Kanal**
+
+Die höchste Ausprägung des Beta-Modus ist nicht isoliertes Schöpfen aus eigener Kraft. Der Sigma erreicht $\varepsilon_\text{Beta} = 1$ gerade dadurch, dass er vollständig mit dem Vater mitschwingt (§3.6: Vater als $\varepsilon = 1$ ohne zeitlichen Prozess): Seine schöpferischen Impulse sind nicht „seine" Ideen im egoistischen Sinne, sondern das, was er vom Vater empfängt und ins kollektive Feld einspeist. Die Grenze zwischen Senden und Empfangen verschwindet; der Energievektor $\vec{E}$ (A5) verläuft vollständig durch ihn hindurch – feldeinwärts vom Vater, feldeinwärts ins kollektive Feld. Joh 5,19 – „Der Sohn kann nichts von sich aus tun, außer was er den Vater tun sieht" – ist die präzise axiomatische Beschreibung dieses transparenten Kanals. Es ist keine Schwäche, sondern die formale Bedingung für $\varepsilon_\text{Beta} = 1$:
+
+$$\vec{E}_{\text{Sigma, Beta}} = \vec{E}_{\text{Vater}} \xrightarrow{\,\varepsilon = 1,\;\Delta\varphi = 0\,} \Phi_{\text{kollektiv}}$$
+
+**100 % Alpha – Der unsichtbare Dirigent**
+
+Die höchste Ausprägung des Alpha-Modus ist nicht sichtbare Führung durch Befehl, Geld oder Transaktion. Der Sigma strukturiert das Feld, indem er $V_\text{min}$ selbst neu setzt: Er verändert die Phasenraumgeometrie (§1.10) so, dass andere Resonatoren sich freiwillig in Richtung des globalen Minimums bewegen – ohne zu wissen, dass sie einem Attraktor folgen. Es gibt keinen aktiven $K_{ij}$-Aufbau von außen; die Resonatoren folgen dem Gefälle des Phasenraums, den der Sigma durch seine Existenz verändert hat. Formal:
+
+$$\frac{d\Delta\varphi_{\text{kollektiv}}}{dt} < 0 \quad \text{ohne aktiven } K_{ij}\text{-Eingriff des Sigma} \quad \text{(A7: Invarianz, §1.10)}$$
+
+Das historische Muster ist formal präzise: Das Römische Reich tötete Jesus – und wurde 300 Jahre später christlich. Die einzelnen Akteure folgten dem Gefälle des Phasenraums, den der Sigma durch sein Wirken verändert hatte. Kein Geld, kein Befehl, keine sichtbare Hand. Dies widerspricht der Kopplungsdynamik aus §1.9 nicht: Der Aufbau einzelner $K_{ij}$ zwischen anderen Resonatoren verläuft nach wie vor gemäß $\alpha \cdot G \cdot \cos(\Delta\varphi)$; der Sigma verändert jedoch das Potenzial $V(f)$ (§1.10), das diese Dynamik in eine Richtung zieht.
+
+**Synthese – Der Zimmermann und der König**
+
+Der Sigma ist Zimmermann und König in einer Person: im Kleinen schöpferisch wirkend als transparenter Kanal (Beta, stilles Wirken), im Großen die Feldgeometrie neu setzend ohne Befehl (Alpha). Der König befiehlt nicht – er hat den Thron bereits inne, und der Thron ist $V_\text{min}$. Was als „Führung" erscheint, ist die natürliche Konsequenz der Topologieveränderung des Phasenraums. Wer sich dem Attraktor nähert, findet maximale Kopplungsenergie $E = \pi \cdot \hbar \cdot f$ (A4); wer sich entfernt, findet $\varepsilon \to 0$ und Entropiezunahme. Mehr Lenkung ist nicht nötig.
+
 Das **Feldoptimum** (§1.10) und der **Sigma** sind derselbe Attraktor $V_\text{min}$ – einmal mathematisch, einmal anthropologisch beschrieben. Die drei Ich-bin-Worte (§3.2.2) definieren den Sigma formal:
 
 - **„Ich bin die Wahrheit"** → Der Sigma ist der Punkt, von dem aus alle Koordinaten des Phasenraums sichtbar sind (A7: invariant).
