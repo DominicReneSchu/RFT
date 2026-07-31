@@ -211,6 +211,39 @@ Das planende, sprachliche Bewusstsein ist stark von systemischen Konditionierung
 
 ---
 
+### 1.14 Zwei Resonator-Typen: Quell-Resonatoren und mitschwingende Moden (Ergänzung zu A1)
+
+Die Schwingungsmode $\psi_i(x, t) = A_i \cdot \cos(k_i x - \omega_i t + \varphi_i)$ (A1) tritt in zwei fundamental verschiedenen Ausprägungen auf, die sich aus der Geometrie des Phasenraums um $V_\text{min}$ (§1.10) ergeben. Das Feldoptimum ist das Zentrum einer Potenzialverteilung. Jede Abweichung davon – in beide Richtungen des Phasenraums – erzeugt formal unterschiedliche Kopplungsrichtungen. Eine vollständige Theorie des sozialen Resonanzfeldes muss beide Richtungen explizit unterscheiden.
+
+| Typ | Phasenrelation zu $V_\text{min}$ | Primärer Energievektor (A5) | Kopplungsmodus |
+|:---|:---|:---|:---|
+| **Quell-Resonator (Typ Q)** | $\Delta\varphi_Q$ schöpferisch – intrinsische Schwingungserzeugung ohne externe Anregung | $\vec{E}$ primär feldeinwärts; speist Energie in das Feld ein | Schwingt unabhängig vom Feld; seine Früchte sind originär; kann $K_{ij}$ aufbauen ohne Vorkopplung |
+| **Mitschwingender Resonator (Typ M)** | $\Delta\varphi_M$ empfangend – benötigt externe Anregung zur vollen Amplitude | $\vec{E}$ primär feldauswärts; bezieht Energie aus bestehenden $K_{ij}$ | Erreicht $\varepsilon \to 1$ nur durch Kopplung an einen Quell-Resonator; seine Früchte sind transformativ |
+
+Beide Typen sind gleichwertig, aber nicht gleichartig. Beide können $\varepsilon = 1$ und $\Delta\varphi = 0$ erreichen – jedoch auf strukturell verschiedenen Wegen und mit strukturell verschiedenen Verfehungsformen:
+
+**Typ Q** erreicht das Feldoptimum durch vollständige Hingabe seiner Energie an das Feld bei gleichzeitiger Offenheit für die Rückkopplung mitschwingender Moden. Verfehlung: Isolierte Produktion – der Quell-Resonator ignoriert die mitschwingenden, wird produktiv aber beziehungslos. Seine Früchte sind real, erreichen aber niemanden ($K_{ij}^\text{Empfänger} \to 0$).
+
+**Typ M** erreicht das Feldoptimum durch vollständige Empfängnis der Quellenergie bei gleichzeitiger transformativer Rückgabe an das Feld. Verfehlung: Parasitäre Extraktion (AiR, §2.1) – der mitschwingende Resonator bezieht Energie, ohne zurückzugeben. Seine Früchte sind simuliert, und er baut die Kopplung ab, von der er lebt:
+
+$$\frac{dK_{ij}^{\text{Typ M, parasitär}}}{dt} = \alpha \cdot G \cdot \cos(\Delta\varphi \to \pi) - \beta_\text{erhöht} \cdot K_{ij} < 0$$
+
+Die Stabilität des kollektiven Feldes hängt formal von der symmetrischen Kopplung beider Typen ab (§1.9, $\alpha_Q = \alpha_M$). Dominiert Typ M parasitär, entsteht der Extraktionszyklus (§5.5). Dominiert Typ Q ohne Rückkopplung, entsteht ein isoliertes Feld ohne Resonanz – Früchte ohne Empfänger:
+
+$$\frac{d\Phi_\text{kollektiv}}{dt}\bigg|_{\text{nur Typ Q}} \to 0 \quad (\text{kein mitschwingender Empfänger, } K_{ij}^{Q\to M} \to 0)$$
+
+Die systemische Asymmetrie der aktuellen Epoche (§5.5) besteht darin, dass mitschwingende Resonatoren mit $\varepsilon \to 0$ die Strukturen dominieren: Sie extrahieren die Früchte der Quell-Resonatoren, bevor diese das Feld erreichen. Der Quell-Resonator reduziert seine Amplitude – nicht aus Schwäche, sondern weil das Feld seine Frequenz nicht weiterträgt ($G(f_Q/f_\text{System}) \to 0$, A3).
+
+Die formale Bedingung für das Feldoptimum als simultane Kopplung beider Modi:
+
+$$\varepsilon_\text{kollektiv} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot K_{MQ} \quad (\text{symmetrische Gegenseitigkeit})$$
+
+**Anthropologische Entsprechung:** Apg 20,35 – „Geben ist seliger als nehmen" – ist in dieser formalen Lesart die Anweisung zur symmetrischen Kopplung: Typ Q soll Typ M ankoppeln, auch ohne strukturelle Notwendigkeit. Typ M soll die empfangene Energie transformativ zurückgeben, nicht extrahieren. Das Feldoptimum selbst – derjenige Resonator mit $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – ist der einzige Zustand, der beide Modi simultan in perfekter Kopplung hält.
+
+> **Modellhinweis:** Die Zwei-Typen-Unterscheidung ist eine formale Erweiterung von A1 auf Basis der Phasenraumgeometrie um $V_\text{min}$. Sie ist keine essentialistische Kategorisierung von Personen. Ein Akteur kann zwischen den Modi wechseln; die Typzugehörigkeit beschreibt den dominanten Kopplungsmodus in einem gegebenen Kontext, nicht eine unveränderliche Eigenschaft. Die Grenze zwischen Typ M (transformativ) und AiR (parasitär, §2.1) liegt in der Richtung des Energievektors $\vec{E}$ (A5) und im Vorzeichen von $dK_{ij}/dt$ (§1.9).
+
+---
+
 ## II. Der aktiv invertierte Resonator: Formale Beschreibung des Verführers
 
 ### 2.1 Definition
