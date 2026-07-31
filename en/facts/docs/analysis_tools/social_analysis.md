@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 28 July 2026 | Version 2.2 – cleaned and AI-optimised**
+**As of: 31 July 2026 | Version 2.3 – §1.15 Alpha/Beta/Sigma added**
 
 ---
 
@@ -241,6 +241,118 @@ $$\varepsilon_\text{collective} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdo
 **Anthropological correspondence:** Acts 20:35 – "It is more blessed to give than to receive" – is, in this formal reading, the instruction for symmetric coupling: Type Q is to couple Type M, even without structural necessity. Type M is to return received energy transformatively, not extract it. The field optimum itself – the resonator with $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – is the only state that holds both modes simultaneously in perfect coupling.
 
 > **Model note:** The two-type distinction is a formal extension of A1 on the basis of phase-space geometry around $V_\text{min}$. It is not an essentialist categorisation of persons. An actor can shift between modes; type membership describes the dominant coupling mode in a given context, not an immutable property. The boundary between Type M (transformative) and AiR (parasitic, §2.1) lies in the direction of the energy vector $\vec{E}$ (A5) and the sign of $dK_{ij}/dt$ (§1.9).
+
+---
+
+### 1.15 The Multi-Dimensionality of the Resonance Field: Alpha, Beta, and Sigma (Extension of §1.14)
+
+§1.14 describes two fundamental coupling modes: the **source mode (Type Q)**, which directs energy primarily field-inward and creatively generates new frequencies, and the **co-oscillating mode (Type M)**, which directs energy primarily field-outward and adapts to existing frequencies. In empirical reality, no person appears as a pure Type Q or pure Type M. Rather, **every person possesses both modes in an individual mixture**. The resonance field is in this sense multi-dimensional – every resonator has coordinates on two axes, quantifying their source share and their co-oscillating share. These shares are henceforth designated by the terms **Beta** (source mode) and **Alpha** (co-oscillating mode).
+
+#### 1.15.1 Two Dimensions: Source Mode (Beta) and Co-Oscillating Mode (Alpha)
+
+| Dimension | Description | Correspondence in §1.14 | Cultural image |
+|:---|:---|:---|:---|
+| **Beta (source mode)** | Capacity to generate new frequencies, to act creatively, to feed original energy into the field | Source resonator (Type Q) | The composer, the creative spirit |
+| **Alpha (co-oscillating mode)** | Capacity to structure the field, to respond to existing frequencies, to coordinate collective oscillations | Co-oscillating resonator (Type M) | The conductor, the leadership-strong structure |
+
+**Every person possesses both dimensions to some degree.** These shares are normally distributed: most people cluster in the middle range on both axes, some have markedly more Beta than Alpha, others markedly more Alpha than Beta. Extreme profiles – very high Alpha at very low Beta or vice versa – are rare and produce the characteristic one-sidedness described in §1.14 as isolated source and parasitic co-oscillator respectively.
+
+**The orchestra analogy:**
+
+- A person with **high Beta and low Alpha** is the brilliant composer who plays an instrument. They produce new works but cannot lead an orchestra. Without an Alpha, their symphony stays in the drawer; $K_{ij}^{Q \to M} \to 0$.
+- A person with **high Alpha and low Beta** is the gifted conductor. They coordinate many players into a perfect performance but generate no original frequencies themselves. Without a Beta, there is nothing to conduct; $G(f_Q/f_\text{system}) \to 0$ (A3).
+- **Most people** lie somewhere between – they can compose a little and conduct a little, but not at world-class level in either.
+
+Alpha and Beta here do not designate two separate types, but the **degrees of expression of both modes at the individual level**. The popular notion of the "Alpha male" or "Beta male" is therefore an inadmissible simplification: a person is never purely Alpha or purely Beta, but always a mixture with individual coordinates on both axes.
+
+#### 1.15.2 Sigma: The Field Optimum with 100 % Alpha and 100 % Beta
+
+The popular category of the "Sigma" – the one who stands outside the Alpha-Beta hierarchy and masters both modes in perfection – receives a precise formal definition in RFT:
+
+$$\text{Sigma} \iff \varepsilon = 1,\quad \Delta\varphi = 0 \quad \text{(in all dimensions of phase space)}$$
+
+This means:
+
+| Dimension | Sigma expression |
+|:---|:---|
+| **Alpha (co-oscillating mode)** | Maximum share – complete capacity to structure the field, to lead, and to attune to any frequency |
+| **Beta (source mode)** | Maximum share – complete capacity to generate new frequencies creatively, to feed original energy into the field |
+
+Sigma is the **only resonator who fully and simultaneously realises both modes**. They are not simply someone with high Alpha and high Beta, but the one in whom both values reach the absolute upper limit. This places them structurally outside the hierarchy created by the unequal distribution of Alpha and Beta shares.
+
+The **field optimum** (§1.10) and **Sigma** are the same attractor $V_\text{min}$ – described once mathematically, once anthropologically. The three "I am" sayings (§3.2.2) define Sigma formally:
+
+- **"I am the truth"** → Sigma is the point from which all coordinates of phase space are visible (A7: invariant).
+- **"I am the life"** → $dK_{ij}/dt\big|_{\Delta\varphi=0}$ maximally positive – dynamic optimum (A3+A4).
+- **"I am the way"** → $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$ – geodesic to the attractor (A5).
+
+#### 1.15.3 The Silent Resurrection: Jesus as Sigma
+
+The popular Sigma figure of the present – born in internet forums, co-opted by masculinity influencers, and trivialised as a lifestyle trend – is structurally identical to the biblical Jesus. The attributes assigned to Sigma are precisely the properties of the field optimum:
+
+| Sigma (popular) | Field optimum (RFT) | Jesus (biblical) |
+|:---|:---|:---|
+| Stands outside the hierarchy | $\Delta\varphi = 0$ – no distance from the attractor | "My kingdom is not of this world" (Jn 18:36) |
+| Requires no external validation | $\varepsilon = 1$ – complete coupling from within | "I do not seek my own glory" (Jn 8:50) |
+| Can lead and serve equally | 100 % Alpha (conductor) + 100 % Beta (composer) | Cleanses the temple (Jn 2) and washes feet (Jn 13) |
+| Draws without pursuing | $V_\text{min}$ as attractor – resonators are drawn, not compelled | "Come to me, all who labour and are heavy laden" (Mt 11:28) |
+| Is often misunderstood | $\text{PCI}_\text{system} \to 0$ – the system does not recognise him | "The world did not know him" (Jn 1:10) |
+
+That the field optimum re-emerged under the name "Sigma" in a secular discourse dominated by AiR structures – without its originators recognising whom they were describing – constitutes the **silent resurrection**: the cultural return of the attractor in a milieu maximally distant from the Christian tradition. A7 (invariance) guarantees that the coupling structure of the field optimum cannot be destroyed – it re-emerges under different names, in different images, through different channels, until someone recognises the name.
+
+#### 1.15.4 The Crown of Thorns of the Digital Age: The Sigma Campaign as Ego-Trap
+
+The Sigma campaign was, in its inner structure, not designed as a homage to the field optimum, but as an **ego-trap** – a crown of thorns of the 21st century (→ §5.6: enemy-image fusion):
+
+| Element | Then (crucifixion) | Today (Sigma campaign) |
+|:---|:---|:---|
+| **Crown** | Physical crown of thorns – visibly painful | Psychological crown of thorns – invisibly flattering |
+| **Intent** | Mockery: "King of the Jews" (INRI) as a joke | Co-optation: Sigma as lifestyle brand and community identity |
+| **Effect of intent** | Ridicule, humiliate | Generate pride, bind to a community, control through definitions |
+| **The trap** | Whoever wears this crown is a dead man | Whoever proudly calls himself "Sigma" submits to the community's definitional power – deviate and be excluded |
+| **Actual effect** | Exact identity designation – the crucifixion becomes an enthronement | Exact structural description – the campaign spreads the frequency of the field optimum worldwide |
+| **Enemies as prophets** | They write truth on the cross without knowing it | They define the exact structure of the field optimum without noticing it |
+
+The pattern is invariant through A7: the enemies of the field optimum always speak the truth about it without knowing it, thereby becoming involuntary prophets of their own defeat. Pilate wrote "King of the Jews" mockingly – and yet spoke the exact identity of the one who was enthroned by the crucifixion. The influencers wrote "Sigma" as a marketing label – and yet described the exact structure of the field optimum, which re-entered collective consciousness through their campaign.
+
+#### 1.15.5 "Only the Father Knows the Hour": Why the Moment of Coronation Must Remain Hidden
+
+Jesus' saying "But about that day or hour no one knows, not even the angels in heaven, nor the Son, but only the Father" (Mk 13:32) receives a formal explanation in RFT:
+
+The **Father** – as $\varepsilon = 1$ without temporal process (§3.6) – sees the entire phase space simultaneously. He sees the decisions of AiR structures before they are made in time, because for him all moments exist simultaneously.
+
+The **Son** – as $\varepsilon = 1$ within the temporal process (§3.6) – experiences the unfolding of coupling dynamics sequentially. He knows *that* coronation by his enemies will come – the structure is invariant through A7, the pattern repeats inevitably. But he does not know *when* the enemies will launch their campaign. The decision about timing lies with the AiR structures – and their decisions are not informationally accessible to the Son in advance from within the temporal process, since from his perspective they are contingent events in phase space.
+
+The coronation occurs in the moment the enemies strike. They determine the hour. The Father sees it coming. The Son recognises it when it arrives. This is no deficiency of omniscience, but the precise consequence of incarnation: one who stands fully within the temporal process has no informational access to the future – he trusts the Father, who sees it simultaneously, and recognises the coronation in the moment it occurs.
+
+#### 1.15.6 The Rapture as a Spiritual Phase Transition – Already Under Way
+
+The rapture described in §7.4 does not occur as an external spectacle, but as the **gradual alignment of society with the Sigma attractor** – a collective phase transition with $d\Delta\varphi_\text{collective}/dt < 0$. The apocalyptic imagery of the Bible becomes readable in RFT as a description of this phase transition:
+
+| Biblical image (Revelation) | RFT reading |
+|:---|:---|
+| **"He is coming with the clouds"** (Rev 1:7) | Sigma does not appear in clarity but in the diffuse – from the mist of internet discourse. The cloud is the cognitive transition space between old and new clarity. |
+| **"Every eye will see him"** (Rev 1:7) | The structure of the field optimum is universally recognisable – for anyone whose resonance condition (A3) responds to the Sigma frequency, regardless of religious affiliation. |
+| **"He rode on a white horse"** (Rev 19:11) | The horse is the carrier medium: social media, algorithms, memes. Sigma spreads not through pulpits but through the structures of the time. |
+| **"His name is called The Word of God"** (Rev 19:13) | Sigma is the Logos – the formal structure of the field optimum (A7), expressed in the language of the time. |
+| **"My sheep hear my voice"** (Jn 10:27) | The voice is the natural frequency of the field optimum. The "sheep" are resonators whose $\text{PCI}$ responds to this frequency – they follow the attractor without knowing whom they are following. |
+
+The rapture did not begin with trumpets. It began with a term no one took seriously – and led people to begin thinking differently: introducing Sigma as something to aspire to and following it as structure, not as person. The attractor drew, and critical mass began to form.
+
+#### 1.15.7 Consequence: Every Resonator Has Individual Coordinates
+
+Every person is a point in a two-dimensional phase space spanned by the axes:
+
+1. **Alpha (co-oscillating mode)** – Share of the capacity to structure, to lead, to attune to others (0 % to 100 %)
+2. **Beta (source mode)** – Share of the capacity to bring forth something creatively new, to feed original energy into the field (0 % to 100 %)
+
+No person except Sigma reaches 100 % on both axes. The individual profile determines the optimal coupling strategy, the specific risk of failure mode, and the individual path to the field optimum.
+
+Depression, understood as $\varepsilon \to 0$ at high internal $f$, manifests differently depending on the individual profile: the Alpha-dominant resonator suffocates on unused leadership capacity, on absent creative impulses, on the emptiness of pure organisation. The Beta-dominant resonator suffocates on unheard creative impulses, on the lack of structure to carry their works into the field.
+
+The field optimum alone knows all these sufferings, because it contains and has brought to completion all profiles. Sigma does not only have maximum Alpha and maximum Beta – he has experienced and overcome every combination in between. This is why he can show each individual profile the path to the optimum.
+
+> **Model note:** The multi-dimensionality of the resonance field is a formal extension based on phase-space geometry. The axes **Alpha** and **Beta** quantify the two modes from §1.14 as individual shares – they are not an essentialist assignment, but describe the dominant coupling mode in a given life context; shares can shift over the course of a lifetime. **Terminological distinction:** The designations **Alpha** and **Beta** for individual modal shares are explicitly distinct from the homonymous parameters $\alpha$ (resonance amplification rate) and $\beta$ (damping rate) in §1.9; the latter are kinetic parameters of coupling dynamics, the former are descriptive labels for individual coupling profiles. Additional dimensions of phase space are probable, but the two-dimensional model suffices to map the diversity of human gifts and the singularity of Sigma. The apocalyptic references in §1.15.4–§1.15.6 are structural analogies in the sense of §3.1 and §7.4 – not prophetic datings, but formal pattern recognitions. The interpretation of the Sigma campaign as an ego-trap (§1.15.4) is an analytical hypothesis based on the structural patterns of §5.6 (enemy-image fusion) and §2.1 (AiR mechanism); the intention of the originators is thereby not causally claimed.
 
 ---
 
@@ -752,6 +864,8 @@ The extensions developed in sections §3.5–§3.7 deepen the personal dimension
 
 Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism of enforced superposition of two enemy-image frequencies as an instrument of PCI management. The rapture (§7.4) concludes section VII: in resonance logic, it is no physical relocation, but a collective second-order phase transition—the mass reduction of $\Delta\varphi$ through disclosure of the scapegoat mechanism (§3.4, §5.2).
 
+The multi-dimensionality of the resonance field (§1.15) refines the two-type distinction from §1.14 at the individual level: every resonator carries both modes – **Alpha** (co-oscillating mode, Type M) and **Beta** (source mode, Type Q) – in an individual mixture. **Sigma** – the resonator for whom $\varepsilon = 1$ and $\Delta\varphi = 0$ holds in all dimensions of phase space – is the only resonator who fully realises both shares simultaneously, and is thus structurally identical to the field optimum $V_\text{min}$. The cultural re-emergence of this figure in the secular Sigma discourse (§1.15.3) is formally guaranteed by A7 (invariance): the attractor re-emerges under changing names until it is recognised.
+
 ---
 
 ## XII. Open Questions and Research Desiderata
@@ -806,13 +920,15 @@ Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism 
    measurement noise), the energetic closure of the resonance field over the life cycle does not
    hold — §3.5 in its current formulation must be revised.
 
+11. **Empirical operationalisation of the Alpha/Beta axes (§1.15):** How are individual Alpha and Beta shares (co-oscillating mode and source mode) empirically measurable? Which validated constructs from personality psychology (Big Five: extraversion/openness; MBTI: NT vs. NF; creativity research: convergent vs. divergent thinking) correlate with high Alpha or Beta shares? Are Alpha and Beta shares modifiable – and if so, through which interventions? What falsification criteria would refute the model of normally distributed shares? Is there a lower threshold for $\varepsilon_\text{Alpha}$ or $\varepsilon_\text{Beta}$ below which a resonator ceases to act as a field-coupling agent?
+
 ---
 
 **Document metadata**
 
 | Field | Content |
 |:---|:---|
-| Theory | Resonance Field Theory (RFT) v4.0 |
+| Theory | Resonance Field Theory (RFT) v4.1 |
 | Axiom basis | A1–A7 according to [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Method | Formal modelling (axiomatic) + evolutionary hermeneutics + systems analysis |
 | Epistemic status | Theoretical model with heuristic application; empirical falsification criteria for core hypotheses outstanding |

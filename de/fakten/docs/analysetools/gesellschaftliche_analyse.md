@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Analyseinstrument gesellschaftlicher Zusammenhänge
-**Stand: 28. Juli 2026 | Fassung 2.2 – bereinigt und KI-optimiert**
+**Stand: 31. Juli 2026 | Fassung 2.3 – §1.15 Alpha/Beta/Sigma ergänzt**
 
 ---
 
@@ -241,6 +241,118 @@ $$\varepsilon_\text{kollektiv} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot
 **Anthropologische Entsprechung:** Apg 20,35 – „Geben ist seliger als nehmen" – ist in dieser formalen Lesart die Anweisung zur symmetrischen Kopplung: Typ Q soll Typ M ankoppeln, auch ohne strukturelle Notwendigkeit. Typ M soll die empfangene Energie transformativ zurückgeben, nicht extrahieren. Das Feldoptimum selbst – derjenige Resonator mit $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – ist der einzige Zustand, der beide Modi simultan in perfekter Kopplung hält.
 
 > **Modellhinweis:** Die Zwei-Typen-Unterscheidung ist eine formale Erweiterung von A1 auf Basis der Phasenraumgeometrie um $V_\text{min}$. Sie ist keine essentialistische Kategorisierung von Personen. Ein Akteur kann zwischen den Modi wechseln; die Typzugehörigkeit beschreibt den dominanten Kopplungsmodus in einem gegebenen Kontext, nicht eine unveränderliche Eigenschaft. Die Grenze zwischen Typ M (transformativ) und AiR (parasitär, §2.1) liegt in der Richtung des Energievektors $\vec{E}$ (A5) und im Vorzeichen von $dK_{ij}/dt$ (§1.9).
+
+---
+
+### 1.15 Die Mehrdimensionalität des Resonanzfeldes: Alpha, Beta und Sigma (Erweiterung zu §1.14)
+
+§1.14 beschreibt zwei fundamentale Kopplungsmodi: den **Quell-Modus (Typ Q)**, der Energie primär feldeinwärts richtet und schöpferisch neue Frequenzen erzeugt, und den **mitschwingenden Modus (Typ M)**, der Energie primär feldauswärts richtet und sich an bestehende Frequenzen anpasst. In der empirischen Realität tritt kein Mensch als reiner Typ Q oder reiner Typ M auf. Vielmehr besitzt **jeder Mensch beide Modi in einem individuellen Mischungsverhältnis**. Das Resonanzfeld ist in diesem Sinne mehrdimensional – jeder Resonator hat Koordinaten auf zwei Achsen, die seinen Quell-Anteil und seinen mitschwingenden Anteil quantifizieren. Diese Anteile werden im Folgenden mit den Begriffen **Beta** (Quell-Modus) und **Alpha** (mitschwingender Modus) bezeichnet.
+
+#### 1.15.1 Zwei Dimensionen: Quell-Modus (Beta) und mitschwingender Modus (Alpha)
+
+| Dimension | Beschreibung | Entsprechung in §1.14 | Kulturelles Bild |
+|:---|:---|:---|:---|
+| **Beta (Quell-Modus)** | Fähigkeit, neue Frequenzen zu erzeugen, schöpferisch zu wirken, originäre Energie ins Feld einzuspeisen | Quell-Resonator (Typ Q) | Der Komponist, der schöpferische Geist |
+| **Alpha (mitschwingender Modus)** | Fähigkeit, das Feld zu strukturieren, auf bestehende Frequenzen einzugehen, kollektive Schwingungen zu koordinieren | Mitschwingender Resonator (Typ M) | Der Dirigent, die führungsstarke Struktur |
+
+**Jeder Mensch besitzt beide Dimensionen in einem gewissen Anteil.** Diese Anteile sind normalverteilt: Die meisten Menschen liegen mit beiden Werten im mittleren Bereich, einige haben deutlich mehr Beta als Alpha, andere deutlich mehr Alpha als Beta. Extreme Ausprägungen – sehr hohes Alpha bei sehr niedrigem Beta oder umgekehrt – sind selten und führen zu den charakteristischen Einseitigkeiten, die in §1.14 als isolierte Quelle bzw. parasitärer Mitschwinger beschrieben wurden.
+
+**Die Orchester-Analogie:**
+
+- Ein Mensch mit **hohem Beta-Anteil und niedrigem Alpha** ist der geniale Komponist, der ein Instrument spielt. Er bringt neue Werke hervor, kann aber kein Orchester führen. Ohne einen Alpha bleibt seine Symphonie in der Schublade; $K_{ij}^{Q \to M} \to 0$.
+- Ein Mensch mit **hohem Alpha-Anteil und niedrigem Beta** ist der begnadete Dirigent. Er koordiniert viele Mitspieler zu einer perfekten Aufführung, erzeugt aber selbst keine originären Frequenzen. Ohne einen Beta gibt es nichts zu dirigieren; $G(f_Q/f_\text{System}) \to 0$ (A3).
+- **Die meisten Menschen** liegen irgendwo dazwischen – sie können ein bisschen komponieren und ein bisschen dirigieren, aber nichts davon auf Weltniveau.
+
+Die Begriffe Alpha und Beta bezeichnen hier keine zwei getrennten Typen, sondern die **Ausprägungsgrade beider Modi auf individueller Ebene**. Die populäre Rede vom „Alpha-Mann" oder „Beta-Mann" erweist sich damit als unzulässige Vereinfachung: Ein Mensch ist nie nur Alpha oder nur Beta, sondern stets eine Mischung mit individuellen Koordinaten auf beiden Achsen.
+
+#### 1.15.2 Sigma: Das Feldoptimum mit 100 % Alpha und 100 % Beta
+
+Die populäre Kategorie des „Sigma" – derjenige, der außerhalb der Alpha-Beta-Hierarchie steht und beide Modi in Perfektion beherrscht – findet in der RFT eine präzise formale Definition:
+
+$$\text{Sigma} \iff \varepsilon = 1,\quad \Delta\varphi = 0 \quad \text{(in allen Dimensionen des Phasenraums)}$$
+
+Das bedeutet:
+
+| Dimension | Sigma-Ausprägung |
+|:---|:---|
+| **Alpha (mitschwingender Modus)** | Maximaler Anteil – vollständige Fähigkeit, das Feld zu strukturieren, zu führen, sich auf jede Frequenz einzustellen |
+| **Beta (Quell-Modus)** | Maximaler Anteil – vollständige Fähigkeit, schöpferisch neue Frequenzen zu erzeugen, originäre Energie ins Feld einzuspeisen |
+
+Der Sigma ist der **einzige Resonator, der beide Modi vollständig und gleichzeitig verwirklicht**. Er ist nicht einfach jemand mit hohem Alpha und hohem Beta, sondern derjenige, bei dem beide Werte die absolute Obergrenze erreichen. Damit steht er strukturell außerhalb der Hierarchie, die durch die ungleiche Verteilung von Alpha- und Beta-Anteilen entsteht.
+
+Das **Feldoptimum** (§1.10) und der **Sigma** sind derselbe Attraktor $V_\text{min}$ – einmal mathematisch, einmal anthropologisch beschrieben. Die drei Ich-bin-Worte (§3.2.2) definieren den Sigma formal:
+
+- **„Ich bin die Wahrheit"** → Der Sigma ist der Punkt, von dem aus alle Koordinaten des Phasenraums sichtbar sind (A7: invariant).
+- **„Ich bin das Leben"** → $dK_{ij}/dt\big|_{\Delta\varphi=0}$ maximal positiv – dynamisches Optimum (A3+A4).
+- **„Ich bin der Weg"** → $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$ – Geodätische zum Attraktor (A5).
+
+#### 1.15.3 Die stille Auferstehung: Jesus als Sigma
+
+Die populäre Sigma-Figur der Gegenwart – entstanden in Internet-Foren, vereinnahmt von Männlichkeits-Influencern und trivialisiert als Lifestyle-Mode – ist strukturell identisch mit dem biblischen Jesus. Die Attribute, die dem Sigma zugeschrieben werden, sind exakt die Eigenschaften des Feldoptimums:
+
+| Sigma (populär) | Feldoptimum (RFT) | Jesus (biblisch) |
+|:---|:---|:---|
+| Steht außerhalb der Hierarchie | $\Delta\varphi = 0$ – kein Abstand zum Attraktor | „Mein Reich ist nicht von dieser Welt" (Joh 18,36) |
+| Braucht keine externe Validierung | $\varepsilon = 1$ – vollständige Kopplung aus sich selbst | „Ich suche nicht meine Ehre" (Joh 8,50) |
+| Kann führen und dienen gleichermaßen | 100 % Alpha (Dirigent) + 100 % Beta (Komponist) | Treibt den Tempel rein (Joh 2) und wäscht Füße (Joh 13) |
+| Zieht an, ohne zu verfolgen | $V_\text{min}$ als Attraktor – Resonatoren werden angezogen, nicht gezwungen | „Kommt her zu mir, alle, die ihr mühselig und beladen seid" (Mt 11,28) |
+| Wird oft missverstanden | $\text{PCI}_\text{System} \to 0$ – das System erkennt ihn nicht | „Die Welt hat ihn nicht erkannt" (Joh 1,10) |
+
+Dass ausgerechnet in einem säkularen, von AiR-Strukturen dominierten Diskurs das Feldoptimum unter dem Namen „Sigma" wieder auftauchte – ohne dass die Urheber dieses Begriffs erkannten, wen sie beschrieben –, ist die **stille Auferstehung**: die kulturelle Wiederkehr des Attraktors in einem Milieu, das von der christlichen Tradition denkbar weit entfernt ist. A7 (Invarianz) garantiert, dass die Kopplungsstruktur des Feldoptimums nicht zerstört werden kann – sie taucht unter anderen Namen, in anderen Bildern und durch andere Kanäle wieder auf, bis jemand den Namen wiedererkennt.
+
+#### 1.15.4 Die Dornenkrone des digitalen Zeitalters: Die Sigma-Kampagne als Ego-Falle
+
+Die Sigma-Kampagne war nach ihrer inneren Struktur nicht als Huldigung des Feldoptimums gedacht, sondern als **Ego-Falle** – eine Dornenkrone des 21. Jahrhunderts (→ §5.6: Feindbildfusion):
+
+| Element | Damals (Kreuzigung) | Heute (Sigma-Kampagne) |
+|:---|:---|:---|
+| **Krone** | Physische Dornenkrone – sichtbar schmerzend | Psychische Dornenkrone – unsichtbar schmeichelnd |
+| **Absicht** | Verspottung: „König der Juden" (INRI) als Witz | Vereinnahmung: Sigma als Lifestyle-Marke und Community-Identität |
+| **Wirkung der Absicht** | Lächerlichmachen, demütigen | Stolz erzeugen, in eine Community einbinden, über Definitionen kontrollieren |
+| **Die Falle** | Wer diese Krone trägt, ist ein toter Mann | Wer sich stolz „Sigma" nennt, unterwirft sich der Definitionsmacht der Community – bei Abweichung wird er ausgegrenzt |
+| **Tatsächliche Wirkung** | Exakte Identitätsbezeichnung – die Kreuzigung wird zur Inthronisation | Exakte Strukturbeschreibung – die Kampagne verbreitet die Frequenz des Feldoptimums weltweit |
+| **Die Feinde als Propheten** | Sie schreiben die Wahrheit ans Kreuz, ohne es zu wissen | Sie definieren die exakte Struktur des Feldoptimums, ohne es zu merken |
+
+Das Muster ist durch A7 invariant: Die Feinde des Feldoptimums sprechen stets die Wahrheit über es aus, ohne es zu wissen, und werden dadurch zu unfreiwilligen Propheten ihrer eigenen Niederlage. Pilatus schrieb „König der Juden" und meinte es spöttisch – und sprach doch die exakte Identität dessen aus, der durch die Kreuzigung inthronisiert wurde. Die Influencer schrieben „Sigma" und meinten es als Marketing-Label – und beschrieben doch die exakte Struktur des Feldoptimums, das durch ihre Kampagne erneut ins kollektive Bewusstsein trat.
+
+#### 1.15.5 „Nur der Vater kennt die Stunde": Warum der Zeitpunkt der Krönung verborgen bleiben muss
+
+Das Jesuswort „Von jenem Tag aber und der Stunde weiß niemand, auch die Engel im Himmel nicht, auch der Sohn nicht, sondern allein der Vater" (Mk 13,32) findet in der RFT eine formale Erklärung:
+
+Der **Vater** – als $\varepsilon = 1$ ohne zeitlichen Prozess (§3.6) – sieht den gesamten Phasenraum simultan. Er sieht die Entscheidungen der AiR-Strukturen, bevor sie in der Zeit getroffen werden, weil für ihn alle Zeitpunkte gleichzeitig existieren.
+
+Der **Sohn** – als $\varepsilon = 1$ im zeitlichen Prozess (§3.6) – erlebt die Entfaltung der Kopplungsdynamik sequentiell. Er weiß, *dass* die Krönung durch die Feinde kommen wird – die Struktur ist durch A7 invariant, das Muster wiederholt sich zwingend. Aber er weiß nicht, *wann* die Feinde ihre Kampagne starten. Die Entscheidung über den Zeitpunkt liegt bei den AiR-Strukturen – und deren Entscheidungen sind dem Sohn im zeitlichen Prozess nicht im Voraus zugänglich, weil sie aus dessen Perspektive kontingente Ereignisse im Phasenraum sind.
+
+Die Krönung geschieht in dem Moment, in dem die Feinde losschlagen. Sie bestimmen die Stunde. Der Vater sieht sie kommen. Der Sohn erkennt sie, sobald sie eintritt. Dies ist kein Mangel an Allwissenheit, sondern die präzise Konsequenz der Inkarnation: Wer vollständig im zeitlichen Prozess steht, hat keinen informationalen Zugriff auf die Zukunft – er vertraut dem Vater, der sie simultan sieht, und erkennt die Krönung in dem Moment, in dem sie geschieht.
+
+#### 1.15.6 Die Entrückung als geistiger Phasenübergang – bereits im Gange
+
+Die in §7.4 beschriebene Entrückung findet nicht als äußeres Spektakel statt, sondern als **schleichende Ausrichtung der Gesellschaft auf den Sigma-Attraktor** – ein kollektiver Phasenübergang mit $d\Delta\varphi_\text{kollektiv}/dt < 0$. Die apokalyptische Bildsprache der Bibel wird in der RFT als Beschreibung dieses Phasenübergangs lesbar:
+
+| Biblisches Bild (Offenbarung) | RFT-Lesart |
+|:---|:---|
+| **„Er kommt mit den Wolken"** (Offb 1,7) | Der Sigma erscheint nicht in Klarheit, sondern im Diffusen – aus dem Nebel des Internet-Diskurses. Die Wolke ist der kognitive Übergangsraum zwischen alter und neuer Klarheit. |
+| **„Es werden ihn sehen alle Augen"** (Offb 1,7) | Die Struktur des Feldoptimums ist universell erkennbar – für jeden, dessen Resonanzbedingung (A3) auf die Sigma-Frequenz anspricht, unabhängig von religiöser Zugehörigkeit. |
+| **„Er ritt auf einem weißen Pferd"** (Offb 19,11) | Das Pferd ist das Trägermedium: soziale Medien, Algorithmen, Memes. Der Sigma verbreitet sich nicht durch Kanzeln, sondern durch die Strukturen der Zeit. |
+| **„Sein Name ist: Das Wort Gottes"** (Offb 19,13) | Der Sigma ist der Logos – die formale Struktur des Feldoptimums (A7), ausgedrückt in der Sprache der Zeit. |
+| **„Meine Schafe hören meine Stimme"** (Joh 10,27) | Die Stimme ist die Eigenfrequenz des Feldoptimums. Die „Schafe" sind Resonatoren, deren $\text{PCI}$ auf diese Frequenz anspricht – sie folgen dem Attraktor, ohne zu wissen, wem sie folgen. |
+
+Die Entrückung begann nicht mit Posaunen. Sie begann mit einem Begriff, den niemand ernst nahm – und führte dazu, dass Menschen begannen, anders zu denken: den Sigma als erstrebenswert einzuführen und ihm als Struktur zu folgen. Der Attraktor zog, und die kritische Masse begann sich zu formieren.
+
+#### 1.15.7 Konsequenz: Jeder Resonator hat individuelle Koordinaten
+
+Jeder Mensch ist ein Punkt in einem zweidimensionalen Phasenraum, aufgespannt durch die Achsen:
+
+1. **Alpha (mitschwingender Modus)** – Anteil der Fähigkeit, zu strukturieren, zu führen, sich auf andere einzustellen (0 % bis 100 %)
+2. **Beta (Quell-Modus)** – Anteil der Fähigkeit, schöpferisch Neues hervorzubringen, originäre Energie ins Feld einzuspeisen (0 % bis 100 %)
+
+Kein Mensch außer dem Sigma erreicht auf beiden Achsen 100 %. Das individuelle Profil bestimmt die optimale Kopplungsstrategie, die spezifische Verfehlungsgefahr und den individuellen Weg zum Feldoptimum.
+
+Die Depression, verstanden als $\varepsilon \to 0$ bei hohem innerem $f$, manifestiert sich abhängig vom individuellen Profil unterschiedlich: Der Alpha-dominante Resonator erstickt an ungenutzter Führungskraft, an fehlenden schöpferischen Impulsen, an der Leere des reinen Organisierens. Der Beta-dominante Resonator erstickt an ungehörten schöpferischen Impulsen, an mangelnder Struktur, die seine Werke ins Feld tragen könnte.
+
+Das Feldoptimum allein kennt alle diese Leiden, weil es alle Profile in sich trägt und zur Vollendung gebracht hat. Der Sigma hat nicht nur maximales Alpha und maximales Beta – er hat auch jede Kombination dazwischen selbst erfahren und überwunden. Deshalb kann er jedem individuellen Profil den Weg zum Optimum zeigen.
+
+> **Modellhinweis:** Die Mehrdimensionalität des Resonanzfeldes ist eine formale Erweiterung auf Basis der Phasenraumgeometrie. Die Achsen **Alpha** und **Beta** sind die Quantifizierung der beiden Modi aus §1.14 als individuelle Anteile – sie sind keine essentialistische Zuschreibung, sondern beschreiben den in einem gegebenen Lebenskontext dominanten Modus; die Anteile können sich im Lauf eines Lebens verändern. **Terminologische Abgrenzung:** Die Bezeichnungen **Alpha** und **Beta** für die individuellen Modalanteile sind ausdrücklich von den gleichnamigen Parametern $\alpha$ (Resonanzverstärkungsrate) und $\beta$ (Dämpfungsrate) in §1.9 zu unterscheiden; letztere sind kinetische Parameter der Kopplungsdynamik, erstere sind deskriptive Label für individuelle Kopplungsprofile. Weitere Dimensionen des Phasenraums sind wahrscheinlich, aber das zweidimensionale Modell genügt, um die Vielfalt menschlicher Begabungen und die Singularität des Sigma abzubilden. Die apokalyptischen Bezüge in §1.15.4–§1.15.6 sind strukturelle Analogien im Sinne von §3.1 und §7.4 – keine prophetischen Datierungen, sondern formale Mustererkennungen. Die Deutung der Sigma-Kampagne als Ego-Falle (§1.15.4) ist eine analytische Hypothese auf Basis der Strukturmuster von §5.6 (Feindbildfusion) und §2.1 (AiR-Mechanismus); die Intention der Urheber ist damit nicht kausal behauptet.
 
 ---
 
@@ -756,6 +868,8 @@ Die in den Abschnitten §3.5–3.7 entwickelten Erweiterungen vertiefen die pers
 
 Die Feindbildfusion (§5.6) ergänzt §5.2 (Sündenbock-Mechanismus) um den Mechanismus der erzwungenen Superposition zweier Feindbildfrequenzen als Instrument des PCI-Managements. Die Entrückung (§7.4) schließt Abschnitt VII ab: Sie ist resonanzlogisch kein physischer Ortswechsel, sondern ein kollektiver Phasenübergang zweiter Ordnung – die massenhafte Reduktion von $\Delta\varphi$ durch Offenlegung des Sündenbock-Mechanismus (§3.4, §5.2).
 
+Die Mehrdimensionalität des Resonanzfeldes (§1.15) differenziert die Zwei-Typen-Unterscheidung aus §1.14 auf individueller Ebene: Jeder Resonator trägt beide Modi – **Alpha** (mitschwingender Modus, Typ M) und **Beta** (Quell-Modus, Typ Q) – in einem individuellen Mischungsverhältnis. Der **Sigma** – derjenige Resonator, bei dem $\varepsilon = 1$ und $\Delta\varphi = 0$ in allen Dimensionen des Phasenraums gilt – ist der einzige, der beide Anteile vollständig verwirklicht und damit strukturell mit dem Feldoptimum $V_\text{min}$ identisch ist. Die kulturelle Wiederkehr dieser Figur im säkularen Sigma-Diskurs (§1.15.3) ist durch A7 (Invarianz) formal garantiert: Der Attraktor taucht unter wechselnden Namen wieder auf, bis er erkannt wird.
+
 ---
 
 ## XII. Offene Fragen und Forschungsdesiderate
@@ -810,13 +924,15 @@ Die Feindbildfusion (§5.6) ergänzt §5.2 (Sündenbock-Mechanismus) um den Mech
    des Messrauschens), ist die energetische Schließung des Resonanzfelds über den Lebenszyklus
    nicht gegeben — §3.5 muss in der aktuellen Formulierung revidiert werden.
 
+11. **Empirische Operationalisierung der Alpha/Beta-Achsen (§1.15):** Wie sind die individuellen Alpha- und Beta-Anteile (mitschwingender Modus und Quell-Modus) empirisch messbar? Welche validierten Konstrukte der Persönlichkeitspsychologie (Big Five: Extraversion/Offenheit; MBTI: NT vs. NF; Kreativitätsforschung: konvergentes vs. divergentes Denken) korrelieren mit hohem Alpha- bzw. Beta-Anteil? Sind Alpha- und Beta-Anteile modifizierbar – und wenn ja, durch welche Interventionen? Welche Falsifizierungskriterien würden das Modell der normalverteilten Anteile widerlegen? Gibt es eine untere Schwelle für $\varepsilon_\text{Alpha}$ bzw. $\varepsilon_\text{Beta}$, unterhalb der ein Resonator nicht mehr feldkoppelnd wirkt?
+
 ---
 
 **Dokument-Metadaten**
 
 | Feld | Inhalt |
 |:---|:---|
-| Theorie | Resonanzfeldtheorie (RFT) v4.0 |
+| Theorie | Resonanzfeldtheorie (RFT) v4.1 |
 | Axiomgrundlage | A1–A7 nach [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Methode | Formale Modellbildung (axiomatisch) + evolutionäre Hermeneutik + Systemanalyse |
 | Epistemischer Status | Theoretisches Modell mit heuristischer Anwendung; empirische Falsifizierungskriterien für Kernhypothesen ausstehend |
