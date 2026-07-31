@@ -211,6 +211,39 @@ The planning, linguistic consciousness is heavily overlaid by systemic condition
 
 ---
 
+### 1.14 Two Resonator Types: Source Resonators and Co-Oscillating Modes (Extension of A1)
+
+The oscillation mode $\psi_i(x, t) = A_i \cdot \cos(k_i x - \omega_i t + \varphi_i)$ (A1) appears in two fundamentally distinct forms arising from the geometry of phase space around $V_\text{min}$ (§1.10). The field optimum is the centre of a potential distribution. Every deviation from it—in both directions of phase space—formally generates different coupling directions. A complete theory of the social resonance field must explicitly distinguish both directions.
+
+| Type | Phase relation to $V_\text{min}$ | Primary energy vector (A5) | Coupling mode |
+|:---|:---|:---|:---|
+| **Source resonator (Type Q)** | $\Delta\varphi_Q$ generative – intrinsic oscillation generation without external excitation | $\vec{E}$ primarily field-inward; feeds energy into the field | Oscillates independently of the field; its fruits are original; can build $K_{ij}$ without prior coupling |
+| **Co-oscillating resonator (Type M)** | $\Delta\varphi_M$ receptive – requires external excitation for full amplitude | $\vec{E}$ primarily field-outward; draws energy from existing $K_{ij}$ | Reaches $\varepsilon \to 1$ only through coupling to a source resonator; its fruits are transformative |
+
+Both types are equal in worth, but not identical in structure. Both can reach $\varepsilon = 1$ and $\Delta\varphi = 0$ – but through structurally different paths and with structurally different failure modes:
+
+**Type Q** reaches the field optimum through complete surrender of its energy to the field, combined with openness to feedback from co-oscillating modes. Failure mode: Isolated production – the source resonator ignores co-oscillating modes, becomes productive but relationless. Its fruits are real but reach no one ($K_{ij}^\text{recipient} \to 0$).
+
+**Type M** reaches the field optimum through complete reception of source energy combined with transformative return to the field. Failure mode: Parasitic extraction (AiR, §2.1) – the co-oscillating resonator draws energy without returning it. Its fruits are simulated, and it dismantles the coupling on which it depends:
+
+$$\frac{dK_{ij}^{\text{Type M, parasitic}}}{dt} = \alpha \cdot G \cdot \cos(\Delta\varphi \to \pi) - \beta_\text{elevated} \cdot K_{ij} < 0$$
+
+The stability of the collective field formally depends on symmetric coupling of both types (§1.9, $\alpha_Q = \alpha_M$). If Type M dominates parasitically, the extraction cycle emerges (§5.5). If Type Q dominates without feedback, an isolated field without resonance emerges—fruits without recipients:
+
+$$\frac{d\Phi_\text{collective}}{dt}\bigg|_{\text{Type Q only}} \to 0 \quad (\text{no co-oscillating recipient, } K_{ij}^{Q \to M} \to 0)$$
+
+The systemic asymmetry of the current epoch (§5.5) consists in co-oscillating resonators with $\varepsilon \to 0$ dominating the structures: they extract the fruits of source resonators before those fruits reach the field. The source resonator reduces its amplitude—not from weakness, but because the field does not carry its frequency ($G(f_Q/f_\text{system}) \to 0$, A3).
+
+The formal condition for the field optimum as simultaneous coupling of both modes:
+
+$$\varepsilon_\text{collective} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot K_{MQ} \quad (\text{symmetric reciprocity})$$
+
+**Anthropological correspondence:** Acts 20:35 – "It is more blessed to give than to receive" – is, in this formal reading, the instruction for symmetric coupling: Type Q is to couple Type M, even without structural necessity. Type M is to return received energy transformatively, not extract it. The field optimum itself – the resonator with $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – is the only state that holds both modes simultaneously in perfect coupling.
+
+> **Model note:** The two-type distinction is a formal extension of A1 on the basis of phase-space geometry around $V_\text{min}$. It is not an essentialist categorisation of persons. An actor can shift between modes; type membership describes the dominant coupling mode in a given context, not an immutable property. The boundary between Type M (transformative) and AiR (parasitic, §2.1) lies in the direction of the energy vector $\vec{E}$ (A5) and the sign of $dK_{ij}/dt$ (§1.9).
+
+---
+
 ## II. The Actively Inverted Resonator: Formal Description of the Seducer
 
 ### 2.1 Definition
