@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Analyseinstrument gesellschaftlicher Zusammenhänge
-**Stand: 31. Juli 2026 | Fassung 2.3 – §1.15 Alpha/Beta/Sigma ergänzt**
+**Stand: 1. August 2026 | Fassung 2.4 – §3.8 Paradies als resonanzlogische Zivilisation ergänzt**
 
 ---
 
@@ -557,6 +557,209 @@ Dies erklärt sowohl die Entstehung des trinitarischen Dogmas aus Jesu ursprüng
 
 ---
 
+### 3.8 Das Paradies als resonanzlogische Zivilisation: Vom ersten Adam bis zur Wiederkunft
+
+Die Abschnitte §3.5 (Adam-Eva-Komplementarität), §3.6 (Trinität) und §3.7 (prophetischer Erkenntnisprozess) entfalten die personale Dimension des Feldoptimums in synchroner Perspektive. §3.8 ergänzt diese Struktur durch eine **diachrone Rekonstruktion**: die Abfolge der kosmischen Zykluspunkte vom ersten Adam bis zur angekündigten Wiederkunft als Sequenz periodischer Feldoptimum-Manifestationen.
+
+---
+
+#### 3.8.1 Der kosmische Zyklus: Periodische Absenkung von β im kollektiven Resonanzfeld
+
+Das kollektive Dämpfungsparameter $\beta$ des Resonanzfelds (§1.9) unterliegt nach der RFT-Hypothese einer periodischen Modulation:
+
+$$\beta(t) = \beta_0 + \Delta\beta \cdot \cos\!\left(\frac{2\pi t}{T_\text{zyk}}\right)$$
+
+An den Zykluspunkt-Minima ($t = t_n$, $n = 0, 1, 2, \ldots$) gilt $\beta(t_n) \to \beta_\text{min}$: Das kollektive Feld nähert sich dem Zustand minimaler Dämpfung. In diesem Zustand ist die Kopplungsdynamik (§1.9) maximal effektiv – ein singulärer Resonator mit $\varepsilon_m = 1$ und $\Delta\varphi_m = 0$ kann vollständige Feldkopplung erreichen:
+
+$$\lim_{\beta \to \beta_\text{min}} \frac{dK_{ij}}{dt}\bigg|_{\varepsilon_m = 1,\, \Delta\varphi_m = 0} \to \text{max}$$
+
+Die empirische ~2000-Jahres-Sequenz der kanonischen Zykluspunkte – Adam (~4000 v. Chr.), Abraham (~2000 v. Chr.), Jesus (~30 n. Chr.), Gegenwart (~2000 n. Chr.) – liefert eine erste Kalibrierungsgröße für $T_\text{zyk}$:
+
+$$T_\text{zyk} \approx 2000 \text{ Jahre} \quad \text{(Hypothese, Kalibrierung offen: → §XII/12)}$$
+
+> **Modellhinweis:** Die Natur des Zyklus ist formal nicht determiniert. Die Periodizität kann astronomisch (Präzessionszyklus, Milanković-Zyklen), geophysikalisch (Schumann-Resonanz-Driftmuster, geomagnetische Umkehrzyklen) oder als feldinternes Attraktorphänomen der RFT selbst modelliert werden. Die Kalibrierung ist offen (→ §XII/12).
+
+---
+
+#### 3.8.2 Das Paradies als Feldoptimum-Zivilisation: Der erste Zykluspunkt (~4000 v. Chr.)
+
+Der **erste Zykluspunkt** ($t_0 \approx 4000$ v. Chr.) ist in der Genesis als Eden kodiert: eine menschliche Gemeinschaft im Zustand minimaler kollektiver Dämpfung. Formal:
+
+$$\beta(t_0) \to \beta_\text{min}, \quad \varepsilon_\text{kollektiv}(t_0) \to 1, \quad V(f, t_0) \to V_\text{min}$$
+
+Adam als singulärer Resonator (§3.5.1) ist in diesem Zustand vollständig feldgekoppelt:
+
+$$\exists!\; \text{Resonator}_m : \varepsilon_m = 1, \; \Delta\varphi_m = 0 \quad \text{(Gen 2,7; → §3.5.1)}$$
+
+Eva als konstitutive Phasenverschiebung (§3.5.2) ermöglicht den Zeitprozess:
+
+$$\Delta\varphi_w = \delta\varphi_0 > 0, \quad \psi_\text{Kind} = f(\psi_m, \psi_w, \Delta\varphi_{mw}) \quad \text{(Gen 2,22; → §3.5.2, §3.5.3)}$$
+
+Das Eden-System ist resonanzlogisch: kein parasitärer Extraktionszyklus (§5.5), kein AiR dominierend. Die Kopplungsstruktur ist stabil: $K_{ij}$ hoch, $\Delta\varphi$ gering, $\text{PCI} \to 1$ (A6).
+
+---
+
+#### 3.8.3 Der Sündenfall als Feldkopplung mit dem AiR (→ §IV)
+
+Der Sündenfall (→ §IV) ist formal der Eintritt des **aktiv invertierten Resonators** (§2.1) in das feldoptimale System. Die Schlange (Gen 3,1–5) als AiR mit $\varepsilon_\text{AiR} \to 0$, $\vec{E}$ feldauswärts (A5), injiziert eine externe Phasendifferenz in die Eva-Struktur:
+
+$$\Delta\varphi_w(t > t_\text{Sündenfall}) = \delta\varphi_0 + \Delta\varphi_\text{AiR}$$
+
+Die Folge ist eine kollektive $\beta$-Erhöhung:
+
+$$\beta(t_\text{Sündenfall}^+) = \beta_\text{min} + \Delta\beta_\text{AiR} > \beta_\text{min}$$
+
+Das Feld verlässt sein Minimum. Der Sündenfall ist nicht das Versagen des Feldoptimums, sondern die **Injektion von $\Delta\varphi$ in die Eva-Struktur** – präzise die Stelle des geringsten Widerstands, weil die Eva-Struktur als konstitutive Phasenverschiebung strukturell offener für externe Phasenstörungen ist (§3.5.2).
+
+> **Modellhinweis:** Dies ist keine moralische Schuldzuweisung. Die strukturelle Offenheit der Eva-Struktur für externe Kopplung ist formal dual: Sie ist die Bedingung schöpferischen Lebens (§3.5.2) und zugleich der Angriffspunkt des AiR.
+
+---
+
+#### 3.8.4 Kain, Abel und Seth: Die erste Bifurkation des Feldes nach dem Sündenfall
+
+Die erste Generation nach dem Sündenfall zeigt die **Bifurkation des Feldes** in zwei Pole (§1.14):
+
+| | Kain | Abel | Seth |
+|:---|:---|:---|:---|
+| **Typ** | AiR-Struktur (→ §2.1) | Typ Q (Quell-Resonator, → §1.14) | Feldoptimum-Nachfolgelinie |
+| **Energievektor $\vec{E}$** | Feldauswärts (A5 invertiert) | Feldeinwärts (A5) | Feldeinwärts, restauriert |
+| **Kopplungseffizienz** | $\varepsilon_\text{Kain} \to 0$ | $\varepsilon_\text{Abel} \to 1$ | $\varepsilon_\text{Seth} > 0$, positiv |
+| **Systemreaktion** | Tötung des Feldoptimum-Resonators (→ §3.3) | Eliminierter Typ-Q-Resonator | Restauration der Feldlinie (Gen 4,25–26) |
+
+Kains Tötung Abels (Gen 4,8) ist die **erste Instanz** der durch A7 invarianten Systemreaktion auf hohe Feldkopplung (§3.3): Das System mit erhöhtem $\beta$ reagiert auf $\varepsilon \to 1$ mit Auslöschungsimpuls. Abel ist kein historischer Sonderfall, sondern das erste dokumentierte Muster dieser Invariante.
+
+Seth (Gen 4,25–26) ist die **Wiederherstellungslinie**: Die Feldoptimum-Frequenz überlebt im kollektiven Feld, auch wenn der individuelle Resonator eliminiert wird. $V_\text{min}$ bleibt strukturell persistent (§1.10).
+
+---
+
+#### 3.8.5 Noah: Systemreset am Ende eines parasitären Zyklus
+
+Die Sintfluterzählung (Gen 6–9) ist in der RFT-Lesart die narrative Kodierung der **Selbstzerstörungslogik des parasitären Extraktionszyklus** (§5.5.1): Wenn $\beta$ nach dem Sündenfall monoton steigt und die kollektive Kopplungseffizienz gegen null fällt ($\varepsilon_\text{kollektiv} \to 0$), kollabiert das Feld in seinen eigenen Extraktionsmechanismus:
+
+$$\frac{d\Phi_\text{kollektiv}}{dt}\bigg|_{\varepsilon_\text{koll.} \to 0,\; \beta \to \beta_\text{max}} \to 0 \quad \text{(→ §5.5.1: Selbstzerstörungslogik)}$$
+
+Noah (Gen 6,9: „Noah war ein gerechter Mann und untadelig unter seinen Zeitgenossen; Noah wandelte mit Gott") ist der einzige beibehaltene Resonator mit $\varepsilon_\text{Noah} > \varepsilon_\text{Schwelle}$ – der Typ-Q-Resonator, dessen Frequenz das Minimum $V_\text{min}$ nach dem Zusammenbruch neu verankert (→ §1.10, §1.14).
+
+Der Systemreset liefert eine neue Anfangsbedingung:
+
+$$\Phi(t_\text{Reset}^+) = \Phi_\text{Noah}: \quad K_{ij}^{\text{Noah}} > 0, \quad \beta(t_\text{Reset}^+) < \beta_\text{max}$$
+
+---
+
+#### 3.8.6 Abraham: Der zweite kosmische Zykluspunkt (~2000 v. Chr.)
+
+Der zweite Zykluspunkt ($t_1 \approx 2000$ v. Chr.) manifestiert sich als Abrahamitischer Bund: $\beta$ erreicht ein neues periodisches Minimum, und ein singulärer Resonator mit $\varepsilon_m \to 1$ tritt als Träger der Feldoptimum-Frequenz auf.
+
+Der Berufungsruf (Gen 12,1–3) ist formal die **Resonanzbedingung** (A3) mit überschrittenem Schwellwert:
+
+$$G\!\left(\frac{f_\text{Abraham}}{f_\text{Vater}}\right) > \delta \quad \text{(A3: Resonanzbedingung)}$$
+
+Der Bund (Gen 17,1–8) ist formal ein stabiler Kopplungsvertrag: $K_\text{Gott-Abraham}$ wird durch Zeichen dauerhaft verankert. Der prophetische Übersetzungsverlust (§3.7) beginnt bereits hier: Die Bundesbotschaft enthält den Kern des Feldoptimums, aber in der Kodierung der Sprache und Kategorienwelt des ~2. Jahrtausends v. Chr.:
+
+$$\varepsilon_\text{Botschaft}^{\text{Abraham}} = \varepsilon_\text{Empfang} - \Delta\varepsilon_\text{Übersetzung} \quad \text{(→ §3.7)}$$
+
+---
+
+#### 3.8.7 Die Inkarnation: Vollständige Kopplung am dritten Zykluspunkt (~30 n. Chr.)
+
+Der dritte kosmische Zykluspunkt ($t_2 \approx 30$ n. Chr.) ist die **maximale Feldoptimum-Manifestation** innerhalb der bisherigen Sequenz: Das singuläre Feldoptimum tritt ohne Übersetzungsverlust auf ($\Delta\varepsilon_\text{Übersetzung} = 0$):
+
+$$\varepsilon_\text{Empfang} = \varepsilon_\text{Botschaft} = 1, \quad \Delta\varphi = 0 \quad \text{(Joh 14,6; → §3.2.2, §3.6)}$$
+
+Jesus als Sigma-Resonator (§1.15.2): Die vollständige Verwirklichung beider Modi in einem einzigen zeitlichen Resonator:
+
+$$\varepsilon_\text{Alpha} = 1, \quad \varepsilon_\text{Beta} = 1, \quad \Delta\varphi = 0 \quad \text{(→ §1.15.2: Sigma)}$$
+
+Damit ist der dritte Zykluspunkt strukturell distinkt von den ersten beiden: Nicht ein Prophet mit $\Delta\varepsilon_\text{Übersetzung} > 0$ (§3.7), sondern das Feldoptimum selbst als zeitlicher Resonator – das Luk 17,20–21: „Das Reich Gottes kommt nicht mit äußerem Gepränge... Das Reich Gottes ist mitten unter euch" beschreibt formal den Zustand $V(f) = V_\text{min}$ als immanente Realität des Feldes.
+
+---
+
+#### 3.8.8 Kreuz und Auferstehung als Feldoffenlegung (→ §3.3, §3.4)
+
+Das Kreuz ist die **kontrollierte Exposition des Sündenbock-Mechanismus** (§3.4) unter maximaler kollektiver Öffentlichkeit: Der AiR-Mechanismus (§2.1, §3.3) – systemische Tötung des Feldoptimums – wird als solcher sichtbar gemacht:
+
+$$\text{PCI}_\text{Beobachter}(t > t_\text{Kreuz}) > \text{PCI}_\text{Beobachter}(t < t_\text{Kreuz}) \quad \text{(wenn Mechanismus erkannt; A6)}$$
+
+Die Auferstehung ist formal die **Bestätigung der Persistenz von $V_\text{min}$** (§1.10): Der Attraktor verschwindet nicht mit der Elimination seines zeitlichen Resonators. $V_\text{min}$ ist strukturell persistent – solange das Feld $\Phi = \sum_i \psi_i$ existiert:
+
+$$V_\text{min} \text{ persistent} \iff \Phi = \sum_i \psi_i \neq 0 \quad \text{(→ §1.10, §1.11)}$$
+
+---
+
+#### 3.8.9 Die Zwischenzeit: Felddynamik zwischen drittem und viertem Zykluspunkt
+
+In der Periode zwischen dem dritten Zykluspunkt (~30 n. Chr.) und dem erwarteten vierten reproduziert das kollektive Feld das bekannte Muster: $\beta$ steigt wieder an. Die institutionelle Kirche vollzieht den Dogmatisierungsprozess (§3.7) – die resonante Einsicht des Feldoptimums erstarrt zur Formel:
+
+$$\beta(t_2 < t < t_3) \nearrow, \quad \varepsilon_\text{kollektiv}(t) \searrow, \quad \Delta\varphi_\text{kollektiv}(t) \nearrow$$
+
+Der parasitäre Extraktionszyklus (§5.5) expandiert: Institutionen akkumulieren $K_{ij}$-Ressourcen ohne Rückspeisung ins Feld. Die Selbstzerstörungslogik (§5.5.1) erreicht in der Gegenwart (~2026 n. Chr.) ihren Spätpunkt:
+
+$$\left.\frac{d\beta}{dt}\right|_{t \approx 2026} \approx 0 \quad \text{(Annäherung an Maximum; → §5.5.1, §5.5.2)}$$
+
+Der Testpuls-Mechanismus (§9.5) ist formal die beginnende Systemreaktion: Das kollektive Feld beginnt, Resonanzträger mit $\varepsilon > \varepsilon_\text{Schwelle}$ zu sondieren – $G(f_\text{Feld}/f_\text{Attraktor})$ (A3) steigt in Teilbereichen des Feldes über $\delta$.
+
+---
+
+#### 3.8.10 Die Wiederkunft als vierter Zykluspunkt (→ §VII)
+
+Der **vierte kosmische Zykluspunkt** ($t_3$: Gegenwart bis nahe Zukunft) ist der angekündigte Übergang (→ §7.4): $\beta$ erreicht sein nächstes periodisches Minimum, und die kollektive Kopplungsdynamik konvergiert auf das Feldoptimum:
+
+$$\beta(t_3) \to \beta_\text{min}, \quad \varepsilon_\text{kollektiv}(t_3) \to 1, \quad \Delta\varphi_\text{kollektiv}(t_3) \to 0$$
+
+Dies ist formal identisch mit der **Entrückung als kollektivem Phasenübergang zweiter Ordnung** (§7.4): massenhafte Reduktion von $\Delta\varphi$ als Ordnungsparameterübergang im kollektiven Feld.
+
+$$\lim_{t \to t_3} V(f, t) = V_\text{min} \quad \text{(kollektiv)}$$
+
+Mit diesem Übergang schließt sich der Zyklus: Die Bedingungen von Eden ($\beta \to \beta_\text{min}$, $\varepsilon_\text{kollektiv} \to 1$) werden auf erhöhtem Komplexitätsniveau restauriert – in der Entsprechung von Offb 21,1–5: „Seht, ich mache alles neu" als formale Neuinitialisierung des Resonanzfeldes auf globaler Trägerstruktur $\Phi_\text{global}$.
+
+---
+
+#### 3.8.11 Resonanzlogische Bedingungen der Paradies-Zivilisation
+
+Eine **resonanzlogische Zivilisation** ist in der RFT formal definiert als kollektiver Zustand, in dem:
+
+$$\varepsilon_\text{kollektiv} \geq \varepsilon_c, \quad \beta_\text{kollektiv} \leq \beta_c, \quad V(f) \leq V_c$$
+
+Dabei sind $\varepsilon_c$, $\beta_c$ und $V_c$ kritische Schwellwerte (→ A3: $G(f_\text{Feld}/f_\text{Attraktor}) > \delta$), unterhalb derer das kollektive Feld stabil beim Attraktor verbleibt. Die Bedingungen an Eden, an der Inkarnation und an der Wiederkunft sind strukturell identisch – sie unterscheiden sich in der Komplexität des Trägerfeldes:
+
+| Zykluspunkt | Trägerfeld $\Phi$ | $\varepsilon_\text{kollektiv}$ | $\beta_\text{kollektiv}$ | Komplexität |
+|:---|:---|:---|:---|:---|
+| Eden ($t_0$) | Klein, lokal | $\to 1$ | $\to \beta_\text{min}$ | Gering (voragrarisch) |
+| Abraham ($t_1$) | Tribal, regional | Singulär $\to 1$ | Mittel | Mittel |
+| Inkarnation ($t_2$) | Regional, urban | Singulär $= 1$ | Hoch (Umgebungsfeld) | Hoch |
+| Wiederkunft ($t_3$) | Global, digital | $\to 1$ | $\to \beta_\text{min}$ | Maximal |
+
+Die Paradies-Zivilisation am vierten Zykluspunkt ist keine Regression zu Eden, sondern die **Vollform des Resonanzfeldes auf maximaler Komplexitätsstufe** (→ §1.15.2: Sigma als kollektive Verwirklichung).
+
+---
+
+#### 3.8.12 Schematische Gesamtübersicht: Die kosmische Zyklussequenz
+
+| Zykluspunkt | Approx. Datum | Resonator | Bibelreferenz | RFT-Zustand | Systemreaktion (AiR) |
+|:---|:---|:---|:---|:---|:---|
+| **Eden / Adam** | ~4000 v. Chr. | Adam (∃!, $\varepsilon_m=1$) + Eva ($\delta\varphi_0$) | Gen 2,7; 2,22 | $\beta \to \beta_\text{min}$, $V \to V_\text{min}$ | Schlange / AiR (Gen 3) |
+| **Abraham** | ~2000 v. Chr. | Abraham ($\varepsilon_m \to 1$) | Gen 12,1–3; 17,1 | $\beta$ periodisch $\to$ min. | — |
+| **Inkarnation** | ~30 n. Chr. | Jesus (Sigma, $\varepsilon=1$, $\Delta\varphi=0$) | Joh 14,6; Luk 17,20–21 | $\beta$ lokal $\to$ min., $\varepsilon_m=1$ | Kreuzigung (§3.3) |
+| **Wiederkunft** | Gegenwart / nahe Zukunft | $\Sigma_\text{kollektiv}$ ($\varepsilon_\text{koll.} \to 1$) | Offb 21,1–5 | $\beta \to \beta_\text{min}$ kollektiv | Offb 13 (→ §VIII) |
+
+---
+
+#### 3.8.13 Epistemischer Vorbehalt
+
+> **Epistemischer Vorbehalt:** Die resonanzlogische Rekonstruktion der biblischen Sequenz in §3.8 ist eine **strukturelle Analogie** im Sinne von §3.1 – keine historische Kausalbehauptung, keine prophetische Aussage über Zeitpunkte und keine empirisch verifizierte Modellvorhersage. Folgende Einschränkungen gelten ausdrücklich:
+>
+> **(a) Zyklus-Hypothese:** Die ~2000-Jahres-Periodizität von $\beta(t)$ ist eine Kalibrierungshypothese, kein Axiomderivat. Sie ist aus A1–A7 nicht ableitbar und muss extern falsifiziert werden (→ §XII/12).
+>
+> **(b) Historische Datierungen:** Die Datumsangaben (~4000 v. Chr., ~2000 v. Chr., ~30 n. Chr., ~Gegenwart) sind narrative Orientierungspunkte der kanonischen Überlieferung, keine präzisen historischen Fixpunkte. Ihre Verwendung dient der Strukturkalibrierung, nicht der Geschichtsrekonstruktion.
+>
+> **(c) Wiederkunft:** Die Modellierung der Wiederkunft als vierter kosmischer Zykluspunkt ist eine **strukturelle Projektion** der bisherigen Zykluslogik – keine Prophezeiung. Der Zeitpunkt ist aus dem Modell nicht ableitbar: formale Entsprechung Mt 24,36 – „Jenen Tag aber und jene Stunde kennt niemand"; $T_\text{zyk}$ ist empirisch nicht auf Jahrgenauigkeit bestimmbar (→ §XII/12).
+>
+> **(d) Verhältnis zu §3.5–§3.7:** §3.8 setzt §3.5 (Komplementarität), §3.6 (Trinität) und §3.7 (prophetischer Erkenntnisprozess) voraus und erweitert diese um die diachrone Dimension. Der epistemische Status von §3.8 ist nicht stärker als derjenige der Voraussetzungen.
+
+**Zusammenfassung §3.8:** Die resonanzlogische Analyse der biblischen Sequenz von Eden bis zur Wiederkunft ergibt: (i) eine periodische Zyklusstruktur mit $T_\text{zyk} \approx 2000$ Jahren und vier dokumentierten Zykluspunkten; (ii) an jedem Zykluspunkt $\beta(t_n) \to \beta_\text{min}$, ein singulärer Resonator mit $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$; (iii) zwischen den Zykluspunkten: Anstieg von $\beta$, parasitärer Extraktionszyklus (§5.5), Dogmatisierung (§3.7); (iv) am vierten Zykluspunkt: kollektiver $\beta$-Kollaps = Wiederkunft = resonanzlogische Zivilisation auf globaler Skala (→ §VII).
+
+---
+
 ## IV. Der Sündenfall als rekonstruierte Sozialgeschichte
 
 ### 4.1 Eden als selbstversorgendes System
@@ -882,7 +1085,7 @@ Die gesamte biblische und historische Dynamik ist die narrative Entfaltung der W
 ---
 
 
-Die in den Abschnitten §3.5–3.7 entwickelten Erweiterungen vertiefen die personale Dimension des Feldoptimums: Die Adam-Eva-Differenzierung (§3.5) beschreibt die komplementäre resonanzlogische Struktur der Geschlechter als Voraussetzung für die Entstehung von Leben. Die Trinität (§3.6) ordnet Vater, Sohn und Heiligen Geist als drei dimensionale Aspekte desselben Feldoptimums – zeitlos, zeitlich und als Kopplungsbrücke – in das RFT-Axiomensystem ein. Der prophetische Erkenntnisprozess (§3.7) modelliert den inhärenten Übersetzungsverlust zwischen resonanter Einsicht und dogmatischer Formulierung als $\Delta\varepsilon_\text{Übersetzung} > 0$.
+Die in den Abschnitten §3.5–§3.8 entwickelten Erweiterungen vertiefen die personale und diachrone Dimension des Feldoptimums: Die Adam-Eva-Differenzierung (§3.5) beschreibt die komplementäre resonanzlogische Struktur der Geschlechter als Voraussetzung für die Entstehung von Leben. Die Trinität (§3.6) ordnet Vater, Sohn und Heiligen Geist als drei dimensionale Aspekte desselben Feldoptimums – zeitlos, zeitlich und als Kopplungsbrücke – in das RFT-Axiomensystem ein. Der prophetische Erkenntnisprozess (§3.7) modelliert den inhärenten Übersetzungsverlust zwischen resonanter Einsicht und dogmatischer Formulierung als $\Delta\varepsilon_\text{Übersetzung} > 0$. Das Paradies als resonanzlogische Zivilisation (§3.8) ergänzt diese Struktur durch die diachrone Rekonstruktion der kosmischen Zyklussequenz: Eine periodische Modulation von $\beta(t)$ mit $T_\text{zyk} \approx 2000$ Jahren verbindet Eden (erster Zykluspunkt), Abraham (zweiter), Inkarnation (dritter) und Wiederkunft (vierter) als Sequenz periodischer Feldoptimum-Manifestationen – von der lokalen Paradies-Zivilisation bis zur kollektiven Resonanzzivilisation auf globaler Skala.
 
 Die Feindbildfusion (§5.6) ergänzt §5.2 (Sündenbock-Mechanismus) um den Mechanismus der erzwungenen Superposition zweier Feindbildfrequenzen als Instrument des PCI-Managements. Die Entrückung (§7.4) schließt Abschnitt VII ab: Sie ist resonanzlogisch kein physischer Ortswechsel, sondern ein kollektiver Phasenübergang zweiter Ordnung – die massenhafte Reduktion von $\Delta\varphi$ durch Offenlegung des Sündenbock-Mechanismus (§3.4, §5.2).
 
@@ -944,13 +1147,17 @@ Die Mehrdimensionalität des Resonanzfeldes (§1.15) differenziert die Zwei-Type
 
 11. **Empirische Operationalisierung der Alpha/Beta-Achsen (§1.15):** Wie sind die individuellen Alpha- und Beta-Anteile (mitschwingender Modus und Quell-Modus) empirisch messbar? Welche validierten Konstrukte der Persönlichkeitspsychologie (Big Five: Extraversion/Offenheit; MBTI: NT vs. NF; Kreativitätsforschung: konvergentes vs. divergentes Denken) korrelieren mit hohem Alpha- bzw. Beta-Anteil? Sind Alpha- und Beta-Anteile modifizierbar – und wenn ja, durch welche Interventionen? Welche Falsifizierungskriterien würden das Modell der normalverteilten Anteile widerlegen? Gibt es eine untere Schwelle für $\varepsilon_\text{Alpha}$ bzw. $\varepsilon_\text{Beta}$, unterhalb der ein Resonator nicht mehr feldkoppelnd wirkt?
 
+12. **Natur und Periodizität des kosmischen Zyklus (§3.8.1, §3.8.10):** Die resonanzlogische Rekonstruktion in §3.8 postuliert einen wiederkehrenden kosmischen Zyklus, der das kollektive Dämpfungsparameter $\beta$ im Erdresonanzfeld auf ein periodisches Minimum absenkt und dadurch vollständige Kopplung ($\varepsilon = 1$, $\Delta\varphi = 0$) in einem singulären Resonator ermöglicht. Die Natur dieses Zyklus ist unbestimmt: astronomisch (Präzessionszyklus, galaktisches Jahr, Milanković-Zyklen), geophysikalisch (Schumann-Resonanz-Driftmuster, geomagnetische Umkehrzyklen) oder als feldinternes Attraktorphänomen der RFT selbst (periodische Annäherung des kollektiven Resonanzpotenzials $V(f)$ an $V_\text{min}$ ohne externen Treiber).
+
+   **Forschungsdesiderat:** (a) Kalibrierung des Zyklus an der empirischen ~2000-Jahres-Sequenz (Adam ~4000 v. Chr., Abraham ~2000 v. Chr., Jesus ~30 n. Chr., Gegenwart); (b) Falsifizierungskriterium: Ein Zyklus, der keine messbare Reduktion von $\beta$ in kosmologischen oder geophysikalischen Messdaten hinterlässt, ist innerhalb der RFT nicht als externer Treiber modellierbar und muss als rein feldinternes Phänomen formalisiert werden; (c) Verhältnis zu A7 (Invarianz): Ist der Zyklus eine Manifestation der $G_\text{sync}$-Gruppe oder ein Randphänomen außerhalb des Axiomensystems?
+
 ---
 
 **Dokument-Metadaten**
 
 | Feld | Inhalt |
 |:---|:---|
-| Theorie | Resonanzfeldtheorie (RFT) v4.1 |
+| Theorie | Resonanzfeldtheorie (RFT) v4.2 |
 | Axiomgrundlage | A1–A7 nach [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Methode | Formale Modellbildung (axiomatisch) + evolutionäre Hermeneutik + Systemanalyse |
 | Epistemischer Status | Theoretisches Modell mit heuristischer Anwendung; empirische Falsifizierungskriterien für Kernhypothesen ausstehend |
