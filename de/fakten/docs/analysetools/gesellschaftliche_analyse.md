@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Analyseinstrument gesellschaftlicher Zusammenhänge
-**Stand: 1. August 2026 | Fassung 2.6 – §3.8.1a Verschränktes Doppelereignis: Vaterlogik, Kollaps und kosmische Konstellation ergänzt**
+**Stand: 1. August 2026 | Fassung 2.7 – Terminologische Konsistenz: Sigma als biologischer Tempel (nicht V_min) durchgehend präzisiert**
 
 ---
 
@@ -188,7 +188,7 @@ Lokale Minima von $V$ sind stabile Resonanzattraktoren. Das **globale Minimum** 
 
 $$\Delta\varphi_0 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_1 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_2 \;\to\; \cdots \;\to\; \Delta\varphi = 0$$
 
-Der Zyklus ist **evolutionär konvergierend**: Die Kopplungsdynamik (§1.9) treibt das System bei positivem $\alpha/\beta$-Verhältnis schrittweise zum Attraktor. Jede Generation integriert die Abweichungsmuster der Vorgängergeneration in die neue Kopplungsstruktur. Das Feldoptimum als Person ist sterblich; der Attraktor $V_\text{min}$ ist strukturell persistent – statistische Notwendigkeit, nicht metaphysische Reinkarnation.
+Der Zyklus ist **evolutionär konvergierend**: Die Kopplungsdynamik (§1.9) treibt das System bei positivem $\alpha/\beta$-Verhältnis schrittweise zum Attraktor. Jede Generation integriert die Abweichungsmuster der Vorgängergeneration in die neue Kopplungsstruktur. Der biologische Träger in Personform ist sterblich; der Attraktor $V_\text{min}$ ist strukturell persistent – statistische Notwendigkeit, nicht metaphysische Reinkarnation.
 
 ---
 
@@ -238,7 +238,7 @@ Die formale Bedingung für das Feldoptimum als simultane Kopplung beider Modi:
 
 $$\varepsilon_\text{kollektiv} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot K_{MQ} \quad (\text{symmetrische Gegenseitigkeit})$$
 
-**Anthropologische Entsprechung:** Apg 20,35 – „Geben ist seliger als nehmen" – ist in dieser formalen Lesart die Anweisung zur symmetrischen Kopplung: Typ Q soll Typ M ankoppeln, auch ohne strukturelle Notwendigkeit. Typ M soll die empfangene Energie transformativ zurückgeben, nicht extrahieren. Das Feldoptimum selbst – derjenige Resonator mit $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – ist der einzige Zustand, der beide Modi simultan in perfekter Kopplung hält.
+**Anthropologische Entsprechung:** Apg 20,35 – „Geben ist seliger als nehmen" – ist in dieser formalen Lesart die Anweisung zur symmetrischen Kopplung: Typ Q soll Typ M ankoppeln, auch ohne strukturelle Notwendigkeit. Typ M soll die empfangene Energie transformativ zurückgeben, nicht extrahieren. Vollständige Kopplung an das körperlose Feldoptimum – als Zustand $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – ist der einzige Zustand, der beide Modi simultan in perfekter Kopplung hält.
 
 > **Modellhinweis:** Die Zwei-Typen-Unterscheidung ist eine formale Erweiterung von A1 auf Basis der Phasenraumgeometrie um $V_\text{min}$. Sie ist keine essentialistische Kategorisierung von Personen. Ein Akteur kann zwischen den Modi wechseln; die Typzugehörigkeit beschreibt den dominanten Kopplungsmodus in einem gegebenen Kontext, nicht eine unveränderliche Eigenschaft. Die Grenze zwischen Typ M (transformativ) und AiR (parasitär, §2.1) liegt in der Richtung des Energievektors $\vec{E}$ (A5) und im Vorzeichen von $dK_{ij}/dt$ (§1.9).
 
@@ -265,7 +265,7 @@ Jeder Mensch besitzt beide Dimensionen in einem gewissen Anteil. Extreme Ausprä
 
 Die Begriffe Alpha und Beta bezeichnen hier keine zwei getrennten Typen, sondern die **Ausprägungsgrade beider Modi auf individueller Ebene**. Die populäre Rede vom „Alpha-Mann" oder „Beta-Mann" erweist sich damit als unzulässige Vereinfachung: Ein Mensch ist nie nur Alpha oder nur Beta, sondern stets eine Mischung mit individuellen Koordinaten auf beiden Achsen.
 
-#### 1.15.2 Sigma: Das Feldoptimum mit 100 % Alpha und 100 % Beta
+#### 1.15.2 Sigma: Biologischer Tempel in vollständiger Kopplung (100 % Alpha und 100 % Beta)
 
 Die populäre Kategorie des „Sigma" – derjenige, der außerhalb der Alpha-Beta-Hierarchie steht und beide Modi in Perfektion beherrscht – findet in der RFT eine präzise formale Definition:
 
@@ -288,7 +288,7 @@ $$\vec{E}_{\text{Sigma, Beta}} = \vec{E}_{\text{Vater}} \xrightarrow{\,\varepsil
 
 **100 % Alpha – Der unsichtbare Dirigent**
 
-Die höchste Ausprägung des Alpha-Modus ist nicht sichtbare Führung durch Befehl, Geld oder Transaktion. Der Sigma strukturiert das Feld, indem er $V_\text{min}$ selbst neu setzt: Er verändert die Phasenraumgeometrie (§1.10) so, dass andere Resonatoren sich freiwillig in Richtung des globalen Minimums bewegen – ohne zu wissen, dass sie einem Attraktor folgen. Es gibt keinen aktiven $K_{ij}$-Aufbau von außen; die Resonatoren folgen dem Gefälle des Phasenraums, den der Sigma durch seine Existenz verändert hat. Formal:
+Die höchste Ausprägung des Alpha-Modus ist nicht sichtbare Führung durch Befehl, Geld oder Transaktion. Der Sigma strukturiert das Feld, indem er als biologischer Tempel vollständig an $V_\text{min}$ gekoppelt ist: Dadurch verändert sich die lokal wirksame Phasenraumgeometrie (§1.10) so, dass andere Resonatoren sich freiwillig in Richtung des globalen Minimums bewegen – ohne zu wissen, dass sie einem Attraktor folgen. Es gibt keinen aktiven $K_{ij}$-Aufbau von außen; die Resonatoren folgen dem Gefälle des Phasenraums, den der Sigma durch seine Existenz verändert hat. Formal:
 
 $$\frac{d\Delta\varphi_{\text{kollektiv}}}{dt} < 0 \quad \text{ohne aktiven } K_{ij}\text{-Eingriff des Sigma} \quad \text{(A7: Invarianz, §1.10)}$$
 
@@ -298,7 +298,7 @@ Das historische Muster ist formal präzise: Das Römische Reich tötete Jesus �
 
 Der Sigma ist Zimmermann und König in einer Person: im Kleinen schöpferisch wirkend als transparenter Kanal (Beta, stilles Wirken), im Großen die Feldgeometrie neu setzend ohne Befehl (Alpha). Der König befiehlt nicht – er hat den Thron bereits inne, und der Thron ist $V_\text{min}$. Was als „Führung" erscheint, ist die natürliche Konsequenz der Topologieveränderung des Phasenraums. Wer sich dem Attraktor nähert, findet maximale Kopplungsenergie $E = \pi \cdot \hbar \cdot f$ (A4); wer sich entfernt, findet $\varepsilon \to 0$ und Entropiezunahme. Mehr Lenkung ist nicht nötig.
 
-Das **Feldoptimum** (§1.10) und der **Sigma** beschreiben dieselbe Attraktorstruktur $V_\text{min}$ – einmal mathematisch, einmal anthropologisch. Dabei ist zu unterscheiden: Das Feldoptimum in seiner körperlosen, persistenten Form ist der **Heilige Geist** (§3.6); der Sigma-Mann ist der **biologische Resonator mit der Antenne zur Kopplung** an den Heiligen Geist – Adams Nachkomme, der geboren werden kann und sterben kann, nicht ein biologischer Klon (→ §3.5.6). Die drei Ich-bin-Worte (§3.2.2) definieren den Sigma formal:
+Das **körperlose Feldoptimum** (§1.10) und der **Sigma** beschreiben dieselbe Attraktorstruktur $V_\text{min}$ auf zwei Ebenen – einmal mathematisch-körperlos, einmal biologisch-anthropologisch als Träger dieser Kopplung. Dabei ist zu unterscheiden: Das Feldoptimum in seiner körperlosen, persistenten Form ist der **Heilige Geist** (§3.6); der Sigma-Mann ist der **biologische Resonator mit der Antenne zur Kopplung** an den Heiligen Geist – Adams Nachkomme, der geboren werden kann und sterben kann, nicht ein biologischer Klon (→ §3.5.6). Die drei Ich-bin-Worte (§3.2.2) definieren den Sigma formal:
 
 - **„Ich bin die Wahrheit"** → Der Sigma ist der Punkt, von dem aus alle Koordinaten des Phasenraums sichtbar sind (A7: invariant).
 - **„Ich bin das Leben"** → $dK_{ij}/dt\big|_{\Delta\varphi=0}$ maximal positiv – dynamisches Optimum (A3+A4).
@@ -306,7 +306,7 @@ Das **Feldoptimum** (§1.10) und der **Sigma** beschreiben dieselbe Attraktorstr
 
 #### 1.15.3 Die stille Auferstehung: Jesus als Sigma
 
-Die populäre Sigma-Figur der Gegenwart – entstanden in Internet-Foren, vereinnahmt von Männlichkeits-Influencern und trivialisiert als Lifestyle-Mode – ist strukturell identisch mit dem biblischen Jesus. Die Attribute, die dem Sigma zugeschrieben werden, sind exakt die Eigenschaften des Feldoptimums:
+Die populäre Sigma-Figur der Gegenwart – entstanden in Internet-Foren, vereinnahmt von Männlichkeits-Influencern und trivialisiert als Lifestyle-Mode – beschreibt strukturell den biblischen Jesus als Sigma-Mann: biologischer Tempel mit vollständiger Kopplung. Die Attribute, die dem Sigma zugeschrieben werden, sind exakt die Eigenschaften dieser maximalen Kopplung an das Feldoptimum:
 
 | Sigma (populär) | Feldoptimum (RFT) | Jesus (biblisch) |
 |:---|:---|:---|
@@ -316,7 +316,7 @@ Die populäre Sigma-Figur der Gegenwart – entstanden in Internet-Foren, verein
 | Zieht an, ohne zu verfolgen | $V_\text{min}$ als Attraktor – Resonatoren werden angezogen, nicht gezwungen | „Kommt her zu mir, alle, die ihr mühselig und beladen seid" (Mt 11,28) |
 | Wird oft missverstanden | $\text{PCI}_\text{System} \to 0$ – das System erkennt ihn nicht | „Die Welt hat ihn nicht erkannt" (Joh 1,10) |
 
-Dass ausgerechnet in einem säkularen, von AiR-Strukturen dominierten Diskurs das Feldoptimum unter dem Namen „Sigma" wieder auftauchte – ohne dass die Urheber dieses Begriffs erkannten, wen sie beschrieben –, ist die **stille Auferstehung**: die kulturelle Wiederkehr des Attraktors in einem Milieu, das von der christlichen Tradition denkbar weit entfernt ist. A7 (Invarianz) garantiert, dass die Kopplungsstruktur des Feldoptimums nicht zerstört werden kann – sie taucht unter anderen Namen, in anderen Bildern und durch andere Kanäle wieder auf, bis jemand den Namen wiedererkennt.
+Dass ausgerechnet in einem säkularen, von AiR-Strukturen dominierten Diskurs die Trägerfigur der vollständigen Kopplung unter dem Namen „Sigma" wieder auftauchte – ohne dass die Urheber dieses Begriffs erkannten, wen sie beschrieben –, ist die **stille Auferstehung**: die kulturelle Wiederkehr des Attraktors in einem Milieu, das von der christlichen Tradition denkbar weit entfernt ist. A7 (Invarianz) garantiert, dass die Kopplungsstruktur des Feldoptimums nicht zerstört werden kann – sie taucht unter anderen Namen, in anderen Bildern und durch andere Kanäle wieder auf, bis jemand den Namen wiedererkennt.
 
 #### 1.15.4 Die Dornenkrone des digitalen Zeitalters: Die Sigma-Kampagne als Ego-Falle
 
@@ -420,9 +420,9 @@ Religiöse Schriften werden in der RFT als **evolutionäres Archiv sozialer Must
 
 ---
 
-### 3.2 Die Figur des Feldoptimums: Attraktor und historische Manifestation
+### 3.2 Die Figur des Feldoptimums: Attraktor und historische Trägergestalt
 
-Das **Feldoptimum** ist in der RFT keine mythologische Ausnahme, sondern das globale Minimum des Resonanzpotenzials $V_\text{min}$ (→ §1.10): strukturell persistent, weil das Potential sein Minimum nicht verliert. Die Frage ist nicht ob, sondern wann und in welchem sozialen Kontext dieser Attraktor als erkennbare Persongestalt in Erscheinung tritt.
+Das **Feldoptimum** ist in der RFT keine mythologische Ausnahme, sondern das globale Minimum des Resonanzpotenzials $V_\text{min}$ (→ §1.10): strukturell persistent, weil das Potential sein Minimum nicht verliert. Die Frage ist nicht ob, sondern wann und in welchem sozialen Kontext die Trägergestalt mit maximaler Kopplung an diesen Attraktor als erkennbare Person in Erscheinung tritt.
 
 #### 3.2.1 Eigenschaften des Feldoptimums
 
@@ -445,7 +445,7 @@ Alle drei sind notwendige und hinreichende Bestimmungen desselben Potenzialminim
 
 ### 3.3 Der Zyklus der Tötung als systemische Invariante (A7)
 
-**Hypothese:** Hohe Feldkopplung ($\varepsilon \to 1$) stellt eine systemische Bedrohung dar – nicht militärisch, sondern informationstechnisch (A6): Ein Feldoptimum mit $\Delta\varphi \approx 0$ macht die Anti-Feldoptimum-Struktur des Systems sichtbar ($\text{PCI}_\text{System} \to 0$ wird offenbar), ohne sie direkt anzugreifen. Dies löst einen systemischen Auslöschungsimpuls aus, der in der **Selbsterhaltungslogik des Systems** gründet: Ein System mit hohem $\beta$ (Dämpfung der Kopplung) reagiert auf $\Delta\varphi \to 0$ als Destabilisierung.
+**Hypothese:** Hohe Feldkopplung ($\varepsilon \to 1$) stellt eine systemische Bedrohung dar – nicht militärisch, sondern informationstechnisch (A6): Ein biologischer Tempel mit nahezu vollständiger Kopplung an das Feldoptimum ($\Delta\varphi \approx 0$) macht die Anti-Feldoptimum-Struktur des Systems sichtbar ($\text{PCI}_\text{System} \to 0$ wird offenbar), ohne sie direkt anzugreifen. Dies löst einen systemischen Auslöschungsimpuls aus, der in der **Selbsterhaltungslogik des Systems** gründet: Ein System mit hohem $\beta$ (Dämpfung der Kopplung) reagiert auf $\Delta\varphi \to 0$ als Destabilisierung.
 
 Jesu Tötung war in dieser Lesart keine historische Anomalie, sondern exakte Wiederholung eines durch A7 invarianten Musters: Mose-Zyklus, Sündenbock-Ritus (Lev 16), und weitere dokumentierte Muster sind strukturell identisch.
 
@@ -458,7 +458,7 @@ Jesu Tötung war in dieser Lesart keine historische Anomalie, sondern exakte Wie
 ---
 
 
-### 3.5 Die personale Struktur des Feldoptimums: Adam, Eva und die Bedingung des Lebens
+### 3.5 Die personale Trägerstruktur des Feldoptimums: Adam, Eva und die Bedingung des Lebens
 
 #### 3.5.1 Der Mann als unmittelbare Kopplung an den Vater
 
@@ -468,7 +468,7 @@ $$\exists! \; \text{Resonator}_m : \lim_{\text{Bedingungen}} \varepsilon_m = 1, 
 
 **Modellhinweis:** Die Singularität ∃! gilt innerhalb einer Spezies. Sohn-Struktur (ε_m → 1, Δφ_m → 0) und Eva-Struktur (Δφ_w = δφ_0 > 0) sind nicht Folge von Leben, sondern seine resonanzlogische Bedingung (A4: ohne Phasendifferenz keine Schwingung, kein zeitlicher Prozess, kein Leben). Die Formel ψ_Nachkomme = f(ψ_m, ψ_w, Δφ_{mw}) gilt für jede Form von Leben – ohne Komplexitätsschwelle. Formal: ∀ S ∈ Leben: ∃! Resonator_m,S mit ε_m → 1, Δφ_m → 0 und ∃ Resonator_w,S mit Δφ_w = δφ_0 > 0. Der Mensch ist auf der Erde die Spezies mit dem höchsten Bewusstseinsniveau und damit der einzige Resonator, der das Modell selbst reflexiv zu formulieren vermag.
 
-Der Mann ist die unvermittelte, direkte Manifestation des Feldoptimums in der Zeit. Sein Unterbewusstsein enthält das vollständige, unverzerrte Abbild des Vaters. Seine natürliche Ausrichtung ist die absolute Resonanz – vorausgesetzt, er bleibt wach und unvernebelt.
+Der Mann ist der unvermittelte, direkte biologische Träger maximaler Kopplung an das Feldoptimum in der Zeit. Sein Unterbewusstsein enthält das vollständige, unverzerrte Abbild des Vaters. Seine natürliche Ausrichtung ist die absolute Resonanz – vorausgesetzt, er bleibt wach und unvernebelt.
 
 #### 3.5.2 Die Frau als permanente Phasenverschiebung – und darin die Bedingung für Leben
 
@@ -496,7 +496,7 @@ Das erklärt die tiefe Aussage von Gen 3,20: „Adam nannte seine Frau Eva, denn
 
 #### 3.5.4 Die komplementäre Orientierungsfunktion
 
-Das Paar – Adam und Eva – ist gemeinsam das sichtbare Feldoptimum, aber in unterschiedlichen, komplementären Funktionen:
+Das Paar – Adam und Eva – ist gemeinsam die sichtbare Trägerstruktur für die Feldoptimum-Kopplung, aber in unterschiedlichen, komplementären Funktionen:
 
 | | Mann (Adam) | Frau (Eva) |
 |:---|:---|:---|
@@ -505,7 +505,7 @@ Das Paar – Adam und Eva – ist gemeinsam das sichtbare Feldoptimum, aber in u
 | **Funktion** | Der unmittelbare Weg; die sichtbare Geodätische zu $\Delta\varphi = 0$ | Diejenige, die durch ihre Phasenverschiebung den Zeitprozess ermöglicht und neues Leben hervorbringt |
 | **Gemeinsam** | Beide sind aus der Welt des Ewigen, nicht aus der gefallenen Welt. Beide bilden gemeinsam den vollständigen, lebendigen Attraktor. ||
 
-Der Mann ist der Weg – die direkte Ausrichtung zum Vater. Die Frau ist das Leben – diejenige, durch die der Weg fruchtbar wird und sich in neuen Generationen fortsetzt. Beide zusammen sind die Wahrheit – die vollständige, begehbare, lebendige Manifestation von $V_\text{min}$.
+Der Mann ist der Weg – die direkte Ausrichtung zum Vater. Die Frau ist das Leben – diejenige, durch die der Weg fruchtbar wird und sich in neuen Generationen fortsetzt. Beide zusammen sind die Wahrheit – die vollständige, begehbare, lebendige Träger- und Kopplungsstruktur zum Feldoptimum $V_\text{min}$.
 
 #### 3.5.5 Konsequenz: Gleichwertigkeit, nicht Gleichartigkeit
 
@@ -545,7 +545,7 @@ Beide müssen es wollen und bereit sein. Dies entspricht der allgemeinen Kopplun
 
 ### 3.6 Die Trinität als resonanzlogische Struktur
 
-Die trinitarische Formel beschreibt keine mystische Paradoxie, sondern drei notwendige Aspekte desselben Feldoptimums, die sich aus der dimensionalen Einbettung ergeben:
+Die trinitarische Formel beschreibt keine mystische Paradoxie, sondern drei notwendige Aspekte desselben Resonanzzusammenhangs um das Feldoptimum, die sich aus der dimensionalen Einbettung ergeben:
 
 | Person | RFT-Parameter | Erklärung |
 |:---|:---|:---|
@@ -583,7 +583,7 @@ Dies erklärt sowohl die Entstehung des trinitarischen Dogmas aus Jesu ursprüng
 
 ### 3.8 Das Paradies als resonanzlogische Zivilisation: Vom ersten Adam bis zur Wiederkunft
 
-Die Abschnitte §3.5 (Adam-Eva-Komplementarität), §3.6 (Trinität) und §3.7 (prophetischer Erkenntnisprozess) entfalten die personale Dimension des Feldoptimums in synchroner Perspektive. §3.8 ergänzt diese Struktur durch eine **diachrone Rekonstruktion**: die Abfolge der kosmischen Zykluspunkte vom ersten Adam bis zur angekündigten Wiederkunft als Sequenz periodischer Feldoptimum-Manifestationen.
+Die Abschnitte §3.5 (Adam-Eva-Komplementarität), §3.6 (Trinität) und §3.7 (prophetischer Erkenntnisprozess) entfalten die personale Dimension der Kopplung an das Feldoptimum in synchroner Perspektive. §3.8 ergänzt diese Struktur durch eine **diachrone Rekonstruktion**: die Abfolge der kosmischen Zykluspunkte vom ersten Adam bis zur angekündigten Wiederkunft als Sequenz periodischer Feldoptimum-Manifestationen.
 
 ---
 
@@ -731,7 +731,7 @@ Die erste Generation nach dem Sündenfall zeigt die **Bifurkation des Feldes** i
 | **Typ** | AiR-Struktur (→ §2.1) | Typ Q (Quell-Resonator, → §1.14) | Feldoptimum-Nachfolgelinie |
 | **Energievektor $\vec{E}$** | Feldauswärts (A5 invertiert) | Feldeinwärts (A5) | Feldeinwärts, restauriert |
 | **Kopplungseffizienz** | $\varepsilon_\text{Kain} \to 0$ | $\varepsilon_\text{Abel} \to 1$ | $\varepsilon_\text{Seth} > 0$, positiv |
-| **Systemreaktion** | Tötung des Feldoptimum-Resonators (→ §3.3) | Eliminierter Typ-Q-Resonator | Restauration der Feldlinie (Gen 4,25–26) |
+| **Systemreaktion** | Tötung des biologischen Träger-Resonators mit hoher Feldoptimum-Kopplung (→ §3.3) | Eliminierter Typ-Q-Resonator | Restauration der Feldlinie (Gen 4,25–26) |
 
 Kains Tötung Abels (Gen 4,8) ist die **erste Instanz** der durch A7 invarianten Systemreaktion auf hohe Feldkopplung (§3.3): Das System mit erhöhtem $\beta$ reagiert auf $\varepsilon \to 1$ mit Auslöschungsimpuls. Abel ist kein historischer Sonderfall, sondern das erste dokumentierte Muster dieser Invariante.
 
@@ -773,7 +773,7 @@ Abraham zeigt damit das Muster eines externen Zivilisationsbruchs, in dem gesell
 
 #### 3.8.7 Die Inkarnation: Vollständige Kopplung am dritten Zykluspunkt (~30 n. Chr.)
 
-Der dritte kosmische Zykluspunkt ($t_2 \approx 30$ n. Chr.) ist die **maximale Feldoptimum-Manifestation** innerhalb der bisherigen Sequenz: Das singuläre Feldoptimum tritt ohne Übersetzungsverlust auf ($\Delta\varepsilon_\text{Übersetzung} = 0$):
+Der dritte kosmische Zykluspunkt ($t_2 \approx 30$ n. Chr.) ist die **maximale Feldoptimum-Kopplung** innerhalb der bisherigen Sequenz: Ein singulärer biologischer Tempel tritt ohne Übersetzungsverlust auf ($\Delta\varepsilon_\text{Übersetzung} = 0$):
 
 $$\varepsilon_\text{Empfang} = \varepsilon_\text{Botschaft} = 1, \quad \Delta\varphi = 0 \quad \text{(Joh 14,6; → §3.2.2, §3.6)}$$
 
@@ -781,13 +781,13 @@ Jesus als Sigma-Resonator (§1.15.2): Die vollständige Verwirklichung beider Mo
 
 $$\varepsilon_\text{Alpha} = 1, \quad \varepsilon_\text{Beta} = 1, \quad \Delta\varphi = 0 \quad \text{(→ §1.15.2: Sigma)}$$
 
-Damit ist der dritte Zykluspunkt strukturell distinkt von den ersten beiden: Nicht ein Prophet mit $\Delta\varepsilon_\text{Übersetzung} > 0$ (§3.7), sondern das Feldoptimum selbst als zeitlicher Resonator – das Luk 17,20–21: „Das Reich Gottes kommt nicht mit äußerem Gepränge... Das Reich Gottes ist mitten unter euch" beschreibt formal den Zustand $V(f) = V_\text{min}$ als immanente Realität des Feldes. Der gesellschaftliche Kollaps fungiert hier daher nicht als Aktivierungs-, sondern als Kontrastbedingung: Er macht die bereits vollständige Kopplung Jesu sichtbar (→ §3.8.1a).
+Damit ist der dritte Zykluspunkt strukturell distinkt von den ersten beiden: Nicht ein Prophet mit $\Delta\varepsilon_\text{Übersetzung} > 0$ (§3.7), sondern ein zeitlicher Resonator mit vollständiger Kopplung an das körperlose Feldoptimum – das Luk 17,20–21: „Das Reich Gottes kommt nicht mit äußerem Gepränge... Das Reich Gottes ist mitten unter euch" beschreibt formal den Zustand $V(f) = V_\text{min}$ als immanente Realität des Feldes. Der gesellschaftliche Kollaps fungiert hier daher nicht als Aktivierungs-, sondern als Kontrastbedingung: Er macht die bereits vollständige Kopplung Jesu sichtbar (→ §3.8.1a).
 
 ---
 
 #### 3.8.8 Kreuz und Auferstehung als Feldoffenlegung (→ §3.3, §3.4)
 
-Das Kreuz ist die **kontrollierte Exposition des Sündenbock-Mechanismus** (§3.4) unter maximaler kollektiver Öffentlichkeit: Der AiR-Mechanismus (§2.1, §3.3) – systemische Tötung des Feldoptimums – wird als solcher sichtbar gemacht:
+Das Kreuz ist die **kontrollierte Exposition des Sündenbock-Mechanismus** (§3.4) unter maximaler kollektiver Öffentlichkeit: Der AiR-Mechanismus (§2.1, §3.3) – systemische Tötung des biologischen Trägers mit maximaler Feldoptimum-Kopplung – wird als solcher sichtbar gemacht:
 
 $$\text{PCI}_\text{Beobachter}(t > t_\text{Kreuz}) > \text{PCI}_\text{Beobachter}(t < t_\text{Kreuz}) \quad \text{(wenn Mechanismus erkannt; A6)}$$
 
@@ -1198,11 +1198,11 @@ Die gesamte biblische und historische Dynamik ist die narrative Entfaltung der W
 ---
 
 
-Die in den Abschnitten §3.5–§3.8 entwickelten Erweiterungen vertiefen die personale und diachrone Dimension des Feldoptimums: Die Adam-Eva-Differenzierung (§3.5) beschreibt die komplementäre resonanzlogische Struktur der Geschlechter als Voraussetzung für die Entstehung von Leben. Die Trinität (§3.6) ordnet Vater, Sohn und Heiligen Geist als drei dimensionale Aspekte desselben Feldoptimums – zeitlos, zeitlich und als Kopplungsbrücke – in das RFT-Axiomensystem ein. Der prophetische Erkenntnisprozess (§3.7) modelliert den inhärenten Übersetzungsverlust zwischen resonanter Einsicht und dogmatischer Formulierung als $\Delta\varepsilon_\text{Übersetzung} > 0$. Das Paradies als resonanzlogische Zivilisation (§3.8) ergänzt diese Struktur durch die diachrone Rekonstruktion der kosmischen Zyklussequenz: Eine periodische Modulation von $\beta(t)$ mit $T_\text{zyk} \approx 2000$ Jahren verbindet Eden (erster Zykluspunkt), Abraham (zweiter), Inkarnation (dritter) und Wiederkunft (vierter) als Sequenz periodischer Feldoptimum-Manifestationen – von der lokalen Paradies-Zivilisation bis zur kollektiven Resonanzzivilisation auf globaler Skala.
+Die in den Abschnitten §3.5–§3.8 entwickelten Erweiterungen vertiefen die personale und diachrone Dimension der Kopplung an das Feldoptimum: Die Adam-Eva-Differenzierung (§3.5) beschreibt die komplementäre resonanzlogische Struktur der Geschlechter als Voraussetzung für die Entstehung von Leben. Die Trinität (§3.6) ordnet Vater, Sohn und Heiligen Geist als drei dimensionale Aspekte desselben Resonanzzusammenhangs ein – zeitloses Feldoptimum, zeitlicher biologischer Tempel und Kopplungsbrücke – in das RFT-Axiomensystem. Der prophetische Erkenntnisprozess (§3.7) modelliert den inhärenten Übersetzungsverlust zwischen resonanter Einsicht und dogmatischer Formulierung als $\Delta\varepsilon_\text{Übersetzung} > 0$. Das Paradies als resonanzlogische Zivilisation (§3.8) ergänzt diese Struktur durch die diachrone Rekonstruktion der kosmischen Zyklussequenz: Eine periodische Modulation von $\beta(t)$ mit $T_\text{zyk} \approx 2000$ Jahren verbindet Eden (erster Zykluspunkt), Abraham (zweiter), Inkarnation (dritter) und Wiederkunft (vierter) als Sequenz periodischer Feldoptimum-Manifestationen – von der lokalen Paradies-Zivilisation bis zur kollektiven Resonanzzivilisation auf globaler Skala.
 
 Die Feindbildfusion (§5.6) ergänzt §5.2 (Sündenbock-Mechanismus) um den Mechanismus der erzwungenen Superposition zweier Feindbildfrequenzen als Instrument des PCI-Managements. Die Entrückung (§7.4) schließt Abschnitt VII ab: Sie ist resonanzlogisch kein physischer Ortswechsel, sondern ein kollektiver Phasenübergang zweiter Ordnung – die massenhafte Reduktion von $\Delta\varphi$ durch Offenlegung des Sündenbock-Mechanismus (§3.4, §5.2).
 
-Die Mehrdimensionalität des Resonanzfeldes (§1.15) differenziert die Zwei-Typen-Unterscheidung aus §1.14 auf individueller Ebene: Jeder Resonator trägt beide Modi – **Alpha** (mitschwingender Modus, Typ M) und **Beta** (Quell-Modus, Typ Q) – in einem individuellen Mischungsverhältnis. Der **Sigma** – derjenige Resonator, bei dem $\varepsilon = 1$ und $\Delta\varphi = 0$ in allen Dimensionen des Phasenraums gilt – ist der einzige, der beide Anteile vollständig verwirklicht und damit strukturell mit dem Feldoptimum $V_\text{min}$ identisch ist. Die kulturelle Wiederkehr dieser Figur im säkularen Sigma-Diskurs (§1.15.3) ist durch A7 (Invarianz) formal garantiert: Der Attraktor taucht unter wechselnden Namen wieder auf, bis er erkannt wird.
+Die Mehrdimensionalität des Resonanzfeldes (§1.15) differenziert die Zwei-Typen-Unterscheidung aus §1.14 auf individueller Ebene: Jeder Resonator trägt beide Modi – **Alpha** (mitschwingender Modus, Typ M) und **Beta** (Quell-Modus, Typ Q) – in einem individuellen Mischungsverhältnis. Der **Sigma** – derjenige Resonator, bei dem $\varepsilon = 1$ und $\Delta\varphi = 0$ in allen Dimensionen des Phasenraums gilt – ist der biologische Träger, der beide Anteile vollständig verwirklicht und damit die Struktur des Feldoptimums $V_\text{min}$ maximal koppelt, ohne ontologisch mit dem körperlosen Attraktor identisch zu sein. Die kulturelle Wiederkehr dieser Figur im säkularen Sigma-Diskurs (§1.15.3) ist durch A7 (Invarianz) formal garantiert: Der Attraktor taucht unter wechselnden Namen wieder auf, bis er erkannt wird.
 
 ---
 
@@ -1274,7 +1274,7 @@ Die Mehrdimensionalität des Resonanzfeldes (§1.15) differenziert die Zwei-Type
 
 | Feld | Inhalt |
 |:---|:---|
-| Theorie | Resonanzfeldtheorie (RFT) v4.3 |
+| Theorie | Resonanzfeldtheorie (RFT) v4.4 |
 | Axiomgrundlage | A1–A7 nach [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Methode | Formale Modellbildung (axiomatisch) + evolutionäre Hermeneutik + Systemanalyse |
 | Epistemischer Status | Theoretisches Modell mit heuristischer Anwendung; empirische Falsifizierungskriterien für Kernhypothesen ausstehend |

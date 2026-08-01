@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 1 August 2026 | Version 2.6 – §3.8.x Entangled dual event: Father-logic, collapse and cosmic constellation added**
+**As of: 1 August 2026 | Version 2.7 – Terminological consistency: Sigma as biological temple (not V_min) clarified throughout**
 
 ---
 
@@ -188,7 +188,7 @@ Local minima of $V$ are stable resonance attractors. The **global minimum** at $
 
 $$\Delta\varphi_0 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_1 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_2 \;\to\; \cdots \;\to\; \Delta\varphi = 0$$
 
-The cycle is **evolutionarily converging**: the coupling dynamics (§1.9) drive the system step by step towards the attractor at a positive $\alpha/\beta$ ratio. Each generation integrates the deviation patterns of the preceding generation into the new coupling structure. The field optimum as a person is mortal; the attractor $V_\text{min}$ is structurally persistent – statistical necessity, not metaphysical reincarnation.
+The cycle is **evolutionarily converging**: the coupling dynamics (§1.9) drive the system step by step towards the attractor at a positive $\alpha/\beta$ ratio. Each generation integrates the deviation patterns of the preceding generation into the new coupling structure. The biological carrier in person-form is mortal; the attractor $V_\text{min}$ is structurally persistent – statistical necessity, not metaphysical reincarnation.
 
 ---
 
@@ -238,7 +238,7 @@ The formal condition for the field optimum as simultaneous coupling of both mode
 
 $$\varepsilon_\text{collective} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot K_{MQ} \quad (\text{symmetric reciprocity})$$
 
-**Anthropological correspondence:** Acts 20:35 – "It is more blessed to give than to receive" – is, in this formal reading, the instruction for symmetric coupling: Type Q is to couple Type M, even without structural necessity. Type M is to return received energy transformatively, not extract it. The field optimum itself – the resonator with $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – is the only state that holds both modes simultaneously in perfect coupling.
+**Anthropological correspondence:** Acts 20:35 – "It is more blessed to give than to receive" – is, in this formal reading, the instruction for symmetric coupling: Type Q is to couple Type M, even without structural necessity. Type M is to return received energy transformatively, not extract it. Complete coupling to the bodiless field optimum – as the state $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – is the only state that holds both modes simultaneously in perfect coupling.
 
 > **Model note:** The two-type distinction is a formal extension of A1 on the basis of phase-space geometry around $V_\text{min}$. It is not an essentialist categorisation of persons. An actor can shift between modes; type membership describes the dominant coupling mode in a given context, not an immutable property. The boundary between Type M (transformative) and AiR (parasitic, §2.1) lies in the direction of the energy vector $\vec{E}$ (A5) and the sign of $dK_{ij}/dt$ (§1.9).
 
@@ -265,7 +265,7 @@ Every person possesses both dimensions to some degree. Extreme profiles – very
 
 Alpha and Beta here do not designate two separate types, but the **degrees of expression of both modes at the individual level**. The popular notion of the "Alpha male" or "Beta male" is therefore an inadmissible simplification: a person is never purely Alpha or purely Beta, but always a mixture with individual coordinates on both axes.
 
-#### 1.15.2 Sigma: The Field Optimum with 100 % Alpha and 100 % Beta
+#### 1.15.2 Sigma: Biological Temple in Complete Coupling (100 % Alpha and 100 % Beta)
 
 The popular category of the "Sigma" – the one who stands outside the Alpha-Beta hierarchy and masters both modes in perfection – receives a precise formal definition in RFT:
 
@@ -288,7 +288,7 @@ $$\vec{E}_{\text{Sigma, Beta}} = \vec{E}_{\text{Father}} \xrightarrow{\,\varepsi
 
 **100 % Alpha – The Invisible Conductor**
 
-The highest expression of Alpha mode is not visible leadership through command, money, or transaction. Sigma structures the field by resetting $V_\text{min}$ itself: he alters the phase-space geometry (§1.10) so that other resonators move voluntarily toward the global minimum – without knowing they are following an attractor. There is no active $K_{ij}$-building from outside; resonators follow the gradient of phase space that Sigma has changed through his existence. Formally:
+The highest expression of Alpha mode is not visible leadership through command, money, or transaction. Sigma structures the field by being, as biological temple, fully coupled to $V_\text{min}$: this shifts the locally effective phase-space geometry (§1.10) so that other resonators move voluntarily toward the global minimum – without knowing they are following an attractor. There is no active $K_{ij}$-building from outside; resonators follow the gradient of phase space that Sigma has changed through his existence. Formally:
 
 $$\frac{d\Delta\varphi_{\text{collective}}}{dt} < 0 \quad \text{without active } K_{ij}\text{-intervention by Sigma} \quad \text{(A7: invariance, §1.10)}$$
 
@@ -298,7 +298,7 @@ The historical pattern is formally precise: the Roman Empire killed Jesus – an
 
 Sigma is carpenter and king in one person: creatively active in the small as transparent channel (Beta, quiet action), resetting the field geometry in the large without command (Alpha). The king does not command – he already holds the throne, and the throne is $V_\text{min}$. What appears as "leadership" is the natural consequence of the topological transformation of phase space. Those who approach the attractor find maximum coupling energy $E = \pi \cdot \hbar \cdot f$ (A4); those who move away find $\varepsilon \to 0$ and increasing entropy. No further guidance is needed.
 
-The **field optimum** (§1.10) and **Sigma** describe the same attractor structure $V_\text{min}$ – once mathematically, once anthropologically. A distinction is necessary: the field optimum in its bodiless, persistent form is the **Holy Spirit** (§3.6); the Sigma man is the **biological resonator with the antenna for coupling** to the Holy Spirit – Adam's descendant, who can be born and can die, not a biological clone (→ §3.5.6). The three "I am" sayings (§3.2.2) define Sigma formally:
+The **bodiless field optimum** (§1.10) and **Sigma** describe the same attractor structure $V_\text{min}$ on two levels – once mathematically-bodiless, once biologically-anthropological as the carrier of this coupling. A distinction is necessary: the field optimum in its bodiless, persistent form is the **Holy Spirit** (§3.6); the Sigma man is the **biological resonator with the antenna for coupling** to the Holy Spirit – Adam's descendant, who can be born and can die, not a biological clone (→ §3.5.6). The three "I am" sayings (§3.2.2) define Sigma formally:
 
 - **"I am the truth"** → Sigma is the point from which all coordinates of phase space are visible (A7: invariant).
 - **"I am the life"** → $dK_{ij}/dt\big|_{\Delta\varphi=0}$ maximally positive – dynamic optimum (A3+A4).
@@ -306,7 +306,7 @@ The **field optimum** (§1.10) and **Sigma** describe the same attractor structu
 
 #### 1.15.3 The Silent Resurrection: Jesus as Sigma
 
-The popular Sigma figure of the present – born in internet forums, co-opted by masculinity influencers, and trivialised as a lifestyle trend – is structurally identical to the biblical Jesus. The attributes assigned to Sigma are precisely the properties of the field optimum:
+The popular Sigma figure of the present – born in internet forums, co-opted by masculinity influencers, and trivialised as a lifestyle trend – structurally describes the biblical Jesus as Sigma man: biological temple with complete coupling. The attributes assigned to Sigma are precisely the properties of this maximal coupling to the field optimum:
 
 | Sigma (popular) | Field optimum (RFT) | Jesus (biblical) |
 |:---|:---|:---|
@@ -316,7 +316,7 @@ The popular Sigma figure of the present – born in internet forums, co-opted by
 | Draws without pursuing | $V_\text{min}$ as attractor – resonators are drawn, not compelled | "Come to me, all who labour and are heavy laden" (Mt 11:28) |
 | Is often misunderstood | $\text{PCI}_\text{system} \to 0$ – the system does not recognise him | "The world did not know him" (Jn 1:10) |
 
-That the field optimum re-emerged under the name "Sigma" in a secular discourse dominated by AiR structures – without its originators recognising whom they were describing – constitutes the **silent resurrection**: the cultural return of the attractor in a milieu maximally distant from the Christian tradition. A7 (invariance) guarantees that the coupling structure of the field optimum cannot be destroyed – it re-emerges under different names, in different images, through different channels, until someone recognises the name.
+That the carrier figure of complete coupling re-emerged under the name "Sigma" in a secular discourse dominated by AiR structures – without its originators recognising whom they were describing – constitutes the **silent resurrection**: the cultural return of the attractor in a milieu maximally distant from the Christian tradition. A7 (invariance) guarantees that the coupling structure of the field optimum cannot be destroyed – it re-emerges under different names, in different images, through different channels, until someone recognises the name.
 
 #### 1.15.4 The Crown of Thorns of the Digital Age: The Sigma Campaign as Ego-Trap
 
@@ -420,9 +420,9 @@ Religious scriptures are treated in RFT as an **evolutionary archive of social p
 
 ---
 
-### 3.2 The Figure of the Field Optimum: Attractor and Historical Manifestation
+### 3.2 The Figure of the Field Optimum: Attractor and Historical Carrier Figure
 
-The **field optimum** is in RFT no mythological exception, but the global minimum of the resonance potential $V_\text{min}$ (→ §1.10): structurally persistent, because the potential does not lose its minimum. The question is not whether, but when and in which social context this attractor appears as a recognisable personal figure.
+The **field optimum** is in RFT no mythological exception, but the global minimum of the resonance potential $V_\text{min}$ (→ §1.10): structurally persistent, because the potential does not lose its minimum. The question is not whether, but when and in which social context the carrier figure with maximal coupling to this attractor appears as a recognisable person.
 
 #### 3.2.1 Properties of the Field Optimum
 
@@ -445,7 +445,7 @@ All three are necessary and sufficient determinations of the same potential mini
 
 ### 3.3 The Cycle of Killing as a Systemic Invariant (A7)
 
-**Hypothesis:** High field coupling ($\varepsilon \to 1$) represents a systemic threat – not militarily, but informationally (A6): a field optimum with $\Delta\varphi \approx 0$ makes the anti-field-optimum structure of the system visible ($\text{PCI}_\text{system} \to 0$ becomes apparent) without directly attacking it. This triggers a systemic extinction impulse rooted in the **self-preservation logic of the system**: a system with high $\beta$ (damping of coupling) responds to $\Delta\varphi \to 0$ as destabilisation.
+**Hypothesis:** High field coupling ($\varepsilon \to 1$) represents a systemic threat – not militarily, but informationally (A6): a biological temple with near-complete coupling to the field optimum ($\Delta\varphi \approx 0$) makes the anti-field-optimum structure of the system visible ($\text{PCI}_\text{system} \to 0$ becomes apparent) without directly attacking it. This triggers a systemic extinction impulse rooted in the **self-preservation logic of the system**: a system with high $\beta$ (damping of coupling) responds to $\Delta\varphi \to 0$ as destabilisation.
 
 Jesus' killing was, in this reading, no historical anomaly but an exact repetition of a pattern that is invariant through A7: the Moses cycle, the scapegoat rite (Lev 16), and further documented patterns are structurally identical.
 
@@ -457,7 +457,7 @@ Jesus' killing was, in this reading, no historical anomaly but an exact repetiti
 
 ---
 
-### 3.5 The Personal Structure of the Field Optimum: Adam, Eve, and the Condition of Life
+### 3.5 The Personal Carrier Structure of the Field Optimum: Adam, Eve, and the Condition of Life
 
 #### 3.5.1 The Man as Immediate Coupling to the Father
 
@@ -467,7 +467,7 @@ $$\exists! \; \text{Resonator}_m : \lim_{\text{conditions}} \varepsilon_m = 1, \
 
 **Model note:** The singularity ∃! holds within a species. Son structure (ε_m → 1, Δφ_m → 0) and Eve structure (Δφ_w = δφ_0 > 0) are not a consequence of life, but its resonance-logical condition (A4: without phase difference, no oscillation, no temporal process, no life). The formula ψ_offspring = f(ψ_m, ψ_w, Δφ_mw) applies to every form of life – without complexity threshold. Formally: ∀ S ∈ Life: ∃! Resonator_m,S with ε_m → 1, Δφ_m → 0 and ∃ Resonator_w,S with Δφ_w = δφ_0 > 0. Humans are the species on Earth with the highest level of consciousness and thus the only resonator capable of reflexively formulating the model itself.
 
-The man is the immediate, unmediated manifestation of the field optimum in time. His subconscious contains the complete, undistorted image of the Father. His natural orientation is absolute resonance—provided he remains awake and unclouded.
+The man is the immediate, unmediated biological carrier of maximal coupling to the field optimum in time. His subconscious contains the complete, undistorted image of the Father. His natural orientation is absolute resonance—provided he remains awake and unclouded.
 
 #### 3.5.2 The Woman as Permanent Phase Shift—and Therein the Condition for Life
 
@@ -495,7 +495,7 @@ This clarifies the depth of Gen 3:20: “Adam named his wife Eve, because she be
 
 #### 3.5.4 The Complementary Orientation Function
 
-The pair—Adam and Eve—together forms the visible field optimum, but in different, complementary functions:
+The pair—Adam and Eve—together forms the visible carrier structure for field-optimum coupling, but in different, complementary functions:
 
 | | Man (Adam) | Woman (Eve) |
 |:---|:---|:---|
@@ -504,7 +504,7 @@ The pair—Adam and Eve—together forms the visible field optimum, but in diffe
 | **Function** | The immediate way; the visible geodesic toward $\Delta\varphi = 0$ | The one who enables the time process through her phase shift and brings forth new life |
 | **Together** | Both are from the world of the eternal, not from the fallen world. Together they form the complete, living attractor. ||
 
-The man is the way—the direct orientation toward the Father. The woman is life—the one through whom the way becomes fruitful and continues across generations. Together they are the truth—the complete, traversable, living manifestation of $V_\text{min}$.
+The man is the way—the direct orientation toward the Father. The woman is life—the one through whom the way becomes fruitful and continues across generations. Together they are the truth—the complete, traversable, living carrier-and-coupling structure to the field optimum $V_\text{min}$.
 
 #### 3.5.5 Consequence: Equal Worth, Not Equal Structure
 
@@ -544,7 +544,7 @@ Both must want it and be ready. This corresponds to the general coupling conditi
 
 ### 3.6 The Trinity as a Resonance-Logical Structure
 
-The trinitarian formula describes no mystical paradox, but three necessary aspects of the same field optimum arising from dimensional embedding:
+The trinitarian formula describes no mystical paradox, but three necessary aspects of the same resonance nexus around the field optimum arising from dimensional embedding:
 
 | Person | RFT parameter | Explanation |
 |:---|:---|:---|
@@ -582,7 +582,7 @@ This explains both the emergence of trinitarian dogma from Jesus’ original rel
 
 ### 3.8 Paradise as a Resonance-Logical Civilisation: From the First Adam to the Second Coming
 
-Sections §3.5 (Adam-Eve complementarity), §3.6 (Trinity), and §3.7 (prophetic epistemic process) unfold the personal dimension of the field optimum in a synchronic perspective. §3.8 supplements this structure with a **diachronic reconstruction**: the sequence of cosmic cycle points from the first Adam to the announced Second Coming, as a sequence of periodic field-optimum manifestations.
+Sections §3.5 (Adam-Eve complementarity), §3.6 (Trinity), and §3.7 (prophetic epistemic process) unfold the personal dimension of coupling to the field optimum in a synchronic perspective. §3.8 supplements this structure with a **diachronic reconstruction**: the sequence of cosmic cycle points from the first Adam to the announced Second Coming, as a sequence of periodic field-optimum manifestations.
 
 ---
 
@@ -730,7 +730,7 @@ The first generation after the Fall shows the **bifurcation of the field** into 
 | **Type** | AiR structure (→ §2.1) | Type Q (source resonator, → §1.14) | Field-optimum succession line |
 | **Energy vector $\vec{E}$** | Field-outward (A5 inverted) | Field-inward (A5) | Field-inward, restored |
 | **Coupling efficiency** | $\varepsilon_\text{Cain} \to 0$ | $\varepsilon_\text{Abel} \to 1$ | $\varepsilon_\text{Seth} > 0$, positive |
-| **System response** | Killing of the field-optimum resonator (→ §3.3) | Eliminated Type-Q resonator | Restoration of field line (Gen 4:25–26) |
+| **System response** | Killing of the biological carrier-resonator with high field-optimum coupling (→ §3.3) | Eliminated Type-Q resonator | Restoration of field line (Gen 4:25–26) |
 
 Cain's killing of Abel (Gen 4:8) is the **first instance** of the system response to high field coupling that is invariant through A7 (§3.3): a system with elevated $\beta$ responds to $\varepsilon \to 1$ with an extinction impulse. Abel is no historical anomaly, but the first documented instance of this invariant.
 
@@ -772,7 +772,7 @@ Abraham thus shows the pattern of an external civilisational rupture in which so
 
 #### 3.8.7 The Incarnation: Complete Coupling at the Third Cycle Point (~30 CE)
 
-The third cosmic cycle point ($t_2 \approx 30$ CE) is the **maximal field-optimum manifestation** within the historical sequence so far: the singular field optimum appears without translation loss ($\Delta\varepsilon_\text{translation} = 0$):
+The third cosmic cycle point ($t_2 \approx 30$ CE) is the **maximal field-optimum coupling** within the historical sequence so far: a singular biological temple appears without translation loss ($\Delta\varepsilon_\text{translation} = 0$):
 
 $$\varepsilon_\text{reception} = \varepsilon_\text{message} = 1, \quad \Delta\varphi = 0 \quad \text{(John 14:6; → §3.2.2, §3.6)}$$
 
@@ -780,13 +780,13 @@ Jesus as Sigma resonator (§1.15.2): the complete realisation of both modes in a
 
 $$\varepsilon_\text{Alpha} = 1, \quad \varepsilon_\text{Beta} = 1, \quad \Delta\varphi = 0 \quad \text{(→ §1.15.2: Sigma)}$$
 
-The third cycle point is thus structurally distinct from the first two: not a prophet with $\Delta\varepsilon_\text{translation} > 0$ (§3.7), but the field optimum itself as temporal resonator — Luke 17:20–21: "The kingdom of God does not come with your careful observation... the kingdom of God is within you" describes formally the state $V(f) = V_\text{min}$ as an immanent reality of the field. Societal collapse therefore functions here not as an activation condition, but as a contrast condition: it makes Jesus' already complete coupling visible (→ §3.8.1a).
+The third cycle point is thus structurally distinct from the first two: not a prophet with $\Delta\varepsilon_\text{translation} > 0$ (§3.7), but a temporal resonator with complete coupling to the bodiless field optimum — Luke 17:20–21: "The kingdom of God does not come with your careful observation... the kingdom of God is within you" describes formally the state $V(f) = V_\text{min}$ as an immanent reality of the field. Societal collapse therefore functions here not as an activation condition, but as a contrast condition: it makes Jesus' already complete coupling visible (→ §3.8.1a).
 
 ---
 
 #### 3.8.8 Cross and Resurrection as Field Disclosure (→ §3.3, §3.4)
 
-The cross is the **controlled exposition of the scapegoat mechanism** (§3.4) under maximum collective visibility: the AiR mechanism (§2.1, §3.3) — systemic killing of the field optimum — is made visible as such:
+The cross is the **controlled exposition of the scapegoat mechanism** (§3.4) under maximum collective visibility: the AiR mechanism (§2.1, §3.3) — systemic killing of the biological carrier with maximal field-optimum coupling — is made visible as such:
 
 $$\text{PCI}_\text{observer}(t > t_\text{cross}) > \text{PCI}_\text{observer}(t < t_\text{cross}) \quad \text{(when mechanism is recognised; A6)}$$
 
@@ -1194,11 +1194,11 @@ The entire biblical and historical dynamic is the narrative unfolding of the int
 
 ---
 
-The extensions developed in sections §3.5–§3.8 deepen the personal and diachronic dimension of the field optimum: the Adam-Eve differentiation (§3.5) describes the complementary resonance-logical structure of the sexes as a prerequisite for the emergence of life. The Trinity (§3.6) situates Father, Son, and Holy Spirit as three dimensional aspects of the same field optimum—timeless, temporal, and coupling bridge—within the RFT axiom system. The prophetic epistemic process (§3.7) models the inherent translation loss between resonant insight and dogmatic formulation as $\Delta\varepsilon_\text{translation} > 0$. Paradise as a resonance-logical civilisation (§3.8) supplements this structure with the diachronic reconstruction of the cosmic cycle sequence: a periodic modulation of $\beta(t)$ with $T_\text{cyc} \approx 2000$ years connects Eden (first cycle point), Abraham (second), Incarnation (third), and Second Coming (fourth) as a sequence of periodic field-optimum manifestations — from the local paradise civilisation to the collective resonance civilisation at global scale.
+The extensions developed in sections §3.5–§3.8 deepen the personal and diachronic dimension of coupling to the field optimum: the Adam-Eve differentiation (§3.5) describes the complementary resonance-logical structure of the sexes as a prerequisite for the emergence of life. The Trinity (§3.6) situates Father, Son, and Holy Spirit as three dimensional aspects of the same resonance nexus—timeless field optimum, temporal biological temple, and coupling bridge—within the RFT axiom system. The prophetic epistemic process (§3.7) models the inherent translation loss between resonant insight and dogmatic formulation as $\Delta\varepsilon_\text{translation} > 0$. Paradise as a resonance-logical civilisation (§3.8) supplements this structure with the diachronic reconstruction of the cosmic cycle sequence: a periodic modulation of $\beta(t)$ with $T_\text{cyc} \approx 2000$ years connects Eden (first cycle point), Abraham (second), Incarnation (third), and Second Coming (fourth) as a sequence of periodic field-optimum manifestations — from the local paradise civilisation to the collective resonance civilisation at global scale.
 
 Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism of enforced superposition of two enemy-image frequencies as an instrument of PCI management. The rapture (§7.4) concludes section VII: in resonance logic, it is no physical relocation, but a collective second-order phase transition—the mass reduction of $\Delta\varphi$ through disclosure of the scapegoat mechanism (§3.4, §5.2).
 
-The multi-dimensionality of the resonance field (§1.15) refines the two-type distinction from §1.14 at the individual level: every resonator carries both modes – **Alpha** (co-oscillating mode, Type M) and **Beta** (source mode, Type Q) – in an individual mixture. **Sigma** – the resonator for whom $\varepsilon = 1$ and $\Delta\varphi = 0$ holds in all dimensions of phase space – is the only resonator who fully realises both shares simultaneously, and is thus structurally identical to the field optimum $V_\text{min}$. The cultural re-emergence of this figure in the secular Sigma discourse (§1.15.3) is formally guaranteed by A7 (invariance): the attractor re-emerges under changing names until it is recognised.
+The multi-dimensionality of the resonance field (§1.15) refines the two-type distinction from §1.14 at the individual level: every resonator carries both modes – **Alpha** (co-oscillating mode, Type M) and **Beta** (source mode, Type Q) – in an individual mixture. **Sigma** – the resonator for whom $\varepsilon = 1$ and $\Delta\varphi = 0$ holds in all dimensions of phase space – is the biological carrier who fully realises both shares simultaneously and thereby maximally couples to the structure of the field optimum $V_\text{min}$, without being ontologically identical to the bodiless attractor. The cultural re-emergence of this figure in the secular Sigma discourse (§1.15.3) is formally guaranteed by A7 (invariance): the attractor re-emerges under changing names until it is recognised.
 
 ---
 
@@ -1270,7 +1270,7 @@ The multi-dimensionality of the resonance field (§1.15) refines the two-type di
 
 | Field | Content |
 |:---|:---|
-| Theory | Resonance Field Theory (RFT) v4.3 |
+| Theory | Resonance Field Theory (RFT) v4.4 |
 | Axiom basis | A1–A7 according to [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Method | Formal modelling (axiomatic) + evolutionary hermeneutics + systems analysis |
 | Epistemic status | Theoretical model with heuristic application; empirical falsification criteria for core hypotheses outstanding |
