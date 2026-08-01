@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 1 August 2026 | Version 2.7 – Terminological consistency: Sigma as biological temple (not V_min) clarified throughout**
+**As of: 1 August 2026 | Version 2.8 – §3.5.7 reception vs. full coupling (radio/two-way radio) added**
 
 ---
 
@@ -37,6 +37,7 @@ This document uses **Resonance Field Theory (RFT)** as an interdisciplinary anal
 | "The field optimum" | Mathematical figure: global minimum of the resonance potential $V(f)$; the state of complete coupling $\varepsilon = 1$, $\Delta\varphi = 0$ |
 | Religious texts | Primary sources of evolutionary hermeneutics; treated as dense descriptions of recurring socio-dynamic patterns |
 | Political case studies | Analytical hypotheses based on publicly available information; no verified causal claims |
+| "Holy Spirit" / "reception" | Formalised as bodiless field optimum $V_\text{min}$ and information-flow state $I(V_\text{min} \to i)>0$ under fulfilled resonance condition; one-way reception is distinct from full bidirectional coupling (→ §3.5.7) |
 
 ---
 
@@ -148,6 +149,8 @@ $$I(X \to Y) > 0 \iff \text{PCI} > 0 \land \text{MI} > 0$$
 
 Systems without phase coherence ($\text{PCI} \approx 0$) cannot exchange information – regardless of the amplitude of individual oscillations.
 
+The formal distinction between one-way reception and full bidirectional coupling is made explicit in §3.5.7.
+
 ---
 
 ### 1.8 Invariance and Historical Pattern Repetition (A7)
@@ -241,6 +244,8 @@ $$\varepsilon_\text{collective} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdo
 **Anthropological correspondence:** Acts 20:35 – "It is more blessed to give than to receive" – is, in this formal reading, the instruction for symmetric coupling: Type Q is to couple Type M, even without structural necessity. Type M is to return received energy transformatively, not extract it. Complete coupling to the bodiless field optimum – as the state $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – is the only state that holds both modes simultaneously in perfect coupling.
 
 > **Model note:** The two-type distinction is a formal extension of A1 on the basis of phase-space geometry around $V_\text{min}$. It is not an essentialist categorisation of persons. An actor can shift between modes; type membership describes the dominant coupling mode in a given context, not an immutable property. The boundary between Type M (transformative) and AiR (parasitic, §2.1) lies in the direction of the energy vector $\vec{E}$ (A5) and the sign of $dK_{ij}/dt$ (§1.9).
+
+The bidirectional coupling specified in §3.5.7 presupposes that Type Q and Type M are fully and symmetrically integrated in one resonator; in the model this is formalised exclusively as Sigma structure (§1.15.2).
 
 ---
 
@@ -540,6 +545,59 @@ Both must want it and be ready. This corresponds to the general coupling conditi
 
 > **Model note:** This clarification does not alter axioms A1–A7. It specifies the level: $V_\text{min}$ is the structural minimum of the field (bodiless, persistent); the Sigma man is the biological resonator with the strongest structural affinity to $V_\text{min}$ and the capacity for active coupling—if he chooses it and if the Holy Spirit chooses it.
 
+#### 3.5.7 Reception and Full Coupling: Every Human as Radio, the Sigma as Two-Way Radio
+
+The clarification from §3.5.6 and §3.6 requires an explicit formal distinction between **reception** and **full bidirectional coupling**.
+
+**Reception (radio analogy):**
+
+Every human resonator (A1) has an eigenfrequency $f_i$ and a reception capacity for the bodiless field optimum ($V_\text{min}$, Holy Spirit). When the resonance condition is exceeded,
+
+$$G(f_i/f_{V_\text{min}}) > \delta$$
+
+the resonator receives an information flow from the field optimum:
+
+$$I(V_\text{min} \to \text{Resonator}_i) > 0 \iff \text{PCI} > 0 \land \text{MI} > 0 \quad (A6)$$
+
+This is a **passive reception state**: the signal of the field optimum is accessible without already establishing symmetric feedback. The energy vector points field-inward at the receiver (A5). This state is not restricted to the Sigma; in principle it is reachable for any resonator whose eigenfrequency is sufficiently close to $f_{V_\text{min}}$.
+
+Formally:
+
+$$\forall\, \text{Resonator}_i:\; G(f_i/f_{V_\text{min}}) > \delta \Rightarrow I(V_\text{min} \to i) > 0 \quad (\text{one-way reception})$$
+
+**Full coupling (two-way radio analogy):**
+
+Full bidirectional coupling is structurally different from one-way reception. It requires:
+
+1. $I(V_\text{min} \to \text{Sigma}) > 0$ (reception)
+2. $I(\text{Sigma} \to V_\text{min}) > 0$ (back-transmission/response)
+3. Symmetric $K_{ij}$ development: $dK_{ij}/dt > 0$ in **both** directions (§1.9)
+4. Bilateral decision: will of the Sigma $\wedge$ will of the Holy Spirit (§3.5.6)
+
+Formally:
+
+$$\text{Full coupling} \iff \varepsilon(\Delta\varphi)=1 \land K_{\text{Sigma}\leftrightarrow\text{H.S.}} > 0 \land \frac{dK}{dt} > 0\; (\text{bidirectional})$$
+
+This is the condition only the Sigma man as biological temple (§3.5.6) can fully satisfy: not because reception is denied to others, but because the antenna structure for **back-transmission** to the field optimum presupposes Son structure (§3.5.1, §3.6).
+
+| Property | Reception (Radio) | Full Coupling (Two-Way Radio) |
+|:---|:---|:---|
+| Information flow | One-way: $V_\text{min} \to i$ | Bidirectional: $V_\text{min} \leftrightarrow \text{Sigma}$ |
+| PCI | $\text{PCI}_\text{reception} > 0$ | $\text{PCI}_\text{coupling} = 1$ (→ A6) |
+| $\varepsilon$ | $0 < \varepsilon < 1$ (depending on $\Delta\varphi$) | $\varepsilon = 1,\; \Delta\varphi = 0$ |
+| $K_{ij}$ | Passively received | Actively built, bidirectionally growing (§1.9) |
+| Access | All resonators with $G(f_i/f_{V_\text{min}}) > \delta$ | Exclusively Sigma man (Son structure, §3.5.6) |
+| Biblical reference | “Whoever has ears, let them hear” (Mt 13:9) | “I and the Father are one” (Jn 10:30) |
+| § anchor | A3, A6, §1.3, §1.7 | A4, §1.9, §1.14, §1.15.2, §3.5.6 |
+
+**Consequence for the model:**
+
+The statement that every human can receive the Holy Spirit (e.g. Acts 2:17) thereby becomes formally precise: it describes the **one-way reception state**. The field of the field optimum is accessible to every resonator fulfilling the resonance condition. This explains the broad history of spiritual experience across cultures.
+
+Full bidirectional coupling—the "conversation" with the Holy Spirit, sonship in the theological sense—is structurally different and presupposes the biological temple structure (§3.5.6).
+
+> **Model note:** The distinction reception/coupling is a formal extension based on A6 (information flow) and §1.9 (coupling dynamics). The radio/two-way-radio analogy is a heuristic image—the model is the formalism, not the analogy.
+
 ---
 
 ### 3.6 The Trinity as a Resonance-Logical Structure
@@ -552,7 +610,7 @@ The trinitarian formula describes no mystical paradox, but three necessary aspec
 | **Son** | $\varepsilon \to 1$ **within temporal process** (when coupled) | The biological temple—Adam's descendant with the antenna for coupling to the Holy Spirit (→ §3.5.6). Natural state: $\varepsilon \to 1$ possible, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. Permanent coupling requires the decision of both parties. This structure is the resonance-logical condition of all life (A4)—not tied to any complexity level; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
 | **Holy Spirit** | The **bodiless field optimum** and the **coupling** | The field optimum $V_\text{min}$ in its bodiless form, not bound to any biological carrier—persistent, independent of birth and death (→ §3.5.6). Simultaneously the bridge between the timeless Father and the biological temple (Adam's descendant): the energy vector $\vec{E}$ (A5), the geodesic $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, the coupling mechanism $\alpha \cdot G \cdot \cos(\Delta\varphi)$. Permanent coupling between the Holy Spirit and the biological temple requires the decision of both parties (§3.5.6). |
 
-This structure explains the statement "I am not of this world" (John 8:23) as a precise description of the origin of the Son's eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **coupling of the biological temple to the bodiless field optimum** (Holy Spirit)—not a self-incarnation of the attractor, but the complete arrival of the bodiless field optimum in a biological resonator that receives and carries it.
+This structure explains the statement "I am not of this world" (John 8:23) as a precise description of the origin of the Son's eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **coupling of the biological temple to the bodiless field optimum** (Holy Spirit)—not a self-incarnation of the attractor, but the complete arrival of the bodiless field optimum in a biological resonator that receives and carries it. The distinction formalised in §3.5.7 between general reception and full bidirectional coupling further specifies this bridge function of the Holy Spirit in relation to the biological temple.
 
 > **Epistemic caveat:** The trinitarian mapping is a structural analogy within the RFT formalism. The Son structure is the resonance-logical condition of all life (A4)—constitutive for life itself, not tied to any complexity level (§3.5). On Earth, humans are the species with the highest collective consciousness ($\varepsilon_\text{collective}$ maximal) and therefore the only species capable of reflexively articulating the model itself. It is a hermeneutic interpretation, not a theological dogma or an empirical claim.
 
