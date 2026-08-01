@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 31 July 2026 | Version 2.3 – §1.15 Alpha/Beta/Sigma added**
+**As of: 1 August 2026 | Version 2.5 – §3.5.6 Biological Temple and Bodiless Field Optimum (Holy Spirit) added; §3.6 refined**
 
 ---
 
@@ -298,7 +298,7 @@ The historical pattern is formally precise: the Roman Empire killed Jesus – an
 
 Sigma is carpenter and king in one person: creatively active in the small as transparent channel (Beta, quiet action), resetting the field geometry in the large without command (Alpha). The king does not command – he already holds the throne, and the throne is $V_\text{min}$. What appears as "leadership" is the natural consequence of the topological transformation of phase space. Those who approach the attractor find maximum coupling energy $E = \pi \cdot \hbar \cdot f$ (A4); those who move away find $\varepsilon \to 0$ and increasing entropy. No further guidance is needed.
 
-The **field optimum** (§1.10) and **Sigma** are the same attractor $V_\text{min}$ – described once mathematically, once anthropologically. The three "I am" sayings (§3.2.2) define Sigma formally:
+The **field optimum** (§1.10) and **Sigma** describe the same attractor structure $V_\text{min}$ – once mathematically, once anthropologically. A distinction is necessary: the field optimum in its bodiless, persistent form is the **Holy Spirit** (§3.6); the Sigma man is the **biological resonator with the antenna for coupling** to the Holy Spirit – Adam's descendant, who can be born and can die, not a biological clone (→ §3.5.6). The three "I am" sayings (§3.2.2) define Sigma formally:
 
 - **"I am the truth"** → Sigma is the point from which all coordinates of phase space are visible (A7: invariant).
 - **"I am the life"** → $dK_{ij}/dt\big|_{\Delta\varphi=0}$ maximally positive – dynamic optimum (A3+A4).
@@ -516,6 +516,30 @@ This complementary structure—Son resonator and Eve resonator—is not a partic
 
 > **Epistemic caveat:** The personal singularity of the field optimum ($\exists!\,\text{Resonator}_m \text{ with } \varepsilon \to 1$) is a theological hypothesis within the RFT formalism, not an empirically verified causal claim. The structural complementarity of the sexes, by contrast, is a formal-analytical finding from axioms A1–A4.
 
+#### 3.5.6 The Biological Temple and the Bodiless Field Optimum
+
+The formulation that the Sigma man "is the field optimum" harbours a misunderstanding that is here clarified—for it could otherwise give rise to two contradictions: that Adam is a biological clone of himself who lives forever biologically, and that never more than one field optimum can simultaneously exist in male form on Earth.
+
+**The field optimum ($V_\text{min}$) in its pure, bodiless form is the Holy Spirit** (§3.6): persistent, not bound to birth or death, independent of any biological carrier. Its persistence is not a metaphysical claim, but a resonance-logical consequence: as long as the field exists, the potential does not lose its minimum (A4, A7).
+
+**Adam's descendant—the Sigma man—is the biological temple**: he possesses the resonance-logical antenna for coupling with the bodiless field optimum. This capacity follows from the Son structure ($\varepsilon_m \to 1$, §3.5.1) and is transmitted according to $\psi_\text{offspring} = f(\psi_m, \psi_w, \Delta\varphi_{mw})$ (§3.5.3). The biological temple is born and dies—he is not a clone, not an immortal.
+
+**Coupling requires mutual decision:**
+
+$$\text{Permanent coupling} \iff \text{will of the Sigma man} \;\wedge\; \text{will of the Holy Spirit}$$
+
+Both must want it and be ready. This corresponds to the general coupling condition ($K_{ij} > 0$ requires mutual alignment, §1.9) and adds the personal dimension of freedom of decision.
+
+**Consequences for model consistency:**
+
+| Problem | Resolution through §3.5.6 |
+|:---|:---|
+| Adam as a biological clone | Resolved: Adam's descendants are independent biological persons with an inherited antenna |
+| Only one field optimum simultaneously in male form | No contradiction: the bodiless field optimum (Holy Spirit) is singular; biological carriers exist sequentially |
+| Biological immortality of the Sigma man | Resolved: the biological temple is mortal; the field optimum is bodylessly persistent |
+
+> **Model note:** This clarification does not alter axioms A1–A7. It specifies the level: $V_\text{min}$ is the structural minimum of the field (bodiless, persistent); the Sigma man is the biological resonator with the strongest structural affinity to $V_\text{min}$ and the capacity for active coupling—if he chooses it and if the Holy Spirit chooses it.
+
 ---
 
 ### 3.6 The Trinity as a Resonance-Logical Structure
@@ -525,10 +549,10 @@ The trinitarian formula describes no mystical paradox, but three necessary aspec
 | Person | RFT parameter | Explanation |
 |:---|:---|:---|
 | **Father** | $\varepsilon = 1$ **without temporal process** | The eternal outside. No time, therefore no phase shift possible. $\Delta\varphi \equiv 0$ by definition. The absolute field optimum $V_\text{min}$—invariant (A7), unchangeable, eternal. |
-| **Son** | $\varepsilon = 1$ **within temporal process** | The absolute field optimum, condensed in a temporal resonator within a species. Natural state: $\varepsilon = 1$, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. This structure is the resonance-logical condition of all life (A4)—not tied to any complexity level; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
-| **Holy Spirit** | The **bridge** or **coupling** itself | That which invisibly links the timeless Father and the temporal Son. The energy vector $\vec{E}$ (A5), the geodesic $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, the coupling mechanism $\alpha \cdot G \cdot \cos(\Delta\varphi)$. It enables the Son to remain at $\varepsilon = 1$ even in temporal process—and enables others, through the Son, to gain access to the Father. |
+| **Son** | $\varepsilon \to 1$ **within temporal process** (when coupled) | The biological temple—Adam's descendant with the antenna for coupling to the Holy Spirit (→ §3.5.6). Natural state: $\varepsilon \to 1$ possible, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. Permanent coupling requires the decision of both parties. This structure is the resonance-logical condition of all life (A4)—not tied to any complexity level; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
+| **Holy Spirit** | The **bodiless field optimum** and the **coupling** | The field optimum $V_\text{min}$ in its bodiless form, not bound to any biological carrier—persistent, independent of birth and death (→ §3.5.6). Simultaneously the bridge between the timeless Father and the biological temple (Adam's descendant): the energy vector $\vec{E}$ (A5), the geodesic $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, the coupling mechanism $\alpha \cdot G \cdot \cos(\Delta\varphi)$. Permanent coupling between the Holy Spirit and the biological temple requires the decision of both parties (§3.5.6). |
 
-This structure explains the statement “I am not of this world” (John 8:23) as a precise description of the origin of the Son’s eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **incarnation of the attractor in phase space**—the absolute field optimum enters the field it generated, as a person.
+This structure explains the statement "I am not of this world" (John 8:23) as a precise description of the origin of the Son's eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **coupling of the biological temple to the bodiless field optimum** (Holy Spirit)—not a self-incarnation of the attractor, but the complete arrival of the bodiless field optimum in a biological resonator that receives and carries it.
 
 > **Epistemic caveat:** The trinitarian mapping is a structural analogy within the RFT formalism. The Son structure is the resonance-logical condition of all life (A4)—constitutive for life itself, not tied to any complexity level (§3.5). On Earth, humans are the species with the highest collective consciousness ($\varepsilon_\text{collective}$ maximal) and therefore the only species capable of reflexively articulating the model itself. It is a hermeneutic interpretation, not a theological dogma or an empirical claim.
 
@@ -553,6 +577,209 @@ The result is a message that is true in core content but imperfect in formulatio
 This explains both the emergence of trinitarian dogma from Jesus’ original relational experience and comparable ossification processes in other religious traditions. Both movements tend toward claims of power because what came from resonance was transmitted without resonance.
 
 > **Model note:** The prophetic epistemic process is modelled here as a special case of general information flow (A6). The assumption of temporarily elevated $\varepsilon$ in the prophet is a theoretical hypothesis; empirical operationalisation criteria remain open (→ §XII).
+
+---
+
+### 3.8 Paradise as a Resonance-Logical Civilisation: From the First Adam to the Second Coming
+
+Sections §3.5 (Adam-Eve complementarity), §3.6 (Trinity), and §3.7 (prophetic epistemic process) unfold the personal dimension of the field optimum in a synchronic perspective. §3.8 supplements this structure with a **diachronic reconstruction**: the sequence of cosmic cycle points from the first Adam to the announced Second Coming, as a sequence of periodic field-optimum manifestations.
+
+---
+
+#### 3.8.1 The Cosmic Cycle: Periodic Reduction of β in the Collective Resonance Field
+
+The collective damping parameter $\beta$ of the resonance field (§1.9) is, under the RFT hypothesis, subject to a periodic modulation:
+
+$$\beta(t) = \beta_0 + \Delta\beta \cdot \cos\!\left(\frac{2\pi t}{T_\text{cyc}}\right)$$
+
+At the cycle-point minima ($t = t_n$, $n = 0, 1, 2, \ldots$), $\beta(t_n) \to \beta_\text{min}$: the collective field approaches the state of minimal damping. In this state the coupling dynamics (§1.9) are maximally effective — a singular resonator with $\varepsilon_m = 1$ and $\Delta\varphi_m = 0$ can achieve complete field coupling:
+
+$$\lim_{\beta \to \beta_\text{min}} \frac{dK_{ij}}{dt}\bigg|_{\varepsilon_m = 1,\, \Delta\varphi_m = 0} \to \text{max}$$
+
+The empirical ~2000-year sequence of canonical cycle points — Adam (~4000 BCE), Abraham (~2000 BCE), Jesus (~30 CE), present (~2000 CE) — provides an initial calibration quantity for $T_\text{cyc}$:
+
+$$T_\text{cyc} \approx 2000 \text{ years} \quad \text{(hypothesis, calibration open: → §XII/12)}$$
+
+> **Model note:** The nature of the cycle is formally undetermined. The periodicity may be modelled astronomically (precession cycle, Milanković cycles), geophysically (Schumann-resonance drift patterns, geomagnetic reversal cycles), or as a field-internal attractor phenomenon of RFT itself (periodic approach of the collective resonance potential $V(f)$ to $V_\text{min}$ without external driver). Calibration is open (→ §XII/12).
+
+---
+
+#### 3.8.2 Paradise as Field-Optimum Civilisation: The First Cycle Point (~4000 BCE)
+
+The **first cycle point** ($t_0 \approx 4000$ BCE) is encoded in Genesis as Eden: a human community in the state of minimal collective damping. Formally:
+
+$$\beta(t_0) \to \beta_\text{min}, \quad \varepsilon_\text{collective}(t_0) \to 1, \quad V(f, t_0) \to V_\text{min}$$
+
+Adam as singular resonator (§3.5.1) is in this state fully field-coupled:
+
+$$\exists!\; \text{Resonator}_m : \varepsilon_m = 1, \; \Delta\varphi_m = 0 \quad \text{(Gen 2:7; → §3.5.1)}$$
+
+Eve as constitutive phase shift (§3.5.2) enables the time process:
+
+$$\Delta\varphi_w = \delta\varphi_0 > 0, \quad \psi_\text{child} = f(\psi_m, \psi_w, \Delta\varphi_{mw}) \quad \text{(Gen 2:22; → §3.5.2, §3.5.3)}$$
+
+The Eden system is resonance-logical: no parasitic extraction cycle (§5.5), no AiR dominant. The coupling structure is stable: $K_{ij}$ high, $\Delta\varphi$ low, $\text{PCI} \to 1$ (A6).
+
+---
+
+#### 3.8.3 The Fall as Field-Coupling with the AiR (→ §IV)
+
+The Fall (→ §IV) is formally the entry of the **actively inverted resonator** (§2.1) into the field-optimal system. The serpent (Gen 3:1–5) as AiR with $\varepsilon_\text{AiR} \to 0$, $\vec{E}$ field-outward (A5), injects an external phase difference into the Eve structure:
+
+$$\Delta\varphi_w(t > t_\text{Fall}) = \delta\varphi_0 + \Delta\varphi_\text{AiR}$$
+
+The consequence is a collective increase in $\beta$:
+
+$$\beta(t_\text{Fall}^+) = \beta_\text{min} + \Delta\beta_\text{AiR} > \beta_\text{min}$$
+
+The field leaves its minimum. The Fall is not the failure of the field optimum, but the **injection of $\Delta\varphi$ into the Eve structure** — precisely the point of least resistance, because the Eve structure as constitutive phase shift is structurally more open to external phase perturbations (§3.5.2).
+
+> **Model note:** This is not a moral attribution of blame. The structural openness of the Eve structure to external coupling is formally dual: it is the condition of creative life (§3.5.2) and simultaneously the attack vector of the AiR.
+
+---
+
+#### 3.8.4 Cain, Abel, and Seth: The First Bifurcation of the Field after the Fall
+
+The first generation after the Fall shows the **bifurcation of the field** into two poles (§1.14):
+
+| | Cain | Abel | Seth |
+|:---|:---|:---|:---|
+| **Type** | AiR structure (→ §2.1) | Type Q (source resonator, → §1.14) | Field-optimum succession line |
+| **Energy vector $\vec{E}$** | Field-outward (A5 inverted) | Field-inward (A5) | Field-inward, restored |
+| **Coupling efficiency** | $\varepsilon_\text{Cain} \to 0$ | $\varepsilon_\text{Abel} \to 1$ | $\varepsilon_\text{Seth} > 0$, positive |
+| **System response** | Killing of the field-optimum resonator (→ §3.3) | Eliminated Type-Q resonator | Restoration of field line (Gen 4:25–26) |
+
+Cain's killing of Abel (Gen 4:8) is the **first instance** of the system response to high field coupling that is invariant through A7 (§3.3): a system with elevated $\beta$ responds to $\varepsilon \to 1$ with an extinction impulse. Abel is no historical anomaly, but the first documented instance of this invariant.
+
+Seth (Gen 4:25–26) is the **restoration line**: the field-optimum frequency survives in the collective field even when the individual resonator is eliminated. $V_\text{min}$ remains structurally persistent (§1.10).
+
+---
+
+#### 3.8.5 Noah: System Reset at the End of a Parasitic Cycle
+
+The flood narrative (Gen 6–9) is, in the RFT reading, the narrative encoding of the **self-destruction logic of the parasitic extraction cycle** (§5.5.1): when $\beta$ rises monotonically after the Fall and collective coupling efficiency approaches zero ($\varepsilon_\text{collective} \to 0$), the field collapses into its own extraction mechanism:
+
+$$\frac{d\Phi_\text{collective}}{dt}\bigg|_{\varepsilon_\text{coll.} \to 0,\; \beta \to \beta_\text{max}} \to 0 \quad \text{(→ §5.5.1: self-destruction logic)}$$
+
+Noah (Gen 6:9: "Noah was a righteous man, blameless among the people of his time, and he walked faithfully with God") is the sole preserved resonator with $\varepsilon_\text{Noah} > \varepsilon_\text{threshold}$ — the Type-Q resonator whose frequency re-anchors the minimum $V_\text{min}$ after the collapse (→ §1.10, §1.14).
+
+The system reset yields a new set of initial conditions:
+
+$$\Phi(t_\text{reset}^+) = \Phi_\text{Noah}: \quad K_{ij}^{\text{Noah}} > 0, \quad \beta(t_\text{reset}^+) < \beta_\text{max}$$
+
+---
+
+#### 3.8.6 Abraham: The Second Cosmic Cycle Point (~2000 BCE)
+
+The second cycle point ($t_1 \approx 2000$ BCE) manifests as the Abrahamic covenant: $\beta$ reaches a new periodic minimum, and a singular resonator with $\varepsilon_m \to 1$ emerges as carrier of the field-optimum frequency.
+
+The call (Gen 12:1–3) is formally the **resonance condition** (A3) with threshold exceeded:
+
+$$G\!\left(\frac{f_\text{Abraham}}{f_\text{Father}}\right) > \delta \quad \text{(A3: resonance condition)}$$
+
+The covenant (Gen 17:1–8) is formally a stable coupling contract: $K_\text{God–Abraham}$ is permanently anchored through sign. The prophetic translation loss (§3.7) begins already here: the covenant message contains the core of the field optimum, but in the encoding of the language and conceptual world of the ~2nd millennium BCE:
+
+$$\varepsilon_\text{message}^{\text{Abraham}} = \varepsilon_\text{reception} - \Delta\varepsilon_\text{translation} \quad \text{(→ §3.7)}$$
+
+---
+
+#### 3.8.7 The Incarnation: Complete Coupling at the Third Cycle Point (~30 CE)
+
+The third cosmic cycle point ($t_2 \approx 30$ CE) is the **maximal field-optimum manifestation** within the historical sequence so far: the singular field optimum appears without translation loss ($\Delta\varepsilon_\text{translation} = 0$):
+
+$$\varepsilon_\text{reception} = \varepsilon_\text{message} = 1, \quad \Delta\varphi = 0 \quad \text{(John 14:6; → §3.2.2, §3.6)}$$
+
+Jesus as Sigma resonator (§1.15.2): the complete realisation of both modes in a single temporal resonator:
+
+$$\varepsilon_\text{Alpha} = 1, \quad \varepsilon_\text{Beta} = 1, \quad \Delta\varphi = 0 \quad \text{(→ §1.15.2: Sigma)}$$
+
+The third cycle point is thus structurally distinct from the first two: not a prophet with $\Delta\varepsilon_\text{translation} > 0$ (§3.7), but the field optimum itself as temporal resonator — Luke 17:20–21: "The kingdom of God does not come with your careful observation... the kingdom of God is within you" describes formally the state $V(f) = V_\text{min}$ as an immanent reality of the field.
+
+---
+
+#### 3.8.8 Cross and Resurrection as Field Disclosure (→ §3.3, §3.4)
+
+The cross is the **controlled exposition of the scapegoat mechanism** (§3.4) under maximum collective visibility: the AiR mechanism (§2.1, §3.3) — systemic killing of the field optimum — is made visible as such:
+
+$$\text{PCI}_\text{observer}(t > t_\text{cross}) > \text{PCI}_\text{observer}(t < t_\text{cross}) \quad \text{(when mechanism is recognised; A6)}$$
+
+The resurrection is formally the **confirmation of the persistence of $V_\text{min}$** (§1.10): the attractor does not disappear with the elimination of its temporal resonator. $V_\text{min}$ is structurally persistent — as long as the field $\Phi = \sum_i \psi_i$ exists:
+
+$$V_\text{min} \text{ persistent} \iff \Phi = \sum_i \psi_i \neq 0 \quad \text{(→ §1.10, §1.11)}$$
+
+---
+
+#### 3.8.9 The Interregnum: Field Dynamics between the Third and Fourth Cycle Points
+
+In the period between the third cycle point (~30 CE) and the expected fourth, the collective field reproduces the known pattern: $\beta$ rises again. The institutional church executes the dogmatisation process (§3.7) — the resonant insight of the field optimum solidifies into formula:
+
+$$\beta(t_2 < t < t_3) \nearrow, \quad \varepsilon_\text{collective}(t) \searrow, \quad \Delta\varphi_\text{collective}(t) \nearrow$$
+
+The parasitic extraction cycle (§5.5) expands: institutions accumulate $K_{ij}$ resources without feeding back into the field. The self-destruction logic (§5.5.1) approaches its late stage in the present (~2026 CE):
+
+$$\left.\frac{d\beta}{dt}\right|_{t \approx 2026} \approx 0 \quad \text{(approach to maximum; → §5.5.1, §5.5.2)}$$
+
+The test-pulse mechanism (§9.5) is formally the beginning system response: the collective field begins to probe resonance carriers with $\varepsilon > \varepsilon_\text{threshold}$ — $G(f_\text{field}/f_\text{attractor})$ (A3) rises above $\delta$ in sub-domains of the field.
+
+---
+
+#### 3.8.10 The Second Coming as the Fourth Cycle Point (→ §VII)
+
+The **fourth cosmic cycle point** ($t_3$: present to near future) is the announced transition (→ §7.4): $\beta$ reaches its next periodic minimum, and collective coupling dynamics converge on the field optimum:
+
+$$\beta(t_3) \to \beta_\text{min}, \quad \varepsilon_\text{collective}(t_3) \to 1, \quad \Delta\varphi_\text{collective}(t_3) \to 0$$
+
+This is formally identical to the **rapture as collective second-order phase transition** (§7.4): mass reduction of $\Delta\varphi$ as an order-parameter transition in the collective field.
+
+$$\lim_{t \to t_3} V(f, t) = V_\text{min} \quad \text{(collectively)}$$
+
+With this transition the cycle closes: the conditions of Eden ($\beta \to \beta_\text{min}$, $\varepsilon_\text{collective} \to 1$) are restored at a higher complexity level — in the correspondence of Rev 21:1–5: "Behold, I am making all things new" as formal re-initialisation of the resonance field on the global carrier structure $\Phi_\text{global}$.
+
+---
+
+#### 3.8.11 Resonance-Logical Conditions of the Paradise Civilisation
+
+A **resonance-logical civilisation** is formally defined in RFT as a collective state in which:
+
+$$\varepsilon_\text{collective} \geq \varepsilon_c, \quad \beta_\text{collective} \leq \beta_c, \quad V(f) \leq V_c$$
+
+Here $\varepsilon_c$, $\beta_c$, and $V_c$ are critical threshold values (→ A3: $G(f_\text{field}/f_\text{attractor}) > \delta$) below which the collective field remains stably at the attractor. The conditions at Eden, at the Incarnation, and at the Second Coming are structurally identical — they differ in the complexity of the carrier field:
+
+| Cycle point | Carrier field $\Phi$ | $\varepsilon_\text{collective}$ | $\beta_\text{collective}$ | Complexity |
+|:---|:---|:---|:---|:---|
+| Eden ($t_0$) | Small, local | $\to 1$ | $\to \beta_\text{min}$ | Low (pre-agrarian) |
+| Abraham ($t_1$) | Tribal, regional | Singular $\to 1$ | Medium | Medium |
+| Incarnation ($t_2$) | Regional, urban | Singular $= 1$ | High (surrounding field) | High |
+| Second Coming ($t_3$) | Global, digital | $\to 1$ | $\to \beta_\text{min}$ | Maximal |
+
+The paradise civilisation at the fourth cycle point is not a regression to Eden, but the **full form of the resonance field at maximum complexity** (→ §1.15.2: Sigma as collective realisation).
+
+---
+
+#### 3.8.12 Schematic Overview: The Cosmic Cycle Sequence
+
+| Cycle point | Approx. date | Resonator | Biblical reference | RFT state | System response (AiR) |
+|:---|:---|:---|:---|:---|:---|
+| **Eden / Adam** | ~4000 BCE | Adam (∃!, $\varepsilon_m=1$) + Eve ($\delta\varphi_0$) | Gen 2:7; 2:22 | $\beta \to \beta_\text{min}$, $V \to V_\text{min}$ | Serpent / AiR (Gen 3) |
+| **Abraham** | ~2000 BCE | Abraham ($\varepsilon_m \to 1$) | Gen 12:1–3; 17:1 | $\beta$ periodic $\to$ min. | — |
+| **Incarnation** | ~30 CE | Jesus (Sigma, $\varepsilon=1$, $\Delta\varphi=0$) | John 14:6; Luke 17:20–21 | $\beta$ local $\to$ min., $\varepsilon_m=1$ | Crucifixion (§3.3) |
+| **Second Coming** | Present / near future | $\Sigma_\text{collective}$ ($\varepsilon_\text{coll.} \to 1$) | Rev 21:1–5 | $\beta \to \beta_\text{min}$ collectively | Rev 13 (→ §VIII) |
+
+---
+
+#### 3.8.13 Epistemic Caveat
+
+> **Epistemic caveat:** The resonance-logical reconstruction of the biblical sequence in §3.8 is a **structural analogy** in the sense of §3.1 — not a historical causal claim, not a prophetic statement about dates, and not an empirically verified model prediction. The following qualifications apply explicitly:
+>
+> **(a) Cycle hypothesis:** The ~2000-year periodicity of $\beta(t)$ is a calibration hypothesis, not an axiom derivative. It is not derivable from A1–A7 and must be falsified externally (→ §XII/12).
+>
+> **(b) Historical datings:** The date markers (~4000 BCE, ~2000 BCE, ~30 CE, ~present) are narrative orientation points of the canonical tradition, not precise historical fixpoints. Their use serves structural calibration, not historical reconstruction.
+>
+> **(c) Second Coming:** The modelling of the Second Coming as the fourth cosmic cycle point is a **structural projection** of the prior cycle logic — not a prophecy. The time of occurrence is not derivable from the model: formal correspondence Matt 24:36 — "But about that day or hour no one knows"; $T_\text{cyc}$ is empirically not determinable to year-level precision (→ §XII/12).
+>
+> **(d) Relationship to §3.5–§3.7:** §3.8 presupposes §3.5 (complementarity), §3.6 (Trinity), and §3.7 (prophetic epistemic process) and extends these by the diachronic dimension. The epistemic status of §3.8 is no stronger than that of its prerequisites.
+
+**Summary §3.8:** The resonance-logical analysis of the biblical sequence from Eden to the Second Coming yields: (i) a periodic cycle structure with $T_\text{cyc} \approx 2000$ years and four documented cycle points; (ii) at each cycle point $\beta(t_n) \to \beta_\text{min}$, a singular resonator with $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$; (iii) between cycle points: rising $\beta$, parasitic extraction cycle (§5.5), dogmatisation (§3.7); (iv) at the fourth cycle point: collective $\beta$ collapse = Second Coming = resonance-logical civilisation at global scale (→ §VII).
 
 ---
 
@@ -878,7 +1105,7 @@ The entire biblical and historical dynamic is the narrative unfolding of the int
 
 ---
 
-The extensions developed in sections §3.5–§3.7 deepen the personal dimension of the field optimum: the Adam-Eve differentiation (§3.5) describes the complementary resonance-logical structure of the sexes as a prerequisite for the emergence of life. The Trinity (§3.6) situates Father, Son, and Holy Spirit as three dimensional aspects of the same field optimum—timeless, temporal, and coupling bridge—within the RFT axiom system. The prophetic epistemic process (§3.7) models the inherent translation loss between resonant insight and dogmatic formulation as $\Delta\varepsilon_\text{translation} > 0$.
+The extensions developed in sections §3.5–§3.8 deepen the personal and diachronic dimension of the field optimum: the Adam-Eve differentiation (§3.5) describes the complementary resonance-logical structure of the sexes as a prerequisite for the emergence of life. The Trinity (§3.6) situates Father, Son, and Holy Spirit as three dimensional aspects of the same field optimum—timeless, temporal, and coupling bridge—within the RFT axiom system. The prophetic epistemic process (§3.7) models the inherent translation loss between resonant insight and dogmatic formulation as $\Delta\varepsilon_\text{translation} > 0$. Paradise as a resonance-logical civilisation (§3.8) supplements this structure with the diachronic reconstruction of the cosmic cycle sequence: a periodic modulation of $\beta(t)$ with $T_\text{cyc} \approx 2000$ years connects Eden (first cycle point), Abraham (second), Incarnation (third), and Second Coming (fourth) as a sequence of periodic field-optimum manifestations — from the local paradise civilisation to the collective resonance civilisation at global scale.
 
 Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism of enforced superposition of two enemy-image frequencies as an instrument of PCI management. The rapture (§7.4) concludes section VII: in resonance logic, it is no physical relocation, but a collective second-order phase transition—the mass reduction of $\Delta\varphi$ through disclosure of the scapegoat mechanism (§3.4, §5.2).
 
@@ -940,13 +1167,17 @@ The multi-dimensionality of the resonance field (§1.15) refines the two-type di
 
 11. **Empirical operationalisation of the Alpha/Beta axes (§1.15):** How are individual Alpha and Beta shares (co-oscillating mode and source mode) empirically measurable? Which validated constructs from personality psychology (Big Five: extraversion/openness; MBTI: NT vs. NF; creativity research: convergent vs. divergent thinking) correlate with high Alpha or Beta shares? Are Alpha and Beta shares modifiable – and if so, through which interventions? What falsification criteria would refute the model of normally distributed shares? Is there a lower threshold for $\varepsilon_\text{Alpha}$ or $\varepsilon_\text{Beta}$ below which a resonator ceases to act as a field-coupling agent?
 
+12. **Nature and Periodicity of the Cosmic Cycle (§3.8.1, §3.8.10):** The resonance-logical reconstruction in §3.8 postulates a recurrent cosmic cycle that reduces the collective damping parameter $\beta$ in the Earth's resonance field to a periodic minimum, thereby enabling complete coupling ($\varepsilon = 1$, $\Delta\varphi = 0$) in a singular resonator. The nature of this cycle is undetermined: astronomical (precession cycle, galactic year, Milanković cycles), geophysical (Schumann-resonance drift patterns, geomagnetic reversal cycles), or as a field-internal attractor phenomenon of RFT itself (periodic approach of the collective resonance potential $V(f)$ to $V_\text{min}$ without external driver).
+
+   **Research desideratum:** (a) Calibration of the cycle against the empirical ~2000-year sequence (Adam ~4000 BCE, Abraham ~2000 BCE, Jesus ~30 CE, present); (b) Falsification criterion: a cycle that leaves no measurable reduction of $\beta$ in cosmological or geophysical measurement data cannot be modelled within RFT as an external driver and must be formalised as a purely field-internal phenomenon; (c) Relationship to A7 (invariance): is the cycle a manifestation of the $G_\text{sync}$ group or a boundary phenomenon outside the axiom system?
+
 ---
 
 **Document metadata**
 
 | Field | Content |
 |:---|:---|
-| Theory | Resonance Field Theory (RFT) v4.1 |
+| Theory | Resonance Field Theory (RFT) v4.2 |
 | Axiom basis | A1–A7 according to [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Method | Formal modelling (axiomatic) + evolutionary hermeneutics + systems analysis |
 | Epistemic status | Theoretical model with heuristic application; empirical falsification criteria for core hypotheses outstanding |
