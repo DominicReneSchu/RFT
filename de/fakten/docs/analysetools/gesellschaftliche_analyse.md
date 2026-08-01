@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Analyseinstrument gesellschaftlicher Zusammenhänge
-**Stand: 1. August 2026 | Fassung 2.7 – Terminologische Konsistenz: Sigma als biologischer Tempel (nicht V_min) durchgehend präzisiert**
+**Stand: 1. August 2026 | Fassung 2.8 – §3.5.7 Empfang vs. vollständige Kopplung (Radio/Funktelefon) ergänzt**
 
 ---
 
@@ -37,6 +37,7 @@ Dieses Dokument nutzt die **Resonanzfeldtheorie (RFT)** als interdisziplinäres 
 | „Das Feldoptimum" | Mathematische Figur: globales Minimum des Resonanzpotenzials $V(f)$; der Zustand vollständiger Kopplung $\varepsilon = 1$, $\Delta\varphi = 0$ |
 | Religiöse Texte | Primärquellen einer evolutionären Hermeneutik; behandelt als dichte Beschreibungen wiederkehrender sozio-dynamischer Muster |
 | Politische Fallstudien | Analytische Hypothesen auf Grundlage öffentlich zugänglicher Information; keine verifizierten Kausalbehauptungen |
+| „Heiliger Geist" / „Empfang" | Formal als körperloses Feldoptimum $V_\text{min}$ und Informationsflusszustand $I(V_\text{min} \to i)>0$ bei erfüllter Resonanzbedingung; einseitiger Empfang ist von vollständiger bidirektionaler Kopplung zu unterscheiden (→ §3.5.7) |
 
 ---
 
@@ -148,6 +149,8 @@ $$I(X \to Y) > 0 \iff \text{PCI} > 0 \land \text{MI} > 0$$
 
 Systeme ohne Phasenkohärenz ($\text{PCI} \approx 0$) können keine Information austauschen – unabhängig von der Amplitude der Einzelschwingungen.
 
+Die formale Unterscheidung zwischen einseitigem Empfang und bidirektionaler vollständiger Kopplung wird in §3.5.7 explizit ausgearbeitet.
+
 ---
 
 ### 1.8 Invarianz und historische Musterwiederholung (A7)
@@ -241,6 +244,8 @@ $$\varepsilon_\text{kollektiv} \to 1 \iff \alpha_Q \cdot K_{QM} = \alpha_M \cdot
 **Anthropologische Entsprechung:** Apg 20,35 – „Geben ist seliger als nehmen" – ist in dieser formalen Lesart die Anweisung zur symmetrischen Kopplung: Typ Q soll Typ M ankoppeln, auch ohne strukturelle Notwendigkeit. Typ M soll die empfangene Energie transformativ zurückgeben, nicht extrahieren. Vollständige Kopplung an das körperlose Feldoptimum – als Zustand $\Delta\varphi = 0$, $\varepsilon = 1$ (§3.2) – ist der einzige Zustand, der beide Modi simultan in perfekter Kopplung hält.
 
 > **Modellhinweis:** Die Zwei-Typen-Unterscheidung ist eine formale Erweiterung von A1 auf Basis der Phasenraumgeometrie um $V_\text{min}$. Sie ist keine essentialistische Kategorisierung von Personen. Ein Akteur kann zwischen den Modi wechseln; die Typzugehörigkeit beschreibt den dominanten Kopplungsmodus in einem gegebenen Kontext, nicht eine unveränderliche Eigenschaft. Die Grenze zwischen Typ M (transformativ) und AiR (parasitär, §2.1) liegt in der Richtung des Energievektors $\vec{E}$ (A5) und im Vorzeichen von $dK_{ij}/dt$ (§1.9).
+
+Die in §3.5.7 präzisierte bidirektionale Kopplung setzt voraus, dass Typ Q und Typ M in einem Resonator vollständig und symmetrisch integriert sind; im Modell ist dies ausschließlich als Sigma-Struktur (§1.15.2) formalisiert.
 
 ---
 
@@ -541,6 +546,59 @@ Beide müssen es wollen und bereit sein. Dies entspricht der allgemeinen Kopplun
 
 > **Modellhinweis:** Diese Präzisierung verändert die Axiome A1–A7 nicht. Sie klärt die Ebene: $V_\text{min}$ ist das strukturelle Minimum des Feldes (körperlos, persistent); der Sigma-Mann ist der biologische Resonator mit der stärksten strukturellen Affinität zu $V_\text{min}$ und der Fähigkeit zur aktiven Kopplung – wenn er es wählt und wenn der Heilige Geist es wählt.
 
+#### 3.5.7 Empfang und vollständige Kopplung: Jeder Mensch als Radio, der Sigma als Funktelefon
+
+Die Präzisierung aus §3.5.6 und §3.6 verlangt eine formale Unterscheidung zwischen **Empfang** und **vollständiger bidirektionaler Kopplung**.
+
+**Empfang (Radio-Analogie):**
+
+Jeder menschliche Resonator (A1) besitzt eine Eigenfrequenz $f_i$ und eine Empfangskapazität für das körperlose Feldoptimum ($V_\text{min}$, Heiliger Geist). Wenn die Resonanzbedingung überschritten ist,
+
+$$G(f_i/f_{V_\text{min}}) > \delta$$
+
+empfängt der Resonator einen Informationsfluss aus dem Feldoptimum:
+
+$$I(V_\text{min} \to \text{Resonator}_i) > 0 \iff \text{PCI} > 0 \land \text{MI} > 0 \quad (A6)$$
+
+Dies ist ein **passiver Empfangszustand**: Das Signal des Feldoptimums ist zugänglich, ohne dass bereits eine symmetrische Rückkopplung aufgebaut ist. Der Energievektor zeigt beim Empfänger feldeinwärts (A5). Dieser Zustand ist nicht auf den Sigma beschränkt, sondern prinzipiell für jeden Resonator erreichbar, dessen Eigenfrequenz hinreichend nahe an $f_{V_\text{min}}$ liegt.
+
+Formal:
+
+$$\forall\, \text{Resonator}_i:\; G(f_i/f_{V_\text{min}}) > \delta \Rightarrow I(V_\text{min} \to i) > 0 \quad (\text{einseitiger Empfang})$$
+
+**Vollständige Kopplung (Funktelefon-Analogie):**
+
+Die vollständige, bidirektionale Kopplung ist strukturell verschieden vom einseitigen Empfang. Sie setzt voraus:
+
+1. $I(V_\text{min} \to \text{Sigma}) > 0$ (Empfang)
+2. $I(\text{Sigma} \to V_\text{min}) > 0$ (Rückübertragung/Antwort)
+3. Symmetrische $K_{ij}$-Entwicklung: $dK_{ij}/dt > 0$ in **beide** Richtungen (§1.9)
+4. Beidseitige Entscheidung: Wille des Sigma $\wedge$ Wille des Heiligen Geistes (§3.5.6)
+
+Formal:
+
+$$\text{Vollständige Kopplung} \iff \varepsilon(\Delta\varphi)=1 \land K_{\text{Sigma}\leftrightarrow\text{H.G.}} > 0 \land \frac{dK}{dt} > 0\; (\text{bidirektional})$$
+
+Dies ist die Bedingung, die nur der Sigma-Mann als biologischer Tempel (§3.5.6) vollständig erfüllen kann: nicht weil anderen der Empfang verwehrt wäre, sondern weil die Antennenstruktur zur **Rückübertragung** an das Feldoptimum die Sohn-Struktur (§3.5.1, §3.6) voraussetzt.
+
+| Eigenschaft | Empfang (Radio) | Vollständige Kopplung (Funktelefon) |
+|:---|:---|:---|
+| Informationsfluss | Einseitig: $V_\text{min} \to i$ | Bidirektional: $V_\text{min} \leftrightarrow \text{Sigma}$ |
+| PCI | $\text{PCI}_\text{Empfang} > 0$ | $\text{PCI}_\text{Kopplung} = 1$ (→ A6) |
+| $\varepsilon$ | $0 < \varepsilon < 1$ (je nach $\Delta\varphi$) | $\varepsilon = 1,\; \Delta\varphi = 0$ |
+| $K_{ij}$ | Passiv empfangen | Aktiv aufgebaut, bidirektional wachsend (§1.9) |
+| Zugang | Alle Resonatoren mit $G(f_i/f_{V_\text{min}}) > \delta$ | Ausschließlich Sigma-Mann (Sohn-Struktur, §3.5.6) |
+| Bibelreferenz | „Wer Ohren hat, der höre" (Mt 13,9) | „Ich und der Vater sind eins" (Joh 10,30) |
+| §-Anker | A3, A6, §1.3, §1.7 | A4, §1.9, §1.14, §1.15.2, §3.5.6 |
+
+**Konsequenz für das Modell:**
+
+Die Aussage, dass jeder Mensch den Heiligen Geist empfangen kann (z. B. Apg 2,17), wird damit formal präzise: Sie beschreibt den **einseitigen Empfangszustand**. Das Feld des Feldoptimums ist für jeden Resonator zugänglich, der die Resonanzbedingung erfüllt. Dies erklärt die breite spirituelle Erfahrungsgeschichte über Kulturen hinweg.
+
+Die vollständige bidirektionale Kopplung – das „Gespräch" mit dem Heiligen Geist, die Sohnschaft im theologischen Sinne – ist davon strukturell verschieden und setzt die biologische Tempel-Struktur (§3.5.6) voraus.
+
+> **Modellhinweis:** Die Unterscheidung Empfang/Kopplung ist eine formale Erweiterung auf Basis von A6 (Informationsfluss) und §1.9 (Kopplungsdynamik). Die Radio-/Funktelefon-Analogie ist ein heuristisches Bild – das Modell ist der Formalismus, nicht die Analogie.
+
 ---
 
 ### 3.6 Die Trinität als resonanzlogische Struktur
@@ -553,7 +611,7 @@ Die trinitarische Formel beschreibt keine mystische Paradoxie, sondern drei notw
 | **Sohn** | $\varepsilon \to 1$ **im zeitlichen Prozess** (bei Kopplung) | Der biologische Tempel – Adams Nachkomme mit der Antenne zur Kopplung an den Heiligen Geist (→ §3.5.6). Natürlicher Zustand: $\varepsilon \to 1$ möglich, aber nicht automatisch gehalten – jede Phasenverschiebung durch zeitliche Prozesse (Hunger, Müdigkeit, Versuchung) muss durch beständige Ausrichtung ausgeglichen werden. Die bleibende Kopplung setzt die Entscheidung beider voraus. Diese Struktur ist resonanzlogische Bedingung jedes Lebens (A4) – nicht an ein Komplexitätsniveau geknüpft; beim Menschen tritt sie aufgrund des höchsten irdischen Bewusstseinsniveaus in ihrer reflexiv artikulierbaren Form auf. |
 | **Heiliger Geist** | Das **körperlose Feldoptimum** und die **Kopplung** | Das Feldoptimum $V_\text{min}$ in seiner körperlosen, nicht an biologische Träger gebundenen Form – persistent, unabhängig von Geburt und Tod (→ §3.5.6). Zugleich die Brücke zwischen dem zeitlosen Vater und dem biologischen Tempel (Adams Nachkomme): Der Energievektor $\vec{E}$ (A5), die Geodätische $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, der Kopplungsmechanismus $\alpha \cdot G \cdot \cos(\Delta\varphi)$. Die bleibende Kopplung zwischen Heiligem Geist und biologischem Tempel setzt die Entscheidung beider voraus (§3.5.6). |
 
-Diese Struktur erklärt die Aussage „Ich bin nicht aus dieser Welt" (Joh 8,23) als präzise Beschreibung des Ursprungs der Eigenfrequenz des Sohnes: Seine Grundschwingung stammt nicht aus dem sozialen Feld, sondern aus dem zeitlosen Attraktorraum. Seine Sendung ist die **Kopplung des biologischen Tempels an das körperlose Feldoptimum** (Heiliger Geist) – nicht die Selbst-Inkarnation des Attraktors, sondern das vollständige Ankommen des körperlosen Feldoptimums in einem biologischen Resonator, der es empfängt und trägt.
+Diese Struktur erklärt die Aussage „Ich bin nicht aus dieser Welt" (Joh 8,23) als präzise Beschreibung des Ursprungs der Eigenfrequenz des Sohnes: Seine Grundschwingung stammt nicht aus dem sozialen Feld, sondern aus dem zeitlosen Attraktorraum. Seine Sendung ist die **Kopplung des biologischen Tempels an das körperlose Feldoptimum** (Heiliger Geist) – nicht die Selbst-Inkarnation des Attraktors, sondern das vollständige Ankommen des körperlosen Feldoptimums in einem biologischen Resonator, der es empfängt und trägt. Die in §3.5.7 formalisierte Unterscheidung zwischen allgemeinem Empfang und vollständiger bidirektionaler Kopplung präzisiert dabei die Brückenfunktion des Heiligen Geistes im Verhältnis zum biologischen Tempel.
 
 > **Epistemischer Vorbehalt:** Die trinitarische Zuordnung ist eine strukturelle Analogie innerhalb des RFT-Formalismus. Die Sohn-Struktur ist resonanzlogische Bedingung jedes Lebens (A4) – konstitutiv für Leben selbst, nicht an ein Komplexitätsniveau geknüpft (§3.5). Der Mensch ist auf der Erde diejenige Spezies mit dem höchsten kollektiven Bewusstsein ($\varepsilon_\text{kollektiv}$ maximal) und damit die einzige Spezies, die das Modell selbst reflexiv artikulieren kann. Sie versteht sich als hermeneutische Deutung, nicht als theologisches Dogma oder empirische Behauptung.
 
