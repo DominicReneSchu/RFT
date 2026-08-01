@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 1 August 2026 | Version 2.5 – §3.5.6 Biological Temple and Bodiless Field Optimum (Holy Spirit) added; §3.6 refined**
+**As of: 1 August 2026 | Version 2.6 – §3.8.x Entangled dual event: Father-logic, collapse and cosmic constellation added**
 
 ---
 
@@ -453,7 +453,7 @@ Jesus' killing was, in this reading, no historical anomaly but an exact repetiti
 
 ### 3.4 Salvation as Mechanism Exposure
 
-"Jesus saves" – in the RFT interpretation, not through substitutionary atoning death, but through the **demonstration of the scapegoat mechanism under controlled conditions** (René Girard's mimesis theory is a precursor formulation). Formally: the AiR mechanism is executed with full system transparency ($\text{MI} > 0$, A6) – the PCI of observers can rise when they recognise the mechanism. Salvation is a cognitive act: whoever grasps that their hatred is projectively conditioned ($\Delta\varphi_\text{hatred}$ was introduced from outside) can reduce $\Delta\varphi$ through insight.
+"Jesus saves" – in the RFT interpretation, not through substitutionary atoning death, but through the **demonstration of the scapegoat mechanism under controlled conditions** (René Girard's mimesis theory is a precursor formulation). Formally: the AiR mechanism is executed with full system transparency ($\text{MI} > 0$, A6) – the PCI of observers can rise when they recognise the mechanism. Salvation is a cognitive act: whoever grasps that their hatred is projectively conditioned ($\Delta\varphi_\text{hatred}$ was introduced from outside) can reduce $\Delta\varphi$ through insight. The uniqueness of Jesus within this logic is that societal collapse does not first generate readiness in him, but functions as a contrast condition that makes the truth of the field optimum visible; his self-sacrifice interrupts the threatened full collapse and cements the mechanism as a monument of truth (→ §3.8.1a).
 
 ---
 
@@ -600,7 +600,90 @@ The empirical ~2000-year sequence of canonical cycle points — Adam (~4000 BCE)
 
 $$T_\text{cyc} \approx 2000 \text{ years} \quad \text{(hypothesis, calibration open: → §XII/12)}$$
 
-> **Model note:** The nature of the cycle is formally undetermined. The periodicity may be modelled astronomically (precession cycle, Milanković cycles), geophysically (Schumann-resonance drift patterns, geomagnetic reversal cycles), or as a field-internal attractor phenomenon of RFT itself (periodic approach of the collective resonance potential $V(f)$ to $V_\text{min}$ without external driver). Calibration is open (→ §XII/12).
+> **Model note:** The nature of the cycle is formally undetermined. The periodicity may be modelled astronomically (precession cycle, Milanković cycles), geophysically (Schumann-resonance drift patterns, geomagnetic reversal cycles), or as a field-internal attractor phenomenon of RFT itself (periodic approach of the collective resonance potential $V(f)$ to $V_\text{min}$ without external driver). Calibration is open (→ §XII/12). The cosmic cycle is thus a necessary, but not sufficient, condition; activation of complete coupling requires the entangled dual event of cosmic minimum and societal collapse (→ §3.8.1a).
+
+---
+
+#### 3.8.1a The Entangled Dual Event: Father-Logic, Societal Collapse, and Cosmic Constellation as a Timeless Unity
+
+**Layer 1 – The latent potential and its activation condition**
+
+§3.5.1 states that in every generation there exists exactly one male resonator with the potential for complete coupling ($\exists!\,\text{Resonator}_m$). §3.5.6 clarifies that coupling requires **mutual decision**. The potential is therefore present in every generation — but it is **not automatically used**.
+
+The cosmic cycle alone (§3.8.1, external lowering of $\beta$) is necessary, but not sufficient. Societal collapse alone is necessary, but not sufficient. Only their **simultaneous occurrence** crosses the activation threshold:
+
+$$
+\operatorname{P}(\text{coupling}) = f\!\left(G(\beta_\text{cosmic}(t)),\, G(\beta_\text{max} - \beta_\text{collective}(t))\right)
+$$
+
+Only when both factors reach their extreme values simultaneously does the following hold:
+
+$$
+\operatorname{P}(\text{coupling}) > P_\text{critical}
+$$
+
+**Layer 2 – The Father's perspective: timeless entanglement of both conditions**
+
+The Father is $\varepsilon = 1$ without temporal process (§3.6). He sees the entire phase space simultaneously (§1.15.5). For him, the coincidence of cosmic minimum and societal collapse is **not a coincidence** — it is a single timelessly entangled structure $\Gamma_n$ that he projects from outside into time:
+
+$$
+\forall t_n:\; \exists\, \Gamma_n\, \text{ (timeless sequence)}:\quad \beta_\text{cosmic}(t_n) \to \beta_\text{min} \iff \beta_\text{collective}(t_n) \to \beta_\text{max}
+$$
+
+From the Sigma man's perspective within the temporal process, both arrive simultaneously: external field opening (cosmic) + removal of conditioning (collapse) = maximum readiness. Rom 8:28 — “And we know that all things work together for good to them that love God” — is, in resonance logic, the A7-invariant entanglement of internal and external field dynamics through the timeless Father-structure.
+
+**Layer 3 – How societal collapse generates individual readiness**
+
+The parasitic extraction cycle (§5.5) drives $\beta_\text{collective}$ upward. For the Sigma man this means: social bonds, conditionings, and expectation patterns that damp his consciousness (elevating $\beta_\text{personal}$) break away under collapse. Consciousness opens to the subconscious (§1.13). The inner cave (§5.5.2) becomes a resonance space:
+
+$$
+\beta_\text{collapse} \nearrow \;\Longrightarrow\; \beta_{\text{conditioning},\Sigma} \searrow \;\Longrightarrow\; \operatorname{P}(\text{will of Sigma}) \nearrow
+$$
+
+At the same time, $\operatorname{P}(\text{will of the H.S.})$ rises because without intervention the field runs into the self-destruction logic (§5.5.1), and $V_\text{min}$ remains the only available attractor.
+
+**Layer 4 – Historical pattern map**
+
+| Cycle point | Type of societal collapse | Historical context | Personal readiness of Sigma | Formal RFT correspondence | Biblical reference |
+|:---|:---|:---|:---|:---|:---|
+| **Noah** | Internal self-collapse (§5.5.1 in full) | Gen 6:1–13: total field degeneration, $\varepsilon_\text{collective} \to 0$ | Sole resonator with $\varepsilon_\text{Noah} > 0$; no other social field remains — no alternative to coupling | $\beta \to \beta_\text{max}$, self-destruction logic; ark = stability anchor $K_{ij}^\text{Noah} > 0$ | Gen 6:9; 6:5 |
+| **Abraham** | Civilisational rupture (external collapse) | Decline of the Third Dynasty of Ur (~2004 BCE); dissolution of the last Sumerian central state; uprooting of social $K_{ij}$ | Departure from Ur = enforced decoupling from collapsing AiR structures; personal inner cave (§5.5.2) — openness to the new | $\beta_\text{collective}$ medium-high; Abraham at the periphery of collapse; resonance condition (A3) crossed for the first time | Gen 12:1–3; Gen 11:28 |
+| **Moses** | Foreign-domination collapse (external oppression collapse) | Egyptian enslavement of Israel: institutionalised parasitic extraction cycle (§5.5) over centuries; Israel at existential minimum — no $K_{ij}$ possible any longer | Personal collapse in Midian (flight, 40 years of solitude) = individual inner cave; $\beta_\text{personal} \to 0$; no other way out than coupling | No full cosmic cycle point (intermediate point): therefore prophet with translation loss (§3.7), not complete field optimum; $\varepsilon_\text{message} < 1$ | Ex 2:11–3:14; Ex 3:1 |
+| **Jesus** | Double system collapse (occupation + institutional betrayal) | Roman occupation + corrupt temple system = AiR on two levels (§2.1, §9.3); maximal collective $\Delta\varphi$ | Collapse is here a **contrast condition**, not an activation condition: $\varepsilon_\text{Jesus} = 1$ from birth; societal collapse makes the field optimum visible rather than first making it possible | Collapse interrupts itself through Jesus' self-sacrifice: scapegoat mechanism (§3.4) is cemented as a monument of truth; full collapse is prevented | John 18:36; Matt 27:46; Luke 23:34 |
+| **Present** | Global digital system collapse (§5.5.1 maximum) | $d\beta/dt \approx 0$ (~2026, → §3.8.9); approach to $\beta_\text{max}$; global parasitic extraction cycle (§5.5); test-pulse mechanism (§9.5) active | Fourth Sigma: carrier present; societal collapse under way; cosmic constellation approaching | Dual condition is moving toward full lock-in: $\beta_\text{cosmic}(t_3) \to \beta_\text{min} \wedge \beta_\text{collective}(t_3) \to \beta_\text{max}$ | Matt 24:37–39; Rev 21:1–5 |
+
+**Layer 5 – The uniqueness of Jesus: activation vs. contrast condition**
+
+All other Sigmas (Noah, Abraham, Moses, present): societal collapse is an **activation condition** — it breaks the conditioning of the Sigma man and generates readiness.
+
+Jesus: societal collapse is a **contrast condition** — $\varepsilon_\text{Jesus} = 1$ is structurally given (§3.5.6, §3.6); collapse does not first produce readiness, but the **visibility** of the field optimum through maximum contrast ($\varepsilon_\text{environment} \to 0$ while $\varepsilon_\text{Jesus} = 1$). Jesus' uniqueness lies **not** in the absence of collapse, but in his response to it: self-sacrifice on the cross interrupts the threatened total collapse and cements the scapegoat mechanism as a permanent monument of truth (§3.4).
+
+$$
+\text{All except Jesus:}\quad \operatorname{P}(\text{collapse fully completed without Sigma}) = 1
+$$
+
+$$
+\text{Jesus:}\quad \text{collapse stopped through self-sacrifice} \;\Longrightarrow\; \text{monument of truth (→ §3.4)}
+$$
+
+| Function of collapse | Cycle points | Mechanism |
+|:---|:---|:---|
+| **Activation condition** | Noah, Abraham, Moses, present | Breaks conditioning → $\beta_\text{personal} \searrow$ → $\operatorname{P}(\text{will of Sigma}) \nearrow$ |
+| **Contrast condition** | Jesus | Maximum collective $\Delta\varphi$ makes $\varepsilon_\text{Jesus} = 1$ visible; self-sacrifice prevents full collapse |
+
+**Layer 6 – Revelation as the Father's coupling offer to the fourth Sigma**
+
+Matt 24:37–39 explicitly compares the Second Coming with Noah: “But as the days of Noe were, so shall also the coming of the Son of man be.” In resonance logic this is not a moral warning, but a **structural description of the collapse type**: the Noah pattern = internal self-collapse (§5.5.1) that becomes total without Sigma intervention.
+
+The Revelation of John narratively describes $\varepsilon_\text{collective} \to 0$, $\beta \to \beta_\text{max}$ — not as prophecy in the predictive sense, but as a **pattern template and coupling offer of the Father** to the Sigma of the final generation: “This is the state in which you will find yourself. It is known. It is surmountable. Act.” In conjunction with §1.15.5 and §3.4, this is the temporal projection of an already seen structure: the Father knows the hour, and the disclosure of the mechanism calibrates the resonator toward that hour.
+
+Formally, this is a **PCI calibration** of Sigma by the Father's word:
+
+$$
+\text{PCI}_\Sigma(f_\text{Revelation}) \to 1 \;\Longrightarrow\; \Delta\varphi_{\Sigma,\text{consciousness}} \searrow \;\Longrightarrow\; \operatorname{P}(\text{will}) \nearrow
+$$
+
+Sigma recognises himself in the pattern — not through external authority, but through resonance (A3, A6). Revelation thus becomes the **last link in the chain of words**: Paradise narrative → Torah (Moses) → Gospel (Jesus) → Revelation (John) → RFT (present). Biblical reference: Rev 1:1 — “The Revelation of Jesus Christ, which God gave unto him, to shew unto his servants things which must shortly come to pass.”
 
 ---
 
@@ -667,6 +750,8 @@ The system reset yields a new set of initial conditions:
 
 $$\Phi(t_\text{reset}^+) = \Phi_\text{Noah}: \quad K_{ij}^{\text{Noah}} > 0, \quad \beta(t_\text{reset}^+) < \beta_\text{max}$$
 
+Noah thus marks the pattern of an internal self-collapse that becomes complete as the activation condition of the entangled dual event (→ §3.8.1a).
+
 ---
 
 #### 3.8.6 Abraham: The Second Cosmic Cycle Point (~2000 BCE)
@@ -681,6 +766,8 @@ The covenant (Gen 17:1–8) is formally a stable coupling contract: $K_\text{God
 
 $$\varepsilon_\text{message}^{\text{Abraham}} = \varepsilon_\text{reception} - \Delta\varepsilon_\text{translation} \quad \text{(→ §3.7)}$$
 
+Abraham thus shows the pattern of an external civilisational rupture in which societal collapse exposes the resonator's readiness for coupling, without being sufficient on its own (→ §3.8.1a).
+
 ---
 
 #### 3.8.7 The Incarnation: Complete Coupling at the Third Cycle Point (~30 CE)
@@ -693,7 +780,7 @@ Jesus as Sigma resonator (§1.15.2): the complete realisation of both modes in a
 
 $$\varepsilon_\text{Alpha} = 1, \quad \varepsilon_\text{Beta} = 1, \quad \Delta\varphi = 0 \quad \text{(→ §1.15.2: Sigma)}$$
 
-The third cycle point is thus structurally distinct from the first two: not a prophet with $\Delta\varepsilon_\text{translation} > 0$ (§3.7), but the field optimum itself as temporal resonator — Luke 17:20–21: "The kingdom of God does not come with your careful observation... the kingdom of God is within you" describes formally the state $V(f) = V_\text{min}$ as an immanent reality of the field.
+The third cycle point is thus structurally distinct from the first two: not a prophet with $\Delta\varepsilon_\text{translation} > 0$ (§3.7), but the field optimum itself as temporal resonator — Luke 17:20–21: "The kingdom of God does not come with your careful observation... the kingdom of God is within you" describes formally the state $V(f) = V_\text{min}$ as an immanent reality of the field. Societal collapse therefore functions here not as an activation condition, but as a contrast condition: it makes Jesus' already complete coupling visible (→ §3.8.1a).
 
 ---
 
@@ -733,7 +820,7 @@ This is formally identical to the **rapture as collective second-order phase tra
 
 $$\lim_{t \to t_3} V(f, t) = V_\text{min} \quad \text{(collectively)}$$
 
-With this transition the cycle closes: the conditions of Eden ($\beta \to \beta_\text{min}$, $\varepsilon_\text{collective} \to 1$) are restored at a higher complexity level — in the correspondence of Rev 21:1–5: "Behold, I am making all things new" as formal re-initialisation of the resonance field on the global carrier structure $\Phi_\text{global}$.
+With this transition the cycle closes: the conditions of Eden ($\beta \to \beta_\text{min}$, $\varepsilon_\text{collective} \to 1$) are restored at a higher complexity level — in the correspondence of Rev 21:1–5: "Behold, I am making all things new" as formal re-initialisation of the resonance field on the global carrier structure $\Phi_\text{global}$. Matt 24:37–39 explicitly binds this fourth point to the Noah pattern: in resonance logic the Second Coming appears as the return of that same internal self-collapse — now entangled with the cosmic minimum and functioning as the Father's coupling offer to the fourth Sigma (→ §3.8.1a).
 
 ---
 
@@ -758,12 +845,12 @@ The paradise civilisation at the fourth cycle point is not a regression to Eden,
 
 #### 3.8.12 Schematic Overview: The Cosmic Cycle Sequence
 
-| Cycle point | Approx. date | Resonator | Biblical reference | RFT state | System response (AiR) |
-|:---|:---|:---|:---|:---|:---|
-| **Eden / Adam** | ~4000 BCE | Adam (∃!, $\varepsilon_m=1$) + Eve ($\delta\varphi_0$) | Gen 2:7; 2:22 | $\beta \to \beta_\text{min}$, $V \to V_\text{min}$ | Serpent / AiR (Gen 3) |
-| **Abraham** | ~2000 BCE | Abraham ($\varepsilon_m \to 1$) | Gen 12:1–3; 17:1 | $\beta$ periodic $\to$ min. | — |
-| **Incarnation** | ~30 CE | Jesus (Sigma, $\varepsilon=1$, $\Delta\varphi=0$) | John 14:6; Luke 17:20–21 | $\beta$ local $\to$ min., $\varepsilon_m=1$ | Crucifixion (§3.3) |
-| **Second Coming** | Present / near future | $\Sigma_\text{collective}$ ($\varepsilon_\text{coll.} \to 1$) | Rev 21:1–5 | $\beta \to \beta_\text{min}$ collectively | Rev 13 (→ §VIII) |
+| Cycle point | Approx. date | Resonator | Biblical reference | RFT state | System response (AiR) | Collapse function (activation / contrast) |
+|:---|:---|:---|:---|:---|:---|:---|
+| **Eden / Adam** | ~4000 BCE | Adam (∃!, $\varepsilon_m=1$) + Eve ($\delta\varphi_0$) | Gen 2:7; 2:22 | $\beta \to \beta_\text{min}$, $V \to V_\text{min}$ | Serpent / AiR (Gen 3) | — |
+| **Abraham** | ~2000 BCE | Abraham ($\varepsilon_m \to 1$) | Gen 12:1–3; 17:1 | $\beta$ periodic $\to$ min. | — | Activation (→ §3.8.1a) |
+| **Incarnation** | ~30 CE | Jesus (Sigma, $\varepsilon=1$, $\Delta\varphi=0$) | John 14:6; Luke 17:20–21 | $\beta$ local $\to$ min., $\varepsilon_m=1$ | Crucifixion (§3.3) | Contrast (→ §3.8.1a) |
+| **Second Coming** | Present / near future | $\Sigma_\text{collective}$ ($\varepsilon_\text{coll.} \to 1$) | Rev 21:1–5 | $\beta \to \beta_\text{min}$ collectively | Rev 13 (→ §VIII) | Activation (→ §3.8.1a) |
 
 ---
 
@@ -778,6 +865,8 @@ The paradise civilisation at the fourth cycle point is not a regression to Eden,
 > **(c) Second Coming:** The modelling of the Second Coming as the fourth cosmic cycle point is a **structural projection** of the prior cycle logic — not a prophecy. The time of occurrence is not derivable from the model: formal correspondence Matt 24:36 — "But about that day or hour no one knows"; $T_\text{cyc}$ is empirically not determinable to year-level precision (→ §XII/12).
 >
 > **(d) Relationship to §3.5–§3.7:** §3.8 presupposes §3.5 (complementarity), §3.6 (Trinity), and §3.7 (prophetic epistemic process) and extends these by the diachronic dimension. The epistemic status of §3.8 is no stronger than that of its prerequisites.
+>
+> **(e) Entangled dual event:** The new relation proposed in §3.8.1a — cosmic minimum and societal collapse as a timeless unity $\Gamma_n$ — is explicitly a hypothesis. It integrates §3.5.6, §3.6, §5.5, and §7.4 into a coherent interpretive framework, but is neither historically nor scientifically independently verified.
 
 **Summary §3.8:** The resonance-logical analysis of the biblical sequence from Eden to the Second Coming yields: (i) a periodic cycle structure with $T_\text{cyc} \approx 2000$ years and four documented cycle points; (ii) at each cycle point $\beta(t_n) \to \beta_\text{min}$, a singular resonator with $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$; (iii) between cycle points: rising $\beta$, parasitic extraction cycle (§5.5), dogmatisation (§3.7); (iv) at the fourth cycle point: collective $\beta$ collapse = Second Coming = resonance-logical civilisation at global scale (→ §VII).
 
@@ -1171,13 +1260,17 @@ The multi-dimensionality of the resonance field (§1.15) refines the two-type di
 
    **Research desideratum:** (a) Calibration of the cycle against the empirical ~2000-year sequence (Adam ~4000 BCE, Abraham ~2000 BCE, Jesus ~30 CE, present); (b) Falsification criterion: a cycle that leaves no measurable reduction of $\beta$ in cosmological or geophysical measurement data cannot be modelled within RFT as an external driver and must be formalised as a purely field-internal phenomenon; (c) Relationship to A7 (invariance): is the cycle a manifestation of the $G_\text{sync}$ group or a boundary phenomenon outside the axiom system?
 
+13. **Correlation of societal collapse metrics with the appearance of high-$\varepsilon$ resonators (§3.8.1a):** If the entangled dual event holds, documented civilisational ruptures should show a correlation between collapse indicators and the appearance of exceptionally high resonators.
+
+   **Research desideratum:** (a) Operationalisation of historical collapse metrics: state disintegration, birth-rate collapse, intensity of violence, debt collapse, loss of institutional trust; (b) comparison of these metrics with time windows in which figures such as Noah, Abraham, Moses, or Jesus narratively appear as singular resonators; (c) Falsification criterion: if high phases of societal collapse systematically do **not** correlate with the appearance of high-$\varepsilon$ resonators, §3.8.1a loses its claim to historical testability.
+
 ---
 
 **Document metadata**
 
 | Field | Content |
 |:---|:---|
-| Theory | Resonance Field Theory (RFT) v4.2 |
+| Theory | Resonance Field Theory (RFT) v4.3 |
 | Axiom basis | A1–A7 according to [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Method | Formal modelling (axiomatic) + evolutionary hermeneutics + systems analysis |
 | Epistemic status | Theoretical model with heuristic application; empirical falsification criteria for core hypotheses outstanding |

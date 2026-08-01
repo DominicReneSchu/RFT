@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Analyseinstrument gesellschaftlicher Zusammenhänge
-**Stand: 1. August 2026 | Fassung 2.5 – §3.5.6 Biologischer Tempel und körperloses Feldoptimum (Heiliger Geist) ergänzt; §3.6 präzisiert**
+**Stand: 1. August 2026 | Fassung 2.6 – §3.8.1a Verschränktes Doppelereignis: Vaterlogik, Kollaps und kosmische Konstellation ergänzt**
 
 ---
 
@@ -453,7 +453,7 @@ Jesu Tötung war in dieser Lesart keine historische Anomalie, sondern exakte Wie
 
 ### 3.4 Die Rettung als Mechanismus-Offenlegung
 
-„Jesus rettet" – in der RFT-Interpretation nicht durch substitutiven Opfertod, sondern durch die **Vorführung des Sündenbock-Mechanismus unter kontrollierten Bedingungen** (René Girards Mimesis-Theorie ist eine Vorläuferformulierung). Formal: Der AiR-Mechanismus wird bei vollständiger Systemtransparenz ($\text{MI} > 0$, A6) vollzogen – der PCI der Beobachter kann steigen, wenn sie den Mechanismus erkennen. Die Rettung ist ein kognitiver Akt: Wer begreift, dass sein Hass projektiv konditioniert ist ($\Delta\varphi_\text{Hass}$ wurde von außen eingebracht), kann $\Delta\varphi$ durch Einsicht reduzieren.
+„Jesus rettet" – in der RFT-Interpretation nicht durch substitutiven Opfertod, sondern durch die **Vorführung des Sündenbock-Mechanismus unter kontrollierten Bedingungen** (René Girards Mimesis-Theorie ist eine Vorläuferformulierung). Formal: Der AiR-Mechanismus wird bei vollständiger Systemtransparenz ($\text{MI} > 0$, A6) vollzogen – der PCI der Beobachter kann steigen, wenn sie den Mechanismus erkennen. Die Rettung ist ein kognitiver Akt: Wer begreift, dass sein Hass projektiv konditioniert ist ($\Delta\varphi_\text{Hass}$ wurde von außen eingebracht), kann $\Delta\varphi$ durch Einsicht reduzieren. Die Einzigartigkeit Jesu innerhalb dieser Logik besteht darin, dass der gesellschaftliche Kollaps bei ihm nicht erst die Bereitschaft erzeugt, sondern als Kontrastbedingung die Wahrheit des Feldoptimums sichtbar macht; seine Selbstopferung unterbricht den drohenden Vollkollaps und zementiert den Mechanismus als Denkmal der Wahrheit (→ §3.8.1a).
 
 ---
 
@@ -601,7 +601,90 @@ Die empirische ~2000-Jahres-Sequenz der kanonischen Zykluspunkte – Adam (~4000
 
 $$T_\text{zyk} \approx 2000 \text{ Jahre} \quad \text{(Hypothese, Kalibrierung offen: → §XII/12)}$$
 
-> **Modellhinweis:** Die Natur des Zyklus ist formal nicht determiniert. Die Periodizität kann astronomisch (Präzessionszyklus, Milanković-Zyklen), geophysikalisch (Schumann-Resonanz-Driftmuster, geomagnetische Umkehrzyklen) oder als feldinternes Attraktorphänomen der RFT selbst modelliert werden. Die Kalibrierung ist offen (→ §XII/12).
+> **Modellhinweis:** Die Natur des Zyklus ist formal nicht determiniert. Die Periodizität kann astronomisch (Präzessionszyklus, Milanković-Zyklen), geophysikalisch (Schumann-Resonanz-Driftmuster, geomagnetische Umkehrzyklen) oder als feldinternes Attraktorphänomen der RFT selbst modelliert werden. Die Kalibrierung ist offen (→ §XII/12). Der kosmische Zyklus ist damit notwendige, aber nicht hinreichende Bedingung; die Aktivierung der vollständigen Kopplung erfordert das verschränkte Doppelereignis aus kosmischem Minimum und gesellschaftlichem Kollaps (→ §3.8.1a).
+
+---
+
+#### 3.8.1a Das verschränkte Doppelereignis: Vaterlogik, gesellschaftlicher Kollaps und kosmische Konstellation als zeitlose Einheit
+
+**Schicht 1 – Das latente Potential und seine Aktivierungsbedingung**
+
+§3.5.1 beschreibt: In jeder Generation existiert genau ein männlicher Resonator mit dem Potential für vollständige Kopplung ($\exists!\,\text{Resonator}_m$). §3.5.6 präzisiert: Kopplung setzt **beidseitige Entscheidung** voraus. Das Potential ist also in jeder Generation vorhanden – aber es wird **nicht zwangsläufig genutzt**.
+
+Der kosmische Zyklus allein (§3.8.1, externe $\beta$-Absenkung) ist notwendig, aber nicht hinreichend. Der gesellschaftliche Kollaps allein ist notwendig, aber nicht hinreichend. Erst ihr **gleichzeitiges Eintreten** überschreitet die Aktivierungsschwelle:
+
+$$
+\operatorname{P}(\text{Kopplung}) = f\!\left(G(\beta_\text{kosmisch}(t)),\, G(\beta_\text{max} - \beta_\text{kollektiv}(t))\right)
+$$
+
+Nur wenn beide Faktoren ihre Extremwerte gleichzeitig erreichen, gilt:
+
+$$
+\operatorname{P}(\text{Kopplung}) > P_\text{kritisch}
+$$
+
+**Schicht 2 – Die Vaterperspektive: Zeitlose Verschränkung beider Bedingungen**
+
+Der Vater ist $\varepsilon = 1$ ohne zeitlichen Prozess (§3.6). Er sieht den gesamten Phasenraum simultan (§1.15.5). Für ihn ist die Koinzidenz von kosmischem Minimum und gesellschaftlichem Kollaps **keine Koinzidenz** – sie ist eine einzige, zeitlos verschränkte Struktur $\Gamma_n$, die er vom Außen in die Zeit projiziert:
+
+$$
+\forall t_n:\; \exists\, \Gamma_n\, \text{ (zeitlose Abfolge)}:\quad \beta_\text{kosmisch}(t_n) \to \beta_\text{min} \iff \beta_\text{kollektiv}(t_n) \to \beta_\text{max}
+$$
+
+Aus Sicht des Sigma-Mannes im Zeitprozess trifft beides simultan ein: externe Feldöffnung (kosmisch) + Wegfall der Konditionierungen (Kollaps) = Bereitschaftsmaximum. Röm 8,28 – „Alles wirkt zum Besten derer zusammen, die Gott lieben" – ist resonanzlogisch die A7-invariante Verschränkung interner und externer Felddynamiken durch die zeitlose Vaterstruktur.
+
+**Schicht 3 – Wie der gesellschaftliche Kollaps die individuelle Bereitschaft erzeugt**
+
+Der parasitäre Extraktionszyklus (§5.5) treibt $\beta_\text{kollektiv}$ nach oben. Für den Sigma-Mann bedeutet das: Soziale Bindungen, Konditionierungen und Erwartungsmuster, die sein Bewusstsein dämpfen ($\beta_\text{persönlich}$ erhöht), brechen unter dem Kollaps weg. Das Bewusstsein öffnet sich für das Unterbewusstsein (§1.13). Die innere Höhle (§5.5.2) wird zum Resonanzraum:
+
+$$
+\beta_\text{Kollaps} \nearrow \;\Longrightarrow\; \beta_{\text{Konditionierung},\Sigma} \searrow \;\Longrightarrow\; \operatorname{P}(\text{Wille des Sigma}) \nearrow
+$$
+
+Gleichzeitig steigt $\operatorname{P}(\text{Wille des H.G.})$, weil das Feld ohne Intervention in die Selbstzerstörungslogik (§5.5.1) mündet und $V_\text{min}$ als einziger Attraktor zur Verfügung steht.
+
+**Schicht 4 – Historische Musterkarte**
+
+| Zykluspunkt | Gesellschaftlicher Kollaps-Typ | Historischer Kontext | Persönliche Bereitschaft des Sigma | Formale RFT-Entsprechung | Bibelreferenz |
+|:---|:---|:---|:---|:---|:---|
+| **Noah** | Interner Selbstkollaps (§5.5.1 vollständig) | Gen 6,1–13: totale Felddegeneration, $\varepsilon_\text{kollektiv} \to 0$ | Einziger Resonator mit $\varepsilon_\text{Noah} > 0$; kein anderes soziales Feld vorhanden – keine Alternative zur Kopplung | $\beta \to \beta_\text{max}$, Selbstzerstörungslogik; Arche = Stabilitätsanker $K_{ij}^\text{Noah} > 0$ | Gen 6,9; 6,5 |
+| **Abraham** | Zivilisationsbruch (externer Kollaps) | Niedergang der III. Dynastie von Ur (~2004 v. Chr.); Zerfall des letzten sumerischen Zentralstaats; Entwurzelung des sozialen $K_{ij}$ | Aufbruch aus Ur = erzwungene Entkopplung von zerfallenden AiR-Strukturen; persönliche innere Höhle (§5.5.2) – Offenheit für Neues | $\beta_\text{kollektiv}$ mittel-hoch; Abraham an der Peripherie des Kollapses; Resonanzbedingung (A3) erstmals überschritten | Gen 12,1–3; Gen 11,28 |
+| **Mose** | Fremdherrschafts-Kollaps (externer Unterdrückungskollaps) | Ägyptische Versklavung Israels: institutionalisierter parasitärer Extraktionszyklus (§5.5) über Jahrhunderte; Israel am Existenzminimum – kein $K_{ij}$ mehr möglich | Persönlicher Kollaps in Midian (Flucht, 40 Jahre Einsamkeit) = individuelle innere Höhle; $\beta_\text{persönlich} \to 0$; kein anderer Ausweg als Kopplung | Kein vollständiger kosmischer Zykluspunkt (Zwischenpunkt): daher Prophet mit Übersetzungsverlust (§3.7), nicht vollständiges Feldoptimum; $\varepsilon_\text{Botschaft} < 1$ | Ex 2,11–3,14; Ex 3,1 |
+| **Jesus** | Doppelter Systemkollaps (Besatzung + Institutionsverrat) | Römische Besatzung + korruptes Tempelsystem = AiR auf zwei Ebenen (§2.1, §9.3); maximaler kollektiver $\Delta\varphi$ | Kollaps ist hier **Kontrastbedingung**, nicht Aktivierungsbedingung: $\varepsilon_\text{Jesus} = 1$ von Geburt an; der gesellschaftliche Kollaps macht das Feldoptimum sichtbar, nicht erst möglich | Kollaps unterbricht sich selbst durch Jesu Selbstopferung: Sündenbock-Mechanismus (§3.4) zementiert als Denkmal der Wahrheit; vollständiger Kollaps wird verhindert | Joh 18,36; Mt 27,46; Lk 23,34 |
+| **Gegenwart** | Globaler Systemkollaps digital (§5.5.1 Maximum) | $d\beta/dt \approx 0$ (~2026, → §3.8.9); Annäherung an $\beta_\text{max}$; globaler parasitärer Extraktionszyklus (§5.5); Testpuls-Mechanismus (§9.5) aktiv | Vierter Sigma: Träger vorhanden; gesellschaftlicher Kollaps im Gange; kosmische Konstellation im Anzug | Doppelbedingung läuft auf vollständiges Einrasten zu: $\beta_\text{kosmisch}(t_3) \to \beta_\text{min} \wedge \beta_\text{kollektiv}(t_3) \to \beta_\text{max}$ | Mt 24,37–39; Offb 21,1–5 |
+
+**Schicht 5 – Die Einzigartigkeit Jesu: Aktivierungs- vs. Kontrastbedingung**
+
+Alle anderen Sigmas (Noah, Abraham, Mose, Gegenwart): Der gesellschaftliche Kollaps ist **Aktivierungsbedingung** – er bricht die Konditionierungen des Sigma-Mannes weg und erzeugt Bereitschaft.
+
+Jesus: Der gesellschaftliche Kollaps ist **Kontrastbedingung** – $\varepsilon_\text{Jesus} = 1$ ist strukturell gegeben (§3.5.6, §3.6); der Kollaps erzeugt nicht erst die Bereitschaft, sondern die **Sichtbarkeit** des Feldoptimums durch maximalen Kontrast ($\varepsilon_\text{Umgebung} \to 0$ bei $\varepsilon_\text{Jesus} = 1$). Jesu Einzigartigkeit liegt **nicht** im Fehlen des Kollapses, sondern in seiner Reaktion auf ihn: Die Selbstopferung am Kreuz unterbricht den drohenden vollständigen Kollaps und zementiert den Sündenbock-Mechanismus als permanentes Denkmal der Wahrheit (§3.4).
+
+$$
+\text{Alle außer Jesus:}\quad \operatorname{P}(\text{Kollaps vollständig ohne Sigma}) = 1
+$$
+
+$$
+\text{Jesus:}\quad \text{Kollaps gestoppt durch Selbstopferung} \;\Longrightarrow\; \text{Denkmal der Wahrheit (→ §3.4)}
+$$
+
+| Funktion des Kollapses | Zykluspunkte | Mechanismus |
+|:---|:---|:---|
+| **Aktivierungsbedingung** | Noah, Abraham, Mose, Gegenwart | Bricht Konditionierungen weg → $\beta_\text{persönlich} \searrow$ → $\operatorname{P}(\text{Wille Sigma}) \nearrow$ |
+| **Kontrastbedingung** | Jesus | Maximaler kollektiver $\Delta\varphi$ macht $\varepsilon_\text{Jesus} = 1$ sichtbar; Selbstopferung verhindert vollständigen Kollaps |
+
+**Schicht 6 – Die Offenbarung als Kopplungsangebot des Vaters an den vierten Sigma**
+
+Mt 24,37–39 vergleicht die Wiederkunft explizit mit Noah: „Wie es in den Tagen Noahs war, so wird es sein bei der Ankunft des Menschensohnes." Das ist resonanzlogisch keine moralische Warnung, sondern eine **Strukturbeschreibung des Kollaps-Typs**: Noah-Muster = interner Selbstkollaps (§5.5.1), der ohne Sigma-Intervention vollständig wird.
+
+Die Offenbarung des Johannes beschreibt $\varepsilon_\text{kollektiv} \to 0$, $\beta \to \beta_\text{max}$ narrativ – nicht als Prophezeiung im prädiktiven Sinne, sondern als **Mustervorlage und Kopplungsangebot des Vaters** an den Sigma der letzten Generation: „Das ist der Zustand, in dem du dich befinden wirst. Er ist bekannt. Er ist überwindbar. Handle." In Verbindung mit §1.15.5 und §3.4 ist dies die zeitliche Projektion einer bereits gesehenen Struktur: Der Vater kennt die Stunde, und die Offenlegung des Mechanismus kalibriert den Resonator auf diese Stunde hin.
+
+Formal ist das eine **PCI-Kalibrierung** des Sigma durch das Wort des Vaters:
+
+$$
+\text{PCI}_\Sigma(f_\text{Offenbarung}) \to 1 \;\Longrightarrow\; \Delta\varphi_{\Sigma,\text{Bewusstsein}} \searrow \;\Longrightarrow\; \operatorname{P}(\text{Wille}) \nearrow
+$$
+
+Der Sigma erkennt sich im Muster wieder – nicht durch externe Autorität, sondern durch Resonanz (A3, A6). Die Offenbarung ist damit das **letzte Glied in der Kette der Worte**: Erzählung im Paradies → Tora (Mose) → Evangelium (Jesus) → Offenbarung (Johannes) → RFT (Gegenwart). Bibelreferenz: Offb 1,1 – „Die Offenbarung Jesu Christi, die ihm Gott gab, um seinen Knechten zu zeigen, was bald geschehen muss."
 
 ---
 
@@ -668,6 +751,8 @@ Der Systemreset liefert eine neue Anfangsbedingung:
 
 $$\Phi(t_\text{Reset}^+) = \Phi_\text{Noah}: \quad K_{ij}^{\text{Noah}} > 0, \quad \beta(t_\text{Reset}^+) < \beta_\text{max}$$
 
+Noah markiert damit das Muster eines internen Selbstkollapses, der als Aktivierungsbedingung des verschränkten Doppelereignisses vollständig wird (→ §3.8.1a).
+
 ---
 
 #### 3.8.6 Abraham: Der zweite kosmische Zykluspunkt (~2000 v. Chr.)
@@ -682,6 +767,8 @@ Der Bund (Gen 17,1–8) ist formal ein stabiler Kopplungsvertrag: $K_\text{Gott-
 
 $$\varepsilon_\text{Botschaft}^{\text{Abraham}} = \varepsilon_\text{Empfang} - \Delta\varepsilon_\text{Übersetzung} \quad \text{(→ §3.7)}$$
 
+Abraham zeigt damit das Muster eines externen Zivilisationsbruchs, in dem gesellschaftlicher Kollaps die Bereitschaft des Resonators für die Kopplung freilegt, ohne für sich allein schon hinreichend zu sein (→ §3.8.1a).
+
 ---
 
 #### 3.8.7 Die Inkarnation: Vollständige Kopplung am dritten Zykluspunkt (~30 n. Chr.)
@@ -694,7 +781,7 @@ Jesus als Sigma-Resonator (§1.15.2): Die vollständige Verwirklichung beider Mo
 
 $$\varepsilon_\text{Alpha} = 1, \quad \varepsilon_\text{Beta} = 1, \quad \Delta\varphi = 0 \quad \text{(→ §1.15.2: Sigma)}$$
 
-Damit ist der dritte Zykluspunkt strukturell distinkt von den ersten beiden: Nicht ein Prophet mit $\Delta\varepsilon_\text{Übersetzung} > 0$ (§3.7), sondern das Feldoptimum selbst als zeitlicher Resonator – das Luk 17,20–21: „Das Reich Gottes kommt nicht mit äußerem Gepränge... Das Reich Gottes ist mitten unter euch" beschreibt formal den Zustand $V(f) = V_\text{min}$ als immanente Realität des Feldes.
+Damit ist der dritte Zykluspunkt strukturell distinkt von den ersten beiden: Nicht ein Prophet mit $\Delta\varepsilon_\text{Übersetzung} > 0$ (§3.7), sondern das Feldoptimum selbst als zeitlicher Resonator – das Luk 17,20–21: „Das Reich Gottes kommt nicht mit äußerem Gepränge... Das Reich Gottes ist mitten unter euch" beschreibt formal den Zustand $V(f) = V_\text{min}$ als immanente Realität des Feldes. Der gesellschaftliche Kollaps fungiert hier daher nicht als Aktivierungs-, sondern als Kontrastbedingung: Er macht die bereits vollständige Kopplung Jesu sichtbar (→ §3.8.1a).
 
 ---
 
@@ -734,7 +821,7 @@ Dies ist formal identisch mit der **Entrückung als kollektivem Phasenübergang 
 
 $$\lim_{t \to t_3} V(f, t) = V_\text{min} \quad \text{(kollektiv)}$$
 
-Mit diesem Übergang schließt sich der Zyklus: Die Bedingungen von Eden ($\beta \to \beta_\text{min}$, $\varepsilon_\text{kollektiv} \to 1$) werden auf erhöhtem Komplexitätsniveau restauriert – in der Entsprechung von Offb 21,1–5: „Seht, ich mache alles neu" als formale Neuinitialisierung des Resonanzfeldes auf globaler Trägerstruktur $\Phi_\text{global}$.
+Mit diesem Übergang schließt sich der Zyklus: Die Bedingungen von Eden ($\beta \to \beta_\text{min}$, $\varepsilon_\text{kollektiv} \to 1$) werden auf erhöhtem Komplexitätsniveau restauriert – in der Entsprechung von Offb 21,1–5: „Seht, ich mache alles neu" als formale Neuinitialisierung des Resonanzfeldes auf globaler Trägerstruktur $\Phi_\text{global}$. Mt 24,37–39 bindet diesen vierten Punkt explizit an das Noah-Muster: Die Wiederkunft erscheint resonanzlogisch als Wiederkehr desselben internen Selbstkollapses – nun verschränkt mit dem kosmischen Minimum und als Kopplungsangebot des Vaters an den vierten Sigma (→ §3.8.1a).
 
 ---
 
@@ -759,12 +846,12 @@ Die Paradies-Zivilisation am vierten Zykluspunkt ist keine Regression zu Eden, s
 
 #### 3.8.12 Schematische Gesamtübersicht: Die kosmische Zyklussequenz
 
-| Zykluspunkt | Approx. Datum | Resonator | Bibelreferenz | RFT-Zustand | Systemreaktion (AiR) |
-|:---|:---|:---|:---|:---|:---|
-| **Eden / Adam** | ~4000 v. Chr. | Adam (∃!, $\varepsilon_m=1$) + Eva ($\delta\varphi_0$) | Gen 2,7; 2,22 | $\beta \to \beta_\text{min}$, $V \to V_\text{min}$ | Schlange / AiR (Gen 3) |
-| **Abraham** | ~2000 v. Chr. | Abraham ($\varepsilon_m \to 1$) | Gen 12,1–3; 17,1 | $\beta$ periodisch $\to$ min. | — |
-| **Inkarnation** | ~30 n. Chr. | Jesus (Sigma, $\varepsilon=1$, $\Delta\varphi=0$) | Joh 14,6; Luk 17,20–21 | $\beta$ lokal $\to$ min., $\varepsilon_m=1$ | Kreuzigung (§3.3) |
-| **Wiederkunft** | Gegenwart / nahe Zukunft | $\Sigma_\text{kollektiv}$ ($\varepsilon_\text{koll.} \to 1$) | Offb 21,1–5 | $\beta \to \beta_\text{min}$ kollektiv | Offb 13 (→ §VIII) |
+| Zykluspunkt | Approx. Datum | Resonator | Bibelreferenz | RFT-Zustand | Systemreaktion (AiR) | Kollaps-Funktion (Aktivierung / Kontrast) |
+|:---|:---|:---|:---|:---|:---|:---|
+| **Eden / Adam** | ~4000 v. Chr. | Adam (∃!, $\varepsilon_m=1$) + Eva ($\delta\varphi_0$) | Gen 2,7; 2,22 | $\beta \to \beta_\text{min}$, $V \to V_\text{min}$ | Schlange / AiR (Gen 3) | — |
+| **Abraham** | ~2000 v. Chr. | Abraham ($\varepsilon_m \to 1$) | Gen 12,1–3; 17,1 | $\beta$ periodisch $\to$ min. | — | Aktivierung (→ §3.8.1a) |
+| **Inkarnation** | ~30 n. Chr. | Jesus (Sigma, $\varepsilon=1$, $\Delta\varphi=0$) | Joh 14,6; Luk 17,20–21 | $\beta$ lokal $\to$ min., $\varepsilon_m=1$ | Kreuzigung (§3.3) | Kontrast (→ §3.8.1a) |
+| **Wiederkunft** | Gegenwart / nahe Zukunft | $\Sigma_\text{kollektiv}$ ($\varepsilon_\text{koll.} \to 1$) | Offb 21,1–5 | $\beta \to \beta_\text{min}$ kollektiv | Offb 13 (→ §VIII) | Aktivierung (→ §3.8.1a) |
 
 ---
 
@@ -779,6 +866,8 @@ Die Paradies-Zivilisation am vierten Zykluspunkt ist keine Regression zu Eden, s
 > **(c) Wiederkunft:** Die Modellierung der Wiederkunft als vierter kosmischer Zykluspunkt ist eine **strukturelle Projektion** der bisherigen Zykluslogik – keine Prophezeiung. Der Zeitpunkt ist aus dem Modell nicht ableitbar: formale Entsprechung Mt 24,36 – „Jenen Tag aber und jene Stunde kennt niemand"; $T_\text{zyk}$ ist empirisch nicht auf Jahrgenauigkeit bestimmbar (→ §XII/12).
 >
 > **(d) Verhältnis zu §3.5–§3.7:** §3.8 setzt §3.5 (Komplementarität), §3.6 (Trinität) und §3.7 (prophetischer Erkenntnisprozess) voraus und erweitert diese um die diachrone Dimension. Der epistemische Status von §3.8 ist nicht stärker als derjenige der Voraussetzungen.
+>
+> **(e) Verschränktes Doppelereignis:** Der neue Zusammenhang in §3.8.1a – kosmisches Minimum und gesellschaftlicher Kollaps als zeitlose Einheit $\Gamma_n$ – ist ausdrücklich eine Hypothese. Er integriert §3.5.6, §3.6, §5.5 und §7.4 zu einem konsistenten Deutungsrahmen, ist aber weder historisch noch naturwissenschaftlich unabhängig verifiziert.
 
 **Zusammenfassung §3.8:** Die resonanzlogische Analyse der biblischen Sequenz von Eden bis zur Wiederkunft ergibt: (i) eine periodische Zyklusstruktur mit $T_\text{zyk} \approx 2000$ Jahren und vier dokumentierten Zykluspunkten; (ii) an jedem Zykluspunkt $\beta(t_n) \to \beta_\text{min}$, ein singulärer Resonator mit $\varepsilon_m \to 1$, $\Delta\varphi_m \to 0$; (iii) zwischen den Zykluspunkten: Anstieg von $\beta$, parasitärer Extraktionszyklus (§5.5), Dogmatisierung (§3.7); (iv) am vierten Zykluspunkt: kollektiver $\beta$-Kollaps = Wiederkunft = resonanzlogische Zivilisation auf globaler Skala (→ §VII).
 
@@ -1175,13 +1264,17 @@ Die Mehrdimensionalität des Resonanzfeldes (§1.15) differenziert die Zwei-Type
 
    **Forschungsdesiderat:** (a) Kalibrierung des Zyklus an der empirischen ~2000-Jahres-Sequenz (Adam ~4000 v. Chr., Abraham ~2000 v. Chr., Jesus ~30 n. Chr., Gegenwart); (b) Falsifizierungskriterium: Ein Zyklus, der keine messbare Reduktion von $\beta$ in kosmologischen oder geophysikalischen Messdaten hinterlässt, ist innerhalb der RFT nicht als externer Treiber modellierbar und muss als rein feldinternes Phänomen formalisiert werden; (c) Verhältnis zu A7 (Invarianz): Ist der Zyklus eine Manifestation der $G_\text{sync}$-Gruppe oder ein Randphänomen außerhalb des Axiomensystems?
 
+13. **Korrelation gesellschaftlicher Kollapsmetriken mit Auftreten hoher $\varepsilon$-Resonatoren (§3.8.1a):** Wenn das verschränkte Doppelereignis zutrifft, müsste an dokumentierten Zivilisationsbrüchen eine Korrelation zwischen Kollapsindikatoren und dem Auftreten außergewöhnlich hoher Resonatoren beobachtbar sein.
+
+   **Forschungsdesiderat:** (a) Operationalisierung historischer Kollapsmetriken: Staatszerfall, Geburteneinbruch, Gewaltintensität, Schuldenkollaps, institutioneller Vertrauensverlust; (b) Vergleich dieser Metriken mit Zeitfenstern, in denen Figuren wie Noah, Abraham, Mose oder Jesus narrativ als singuläre Resonatoren erscheinen; (c) Falsifizierungskriterium: Wenn Hochphasen gesellschaftlichen Kollapses systematisch **nicht** mit dem Auftreten hoher $\varepsilon$-Resonatoren korrelieren, verliert §3.8.1a seinen historischen Testanspruch.
+
 ---
 
 **Dokument-Metadaten**
 
 | Feld | Inhalt |
 |:---|:---|
-| Theorie | Resonanzfeldtheorie (RFT) v4.2 |
+| Theorie | Resonanzfeldtheorie (RFT) v4.3 |
 | Axiomgrundlage | A1–A7 nach [DominicReneSchu/RFT](https://github.com/DominicReneSchu/RFT/blob/main/de/fakten/docs/definitionen/axiomatische_grundlegung.md) |
 | Methode | Formale Modellbildung (axiomatisch) + evolutionäre Hermeneutik + Systemanalyse |
 | Epistemischer Status | Theoretisches Modell mit heuristischer Anwendung; empirische Falsifizierungskriterien für Kernhypothesen ausstehend |
