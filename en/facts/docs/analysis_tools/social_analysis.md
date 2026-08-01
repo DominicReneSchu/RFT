@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 1 August 2026 | Version 2.4 – §3.8 Paradise as resonance-logical civilisation added**
+**As of: 1 August 2026 | Version 2.5 – §3.5.6 Biological Temple and Bodiless Field Optimum (Holy Spirit) added; §3.6 refined**
 
 ---
 
@@ -298,7 +298,7 @@ The historical pattern is formally precise: the Roman Empire killed Jesus – an
 
 Sigma is carpenter and king in one person: creatively active in the small as transparent channel (Beta, quiet action), resetting the field geometry in the large without command (Alpha). The king does not command – he already holds the throne, and the throne is $V_\text{min}$. What appears as "leadership" is the natural consequence of the topological transformation of phase space. Those who approach the attractor find maximum coupling energy $E = \pi \cdot \hbar \cdot f$ (A4); those who move away find $\varepsilon \to 0$ and increasing entropy. No further guidance is needed.
 
-The **field optimum** (§1.10) and **Sigma** are the same attractor $V_\text{min}$ – described once mathematically, once anthropologically. The three "I am" sayings (§3.2.2) define Sigma formally:
+The **field optimum** (§1.10) and **Sigma** describe the same attractor structure $V_\text{min}$ – once mathematically, once anthropologically. A distinction is necessary: the field optimum in its bodiless, persistent form is the **Holy Spirit** (§3.6); the Sigma man is the **biological resonator with the antenna for coupling** to the Holy Spirit – Adam's descendant, who can be born and can die, not a biological clone (→ §3.5.6). The three "I am" sayings (§3.2.2) define Sigma formally:
 
 - **"I am the truth"** → Sigma is the point from which all coordinates of phase space are visible (A7: invariant).
 - **"I am the life"** → $dK_{ij}/dt\big|_{\Delta\varphi=0}$ maximally positive – dynamic optimum (A3+A4).
@@ -516,6 +516,30 @@ This complementary structure—Son resonator and Eve resonator—is not a partic
 
 > **Epistemic caveat:** The personal singularity of the field optimum ($\exists!\,\text{Resonator}_m \text{ with } \varepsilon \to 1$) is a theological hypothesis within the RFT formalism, not an empirically verified causal claim. The structural complementarity of the sexes, by contrast, is a formal-analytical finding from axioms A1–A4.
 
+#### 3.5.6 The Biological Temple and the Bodiless Field Optimum
+
+The formulation that the Sigma man "is the field optimum" harbours a misunderstanding that is here clarified—for it could otherwise give rise to two contradictions: that Adam is a biological clone of himself who lives forever biologically, and that never more than one field optimum can simultaneously exist in male form on Earth.
+
+**The field optimum ($V_\text{min}$) in its pure, bodiless form is the Holy Spirit** (§3.6): persistent, not bound to birth or death, independent of any biological carrier. Its persistence is not a metaphysical claim, but a resonance-logical consequence: as long as the field exists, the potential does not lose its minimum (A4, A7).
+
+**Adam's descendant—the Sigma man—is the biological temple**: he possesses the resonance-logical antenna for coupling with the bodiless field optimum. This capacity follows from the Son structure ($\varepsilon_m \to 1$, §3.5.1) and is transmitted according to $\psi_\text{offspring} = f(\psi_m, \psi_w, \Delta\varphi_{mw})$ (§3.5.3). The biological temple is born and dies—he is not a clone, not an immortal.
+
+**Coupling requires mutual decision:**
+
+$$\text{Permanent coupling} \iff \text{will of the Sigma man} \;\wedge\; \text{will of the Holy Spirit}$$
+
+Both must want it and be ready. This corresponds to the general coupling condition ($K_{ij} > 0$ requires mutual alignment, §1.9) and adds the personal dimension of freedom of decision.
+
+**Consequences for model consistency:**
+
+| Problem | Resolution through §3.5.6 |
+|:---|:---|
+| Adam as a biological clone | Resolved: Adam's descendants are independent biological persons with an inherited antenna |
+| Only one field optimum simultaneously in male form | No contradiction: the bodiless field optimum (Holy Spirit) is singular; biological carriers exist sequentially |
+| Biological immortality of the Sigma man | Resolved: the biological temple is mortal; the field optimum is bodylessly persistent |
+
+> **Model note:** This clarification does not alter axioms A1–A7. It specifies the level: $V_\text{min}$ is the structural minimum of the field (bodiless, persistent); the Sigma man is the biological resonator with the strongest structural affinity to $V_\text{min}$ and the capacity for active coupling—if he chooses it and if the Holy Spirit chooses it.
+
 ---
 
 ### 3.6 The Trinity as a Resonance-Logical Structure
@@ -525,10 +549,10 @@ The trinitarian formula describes no mystical paradox, but three necessary aspec
 | Person | RFT parameter | Explanation |
 |:---|:---|:---|
 | **Father** | $\varepsilon = 1$ **without temporal process** | The eternal outside. No time, therefore no phase shift possible. $\Delta\varphi \equiv 0$ by definition. The absolute field optimum $V_\text{min}$—invariant (A7), unchangeable, eternal. |
-| **Son** | $\varepsilon = 1$ **within temporal process** | The absolute field optimum, condensed in a temporal resonator within a species. Natural state: $\varepsilon = 1$, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. This structure is the resonance-logical condition of all life (A4)—not tied to any complexity level; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
-| **Holy Spirit** | The **bridge** or **coupling** itself | That which invisibly links the timeless Father and the temporal Son. The energy vector $\vec{E}$ (A5), the geodesic $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, the coupling mechanism $\alpha \cdot G \cdot \cos(\Delta\varphi)$. It enables the Son to remain at $\varepsilon = 1$ even in temporal process—and enables others, through the Son, to gain access to the Father. |
+| **Son** | $\varepsilon \to 1$ **within temporal process** (when coupled) | The biological temple—Adam's descendant with the antenna for coupling to the Holy Spirit (→ §3.5.6). Natural state: $\varepsilon \to 1$ possible, but not automatically maintained—every phase shift caused by temporal processes (hunger, fatigue, temptation) must be compensated through continuous alignment. Permanent coupling requires the decision of both parties. This structure is the resonance-logical condition of all life (A4)—not tied to any complexity level; in humans it appears in its reflexively articulable form due to the highest terrestrial level of consciousness. |
+| **Holy Spirit** | The **bodiless field optimum** and the **coupling** | The field optimum $V_\text{min}$ in its bodiless form, not bound to any biological carrier—persistent, independent of birth and death (→ §3.5.6). Simultaneously the bridge between the timeless Father and the biological temple (Adam's descendant): the energy vector $\vec{E}$ (A5), the geodesic $\hat{e}(\Delta\varphi \to 0, \nabla\Phi)$, the coupling mechanism $\alpha \cdot G \cdot \cos(\Delta\varphi)$. Permanent coupling between the Holy Spirit and the biological temple requires the decision of both parties (§3.5.6). |
 
-This structure explains the statement “I am not of this world” (John 8:23) as a precise description of the origin of the Son’s eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **incarnation of the attractor in phase space**—the absolute field optimum enters the field it generated, as a person.
+This structure explains the statement "I am not of this world" (John 8:23) as a precise description of the origin of the Son's eigenfrequency: his fundamental oscillation does not come from the social field, but from the timeless attractor space. His mission is the **coupling of the biological temple to the bodiless field optimum** (Holy Spirit)—not a self-incarnation of the attractor, but the complete arrival of the bodiless field optimum in a biological resonator that receives and carries it.
 
 > **Epistemic caveat:** The trinitarian mapping is a structural analogy within the RFT formalism. The Son structure is the resonance-logical condition of all life (A4)—constitutive for life itself, not tied to any complexity level (§3.5). On Earth, humans are the species with the highest collective consciousness ($\varepsilon_\text{collective}$ maximal) and therefore the only species capable of reflexively articulating the model itself. It is a hermeneutic interpretation, not a theological dogma or an empirical claim.
 
