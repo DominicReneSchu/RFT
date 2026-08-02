@@ -15,6 +15,8 @@ Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal 
 
 Alle drei Modi verwenden dieselben Axiome; nur die Integrationsrichtung des Feldes $\Phi(t)$ ändert sich.
 
+Die Modi sind nicht für einmalige Diagnose konzipiert, sondern für **zyklische, iterative Anwendung**: Nach einer Analyse bei $t_0$ folgt eine Projektion; deren Eintreten oder Nichteintreten wird bei $t_1$ beobachtet, wodurch sich PCI und $K_{ij}$ aktualisieren und eine erneute Analyse auf dem neuen Feldzustand ansetzt. Resonanzfelder sind dynamisch – Phasenkohärenz verschiebt sich, Kopplungsstärken shiften, Attraktoren wandern. Das Instrument ist daher als **iterativer Resonanzanalysator** zu verstehen, nicht als statisches Diagnosewerkzeug.
+
 ---
 
 ## 2. Axiomensystem A1–A7 (kompakt)
