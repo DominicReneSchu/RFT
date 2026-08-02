@@ -284,7 +284,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 
 | # | Dokument | Axiome | Beschreibung |
 |---|----------|--------|-------------|
-| 1 | [Gesellschaftliche Analyse](fakten/docs/analysetools/gesellschaftliche_analyse.md) | A1–A7 | RFT-Analyseinstrument für gesellschaftliche Zusammenhänge – KI-Kontext-Prompt zur Mustererkennung in Nachrichtenmeldungen |
+| 1 | [Gesellschaftliche Analyse](fakten/docs/analysetools/gesellschaftliche_analyse.md) | A1–A7 | RFT-Analyseinstrument für gesellschaftliche Zusammenhänge – KI-Kontext-Prompt zur Mustererkennung in Nachrichtenmeldungen; Fassung 2.9: §3.9–§3.10 Offenbarung als resonanzlogische Invariante und Bibel als Schutzinstrument |
 
 ---
 
