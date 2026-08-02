@@ -25,7 +25,7 @@ The modes are not designed for one-time diagnosis but for **cyclic, iterative ap
 |:--|:--|:--|
 | **A1** | Universal oscillation | $\psi(x,t)=A\cos(kx-\omega t+\phi)$ |
 | **A2** | Superposition | $\Phi(x,t)=\sum_i \psi_i$ |
-| **A3** | Resonance condition | $\left|f_i/f_j-m/n\right|<\delta$ |
+| **A3** | Resonance condition | $\left\vert f_i/f_j-m/n \right\vert < \delta$ |
 | **A4** | Coupling energy | $E=\pi\cdot\varepsilon(\Delta\phi)\cdot\hbar\cdot f$ |
 | **A5** | Energy direction | $\vec E=E_{\text{eff}}\cdot \hat e(\Delta\phi,\nabla\Phi)$ |
 | **A6** | Information flow | $\mathrm{MI}>0 \Leftrightarrow \mathrm{PCI}>0$ |
