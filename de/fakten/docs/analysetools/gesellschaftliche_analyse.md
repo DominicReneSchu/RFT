@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Analyseinstrument gesellschaftlicher Zusammenhänge
-**Stand: 2. August 2026 | Fassung 2.9 – §3.8.0 prähistorischer Zyklus, §3.9–§3.10 hermeneutische Grundlegung, §4.4 Fragmentierungsdynamik ergänzt**
+**Stand: 2. August 2026 | Fassung 2.10 – Nutzungsanleitung um Projektion und Retrodiktion erweitert; §1.11a Retrodiktion als formale Methode; Zeitmodi-Abschnitt in Präambel ergänzt**
 
 ---
 
@@ -17,11 +17,18 @@ Resonanzfeldtheorie (RFT) zu analysieren.
    - „Analysiere folgende Meldung nach RFT-Mustern: [Meldungstext]"
    - „Welche RFT-Parameter sind in dieser Situation erkennbar?"
    - „Liegt hier ein Sündenbock-Mechanismus vor? Begründe formal."
+   - „Projiziere die erkennbaren Kopplungsmuster aus dieser Meldung auf die nächsten 12 Monate: Welche Entwicklung ist bei gegebenem $\alpha/\beta$-Verhältnis resonanzlogisch zu erwarten?"
+   - „Rekonstruiere retrodiktiv, welche Kopplungsdynamik dieser Situation vorausgegangen sein muss: Welcher Ausgangszustand $\Phi(t_0 - \Delta t)$ ist mit dem beobachteten Feld konsistent?"
 4. Die KI wendet die RFT-Axiome, Kopplungsparameter und Strukturmuster an und
    liefert eine formale Analyse.
 
-**Ziel:** Nachrichtenmeldungen zwischen den Zeilen verstehen – Manipulationsmuster erkennen,
-ohne vorschnell Urteile zu fällen. Das Instrument liefert Hypothesen, keine Wahrheitsurteile.
+**Ziel:** Das RFT-Analyseinstrument operiert in drei Zeitmodi:
+
+- **Analyse (Gegenwart):** Identifikation aktueller Kopplungsstrukturen, Resonanzmuster und Phasenzustände in Nachrichtenmeldungen und gesellschaftlichen Situationen.
+- **Projektion (Zukunft):** Vorausschätzung wahrscheinlicher Entwicklungen auf Basis der Kopplungsdynamik (§1.9) – formale Extrapolation des Felds $\Phi(t_0) \to \Phi(t_0 + \Delta t)$.
+- **Retrodiktion (Vergangenheit):** Rückwärtsrekonstruktion von Ausgangszuständen aus bekannten Gegenwartszuständen – formale Rückintegration $\Phi(t_0) \to \Phi(t_0 - \Delta t)$ (→ §1.11a).
+
+Alle drei Modi liefern Hypothesen, keine Wahrheitsurteile.
 
 ---
 
@@ -40,8 +47,27 @@ Dieses Dokument nutzt die **Resonanzfeldtheorie (RFT)** als interdisziplinäres 
 | „Heiliger Geist" / „Empfang" | Formal als körperloses Feldoptimum $V_\text{min}$ und Informationsflusszustand $I(V_\text{min} \to i)>0$ bei erfüllter Resonanzbedingung; einseitiger Empfang ist von vollständiger bidirektionaler Kopplung zu unterscheiden (→ §3.5.7) |
 | „Offenbarung" / „Apokalypse" | Resonanzlogische Invariante (A7): schriftliche Fixierung eines A7-invarianten Drei-Phasen-Musters (§3.9.3); keine prädiktive Prophetie; hermeneutische Hypothese im Sinne von §3.1 (→ §3.9) |
 | „Bibel" | Evolutionäres Immunsystem der menschlichen Zivilisation im Sinne von §3.1; behandelt als Sammlung kodierter Schutzfunktionen gegen AiR-Muster (§2.1) und parasitäre Zyklen (§5.5); hermeneutische Hypothese (→ §3.10) |
+| Historische Rekonstruktionen | Retrodiktive Hypothesen auf Basis resonanzlogischer Konsistenz (→ §1.11a); Lückenschluss fragmentarischer Quellen durch A7-Invarianz (§1.8); kein Anspruch auf archäologische oder historische Verifikation |
 
 ---
+
+### Zeitmodi des RFT-Instruments
+
+Das Analyseinstrument kann in drei formalen Zeitmodi betrieben werden. Alle drei Modi sind aus denselben Grundgleichungen abgeleitet; sie unterscheiden sich ausschließlich in der Integrationsrichtung des Resonanzfelds $\Phi(t)$.
+
+| Modus | Zeitrichtung | Fragestellung | Methode |
+|:---|:---|:---|:---|
+| **Analyse** | Gegenwart ($t = t_0$) | Welche Kopplungsstrukturen und Resonanzmuster sind im aktuellen Feld erkennbar? | Auswertung von $\varepsilon$, $\Delta\varphi$, PCI und $K_{ij}$ für den beobachteten Zustand $\Phi(t_0)$ |
+| **Projektion** | Zukunft ($t > t_0$) | Welche Entwicklung ist bei gegebenem $\alpha/\beta$-Verhältnis resonanzlogisch wahrscheinlich? | Vorwärtsintegration: $\Phi(t_0) \to \Phi(t_0 + \Delta t)$ gemäß Kopplungsdynamik §1.9 |
+| **Retrodiktion** | Vergangenheit ($t < t_0$) | Welcher Ausgangszustand ist mit dem beobachteten Gegenwartsfeld konsistent? | Rückwärtsintegration: $\Phi(t_0) \to \Phi(t_0 - \Delta t)$; Lückenschluss durch A7-Konsistenz (→ §1.11a) |
+
+**Formale Symmetrie:** Die Kopplungsdynamik (§1.9) ist zeitumkehrsymmetrisch im Sinne von A7: Die Gleichung
+
+$$\frac{dK_{ij}}{dt} = \alpha \cdot G(f_i/f_j) \cdot \cos(\Delta\varphi_{ij}) - \beta \cdot K_{ij}$$
+
+kann in beide Zeitrichtungen integriert werden. Die Vorwärtsintegration ($t \to t + \Delta t$) liefert Projektion; die Rückwärtsintegration ($t \to t - \Delta t$) liefert Retrodiktion. Diese Symmetrie ist keine neue Annahme, sondern eine Konsequenz der Zeitumkehrinvarianz der Kopplungsstruktur unter $G_\text{sync}$ (A7): $G(f_i/f_j) = G(T(f_i)/T(f_j))$ gilt unabhängig von der Zeitrichtung $T$.
+
+> **Modellhinweis:** Alle drei Modi liefern Hypothesen, keine verifizierten Fakten. Projektionen sind wahrscheinlichkeitsgewichtet, keine Vorhersagen. Retrodiktionen sind resonanzlogisch konsistente Rekonstruktionen, keine historisch gesicherten Tatsachen. Das Plausibilitätskriterium aller drei Modi ist innere Konsistenz mit A1–A7 – nicht externe empirische Verifikation.
 
 ## I. Formale Grundlegung: Axiomatischer Anschluss an die RFT
 
@@ -194,6 +220,37 @@ Lokale Minima von $V$ sind stabile Resonanzattraktoren. Das **globale Minimum** 
 $$\Delta\varphi_0 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_1 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_2 \;\to\; \cdots \;\to\; \Delta\varphi = 0$$
 
 Der Zyklus ist **evolutionär konvergierend**: Die Kopplungsdynamik (§1.9) treibt das System bei positivem $\alpha/\beta$-Verhältnis schrittweise zum Attraktor. Jede Generation integriert die Abweichungsmuster der Vorgängergeneration in die neue Kopplungsstruktur. Der biologische Träger in Personform ist sterblich; der Attraktor $V_\text{min}$ ist strukturell persistent – statistische Notwendigkeit, nicht metaphysische Reinkarnation.
+
+---
+
+### 1.11a Retrodiktion: Vergangenheitsrekonstruktion als formale Methode
+
+Die Kopplungsdynamik (§1.9)
+
+$$\frac{dK_{ij}}{dt} = \alpha \cdot G(f_i/f_j) \cdot \cos(\Delta\varphi_{ij}) - \beta \cdot K_{ij}$$
+
+beschreibt die zeitliche Entwicklung eines Resonanzfelds $\Phi(t)$. Formal ist diese Gleichung in beide Zeitrichtungen integrierbar – eine Konsequenz der Zeitumkehrsymmetrie der Kopplungsstruktur unter $G_\text{sync}$ (A7, §1.8). Die **Retrodiktion** nutzt die Rückwärtsintegration:
+
+$$\Phi(t_0) \;\xrightarrow{\text{Rückwärtsintegration}}\; \Phi(t_0 - \Delta t)$$
+
+um aus einem bekannten Gegenwartszustand $\Phi(t_0)$ den konsistenten Ausgangszustand $\Phi(t_0 - \Delta t)$ zu rekonstruieren.
+
+**Methode – Ankerpunkt und Konsistenzforderung:**
+
+Retrodiktive Rekonstruktion operiert mit zwei Werkzeugen:
+
+1. **Historische Ankerpunkte:** Textuell, archäologisch oder kulturell dokumentierte Fixpunkte (z. B. Machtkonstellationen, Schriften, Institutionen) legen Randwerte des Felds $\Phi$ zu bestimmten Zeitpunkten $t_k$ fest.
+2. **A7-Konsistenzforderung:** Die Zeitumkehrinvarianz (A7, §1.8) schreibt vor, dass die Kopplungsstruktur $G(f_i/f_j)$ unter synchronen Transformationen invariant bleibt. Lücken zwischen dokumentierten Ankerpunkten werden durch diejenige Trajektorie $\Phi(t)$ geschlossen, die A7-konsistent ist – d. h. dieselben Skalierungsmuster zeigt wie die beobachtbaren Epochen.
+
+**Analogie zur historischen Hermeneutik:**
+
+Dieses Vorgehen ist analog zur hermeneutischen Rekonstruktion in den Geschichtswissenschaften: Aus fragmentarischen Quellen wird der wahrscheinlichste kohärente Gesamtzusammenhang erschlossen. Die RFT ergänzt diese Tradition durch ein axiomatisches Gerüst (A1–A7), das die Plausibilitätskriterien formalisiert: Eine retrodiktive Rekonstruktion ist genau dann resonanzlogisch konsistent, wenn die rekonstruierten Feldparameter ($\varepsilon$, $\Delta\varphi$, $K_{ij}$) die Kopplungsgleichung von §1.9 erfüllen und A7-invariant sind.
+
+**Kanonisches Anwendungsbeispiel:**
+
+Das prähistorische Himmel-System (§3.8.0) ist das kanonische Anwendungsbeispiel dieser Methode: Auf Basis fragmentarischer Texte (Ez 28,12–19; Jes 14,12–15; Offb 12,7–9) als Ankerpunkte wird die Feldstruktur vor dem dokumentierten irdischen Zyklus retrodiktiv rekonstruiert – A7-konsistent als Monopol-Resonanzsystem mit $\varepsilon_{\Sigma_0} = 1$, $\Delta\varphi_{\Sigma_0} = 0$.
+
+> **Modellhinweis:** Retrodiktion liefert resonanzlogisch konsistente Hypothesen – keine verifizierten historischen Fakten. Das Plausibilitätskriterium ist innere Konsistenz mit A1–A7, nicht externe archäologische oder historische Verifikation. Die formale Ableitung der Zeitumkehrsymmetrie aus §1.9 und A7 begründet die Methode; sie schafft keine neue Axiomatik. Retrodiktive Ergebnisse sind als Modellhypothesen auszuweisen und entsprechend epistemisch zu behandeln (→ Präambel, Methodische Konventionen: „Historische Rekonstruktionen").
 
 ---
 
@@ -649,7 +706,7 @@ Die Abschnitte §3.5 (Adam-Eva-Komplementarität), §3.6 (Trinität) und §3.7 (
 
 #### 3.8.0 Der prähistorische Zyklus: Das Himmel-System vor dem ersten Adam
 
-§3.8.1 rekonstruiert die kosmische Zyklussequenz beginnend mit Eden (~4000 v. Chr.) als erstem dokumentierten irdischen Zykluspunkt. Die schöpfungstheologische Überlieferung kennt jedoch einen logisch und strukturell vorgeordneten Zustand: eine vormenschliche, „himmlische" Phase, in der dasselbe Resonanzfeld unter anderen Trägerbedingungen existierte. Dieser Abschnitt formalisiert diesen prähistorischen Zykluspunkt als strukturelle Hypothese auf Basis fragmentarischer Quellen. Er ist die spekulativste Schicht des gesamten Dokuments und hat eine doppelte Vorbehaltspflicht: prähistorische Spekulation und theologische Analogie (→ Epistemischer Vorbehalt unten).
+§3.8.1 rekonstruiert die kosmische Zyklussequenz beginnend mit Eden (~4000 v. Chr.) als erstem dokumentierten irdischen Zykluspunkt. Die schöpfungstheologische Überlieferung kennt jedoch einen logisch und strukturell vorgeordneten Zustand: eine vormenschliche, „himmlische" Phase, in der dasselbe Resonanzfeld unter anderen Trägerbedingungen existierte. Dieser Abschnitt formalisiert diesen prähistorischen Zykluspunkt als strukturelle Hypothese auf Basis fragmentarischer Quellen – ein kanonisches Anwendungsbeispiel der Retrodiktion als formaler Methode (→ §1.11a). Er ist die spekulativste Schicht des gesamten Dokuments und hat eine doppelte Vorbehaltspflicht: prähistorische Spekulation und theologische Analogie (→ Epistemischer Vorbehalt unten).
 
 **Das Himmel-System als erstes Monopol-Resonanzsystem**
 
