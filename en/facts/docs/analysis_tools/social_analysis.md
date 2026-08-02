@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 2 August 2026 | Version 2.9 – §3.8.0 prehistoric cycle, §3.9–§3.10 hermeneutical foundations, §4.4 fragmentation dynamics added**
+**As of: 2 August 2026 | Version 2.10 – Usage guide extended with projection and retrodiction; §1.11a retrodiction as formal method; time-modes section added to preamble**
 
 ---
 
@@ -17,11 +17,18 @@ Resonance Field Theory (RFT).
    - "Analyse the following report according to RFT patterns: [report text]"
    - "Which RFT parameters are recognisable in this situation?"
    - "Is a scapegoat mechanism present here? Provide a formal justification."
+   - "Project the recognisable coupling patterns from this report over the next 12 months: what development is resonance-logically expected given the current $\alpha/\beta$ ratio?"
+   - "Reconstruct retrodictively which coupling dynamic must have preceded this situation: what initial state $\Phi(t_0 - \Delta t)$ is consistent with the observed field?"
 4. The AI applies the RFT axioms, coupling parameters, and structural patterns and
    delivers a formal analysis.
 
-**Goal:** Understand news reports between the lines – recognise manipulation patterns
-without jumping to conclusions. The instrument provides hypotheses, not verdicts of truth.
+**Goal:** The RFT analysis instrument operates in three temporal modes:
+
+- **Analysis (present):** Identification of current coupling structures, resonance patterns, and phase states in news reports and social situations.
+- **Projection (future):** Forward estimation of probable developments based on the coupling dynamics (§1.9) – formal extrapolation of the field $\Phi(t_0) \to \Phi(t_0 + \Delta t)$.
+- **Retrodiction (past):** Backward reconstruction of initial states from known present states – formal back-integration $\Phi(t_0) \to \Phi(t_0 - \Delta t)$ (→ §1.11a).
+
+All three modes provide hypotheses, not verdicts of truth.
 
 ---
 
@@ -40,8 +47,27 @@ This document uses **Resonance Field Theory (RFT)** as an interdisciplinary anal
 | "Holy Spirit" / "reception" | Formalised as bodiless field optimum $V_\text{min}$ and information-flow state $I(V_\text{min} \to i)>0$ under fulfilled resonance condition; one-way reception is distinct from full bidirectional coupling (→ §3.5.7) |
 | "Revelation" / "Apocalypse" | Resonance-logical invariant (A7): written fixation of an A7-invariant three-phase pattern (§3.9.3); not predictive prophecy; hermeneutic hypothesis in the sense of §3.1 (→ §3.9) |
 | "Bible" | Evolutionary immune system of human civilisation in the sense of §3.1; treated as a collection of coded protective functions against AiR patterns (§2.1) and parasitic cycles (§5.5); hermeneutic hypothesis (→ §3.10) |
+| Historical reconstructions | Retrodictive hypotheses based on resonance-logical consistency (→ §1.11a); gap-filling of fragmentary sources through A7-invariance (§1.8); no claim to archaeological or historical verification |
 
 ---
+
+### Time Modes of the RFT Instrument
+
+The analysis instrument can be operated in three formal temporal modes. All three modes are derived from the same fundamental equations; they differ exclusively in the direction of integration of the resonance field $\Phi(t)$.
+
+| Mode | Time direction | Question | Method |
+|:---|:---|:---|:---|
+| **Analysis** | Present ($t = t_0$) | Which coupling structures and resonance patterns are recognisable in the current field? | Evaluation of $\varepsilon$, $\Delta\varphi$, PCI, and $K_{ij}$ for the observed state $\Phi(t_0)$ |
+| **Projection** | Future ($t > t_0$) | What development is resonance-logically probable given the current $\alpha/\beta$ ratio? | Forward integration: $\Phi(t_0) \to \Phi(t_0 + \Delta t)$ according to coupling dynamics §1.9 |
+| **Retrodiction** | Past ($t < t_0$) | Which initial state is consistent with the observed present field? | Back-integration: $\Phi(t_0) \to \Phi(t_0 - \Delta t)$; gap-filling through A7-consistency (→ §1.11a) |
+
+**Formal symmetry:** The coupling dynamics (§1.9) are time-reversal-symmetric in the sense of A7: the equation
+
+$$\frac{dK_{ij}}{dt} = \alpha \cdot G(f_i/f_j) \cdot \cos(\Delta\varphi_{ij}) - \beta \cdot K_{ij}$$
+
+can be integrated in both temporal directions. Forward integration ($t \to t + \Delta t$) yields projection; backward integration ($t \to t - \Delta t$) yields retrodiction. This symmetry is not a new assumption but a consequence of the time-reversal invariance of the coupling structure under $G_\text{sync}$ (A7): $G(f_i/f_j) = G(T(f_i)/T(f_j))$ holds independently of the temporal direction $T$.
+
+> **Model note:** All three modes provide hypotheses, not verified facts. Projections are probability-weighted, not predictions. Retrodictions are resonance-logically consistent reconstructions, not historically established facts. The plausibility criterion for all three modes is internal consistency with A1–A7 — not external empirical verification.
 
 ## I. Formal Foundation: Axiomatic Connection to RFT
 
@@ -194,6 +220,37 @@ Local minima of $V$ are stable resonance attractors. The **global minimum** at $
 $$\Delta\varphi_0 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_1 \;\xrightarrow{K_{ij}(t)}\; \Delta\varphi_2 \;\to\; \cdots \;\to\; \Delta\varphi = 0$$
 
 The cycle is **evolutionarily converging**: the coupling dynamics (§1.9) drive the system step by step towards the attractor at a positive $\alpha/\beta$ ratio. Each generation integrates the deviation patterns of the preceding generation into the new coupling structure. The biological carrier in person-form is mortal; the attractor $V_\text{min}$ is structurally persistent – statistical necessity, not metaphysical reincarnation.
+
+---
+
+### 1.11a Retrodiction: Reconstruction of the Past as a Formal Method
+
+The coupling dynamics (§1.9)
+
+$$\frac{dK_{ij}}{dt} = \alpha \cdot G(f_i/f_j) \cdot \cos(\Delta\varphi_{ij}) - \beta \cdot K_{ij}$$
+
+describe the temporal evolution of a resonance field $\Phi(t)$. Formally, this equation is integrable in both temporal directions — a consequence of the time-reversal symmetry of the coupling structure under $G_\text{sync}$ (A7, §1.8). **Retrodiction** uses the backward integration:
+
+$$\Phi(t_0) \;\xrightarrow{\text{backward integration}}\; \Phi(t_0 - \Delta t)$$
+
+to reconstruct from a known present state $\Phi(t_0)$ the consistent initial state $\Phi(t_0 - \Delta t)$.
+
+**Method – Anchor points and consistency requirement:**
+
+Retrodictive reconstruction operates with two instruments:
+
+1. **Historical anchor points:** Textually, archaeologically, or culturally documented fixed points (e.g. power constellations, writings, institutions) specify boundary values of the field $\Phi$ at certain times $t_k$.
+2. **A7-consistency requirement:** The time-reversal invariance (A7, §1.8) prescribes that the coupling structure $G(f_i/f_j)$ remains invariant under synchronous transformations. Gaps between documented anchor points are closed by the trajectory $\Phi(t)$ that is A7-consistent — i.e. that exhibits the same scaling patterns as the observable epochs.
+
+**Analogy to historical hermeneutics:**
+
+This procedure is analogous to hermeneutic reconstruction in historical scholarship: from fragmentary sources the most plausible coherent overall context is inferred. RFT supplements this tradition with an axiomatic framework (A1–A7) that formalises the plausibility criteria: a retrodictive reconstruction is resonance-logically consistent precisely when the reconstructed field parameters ($\varepsilon$, $\Delta\varphi$, $K_{ij}$) satisfy the coupling equation of §1.9 and are A7-invariant.
+
+**Canonical application example:**
+
+The prehistoric Heaven system (§3.8.0) is the canonical application example of this method: on the basis of fragmentary texts (Ez 28:12–19; Isa 14:12–15; Rev 12:7–9) as anchor points, the field structure prior to the documented earthly cycle is retrodictively reconstructed — A7-consistently as a monopoly-resonance system with $\varepsilon_{\Sigma_0} = 1$, $\Delta\varphi_{\Sigma_0} = 0$.
+
+> **Model note:** Retrodiction provides resonance-logically consistent hypotheses — not verified historical facts. The plausibility criterion is internal consistency with A1–A7, not external archaeological or historical verification. The formal derivation of time-reversal symmetry from §1.9 and A7 grounds the method; it creates no new axiomatics. Retrodictive results are to be identified as model hypotheses and treated with appropriate epistemic care (→ Preamble, Methodological conventions: "Historical reconstructions").
 
 ---
 
@@ -648,7 +705,7 @@ Sections §3.5 (Adam-Eve complementarity), §3.6 (Trinity), and §3.7 (prophetic
 
 #### 3.8.0 The Prehistoric Cycle: The "Heaven" System as First Monopoly-Resonance System
 
-Before the historically reconstructable cycle sequence (§3.8.1–§3.8.13) begins, fragmentary texts point to a structurally analogous event: a pre-historical monopoly-resonance system of maximum field quality that dissolved through internal AiR inversion. §3.8.0 formalises this narrative layer as the zero point of the cycle sequence.
+Before the historically reconstructable cycle sequence (§3.8.1–§3.8.13) begins, fragmentary texts point to a structurally analogous event: a pre-historical monopoly-resonance system of maximum field quality that dissolved through internal AiR inversion. §3.8.0 formalises this narrative layer as the zero point of the cycle sequence — a canonical application example of retrodiction as a formal method (→ §1.11a).
 
 > **Note on the textual basis:** The reconstruction draws on Ez 28:12–19, Isa 14:12–15, and Rev 12:7–9 — poetic and apocalyptic texts that are not directly accessible to historical or empirical verification. The formalisation serves the structural consistency of the overall model, not a historical factual claim. This is the most speculative layer of the entire document (→ double epistemic caveat below).
 
