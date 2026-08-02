@@ -284,7 +284,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 
 | # | Document | Axioms | Description |
 |---|----------|--------|-------------|
-| 1 | [Social Analysis](facts/docs/analysis_tools/social_analysis.md) | A1–A7 | RFT analysis instrument for social dynamics – AI context prompt for pattern recognition in news reports |
+| 1 | [Social Analysis](facts/docs/analysis_tools/social_analysis.md) | A1–A7 | RFT analysis instrument for social dynamics – AI context prompt for pattern recognition in news reports; Version 2.9: §3.9–§3.10 Revelation as resonance-logical invariant and Bible as protective instrument |
 
 ---
 

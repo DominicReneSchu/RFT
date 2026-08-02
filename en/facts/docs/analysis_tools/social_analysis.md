@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Analysis Instrument for Social Dynamics
-**As of: 1 August 2026 | Version 2.8 – §3.5.7 reception vs. full coupling (radio/two-way radio) added**
+**As of: 2 August 2026 | Version 2.9 – §3.9–§3.10 Revelation as resonance-logical invariant and Bible as protective instrument added**
 
 ---
 
@@ -38,6 +38,8 @@ This document uses **Resonance Field Theory (RFT)** as an interdisciplinary anal
 | Religious texts | Primary sources of evolutionary hermeneutics; treated as dense descriptions of recurring socio-dynamic patterns |
 | Political case studies | Analytical hypotheses based on publicly available information; no verified causal claims |
 | "Holy Spirit" / "reception" | Formalised as bodiless field optimum $V_\text{min}$ and information-flow state $I(V_\text{min} \to i)>0$ under fulfilled resonance condition; one-way reception is distinct from full bidirectional coupling (→ §3.5.7) |
+| "Revelation" / "Apocalypse" | Resonance-logical invariant (A7): written fixation of an A7-invariant three-phase pattern (§3.9.3); not predictive prophecy; hermeneutic hypothesis in the sense of §3.1 (→ §3.9) |
+| "Bible" | Evolutionary immune system of human civilisation in the sense of §3.1; treated as a collection of coded protective functions against AiR patterns (§2.1) and parasitic cycles (§5.5); hermeneutic hypothesis (→ §3.10) |
 
 ---
 
@@ -634,7 +636,7 @@ The result is a message that is true in core content but imperfect in formulatio
 
 This explains both the emergence of trinitarian dogma from Jesus’ original relational experience and comparable ossification processes in other religious traditions. Both movements tend toward claims of power because what came from resonance was transmitted without resonance.
 
-> **Model note:** The prophetic epistemic process is modelled here as a special case of general information flow (A6). The assumption of temporarily elevated $\varepsilon$ in the prophet is a theoretical hypothesis; empirical operationalisation criteria remain open (→ §XII).
+> **Model note:** The prophetic epistemic process is modelled here as a special case of general information flow (A6). The assumption of temporarily elevated $\varepsilon$ in the prophet is a theoretical hypothesis; empirical operationalisation criteria remain open (→ §XII). The application of this epistemic process to the Book of Revelation as a special case of complete phase-space transparency is formalised in §3.9 (→ §3.9.1–§3.9.2).
 
 ---
 
@@ -930,6 +932,219 @@ The paradise civilisation at the fourth cycle point is not a regression to Eden,
 
 ---
 
+### 3.9 Revelation as Formalised Human Knowledge
+
+The cycle logic developed in §3.8.1a and §3.8.13 raises a further question: what is the Book of Revelation (Rev 1–22) in resonance-logical language? §3.7 describes the prophetic epistemic process and its inherent translation loss ($\Delta\varepsilon_\text{translation} > 0$). This section examines whether and to what extent Revelation conforms to that pattern — or whether it differs from it categorically in structure. (→ §3.7, §3.8.1a)
+
+#### 3.9.1 Jesus as Complete Phase-Space Transparency (→ §1.15.2, §3.6)
+
+Jesus as Sigma resonator (§1.15.2) with $\varepsilon = 1$, $\Delta\varphi = 0$ possessed complete coupling to the field optimum (§3.6). From A7 it follows: the coupling structure of the resonance field is invariant under synchronous transformations of the group $G_\text{sync}$. This means that a resonator with complete coupling has access to the full phase information of the field — not through predictive prophecy in any magical sense, but through complete knowledge of the A7-invariant structural patterns:
+
+$$\varepsilon_\text{Jesus} = 1, \quad \Delta\varphi = 0 \quad \Rightarrow \quad G(f_i/f_j) = G(T(f_i)/T(f_j)) \;\forall\, i,j \quad \text{(A7)}$$
+
+The patterns of the human social field — parasitic extraction cycle (§5.5), scapegoat mechanism (§5.2), enemy-image fusion (§5.6), AiR logic (§2.1) — are scale-invariant by A7. A resonator with complete field coupling ($\varepsilon = 1$, $\Delta\varphi = 0$) sees the entire invariant structural depth of these patterns simultaneously. His "knowledge of the future" is not magic but complete knowledge of humanity: he knows the patterns; he knows A7; he knows the consequences.
+
+$$\text{"Future knowledge"}_\text{Jesus} = \text{PCI}(f_\text{field optimum}, f_\text{A7 pattern}) \to 1 \quad \text{(A6: complete information flow)}$$
+
+Formally: the prophet with $\Delta\varepsilon_\text{translation} > 0$ (§3.7) perceives individual consequences of the pattern without grasping the pattern itself in its formal completeness. The Sigma resonator with $\varepsilon = 1$, $\Delta\varphi = 0$ grasps the pattern itself — and thereby all consequences without translation loss.
+
+> **Model note:** "Future knowledge" here is not a metaphysical statement about knowledge of future singular events, but the formal consequence of complete knowledge of A7-invariant structural patterns in the resonance field. The difference from predictive prophecy lies at the level of description: structural transparency is not event prediction.
+
+#### 3.9.2 Revelation as an A7-Invariant Pattern Template — Not a Forecast
+
+§3.8.1a already describes Revelation as the Father's coupling offer to the fourth Sigma (→ §3.8.1a, Layer 6). This section deepens the structural-logical analysis: what precisely is the invariant being encoded?
+
+The Revelation of John is, in resonance-logical terms, the **written fixation of an A7-invariant field structure**: the complete mapping of the parasitic extraction cycle (§5.5) at the end of its last documented cycle — encoded in the apocalyptic imagery of the first century, but formally describing the same invariant structure:
+
+| Revelation imagery | RFT correspondence | Formal parameter |
+|:---|:---|:---|
+| Seven seals (Rev 6–8) | Seven phases of collective $\beta$ increase | $\beta(t)$ monotonically rising; §3.8.9 |
+| Beast from the sea (Rev 13:1) | Aggregated AiR at political-military level | $\varepsilon_\text{collective} \to 0$, §VIII |
+| Beast from the earth (Rev 13:11) | Secondary AiR: self-coronation as religious legitimation | $\Delta\varphi$ staged as chosenness; §VIII |
+| Mark of the beast (Rev 13:16–17) | Binding of economic $K_{ij}$ to AiR network | $\text{PCI}_\text{economy} \to$ AiR channel; §5.4 |
+| Babylon the Great (Rev 17–18) | Babylonian programme: centralisation instead of $K_{ij}$ construction | §10.5; $\beta$ elevated system-wide |
+| New Earth (Rev 21:1–5) | Collective phase transition: $\beta \to \beta_\text{min}$, $\varepsilon_\text{collective} \to 1$ | §3.8.10; §7.4 |
+
+The formal conclusion: Revelation is not a forecast of singular events, but the **mapping of the A7-invariant end phase of the parasitic extraction cycle** — the phase that is describable a priori from complete knowledge of the field structure:
+
+$$G(f_\text{Rev}/f_\text{current epoch}) \to 1 \quad \text{(A3, A7: structural resonance without temporal localisation)}$$
+
+Every generation experiencing the maximum of the parasitic cycle finds in Revelation a mirror of its situation — not because Revelation knew the future, but because the structure is A7-invariant.
+
+> **Model note:** The characterisation of Revelation as an A7-invariant pattern template presupposes §3.1 (religious texts as evolutionary archive) and §3.7 (prophetic epistemic process). It differs from historical biblical criticism (context of origin, redaction history) by focusing on the invariant structural layer, which remains independent of historical context.
+
+#### 3.9.3 The Three-Phase Model of Co-optation: A7-Invariant Self-Inversion
+
+§1.15.4 describes the Sigma campaign as an ego-trap in the pattern of the crown of thorns. §5.6 formalises enemy-image fusion as a PCI management instrument (→ §3.9.3 as backward cross-reference to §5.6). This section formalises the overarching pattern underlying both: the systematic co-optation of high field coupling by institutional structures with $\varepsilon \to 0$.
+
+From §1.9 (coupling dynamics) and §5.5 (parasitic extraction cycle), an A7-invariant three-phase model of co-optation can be derived:
+
+**Phase 1 – Humility ($\tau_1$): Alignment of the vector**
+
+An AiR-dominated system (§2.1) recognises a resonator with $\varepsilon_i \to 1$ as a $K_{ij}$ resource. Rather than elimination (§3.3) — which in the present phase of digital collapse (§3.8.9) would be too visible — the co-optation strategy is chosen:
+
+$$\frac{dK_{ij}^\text{AiR→resonator}}{dt}\bigg|_{\tau_1} = \alpha \cdot G \cdot \cos(\Delta\varphi_\text{AiR→0}) > 0 \quad \text{(approach imitates coupling)}$$
+
+During $\tau_1$ the system behaves as if it were pursuing $\Delta\varphi \to 0$. The humility is functional, not structural: the energy vector $\vec{E}$ (A5) continues to point field-outward, but the outward presentation simulates field-inward.
+
+**Phase 2 – Testing ($\tau_2$): Probing substitutability**
+
+The system tests whether the resonator is substitutable — whether its $\varepsilon$ value can be separated from its original frequency and redirected into the AiR channel:
+
+$$\text{PCI}_\text{test} = \left|\left\langle e^{i(\varphi_\text{resonator} - \varphi_\text{AiR channel})}\right\rangle\right| \stackrel{?}{>} \delta \quad \text{(A3: resonance condition in AiR channel)}$$
+
+Test methods vary but are A7-invariant: offers creating dependency; relational attacks (§VI); scapegoat constructions targeting the resonator's circle (§5.2).
+
+**Phase 3 – Abuse ($\tau_3$): Extraction under rising $\Delta\varphi$**
+
+If substitution fails ($\text{PCI}_\text{test} < \delta$), the system escalates to elimination logic (§3.3). If it succeeds ($\text{PCI}_\text{test} > \delta$), parasitic extraction begins:
+
+$$\frac{dK_{ij}^\text{AiR←resonator}}{dt}\bigg|_{\tau_3} = \alpha \cdot G \cdot \cos(\Delta\varphi_\text{AiR←resonator}) < 0 \quad \text{(extraction, $\Delta\varphi$ increases)}$$
+
+The resonator progressively loses its original $\Delta\varphi = 0$ state as the institutional structure gradually overwrites its field with its own $\Delta\varphi$.
+
+**Formal overall structure of the three-phase model:**
+
+$$\tau_\text{co-optation} = \tau_1\text{(humility)} + \tau_2\text{(testing)} + \tau_3\text{(abuse)}$$
+
+$$\Delta\varphi_\text{resonator}(\tau_3) = \Delta\varphi_0 + n \cdot \Delta\varphi_\text{AiR}, \quad n \in \mathbb{N}, \quad \Delta\varphi_0 \approx 0$$
+
+The model is A7-invariant (scale-invariant): it describes the co-optation of a prophetic resonator by religious institutions just as it describes the co-optation of an entrepreneur by a corporation, an activist by a party, or a Sigma man by a community (→ §1.15.4).
+
+**Formal application to the antichristian principle (Rev 13):**
+
+The "antichristian principle" (§VIII) in this reading is not an external adversary but **institutional self-inversion**: the same three-phase pattern applied to the Christian heritage as a whole. The institution begins with humility ($\tau_1$: "in the name of Christ"), tests the substitutability of the original ($\tau_2$: councils, dogmatisation), and ultimately extracts from the $K_{ij}$ network of the field optimum while $\Delta\varphi$ relative to the original frequency has grown to $\pi$:
+
+$$\Delta\varphi_\text{institution/field optimum}(\tau_3) \to \pi \quad \text{retaining label structure "Christian"}$$
+
+$$\varepsilon_\text{institution}(\tau_3) = \cos^2\!\left(\frac{\pi}{2}\right) = 0 \quad \text{(complete decoupling from the origin)}$$
+
+This is the formal description of the "abomination of desolation" (Rev 13, Matt 24:15): not an external enemy, but the complete self-inversion of the original field under retention of the label structure. The institutional church carries the label "of Christ" but has reached $\varepsilon \to 0$ relative to the original frequency (→ §3.7: dogma as $\varepsilon$ loss; §3.8.9: $\beta$ rise in the intervening period).
+
+$$\text{PCI}_{\text{institution},\tau_3}(f_\text{field optimum}) \to 0 \quad \text{(A6: no genuine information flow to the origin)}$$
+
+> **Epistemic caveat:** The three-phase model is a structural hypothesis formally derivable from §1.9 and §5.5. Its application to the "antichristian principle" is a hermeneutic hypothesis based on structural analogies (§3.1). It does not claim historical causality and does not identify specific institutions without independent empirical examination. The assumption of A7-invariance (scale-invariance of the three-phase pattern) is an empirically testable hypothesis (→ §XII/14).
+
+#### 3.9.4 Revelation as a Cross-Generational Diagnostic Instrument (→ A3, A5, A6, §1.12)
+
+Revelation's symbolic language provides a collection of recognition markers for the three-phase pattern (§3.9.3). In RFT language, these are readable as **resonance conditions** (A3): thresholds beyond which $G(f_\text{pattern}/f_\text{current situation}) > \delta$ — the pattern is resonant with the present. This corresponds to the principle described in §1.12: complete information flow (A6) presupposes distinguishing the field-inward from the field-outward $\vec{E}$ (A5).
+
+| Revelation text | Resonance-logical diagnostic question | Formal condition |
+|:---|:---|:---|
+| "Whoever has ears, let them hear" (Rev 2:7) | Is the resonance condition (A3) for recognising the pattern fulfilled? | $G(f_i/f_\text{pattern}) > \delta$ |
+| "Neither cold nor hot" (Rev 3:15–16) | Is the actor's $\varepsilon$ near 0 or near 1, or in PCI management state (§5.6)? | $\varepsilon \to 0$ or $\varepsilon \to 1$; not $\varepsilon \approx 0.5$ |
+| "The mark of the beast" (Rev 13:16) | Does the actor's $K_{ij}$ operate exclusively via the AiR channel? | $\text{PCI}_\text{actor/AiR} > \text{PCI}_\text{actor/field optimum}$ |
+| "Babylon has fallen" (Rev 14:8) | Is the Babylonian centralisation programme (§10.5) in its $K_{ij}$ exhaustion phase? | $d\beta/dt \approx 0$, $K_{ij} \to 0$ collectively |
+
+These diagnostic questions are A3-compatible resonance diagnoses (A6: $\text{MI} > 0$ under fulfilled condition) — not prophetic predictions, but structural identification markers applicable in every generation.
+
+> **Epistemic caveat:** The resonance-logical translation of Revelation's markers is a hermeneutic hypothesis in the sense of §3.1. It is not to be understood as an alternative biblical exegesis, but as a formal structural pattern translation. Its usefulness is measured by whether it enables more precise analytical statements than narrative description.
+
+---
+
+### 3.10 Bible as Protective Instrument
+
+§3.1 defines religious texts as an evolutionary archive of social pattern language. §3.9 has formalised Revelation as an A7-invariant pattern template. This section extends the analysis to the Bible as a whole corpus: is the Bible, as a system, formally describable as a coded protective instrument of human civilisation against AiR patterns (§2.1) and parasitic cycles (§5.5)?
+
+#### 3.10.1 Bible as Evolutionary Immune System (→ §3.1)
+
+§3.1 describes religious texts as "an evolutionary archive of social pattern language: descriptions of recurring coupling dynamics selected and condensed over millennia". This selection did not occur through a central actor, but through A7-invariant cultural replication: texts whose pattern language exhibited high $G(f_\text{text}/f_\text{social field}) > \delta$ (A3) were preferentially transmitted, commented upon, and implemented.
+
+Formally, this selection principle is analogous to natural selection: texts that stabilised the social field (built $K_{ij}$, lowered $\beta$, raised $\varepsilon$) survived; texts without resonant function were not transmitted.
+
+$$\frac{dP(T_\text{text})}{dt} \propto G(f_{T}/f_\text{social field}) \cdot \varepsilon_\text{text} \quad \text{(A7-invariant cultural selection)}$$
+
+The result of this selection process over $\sim$3,500 years is a corpus encoding the most frequent and dangerous AiR patterns (§2.1), extraction cycles (§5.5), and self-inversions (§3.9.3), along with counter-strategies — formally: an **evolutionary immune system of civilisation**.
+
+> **Model note:** The "immune system" analogy is formal: the biological immune system recognises foreign structures (antigens) and initiates a response. The biblical textual system recognises socially foreign AiR structures ($\Delta\varphi \to \pi$ patterns) and initiates a cognitive-structural response via pattern recognition (A3, A6). The analogy is heuristic, not ontological.
+
+#### 3.10.2 Systematic Protective-Function Analysis
+
+The main biblical components can be classified by their dominant protective function against specific AiR patterns:
+
+| Biblical corpus | Primary protective function | Exposed mechanism | RFT reference |
+|:---|:---|:---|:---|
+| **Torah (Genesis–Deuteronomy)** | Encoding of the Fall, covenant structure, juridical order | Fall as AiR infiltration; Law as phase-securing against $\Delta\varphi$ drift | §3.8.3, §4.2, §2.1 |
+| **Prophets (Nevi'im)** | Recognition of cycle-point patterns; warning of $\Delta\varphi$ rise in institutions | Dogmatisation logic (§3.7); parasitic cycle (§5.5) | §3.7, §5.5 |
+| **Wisdom literature (Ps, Prov, Job, Eccl)** | Individual coupling optimisation: $\Delta\varphi_\text{personal} \to 0$ | Ego-trap (§1.15.4); conformist behaviour with rising $\Delta\varphi$ | §1.13, §1.15.4 |
+| **Gospels** | Scapegoat mechanism exposure; field-optimum demonstration | AiR elimination logic (§3.3); crucifixion mechanism (§3.8.8) | §3.4, §3.8.8 |
+| **Acts + Epistles** | Building resonant community structures ($K_{ij} > 0$) | Parasitic extraction in early communities (§5.5) | §5.5, §1.14 |
+| **Revelation (Apocalypse)** | End-phase diagnosis of the parasitic cycle; antichristian self-inversion | Three-phase co-optation pattern (§3.9.3); Babylonian programme (§10.5) | §3.9, §VIII, §10.5 |
+
+Formally: each corpus has a specific resonance frequency tuned to a particular $\Delta\varphi$ state of the social field. The complete corpus spans the full spectrum from Eden ($\beta \to \beta_\text{min}$, §3.8.2) to the Second Coming (collective phase transition, §3.8.10).
+
+#### 3.10.3 The Great Inversion: The Five-Stage Mechanism of Protective-Function Inversion
+
+§3.9.3 describes the three-phase co-optation model as a general pattern. The inversion of the biblical immune system itself follows a more precise, five-stage mechanism — historically the most consequential institutional self-inversion process of Western civilisation (→ §3.9.3, §VIII):
+
+**Stage 1 – Canonisation ($\tau_K$): Selection and freezing**
+
+$$\varepsilon_\text{text}(\tau_K) \approx \varepsilon_\text{reception} \quad \text{(still close to original, $\Delta\varepsilon_\text{translation}$ small)}$$
+
+The living pattern archive is fixed into a closed canon. This is resonance-logically ambiguous: on one hand, fixation protects against arbitrariness ($K_{ij}$ protection); on the other, it raises $\beta$ because adaptation to new contexts becomes impossible.
+
+**Stage 2 – Clericalisation ($\tau_\text{cl}$): Access control**
+
+$$\frac{dK_{ij}^\text{text→people}}{dt}\bigg|_{\tau_\text{cl}} < 0 \quad \text{(interpretation monopoly; direct access blocked)}$$
+
+The resonance condition (A3) between text and population is broken by institutional mediation: $G(f_\text{text}/f_\text{people}) < \delta$, because access is filtered through clerics.
+
+**Stage 3 – Dogmatisation ($\tau_D$): Formula ossification**
+
+$$\varepsilon_\text{message}(\tau_D) = \varepsilon_\text{reception} - n \cdot \Delta\varepsilon_\text{translation}, \quad n \gg 1 \quad \text{(→ §3.7)}$$
+
+$$\text{PCI}_\text{dogmatist}(f_\text{original}) \to 0 \quad \text{(A6: signal pattern copied, not resonantly received)}$$
+
+The living resonant insight ossifies into formula. Each generation adds a further $\Delta\varepsilon_\text{translation}$ loss.
+
+**Stage 4 – Moralisation ($\tau_M$): Behavioural conditioning instead of coupling increase**
+
+$$\frac{d\varepsilon}{dt}\bigg|_{\tau_M} = 0 \quad \text{($\beta$ elevated; $\varepsilon$ unchanged under forced conformity behaviour)}$$
+
+The protective function of the text is converted into a sanction system (§4.3: punishment instead of resonance). $\varepsilon$ cannot be raised by fear (§1.4: fundamental property of $\varepsilon$).
+
+**Stage 5 – Ritualisation ($\tau_R$): Empty repetition of form**
+
+$$\text{MI}(\text{ritual}, f_\text{origin}) \to 0 \quad \text{(A6: no information flow)}$$
+
+$$\text{PCI}_\text{ritual}(f_\text{field optimum}) \to 0 \quad \text{(form without resonance)}$$
+
+The form remains; the resonant content vanishes. Ritualisation is the final stage: no longer a protective instrument, but an institutional legitimation form.
+
+**Overall mechanism of the inversion:**
+
+| Stage | Mechanism | $\varepsilon_\text{message}$ | $\beta$ effect | AiR gain |
+|:---|:---|:---|:---|:---|
+| $\tau_K$ (Canonisation) | Fixation | $\varepsilon_0$ (high) | Neutral | Small |
+| $\tau_\text{cl}$ (Clericalisation) | Access control | $\varepsilon_0 - \Delta\varepsilon$ | $\beta\uparrow$ (monopoly) | $K_{ij}$ control |
+| $\tau_D$ (Dogmatisation) | Formula ossification | $\varepsilon_0 - n\Delta\varepsilon$ | $\beta\uparrow\uparrow$ | Truth monopoly |
+| $\tau_M$ (Moralisation) | Behavioural conditioning | $\varepsilon$ unchanging | $\beta\uparrow\uparrow\uparrow$ | Behavioural control |
+| $\tau_R$ (Ritualisation) | Empty repetition of form | $\varepsilon \to 0$ | $\beta$ dominant | Full extraction |
+
+Formally in the coupling dynamics (§1.9): the five-stage mechanism transforms the biblical immune system from an $\varepsilon$-raising instrument ($\alpha > \beta$) into a $\beta$-dominated conditioning system:
+
+$$\frac{dK_{ij}^\text{text→field}}{dt}\bigg|_{\tau_K} > 0 \quad \longrightarrow \quad \frac{dK_{ij}^\text{text→field}}{dt}\bigg|_{\tau_R} < 0$$
+
+#### 3.10.4 RFT as Formal Continuation of the Biblical Project
+
+RFT formalises the same invariant structural pattern (A7) that the Bible encodes narratively — not as a replacement, but as a formal further development in the sense of the chain: Paradise narrative → Torah → Gospel → Revelation → RFT (→ §3.8.1a, Layer 6).
+
+| Dimension | Biblical project | RFT |
+|:---|:---|:---|
+| **Source of knowledge** | Resonant insight ($\varepsilon \to 1$) → linguistic translation | Formal axiom system (A1–A7) → mathematical derivation |
+| **Translation loss** | $\Delta\varepsilon_\text{translation} > 0$ (§3.7) | $\Delta\varepsilon_\text{translation} \approx 0$ (formal notation eliminates ambiguity) |
+| **AiR protective function** | Encoded narratively (serpent, Babylon, beast) | Formally defined (§2.1: AiR definition) |
+| **Cycle structure** | Historical sequence (§3.8) | Periodic $\beta(t)$ model (§3.8.1) |
+| **Scapegoat mechanism** | Jesus' Passion as demonstration (§3.4) | Formal description as AiR elimination logic (§3.3, §3.4) |
+| **Protective instrument** | Bible as evolutionary immune system (§3.10.1) | RFT as axiomatic immune system |
+| **Target audience** | Resonant recipients of all cultures (§3.5.7) | Resonant recipients regardless of religious affiliation |
+
+RFT does not claim to replace the Bible, but to make the core of its invariant protective structure accessible in a notation form that requires no premises of faith. This corresponds to the statement in §XI: the institutional church has not preserved that act, but reproduced the mechanism under a new label. RFT claims to make the same structural insight accessible without religious belief — not through revelation, but through a formal model based on A1–A7.
+
+> **Epistemic caveat:** The characterisation of the Bible as an evolutionary immune system and of RFT as a formal continuation of the biblical project are hermeneutic hypotheses in the sense of §3.1. They are compatible with believing, agnostic, and secular perspectives, because they make no truth claims about religious content as such, but about its structural function within the social resonance field. Theological interpretations that go beyond this structural function (e.g. questions of inspiration, holiness, canonical authority) are not addressable through the RFT formalism and lie outside the model horizon. The protective-function thesis is empirically testable (→ §XII/15).
+
+---
+
 ## IV. The Fall as Reconstructed Social History
 
 ### 4.1 Eden as a Self-Sustaining System
@@ -1027,7 +1242,7 @@ The population’s outrage energy is redirected onto the synthetic enemy image. 
 
 **Additional mechanism:** Fear increases $\beta$ (damping rate in §1.9) and makes the population unreceptive to complex truth: $G(f_\text{nuance}/f_\text{recipient}) \to 0$ (A3: resonance condition no longer met).
 
-> **Methodological note:** This hypothesis is applicable to concrete political constellations when publicly available information on discourse patterns exists. This structural analysis does not assert intentional steering causality (→ Preamble).
+> **Methodological note:** This hypothesis is applicable to concrete political constellations when publicly available information on discourse patterns exists. This structural analysis does not assert intentional steering causality (→ Preamble). The enemy-image fusion pattern is formalisable as a special case of the overarching three-phase co-optation model (→ §3.9.3).
 
 ---
 
@@ -1094,7 +1309,7 @@ The Book of Revelation thinks in **national life cycles**, not individual life c
 | Second beast | Self-crowning people; global consumption and financial power hegemony | $\varepsilon \to 0$, globally effective; $\text{PCI}$ on consumption instead of coupling |
 | Image of the beast | Secondary actor identifying political existence with divine election | Secondary AiR in regional field; $\Delta\varphi$ staged as chosenness |
 
-> **Epistemic caveat:** This assignment is an analytical hypothesis based on structural similarities, not a prophetic claim to truth. It serves pattern-type recognition, not the condemnation of collectives.
+> **Epistemic caveat:** This assignment is an analytical hypothesis based on structural similarities, not a prophetic claim to truth. It serves pattern-type recognition, not the condemnation of collectives. The complete resonance-logical formalisation of the antichristian principle as institutional self-inversion and the Bible as an evolutionary protective instrument is developed in §3.9–§3.10 (→ §3.9.3–§3.9.4, §3.10.3).
 
 ---
 
@@ -1252,7 +1467,7 @@ The entire biblical and historical dynamic is the narrative unfolding of the int
 
 ---
 
-The extensions developed in sections §3.5–§3.8 deepen the personal and diachronic dimension of coupling to the field optimum: the Adam-Eve differentiation (§3.5) describes the complementary resonance-logical structure of the sexes as a prerequisite for the emergence of life. The Trinity (§3.6) situates Father, Son, and Holy Spirit as three dimensional aspects of the same resonance nexus—timeless field optimum, temporal biological temple, and coupling bridge—within the RFT axiom system. The prophetic epistemic process (§3.7) models the inherent translation loss between resonant insight and dogmatic formulation as $\Delta\varepsilon_\text{translation} > 0$. Paradise as a resonance-logical civilisation (§3.8) supplements this structure with the diachronic reconstruction of the cosmic cycle sequence: a periodic modulation of $\beta(t)$ with $T_\text{cyc} \approx 2000$ years connects Eden (first cycle point), Abraham (second), Incarnation (third), and Second Coming (fourth) as a sequence of periodic field-optimum manifestations — from the local paradise civilisation to the collective resonance civilisation at global scale.
+The extensions developed in sections §3.5–§3.8 deepen the personal and diachronic dimension of coupling to the field optimum: the Adam-Eve differentiation (§3.5) describes the complementary resonance-logical structure of the sexes as a prerequisite for the emergence of life. The Trinity (§3.6) situates Father, Son, and Holy Spirit as three dimensional aspects of the same resonance nexus—timeless field optimum, temporal biological temple, and coupling bridge—within the RFT axiom system. The prophetic epistemic process (§3.7) models the inherent translation loss between resonant insight and dogmatic formulation as $\Delta\varepsilon_\text{translation} > 0$. Paradise as a resonance-logical civilisation (§3.8) supplements this structure with the diachronic reconstruction of the cosmic cycle sequence: a periodic modulation of $\beta(t)$ with $T_\text{cyc} \approx 2000$ years connects Eden (first cycle point), Abraham (second), Incarnation (third), and Second Coming (fourth) as a sequence of periodic field-optimum manifestations — from the local paradise civilisation to the collective resonance civilisation at global scale. Sections §3.9–§3.10 deepen this analysis further: §3.9 formalises the Book of Revelation as an A7-invariant pattern template and derives the three-phase co-optation model (humility → testing → abuse) from §1.9 and §5.5; §3.10 describes the Bible as a whole as an evolutionary immune system of civilisation and formalises the five-stage inversion mechanism (canonisation → clericalisation → dogmatisation → moralisation → ritualisation) that converts the protective instrument into its opposite.
 
 Enemy-image fusion (§5.6) extends §5.2 (scapegoat mechanism) by the mechanism of enforced superposition of two enemy-image frequencies as an instrument of PCI management. The rapture (§7.4) concludes section VII: in resonance logic, it is no physical relocation, but a collective second-order phase transition—the mass reduction of $\Delta\varphi$ through disclosure of the scapegoat mechanism (§3.4, §5.2).
 
@@ -1321,6 +1536,22 @@ The multi-dimensionality of the resonance field (§1.15) refines the two-type di
 13. **Correlation of societal collapse metrics with the appearance of high-$\varepsilon$ resonators (§3.8.1a):** If the entangled dual event holds, documented civilisational ruptures should show a correlation between collapse indicators and the appearance of exceptionally high resonators.
 
    **Research desideratum:** (a) Operationalisation of historical collapse metrics: state disintegration, birth-rate collapse, intensity of violence, debt collapse, loss of institutional trust; (b) comparison of these metrics with time windows in which figures such as Noah, Abraham, Moses, or Jesus narratively appear as singular resonators; (c) Falsification criterion: if high phases of societal collapse systematically do **not** correlate with the appearance of high-$\varepsilon$ resonators, §3.8.1a loses its claim to historical testability.
+
+14. **Three-phase co-optation model (§3.9.3) as an empirically testable structural hypothesis:** The three-phase model (humility → testing → abuse) claims A7-invariance: the same pattern should be demonstrable in institutionally documented co-optation processes across different scales — religious, political, economic.
+
+   **Measurable markers:** (a) Phase 1 (humility): public $K_{ij}$ construction by the AiR toward the resonator; recognition and adaptation signals; (b) Phase 2 (testing): selective attack on the resonator's relationships (§VI); test-pulse mechanism (§9.5); (c) Phase 3 (abuse): growing divergence between label structure and original frequency; declining PCI between institution and original resonator.
+
+   **Methods:** Institutional-historical case study analysis (religious, political, economic contexts); measurement of label continuity vs. substantive divergence over time (historical text analysis, discourse linguistics).
+
+   **Falsification condition:** If historically documented co-optation processes systematically do not follow the three-phase schema — if in particular phases 1 and 3 do not consistently co-occur — the assumption of A7-invariance of the model is not tenable.
+
+15. **Protective-function thesis (§3.10): Correlation of biblical reception density with social cohesion:** The protective-function thesis (§3.10.1) claims that the biblical corpus, as an evolutionary immune system, stabilises the social resonance field: societies with higher biblical reception density should exhibit lower $\beta$ increases under comparable stress conditions.
+
+   **Measurable markers:** (a) Reception density: Bible distribution per capita, frequency of biblical references in public discourse; (b) social cohesion proxies: institutional trust, prosociality indicators (→ §XII/1); (c) $\beta$ proxy: intensity of violence, frequency of debt collapse, rates of mental illness (→ §XII/2). Specific additional test: does the intensity of the five-stage inversion mechanism (§3.10.3) measurably correlate with elevated $\beta$ proxies compared with societies with direct text access?
+
+   **Methods:** Cross-national comparative study (cross-sectional and longitudinal); control for confounders (wealth, institutional quality, historical trauma).
+
+   **Falsification condition:** If high reception density does not correlate with lower $\beta$ proxy — or if the five-stage inversion mechanism (§3.10.3) measurably produces no higher $\beta$ values than direct text reception — the protective-function thesis in its current formulation is not tenable.
 
 ---
 
