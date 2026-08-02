@@ -25,7 +25,7 @@ Die Modi sind nicht für einmalige Diagnose konzipiert, sondern für **zyklische
 |:--|:--|:--|
 | **A1** | Universelle Schwingung | $\psi(x,t)=A\cos(kx-\omega t+\phi)$ |
 | **A2** | Superposition | $\Phi(x,t)=\sum_i \psi_i(x,t)$ |
-| **A3** | Resonanzbedingung | $\left|f_i/f_j-m/n\right|<\delta$ |
+| **A3** | Resonanzbedingung | $\left\vert f_i/f_j-m/n \right\vert < \delta$ |
 | **A4** | Kopplungsenergie | $E=\pi\cdot\varepsilon(\Delta\phi)\cdot\hbar\cdot f$ |
 | **A5** | Energierichtung | $\vec E=E_{\text{eff}}\cdot \hat e(\Delta\phi,\nabla\Phi)$ |
 | **A6** | Informationsfluss | $\mathrm{MI}>0 \Leftrightarrow \mathrm{PCI}>0$ |
