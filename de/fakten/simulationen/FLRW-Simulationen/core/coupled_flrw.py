@@ -164,7 +164,7 @@ def coupled_flrw_sim(
     return sol, results
 
 
-def compute_eta_independent(sol, results, m=1.0, g=0.2, n_bins=50):
+def compute_eta_independent(sol, results, m=1.0, n_bins=50):
     """RT-07: Drei unabhaengige η-Estimatoren (Falsifizierungstest ε = η).
 
     Ergaenzt den algebraisch aequivalenten Pearson-Estimator (eta_gemessen)
@@ -178,8 +178,6 @@ def compute_eta_independent(sol, results, m=1.0, g=0.2, n_bins=50):
         Ergebnisdict aus coupled_flrw_sim (enthaelt delta_phi, valid_mask, ...).
     m : float
         Massenparameter (fuer Potential V). Muss mit coupled_flrw_sim uebereinstimmen.
-    g : float
-        Kopplungsparameter. Muss mit coupled_flrw_sim uebereinstimmen.
     n_bins : int
         Bin-Anzahl fuer Mutual-Information-Schaetzer (Standard: 50).
 
@@ -252,9 +250,8 @@ def compute_eta_independent(sol, results, m=1.0, g=0.2, n_bins=50):
         eta_plv = float("nan")
 
     # --- Referenzwert ---
-    combined_mask_ref = valid_mask & np.isfinite(delta_phi)
-    if np.any(combined_mask_ref):
-        dphi_mean = float(np.mean(delta_phi[combined_mask_ref]))
+    if np.any(combined_mask_phi):
+        dphi_mean = float(np.mean(delta_phi[combined_mask_phi]))
     else:
         dphi_mean = float("nan")
     eta_cos2_ref = float(np.cos(dphi_mean / 2) ** 2) if np.isfinite(dphi_mean) else float("nan")

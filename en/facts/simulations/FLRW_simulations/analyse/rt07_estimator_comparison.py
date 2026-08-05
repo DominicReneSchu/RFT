@@ -84,14 +84,13 @@ print(f"  η_PLV (phase locking):      {mean_dev_plv:.4f}  "
       f"({'< 5 %' if mean_dev_plv < THRESHOLD else '≥ 5 %'})")
 
 all_pass = mean_dev_e < THRESHOLD and mean_dev_mi < THRESHOLD and mean_dev_plv < THRESHOLD
-any_fail = mean_dev_e >= THRESHOLD or mean_dev_mi >= THRESHOLD or mean_dev_plv >= THRESHOLD
 
 print()
 if all_pass:
     print("✅ RESULT: All three estimators approximate cos²(Δφ/2) to < 5 %.")
     print("   ε = η empirically strengthened by three independent methods.")
     print("   K-2 (tautology critique of Pearson estimator) resolved.")
-elif any_fail:
+else:
     devs = {
         "η_E": mean_dev_e,
         "η_MI": mean_dev_mi,
