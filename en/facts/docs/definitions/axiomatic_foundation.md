@@ -25,7 +25,7 @@ chosen to be:
 | Symbol | Meaning |
 |:------:|:--------|
 | h | Planck action quantum |
-| f | Frequency — in the RFT fundamental formula defined as RFT resonance frequency f = E/(π·ℏ) (rad/s); corresponds to f = ω/π with ω = E/ℏ (standard angular frequency). Not identical to standard Hz frequency f_Hz = E/h. Open question: → RESEARCH_TASKS.md RT-01 (K-3) |
+| f | Frequency — in the RFT fundamental formula defined as RFT resonance frequency f = E/(π·ℏ) (rad/s); corresponds to f = ω/π with ω = E/ℏ (standard angular frequency). Not identical to standard Hz frequency f_Hz = E/h. Open question: → RESEARCH_TASKS.md RT-01 (K-3); conceptual basis: RT-01a (→ [theory/pi_as_fundamental_constant.md](../../theory/pi_as_fundamental_constant.md)) |
 | ω | Standard angular frequency (rad/s); in the RFT fundamental formula f = ω/π (not f := ω). RFT calculations use f |
 | k | Wave number |
 | A | Amplitude |
@@ -164,7 +164,8 @@ Here (f = RFT resonance frequency = E/(π·ℏ), rad/s; see K-3):
 - ε(Δφ) is the coupling efficiency as a function of the phase difference,
   e.g. ε(Δφ) = cos²(Δφ/2)
 - π is the geometric factor from the integration over a half-cycle
-  of the resonance path (geometric motivation: see §4.1)
+  of the resonance path (geometric motivation: see §4.1;
+  conceptual basis: RT-01a → [theory/pi_as_fundamental_constant.md](../../theory/pi_as_fundamental_constant.md))
 - ℏ is the reduced Planck constant
 - f is the RFT resonance frequency of the coupled mode, f = E/(π·ℏ) = ω/π (K-3)
 

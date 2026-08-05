@@ -232,6 +232,9 @@ E = π · ε · ℏ · f (vollständige geometrische Motivation: siehe
 > aus dem Integral abgeleitet. Die Integration liefert eine geometrische
 > Motivation für den Faktor π. Eine vollständige Herleitung über ein
 > Wirkungsintegral S[ψ, Δφ] ist eine offene Forschungsfrage (siehe RESEARCH_TASKS.md).
+> Das Dezimalartefakt-Argument und die operationale Definition von π als
+> Phasenraumkonstante sind in RT-01a dokumentiert
+> (→ [theorie/pi_als_urkonstante.md](../../theorie/pi_als_urkonstante.md)).
 
 ---
 

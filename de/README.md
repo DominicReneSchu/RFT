@@ -314,7 +314,9 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 
 | # | Dokument | Axiome | Beschreibung |
 |---|----------|--------|-------------|
-| 1 | [π und e als Urkonstanten des Raumes](fakten/theorie/pi_als_urkonstante.md) | A4, A5 | Ursprungsgedanke der RFT: π als geometrische Phasenraumkonstante, Vektorialität der Energie |
+| 1 | [π und e als Urkonstanten des Raumes](fakten/theorie/pi_als_urkonstante.md) | A4, A5 | Ursprungsgedanke der RFT: π als geometrische Phasenraumkonstante, Vektorialität der Energie (RT-01a) |
+| 2 | [Wirkungsintegral-Herleitung von π](fakten/theorie/wirkungsintegral_pi_herleitung.md) | A4 | Formale Herleitung von π als Sattelpunktsbeitrag der stationären Phase im Pfadintegral (RT-01, Aug 2026) |
+| 3 | [Peer-Review-Bereitschaft](../PEER_REVIEW_READINESS.md) | — | Status aller offenen Formalisierungsschritte und theoretischen Grundlagen nach Peer-Review-Kriterien |
 
 ---
 
