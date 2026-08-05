@@ -141,7 +141,25 @@ Doppelpeak-GDR-Struktur (prolate Deformation):
 |-----------|---|----|----|----|----|----|----|----|----|
 | σ(γ,n) (mb) | 55 | 170 | 270 | 300 | 280 | 240 | 200 | 130 | 80 |
 
----
+**Photoalpha σ(γ,α) — RT-06: EXFOR/Hauser-Feshbach (August 2026):**
+
+EXFOR-Recherche: Kein direkter Messeintrag für Am-241 (γ,α) in der EXFOR-Datenbank
+verfügbar. Ursache: α-Emission konkurriert mit Photospaltung und (γ,n); Verzweigungsverhältnis
+Γ_α/Γ_tot ≈ 2% ist experimentell schwer messbar. Fallback: Hauser-Feshbach-Abschätzung.
+
+| E_γ (MeV) | 9,0 | 10,0 | 11,0 | 12,0 | 13,0 | 14,0 | 15,0 | 16,0 | 18,0 |
+|-----------|-----|------|------|------|------|------|------|------|------|
+| σ(γ,α) (mb) | 0,004 | 0,037 | 0,140 | 0,380 | 0,816 | 1,719 | 2,265 | 2,980 | 3,419 |
+
+Methode: Hauser-Feshbach (Weisskopf-Evaporationsmodell), GDR-Parameter: Dietrich & Berman (1988),
+Verzweigungsverhältnis: RIPL-3-Parametrisierung. Unsicherheit: ±factor 2–5 (~200–400%).
+
+⚠️ **Wichtige Konsequenz (K-6):** Der bisherige σ(γ,α)-„Schätzwert" in `material.py`
+war der GDR-Total-Wirkungsquerschnitt σ_GDR ≈ 350–364 mb, kein echter (γ,α)-Querschnitt.
+Der physikalische Wert beträgt σ(γ,α) ≈ 1,7 mb am GDR-Zentroid (factor ~200 Unterschied).
+Die RFT-Reaktorraten-Vorhersage (λ_eff) muss mit dem korrekten σ(γ,α)-Wert neu berechnet werden.
+
+
 
 ## 3. Einrichtung: ELI-NP VEGA
 
@@ -510,23 +528,37 @@ Alle Simulationen sind öffentlich zugänglich:
 5. NNDC NuDat 3.0: Am-241 Nuclear Data.
    https://www.nndc.bnl.gov/
 
+6. IAEA Nuclear Data Services (EXFOR-Datenbank):
+   Experimentelle Wirkungsquerschnitte für Photoreaktionen.
+   https://www-nds.iaea.org/exfor/
+   Recherche RT-06 (August 2026): Kein (γ,α)-Eintrag für Am-241 verfügbar.
+
+7. IAEA-TECDOC-1768 (RIPL-3): Reference Input Parameter Library
+   für statistische Kernreaktionsmodelle (Hauser-Feshbach).
+   https://www-nds.iaea.org/RIPL-3/
+   Verwendet für Γ_α/Γ_tot-Parametrisierung in RT-06.
+
+8. Weisskopf, V. & Ewing, D.H. (1940): On the Yield of Nuclear
+   Reactions with Heavy Elements. Phys. Rev. 57, 472.
+   Grundlage für das Evaporationsmodell in exfor_data.py.
+
 ### ELI-NP
 
-6. ELI-NP Gamma System Department: VEGA System Specifications.
+9. ELI-NP Gamma System Department: VEGA System Specifications.
    http://www.eli-np.ro/gsd_vega.php
 
-7. Phys. Rev. Accel. Beams 27, 021601 (2024): Design Concept of a
-   γ-Ray Beam with Low Bandwidth and High Spectral Density.
+10. Phys. Rev. Accel. Beams 27, 021601 (2024): Design Concept of a
+    γ-Ray Beam with Low Bandwidth and High Spectral Density.
 
-8. ELI-NP GSD Activities Report 2023/2024.
-   https://indico.eli-np.ro
+11. ELI-NP GSD Activities Report 2023/2024.
+    https://indico.eli-np.ro
 
-9. Photofission Experiments at ELI-NP (ELIGANT-TN).
-   https://www.eli-np.ro/gded.php
+12. Photofission Experiments at ELI-NP (ELIGANT-TN).
+    https://www.eli-np.ro/gded.php
 
 ### Resonanzfeldtheorie
 
-10. Schu, D.-R. (2025/2026): Resonanzfeldtheorie.
+13. Schu, D.-R. (2025/2026): Resonanzfeldtheorie.
     https://github.com/DominicReneSchu/RFT
 
 ---

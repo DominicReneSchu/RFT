@@ -280,6 +280,7 @@ for actinides** — the central cost problem of nuclear waste disposal.
 | Target design | Optimal geometry for flux efficiency | Simulation available |
 | Energy balance | Net energy production > self-consumption | Calculated: Q = 126 (Pu-239) |
 | Material stress | Target under GDR irradiation | Materials research required |
+| σ(γ,α) Am-241 | (γ,α) cross-section from EXFOR/Hauser-Feshbach (RT-06) | ✅ 1.719 mb @ 14 MeV (±factor 2–5) |
 
 ### 6.2 Development Phases
 

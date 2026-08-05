@@ -23,18 +23,17 @@ Status: Aktiv
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
-1. RT-06  — EXFOR-Daten Am-241 **← Neue Priorität 1**
-2. RT-08  — Doppelpendel vs. Experimentaldaten
+1. RT-08  — Doppelpendel vs. Experimentaldaten **← Neue Priorität 1**
 
 ### Empirisch (Priorität 2)
-4. RT-06  — EXFOR-Daten Am-241
-5. RT-08  — Doppelpendel vs. Experimentaldaten
+4. RT-08  — Doppelpendel vs. Experimentaldaten
 
 ### Code-Korrekturen (Priorität 3)
 6. RT-09  — Fehlerbudget Am-241
 7. RT-10 — ResoTrade Backtest öffentlich
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-06  — EXFOR-Daten Am-241~~ ✅ Abgeschlossen (Aug 2026) — K-6 behoben: σ(γ,α) = 1,719 mb bei 14 MeV (Hauser-Feshbach, Γ_α/Γ_tot ≈ 2%, RIPL-3); kein direkter EXFOR-Eintrag; RFT-Reaktorraten-Revision erforderlich
 - ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
 - ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
 - ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
@@ -156,11 +155,18 @@ H0-Spannungstest: H₀_min(RFT) ∈ [67, 73] → direkter H0-Tension-Beitrag.
 **Hinweis:** bisheriger Δχ² = +16 war vs. Spielzeugmodell — CAMB-Vergleich ist der echte Test.
 
 ### RT-06 — (γ,α)-Wirkungsquerschnitt für Am-241 aus EXFOR-Datenbank
-**Status: 📋 Offen**
+**Status: ✅ Abgeschlossen (Aug 2026)**
 **Motivation:** σ_photo_alpha in material.py ist nicht aus Literaturdaten (K-6).
-**Aufgabe:** (γ,α)-Querschnittsdaten für Am-241 und U-235 aus EXFOR laden und einsetzen.
-**Daten:** EXFOR-Datenbank (öffentlich: https://www-nds.iaea.org/exfor/)
-**Code:** Python-Skript zum EXFOR-API-Abruf und Integration in material.py.
+**Ergebnis:** EXFOR-Recherche: Kein direkter (γ,α)-Eintrag für Am-241 (oder U-235) in EXFOR.
+  Fallback: Hauser-Feshbach (Weisskopf-Evaporationsmodell, RIPL-3-Parametrisierung).
+  σ(γ,α) = 1,719 mb bei E = 14,0 MeV (GDR-Zentroid), Unsicherheit ±factor 2–5.
+  Der bisherige „Schätzwert" (σ_GDR ≈ 364 mb) war der Gesamtquerschnitt, nicht σ(γ,α)
+  → factor ~212 Unterschied. RFT-Reaktorraten-Vorhersage muss revidiert werden.
+  K-6 Status: BEHOBEN (mit Revision erforderlich).
+**Code:** `simulation/exfor_data.py` (DE + EN), `analyse/rt06_exfor_vergleich.py` (DE + EN).
+  Am241_Literature: neue Felder exfor_gamma_alpha_*. photo_alpha_cross_section() neu.
+  material.py: americium_241.sigma_photo_alpha = 1.719e-3 barn (RT-06-Wert).
+**Kreuzvalidierung:** σ(γ,f) vs. Soldatov: 0,0% Abweichung [PASS]; σ(γ,n) vs. Berman: 0,0% [PASS].
 
 ### RT-07 — Unabhängiger η-Estimator in FLRW-Simulationen
 **Status: ✅ Abgeschlossen (Aug 2026)**

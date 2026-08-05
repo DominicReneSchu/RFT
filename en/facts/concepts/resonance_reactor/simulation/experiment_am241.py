@@ -8,6 +8,7 @@
 # - Varlamov et al. (1999): Atlas of Giant Dipole Resonances (IAEA)
 # - NNDC/NuDat: Am-241 nuclear data
 # - ELI-NP VEGA: γ-beam specifications (up to 10^13 γ/s, ΔE/E < 1%)
+# - RT-06: σ(γ,α) from EXFOR/Hauser-Feshbach (exfor_data.py)
 #
 # Goal: Prediction of measurable quantities for a real experiment
 #       and comparison RFT prediction vs. Standard Model
@@ -87,6 +88,29 @@ class Am241_Literature:
     berman_sigma_n_mb = np.array([5, 55, 100, 170, 230, 270,
                                    300, 280, 240, 200, 160, 130, 80])
 
+    # (γ,α) cross-section from EXFOR/Hauser-Feshbach (RT-06)
+    # Method: Hauser-Feshbach (Weisskopf evaporation model)
+    # No direct EXFOR entry for Am-241 (γ,α) available —
+    # (γ,α) for heavy actinides is not experimentally measured (EXFOR research RT-06)
+    # Uncertainty: ±factor 2–5 (typical for Hauser-Feshbach in actinides)
+    exfor_gamma_alpha_E_MeV = np.array([
+        6.0, 6.97, 7.94, 8.91, 9.88, 10.85,
+        11.82, 12.79, 13.76, 14.0, 14.73, 15.70,
+        16.67, 17.64, 18.61, 19.58, 20.0
+    ])
+    exfor_gamma_alpha_mb = np.array([
+        0.0000, 0.0000, 0.0002, 0.0047, 0.0370, 0.1395,
+        0.3800, 0.8160, 1.4762, 1.7187, 2.2648, 2.9805,
+        3.3801, 3.5103, 3.4188, 3.1893, 3.0640
+    ])
+    exfor_gamma_alpha_source = (
+        "Hauser-Feshbach (Weisskopf evaporation model), "
+        "GDR parameters: Dietrich & Berman (1988), "
+        "branching ratio: RIPL-3 (RT-06)"
+    )
+    exfor_gamma_alpha_method = "hauser_feshbach"   # "direct" / "scaled_U235" / "hauser_feshbach"
+    exfor_gamma_alpha_unc_pct = 300.0              # ±factor 2–5 → ~200–400%
+
 
 # ============================================================
 # 3. GDR cross section: Double Lorentz model
@@ -129,9 +153,60 @@ def gdr_cross_section_rft(E_MeV: float | np.ndarray, delta_phi: float = 0.0) -> 
     return epsilon * gdr_cross_section(E_MeV)
 
 
-# ============================================================
-# 4. RFT coupling efficiency
-# ============================================================
+def photo_alpha_cross_section(
+    E_MeV: float | np.ndarray,
+    am: type = Am241_Literature,
+) -> float | np.ndarray:
+    """
+    σ(γ,α) in mb as a function of energy.
+
+    Returns the (γ,α) cross-section by interpolation over the
+    EXFOR/Hauser-Feshbach nodes in Am241_Literature.
+
+    - Method: hauser_feshbach (RT-06: no direct EXFOR entry available)
+    - GDR parameters: Dietrich & Berman (1988)
+    - Branching ratio: RIPL-3 parametrisation
+    - Uncertainty: ±factor 2–5 (~200–400%)
+
+    For E outside [E_min, E_max]: extrapolation with warning.
+
+    Args:
+        E_MeV: Photon energy in MeV (scalar or array)
+        am: Am241_Literature class (support points)
+
+    Returns:
+        float or np.ndarray: σ(γ,α) in mb
+    """
+    import warnings
+    E_arr = am.exfor_gamma_alpha_E_MeV
+    s_arr = am.exfor_gamma_alpha_mb
+
+    scalar = np.ndim(E_MeV) == 0
+    E_query = np.atleast_1d(np.asarray(E_MeV, dtype=float))
+
+    out_of_range = (E_query < E_arr.min()) | (E_query > E_arr.max())
+    if np.any(out_of_range):
+        warnings.warn(
+            f"photo_alpha_cross_section: energy outside support range "
+            f"[{E_arr.min():.1f}, {E_arr.max():.1f}] MeV — "
+            "extrapolation. Increased uncertainty.",
+            stacklevel=2,
+        )
+
+    try:
+        from scipy.interpolate import interp1d
+        f = interp1d(E_arr, s_arr, kind='cubic',
+                     bounds_error=False, fill_value="extrapolate")
+        result = f(E_query)
+    except ImportError:
+        result = np.interp(E_query, E_arr, s_arr)
+
+    # Physical constraint: σ ≥ 0
+    result = np.maximum(result, 0.0)
+
+    return float(result[0]) if scalar else result
+
+
 
 def coupling_efficiency(delta_phi: float | np.ndarray) -> float | np.ndarray:
     """η(Δφ) = ε(Δφ) = cos²(Δφ/2)"""

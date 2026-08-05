@@ -141,7 +141,25 @@ GDR structure (prolate deformation):
 |-----------|---|----|----|----|----|----|----|----|----|
 | σ(γ,n) (mb) | 55 | 170 | 270 | 300 | 280 | 240 | 200 | 130 | 80 |
 
----
+**Photoalpha σ(γ,α) — RT-06: EXFOR/Hauser-Feshbach (August 2026):**
+
+EXFOR research: No direct measurement entry for Am-241 (γ,α) in the EXFOR database.
+Reason: α-emission competes with photofission and (γ,n); branching ratio
+Γ_α/Γ_tot ≈ 2% is difficult to measure experimentally. Fallback: Hauser-Feshbach estimate.
+
+| E_γ (MeV) | 9.0 | 10.0 | 11.0 | 12.0 | 13.0 | 14.0 | 15.0 | 16.0 | 18.0 |
+|-----------|-----|------|------|------|------|------|------|------|------|
+| σ(γ,α) (mb) | 0.004 | 0.037 | 0.140 | 0.380 | 0.816 | 1.719 | 2.265 | 2.980 | 3.419 |
+
+Method: Hauser-Feshbach (Weisskopf evaporation model), GDR parameters: Dietrich & Berman (1988),
+branching ratio: RIPL-3 parametrisation. Uncertainty: ±factor 2–5 (~200–400%).
+
+⚠️ **Important consequence (K-6):** The previous σ(γ,α) "estimate" in `material.py`
+was the total GDR cross-section σ_GDR ≈ 350–364 mb, not a real (γ,α) cross-section.
+The physical value is σ(γ,α) ≈ 1.7 mb at the GDR centroid (factor ~200 difference).
+The RFT reactor rate prediction (λ_eff) must be recalculated using the correct σ(γ,α).
+
+
 
 ## 3. Facility: ELI-NP VEGA
 
@@ -510,19 +528,33 @@ All simulations are publicly accessible:
 5. NNDC NuDat 3.0: Am-241 Nuclear Data.
    https://www.nndc.bnl.gov/
 
+6. IAEA Nuclear Data Services (EXFOR database):
+   Experimental cross sections for photonuclear reactions.
+   https://www-nds.iaea.org/exfor/
+   RT-06 research (August 2026): No (γ,α) entry for Am-241 available.
+
+7. IAEA-TECDOC-1768 (RIPL-3): Reference Input Parameter Library
+   for statistical nuclear reaction models (Hauser-Feshbach).
+   https://www-nds.iaea.org/RIPL-3/
+   Used for Γ_α/Γ_tot parametrisation in RT-06.
+
+8. Weisskopf, V. & Ewing, D.H. (1940): On the Yield of Nuclear
+   Reactions with Heavy Elements. Phys. Rev. 57, 472.
+   Basis for the evaporation model in exfor_data.py.
+
 ### ELI-NP
 
-6. ELI-NP Gamma System Department: VEGA System Specifications.
+9. ELI-NP Gamma System Department: VEGA System Specifications.
    http://www.eli-np.ro/gsd_vega.php
 
-7. Phys. Rev. Accel. Beams 27, 021601 (2024): Design Concept of a
-   γ-Ray Beam with Low Bandwidth and High Spectral Density.
+10. Phys. Rev. Accel. Beams 27, 021601 (2024): Design Concept of a
+    γ-Ray Beam with Low Bandwidth and High Spectral Density.
 
-8. ELI-NP GSD Activities Report 2023/2024.
-   https://indico.eli-np.ro
+11. ELI-NP GSD Activities Report 2023/2024.
+    https://indico.eli-np.ro
 
-9. Photofission Experiments at ELI-NP (ELIGANT-TN).
-   https://www.eli-np.ro/gded.php
+12. Photofission Experiments at ELI-NP (ELIGANT-TN).
+    https://www.eli-np.ro/gded.php
 
 ### Resonance Field Theory
 

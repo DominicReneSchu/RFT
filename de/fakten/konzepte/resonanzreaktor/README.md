@@ -281,6 +281,7 @@ für Aktinide** — das zentrale Kostenproblem der Atommüll-Entsorgung.
 | Target-Design | Optimale Geometrie für Flusseffizienz | Simulation vorhanden |
 | Energiebilanz | Nettoenergieproduktion > Eigenbedarf | Berechnet: Q = 126 (Pu-239) |
 | Materialbelastung | Target unter GDR-Bestrahlung | Materialforschung notwendig |
+| σ(γ,α) Am-241 | (γ,α)-Querschnitt aus EXFOR/Hauser-Feshbach (RT-06) | ✅ 1,719 mb @ 14 MeV (±factor 2–5) |
 
 ### 6.2 Entwicklungsphasen
 
