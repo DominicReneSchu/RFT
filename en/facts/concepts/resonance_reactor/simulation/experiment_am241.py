@@ -606,6 +606,8 @@ def uncertainty_budget_am241(
     kappa_coh_samples = np.clip(kappa_coh_samples, 0.0, 1.0)
 
     # Effective photon flux on target (beam spread)
+    # Assumption: beam cross section = π · σ_beam² (circle with radius σ_beam).
+    # Facility.beam_area_cm2 is the nominal beam cross-sectional area.
     beam_sigma_nominal = np.sqrt(beam_area_nominal / PI)
     Phi_eff_samples = Phi_nominal * (beam_sigma_nominal**2 / beam_sigma_samples**2)
 
@@ -720,8 +722,8 @@ def uncertainty_budget_am241(
         "R_median": R_median,
         "R_p16": R_p16,
         "R_p84": R_p84,
-        "S_koh_median": S_coh_median,
-        "S_ink_median": S_inc_median,
+        "S_coh_median": S_coh_median,
+        "S_inc_median": S_inc_median,
         "B_median": B_median,
         "t_for_3sigma": t_for_3sigma,
         "t_for_5sigma": t_for_5sigma,
@@ -729,6 +731,7 @@ def uncertainty_budget_am241(
         "contributions": contributions_rel,
         "falsification_feasible": falsification_feasible,
         "n_mc": n_mc,
+        "_snr_samples": SNR_samples,  # Raw MC samples for visualization
     }
 
 

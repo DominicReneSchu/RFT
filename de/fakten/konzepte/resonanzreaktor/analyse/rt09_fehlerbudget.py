@@ -190,16 +190,15 @@ def plot_results(results: dict) -> None:
 
     # --- Panel 1: SNR-Histogramme ---
     ax = axes[0]
-    n_mc_plot = 50_000
-    for name, params in SZENARIEN.items():
+    for name in SZENARIEN:
         r = results[name]
-        # Rekonstruiere SNR-Stichproben für Histogramm (vereinfacht)
-        rng = np.random.default_rng(seed=99)
-        snr_ref = r['SNR_median']
-        snr_std = (r['SNR_p84'] - r['SNR_p16']) / 2.0
-        snr_samples = rng.normal(snr_ref, snr_std, n_mc_plot)
+        snr_samples = r.get('_snr_samples')
+        if snr_samples is None or len(snr_samples) == 0:
+            continue
+        # Auf +/- 10σ um den Median clippen für übersichtliche Darstellung
+        snr_plot = np.clip(snr_samples, -5, max(r['SNR_p84'] * 3, 50))
         ax.hist(
-            snr_samples, bins=80, density=True, alpha=0.5,
+            snr_plot, bins=80, density=True, alpha=0.5,
             color=colors[name], label=name,
         )
         ax.axvline(r['SNR_median'], color=colors[name], linewidth=2,

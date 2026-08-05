@@ -610,7 +610,8 @@ def uncertainty_budget_am241(
     kappa_coh_samples = np.clip(kappa_coh_samples, 0.0, 1.0)
 
     # Effektiver Photonenfluss auf Target (Strahlausbreitung)
-    # Nominale Strahlbreite aus Facility
+    # Annahme: Strahlquerschnitt = π · σ_beam² (Kreisfläche mit Radius σ_beam).
+    # Facility.beam_area_cm2 ist die nominale Strahlquerschnittsfläche.
     beam_sigma_nominal = np.sqrt(beam_area_nominal / PI)
     Phi_eff_samples = Phi_nominal * (beam_sigma_nominal**2 / beam_sigma_samples**2)
 
@@ -666,7 +667,6 @@ def uncertainty_budget_am241(
     central_eps = detector_efficiency
     central_bs = beam_sigma_cm
     central_kappa = phase_coherence
-    Phi_central = Phi_nominal * (beam_sigma_nominal**2 / central_bs**2)
 
     def _snr_from_params(s_pa, eps, bs, kappa):
         bs_safe = np.maximum(np.asarray(bs, dtype=float), 1e-6)
@@ -736,6 +736,7 @@ def uncertainty_budget_am241(
         "contributions": contributions_rel,
         "falsification_feasible": falsification_feasible,
         "n_mc": n_mc,
+        "_snr_samples": SNR_samples,  # Rohe MC-Stichproben für Visualisierung
     }
 
 
