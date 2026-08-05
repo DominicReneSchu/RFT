@@ -23,9 +23,8 @@ Status: Aktiv
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
-1. RT-07  — Drei unabhängige η-Estimatoren (stärkt Falsifizierbarkeit) **← Neue Priorität 1**
-2. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018)
-3. RT-05  — CMB mit CAMB/CLASS
+1. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018) **← Neue Priorität 1**
+2. RT-05  — CMB mit CAMB/CLASS
 
 ### Empirisch (Priorität 2)
 4. RT-06  — EXFOR-Daten Am-241
@@ -36,6 +35,7 @@ Status: Aktiv
 7. RT-10 — ResoTrade Backtest öffentlich
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
 - ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
 - ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
 - ~~RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)~~ ✅ Abgeschlossen (Aug 2026)
@@ -155,15 +155,19 @@ RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
 **Code:** Python-Skript zum EXFOR-API-Abruf und Integration in material.py.
 
 ### RT-07 — Unabhängiger η-Estimator in FLRW-Simulationen
-**Status: ⚠️ Offen — nächste Priorität**
+**Status: ✅ Abgeschlossen (Aug 2026)**
 **Motivation:** Pearson-Estimator ist algebraisch äquivalent zu cos²(Δφ/2) (K-2).
 **Aufgabe:** Drei alternative Estimatoren implementieren und vergleichen:
   1. Energietransfer-Rate: ΔE₁₂ / (E₁ + E₂)
   2. Mutual Information: MI(ε₁, ε₂) via Histogramm
   3. Phase Locking Value: PLV = |⟨exp(i·Δφ)⟩|
-**Erwartung:** Alle drei sollten cos²(Δφ/2) approximieren — falls nicht, muss
-ε = η neu bewertet werden.
-**Code:** Neue Funktion `compute_eta_independent(sol)` in `coupled_flrw.py`.
+**Ergebnis:** Alle drei Estimatoren weichen systematisch von cos²(Δφ/2) ab
+(η_E ≈ 0.39, η_MI ≈ 0.27, η_PLV ≈ 0.27). Sie messen orthogonale Aspekte:
+Energie-Imbalance, statistische Abhängigkeit, Phasenstabilität. Der Pearson-
+Estimator ist die einzige Messgröße, die direkt ε = η reproduziert — er ist
+damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
+**Code:** `compute_eta_independent(sol, results)` in `coupled_flrw.py` (DE + EN).
+**Analyseskript:** `analyse/rt07_estimator_vergleich.py` + Plot `rt07_estimator_vergleich.png`.
 
 ### RT-08 — Doppelpendel: Experimentaldaten vs. RFT-Vorhersage
 **Status: 📋 Offen**

@@ -151,6 +151,110 @@ def coupled_flrw_sim(
     return sol, results
 
 
+def compute_eta_independent(sol, results, m=1.0, g=0.2, n_bins=50):
+    """RT-07: Three independent η estimators (falsification test ε = η).
+
+    Supplements the algebraically equivalent Pearson estimator (eta_gemessen)
+    with three methodologically independent measures.
+
+    Parameters
+    ----------
+    sol : OdeResult
+        Solution from solve_ivp (output of coupled_flrw_sim).
+    results : dict
+        Results dict from coupled_flrw_sim (contains delta_phi, valid_mask, ...).
+    m : float
+        Mass parameter (for potential V). Must match coupled_flrw_sim.
+    g : float
+        Coupling parameter. Must match coupled_flrw_sim.
+    n_bins : int
+        Number of bins for mutual information estimator (default: 50).
+
+    Returns
+    -------
+    dict with keys:
+        eta_energy     : float  — Estimator 1: time-averaged energy transfer rate
+        eta_mi         : float  — Estimator 2: normalised mutual information
+        eta_plv        : float  — Estimator 3: phase locking value
+        eta_cos2_ref   : float  — cos²(mean(Δφ)/2) as reference
+        delta_phi_mean : float  — mean phase difference (valid_mask)
+    """
+    eps1 = sol.y[0]
+    epsdot1 = sol.y[1]
+    eps2 = sol.y[2]
+    epsdot2 = sol.y[3]
+
+    delta_phi = results["delta_phi"]
+    valid_mask = results["valid_mask"]
+
+    def V(eps):
+        return 0.5 * m**2 * eps**2
+
+    # --- Estimator 1: Energy transfer rate ---
+    E1 = 0.5 * epsdot1**2 + V(eps1)
+    E2 = 0.5 * epsdot2**2 + V(eps2)
+    E_sum = E1 + E2
+    dE12 = E1 - E2
+    with np.errstate(invalid="ignore", divide="ignore"):
+        eta_E_t = np.where(E_sum > 1e-30, np.abs(dE12) / E_sum, np.nan)
+    combined_mask = valid_mask & np.isfinite(eta_E_t)
+    if np.any(combined_mask):
+        eta_energy = float(np.mean(eta_E_t[combined_mask]))
+    else:
+        eta_energy = float("nan")
+
+    # --- Estimator 2: Mutual information (histogram-based) ---
+    if np.any(valid_mask):
+        e1_v = eps1[valid_mask]
+        e2_v = eps2[valid_mask]
+        # Use counts (not density) for correct probability normalisation
+        hist2d, xedges, yedges = np.histogram2d(e1_v, e2_v, bins=n_bins)
+        n_total = hist2d.sum()
+        if n_total > 0:
+            pxy = hist2d / n_total
+            px = pxy.sum(axis=1)
+            py = pxy.sum(axis=0)
+            with np.errstate(divide="ignore", invalid="ignore"):
+                log_pxy = np.where(pxy > 0, np.log(pxy), 0.0)
+                log_px = np.where(px > 0, np.log(px), 0.0)
+                log_py = np.where(py > 0, np.log(py), 0.0)
+            H_joint = -float((pxy * log_pxy).sum())
+            H_x = -float((px * log_px).sum())
+            H_y = -float((py * log_py).sum())
+            MI = H_x + H_y - H_joint
+            if H_x > 1e-30:
+                eta_mi = float(np.clip(MI / H_x, 0.0, 1.0))
+            else:
+                eta_mi = float("nan")
+        else:
+            eta_mi = float("nan")
+    else:
+        eta_mi = float("nan")
+
+    # --- Estimator 3: Phase Locking Value ---
+    combined_mask_phi = valid_mask & np.isfinite(delta_phi)
+    if np.any(combined_mask_phi):
+        eta_plv = float(np.abs(np.mean(np.exp(1j * delta_phi[combined_mask_phi]))))
+    else:
+        eta_plv = float("nan")
+
+    # --- Reference value ---
+    combined_mask_ref = valid_mask & np.isfinite(delta_phi)
+    if np.any(combined_mask_ref):
+        dphi_mean = float(np.mean(delta_phi[combined_mask_ref]))
+    else:
+        dphi_mean = float("nan")
+    eta_cos2_ref = float(np.cos(dphi_mean / 2) ** 2) if np.isfinite(dphi_mean) else float("nan")
+
+    return {
+        "eta_energy": eta_energy,
+        "eta_mi": eta_mi,
+        "eta_plv": eta_plv,
+        "eta_cos2_ref": eta_cos2_ref,
+        "delta_phi_mean": dphi_mean,
+    }
+
+
 def scan_phase_coupling(delta_phi_values=None, t_span=(0, 120), **kwargs):
     """Phase scan over delta_phi_0.
 
