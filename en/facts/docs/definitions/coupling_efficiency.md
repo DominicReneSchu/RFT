@@ -111,6 +111,10 @@ $$
 T(f_i, \phi_i, t) = (\lambda f_i, \phi_i + \phi_0, at + b)
 $$
 
+Group structure proved (RT-02, Aug 2026):
+G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) —
+see [`gsync_group_structure.md`](gsync_group_structure.md).
+
 ### Interpretative Extensions
 
 In addition there are two interpretative extensions that build on

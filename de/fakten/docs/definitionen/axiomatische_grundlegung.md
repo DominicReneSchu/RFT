@@ -298,11 +298,16 @@ unter synchronen Transformationen der Gruppe G_sync.
         ε(Δφ_ij) = ε(T(φᵢ) − T(φⱼ))
 ```
 
-**Hinweis zum formalen Beweis:** Ein formaler Beweis der Skalentransformation —
-dass die Kopplungsstruktur über CMB-, Kernphysik- und Finanzmarkt-Skalen identisch
-ist — liegt noch nicht vor. Die drei genannten Domänen sind Analogisierungen.
-Ein rigoroser Gruppentheorie-Beweis von G_sync über Skalen ist eine offene Aufgabe
-(siehe RESEARCH_TASKS.md).
+**Gruppentheoretischer Beweis (RT-02, Aug 2026):** Die vier Gruppenaxiome für
+G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) wurden algebraisch bewiesen. Die Invarianz
+von G(fᵢ/fⱼ) unter der Frequenzskalierung und von ε(Δφ) unter Phasenverschiebungen
+ist formal nachgewiesen. Die Domänenübertragung (CMB, Kernphysik, Finanzmärkte)
+bleibt ein motiviertes Postulat. Die Funktion ε(Δφ) = cos²(Δφ/2) ist als
+eindeutig ausgezeichnete Funktion der k=1-Darstellung von U(1) ⊂ G_sync
+gruppentheoretisch erzwungen.
+
+Vollständiger Beweis: `de/fakten/theorie/gsync_gruppenstruktur.md` |
+Symbolische Verifikation: `de/fakten/theorie/simulationen/rt02/rt02_gsync_verification.py`
 
 **Testbare Vorhersage:** Die Resonanzstruktur ist skalierungsinvariant —
 sie gilt auf allen Zeitskalen und Energieskalen.
