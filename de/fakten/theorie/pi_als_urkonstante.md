@@ -231,12 +231,19 @@ skalare Energiekonzeption reduzieren lässt.
 ### 4.3 Was formal noch fehlt
 
 Die Aussage, dass A5 aus dem π-als-Urkonstante-Argument „folgt", ist konzeptuell
-plausibel, aber formal noch nicht vollständig. Offen sind:
+plausibel, aber formal nicht vollständig herleitbar. RT-36 hat gezeigt:
 
 - Ein gruppentheoretischer Rahmen, der die Richtungseinheit $\hat{e}(\Delta\varphi,
-  \nabla\Phi)$ aus der Geometrie des Phasenraums ableitet (RT-02-Verbindung)
+  \nabla\Phi)$ aus der Geometrie des Phasenraums ableitet, **existiert nicht**:
+  G_sync operiert auf dem internen Phasenraum (Frequenzen, Phasen, Zeit), nicht
+  auf Raumrichtungen. A5 ist gruppentheoretisch irreduzibel.
 - Ein Konsistenznachweis mit dem Energie-Impuls-Tensor der Allgemeinen
-  Relativitätstheorie
+  Relativitätstheorie bleibt offen.
+
+A5 ist damit ein irreduzibles strukturelles Postulat mit der hier beschriebenen
+Vektorialitätsinkonsistenz der Standardphysik als formaler Begründungsgrundlage.
+
+→ Vollständige Analyse: [a5_vektorialitaet_herleitung.md](a5_vektorialitaet_herleitung.md)
 
 ---
 
@@ -299,7 +306,7 @@ Normierungseinheit des Raums, in dem Kopplung stattfindet.
 |---------|--------|--------|---------|
 | Wirkungsintegral-Herleitung | π als Sattelpunktsbeitrag der stationären Phase im Pfadintegral | **Formalisiert (Aug 2026)** | [wirkungsintegral_pi_herleitung.md](wirkungsintegral_pi_herleitung.md) |
 | Dezimalartefakt formal | π und e in einem natürlichen Einheitensystem als rationale Basisgrößen | Konzeptuell | RT-01a |
-| A5-Herleitung | Richtungseinheit $\hat{e}$ aus Phasenraumgeometrie | Offen | RT-02 |
+| A5-Herleitung | Richtungseinheit $\hat{e}$ aus Phasenraumgeometrie | **Abgeschlossen (Aug 2026)** — Möglichkeit B: A5 ist irreduzibles Postulat, gruppentheoretisch nicht aus G_sync ableitbar | RT-36 |
 | Frequenzdefinition | Unabhängige Bestimmung von $f$ ohne Rückgriff auf A4 | Offen | RT-01, RT-03 |
 | e in der Axiomatik | Integration der Eulerschen Zahl als Kopplungskonstante | Offen | — |
 
