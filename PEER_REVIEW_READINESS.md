@@ -16,6 +16,8 @@ Dieses Dokument dokumentiert den Peer-Review-Bereitschaftsstatus der Resonanzfel
 | RT-02 | Gruppentheoretischer Beweis der Skalentransformation (A7) | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/gsync_gruppenstruktur.md` · `en/facts/theory/gsync_group_structure.md` |
 | RT-31 | Resonanz-Hamiltonoperator für spezifische Quantensysteme | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/simulationen/hamilton/README.md` · `en/facts/simulations/hamilton/README.md` |
 | RT-35 | A3 als Korollar von A7 in Axiomatik | **✅ Abgeschlossen (Aug 2026)** (durch RT-31) | `de/fakten/theorie/gsync_gruppenstruktur.md` §5 |
+| RT-32 | Nichtlineare Sättigungsterme (λ_ε⁴) in der FLRW-Feldgleichung | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/simulationen/FLRW-Simulationen/core/coupled_flrw.py` · `README.md` §RT-32 |
+| RT-11 | FLRW κ-Parameter: Konventionsdeklaration κ_RFT = 1 | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/kappa_parameter_rft.md` |
 | RT-03 | Unabhängige Bestimmung von λ (⁸⁷Rb-Vorhersage) | Offen | RESEARCH_TASKS.md |
 
 ### Anmerkung zu RT-01a
@@ -66,6 +68,8 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | RT-02 | Gruppentheoretischer Beweis A7 — **✅ Abgeschlossen (Aug 2026)** |
 | RT-31 | Resonanz-Hamiltonoperator (Phonon + Spin-Bahn) — **✅ Abgeschlossen (Aug 2026)** |
 | RT-35 | A3-Korollar in Axiomatik — **✅ Abgeschlossen (Aug 2026)** |
+| RT-32 | Nichtlineare Sättigungsterme (λ_ε⁴) — **✅ Abgeschlossen (Aug 2026)** |
+| RT-11 | κ-Parameter Konventionsdeklaration — **✅ Abgeschlossen (Aug 2026)** |
 | RT-37 | IOP-Manuskript aktualisieren (RT-01/01b/02/31 einarbeiten) — offen |
 | RT-03 | Unabhängige λ-Bestimmung für RT-03-Vorhersage |
 

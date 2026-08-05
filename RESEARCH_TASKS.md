@@ -23,10 +23,9 @@ Status: Aktiv
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
 ### Theoretisch — intern abschließbar (Priorität 1)
-1. RT-32  — λε⁴-Sättigungsterm in Klein-Gordon
-2. RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren
-3. RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)
-
+1. ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
+2. ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
+3. ~~RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)~~ ✅ Abgeschlossen (Aug 2026)
 ### Empirisch — Simulationen mit öffentlichen Daten (Priorität 2)
 4. RT-07  — Drei unabhängige η-Estimatoren (stärkt Falsifizierbarkeit)
 5. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018)
@@ -186,10 +185,9 @@ Experimentaldaten getestet.
 **Code:** Neues Verzeichnis `en/facts/concepts/ResoTrade/backtest/`.
 
 ### RT-11 — FLRW κ-Parameter aus Axiomen ableiten
-**Status: ⚠️ Offen — nächste Priorität**
-**Motivation:** κ = 1 ist im Code ein freier Parameter trotz Ableitungsanspruch (Minor-9).
-**Aufgabe:** Formale Ableitung von κ = 8πG aus den RFT-Axiomen oder
-explizite Deklaration als Konvention κ_RFT = 1.
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** κ_RFT = 1 ist eine explizite Konventionsdeklaration (Normierungsfreiheit im dimensionslosen Einheitensystem). Eine formale Ableitung von κ = 8πG aus A1–A7 ist nicht möglich, da G_sync auf dem internen Phasenraum operiert und keinen Zugang zur Newtonschen Gravitationskonstante G hat. Die zentralen Ergebnisse (η-Korrektur, d_η-Skalierung) sind κ-invariant.
+**Kerndokument:** `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-31 — Resonanz-Hamiltonoperator für spezifische Systeme konstruieren
 **Status: ✅ Abgeschlossen (August 2026)**
@@ -197,16 +195,9 @@ explizite Deklaration als Konvention κ_RFT = 1.
 **Kerndokument:** `de/fakten/simulationen/hamilton/README.md`
 
 ### RT-32 — Nichtlineare Sättigungsterme in der Feldgleichung
-**Status: ⚠️ Offen — nächste Priorität**
-**Motivation:** Das IOP-Manuskript (§7) benennt λε⁴- und αRε²-Terme als offene
-Erweiterung. Die FLRW-Simulation zeigt bereits Sättigung bei ȧ₀ = 1.0 (d_η stabilisiert),
-was auf eine nichtlineare Selbstwechselwirkung hinweist.
-**Aufgabe:** λε⁴-Term in die Klein-Gordon-Gleichung einführen und den Effekt auf
-η(Δφ) = cos²(Δφ/2) quantifizieren. Unter welchen Bedingungen weicht η von cos² ab?
-**Ansatz:** Störungstheoretische Entwicklung in λ; numerischer Vergleich mit
-bestehenden FLRW-Simulationen.
-**Code:** Erweiterung von `coupled_flrw.py` um `lambda_eps4`-Parameter.
-**Verweise:** `de/fakten/simulationen/FLRW-Simulationen/README.md`
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** `lambda_eps4`-Parameter in `coupled_flrw.py` eingeführt. Das Potential wird erweitert zu V(ε) = ½m²ε² + ¼λε⁴ + (1/6)λ_ε⁴ε⁶. Störungstheoretisch: δη ≈ −c·λ_ε⁴·ε₀²·sin²(Δφ/2), d.h. bei kleinen Amplituden (ε₀ ≈ 0.3) sind Korrekturen perturbativ klein. Neue Funktion `scan_lambda_eps4()` für systematischen Parametervergleich. Rückwärtskompatibel: lambda_eps4=0 entspricht Standard-λφ⁴.
+**Kerndokument:** `de/fakten/simulationen/FLRW-Simulationen/core/coupled_flrw.py` · `de/fakten/simulationen/FLRW-Simulationen/README.md`
 
 ### RT-33 — Warpantrieb: Energielücke schließen (Stufe 5)
 **Status: 📋 Offen**
