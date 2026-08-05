@@ -71,6 +71,7 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | RT-32 | Nichtlineare Sättigungsterme (λ_ε⁴) — **✅ Abgeschlossen (Aug 2026)** |
 | RT-11 | κ-Parameter Konventionsdeklaration — **✅ Abgeschlossen (Aug 2026)** |
 | RT-37 | IOP-Manuskript aktualisieren (RT-01/01b/02/31 einarbeiten) — **✅ Abgeschlossen (Aug 2026)** |
+| RT-07 | Unabhängige η-Estimatoren (K-2: Tautologie-Kritik Pearson-Estimator) — **✅ Abgeschlossen (Aug 2026)** — Pearson als physikalisch ausgezeichnete Observable bestätigt |
 | RT-03 | Unabhängige λ-Bestimmung für RT-03-Vorhersage |
 
 ---
