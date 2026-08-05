@@ -179,10 +179,10 @@ bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
 
 ## Kategorie 5: Soziales Resonanzfeld — Empirische Operationalisierung
 
-### RT-14 — Empirische Operationalisierung der Adam-Eva-Komplementarität
+### RT-14 — Empirische Operationalisierung der Mann-Frau-Komplementarität
 
 **Motivation:** Die personale Singularität ∃! Resonator_m mit ε → 1 und die
-konstitutive Phasendifferenz Δφ_w = δφ_0 > 0 der Eva-Struktur sind die
+konstitutive Phasendifferenz Δφ_w = δφ_0 > 0 der Frau-Struktur sind die
 schärfsten offenen Falsifizierungsprobleme des RFT-Sozialmodells.
 Ohne empirische Operationalisierung bleiben beide Behauptungen formal nicht
 testbar — sie können weder bestätigt noch widerlegt werden und verbleiben
@@ -222,13 +222,13 @@ Visualisierung der Kopplungseffizienz ε(Δφ) über Stichprobe.
 (z. B. MPIB Berlin, MPI für Kognitionsneurowissenschaften Leipzig).
 
 **Falsifizierung:** Wenn keine der drei Teilaufgaben einen messbaren Unterschied
-zwischen Δφ_mw → 0 und Δφ_mw = δφ_0 > 0 ergibt, ist die Adam-Eva-Komplementarität in der aktuellen
+zwischen Δφ_mw → 0 und Δφ_mw = δφ_0 > 0 ergibt, ist die Mann-Frau-Komplementarität in der aktuellen
 Formulierung empirisch nicht haltbar und muss als reine strukturelle Analogie
 ohne Wahrheitsanspruch deklariert werden.
 
 ### RT-15 — Energiemetrische Symmetrie von Befruchtung und Tod
 
-**Motivation:** Die konstitutive Phasenverschiebung δφ₀ (Eva-Struktur) ist bislang
+**Motivation:** Die konstitutive Phasenverschiebung δφ₀ (Frau-Struktur) ist bislang
 nicht direkt messbar — sie verbleibt als strukturelle Analogie ohne physikalisch bestimmbare
 Größe. Aus A4 und Energieerhaltung folgt eine testbare Symmetriehypothese: Die beim
 Kopplungseinstieg (Befruchtung) gebundene Energie muss beim Kopplungsaustritt (Tod) exakt
@@ -271,7 +271,7 @@ verfeinert werden.
 
 ## Kategorie 6: Soziale Resonanzfeldanalyse
 
-**Hinweis:** RT-14 und RT-15 decken die Kernfalsifizierungsprobleme der Adam-Eva-Komplementarität und der energiemetrischen Symmetrie ab, die in der früheren Langfassung der gesellschaftlichen Analyse unter §XII/8 und §XII/10 standen. Diese Abschnitte existieren in der aktuellen kompakten Prompt-Version (gesellschaftliche_analyse.md Fassung 2.11) nicht mehr. Die folgenden Aufgaben ergänzen die noch offenen Forschungsdesiderate des gesellschaftlichen RFT-Instruments.
+**Hinweis:** RT-14 und RT-15 decken die Kernfalsifizierungsprobleme der Mann-Frau-Komplementarität und der energiemetrischen Symmetrie ab, die in der früheren Langfassung der gesellschaftlichen Analyse unter §XII/8 und §XII/10 standen. Diese Abschnitte existieren in der aktuellen kompakten Prompt-Version (gesellschaftliche_analyse.md Fassung 2.11) nicht mehr. Die folgenden Aufgaben ergänzen die noch offenen Forschungsdesiderate des gesellschaftlichen RFT-Instruments.
 
 ### RT-16 — Empirische Operationalisierung von ε im sozialen Feld
 **Motivation:** Die soziale Analyse verwendet $\varepsilon$ als zentrale Zustandsgröße, doch ihre Messbarkeit ist offen. Ohne belastbare Proxys bleibt die Anwendung auf reale Fälle heuristisch statt prüfbar.
@@ -350,7 +350,7 @@ verfeinert werden.
 
 ## Category 6: Social Resonance Field Analysis (English)
 
-**Note:** RT-14 and RT-15 cover the core falsification problems of Adam–Eve complementarity and energetic symmetry, which in the former long social analysis document were located under Section XII/8 and Section XII/10. These sections no longer exist in the current compact prompt version (gesellschaftliche_analyse.md revision 2.11). The entries below add the remaining open desiderata of the social RFT instrument.
+**Note:** RT-14 and RT-15 cover the core falsification problems of man–woman complementarity and energetic symmetry, which in the former long social analysis document were located under Section XII/8 and Section XII/10. These sections no longer exist in the current compact prompt version (gesellschaftliche_analyse.md revision 2.11). The entries below add the remaining open desiderata of the social RFT instrument.
 
 ### RT-16e — Empirical operationalisation of ε in the social field
 **Motivation:** The social model uses $\varepsilon$ as a central state variable, but its measurability is still open. Without reliable proxies, application to real cases remains heuristic rather than testable.
