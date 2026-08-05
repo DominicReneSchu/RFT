@@ -126,7 +126,7 @@ def main():
     # ------------------------------------------------------------------
     # 6. Plots
     # ------------------------------------------------------------------
-    print("\n[5] Creating plots ...")
+    print("\n[6] Creating plots ...")
     _plot_spectrum(planck_data, result_toy, result_camb, backend, _HERE)
     _plot_residuals(planck_data, result_toy, result_camb, backend, _HERE)
     _plot_h0_scan(tension_result, _HERE)

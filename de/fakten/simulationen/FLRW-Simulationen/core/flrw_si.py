@@ -244,16 +244,8 @@ def compare_to_astropy(
     t_Gyr = sim["t_Gyr"]
     a_rft = sim["a_rft"]
 
-    # astropy-Referenz
+    # astropy-Referenz: z → a über age(z) = t (robuste Methode)
     cosmo = FlatLambdaCDM(H0=H0, Om0=Omega_m, Ob0=OMEGA_B_H2 / (H0 / 100) ** 2)
-    a_astropy = np.array([
-        float(cosmo.scale_factor(cosmo.lookbacktime(np.inf) - t * u.Gyr + cosmo.lookbacktime(0)))
-        if t > 0 else 0.0
-        for t in t_Gyr
-    ])
-
-    # Sicherere Methode: z → a über age(z) = t
-    # Benutze lookbacktime-Umkehrung
     from scipy.interpolate import interp1d
     z_test = np.logspace(-3, 4, 5000)
     age_test = cosmo.age(z_test).to(u.Gyr).value

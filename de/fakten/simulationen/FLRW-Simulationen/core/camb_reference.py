@@ -122,7 +122,6 @@ def _generate_with_classy(H0, ombh2, omch2, tau, As, ns, lmax):
     """Interne CLASS-Implementierung."""
     from classy import Class  # noqa: PLC0415
 
-    h = H0 / 100.0
     cosmo = Class()
     cosmo.set({
         "H0": H0,
@@ -138,9 +137,11 @@ def _generate_with_classy(H0, ombh2, omch2, tau, As, ns, lmax):
     cosmo.compute()
     cls = cosmo.raw_cl(lmax)
     ell_arr = cls["ell"].astype(float)
-    # CLASS gibt C_ℓ zurück; D_ℓ = ℓ(ℓ+1)/(2π) · C_ℓ · T_cmb² · 1e12
-    T_cmb_uK = 2.7255e6  # μK
-    D_ell = ell_arr * (ell_arr + 1) / (2.0 * np.pi) * cls["tt"] * T_cmb_uK**2
+    # CLASS gibt C_ℓ in K² zurück; D_ℓ = ℓ(ℓ+1)/(2π) · C_ℓ · (T_CMB in μK)²
+    # T_CMB = 2.7255 K = 2.7255e6 μK → Faktor = (2.7255e6)²
+    T_cmb_K = 2.7255          # K
+    T_cmb_factor = (T_cmb_K * 1e6) ** 2  # μK²/K²
+    D_ell = ell_arr * (ell_arr + 1) / (2.0 * np.pi) * cls["tt"] * T_cmb_factor
 
     mask = ell_arr >= 2
     cosmo.struct_cleanup()

@@ -342,9 +342,8 @@ def compare_with_camb(
     n_dof = len(ell_planck)
 
     residuals_raw = D_planck - D_lcdm
-    corr_signal = corr
-    if np.std(corr_signal) > 0 and np.std(residuals_raw) > 0:
-        pearson_r = float(np.corrcoef(residuals_raw, corr_signal)[0, 1])
+    if np.std(corr) > 0 and np.std(residuals_raw) > 0:
+        pearson_r = float(np.corrcoef(residuals_raw, corr)[0, 1])
     else:
         pearson_r = 0.0
 
@@ -357,7 +356,7 @@ def compare_with_camb(
         "residual_lcdm": residual_lcdm,
         "residual_resonanz": residual_resonanz,
         "residuals_raw": residuals_raw,
-        "correction": corr_signal,
+        "correction": corr,
         "chi2_lcdm": chi2_lcdm,
         "chi2_resonanz": chi2_resonanz,
         "chi2_lcdm_reduced": chi2_lcdm / n_dof,
