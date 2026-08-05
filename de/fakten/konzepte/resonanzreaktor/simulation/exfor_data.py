@@ -113,7 +113,7 @@ def fetch_exfor_cross_section(
 
     # Antwort parsen — vereinfachter CSV-Parser für EXFOR-Format
     lines = resp.text.strip().splitlines()
-    data_lines = [l for l in lines if l and not l.startswith('#')]
+    data_lines = [line for line in lines if line and not line.startswith('#')]
 
     if len(data_lines) < 2:
         raise ValueError(
@@ -122,7 +122,7 @@ def fetch_exfor_cross_section(
             "Fallback: load_am241_photo_alpha() verwendet Hauser-Feshbach."
         )
 
-    energies, sigmas, exfor_id = [], [], "EXFOR-unbekannt"
+    energies, sigmas, exfor_id = [], [], None
     for line in data_lines[1:]:  # Erste Zeile = Header
         cols = line.split(',')
         if len(cols) >= 2:
@@ -131,8 +131,10 @@ def fetch_exfor_cross_section(
                 sigmas.append(float(cols[1]))
             except ValueError:
                 continue
-        if len(cols) >= 4 and not exfor_id.startswith("E"):
-            exfor_id = cols[3].strip() if cols[3].strip() else exfor_id
+        if len(cols) >= 4 and exfor_id is None:
+            exfor_id = cols[3].strip() if cols[3].strip() else None
+
+    exfor_id = exfor_id or "EXFOR-unbekannt"
 
     if not energies:
         raise ValueError(
