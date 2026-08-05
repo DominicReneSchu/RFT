@@ -132,6 +132,75 @@ Der CMB-Vergleich (`run_cmb_comparison.py`) prüft die η-Korrektur gegen echte 
 
 ---
 
+## RT-32 — Nichtlineare Sättigungsterme (lambda_eps4)
+
+### Motivation
+
+Das IOP-Manuskript (§7) benennt λε⁴-Terme als offene Erweiterung der Feldgleichung.
+Die Hubble-Reibung bewirkt bereits eine Sättigung bei ȧ₀ = 1.0 (d_η stabilisiert),
+was auf nichtlineare Selbstwechselwirkung hindeutet. RT-32 führt diesen Term formal ein.
+
+### Erweitertes Potential
+
+Das Standard-λφ⁴-Potential wird durch einen sextischen Sättigungsterm ergänzt:
+
+```
+V(ε) = ½ m² ε² + ¼ λ ε⁴ + (1/6) λ_ε⁴ ε⁶
+```
+
+Der Parameter `lambda_eps4` (Notation: λ_ε⁴) ist der neue Sättigungsparameter.
+
+| Grenzfall | Bedeutung |
+|-----------|-----------|
+| `lambda_eps4 = 0` | Standard-λφ⁴-Potential (Rückwärtskompatibilität) |
+| `lambda_eps4 > 0` | Zusätzliche Dämpfung großer Amplituden |
+| `lambda_eps4 < 0` | Verstärkung großer Amplituden (physikalisch begrenzt) |
+
+### Störungstheoretische Entwicklung in λ_ε⁴
+
+Für kleine λ_ε⁴ (Störungstheorie erster Ordnung) wirkt V(ε) wie ein renormiertes
+λ-Potential mit effektivem Kopplungsparameter:
+
+```
+λ_eff(ε₀) ≈ λ + (2/3) λ_ε⁴ ε₀²
+```
+
+wobei ε₀ die mittlere Amplitude ist. Der Effekt auf η(Δφ) ist:
+
+```
+δη ≈ −c · λ_ε⁴ · ε₀² · sin²(Δφ/2)
+```
+
+d.h. die Abweichung von cos²(Δφ/2) wächst linear in λ_ε⁴ und quadratisch in der
+Amplitude. Bei kleinen Amplituden (ε₀ ≈ 0.3) sind die Korrekturen perturbativ klein.
+
+### Verwendung
+
+```python
+from core.coupled_flrw import coupled_flrw_sim, scan_lambda_eps4
+
+# Simulation mit Sättigungsterm
+sol, results = coupled_flrw_sim(
+    delta_phi_0=np.pi/4,
+    lambda_eps4=0.1,   # RT-32: Sättigungsterm
+)
+
+# Scan über lambda_eps4-Werte
+scan = scan_lambda_eps4(
+    lambda_eps4_values=np.linspace(0, 0.4, 9),
+    delta_phi_0=np.pi/4,
+)
+# scan["d_eta"]: Abweichung eta_mean − cos²(Δφ/2) als Funktion von lambda_eps4
+```
+
+### Falsifizierung
+
+Wenn `lambda_eps4 > 0` das cos²(Δφ/2)-Muster **nicht** systematisch beeinflusst
+(|d_eta| < numerisches Rauschen über den gesamten λ_ε⁴-Bereich), ist der
+Sättigungsterm für die RFT-Resonanzphysik irrelevant und kann auf null gesetzt werden.
+
+---
+
 ## Axiom-Bezug
 
 | Axiom | Beschreibung | Simulationsnachweis |
