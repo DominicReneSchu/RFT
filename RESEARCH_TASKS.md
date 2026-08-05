@@ -22,32 +22,33 @@ Status: Aktiv
 
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
-### Theoretisch — intern abschließbar (Priorität 1)
-1. ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
-2. ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
-3. ~~RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)~~ ✅ Abgeschlossen (Aug 2026)
-### Empirisch — Simulationen mit öffentlichen Daten (Priorität 2)
-4. RT-07  — Drei unabhängige η-Estimatoren (stärkt Falsifizierbarkeit)
-5. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018)
-6. RT-05  — CMB mit CAMB/CLASS
-7. RT-06  — EXFOR-Daten Am-241
-8. RT-08  — Doppelpendel vs. Experimentaldaten
+### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
+1. RT-07  — Drei unabhängige η-Estimatoren (stärkt Falsifizierbarkeit) **← Neue Priorität 1**
+2. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018)
+3. RT-05  — CMB mit CAMB/CLASS
+
+### Empirisch (Priorität 2)
+4. RT-06  — EXFOR-Daten Am-241
+5. RT-08  — Doppelpendel vs. Experimentaldaten
 
 ### Code-Korrekturen (Priorität 3)
-9. RT-09  — Fehlerbudget Am-241
-10. RT-10 — ResoTrade Backtest öffentlich
+6. RT-09  — Fehlerbudget Am-241
+7. RT-10 — ResoTrade Backtest öffentlich
 
-### Manuskript (Priorität 4)
-11. RT-37 — IOP-Manuskript aktualisieren
+### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-37  — IOP-Manuskript DE + EN aktualisieren~~ ✅ Abgeschlossen (Aug 2026)
 
 ### Extern (benötigt Kooperationspartner)
-12. RT-03 — λ-Bestimmung (⁸⁷Rb)
-13. RT-12 — ⁸⁷Rb-Interferometrie
-14. RT-13 — Am-241 ELI-NP
+8. RT-03 — λ-Bestimmung (⁸⁷Rb)
+9. RT-12 — ⁸⁷Rb-Interferometrie
+10. RT-13 — Am-241 ELI-NP
 
 ### Langfristig offen
-15. RT-01a — Operationale Definition π/e formal
-16. RT-33/34 — Warpantrieb Stufen 5+6
+11. RT-01a — Operationale Definition π/e formal
+12. RT-33/34 — Warpantrieb Stufen 5+6
 
 ---
 
@@ -111,10 +112,21 @@ RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
 **Ergebnis:** Möglichkeit B — ê ist irreduzibles Postulat. D-Erzeuger liefert δ_D Φ ∝ ∂_t Φ (nicht ∇Φ); δ_D(∇Φ/|∇Φ|) ≠ 0 allgemein; G_sync operiert nicht auf Raumrichtungen. A5 bleibt eigenständiges Axiom; Begründungsgrundlage: RT-01a Vektorialitätsinkonsistenz (Drehmoment, Spin, Lorentz-4-Vektor) ist jetzt formal explizit in A5 aufgenommen.
 **Kerndokument:** `de/fakten/theorie/a5_vektorialitaet_herleitung.md`
 
-### RT-37 — Manuskript-Update: RT-01/01b/02/31 einarbeiten
-**Status: 📋 Offen**
-**Aufgabe:** IOP-Manuskript (DE+EN) um Wirkungsintegral-Herleitung (§3.2), G_sync-Beweis (§3.x neu), RT-31-Ergebnisse (§4.x) aktualisieren; A4 nicht mehr als reines Postulat kennzeichnen; A3-Korollar einfügen.
-**Verweis:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex`
+### RT-37 — Manuskript-Update IOP (DE + EN)
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Beide IOP-Manuskripte (DE + EN) sowie alle Begleitdateien vollständig auf den aktuellen Axiomenstatus aktualisiert. Eingearbeitet:
+- A4 π-Faktor: geometrisch abgeleiteter Sattelpunktsbeitrag des Wirkungsintegrals S[ψ, Δφ] (RT-01, RT-01b); numerische Bestätigung |c₃+c₄| ≈ 5.5×10⁻¹¹
+- A4 ε = cos²(Δφ/2): darstellungstheoretisch eindeutig aus k=1-Darstellung U(1) ⊂ G_sync (RT-02)
+- A7: Algebraisch bewiesen (stationär); G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ)
+- Neuer §3.x Gruppentheoretischer Beweis von G_sync (Gruppenstruktur, ε-Eindeutigkeit, A3-Korollar, Lie-Algebra-Tabelle)
+- A3: Korollar aus A7 (RT-02, RT-35) — kein unabhängiges Axiom
+- A5: Irreduzibles Postulat (RT-36); δ_D(∇Φ/|∇Φ|) ≠ 0 allgemein
+- Axiomenstatus-Übersicht-Tabelle (August 2026) in beiden Manuskripten eingefügt
+- V(ε) = ½m²ε² + ¼λε⁴ + (1/6)λ_ε⁴ε⁶ und δη ≈ −c·λ·⟨ε³⟩ in FLRW-Abschnitt (RT-32)
+- κ_RFT = 1 als Normierungskonvention deklariert; nicht aus A1–A7 ableitbar (RT-11)
+- de/README.md, en/README.md, de/rft_zusammenfassung.tex, en/rft_summary.tex, PEER_REVIEW_READINESS.md aktualisiert
+
+**Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ---
 

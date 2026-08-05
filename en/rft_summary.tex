@@ -106,27 +106,14 @@
 	prefactor. It is the \textbf{natural measure of a half-oscillation}: the phase
 	interval $[0,\pi]$ corresponds to the transition from full phase coherence
 	($\Delta\varphi = 0$, $\varepsilon = 1$) to complete destructive interference
-	($\Delta\varphi = \pi$, $\varepsilon = 0$) -- and is therefore the geometric
-	unit to which the coupling energy is normalised.
+	($\Delta\varphi = \pi$, $\varepsilon = 0$).
 
-	The apparent irrationality of $\pi$ in the decimal system is not a natural
-	phenomenon but an artefact of base-10 encoding: the circumference of a circle
-	with $r = 1$ is a physically exact, measurable quantity -- the infinite decimal
-	expansion $3.14159\ldots$ merely describes the mapping of this finite quantity
-	into a number system whose base plays no distinguished role in the geometry of
-	the circle.
-	When $\pi$ and $e$ are treated as primordial constants of space -- analogous to
-	$c$, $\hbar$, and the elementary charge -- they are rationally usable within
-	their natural unit system.
-
-	For Axiom~A4 this means: the factor~$\pi$ is not a free choice but the
-	\textbf{geometric normalisation condition} for complete phase coupling.
-	The formal derivation via an action integral remains open (RT-01).
-	The founding idea -- $\pi$ and $e$ as primordial constants of space, whose
-	decimal representation is an encoding artefact -- is documented and
-	classified as the conceptual prerequisite of RT-01 (RT-01a).
-	The complete founding idea, including the vectoriality argument for A5, is
-	documented in \texttt{en/facts/theory/pi\_as\_fundamental\_constant.md}.
+	\textbf{Status (RT-01, RT-01b):} The factor~$\pi$ is not a free parameter,
+	but the \textbf{geometrically derived saddle-point contribution} of the stationary
+	action integral $S[\psi, \Delta\varphi]$. The limit
+	$E = \pi\varepsilon\hbar f \to E = hf_{\mathrm{Hz}}$ is formally closed.
+	Numerical confirmation (RT-01b): convergence to $\pi$ to machine precision,
+	$|c_3 + c_4| \approx 5.5 \times 10^{-11}$.
 
 	\subsection{Conceptual Distinctions}
 	
@@ -134,9 +121,10 @@
 		\item \textbf{Coupling operator}
 		$\varepsilon(\Delta\varphi)$:
 		Dimensionless parameter in the basic formula.
-		Simplest model:
-		$\varepsilon = \frac{1}{2}(1 + \cos\Delta\varphi)
-		= \cos^2(\Delta\varphi/2)$.
+		Representation-theoretically uniquely determined as the only function
+		belonging exclusively to the $k{=}1$ representation of
+		$\mathrm{U}(1) \subset G_{\mathrm{sync}}$ (RT-02):
+		$\varepsilon = \cos^2(\Delta\varphi/2)$.
 		Limit values: $\varepsilon = 0$ (anti-resonance),
 		$\varepsilon = 1$ (complete phase coherence).
 		\item \textbf{Coupling efficiency}
@@ -160,29 +148,41 @@
 	$E = \frac{1}{2}\hbar f$, consistent with the
 	ground-state energy of the harmonic oscillator.
 	
-	\subsection{The Seven Axioms}
+	\subsection{The Seven Axioms (Axiom Status Aug.\ 2026)}
 	
 	\begin{enumerate}
 		\item[A1] \textbf{Universal Oscillation:}
 		Every physical entity can be described by an
 		oscillation function.
+		\textit{Status: Postulate.}
 		\item[A2] \textbf{Superposition and Interference:}
 		Oscillations superpose linearly.
+		\textit{Status: Postulate.}
 		\item[A3] \textbf{Resonance Condition:}
 		Coupling occurs when frequencies stand in rational
 		ratios ($f_1/f_2 = n/m$).
+		\textit{Status: Corollary from A7 (RT-02, RT-35);
+		not an independent axiom.}
 		\item[A4] \textbf{Coupling Energy:}
 		$E = \pi \cdot \varepsilon(\Delta\varphi)
 		\cdot \hbar \cdot f$.
+		\textit{Status: $\pi$ geometrically derived (RT-01, RT-01b);
+		$\varepsilon$ representation-theoretically unique (RT-02).}
 		\item[A5] \textbf{Energy Direction:}
 		Energy is a vectorial quantity with magnitude
 		and direction in the resonance field.
+		\textit{Status: Irreducible postulate (RT-36);
+		not derivable from $G_{\mathrm{sync}}$.}
 		\item[A6] \textbf{Information Flow:}
 		Information propagates exclusively along
 		coherent resonance paths.
-		\item[A7] \textbf{Invariance:}
+		\textit{Status: Postulate.}
+		\item[A7] \textbf{Invariance under $G_{\mathrm{sync}}$:}
 		Resonance structures are preserved under variation of
-		the observer's perspective and system parameters.
+		the observer's perspective and system parameters;
+		$G_{\mathrm{sync}} \cong \mathbb{R}^+_\times \times \mathrm{U}(1)
+		\times \mathrm{Aff}^+(\mathbb{R})$.
+		\textit{Status: Algebraically proved (stationary), RT-02.}
 	\end{enumerate}
 	
 	%% ============================================================

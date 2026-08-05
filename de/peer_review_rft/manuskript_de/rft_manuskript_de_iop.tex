@@ -174,6 +174,12 @@
 		\label{eq:resonance_condition}
 	\end{equation}
 	
+	\textit{Axiomenstatus:} Korollar aus der Darstellungsstruktur
+	von $\mathbb{R}^+_\times \subset G_{\mathrm{sync}}$
+	(RT-02, RT-35; s.~Abschnitt~\ref{sec:gsync}).
+	A3 ist kein unabh\"angiges Axiom, sondern eine Konsequenz
+	von A7.
+	
 	\textit{Beispiel:} Molekulare Orbitalresonanz,
 	Tacoma-Narrows-Br\"ucke.
 	Monte-Carlo-Test: 5 Resonanzen bei Teilchenmassen,
@@ -194,6 +200,27 @@
 	$\varepsilon(\Delta\varphi) \in [0,1]$, wobei
 	$\Delta\varphi$ die Phasendifferenz zwischen gekoppelten
 	Systemen bezeichnet.
+	
+	\textit{Axiomenstatus des $\pi$-Faktors:} Der Faktor~$\pi$
+	ist kein postulierter freier Parameter, sondern der
+	geometrisch abgeleitete Sattelpunktsbeitrag des stationären
+	Wirkungsintegrals $S[\psi, \Delta\varphi]$ (RT-01, RT-01b;
+	s.~Abschnitt~\ref{sec:pi_action}).
+	Der Grenz\"ubergang $E = \pi\varepsilon\hbar f \to E = hf_{\mathrm{Hz}}$
+	ist formal geschlossen.%
+	\footnote{Numerische Best\"atigung (RT-01b): Das Pfadintegral
+	konvergiert gegen $\pi$ bis Maschinengenauigkeit;
+	Nicht-Gaussian-Korrekturen
+	$|c_3 + c_4| \approx 5{,}5\times10^{-11}$.}
+	
+	\textit{Axiomenstatus von $\varepsilon = \cos^2(\Delta\varphi/2)$:}
+	Die Funktion $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
+	ist darstellungstheoretisch eindeutig bestimmt als die einzige
+	Funktion, die ausschlie\ss{}lich zur $k{=}1$-Darstellung von
+	$\mathrm{U}(1) \subset G_{\mathrm{sync}}$ geh\"ort
+	(RT-02, s.~Abschnitt~\ref{sec:gsync}).
+	Die fr\"uhere ph\"anomenologische Formulierung ist damit durch
+	diese gruppentheoretische Herleitung ersetzt.
 	
 	\textbf{Dimensionsanalyse:}
 	$[\,] \cdot [\,] \cdot [\mathrm{J{\cdot}s}] \cdot
@@ -220,6 +247,14 @@
 	(exakt, 1\,530 L\"aufe).
 	
 	\subsection{Axiom 5: Energierichtung}
+	
+	\textit{Axiomenstatus:} Irreduzibles strukturelles Postulat (RT-36).
+	Der $D$-Erzeuger von $G_{\mathrm{sync}}$ operiert nicht auf
+	Raumrichtungen: $\delta_D(\nabla\Phi/|\nabla\Phi|) \neq 0$
+	allgemein. A5 ist gruppentheoretisch nicht aus G_sync ableitbar;
+	die formale Begr\"undungsgrundlage liefert die
+	Vektorialit\"atsinkon\-sistenz der Skalarbehandlung von Energie
+	in Drehmoment, Spin und Lorentz-4-Vektor (RT-01a, RT-36).
 	
 	Energie ist eine vektorielle Gr\"o\ss{}e mit Betrag und
 	Richtung im Resonanzfeld:
@@ -257,7 +292,12 @@
 	ausschlie\ss{}lich entlang koh\"arenter Phasenpfade --
 	anti-resonante Pfade werden systematisch unterdr\"uckt.
 	
-	\subsection{Axiom 7: Invarianz}
+	\subsection{Axiom 7: Invarianz unter $G_{\mathrm{sync}}$}
+	
+	\textit{Axiomenstatus:} Algebraisch bewiesen (stationär)
+	f\"ur den Frequenzquotient-Teil und die Phasendifferenzstruktur;
+	Domänen\"ubertragung (CMB, Kernphysik, Finanzm\"arkte) bleibt
+	motiviertes Postulat (RT-02, s.~Abschnitt~\ref{sec:gsync}).
 	
 	Resonanzstrukturen bleiben unter Variation der
 	Beobachterperspektive und Systemparameter erhalten:
@@ -267,11 +307,44 @@
 		= \mathrm{Struktur}(\mathcal{R}')
 		\label{eq:invariance}
 	\end{equation}
+	Die Symmetriegruppe ist
+	$G_{\mathrm{sync}} \cong \mathbb{R}^+_\times \times \mathrm{U}(1)
+	\times \mathrm{Aff}^+(\mathbb{R})$ (algebraisch bewiesen,
+	RT-02; s.~Abschnitt~\ref{sec:gsync}).
 	
 	\textit{Beispiel:} Monte-Carlo-Ergebnisse stabil \"uber
 	$50\,000$ Durchl\"aufe (3 KDE-Bandbreiten, 30 Seeds).
 	FLRW-Simulation: Resonanzstruktur bleibt \"uber alle
 	1\,530 Parameterkombinationen ($H_0$, $\Omega$) erhalten.
+	
+	\subsection{Axiomenstatus-\"Ubersicht (Stand August 2026)}
+	\label{sec:axiom_status}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Aktueller Axiomenstatus der RFT (August 2026).}
+		\label{tab:axiom_status}
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Axiom} & \textbf{Fr\"uherer Status}
+			& \textbf{Aktueller Status} \\
+			\hline
+			A1 & Postuliert & Postuliert \\
+			A2 & Postuliert & Postuliert \\
+			A3 & Unabh\"angiges Axiom
+			& Korollar aus A7 (RT-02, RT-35) \\
+			A4: $\pi$ & Freier Parameter / Postulat
+			& Geometrisch abgeleitet (RT-01, RT-01b) \\
+			A4: $\varepsilon{=}\cos^2(\Delta\varphi/2)$ & Ph\"anomenolog.\ Wahl
+			& Darstellungstheoret.\ eindeutig (RT-02) \\
+			A5 & Postulat
+			& Irreduzibles Postulat (RT-36) \\
+			A6 & Postuliert & Postuliert \\
+			A7 & Postulierte Invarianz
+			& Algebraisch bewiesen, stationär (RT-02) \\
+			\hline
+		\end{tabular}
+	\end{table}
 	
 	
 	%% ============================================================
@@ -394,6 +467,106 @@
 	$\lambda_{\mathrm{eff}} = \lambda_0 + \eta \cdot \kappa
 	\cdot \Phi_\gamma \cdot \sigma$ ist kein freier Parameter,
 	sondern exakt $\kappa = 1$.
+	
+	\subsection{Gruppentheoretischer Beweis von $G_{\mathrm{sync}}$}
+	\label{sec:gsync}
+	
+	Die Symmetriegruppe $G_{\mathrm{sync}}$ von Axiom~A7 wurde
+	in RT-02 vollst\"andig algebraisch bewiesen. Dieser Abschnitt
+	fasst die Kernaussagen zusammen; der vollst\"andige Beweis
+	findet sich in~\cite{rftrepo}
+	(\texttt{de/fakten/theorie/gsync\_gruppenstruktur.md}).
+	
+	\subsubsection{Gruppenstruktur.}
+	
+	Eine synchrone Transformation
+	$T(\lambda, \varphi_0, a, b):(f_i, \varphi_i, t) \mapsto
+	(\lambda f_i,\; \varphi_i + \varphi_0,\; at + b)$
+	mit $\lambda \in \mathbb{R}^+$,
+	$\varphi_0 \in [0, 2\pi)$,
+	$a \in \mathbb{R}^+$, $b \in \mathbb{R}$ erf\"ullt alle
+	vier Gruppenaxiome (Abgeschlossenheit, Assoziativit\"at,
+	neutrales Element, Inverses). Die Parameterkomposition
+	entkoppelt vollst\"andig in drei Faktoren:
+	\begin{equation}
+		G_{\mathrm{sync}} \cong
+		\mathbb{R}^+_\times \times \mathrm{U}(1)
+		\times \mathrm{Aff}^+(\mathbb{R})
+		\label{eq:gsync_structure}
+	\end{equation}
+	$G_{\mathrm{sync}}$ ist nicht abelsch (wegen
+	$\mathrm{Aff}^+(\mathbb{R})$), aber aufl\"osbar.
+	
+	\subsubsection{Darstellungstheoretische Eindeutigkeit
+		von $\varepsilon = \cos^2(\Delta\varphi/2)$.}
+	
+	Die irreduziblen unit\"aren Darstellungen von
+	$\mathrm{U}(1) \subset G_{\mathrm{sync}}$ sind
+	$\chi_k : \varphi_0 \mapsto e^{ik\varphi_0}$,
+	$k \in \mathbb{Z}$.
+	Die physikalischen Forderungen
+	$\varepsilon(0) = 1$, $\varepsilon(\pi) = 0$,
+	$\varepsilon \in [0,1]$, reellwertig und parit\"atsinvariant,
+	schr\"anken auf $k = 0$ (trivial) und $k = 1$ (fundamental) ein.
+	Eine Funktion in dieser minimalen Darstellungsklasse
+	erf\"ullt zwingend:
+	\begin{equation}
+		\varepsilon(\Delta\varphi)
+		= \frac{1 + \cos(\Delta\varphi)}{2}
+		= \cos^2\!\!\left(\frac{\Delta\varphi}{2}\right)
+		\label{eq:eps_unique}
+	\end{equation}
+	$\varepsilon = \cos^2(\Delta\varphi/2)$ ist damit
+	\textit{nicht} ph\"anomenologisch gew\"ahlt, sondern
+	darstellungstheoretisch eindeutig durch die
+	$k{=}1$-Darstellung von $\mathrm{U}(1) \subset
+	G_{\mathrm{sync}}$ erzwungen.
+	
+	\subsubsection{A3 als Korollar von A7.}
+	
+	Die irreduziblen unit\"aren Darstellungen von
+	$\mathbb{R}^+_\times \subset G_{\mathrm{sync}}$ sind
+	die Charaktere $\chi_s : \lambda \mapsto \lambda^{is}$,
+	$s \in \mathbb{R}$.
+	Stabile Resonanzkonfigurationen (periodisch wiederkehrende
+	Feldmuster) existieren nach dem Weyl-Gleichverteilungssatz
+	genau dann, wenn alle Frequenzverh\"altnisse rational sind.
+	Die $G_{\mathrm{sync}}$-Invarianzstruktur erzwingt damit:
+	\begin{equation}
+		\frac{f_i}{f_j} \in \mathbb{Q}
+		\quad\Leftrightarrow\quad
+		\frac{f_i}{f_j} = \frac{m}{n},\;
+		m, n \in \mathbb{Z}^+
+		\label{eq:a3_corollary}
+	\end{equation}
+	Axiom~A3 ist damit ein \textbf{Korollar aus A7}.
+	
+	\subsubsection{Lie-Algebra und Invarianzaussagen.}
+	
+	Die Lie-Algebra $\mathfrak{g}_{\mathrm{sync}} =
+	\mathrm{Lie}(G_{\mathrm{sync}})$ hat die Basis
+	$\{D, L, H, P\}$ (Dilatation, Phasentranslation,
+	Zeitskalierung, Zeitverschiebung) mit einzigem
+	nicht-trivialem Kommutator $[H, P] = P$.
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Gr\"o\ss{}e} & \textbf{U(1)-Darst.}
+			& \textbf{Invarianz} \\
+			\hline
+			$\varepsilon(\Delta\varphi)$ & $k = 1$
+			& unter $D$, $H$, $P$; $k{=}1$ unter $L$ \\
+			$G(f_i/f_j)$ & $k = 0$
+			& vollst\"andig invariant \\
+			$E$ (Kopplungsenergie) & $k = 0$
+			& vollst\"andig invariant \\
+			$\hat{e} = \nabla\Phi/|\nabla\Phi|$ & kein $G_{\mathrm{sync}}$-Objekt
+			& irreduzibles Postulat (A5) \\
+			\hline
+		\end{tabular}
+	\end{center}
 	
 	\subsection{Resonanz-Differentialgleichung (rDGL)}
 	
@@ -574,12 +747,37 @@
 		\quad H = \frac{\dot{a}}{a}
 		\label{eq:kg_flrw}
 	\end{equation}
+	Das erweiterte nichtlineare Potential lautet (RT-32):
+	\begin{equation}
+		V(\varepsilon) = \tfrac{1}{2}m^2\varepsilon^2
+		+ \tfrac{1}{4}\lambda\varepsilon^4
+		+ \tfrac{1}{6}\lambda_{\varepsilon^4}\varepsilon^6
+		\label{eq:v_nonlinear}
+	\end{equation}
+	Der Parameter $\lambda_{\varepsilon^4}$ (implementiert als
+	\texttt{lambda\_eps4}) ist der Sechs\-ter-Ordnungs-S\"at\-ti\-gungs\-term.
+	St\"orungstheoretisch ergibt sich:
+	$\delta\eta \approx -c \cdot \lambda_{\varepsilon^4}
+	\cdot \langle\varepsilon^3\rangle$.
+	F\"ur $\lambda_{\varepsilon^4} = 0$ reduziert sich das Potential
+	auf das Standard-$\lambda\varphi^4$-Potential (Abw\"artskompatibilit\"at).
+	
 	Die Friedmann-Gleichung koppelt die Raumzeitexpansion
 	an die Gesamtenergiedichte beider Felder:
 	\begin{equation}
 		H^2 = \frac{8\pi G}{3}\,\rho_{\mathrm{total}}
 		\label{eq:friedmann}
 	\end{equation}
+	\textit{Hinweis zu $\kappa$:} In den RFT-Simulationen wird
+	die modifizierte Friedmann-Gleichung mit $\kappa_{\mathrm{RFT}} = 1$
+	verwendet. Dieser Wert ist keine Ableitung aus den Axiomen~A1--A7,
+	sondern eine Normierungskonvention f\"ur das dimensionslose
+	Simulationseinheitensystem (RT-11). F\"ur den quantitativen
+	Vergleich mit kosmologischen Beobachtungsgr\"o\ss{}en ist
+	$\kappa$ durch den physikalischen Wert $8\pi G/c^4$ zu ersetzen;
+	die qualitativen Ergebnisse ($\eta$-Korrektur, $d_\eta$-Skalierung)
+	sind $\kappa$-invariant.
+	
 	Die Kopplungseffizienz wird aus dem zeitgemittelten
 	Kreuzterm extrahiert:
 	\begin{equation}
@@ -1492,23 +1690,27 @@
 	%% ============================================================
 	
 	\begin{enumerate}
-		\item \textbf{Bestimmung von $\varepsilon$:}
-		Ab-initio-Herleitung aus Systemgeometrie.
+		\item \textbf{Bestimmung von $\varepsilon$ in weiteren Dom\"anen:}
+		Ab-initio-Herleitung aus der Systemgeometrie in nicht-harmonischen Systemen.
 		
 		\item \textbf{Resonanzreaktor:}
 		Parameterstudie $d$ und $k$ f\"ur $Q > 1$.
 		
 		\item \textbf{CMB:}
 		Voller $\ell$-Bereich mit
-		\textsc{camb}/\textsc{class}.
+		\textsc{camb}/\textsc{class} (RT-05).
 		
-		\item \textbf{Nichtlineare S\"attigung:}
-		$\lambda\varepsilon^4$- und
-		$\alpha R\varepsilon^2$-Terme.
+		\item \textbf{Unabh\"angige $\eta$-Estimatoren (RT-07):}
+		Energietransfer-Rate, Mutual Information und Phase Locking Value
+		als von $\cos^2(\Delta\varphi/2)$ unabh\"angige Alternativen
+		zum Pearson-Estimator — zur St\"arkung der Falsifizierbarkeit.
 		
 		\item \textbf{$\hat{H}_{\mathrm{res}}$:}
 		Resonanz-Hamiltonoperator~(\ref{eq:h_res})
 		f\"ur spezifische Systeme konstruieren.
+		
+		\item \textbf{$\kappa$ in SI-Einheiten (RT-04):}
+		FLRW-Solver mit $\kappa = 8\pi G/c^4$ und Planck-2018-Parametern.
 		
 		\item \textbf{Weitere Dom\"anen:}
 		Akustik, Biologie, Netzwerktheorie.

@@ -104,29 +104,14 @@
 	Vorfaktor. Es ist das \textbf{nat\"urliche Ma\ss{} einer Halboszillation}: Der
 	Phasenbereich $[0,\pi]$ entspricht dem \"Ubergang von vollst\"andiger
 	Phasenkoh\"arenz ($\Delta\varphi = 0$, $\varepsilon = 1$) zu vollst\"andiger
-	Destruktivinterferenz ($\Delta\varphi = \pi$, $\varepsilon = 0$) -- und ist
-	damit die geometrische Einheit, auf die die Kopplungsenergie normiert ist.
+	Destruktivinterferenz ($\Delta\varphi = \pi$, $\varepsilon = 0$).
 
-	Die scheinbare Irrationalit\"at von $\pi$ im Dezimalsystem ist kein
-	Naturph\"anomen, sondern ein Artefakt der Basis-10-Kodierung: Der Kreisumfang
-	bei $r = 1$ ist physikalisch exakt messbar -- die unendliche Dezimaldarstellung
-	$3{,}14159\ldots$ beschreibt lediglich die Abbildung dieser endlichen Gr\"o\ss{}e
-	in ein Zahlensystem, dessen Basis keine ausgezeichnete Rolle in der Geometrie
-	des Kreises spielt.
-	Werden $\pi$ und $e$ als Urkonstanten des Raumes behandelt -- analog zu
-	$c$, $\hbar$ und der Elementarladung -- sind sie in ihrem nat\"urlichen
-	Einheitensystem rational verwendbar.
-
-	F\"ur Axiom~A4 folgt daraus: Der Faktor~$\pi$ ist keine freie Wahl, sondern
-	die \textbf{geometrische Normierungsbedingung} f\"ur vollst\"andige
-	Phasenkopplung.
-	Die formale Herleitung \"uber ein Wirkungsintegral bleibt offen (RT-01).
-	Der Ursprungsgedanke -- $\pi$ und $e$ als Urkonstanten des Raumes, deren
-	Dezimaldarstellung ein Kodierungsartefakt ist -- ist dokumentiert und als
-	konzeptuelle Voraussetzung von RT-01 eingeordnet (RT-01a).
-	Der vollst\"andige Ursprungsgedanke einschlie\ss{}lich des Vektorialit\"ats-\-
-	arguments f\"ur A5 ist dokumentiert in
-	\texttt{de/fakten/theorie/pi\_als\_urkonstante.md}.
+	\textbf{Status (RT-01, RT-01b):} Der Faktor~$\pi$ ist kein freier Parameter,
+	sondern der \textbf{geometrisch abgeleitete Sattelpunktsbeitrag} des station\"aren
+	Wirkungsintegrals $S[\psi, \Delta\varphi]$. Der Grenz\"ubergang
+	$E = \pi\varepsilon\hbar f \to E = hf_{\mathrm{Hz}}$ ist formal geschlossen.
+	Numerische Best\"atigung (RT-01b): Konvergenz gegen $\pi$ bis
+	Maschinengenauigkeit, $|c_3 + c_4| \approx 5{,}5 \times 10^{-11}$.
 
 	\subsection{Begriffsunterscheidung}
 	
@@ -134,9 +119,10 @@
 		\item \textbf{Kopplungsoperator}
 		$\varepsilon(\Delta\varphi)$:
 		Dimensionsloser Parameter in der Grundformel.
-		Einfachstes Modell:
-		$\varepsilon = \frac{1}{2}(1 + \cos\Delta\varphi)
-		= \cos^2(\Delta\varphi/2)$.
+		Darstellungstheoretisch eindeutig bestimmt als einzige Funktion, die
+		ausschlie\ss{}lich zur $k{=}1$-Darstellung von $\mathrm{U}(1) \subset G_{\mathrm{sync}}$
+		geh\"ort (RT-02):
+		$\varepsilon = \cos^2(\Delta\varphi/2)$.
 		Grenzwerte: $\varepsilon = 0$ (Antiresonanz),
 		$\varepsilon = 1$ (vollst\"andige Phasenkoh\"arenz).
 		\item \textbf{Kopplungseffizienz}
@@ -160,29 +146,41 @@
 	$E = \frac{1}{2}\hbar f$, konsistent mit der
 	Grundzustandsenergie des harmonischen Oszillators.
 	
-	\subsection{Die sieben Axiome}
+	\subsection{Die sieben Axiome (Axiomenstatus Aug.\ 2026)}
 	
 	\begin{enumerate}
 		\item[A1] \textbf{Universelle Schwingung:}
 		Jede physikalische Entit\"at ist durch eine
 		Schwingungsfunktion beschreibbar.
+		\textit{Status: Postulat.}
 		\item[A2] \textbf{Superposition und Interferenz:}
 		Schwingungen \"uberlagern sich linear.
+		\textit{Status: Postulat.}
 		\item[A3] \textbf{Resonanzbedingung:}
 		Kopplung tritt auf, wenn Frequenzen in rationalem
 		Verh\"altnis stehen ($f_1/f_2 = n/m$).
+		\textit{Status: Korollar aus A7 (RT-02, RT-35);
+		kein unabh\"angiges Axiom.}
 		\item[A4] \textbf{Kopplungsenergie:}
 		$E = \pi \cdot \varepsilon(\Delta\varphi)
 		\cdot \hbar \cdot f$.
+		\textit{Status: $\pi$ geometrisch abgeleitet (RT-01, RT-01b);
+		$\varepsilon$ darstellungstheoretisch eindeutig (RT-02).}
 		\item[A5] \textbf{Energierichtung:}
 		Energie ist eine vektorielle Gr\"o\ss{}e mit Betrag
 		und Richtung im Resonanzfeld.
+		\textit{Status: Irreduzibles Postulat (RT-36);
+		nicht aus $G_{\mathrm{sync}}$ ableitbar.}
 		\item[A6] \textbf{Informationsfluss:}
 		Information propagiert ausschlie\ss{}lich entlang
 		koh\"arenter Resonanzpfade.
-		\item[A7] \textbf{Invarianz:}
+		\textit{Status: Postulat.}
+		\item[A7] \textbf{Invarianz unter $G_{\mathrm{sync}}$:}
 		Resonanzstrukturen bleiben unter Variation der
-		Beobachterperspektive und Systemparameter erhalten.
+		Beobachterperspektive und Systemparameter erhalten;
+		$G_{\mathrm{sync}} \cong \mathbb{R}^+_\times \times \mathrm{U}(1)
+		\times \mathrm{Aff}^+(\mathbb{R})$.
+		\textit{Status: Algebraisch bewiesen (station\"ar), RT-02.}
 	\end{enumerate}
 	
 	%% ============================================================
