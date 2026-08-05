@@ -1,6 +1,6 @@
 # RFT — Offene Forschungsaufgaben
 
-Generiert: Juli 2026
+Generiert: August 2026
 Status: Aktiv
 
 ---
@@ -115,6 +115,49 @@ Experimentaldaten getestet.
 **Motivation:** κ = 1 ist im Code ein freier Parameter trotz Ableitungsanspruch (Minor-9).
 **Aufgabe:** Formale Ableitung von κ = 8πG aus den RFT-Axiomen oder
 explizite Deklaration als Konvention κ_RFT = 1.
+
+### RT-31 — Resonanz-Hamiltonoperator für spezifische Systeme konstruieren
+**Motivation:** Das IOP-Manuskript (§7 Offene Fragen) benennt explizit: Ĥ_res = Ĥ₀ + ε(Δφ)·V̂_Kopplung
+ist formal eingeführt (Gl. eq:h_res), aber für kein konkretes Quantensystem
+jenseits der 1D-Schrödinger-Simulation ausgearbeitet.
+**Aufgabe:** Ĥ_res für mindestens zwei Systeme konstruieren und numerisch lösen:
+  1. Zwei gekoppelte harmonische Oszillatoren (Phonon-Phonon-Kopplung)
+  2. Spin-Bahn-Kopplung (Zwei-Niveau-System, ε(Δφ) als Mischungsparameter)
+**Falsifizierung:** Wenn die RFT-Eigenwerte systematisch von den Referenzwerten abweichen
+(> 1% ohne Störungsterm), ist ε(Δφ) als universeller Kopplungsoperator zu revidieren.
+**Verweise:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` (§3.5, §7)
+
+### RT-32 — Nichtlineare Sättigungsterme in der Feldgleichung
+**Motivation:** Das IOP-Manuskript (§7) benennt λε⁴- und αRε²-Terme als offene
+Erweiterung. Die FLRW-Simulation zeigt bereits Sättigung bei ȧ₀ = 1.0 (d_η stabilisiert),
+was auf eine nichtlineare Selbstwechselwirkung hinweist.
+**Aufgabe:** λε⁴-Term in die Klein-Gordon-Gleichung einführen und den Effekt auf
+η(Δφ) = cos²(Δφ/2) quantifizieren. Unter welchen Bedingungen weicht η von cos² ab?
+**Ansatz:** Störungstheoretische Entwicklung in λ; numerischer Vergleich mit
+bestehenden FLRW-Simulationen.
+**Code:** Erweiterung von `coupled_flrw.py` um `lambda_eps4`-Parameter.
+**Verweise:** `de/fakten/simulationen/FLRW-Simulationen/README.md`
+
+### RT-33 — Warpantrieb: Energielücke schließen (Stufe 5)
+**Motivation:** Das Warpantrieb-README dokumentiert Stufe 5 als ⚠️ offen:
+Peak-Krümmung 299× Sonnenmitte erfordert ~10⁵× mehr Energiedichte als
+die Fusionskaskade liefert. Die Energielücke ist das zentrale Skalierungsproblem.
+**Aufgabe:** Quantitatives Skalierungsgesetz aufstellen: Wie skaliert die
+benötigte Energiedichte mit der Warpblasengröße? Ab welchem Blasenradius
+ist das Verhältnis (verfügbar/benötigt) realistisch?
+**Ansatz:** Analytische Abschätzung über Einstein-Feldgleichungen;
+Vergleich mit Alcubierre-Literatur (Pfenning & Ford 1997).
+**Verweise:** `de/fakten/konzepte/warpantrieb/warpantrieb.md`
+
+### RT-34 — Warpantrieb: 3D-Warpblase (Stufe 6)
+**Motivation:** Das Warpantrieb-README dokumentiert Stufe 6 als ❌ nicht begonnen:
+Die vollständige 3D-Warpgeometrie (azimutale Symmetrie, ρ(r,θ)) fehlt.
+**Aufgabe:** 3D-Warpblasenprofil simulieren mit sphärisch-azimutaler Geometrie.
+Implementierung eines numerischen GR-Solvers (z.B. via `sympy.diffgeom` oder
+`einsteinpy`) für das Zwei-Feld-Modell.
+**Falsifizierung:** Wenn ρ < 0 in irgendeiner Raumzeitregion auftritt, ist das
+Zwei-Feld-Modell nicht hinreichend für eine physikalische Warpblase.
+**Verweise:** `de/fakten/konzepte/warpantrieb/README.md`
 
 ---
 
