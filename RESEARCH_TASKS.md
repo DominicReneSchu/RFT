@@ -29,10 +29,10 @@ Status: Aktiv
 4. RT-08  — Doppelpendel vs. Experimentaldaten
 
 ### Code-Korrekturen (Priorität 3)
-6. RT-09  — Fehlerbudget Am-241
 7. RT-10 — ResoTrade Backtest öffentlich
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h. Nächste Priorität: RT-08 (Doppelpendel).
 - ~~RT-06  — EXFOR-Daten Am-241~~ ✅ Abgeschlossen (Aug 2026) — K-6 behoben: σ(γ,α) = 1,719 mb bei 14 MeV (Hauser-Feshbach, Γ_α/Γ_tot ≈ 2%, RIPL-3); kein direkter EXFOR-Eintrag; RFT-Reaktorraten-Revision erforderlich
 - ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
 - ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
@@ -196,14 +196,19 @@ Experimentaldaten getestet.
 ## Kategorie 3: Code-Korrekturen
 
 ### RT-09 — Vollständiges Unsicherheitsbudget für Am-241-Experiment
-**Status: 📋 Offen**
-**Motivation:** >50.000σ-Signifikanz ohne Fehlerbudget ist nicht falsifizierbar (M-4).
-**Aufgabe:** Monte-Carlo-Fehlerrechnung für:
-  - Detektoreffizienz (typisch 20–80%)
-  - Strahlausbreitung (Gaussbreite σ_beam)
-  - Kernzustandsbreite Γ_GDR = 4–5 MeV
-  - Experimentell erreichbare Phasenkohärenz
-**Code:** Neue Funktion `uncertainty_budget_am241()` in `resonance.py`.
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** M-4 teilweise behoben (konservatives Szenario noch nicht ausreichend):
+- Korrigierter Querschnitt: σ(γ,α) = 1.719 mb (RT-06, Hauser-Feshbach) — Faktor 212× kleiner als σ_GDR
+- Signifikanz (alt, σ_GDR): >484.997 σ [RT-06: FALSCH] → Signifikanz (neu, σ(γ,α)): 2.288 σ pro Sekunde absolut, SNR_median = 10,3 σ (realistisches Szenario, 100 h, ELI-NP)
+- Messzeit-Anforderungen: t(5σ) = 23,7 h (realistisch), 15,1 h (optimistisch), 516 h (konservativ)
+- Dominanter Unsicherheitsbeitrag: σ(γ,α)-Hauser-Feshbach-Faktor (93,9% der Gesamtvarianz)
+- Signalverhältnis R = 2,0000 (Median, exakt — unabhängig von σ(γ,α))
+- Falsifizierungskriterium (SNR_p16 ≥ 3σ bei 100 h): Optimistisch JA, Realistisch JA, Konservativ NEIN
+**Code:**
+- `de/fakten/konzepte/resonanzreaktor/simulation/experiment_am241.py` — `uncertainty_budget_am241()` + `ExperimentConfig` aktualisiert
+- `en/facts/concepts/resonance_reactor/simulation/experiment_am241.py` — EN-Spiegel
+- `de/fakten/konzepte/resonanzreaktor/analyse/rt09_fehlerbudget.py` — Analyseskript (DE)
+- `en/facts/concepts/resonance_reactor/analyse/rt09_uncertainty_budget.py` — Analyseskript (EN)
 
 ### RT-10 — ResoTrade: Reproduzierbare Backtest-Implementierung
 **Status: 📋 Offen**
