@@ -101,7 +101,10 @@ $$\int_0^\pi \cos^2\!\left(\frac{\varphi}{2}\right)\mathrm{d}\varphi = \frac{\pi
 produces π as the natural normalisation factor when the coupling efficiency
 $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ is integrated over a complete
 half-period. This integral is described in the manuscript as a *motivation*, not a
-*derivation* — the formal derivation via the action integral remains open (RT-01).
+*derivation*.
+
+→ **Formal derivation:** [action_integral_pi_derivation.md](action_integral_pi_derivation.md)
+(RT-01, August 2026 — with explicit falsification proviso)
 
 ### 2.3 Status of This Claim
 
@@ -289,7 +292,7 @@ normalisation unit of the space in which coupling occurs.
 
 | Step | Content | Status | Reference |
 |------|---------|--------|-----------|
-| Action-integral derivation | π as saddle-point contribution of the stationary phase in the path integral | Open | RT-01 |
+| Action-integral derivation | π as saddle-point contribution of the stationary phase in the path integral | **Formalised (Aug 2026)** | [action_integral_pi_derivation.md](action_integral_pi_derivation.md) |
 | Decimal artefact (formal) | π and e as rational base quantities in a natural unit system | Conceptual | RT-01a |
 | Derivation of A5 | Directional unit $\hat{e}$ from phase-space geometry | Open | RT-02 |
 | Frequency definition | Independent determination of $f$ without reference to A4 | Open | RT-01, RT-03 |

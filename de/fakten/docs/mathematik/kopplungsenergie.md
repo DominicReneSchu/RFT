@@ -30,6 +30,8 @@ Dabei ist:
 - ε(Δφ) die Kopplungseffizienz, ε ∈ [0, 1]
   (siehe [Vereinheitlichte Definition](../definitionen/kopplungseffizienz.md))
 - π der geometrische Faktor aus der zyklischen Kopplungsgeometrie
+  (→ formale Herleitung: [../../theorie/wirkungsintegral_pi_herleitung.md](../../theorie/wirkungsintegral_pi_herleitung.md),
+  RT-01 — mit Falsifizierungsvorbehalt)
 - ℏ das reduzierte Plancksche Wirkungsquantum (ℏ = h/2π)
 - f die Frequenz der gekoppelten Mode
 

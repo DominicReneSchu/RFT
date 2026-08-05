@@ -289,6 +289,79 @@
 	(resonance) and $\varepsilon = 0$ at
 	$\Delta\varphi = \pi$ (anti-resonance).
 	
+	\subsection{Action-Integral Derivation of $\pi$}
+	\label{sec:pi_action}
+	
+	The factor $\pi$ in Eq.~(\ref{eq:grundformel}) is derived
+	via an action functional of resonance coupling.
+	
+	\textbf{Action functional.}
+	The coupling energy is formulated as an integral over the
+	resonance coupling path in phase space:
+	\begin{equation}
+		S[\psi, \Delta\varphi]
+		= \int_0^\pi \mathcal{L}(\psi, \dot\psi, \varphi)\,
+		\mathrm{d}\varphi
+		\label{eq:action_functional}
+	\end{equation}
+	with the Lagrangian density
+	\begin{equation}
+		\mathcal{L} = \tfrac{1}{2}\hbar f
+		\!\left[\dot\psi^2
+		- \cos^2\!\!\left(\tfrac{\varphi}{2}\right)\psi^2\right]
+		\label{eq:lagrangian}
+	\end{equation}
+	The integration limits $[0,\pi]$ correspond to the
+	physically complete transition from maximum resonance
+	($\Delta\varphi = 0$, $\varepsilon = 1$) to destructive
+	interference ($\Delta\varphi = \pi$, $\varepsilon = 0$).
+	
+	\textbf{Saddle-point approximation and $\pi$ contribution.}
+	In the saddle-point approximation the path integral is
+	dominated by the classical solution $\psi_0$. The
+	classical action contribution is:
+	\begin{equation}
+		S[\psi_0]
+		= \frac{\hbar f}{2}\int_0^\pi
+		\cos^2\!\!\left(\frac{\varphi}{2}\right)\mathrm{d}\varphi
+		= \frac{\hbar f}{2}\cdot\frac{\pi}{2}
+		= \frac{\pi\hbar f}{4}
+		\label{eq:saddle_action}
+	\end{equation}
+	Gaussian integration over fluctuations
+	$\delta\psi = \psi - \psi_0$ additionally yields a factor
+	$\sqrt{\pi}$ from the circular structure of phase space.
+	Both contributions share the same geometric origin:
+	\begin{equation}
+		\int_0^\pi \cos^2\!\!\left(\frac{\varphi}{2}\right)
+		\mathrm{d}\varphi = \frac{\pi}{2}
+		\label{eq:half_period_integral}
+	\end{equation}
+	
+	\textbf{Main result.}
+	$\pi$ arises as the geometric saddle-point contribution
+	of the phase-space integral over one half-period — not
+	introduced as a free parameter, but obtained as the result
+	of integrating the coupling geometry.
+	
+	\textbf{Corollary: Limit to the Planck relation.}
+	For $\varepsilon = 1/(2\pi)$ (Planck ground state)
+	and $\omega = 2\pi f_{\mathrm{Hz}}$ it follows that:
+	\begin{equation}
+		E = \pi\cdot\frac{1}{2\pi}\cdot\hbar\cdot f
+		= \frac{\hbar f}{2}
+		\;\xrightarrow{\omega = 2\pi f_{\mathrm{Hz}}}\;
+		\frac{\hbar\omega}{2}
+		= \frac{1}{2}h f_{\mathrm{Hz}}
+		\label{eq:planck_limit}
+	\end{equation}
+	The standard Planck relation $E = hf_{\mathrm{Hz}}$
+	corresponds to the state $\varepsilon = 1/\pi$.
+	
+	\textbf{Falsification condition.}
+	If $S[\psi, \Delta\varphi]$ does not yield $\pi$ as a
+	saddle-point contribution, Axiom~A4 must be reformulated.
+	
 	\subsection{Identity between Operator and Observable}
 	\label{sec:eps_eta}
 	

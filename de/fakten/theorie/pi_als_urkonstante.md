@@ -103,8 +103,10 @@ $$\int_0^\pi \cos^2\!\left(\frac{\varphi}{2}\right)\mathrm{d}\varphi = \frac{\pi
 liefert π als natürlichen Normierungsfaktor, wenn die Kopplungseffizienz
 $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ über eine volle Halbperiode
 integriert wird. Dieses Integral ist im Manuskript als *Motivation*, nicht als
-*Herleitung* bezeichnet — die formale Ableitung über das Wirkungsintegral ist
-offen (RT-01).
+*Herleitung* bezeichnet.
+
+→ **Formale Herleitung:** [wirkungsintegral_pi_herleitung.md](wirkungsintegral_pi_herleitung.md)
+(RT-01, August 2026 — mit Falsifizierungsvorbehalt)
 
 ### 2.3 Status dieser Aussage
 
@@ -295,7 +297,7 @@ Normierungseinheit des Raums, in dem Kopplung stattfindet.
 
 | Schritt | Inhalt | Status | Verweis |
 |---------|--------|--------|---------|
-| Wirkungsintegral-Herleitung | π als Sattelpunktsbeitrag der stationären Phase im Pfadintegral | Offen | RT-01 |
+| Wirkungsintegral-Herleitung | π als Sattelpunktsbeitrag der stationären Phase im Pfadintegral | **Formalisiert (Aug 2026)** | [wirkungsintegral_pi_herleitung.md](wirkungsintegral_pi_herleitung.md) |
 | Dezimalartefakt formal | π und e in einem natürlichen Einheitensystem als rationale Basisgrößen | Konzeptuell | RT-01a |
 | A5-Herleitung | Richtungseinheit $\hat{e}$ aus Phasenraumgeometrie | Offen | RT-02 |
 | Frequenzdefinition | Unabhängige Bestimmung von $f$ ohne Rückgriff auf A4 | Offen | RT-01, RT-03 |
