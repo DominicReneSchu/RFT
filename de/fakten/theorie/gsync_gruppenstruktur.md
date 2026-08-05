@@ -403,6 +403,63 @@ Damit folgt aus der Darstellungsstruktur von U(1) ⊂ G_sync:
 
 ---
 
+## §5 — Korollar: A3 als Konsequenz der Darstellungsstruktur von G_sync
+
+### Satz (Korollar A3 aus A7)
+
+> **Korollar (A3 aus A7):** Die Resonanzbedingung fᵢ/fⱼ ∈ ℚ (Axiom A3)
+> folgt aus der Darstellungsstruktur der Untergruppe ℝ⁺_× ⊂ G_sync:
+> Stabile Resonanzkonfigurationen existieren genau dann, wenn der
+> Frequenzquotient unter der fundamentalen Darstellung von ℝ⁺_×
+> invariant ist — das ist äquivalent zu fᵢ/fⱼ = m/n ∈ ℚ.
+
+### Beweis
+
+Die irreduziblen unitären Darstellungen von ℝ⁺_× sind die Charaktere
+χ_s : λ ↦ λ^(is) für s ∈ ℝ (vgl. Stufe 4). Der Frequenzquotient
+fᵢ/fⱼ ist invariant unter der Skalierung fₖ ↦ λfₖ (Stufe 2).
+
+Für eine stabile Resonanzkonfiguration muss das Feldmuster Φ(x, t)
+periodisch wiederkehren. Nach dem Satz von Weyl über die Gleichverteilung
+von Folgen auf dem Torus ist dies genau dann der Fall, wenn alle
+Frequenzen ωₖ in rationalen Verhältnissen stehen:
+
+```
+ωᵢ/ωⱼ ∈ ℚ  ⟺  fᵢ/fⱼ ∈ ℚ
+```
+
+Die G_sync-Invarianz der Kopplungsstruktur (A7) erzwingt, dass physikalisch
+distinkte Resonanzzustände durch die Darstellungen von ℝ⁺_× klassifiziert
+werden. Rationale Frequenzverhältnisse entsprechen genau den Werten, bei
+denen χ_s(λ) = (λ)^(is) für alle Skalierungen λ ∈ ℝ⁺ dieselbe Phase
+reproduziert — das ist die Kommensurabilität.
+
+**Konsequenz:** A3 ist kein unabhängiges Axiom, sondern eine Konsequenz
+von A7 (Invarianz unter G_sync). A3 hat im Axiomensystem den Status eines
+**abgeleiteten Satzes**.
+
+### Verbindung zu Stufe 4
+
+Die Quantisierungsbedingung wurde bereits am Ende von Stufe 4 angedeutet:
+
+> Die Resonanzquantenzahlen m, n ∈ ℤ⁺ (A3) sind genau die Werte, bei denen
+> der Frequenzquotient fᵢ/fⱼ = m/n unter der fundamentalen Darstellung von
+> ℝ⁺_× invariant ist.
+
+§5 formuliert dies als expliziten Satz und schließt damit RT-35.
+
+### Auswirkung auf das Axiomensystem
+
+| Axiom | Früherer Status | Status nach RT-02/RT-35 |
+|-------|----------------|------------------------|
+| A3 (Resonanzbedingung) | Unabhängiges Axiom | **Korollar aus A7** |
+| A7 (G_sync-Invarianz) | Postulierte Invarianz | Algebraisch bewiesen (RT-02) |
+
+Weiterer Vermerk in `axiomatische_grundlegung.md` §A3: A3 ist durch RT-02
+als Konsequenz von A7 identifiziert worden (RT-35 abgeschlossen durch RT-31).
+
+---
+
 ## Verweise
 
 - `simulationen/rt02/rt02_gsync_verification.py` — Symbolische Verifikation (SymPy)

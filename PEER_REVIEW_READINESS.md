@@ -10,10 +10,12 @@ Dieses Dokument dokumentiert den Peer-Review-Bereitschaftsstatus der Resonanzfel
 
 | ID | Titel | Status | Verweis |
 |----|-------|--------|---------|
-| RT-01 | Wirkungsintegral-Herleitung von π | **Formalisiert (Aug 2026)** | `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` |
+| RT-01 | Wirkungsintegral-Herleitung von π | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` |
 | RT-01a | π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument | **Konzeptuell — formal offen** | `de/fakten/theorie/pi_als_urkonstante.md` · `en/facts/theory/pi_as_fundamental_constant.md` |
-| RT-01b | Unabhängige π-Herleitung: Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen | **Abgeschlossen (Aug 2026)** | `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §4.5+§9 · `simulationen/rt01b/` |
-| RT-02 | Gruppentheoretischer Beweis der Skalentransformation (A7) | **Abgeschlossen (Aug 2026)** | `de/fakten/theorie/gsync_gruppenstruktur.md` · `en/facts/theory/gsync_group_structure.md` |
+| RT-01b | Unabhängige π-Herleitung: Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §4.5+§9 · `simulationen/rt01b/` |
+| RT-02 | Gruppentheoretischer Beweis der Skalentransformation (A7) | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/gsync_gruppenstruktur.md` · `en/facts/theory/gsync_group_structure.md` |
+| RT-31 | Resonanz-Hamiltonoperator für spezifische Quantensysteme | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/simulationen/hamilton/README.md` · `en/facts/simulations/hamilton/README.md` |
+| RT-35 | A3 als Korollar von A7 in Axiomatik | **✅ Abgeschlossen (Aug 2026)** (durch RT-31) | `de/fakten/theorie/gsync_gruppenstruktur.md` §5 |
 | RT-03 | Unabhängige Bestimmung von λ (⁸⁷Rb-Vorhersage) | Offen | RESEARCH_TASKS.md |
 
 ### Anmerkung zu RT-01a
@@ -47,11 +49,11 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 |-------|-------|--------|
 | A1 | Universelle Schwingung | Postuliert — testbar |
 | A2 | Resonanzkopplung | Postuliert — testbar |
-| A3 | Resonanzfenster | Postuliert — testbar |
-| A4 | Kopplungsenergie E = π·ε·ℏ·f | Postuliert; π geometrisch motiviert (RT-01, RT-01a); numerisch bestätigt (RT-01b) |
-| A5 | Vektorialität der Energie | Postuliert — konzeptuelle Motivation: RT-01a |
+| A3 | Resonanzfenster | **Korollar aus A7** (RT-02, RT-35, Aug 2026) — nicht mehr unabhängig |
+| A4 | Kopplungsenergie E = π·ε·ℏ·f | π geometrisch abgeleitet (RT-01, RT-01b, Aug 2026); ε darstellungstheoretisch erzwungen (RT-02) |
+| A5 | Vektorialität der Energie | Postuliert — konzeptuelle Motivation: RT-01a; formale Ableitung offen (RT-36) |
 | A6 | Resonanzerhaltung | Postuliert — testbar |
-| A7 | Skalentransformation | Bewiesen — gruppentheoretisch (RT-02, Aug 2026); Domänenübertragung postuliert |
+| A7 | Skalentransformation | **Bewiesen** — gruppentheoretisch (RT-02, Aug 2026); Domänenübertragung postuliert |
 
 ---
 
@@ -60,8 +62,11 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | ID | Beschreibung |
 |----|-------------|
 | RT-01a | Operationale Definition von π und e als Phasenraumkonstanten (formal offen) |
-| RT-01b | Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen — **Abgeschlossen (Aug 2026)** |
-| RT-02 | Gruppentheoretischer Beweis A7 — **Abgeschlossen (Aug 2026)** |
+| RT-01b | Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen — **✅ Abgeschlossen (Aug 2026)** |
+| RT-02 | Gruppentheoretischer Beweis A7 — **✅ Abgeschlossen (Aug 2026)** |
+| RT-31 | Resonanz-Hamiltonoperator (Phonon + Spin-Bahn) — **✅ Abgeschlossen (Aug 2026)** |
+| RT-35 | A3-Korollar in Axiomatik — **✅ Abgeschlossen (Aug 2026)** |
+| RT-37 | IOP-Manuskript aktualisieren (RT-01/01b/02/31 einarbeiten) — offen |
 | RT-03 | Unabhängige λ-Bestimmung für RT-03-Vorhersage |
 
 ---
