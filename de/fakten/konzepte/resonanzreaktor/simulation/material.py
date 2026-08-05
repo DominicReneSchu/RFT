@@ -15,10 +15,13 @@ from __future__ import annotations
 # - Berman & Fultz (1975): Measurements of giant dipole resonance,
 #   Rev. Mod. Phys. 47, 713 — primäre GDR-Datenquelle
 # - Dietrich & Berman (1988): Atlas of photoneutron cross sections
+# - RT-06 (EXFOR/Hauser-Feshbach): σ(γ,α) Am-241 aus exfor_data.py
 #
-# Hinweis: sigma_photo_alpha-Werte sind aus GDR-Peak-Daten abgeschätzt. Für präzise
-# (γ,α)-Querschnitte für Am-241 und U-235, siehe EXFOR-Datenbank
-# (https://www-nds.iaea.org/exfor/) und RESEARCH_TASKS.md RT-06.
+# K-6 Status: BEHOBEN (RT-06) — sigma_photo_alpha für Am-241 aus
+# Hauser-Feshbach-Abschätzung (kein EXFOR-Eintrag für schwere Aktiniden).
+# Am GDR-Zentroid (14.0 MeV): σ(γ,α) = 1.719 mb (Methode: hauser_feshbach,
+# Unsicherheit ±factor 2–5). Bisheriger Schätzwert (aus GDR-Peak) bleibt
+# als sigma_photo_alpha_estimated erhalten (Rückwärtskompatibilität).
 
 import numpy as np
 
@@ -214,6 +217,19 @@ americium_241 = Isotope(
     fissile=True,
     fission_energy_MeV=200.0,
 )
+
+# RT-06: σ(γ,α) Am-241 aus EXFOR/Hauser-Feshbach
+# Kein direkter EXFOR-Eintrag verfügbar — Hauser-Feshbach verwendet.
+# Am GDR-Zentroid (14.0 MeV): σ(γ,α) = 1.719 mb (exfor_data.py)
+# Bisheriger GDR-Peak-Schätzwert (Rückwärtskompatibilität):
+americium_241.sigma_photo_alpha_estimated = (
+    americium_241.sigma_photo_alpha_at_centroid_barn()
+)  # barn — aus GDR-Peak-Abschätzung (vor RT-06)
+
+# Echter Wert aus RT-06 (Hauser-Feshbach, RIPL-3):
+americium_241.sigma_photo_alpha = 1.719e-3   # barn (1.719 mb → barn)
+americium_241.sigma_photo_alpha_method = "hauser_feshbach"
+americium_241.sigma_photo_alpha_unc_pct = 300.0  # ±factor 2–5
 
 plutonium_240 = Isotope(
     name="Plutonium-240",
