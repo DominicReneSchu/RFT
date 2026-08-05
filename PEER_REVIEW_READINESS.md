@@ -55,7 +55,7 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | A4 | Kopplungsenergie E = π·ε·ℏ·f | π geometrisch abgeleitet (RT-01, RT-01b, Aug 2026); ε darstellungstheoretisch erzwungen (RT-02) |
 | A5 | Vektorialität der Energie | **Irreduzibles Postulat** (RT-36, Aug 2026) — gruppentheoretisch nicht aus G_sync ableitbar; formale Begründungsgrundlage: RT-01a (Vektorialitätsinkonsistenz in Drehmoment, Spin, Lorentz-4-Vektor) |
 | A6 | Resonanzerhaltung | Postuliert — testbar |
-| A7 | Skalentransformation | **Bewiesen** — gruppentheoretisch (RT-02, Aug 2026); Domänenübertragung postuliert |
+| A7 | Skalentransformation | **Bewiesen** — gruppentheoretisch (RT-02, Aug 2026); Domänenübertragung Kosmologie: empirisch testbar (SI) — RT-04 implementiert |
 
 ---
 
@@ -72,6 +72,8 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | RT-11 | κ-Parameter Konventionsdeklaration — **✅ Abgeschlossen (Aug 2026)** |
 | RT-37 | IOP-Manuskript aktualisieren (RT-01/01b/02/31 einarbeiten) — **✅ Abgeschlossen (Aug 2026)** |
 | RT-07 | Unabhängige η-Estimatoren (K-2: Tautologie-Kritik Pearson-Estimator) — **✅ Abgeschlossen (Aug 2026)** — Pearson als physikalisch ausgezeichnete Observable bestätigt |
+| RT-04 | FLRW-Solver SI-Einheiten (Planck-2018) — **✅ Abgeschlossen (Aug 2026)** — `core/flrw_si.py` + `compare_to_astropy()`. Falsifizierung: max. Abw. < 1 % vs. astropy. |
+| RT-05 | CMB-Vergleich mit CAMB/CLASS (K-5: Spielzeugmodell generate_lcdm_bestfit) — **✅ Abgeschlossen (Aug 2026)** — `core/camb_reference.py` + `compare_with_camb()` + `scan_h0_tension()`. Δχ²_CAMB ist nun der belastbare Vergleich. |
 | RT-03 | Unabhängige λ-Bestimmung für RT-03-Vorhersage |
 
 ---

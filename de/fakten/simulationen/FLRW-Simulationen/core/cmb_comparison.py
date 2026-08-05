@@ -102,6 +102,14 @@ def generate_lcdm_bestfit(ell):
 
     Verwendet Multi-Peak-Modell mit 7 akustischen Peaks,
     Silk-Daempfung und Sachs-Wolfe-Plateau.
+
+    .. warning::
+        **Spielzeugmodell** — kein physikalischer Boltzmann-Solver.
+        Für belastbare RT-05-Ergebnisse stattdessen
+        ``compare_with_camb()`` verwenden, das CAMB oder CLASS als
+        Referenz nutzt.  Der mit diesem Modell berechnete
+        Δχ² = +16 ist ein Δχ² gegenüber dieser Näherung, nicht
+        gegenüber echtem ΛCDM.
     """
     ell = np.asarray(ell, dtype=float)
 
@@ -260,4 +268,209 @@ def scan_h0_chi2(planck_data, h0_values=None, d_eta_func=None):
         "chi2_lcdm": np.array(chi2_lcdm),
         "chi2_resonanz": np.array(chi2_resonanz),
         "delta_chi2": np.array(delta_chi2),
+    }
+
+# ---------------------------------------------------------------------------
+# RT-05 — CAMB/CLASS-Vergleich
+# ---------------------------------------------------------------------------
+
+def compare_with_camb(
+    planck_data,
+    H0=67.36,
+    ombh2=0.02237,
+    omch2=0.1200,
+    tau=0.0544,
+    As=2.1e-9,
+    ns=0.9649,
+    d_eta=0.1334,
+):
+    """Vergleicht ΛCDM (CAMB/CLASS) und ΛCDM+RFT mit Planck-Daten.
+
+    Nutzt ``camb_reference.generate_camb_spectrum()`` statt
+    ``generate_lcdm_bestfit()`` als physikalisch korrekte ΛCDM-Referenz.
+    Kompatibel mit ``plot_cmb_comparison()``-Interface.
+
+    Parameters
+    ----------
+    planck_data : dict
+        Ausgabe von ``load_planck_tt()``.
+    H0, ombh2, omch2, tau, As, ns : float
+        Kosmologische Parameter (Planck-2018-Defaults).
+    d_eta : float
+        RFT-Korrekturparameter.
+
+    Returns
+    -------
+    dict kompatibel mit ``compare_with_planck()``, zusätzlich:
+        backend : str, 'camb' oder 'classy'
+        chi2_lcdm_camb    : float
+        chi2_resonanz_camb: float
+        delta_chi2_camb   : float
+    """
+    from .camb_reference import generate_camb_spectrum
+
+    ell_planck = planck_data["ell"]
+    D_planck = planck_data["D_ell"]
+    err = planck_data["err"]
+    err = np.where(err > 0, err, 1.0)
+
+    # CAMB/CLASS-Spektrum berechnen
+    camb_result = generate_camb_spectrum(
+        H0=H0, ombh2=ombh2, omch2=omch2,
+        tau=tau, As=As, ns=ns,
+        lmax=int(max(ell_planck)) + 50,
+    )
+
+    # Interpolation auf Planck-ℓ-Gitter
+    ell_camb = camb_result["ell"]
+    D_camb = camb_result["D_ell"]
+    D_lcdm = np.interp(ell_planck, ell_camb, D_camb)
+
+    # η-Korrektur
+    corr = eta_correction(ell_planck, d_eta, H0)
+    D_resonanz = D_lcdm + corr
+
+    # Residuen
+    residual_lcdm = (D_planck - D_lcdm) / err
+    residual_resonanz = (D_planck - D_resonanz) / err
+
+    # χ²
+    chi2_lcdm = float(np.sum(residual_lcdm ** 2))
+    chi2_resonanz = float(np.sum(residual_resonanz ** 2))
+    n_dof = len(ell_planck)
+
+    # Pearson-Korrelation
+    residuals_raw = D_planck - D_lcdm
+    if np.std(corr) > 0 and np.std(residuals_raw) > 0:
+        pearson_r = float(np.corrcoef(residuals_raw, corr)[0, 1])
+    else:
+        pearson_r = 0.0
+
+    return {
+        "ell": ell_planck,
+        "D_planck": D_planck,
+        "D_lcdm": D_lcdm,
+        "D_resonanz": D_resonanz,
+        "err": err,
+        "residual_lcdm": residual_lcdm,
+        "residual_resonanz": residual_resonanz,
+        "residuals_raw": residuals_raw,
+        "correction": corr,
+        "chi2_lcdm": chi2_lcdm,
+        "chi2_resonanz": chi2_resonanz,
+        "chi2_lcdm_reduced": chi2_lcdm / n_dof,
+        "chi2_resonanz_reduced": chi2_resonanz / n_dof,
+        "delta_chi2": chi2_lcdm - chi2_resonanz,
+        "n_dof": n_dof,
+        "h0": H0,
+        "d_eta": d_eta,
+        "pearson_r": pearson_r,
+        # CAMB-spezifische Felder
+        "backend": camb_result["backend"],
+        "chi2_lcdm_camb": chi2_lcdm,
+        "chi2_resonanz_camb": chi2_resonanz,
+        "delta_chi2_camb": chi2_lcdm - chi2_resonanz,
+    }
+
+
+def scan_h0_tension(
+    planck_data,
+    h0_range=(60.0, 80.0),
+    n_steps=40,
+    ombh2=0.02237,
+    omch2=0.1200,
+    tau=0.0544,
+    As=2.1e-9,
+    ns=0.9649,
+    d_eta_func=None,
+    use_camb=True,
+):
+    """H0-Spannungstest mit CAMB/CLASS als Referenz (RT-04/05-Synergie).
+
+    Scannt χ²(H₀) für ΛCDM (CAMB) und RFT über einen H₀-Bereich und
+    markiert H₀_Planck = 67.36 und H₀_SH0ES = 73.04.
+
+    Testet: Liegt das χ²-Minimum der RFT-Kurve zwischen Planck und SH0ES?
+
+    Parameters
+    ----------
+    planck_data : dict
+        Ausgabe von ``load_planck_tt()``.
+    h0_range : tuple
+        (h0_min, h0_max) in km/s/Mpc.
+    n_steps : int
+        Anzahl H₀-Schritte.
+    ombh2, omch2, tau, As, ns : float
+        Kosmologische Parameter (fest über den Scan).
+    d_eta_func : callable or None
+        Funktion d_eta(H0). Falls None: lineare Skalierung aus Stufe 6a.
+    use_camb : bool
+        Falls True, CAMB/CLASS verwenden; sonst Spielzeugmodell-Fallback.
+
+    Returns
+    -------
+    dict mit:
+        h0_values       : array
+        chi2_lcdm       : array
+        chi2_resonanz   : array
+        delta_chi2      : array
+        h0_min_lcdm     : float, H₀ beim χ²-Minimum (ΛCDM)
+        h0_min_rft      : float, H₀ beim χ²-Minimum (RFT)
+        tension_test    : bool, ob h0_min_rft ∈ [67, 73]
+        backend         : str
+    """
+    if d_eta_func is None:
+        d_eta_func = lambda h0: 0.00204 * h0 - 0.00404  # aus H0-Scan Stufe 6a
+
+    h0_values = np.linspace(h0_range[0], h0_range[1], n_steps)
+    chi2_lcdm_arr = []
+    chi2_rft_arr = []
+    delta_chi2_arr = []
+    backend = "toy_model"
+
+    for h0 in h0_values:
+        d_eta = d_eta_func(h0)
+        if use_camb:
+            try:
+                result = compare_with_camb(
+                    planck_data, H0=h0,
+                    ombh2=ombh2, omch2=omch2,
+                    tau=tau, As=As, ns=ns,
+                    d_eta=d_eta,
+                )
+                backend = result.get("backend", "camb")
+            except ImportError:
+                # Fallback auf Spielzeugmodell
+                result = compare_with_planck(planck_data, h0=h0, d_eta=d_eta)
+                backend = "toy_model"
+        else:
+            result = compare_with_planck(planck_data, h0=h0, d_eta=d_eta)
+            backend = "toy_model"
+
+        chi2_lcdm_arr.append(result["chi2_lcdm"])
+        chi2_rft_arr.append(result["chi2_resonanz"])
+        delta_chi2_arr.append(result["delta_chi2"])
+
+    chi2_lcdm_arr = np.array(chi2_lcdm_arr)
+    chi2_rft_arr = np.array(chi2_rft_arr)
+    delta_chi2_arr = np.array(delta_chi2_arr)
+
+    h0_min_lcdm = float(h0_values[np.argmin(chi2_lcdm_arr)])
+    h0_min_rft = float(h0_values[np.argmin(chi2_rft_arr)])
+
+    # Spannungstest: liegt Minimum zwischen Planck (67.36) und SH0ES (73.04)?
+    tension_test = (67.0 <= h0_min_rft <= 73.0)
+
+    return {
+        "h0_values": h0_values,
+        "chi2_lcdm": chi2_lcdm_arr,
+        "chi2_resonanz": chi2_rft_arr,
+        "delta_chi2": delta_chi2_arr,
+        "h0_min_lcdm": h0_min_lcdm,
+        "h0_min_rft": h0_min_rft,
+        "tension_test": tension_test,
+        "backend": backend,
+        # Referenzpunkte
+        "h0_planck": 67.36,
+        "h0_shoes": 73.04,
     }

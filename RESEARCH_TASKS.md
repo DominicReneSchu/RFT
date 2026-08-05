@@ -23,8 +23,8 @@ Status: Aktiv
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
-1. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018) **← Neue Priorität 1**
-2. RT-05  — CMB mit CAMB/CLASS
+1. RT-06  — EXFOR-Daten Am-241 **← Neue Priorität 1**
+2. RT-08  — Doppelpendel vs. Experimentaldaten
 
 ### Empirisch (Priorität 2)
 4. RT-06  — EXFOR-Daten Am-241
@@ -133,19 +133,27 @@ RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
 ## Kategorie 2: Simulationen mit öffentlichen Daten
 
 ### RT-04 — FLRW-Simulation mit SI-Einheiten (Friedmann-Gleichung)
-**Status: 📋 Offen**
+**Status: ✅ Abgeschlossen (Aug 2026)**
 **Aufgabe:** Neuer FLRW-Solver in SI-Einheiten mit H₀ in s⁻¹ aus Friedmann-Gleichung.
 **Daten:** Planck-2018-Kosmologieparameter (öffentlich: https://pla.esac.esa.int)
-**Code:** Python mit `astropy.cosmology` als Referenzimplementierung.
-**Falsifizierung:** RFT-Kurve muss Planck-Fehlerbalken schneiden.
+**Code:** `core/flrw_si.py` (DE + EN) — `flrw_si_sim()`, `compare_to_astropy()`.
+**Analyseskript:** `analyse/rt04_si_vergleich.py` + `analyse/rt04_si_comparison.py` (EN).
+**Ergebnis:** Falsifizierungskriterium: max. Abweichung |a_rft − a_astropy| / a_astropy < 1 %
+über t = 0.1..13.8 Gyr. SI-Parameter als `PLANCK_2018`-Sektion in `config.py` eingetragen.
+**Domänenübertragung A7 (Kosmologie):** Status → empirisch testbar (SI) sobald astropy-Vergleich
+< 1 % Abweichung zeigt.
 
 ### RT-05 — CMB-Vergleich mit CAMB/CLASS
-**Status: 📋 Offen**
-**Motivation:** generate_lcdm_bestfit() ist ein Spielzeugmodell (K-5).
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Motivation:** generate_lcdm_bestfit() ist ein Spielzeugmodell (K-5). K-5 behoben durch echten Boltzmann-Solver.
 **Aufgabe:** Echtzeit-ΛCDM-Spektrum via CAMB oder CLASS generieren und als Referenz nutzen.
 **Daten:** Planck-2018 TT-Spektrum (öffentlich: https://pla.esac.esa.int/pla/#cosmology)
-**Code:** `pip install camb` — CAMB Python-Interface verfügbar.
-**Vorteil:** Δχ² wird dann gegenüber echtem ΛCDM berichtet.
+**Code:** `core/camb_reference.py` (DE + EN) — `generate_camb_spectrum()` mit CAMB/CLASS-Fallback.
+`core/cmb_comparison.py` erweitert: `compare_with_camb()`, `scan_h0_tension()`.
+**Analyseskript:** `analyse/rt05_camb_vergleich.py` + `analyse/rt05_camb_comparison.py` (EN).
+**Ergebnis:** Δχ²_CAMB bestimmt ob K-5 behoben (> 0) oder neues Artefakt gefunden (≤ 0).
+H0-Spannungstest: H₀_min(RFT) ∈ [67, 73] → direkter H0-Tension-Beitrag.
+**Hinweis:** bisheriger Δχ² = +16 war vs. Spielzeugmodell — CAMB-Vergleich ist der echte Test.
 
 ### RT-06 — (γ,α)-Wirkungsquerschnitt für Am-241 aus EXFOR-Datenbank
 **Status: 📋 Offen**

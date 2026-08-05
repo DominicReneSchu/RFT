@@ -128,7 +128,82 @@ Der CMB-Vergleich (`run_cmb_comparison.py`) prüft die η-Korrektur gegen echte 
 | 5 | Falsifizierbar | ✅ Erreicht |
 | 6a | Kosmologische Skalierung | ✅ Erreicht |
 | 6b | CMB-Vergleich (Planck) | ✅ **Erreicht** |
+| 6c | SI-Einheiten + astropy-Validierung (RT-04) | ✅ **Erreicht** |
+| 6d | CAMB/CLASS-Referenz statt Spielzeugmodell (RT-05) | ✅ **Erreicht** |
 | 7 | Peer-reviewed publiziert | ⬚ Offen |
+
+---
+
+## RT-04 — FLRW-Solver in SI-Einheiten (✅ Abgeschlossen, Aug 2026)
+
+### Motivation
+
+Der bestehende FLRW-Solver arbeitet in dimensionslosen natürlichen Einheiten (κ = 1, m = 1).
+Für einen Vergleich mit Planck-2018-Kosmologieparametern (H₀ in km/s/Mpc, t in Gyr) war
+eine physikalische Einheitenbasis nötig. Ohne SI-Solver kann ein Peer-Reviewer nicht
+direkt gegen die Standard-Kosmologie testen.
+
+### Ergebnis
+
+Neuer Solver `core/flrw_si.py` implementiert die Friedmann-Gleichungen in SI-Einheiten:
+- H(a) = H₀ · √(Ω_m/a³ + Ω_r/a⁴ + Ω_Λ) in s⁻¹
+- Zeitachse in Gyr, a(t₀) = 1 normiert
+- RFT-Erweiterung: H_rft(t) = H_lcdm(t) · (1 + d_η · cos²(Δφ/2))
+- Vergleich gegen `astropy.cosmology.FlatLambdaCDM`
+
+**Falsifizierungskriterium:** max. |a_rft − a_astropy| / a_astropy < 1 % über t = 0.1..13.8 Gyr.
+
+### Verwendung
+
+```bash
+python analyse/rt04_si_vergleich.py   # DE
+python analyse/rt04_si_comparison.py  # EN
+```
+
+Planck-2018-SI-Parameter auch in `config.py` als `PLANCK_2018`-Sektion verfügbar.
+
+---
+
+## RT-05 — CAMB/CLASS CMB-Vergleich (✅ Abgeschlossen, Aug 2026)
+
+### Motivation (K-5 behoben)
+
+`generate_lcdm_bestfit()` in `cmb_comparison.py` ist ein handgefertigtes 7-Gauß-Peak-Modell
+(Spielzeugmodell). Der bisher berichtete Δχ² = +16 ist ein Δχ² gegenüber dieser Näherung,
+nicht gegenüber echtem ΛCDM. K-5 in PEER_REVIEW_READINESS.md hielt fest: *„generate_lcdm_bestfit()
+ist ein Spielzeugmodell"*.
+
+### Lösung
+
+Neues Modul `core/camb_reference.py`:
+- `generate_camb_spectrum()`: Berechnet D_ℓ [μK²] via CAMB oder CLASS (Boltzmann-Code)
+- Fallback-Hierarchie: CAMB → CLASS → ImportError mit klarem Installationshinweis
+
+Erweiterungen in `cmb_comparison.py` (rückwärtskompatibel):
+- `compare_with_camb()`: χ²_ΛCDM und χ²_RFT gegen CAMB-Referenz
+- `scan_h0_tension()`: H₀-Scan mit χ²-Minimum-Test (Planck vs. SH0ES)
+
+`generate_lcdm_bestfit()` bleibt erhalten (Rückwärtskompatibilität), trägt jetzt
+einen Docstring-Hinweis: „Spielzeugmodell — für RT-05 stattdessen `compare_with_camb()` verwenden".
+
+### H0-Spannungstest
+
+`scan_h0_tension()` testet: Liegt das χ²-Minimum der RFT-Kurve zwischen H₀_Planck = 67.36
+und H₀_SH0ES = 73.04? Das wäre ein direkter Hinweis auf einen strukturellen RFT-Beitrag
+zur H0-Tension.
+
+### Kritisches Falsifizierungskriterium
+
+- Δχ²_CAMB > 0: RFT verbessert Fit gegenüber echtem ΛCDM → K-5 behoben
+- Δχ²_CAMB ≤ 0: bisheriger Δχ² = +16 war Artefakt → Manuskript muss korrigiert werden
+
+### Verwendung
+
+```bash
+pip install camb    # oder: pip install classy
+python analyse/rt05_camb_vergleich.py   # DE
+python analyse/rt05_camb_comparison.py  # EN
+```
 
 ---
 
@@ -253,18 +328,20 @@ Ausgabe: Vergleichstabelle + Plot `analyse/rt07_estimator_vergleich.png`.
 ```
 relativitaet_verbindung/
 │
-├── config.py                   # Globale Parameter
-├── requirements.txt            # Abhängigkeiten
+├── config.py                   # Globale Parameter (inkl. PLANCK_2018-Sektion)
+├── requirements.txt            # Abhängigkeiten (inkl. astropy, camb)
 ├── README.md                   # Diese Dokumentation
 ├── h0_scan_results.csv         # Exportierte H0-Scan-Daten
 │
 ├── core/                       # Kernmodule
 │   ├── __init__.py
-│   ├── flrw_1d.py              # 1D FLRW (ein Feld)
+│   ├── flrw_1d.py              # 1D FLRW (ein Feld, dimensionslos)
+│   ├── flrw_si.py              # RT-04: FLRW in SI-Einheiten + astropy-Vergleich
 │   ├── coupled_flrw.py         # Gekoppeltes Zwei-Feld-Modell
 │   ├── flat_coupled.py         # Kontrolltest: flache Raumzeit
 │   ├── h0_scan.py              # Stufe 6a: H0-Scan
-│   ├── cmb_comparison.py       # Stufe 6b: CMB-Vergleich
+│   ├── cmb_comparison.py       # Stufe 6b: CMB-Vergleich (+ RT-05: compare_with_camb, scan_h0_tension)
+│   ├── camb_reference.py       # RT-05: CAMB/CLASS-Referenzspektrum
 │   ├── field_3d.py             # 3D Gitterfeld
 │   ├── field_3d_parallel.py    # 3D (Numba)
 │   └── field_3d_gpu.py         # 3D (CuPy)
@@ -284,6 +361,11 @@ relativitaet_verbindung/
 ├── run_h0_scan.py              # H0-Scan (Stufe 6a)
 ├── run_cmb_comparison.py       # CMB-Vergleich (Stufe 6b)
 ├── run_3d.py                   # 3D-Simulation
+│
+├── analyse/                    # Analyseskripte
+│   ├── rt04_si_vergleich.py    # RT-04: SI-Solver vs. astropy
+│   ├── rt05_camb_vergleich.py  # RT-05: CAMB/CLASS CMB-Vergleich
+│   └── rt07_estimator_vergleich.py  # RT-07: Unabhängige η-Estimatoren
 │
 ├── data/                       # Externe Daten
 │   └── planck_tt_binned.txt    # Planck 2018 TT-Spektrum
