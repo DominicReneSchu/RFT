@@ -302,5 +302,6 @@ normalisation unit of the space in which coupling occurs.
 
 *Related:* [Coupling Energy](../docs/mathematics/coupling_energy.md) |
 [Axiomatic Foundation](../docs/definitions/axiomatic_foundation.md) |
+[Coupling Efficiency](../docs/definitions/coupling_efficiency.md) |
 [RESEARCH_TASKS.md](../../../RESEARCH_TASKS.md) |
 [PEER_REVIEW_READINESS.md](../../../PEER_REVIEW_READINESS.md)

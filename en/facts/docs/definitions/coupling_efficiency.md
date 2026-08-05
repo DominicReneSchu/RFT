@@ -230,6 +230,9 @@ E = π · ε · ℏ · f follows (complete geometric motivation: see
 > derived from the integral. The integration provides a geometric
 > motivation for the factor π. A complete derivation via an action
 > integral S[ψ, Δφ] is an open research question (see RESEARCH_TASKS.md).
+> The decimal-artefact argument and the operational definition of π as a
+> phase-space constant are documented in RT-01a
+> (→ [theory/pi_as_fundamental_constant.md](../../theory/pi_as_fundamental_constant.md)).
 
 ---
 

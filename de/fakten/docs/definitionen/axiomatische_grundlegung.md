@@ -25,7 +25,7 @@ so gewählt, dass sie:
 | Symbol | Bedeutung |
 |:------:|:----------|
 | h | Plancksches Wirkungsquantum |
-| f | Frequenz — in der RFT-Grundformel definiert als RFT-Resonanzfrequenz f = E/(π·ℏ) (rad/s); entspricht f = ω/π mit ω = E/ℏ (Standard-Kreisfrequenz). Nicht identisch mit Standard-Hz-Frequenz f_Hz = E/h. Offene Frage: → RESEARCH_TASKS.md RT-01 (K-3) |
+| f | Frequenz — in der RFT-Grundformel definiert als RFT-Resonanzfrequenz f = E/(π·ℏ) (rad/s); entspricht f = ω/π mit ω = E/ℏ (Standard-Kreisfrequenz). Nicht identisch mit Standard-Hz-Frequenz f_Hz = E/h. Offene Frage: → RESEARCH_TASKS.md RT-01 (K-3); konzeptuelle Grundlage: RT-01a (→ [theorie/pi_als_urkonstante.md](../../theorie/pi_als_urkonstante.md)) |
 | ω | Standard-Kreisfrequenz (rad/s); in der RFT-Grundformel gilt f = ω/π (nicht f := ω). Für RFT-Rechnungen wird f verwendet |
 | k | Wellenzahl |
 | A | Amplitude |
@@ -167,7 +167,8 @@ Dabei ist (f = RFT-Resonanzfrequenz = E/(π·ℏ), rad/s; vgl. K-3):
 - π der geometrische Faktor aus der Integration über einen Halbzyklus
   des Resonanzpfads (geometrische Motivation: siehe §4.1;
   formale Herleitung via Wirkungsintegral: → [theorie/wirkungsintegral_pi_herleitung.md](../../theorie/wirkungsintegral_pi_herleitung.md),
-  RT-01 August 2026 — mit Falsifizierungsvorbehalt)
+  RT-01 August 2026 — mit Falsifizierungsvorbehalt;
+  konzeptuelle Grundlage: RT-01a → [theorie/pi_als_urkonstante.md](../../theorie/pi_als_urkonstante.md))
 - ℏ das reduzierte Plancksche Wirkungsquantum
 - f die RFT-Resonanzfrequenz der gekoppelten Mode, f = E/(π·ℏ) = ω/π (K-3)
 

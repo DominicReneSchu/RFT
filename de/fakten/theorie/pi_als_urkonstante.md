@@ -307,5 +307,6 @@ Normierungseinheit des Raums, in dem Kopplung stattfindet.
 
 *Verwandt:* [Kopplungsenergie](../docs/mathematik/kopplungsenergie.md) |
 [Axiomatische Grundlegung](../docs/definitionen/axiomatische_grundlegung.md) |
+[Kopplungseffizienz](../docs/definitionen/kopplungseffizienz.md) |
 [RESEARCH_TASKS.md](../../../RESEARCH_TASKS.md) |
 [PEER_REVIEW_READINESS.md](../../../PEER_REVIEW_READINESS.md)
