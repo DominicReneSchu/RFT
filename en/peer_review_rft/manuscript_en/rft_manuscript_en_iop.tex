@@ -165,6 +165,11 @@
 		\label{eq:resonance_condition}
 	\end{equation}
 	
+	\textit{Axiom status:} Corollary from the representation
+	structure of $\mathbb{R}^+_\times \subset G_{\mathrm{sync}}$
+	(RT-02, RT-35; see Section~\ref{sec:gsync}).
+	A3 is not an independent axiom but a consequence of A7.
+	
 	\textit{Example:} Molecular orbital resonance,
 	Tacoma Narrows bridge.
 	Monte Carlo test: 5 resonances at particle masses,
@@ -185,6 +190,27 @@
 	$\varepsilon(\Delta\varphi) \in [0,1]$, where
 	$\Delta\varphi$ denotes the phase difference between
 	coupled systems.
+	
+	\textit{Axiom status of the $\pi$ factor:} The factor~$\pi$
+	is not a postulated free parameter, but the geometrically
+	derived saddle-point contribution of the stationary action
+	integral $S[\psi, \Delta\varphi]$ (RT-01, RT-01b;
+	see Section~\ref{sec:pi_action}).
+	The limit $E = \pi\varepsilon\hbar f \to E = hf_{\mathrm{Hz}}$
+	is formally closed.%
+	\footnote{Numerical confirmation (RT-01b): the path integral
+	converges to $\pi$ to machine precision;
+	non-Gaussian corrections
+	$|c_3 + c_4| \approx 5.5\times10^{-11}$.}
+	
+	\textit{Axiom status of $\varepsilon = \cos^2(\Delta\varphi/2)$:}
+	The function $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$
+	is representation-theoretically uniquely determined as the
+	only function that belongs exclusively to the $k{=}1$
+	representation of $\mathrm{U}(1) \subset G_{\mathrm{sync}}$
+	(RT-02; see Section~\ref{sec:gsync}).
+	The previous phenomenological formulation is thus replaced by
+	this group-theoretic derivation.
 	
 	\textbf{Dimensional analysis:}
 	$[\,] \cdot [\,] \cdot [\mathrm{J{\cdot}s}] \cdot
@@ -211,6 +237,14 @@
 	(exact, 1\,530 runs).
 	
 	\subsection{Axiom 5: Energy Direction}
+	
+	\textit{Axiom status:} Irreducible structural postulate (RT-36).
+	The $D$-generator of $G_{\mathrm{sync}}$ does not act on
+	spatial directions: $\delta_D(\nabla\Phi/|\nabla\Phi|) \neq 0$
+	in general. A5 is not derivable from $G_{\mathrm{sync}}$;
+	the formal justification is provided by the vectoriality
+	inconsistency of the scalar treatment of energy in torque,
+	spin, and the Lorentz four-vector (RT-01a, RT-36).
 	
 	Energy is a vectorial quantity with magnitude and
 	direction in the resonance field:
@@ -247,7 +281,13 @@
 	only along coherent phase paths — anti-resonant
 	paths are systematically suppressed.
 	
-	\subsection{Axiom 7: Invariance}
+	\subsection{Axiom 7: Invariance under $G_{\mathrm{sync}}$}
+	
+	\textit{Axiom status:} Algebraically proved (stationary)
+	for the frequency-ratio part and the phase-difference
+	structure; domain transfer (CMB, nuclear physics,
+	financial markets) remains a motivated postulate
+	(RT-02; see Section~\ref{sec:gsync}).
 	
 	Resonance structures are preserved under variation of
 	the observer perspective and system parameters:
@@ -257,11 +297,44 @@
 		= \mathrm{Structure}(\mathcal{R}')
 		\label{eq:invariance}
 	\end{equation}
+	The symmetry group is
+	$G_{\mathrm{sync}} \cong \mathbb{R}^+_\times \times \mathrm{U}(1)
+	\times \mathrm{Aff}^+(\mathbb{R})$ (algebraically proved,
+	RT-02; see Section~\ref{sec:gsync}).
 	
 	\textit{Example:} Monte Carlo results stable over
 	$50{,}000$ runs (3 KDE bandwidths, 30 seeds).
 	FLRW simulation: resonance structure preserved across
 	all 1\,530 parameter combinations ($H_0$, $\Omega$).
+	
+	\subsection{Axiom Status Overview (as of August 2026)}
+	\label{sec:axiom_status}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Current axiom status of RFT (August 2026).}
+		\label{tab:axiom_status}
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Axiom} & \textbf{Previous Status}
+			& \textbf{Current Status} \\
+			\hline
+			A1 & Postulated & Postulated \\
+			A2 & Postulated & Postulated \\
+			A3 & Independent axiom
+			& Corollary from A7 (RT-02, RT-35) \\
+			A4: $\pi$ & Free parameter / postulate
+			& Geometrically derived (RT-01, RT-01b) \\
+			A4: $\varepsilon{=}\cos^2(\Delta\varphi/2)$ & Phenomenological choice
+			& Representation-theoretically unique (RT-02) \\
+			A5 & Postulate
+			& Irreducible postulate (RT-36) \\
+			A6 & Postulated & Postulated \\
+			A7 & Postulated invariance
+			& Algebraically proved, stationary (RT-02) \\
+			\hline
+		\end{tabular}
+	\end{table}
 	
 	
 	%% ============================================================
@@ -384,6 +457,72 @@
 	$\lambda_{\mathrm{eff}} = \lambda_0 + \eta \cdot \kappa
 	\cdot \Phi_\gamma \cdot \sigma$ is not a free parameter,
 	but exactly $\kappa = 1$.
+	
+	\subsection{Group-Theoretic Proof of $G_{\mathrm{sync}}$}
+	\label{sec:gsync}
+	
+	\subsubsection{Group structure.}
+	The symmetry group of RFT is (RT-02):
+	\begin{equation}
+		G_{\mathrm{sync}} \cong
+		\mathbb{R}^+_\times \times \mathrm{U}(1)
+		\times \mathrm{Aff}^+(\mathbb{R})
+		\label{eq:gsync_structure_en}
+	\end{equation}
+	The three factors arise from:
+	\begin{itemize}
+		\item $\mathbb{R}^+_\times$: frequency scaling
+		(scale invariance of resonance, $f \mapsto \alpha f$,
+		$\alpha > 0$); generates the quantisation corollary A3.
+		\item $\mathrm{U}(1)$: phase rotations
+		($\Delta\varphi \mapsto \Delta\varphi + \phi_0$);
+		determines $\varepsilon$ uniquely.
+		\item $\mathrm{Aff}^+(\mathbb{R})$: time reparametrisation
+		($t \mapsto at + b$, $a > 0$); ensures observer independence.
+	\end{itemize}
+	The full algebraic proof (Lie algebra,
+	group homomorphisms, stationarity conditions)
+	is given in the source document~\cite{rftrepo} (RT-02).
+	
+	\subsubsection{Uniqueness of $\varepsilon$.}
+	On $\mathrm{U}(1)$ the irreducible representations are
+	$\rho_k\colon e^{i\varphi} \mapsto e^{ik\varphi}$, $k\in\mathbb{Z}$.
+	The only real $2\pi$-periodic function satisfying:
+	(i)~symmetry $\varepsilon(\Delta\varphi) = \varepsilon(-\Delta\varphi)$,
+	(ii)~normalisation $\varepsilon(0)=1$, $\varepsilon(\pi)=0$,
+	(iii)~membership in the $k{=}1$ representation, is:
+	\begin{equation}
+		\varepsilon(\Delta\varphi)
+		= \cos^2\!\!\left(\frac{\Delta\varphi}{2}\right)
+		\label{eq:eps_unique_en}
+	\end{equation}
+	This replaces the previous phenomenological postulate
+	of this functional form.
+	
+	\subsubsection{A3 as corollary.}
+	The subgroup $\mathbb{R}^+_\times$ acts on frequency pairs
+	$(f_1, f_2)$ by simultaneous rescaling.
+	Fixed points of the stabiliser of any resonance state
+	are exactly the rational frequency ratios~$n/m$.
+	Hence A3 (resonance condition) is not an independent axiom
+	but a corollary of the $\mathbb{R}^+_\times$ factor of A7
+	(Korollar aus A7, RT-02, RT-35).
+	
+	\subsubsection{Lie algebra and invariance structure.}
+	\begin{center}
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Generator} & \textbf{Action}
+			& \textbf{Axiom consequence} \\
+			\hline
+			$D$ (dilation) & $f\mapsto\alpha f$ & A3 corollary \\
+			$R$ (rotation) & $\Delta\varphi\mapsto\Delta\varphi+\phi_0$
+			& A4: $\varepsilon$ unique \\
+			$T, S$ (affine) & $t\mapsto at+b$
+			& A7: observer independence \\
+			\hline
+		\end{tabular}
+	\end{center}
 	
 	\subsection{Resonance Differential Equation (rDE)}
 	
@@ -564,12 +703,37 @@
 		\quad H = \frac{\dot{a}}{a}
 		\label{eq:kg_flrw}
 	\end{equation}
+	The extended nonlinear potential is (RT-32):
+	\begin{equation}
+		V(\varepsilon) = \tfrac{1}{2}m^2\varepsilon^2
+		+ \tfrac{1}{4}\lambda\varepsilon^4
+		+ \tfrac{1}{6}\lambda_{\varepsilon^4}\varepsilon^6
+		\label{eq:v_nonlinear}
+	\end{equation}
+	The parameter $\lambda_{\varepsilon^4}$ (implemented as
+	\texttt{lambda\_eps4}) is the sixth-order saturation term.
+	Perturbation theory yields:
+	$\delta\eta \approx -c \cdot \lambda_{\varepsilon^4}
+	\cdot \langle\varepsilon^3\rangle$.
+	For $\lambda_{\varepsilon^4} = 0$ the potential reduces
+	to the standard $\lambda\varphi^4$ potential
+	(backward compatibility).
+	
 	The Friedmann equation couples the spacetime expansion
 	to the total energy density of both fields:
 	\begin{equation}
 		H^2 = \frac{8\pi G}{3}\,\rho_{\mathrm{total}}
 		\label{eq:friedmann}
 	\end{equation}
+	\textit{Note on $\kappa$:} The RFT simulations use the
+	modified Friedmann equation with $\kappa_{\mathrm{RFT}} = 1$.
+	This value is not a derivation from axioms~A1--A7, but a
+	normalisation convention for the dimensionless simulation
+	unit system (RT-11). For quantitative comparison with
+	cosmological observables, $\kappa$ must be replaced by
+	the physical value $8\pi G/c^4$; the qualitative results
+	($\eta$ correction, $d_\eta$ scaling) are $\kappa$-invariant.
+	
 	The coupling efficiency is extracted from the
 	time-averaged cross term:
 	\begin{equation}
@@ -1483,23 +1647,27 @@
 	%% ============================================================
 	
 	\begin{enumerate}
-		\item \textbf{Determination of $\varepsilon$:}
-		Ab-initio derivation from system geometry.
+		\item \textbf{Determination of $\varepsilon$ in further domains:}
+		Ab-initio derivation from system geometry in non-harmonic systems.
 		
 		\item \textbf{Resonance reactor:}
 		Parameter study of $d$ and $k$ for $Q > 1$.
 		
 		\item \textbf{CMB:}
 		Full $\ell$-range with
-		\textsc{camb}/\textsc{class}.
+		\textsc{camb}/\textsc{class} (RT-05).
 		
-		\item \textbf{Nonlinear saturation:}
-		$\lambda\varepsilon^4$- and
-		$\alpha R\varepsilon^2$-terms.
+		\item \textbf{Independent $\eta$ estimators (RT-07):}
+		Energy transfer rate, mutual information, and phase locking value
+		as alternatives to the Pearson estimator — independent of
+		$\cos^2(\Delta\varphi/2)$ — to strengthen falsifiability.
 		
 		\item \textbf{$\hat{H}_{\mathrm{res}}$:}
 		Construct the resonance Hamiltonian~(\ref{eq:h_res})
 		for specific systems.
+		
+		\item \textbf{$\kappa$ in SI units (RT-04):}
+		FLRW solver with $\kappa = 8\pi G/c^4$ and Planck-2018 parameters.
 		
 		\item \textbf{Further domains:}
 		Acoustics, biology, network theory.

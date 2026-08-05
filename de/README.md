@@ -123,18 +123,17 @@ Diese beiden Beobachtungen — π als Phasenraumkonstante und Energie als Vektor
 
 ## Axiomensystem (Kurzfassung)
 
-Die RFT besteht aus 7 Kern-Axiomen, die minimal, unabhängig, formal
-präzise und empirisch testbar sind:
+Die RFT besteht aus 7 Kern-Axiomen:
 
-| Axiom | Kernaussage | Formel |
-|-------|-------------|--------|
-| A1 | Universelle Schwingung | ψ = A·cos(kx − ωt + φ) |
-| A2 | Superposition | Φ = Σ ψᵢ |
-| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ |
-| A4 | Kopplungsenergie | E = π·ε·ℏ·f |
-| A5 | Energierichtung | E⃗ = E·ê(Δφ, ∇Φ) |
-| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 |
-| A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) |
+| Axiom | Kernaussage | Formel | Status (Aug 2026) |
+|-------|-------------|--------|-------------------|
+| A1 | Universelle Schwingung | ψ = A·cos(kx − ωt + φ) | Postulat |
+| A2 | Superposition | Φ = Σ ψᵢ | Postulat |
+| A3 | Resonanzbedingung | \|f₁/f₂ − m/n\| < δ | **Korollar aus A7** (RT-02, RT-35) |
+| A4 | Kopplungsenergie | E = π·ε·ℏ·f | π: **geometrisch abgeleitet** (RT-01, RT-01b); ε=cos²(Δφ/2): **darstellungstheoretisch eindeutig** (RT-02) |
+| A5 | Energierichtung | E⃗ = E·ê(Δφ, ∇Φ) | **Irreduzibles Postulat** (RT-36) |
+| A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Postulat |
+| A7 | Invarianz (G_sync) | G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | **Algebraisch bewiesen** (RT-02) |
 
 Zusätzlich gibt es eine interpretative Erweiterung:
 - **E1 (Beobachter als Resonator):** Folgt aus A1, A3, A6

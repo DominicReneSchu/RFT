@@ -123,18 +123,17 @@ These two observations — π as a phase-space constant and energy as a vector �
 
 ## Axiom System (Summary)
 
-The RFT consists of 7 core axioms that are minimal, independent, formally
-precise, and empirically testable:
+The RFT consists of 7 core axioms:
 
-| Axiom | Core statement | Formula |
-|-------|----------------|---------|
-| A1 | Universal oscillation | ψ = A·cos(kx − ωt + φ) |
-| A2 | Superposition | Φ = Σ ψᵢ |
-| A3 | Resonance condition | \|f₁/f₂ − m/n\| < δ |
-| A4 | Coupling energy | E = π·ε·ℏ·f |
-| A5 | Energy direction | E⃗ = E·ê(Δφ, ∇Φ) |
-| A6 | Information flow | MI > 0 ⟺ PCI > 0 |
-| A7 | Invariance (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) |
+| Axiom | Core statement | Formula | Status (Aug 2026) |
+|-------|----------------|---------|-------------------|
+| A1 | Universal oscillation | ψ = A·cos(kx − ωt + φ) | Postulate |
+| A2 | Superposition | Φ = Σ ψᵢ | Postulate |
+| A3 | Resonance condition | \|f₁/f₂ − m/n\| < δ | **Corollary from A7** (RT-02, RT-35) |
+| A4 | Coupling energy | E = π·ε·ℏ·f | π: **geometrically derived** (RT-01, RT-01b); ε=cos²(Δφ/2): **representation-theoretically unique** (RT-02) |
+| A5 | Energy direction | E⃗ = E·ê(Δφ, ∇Φ) | **Irreducible postulate** (RT-36) |
+| A6 | Information flow | MI > 0 ⟺ PCI > 0 | Postulate |
+| A7 | Invariance (G_sync) | G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | **Algebraically proved** (RT-02) |
 
 Additionally there is an interpretative extension:
 - **E1 (Observer as resonator):** Follows from A1, A3, A6
