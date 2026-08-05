@@ -22,6 +22,29 @@ und ⁸⁷Rb-BEC in harmonischer Falle (Quantenmechanik, |Δ⟨x⟩| = 2,0·λ �
 
 ---
 
+## Warum diese Theorie? — Der Ursprungsgedanke
+
+Die RFT entstand aus einer unscheinbaren Beobachtung:
+
+> **π ist keine irrationale Zahl der Natur — sondern ein Artefakt unserer Basis-10-Darstellung.**
+
+Ein Kreis mit Radius 1 hat einen exakt messbaren, endlichen Umfang. Die Unendlichkeit von 3,14159… ist kein Merkmal des Kreises, sondern der willkürlichen Dezimalkodierung. In einem Zahlensystem mit π als Basis wäre π = 10 — rational und endlich.
+
+Zieht man dieselbe Konsequenz wie bei Planck-Einheiten (c = ℏ = 1), liegt nahe: **π ist die natürliche Einheit zyklischer Vollständigkeit** — das Maß einer Halboszillation im Phasenraum. Damit verliert der Faktor π in
+
+$$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$$
+
+seinen Status als freies numerisches Postulat. Er wird geometrische Notwendigkeit.
+
+Gleichzeitig behandelt die Standardphysik Energie als Skalar — obwohl Drehmoment (M⃗ = r⃗ × F⃗, Einheit J), Spin (SU(2)-Algebra, Zeeman-Effekt) und der Lorentz-4-Vektor (E/c, p⃗) strukturell auf Vektorialität hinweisen. Die RFT trifft hier eine explizite Entscheidung: **Energie hat Richtung im Resonanzfeld** (Axiom A5).
+
+Diese beiden Beobachtungen — π als Phasenraumkonstante und Energie als Vektor — sind der konzeptuelle Ursprung der gesamten Theorie.
+
+→ [Vollständige Darstellung (DE): π und e als Urkonstanten des Raumes](de/fakten/theorie/pi_als_urkonstante.md)
+→ [Full exposition (EN): π and e as Fundamental Constants of Space](en/facts/theory/pi_as_fundamental_constant.md)
+
+---
+
 ## ⚠️ Hinweis zum Entstehungsprozess
 
 Dieses Repository entsteht in einem Prozess zwischen Mensch und KI. Die

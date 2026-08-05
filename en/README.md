@@ -93,6 +93,28 @@ Complete definition: [Coupling efficiency](facts/docs/definitions/coupling_effic
 
 ---
 
+## Why This Theory? — The Founding Idea
+
+RFT arose from a simple but far-reaching observation:
+
+> **π is not an irrational number of nature — it is an artifact of our base-10 representation.**
+
+A circle with radius 1 has a perfectly finite, measurable circumference. The infinity of 3.14159… is not a property of the circle — it is a property of the arbitrary decimal encoding. In a number system with π as its base, π = 10: rational and finite.
+
+Drawing the same conclusion as with Planck units (c = ℏ = 1): **π is the natural unit of cyclic completeness** — the measure of one half-oscillation in phase space. The factor π in
+
+$$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$$
+
+thus loses its status as a free numerical postulate and becomes a geometric necessity.
+
+At the same time, standard physics treats energy as a scalar — yet torque (M⃗ = r⃗ × F⃗, unit J), spin (SU(2) algebra, Zeeman effect), and the Lorentz 4-vector (E/c, p⃗) all point structurally toward vectoriality. RFT makes this explicit: **energy has direction in the resonance field** (Axiom A5).
+
+These two observations — π as a phase-space constant and energy as a vector — are the conceptual origin of the entire theory.
+
+→ [Full exposition: π and e as Fundamental Constants of Space](facts/theory/pi_as_fundamental_constant.md)
+
+---
+
 ![Visualization of Resonance Field Theory](images/visualization_RFT.png)
 
 *Fig. 1: Symbolic representation of the interaction of π, ℏ, ε and f in resonance space*
