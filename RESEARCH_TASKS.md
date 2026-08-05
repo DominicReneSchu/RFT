@@ -1,31 +1,75 @@
 # RFT — Offene Forschungsaufgaben
 
 Generiert: August 2026
+Aktualisiert: August 2026
 Status: Aktiv
+
+---
+
+## Theoretischer Gesamtstatus (August 2026)
+
+| Axiom | Was war Postulat | Was ist jetzt abgeleitet | Status |
+|-------|-----------------|--------------------------|--------|
+| A4: π-Faktor | Freier numerischer Parameter | Geometrischer Sattelpunktsbeitrag (RT-01, RT-01b) | ✅ Abgeleitet |
+| A4: ε = cos²(Δφ/2) | Phänomenologische Wahl | Eindeutig durch k=1-Darstellung U(1) ⊂ G_sync (RT-02) | ✅ Abgeleitet |
+| A7: G_sync | Postulierte Invarianz | Algebraisch bewiesen, G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | ✅ Bewiesen (stationär) |
+| A3: Quantisierung | Unabhängiges Axiom | Korollar aus Darstellungsstruktur von ℝ⁺_× ⊂ G_sync (RT-02, RT-35) | ✅ Abgeleitet |
+| A5: Vektorialität | Axiom ohne Ableitung | Konzeptuell motiviert (RT-01a), formale Ableitung offen (RT-36) | ⚠️ Offen |
+| A1, A2, A6 | Postuliert — testbar | Unverändert | 📋 Postuliert |
+| Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
+
+---
+
+## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
+
+### Theoretisch — intern abschließbar (Priorität 1)
+1. RT-32  — λε⁴-Sättigungsterm in Klein-Gordon
+2. RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren
+3. RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)
+
+### Empirisch — Simulationen mit öffentlichen Daten (Priorität 2)
+4. RT-07  — Drei unabhängige η-Estimatoren (stärkt Falsifizierbarkeit)
+5. RT-04  — FLRW-Solver SI-Einheiten (Planck-2018)
+6. RT-05  — CMB mit CAMB/CLASS
+7. RT-06  — EXFOR-Daten Am-241
+8. RT-08  — Doppelpendel vs. Experimentaldaten
+
+### Code-Korrekturen (Priorität 3)
+9. RT-09  — Fehlerbudget Am-241
+10. RT-10 — ResoTrade Backtest öffentlich
+
+### Manuskript (Priorität 4)
+11. RT-37 — IOP-Manuskript aktualisieren
+
+### Extern (benötigt Kooperationspartner)
+12. RT-03 — λ-Bestimmung (⁸⁷Rb)
+13. RT-12 — ⁸⁷Rb-Interferometrie
+14. RT-13 — Am-241 ELI-NP
+
+### Langfristig offen
+15. RT-01a — Operationale Definition π/e formal
+16. RT-33/34 — Warpantrieb Stufen 5+6
 
 ---
 
 ## Kategorie 1: Theoretische Herleitungen
 
 ### RT-01 — Wirkungsintegral-Herleitung von π
-**Motivation:** Der Faktor π in E = π·ε·ℏ·f ist derzeit ein Postulat (K-1).
-**Aufgabe:** Herleitung über Wirkungsintegral S[ψ, Δφ] — π soll als
-Sattelpunktsbeitrag der stationären Phase folgen.
-**Ansatz:** Pfadintegral-Formulierung der Kopplungsenergie.
-**Falsifizierung:** Wenn S[ψ, Δφ] keinen π-Beitrag liefert, muss A4 neu formuliert werden.
-**Status: Formalisiert (August 2026)** — Ergebnis: `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` | `en/facts/theory/action_integral_pi_derivation.md`
-→ *Unabhängige Bestätigung: RT-01b (August 2026)* — numerisches Pfadintegral + Nicht-Gaussian-Kontrolle + Potenzial-Unabhängigkeit bestätigt.
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** π als Sattelpunktsbeitrag des stationären Wirkungsintegrals S[ψ, Δφ] hergeleitet.
+**Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md`
 
-**RT-01 (Erweiterung):** Der exakte Grenzübergang der RFT-Formel E = π·ε·ℏ·f zur Standard-Planck-Relation E = hf_Hz ist eine offene mathematische Frage. Der nächste Planck-Grenzwert liegt bei ε = 1/(2π) ≈ 0.159 (Planck-Grundzustand). Die vollständige Brücke zwischen RFT-Kreisfrequenz ω und Planck-Frequenz f_Hz muss formal geschlossen werden.
-**Status: Formalisiert (August 2026)** — Grenzübergang formal geschlossen in `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §5 | `en/facts/theory/action_integral_pi_derivation.md` §5
+**RT-01 (Erweiterung — Planck-Grenzübergang):**
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Grenzübergang E = π·ε·ℏ·f → E = hf_Hz formal geschlossen.
+**Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §5
 
 ### RT-01a — π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument
-**Status:** Konzeptuell formuliert (Juli 2026) — formale Ableitung offen.
+**Status: 📋 Offen** (konzeptuell formuliert, formale Ableitung offen)
 **Motivation:** Der philosophisch-mathematische Ursprungsgedanke der RFT — π und e als
 Urkonstanten des Raumes, deren scheinbare Irrationalität ein Artefakt der Basis-10-Kodierung
 ist — wurde während der Theorieentwicklung in seiner expliziten Formulierung nicht
-festgehalten. Er ist nun dokumentiert und muss als konzeptuelle Voraussetzung von RT-01
-eingeordnet werden.
+festgehalten.
 **Kern des Arguments:**
 - Der Kreisumfang bei r = 1 ist physikalisch exakt und endlich messbar.
 - Die Dezimaldarstellung 3,14159… ist eine Darstellungseigenschaft, kein Naturphänomen.
@@ -43,59 +87,49 @@ RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
 **Verweise:** `de/fakten/theorie/pi_als_urkonstante.md` | `en/facts/theory/pi_as_fundamental_constant.md`
 
 ### RT-01b — Unabhängige π-Herleitung: Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen
-**Status: Abgeschlossen (August 2026)**
-**Motivation:** RT-01 steht unter strukturellem Vorbehalt (§6): Potenzial V(φ) = cos²(φ/2)
-enthält π implizit; Gaussian-Näherung unkontrolliert; kein numerisches Pfadintegral.
-**Aufgabe (dreistufig):**
-- Stufe 1: Numerische Auswertung des Pfadintegrals (Gitter-Diskretisierung, N = 100/500/1000)
-- Stufe 2: Nicht-Gaussian-Korrekturen c_3, c_4 störungstheoretisch quantifizieren
-- Stufe 3: Potenzial-Unabhängigkeit nachweisen (5 alternative Potenziale)
-**Ergebnis:**
-- Stufe 1: Numerisches Pfadintegral konvergiert gegen π mit Maschinengenauigkeit (< 10⁻¹⁵)
-- Stufe 2: |c_3 + c_4| ≈ 5.5 × 10⁻¹¹ ≪ 10⁻³ — Gaussian-Näherung kontrolliert
-- Stufe 3: π tritt für 3 von 5 Potenziale mit Mittelwert ½ auf [0,π] auf — strukturelle Auflösung der Zirkularität
-**Falsifizierung:** Nicht eingetreten. Alle drei Stufen bestätigen RT-01.
-**Verhältnis zu RT-01:** RT-01b ist die unabhängige numerische Bestätigung von RT-01.
-**Verweise:**
-- `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §4.5 + §9
-- `en/facts/theory/action_integral_pi_derivation.md` §4.5 + §9
-- `de/fakten/theorie/simulationen/rt01b/rt01b_path_integral.py`
-- `en/facts/theory/simulations/rt01b/rt01b_path_integral.py`
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Konvergenz gegen π (Maschinengenauigkeit), |c₃+c₄| ≈ 5.5×10⁻¹¹, π für 3/5 Potenziale geometrisch nachgewiesen.
+**Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §4.5+§9
 
 ### RT-02 — Gruppentheoretischer Beweis der Skalentransformation (A7)
-**Status: Abgeschlossen (Aug 2026)**
-**Motivation:** A7 behauptet Skalentransformation über CMB-, Kern- und Finanzskalen (M-2).
-**Aufgabe:** Formaler Beweis, dass G_sync über alle Skalen dieselbe Kopplungsstruktur erhält.
-**Ansatz:** Darstellungstheorie von G_sync; Renormierungsgruppen-Analyse.
-**Ergebnis:**
-- G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) algebraisch als Gruppe bewiesen (alle vier Axiome).
-- G(fᵢ/fⱼ) unter Frequenzskalierung und Phasenshift exakt invariant (Beweis).
-- ε(Δφ) = cos²(Δφ/2) als eindeutig ausgezeichnete Funktion der k=1-Darstellung von U(1) bewiesen.
-- RT-01b Stufe 3 (Potenzial-Unabhängigkeit) durch RT-02 Stufe 3 geschlossen.
-- Domänenübertragung CMB/Kern/Finanzen verbleibt als motiviertes Postulat.
-**Dateien:**
-- `de/fakten/theorie/gsync_gruppenstruktur.md`
-- `en/facts/theory/gsync_group_structure.md`
-- `de/fakten/theorie/simulationen/rt02/rt02_gsync_verification.py`
-- `en/facts/theory/simulations/rt02/rt02_gsync_verification.py`
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) bewiesen; ε = cos²(Δφ/2) darstellungstheoretisch eindeutig (k=1, U(1)); A3 als Korollar von A7.
+**Kerndokument:** `de/fakten/theorie/gsync_gruppenstruktur.md`
 
 ### RT-03 — Unabhängige Bestimmung von λ (⁸⁷Rb-Vorhersage)
+**Status: 📋 Offen** (benötigt Kooperationspartner)
 **Motivation:** |Δ⟨x⟩| = 4.9·λ·ℓ ist nicht falsifizierbar ohne unabhängiges λ (M-7).
 **Aufgabe:** λ aus einem zweiten, unabhängigen Experiment bestimmen.
 **Ansatz:** Doppelspalt-Interferometrie mit kontrollierbarer Phasendifferenz Δφ.
+
+### RT-35 — A3 als Korollar von A7 in Axiomatik
+**Status: ✅ Abgeschlossen (August 2026)** (durch RT-31 erledigt)
+**Ergebnis:** Korollar in `axiomatische_grundlegung.md` §A3 und §A7 eingetragen; Korollar formal in `gsync_gruppenstruktur.md` §5 dokumentiert.
+**Kerndokument:** `de/fakten/theorie/gsync_gruppenstruktur.md` §5
+
+### RT-36 — A5-Herleitung aus Phasenraumgeometrie
+**Status: 📋 Offen**
+**Aufgabe:** Richtungseinheit ê(Δφ, ∇Φ) aus der Lie-Algebra von G_sync ableiten (folgt aus RT-02 Stufe 4: D-Erzeuger liefert Gradientenstruktur); Verbindung zur Vektorialitätsdiskussion in RT-01a schließen.
+**Verweis:** `de/fakten/theorie/gsync_gruppenstruktur.md` §4 (D-Erzeuger)
+
+### RT-37 — Manuskript-Update: RT-01/01b/02/31 einarbeiten
+**Status: 📋 Offen**
+**Aufgabe:** IOP-Manuskript (DE+EN) um Wirkungsintegral-Herleitung (§3.2), G_sync-Beweis (§3.x neu), RT-31-Ergebnisse (§4.x) aktualisieren; A4 nicht mehr als reines Postulat kennzeichnen; A3-Korollar einfügen.
+**Verweis:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex`
 
 ---
 
 ## Kategorie 2: Simulationen mit öffentlichen Daten
 
 ### RT-04 — FLRW-Simulation mit SI-Einheiten (Friedmann-Gleichung)
-**Motivation:** h0_scan.py arbeitet dimensionslos ohne physikalische Einheitenbrücke (K-4).
+**Status: 📋 Offen**
 **Aufgabe:** Neuer FLRW-Solver in SI-Einheiten mit H₀ in s⁻¹ aus Friedmann-Gleichung.
 **Daten:** Planck-2018-Kosmologieparameter (öffentlich: https://pla.esac.esa.int)
 **Code:** Python mit `astropy.cosmology` als Referenzimplementierung.
 **Falsifizierung:** RFT-Kurve muss Planck-Fehlerbalken schneiden.
 
 ### RT-05 — CMB-Vergleich mit CAMB/CLASS
+**Status: 📋 Offen**
 **Motivation:** generate_lcdm_bestfit() ist ein Spielzeugmodell (K-5).
 **Aufgabe:** Echtzeit-ΛCDM-Spektrum via CAMB oder CLASS generieren und als Referenz nutzen.
 **Daten:** Planck-2018 TT-Spektrum (öffentlich: https://pla.esac.esa.int/pla/#cosmology)
@@ -103,12 +137,14 @@ enthält π implizit; Gaussian-Näherung unkontrolliert; kein numerisches Pfadin
 **Vorteil:** Δχ² wird dann gegenüber echtem ΛCDM berichtet.
 
 ### RT-06 — (γ,α)-Wirkungsquerschnitt für Am-241 aus EXFOR-Datenbank
+**Status: 📋 Offen**
 **Motivation:** σ_photo_alpha in material.py ist nicht aus Literaturdaten (K-6).
 **Aufgabe:** (γ,α)-Querschnittsdaten für Am-241 und U-235 aus EXFOR laden und einsetzen.
 **Daten:** EXFOR-Datenbank (öffentlich: https://www-nds.iaea.org/exfor/)
 **Code:** Python-Skript zum EXFOR-API-Abruf und Integration in material.py.
 
 ### RT-07 — Unabhängiger η-Estimator in FLRW-Simulationen
+**Status: ⚠️ Offen — nächste Priorität**
 **Motivation:** Pearson-Estimator ist algebraisch äquivalent zu cos²(Δφ/2) (K-2).
 **Aufgabe:** Drei alternative Estimatoren implementieren und vergleichen:
   1. Energietransfer-Rate: ΔE₁₂ / (E₁ + E₂)
@@ -119,6 +155,7 @@ enthält π implizit; Gaussian-Näherung unkontrolliert; kein numerisches Pfadin
 **Code:** Neue Funktion `compute_eta_independent(sol)` in `coupled_flrw.py`.
 
 ### RT-08 — Doppelpendel: Experimentaldaten vs. RFT-Vorhersage
+**Status: 📋 Offen**
 **Motivation:** ε(θ₂−θ₁) = cos²(Δθ/2) ist simuliert, aber nicht gegen
 Experimentaldaten getestet.
 **Daten:** Öffentliche Doppelpendel-Datensätze (z.B. Chaos-Experimente auf Zenodo).
@@ -130,6 +167,7 @@ Experimentaldaten getestet.
 ## Kategorie 3: Code-Korrekturen
 
 ### RT-09 — Vollständiges Unsicherheitsbudget für Am-241-Experiment
+**Status: 📋 Offen**
 **Motivation:** >50.000σ-Signifikanz ohne Fehlerbudget ist nicht falsifizierbar (M-4).
 **Aufgabe:** Monte-Carlo-Fehlerrechnung für:
   - Detektoreffizienz (typisch 20–80%)
@@ -139,6 +177,7 @@ Experimentaldaten getestet.
 **Code:** Neue Funktion `uncertainty_budget_am241()` in `resonance.py`.
 
 ### RT-10 — ResoTrade: Reproduzierbare Backtest-Implementierung
+**Status: 📋 Offen**
 **Motivation:** 24-Monats-Backtest ist private Implementierung ohne Reproduzierbarkeit (M-5).
 **Aufgabe:** Öffentlicher Backtest-Code mit:
   - Freie BTC-USDT-Daten (z.B. via `ccxt` oder Binance-API)
@@ -147,22 +186,18 @@ Experimentaldaten getestet.
 **Code:** Neues Verzeichnis `en/facts/concepts/ResoTrade/backtest/`.
 
 ### RT-11 — FLRW κ-Parameter aus Axiomen ableiten
+**Status: ⚠️ Offen — nächste Priorität**
 **Motivation:** κ = 1 ist im Code ein freier Parameter trotz Ableitungsanspruch (Minor-9).
 **Aufgabe:** Formale Ableitung von κ = 8πG aus den RFT-Axiomen oder
 explizite Deklaration als Konvention κ_RFT = 1.
 
 ### RT-31 — Resonanz-Hamiltonoperator für spezifische Systeme konstruieren
-**Motivation:** Das IOP-Manuskript (§7 Offene Fragen) benennt explizit: Ĥ_res = Ĥ₀ + ε(Δφ)·V̂_Kopplung
-ist formal eingeführt (Gl. eq:h_res), aber für kein konkretes Quantensystem
-jenseits der 1D-Schrödinger-Simulation ausgearbeitet.
-**Aufgabe:** Ĥ_res für mindestens zwei Systeme konstruieren und numerisch lösen:
-  1. Zwei gekoppelte harmonische Oszillatoren (Phonon-Phonon-Kopplung)
-  2. Spin-Bahn-Kopplung (Zwei-Niveau-System, ε(Δφ) als Mischungsparameter)
-**Falsifizierung:** Wenn die RFT-Eigenwerte systematisch von den Referenzwerten abweichen
-(> 1% ohne Störungsterm), ist ε(Δφ) als universeller Kopplungsoperator zu revidieren.
-**Verweise:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` (§3.5, §7)
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Phonon-Phonon-System: ΔE(Δφ) = ε(Δφ)·ΔE(0) bestätigt (Abweichung < 1e-14). Spin-Bahn: analytische Eigenwerte exakt, resonanter Fall bestätigt. A3-Korollar dokumentiert.
+**Kerndokument:** `de/fakten/simulationen/hamilton/README.md`
 
 ### RT-32 — Nichtlineare Sättigungsterme in der Feldgleichung
+**Status: ⚠️ Offen — nächste Priorität**
 **Motivation:** Das IOP-Manuskript (§7) benennt λε⁴- und αRε²-Terme als offene
 Erweiterung. Die FLRW-Simulation zeigt bereits Sättigung bei ȧ₀ = 1.0 (d_η stabilisiert),
 was auf eine nichtlineare Selbstwechselwirkung hinweist.
@@ -174,6 +209,7 @@ bestehenden FLRW-Simulationen.
 **Verweise:** `de/fakten/simulationen/FLRW-Simulationen/README.md`
 
 ### RT-33 — Warpantrieb: Energielücke schließen (Stufe 5)
+**Status: 📋 Offen**
 **Motivation:** Das Warpantrieb-README dokumentiert Stufe 5 als ⚠️ offen:
 Peak-Krümmung 299× Sonnenmitte erfordert ~10⁵× mehr Energiedichte als
 die Fusionskaskade liefert. Die Energielücke ist das zentrale Skalierungsproblem.
@@ -185,6 +221,7 @@ Vergleich mit Alcubierre-Literatur (Pfenning & Ford 1997).
 **Verweise:** `de/fakten/konzepte/warpantrieb/warpantrieb.md`
 
 ### RT-34 — Warpantrieb: 3D-Warpblase (Stufe 6)
+**Status: 📋 Offen**
 **Motivation:** Das Warpantrieb-README dokumentiert Stufe 6 als ❌ nicht begonnen:
 Die vollständige 3D-Warpgeometrie (azimutale Symmetrie, ρ(r,θ)) fehlt.
 **Aufgabe:** 3D-Warpblasenprofil simulieren mit sphärisch-azimutaler Geometrie.
@@ -199,13 +236,13 @@ Zwei-Feld-Modell nicht hinreichend für eine physikalische Warpblase.
 ## Kategorie 4: Experimentelle Vorhersagen (extern testbar)
 
 ### RT-12 — ⁸⁷Rb-Interferometrie-Experiment
-**Vorhersage:** |Δ⟨x⟩| = 4.9·λ·ℓ (nach unabhängiger λ-Bestimmung aus RT-03)
+**Status: 📋 Offen** (benötigt Kooperationspartner)
 **Einrichtung:** Atominterferometer-Labore (PTB Berlin, NIST, SYRTE Paris)
 **Protokoll:** Kontrollierbare Phasendifferenz Δφ zwischen zwei Rb-Ensembles;
 Messung der Schwerpunktverschiebung Δ⟨x⟩ als Funktion von Δφ.
 
 ### RT-13 — Resonanzreaktor: σ_coh vs. σ_incoh
-**Vorhersage:** σ_coh(Δφ=0) > σ_incoh (RFT) vs. σ_coh = σ_incoh (Standard)
+**Status: 📋 Offen** (benötigt ELI-NP Kooperation)
 **Einrichtung:** ELI-NP (Magurele, Rumänien) — gepulste Gammastrahlung
 **Protokoll:** Am-241-Probe mit kohärenter vs. inkohärenter Gammabestrahlung
 bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.

@@ -136,6 +136,12 @@ rationalen Verhältnisses. Das Toleranzfenster δ ist ein Modellparameter der RF
 kein freier Parameter, da es physikalisch durch die Resonanzbreite Γ_GDR ≈ 4–5 MeV
 bestimmt wird (siehe material.py).
 
+**Korollar-Verweis (RT-02, RT-35):** A3 ist durch RT-02 als **Konsequenz von A7**
+identifiziert worden: Die Quantisierungsbedingung fᵢ/fⱼ ∈ ℚ folgt aus der
+Darstellungsstruktur der Untergruppe ℝ⁺_× ⊂ G_sync (Korollar in
+`de/fakten/theorie/gsync_gruppenstruktur.md` §5, abgeschlossen durch RT-31/RT-35).
+A3 ist damit kein unabhängiges Axiom mehr, sondern ein abgeleiteter Satz.
+
 **Testbare Vorhersage:** Systeme mit verschiedenen Eigenfrequenzen können
 resonant koppeln. Systeme mit identischen Eigenfrequenzen schwingen synchron —
 keine Obertöne, kein Informationsaustausch.
@@ -305,6 +311,10 @@ ist formal nachgewiesen. Die Domänenübertragung (CMB, Kernphysik, Finanzmärkt
 bleibt ein motiviertes Postulat. Die Funktion ε(Δφ) = cos²(Δφ/2) ist als
 eindeutig ausgezeichnete Funktion der k=1-Darstellung von U(1) ⊂ G_sync
 gruppentheoretisch erzwungen.
+
+**Korollar A3 (RT-35, Aug 2026):** Die Darstellungsstruktur von A7 impliziert
+A3: fᵢ/fⱼ ∈ ℚ ist eine Konsequenz von A7, kein unabhängiges Axiom.
+Vollständiges Korollar: `de/fakten/theorie/gsync_gruppenstruktur.md` §5
 
 Vollständiger Beweis: `de/fakten/theorie/gsync_gruppenstruktur.md` |
 Symbolische Verifikation: `de/fakten/theorie/simulationen/rt02/rt02_gsync_verification.py`

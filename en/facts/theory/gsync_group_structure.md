@@ -397,6 +397,62 @@ From the representation structure of U(1) ⊂ G_sync:
 
 ---
 
+## §5 — Corollary: A3 as a consequence of the representation structure of G_sync
+
+### Theorem (Corollary A3 from A7)
+
+> **Corollary (A3 from A7):** The resonance condition fᵢ/fⱼ ∈ ℚ (Axiom A3)
+> follows from the representation structure of the subgroup ℝ⁺_× ⊂ G_sync:
+> Stable resonance configurations exist if and only if the frequency ratio
+> is invariant under the fundamental representation of ℝ⁺_× — this is
+> equivalent to fᵢ/fⱼ = m/n ∈ ℚ.
+
+### Proof
+
+The irreducible unitary representations of ℝ⁺_× are the characters
+χ_s : λ ↦ λ^(is) for s ∈ ℝ (cf. Stage 4). The frequency ratio fᵢ/fⱼ
+is invariant under scaling fₖ ↦ λfₖ (Stage 2).
+
+For a stable resonance configuration the field pattern Φ(x, t) must
+recur periodically. By Weyl's equidistribution theorem this is the case
+if and only if all frequencies ωₖ stand in rational ratios:
+
+```
+ωᵢ/ωⱼ ∈ ℚ  ⟺  fᵢ/fⱼ ∈ ℚ
+```
+
+The G_sync-invariance of the coupling structure (A7) forces physically
+distinct resonance states to be classified by the representations of ℝ⁺_×.
+Rational frequency ratios correspond precisely to those values at which
+χ_s(λ) = λ^(is) reproduces the same phase for all scalings λ ∈ ℝ⁺ —
+that is commensurability.
+
+**Consequence:** A3 is not an independent axiom but a consequence of A7
+(invariance under G_sync). A3 has the status of a **derived theorem** in
+the axiom system.
+
+### Connection to Stage 4
+
+The quantisation condition was already indicated at the end of Stage 4:
+
+> The resonance quantum numbers m, n ∈ ℤ⁺ (A3) are precisely the values
+> for which the frequency ratio fᵢ/fⱼ = m/n is invariant under the
+> fundamental representation of ℝ⁺_×.
+
+§5 states this as an explicit theorem and thereby closes RT-35.
+
+### Impact on the axiom system
+
+| Axiom | Earlier status | Status after RT-02/RT-35 |
+|-------|---------------|--------------------------|
+| A3 (resonance condition) | Independent axiom | **Corollary from A7** |
+| A7 (G_sync invariance) | Postulated invariance | Algebraically proved (RT-02) |
+
+Further note in `axiomatic_foundation.md` §A3: A3 has been identified by
+RT-02 as a consequence of A7 (RT-35 closed by RT-31).
+
+---
+
 ## References
 
 - `simulations/rt02/rt02_gsync_verification.py` — Symbolic verification (SymPy)

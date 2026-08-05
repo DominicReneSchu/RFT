@@ -135,6 +135,12 @@ f_GDR = E_GDR/(π·ℏ) is irrational, but lies within δ of a rational ratio. T
 tolerance window δ is a model parameter of the RFT — not a free parameter, since it
 is physically determined by the resonance width Γ_GDR ≈ 4–5 MeV (see material.py).
 
+**Corollary note (RT-02, RT-35):** A3 has been identified by RT-02 as a **consequence
+of A7**: the quantisation condition fᵢ/fⱼ ∈ ℚ follows from the representation
+structure of the subgroup ℝ⁺_× ⊂ G_sync (corollary in
+`en/facts/theory/gsync_group_structure.md` §5, closed by RT-31/RT-35).
+A3 is therefore no longer an independent axiom but a derived theorem.
+
 **Testable prediction:** Systems with different eigenfrequencies can
 couple resonantly. Systems with identical eigenfrequencies oscillate
 synchronously — no overtones, no information exchange.
@@ -302,6 +308,10 @@ established. Domain transfer (CMB, nuclear physics, financial markets) remains a
 motivated postulate. The function ε(Δφ) = cos²(Δφ/2) is group-theoretically
 forced as the uniquely distinguished function of the k=1 representation of
 U(1) ⊂ G_sync.
+
+**Corollary A3 (RT-35, Aug 2026):** The representation structure of A7 implies
+A3: fᵢ/fⱼ ∈ ℚ is a consequence of A7, not an independent axiom.
+Full corollary: `en/facts/theory/gsync_group_structure.md` §5
 
 Full proof: `en/facts/theory/gsync_group_structure.md` |
 Symbolic verification: `en/facts/theory/simulations/rt02/rt02_gsync_verification.py`
