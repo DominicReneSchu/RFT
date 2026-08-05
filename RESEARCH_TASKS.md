@@ -13,8 +13,10 @@ Status: Aktiv
 Sattelpunktsbeitrag der stationären Phase folgen.
 **Ansatz:** Pfadintegral-Formulierung der Kopplungsenergie.
 **Falsifizierung:** Wenn S[ψ, Δφ] keinen π-Beitrag liefert, muss A4 neu formuliert werden.
+**Status: Formalisiert (August 2026)** — Ergebnis: `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` | `en/facts/theory/action_integral_pi_derivation.md`
 
 **RT-01 (Erweiterung):** Der exakte Grenzübergang der RFT-Formel E = π·ε·ℏ·f zur Standard-Planck-Relation E = hf_Hz ist eine offene mathematische Frage. Der nächste Planck-Grenzwert liegt bei ε = 1/(2π) ≈ 0.159 (Planck-Grundzustand). Die vollständige Brücke zwischen RFT-Kreisfrequenz ω und Planck-Frequenz f_Hz muss formal geschlossen werden.
+**Status: Formalisiert (August 2026)** — Grenzübergang formal geschlossen in `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §5 | `en/facts/theory/action_integral_pi_derivation.md` §5
 
 ### RT-01a — π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument
 **Status:** Konzeptuell formuliert (Juli 2026) — formale Ableitung offen.

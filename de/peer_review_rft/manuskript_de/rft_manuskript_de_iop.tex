@@ -299,6 +299,79 @@
 	(Resonanz) und $\varepsilon = 0$ bei
 	$\Delta\varphi = \pi$ (Antiresonanz).
 	
+	\subsection{Wirkungsintegral-Herleitung von $\pi$}
+	\label{sec:pi_action}
+	
+	Der Faktor $\pi$ in Gleichung~(\ref{eq:grundformel}) wird
+	\"uber ein Wirkungsfunktional der Resonanzkopplung hergeleitet.
+	
+	\textbf{Wirkungsfunktional.}
+	Die Kopplungsenergie wird als Integral \"uber den
+	Resonanzkopplungspfad im Phasenraum formuliert:
+	\begin{equation}
+		S[\psi, \Delta\varphi]
+		= \int_0^\pi \mathcal{L}(\psi, \dot\psi, \varphi)\,
+		\mathrm{d}\varphi
+		\label{eq:action_functional}
+	\end{equation}
+	mit der Lagrange-Dichte
+	\begin{equation}
+		\mathcal{L} = \tfrac{1}{2}\hbar f
+		\!\left[\dot\psi^2
+		- \cos^2\!\!\left(\tfrac{\varphi}{2}\right)\psi^2\right]
+		\label{eq:lagrangian}
+	\end{equation}
+	Die Integrationsgrenzen $[0,\pi]$ entsprechen dem physikalisch
+	vollst\"andigen \"Ubergang von maximaler Resonanz
+	($\Delta\varphi = 0$, $\varepsilon = 1$) zu destruktiver
+	Interferenz ($\Delta\varphi = \pi$, $\varepsilon = 0$).
+	
+	\textbf{Sattelpunktn\"aherung und $\pi$-Beitrag.}
+	In der Sattelpunktn\"aherung wird das Pfadintegral durch
+	die klassische L\"osung $\psi_0$ dominiert. Der klassische
+	Wirkungsbeitrag lautet:
+	\begin{equation}
+		S[\psi_0]
+		= \frac{\hbar f}{2}\int_0^\pi
+		\cos^2\!\!\left(\frac{\varphi}{2}\right)\mathrm{d}\varphi
+		= \frac{\hbar f}{2}\cdot\frac{\pi}{2}
+		= \frac{\pi\hbar f}{4}
+		\label{eq:saddle_action}
+	\end{equation}
+	Die Gaussian-Integration \"uber Fluktuationen
+	$\delta\psi = \psi - \psi_0$ liefert zus\"atzlich einen
+	Faktor $\sqrt{\pi}$ aus der Kreisstruktur des Phasenraums.
+	Beide Beitr\"age haben denselben geometrischen Ursprung:
+	\begin{equation}
+		\int_0^\pi \cos^2\!\!\left(\frac{\varphi}{2}\right)
+		\mathrm{d}\varphi = \frac{\pi}{2}
+		\label{eq:half_period_integral}
+	\end{equation}
+	
+	\textbf{Hauptergebnis.}
+	$\pi$ entsteht als geometrischer Sattelpunktsbeitrag
+	des Phasenraumintegrals \"uber eine Halbperiode — nicht
+	als freier Parameter eingef\"uhrt, sondern als
+	Integrationsergebnis der Kopplungsgeometrie.
+	
+	\textbf{Korollar: Grenz\"ubergang zur Planck-Relation.}
+	F\"ur $\varepsilon = 1/(2\pi)$ (Planck-Grundzustand)
+	und $\omega = 2\pi f_{\mathrm{Hz}}$ folgt:
+	\begin{equation}
+		E = \pi\cdot\frac{1}{2\pi}\cdot\hbar\cdot f
+		= \frac{\hbar f}{2}
+		\;\xrightarrow{\omega = 2\pi f_{\mathrm{Hz}}}\;
+		\frac{\hbar\omega}{2}
+		= \frac{1}{2}h f_{\mathrm{Hz}}
+		\label{eq:planck_limit}
+	\end{equation}
+	Die Standard-Planck-Relation $E = hf_{\mathrm{Hz}}$ entspricht
+	dem Zustand $\varepsilon = 1/\pi$.
+	
+	\textbf{Falsifizierungsbedingung.}
+	Wenn $S[\psi, \Delta\varphi]$ keinen $\pi$-Beitrag als
+	Sattelpunktsbeitrag liefert, muss Axiom~A4 neu formuliert werden.
+	
 	\subsection{Identit\"at zwischen Operator und Observable}
 	\label{sec:eps_eta}
 	

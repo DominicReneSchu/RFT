@@ -165,7 +165,9 @@ Dabei ist (f = RFT-Resonanzfrequenz = E/(π·ℏ), rad/s; vgl. K-3):
 - ε(Δφ) die Kopplungseffizienz als Funktion der Phasendifferenz,
   z.B. ε(Δφ) = cos²(Δφ/2)
 - π der geometrische Faktor aus der Integration über einen Halbzyklus
-  des Resonanzpfads (geometrische Motivation: siehe §4.1)
+  des Resonanzpfads (geometrische Motivation: siehe §4.1;
+  formale Herleitung via Wirkungsintegral: → [theorie/wirkungsintegral_pi_herleitung.md](../../theorie/wirkungsintegral_pi_herleitung.md),
+  RT-01 August 2026 — mit Falsifizierungsvorbehalt)
 - ℏ das reduzierte Plancksche Wirkungsquantum
 - f die RFT-Resonanzfrequenz der gekoppelten Mode, f = E/(π·ℏ) = ω/π (K-3)
 
