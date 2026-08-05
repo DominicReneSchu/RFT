@@ -14,7 +14,7 @@ Status: Aktiv
 | A4: ε = cos²(Δφ/2) | Phänomenologische Wahl | Eindeutig durch k=1-Darstellung U(1) ⊂ G_sync (RT-02) | ✅ Abgeleitet |
 | A7: G_sync | Postulierte Invarianz | Algebraisch bewiesen, G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | ✅ Bewiesen (stationär) |
 | A3: Quantisierung | Unabhängiges Axiom | Korollar aus Darstellungsstruktur von ℝ⁺_× ⊂ G_sync (RT-02, RT-35) | ✅ Abgeleitet |
-| A5: Vektorialität | Axiom ohne Ableitung | Konzeptuell motiviert (RT-01a), formale Ableitung offen (RT-36) | ⚠️ Offen |
+| A5: Vektorialität | Irreduzibles Postulat | Gruppentheoretisch irreduzibel (RT-36); Begründung: RT-01a Vektorialitätsinkonsistenz | ✅ Abgeschlossen (RT-36) |
 | A1, A2, A6 | Postuliert — testbar | Unverändert | 📋 Postuliert |
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 
@@ -108,9 +108,9 @@ RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
 **Kerndokument:** `de/fakten/theorie/gsync_gruppenstruktur.md` §5
 
 ### RT-36 — A5-Herleitung aus Phasenraumgeometrie
-**Status: 📋 Offen**
-**Aufgabe:** Richtungseinheit ê(Δφ, ∇Φ) aus der Lie-Algebra von G_sync ableiten (folgt aus RT-02 Stufe 4: D-Erzeuger liefert Gradientenstruktur); Verbindung zur Vektorialitätsdiskussion in RT-01a schließen.
-**Verweis:** `de/fakten/theorie/gsync_gruppenstruktur.md` §4 (D-Erzeuger)
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** Möglichkeit B — ê ist irreduzibles Postulat. D-Erzeuger liefert δ_D Φ ∝ ∂_t Φ (nicht ∇Φ); δ_D(∇Φ/|∇Φ|) ≠ 0 allgemein; G_sync operiert nicht auf Raumrichtungen. A5 bleibt eigenständiges Axiom; Begründungsgrundlage: RT-01a Vektorialitätsinkonsistenz (Drehmoment, Spin, Lorentz-4-Vektor) ist jetzt formal explizit in A5 aufgenommen.
+**Kerndokument:** `de/fakten/theorie/a5_vektorialitaet_herleitung.md`
 
 ### RT-37 — Manuskript-Update: RT-01/01b/02/31 einarbeiten
 **Status: 📋 Offen**

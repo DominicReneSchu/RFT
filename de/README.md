@@ -317,7 +317,8 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | 1 | [π und e als Urkonstanten des Raumes](fakten/theorie/pi_als_urkonstante.md) | A4, A5 | Ursprungsgedanke der RFT: π als geometrische Phasenraumkonstante, Vektorialität der Energie (RT-01a) |
 | 2 | [Wirkungsintegral-Herleitung von π](fakten/theorie/wirkungsintegral_pi_herleitung.md) | A4 | Formale Herleitung von π als Sattelpunktsbeitrag der stationären Phase im Pfadintegral (RT-01, Aug 2026) |
 | 3 | [G_sync — Gruppenstruktur und Invarianzbeweise](fakten/theorie/gsync_gruppenstruktur.md) | A7 | Gruppentheoretischer Beweis: G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ); Eindeutigkeit von cos²(Δφ/2); RT-02, Aug 2026 |
-| 4 | [Peer-Review-Bereitschaft](../PEER_REVIEW_READINESS.md) | — | Status aller offenen Formalisierungsschritte und theoretischen Grundlagen nach Peer-Review-Kriterien |
+| 4 | [A5-Herleitung: ê(Δφ, ∇Φ) aus G_sync](fakten/theorie/a5_vektorialitaet_herleitung.md) | A5 | RT-36: ê ist irreduzibles Postulat — D-Erzeuger erzwingt ∂_t Φ, nicht ∇Φ; formale Begründungsgrundlage RT-01a; Aug 2026 |
+| 5 | [Peer-Review-Bereitschaft](../PEER_REVIEW_READINESS.md) | — | Status aller offenen Formalisierungsschritte und theoretischen Grundlagen nach Peer-Review-Kriterien |
 
 ---
 

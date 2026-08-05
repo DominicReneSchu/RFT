@@ -250,6 +250,22 @@ verschiedenen Zeitskalen:
         e_long  = (Preis − MA_LONG)  / MA_LONG
 ```
 
+**Axiomstatus (RT-36):** A5 ist ein **irreduzibles strukturelles Postulat**.
+RT-36 hat gezeigt, dass ê = ∇Φ/|∇Φ| nicht aus dem D-Erzeuger von G_sync
+abgeleitet werden kann: G_sync operiert auf dem internen Phasenraum
+(Frequenzen, Phasen, Zeit), nicht auf Raumrichtungen. A5 ist
+gruppentheoretisch irreduzibel — es kann nicht als Korollar aus A7 gewonnen
+werden (anders als A3, RT-35).
+
+Die formale Begründungsgrundlage für A5 ist die interne Vektorialitätsinkonsistenz
+der Standardphysik (RT-01a): Drehmoment (M⃗ = r⃗ × F⃗, Einheit J, vektoriell),
+Spin (SU(2)-Algebra, Zeeman-Energiebeiträge) und Lorentz-4-Vektor (E als zeitliche
+Komponente von (E/c, p⃗)) zeigen unabhängig voneinander, dass Energie geometrische
+Richtungseigenschaften trägt. A5 ist die explizite Modellentscheidung der RFT
+in diese Richtung.
+
+→ Vollständige Analyse: [../../theorie/a5_vektorialitaet_herleitung.md](../../theorie/a5_vektorialitaet_herleitung.md)
+
 **Testbare Vorhersage:** Die Richtung des Energieflusses ist eine
 verwertbare Observable, die über skalare Indikatoren hinausgeht.
 

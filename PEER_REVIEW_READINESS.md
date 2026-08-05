@@ -51,7 +51,7 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | A2 | Resonanzkopplung | Postuliert — testbar |
 | A3 | Resonanzfenster | **Korollar aus A7** (RT-02, RT-35, Aug 2026) — nicht mehr unabhängig |
 | A4 | Kopplungsenergie E = π·ε·ℏ·f | π geometrisch abgeleitet (RT-01, RT-01b, Aug 2026); ε darstellungstheoretisch erzwungen (RT-02) |
-| A5 | Vektorialität der Energie | Postuliert — konzeptuelle Motivation: RT-01a; formale Ableitung offen (RT-36) |
+| A5 | Vektorialität der Energie | **Irreduzibles Postulat** (RT-36, Aug 2026) — gruppentheoretisch nicht aus G_sync ableitbar; formale Begründungsgrundlage: RT-01a (Vektorialitätsinkonsistenz in Drehmoment, Spin, Lorentz-4-Vektor) |
 | A6 | Resonanzerhaltung | Postuliert — testbar |
 | A7 | Skalentransformation | **Bewiesen** — gruppentheoretisch (RT-02, Aug 2026); Domänenübertragung postuliert |
 

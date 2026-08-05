@@ -20,6 +20,7 @@ in vier Stufen:
 - Axiom A7: `../docs/definitionen/axiomatische_grundlegung.md` §A7
 - Offene Forschungsaufgaben: `../../../../RESEARCH_TASKS.md` (RT-02)
 - RT-01b Stufe 3 (Potenzial-Unabhängigkeit): `wirkungsintegral_pi_herleitung.md` §4.4
+- RT-36 (A5-Herleitung, Ergebnis Möglichkeit B): `a5_vektorialitaet_herleitung.md`
 
 ---
 
