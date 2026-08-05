@@ -295,11 +295,16 @@ under synchronous transformations of the group G_sync.
         ε(Δφ_ij) = ε(T(φᵢ) − T(φⱼ))
 ```
 
-**Note on formal proof:** A formal proof of the scale transformation — that the
-coupling structure across CMB, nuclear-physics, and financial-market scales is
-identical — is not yet available. The three cited domains are analogisations.
-A rigorous group-theoretic proof of G_sync across scales is an open task
-(see RESEARCH_TASKS.md).
+**Group-theoretic proof (RT-02, Aug 2026):** The four group axioms for
+G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) have been proved algebraically. The invariance
+of G(fᵢ/fⱼ) under frequency scaling and of ε(Δφ) under phase shifts is formally
+established. Domain transfer (CMB, nuclear physics, financial markets) remains a
+motivated postulate. The function ε(Δφ) = cos²(Δφ/2) is group-theoretically
+forced as the uniquely distinguished function of the k=1 representation of
+U(1) ⊂ G_sync.
+
+Full proof: `en/facts/theory/gsync_group_structure.md` |
+Symbolic verification: `en/facts/theory/simulations/rt02/rt02_gsync_verification.py`
 
 **Testable prediction:** The resonance structure is scale-invariant —
 it holds on all time scales and energy scales.

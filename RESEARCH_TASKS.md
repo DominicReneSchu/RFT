@@ -63,9 +63,21 @@ enthält π implizit; Gaussian-Näherung unkontrolliert; kein numerisches Pfadin
 - `en/facts/theory/simulations/rt01b/rt01b_path_integral.py`
 
 ### RT-02 — Gruppentheoretischer Beweis der Skalentransformation (A7)
+**Status: Abgeschlossen (Aug 2026)**
 **Motivation:** A7 behauptet Skalentransformation über CMB-, Kern- und Finanzskalen (M-2).
 **Aufgabe:** Formaler Beweis, dass G_sync über alle Skalen dieselbe Kopplungsstruktur erhält.
 **Ansatz:** Darstellungstheorie von G_sync; Renormierungsgruppen-Analyse.
+**Ergebnis:**
+- G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) algebraisch als Gruppe bewiesen (alle vier Axiome).
+- G(fᵢ/fⱼ) unter Frequenzskalierung und Phasenshift exakt invariant (Beweis).
+- ε(Δφ) = cos²(Δφ/2) als eindeutig ausgezeichnete Funktion der k=1-Darstellung von U(1) bewiesen.
+- RT-01b Stufe 3 (Potenzial-Unabhängigkeit) durch RT-02 Stufe 3 geschlossen.
+- Domänenübertragung CMB/Kern/Finanzen verbleibt als motiviertes Postulat.
+**Dateien:**
+- `de/fakten/theorie/gsync_gruppenstruktur.md`
+- `en/facts/theory/gsync_group_structure.md`
+- `de/fakten/theorie/simulationen/rt02/rt02_gsync_verification.py`
+- `en/facts/theory/simulations/rt02/rt02_gsync_verification.py`
 
 ### RT-03 — Unabhängige Bestimmung von λ (⁸⁷Rb-Vorhersage)
 **Motivation:** |Δ⟨x⟩| = 4.9·λ·ℓ ist nicht falsifizierbar ohne unabhängiges λ (M-7).
