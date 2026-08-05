@@ -69,3 +69,22 @@ VIS_PARAMS = {
 
 # GPU options (for CuPy)
 USE_CUDA = False
+
+# ---------------------------------------------------------------------------
+# Planck-2018 SI parameters (arXiv:1807.06209)
+# ---------------------------------------------------------------------------
+PLANCK_2018 = {
+    "H0": 67.36,            # Hubble constant [km/s/Mpc]
+    "H0_err": 0.54,         # 1σ uncertainty
+    "Omega_m": 0.3153,      # Matter density parameter
+    "Omega_r": 9.14e-5,     # Radiation density parameter
+    "Omega_Lambda": 0.6847, # Λ density parameter
+    "Omega_b_h2": 0.02237,  # Baryon density × h²
+    "Omega_c_h2": 0.1200,   # CDM density × h²
+    "tau": 0.0544,          # Optical depth
+    "As": 2.1e-9,           # Primordial amplitude
+    "ns": 0.9649,           # Spectral index
+    # SH0ES reference (Riess et al. 2022, arXiv:2112.04510)
+    "H0_SH0ES": 73.04,      # [km/s/Mpc]
+    "H0_SH0ES_err": 1.04,   # 1σ uncertainty
+}

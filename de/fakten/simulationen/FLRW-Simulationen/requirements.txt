@@ -2,8 +2,12 @@ numpy
 scipy
 matplotlib
 pytest
+astropy
+camb
 
 # Optional (GPU-Beschleunigung, nur mit CUDA):
 # cupy
 # Optional (CPU-Parallelisierung):
 # numba
+# Optional (CLASS-Alternative zu CAMB):
+# classy
