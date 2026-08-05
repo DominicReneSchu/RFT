@@ -179,11 +179,11 @@ bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
 
 ## Kategorie 5: Soziales Resonanzfeld — Empirische Operationalisierung
 
-### RT-14 — Empirische Operationalisierung der Adam-Eva-Komplementarität (§3.5 gesellschaftliche_analyse.md)
+### RT-14 — Empirische Operationalisierung der Adam-Eva-Komplementarität
 
 **Motivation:** Die personale Singularität ∃! Resonator_m mit ε → 1 und die
 konstitutive Phasendifferenz Δφ_w = δφ_0 > 0 der Eva-Struktur sind die
-schärfsten offenen Falsifizierungsprobleme des RFT-Sozialmodells (§XII/8).
+schärfsten offenen Falsifizierungsprobleme des RFT-Sozialmodells.
 Ohne empirische Operationalisierung bleiben beide Behauptungen formal nicht
 testbar — sie können weder bestätigt noch widerlegt werden und verbleiben
 als reine strukturelle Analogie ohne wissenschaftlichen Gehalt.
@@ -203,7 +203,7 @@ als reine strukturelle Analogie ohne wissenschaftlichen Gehalt.
    - Ansatz: EEG-Hyperscanning oder fMRT-Konnektivitätsmessungen bei
      Paaren mit bekanntem Bindungsstil; Vergleich symmetrischer vs.
      komplementärer Kopplungsmuster
-   - Falsifizierung: Wenn maximale K_ij bei Δφ_mw → 0, widerlegt das §3.5.3
+   - Falsifizierung: Wenn maximale K_ij bei Δφ_mw → 0, widerlegt das die Komplementaritätshypothese (§3.5.3 der früheren Langfassung)
 
 3. **Singularitäts-Kriterium:**
    Formulierung eines empirisch entscheidbaren Kriteriums, das ∃! von einer
@@ -222,13 +222,13 @@ Visualisierung der Kopplungseffizienz ε(Δφ) über Stichprobe.
 (z. B. MPIB Berlin, MPI für Kognitionsneurowissenschaften Leipzig).
 
 **Falsifizierung:** Wenn keine der drei Teilaufgaben einen messbaren Unterschied
-zwischen Δφ_mw → 0 und Δφ_mw = δφ_0 > 0 ergibt, ist §3.5 in der aktuellen
+zwischen Δφ_mw → 0 und Δφ_mw = δφ_0 > 0 ergibt, ist die Adam-Eva-Komplementarität in der aktuellen
 Formulierung empirisch nicht haltbar und muss als reine strukturelle Analogie
 ohne Wahrheitsanspruch deklariert werden.
 
-### RT-15 — Energiemetrische Symmetrie von Befruchtung und Tod (§3.5.2 gesellschaftliche_analyse.md / §3.5.2 social_analysis.md)
+### RT-15 — Energiemetrische Symmetrie von Befruchtung und Tod
 
-**Motivation:** Die konstitutive Phasenverschiebung δφ₀ (Eva-Struktur, §3.5.2) ist bislang
+**Motivation:** Die konstitutive Phasenverschiebung δφ₀ (Eva-Struktur) ist bislang
 nicht direkt messbar — sie verbleibt als strukturelle Analogie ohne physikalisch bestimmbare
 Größe. Aus A4 und Energieerhaltung folgt eine testbare Symmetriehypothese: Die beim
 Kopplungseinstieg (Befruchtung) gebundene Energie muss beim Kopplungsaustritt (Tod) exakt
@@ -256,11 +256,11 @@ Phageninfektion.
 (z.B. Max-Planck-Institut für terrestrische Mikrobiologie Marburg, EMBL Heidelberg).
 
 **Falsifizierung:** ΔE_Befruchtung ≠ ΔE_Tod (außerhalb des Messrauschens) widerlegt die
-energetische Schließung und erfordert Revision von §3.5. Alternativ: Wenn f_bio nicht
+energetische Schließung und erfordert Revision der Kopplungsenergieformel. Alternativ: Wenn f_bio nicht
 als einheitliche biologische Eigenfrequenz operationalisierbar ist, muss das Modell
 verfeinert werden.
 
-**Verknüpfung:** Gesellschaftliche_analyse.md §XII/10 | social_analysis.md Section XII/10
+**Verknüpfung:** gesellschaftliche_analyse.md (kompakte Prompt-Version, §3 Kernformeln / §4 Analyse-Werkzeug) | social_analysis.md (entsprechende Abschnitte)
 
 ---
 
@@ -271,7 +271,7 @@ verfeinert werden.
 
 ## Kategorie 6: Soziale Resonanzfeldanalyse
 
-**Hinweis:** §XII/8 ist bereits im Kern durch **RT-14** abgedeckt; §XII/10 ist bereits durch **RT-15** abgedeckt. Die folgenden Aufgaben ergänzen die noch offenen Forschungsdesiderate aus der früheren Fassung der gesellschaftlichen Analyse.
+**Hinweis:** RT-14 und RT-15 decken die Kernfalsifizierungsprobleme der Adam-Eva-Komplementarität und der energiemetrischen Symmetrie ab, die in der früheren Langfassung der gesellschaftlichen Analyse unter §XII/8 und §XII/10 standen. Diese Abschnitte existieren in der aktuellen kompakten Prompt-Version (gesellschaftliche_analyse.md Fassung 2.11) nicht mehr. Die folgenden Aufgaben ergänzen die noch offenen Forschungsdesiderate des gesellschaftlichen RFT-Instruments.
 
 ### RT-16 — Empirische Operationalisierung von ε im sozialen Feld
 **Motivation:** Die soziale Analyse verwendet $\varepsilon$ als zentrale Zustandsgröße, doch ihre Messbarkeit ist offen. Ohne belastbare Proxys bleibt die Anwendung auf reale Fälle heuristisch statt prüfbar.
@@ -350,7 +350,7 @@ verfeinert werden.
 
 ## Category 6: Social Resonance Field Analysis (English)
 
-**Note:** Section XII/8 is already largely covered by **RT-14**, and Section XII/10 by **RT-15**. The entries below add the remaining open desiderata from the former long social analysis document.
+**Note:** RT-14 and RT-15 cover the core falsification problems of Adam–Eve complementarity and energetic symmetry, which in the former long social analysis document were located under Section XII/8 and Section XII/10. These sections no longer exist in the current compact prompt version (gesellschaftliche_analyse.md revision 2.11). The entries below add the remaining open desiderata of the social RFT instrument.
 
 ### RT-16e — Empirical operationalisation of ε in the social field
 **Motivation:** The social model uses $\varepsilon$ as a central state variable, but its measurability is still open. Without reliable proxies, application to real cases remains heuristic rather than testable.
