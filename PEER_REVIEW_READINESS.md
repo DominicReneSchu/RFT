@@ -75,6 +75,7 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | RT-04 | FLRW-Solver SI-Einheiten (Planck-2018) — **✅ Abgeschlossen (Aug 2026)** — `core/flrw_si.py` + `compare_to_astropy()`. Falsifizierung: max. Abw. < 1 % vs. astropy. |
 | RT-05 | CMB-Vergleich mit CAMB/CLASS (K-5: Spielzeugmodell generate_lcdm_bestfit) — **✅ Abgeschlossen (Aug 2026)** — `core/camb_reference.py` + `compare_with_camb()` + `scan_h0_tension()`. Δχ²_CAMB ist nun der belastbare Vergleich. |
 | RT-06 | σ(γ,α) Am-241 aus EXFOR (K-6: Geschätztes sigma_photo_alpha) — **✅ Behoben (Aug 2026, mit Revision erforderlich)** — Hauser-Feshbach: σ(γ,α) = 1,719 mb bei E = 14 MeV (Γ_α/Γ_tot ≈ 2%, RIPL-3). Kein direkter EXFOR-Eintrag für Am-241 (γ,α). RFT-Reaktorraten-Vorhersage muss mit korrektem σ(γ,α) neu berechnet werden. `simulation/exfor_data.py` + `analyse/rt06_exfor_vergleich.py`. |
+| RT-09 | Vollständiges Fehlerbudget Am-241 (M-4: fehlende Fehlerrechnung) — **✅ Teilweise behoben (Aug 2026)** — Monte-Carlo-Fehlerrechnung implementiert. σ(γ,α)-Unsicherheit (Faktor 2–5) dominiert mit 93,9% der Varianz. Realistisches Szenario: SNR_median = 10,3σ bei 100 h (ELI-NP). Falsifizierungskriterium (SNR_p16 ≥ 3σ): JA (optimistisch + realistisch), NEIN (konservativ — t(5σ) ≈ 516 h). `simulation/experiment_am241.py` `uncertainty_budget_am241()` + `analyse/rt09_fehlerbudget.py`. |
 | RT-03 | Unabhängige λ-Bestimmung für RT-03-Vorhersage |
 
 ---

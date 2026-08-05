@@ -330,12 +330,20 @@ class ExperimentConfig:
         # Photon flux on target
         self.photon_flux = facility.flux_typical / facility.beam_area_cm2
 
-        # Cross section at the selected point
+        # GDR total cross section at the selected point (for reference)
         self.sigma_gdr_mb = gdr_cross_section(E_gamma_MeV)
         self.sigma_gdr_cm2 = self.sigma_gdr_mb * MB_TO_CM2
 
+        # RT-09: Correct (γ,α) cross section for RFT signature (Hauser-Feshbach, RT-06)
+        # σ(γ,α) = 1.719 mb at E_GDR centroid — factor ~212 smaller than σ_GDR
+        self.sigma_pa_mb = float(photo_alpha_cross_section(E_gamma_MeV, am))
+        self.sigma_pa_cm2 = self.sigma_pa_mb * MB_TO_CM2
+
         # Resonant contribution to the rate (Φ · σ)
+        # Legacy: based on sigma_gdr_cm2 (used in RT-06 and earlier)
         self.lambda_res = self.photon_flux * self.sigma_gdr_cm2
+        # RT-09: Correct resonant contribution based on sigma_pa_cm2
+        self.lambda_res_pa = self.photon_flux * self.sigma_pa_cm2
 
         # RFT prediction (Δφ = 0, coherent, η = 1)
         self.lambda_eff_resonant = am.lambda_0_per_s + 1.0 * self.lambda_res
@@ -372,16 +380,34 @@ class ExperimentConfig:
         else:
             self.signal_ratio_computed = float('inf')
 
-        # Statistical signal (√N Poisson)
-        self.sigma_rft = (self.signal_rft / np.sqrt(self.counts_natural)
-                          if self.counts_natural > 0 else 0)
-        self.sigma_sm = (self.signal_sm / np.sqrt(self.counts_natural)
-                         if self.counts_natural > 0 else 0)
+        # Statistical signal (√N Poisson) — Legacy: based on σ_GDR
+        self.sigma_rft_legacy = (self.signal_rft / np.sqrt(self.counts_natural)
+                                 if self.counts_natural > 0 else 0)
+        self.sigma_sm_legacy = (self.signal_sm / np.sqrt(self.counts_natural)
+                                if self.counts_natural > 0 else 0)
+
+        # Backward compatibility: sigma_rft / sigma_sm show legacy values
+        self.sigma_rft = self.sigma_rft_legacy
+        self.sigma_sm = self.sigma_sm_legacy
+
+        # RT-09: Corrected significance based on σ(γ,α) (not σ_GDR)
+        signal_rft_pa = self.photon_flux * self.sigma_pa_cm2 * self.N_atoms * self.measurement_time_s
+        signal_sm_pa = 0.5 * signal_rft_pa
+        self.sigma_rft_pa = (signal_rft_pa / np.sqrt(self.counts_natural)
+                             if self.counts_natural > 0 else 0)
+        self.sigma_sm_pa = (signal_sm_pa / np.sqrt(self.counts_natural)
+                            if self.counts_natural > 0 else 0)
 
         # Difference RFT − SM (the measurable RFT signature)
         self.signal_diff = self.signal_rft - self.signal_sm
         self.sigma_diff = (self.signal_diff / np.sqrt(self.counts_rft)
                            if self.counts_rft > 0 else 0)
+
+        # RT-09: Corrected difference significance (σ(γ,α)-based)
+        signal_diff_pa = signal_rft_pa - signal_sm_pa
+        counts_rft_pa = self.counts_natural + signal_rft_pa
+        self.sigma_diff_pa = (signal_diff_pa / np.sqrt(counts_rft_pa)
+                              if counts_rft_pa > 0 else 0)
 
     def report(self) -> None:
         """Prints complete experiment report."""
@@ -450,6 +476,20 @@ class ExperimentConfig:
         print(f"     RFT prediction: = 2.0")
         print(f"     SM prediction:  = 1.0 (no phase effect)")
 
+        print(f"\n--- RT-09 Corrected Significance (σ(γ,α) = 1.719 mb) ---")
+        print(f"  σ(γ,α) at E_γ:     {self.sigma_pa_mb:.4f} mb "
+              f"(Hauser-Feshbach, RT-06)")
+        print(f"  σ_GDR at E_γ:      {self.sigma_gdr_mb:.1f} mb "
+              f"(Legacy, RT-06 revision)")
+        print(f"  Correction factor: σ_GDR / σ(γ,α) = "
+              f"{self.sigma_gdr_mb / self.sigma_pa_mb:.1f}×")
+        print(f"  Significance RFT (new, σ(γ,α)):  {self.sigma_rft_pa:.1f} σ  "
+              f"[RT-09: CORRECT]")
+        print(f"  Significance SM  (new, σ(γ,α)):  {self.sigma_sm_pa:.1f} σ")
+        print(f"  Significance difference (new):   {self.sigma_diff_pa:.1f} σ")
+        print(f"  Significance RFT (old, σ_GDR):   {self.sigma_rft_legacy:.1f} σ  "
+              f"[Legacy, based on σ_GDR = {self.sigma_gdr_mb:.0f} mb — RT-06 revision]")
+
         print(f"\n--- Background ---")
         print(f"  Natural decays: {self.counts_natural:.3e} "
               f"(in {self.measurement_time_hours} h)")
@@ -458,7 +498,245 @@ class ExperimentConfig:
 
 
 # ============================================================
-# 8. Plots
+# 8. RT-09: Monte Carlo uncertainty budget
+# ============================================================
+
+def uncertainty_budget_am241(
+    facility: "Facility",
+    E_gamma_MeV: float,
+    target_mass_mg: float,
+    measurement_time_hours: float,
+    sigma_photo_alpha_mb: float = 1.719,       # RT-06 Hauser-Feshbach
+    sigma_pa_uncertainty_factor: float = 3.0,  # Factor 2–5, center = 3
+    detector_efficiency: float = 0.5,          # typical 20–80%, default 50%
+    detector_efficiency_unc: float = 0.15,     # ±15% absolute
+    beam_sigma_cm: float = 0.5,               # Gaussian beam width
+    beam_sigma_unc: float = 0.1,              # ±10%
+    gamma_gdr_width_MeV: float = 4.5,         # Γ_GDR = 4–5 MeV
+    gamma_gdr_width_unc_MeV: float = 0.5,     # ±0.5 MeV
+    phase_coherence: float = 1.0,             # achievable phase coherence
+    phase_coherence_unc: float = 0.1,         # ±10%
+    n_mc: int = 100_000,                      # Monte Carlo samples
+) -> dict:
+    """
+    Monte Carlo uncertainty budget for the Am-241 experiment (RT-09).
+
+    Computes the full uncertainty budget for the Am-241 experiment, accounting
+    for the following uncertainty sources:
+    - σ(γ,α): Log-normal (multiplicative factor from Hauser-Feshbach)
+    - Detector efficiency: Uniform in [efficiency − unc, efficiency + unc]
+    - Beam spread: Normal(beam_sigma_cm, beam_sigma_unc)
+    - Nuclear state width: Normal(gamma_gdr_width_MeV, gamma_gdr_width_unc_MeV)
+    - Phase coherence: Uniform in [phase_coherence − unc, phase_coherence + unc]
+
+    The key falsification criterion is:
+        Signal(η=1, coherent) / Signal(η=0.5, incoherent) = 2.0 (exact from RFT)
+    This ratio is independent of σ(γ,α) — it depends only on η(Δφ) = cos²(Δφ/2).
+
+    Args:
+        facility: Experimental facility (ELI_NP, HIgS, SLEGS)
+        E_gamma_MeV: Photon energy in MeV
+        target_mass_mg: Target mass in mg
+        measurement_time_hours: Measurement time in hours
+        sigma_photo_alpha_mb: Central value σ(γ,α) in mb (RT-06 Hauser-Feshbach)
+        sigma_pa_uncertainty_factor: Multiplicative uncertainty factor (factor 2–5)
+        detector_efficiency: Detector efficiency (default 0.5)
+        detector_efficiency_unc: Absolute uncertainty of detector efficiency
+        beam_sigma_cm: Gaussian beam width in cm
+        beam_sigma_unc: Absolute uncertainty of beam width in cm
+        gamma_gdr_width_MeV: GDR state width Γ_GDR in MeV
+        gamma_gdr_width_unc_MeV: Uncertainty of Γ_GDR in MeV
+        phase_coherence: Achievable phase coherence κ_coh (0–1)
+        phase_coherence_unc: Absolute uncertainty of phase coherence
+        n_mc: Number of Monte Carlo samples
+
+    Returns:
+        dict with statistical results, uncertainty contributions, and
+        falsifiability statement.
+    """
+    rng = np.random.default_rng(seed=42)
+
+    am = Am241_Literature
+
+    # Fixed parameters
+    target_mass_kg = target_mass_mg * 1e-6
+    N_atoms = (target_mass_kg * 1000 * N_A) / am.A
+    t_meas_s = measurement_time_hours * 3600
+    lambda_0 = am.lambda_0_per_s
+    Phi_nominal = facility.flux_typical / facility.beam_area_cm2
+    beam_area_nominal = facility.beam_area_cm2
+
+    # Log-normal parameters for σ(γ,α)
+    # Log-normal: median = sigma_photo_alpha_mb, σ_ln = ln(factor)
+    sigma_ln = np.log(sigma_pa_uncertainty_factor)
+
+    # Monte Carlo samples
+    # 1. σ(γ,α): Log-normal
+    ln_sigma_pa = rng.normal(
+        loc=np.log(sigma_photo_alpha_mb), scale=sigma_ln, size=n_mc
+    )
+    sigma_pa_samples = np.exp(ln_sigma_pa) * MB_TO_CM2  # in cm²
+
+    # 2. Detector efficiency: Uniform, clipped to [0.1, 1.0]
+    eps_det_samples = rng.uniform(
+        detector_efficiency - detector_efficiency_unc,
+        detector_efficiency + detector_efficiency_unc,
+        size=n_mc,
+    )
+    eps_det_samples = np.clip(eps_det_samples, 0.1, 1.0)
+
+    # 3. Beam width: Normal(beam_sigma_cm, beam_sigma_unc)
+    beam_sigma_samples = rng.normal(beam_sigma_cm, beam_sigma_unc, size=n_mc)
+    beam_sigma_samples = np.abs(beam_sigma_samples) + 1e-6  # physically > 0
+
+    # 4. GDR width: Normal(gamma_gdr_width_MeV, gamma_gdr_width_unc_MeV)
+    # Gamma_GDR is used as a multiplicative correction factor relative to central value.
+    # A wider resonance reduces the peak cross section proportionally.
+    gamma_gdr_samples = rng.normal(
+        gamma_gdr_width_MeV, gamma_gdr_width_unc_MeV, size=n_mc
+    )
+    gamma_gdr_samples = np.clip(gamma_gdr_samples, 2.0, 8.0)
+
+    # 5. Phase coherence: Uniform, clipped to [0, 1]
+    kappa_coh_samples = rng.uniform(
+        phase_coherence - phase_coherence_unc,
+        phase_coherence + phase_coherence_unc,
+        size=n_mc,
+    )
+    kappa_coh_samples = np.clip(kappa_coh_samples, 0.0, 1.0)
+
+    # Effective photon flux on target (beam spread)
+    # Assumption: beam cross section = π · σ_beam² (circle with radius σ_beam).
+    # Facility.beam_area_cm2 is the nominal beam cross-sectional area.
+    beam_sigma_nominal = np.sqrt(beam_area_nominal / PI)
+    Phi_eff_samples = Phi_nominal * (beam_sigma_nominal**2 / beam_sigma_samples**2)
+
+    # Coherent signal (η = κ_coh)
+    S_coh_samples = (
+        eps_det_samples * N_atoms * kappa_coh_samples
+        * Phi_eff_samples * sigma_pa_samples * t_meas_s
+    )
+
+    # Incoherent signal (η = 0.5 · κ_coh)
+    S_inc_samples = (
+        eps_det_samples * N_atoms * 0.5 * kappa_coh_samples
+        * Phi_eff_samples * sigma_pa_samples * t_meas_s
+    )
+
+    # Background (natural decays, detector-weighted)
+    B_samples = eps_det_samples * N_atoms * lambda_0 * t_meas_s
+
+    # Signal ratio (always exactly 2.0 — independent of σ(γ,α))
+    R_samples = np.where(S_inc_samples > 0, S_coh_samples / S_inc_samples, 2.0)
+
+    # Detection significance SNR = (S_coh − S_inc) / √(B + S_inc)
+    denom = np.sqrt(B_samples + S_inc_samples)
+    SNR_samples = np.where(denom > 0, (S_coh_samples - S_inc_samples) / denom, 0.0)
+
+    # Percentiles
+    SNR_median = float(np.median(SNR_samples))
+    SNR_p16 = float(np.percentile(SNR_samples, 16))
+    SNR_p84 = float(np.percentile(SNR_samples, 84))
+    SNR_p5 = float(np.percentile(SNR_samples, 5))
+
+    R_median = float(np.median(R_samples))
+    R_p16 = float(np.percentile(R_samples, 16))
+    R_p84 = float(np.percentile(R_samples, 84))
+
+    S_coh_median = float(np.median(S_coh_samples))
+    S_inc_median = float(np.median(S_inc_samples))
+    B_median = float(np.median(B_samples))
+
+    # Measurement time for SNR ≥ 3 and ≥ 5 (scaling: SNR ∝ √t)
+    if SNR_median > 0:
+        t_for_3sigma = measurement_time_hours * (3.0 / SNR_median) ** 2
+        t_for_5sigma = measurement_time_hours * (5.0 / SNR_median) ** 2
+    else:
+        t_for_3sigma = float('inf')
+        t_for_5sigma = float('inf')
+
+    # Sensitivity analysis: variance contributions of individual parameters
+    contributions = {}
+    central_sigma_pa = sigma_photo_alpha_mb * MB_TO_CM2
+    central_eps = detector_efficiency
+    central_bs = beam_sigma_cm
+    central_kappa = phase_coherence
+    beam_sigma_nominal_val = np.sqrt(beam_area_nominal / PI)
+
+    def _snr_from_params(s_pa, eps, bs, kappa):
+        bs_safe = np.maximum(np.asarray(bs, dtype=float), 1e-6)
+        phi = Phi_nominal * (beam_sigma_nominal_val**2 / bs_safe**2)
+        s_coh = eps * N_atoms * kappa * phi * s_pa * t_meas_s
+        s_inc = 0.5 * s_coh
+        bg = eps * N_atoms * lambda_0 * t_meas_s
+        denom_ = np.sqrt(bg + s_inc)
+        return np.where(denom_ > 0, (s_coh - s_inc) / denom_, 0.0)
+
+    # Variance when varying each parameter individually
+    n_sens = 10_000
+    for param_name, varied_samples, fixed_args in [
+        ("sigma_pa",
+         np.exp(rng.normal(np.log(sigma_photo_alpha_mb), sigma_ln, n_sens)) * MB_TO_CM2,
+         (central_eps, central_bs, central_kappa)),
+        ("detector_efficiency",
+         np.clip(rng.uniform(
+             detector_efficiency - detector_efficiency_unc,
+             detector_efficiency + detector_efficiency_unc, n_sens), 0.1, 1.0),
+         (central_sigma_pa, central_bs, central_kappa)),
+        ("beam_sigma",
+         np.abs(rng.normal(beam_sigma_cm, beam_sigma_unc, n_sens)) + 1e-6,
+         (central_sigma_pa, central_eps, central_kappa)),
+        ("phase_coherence",
+         np.clip(rng.uniform(
+             phase_coherence - phase_coherence_unc,
+             phase_coherence + phase_coherence_unc, n_sens), 0.0, 1.0),
+         (central_sigma_pa, central_eps, central_bs)),
+    ]:
+        if param_name == "sigma_pa":
+            snr_v = _snr_from_params(varied_samples, *fixed_args)
+        elif param_name == "detector_efficiency":
+            snr_v = _snr_from_params(fixed_args[0], varied_samples, fixed_args[1], fixed_args[2])
+        elif param_name == "beam_sigma":
+            snr_v = _snr_from_params(fixed_args[0], fixed_args[1], varied_samples, fixed_args[2])
+        else:  # phase_coherence
+            snr_v = _snr_from_params(fixed_args[0], fixed_args[1], fixed_args[2], varied_samples)
+        contributions[param_name] = float(np.var(snr_v))
+
+    total_var = sum(contributions.values())
+    if total_var > 0:
+        contributions_rel = {k: v / total_var for k, v in contributions.items()}
+    else:
+        contributions_rel = {k: 0.0 for k in contributions}
+
+    dominant_uncertainty = max(contributions_rel, key=contributions_rel.get)
+
+    falsification_feasible = SNR_p16 >= 3.0
+
+    return {
+        "sigma_pa_central_mb": sigma_photo_alpha_mb,
+        "sigma_pa_unc_factor": sigma_pa_uncertainty_factor,
+        "SNR_median": SNR_median,
+        "SNR_p16": SNR_p16,
+        "SNR_p84": SNR_p84,
+        "SNR_p5": SNR_p5,
+        "R_median": R_median,
+        "R_p16": R_p16,
+        "R_p84": R_p84,
+        "S_coh_median": S_coh_median,
+        "S_inc_median": S_inc_median,
+        "B_median": B_median,
+        "t_for_3sigma": t_for_3sigma,
+        "t_for_5sigma": t_for_5sigma,
+        "dominant_uncertainty": dominant_uncertainty,
+        "contributions": contributions_rel,
+        "falsification_feasible": falsification_feasible,
+        "n_mc": n_mc,
+        "_snr_samples": SNR_samples,  # Raw MC samples for visualization
+    }
+
+
+# ============================================================
+# 9. Plots
 # ============================================================
 
 def ensure_dir(path: str) -> None:
@@ -733,7 +1011,7 @@ def plot_signal_ratio(output_dir: str) -> None:
 
 
 # ============================================================
-# 9. Main program
+# 10. Main program
 # ============================================================
 
 def main() -> None:

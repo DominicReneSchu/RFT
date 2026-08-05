@@ -320,6 +320,8 @@ Based on experiment_am241.py (literature values, no free parameters):
     RFT signature:
       Signal_coh / Signal_inc = 2.0000 (exact)
       Significance of the difference: ~50,000 σ
+      *(Legacy figure: based on σ_GDR = 364 mb — RT-06/RT-09 revision required)*
+      *Corrected (RT-09, σ(γ,α) = 1.719 mb): SNR_median = 10.3 σ at 100 h (realistic)*
 ```
 
 **Experiment 2: ELI-NP design (Φ = 10¹³ γ/s)**
@@ -494,7 +496,8 @@ All simulations are publicly accessible:
 | Observable | Signal_coh / Signal_inc |
 | RFT prediction | 2.0 (exact) |
 | SM prediction | 1.0 |
-| Expected significance | >50,000 σ |
+| Expected significance | SNR_median = 10.3 σ at 100 h (realistic, RT-09) |
+| Significance (legacy) | >50,000 σ (based on σ_GDR — RT-06/RT-09: REVISED) |
 | Free parameters | 0 |
 | Falsifiable | Yes (yes/no test) |
 

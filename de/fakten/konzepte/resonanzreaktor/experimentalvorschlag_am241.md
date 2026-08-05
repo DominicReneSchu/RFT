@@ -320,6 +320,8 @@ Basierend auf experiment_am241.py (Literaturwerte, keine freien Parameter):
     RFT-Signatur:
       Signal_koh / Signal_ink = 2,0000 (exakt)
       Signifikanz der Differenz: ~50.000 σ
+      *(Legacy-Angabe: basiert auf σ_GDR = 364 mb — RT-06/RT-09 Revision erforderlich)*
+      *Korrigiert (RT-09, σ(γ,α) = 1.719 mb): SNR_median = 10,3 σ bei 100 h (realistisch)*
 ```
 
 **Experiment 2: ELI-NP Design (Φ = 10¹³ γ/s)**
@@ -494,7 +496,8 @@ Alle Simulationen sind öffentlich zugänglich:
 | Messgröße | Signal_koh / Signal_ink |
 | RFT-Vorhersage | 2,0 (exakt) |
 | SM-Vorhersage | 1,0 |
-| Erwartete Signifikanz | >50.000 σ |
+| Erwartete Signifikanz | SNR_median = 10,3 σ bei 100 h (realistisch, RT-09) |
+| Signifikanz (Legacy) | >50.000 σ (basiert auf σ_GDR — RT-06/RT-09: REVIDIERT) |
 | Freie Parameter | 0 |
 | Falsifizierbar | Ja (Ja/Nein-Test) |
 
