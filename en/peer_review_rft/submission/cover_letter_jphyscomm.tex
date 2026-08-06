@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{parskip}
+
+\begin{document}
+
+\noindent
+\textbf{To:}\\
+The Editor\\
+Journal of Physics Communications\\
+IOP Publishing\\
+Temple Circus, Temple Way\\
+Bristol BS1 6HG, United Kingdom
+
+\bigskip
+\noindent August 2026
+
+\bigskip
+Dear Editor,
+
+\section*{Submission Statement}
+
+I hereby submit the manuscript
+
+\begin{center}
+\textit{``Resonance Field Theory: Axiomatics, Fundamental Formula, and Empirical Validation''}
+\end{center}
+
+\noindent by Dominic-Ren\'e Schu (ORCID: 0009-0004-9769-9061) for consideration as an
+\textbf{Original Research Article} in the \textit{Journal of Physics Communications}.
+
+\section*{Core Statement}
+
+Resonance Field Theory (RFT) is an axiomatic framework that derives a phase-dependent
+extension of the Planck relation,
+$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$,
+from seven hierarchically structured axioms. The central result is that the factor $\pi$
+in this formula is not a free normalization parameter but emerges geometrically from the
+stationary-phase contribution of the action integral over a half-cycle of phase space
+(RT-01, RT-01b); and that the coupling efficiency
+$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ is the unique function satisfying
+all boundary conditions within the $k\!=\!1$ irreducible representation of
+$\mathrm{U}(1) \subset G_{\mathrm{sync}}$, the theory's symmetry group (RT-02). The
+theory is empirically validated across four independent physical domains --- particle
+physics, cosmology, nuclear physics, and quantum mechanics --- and two concrete
+falsifiable experimental proposals are presented with numerically specified decision
+criteria.
+
+\textit{Journal of Physics Communications} is the appropriate venue because the
+manuscript communicates a significant original result that simultaneously (a) introduces
+a formally structured axiomatic framework, (b) presents cross-domain empirical
+validation with quantified significance, and (c) provides experimentally testable
+predictions accessible to existing laboratory infrastructure.
+
+\section*{Distinction from Prior Work}
+
+RFT is not a reformulation of existing oscillator physics. Three features distinguish
+it from prior frameworks:
+
+\textbf{$\pi$ as a derived geometric constant (RT-01, RT-01b).}
+In the standard Planck relation $E = \hbar\omega$, the factor $2\pi$ is built into the
+definition of $\omega$. In RFT, $\pi$ appears explicitly as a result of integrating the
+saddle-point contribution of the action integral
+$S[\varphi] = \int_0^{\pi} \varepsilon(\varphi)\,d\varphi$ over one half-period of the
+resonance cycle. The numerical confirmation ($|c_3 + c_4| \approx 5.5 \times 10^{-11}$,
+RT-01b) shows this is not an arbitrary normalization. The falsification condition is
+explicit: any measurement demonstrating that the phase-integrated coupling energy
+deviates from $\pi \cdot \varepsilon \cdot \hbar \cdot f$ beyond the numerical precision
+of the saddle-point calculation would refute the derivation.
+
+\textbf{$\varepsilon = \cos^2(\Delta\varphi/2)$ as representation-theoretically forced
+(RT-02).}
+Within the symmetry group
+$G_{\mathrm{sync}} \cong \mathbb{R}^+_\times \times \mathrm{U}(1) \times
+\mathrm{Aff}^+(\mathbb{R})$, the $k\!=\!1$ irreducible representation of $\mathrm{U}(1)$
+admits exactly one function $F\colon[0,2\pi]\to[0,1]$ satisfying $\varepsilon(0)=1$,
+$\varepsilon(\pi)=0$, parity $\varepsilon(\Delta\varphi)=\varepsilon(-\Delta\varphi)$,
+and non-mixing of higher representations ($k \geq 2$). That function is
+$\cos^2(\Delta\varphi/2)$. The uniqueness theorem is proved in \S3.3 of the manuscript.
+
+\textbf{A3 as a corollary, not an independent axiom (RT-02, RT-35).}
+The resonance condition $|f_1/f_2 - m/n| < \delta$ is derived as a corollary of
+Axiom~A7 (invariance under $G_{\mathrm{sync}}$) and is no longer counted as an
+independent postulate. This reduces the axiom count from seven to six effective
+independent postulates.
+
+\textbf{Falsifiable predictions with quantified criteria.}
+Two experimental proposals include specific falsification thresholds: (I) SNR $\geq 3\sigma$
+for Am-241 photo-excitation at ELI-NP with 100~h beam time
+(SNR$_{\mathrm{median}} \approx 10\sigma$); (II) center-of-mass shift
+$|\Delta\langle x\rangle| \approx 2.0\cdot\lambda\;\mu\mathrm{m}$ for ${}^{87}$Rb BEC
+in a harmonic trap at $\Delta\varphi = \pi$, testable with existing BEC apparatus.
+
+\section*{Empirical Reach}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{p{3cm} p{5cm} p{5.5cm}}
+\toprule
+Domain & Method & Key result \\
+\midrule
+Particle physics & 1,500,000 MC sim.\ on CMS Open Data dielectron events &
+  5 resonances detected (empirical $p = 0$, stable across 3 bandwidths, 10~seeds) \\
+Cosmology & 1,530 coupled FLRW simulations &
+  $\eta \approx \cos^2(\Delta\varphi/2)$ emergent; $\Delta d_\eta > 6\sigma$;
+  $\Delta\chi^2 = +16$ vs.\ Planck-2018 CMB \\
+Nuclear physics & Resonance reactor, $\kappa = 1$ (no free parameter) &
+  Fission break-even $Q \approx 1.0$; $\lambda_{\mathrm{eff}}/\lambda_0 = 7{,}872$ \\
+Quantum mechanics & Schr\"odinger simulation (5 derivation steps) &
+  Fidelity $= 1.0$ (all 4 scenarios); $1-F \sim \lambda^2$ confirmed \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Open Science Statement}
+
+All derivations, source code, simulation scripts, and raw data are openly available at:
+\begin{center}
+\url{https://github.com/DominicReneSchu/RFT}
+\end{center}
+\noindent This includes all RT-series analyses (RT-01 through RT-38), the double pendulum
+experiment protocol (RT-38, reproducible with approximately 200~EUR and a smartphone),
+and the full backtest infrastructure. The repository is public and version-controlled.
+
+\section*{Suggested Reviewers}
+
+\noindent\textbf{Particle Physics / Resonance Physics:}
+
+\begin{itemize}
+\item Dr.\ G\"unter Dissertori, ETH Z\"urich (CMS collaboration, resonance searches in
+  dielectron/dimuon channels): \texttt{dissertori@phys.ethz.ch}
+\item Dr.\ Markus Klute, MIT (Higgs boson physics, resonance structure in CMS data):
+  \texttt{mklute@mit.edu}
+\end{itemize}
+
+\noindent\textbf{Mathematical Physics (Group Theory / Representation Theory):}
+
+\begin{itemize}
+\item Prof.\ Gerd Rudolph, Universit\"at Leipzig (gauge field theory,
+  group-theoretic structures): \texttt{rudolph@itp.uni-leipzig.de}
+\end{itemize}
+
+\noindent\textbf{Cosmology (FLRW / CMB):}
+
+\begin{itemize}
+\item Dr.\ Licia Verde, Universitat de Barcelona / ICREA (CMB power spectrum analysis,
+  Hubble tension): \texttt{liciaverde@icc.ub.edu}
+\end{itemize}
+
+\noindent\textbf{Quantum Mechanics / Atomic Physics (BEC / Interferometry):}
+
+\begin{itemize}
+\item Prof.\ Markus Oberthaler, Universit\"at Heidelberg (BEC physics,
+  matter-wave interferometry with ${}^{87}$Rb): \texttt{markus.oberthaler@kip.uni-heidelberg.de}
+\end{itemize}
+
+\section*{Excluded Reviewers}
+
+No reviewers are formally excluded. There are no personal, commercial, or intellectual
+conflicts that would warrant exclusion.
+
+\section*{Author Information}
+
+\begin{tabular}{ll}
+\textbf{Author:} & Dominic-Ren\'e Schu \\
+\textbf{Affiliation:} & Independent Researcher \\
+\textbf{Email:} & dominic.rene.schu@gmail.com \\
+\textbf{ORCID:} & 0009-0004-9769-9061 \\
+\textbf{Co-authors:} & None \\
+\textbf{Conflicts of interest:} & None \\
+\textbf{Funding:} & No external funding \\
+\textbf{Data availability:} & \url{https://github.com/DominicReneSchu/RFT} \\
+\end{tabular}
+
+\bigskip
+\noindent I confirm that this manuscript is original, has not been published elsewhere,
+and is not currently under consideration at any other journal.
+
+\bigskip\bigskip
+\noindent Yours sincerely,
+
+\bigskip\bigskip
+\noindent Dominic-Ren\'e Schu\\
+August 2026
+
+\end{document}

@@ -175,6 +175,13 @@ Die ausführliche Zusammenfassung der Resonanzfeldtheorie als PDF:
 Ein Peer-Review-Verfahren wird aktiv angestrebt:
 [**rft_manuskript_de_iop.pdf**](peer_review_rft/manuskript_de/rft_manuskript_de_iop.pdf)
 
+**Einreichungsvorbereitung (RT-39, August 2026):** Alle Einreichungsunterlagen für das Journal of Physics Communications (IOP Publishing) wurden vorbereitet und sind unter [`../en/peer_review_rft/submission/`](../en/peer_review_rft/submission/) verfügbar:
+- [Cover Letter](../en/peer_review_rft/submission/cover_letter_jphyscomm.md)
+- [Submission Checklist](../en/peer_review_rft/submission/submission_checklist.md)
+- [Response-to-Reviewers Vorlage](../en/peer_review_rft/submission/response_to_reviewers_template.md)
+- [Journal-Auswahl-Begründung](../en/peer_review_rft/submission/journal_selection.md)
+- [Manuskript-Prüfbericht](../en/peer_review_rft/submission/manuscript_review_report.md)
+
 ---
 
 ## Resonanzfeldtheorie (RFT) – Das Universum als Resonanzblase

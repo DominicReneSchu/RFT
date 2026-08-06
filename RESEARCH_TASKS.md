@@ -42,6 +42,7 @@ Status: Aktiv
 - ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
 - ~~RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)~~ ✅ Abgeschlossen (Aug 2026)
 - ~~RT-37  — IOP-Manuskript DE + EN aktualisieren~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-39  — Einreichungsvorbereitung IOP~~ ✅ Abgeschlossen (Aug 2026) — Cover Letter (MD + LaTeX), Submission Checklist, Response-to-Reviewers Vorlage (7 Kritikpunkte), Journal-Auswahl-Begründung, Manuskript-Prüfbericht. Zieljournal: Journal of Physics Communications. Primäre Aktion: Abstract-Kürzung auf ≤ 200 Wörter erforderlich. `en/peer_review_rft/submission/`
 
 ### Extern (benötigt Kooperationspartner)
 8. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -551,3 +552,31 @@ verfeinert werden.
 **Motivation:** The model proposes that post-monopoly knowledge diffusion often produces imitation systems with low $\varepsilon$. This is historically testable and socially consequential.
 **Aufgabe:** Study cases of Reformation, decolonisation, market opening, or knowledge-monopoly breakdown for fragmentation, violence, institutional trust, and the quality of successor systems.
 **Falsifizierung:** If monopoly dissolutions do not systematically co-occur with greater fragmentation or higher proximity to $\beta_\text{collective}$, the fragmentation thesis must be revised.
+
+---
+
+## Kategorie 7: Einreichungsvorbereitung
+
+### RT-39 — Einreichungsvorbereitung IOP (Cover Letter, Submission Checklist, Response-to-Reviewers)
+**Status: ✅ Abgeschlossen (August 2026)**
+
+**Ziel:** Vollständige Vorbereitung der Einreichung von `rft_manuscript_en_iop.tex` beim Journal of Physics Communications (IOP Publishing).
+
+**Ergebnis:**
+- Cover Letter: `en/peer_review_rft/submission/cover_letter_jphyscomm.md` + `.tex`
+- Submission Checklist: `en/peer_review_rft/submission/submission_checklist.md` (3 Kategorien, alle IOP-Standards geprüft)
+- Response-to-Reviewers: `en/peer_review_rft/submission/response_to_reviewers_template.md` (7 Kritikpunkte vollständig ausgearbeitet)
+- Journal-Auswahl: `en/peer_review_rft/submission/journal_selection.md` (JPhysComm primär, NJP alternativ, arXiv empfohlen)
+- Manuskript-Prüfbericht: `en/peer_review_rft/submission/manuscript_review_report.md`
+
+**Primär offene Aktion:** Abstract-Kürzung auf ≤ 200 Wörter (aktuell ~244 Wörter) — obligatorisch vor Einreichung.
+
+**Empfohlene Ergänzungen vor Einreichung:**
+- RT-08-Limitation (χ²_red synthetisch) in §4.3 ergänzen
+- RT-10-Limitation (3/5 Folds) in §4.5 ergänzen
+- RT-38 Protokoll-URL in §6 ergänzen
+- Abbildungen auf ≥ 300 dpi prüfen / in PDF/EPS konvertieren
+
+**Einreichungsportal:** https://mc.manuscriptcentral.com/jphyscomm
+
+*RT-39 — DominicReneSchu/RFT — August 2026*

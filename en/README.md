@@ -175,6 +175,13 @@ The detailed summary of Resonance Field Theory as a PDF:
 A peer review process is actively being pursued:
 [**rft_manuscript_en_iop.pdf**](peer_review_rft/manuscript_en/rft_manuscript_en_iop.pdf)
 
+**Submission preparation (RT-39, August 2026):** All submission materials for the Journal of Physics Communications (IOP Publishing) have been prepared and are available in [`peer_review_rft/submission/`](peer_review_rft/submission/):
+- [Cover Letter](peer_review_rft/submission/cover_letter_jphyscomm.md)
+- [Submission Checklist](peer_review_rft/submission/submission_checklist.md)
+- [Response-to-Reviewers Template](peer_review_rft/submission/response_to_reviewers_template.md)
+- [Journal Selection Rationale](peer_review_rft/submission/journal_selection.md)
+- [Manuscript Review Report](peer_review_rft/submission/manuscript_review_report.md)
+
 ---
 
 ## Resonance Field Theory (RFT) – The Universe as a Resonance Bubble
