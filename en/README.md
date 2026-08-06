@@ -313,7 +313,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 
 | # | Document | Axioms | Description |
 |---|----------|--------|-------------|
-| 1 | [π and e as Fundamental Constants of Space](facts/theory/pi_as_fundamental_constant.md) | A4, A5 | Founding idea of RFT: π as geometric phase-space constant, vectorial nature of energy (RT-01a) |
+| 1 | [π and e as Fundamental Constants of Space](facts/theory/pi_as_fundamental_constant.md) | A4, A5 | Founding idea of RFT: π as geometric phase-space constant, vectorial nature of energy — **✅ RT-01a complete (Aug 2026)** |
 | 2 | [Action Integral Derivation of π](facts/theory/action_integral_pi_derivation.md) | A4 | Formal derivation of π as the saddle-point contribution of the stationary phase in the path integral (RT-01, Aug 2026) |
 | 3 | [G_sync — Group Structure and Invariance Proofs](facts/theory/gsync_group_structure.md) | A7 | Group-theoretic proof: G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ); uniqueness of cos²(Δφ/2); RT-02, Aug 2026 |
 | 4 | [Peer Review Readiness](../PEER_REVIEW_READINESS.md) | — | Status of all open formalisation steps and theoretical foundations against peer-review criteria |

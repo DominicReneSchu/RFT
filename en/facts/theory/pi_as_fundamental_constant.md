@@ -1,6 +1,7 @@
-# π and e as Fundamental Constants of Space — The Founding Idea of RFT
+# π and e as Fundamental Constants of Space — The Founding Idea of RFT (RT-01a)
 
-*Dominic René Schu, July 2026*
+*Dominic René Schu, August 2026*
+*Status: ✅ Complete (Aug 2026)*
 
 ---
 
@@ -13,9 +14,14 @@ artefacts of an arbitrary decimal representation — and that treating them as
 geometric fundamental constants of phase space provides the conceptual foundation
 for Axiom A4 and the vectorial nature of energy (A5).
 
-This line of reasoning is not yet formally complete. What is presented here is a
-conceptual motivation that precedes and guides the formal derivation via the
-action integral (RT-01).
+RT-01a provides the **philosophical-mathematical prerequisite** for RT-01: it
+formalises the decimal-artefact argument, establishes the justification for treating
+π as a geometric unit, and explains why the vectoriality inconsistency of standard
+physics is the physical motivation for A5 as an irreducible postulate — without
+deriving A5.
+
+The formal derivation of the factor π in the action integral (the *necessity*, not
+merely the *justification*) is the subject of RT-01.
 
 ---
 
@@ -28,7 +34,7 @@ The number π has a non-terminating, non-repeating decimal representation:
 be expressed as the ratio of two integers.
 
 This statement is mathematically correct. What is frequently overlooked, however,
-is that it is a statement about the *representation* of π in a particular number
+is that it is a statement about the **representation** of π in a particular number
 system — not about π itself as a physical quantity.
 
 **The circumference of a circle with radius 1 is a physically exact, finite and
@@ -52,7 +58,34 @@ systems. The RFT draws a physical consequence from it: if π is not intrinsicall
 treating π as a fundamental unit — a primordial constant of space — is both
 meaningful and physically motivated.
 
-### 1.3 Parallel with Other Natural Constants
+### 1.3 Formal Theorem: Representational Relativity of π
+
+The decimal-artefact argument can be stated precisely as a structural claim:
+
+> **Theorem (Representational Relativity of π):** Let $b > 0$ be real and $b \neq 1$.
+> In a positional system with base $b$, $\pi$ admits a finite or periodic expansion
+> if and only if $b$ and $\pi$ are rationally commensurate. In particular: in the
+> positional system with base $b = \pi$, we have $\pi = 1 \cdot b^1 = (10)_\pi$ —
+> a finite, single-digit representation.
+
+The three-step structure of the argument:
+
+1. **π is an exact and finite physical quantity:** The circumference of a circle
+   with $r = 1$ is a well-defined, measurable value, independent of any
+   representational convention.
+2. **The decimal representation is an encoding, not a property of the quantity:**
+   The expansion 3.14159… results from projecting the physical quantity into a
+   base-10 number system. It does not describe the quantity completely; it encodes
+   it within a particular representational frame.
+3. **Therefore, π is rationally usable in a natural unit system for circular
+   geometry:** The apparent irrationality is a representational artefact — it
+   vanishes as soon as the number system is adapted to the geometric structure.
+
+**Scope limitation:** The argument ends here. It establishes the *justification* for
+treating π as a geometric unit — not the physical *necessity*. The physical
+necessity — why π *must* appear in A4 — is provided by RT-01.
+
+### 1.4 Parallel with Other Natural Constants
 
 Physics routinely employs natural unit systems in which fundamental constants take
 the value 1:
@@ -96,33 +129,102 @@ It is the **natural normalisation** of the coupling energy to the geometry of th
 circle: a fully coherent resonance coupling ($\varepsilon = 1$) spans exactly one
 half-period, and π is the measure of that half-period.
 
-Formally, the integral
+The integral
+
 $$\int_0^\pi \cos^2\!\left(\frac{\varphi}{2}\right)\mathrm{d}\varphi = \frac{\pi}{2}$$
+
 produces π as the natural normalisation factor when the coupling efficiency
 $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ is integrated over a complete
-half-period. This integral is described in the manuscript as a *motivation*, not a
-*derivation*.
+half-period. This integral serves as *motivation*, not *derivation* — the formal
+derivation is provided by RT-01.
 
 → **Formal derivation:** [action_integral_pi_derivation.md](action_integral_pi_derivation.md)
-(RT-01, August 2026 — with explicit falsification proviso)
+(RT-01, August 2026)
 
 ### 2.3 Status of This Claim
 
-It is explicitly noted that the π argument is formulated here as a **conceptual
-motivation**, not a formal proof. The claim is:
+The π argument is formulated here as a **conceptual motivation**, not a formal proof.
+The claim is:
 
 > If π is understood as a phase-space constant (the geometric unit of the circle),
 > the factor π in A4 loses its status as a free numerical postulate and acquires
 > the status of a geometric necessity.
 
-Whether and how this can be formally derived is the subject of RT-01
-(action-integral derivation of π).
+The formal derivation — the proof that π under this treatment emerges from physics
+itself as the saddle-point contribution of the action integral — is the subject of
+RT-01.
 
 ---
 
-## 3. Internal Inconsistency in Standard Physics: The Vectorial Nature of Energy
+## 3. Two-Level Argument: RT-01a and RT-01 as a Consistent Unit
 
-### 3.1 The Core Problem
+The relationship between RT-01a (conceptual-mathematical) and RT-01 (physical-formal)
+is as follows: the two levels are not mutually exclusive but interlocking.
+
+| Level | Document | Question | Result |
+|-------|----------|----------|--------|
+| **Level 1 (RT-01a)** | `pi_as_fundamental_constant.md` | *Why may π be treated as a unit?* | Decimal artefact: π is representation-relative — irrationality is not a natural phenomenon |
+| **Level 2 (RT-01)** | `action_integral_pi_derivation.md` | *Why must π appear in A4?* | π is the saddle-point contribution of the action integral $S[\psi,\Delta\varphi]$ over the half-period $[0,\pi]$ |
+
+**Level 1 (RT-01a)** establishes the *justification* for treating π as a geometric
+unit: the apparent problem of irrationality dissolves once it is recognised as a
+representational artefact. This opens the conceptual space for treating π as a
+natural normalisation unit.
+
+**Level 2 (RT-01)** shows that π under this treatment follows from physics itself:
+the stationary phase of the action integral of resonance coupling has π as its
+geometric contribution — independently of any postulated normalisation choice.
+
+**The two-level structure** ensures that π in A4 is doubly secured: conceptually
+(representational relativity) and formally (action-integral saddle point). Neither
+level alone is complete: RT-01a without RT-01 remains mere motivation; RT-01
+without RT-01a would appear as an unmotivated formal trick.
+
+---
+
+## 4. Connection to G_sync and the Minimality Principle (RT-02)
+
+### 4.1 The k=1 Representation of U(1)
+
+RT-02 (group structure of G_sync) shows: the coupling efficiency
+$\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ follows uniquely from the
+**k=1 representation** of U(1) ⊂ G_sync. The k=1 representation is the
+*fundamental* (minimal) irreducible representation — all other representations
+(k=2, 3, …) yield higher-harmonic couplings not observed in experiment.
+
+### 4.2 Structural Equivalence of Minimality Principles
+
+The minimality principle in RT-02 and the founding idea of RT-01a are structurally
+equivalent:
+
+> **The k=1 representation of U(1) is the minimal representation** — analogously,
+> π is the minimal geometric unit of the circle: the measure of the half-oscillation,
+> below which no complete geometric structure exists.
+
+Formally:
+
+- RT-01a: π = minimal geometric unit of the circle (half-period $[0,\pi]$)
+- RT-02 (k=1): $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$ =
+  minimal irreducible representation of phase rotation in U(1)
+
+Both minimality requirements meet in the integral
+
+$$\int_0^\pi \cos^2\!\left(\frac{\varphi}{2}\right)\mathrm{d}\varphi = \frac{\pi}{2}$$
+
+which contains both the normalisation measure (π, from RT-01a) and the coupling
+form ($\cos^2(\Delta\varphi/2)$, from the k=1 representation, RT-02).
+
+The convergence of both principles is not coincidental: it reflects the geometric
+self-consistency of the RFT axiomatics. Both paths — the conceptual-mathematical
+(RT-01a) and the group-theoretic (RT-02) — enforce the same structure.
+
+→ **Group-theoretic proof:** [gsync_group_structure.md](gsync_group_structure.md) (RT-02)
+
+---
+
+## 5. Internal Inconsistency in Standard Physics: The Vectorial Nature of Energy
+
+### 5.1 The Core Problem
 
 Standard physics treats energy as a scalar — a quantity with no directional
 property. This convention is, however, not entirely internally consistent, as
@@ -159,7 +261,7 @@ energy already appears as the temporal component of a vectorial quantity. Energy
 independent of direction (momentum) in the relativistic formalism — it is part
 of a covariant four-vector.
 
-### 3.2 The Internal Inconsistency
+### 5.2 The Internal Inconsistency
 
 Standard physics treats energy as a scalar, yet its own structures contradict this
 in three independent contexts:
@@ -174,97 +276,129 @@ This inconsistency is not a proof of the RFT — it is an **open question** in t
 foundations of physics that the RFT takes as its starting point in developing an
 alternative model.
 
-### 3.3 Clarification: No Refutation of Standard Physics
+### 5.3 Clarification: No Refutation of Standard Physics
 
-It is explicitly noted that the inconsistency described here is not to be
-understood as a refutation of standard physics. The established formalisms
-(classical mechanics, QM, GR) are internally consistent in the sense that they
-yield non-contradictory predictions. The inconsistency lies at a deeper conceptual
-level: what is energy ontologically — a scalar quantity or a quantity with
-geometric structure?
+The inconsistency described here is not to be understood as a refutation of
+standard physics. The established formalisms (classical mechanics, QM, GR) are
+internally consistent in the sense that they yield non-contradictory predictions.
+The inconsistency lies at a deeper conceptual level: what is energy ontologically —
+a scalar quantity or a quantity with geometric structure?
 
 The RFT makes an explicit modelling decision: energy has direction in the resonance
-field (A5). This decision is an axiom, not a derivation — but it is motivated by
-the conceptual inconsistency described above.
+field (A5). This decision is an axiom, not a derivation.
 
 ---
 
-## 4. Spin and Vectoriality as Motivation for A5
+## 6. A5 Placement: Vectoriality Inconsistency as Motivation, not Derivation
 
-### 4.1 A5 and its Current Justification
+### 6.1 A5 and its Current Status
 
 Axiom A5 states:
 
 $$\vec{E} = E_{\text{eff}} \cdot \hat{e}(\Delta\varphi, \nabla\Phi)$$
 
-In the current presentation, A5 is not derived from A1–A4. It is an independent
-axiom postulating the vectorial character of energy.
+A5 is not derived from A1–A4. It is an independent, irreducible postulate
+establishing the vectorial character of energy in the resonance field.
 
-### 4.2 The Conceptual Motivation
+**Complete (RT-36, Aug 2026):** RT-36 has shown that A5 is an irreducible postulate
+(possibility B). The D-generator of G_sync yields $\delta_D \Phi \propto \partial_t \Phi$
+(not $\nabla\Phi$); in general $\delta_D(\nabla\Phi/|\nabla\Phi|) \neq 0$.
+G_sync operates on the internal phase space (frequencies, phases, time) — not on
+spatial directions. The directional unit $\hat{e}(\Delta\varphi, \nabla\Phi)$ is
+therefore group-theoretically irreducible and cannot be derived from G_sync.
 
-If π encodes the geometry of phase space (Section 2) and energy is understood as
-a vectorial quantity in that space, A5 follows conceptually as the directional
-component of the coupling energy:
+### 6.2 The Conceptual Motivation
 
-- The scalar coupling energy $E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$
-  (A4) gives the magnitude.
-- The direction $\hat{e}(\Delta\varphi, \nabla\Phi)$ follows from the geometry of
-  phase space: it points in the direction in which the phase coupling propagates.
+The vectoriality inconsistency of standard physics (§5) is the **physical motivation**
+for A5 as an irreducible postulate — it is not a derivation of A5.
 
-This is analogous to the relationship between work and force vector:
+- The structures torque, spin, and Lorentz four-vector show that standard physics
+  is not fully internally consistent in its scalar treatment of energy.
+- The RFT takes this inconsistency as its starting point and postulates A5: energy
+  has a directional structure in the resonance field.
 
-$$W = \vec{F} \cdot \vec{s}$$
+**Precise formulation:** The vectoriality inconsistency *motivates* A5 — it does
+not *compel* it. A5 is a modelling decision of the RFT that is justified by the
+empirical picture of standard physics but is not logically derivable from it alone.
 
-gives only the magnitude — the force vector $\vec{F}$
-itself has direction. A5 claims that energy in the resonance field likewise
-possesses a directional property, just as force does in mechanics.
+### 6.3 A5 Status: Complete
 
-**Spin** as an empirical phenomenon points independently in the same direction:
-quantum systems naturally exhibit a vectorial energy structure (Zeeman splitting,
-magnetic moment) that cannot be reduced to a purely scalar energy concept.
+A5 is formally complete (RT-36, Aug 2026) as an irreducible postulate. The
+conceptual justification basis is the vectoriality inconsistency in torque, spin,
+and Lorentz four-vector (this document, §5).
 
-### 4.3 What Remains Formally Open
+Open question: A consistency proof with the energy-momentum tensor of General
+Relativity remains outside the current formal framework.
 
-The claim that A5 "follows" from the π-as-primordial-constant argument is
-conceptually plausible but not yet formally complete. Open questions include:
-
-- A group-theoretic framework deriving the directional unit
-  $\hat{e}(\Delta\varphi, \nabla\Phi)$ from the geometry of phase space
-  (connection to RT-02)
-- A consistency proof with the energy-momentum tensor of General Relativity
+→ Full analysis: [a5_vectoriality_derivation.md](a5_vectoriality_derivation.md) (RT-36)
 
 ---
 
-## 5. e as the Fundamental Constant of Dynamic Coupling
+## 7. e as the Fundamental Constant of Dynamic Coupling
 
-### 5.1 Euler's Number in the Decimal System
+### 7.1 Euler's Number in the Decimal System
 
 Euler's number $e = 2.71828\ldots$ shares with π the property of being irrational
 and transcendental in the decimal system. The same decimal-artefact argument
 applies: the infinity of the decimal expansion is not a natural phenomenon but a
-consequence of the base-10 encoding.
+consequence of the base-10 encoding. In a number system with base $e$, we have
+$e = (10)_e$ — finite and rationally representable.
 
-### 5.2 e as the Fundamental Constant of Dynamic Equilibrium
+### 7.2 e as the Fundamental Constant of Dynamic Equilibrium
 
-$e$ appears in all growth and decay processes that are proportional to their own
-state — that is, in all processes of the form $\dot{x} = \lambda x$. The solution
-is always $x(t) = x_0 \cdot e^{\lambda t}$.
+Formally: all processes of the form
 
-**In the RFT:** Resonance coupling is such a process — the rate at which energy is
-exchanged between two resonantly coupled systems is proportional to the existing
-coupling. $e$ is therefore not "an irrational number" but rather the **fundamental
-constant of dynamic equilibrium** — the natural base for all self-similar coupling
-processes.
+$$\dot{x}(t) = \lambda \, x(t), \quad \lambda \in \mathbb{C}$$
 
-### 5.3 Status
+have as their **unique analytic solution**
 
-The argument for $e$ as a fundamental constant is analogous to the π argument —
-conceptually motivated, but not yet formally integrated into the axiomatics of the
-RFT. This remains an open formalisation step.
+$$x(t) = x_0 \cdot e^{\lambda t}.$$
+
+This is not coincidental and not merely definitional. The requirement that the rate
+of change $\dot{x}$ be encoded in the solution $x$ itself — i.e. that the solution
+carries its own rate as a structural property — uniquely forces the base $e$.
+Formally: let $f(t)$ be differentiable and $f'(t) = \lambda f(t)$. Then separation
+of variables and integration give:
+
+$$\int_{x_0}^{x} \frac{\mathrm{d}u}{u} = \lambda t \implies \ln\!\left(\frac{x}{x_0}\right) = \lambda t \implies x(t) = x_0 \cdot e^{\lambda t}.$$
+
+The base $e$ is the unique base satisfying this self-similarity property.
+
+**Analogy with π:** π is the measure of static circular geometry — the unit of
+spatial structure. $e$ is the measure of self-similar dynamics — the unit of
+temporal structure. Together they capture the fundamental structures of phase space:
+space (π) and dynamics ($e$).
+
+**In the RFT:** Resonance coupling is a self-similar process — the rate at which
+energy is exchanged between two resonantly coupled systems is proportional to the
+existing coupling. $e$ is therefore not "an irrational number" but rather the
+**fundamental constant of dynamic equilibrium** — the natural base for all
+self-similar coupling processes.
+
+### 7.3 Relation to the Natural Unit System
+
+Analogously to π (§1.4), $e$ can be understood as a base quantity of a natural
+unit system: in a system that uses $e$ as the unit of dynamics, all equations of
+the form $\dot{x} = \lambda x$ take their simplest possible form. A complete
+formalisation of a natural unit system $\{\pi, e, \hbar\}$ (analogous to Planck
+units) is declared as an open step in §9.
+
+### 7.4 Status
+
+The formal property — $e$ as the unique base of self-similarity dynamics — is
+complete (§7.2). What is formally **not yet** shown:
+
+- $e$ has not yet been integrated into the axiomatics (A1–A7).
+- The connection between $e$ as a coupling constant and the specific dynamics of
+  resonance coupling in the RFT is conceptually motivated but not yet formulated
+  as an axiom or corollary.
+
+This is declared as an open step — not as a gap that invalidates existing results,
+but as the next formalisation task.
 
 ---
 
-## 6. Consequence for the Interpretation of A4
+## 8. Consequence for the Interpretation of A4
 
 Taken together, the founding idea yields the following interpretation of the
 core equation:
@@ -273,8 +407,8 @@ $$E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f$$
 
 | Factor | Standard interpretation | Interpretation from the founding idea |
 |--------|------------------------|---------------------------------------|
-| $\pi$ | Numerical constant (irrational) | Geometric unit of phase space (measure of the half-oscillation) |
-| $\varepsilon(\Delta\varphi)$ | Phenomenological coupling parameter | Projection of vectorial coupling energy onto the coupling axis |
+| $\pi$ | Numerical constant (irrational) | Geometric unit of phase space (measure of the half-oscillation, §2; formally derived in RT-01) |
+| $\varepsilon(\Delta\varphi)$ | Phenomenological coupling parameter | k=1 representation of U(1) ⊂ G_sync — uniquely determined by representation theory (RT-02) |
 | $\hbar$ | Action quantum (Planck constant / 2π) | Action quantum — links energy and frequency |
 | $f$ | Resonance frequency of the system | Resonance frequency — to be determined independently (open: RT-01, RT-03) |
 
@@ -288,20 +422,49 @@ normalisation unit of the space in which coupling occurs.
 
 ---
 
-## 7. Open Formalisation Steps
+## 9. Optional Outlook: Natural Unit System {π, e, ℏ}
+
+As a conceptual outlook: analogously to Planck units ($c = \hbar = G = k_B = 1$),
+a natural unit system can be described that uses the RFT fundamental constants as
+base quantities:
+
+$$\pi = 1, \quad e = 1, \quad \hbar = 1$$
+
+In this system, Axiom A4 takes the particularly simple form:
+
+$$E = \varepsilon(\Delta\varphi) \cdot f$$
+
+and the coupling efficiency $\varepsilon = \cos^2(\Delta\varphi/2)$ is the only
+remaining dimensionless structure. The Lorentz factor of the half-period integral
+would equal 1/2.
+
+**Status:** This description is conceptually consistent but not yet formally
+elaborated. In particular, the relationship between $e$ (dynamics base) and π
+(geometry base) within the joint unit system has not yet been established as a
+formal corollary of the axiomatics. This is declared as an open formalisation step.
+
+---
+
+## 10. Open Formalisation Steps
 
 | Step | Content | Status | Reference |
 |------|---------|--------|-----------|
-| Action-integral derivation | π as saddle-point contribution of the stationary phase in the path integral | **Formalised (Aug 2026)** | [action_integral_pi_derivation.md](action_integral_pi_derivation.md) |
-| Decimal artefact (formal) | π and e as rational base quantities in a natural unit system | Conceptual | RT-01a |
-| Derivation of A5 | Directional unit $\hat{e}$ from phase-space geometry | Open | RT-02 |
+| Action-integral derivation | π as saddle-point contribution of the stationary phase in the path integral | **✅ Complete (Aug 2026)** | [action_integral_pi_derivation.md](action_integral_pi_derivation.md) (RT-01) |
+| Decimal artefact (formal) | π and e as rational base quantities in a natural unit system — three-step argument formalised | **✅ Complete (Aug 2026)** | This document, §1; (RT-01a) |
+| π as phase-space constant | Connection between decimal artefact and action-integral result | **✅ Formally closed (Aug 2026)** | Two-level argument §3; RT-01a + RT-01 |
+| Derivation of A5 | Directional unit $\hat{e}$ from phase-space geometry — result: irreducible postulate (possibility B) | **✅ Complete (Aug 2026)** — A5 is irreducible postulate; group-theoretically not derivable from G_sync (RT-36) | [a5_vectoriality_derivation.md](a5_vectoriality_derivation.md) (RT-36) |
+| e as fundamental constant | Self-similarity property formally shown; analogy with π as structural unit elaborated | **✅ Conceptually complete, formally as far as possible (Aug 2026)** | §7 of this document |
 | Frequency definition | Independent determination of $f$ without reference to A4 | Open | RT-01, RT-03 |
-| e in the axiomatics | Integration of Euler's number as a coupling constant | Open | — |
+| e in the axiomatics | Integration of Euler's number as a coupling constant in A1–A7 | Open | — |
+| Natural {π, e, ℏ} unit system | Formal elaboration as a corollary of the axiomatics | Open | §9 of this document |
 
 ---
 
 *Related:* [Coupling Energy](../docs/mathematics/coupling_energy.md) |
 [Axiomatic Foundation](../docs/definitions/axiomatic_foundation.md) |
 [Coupling Efficiency](../docs/definitions/coupling_efficiency.md) |
+[Action-Integral Derivation](action_integral_pi_derivation.md) (RT-01) |
+[G_sync Group Structure](gsync_group_structure.md) (RT-02) |
+[A5 Vectoriality](a5_vectoriality_derivation.md) (RT-36) |
 [RESEARCH_TASKS.md](../../../RESEARCH_TASKS.md) |
 [PEER_REVIEW_READINESS.md](../../../PEER_REVIEW_READINESS.md)

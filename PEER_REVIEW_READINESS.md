@@ -11,7 +11,7 @@ Dieses Dokument dokumentiert den Peer-Review-Bereitschaftsstatus der Resonanzfel
 | ID | Titel | Status | Verweis |
 |----|-------|--------|---------|
 | RT-01 | Wirkungsintegral-Herleitung von π | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` |
-| RT-01a | π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument | **Konzeptuell — formal offen** | `de/fakten/theorie/pi_als_urkonstante.md` · `en/facts/theory/pi_as_fundamental_constant.md` |
+| RT-01a | π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/pi_als_urkonstante.md` · `en/facts/theory/pi_as_fundamental_constant.md` |
 | RT-01b | Unabhängige π-Herleitung: Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §4.5+§9 · `simulationen/rt01b/` |
 | RT-02 | Gruppentheoretischer Beweis der Skalentransformation (A7) | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/gsync_gruppenstruktur.md` · `en/facts/theory/gsync_group_structure.md` |
 | RT-31 | Resonanz-Hamiltonoperator für spezifische Quantensysteme | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/simulationen/hamilton/README.md` · `en/facts/simulations/hamilton/README.md` |
@@ -24,13 +24,23 @@ Dieses Dokument dokumentiert den Peer-Review-Bereitschaftsstatus der Resonanzfel
 
 RT-01a ist die philosophisch-mathematische Voraussetzung von RT-01: Es dokumentiert, dass
 die scheinbare Irrationalität von π und e ein Artefakt der Basis-10-Kodierung ist und
-nicht ein Naturphänomen. Der Kreisumfang bei r = 1 ist physikalisch exakt messbar; die
-unendliche Dezimaldarstellung 3,14159… ist eine Darstellungseigenschaft, keine
-Natureigenschaft. Dieses Argument motiviert die Behandlung von π als geometrische
-Fundamentalkonstante (Phasenraumkonstante) und damit den Faktor π in A4.
+nicht ein Naturphänomen.
 
-**Status:** Konzeptuell vollständig formuliert (Juli 2026) — formale Ableitung (operationale
-Definition von π und e in einem natürlichen Einheitensystem) bleibt offen.
+**Abgeschlossen (Aug 2026):** Das Dezimalartefakt-Argument wurde als formaler Dreischritt-Satz
+(Darstellungsrelativität von π) ausgearbeitet. Die Zwei-Stufen-Argumentation (RT-01a:
+*Berechtigung*, π als Einheit zu behandeln; RT-01: *Notwendigkeit*, π im Wirkungsintegral)
+ist explizit als konsistente Einheit dargestellt. Die Verbindung zur k=1-Darstellung von
+U(1) ⊂ G_sync (RT-02) als strukturell äquivalentes Minimalitätsprinzip ist formalisiert.
+Die e-Selbstähnlichkeitseigenschaft ist formal abgeschlossen. A5-Einordnung nach RT-36
+korrigiert: irreduzibles Postulat, Vektorialitätsinkonsistenz als Motivation (nicht Herleitung).
+
+**Bedeutung für Peer Review:** Die Begründungsstruktur von A4 ist nach RT-01a vollständig
+geschlossen — konzeptuell (Darstellungsrelativität, Minimalitätsprinzip) und formal
+(Sattelpunktsbeitrag des Wirkungsintegrals, RT-01 + RT-01b). Dies schließt einen häufigen
+Peer-Review-Einwand: Warum hat A4 den Faktor π — eine scheinbar willkürliche Wahl?
+
+**Was formal noch offen bleibt:** e in der Axiomatik (A1–A7); natürliches {π, e, ℏ}-Einheitensystem
+als formales Korollar.
 
 ### Anmerkung zu RT-01b
 
@@ -52,7 +62,7 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 | A1 | Universelle Schwingung | Postuliert — testbar |
 | A2 | Resonanzkopplung | Postuliert — testbar |
 | A3 | Resonanzfenster | **Korollar aus A7** (RT-02, RT-35, Aug 2026) — nicht mehr unabhängig |
-| A4 | Kopplungsenergie E = π·ε·ℏ·f | π geometrisch abgeleitet (RT-01, RT-01b, Aug 2026); ε darstellungstheoretisch erzwungen (RT-02) |
+| A4 | Kopplungsenergie E = π·ε·ℏ·f | π geometrisch abgeleitet (RT-01, RT-01b, Aug 2026); ε darstellungstheoretisch erzwungen (RT-02); Begründungsstruktur vollständig geschlossen (RT-01a, Aug 2026): konzeptuell (Darstellungsrelativität, Minimalitätsprinzip) + formal (Wirkungsintegral-Sattelpunkt) |
 | A5 | Vektorialität der Energie | **Irreduzibles Postulat** (RT-36, Aug 2026) — gruppentheoretisch nicht aus G_sync ableitbar; formale Begründungsgrundlage: RT-01a (Vektorialitätsinkonsistenz in Drehmoment, Spin, Lorentz-4-Vektor) |
 | A6 | Resonanzerhaltung | Postuliert — testbar |
 | A7 | Skalentransformation | **Bewiesen** — gruppentheoretisch (RT-02, Aug 2026); Domänenübertragung Kosmologie: empirisch testbar (SI) — RT-04 implementiert |

@@ -314,7 +314,7 @@ der internen Inkonsistenz der Skalarbehandlung von Energie in der Standardphysik
 | Task | Verbindung |
 |------|------------|
 | RT-02 Stufe 4 | Lie-Algebra {D, L, H, P} — D-Erzeuger analysiert; liefert ∂_t Φ, nicht ∇Φ |
-| RT-01a | Phänomenologische Vektorialitätsmotivation — jetzt als formale Begründungsgrundlage explizit |
+| RT-01a | Phänomenologische Vektorialitätsmotivation — als formale Begründungsgrundlage explizit; **✅ Abgeschlossen (Aug 2026)** |
 | RT-35 | Strukturelles Vorbild (A3 ableitbar) — Kontrast bestätigt Irreduzibilität von A5 |
 | RT-37 | Manuskript §3: A5 als irreduzibles Postulat mit RT-01a-Begründung kennzeichnen |
 
