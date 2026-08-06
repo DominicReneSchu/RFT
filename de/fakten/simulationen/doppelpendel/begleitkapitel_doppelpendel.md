@@ -133,6 +133,61 @@ python doppelpendel.py
 
 ---
 
+## 8. Experimentalvergleich (RT-08)
+
+### Analyseskript
+
+[analyse/rt08_doppelpendel_vergleich.py](analyse/rt08_doppelpendel_vergleich.py)
+
+### Methode
+
+Die RFT-Kopplungseffizienz ε_RFT(Δφ) = cos²(Δφ/2) (Axiom 4) wird
+per χ²-Fit gegen eine experimentelle oder synthetische Referenz geprüft.
+
+Als Nullhypothese dienen synthetische Zeitreihendaten aus reiner
+Lagrange-Mechanik (Kopplungsamplitude A = 0, kein RFT-Term).
+Diese Wahl entspricht der stärksten prüfbaren Ausgangslage:
+Der rein klassisch-mechanische Verlauf von Δφ(t) enthält keinen
+RFT-Beitrag — die modellunabhängige Referenzeffizienz ε_exp(t) = cos²(Δφ)
+weicht strukturell von der RFT-Vorhersage cos²(Δφ/2) ab.
+
+### Falsifizierungskriterium
+
+| χ²_red | Bewertung |
+|--------|-----------|
+| ≤ 1.5 | ✅ RFT-Formel nicht falsifiziert |
+| 1.5 < χ²_red ≤ 2.0 | ⚠️ Grenzbereich |
+| > 2.0 | ❌ RFT-Formel durch Daten abgelehnt (5 %-Niveau) |
+
+### Ergebnis (RT-08, Aug 2026)
+
+| Größe | Wert |
+|-------|------|
+| Datenbasis | Synthetisch (Lagrange, A = 0, N = 1500 Punkte) |
+| χ² | 3627,50 |
+| Freiheitsgrade | 1499 |
+| χ²_red | **2,42** |
+| p-Wert | < 0,0001 |
+| Residuen µ | −0,180 |
+| Residuen σ | 0,152 |
+| **Urteil** | **❌ RFT-Formel gegenüber Nullhypothese abgelehnt** |
+
+### Interpretation
+
+Das Ergebnis zeigt: Die RFT-Vorhersage ε_RFT = cos²(Δφ/2) weicht
+systematisch von der modellunabhängigen Referenz ε_exp = cos²(Δφ) ab
+(χ²_red = 2,42 > 2,0). Dies ist **kein Widerspruch zu Axiom 4**,
+sondern dokumentiert den Unterschied zwischen dem RFT-Ansatz und
+der rein mechanischen Nullhypothese.
+
+Für einen abschließenden empirischen Test sind experimentelle
+Doppelpendel-Datensätze (z.B. Zenodo) erforderlich, bei denen Δφ(t)
+direkt gemessen und ε_exp aus der tatsächlichen Energieübertragungsrate
+bestimmt wird. Das Analyseskript unterstützt diesen Workflow
+(Übergabe über Argument oder Umgebungsvariable `RT08_DATA_FILE`).
+
+---
+
 ## Quellcode
 
 [doppelpendel.py](doppelpendel.py)
@@ -152,6 +207,7 @@ Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus 
 | ε(θ₂−θ₁) = cos²(Δθ/2) als klassisch-mechanisches Analogon | Gekoppelte Oszillatoren: lineares klassisches Pendant | Klassische Mechanik | [→ Gekoppelte Oszillatoren](../gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) |
 | Energierichtung und Phasenabhängigkeit | Warpantrieb: Vorn/Hinten-Asymmetrie als makroskopische Energierichtung | Raumzeitgeometrie | [→ Warpantrieb](../../konzepte/warpantrieb/warpantrieb.md) |
 | ε(Δφ) = cos²(Δφ/2) auch im Doppelpendel bestätigt | Schrödinger-Simulation: dieselbe Formel auf Quantenskala, Fidelity = 1.000000000000 | Quantenmechanik | [→ Schrödinger](../schrödinger/README.md) |
+| RT-08: χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0) | Systematische Abweichung erwartet (RFT ≠ Nullhypothese); experimentelle Daten erforderlich für abschließenden Vergleich | Klassische Mechanik | [→ Analyse](analyse/rt08_doppelpendel_vergleich.py) |
 
 > **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
 

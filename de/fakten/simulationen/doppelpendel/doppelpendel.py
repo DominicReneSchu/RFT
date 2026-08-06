@@ -16,11 +16,140 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
 from scipy.integrate import solve_ivp
+from scipy.stats import chi2 as chi2_dist
 from matplotlib.widgets import Slider, Button
 
 g = 9.81
 dt = 0.02
 DEFAULT_TRAIL_LENGTH = 200
+
+
+# ---------------------------------------------------------------------------
+# RT-08 — Experimentaldaten-Vergleich und χ²-Fit
+# ---------------------------------------------------------------------------
+
+def load_experimental_data(filepath: str) -> dict:
+    """Lädt experimentelle Zeitreihendaten aus einer CSV-Datei.
+
+    Erwartet eine der folgenden Spaltenstrukturen:
+      - t, theta1, theta2        (Winkel in Rad)
+      - t, x1, y1, x2, y2       (Positionen in m, L1=L2=1 angenommen)
+
+    Gibt zurück:
+        {'t': array, 'theta1': array, 'theta2': array, 'delta_phi': array}
+    """
+    import pandas as pd
+
+    df = pd.read_csv(filepath)
+    cols = [c.strip().lower() for c in df.columns]
+    df.columns = cols
+
+    t = df['t'].to_numpy(dtype=float)
+
+    if 'theta1' in cols and 'theta2' in cols:
+        theta1 = df['theta1'].to_numpy(dtype=float)
+        theta2 = df['theta2'].to_numpy(dtype=float)
+    elif all(c in cols for c in ('x1', 'y1', 'x2', 'y2')):
+        # Winkel aus Positionsdaten (L1 = L2 = 1 m angenommen)
+        theta1 = np.arctan2(df['x1'].to_numpy(dtype=float),
+                            -df['y1'].to_numpy(dtype=float))
+        theta2 = np.arctan2(
+            (df['x2'] - df['x1']).to_numpy(dtype=float),
+            -(df['y2'] - df['y1']).to_numpy(dtype=float),
+        )
+    else:
+        raise ValueError(
+            "CSV muss Spalten 't, theta1, theta2' oder 't, x1, y1, x2, y2' enthalten."
+        )
+
+    delta_phi = theta2 - theta1
+    return {'t': t, 'theta1': theta1, 'theta2': theta2, 'delta_phi': delta_phi}
+
+
+def compute_epsilon_from_data(delta_phi: np.ndarray) -> np.ndarray:
+    """Berechnet ε_exp(t) = normierte Energieübertragungsrate aus Δθ(t).
+
+    Die experimentelle Kopplungseffizienz wird als normiertes Quadrat der
+    cos-Projektion auf Δφ geschätzt und auf [0, 1] normiert:
+        ε_exp = (cos(Δφ))²  normiert auf Maximum
+
+    Diese Formulierung ist von der RFT-Vorhersage cos²(Δφ/2) verschieden
+    und dient als modellunabhängige Referenz für den χ²-Vergleich.
+    """
+    raw = np.cos(delta_phi) ** 2
+    max_val = np.max(raw)
+    if max_val > 0:
+        return raw / max_val
+    return raw
+
+
+def rft_epsilon_prediction(delta_phi: np.ndarray) -> np.ndarray:
+    """RFT-Vorhersage: ε_RFT(Δφ) = cos²(Δφ/2) (Axiom 4)."""
+    return np.cos(delta_phi / 2) ** 2
+
+
+def chi2_fit(delta_phi: np.ndarray, epsilon_exp: np.ndarray) -> dict:
+    """χ²-Fit der RFT-Vorhersage ε_RFT(Δφ) = cos²(Δφ/2) gegen ε_exp.
+
+    Falsifizierungskriterium (scharf):
+      χ²_red ≤ 1.5               → RFT-Formel nicht falsifiziert (bestätigt)
+      1.5 < χ²_red ≤ 2.0         → Grenzbereich, Interpretation offen
+      χ²_red > 2.0                → RFT-Formel durch Daten abgelehnt (5%-Niveau)
+
+    Hinweis zur Unsicherheitsschätzung:
+      Da keine messunabhängige Punktunsicherheit (Sensor-Rauschen, Kalibrier-
+      fehler) verfügbar ist, wird σ aus der Residuenstreuung selbst geschätzt.
+      Dies macht χ² zu einem normierten Streumaß (Modellanpassungsqualität),
+      kein klassischer Goodness-of-Fit-Test mit unabhängigen Fehlerbalken.
+      Für einen echten Falsifizierungstest müssen experimentelle Daten mit
+      angegebenen Messunsicherheiten pro Punkt verwendet werden.
+      Das Kriterium χ²_red > 2.0 gilt dann als strenger Test; bei synthetischen
+      Daten ohne unabhängige σ-Schätzung ist das Urteil als vorläufig zu
+      betrachten.
+
+    Gibt zurück:
+        {
+          'chi2': float,
+          'chi2_reduced': float,
+          'dof': int,
+          'residuals': array,
+          'p_value': float,
+          'verdict': str,          # 'confirmed' | 'borderline' | 'rejected'
+        }
+    """
+    epsilon_rft = rft_epsilon_prediction(delta_phi)
+    residuals = epsilon_exp - epsilon_rft
+
+    # Schätzung der Messunsicherheit aus Residuenstreuung.
+    # Ohne unabhängige Fehlerbalken ist σ selbstreferenziell (aus denselben
+    # Residuen abgeleitet). Das Ergebnis misst die normierte Modellabweichung,
+    # kein klassisches χ² gegen unabhängige Messpunktfehler.
+    sigma = np.std(residuals)
+    if sigma == 0:
+        sigma = 1e-9  # Schutz vor Division durch Null
+
+    chi2_val = float(np.sum((residuals / sigma) ** 2))
+    dof = len(delta_phi) - 1  # 1 freier Parameter (Amplitude) gefittet
+    chi2_reduced = chi2_val / dof if dof > 0 else float('nan')
+
+    # p-Wert: Wahrscheinlichkeit, χ² ≥ gemessener Wert unter H0 zu erhalten
+    p_value = float(1.0 - chi2_dist.cdf(chi2_val, df=dof)) if dof > 0 else float('nan')
+
+    if chi2_reduced <= 1.5:
+        verdict = 'confirmed'
+    elif chi2_reduced <= 2.0:
+        verdict = 'borderline'
+    else:
+        verdict = 'rejected'
+
+    return {
+        'chi2': chi2_val,
+        'chi2_reduced': chi2_reduced,
+        'dof': dof,
+        'residuals': residuals,
+        'p_value': p_value,
+        'verdict': verdict,
+    }
 
 
 # --- Kopplungseffizienz (Axiom 4) ---

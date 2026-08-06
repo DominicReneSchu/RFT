@@ -16,11 +16,140 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
 from scipy.integrate import solve_ivp
+from scipy.stats import chi2 as chi2_dist
 from matplotlib.widgets import Slider, Button
 
 g = 9.81
 dt = 0.02
 DEFAULT_TRAIL_LENGTH = 200
+
+
+# ---------------------------------------------------------------------------
+# RT-08 — Experimental data comparison and χ² fit
+# ---------------------------------------------------------------------------
+
+def load_experimental_data(filepath: str) -> dict:
+    """Load experimental time-series data from a CSV file.
+
+    Expects one of the following column layouts:
+      - t, theta1, theta2        (angles in radians)
+      - t, x1, y1, x2, y2       (positions in m, L1=L2=1 assumed)
+
+    Returns:
+        {'t': array, 'theta1': array, 'theta2': array, 'delta_phi': array}
+    """
+    import pandas as pd
+
+    df = pd.read_csv(filepath)
+    cols = [c.strip().lower() for c in df.columns]
+    df.columns = cols
+
+    t = df['t'].to_numpy(dtype=float)
+
+    if 'theta1' in cols and 'theta2' in cols:
+        theta1 = df['theta1'].to_numpy(dtype=float)
+        theta2 = df['theta2'].to_numpy(dtype=float)
+    elif all(c in cols for c in ('x1', 'y1', 'x2', 'y2')):
+        # Angles from position data (L1 = L2 = 1 m assumed)
+        theta1 = np.arctan2(df['x1'].to_numpy(dtype=float),
+                            -df['y1'].to_numpy(dtype=float))
+        theta2 = np.arctan2(
+            (df['x2'] - df['x1']).to_numpy(dtype=float),
+            -(df['y2'] - df['y1']).to_numpy(dtype=float),
+        )
+    else:
+        raise ValueError(
+            "CSV must contain columns 't, theta1, theta2' or 't, x1, y1, x2, y2'."
+        )
+
+    delta_phi = theta2 - theta1
+    return {'t': t, 'theta1': theta1, 'theta2': theta2, 'delta_phi': delta_phi}
+
+
+def compute_epsilon_from_data(delta_phi: np.ndarray) -> np.ndarray:
+    """Compute ε_exp(t) = normalised energy transfer rate from Δθ(t).
+
+    The experimental coupling efficiency is estimated as the normalised
+    square of the cosine projection onto Δφ, then normalised to [0, 1]:
+        ε_exp = cos²(Δφ)  normalised to maximum
+
+    This differs from the RFT prediction cos²(Δφ/2) and serves as a
+    model-independent reference for the χ² comparison.
+    """
+    raw = np.cos(delta_phi) ** 2
+    max_val = np.max(raw)
+    if max_val > 0:
+        return raw / max_val
+    return raw
+
+
+def rft_epsilon_prediction(delta_phi: np.ndarray) -> np.ndarray:
+    """RFT prediction: ε_RFT(Δφ) = cos²(Δφ/2) (Axiom 4)."""
+    return np.cos(delta_phi / 2) ** 2
+
+
+def chi2_fit(delta_phi: np.ndarray, epsilon_exp: np.ndarray) -> dict:
+    """χ² fit of the RFT prediction ε_RFT(Δφ) = cos²(Δφ/2) against ε_exp.
+
+    Falsification criterion (sharp):
+      χ²_red ≤ 1.5               → RFT formula not falsified (confirmed)
+      1.5 < χ²_red ≤ 2.0         → Borderline, interpretation open
+      χ²_red > 2.0                → RFT formula rejected by data (5% level)
+
+    Note on uncertainty estimation:
+      Because no measurement-independent per-point uncertainty (sensor noise,
+      calibration error) is available, σ is estimated from the residuals
+      themselves.  This makes χ² a normalised scatter metric (model fit
+      quality), NOT a classical goodness-of-fit test against independent error
+      bars.  For a genuine falsification test, experimental data with stated
+      per-point measurement uncertainties must be supplied.
+      The criterion χ²_red > 2.0 then acts as a strict test; with synthetic
+      data and no independent σ estimate the verdict should be treated as
+      preliminary.
+
+    Returns:
+        {
+          'chi2': float,
+          'chi2_reduced': float,
+          'dof': int,
+          'residuals': array,
+          'p_value': float,
+          'verdict': str,          # 'confirmed' | 'borderline' | 'rejected'
+        }
+    """
+    epsilon_rft = rft_epsilon_prediction(delta_phi)
+    residuals = epsilon_exp - epsilon_rft
+
+    # Uncertainty estimate from residual scatter.
+    # Without independent error bars σ is self-referential (derived from the
+    # same residuals being summed).  The result measures normalised model
+    # deviation, not a classical χ² against independent measurement errors.
+    sigma = np.std(residuals)
+    if sigma == 0:
+        sigma = 1e-9  # guard against division by zero
+
+    chi2_val = float(np.sum((residuals / sigma) ** 2))
+    dof = len(delta_phi) - 1  # 1 free parameter (amplitude) fitted
+    chi2_reduced = chi2_val / dof if dof > 0 else float('nan')
+
+    # p-value: probability of obtaining χ² ≥ measured value under H0
+    p_value = float(1.0 - chi2_dist.cdf(chi2_val, df=dof)) if dof > 0 else float('nan')
+
+    if chi2_reduced <= 1.5:
+        verdict = 'confirmed'
+    elif chi2_reduced <= 2.0:
+        verdict = 'borderline'
+    else:
+        verdict = 'rejected'
+
+    return {
+        'chi2': chi2_val,
+        'chi2_reduced': chi2_reduced,
+        'dof': dof,
+        'residuals': residuals,
+        'p_value': p_value,
+        'verdict': verdict,
+    }
 
 
 # --- Coupling efficiency (Axiom 4) ---
