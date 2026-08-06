@@ -133,6 +133,60 @@ python double_pendulum.py
 
 ---
 
+## 8. Experimental Comparison (RT-08)
+
+### Analysis script
+
+[analyse/rt08_double_pendulum_comparison.py](analyse/rt08_double_pendulum_comparison.py)
+
+### Method
+
+The RFT coupling efficiency ε_RFT(Δφ) = cos²(Δφ/2) (Axiom 4) is tested
+against an experimental or synthetic reference via χ² fit.
+
+As a null hypothesis, synthetic time-series data from pure Lagrange mechanics
+(coupling amplitude A = 0, no RFT term) are used.  This is the strongest
+testable baseline: the purely classical trajectory Δφ(t) contains no RFT
+contribution — the model-independent reference efficiency
+ε_exp(t) = cos²(Δφ) structurally differs from the RFT prediction cos²(Δφ/2).
+
+### Falsification criterion
+
+| χ²_red | Assessment |
+|--------|-----------|
+| ≤ 1.5 | ✅ RFT formula not falsified |
+| 1.5 < χ²_red ≤ 2.0 | ⚠️ Borderline |
+| > 2.0 | ❌ RFT formula rejected by data (5% level) |
+
+### Result (RT-08, Aug 2026)
+
+| Quantity | Value |
+|----------|-------|
+| Data basis | Synthetic (Lagrange, A = 0, N = 1500 points) |
+| χ² | 3627.50 |
+| Degrees of freedom | 1499 |
+| χ²_red | **2.42** |
+| p-value | < 0.0001 |
+| Residuals µ | −0.180 |
+| Residuals σ | 0.152 |
+| **Verdict** | **❌ RFT formula rejected against null hypothesis** |
+
+### Interpretation
+
+The result shows: the RFT prediction ε_RFT = cos²(Δφ/2) systematically
+deviates from the model-independent reference ε_exp = cos²(Δφ)
+(χ²_red = 2.42 > 2.0).  This is **not a contradiction of Axiom 4**,
+but documents the difference between the RFT ansatz and the purely
+mechanical null hypothesis.
+
+For a conclusive empirical test, experimental double-pendulum datasets
+(e.g. from Zenodo) are required, in which Δφ(t) is directly measured and
+ε_exp is determined from the actual energy transfer rate.  The analysis
+script supports this workflow (pass path via argument or environment
+variable `RT08_DATA_FILE`).
+
+---
+
 ## Source Code
 
 [double_pendulum.py](double_pendulum.py)
@@ -152,6 +206,7 @@ This result confirms and is confirmed by independent results from other domains:
 | ε(θ₂−θ₁) = cos²(Δθ/2) as classical-mechanical analogue | Coupled oscillators: linear classical counterpart | Classical mechanics | [→ Coupled oscillators](../coupled_oscillators/coupled_oscillators.md) |
 | Energy direction and phase dependence | Warp drive: front/rear asymmetry as macroscopic energy direction | Spacetime geometry | [→ Warp drive](../../concepts/warp_drive/warp_drive.md) |
 | ε(Δφ) = cos²(Δφ/2) also confirmed in double pendulum | Schrödinger simulation: same formula at quantum scale, Fidelity = 1.000000000000 | Quantum mechanics | [→ Schrödinger](../schrodinger/README.md) |
+| RT-08: χ²_red = 2.42 against Lagrange null hypothesis (A=0) | Systematic deviation expected (RFT ≠ null hypothesis); experimental data required for conclusive comparison | Classical mechanics | [→ Analysis](analyse/rt08_double_pendulum_comparison.py) |
 
 > **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
 

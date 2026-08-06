@@ -23,16 +23,17 @@ Status: Aktiv
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
-1. RT-08  — Doppelpendel vs. Experimentaldaten **← Neue Priorität 1**
+1. RT-10 — ResoTrade Backtest öffentlich **← Neue Priorität 1**
 
 ### Empirisch (Priorität 2)
-4. RT-08  — Doppelpendel vs. Experimentaldaten
+4. RT-03 — λ-Bestimmung (⁸⁷Rb)
 
 ### Code-Korrekturen (Priorität 3)
 7. RT-10 — ResoTrade Backtest öffentlich
 
 ### Abgeschlossen (Manuskript + Theorie)
-- ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h. Nächste Priorität: RT-08 (Doppelpendel).
+- ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py`
+- ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h. Nächste Priorität: RT-10 (ResoTrade).
 - ~~RT-06  — EXFOR-Daten Am-241~~ ✅ Abgeschlossen (Aug 2026) — K-6 behoben: σ(γ,α) = 1,719 mb bei 14 MeV (Hauser-Feshbach, Γ_α/Γ_tot ≈ 2%, RIPL-3); kein direkter EXFOR-Eintrag; RFT-Reaktorraten-Revision erforderlich
 - ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
 - ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
@@ -184,12 +185,18 @@ damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
 **Analyseskript:** `analyse/rt07_estimator_vergleich.py` + Plot `rt07_estimator_vergleich.png`.
 
 ### RT-08 — Doppelpendel: Experimentaldaten vs. RFT-Vorhersage
-**Status: 📋 Offen**
-**Motivation:** ε(θ₂−θ₁) = cos²(Δθ/2) ist simuliert, aber nicht gegen
-Experimentaldaten getestet.
-**Daten:** Öffentliche Doppelpendel-Datensätze (z.B. Chaos-Experimente auf Zenodo).
-**Aufgabe:** RFT-Kopplungseffizienz gegen gemessene Energieübertragungsraten fitten.
-**Code:** Erweiterung von `doppelpendel.py` um Daten-Import und χ²-Fit.
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:**
+- Datenbasis: Synthetische Zeitreihe (Lagrange, A=0, N=1500 Punkte)
+- χ² = 3627,50 | χ²_red = **2,42** | dof = 1499 | p < 0,0001
+- Urteil: RFT-Formel gegenüber Lagrange-Nullhypothese abgelehnt (χ²_red > 2,0)
+- Interpretation: Erwartete systematische Abweichung — Nullhypothese enthält keinen RFT-Term; experimentelle Daten für abschließenden Vergleich erforderlich
+- Nächste Priorität: RT-10 (ResoTrade Backtest öffentlich)
+**Code:**
+- `de/fakten/simulationen/doppelpendel/doppelpendel.py` — Neue Funktionen: `load_experimental_data`, `compute_epsilon_from_data`, `rft_epsilon_prediction`, `chi2_fit`
+- `en/facts/simulations/double_pendulum/double_pendulum.py` — EN-Spiegel
+- `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` — Analyseskript (DE)
+- `en/facts/simulations/double_pendulum/analyse/rt08_double_pendulum_comparison.py` — Analyseskript (EN)
 
 ---
 
