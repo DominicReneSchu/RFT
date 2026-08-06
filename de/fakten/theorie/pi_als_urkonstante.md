@@ -15,7 +15,7 @@ Fundamentalkonstanten des Phasenraums die konzeptuelle Grundlage für Axiom A4
 und die Vektorialität der Energie (A5) liefert.
 
 RT-01a liefert die **philosophisch-mathematische Vorausstufe** zu RT-01: Es
-formalisisert das Dezimalartefakt-Argument, begründet die Berechtigung, π als
+formalisiert das Dezimalartefakt-Argument, begründet die Berechtigung, π als
 geometrische Einheit zu behandeln, und erklärt, warum die Vektorialitäts-
 inkonsistenz der Standardphysik die physikalische Motivation für A5 als
 irreduzibles Postulat ist — ohne A5 herzuleiten.
@@ -392,7 +392,7 @@ Analog zu π (§1.4) lässt sich e als Basisgröße eines natürlichen Einheiten
 verstehen: In einem System, das e als Einheit der Dynamik verwendet, nehmen alle
 Gleichungen der Form $\dot{x} = \lambda x$ die einfachste mögliche Gestalt an.
 Eine vollständige Formalisierung eines natürlichen Einheitensystems $\{\pi, e, \hbar\}$
-(analog zu Planck-Einheiten) ist in §8 als offener Schritt deklariert.
+(analog zu Planck-Einheiten) ist in §9 als offener Schritt deklariert.
 
 ### 7.4 Status
 
