@@ -212,4 +212,53 @@ This result confirms and is confirmed by independent results from other domains:
 
 ---
 
+---
+
+## 9. Experiment Protocol RT-38 — Tabletop Falsification Test
+
+### Overview
+
+RT-38 defines a complete, reproducible experiment protocol for the direct empirical
+test of ε(Δφ) = cos²(Δφ/2) on a physical double pendulum. The experiment can be
+performed by any group with a budget of ~€100–300 and a smartphone.
+
+### What RT-38 provides
+
+- **Complete protocol** with bill of materials, measurement chain (Variant A: smartphone,
+  Variant B: encoder), step-by-step measurement procedure, calibration guide
+- **Tracking software** (`camera_tracking.py`) for smartphone video → θ₁(t), θ₂(t)
+- **Encoder software** (`encoder_readout.ino` + `encoder_to_csv.py`) for high-precision measurement
+- **CSV format** compatible with `load_experimental_data()` (RT-08 analysis script)
+
+### Connection to RT-08
+
+The analysis software (RT-08, `analyse/rt08_double_pendulum_comparison.py`) and the
+χ² test are already available — RT-38 provides the real measurement data that RT-08
+has so far lacked (previously only synthetic Lagrangian reference, χ²_red = 2.42).
+
+### How to use
+
+```bash
+# Build experiment (§2), calibrate (§3), measure (§4)
+# Then run analysis:
+python en/facts/simulations/double_pendulum/analyse/rt08_double_pendulum_comparison.py \
+    --data experiment/data/run_1_YYYYMMDD.csv
+```
+
+**Result:** χ²_red ≤ 1.5 → H₁ not falsified | χ²_red > 2.0 → H₁ rejected
+
+### Invitation to replicate
+
+This protocol is explicitly framed as an open invitation. Anyone who performs this
+test and shares data contributes to the empirical basis of RFT.
+
+> **Report results:** [GitHub Issues](https://github.com/DominicReneSchu/RFT/issues)
+> (Label: `RT-38-result`)
+
+### Full protocol
+
+**→ [`experiment/protocol_rt38.md`](experiment/protocol_rt38.md)**
+
+---
+
 ⬅️ [back to overview](../../../README.md#simulations)

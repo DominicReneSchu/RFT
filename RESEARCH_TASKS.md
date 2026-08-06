@@ -34,7 +34,7 @@ Status: Aktiv
 ### Abgeschlossen (Manuskript + Theorie)
 - ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
 - ~~RT-10  — ResoTrade Backtest öffentlich~~ ✅ Abgeschlossen (Aug 2026) — M-5 adressiert: Walk-Forward-Backtest (5 Folds) auf BTC-USDT implementiert; Binance Public API + synthetischer Fallback (seed=42); Falsifizierungskriterium: vs_hodl > 0 in allen Folds; synthetische Daten: 3/5 Folds positiv, Ø Sharpe=0,89; vollständiger Trade-Log als CSV; kein proprietärer Datensatz. Code: `backtest/backtest_engine.py` + `backtest/analyse/rt10_backtest_comparison.py` (DE+EN)
-- ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py`
+- ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` → Experimentprotokoll: RT-38
 - ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h. Nächste Priorität: RT-10 (ResoTrade).
 - ~~RT-06  — EXFOR-Daten Am-241~~ ✅ Abgeschlossen (Aug 2026) — K-6 behoben: σ(γ,α) = 1,719 mb bei 14 MeV (Hauser-Feshbach, Γ_α/Γ_tot ≈ 2%, RIPL-3); kein direkter EXFOR-Eintrag; RFT-Reaktorraten-Revision erforderlich
 - ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
@@ -47,6 +47,7 @@ Status: Aktiv
 8. RT-03 — λ-Bestimmung (⁸⁷Rb)
 9. RT-12 — ⁸⁷Rb-Interferometrie
 10. RT-13 — Am-241 ELI-NP
+- ~~RT-38  — Doppelpendel: Öffentliches Experimentprotokoll~~ ✅ Abgeschlossen (Aug 2026) — Vollständiges Tabletop-Falsifizierungsprotokoll für ε(Δφ)=cos²(Δφ/2); ~100–300 €; Smartphone-Tracking + Encoder-Variante; CSV-Format RT-08-kompatibel. Protokoll: `de/fakten/simulationen/doppelpendel/experiment/protokoll_rt38.md`
 
 ### Langfristig offen
 11. ~~RT-33 — Warpantrieb Stufe 5 (Energielücke)~~ ✅ Abgeschlossen (Aug 2026) — Skalierungsgesetz ρ∝R⁻², R*>>1 AU für alle Fusionsszenarien
@@ -187,6 +188,7 @@ damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
 - χ² = 3627,50 | χ²_red = **2,42** | dof = 1499 | p < 0,0001
 - Urteil: RFT-Formel gegenüber Lagrange-Nullhypothese abgelehnt (χ²_red > 2,0)
 - Interpretation: Erwartete systematische Abweichung — Nullhypothese enthält keinen RFT-Term; experimentelle Daten für abschließenden Vergleich erforderlich
+- **Experimentprotokoll für echte Messdaten: → RT-38** (`experiment/protokoll_rt38.md`)
 - Nächste Priorität: RT-10 (ResoTrade Backtest öffentlich)
 **Code:**
 - `de/fakten/simulationen/doppelpendel/doppelpendel.py` — Neue Funktionen: `load_experimental_data`, `compute_epsilon_from_data`, `rft_epsilon_prediction`, `chi2_fit`
@@ -274,6 +276,17 @@ Zwei-Feld-Modell nicht hinreichend für eine physikalische Warpblase.
 ---
 
 ## Kategorie 4: Experimentelle Vorhersagen (extern testbar)
+
+### RT-38 — Doppelpendel: Öffentliches Experimentprotokoll (Tabletop-Falsifizierungstest)
+**Status: ✅ Abgeschlossen (Aug 2026)** (Protokoll fertig; Durchführung extern)
+**Test:** ε(Δφ) = cos²(Δφ/2) (Axiom A4) am physischen Doppelpendel
+**Budget:** ~100–300 €, Smartphone genügt für Variante A
+**Protokoll:** `de/fakten/simulationen/doppelpendel/experiment/protokoll_rt38.md`
+**EN-Spiegel:** `en/facts/simulations/double_pendulum/experiment/protocol_rt38.md`
+**Falsifizierungskriterium:** χ²_red ≤ 1.5 → H₁ nicht falsifiziert; χ²_red > 2.0 → H₁ abgelehnt
+**Verbindung zu RT-08:** Analyseskript (`rt08_doppelpendel_vergleich.py`) bereits vorhanden;
+RT-38 liefert echte Messdaten für abschließenden χ²-Test (RT-08 bisher nur synthetische Daten).
+**Einladung:** Ergebnisse via GitHub Issues (Label `RT-38-result`) melden.
 
 ### RT-12 — ⁸⁷Rb-Interferometrie-Experiment
 **Status: 📋 Offen** (benötigt Kooperationspartner)

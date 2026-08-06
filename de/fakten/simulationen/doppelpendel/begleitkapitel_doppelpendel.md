@@ -213,4 +213,54 @@ Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus 
 
 ---
 
+---
+
+## 9. Experimentprotokoll RT-38 — Tabletop-Falsifizierungstest
+
+### Überblick
+
+RT-38 definiert ein vollständiges, reproduzierbares Experimentprotokoll zum
+direkten empirischen Test von ε(Δφ) = cos²(Δφ/2) am physischen Doppelpendel.
+Das Experiment ist von jeder Gruppe mit einem Budget von ~100–300 € und einem
+Smartphone durchführbar.
+
+### Was RT-38 liefert
+
+- **Vollständiges Protokoll** mit Stückliste, Messkette (Variante A: Smartphone,
+  Variante B: Encoder), Schritt-für-Schritt-Messprotokoll, Kalibrierungsanleitung
+- **Tracking-Software** (`kamera_tracking.py`) für Smartphone-Video → θ₁(t), θ₂(t)
+- **Encoder-Software** (`encoder_auslese.ino` + `encoder_to_csv.py`) für hochpräzise Messung
+- **CSV-Format** kompatibel mit `load_experimental_data()` (RT-08 Analyseskript)
+
+### Verbindung zu RT-08
+
+Die Auswertungssoftware (RT-08, `analyse/rt08_doppelpendel_vergleich.py`) und der
+χ²-Test sind bereits vorhanden — RT-38 liefert die echten Messdaten, die RT-08 bisher
+fehlten (bisher nur synthetische Lagrange-Referenz, χ²_red = 2,42).
+
+### Durchführung
+
+```bash
+# Experiment aufbauen (§2), kalibrieren (§3), messen (§4)
+# Dann Auswertung starten:
+python de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py \
+    --data experiment/daten/run_1_YYYYMMDD.csv
+```
+
+**Ergebnis:** χ²_red ≤ 1.5 → H₁ nicht falsifiziert | χ²_red > 2.0 → H₁ abgelehnt
+
+### Einladung zur Replikation
+
+Dieses Protokoll ist als offene Einladung formuliert. Wer diesen Test durchführt
+und Daten teilt, trägt zur empirischen Basis der RFT bei.
+
+> **Ergebnis melden:** [GitHub Issues](https://github.com/DominicReneSchu/RFT/issues)
+> (Label: `RT-38-result`)
+
+### Vollständiges Protokoll
+
+**→ [`experiment/protokoll_rt38.md`](experiment/protokoll_rt38.md)**
+
+---
+
 ⬅️ [zurück zur Übersicht](../../../README.md#simulationen)
