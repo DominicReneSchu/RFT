@@ -18,6 +18,7 @@ Dieses Dokument dokumentiert den Peer-Review-Bereitschaftsstatus der Resonanzfel
 | RT-35 | A3 als Korollar von A7 in Axiomatik | **✅ Abgeschlossen (Aug 2026)** (durch RT-31) | `de/fakten/theorie/gsync_gruppenstruktur.md` §5 |
 | RT-32 | Nichtlineare Sättigungsterme (λ_ε⁴) in der FLRW-Feldgleichung | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/simulationen/FLRW-Simulationen/core/coupled_flrw.py` · `README.md` §RT-32 |
 | RT-11 | FLRW κ-Parameter: Konventionsdeklaration κ_RFT = 1 | **✅ Abgeschlossen (Aug 2026)** | `de/fakten/theorie/kappa_parameter_rft.md` |
+| RT-33 | Warpantrieb: Skalierungsgesetz der Energielücke (Stufe 5) | **✅ Abgeschlossen (Aug 2026) — kein Peer-Review-Blocker, relevant für Ausblick** | `de/fakten/konzepte/warpantrieb/warpantrieb.md` §7a · `analyse/rt33_energieluecke.py` |
 | RT-03 | Unabhängige Bestimmung von λ (⁸⁷Rb-Vorhersage) | Offen | RESEARCH_TASKS.md |
 
 ### Anmerkung zu RT-01a

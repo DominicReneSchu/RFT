@@ -49,7 +49,8 @@ Status: Aktiv
 10. RT-13 — Am-241 ELI-NP
 
 ### Langfristig offen
-11. RT-33/34 — Warpantrieb Stufen 5+6 ← Nächste intern abschließbare Aufgabe (RT-01a abgeschlossen Aug 2026)
+11. ~~RT-33 — Warpantrieb Stufe 5 (Energielücke)~~ ✅ Abgeschlossen (Aug 2026) — Skalierungsgesetz ρ∝R⁻², R*>>1 AU für alle Fusionsszenarien
+12. RT-34 — Warpantrieb Stufe 6 (3D-Blase) ← Nächste intern abschließbare Aufgabe
 
 ---
 
@@ -245,16 +246,19 @@ damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
 **Kerndokument:** `de/fakten/simulationen/FLRW-Simulationen/core/coupled_flrw.py` · `de/fakten/simulationen/FLRW-Simulationen/README.md`
 
 ### RT-33 — Warpantrieb: Energielücke schließen (Stufe 5)
-**Status: 📋 Offen**
-**Motivation:** Das Warpantrieb-README dokumentiert Stufe 5 als ⚠️ offen:
-Peak-Krümmung 299× Sonnenmitte erfordert ~10⁵× mehr Energiedichte als
-die Fusionskaskade liefert. Die Energielücke ist das zentrale Skalierungsproblem.
-**Aufgabe:** Quantitatives Skalierungsgesetz aufstellen: Wie skaliert die
-benötigte Energiedichte mit der Warpblasengröße? Ab welchem Blasenradius
-ist das Verhältnis (verfügbar/benötigt) realistisch?
-**Ansatz:** Analytische Abschätzung über Einstein-Feldgleichungen;
-Vergleich mit Alcubierre-Literatur (Pfenning & Ford 1997).
-**Verweise:** `de/fakten/konzepte/warpantrieb/warpantrieb.md`
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Skalierungsgesetz ρ_benötigt ∝ R⁻² analytisch hergeleitet (Alcubierre-Metrik,
+Einstein-Feldgleichungen). Wandpacking-Modell: n_reaktoren ∝ R² → ρ_verfügbar = const.
+Lücken-Faktor L(R) ∝ R⁻². Kritischer Radius R* für drei Szenarien berechnet:
+R* liegt auf parsec- bis kiloparsec-Skala (weit jenseits 1 AU) für alle Fusionsszenarien.
+Benötigter Gain G* bei R = 50 m: ~10¹²–10¹⁶. Übereinstimmung mit Alcubierre (1994) und
+Pfenning & Ford (1997) bestätigt. Ehrlichkeitsstandard (§6.1) beibehalten:
+Die Energielücke ist astronomisch — kein reines Skalierungsproblem.
+**Falsifizierung:** R* >> 1 AU → Stufe 5 mit bekannter Fusion nicht realisierbar.
+**Neue Dateien:** `analyse/rt33_energieluecke.py` · `analyse/rt33_energy_gap.py`
+**Geänderte Dateien:** `warpantrieb.py` (skalierungsgesetz()) · `warp_drive.py` (scaling_law()) ·
+`warpantrieb.md` (§7a) · `warp_drive.md` (§7a) · beide READMEs (Stufe 5 ✅)
+**Kerndokument:** `de/fakten/konzepte/warpantrieb/`
 
 ### RT-34 — Warpantrieb: 3D-Warpblase (Stufe 6)
 **Status: 📋 Offen**

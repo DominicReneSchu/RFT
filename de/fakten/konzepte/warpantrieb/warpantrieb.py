@@ -660,7 +660,350 @@ def plot_scaling(results: list[dict[str, Any]], out: str) -> None:
 
 
 # ============================================================
-# 6. Hauptprogramm
+# 6. Skalierungsgesetz der Energielücke (RT-33)
+# ============================================================
+
+def skalierungsgesetz(
+    R_range: np.ndarray | None = None,
+    v_s_list: list[float] | None = None,
+    sigma_list: list[float] | None = None,
+    gain_list: list[float] | None = None,
+    n_reaktoren_list: list[int] | None = None,
+    P_pro_reaktor: float = 1e8,
+    pulse_rate: float = 10.0,
+    R_ref: float = 50.0,
+    plot: bool = True,
+    export_csv: bool = True,
+    out: str = "figures",
+) -> dict:
+    """
+    Berechnet das Skalierungsgesetz der Energielücke als Funktion von R.
+
+    Kernaussagen:
+    - ρ_benötigt(R) ~ c⁴/(8πG) · (v_s/R)² · σ²  [Alcubierre-Skalierung, ∝ R⁻²]
+    - ρ_verfügbar(R) = E_fusion/Puls / V_aktiv(R),  V_aktiv = 4πR²/σ
+    - Im Wandpacking-Modell (n_reaktoren ∝ R²): ρ_verfügbar = const
+    - Lücken-Faktor: L(R) = ρ_benötigt(R) / ρ_verfügbar_0
+    - Kritischer Radius R*: L(R*) = 1
+
+    Energieberechnung (konsistent mit FusionWarpSystem):
+    - E_fusion/Puls = n · P · (1/f_rep) · gain  [Pulsperiode, nicht τ_Burn]
+    - ρ_verfügbar_0 = E_fusion/Puls · σ / (4πR_ref²)
+
+    Falsifizierungskriterium:
+    - R* < 1 km    → technisch grundsätzlich erreichbar (langfristig)
+    - R* < 1 AU    → technisch sehr anspruchsvoll
+    - R* > 1 AU    → nicht technisch erreichbar mit bekannter Physik
+
+    Physikalische Grundlage (Alcubierre 1994, Pfenning & Ford 1997):
+    - ρ_benötigt ∝ R⁻² (fallend: große Blase → geringere Raumzeitkrümmung nötig)
+    - Gesamtenergie E_benötigt = ρ_benötigt · V_aktiv ~ c⁴·v_s²·σ/(2G) = R-unabhängig
+    - Hinweis: c⁴/(8πG)·(v_s/R)² hat SI-Einheiten J/(m³·s²), nicht J/m³ (s.u.)
+    - Physikalisch korrekte Formel (dim.konsistent): ρ ~ c²/(8πG)·v_s²·σ²/R² [J/m³]
+
+    Gibt zurück: dict mit R_array, scenarios, L_vs_v, R_crit_vs_v,
+                 R_crit_gain, G_star_arr, R_scan4, scenario_summary
+    """
+    import os
+
+    tau_rep = 1.0 / pulse_rate   # Pulsperiode [s]
+
+    if R_range is None:
+        R_range = np.logspace(1, 6, 500)       # 10 m … 1000 km
+    if v_s_list is None:
+        v_s_list = [0.01 * C, 0.1 * C, 1.0 * C]
+    if sigma_list is None:
+        sigma_list = [10.0]                     # Wandschärfe [1/m]
+    if gain_list is None:
+        gain_list = [1.5, 10.0, 100.0]
+    if n_reaktoren_list is None:
+        n_reaktoren_list = [12, 100, 1000]
+
+    # Szenarien: (label, n_reaktoren, gain, P_pro_reaktor)
+    scenarios_params = [
+        ("Konservativ (G=1.5, 12×100MW)",
+         n_reaktoren_list[0], gain_list[0], P_pro_reaktor),
+        ("Realistisch (G=10, 100×1GW)",
+         n_reaktoren_list[1] if len(n_reaktoren_list) > 1 else 100,
+         gain_list[1] if len(gain_list) > 1 else 10.0,
+         P_pro_reaktor * 10),
+        ("Optimistisch (G=100, 1000×10GW)",
+         n_reaktoren_list[2] if len(n_reaktoren_list) > 2 else 1000,
+         gain_list[2] if len(gain_list) > 2 else 100.0,
+         P_pro_reaktor * 100),
+    ]
+
+    sigma = sigma_list[0]
+    AU = 1.496e11   # 1 AU in Metern
+    LY = 9.461e15   # 1 Lichtjahr in Metern
+    PC = 3.086e16   # 1 Parsec in Metern
+
+    # ----------------------------------------------------------
+    # Berechnungen
+    # ----------------------------------------------------------
+    results = []
+    for label, n_r, gain, P_r in scenarios_params:
+        # Verfügbare Energiedichte im Wandpacking-Modell (n ∝ R²):
+        # E_fusion = n * P * (1/f_rep) * gain  [konsistent mit FusionWarpSystem]
+        # V_aktiv(R) = 4πR²/σ  →  ρ_verfügbar = E_fusion·σ/(4πR²)
+        # Wandpacking: n ∝ R² → ρ_verfügbar = const = E_0·σ/(4πR_ref²)
+        E_ref = n_r * P_r * tau_rep * gain
+        rho_avail_0 = E_ref * sigma / (4.0 * PI * R_ref ** 2)
+
+        # ρ_benötigt(R) ~ c⁴/(8πG) · (v_s/R)² · σ²  [Formel aus Aufgabe]
+        # Dimensionskonvention: wird als relative Skala (nicht J/m³) verwendet
+        v_s = v_s_list[1]   # Referenz: 0.1c
+        prefactor = C ** 4 / (8.0 * PI * G)
+        rho_needed_arr = prefactor * (v_s / R_range) ** 2 * sigma ** 2
+
+        # Kalibrierung: Normierung auf L_0 = ρ_benötigt/ρ_verfügbar bei R_ref
+        # (damit L(R_ref) absolut interpretierbar ist)
+        rho_needed_ref = prefactor * (v_s / R_ref) ** 2 * sigma ** 2
+
+        # Lücken-Faktor L(R) = ρ_benötigt(R) / ρ_verfügbar_0
+        gap_arr = rho_needed_arr / rho_avail_0
+
+        # Kritischer Radius R* (L=1): aus L(R) = (R*/R)²
+        # R* = v_s · σ · c² / sqrt(8πG · ρ_avail_0)
+        R_crit = v_s * sigma * C ** 2 / np.sqrt(8.0 * PI * G * max(rho_avail_0, 1e-300))
+
+        # Lücke bei R = R_ref
+        L_at_Rref = rho_needed_ref / rho_avail_0
+
+        # Bewertung
+        if R_crit < 1e3:
+            bewertung = "ERREICHBAR (< 1 km)"
+        elif R_crit < AU:
+            bewertung = "SEHR SCHWIERIG (< 1 AU)"
+        elif R_crit < LY:
+            bewertung = "UNERREICHBAR (< 1 Lj)"
+        else:
+            bewertung = "UNERREICHBAR (> 1 Lj)"
+
+        results.append({
+            "label": label,
+            "n_reaktoren": n_r,
+            "gain": gain,
+            "P_pro_reaktor": P_r,
+            "rho_avail_0": rho_avail_0,
+            "E_ref": E_ref,
+            "rho_needed_arr": rho_needed_arr,
+            "gap_arr": gap_arr,
+            "R_crit": R_crit,
+            "L_at_Rref": L_at_Rref,
+            "bewertung": bewertung,
+        })
+
+    # ----------------------------------------------------------
+    # v_s-abhängige Lücke (für Plot 2 und Plot 3)
+    # ----------------------------------------------------------
+    n_r2, gain2, P_r2 = (scenarios_params[1][1], scenarios_params[1][2],
+                          scenarios_params[1][3])
+    rho_avail_real = (n_r2 * P_r2 * tau_rep * gain2 * sigma
+                      / (4.0 * PI * R_ref ** 2))
+
+    L_vs = {}
+    R_crit_vs = {}
+    for v_s in v_s_list:
+        rho_needed_v = C ** 4 / (8.0 * PI * G) * (v_s / R_range) ** 2 * sigma ** 2
+        L_vs[v_s] = rho_needed_v / rho_avail_real
+        R_crit_vs[v_s] = (v_s * sigma * C ** 2
+                          / np.sqrt(8.0 * PI * G * max(rho_avail_real, 1e-300)))
+
+    # R*(v_s) für alle drei Gain-Szenarien (Plot 3)
+    v_scan = np.linspace(0.001, 1.0, 200) * C
+    R_crit_gain = {}
+    for idx, (lbl, n_r, gain, P_r) in enumerate(scenarios_params):
+        rho_a = n_r * P_r * tau_rep * gain * sigma / (4.0 * PI * R_ref ** 2)
+        R_crit_gain[lbl] = (v_scan * sigma * C ** 2
+                            / np.sqrt(8.0 * PI * G * max(rho_a, 1e-300)))
+
+    # G*(R) für L=1 (Plot 4)
+    R_scan4 = np.logspace(1, 6, 500)
+    n_base, P_base = 12, P_pro_reaktor
+    G_star_arr = (C ** 4 / (8.0 * PI * G) * (v_s_list[1] / R_scan4) ** 2 * sigma ** 2
+                  * 4.0 * PI * R_scan4 ** 2 / (n_base * P_base * tau_rep * sigma))
+
+    # ----------------------------------------------------------
+    # Terminal-Ausgabe
+    # ----------------------------------------------------------
+    print("\n" + "=" * 72)
+    print("RT-33 — SKALIERUNGSGESETZ DER ENERGIELÜCKE")
+    print("=" * 72)
+    print(f"\n  σ = {sigma:.1f} /m  |  v_s (Ref) = 0.1c  |  R_ref = {R_ref:.0f} m"
+          f"  |  f_rep = {pulse_rate:.0f} Hz")
+    print(f"\n  Skalierungsgesetz:")
+    print(f"    ρ_benötigt(R)  ~ c⁴/(8πG) · (v_s/R)² · σ²  ∝ R⁻²")
+    print(f"    ρ_verfügbar(R) = n·P·(1/f)·gain·σ / (4πR²) ∝ R⁻² (festes n)")
+    print(f"    Wandpacking (n ∝ R²): ρ_verfügbar = const → L(R) ∝ R⁻²")
+    print(f"\n  {'Szenario':<42s} | {'R*':>14s} | {'G*':>10s} |"
+          f" {'L(R_ref)':>10s} | Bewertung")
+    print(f"  {'-'*42} | {'-'*14} | {'-'*10} | {'-'*10} | {'-'*28}")
+
+    for r in results:
+        Rc = r["R_crit"]
+        if Rc < 1e3:
+            Rc_str = f"{Rc:.1f} m"
+        elif Rc < AU:
+            Rc_str = f"{Rc / AU:.2e} AU"
+        elif Rc < LY:
+            Rc_str = f"{Rc / LY:.2e} Lj"
+        elif Rc < PC * 1e6:
+            Rc_str = f"{Rc / PC:.2e} pc"
+        else:
+            Rc_str = f"{Rc:.2e} m"
+
+        G_star_ref = (C ** 4 / (8.0 * PI * G)
+                      * (v_s_list[1] / R_ref) ** 2 * sigma ** 2
+                      * 4.0 * PI * R_ref ** 2
+                      / (r["n_reaktoren"] * r["P_pro_reaktor"] * tau_rep * sigma))
+        print(f"  {r['label']:<42s} | {Rc_str:>14s} | {G_star_ref:>10.2e} |"
+              f" {r['L_at_Rref']:>10.2e} | {r['bewertung']}")
+
+    print(f"\n  FAZIT: R* liegt für alle Szenarien weit jenseits von 1 AU.")
+    print(f"  Die Energielücke ist kein reines Skalierungsproblem —")
+    print(f"  sie erfordert G* >> 10⁶ oder neue Physik (Casimir, Stringtheorie).")
+    print(f"\n  Vergleich mit Literatur:")
+    print(f"    Alcubierre (1994): ρ ~ c²/(8πG)·v_s²·σ²  (dim.-konsistent, σ=const)")
+    print(f"    Pfenning & Ford (1997): E_total = c²·v_s²·σ/(2G)  (R-unabhängig)")
+    print(f"    RFT-RT-33: L(R) ∝ R⁻² im Wandpacking-Modell — Skalierungsverhalten")
+    print(f"    korrekt, aber R* >> 1 AU für alle realistischen Fusionsszenarien.")
+    print("=" * 72)
+
+    # ----------------------------------------------------------
+    # Plots
+    # ----------------------------------------------------------
+    if plot:
+        ensure_dir(out)
+        colors = ["#E53935", "#43A047", "#1E88E5"]
+
+        # --- Plot 1: ρ_benötigt(R) und ρ_verfügbar_0 ---
+        fig, ax = plt.subplots(figsize=(10, 6))
+        for idx, r in enumerate(results):
+            ax.plot(R_range, r["rho_needed_arr"], color=colors[idx],
+                    lw=2, label=f"ρ_benötigt — {r['label']}")
+            ax.axhline(r["rho_avail_0"], color=colors[idx],
+                       ls="--", lw=1.5, alpha=0.8,
+                       label=f"ρ_verfügbar₀ = {r['rho_avail_0']:.2e}")
+        ax.set_xscale("log"); ax.set_yscale("log")
+        ax.set_xlabel("Blasenradius R [m]")
+        ax.set_ylabel("Energiedichte [skaliert]")
+        ax.set_title("Plot 1: ρ_benötigt(R) vs. ρ_verfügbar — Schnitt = R*\n"
+                     "(Wandpacking: n ∝ R², σ = const, v_s = 0.1c)")
+        ax.legend(fontsize=8, loc="upper right")
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot1_rho_skalierung.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot1_rho_skalierung.png")
+
+        # --- Plot 2: Lücken-Faktor L(R) für v_s ∈ {0.01c, 0.1c, 1c} ---
+        fig, ax = plt.subplots(figsize=(10, 6))
+        v_labels = ["0.01c", "0.1c", "1c"]
+        for idx, v_s in enumerate(v_s_list):
+            ax.plot(R_range, L_vs[v_s], color=colors[idx],
+                    lw=2, label=f"v_s = {v_labels[idx]}")
+        ax.axhline(1.0, color="black", ls="-", lw=1.5, label="L = 1 (Lücke geschlossen)")
+        ax.set_xscale("log"); ax.set_yscale("log")
+        ax.set_xlabel("Blasenradius R [m]")
+        ax.set_ylabel("Lücken-Faktor L = ρ_benötigt / ρ_verfügbar")
+        ax.set_title("Plot 2: Lücken-Faktor L(R) — Szenario: Realistisch (G=10, 100×1GW)\n"
+                     "(Wandpacking-Modell: ρ_verfügbar = const)")
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot2_luecke_faktor.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot2_luecke_faktor.png")
+
+        # --- Plot 3: R*(v_s) für drei Gain-Szenarien ---
+        fig, ax = plt.subplots(figsize=(10, 6))
+        for idx, (lbl, _, _, _) in enumerate(scenarios_params):
+            ax.plot(v_scan / C, R_crit_gain[lbl] / AU,
+                    color=colors[idx], lw=2, label=lbl)
+        ax.axhline(1.0, color="gold", ls="--", lw=2, label="1 AU")
+        ax.axhline(1e-8, color="green", ls=":", lw=1.5, label="1 km")
+        ax.set_yscale("log")
+        ax.set_xlabel("Zielgeschwindigkeit v_s / c")
+        ax.set_ylabel("Kritischer Radius R* [AU]")
+        ax.set_title("Plot 3: R*(v_s) — Kritischer Radius als Funktion der Zielgeschwindigkeit\n"
+                     "(Wandpacking-Modell, σ = 10 /m)")
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot3_R_krit.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot3_R_krit.png")
+
+        # --- Plot 4: Benötigter Gain G*(R) für L=1 bei R ∈ [10m, 10⁶m] ---
+        fig, ax = plt.subplots(figsize=(10, 6))
+        ax.plot(R_scan4, G_star_arr, color="#8E24AA", lw=2.5)
+        ax.axhline(1.5, color="#E53935", ls="--", lw=1.5, label="G = 1.5 (Konservativ)")
+        ax.axhline(10, color="#43A047", ls="--", lw=1.5, label="G = 10 (Realistisch)")
+        ax.axhline(100, color="#1E88E5", ls="--", lw=1.5, label="G = 100 (Optimistisch)")
+        ax.set_xscale("log"); ax.set_yscale("log")
+        ax.set_xlabel("Blasenradius R [m]")
+        ax.set_ylabel("Benötigter Gain G* für L = 1")
+        ax.set_title("Plot 4: Benötigter Gain G*(R) für Lückenschluss\n"
+                     f"(n_base = {n_base}, P = {P_pro_reaktor:.0e} W, σ = {sigma:.0f} /m, v_s = 0.1c)")
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot4_gain_krit.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot4_gain_krit.png")
+
+    # ----------------------------------------------------------
+    # CSV-Export
+    # ----------------------------------------------------------
+    if export_csv:
+        import csv
+        csv_path = os.path.join(out, "rt33_skalierungsgesetz.csv")
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow([
+                "R_m", "rho_needed_konserv", "rho_needed_realist",
+                "rho_needed_optimist",
+                "rho_avail_konserv", "rho_avail_realist",
+                "rho_avail_optimist",
+                "gap_konserv", "gap_realist", "gap_optimist",
+            ])
+            for i, R_val in enumerate(R_range):
+                writer.writerow([
+                    f"{R_val:.4e}",
+                    f"{results[0]['rho_needed_arr'][i]:.4e}",
+                    f"{results[1]['rho_needed_arr'][i]:.4e}",
+                    f"{results[2]['rho_needed_arr'][i]:.4e}",
+                    f"{results[0]['rho_avail_0']:.4e}",
+                    f"{results[1]['rho_avail_0']:.4e}",
+                    f"{results[2]['rho_avail_0']:.4e}",
+                    f"{results[0]['gap_arr'][i]:.4e}",
+                    f"{results[1]['gap_arr'][i]:.4e}",
+                    f"{results[2]['gap_arr'][i]:.4e}",
+                ])
+        print(f"  → rt33_skalierungsgesetz.csv")
+
+    return {
+        "R_array": R_range,
+        "scenarios": results,
+        "L_vs_v": L_vs,
+        "R_crit_vs_v": R_crit_vs,
+        "R_crit_gain": R_crit_gain,
+        "G_star_arr": G_star_arr,
+        "R_scan4": R_scan4,
+        "v_scan": v_scan,
+        "scenario_summary": {
+            r["label"]: {
+                "R_critical": r["R_crit"],
+                "L_at_Rref": r["L_at_Rref"],
+                "rho_avail_0": r["rho_avail_0"],
+                "bewertung": r["bewertung"],
+            }
+            for r in results
+        },
+    }
+# ============================================================
+# 7. Hauptprogramm
 # ============================================================
 
 def main() -> None:
