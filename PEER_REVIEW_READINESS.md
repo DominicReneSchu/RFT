@@ -97,3 +97,21 @@ zu einem unabhängig bestätigten Ableitungsresultat geworden.
 *Verwandt:* [RESEARCH_TASKS.md](RESEARCH_TASKS.md) |
 [de/fakten/theorie/pi_als_urkonstante.md](de/fakten/theorie/pi_als_urkonstante.md) |
 [en/facts/theory/pi_as_fundamental_constant.md](en/facts/theory/pi_as_fundamental_constant.md)
+
+---
+
+## Einreichungsbereitschaft (August 2026)
+
+| Dokument | Status | Pfad |
+|----------|--------|------|
+| Cover Letter (MD) | ✅ Erstellt | `en/peer_review_rft/submission/cover_letter_jphyscomm.md` |
+| Cover Letter (LaTeX) | ✅ Erstellt | `en/peer_review_rft/submission/cover_letter_jphyscomm.tex` |
+| Submission Checklist | ✅ Erstellt | `en/peer_review_rft/submission/submission_checklist.md` |
+| Response-to-Reviewers | ✅ Erstellt | `en/peer_review_rft/submission/response_to_reviewers_template.md` |
+| Journal-Auswahl | ✅ Erstellt | `en/peer_review_rft/submission/journal_selection.md` |
+| Manuskript-Prüfbericht | ✅ Erstellt | `en/peer_review_rft/submission/manuscript_review_report.md` |
+| Abstract ≤ 200 Wörter | ⚠️ Aktion erforderlich | aktuell ~244 Wörter |
+| Abbildungen ≥ 300 dpi | ⚠️ Prüfen | `figures/*.png` |
+
+Zieljournal: **Journal of Physics Communications** (IOP Publishing)
+Einreichungsportal: https://mc.manuscriptcentral.com/jphyscomm
