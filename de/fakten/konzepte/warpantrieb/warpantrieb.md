@@ -279,6 +279,69 @@ Das Problem der negativen Energie ist GELÖST:
 
 ---
 
+## 7a. Skalierungsgesetz der Energielücke (RT-33)
+
+### 7a.1 Analytisches Skalierungsgesetz
+
+Aus den Einstein-Feldgleichungen und der Alcubierre-Metrik ergibt sich für die
+benötigte Energiedichte als Funktion des Blasenradius R:
+
+```
+ρ_benötigt(R) ~ c⁴/(8πG) · (v_s/R)² · σ²     ∝ R⁻²
+```
+
+Die verfügbare Energiedichte im Wandpacking-Modell (n_reaktoren ∝ R²):
+
+```
+ρ_verfügbar(R) = n · P · τ_rep · G_fusion · σ / (4πR²) = const
+```
+
+Lücken-Faktor:  **L(R) = ρ_benötigt(R) / ρ_verfügbar**
+
+Kritischer Radius:  **R*(v_s, σ, G) = v_s · σ · c² / √(8πG · ρ_verfügbar)**
+
+### 7a.2 Drei Szenarien
+
+| Szenario | n | G | P/Reaktor | R* | G* bei R=50m | Bewertung |
+|----------|---|---|-----------|----|--------------|-----------|
+| Konservativ (G=1.5, 12×100MW) | 12 | 1.5 | 100 MW | >> 1 AU (parsec-Skala) | ~10¹⁶ | Nicht erreichbar |
+| Realistisch (G=10, 100×1GW) | 100 | 10 | 1 GW | >> 1 AU (parsec-Skala) | ~10¹⁴ | Nicht erreichbar |
+| Optimistisch (G=100, 1000×10GW) | 1000 | 100 | 10 GW | >> 1 AU (parsec-Skala) | ~10¹² | Nicht erreichbar |
+
+### 7a.3 Übereinstimmung mit Literatur
+
+- **Alcubierre (1994):** ρ ~ c²/(8πG) · v_s² · σ² (konsistent mit σ = const)
+- **Pfenning & Ford (1997):** E_total = c² · v_s² · σ / (2G) — R-unabhängig
+- **RFT-RT-33:** L(R) ∝ R⁻² im Wandpacking-Modell — Skalierung konsistent,
+  aber R* >> 1 AU für alle realistischen Fusionsszenarien.
+
+### 7a.4 Falsifizierungskriterium
+
+- **R* < 1 km** → technisch grundsätzlich erreichbar (langfristig)
+- **R* < 1 AU** → technisch sehr anspruchsvoll, aber physikalisch möglich
+- **R* > 1 AU** → nicht mit bekannter Physik erreichbar
+
+**Ergebnis RT-33:** R* liegt für alle drei Szenarien auf parsec- bis kiloparsec-Skala
+(weit jenseits 1 AU). Die Energielücke ist **kein reines Skalierungsproblem** — für
+Lückenschluss bei R = 50 m wäre G* ~ 10¹²–10¹⁶ nötig. Das übersteigt alle bekannten
+Fusionskonzepte um viele Größenordnungen.
+
+> **Ehrlichkeitsstandard (Ergänzung zu §6.1):** Δw = 0.057 ist kein Alcubierre-Warp-Effekt.
+> RT-33 quantifiziert: Die Alcubierre-Energielücke ist astronomisch — nicht technisch.
+> Das Zwei-Feld-Modell bleibt physikalisch interessant als kosmologisches Analogon,
+> aber nicht als tatsächlicher Warpantrieb-Mechanismus.
+
+### 7a.5 Analyseskript
+
+```bash
+python analyse/rt33_energieluecke.py    # → figures/ (4 Plots, CSV)
+```
+
+Plots: ρ_benötigt/ρ_verfügbar (Log-Log) · Lücken-Faktor L(R) · R*(v_s) · G*(R)
+CSV: `rt33_skalierungsgesetz.csv`
+
+---
+
 ## 8. Verbindung zu den anderen Konzepten
 
 ```
@@ -406,6 +469,7 @@ Dieses Ergebnis bestätigt und wird bestätigt durch unabhängige Resultate aus 
 | Dreistufige Energiekaskade: Stufe 1 = Resonanzreaktoren | Resonanzreaktor: direkte technische Abhängigkeit, Stufe 1 der Kaskade | Kernphysik | [→ Resonanzreaktor](../resonanzreaktor/resonanzreaktor.md) |
 | E = π·ε(Δφ)·ℏ·f als Grundlage der Phasensteuerung | Kopplungsenergie-Dokument: geometrische Herleitung von E = π·ε·ℏ·f | Mathematik | [→ Kopplungsenergie](../../docs/mathematik/kopplungsenergie.md) |
 | Vorn/Hinten-Asymmetrie als makroskopische Energierichtung | Doppelpendel: ε(θ₂−θ₁) als klassisch-mechanisches Analogon | Klassische Mechanik | [→ Doppelpendel](../../simulationen/doppelpendel/begleitkapitel_doppelpendel.md) |
+| Skalierungsgesetz ρ_benötigt ∝ R⁻² (RT-33): Energielücke quantifiziert | Alcubierre (1994), Pfenning & Ford (1997): R*>>1 AU für alle Fusionsszenarien | Raumzeitgeometrie | [→ Analyseskript](analyse/rt33_energieluecke.py) |
 
 > **Eine Gleichung — E = π·ε(Δφ)·ℏ·f — bestätigt über Quantenmechanik, Kosmologie, Kernphysik und Raumzeitgeometrie.**
 

@@ -36,7 +36,7 @@ controlled via ε(Δφ) = cos²(Δφ/2).
 | 2. Two-field | Contraction (ε₁) + Expansion (ε₂) | ✅ |
 | 3. Warp profile | Sign change Δw = +0.057 | ✅ |
 | 4. Optimization | V₀=0.5, λ₁=0.5, ε₂₀=3.0 | ✅ |
-| 5. Energy gap | ~10⁵ peak, scaling problem | ⚠️ |
+| 5. Energy gap | ~10⁵ peak, scaling law ρ∝R⁻², R*>>1 AU (RT-33) | ✅ |
 | 6. 3D bubble | Complete warp geometry | ❌ |
 
 ---
@@ -47,6 +47,7 @@ controlled via ε(Δφ) = cos²(Δφ/2).
 |------|-------------|
 | [warp_drive.md](warp_drive.md) | Physics, results, references |
 | [warp_drive.py](warp_drive.py) | Simulation: 5 experiments, 6 plots |
+| [analyse/rt33_energy_gap.py](analyse/rt33_energy_gap.py) | RT-33: Scaling law, 4 plots, CSV |
 
 ---
 

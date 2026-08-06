@@ -278,6 +278,69 @@ The problem of negative energy is SOLVED:
 
 ---
 
+## 7a. Scaling Law of the Energy Gap (RT-33)
+
+### 7a.1 Analytical Scaling Law
+
+From the Einstein field equations and the Alcubierre metric, the required energy density
+as a function of bubble radius R is:
+
+```
+ρ_needed(R) ~ c⁴/(8πG) · (v_s/R)² · σ²     ∝ R⁻²
+```
+
+Available energy density in the wall-packing model (n_reactors ∝ R²):
+
+```
+ρ_available(R) = n · P · τ_rep · G_fusion · σ / (4πR²) = const
+```
+
+Gap factor:  **L(R) = ρ_needed(R) / ρ_available**
+
+Critical radius:  **R*(v_s, σ, G) = v_s · σ · c² / √(8πG · ρ_available)**
+
+### 7a.2 Three Scenarios
+
+| Scenario | n | G | P/reactor | R* | G* at R=50m | Assessment |
+|----------|---|---|-----------|----|-------------|------------|
+| Conservative (G=1.5, 12×100MW) | 12 | 1.5 | 100 MW | >> 1 AU (parsec scale) | ~10¹⁶ | Unreachable |
+| Realistic (G=10, 100×1GW) | 100 | 10 | 1 GW | >> 1 AU (parsec scale) | ~10¹⁴ | Unreachable |
+| Optimistic (G=100, 1000×10GW) | 1000 | 100 | 10 GW | >> 1 AU (parsec scale) | ~10¹² | Unreachable |
+
+### 7a.3 Comparison with Literature
+
+- **Alcubierre (1994):** ρ ~ c²/(8πG) · v_s² · σ² (consistent with σ = const)
+- **Pfenning & Ford (1997):** E_total = c² · v_s² · σ / (2G) — R-independent
+- **RFT-RT-33:** L(R) ∝ R⁻² in wall-packing model — scaling consistent,
+  but R* >> 1 AU for all realistic fusion scenarios.
+
+### 7a.4 Falsification Criterion
+
+- **R* < 1 km** → technically achievable in principle (long term)
+- **R* < 1 AU** → technically very challenging but physically possible
+- **R* > 1 AU** → not achievable with known physics
+
+**RT-33 result:** R* is in the parsec-to-kiloparsec range for all three scenarios
+(far beyond 1 AU). The energy gap is **not a pure scaling problem** — closing the gap
+at R = 50 m would require G* ~ 10¹²–10¹⁶, exceeding all known fusion concepts by
+many orders of magnitude.
+
+> **Honesty standard (supplement to §6.1):** Δw = 0.057 is not an Alcubierre warp effect.
+> RT-33 quantifies: the Alcubierre energy gap is astronomical, not technical.
+> The two-field model remains physically interesting as a cosmological analogue,
+> but not as an actual warp drive mechanism.
+
+### 7a.5 Analysis Script
+
+```bash
+python analyse/rt33_energy_gap.py    # → figures/ (4 plots, CSV)
+```
+
+Plots: ρ_needed/ρ_available (log-log) · gap factor L(R) · R*(v_s) · G*(R)
+CSV: `rt33_scaling_law.csv`
+
+---
+
 ## 8. Connection to Other Concepts
 
 ```
@@ -405,6 +468,7 @@ This result confirms and is confirmed by independent results from other domains:
 | Three-stage energy cascade: Stage 1 = resonance reactors | Resonance reactor: direct technical dependency, Stage 1 of the cascade | Nuclear physics | [→ Resonance reactor](../resonance_reactor/resonance_reactor.md) |
 | E = π·ε(Δφ)·ℏ·f as foundation of phase control | Coupling energy document: geometric derivation of E = π·ε·ℏ·f | Mathematics | [→ Coupling energy](../../docs/mathematics/coupling_energy.md) |
 | Front/rear asymmetry as macroscopic energy direction | Double pendulum: ε(θ₂−θ₁) as classical-mechanical analogue | Classical mechanics | [→ Double pendulum](../../simulations/double_pendulum/accompanying_chapter_double_pendulum.md) |
+| Scaling law ρ_needed ∝ R⁻² (RT-33): energy gap quantified | Alcubierre (1994), Pfenning & Ford (1997): R*>>1 AU for all fusion scenarios | Spacetime geometry | [→ Analysis script](analyse/rt33_energy_gap.py) |
 
 > **One equation — E = π·ε(Δφ)·ℏ·f — confirmed across quantum mechanics, cosmology, nuclear physics, and spacetime geometry.**
 

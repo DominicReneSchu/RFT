@@ -36,7 +36,7 @@ gesteuert über ε(Δφ) = cos²(Δφ/2).
 | 2. Zwei-Feld | Kontraktion (ε₁) + Expansion (ε₂) | ✅ |
 | 3. Warp-Profil | Vorzeichenwechsel Δw = +0.057 | ✅ |
 | 4. Optimierung | V₀=0.5, λ₁=0.5, ε₂₀=3.0 | ✅ |
-| 5. Energielücke | ~10⁵ Peak, Skalierungsproblem | ⚠️ |
+| 5. Energielücke | ~10⁵ Peak, Skalierungsgesetz ρ∝R⁻², R*>>1 AU (RT-33) | ✅ |
 | 6. 3D-Blase | Vollständige Warp-Geometrie | ❌ |
 
 ---
@@ -47,6 +47,7 @@ gesteuert über ε(Δφ) = cos²(Δφ/2).
 |-------|-------------|
 | [warpantrieb.md](warpantrieb.md) | Physik, Ergebnisse, Literatur |
 | [warpantrieb.py](warpantrieb.py) | Simulation: 5 Experimente, 6 Plots |
+| [analyse/rt33_energieluecke.py](analyse/rt33_energieluecke.py) | RT-33: Skalierungsgesetz, 4 Plots, CSV |
 
 ---
 

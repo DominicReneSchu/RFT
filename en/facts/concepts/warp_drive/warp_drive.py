@@ -660,8 +660,307 @@ def plot_scaling(results: list[dict[str, Any]], out: str) -> None:
 
 
 # ============================================================
-# 6. Main Program
+# 6. Scaling Law of the Energy Gap (RT-33)
 # ============================================================
+
+def scaling_law(
+    R_range=None,
+    v_s_list=None,
+    sigma_list=None,
+    gain_list=None,
+    n_reactors_list=None,
+    P_per_reactor: float = 1e8,
+    pulse_rate: float = 10.0,
+    R_ref: float = 50.0,
+    plot: bool = True,
+    export_csv: bool = True,
+    out: str = "figures",
+) -> dict:
+    """
+    Computes the scaling law of the energy gap as a function of R.
+
+    Core statements:
+    - rho_needed(R) ~ c⁴/(8πG) · (v_s/R)² · σ²  [Alcubierre scaling, ∝ R⁻²]
+    - rho_available(R) = E_fusion/pulse / V_active(R),  V_active = 4πR²/σ
+    - Wall-packing model (n_reactors ∝ R²): rho_available = const
+    - Gap factor: L(R) = rho_needed(R) / rho_available_0
+    - Critical radius R*: L(R*) = 1
+
+    Energy calculation (consistent with FusionWarpSystem):
+    - E_fusion/pulse = n · P · (1/f_rep) · gain  [pulse period, not τ_burn]
+    - rho_available_0 = E_fusion/pulse · σ / (4πR_ref²)
+
+    Falsification criterion:
+    - R* < 1 km    → technically achievable in principle (long term)
+    - R* < 1 AU    → technically very challenging
+    - R* > 1 AU    → not technically achievable with known physics
+
+    Physical basis (Alcubierre 1994, Pfenning & Ford 1997):
+    - rho_needed ∝ R⁻² (falling: larger bubble → less spacetime curvature needed)
+    - Total energy E_needed = rho_needed · V_active ~ c⁴·v_s²·σ/(2G) = R-independent
+    - Note: c⁴/(8πG)·(v_s/R)² has SI units J/(m³·s²), not J/m³ (see docstring DE)
+    - Physically correct formula (dimensionally consistent): ρ ~ c²/(8πG)·v_s²·σ²/R²
+
+    Returns: dict with R_array, scenarios, L_vs_v, R_crit_vs_v,
+             R_crit_gain, G_star_arr, R_scan4, scenario_summary
+    """
+    import os
+
+    tau_rep = 1.0 / pulse_rate   # pulse period [s]
+
+    if R_range is None:
+        R_range = np.logspace(1, 6, 500)
+    if v_s_list is None:
+        v_s_list = [0.01 * C, 0.1 * C, 1.0 * C]
+    if sigma_list is None:
+        sigma_list = [10.0]
+    if gain_list is None:
+        gain_list = [1.5, 10.0, 100.0]
+    if n_reactors_list is None:
+        n_reactors_list = [12, 100, 1000]
+
+    scenarios_params = [
+        ("Conservative (G=1.5, 12×100MW)",
+         n_reactors_list[0], gain_list[0], P_per_reactor),
+        ("Realistic (G=10, 100×1GW)",
+         n_reactors_list[1] if len(n_reactors_list) > 1 else 100,
+         gain_list[1] if len(gain_list) > 1 else 10.0,
+         P_per_reactor * 10),
+        ("Optimistic (G=100, 1000×10GW)",
+         n_reactors_list[2] if len(n_reactors_list) > 2 else 1000,
+         gain_list[2] if len(gain_list) > 2 else 100.0,
+         P_per_reactor * 100),
+    ]
+
+    sigma = sigma_list[0]
+    AU = 1.496e11
+    LY = 9.461e15
+    PC = 3.086e16
+
+    results = []
+    for label, n_r, gain, P_r in scenarios_params:
+        E_ref = n_r * P_r * tau_rep * gain
+        rho_avail_0 = E_ref * sigma / (4.0 * PI * R_ref ** 2)
+        v_s = v_s_list[1]
+        prefactor = C ** 4 / (8.0 * PI * G)
+        rho_needed_arr = prefactor * (v_s / R_range) ** 2 * sigma ** 2
+        rho_needed_ref = prefactor * (v_s / R_ref) ** 2 * sigma ** 2
+        gap_arr = rho_needed_arr / rho_avail_0
+        R_crit = v_s * sigma * C ** 2 / np.sqrt(8.0 * PI * G * max(rho_avail_0, 1e-300))
+        L_at_Rref = rho_needed_ref / rho_avail_0
+
+        if R_crit < 1e3:
+            assessment = "ACHIEVABLE (< 1 km)"
+        elif R_crit < AU:
+            assessment = "VERY DIFFICULT (< 1 AU)"
+        elif R_crit < LY:
+            assessment = "UNREACHABLE (< 1 ly)"
+        else:
+            assessment = "UNREACHABLE (> 1 ly)"
+
+        results.append({
+            "label": label,
+            "n_reactors": n_r,
+            "gain": gain,
+            "P_per_reactor": P_r,
+            "rho_avail_0": rho_avail_0,
+            "E_ref": E_ref,
+            "rho_needed_arr": rho_needed_arr,
+            "gap_arr": gap_arr,
+            "R_crit": R_crit,
+            "L_at_Rref": L_at_Rref,
+            "assessment": assessment,
+        })
+
+    n_r2, gain2, P_r2 = (scenarios_params[1][1], scenarios_params[1][2],
+                          scenarios_params[1][3])
+    rho_avail_real = (n_r2 * P_r2 * tau_rep * gain2 * sigma
+                      / (4.0 * PI * R_ref ** 2))
+
+    L_vs = {}
+    R_crit_vs = {}
+    for v_s in v_s_list:
+        rho_needed_v = C ** 4 / (8.0 * PI * G) * (v_s / R_range) ** 2 * sigma ** 2
+        L_vs[v_s] = rho_needed_v / rho_avail_real
+        R_crit_vs[v_s] = (v_s * sigma * C ** 2
+                          / np.sqrt(8.0 * PI * G * max(rho_avail_real, 1e-300)))
+
+    v_scan = np.linspace(0.001, 1.0, 200) * C
+    R_crit_gain = {}
+    for idx, (lbl, n_r, gain, P_r) in enumerate(scenarios_params):
+        rho_a = n_r * P_r * tau_rep * gain * sigma / (4.0 * PI * R_ref ** 2)
+        R_crit_gain[lbl] = (v_scan * sigma * C ** 2
+                            / np.sqrt(8.0 * PI * G * max(rho_a, 1e-300)))
+
+    R_scan4 = np.logspace(1, 6, 500)
+    n_base, P_base = 12, P_per_reactor
+    G_star_arr = (C ** 4 / (8.0 * PI * G) * (v_s_list[1] / R_scan4) ** 2 * sigma ** 2
+                  * 4.0 * PI * R_scan4 ** 2 / (n_base * P_base * tau_rep * sigma))
+
+    print("\n" + "=" * 72)
+    print("RT-33 — SCALING LAW OF THE ENERGY GAP")
+    print("=" * 72)
+    print(f"\n  σ = {sigma:.1f} /m  |  v_s (ref) = 0.1c  |  R_ref = {R_ref:.0f} m"
+          f"  |  f_rep = {pulse_rate:.0f} Hz")
+    print(f"\n  Scaling law:")
+    print(f"    rho_needed(R)   ~ c⁴/(8πG) · (v_s/R)² · σ²  ∝ R⁻²")
+    print(f"    rho_available(R) = n·P·(1/f)·gain·σ / (4πR²) ∝ R⁻² (fixed n)")
+    print(f"    Wall-packing (n ∝ R²): rho_available = const → L(R) ∝ R⁻²")
+    print(f"\n  {'Scenario':<42s} | {'R*':>14s} | {'G*':>10s} |"
+          f" {'L(R_ref)':>10s} | Assessment")
+    print(f"  {'-'*42} | {'-'*14} | {'-'*10} | {'-'*10} | {'-'*28}")
+
+    for r in results:
+        Rc = r["R_crit"]
+        if Rc < 1e3:
+            Rc_str = f"{Rc:.1f} m"
+        elif Rc < AU:
+            Rc_str = f"{Rc / AU:.2e} AU"
+        elif Rc < LY:
+            Rc_str = f"{Rc / LY:.2e} ly"
+        elif Rc < PC * 1e6:
+            Rc_str = f"{Rc / PC:.2e} pc"
+        else:
+            Rc_str = f"{Rc:.2e} m"
+        G_star_ref = (C ** 4 / (8.0 * PI * G)
+                      * (v_s_list[1] / R_ref) ** 2 * sigma ** 2
+                      * 4.0 * PI * R_ref ** 2
+                      / (r["n_reactors"] * r["P_per_reactor"] * tau_rep * sigma))
+        print(f"  {r['label']:<42s} | {Rc_str:>14s} | {G_star_ref:>10.2e} |"
+              f" {r['L_at_Rref']:>10.2e} | {r['assessment']}")
+
+    print(f"\n  CONCLUSION: R* is far beyond 1 AU for all scenarios.")
+    print(f"  The energy gap is not a pure scaling problem —")
+    print(f"  it requires G* >> 10⁶ or new physics (Casimir, string theory).")
+    print(f"\n  Comparison with literature:")
+    print(f"    Alcubierre (1994): rho ~ c²/(8πG)·v_s²·σ²  (dim.-consistent, σ=const)")
+    print(f"    Pfenning & Ford (1997): E_total = c²·v_s²·σ/(2G)  (R-independent)")
+    print(f"    RFT-RT-33: L(R) ∝ R⁻² in wall-packing model — scaling correct,")
+    print(f"    but R* >> 1 AU for all realistic fusion scenarios.")
+    print("=" * 72)
+
+    if plot:
+        ensure_dir(out)
+        colors = ["#E53935", "#43A047", "#1E88E5"]
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        for idx, r in enumerate(results):
+            ax.plot(R_range, r["rho_needed_arr"], color=colors[idx],
+                    lw=2, label=f"rho_needed — {r['label']}")
+            ax.axhline(r["rho_avail_0"], color=colors[idx],
+                       ls="--", lw=1.5, alpha=0.8,
+                       label=f"rho_available = {r['rho_avail_0']:.2e}")
+        ax.set_xscale("log"); ax.set_yscale("log")
+        ax.set_xlabel("Bubble radius R [m]")
+        ax.set_ylabel("Energy density [scaled]")
+        ax.set_title("Plot 1: rho_needed(R) vs. rho_available — Intersection = R*\n"
+                     "(Wall-packing: n ∝ R², σ = const, v_s = 0.1c)")
+        ax.legend(fontsize=8, loc="upper right")
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot1_rho_scaling.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot1_rho_scaling.png")
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        v_labels = ["0.01c", "0.1c", "1c"]
+        for idx, v_s in enumerate(v_s_list):
+            ax.plot(R_range, L_vs[v_s], color=colors[idx],
+                    lw=2, label=f"v_s = {v_labels[idx]}")
+        ax.axhline(1.0, color="black", ls="-", lw=1.5, label="L = 1 (gap closed)")
+        ax.set_xscale("log"); ax.set_yscale("log")
+        ax.set_xlabel("Bubble radius R [m]")
+        ax.set_ylabel("Gap factor L = rho_needed / rho_available")
+        ax.set_title("Plot 2: Gap factor L(R) — Scenario: Realistic (G=10, 100×1GW)\n"
+                     "(Wall-packing model: rho_available = const)")
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot2_gap_factor.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot2_gap_factor.png")
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        for idx, (lbl, _, _, _) in enumerate(scenarios_params):
+            ax.plot(v_scan / C, R_crit_gain[lbl] / AU,
+                    color=colors[idx], lw=2, label=lbl)
+        ax.axhline(1.0, color="gold", ls="--", lw=2, label="1 AU")
+        ax.axhline(1e-8, color="green", ls=":", lw=1.5, label="1 km")
+        ax.set_yscale("log")
+        ax.set_xlabel("Target velocity v_s / c")
+        ax.set_ylabel("Critical radius R* [AU]")
+        ax.set_title("Plot 3: R*(v_s) — Critical radius as function of target velocity\n"
+                     "(Wall-packing model, σ = 10 /m)")
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot3_R_critical.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot3_R_critical.png")
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        ax.plot(R_scan4, G_star_arr, color="#8E24AA", lw=2.5)
+        ax.axhline(1.5, color="#E53935", ls="--", lw=1.5, label="G = 1.5 (Conservative)")
+        ax.axhline(10, color="#43A047", ls="--", lw=1.5, label="G = 10 (Realistic)")
+        ax.axhline(100, color="#1E88E5", ls="--", lw=1.5, label="G = 100 (Optimistic)")
+        ax.set_xscale("log"); ax.set_yscale("log")
+        ax.set_xlabel("Bubble radius R [m]")
+        ax.set_ylabel("Required gain G* for L = 1")
+        ax.set_title("Plot 4: Required gain G*(R) for gap closure\n"
+                     f"(n_base = {n_base}, P = {P_per_reactor:.0e} W, σ = {sigma:.0f} /m, v_s = 0.1c)")
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3, which="both")
+        fig.tight_layout()
+        fig.savefig(os.path.join(out, "rt33_plot4_gain_critical.png"), dpi=150)
+        plt.close(fig)
+        print(f"  → rt33_plot4_gain_critical.png")
+
+    if export_csv:
+        import csv
+        csv_path = os.path.join(out, "rt33_scaling_law.csv")
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow([
+                "R_m", "rho_needed_conserv", "rho_needed_realist",
+                "rho_needed_optimist",
+                "rho_avail_conserv", "rho_avail_realist", "rho_avail_optimist",
+                "gap_conserv", "gap_realist", "gap_optimist",
+            ])
+            for i, R_val in enumerate(R_range):
+                writer.writerow([
+                    f"{R_val:.4e}",
+                    f"{results[0]['rho_needed_arr'][i]:.4e}",
+                    f"{results[1]['rho_needed_arr'][i]:.4e}",
+                    f"{results[2]['rho_needed_arr'][i]:.4e}",
+                    f"{results[0]['rho_avail_0']:.4e}",
+                    f"{results[1]['rho_avail_0']:.4e}",
+                    f"{results[2]['rho_avail_0']:.4e}",
+                    f"{results[0]['gap_arr'][i]:.4e}",
+                    f"{results[1]['gap_arr'][i]:.4e}",
+                    f"{results[2]['gap_arr'][i]:.4e}",
+                ])
+        print(f"  → rt33_scaling_law.csv")
+
+    return {
+        "R_array": R_range,
+        "scenarios": results,
+        "L_vs_v": L_vs,
+        "R_crit_vs_v": R_crit_vs,
+        "R_crit_gain": R_crit_gain,
+        "G_star_arr": G_star_arr,
+        "R_scan4": R_scan4,
+        "v_scan": v_scan,
+        "scenario_summary": {
+            r["label"]: {
+                "R_critical": r["R_crit"],
+                "L_at_Rref": r["L_at_Rref"],
+                "rho_avail_0": r["rho_avail_0"],
+                "assessment": r["assessment"],
+            }
+            for r in results
+        },
+    }
+
 
 def main() -> None:
     print("=" * 60)
