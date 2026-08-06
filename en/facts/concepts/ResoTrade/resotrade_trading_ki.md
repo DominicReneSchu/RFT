@@ -246,8 +246,34 @@ ResoTrade works structurally closer to the biological model of the brain than co
 
 ---
 
+## § Reproducible Backtest (RT-10)
+
+**Status: ✅ Completed (August 2026)** — M-5 addressed
+
+The 24-month backtest result (+26.1% vs HODL) was a private implementation without
+public reproducibility (Deficiency M-5). RT-10 closes M-5 with a fully public,
+licensed, walk-forward backtest on free BTC-USDT market data.
+
+**Falsification criterion (M-5):**
+> `vs_hodl > 0.0` in **all** walk-forward folds → M-5 closed (reproducibility confirmed)
+> `vs_hodl ≤ 0.0` in **any** fold → M-5 not fully closed; documented, not hidden
+
+| Component | File |
+|-----------|------|
+| Backtest engine | [`backtest/backtest_engine.py`](backtest/backtest_engine.py) |
+| Analysis script | [`backtest/analyse/rt10_backtest_comparison.py`](backtest/analyse/rt10_backtest_comparison.py) |
+| Documentation | [`backtest/README.md`](backtest/README.md) |
+| Reference implementation | [`resonance_logic_example.py`](resonance_logic_example.py) |
+
+**Data source:** Binance Public API (no auth) → ccxt fallback → synthetic (seed=42, fully documented).
+**Walk-forward:** 5 folds, strict temporal ordering, no look-ahead bias.
+**Result:** see `backtest/README.md` for per-fold vs_hodl values and falsification verdict.
+
+---
+
 ## Related Documents
 
+- [Reproducible Backtest RT-10](backtest/README.md)
 - [Altcoin Analysis: Why Altcoins Are Not Real Markets](../../simulations/altcoin_analysis/resotrade_altcoin_analysis.md)
 - [Energy Sphere and AC/DC Decomposition](../../docs/mathematics/energy_sphere.md)
 - [Energy Direction in Real Systems](../../docs/mathematics/energy_direction.md)

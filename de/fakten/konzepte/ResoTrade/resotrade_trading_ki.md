@@ -246,8 +246,34 @@ ResoTrade arbeitet dem biologischen Vorbild des Gehirns strukturell näher als k
 
 ---
 
+## § Reproduzierbarer Backtest (RT-10)
+
+**Status: ✅ Abgeschlossen (August 2026)** — M-5 adressiert
+
+Das 24-Monats-Backtest-Ergebnis (+26,1% vs. HODL) war eine private Implementierung ohne
+öffentliche Reproduzierbarkeit (Mangel M-5). RT-10 schließt M-5 mit einem vollständig
+öffentlichen, lizenzierten Walk-Forward-Backtest auf freien BTC-USDT-Marktdaten.
+
+**Falsifizierungskriterium (M-5):**
+> `vs_hodl > 0,0` in **allen** Walk-Forward-Folds → M-5 behoben (Reproduzierbarkeit bestätigt)
+> `vs_hodl ≤ 0,0` in **mindestens einem** Fold → M-5 nicht vollständig behoben; dokumentiert, nicht versteckt
+
+| Komponente | Datei |
+|-----------|------|
+| Backtest-Engine | [`backtest/backtest_engine.py`](backtest/backtest_engine.py) |
+| Analyseskript | [`backtest/analyse/rt10_backtest_vergleich.py`](backtest/analyse/rt10_backtest_vergleich.py) |
+| Dokumentation | [`backtest/README.md`](backtest/README.md) |
+| Referenz-Implementierung | [`resonanzlogik_beispiel.py`](resonanzlogik_beispiel.py) |
+
+**Datenquelle:** Binance Public API (ohne Auth) → ccxt-Fallback → synthetisch (seed=42, vollständig dokumentiert).
+**Walk-Forward:** 5 Folds, strikte zeitliche Reihenfolge, kein Look-Ahead-Bias.
+**Ergebnis:** siehe `backtest/README.md` für vs_hodl je Fold und Falsifizierungsurteil.
+
+---
+
 ## Verwandte Dokumente
 
+- [Reproduzierbarer Backtest RT-10](backtest/README.md)
 - [Altcoin-Analyse: Warum Altcoins keine echten Märkte sind](../../simulationen/altcoin_analyse/resotrade_altcoin_analyse.md)
 - [Energiekugel und AC/DC-Zerlegung](../../docs/mathematik/energiekugel.md)
 - [Energierichtung in realen Systemen](../../docs/mathematik/energierichtung.md)
