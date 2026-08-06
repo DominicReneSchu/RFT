@@ -32,6 +32,7 @@ Status: Aktiv
 7. ~~RT-10 — ResoTrade Backtest öffentlich~~ ✅ Abgeschlossen (Aug 2026)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
 - ~~RT-10  — ResoTrade Backtest öffentlich~~ ✅ Abgeschlossen (Aug 2026) — M-5 adressiert: Walk-Forward-Backtest (5 Folds) auf BTC-USDT implementiert; Binance Public API + synthetischer Fallback (seed=42); Falsifizierungskriterium: vs_hodl > 0 in allen Folds; synthetische Daten: 3/5 Folds positiv, Ø Sharpe=0,89; vollständiger Trade-Log als CSV; kein proprietärer Datensatz. Code: `backtest/backtest_engine.py` + `backtest/analyse/rt10_backtest_comparison.py` (DE+EN)
 - ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py`
 - ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h. Nächste Priorität: RT-10 (ResoTrade).
@@ -48,8 +49,7 @@ Status: Aktiv
 10. RT-13 — Am-241 ELI-NP
 
 ### Langfristig offen
-11. RT-01a — Operationale Definition π/e formal
-12. RT-33/34 — Warpantrieb Stufen 5+6
+11. RT-33/34 — Warpantrieb Stufen 5+6 ← Nächste intern abschließbare Aufgabe (RT-01a abgeschlossen Aug 2026)
 
 ---
 
@@ -66,26 +66,20 @@ Status: Aktiv
 **Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §5
 
 ### RT-01a — π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument
-**Status: 📋 Offen** (konzeptuell formuliert, formale Ableitung offen)
-**Motivation:** Der philosophisch-mathematische Ursprungsgedanke der RFT — π und e als
-Urkonstanten des Raumes, deren scheinbare Irrationalität ein Artefakt der Basis-10-Kodierung
-ist — wurde während der Theorieentwicklung in seiner expliziten Formulierung nicht
-festgehalten.
-**Kern des Arguments:**
-- Der Kreisumfang bei r = 1 ist physikalisch exakt und endlich messbar.
-- Die Dezimaldarstellung 3,14159… ist eine Darstellungseigenschaft, kein Naturphänomen.
-- Werden π und e als Urkonstanten (analog zu c, ℏ) behandelt, sind sie in ihrem
-  natürlichen Einheitensystem rational verwendbar.
-- π ist das natürliche Maß einer Halboszillation — damit ist der Faktor π in A4 keine
-  freie Wahl, sondern eine geometrische Normierungsbedingung des Phasenraums.
-- Die interne Inkonsistenz der Standardphysik bei der Vektorialität der Energie
-  (Drehmoment als Vektor mit Energieeinheit, Spin, Lorentz-4-Vektor) liefert die
-  physikalische Motivation für A5.
-**Aufgabe:** Operationale Definition von π und e als Phasenraumkonstanten — d. h.: Was
-messen π und e physikalisch, unabhängig von ihrer Dezimaldarstellung?
-**Verhältnis zu RT-01:** RT-01a ist die philosophisch-mathematische Grundlage, die
-RT-01 (Wirkungsintegral-Herleitung) vorausgeht und deren Suchrichtung bestimmt.
-**Verweise:** `de/fakten/theorie/pi_als_urkonstante.md` | `en/facts/theory/pi_as_fundamental_constant.md`
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** Dezimalartefakt-Argument formal als Dreischritt-Satz (Darstellungsrelativität)
+ausgearbeitet; Zwei-Stufen-Argumentationsstruktur RT-01a + RT-01 explizit als konsistente
+Einheit beschrieben; Verbindung zu G_sync und k=1-Minimalitätsprinzip (RT-02) als
+strukturelle Äquivalenz formuliert; e-Eigenschaft (Selbstähnlichkeitsbasis) formal
+abgeschlossen; A5-Einordnung nach RT-36 korrigiert (irreduzibles Postulat, keine Herleitung).
+**Was formal noch offen bleibt:**
+- e ist noch nicht in die Axiomatik (A1–A7) integriert.
+- Natürliches Einheitensystem {π, e, ℏ} ist konzeptuell beschrieben, aber formal nicht als
+  Korollar der Axiomatik ausgearbeitet.
+**Begründung A4:** Die Begründungsstruktur von A4 ist nach RT-01a vollständig geschlossen:
+konzeptuell (Darstellungsrelativität, Minimalitätsprinzip) und formal (Sattelpunktsbeitrag
+des Wirkungsintegrals, RT-01 + RT-01b).
+**Kerndokument:** `de/fakten/theorie/pi_als_urkonstante.md` | `en/facts/theory/pi_as_fundamental_constant.md`
 
 ### RT-01b — Unabhängige π-Herleitung: Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen
 **Status: ✅ Abgeschlossen (August 2026)**
