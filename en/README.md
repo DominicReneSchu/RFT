@@ -263,7 +263,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | 1 | [ResoCalc](facts/concepts/ResoCalc/resocalc.md) | A1, A3, A4 | Torque calculation in resonance field |
 | 2 | [Resonance Reactor](facts/concepts/resonance_reactor/README.md) | A1, A3–A7 | Reactor concept |
 | 3 | [Warp Drive](facts/concepts/warp_drive/warp_drive.md) | A1, A4, A5 | Propulsion concept — **first positive-energy warp bubble simulation** (E⁻ = 0); w sign change via ε(Δφ) phase control |
-| 4 | [ResoTrade V15.6](facts/concepts/ResoTrade/resotrade_trading_ai.md) | A1–A7 | Application concept — demonstrates RFT axioms in financial markets |
+| 4 | [ResoTrade V15.6](facts/concepts/ResoTrade/resotrade_trading_ki.md) | A1–A7 | Application concept — demonstrates RFT axioms in financial markets · [RT-10 Backtest ✅](facts/concepts/ResoTrade/backtest/README.md) |
 | 5 | [ResoAgent](facts/concepts/ResoAgent/ResoAgent.md) | A1–A7 | Resonance-logical agent AI |
 
 ---
