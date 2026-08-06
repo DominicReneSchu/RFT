@@ -94,11 +94,16 @@ def fetch_btcusdt_ohlcv(source: str = 'binance_api',
         Returns: [[timestamp_ms, open, high, low, close, volume], ...]
 
     Synthetic fallback (deterministic):
-        DC trend : 30_000 + 0.5 * t  [USDT/h]
+        DC trend : 30_000 + 0.5 * t + 2000 * sin(2π t / 800)  [USDT/h]
         AC cycles: 800*sin(2π t/50) + 400*sin(2π t/120) + 200*sin(2π t/20)
         Noise    : Normal(0, 150) USDT
         seed=42 guarantees bit-exact reproducibility.
     """
+    _valid_sources = ('binance_api', 'ccxt', 'synthetic')
+    if source not in _valid_sources:
+        print(f"  [backtest_engine] Unknown source '{source}' — "
+              f"using synthetic fallback (valid: {_valid_sources}).")
+
     if source == 'binance_api':
         df = _fetch_binance_api(n_candles, interval)
         if df is not None:
@@ -122,8 +127,12 @@ def _fetch_binance_api(n_candles: int, interval: str) -> pd.DataFrame | None:
     """Fetch from Binance public REST API."""
     try:
         import requests
+        limit = min(n_candles, 1000)
+        if n_candles > 1000:
+            print(f"  [backtest_engine] Warning: Binance API caps at 1000 candles;"
+                  f" requested {n_candles}, fetching {limit}.")
         url = (f"https://api.binance.com/api/v3/klines"
-               f"?symbol=BTCUSDT&interval={interval}&limit={min(n_candles, 1000)}")
+               f"?symbol=BTCUSDT&interval={interval}&limit={limit}")
         resp = requests.get(url, timeout=10)
         resp.raise_for_status()
         raw = resp.json()
@@ -738,8 +747,7 @@ def _win_rate(trades: list[dict], price: np.ndarray) -> float:
     """Win rate: fraction of trades that improved portfolio value."""
     if not trades:
         return 0.0
-    wins = sum(1 for t in trades if t['action'] != 'HOLD')
-    # Simplified: count BUY trades followed by price increase as wins
+    # Count BUY trades followed by price increase, SELL by price decrease
     win_count = 0
     for t in trades:
         step = t['step']
@@ -748,8 +756,7 @@ def _win_rate(trades: list[dict], price: np.ndarray) -> float:
                 win_count += 1
             elif t['action'] == 'SELL' and price[step + 1] < price[step]:
                 win_count += 1
-    denom = max(wins, 1)
-    return float(win_count / denom)
+    return float(win_count / max(len(trades), 1))
 
 
 # ============================================================

@@ -93,11 +93,16 @@ def fetch_btcusdt_ohlcv(source: str = 'binance_api',
         Gibt zurück: [[timestamp_ms, open, high, low, close, volume], ...]
 
     Synthetischer Fallback (deterministisch):
-        DC-Trend : 30_000 + 0,5 * t  [USDT/h]
+        DC-Trend : 30_000 + 0,5 * t + 2000 * sin(2π t / 800)  [USDT/h]
         AC-Zyklen: 800*sin(2π t/50) + 400*sin(2π t/120) + 200*sin(2π t/20)
         Rauschen : Normal(0, 150) USDT
         seed=42 garantiert bitgenaue Reproduzierbarkeit.
     """
+    _gueltige_quellen = ('binance_api', 'ccxt', 'synthetisch')
+    if source not in _gueltige_quellen:
+        print(f"  [backtest_engine] Unbekannte Quelle '{source}' — "
+              f"nutze synthetischen Fallback (gültig: {_gueltige_quellen}).")
+
     if source == 'binance_api':
         df = _lade_binance_api(n_kerzen, intervall)
         if df is not None:
@@ -121,8 +126,12 @@ def _lade_binance_api(n_kerzen: int, intervall: str) -> pd.DataFrame | None:
     """Lädt Daten von der Binance Public REST API."""
     try:
         import requests
+        limit = min(n_kerzen, 1000)
+        if n_kerzen > 1000:
+            print(f"  [backtest_engine] Hinweis: Binance API begrenzt auf 1000 Kerzen;"
+                  f" angefragt {n_kerzen}, lade {limit}.")
         url = (f"https://api.binance.com/api/v3/klines"
-               f"?symbol=BTCUSDT&interval={intervall}&limit={min(n_kerzen, 1000)}")
+               f"?symbol=BTCUSDT&interval={intervall}&limit={limit}")
         resp = requests.get(url, timeout=10)
         resp.raise_for_status()
         raw = resp.json()
@@ -724,7 +733,7 @@ def _gewinnrate(trades: list[dict], preis: np.ndarray) -> float:
     """Gewinnrate: Anteil der Trades, die den Portfoliowert verbesserten."""
     if not trades:
         return 0.0
-    aktiv = sum(1 for t in trades if t['aktion'] != 'HALTEN')
+    # KAUF gefolgt von Preisanstieg, VERKAUF gefolgt von Preisrückgang
     gewinner = 0
     for t in trades:
         schritt = t['schritt']
@@ -733,8 +742,7 @@ def _gewinnrate(trades: list[dict], preis: np.ndarray) -> float:
                 gewinner += 1
             elif t['aktion'] == 'VERKAUF' and preis[schritt + 1] < preis[schritt]:
                 gewinner += 1
-    nenner = max(aktiv, 1)
-    return float(gewinner / nenner)
+    return float(gewinner / max(len(trades), 1))
 
 
 # ============================================================
