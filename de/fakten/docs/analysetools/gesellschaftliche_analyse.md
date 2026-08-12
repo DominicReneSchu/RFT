@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 2. August 2026 | Fassung 2.11 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 12. August 2026 | Fassung 2.12 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -242,6 +242,29 @@ $$
 
 Das Muster ist A7-invariant und skaliert von Einzelbeziehungen bis zu Institutionen.
 
+### 7.5 Totschlagargument / Kriterienblockade
+
+Ein **Totschlagargument** ist eine diskursive Operation, die den PCI (die kollektive Aufmerksamkeit und Anerkennung) auf ein **unerreichbares äußeres Kriterium** lenkt. Dieses Kriterium wird von den bestehenden Machtstrukturen selbst kontrolliert oder definiert, sodass seine Erfüllung strukturell verhindert wird. Ziel ist es, einen legitimen Resonator – etwa einen Reformer, Innovator oder konkurrierenden Akteur – dauerhaft zu delegitimieren, ohne seine tatsächliche Kopplungsleistung prüfen zu müssen.
+
+**Kennzeichen:**
+- Ein äußerer, scheinbar objektiver Maßstab wird zum alleinigen Anerkennungskriterium erhoben.
+- Die Erfüllung dieses Kriteriums hängt strukturell von denjenigen ab, die den Resonator ablehnen oder kontrollieren.
+- Der Resonator wird in eine Bringschuld gezwungen, die er nicht erfüllen kann, ohne seine eigene Frequenz (Identität, Prinzipien) zu verraten.
+- Der PCI der Gruppe springt auf das Kriterium, nicht auf die reale Kopplung des Resonators.
+
+**Diagnosefragen:**
+- Wird die Anerkennung eines Akteurs an Bedingungen geknüpft, die von seinen Gegnern kontrolliert werden?
+- Lenkt die Diskussion den Blick von der inneren Resonanz (Kompetenz, Legitimität, Substanz) auf ein äußeres, nie eintretendes Ereignis?
+- Dient das Kriterium dazu, den Status quo der Mächtigen abzusichern, indem es den Resonator in eine permanente Beweislast verschiebt?
+
+Formal entspricht dies einer erzwungenen PCI-Umlenkung:
+
+$$
+\mathrm{PCI}_{\text{Resonator}}\to 0 \quad \text{trotz} \quad K_{ij}^{\text{real}}>0
+$$
+
+Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Einzelpersonen über Institutionen bis zu gesamten Diskursfeldern.
+
 ---
 
 ## 8. Drei Minimalbeispiele
@@ -257,6 +280,10 @@ Das Muster ist A7-invariant und skaliert von Einzelbeziehungen bis zu Institutio
 ### C. Retrodiktion (Vergangenheit)
 **Fall:** Eine Bewegung ist plötzlich moralisch radikalisiert und intern stark homogenisiert.  
 **RFT-Lesart:** Wahrscheinlich ging dem ein längerer Testpuls- und Verschiebungsprozess voraus: zunächst diffuse Unsicherheit, dann symbolische Feindmarkierung, danach stabiler PCI auf Ersatzobjekte.
+
+### D. Kriterienblockade (Strukturmuster 7.5)
+**Fall:** Eine etablierte Industrievereinigung verlangt von einem neuen, innovativen Anbieter, dass er zunächst eine exklusive Zertifizierung vorweisen muss, die nur von der Vereinigung selbst vergeben wird. Diese Zertifizierung ist an Bedingungen geknüpft, die der Anbieter unmöglich erfüllen kann, weil sie interne Kenntnisse und Netzwerke voraussetzen, über die nur die etablierten Mitglieder verfügen.  
+**RFT-Lesart:** Totschlagargument: Der PCI der Branche wird auf das formale Kriterium der Zertifizierung gelenkt, nicht auf die tatsächliche Qualität oder Kopplungsleistung des neuen Anbieters. Die Definitionsmacht über die Anerkennung bleibt bei den Etablierten; $\mathrm{PCI}_{\text{Resonator}}\to 0$ trotz $K_{ij}^{\text{real}}>0$.
 
 ---
 

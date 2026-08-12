@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 2 August 2026 | Version 2.11 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 12 August 2026 | Version 2.12 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -242,6 +242,29 @@ $$
 
 The pattern is A7-invariant and scales from intimate relations to large institutions.
 
+### 7.5 Conversation-Stopper / Criterion Blockade
+
+A **conversation-stopper** is a discursive operation that redirects PCI (collective attention and recognition) toward an **unattainable external criterion**. That criterion is controlled or defined by the existing power structures themselves, so its fulfilment is structurally prevented. The goal is to permanently delegitimise a legitimate resonator – a reformer, innovator, or competing actor – without ever having to test its actual coupling performance.
+
+**Characteristics:**
+- An external, ostensibly objective standard is elevated to the sole criterion of recognition.
+- Fulfilment of that criterion structurally depends on those who reject or control the resonator.
+- The resonator is locked into a burden of proof it cannot meet without betraying its own frequency (identity, principles).
+- Group PCI shifts to the criterion, not to the resonator's real coupling.
+
+**Diagnostic questions:**
+- Is recognition of an actor tied to conditions controlled by its opponents?
+- Does the debate redirect attention away from inner resonance (competence, legitimacy, substance) toward an external event that never materialises?
+- Does the criterion serve to protect the status quo of the powerful by permanently shifting the burden of proof onto the resonator?
+
+Formally this corresponds to a forced PCI redirection:
+
+$$
+\mathrm{PCI}_{\text{resonator}}\to 0 \quad \text{despite} \quad K_{ij}^{\text{real}}>0
+$$
+
+The pattern is A7-invariant and occurs at every scale: from individuals through institutions to entire discourse fields.
+
 ---
 
 ## 8. Three Minimal Examples
@@ -257,6 +280,10 @@ The pattern is A7-invariant and scales from intimate relations to large institut
 ### C. Retrodiction (Past)
 **Case:** A movement has suddenly become morally radicalised and internally homogeneous.  
 **RFT reading:** A longer test-pulse and phase-shift process likely preceded it: diffuse uncertainty first, then symbolic enemy marking, then stable PCI on substitute objects.
+
+### D. Criterion Blockade (Structural Pattern 7.5)
+**Case:** An established industry association demands that a new, innovative provider first obtain an exclusive certification issued solely by the association itself. The certification is tied to conditions the provider cannot possibly meet, because they presuppose internal knowledge and networks available only to existing members.  
+**RFT reading:** Conversation-stopper: industry PCI is directed toward the formal certification criterion rather than toward the new provider's actual quality or coupling performance. Definitional power over recognition stays with the incumbents; $\mathrm{PCI}_{\text{resonator}}\to 0$ despite $K_{ij}^{\text{real}}>0$.
 
 ---
 
