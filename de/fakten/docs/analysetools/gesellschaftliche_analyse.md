@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 12. August 2026 | Fassung 2.12 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 13. August 2026 | Fassung 2.13 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -113,6 +113,91 @@ Eine Nachricht, Krise oder Organisation so zerlegen, dass sichtbare Ereignisse a
 - Wird Angst verwendet, um $\beta$ zu erhöhen?  
 - Wird ein Einzelthema genutzt, damit PCI auf ein Ersatzobjekt statt auf die Struktur springt?  
 - Welche Akteure wirken feldeinwärts, welche feldauswärts?
+
+### 4.5 Frühindikatoren für AiR-Manöver und Kriterienblockaden
+
+#### 4.5.1 Zweck
+
+Frühindikatoren dienen der **zeitnahen Erkennung** von Störungen im Resonanzfeld, bevor eine vollständige Strukturdiagnose möglich ist. Sie sind als **heuristische Signale** zu verstehen, die eine erhöhte Aufmerksamkeit rechtfertigen – nicht als hinreichende Beweise für eine bestimmte Absicht.
+
+Sie operationalisieren zentrale Muster aus Abschnitt 7 (insbesondere 7.1 AiR, 7.2 Sündenbock, 7.5 Totschlagargument) auf der Ebene **beobachtbarer Interaktionsphänomene**.
+
+---
+
+#### 4.5.2 Definition
+
+Ein **Frühindikator** ist ein beobachtbares Merkmal im kommunikativen Feld, das mit überzufälliger Häufigkeit in Situationen auftritt, in denen:
+
+- ein Resonator gezielt in eine **Bringschuld** geführt wird,
+- die **kollektive Phasenkohärenz (PCI)** auf ein Ersatzobjekt umgelenkt wird,
+- die **Dämpfung ($\beta$)** eines Resonators erhöht wird,
+- oder eine **Kriterienblockade** errichtet wird.
+
+Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprächen ebenso auf wie in Gruppen, Institutionen oder medialen Diskursen.
+
+---
+
+#### 4.5.3 Übersichtstabelle
+
+| Nr. | Frühindikator | Beobachtbares Merkmal | RFT-Interpretation |
+|:--|:--|:--|:--|
+| **F1** | Externe Frequenzverschiebung | Ein Gesprächspartner führt plötzlich eine externe, nur ihm zugängliche Datenbasis oder ein formales Kriterium ein und macht dieses zum alleinigen Bezugspunkt. | Frequenz-Switch: Der Resonator wird gezwungen, auf einer fremden, vom Gegenüber kontrollierten Frequenz zu schwingen. |
+| **F2** | Asymmetrische Definitionsmacht | Die Definitionshoheit über den neu eingeführten Bezugspunkt liegt strukturell beim Fragesteller, nicht beim Befragten. | Kriterienblockade: Die Anerkennung des Resonators wird an eine Bedingung geknüpft, die er nicht erfüllen kann, ohne seine Eigenfrequenz aufzugeben. |
+| **F3** | Ersatzobjekt-Fokussierung | Die Diskussion verlagert sich von der ursprünglichen Kernaussage auf einen Nebenaspekt oder ein Detail, das nicht Teil der ursprünglichen Aussage war. | PCI-Umlenkung: Die kollektive Aufmerksamkeit springt auf ein sichtbares Ersatzobjekt, während die eigentliche Kopplungsleistung unsichtbar bleibt. |
+| **F4** | Scheinbare Fragen | Mehrere Meldungen oder Rückfragen erfolgen gleichzeitig; die Formulierungen sind keine offenen Verständnisfragen, sondern wirken als Feststellungen oder Bewertungen. | Testpuls / $\beta$-Erhöhung: Der AiR versucht, den Resonator in Erklärungsnot zu bringen und dessen Dämpfung zu erhöhen, ohne selbst als Störer erkennbar zu sein. |
+| **F5** | Bringschuld ohne Erfüllungsweg | Der Resonator wird aufgefordert, etwas zu erklären oder zu belegen, wobei die Bedingungen für eine erfolgreiche Erfüllung strukturell unklar oder unerfüllbar sind. | Aktivierung von $\beta$-Dominanz: Die Selbstkorrektur wird verhindert, stattdessen entsteht eine permanente Beweislast. |
+| **F6** | Formale Überlagerung | Die Diskussion dreht sich zunehmend um die Form (Zahlen, Begriffe, Verfahren) statt um den inhaltlichen Gegenstand; der Resonator muss sich für formale Abweichungen rechtfertigen. | Kollektiver PCI springt auf ein formales Kriterium, nicht auf die reale Kopplung – charakteristisch für das Totschlagargument. |
+
+---
+
+#### 4.5.4 Formale Kennzeichnung
+
+Ein Frühindikator $F_k$ ist dann erfüllt, wenn im beobachteten Zeitintervall $\Delta t$ gilt:
+
+$$
+\frac{\mathrm{PCI}_{\text{Ersatzobjekt}}}{\mathrm{PCI}_{\text{reale Struktur}}} \gg 1
+$$
+
+oder
+
+$$
+\Delta\phi_{\text{Resonator–Gegenüber}} \to \pi \quad \text{bei gleichzeitig hohem} \quad K_{\text{Beobachter–Gegenüber}} > 0
+$$
+
+oder
+
+$$
+\beta_{\text{Resonator}} \text{ steigt bei ausbleibender realer Rückkopplung}
+$$
+
+Diese Größen sind in der konkreten Situation zu schätzen; die Frühindikatoren geben Hinweise darauf, **wo** gemessen werden sollte.
+
+---
+
+#### 4.5.5 Diagnosefragen zur Anwendung
+
+1. **Wird ein neuer Bezugspunkt eingeführt, der vorher nicht Teil des Gesprächs war?** → F1 / F2
+2. **Wer kontrolliert die Definitionsmacht über diesen Bezugspunkt?** → F2
+3. **Verschiebt sich die Diskussion von der eigentlichen Aussage zu einem Detail oder einer formalen Bedingung?** → F3 / F6
+4. **Häufen sich gleichzeitige Meldungen oder überheblich wirkende „Fragen"?** → F4
+5. **Wird der Resonator in eine Erklärungspflicht gebracht, ohne dass ein realistischer Weg zur Erfüllung sichtbar ist?** → F5
+6. **Führt die Auseinandersetzung beim Resonator zu erhöhter Anspannung, Müdigkeit oder Selbstzweifel, ohne dass inhaltlicher Fortschritt entsteht?** → $\beta$-Dominanz, Kopplungsverlust
+
+---
+
+#### 4.5.6 Abgrenzung und Grenzen
+
+Nicht jedes Auftreten eines Frühindikators belegt ein AiR-Manöver. Insbesondere in Lern-, Prüfungs- oder Expertensituationen können einzelne Merkmale (z. B. formale Präzisierung, Nachfragen) Teil normaler Kommunikation sein.
+
+Die Frühindikatoren sind daher **kein Beweis**, sondern ein **Anlass für vertiefte Strukturprüfung**. Sie wirken am stärksten, wenn mehrere Indikatoren gleichzeitig auftreten und ein **Muster** bilden, das mit den zentralen Strukturmustern (Abschnitt 7) konsistent ist.
+
+---
+
+#### 4.5.7 Skaleninvarianz
+
+Die Frühindikatoren sind **A7-invariant** und damit auf allen Ebenen anwendbar: dyadische Gespräche, Gruppen- und Teamsituationen, institutionelle Verhandlungen, mediale Diskurse, öffentliche Debatten.
+
+Die zugrunde liegende Dynamik bleibt identisch: Ein Resonator wird von seiner Eigenfrequenz gelöst und auf eine fremde, kontrollierte Frequenz gezwungen, während die kollektive Aufmerksamkeit auf ein Ersatzobjekt gelenkt wird.
 
 ---
 

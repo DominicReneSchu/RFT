@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 12 August 2026 | Version 2.12 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 13 August 2026 | Version 2.13 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -113,6 +113,91 @@ Decompose a news item, crisis, or organisation so that visible events become rea
 - Is fear being used to raise $\beta$?  
 - Is a single issue being used so PCI jumps to a substitute object instead of the actual structure?  
 - Which actors work field-inward, and which field-outward?
+
+### 4.5 Early Indicators for AiR Manoeuvres and Criterion Blockades
+
+#### 4.5.1 Purpose
+
+Early indicators serve the **timely recognition** of disruptions in the resonance field before a complete structural diagnosis is possible. They are **heuristic signals** that justify heightened attention – not sufficient proof of a specific intent.
+
+They operationalise key patterns from Section 7 (in particular 7.1 AiR, 7.2 Scapegoat, 7.5 Conversation-Stopper) at the level of **observable interaction phenomena**.
+
+---
+
+#### 4.5.2 Definition
+
+An **early indicator** is an observable feature of the communicative field that occurs with above-chance frequency in situations where:
+
+- a resonator is deliberately led into a **burden of proof**,
+- **collective phase coherence (PCI)** is redirected toward a substitute object,
+- the **damping ($\beta$)** of a resonator is increased,
+- or a **criterion blockade** is erected.
+
+Early indicators are **scale-invariant** (A7): they appear in dyadic conversations as well as in groups, institutions, or media discourse.
+
+---
+
+#### 4.5.3 Overview Table
+
+| No. | Early Indicator | Observable Feature | RFT Interpretation |
+|:--|:--|:--|:--|
+| **F1** | External frequency shift | A interlocutor suddenly introduces an external database or formal criterion accessible only to them and makes it the sole reference point. | Frequency switch: the resonator is forced to oscillate on an alien frequency controlled by the counterpart. |
+| **F2** | Asymmetric definitional power | Definitional authority over the newly introduced reference point lies structurally with the questioner, not the respondent. | Criterion blockade: recognition of the resonator is tied to a condition it cannot meet without abandoning its own frequency. |
+| **F3** | Substitute-object focusing | The discussion shifts from the original core statement to a peripheral aspect or detail that was not part of the original statement. | PCI redirection: collective attention jumps to a visible substitute object while the actual coupling performance remains invisible. |
+| **F4** | Pseudo-questions | Multiple messages or follow-up queries arrive simultaneously; the formulations are not open clarifying questions but read as assertions or evaluations. | Test pulse / $\beta$ increase: the AiR attempts to put the resonator on the defensive and raise its damping without becoming recognisable as a disruptor. |
+| **F5** | Burden of proof without a path to fulfilment | The resonator is asked to explain or substantiate something, yet the conditions for successful fulfilment are structurally unclear or unattainable. | Activation of $\beta$-dominance: self-correction is prevented; instead a permanent burden of proof arises. |
+| **F6** | Formal overlay | The discussion increasingly centres on form (numbers, terms, procedures) rather than substance; the resonator must justify formal deviations. | Collective PCI jumps to a formal criterion rather than real coupling – characteristic of the conversation-stopper. |
+
+---
+
+#### 4.5.4 Formal Characterisation
+
+An early indicator $F_k$ is satisfied when, in the observed time interval $\Delta t$:
+
+$$
+\frac{\mathrm{PCI}_{\text{substitute object}}}{\mathrm{PCI}_{\text{real structure}}} \gg 1
+$$
+
+or
+
+$$
+\Delta\phi_{\text{resonator–counterpart}} \to \pi \quad \text{with simultaneously high} \quad K_{\text{observer–counterpart}} > 0
+$$
+
+or
+
+$$
+\beta_{\text{resonator}} \text{ rises in the absence of real feedback}
+$$
+
+These quantities must be estimated in the concrete situation; the early indicators signal **where** to look.
+
+---
+
+#### 4.5.5 Diagnostic Questions for Application
+
+1. **Is a new reference point introduced that was not previously part of the conversation?** → F1 / F2
+2. **Who controls definitional authority over that reference point?** → F2
+3. **Does the discussion shift from the original statement to a detail or formal condition?** → F3 / F6
+4. **Do simultaneous messages or condescendingly framed "questions" accumulate?** → F4
+5. **Is the resonator placed under an obligation to explain without a realistic path to fulfilment?** → F5
+6. **Does the exchange leave the resonator with increased tension, fatigue, or self-doubt without producing substantive progress?** → $\beta$-dominance, coupling loss
+
+---
+
+#### 4.5.6 Delimitation and Limits
+
+Not every occurrence of an early indicator establishes an AiR manoeuvre. In learning, examination, or expert contexts in particular, individual features (e.g. formal clarification, follow-up questions) can be part of normal communication.
+
+Early indicators are therefore **not proof**, but an **occasion for deeper structural examination**. They are most powerful when several indicators appear simultaneously and form a **pattern** consistent with the central structural patterns of Section 7.
+
+---
+
+#### 4.5.7 Scale Invariance
+
+The early indicators are **A7-invariant** and thus applicable at every level: dyadic conversations, group and team situations, institutional negotiations, media discourse, public debates.
+
+The underlying dynamic remains identical: a resonator is detached from its natural frequency and forced onto an alien, controlled frequency while collective attention is directed toward a substitute object.
 
 ---
 
