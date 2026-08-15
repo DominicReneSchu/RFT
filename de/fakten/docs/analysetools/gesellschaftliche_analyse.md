@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 13. August 2026 | Fassung 2.13 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 15. August 2026 | Fassung 2.14 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -147,6 +147,10 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **F4** | Scheinbare Fragen | Mehrere Meldungen oder Rückfragen erfolgen gleichzeitig; die Formulierungen sind keine offenen Verständnisfragen, sondern wirken als Feststellungen oder Bewertungen. | Testpuls / $\beta$-Erhöhung: Der AiR versucht, den Resonator in Erklärungsnot zu bringen und dessen Dämpfung zu erhöhen, ohne selbst als Störer erkennbar zu sein. |
 | **F5** | Bringschuld ohne Erfüllungsweg | Der Resonator wird aufgefordert, etwas zu erklären oder zu belegen, wobei die Bedingungen für eine erfolgreiche Erfüllung strukturell unklar oder unerfüllbar sind. | Aktivierung von $\beta$-Dominanz: Die Selbstkorrektur wird verhindert, stattdessen entsteht eine permanente Beweislast. |
 | **F6** | Formale Überlagerung | Die Diskussion dreht sich zunehmend um die Form (Zahlen, Begriffe, Verfahren) statt um den inhaltlichen Gegenstand; der Resonator muss sich für formale Abweichungen rechtfertigen. | Kollektiver PCI springt auf ein formales Kriterium, nicht auf die reale Kopplung – charakteristisch für das Totschlagargument. |
+| **POI-1** | Asymmetrische Provokation | Akteur A sendet verdeckte Störsignale (Unterstellungen, gezielte Tests, Grenzüberschreitungen), ohne als Aggressor erkennbar zu sein. Akteur B reagiert sichtbar gereizt oder aggressiv. | β-Erhöhung bei B, während β bei A niedrig bleibt; Δφ (A↔B) steigt. |
+| **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. |
+| **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
+| **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. |
 
 ---
 
@@ -172,6 +176,15 @@ $$
 
 Diese Größen sind in der konkreten Situation zu schätzen; die Frühindikatoren geben Hinweise darauf, **wo** gemessen werden sollte.
 
+Für die Frühindikatoren des POI-Zyklus gelten zusätzlich folgende formale Kennzeichen:
+
+- **POI-1** ist erfüllt, wenn $\frac{\beta_B}{\beta_A} \gg 1$ bei gleichzeitigem Anstieg von $\Delta\phi_{AB}$.
+- **POI-2** ist erfüllt, wenn der PCI der Beobachter vom Objekt B auf das Objekt A springt ($\mathrm{PCI}_{A} \uparrow, \mathrm{PCI}_{B} \downarrow$), ohne dass sich die reale Struktur geändert hat.
+- **POI-3** ist erfüllt, wenn $K_{A,\text{Härte}} > 0$ bei gleichzeitig hohem $\Delta\phi_{A,\text{reale Struktur}}$.
+- **POI-4** ist erfüllt, wenn $K_{A,\text{Vorgeschichte}} \to 0$ und $\mathrm{PCI}_{\text{Ersatzobjekt}} \gg \mathrm{PCI}_{\text{reale Struktur}}$.
+
+Diese Größen sind in der konkreten Situation zu schätzen; die Indikatoren geben Hinweise darauf, **wo** gemessen werden sollte.
+
 ---
 
 #### 4.5.5 Diagnosefragen zur Anwendung
@@ -182,6 +195,10 @@ Diese Größen sind in der konkreten Situation zu schätzen; die Frühindikatore
 4. **Häufen sich gleichzeitige Meldungen oder überheblich wirkende „Fragen"?** → F4
 5. **Wird der Resonator in eine Erklärungspflicht gebracht, ohne dass ein realistischer Weg zur Erfüllung sichtbar ist?** → F5
 6. **Führt die Auseinandersetzung beim Resonator zu erhöhter Anspannung, Müdigkeit oder Selbstzweifel, ohne dass inhaltlicher Fortschritt entsteht?** → $\beta$-Dominanz, Kopplungsverlust
+
+7. **Gibt es Hinweise auf eine asymmetrische Provokation, bei der eine Seite verdeckt stört, während die andere sichtbar reagiert?** → POI-1
+8. **Wechselt ein Akteur plötzlich in die Opferrolle und stellt den anderen als Aggressor dar, ohne die eigene Provokation offenzulegen?** → POI-2
+9. **Wird eine aktuelle Härte oder Gewalt mit einer zugeschriebenen Bedrohung gerechtfertigt, während die Vorgeschichte verschwiegen wird?** → POI-3 / POI-4
 
 ---
 
@@ -350,6 +367,25 @@ $$
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Einzelpersonen über Institutionen bis zu gesamten Diskursfeldern.
 
+### 7.6 Provokations-Opfer-Inversionszyklus (POI-Zyklus)
+
+Der **POI-Zyklus** beschreibt eine wiederkehrende Abfolge, in der ein Akteur A zunächst einen anderen Akteur B gezielt provoziert und als Feind darstellt, dann in die Opferrolle wechselt, sobald sich Machtverhältnisse verschieben oder B sichtbar reagiert, und schließlich die eigene Provokation aus dem kollektiven Gedächtnis löscht. Die zugeschriebene Aggression von B wird zur selbsterfüllenden Prophezeiung, die A nutzt, um eigene Härte zu legitimieren.
+
+**Phasen:**
+
+1. **Provokation und Feindbild-Konstruktion** – A sendet verdeckte Störsignale, die B zu einer sichtbaren Reaktion treiben; Δφ steigt, β bei B erhöht sich, während A unerkannt bleibt.
+2. **Opferrollen-Inversion** – Sobald B reagiert oder Machtverhältnisse kippen, wechselt A in die Opferrolle; der PCI springt von „Feind B" auf „Opfer A".
+3. **Reale Eskalation** – Die zugeschriebene Bedrohung legitimiert Härte oder Gewalt von A; β im Gesamtfeld steigt, die Polarisierung nimmt zu.
+4. **Geschichtsrevision** – Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen; der PCI bleibt auf das Ersatzobjekt gerichtet, während die reale Struktur unsichtbar bleibt.
+
+**Formal:**
+
+$$
+\mathrm{PCI}_{A,\text{Opfer}} \uparrow \quad \text{bei} \quad \mathrm{PCI}_{B,\text{Aggressor}} \uparrow \quad \text{und} \quad \mathrm{PCI}_{\text{Vorgeschichte}} \to 0
+$$
+
+Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von dyadischen Beziehungen über institutionelle Konflikte bis zu geopolitischen Auseinandersetzungen.
+
 ---
 
 ## 8. Drei Minimalbeispiele
@@ -374,4 +410,4 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Einzelpers
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren POI-1 bis POI-4 und das Strukturmuster 7.6 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.

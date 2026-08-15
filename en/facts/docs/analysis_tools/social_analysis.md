@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 13 August 2026 | Version 2.13 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 15 August 2026 | Version 2.14 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -147,6 +147,10 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **F4** | Pseudo-questions | Multiple messages or follow-up queries arrive simultaneously; the formulations are not open clarifying questions but read as assertions or evaluations. | Test pulse / $\beta$ increase: the AiR attempts to put the resonator on the defensive and raise its damping without becoming recognisable as a disruptor. |
 | **F5** | Burden of proof without a path to fulfilment | The resonator is asked to explain or substantiate something, yet the conditions for successful fulfilment are structurally unclear or unattainable. | Activation of $\beta$-dominance: self-correction is prevented; instead a permanent burden of proof arises. |
 | **F6** | Formal overlay | The discussion increasingly centres on form (numbers, terms, procedures) rather than substance; the resonator must justify formal deviations. | Collective PCI jumps to a formal criterion rather than real coupling – characteristic of the conversation-stopper. |
+| **POI-1** | Asymmetric provocation | Actor A sends covert disruptive signals (insinuations, deliberate tests, boundary violations) without becoming recognisable as the aggressor. Actor B reacts in a visibly irritated or aggressive manner. | β rises in B while β in A remains low; Δφ (A↔B) increases. |
+| **POI-2** | Victim-role inversion | A suddenly shifts into the victim role and frames B as the aggressor; A's own provocation is blacked out. | PCI jumps from "enemy B" to "victim A"; K_ij (A↔public) rises. |
+| **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. |
+| **POI-4** | Historical revision | The prehistory (provocation, own escalation steps) is systematically suppressed or reinterpreted; discourse focuses only on the current "threat". | PCI remains stable on substitute object; K_ij (A↔prehistory) → 0. |
 
 ---
 
@@ -172,6 +176,15 @@ $$
 
 These quantities must be estimated in the concrete situation; the early indicators signal **where** to look.
 
+For the early indicators of the POI cycle, the following additional formal conditions apply:
+
+- **POI-1** is satisfied when $\frac{\beta_B}{\beta_A} \gg 1$ with a simultaneous rise in $\Delta\phi_{AB}$.
+- **POI-2** is satisfied when the observers' PCI jumps from object B to object A ($\mathrm{PCI}_{A} \uparrow, \mathrm{PCI}_{B} \downarrow$) without any change in the real structure.
+- **POI-3** is satisfied when $K_{A,\text{severity}} > 0$ at the same time as $\Delta\phi_{A,\text{real structure}}$ is high.
+- **POI-4** is satisfied when $K_{A,\text{prehistory}} \to 0$ and $\mathrm{PCI}_{\text{substitute object}} \gg \mathrm{PCI}_{\text{real structure}}$.
+
+These quantities must be estimated in the concrete situation; the indicators signal **where** to look.
+
 ---
 
 #### 4.5.5 Diagnostic Questions for Application
@@ -182,6 +195,10 @@ These quantities must be estimated in the concrete situation; the early indicato
 4. **Do simultaneous messages or condescendingly framed "questions" accumulate?** → F4
 5. **Is the resonator placed under an obligation to explain without a realistic path to fulfilment?** → F5
 6. **Does the exchange leave the resonator with increased tension, fatigue, or self-doubt without producing substantive progress?** → $\beta$-dominance, coupling loss
+
+7. **Are there indications of asymmetric provocation where one side covertly disrupts while the other reacts visibly?** → POI-1
+8. **Does an actor suddenly shift into the victim role and frame the other as the aggressor without disclosing its own provocation?** → POI-2
+9. **Is a current act of severity or violence justified by an attributed threat while the prehistory is suppressed?** → POI-3 / POI-4
 
 ---
 
@@ -350,6 +367,25 @@ $$
 
 The pattern is A7-invariant and occurs at every scale: from individuals through institutions to entire discourse fields.
 
+### 7.6 Provocation–Victim Inversion Cycle (POI Cycle)
+
+The **POI cycle** describes a recurrent sequence in which actor A first deliberately provokes actor B and frames B as an enemy, then shifts into the victim role as soon as power balances shift or B reacts visibly, and finally erases its own provocation from collective memory. The attributed aggression of B becomes a self-fulfilling prophecy that A exploits to legitimise its own harshness.
+
+**Phases:**
+
+1. **Provocation and enemy-image construction** – A sends covert disruptive signals that drive B into a visible reaction; Δφ rises, β in B increases while A remains unrecognised.
+2. **Victim-role inversion** – Once B reacts or power balances tip, A shifts into the victim role; PCI jumps from "enemy B" to "victim A".
+3. **Real escalation** – The attributed threat legitimises severity or violence by A; β across the whole field rises and polarisation increases.
+4. **Historical revision** – The prehistory (provocation, own escalation steps) is systematically suppressed; PCI remains directed at the substitute object while the real structure remains invisible.
+
+**Formal:**
+
+$$
+\mathrm{PCI}_{A,\text{victim}} \uparrow \quad \text{while} \quad \mathrm{PCI}_{B,\text{aggressor}} \uparrow \quad \text{and} \quad \mathrm{PCI}_{\text{prehistory}} \to 0
+$$
+
+The pattern is A7-invariant and occurs at every scale: from dyadic relationships through institutional conflicts to geopolitical confrontations.
+
 ---
 
 ## 8. Three Minimal Examples
@@ -374,4 +410,4 @@ The pattern is A7-invariant and occurs at every scale: from individuals through 
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators POI-1 to POI-4 and structural pattern 7.6 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
