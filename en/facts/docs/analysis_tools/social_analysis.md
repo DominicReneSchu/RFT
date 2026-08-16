@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 15 August 2026 | Version 2.14 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 16 August 2026 | Version 2.16 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -147,6 +147,8 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **F4** | Pseudo-questions | Multiple messages or follow-up queries arrive simultaneously; the formulations are not open clarifying questions but read as assertions or evaluations. | Test pulse / $\beta$ increase: the AiR attempts to put the resonator on the defensive and raise its damping without becoming recognisable as a disruptor. |
 | **F5** | Burden of proof without a path to fulfilment | The resonator is asked to explain or substantiate something, yet the conditions for successful fulfilment are structurally unclear or unattainable. | Activation of $\beta$-dominance: self-correction is prevented; instead a permanent burden of proof arises. |
 | **F6** | Formal overlay | The discussion increasingly centres on form (numbers, terms, procedures) rather than substance; the resonator must justify formal deviations. | Collective PCI jumps to a formal criterion rather than real coupling – characteristic of the conversation-stopper. |
+| **F7** | Kindness trap (wolf in sheep's clothing) | An actor behaves conspicuously friendly, praising, or admiring and deliberately encourages the counterpart to disclose personal details, weaknesses, or vulnerable material. The friendliness appears exaggerated or directed at a specific goal. | The AiR actively lowers the victim's **β** (damping falls, trust rises). **K_ij** is artificially built up but only for **material extraction**. Δφ appears low yet is tactical. The subsequent shift to mockery/attack reveals the true phase relationship. |
+| **F8** | Moral exclusion trap | An actor or group is systematically excluded from the legitimate discourse space by being measured against an unattainable moral criterion (e.g. "fit for democracy", "not fit for coalition"). Definitional power over the criterion rests with those doing the excluding. | The exclusion raises the **β** of the excluded (anger, defiance, solidarity) and lowers the **PCI towards the real political contest**. Energy flows into the excluded actor's victim narrative; polarisation intensifies. |
 | **POI-1** | Asymmetric provocation | Actor A sends covert disruptive signals (insinuations, deliberate tests, boundary violations) without becoming recognisable as the aggressor. Actor B reacts in a visibly irritated or aggressive manner. | β rises in B while β in A remains low; Δφ (A↔B) increases. |
 | **POI-2** | Victim-role inversion | A suddenly shifts into the victim role and frames B as the aggressor; A's own provocation is blacked out. | PCI jumps from "enemy B" to "victim A"; K_ij (A↔public) rises. |
 | **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. |
@@ -185,6 +187,22 @@ For the early indicators of the POI cycle, the following additional formal condi
 
 These quantities must be estimated in the concrete situation; the indicators signal **where** to look.
 
+**F7 (Kindness trap)** is satisfied when an actor A displays conspicuously positive, praising, or admiring behaviour towards actor B that amplifies B's self-disclosure, while simultaneously the **coupling $K_{AB}$** rises and **β of B** falls. Decisive is the **asymmetry of later use**: the material obtained is subsequently deployed against B in other contexts while A drops its friendly mask. Formally:
+
+$$
+\beta_B \downarrow,\quad K_{AB} \uparrow,\quad \text{but} \quad \mathrm{PCI}_{B,\text{material}} \to \mathrm{PCI}_{\text{mockery}/\text{attack}}
+$$
+
+The indicator is especially strong when the friendliness occurs **without a genuine shared frequency** – it simulates resonance without real coupling to the underlying structure.
+
+**F8 (Moral exclusion trap)** is satisfied when an actor or group A is systematically excluded from a discourse space by being measured against a criterion whose fulfilment is controlled by those doing the excluding. The exclusion produces a rise in **β** at A (damping through frustration) alongside a rise in **coupling $K_{A,\text{base}}$** (solidarity). The observers' PCI jumps from concrete political competition to the substitute object "moral danger". Formally:
+
+$$
+\mathrm{PCI}_{\text{substitute object (moral danger)}} \uparrow \quad \text{at} \quad \mathrm{PCI}_{\text{real political contest}} \to 0
+$$
+
+The indicator is especially strong when the exclusion **itself becomes the subject** and displaces substantive debate.
+
 ---
 
 #### 4.5.5 Diagnostic Questions for Application
@@ -196,15 +214,19 @@ These quantities must be estimated in the concrete situation; the indicators sig
 5. **Is the resonator placed under an obligation to explain without a realistic path to fulfilment?** → F5
 6. **Does the exchange leave the resonator with increased tension, fatigue, or self-doubt without producing substantive progress?** → $\beta$-dominance, coupling loss
 
-7. **Are there indications of asymmetric provocation where one side covertly disrupts while the other reacts visibly?** → POI-1
-8. **Does an actor suddenly shift into the victim role and frame the other as the aggressor without disclosing its own provocation?** → POI-2
-9. **Is a current act of severity or violence justified by an attributed threat while the prehistory is suppressed?** → POI-3 / POI-4
+7. **Is an actor's friendliness conspicuous, exaggerated, or directed at a specific goal – and does it encourage the counterpart to disclose more about themselves than they otherwise would?** → F7
+8. **Are there indications of asymmetric provocation where one side covertly disrupts while the other reacts visibly?** → POI-1
+9. **Does an actor suddenly shift into the victim role and frame the other as the aggressor without disclosing its own provocation?** → POI-2
+10. **Is a current act of severity or violence justified by an attributed threat while the prehistory is suppressed?** → POI-3 / POI-4
+11. **Is an actor or group systematically excluded from the discourse space by being measured against a moral criterion controlled by those doing the excluding – and does this exclusion displace substantive debate?** → F8
 
 ---
 
 #### 4.5.6 Delimitation and Limits
 
 Not every occurrence of an early indicator establishes an AiR manoeuvre. In learning, examination, or expert contexts in particular, individual features (e.g. formal clarification, follow-up questions) can be part of normal communication.
+
+Early indicator F7 (kindness trap) calls for particular restraint: friendliness is a legitimate means of establishing contact in many contexts (e.g. therapy, coaching, trust-building in teams). F7 applies only when the friendliness is **tactically** directed at the later use of disclosed material and no genuine shared frequency exists.
 
 Early indicators are therefore **not proof**, but an **occasion for deeper structural examination**. They are most powerful when several indicators appear simultaneously and form a **pattern** consistent with the central structural patterns of Section 7.
 
@@ -388,6 +410,27 @@ The pattern is A7-invariant and occurs at every scale: from dyadic relationships
 
 ---
 
+### 7.7 Exclusion–Escalation Spiral
+
+The **exclusion–escalation spiral** describes a self-reinforcing process in which the systematic moral exclusion of an actor or group (e.g. a political party) generates exactly the energy it claims to be combating. The exclusion operates through a **criterion blockade**: the excluded party is measured against an unattainable moral criterion (e.g. "fit for democracy") whose definitional power rests with those doing the excluding, thereby structurally preventing recognition.
+
+**Phases:**
+
+1. **Moral exclusion** – The system erects a criterion blockade by classifying actor B as a "threat to democracy" or "unfit for coalition". Definitional power rests with the system.
+2. **β rise in B** – B and its supporters experience the exclusion as injustice; anger, defiance, and solidarity increase. The energy is real but is not productively absorbed.
+3. **Victim-role inversion** – B shifts into the victim role and makes the exclusion itself the subject rather than its political content. The PCI of the discontented jumps to the substitute object "us versus those up there".
+4. **Self-reinforcing escalation** – The harder B is pushed into the victim role, the more B grows; the more B grows, the more the system feels confirmed in excluding B. Δφ between the camps approaches π – maximum decoupling.
+
+**Formal:**
+
+$$
+\mathrm{PCI}_{\text{substitute object (victim role)}} \uparrow \quad \text{at} \quad \mathrm{PCI}_{\text{real political contest}} \to 0
+$$
+
+The pattern is A7-invariant and occurs at every scale: from individual organisations through party landscapes to international conflicts. The exclusion–escalation spiral is closely related to the POI cycle (7.6) but emphasises the **systemic dimension**: it is not a single actor that provokes but the system itself that generates escalation through exclusion.
+
+---
+
 ## 8. Three Minimal Examples
 
 ### A. Analysis (Present)
@@ -410,4 +453,4 @@ The pattern is A7-invariant and occurs at every scale: from dyadic relationships
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators POI-1 to POI-4 and structural pattern 7.6 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.

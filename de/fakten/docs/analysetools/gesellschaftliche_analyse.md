@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 15. August 2026 | Fassung 2.14 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 16. August 2026 | Fassung 2.16 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -147,6 +147,8 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **F4** | Scheinbare Fragen | Mehrere Meldungen oder Rückfragen erfolgen gleichzeitig; die Formulierungen sind keine offenen Verständnisfragen, sondern wirken als Feststellungen oder Bewertungen. | Testpuls / $\beta$-Erhöhung: Der AiR versucht, den Resonator in Erklärungsnot zu bringen und dessen Dämpfung zu erhöhen, ohne selbst als Störer erkennbar zu sein. |
 | **F5** | Bringschuld ohne Erfüllungsweg | Der Resonator wird aufgefordert, etwas zu erklären oder zu belegen, wobei die Bedingungen für eine erfolgreiche Erfüllung strukturell unklar oder unerfüllbar sind. | Aktivierung von $\beta$-Dominanz: Die Selbstkorrektur wird verhindert, stattdessen entsteht eine permanente Beweislast. |
 | **F6** | Formale Überlagerung | Die Diskussion dreht sich zunehmend um die Form (Zahlen, Begriffe, Verfahren) statt um den inhaltlichen Gegenstand; der Resonator muss sich für formale Abweichungen rechtfertigen. | Kollektiver PCI springt auf ein formales Kriterium, nicht auf die reale Kopplung – charakteristisch für das Totschlagargument. |
+| **F7** | Freundlichkeitsfalle (Wolf im Schafspelz) | Ein Akteur tritt auffällig freundlich, lobend oder bewundernd auf und ermutigt das Gegenüber gezielt, mehr Persönliches, Schwächen oder verwundbares Material preiszugeben. Die Freundlichkeit wirkt übertrieben oder auf ein bestimmtes Ziel gerichtet. | Der AiR senkt aktiv das **β** des Opfers (Dämpfung sinkt, Vertrauen steigt). **K_ij** wird künstlich aufgebaut, aber nur zur **Extraktion von Material**. Δφ erscheint niedrig, ist jedoch taktisch. Der spätere Wechsel in Spott/Angriff offenbart die wahre Phasenlage. |
+| **F8** | Moralische Ausgrenzungsfalle | Ein Akteur oder eine Gruppe wird systematisch aus dem legitimen Diskursraum ausgeschlossen, indem sie an einem unerreichbaren moralischen Kriterium gemessen wird (z. B. „demokratietauglich", „nicht koalitionsfähig"). Die Definitionsmacht über das Kriterium liegt bei den Ausgrenzenden. | Die Ausgrenzung erhöht das **β** des Ausgegrenzten (Wut, Trotz, Solidarisierung) und senkt den **PCI zur realen politischen Auseinandersetzung**. Die Energie fließt in das Opfernarrativ des Ausgegrenzten; die Polarisierung verstärkt sich. |
 | **POI-1** | Asymmetrische Provokation | Akteur A sendet verdeckte Störsignale (Unterstellungen, gezielte Tests, Grenzüberschreitungen), ohne als Aggressor erkennbar zu sein. Akteur B reagiert sichtbar gereizt oder aggressiv. | β-Erhöhung bei B, während β bei A niedrig bleibt; Δφ (A↔B) steigt. |
 | **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. |
 | **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
@@ -185,6 +187,22 @@ Für die Frühindikatoren des POI-Zyklus gelten zusätzlich folgende formale Ken
 
 Diese Größen sind in der konkreten Situation zu schätzen; die Indikatoren geben Hinweise darauf, **wo** gemessen werden sollte.
 
+**F7 (Freundlichkeitsfalle)** ist erfüllt, wenn ein Akteur A gegenüber einem Akteur B ein auffällig positives, lobendes oder bewunderndes Verhalten zeigt, das die Selbstoffenbarung von B verstärkt, während gleichzeitig die **Kopplung $K_{AB}$** steigt und das **β von B** sinkt. Entscheidend ist die **Asymmetrie der späteren Nutzung**: Das gewonnene Material wird anschließend in anderen Kontexten gegen B verwendet, während A seine freundliche Maske ablegt. Formal:
+
+$$
+\beta_B \downarrow,\quad K_{AB} \uparrow,\quad \text{aber} \quad \mathrm{PCI}_{B,\text{Material}} \to \mathrm{PCI}_{\text{Spott}/\text{Angriff}}
+$$
+
+Der Indikator ist besonders stark, wenn die Freundlichkeit **ohne reale gemeinsame Frequenz** erfolgt – sie simuliert Resonanz, ohne echte Kopplung an die reale Struktur.
+
+**F8 (Moralische Ausgrenzungsfalle)** ist erfüllt, wenn ein Akteur oder eine Gruppe A systematisch aus einem Diskursraum ausgeschlossen wird, indem A an einem Kriterium gemessen wird, dessen Erfüllung von den Ausgrenzenden selbst kontrolliert wird. Die Ausgrenzung erzeugt bei A eine Erhöhung von **β** (Dämpfung durch Frustration) bei gleichzeitiger Erhöhung der **Kopplung $K_{A,\text{Basis}}$** (Solidarisierung). Der PCI der Beobachter springt vom konkreten politischen Wettbewerb auf das Ersatzobjekt „moralische Gefahr". Formal:
+
+$$
+\mathrm{PCI}_{\text{Ersatzobjekt (moralische Gefahr)}} \uparrow \quad \text{bei} \quad \mathrm{PCI}_{\text{reale politische Auseinandersetzung}} \to 0
+$$
+
+Der Indikator ist besonders stark, wenn die Ausgrenzung **selbst zum Thema** wird und die inhaltliche Auseinandersetzung verdrängt.
+
 ---
 
 #### 4.5.5 Diagnosefragen zur Anwendung
@@ -196,15 +214,19 @@ Diese Größen sind in der konkreten Situation zu schätzen; die Indikatoren geb
 5. **Wird der Resonator in eine Erklärungspflicht gebracht, ohne dass ein realistischer Weg zur Erfüllung sichtbar ist?** → F5
 6. **Führt die Auseinandersetzung beim Resonator zu erhöhter Anspannung, Müdigkeit oder Selbstzweifel, ohne dass inhaltlicher Fortschritt entsteht?** → $\beta$-Dominanz, Kopplungsverlust
 
-7. **Gibt es Hinweise auf eine asymmetrische Provokation, bei der eine Seite verdeckt stört, während die andere sichtbar reagiert?** → POI-1
-8. **Wechselt ein Akteur plötzlich in die Opferrolle und stellt den anderen als Aggressor dar, ohne die eigene Provokation offenzulegen?** → POI-2
-9. **Wird eine aktuelle Härte oder Gewalt mit einer zugeschriebenen Bedrohung gerechtfertigt, während die Vorgeschichte verschwiegen wird?** → POI-3 / POI-4
+7. **Ist die Freundlichkeit eines Akteurs auffällig, übertrieben oder auf ein bestimmtes Ziel gerichtet – und ermutigt sie das Gegenüber, mehr von sich preiszugeben, als es sonst tun würde?** → F7
+8. **Gibt es Hinweise auf eine asymmetrische Provokation, bei der eine Seite verdeckt stört, während die andere sichtbar reagiert?** → POI-1
+9. **Wechselt ein Akteur plötzlich in die Opferrolle und stellt den anderen als Aggressor dar, ohne die eigene Provokation offenzulegen?** → POI-2
+10. **Wird eine aktuelle Härte oder Gewalt mit einer zugeschriebenen Bedrohung gerechtfertigt, während die Vorgeschichte verschwiegen wird?** → POI-3 / POI-4
+11. **Wird ein Akteur oder eine Gruppe systematisch aus dem Diskursraum ausgeschlossen, indem er an einem moralischen Kriterium gemessen wird, das von den Ausgrenzenden kontrolliert wird – und verdrängt diese Ausgrenzung die inhaltliche Auseinandersetzung?** → F8
 
 ---
 
 #### 4.5.6 Abgrenzung und Grenzen
 
 Nicht jedes Auftreten eines Frühindikators belegt ein AiR-Manöver. Insbesondere in Lern-, Prüfungs- oder Expertensituationen können einzelne Merkmale (z. B. formale Präzisierung, Nachfragen) Teil normaler Kommunikation sein.
+
+Der Frühindikator F7 (Freundlichkeitsfalle) ist besonders zurückhaltend zu verwenden: Freundlichkeit ist in vielen Kontexten (z. B. Therapie, Coaching, Vertrauensaufbau in Teams) ein legitimes Mittel der Kontaktaufnahme. F7 liegt nur dann vor, wenn die Freundlichkeit **taktisch** auf die spätere Verwendung von preisgegebenem Material gerichtet ist und keine reale gemeinsame Frequenz besteht.
 
 Die Frühindikatoren sind daher **kein Beweis**, sondern ein **Anlass für vertiefte Strukturprüfung**. Sie wirken am stärksten, wenn mehrere Indikatoren gleichzeitig auftreten und ein **Muster** bilden, das mit den zentralen Strukturmustern (Abschnitt 7) konsistent ist.
 
@@ -388,6 +410,27 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von dyadischen
 
 ---
 
+### 7.7 Ausgrenzungs-Eskalations-Spirale
+
+Die **Ausgrenzungs-Eskalations-Spirale** beschreibt einen selbstverstärkenden Prozess, bei dem die systematische moralische Ausgrenzung eines Akteurs oder einer Gruppe (z. B. einer Partei) genau die Energie erzeugt, die sie zu bekämpfen vorgibt. Die Ausgrenzung erfolgt über eine **Kriterienblockade**: Der Ausgegrenzte wird an einem unerreichbaren moralischen Kriterium gemessen (z. B. „demokratietauglich"), dessen Definitionsmacht bei den Ausgrenzenden liegt. Dadurch wird seine Anerkennung strukturell verhindert.
+
+**Phasen:**
+
+1. **Moralische Ausgrenzung** – Das System setzt eine Kriterienblockade, indem es den Akteur B als „Gefahr für die Demokratie" oder als „nicht koalitionsfähig" einstuft. Die Definitionsmacht liegt beim System.
+2. **β-Anstieg bei B** – B und seine Anhänger erleben die Ausgrenzung als Ungerechtigkeit; Wut, Trotz und Solidarisierung steigen. Die Energie ist real, wird aber nicht produktiv aufgenommen.
+3. **Opferrollen-Inversion** – B wechselt in die Opferrolle und macht die Ausgrenzung selbst zum Thema, nicht seine politischen Inhalte. Der PCI der Unzufriedenen springt auf das Ersatzobjekt „wir gegen die da oben".
+4. **Selbstverstärkende Eskalation** – Je stärker B in die Opferrolle gedrängt wird, desto mehr wächst B; je mehr B wächst, desto mehr fühlt sich das System bestätigt, B auszugrenzen. Δφ zwischen den Lagern strebt gegen π – maximale Entkopplung.
+
+**Formal:**
+
+$$
+\mathrm{PCI}_{\text{Ersatzobjekt (Opferrolle)}} \uparrow \quad \text{bei} \quad \mathrm{PCI}_{\text{reale politische Auseinandersetzung}} \to 0
+$$
+
+Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen Organisationen über Parteienlandschaften bis zu internationalen Konflikten. Die Ausgrenzungs-Eskalations-Spirale ist eng verwandt mit dem POI-Zyklus (7.6), betont jedoch die **systemische Dimension**: Nicht ein einzelner Akteur provoziert, sondern das System selbst erzeugt durch Ausschluss die Eskalation.
+
+---
+
 ## 8. Drei Minimalbeispiele
 
 ### A. Analyse (Gegenwart)
@@ -410,4 +453,4 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von dyadischen
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren POI-1 bis POI-4 und das Strukturmuster 7.6 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
