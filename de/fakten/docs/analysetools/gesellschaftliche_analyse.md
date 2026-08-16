@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 16. August 2026 | Fassung 2.17 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 16. August 2026 | Fassung 2.18 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -491,3 +491,47 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen 
 ## 9. Epistemischer Vorbehalt
 
 Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F9 und das Strukturmuster 7.8 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
+
+---
+
+## 10. Anwendungshinweise für Fachkräfte
+
+### 10.1 Zweck und Zielgruppe
+
+Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlungsbehörden** und **Anwälte/Richter**. Das RFT-Instrument dient als **heuristisches Strukturierungsraster**, nicht als Beweismittel oder diagnostisches Manual. Es soll helfen, **komplexe soziale Dynamiken, psychische Gewalt und verdeckte Manipulationen** aus Berichten, Zeugenaussagen oder Aktenlagen herauszuarbeiten und in eine gemeinsame Sprache zu übersetzen. Es ersetzt keine fachlichen Standards, sondern ergänzt sie als zusätzliche Perspektive.
+
+### 10.2 Allgemeine Anwendungshinweise
+
+- Die Analyse beginnt immer mit der **Feldgrenze** (wer sind die relevanten Resonatoren?) und den **Taktgebern** (welche Rhythmen strukturieren das Feld?).
+- Frühindikatoren **F1–F9** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
+- Die **Strukturmuster 7.1–7.8** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration).
+- Die **Projektion** (Abschnitt 5) kann verwendet werden, um wahrscheinliche Eskalationsverläufe zu skizzieren; die **Retrodiktion** (Abschnitt 6) hilft, aus heutigen Spuren auf frühere Ausgangszustände zu schließen.
+- Jede RFT-Analyse muss **dokumentiert** werden: Welche Indikatoren wurden beobachtet, welche Größen geschätzt, welche Hypothesen gebildet? Erst die **iterative Anwendung** (wiederholte Beobachtung über Zeit und verschiedene Quellen) erhöht die Plausibilität.
+
+### 10.3 Spezifische Hinweise für Psychologen und Therapeuten
+
+- **Zielfragen:** Liegt eine Freundlichkeitsfalle (F7) vor? Durchläuft der Patient/die Patientin gerade einen POI-Zyklus? Wird er/sie moralisch ausgegrenzt (F8) oder von innen infiltriert (F9)?
+- **Gesprächsführung:** Die Diagnosefragen in 4.5.5 können als Leitfaden dienen, um die Chronologie toxischer Beziehungen zu rekonstruieren und die Mechanik für den Patienten sichtbar zu machen.
+- **Differenzierung:** Die Unterscheidung zwischen subjektivem Erleben (β, Gefühl der Bedrohung) und realer Struktur (K_ij, tatsächliche Kopplungen) hilft, sowohl Über- als auch Unterschätzung von Bedrohungen zu erkennen.
+- **Vorsicht:** F7 ist besonders zurückhaltend zu verwenden, da Freundlichkeit in therapeutischen Kontexten oft authentisch ist. Erst die **Asymmetrie der späteren Nutzung** (Material wird gegen die Person verwendet) macht die Falle erkennbar.
+
+### 10.4 Spezifische Hinweise für Polizei und Ermittlungsbehörden
+
+- **Zielfragen:** Wer treibt die Eskalation tatsächlich voran? Liegt eine **asymmetrische Provokation (POI-1)** vor, bei der der vermeintlich Aggressive in Wirklichkeit der provozierte Verteidiger ist? Gibt es Hinweise auf **innere Infiltration (F9)**?
+- **Zeugenaussagen:** Das Raster hilft, widersprüchliche Aussagen zu strukturieren, indem es die **Informationsrichtung (PCI)** und die **Kopplungsverhältnisse (K_ij)** analysiert.
+- **Verdeckte Manipulation:** In Fällen von Stalking, Nachstellung, häuslicher Gewalt oder organisierter Kriminalität kann der POI-Zyklus sichtbar machen, wie ein Täter die Opferrolle übernimmt und die Vorgeschichte verschwinden lässt.
+- **Einschränkung:** Das Tool liefert **Ermittlungsrichtungen**, keine Beweise. Die Ergebnisse müssen mit klassischen Mitteln (Befragungen, Überwachung, forensische Auswertung) verifiziert werden.
+
+### 10.5 Spezifische Hinweise für Anwälte und Richter
+
+- **Zielfragen:** Liegt eine **Kriterienblockade (7.5)** vor, die den Mandanten gezielt in eine Bringschuld treibt? Nutzt die Gegenseite **Totschlagargumente** oder lenkt den PCI auf formale Nebenaspekte?
+- **Verfahrenstaktik:** Das Tool kann helfen, Verfahrenstaktiken der Gegenseite zu durchschauen (z. B. moralische Ausgrenzungsfalle F8, formale Überlagerung F6).
+- **Glaubwürdigkeitsanalyse:** Die RFT liefert eine strukturierte Hypothese über die Rollen im Resonanzfeld, die dann mit klassischen Beweismitteln (Chats, E-Mails, Zeugenaussagen) überprüft werden kann.
+- **Dokumentation:** Die RFT-Hypothese sollte als **Arbeitshypothese** in die Akte aufgenommen und durch empirische Belege gestützt werden; sie ersetzt keine juristische Subsumtion.
+
+### 10.6 Grenzen und ethische Leitplanken
+
+- Die RFT ist **kein Beweismittel** und **kein Ersatz für Fachgutachten**.
+- Sie darf nicht verwendet werden, um **Verdachtsmomente** zu konstruieren oder Personen vorzuverurteilen.
+- Die Anwendung muss **transparent** dokumentiert und gegenüber Kolleginnen und Kollegen oder Vorgesetzten offengelegt werden.
+- Bei psychischer Gewalt ist **interdisziplinäre Zusammenarbeit** (Psychologie, Rechtsmedizin, Sozialarbeit) erforderlich; das RFT-Instrument kann dabei als gemeinsame Sprache dienen, ersetzt aber keine therapeutische oder juristische Intervention.
