@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 16. August 2026 | Fassung 2.16 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 16. August 2026 | Fassung 2.17 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -149,6 +149,7 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **F6** | Formale Überlagerung | Die Diskussion dreht sich zunehmend um die Form (Zahlen, Begriffe, Verfahren) statt um den inhaltlichen Gegenstand; der Resonator muss sich für formale Abweichungen rechtfertigen. | Kollektiver PCI springt auf ein formales Kriterium, nicht auf die reale Kopplung – charakteristisch für das Totschlagargument. |
 | **F7** | Freundlichkeitsfalle (Wolf im Schafspelz) | Ein Akteur tritt auffällig freundlich, lobend oder bewundernd auf und ermutigt das Gegenüber gezielt, mehr Persönliches, Schwächen oder verwundbares Material preiszugeben. Die Freundlichkeit wirkt übertrieben oder auf ein bestimmtes Ziel gerichtet. | Der AiR senkt aktiv das **β** des Opfers (Dämpfung sinkt, Vertrauen steigt). **K_ij** wird künstlich aufgebaut, aber nur zur **Extraktion von Material**. Δφ erscheint niedrig, ist jedoch taktisch. Der spätere Wechsel in Spott/Angriff offenbart die wahre Phasenlage. |
 | **F8** | Moralische Ausgrenzungsfalle | Ein Akteur oder eine Gruppe wird systematisch aus dem legitimen Diskursraum ausgeschlossen, indem sie an einem unerreichbaren moralischen Kriterium gemessen wird (z. B. „demokratietauglich", „nicht koalitionsfähig"). Die Definitionsmacht über das Kriterium liegt bei den Ausgrenzenden. | Die Ausgrenzung erhöht das **β** des Ausgegrenzten (Wut, Trotz, Solidarisierung) und senkt den **PCI zur realen politischen Auseinandersetzung**. Die Energie fließt in das Opfernarrativ des Ausgegrenzten; die Polarisierung verstärkt sich. |
+| **F9** | Innere Infiltration | Ein Mitglied oder Akteur verhält sich auffällig loyal, drängt auf interne Vertraulichkeit, hat aber auffällig viele externe Kontakte oder vollzieht plötzliche Positionswechsel, die der Gruppe schaden. Interne Informationen dringen wiederholt nach außen. | Simulierte Δφ → 0 bei tatsächlich Δφ → π; K_ij (innen) wird zur Extraktion genutzt; PCI der Gruppe springt auf interne Konflikte, nicht auf die reale Bedrohung. |
 | **POI-1** | Asymmetrische Provokation | Akteur A sendet verdeckte Störsignale (Unterstellungen, gezielte Tests, Grenzüberschreitungen), ohne als Aggressor erkennbar zu sein. Akteur B reagiert sichtbar gereizt oder aggressiv. | β-Erhöhung bei B, während β bei A niedrig bleibt; Δφ (A↔B) steigt. |
 | **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. |
 | **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
@@ -203,6 +204,20 @@ $$
 
 Der Indikator ist besonders stark, wenn die Ausgrenzung **selbst zum Thema** wird und die inhaltliche Auseinandersetzung verdrängt.
 
+**F9 (Innere Infiltration)** ist erfüllt, wenn ein Akteur A innerhalb eines Resonanzraums R (z. B. Partei, Organisation, Bewegung) ein Verhalten zeigt, das eine passende Phasenlage simuliert (Δφ_A,R erscheint niedrig), während gleichzeitig Informationen aus dem Inneren von R wiederholt nach außen dringen und der Gruppe schaden. Entscheidend ist die **Asymmetrie**: Der Akteur baut internes Vertrauen ($K_{A,R}$ steigt) auf, nutzt dieses jedoch zur Extraktion von Informationen oder zur gezielten Provokation interner Konflikte. Formal:
+
+$$
+\Delta\phi_{A,R}^{\text{simuliert}} \to 0 \quad \text{bei tatsächlich} \quad \Delta\phi_{A,R}^{\text{real}} \to \pi
+$$
+
+und
+
+$$
+K_{A,R}^{\text{innen}} \uparrow, \quad \text{aber} \quad \mathrm{PCI}_{\text{Gruppe}} \to \mathrm{PCI}_{\text{interner Konflikt}}
+$$
+
+Der Indikator ist besonders stark, wenn der Akteur auffällig loyal erscheint, aber die Gruppe nach innen gespalten oder nach außen geschwächt wird, ohne dass die reale Bedrohung erkannt wird.
+
 ---
 
 #### 4.5.5 Diagnosefragen zur Anwendung
@@ -219,6 +234,7 @@ Der Indikator ist besonders stark, wenn die Ausgrenzung **selbst zum Thema** wir
 9. **Wechselt ein Akteur plötzlich in die Opferrolle und stellt den anderen als Aggressor dar, ohne die eigene Provokation offenzulegen?** → POI-2
 10. **Wird eine aktuelle Härte oder Gewalt mit einer zugeschriebenen Bedrohung gerechtfertigt, während die Vorgeschichte verschwiegen wird?** → POI-3 / POI-4
 11. **Wird ein Akteur oder eine Gruppe systematisch aus dem Diskursraum ausgeschlossen, indem er an einem moralischen Kriterium gemessen wird, das von den Ausgrenzenden kontrolliert wird – und verdrängt diese Ausgrenzung die inhaltliche Auseinandersetzung?** → F8
+12. **Gibt es Hinweise auf einen Akteur, der sich auffällig loyal verhält, aber dessen Handlungen der Gruppe wiederholt schaden, etwa durch weitergegebene Interna oder plötzliche Positionswechsel?** → F9
 
 ---
 
@@ -431,6 +447,27 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen 
 
 ---
 
+### 7.8 Innere Infiltration (Wolf im Schafspelz in offenen Resonanzräumen)
+
+**Innere Infiltration** beschreibt einen Prozess, bei dem ein Akteur A einem Resonanzraum R (z. B. Partei, Organisation, Bewegung) beitritt und eine passende Phasenlage (Δφ → 0) simuliert, um internes Vertrauen zu gewinnen. Sobald A Zugang zu internen Informationen oder Einfluss erlangt hat, wechselt er die Frequenz: Er gibt Material nach außen, provoziert interne Konflikte oder treibt die Gruppe in unhaltbare Positionen. Die Offenheit des Systems wird zur Schwachstelle, weil keine dauerhafte Resonanzprüfung stattfindet.
+
+**Phasen:**
+
+1. **Tarnung und Anpassung** – A tritt bei, imitiert die Grundfrequenz der Gruppe und senkt das β der Mitglieder durch auffällige Loyalität.
+2. **Vertrauensaufbau** – A baut $K_{ij}$ zu den Mitgliedern auf, erhält Zugang zu internen Informationen und möglicherweise zu Entscheidungsprozessen.
+3. **Frequenzwechsel und Schädigung** – A nutzt das gewonnene Vertrauen zur Extraktion: Informationen werden nach außen gegeben, interne Konflikte werden gezielt provoziert, oder die Gruppe wird in unhaltbare Positionen manövriert.
+4. **Enthüllung und Reaktion** – Die Gruppe erkennt die Infiltration oft erst, wenn der Schaden bereits eingetreten ist. Der PCI springt auf interne Schuldzuweisungen, während die reale Bedrohung (äußerer Akteur, fremde Interessen) unsichtbar bleibt.
+
+**Formal:**
+
+$$
+\Delta\phi_{A,R}^{\text{simuliert}} \to 0 \quad \text{bei tatsächlich} \quad \Delta\phi_{A,R}^{\text{real}} \to \pi
+$$
+
+Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen Gruppen über Parteien bis zu geopolitischen Allianzen. Es ist eng verwandt mit der Freundlichkeitsfalle (F7), betont jedoch die **institutionelle Dimension**: Der offene Zugang zu Resonanzräumen ermöglicht die Infiltration, weil keine kontinuierliche Prüfung der tatsächlichen Phasenlage stattfindet.
+
+---
+
 ## 8. Drei Minimalbeispiele
 
 ### A. Analyse (Gegenwart)
@@ -453,4 +490,4 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen 
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F9 und das Strukturmuster 7.8 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
