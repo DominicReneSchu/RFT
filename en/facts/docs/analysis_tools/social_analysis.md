@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 16 August 2026 | Version 2.17 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 16 August 2026 | Version 2.18 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -491,3 +491,47 @@ The pattern is A7-invariant and occurs at every scale: from small groups through
 ## 9. Epistemological Caveat
 
 This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F9 and structural pattern 7.8 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
+
+---
+
+## 10. Application Guidelines for Practitioners
+
+### 10.1 Purpose and Target Audience
+
+This section is addressed to **psychologists/therapists**, **police/investigative authorities**, and **lawyers/judges**. The RFT instrument serves as a **heuristic structuring grid**, not as evidence or a diagnostic manual. It is intended to help identify **complex social dynamics, psychological violence, and covert manipulation** from reports, witness statements, or case files, and to translate them into a shared language. It does not replace professional standards; it supplements them as an additional perspective.
+
+### 10.2 General Application Guidelines
+
+- Analysis always begins with the **field boundary** (who are the relevant resonators?) and the **pacemakers** (which rhythms structure the field?).
+- Early indicators **F1–F9** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
+- **Structural patterns 7.1–7.8** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration).
+- **Projection** (Section 5) can be used to sketch probable escalation trajectories; **retrodiction** (Section 6) helps infer earlier starting states from present traces.
+- Every RFT analysis must be **documented**: which indicators were observed, which quantities estimated, which hypotheses formed? Only **iterative application** (repeated observation over time and across multiple sources) increases plausibility.
+
+### 10.3 Specific Guidance for Psychologists and Therapists
+
+- **Key questions:** Is a kindness trap (F7) present? Is the patient currently going through a POI cycle? Are they being morally excluded (F8) or subjected to inner infiltration (F9)?
+- **Therapeutic dialogue:** The diagnostic questions in 4.5.5 can serve as a guide for reconstructing the chronology of toxic relationships and making the mechanism visible to the patient.
+- **Differentiation:** The distinction between subjective experience (β, sense of threat) and real structure (K_ij, actual couplings) helps identify both over- and underestimation of threats.
+- **Caution:** F7 should be applied with particular restraint, since friendliness in therapeutic contexts is often authentic. Only the **asymmetry of later use** (material is turned against the person) makes the trap recognisable.
+
+### 10.4 Specific Guidance for Police and Investigative Authorities
+
+- **Key questions:** Who is actually driving the escalation? Is there an **asymmetric provocation (POI-1)** in which the ostensibly aggressive party is in fact the provoked defender? Are there indications of **inner infiltration (F9)**?
+- **Witness statements:** The grid helps to structure contradictory statements by analysing the **direction of information flow (PCI)** and the **coupling ratios (K_ij)**.
+- **Covert manipulation:** In cases of stalking, harassment, domestic violence, or organised crime, the POI cycle can reveal how a perpetrator assumes the victim role and erases the prior history.
+- **Limitation:** The tool provides **investigative directions**, not evidence. Results must be verified by classical means (interviews, surveillance, forensic analysis).
+
+### 10.5 Specific Guidance for Lawyers and Judges
+
+- **Key questions:** Is there a **criterion blockade (7.5)** that deliberately places the client under an impossible burden of proof? Is the opposing side using **conversation-stoppers** or redirecting PCI toward formal side-issues?
+- **Procedural tactics:** The tool can help to see through the opposing side's procedural tactics (e.g. moral exclusion trap F8, formal overlay F6).
+- **Credibility analysis:** The RFT provides a structured hypothesis about roles in the resonance field, which can then be tested against classical evidence (chats, emails, witness statements).
+- **Documentation:** The RFT hypothesis should be recorded in the case file as a **working hypothesis** and supported by empirical evidence; it does not replace legal subsumption.
+
+### 10.6 Limits and Ethical Guardrails
+
+- The RFT is **not evidence** and **not a substitute for expert opinions**.
+- It must not be used to **construct suspicion** or to prejudge individuals.
+- Its application must be **transparently documented** and disclosed to colleagues or supervisors.
+- In cases of psychological violence, **interdisciplinary collaboration** (psychology, forensic medicine, social work) is required; the RFT instrument can serve as a shared language in that collaboration, but does not replace therapeutic or legal intervention.
