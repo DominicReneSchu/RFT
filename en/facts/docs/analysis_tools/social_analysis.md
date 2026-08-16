@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 16 August 2026 | Version 2.16 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 16 August 2026 | Version 2.17 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -149,6 +149,7 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **F6** | Formal overlay | The discussion increasingly centres on form (numbers, terms, procedures) rather than substance; the resonator must justify formal deviations. | Collective PCI jumps to a formal criterion rather than real coupling – characteristic of the conversation-stopper. |
 | **F7** | Kindness trap (wolf in sheep's clothing) | An actor behaves conspicuously friendly, praising, or admiring and deliberately encourages the counterpart to disclose personal details, weaknesses, or vulnerable material. The friendliness appears exaggerated or directed at a specific goal. | The AiR actively lowers the victim's **β** (damping falls, trust rises). **K_ij** is artificially built up but only for **material extraction**. Δφ appears low yet is tactical. The subsequent shift to mockery/attack reveals the true phase relationship. |
 | **F8** | Moral exclusion trap | An actor or group is systematically excluded from the legitimate discourse space by being measured against an unattainable moral criterion (e.g. "fit for democracy", "not fit for coalition"). Definitional power over the criterion rests with those doing the excluding. | The exclusion raises the **β** of the excluded (anger, defiance, solidarity) and lowers the **PCI towards the real political contest**. Energy flows into the excluded actor's victim narrative; polarisation intensifies. |
+| **F9** | Inner infiltration | A member or actor behaves conspicuously loyally, pushes for internal confidentiality, yet has a striking number of external contacts or makes sudden position shifts that harm the group. Internal information repeatedly leaks to the outside. | Simulated Δφ → 0 while actual Δφ → π; K_ij (internal) is used for extraction; group PCI jumps to internal conflicts rather than the real threat. |
 | **POI-1** | Asymmetric provocation | Actor A sends covert disruptive signals (insinuations, deliberate tests, boundary violations) without becoming recognisable as the aggressor. Actor B reacts in a visibly irritated or aggressive manner. | β rises in B while β in A remains low; Δφ (A↔B) increases. |
 | **POI-2** | Victim-role inversion | A suddenly shifts into the victim role and frames B as the aggressor; A's own provocation is blacked out. | PCI jumps from "enemy B" to "victim A"; K_ij (A↔public) rises. |
 | **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. |
@@ -203,6 +204,20 @@ $$
 
 The indicator is especially strong when the exclusion **itself becomes the subject** and displaces substantive debate.
 
+**F9 (Inner infiltration)** is satisfied when an actor A within a resonance space R (e.g. a party, organisation, or movement) displays behaviour that simulates a matching phase alignment (Δφ_A,R appears low), while at the same time information from inside R repeatedly leaks to the outside and harms the group. Decisive is the **asymmetry**: the actor builds internal trust ($K_{A,R}$ rises) but uses it to extract information or to deliberately provoke internal conflicts. Formally:
+
+$$
+\Delta\phi_{A,R}^{\text{simulated}} \to 0 \quad \text{while actually} \quad \Delta\phi_{A,R}^{\text{real}} \to \pi
+$$
+
+and
+
+$$
+K_{A,R}^{\text{internal}} \uparrow, \quad \text{but} \quad \mathrm{PCI}_{\text{group}} \to \mathrm{PCI}_{\text{internal conflict}}
+$$
+
+The indicator is especially strong when the actor appears conspicuously loyal while the group is split from within or weakened externally without the real threat being recognised.
+
 ---
 
 #### 4.5.5 Diagnostic Questions for Application
@@ -219,6 +234,7 @@ The indicator is especially strong when the exclusion **itself becomes the subje
 9. **Does an actor suddenly shift into the victim role and frame the other as the aggressor without disclosing its own provocation?** → POI-2
 10. **Is a current act of severity or violence justified by an attributed threat while the prehistory is suppressed?** → POI-3 / POI-4
 11. **Is an actor or group systematically excluded from the discourse space by being measured against a moral criterion controlled by those doing the excluding – and does this exclusion displace substantive debate?** → F8
+12. **Are there indications of an actor who behaves conspicuously loyally but whose actions repeatedly harm the group – for example through leaked internal information or sudden position shifts?** → F9
 
 ---
 
@@ -431,6 +447,27 @@ The pattern is A7-invariant and occurs at every scale: from individual organisat
 
 ---
 
+### 7.8 Inner Infiltration (Wolf in Sheep's Clothing in Open Resonance Spaces)
+
+**Inner infiltration** describes a process in which an actor A joins a resonance space R (e.g. a party, organisation, or movement) and simulates a matching phase alignment (Δφ → 0) in order to gain internal trust. Once A has obtained access to internal information or influence, A shifts frequency: information is passed outside, internal conflicts are provoked, or the group is manoeuvred into untenable positions. The openness of the system becomes a vulnerability because no sustained resonance check takes place.
+
+**Phases:**
+
+1. **Camouflage and adaptation** – A joins, imitates the group's fundamental frequency, and lowers the β of members through conspicuous loyalty.
+2. **Trust building** – A builds $K_{ij}$ with members, gains access to internal information, and possibly to decision-making processes.
+3. **Frequency shift and damage** – A exploits the gained trust for extraction: information is passed to the outside, internal conflicts are deliberately provoked, or the group is steered into untenable positions.
+4. **Exposure and reaction** – The group often recognises the infiltration only after the damage is done. PCI jumps to internal blame attribution while the real threat (external actor, foreign interests) remains invisible.
+
+**Formal:**
+
+$$
+\Delta\phi_{A,R}^{\text{simulated}} \to 0 \quad \text{while actually} \quad \Delta\phi_{A,R}^{\text{real}} \to \pi
+$$
+
+The pattern is A7-invariant and occurs at every scale: from small groups through parties to geopolitical alliances. It is closely related to the kindness trap (F7) but emphasises the **institutional dimension**: open access to resonance spaces enables infiltration because no continuous verification of the actual phase alignment takes place.
+
+---
+
 ## 8. Three Minimal Examples
 
 ### A. Analysis (Present)
@@ -453,4 +490,4 @@ The pattern is A7-invariant and occurs at every scale: from individual organisat
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F9 and structural pattern 7.8 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
