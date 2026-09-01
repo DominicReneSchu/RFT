@@ -495,7 +495,7 @@ Ein **Resonanzmonopol** liegt vor, wenn ein Resonator R die kollektive Phasenkoh
 **Handlungsimplikationen:**
 - **Für den dominanten Resonator:** Bewusstmachen der eigenen Sende- vs. Empfangsbalance; aktives Einholen von Rückmeldungen; Reduktion der Redezeit; Schulung in reziproker Kommunikation.
 - **Für die Empfänger:** Stärkung der eigenen Eigenfrequenz; aktive Unterbrechung; Aufbau von Kopplungen untereinander (z. B. durch Bündnisse, nonverbale Signale).
-- **Für Moderatoren/Eltern:** Gezielte Verteilung der Redezeit; Rotation der Sprechrollen; Verstärkung der Kopplung zwischen den stillen Resonatoren.
+- **Für Moderatoren:** Gezielte Verteilung der Redezeit; Rotation der Sprechrollen; Verstärkung der Kopplung zwischen den stillen Resonatoren.
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Dyaden über Gruppen und Organisationen bis zu medialen Diskursen.
 
