@@ -495,7 +495,7 @@ A **resonance monopoly** exists when a resonator R continuously draws the collec
 **Action implications:**
 - **For the dominant resonator:** Becoming aware of one's own send-vs-receive balance; actively soliciting feedback; reducing speaking time; training in reciprocal communication.
 - **For receivers:** Strengthening one's own natural frequency; active interruption; building mutual couplings (e.g. through alliances, nonverbal signals).
-- **For moderators/parents:** Deliberate distribution of speaking time; rotation of speaker roles; strengthening coupling among the silent resonators.
+- **For moderators:** Deliberate distribution of speaking time; rotation of speaker roles; strengthening coupling among the silent resonators.
 
 The pattern is A7-invariant and occurs at every scale: from dyads through groups and organisations to media discourses.
 
