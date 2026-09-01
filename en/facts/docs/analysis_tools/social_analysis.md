@@ -237,8 +237,8 @@ The indicator is especially strong when the actor appears conspicuously loyal wh
 10. **Is a current act of severity or violence justified by an attributed threat while the prehistory is suppressed?** → POI-3 / POI-4
 11. **Is an actor or group systematically excluded from the discourse space by being measured against a moral criterion controlled by those doing the excluding – and does this exclusion displace substantive debate?** → F8
 12. **Are there indications of an actor who behaves conspicuously loyally but whose actions repeatedly harm the group – for example through leaked internal information or sudden position shifts?** → F9
-13. Is there a strong asymmetry of speaking time in which one actor speaks almost continuously and suppresses feedback? → F10
-14. Does an actor display conspicuously visible devotion or willingness to sacrifice for a dominant resonator while engaging with the actual subject matter only superficially? → F11
+13. **Is there a strong asymmetry of speaking time in which one actor speaks almost continuously and suppresses feedback?** → F10
+14. **Does an actor display conspicuously visible devotion or willingness to sacrifice for a dominant resonator while engaging with the actual subject matter only superficially?** → F11
 
 ---
 

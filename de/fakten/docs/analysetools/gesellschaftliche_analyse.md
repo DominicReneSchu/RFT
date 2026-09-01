@@ -237,8 +237,8 @@ Der Indikator ist besonders stark, wenn der Akteur auffällig loyal erscheint, a
 10. **Wird eine aktuelle Härte oder Gewalt mit einer zugeschriebenen Bedrohung gerechtfertigt, während die Vorgeschichte verschwiegen wird?** → POI-3 / POI-4
 11. **Wird ein Akteur oder eine Gruppe systematisch aus dem Diskursraum ausgeschlossen, indem er an einem moralischen Kriterium gemessen wird, das von den Ausgrenzenden kontrolliert wird – und verdrängt diese Ausgrenzung die inhaltliche Auseinandersetzung?** → F8
 12. **Gibt es Hinweise auf einen Akteur, der sich auffällig loyal verhält, aber dessen Handlungen der Gruppe wiederholt schaden, etwa durch weitergegebene Interna oder plötzliche Positionswechsel?** → F9
-13. Liegt eine starke Asymmetrie der Redezeit vor, bei der ein Akteur fast durchgehend spricht und Rückmeldungen unterdrückt? → F10
-14. Zeigt ein Akteur auffällig sichtbare Hingabe oder Opferbereitschaft für einen dominanten Resonator, während die inhaltliche Auseinandersetzung mit der Sache oberflächlich bleibt? → F11
+13. **Liegt eine starke Asymmetrie der Redezeit vor, bei der ein Akteur fast durchgehend spricht und Rückmeldungen unterdrückt?** → F10
+14. **Zeigt ein Akteur auffällig sichtbare Hingabe oder Opferbereitschaft für einen dominanten Resonator, während die inhaltliche Auseinandersetzung mit der Sache oberflächlich bleibt?** → F11
 
 ---
 
