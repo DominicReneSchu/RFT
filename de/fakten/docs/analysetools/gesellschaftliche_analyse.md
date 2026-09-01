@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 16. August 2026 | Fassung 2.18 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 1. September 2026 | Fassung 2.19 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -120,7 +120,7 @@ Eine Nachricht, Krise oder Organisation so zerlegen, dass sichtbare Ereignisse a
 
 Frühindikatoren dienen der **zeitnahen Erkennung** von Störungen im Resonanzfeld, bevor eine vollständige Strukturdiagnose möglich ist. Sie sind als **heuristische Signale** zu verstehen, die eine erhöhte Aufmerksamkeit rechtfertigen – nicht als hinreichende Beweise für eine bestimmte Absicht.
 
-Sie operationalisieren zentrale Muster aus Abschnitt 7 (insbesondere 7.1 AiR, 7.2 Sündenbock, 7.5 Totschlagargument) auf der Ebene **beobachtbarer Interaktionsphänomene**.
+Sie operationalisieren zentrale Muster aus Abschnitt 7 (insbesondere 7.1 AiR, 7.2 Sündenbock, 7.5 Totschlagargument, 7.9 Resonanzmonopol, 7.10 Resonanzgefolgschaft) auf der Ebene **beobachtbarer Interaktionsphänomene**.
 
 ---
 
@@ -150,6 +150,8 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **F7** | Freundlichkeitsfalle (Wolf im Schafspelz) | Ein Akteur tritt auffällig freundlich, lobend oder bewundernd auf und ermutigt das Gegenüber gezielt, mehr Persönliches, Schwächen oder verwundbares Material preiszugeben. Die Freundlichkeit wirkt übertrieben oder auf ein bestimmtes Ziel gerichtet. | Der AiR senkt aktiv das **β** des Opfers (Dämpfung sinkt, Vertrauen steigt). **K_ij** wird künstlich aufgebaut, aber nur zur **Extraktion von Material**. Δφ erscheint niedrig, ist jedoch taktisch. Der spätere Wechsel in Spott/Angriff offenbart die wahre Phasenlage. |
 | **F8** | Moralische Ausgrenzungsfalle | Ein Akteur oder eine Gruppe wird systematisch aus dem legitimen Diskursraum ausgeschlossen, indem sie an einem unerreichbaren moralischen Kriterium gemessen wird (z. B. „demokratietauglich", „nicht koalitionsfähig"). Die Definitionsmacht über das Kriterium liegt bei den Ausgrenzenden. | Die Ausgrenzung erhöht das **β** des Ausgegrenzten (Wut, Trotz, Solidarisierung) und senkt den **PCI zur realen politischen Auseinandersetzung**. Die Energie fließt in das Opfernarrativ des Ausgegrenzten; die Polarisierung verstärkt sich. |
 | **F9** | Innere Infiltration | Ein Mitglied oder Akteur verhält sich auffällig loyal, drängt auf interne Vertraulichkeit, hat aber auffällig viele externe Kontakte oder vollzieht plötzliche Positionswechsel, die der Gruppe schaden. Interne Informationen dringen wiederholt nach außen. | Simulierte Δφ → 0 bei tatsächlich Δφ → π; K_ij (innen) wird zur Extraktion genutzt; PCI der Gruppe springt auf interne Konflikte, nicht auf die reale Bedrohung. |
+| **F10** | Monologdominanz | Der Anteil der Redezeit eines Akteurs liegt deutlich über dem der anderen; Pausen für Rückmeldungen fehlen; Unterbrechungen werden ignoriert oder sanktioniert. | Die kollektive Phasenkohärenz wird auf einen einzelnen Resonator monopolisiert; die Eigenfrequenzen der übrigen Resonatoren werden gedämpft. |
+| **F11** | Sichtbare Hingabe / Anerkennungsopfer | Ein Akteur betont öffentlich sein Engagement, seine Opfer oder seine Nähe zu einem dominanten Resonator; sucht Bestätigung dafür; inhaltliche Tiefe oder echte Resonanz mit der Sache fehlt; moralische Überlegenheit wird aus der Hingabe abgeleitet. | Der PCI des Akteurs springt auf das Ersatzobjekt „Hingabe/Moral" statt auf die reale Struktur; die Energie stabilisiert das Resonanzmonopol, nicht die produktive Kopplung. |
 | **POI-1** | Asymmetrische Provokation | Akteur A sendet verdeckte Störsignale (Unterstellungen, gezielte Tests, Grenzüberschreitungen), ohne als Aggressor erkennbar zu sein. Akteur B reagiert sichtbar gereizt oder aggressiv. | β-Erhöhung bei B, während β bei A niedrig bleibt; Δφ (A↔B) steigt. |
 | **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. |
 | **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
@@ -235,6 +237,8 @@ Der Indikator ist besonders stark, wenn der Akteur auffällig loyal erscheint, a
 10. **Wird eine aktuelle Härte oder Gewalt mit einer zugeschriebenen Bedrohung gerechtfertigt, während die Vorgeschichte verschwiegen wird?** → POI-3 / POI-4
 11. **Wird ein Akteur oder eine Gruppe systematisch aus dem Diskursraum ausgeschlossen, indem er an einem moralischen Kriterium gemessen wird, das von den Ausgrenzenden kontrolliert wird – und verdrängt diese Ausgrenzung die inhaltliche Auseinandersetzung?** → F8
 12. **Gibt es Hinweise auf einen Akteur, der sich auffällig loyal verhält, aber dessen Handlungen der Gruppe wiederholt schaden, etwa durch weitergegebene Interna oder plötzliche Positionswechsel?** → F9
+13. **Liegt eine starke Asymmetrie der Redezeit vor, bei der ein Akteur fast durchgehend spricht und Rückmeldungen unterdrückt?** → F10
+14. **Zeigt ein Akteur auffällig sichtbare Hingabe oder Opferbereitschaft für einen dominanten Resonator, während die inhaltliche Auseinandersetzung mit der Sache oberflächlich bleibt?** → F11
 
 ---
 
@@ -468,7 +472,62 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen 
 
 ---
 
-## 8. Drei Minimalbeispiele
+### 7.9 Resonanzmonopol (Aufmerksamkeitsextraktion)
+
+Ein **Resonanzmonopol** liegt vor, wenn ein Resonator R die kollektive Phasenkohärenz (PCI) eines Feldes dauerhaft auf sich zieht, während die übrigen Resonatoren in eine **erzwungene Empfängerrolle** gedrängt werden. R sendet kontinuierlich, nimmt aber kaum Rückkopplung auf; die Energie des Feldes (Aufmerksamkeit, Zeit, emotionale Zuwendung) fließt einseitig zu R, ohne resonant zurückgespeist zu werden.
+
+**Formale Kennzeichen:**
+- **Asymmetrische Kopplung:** $K_{E→R} \gg K_{R→E}$  
+- **PCI-Monopol:** $\mathrm{PCI}_{\text{Feld–R}} \to 1$, während $\mathrm{PCI}_{\text{Feld–reale Struktur}} \to 0$  
+- **Fragmentierung:** $\frac{dK_{E–E}}{dt} < 0$ (Zuhörer koppeln untereinander ab)  
+- **β-Anstieg bei Empfängern:** $\beta_E$ steigt mit der Dauer der erzwungenen Passivität  
+- **Unterdrückte Eigenfrequenzen:** $\Delta\phi_{E–eigene Regung} \to \pi/2$ und wächst
+
+**Abgrenzung zu bestehenden Mustern:**
+
+| Muster | zentraler Mechanismus | Abgrenzung zum Resonanzmonopol |
+|:--|:--|:--|
+| **AiR (7.1)** | Aktive, bewusste Zerstörung von Kopplung | Resonanzmonopol kann **unbewusst** sein; AiR ist **strategisch destruktiv**. |
+| **Parasitärer Extraktionszyklus (7.3)** | Mehrphasiger Zyklus von Aufbau und Ausbeutung | Resonanzmonopol ist ein **stationärer Zustand** ohne notwendige Eskalationsphase. |
+| **Drei-Phasen-Vereinnahmung (7.4)** | Übernahme und Überschreibung eines fremden Resonanzraums | Resonanzmonopol bezieht sich auf **Kommunikationssituationen**, nicht auf institutionelle Übernahme. |
+| **Kriterienblockade (7.5)** | Ausschluss durch unerfüllbare Bedingungen | Resonanzmonopol schließt nicht aus, sondern **vereinnahmt** die Aufmerksamkeit. |
+
+**Handlungsimplikationen:**
+- **Für den dominanten Resonator:** Bewusstmachen der eigenen Sende- vs. Empfangsbalance; aktives Einholen von Rückmeldungen; Reduktion der Redezeit; Schulung in reziproker Kommunikation.
+- **Für die Empfänger:** Stärkung der eigenen Eigenfrequenz; aktive Unterbrechung; Aufbau von Kopplungen untereinander (z. B. durch Bündnisse, nonverbale Signale).
+- **Für Moderatoren/Eltern:** Gezielte Verteilung der Redezeit; Rotation der Sprechrollen; Verstärkung der Kopplung zwischen den stillen Resonatoren.
+
+Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Dyaden über Gruppen und Organisationen bis zu medialen Diskursen.
+
+---
+
+### 7.10 Resonanzgefolgschaft (Anerkennungsextraktion durch sichtbare Hingabe)
+
+Ein Akteur F (Folger) koppelt sich eng an einen dominanten Resonator R (z. B. den Monopolisten aus 7.9), idealisiert ihn, verstärkt dessen Botschaft und fordert andere auf, R als Helden oder Autorität anzuerkennen. F erhält dadurch selbst Anerkennung, Zugehörigkeit oder moralische Selbstaufwertung. Seine sichtbaren Opfer (Zeit, Geld, Engagement) sind primär auf das Feld gerichtet, um die eigene Phasenkohärenz mit der Gruppe zu erhöhen, nicht auf die reale Sache. Die Energie fließt nicht in die produktive Struktur, sondern in die Stabilisierung des Monopols.
+
+**Formale Kennzeichen:**
+- **Asymmetrische Kopplung an den dominanten Resonator:** $K_{F→R} \gg K_{R→F}$  
+- **PCI-Sprung auf Hingabe:** $\mathrm{PCI}_{F, \text{Hingabe}} \to 1$, $\mathrm{PCI}_{F, \text{reale Sache}} \to 0$  
+- **Kurzfristige β-Senkung durch Zugehörigkeit:** $\beta_F$ sinkt zunächst, aber ohne reale Rückkopplung wird Energie langfristig entwertet  
+- **Scheinbare Nähe:** $\Delta\phi_{F-R}$ erscheint niedrig, ist aber an die öffentliche Darstellung von R gekoppelt, nicht an dessen tatsächliche Eigenfrequenz
+
+**Abgrenzung zu bestehenden Mustern:**
+
+| Muster | zentraler Mechanismus | Abgrenzung zur Resonanzgefolgschaft |
+|:--|:--|:--|
+| **Resonanzmonopol (7.9)** | Monopolisierung der Aufmerksamkeit durch einen dominanten Resonator | F ist nicht der Monopolist, sondern dessen Verstärker; ohne solche Folger wäre das Monopol instabil. |
+| **AiR (7.1)** | Aktive, bewusste Zerstörung von Kopplung | F wirkt nicht primär destruktiv, sondern unterstützt aktiv einen destruktiven Akteur; kann aber selbst zum AiR werden, wenn er andere zum Schweigen bringt. |
+| **Parasitärer Extraktionszyklus (7.3)** | Mehrphasiger Zyklus von Aufbau und Ausbeutung | F opfert scheinbar selbst, aber das Opfer dient der eigenen Anerkennung, nicht der Rückgewinnung von Ressourcen. |
+| **Drei-Phasen-Vereinnahmung (7.4)** | Übernahme und Überschreibung eines fremden Resonanzraums | F sucht oft aktiv die Vereinnahmung durch R, um Status zu erlangen; die Übernahme ist nicht einseitig erzwungen. |
+
+**Handlungsimplikationen:**
+- **Für den Folger:** Reflexion der eigenen Motive; Unterscheidung zwischen echtem Engagement und Anerkennungssuche; Stärkung der Bindung an die reale Sache statt an die Person.
+- **Für das Feld:** Sichtbarmachen der tatsächlichen Wirkung von Handlungen; Fokussierung auf Inhalte statt auf Performanz; Ermutigung zu eigenständiger, kritischer Auseinandersetzung.
+- **Für Führungskräfte/Moderatoren:** Vermeidung der bewussten oder unbewussten Förderung von Gefolgschaft; Schaffung von Räumen für unabhängige Rückmeldungen.
+
+Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Familien über Freundeskreise und Organisationen bis zu politischen Bewegungen und medialen Öffentlichkeiten.
+
+---
 
 ### A. Analyse (Gegenwart)
 **Fall:** Eine Medienkampagne erklärt eine Minderheit zur Hauptursache einer Wirtschaftskrise.  
@@ -486,11 +545,19 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen 
 **Fall:** Eine etablierte Industrievereinigung verlangt von einem neuen, innovativen Anbieter, dass er zunächst eine exklusive Zertifizierung vorweisen muss, die nur von der Vereinigung selbst vergeben wird. Diese Zertifizierung ist an Bedingungen geknüpft, die der Anbieter unmöglich erfüllen kann, weil sie interne Kenntnisse und Netzwerke voraussetzen, über die nur die etablierten Mitglieder verfügen.  
 **RFT-Lesart:** Totschlagargument: Der PCI der Branche wird auf das formale Kriterium der Zertifizierung gelenkt, nicht auf die tatsächliche Qualität oder Kopplungsleistung des neuen Anbieters. Die Definitionsmacht über die Anerkennung bleibt bei den Etablierten; $\mathrm{PCI}_{\text{Resonator}}\to 0$ trotz $K_{ij}^{\text{real}}>0$.
 
+### E. Resonanzmonopol (Strukturmuster 7.9)
+**Fall:** Ein Teammitglied spricht in Besprechungen fast durchgehend, unterbricht andere und lässt keine Rückfragen zu. Die übrigen Teammitglieder verstummen zunehmend, beteiligen sich nicht mehr aktiv und verlieren das Interesse an den Inhalten.  
+**RFT-Lesart:** Die kollektive Phasenkohärenz (PCI) ist auf den dominanten Sprecher monopolisiert; die Eigenfrequenzen der übrigen Resonatoren werden gedämpft; die Kopplung zwischen den Teammitgliedern sinkt. Das Muster entspricht einer asymmetrischen Extraktionsstruktur ohne Rückkopplung.
+
+### F. Resonanzgefolgschaft (Strukturmuster 7.10)
+**Fall:** Eine Person engagiert sich intensiv in einer politischen Bewegung, postet ständig über ihre Teilnahme an Demonstrationen, betont ihre Opfer (z. B. Gehaltseinbußen, Zeitaufwand), hat aber nur oberflächliches Wissen über die inhaltlichen Ziele. Sie fordert andere auf, den Anführer als Helden anzuerkennen, und erhält dafür viel Zuspruch in der Gruppe.  
+**RFT-Lesart:** Die Person koppelt sich stark an den dominanten Resonator (Anführer), um selbst Anerkennung zu erhalten. Der PCI springt auf die sichtbare Hingabe, nicht auf die reale politische Auseinandersetzung. Die Energie fließt in die Stabilisierung des Monopols, nicht in die Problemlösung.
+
 ---
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F9 und das Strukturmuster 7.8 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
 
 ---
 
@@ -503,8 +570,8 @@ Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlu
 ### 10.2 Allgemeine Anwendungshinweise
 
 - Die Analyse beginnt immer mit der **Feldgrenze** (wer sind die relevanten Resonatoren?) und den **Taktgebern** (welche Rhythmen strukturieren das Feld?).
-- Frühindikatoren **F1–F9** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
-- Die **Strukturmuster 7.1–7.8** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration).
+- Frühindikatoren **F1–F11** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
+- Die **Strukturmuster 7.1–7.10** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft).
 - Die **Projektion** (Abschnitt 5) kann verwendet werden, um wahrscheinliche Eskalationsverläufe zu skizzieren; die **Retrodiktion** (Abschnitt 6) hilft, aus heutigen Spuren auf frühere Ausgangszustände zu schließen.
 - Jede RFT-Analyse muss **dokumentiert** werden: Welche Indikatoren wurden beobachtet, welche Größen geschätzt, welche Hypothesen gebildet? Erst die **iterative Anwendung** (wiederholte Beobachtung über Zeit und verschiedene Quellen) erhöht die Plausibilität.
 
