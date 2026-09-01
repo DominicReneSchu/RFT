@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 16 August 2026 | Version 2.18 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 1 September 2026 | Version 2.19 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -120,7 +120,7 @@ Decompose a news item, crisis, or organisation so that visible events become rea
 
 Early indicators serve the **timely recognition** of disruptions in the resonance field before a complete structural diagnosis is possible. They are **heuristic signals** that justify heightened attention – not sufficient proof of a specific intent.
 
-They operationalise key patterns from Section 7 (in particular 7.1 AiR, 7.2 Scapegoat, 7.5 Conversation-Stopper) at the level of **observable interaction phenomena**.
+They operationalise key patterns from Section 7 (in particular 7.1 AiR, 7.2 Scapegoat, 7.5 Conversation-Stopper, 7.9 Resonance Monopoly, 7.10 Resonance Followership) at the level of **observable interaction phenomena**.
 
 ---
 
@@ -150,6 +150,8 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **F7** | Kindness trap (wolf in sheep's clothing) | An actor behaves conspicuously friendly, praising, or admiring and deliberately encourages the counterpart to disclose personal details, weaknesses, or vulnerable material. The friendliness appears exaggerated or directed at a specific goal. | The AiR actively lowers the victim's **β** (damping falls, trust rises). **K_ij** is artificially built up but only for **material extraction**. Δφ appears low yet is tactical. The subsequent shift to mockery/attack reveals the true phase relationship. |
 | **F8** | Moral exclusion trap | An actor or group is systematically excluded from the legitimate discourse space by being measured against an unattainable moral criterion (e.g. "fit for democracy", "not fit for coalition"). Definitional power over the criterion rests with those doing the excluding. | The exclusion raises the **β** of the excluded (anger, defiance, solidarity) and lowers the **PCI towards the real political contest**. Energy flows into the excluded actor's victim narrative; polarisation intensifies. |
 | **F9** | Inner infiltration | A member or actor behaves conspicuously loyally, pushes for internal confidentiality, yet has a striking number of external contacts or makes sudden position shifts that harm the group. Internal information repeatedly leaks to the outside. | Simulated Δφ → 0 while actual Δφ → π; K_ij (internal) is used for extraction; group PCI jumps to internal conflicts rather than the real threat. |
+| **F10** | Monologue dominance | One actor's share of speaking time is significantly higher than the others'; pauses for feedback are absent; interruptions are ignored or sanctioned. | Collective phase coherence is monopolised by a single resonator; the natural frequencies of the remaining resonators are suppressed. |
+| **F11** | Visible devotion / recognition sacrifice | An actor publicly emphasises their commitment, sacrifices, or closeness to a dominant resonator; seeks validation for it; substantive depth or genuine resonance with the issue is absent; moral superiority is derived from the devotion. | The actor's PCI jumps to the substitute object "devotion/morality" rather than to the real structure; energy stabilises the resonance monopoly rather than productive coupling. |
 | **POI-1** | Asymmetric provocation | Actor A sends covert disruptive signals (insinuations, deliberate tests, boundary violations) without becoming recognisable as the aggressor. Actor B reacts in a visibly irritated or aggressive manner. | β rises in B while β in A remains low; Δφ (A↔B) increases. |
 | **POI-2** | Victim-role inversion | A suddenly shifts into the victim role and frames B as the aggressor; A's own provocation is blacked out. | PCI jumps from "enemy B" to "victim A"; K_ij (A↔public) rises. |
 | **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. |
@@ -235,6 +237,8 @@ The indicator is especially strong when the actor appears conspicuously loyal wh
 10. **Is a current act of severity or violence justified by an attributed threat while the prehistory is suppressed?** → POI-3 / POI-4
 11. **Is an actor or group systematically excluded from the discourse space by being measured against a moral criterion controlled by those doing the excluding – and does this exclusion displace substantive debate?** → F8
 12. **Are there indications of an actor who behaves conspicuously loyally but whose actions repeatedly harm the group – for example through leaked internal information or sudden position shifts?** → F9
+13. Is there a strong asymmetry of speaking time in which one actor speaks almost continuously and suppresses feedback? → F10
+14. Does an actor display conspicuously visible devotion or willingness to sacrifice for a dominant resonator while engaging with the actual subject matter only superficially? → F11
 
 ---
 
@@ -468,7 +472,62 @@ The pattern is A7-invariant and occurs at every scale: from small groups through
 
 ---
 
-## 8. Three Minimal Examples
+### 7.9 Resonance Monopoly (Attention Extraction)
+
+A **resonance monopoly** exists when a resonator R continuously draws the collective phase coherence (PCI) of a field toward itself while forcing the remaining resonators into a **compelled receiver role**. R transmits continuously but takes in little feedback; the field's energy (attention, time, emotional engagement) flows one-sidedly to R without being resonantly fed back.
+
+**Formal characteristics:**
+- **Asymmetric coupling:** $K_{E→R} \gg K_{R→E}$  
+- **PCI monopoly:** $\mathrm{PCI}_{\text{field–R}} \to 1$, while $\mathrm{PCI}_{\text{field–real structure}} \to 0$  
+- **Fragmentation:** $\frac{dK_{E–E}}{dt} < 0$ (listeners decouple from each other)  
+- **β rise in receivers:** $\beta_E$ rises with the duration of enforced passivity  
+- **Suppressed natural frequencies:** $\Delta\phi_{E–\text{own impulse}} \to \pi/2$ and grows
+
+**Demarcation from existing patterns:**
+
+| Pattern | Central mechanism | Distinction from Resonance Monopoly |
+|:--|:--|:--|
+| **AiR (7.1)** | Active, deliberate destruction of coupling | Resonance monopoly can be **unconscious**; AiR is **strategically destructive**. |
+| **Parasitic Extraction Cycle (7.3)** | Multi-phase cycle of build-up and exploitation | Resonance monopoly is a **stationary state** without a necessary escalation phase. |
+| **Three-Phase Co-optation (7.4)** | Takeover and overwriting of an alien resonance space | Resonance monopoly concerns **communicative situations**, not institutional takeover. |
+| **Criterion Blockade (7.5)** | Exclusion via unfulfilable conditions | Resonance monopoly does not exclude but **captures** attention. |
+
+**Action implications:**
+- **For the dominant resonator:** Becoming aware of one's own send-vs-receive balance; actively soliciting feedback; reducing speaking time; training in reciprocal communication.
+- **For receivers:** Strengthening one's own natural frequency; active interruption; building mutual couplings (e.g. through alliances, nonverbal signals).
+- **For moderators/parents:** Deliberate distribution of speaking time; rotation of speaker roles; strengthening coupling among the silent resonators.
+
+The pattern is A7-invariant and occurs at every scale: from dyads through groups and organisations to media discourses.
+
+---
+
+### 7.10 Resonance Followership (Recognition Extraction through Visible Devotion)
+
+An actor F (follower) couples tightly to a dominant resonator R (e.g. the monopolist from 7.9), idealises R, amplifies R's message, and urges others to recognise R as a hero or authority. F thereby obtains recognition, belonging, or moral self-enhancement. F's visible sacrifices (time, money, effort) are directed primarily at the field in order to raise F's own phase coherence with the group, not at the real matter at hand. Energy does not flow into the productive structure but into stabilising the monopoly.
+
+**Formal characteristics:**
+- **Asymmetric coupling to the dominant resonator:** $K_{F→R} \gg K_{R→F}$  
+- **PCI jump to devotion:** $\mathrm{PCI}_{F, \text{devotion}} \to 1$, $\mathrm{PCI}_{F, \text{real matter}} \to 0$  
+- **Short-term β reduction through belonging:** $\beta_F$ initially falls, but without real feedback energy is devalued in the long run  
+- **Apparent closeness:** $\Delta\phi_{F-R}$ appears low but is coupled to the public image of R, not to R's actual natural frequency
+
+**Demarcation from existing patterns:**
+
+| Pattern | Central mechanism | Distinction from Resonance Followership |
+|:--|:--|:--|
+| **Resonance Monopoly (7.9)** | Monopolisation of attention by a dominant resonator | F is not the monopolist but its amplifier; without such followers the monopoly would be unstable. |
+| **AiR (7.1)** | Active, deliberate destruction of coupling | F does not act primarily destructively but actively supports a destructive actor; can however become AiR when silencing others. |
+| **Parasitic Extraction Cycle (7.3)** | Multi-phase cycle of build-up and exploitation | F apparently sacrifices, but the sacrifice serves F's own recognition, not the recovery of resources. |
+| **Three-Phase Co-optation (7.4)** | Takeover and overwriting of an alien resonance space | F often actively seeks co-optation by R to gain status; the takeover is not one-sidedly coerced. |
+
+**Action implications:**
+- **For the follower:** Reflecting on one's own motives; distinguishing genuine engagement from recognition-seeking; strengthening commitment to the real matter rather than to the person.
+- **For the field:** Making the actual effect of actions visible; focusing on content rather than performance; encouraging independent, critical engagement.
+- **For leaders/moderators:** Avoiding conscious or unconscious encouragement of followership; creating spaces for independent feedback.
+
+The pattern is A7-invariant and occurs at every scale: from families through circles of friends and organisations to political movements and media publics.
+
+---
 
 ### A. Analysis (Present)
 **Case:** A media campaign frames a minority as the main cause of an economic crisis.  
@@ -486,11 +545,19 @@ The pattern is A7-invariant and occurs at every scale: from small groups through
 **Case:** An established industry association demands that a new, innovative provider first obtain an exclusive certification issued solely by the association itself. The certification is tied to conditions the provider cannot possibly meet, because they presuppose internal knowledge and networks available only to existing members.  
 **RFT reading:** Conversation-stopper: industry PCI is directed toward the formal certification criterion rather than toward the new provider's actual quality or coupling performance. Definitional power over recognition stays with the incumbents; $\mathrm{PCI}_{\text{resonator}}\to 0$ despite $K_{ij}^{\text{real}}>0$.
 
+### E. Resonance Monopoly (Structural Pattern 7.9)
+**Case:** A team member speaks almost continuously in meetings, interrupts others, and permits no follow-up questions. The remaining team members fall increasingly silent, stop participating actively, and lose interest in the content.  
+**RFT reading:** Collective phase coherence (PCI) is monopolised by the dominant speaker; the natural frequencies of the other resonators are suppressed; coupling among team members declines. The pattern corresponds to an asymmetric extraction structure without feedback.
+
+### F. Resonance Followership (Structural Pattern 7.10)
+**Case:** A person becomes intensely involved in a political movement, posts constantly about attending demonstrations, emphasises their sacrifices (e.g. lost income, time spent), but has only superficial knowledge of the substantive goals. They urge others to recognise the leader as a hero and receive a great deal of affirmation from the group in return.  
+**RFT reading:** The person couples tightly to the dominant resonator (leader) in order to obtain recognition. PCI jumps to the visible devotion, not to the real political engagement. Energy flows into stabilising the monopoly, not into solving the problem.
+
 ---
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F9 and structural pattern 7.8 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
 
 ---
 
@@ -503,8 +570,8 @@ This section is addressed to **psychologists/therapists**, **police/investigativ
 ### 10.2 General Application Guidelines
 
 - Analysis always begins with the **field boundary** (who are the relevant resonators?) and the **pacemakers** (which rhythms structure the field?).
-- Early indicators **F1–F9** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
-- **Structural patterns 7.1–7.8** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration).
+- Early indicators **F1–F11** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
+- **Structural patterns 7.1–7.10** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership).
 - **Projection** (Section 5) can be used to sketch probable escalation trajectories; **retrodiction** (Section 6) helps infer earlier starting states from present traces.
 - Every RFT analysis must be **documented**: which indicators were observed, which quantities estimated, which hypotheses formed? Only **iterative application** (repeated observation over time and across multiple sources) increases plausibility.
 
