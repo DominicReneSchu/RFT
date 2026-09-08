@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 1. September 2026 | Fassung 2.19 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 8. September 2026 | Fassung 2.20 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -156,6 +156,7 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. |
 | **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
 | **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. |
+| **F12** | Somatische Alarmverwechslung / Archaische Reaktionsfalle | Bei B tritt nach einem psychischen Stressor (z. B. Prüfung, Konfrontation, Bewertung, innerem Erwartungsdruck) ein starkes inneres Warngefühl auf (Herzrasen, Anspannung, Drang zu sofortiger Reaktion), obwohl keine physische Bedrohung vorliegt. B fühlt sich gedrängt, sofort zu kämpfen, zu fliehen oder sich zu rechtfertigen, und neigt zu überstürzten, oft unbedachten Handlungen. Der Auslöser kann ein externer Akteur sein, muss es aber nicht. | Das evolutionär alte physische Alarmsystem wird bei einem psychischen Stressor fehlaktiviert. B wird in eine fremde Frequenz (Alarm, Eile, Bringschuld) gezwungen; **β_B steigt** stark an, während die Eigenfrequenz (Ruhe, Souveränität) verloren geht. Der PCI von B springt vom Inhalt auf das Alarmsignal, die Kopplung zur Gruppe oder zur realen Struktur wird destabilisiert. Ein externer Akteur A kann diesen Mechanismus gezielt auslösen und sein β niedrig halten, während er die Kontrolle über das Timing der Interaktion gewinnt. |
 
 ---
 
@@ -220,6 +221,24 @@ $$
 
 Der Indikator ist besonders stark, wenn der Akteur auffällig loyal erscheint, aber die Gruppe nach innen gespalten oder nach außen geschwächt wird, ohne dass die reale Bedrohung erkannt wird.
 
+**F12 (Somatische Alarmverwechslung / Archaische Reaktionsfalle)** ist erfüllt, wenn im beobachteten Zeitintervall $\Delta t$ gilt:
+
+$$
+\beta_B \uparrow \quad \text{bei gleichzeitigem} \quad \text{Drang}_B^{\text{sofortige Reaktion}} \uparrow
+$$
+
+obwohl keine reale physische Bedrohung vorliegt ($\vec{E}_{\text{physisch}} \approx 0$).
+
+Der Auslöser kann ein externer Akteur A sein (dann gilt zusätzlich $\Delta\phi_{A,B} \to \pi$ bei $K_{A,B} > 0$) oder ein situativer Kontext bzw. innerer Stressor (z. B. Prüfungserwartung, Selbstzweifel).
+
+Zusätzlich gilt:
+
+$$
+\mathrm{PCI}_{B,\text{Alarmsignal}} \uparrow \quad \text{bei} \quad \mathrm{PCI}_{B,\text{reale Struktur}} \downarrow
+$$
+
+Der Indikator ist besonders stark, wenn B nach der Situation angibt, „aus dem Bauch heraus" reagiert zu haben, obwohl die Reaktion im Nachhinein als unangemessen oder kontraproduktiv bewertet wird – unabhängig davon, ob ein externer Profiteur vorhanden ist.
+
 ---
 
 #### 4.5.5 Diagnosefragen zur Anwendung
@@ -240,6 +259,18 @@ Der Indikator ist besonders stark, wenn der Akteur auffällig loyal erscheint, a
 13. **Liegt eine starke Asymmetrie der Redezeit vor, bei der ein Akteur fast durchgehend spricht und Rückmeldungen unterdrückt?** → F10
 14. **Zeigt ein Akteur auffällig sichtbare Hingabe oder Opferbereitschaft für einen dominanten Resonator, während die inhaltliche Auseinandersetzung mit der Sache oberflächlich bleibt?** → F11
 
+15. **Spürt ein Akteur plötzlich ein starkes inneres Warnsignal, das zu sofortigem Handeln drängt, obwohl die Situation objektiv keine physische Gefahr darstellt?**  
+    → F12
+
+16. **Ist der Auslöser ein externer Akteur, der äußerlich ruhig, sachlich oder sogar freundlich wirkt, während der Betroffene innerlich unter starkem Druck steht?**  
+    → F12 in Verbindung mit F7 oder POI-1 prüfen
+
+17. **Oder liegt der Auslöser im situativen Kontext oder in inneren Erwartungen (z. B. Prüfung, Leistungsdruck, Selbstzweifel), ohne dass ein gezielter Gegenüber erkennbar ist?**  
+    → F12 in Verbindung mit β-Erhöhung ohne reale Rückkopplung
+
+18. **Führt die unmittelbare Reaktion von B zu einer sichtbaren Schwächung seiner Position (Rechtfertigung, Angriff, Rückzug, Blackout), die anschließend gegen ihn verwendet werden kann – sei es durch andere oder durch B selbst (z. B. Selbstabwertung, Scham)?**  
+    → F12 in Kombination mit F5 oder POI-2
+
 ---
 
 #### 4.5.6 Abgrenzung und Grenzen
@@ -250,6 +281,12 @@ Der Frühindikator F7 (Freundlichkeitsfalle) ist besonders zurückhaltend zu ver
 
 Die Frühindikatoren sind daher **kein Beweis**, sondern ein **Anlass für vertiefte Strukturprüfung**. Sie wirken am stärksten, wenn mehrere Indikatoren gleichzeitig auftreten und ein **Muster** bilden, das mit den zentralen Strukturmustern (Abschnitt 7) konsistent ist.
 
+F12 ist mit besonderer Vorsicht zu verwenden, da nicht jedes Auftreten eines körperlichen Warngefühls auf eine Fehlaktivierung hindeutet. Bei realer physischer Gefahr ist das Alarmsignal funktional und angemessen. Auch intensive emotionale Gespräche, trauernde oder hochbelastende Situationen können zu starken körperlichen Reaktionen führen, ohne dass eine Manipulation oder Fehlinterpretation vorliegt.
+
+F12 liegt nur dann vor, wenn **keine physische Bedrohung** besteht **und** das Alarmsignal den Betroffenen zu einer **unbedachten, für ihn nachteiligen Handlung** treibt, die im Nachhinein als unangemessen bewertet wird. Der Auslöser kann ein externer Akteur sein, muss es aber nicht: Auch Prüfungsangst, Lampenfieber, soziale Bewertungsangst oder innere Erwartungskonflikte können den Mechanismus aktivieren.
+
+Entscheidend ist die **Fehlpassung zwischen Reiz und Reaktion**: Das Alarmsignal ist in Stärke und Qualität unverhältnismäßig zur tatsächlichen, nicht-physischen Bedrohung.
+
 ---
 
 #### 4.5.7 Skaleninvarianz
@@ -257,6 +294,13 @@ Die Frühindikatoren sind daher **kein Beweis**, sondern ein **Anlass für verti
 Die Frühindikatoren sind **A7-invariant** und damit auf allen Ebenen anwendbar: dyadische Gespräche, Gruppen- und Teamsituationen, institutionelle Verhandlungen, mediale Diskurse, öffentliche Debatten.
 
 Die zugrunde liegende Dynamik bleibt identisch: Ein Resonator wird von seiner Eigenfrequenz gelöst und auf eine fremde, kontrollierte Frequenz gezwungen, während die kollektive Aufmerksamkeit auf ein Ersatzobjekt gelenkt wird.
+
+Beispiele für F12 auf verschiedenen Ebenen:
+
+- **Dyade:** Ein Partner provoziert den anderen so lange, bis dieser explodiert oder sich verzweifelt rechtfertigt, und stellt ihn dann als unkontrolliert dar.
+- **Einzelperson (intrapersonal):** Ein Prüfling erlebt vor einer Prüfung derart starke körperliche Symptome, dass er nicht mehr klar denken kann und eine einfache Aufgabe nicht löst.
+- **Gruppe/Team:** Ein Mitglied bringt ein Thema auf, das ein anderes Teammitglied in Rage bringt; die Gruppe erlebt die emotionale Reaktion, nicht die Provokation.
+- **Institution/Medien:** Ein Akteur setzt gezielt Triggerpunkte, um bei einer Gegenseite Überreaktionen zu provozieren, die dann medial ausgeschlachtet werden.
 
 ---
 
@@ -529,7 +573,16 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Familien �
 
 ---
 
-### A. Analyse (Gegenwart)
+### 7.11 Beziehung von F12 zu bestehenden Strukturmustern
+
+F12 (Somatische Alarmverwechslung / Archaische Reaktionsfalle) ist eng verwandt mit mehreren bestehenden Strukturmustern:
+
+- **POI-1 (Asymmetrische Provokation):** Beide beschreiben verdeckte Störsignale. F12 betont jedoch den **inneren Reaktionsimpuls** des Betroffenen und die evolutionäre Fehlleitung, während POI-1 die sichtbare Reaktion und die Asymmetrie der β-Werte fokussiert.
+- **F7 (Freundlichkeitsfalle):** Beide können kombiniert auftreten, wenn der Provokateur freundlich bleibt und der Betroffene in eine emotionale Falle läuft.
+- **F5 (Bringschuld ohne Erfüllungsweg):** F12 kann als Vorstufe dienen, indem der Betroffene durch den inneren Druck sofort antwortet und dadurch in die Bringschuld gerät.
+- **7.1 AiR (Aktiv invertierter Resonator):** Ein AiR kann F12 gezielt bei anderen auslösen, um deren β zu erhöhen und den PCI zur realen Struktur zu senken.
+
+---
 **Fall:** Eine Medienkampagne erklärt eine Minderheit zur Hauptursache einer Wirtschaftskrise.  
 **RFT-Lesart:** PCI steigt zur Zielgruppe, nicht zur realen Finanz- oder Machtstruktur. Das spricht für Sündenbocklenkung bei gleichzeitigem $\beta$-Anstieg im Gesamtsystem.
 
@@ -557,7 +610,7 @@ Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Familien �
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F12 sowie das Strukturmuster 7.11 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
 
 ---
 
@@ -570,8 +623,8 @@ Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlu
 ### 10.2 Allgemeine Anwendungshinweise
 
 - Die Analyse beginnt immer mit der **Feldgrenze** (wer sind die relevanten Resonatoren?) und den **Taktgebern** (welche Rhythmen strukturieren das Feld?).
-- Frühindikatoren **F1–F11** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
-- Die **Strukturmuster 7.1–7.10** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft).
+- Frühindikatoren **F1–F12** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
+- Die **Strukturmuster 7.1–7.11** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft, somatische Alarmverwechslung).
 - Die **Projektion** (Abschnitt 5) kann verwendet werden, um wahrscheinliche Eskalationsverläufe zu skizzieren; die **Retrodiktion** (Abschnitt 6) hilft, aus heutigen Spuren auf frühere Ausgangszustände zu schließen.
 - Jede RFT-Analyse muss **dokumentiert** werden: Welche Indikatoren wurden beobachtet, welche Größen geschätzt, welche Hypothesen gebildet? Erst die **iterative Anwendung** (wiederholte Beobachtung über Zeit und verschiedene Quellen) erhöht die Plausibilität.
 

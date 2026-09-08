@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 1 September 2026 | Version 2.19 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 8 September 2026 | Version 2.20 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -156,6 +156,7 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **POI-2** | Victim-role inversion | A suddenly shifts into the victim role and frames B as the aggressor; A's own provocation is blacked out. | PCI jumps from "enemy B" to "victim A"; K_ij (A↔public) rises. |
 | **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. |
 | **POI-4** | Historical revision | The prehistory (provocation, own escalation steps) is systematically suppressed or reinterpreted; discourse focuses only on the current "threat". | PCI remains stable on substitute object; K_ij (A↔prehistory) → 0. |
+| **F12** | Somatic alarm confusion / Archaic reaction trap | After a psychological stressor (e.g. examination, confrontation, evaluation, internal performance pressure), B experiences a strong inner warning signal (racing heart, tension, urge for immediate action) despite the absence of any physical threat. B feels compelled to fight, flee, or justify immediately, and tends towards rash, often unconsidered actions. The trigger may be an external actor but need not be. | The evolutionarily ancient physical alarm system is misactivated by a psychological stressor. B is forced onto an alien frequency (alarm, urgency, obligation to respond); **β_B rises** sharply while the natural frequency (calm, composure) is lost. B's PCI jumps from the content to the alarm signal; coupling to the group or to the real structure is destabilised. An external actor A can deliberately trigger this mechanism and keep their own β low while gaining control over the timing of the interaction. |
 
 ---
 
@@ -220,6 +221,24 @@ $$
 
 The indicator is especially strong when the actor appears conspicuously loyal while the group is split from within or weakened externally without the real threat being recognised.
 
+**F12 (Somatic alarm confusion / Archaic reaction trap)** is satisfied when, in the observed time interval $\Delta t$:
+
+$$
+\beta_B \uparrow \quad \text{with simultaneously} \quad \text{urge}_B^{\text{immediate reaction}} \uparrow
+$$
+
+despite the absence of any real physical threat ($\vec{E}_{\text{physical}} \approx 0$).
+
+The trigger may be an external actor A (in which case additionally $\Delta\phi_{A,B} \to \pi$ at $K_{A,B} > 0$ applies) or a situational context or internal stressor (e.g. examination expectation, self-doubt).
+
+Additionally:
+
+$$
+\mathrm{PCI}_{B,\text{alarm signal}} \uparrow \quad \text{at} \quad \mathrm{PCI}_{B,\text{real structure}} \downarrow
+$$
+
+The indicator is especially strong when B reports having reacted "from gut instinct" after the situation, while the reaction is subsequently evaluated as inappropriate or counterproductive – regardless of whether an external beneficiary is present.
+
 ---
 
 #### 4.5.5 Diagnostic Questions for Application
@@ -240,6 +259,18 @@ The indicator is especially strong when the actor appears conspicuously loyal wh
 13. **Is there a strong asymmetry of speaking time in which one actor speaks almost continuously and suppresses feedback?** → F10
 14. **Does an actor display conspicuously visible devotion or willingness to sacrifice for a dominant resonator while engaging with the actual subject matter only superficially?** → F11
 
+15. **Does an actor suddenly experience a strong inner warning signal urging immediate action, even though the situation objectively presents no physical danger?**  
+    → F12
+
+16. **Is the trigger an external actor who appears outwardly calm, factual, or even friendly while the affected party is under strong internal pressure?**  
+    → Check F12 in conjunction with F7 or POI-1
+
+17. **Or does the trigger lie in the situational context or in internal expectations (e.g. examination, performance pressure, self-doubt) without a deliberate counterpart being identifiable?**  
+    → F12 in conjunction with β rise without real feedback
+
+18. **Does B's immediate reaction lead to a visible weakening of their position (justification, attack, withdrawal, blackout) that can subsequently be used against them – whether by others or by B themselves (e.g. self-deprecation, shame)?**  
+    → F12 in combination with F5 or POI-2
+
 ---
 
 #### 4.5.6 Delimitation and Limits
@@ -250,6 +281,12 @@ Early indicator F7 (kindness trap) calls for particular restraint: friendliness 
 
 Early indicators are therefore **not proof**, but an **occasion for deeper structural examination**. They are most powerful when several indicators appear simultaneously and form a **pattern** consistent with the central structural patterns of Section 7.
 
+F12 calls for particular caution, as not every occurrence of a bodily warning signal indicates a misactivation. When a real physical threat exists, the alarm signal is functional and appropriate. Intensive emotional conversations, grief, or highly stressful situations can also produce strong physical reactions without any manipulation or misinterpretation being present.
+
+F12 applies only when **no physical threat** exists **and** the alarm signal drives the affected party to an **unconsidered, self-detrimental action** that is subsequently evaluated as inappropriate. The trigger may be an external actor but need not be: examination anxiety, stage fright, social evaluation anxiety, or internal expectation conflicts can equally activate the mechanism.
+
+Decisive is the **mismatch between stimulus and response**: the alarm signal is disproportionate in intensity and quality to the actual, non-physical threat.
+
 ---
 
 #### 4.5.7 Scale Invariance
@@ -257,6 +294,13 @@ Early indicators are therefore **not proof**, but an **occasion for deeper struc
 The early indicators are **A7-invariant** and thus applicable at every level: dyadic conversations, group and team situations, institutional negotiations, media discourse, public debates.
 
 The underlying dynamic remains identical: a resonator is detached from its natural frequency and forced onto an alien, controlled frequency while collective attention is directed toward a substitute object.
+
+Examples of F12 at different levels:
+
+- **Dyad:** One partner provokes the other until they explode or desperately justify themselves, then portrays them as uncontrolled.
+- **Individual (intrapersonal):** An examinee experiences such severe physical symptoms before an examination that clear thinking is no longer possible and a simple task cannot be completed.
+- **Group/team:** A member raises a topic that enrages another team member; the group experiences the emotional reaction, not the provocation.
+- **Institution/media:** An actor deliberately deploys trigger points to provoke overreactions in the opposing side, which are then exploited in media coverage.
 
 ---
 
@@ -529,7 +573,16 @@ The pattern is A7-invariant and occurs at every scale: from families through cir
 
 ---
 
-### A. Analysis (Present)
+### 7.11 Relationship of F12 to Existing Structural Patterns
+
+F12 (Somatic alarm confusion / Archaic reaction trap) is closely related to several existing structural patterns:
+
+- **POI-1 (Asymmetric provocation):** Both describe covert disruptive signals. F12, however, emphasises the **inner reaction impulse** of the affected party and the evolutionary misdirection, while POI-1 focuses on the visible reaction and the asymmetry of β values.
+- **F7 (Kindness trap):** Both can occur in combination when the provocateur remains friendly and the affected party falls into an emotional trap.
+- **F5 (Burden of proof without a path to fulfilment):** F12 can serve as a precursor, in that the affected party responds immediately under inner pressure and thereby incurs the burden of proof.
+- **7.1 AiR (Actively inverted resonator):** An AiR can deliberately trigger F12 in others to raise their β and lower their PCI toward the real structure.
+
+---
 **Case:** A media campaign frames a minority as the main cause of an economic crisis.  
 **RFT reading:** PCI rises toward the target group, not toward the actual financial or power structure. That indicates scapegoat steering alongside a rise in system-wide $\beta$.
 
@@ -557,7 +610,7 @@ The pattern is A7-invariant and occurs at every scale: from families through cir
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F12 and structural pattern 7.11 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
 
 ---
 
@@ -570,8 +623,8 @@ This section is addressed to **psychologists/therapists**, **police/investigativ
 ### 10.2 General Application Guidelines
 
 - Analysis always begins with the **field boundary** (who are the relevant resonators?) and the **pacemakers** (which rhythms structure the field?).
-- Early indicators **F1–F11** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
-- **Structural patterns 7.1–7.10** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership).
+- Early indicators **F1–F12** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
+- **Structural patterns 7.1–7.11** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership, somatic alarm confusion).
 - **Projection** (Section 5) can be used to sketch probable escalation trajectories; **retrodiction** (Section 6) helps infer earlier starting states from present traces.
 - Every RFT analysis must be **documented**: which indicators were observed, which quantities estimated, which hypotheses formed? Only **iterative application** (repeated observation over time and across multiple sources) increases plausibility.
 
