@@ -1,6 +1,0 @@
-numpy
-matplotlib
-pandas
-requests
-ccxt>=4.0.0
-scipy

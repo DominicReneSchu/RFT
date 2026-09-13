@@ -270,8 +270,6 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | 1 | [ResoCalc](facts/concepts/ResoCalc/resocalc.md) | A1, A3, A4 | Torque calculation in resonance field |
 | 2 | [Resonance Reactor](facts/concepts/resonance_reactor/README.md) | A1, A3–A7 | Reactor concept |
 | 3 | [Warp Drive](facts/concepts/warp_drive/warp_drive.md) | A1, A4, A5 | Propulsion concept — **first positive-energy warp bubble simulation** (E⁻ = 0); w sign change; RT-33: scaling law ρ∝R⁻², R*>>1 AU ([analysis](facts/concepts/warp_drive/analyse/rt33_energy_gap.py)) |
-| 4 | [ResoTrade V15.6](facts/concepts/ResoTrade/resotrade_trading_ki.md) | A1–A7 | Application concept — demonstrates RFT axioms in financial markets · [RT-10 Backtest ✅](facts/concepts/ResoTrade/backtest/README.md) |
-| 5 | [ResoAgent](facts/concepts/ResoAgent/ResoAgent.md) | A1–A7 | Resonance-logical agent AI |
 
 ---
 
@@ -284,8 +282,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | 3 | [Coupled Oscillators](facts/simulations/coupled_oscillators/coupled_oscillators.md) | A1–A4 | Energy exchange, resonance detection, live animation |
 | 4 | [Numerical Demonstration](facts/simulations/numerical_demonstration/README.md) | A3, A4, A5 | Consistency demonstration: resonance energy, coupling efficiency, and entropy over (A, τ) |
 | 5 | [FLRW Simulations](facts/simulations/FLRW-simulations/README.md) | A1–A7 | 1,530 runs, η ≈ cos², Δd_η > 6σ |
-| 6 | [Altcoin Analysis](facts/simulations/altcoin_analysis/resotrade_altcoin_analysis.md) | A3 | 200,000 episodes, falsification test |
-| 7 | [Schrödinger Simulation](facts/simulations/schrodinger/README.md) | A4 | Derivation of Schrödinger eq. from Axiom 4; Fidelity = 1.0 (all 4 scenarios); perturbation theory 1−F ~ λ² confirmed; falsifiable prediction for ⁸⁷Rb |
+| 6 | [Schrödinger Simulation](facts/simulations/schrodinger/README.md) | A4 | Derivation of Schrödinger eq. from Axiom 4; Fidelity = 1.0 (all 4 scenarios); perturbation theory 1−F ~ λ² confirmed; falsifiable prediction for ⁸⁷Rb |
 
 ---
 

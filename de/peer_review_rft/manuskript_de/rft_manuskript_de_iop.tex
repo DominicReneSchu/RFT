@@ -53,9 +53,6 @@
 		Fidelity~$= 1{,}0$ (alle~4 Szenarien), St\"orungstheorie
 		best\"atigt $1-F \sim \lambda^2$, und liefert eine
 		falsifizierbare Vorhersage f\"ur ${}^{87}$Rb.
-		Das Anwendungskonzept ResoTrade demonstriert die
-		Anwendbarkeit der RFT-Axiome im realen Marktumfeld;
-		prim\"are Axiom-Nachweise stammen aus den RFT-internen Simulationen.
 		Zwei falsifizierbare Experimentalvorschl\"age werden
 		pr\"asentiert: (I)~phasenabh\"angige Photoanregung von
 		Am-241 an der ELI-NP (Kernphysik, 0~freie Parameter,
@@ -104,8 +101,7 @@
 	auf eine Vereinheitlichung der fundamentalen Kr\"afte, sondern
 	auf einen konzeptuellen Rahmen, der Resonanzph\"anomene
 	\"uber Skalen und Dom\"anen hinweg einheitlich beschreibt --
-	von Teilchenphysik \"uber Kosmologie und Nukleartechnologie
-	bis zu Finanzm\"arkten.
+	von Teilchenphysik \"uber Kosmologie bis zu Nukleartechnologie.
 	
 	Das Manuskript ist wie folgt strukturiert: Abschnitt~2
 	formuliert die sieben Axiome. Abschnitt~3 entwickelt die
@@ -296,7 +292,7 @@
 	
 	\textit{Axiomenstatus:} Algebraisch bewiesen (stationär)
 	f\"ur den Frequenzquotient-Teil und die Phasendifferenzstruktur;
-	Domänen\"ubertragung (CMB, Kernphysik, Finanzm\"arkte) bleibt
+	Dom\"anen\"ubertragung (CMB, Kernphysik) bleibt
 	motiviertes Postulat (RT-02, s.~Abschnitt~\ref{sec:gsync}).
 	
 	Resonanzstrukturen bleiben unter Variation der
@@ -641,11 +637,10 @@
 	\label{sec:empirics}
 	%% ============================================================
 	
-	Die RFT wird an vier unabh\"angigen Dom\"anen gepr\"uft:
+	Die RFT wird an drei unabh\"angigen Dom\"anen gepr\"uft:
 	Teilchenphysik (Abschnitt~\ref{sec:monte_carlo}),
-	Kosmologie (Abschnitt~\ref{sec:flrw}),
-	Nukleartechnologie (Abschnitt~\ref{sec:resonanzreaktor})
-	und Finanzm\"arkte (Abschnitt~\ref{sec:resotrade}).
+	Kosmologie (Abschnitt~\ref{sec:flrw})
+	und Nukleartechnologie (Abschnitt~\ref{sec:resonanzreaktor}).
 	
 	\subsection{Monte-Carlo-Simulation auf CMS-Dielectron-Daten}
 	\label{sec:monte_carlo}
@@ -1067,278 +1062,6 @@
 	
 	Best\"atigt Axiom~1, 3, 4.
 	
-	\subsection{ResoTrade: Anwendungskonzept
-		am BTC-Markt}
-	\label{sec:resotrade}
-	
-	ResoTrade~\cite{rftrepo} ist ein algorithmisches
-	BTC-Trading-System, das ausschlie\ss{}lich auf den
-	Axiomen der RFT aufbaut und deren Anwendbarkeit
-	in einem realen Marktumfeld demonstriert.
-	Da ResoTrade eine private Implementierung ist,
-	dient es nicht als prim\"arer Axiom-Beweis;
-	die prim\"aren Nachweise stammen aus den
-	RFT-internen Simulationen
-	(FLRW, Monte Carlo, Doppelpendel, Resonanzreaktor).
-	
-	\subsubsection{RFT-interne Axiom-Validierung.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Axiom} & \textbf{Simulation}
-			& \textbf{Ergebnis} \\
-			\hline
-			A1 & FLRW (1\,530 L\"aufe)
-			& $\eta \approx \cos^2$, $\Delta d_\eta > 6\sigma$ \\
-			A2 & Gek.\ Oszillatoren
-			& Mehrfrequenz-Superposition \\
-			A3 & Monte Carlo (1\,500\,000 Sim.)
-			& 5 Resonanzen, emp.\ $p = 0$ \\
-			A4 & FLRW: $\varepsilon = \eta$
-			& $\kappa = 1$, kein freier Param. \\
-			A5 & Resonanzfeld-Sim.
-			& Energierichtungsvektor \\
-			A6 & Resonanzfeld-Sim.
-			& Kopplungseffizienz, Energiefluss \\
-			A7 & Monte Carlo
-			& Bandbreiten-unabh.\ (3 KDE) \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\subsubsection{Architektur: Axiom-zu-Mechanismus.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Axiom} & \textbf{Mechanismus}
-			& \textbf{Observable} \\
-			\hline
-			A1 & AC/DC-Zerlegung
-			& $\psi = \mathrm{DC}_{168h}
-			+ \mathrm{AC}$ \\
-			A2 & 3-Moden-Superposition
-			& $e_s$, $e_l$, Score \\
-			A3 & $f_1/f_2 = 1{:}7$
-			& 24h / 168h \\
-			A4 & Balance + Pause-Gate
-			& $\varepsilon \to 0$ \\
-			A5 & $\vec{E}_{\mathrm{dir}}
-			= e_s - e_l$
-			& Richtung \\
-			A6 & Resonanz-Gate
-			& 40\% blockiert \\
-			A7 & Regime-Invarianz
-			& 4/4 positiv \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Die drei Moden bilden eine emergente Struktur, die
-	isomorph zum PID-Regler der Regelungstechnik ist:
-	$e_{\mathrm{long}}$, $e_{\mathrm{short}}$
-	(P-Anteil), Erfahrungsspeicher (I-Anteil),
-	MA-Steigung (D-Anteil, V11.2). Diese Isomorphie
-	wurde nicht gesucht, sondern entstand aus der
-	axiomatischen Entwicklung: Jede neue
-	Verarbeitungsschicht f\"ugte genau den fehlenden
-	PID-Anteil hinzu.
-	
-	\subsubsection{Versionshistorie: Vorhersage, dann
-		Messung.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{llll}
-			\hline
-			\textbf{Version} & \textbf{Axiom}
-			& \textbf{Vorhersage} & \textbf{Effekt} \\
-			\hline
-			V10 & A5
-			& Richtung $>$ Betrag
-			& $+1{,}4$~Pp. \\
-			V11 & A1
-			& Phase verbessert Timing
-			& $+5{,}9$~Pp. \\
-			V11.1 & A4
-			& Kein Trade bei $\varepsilon \to 0$
-			& $+44{,}9\%$ \\
-			V11.2 & A5+
-			& D-Anteil erkennt Wenden
-			& Live l\"auft \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Zu keinem Zeitpunkt wurde ein Axiom nachtr\"aglich an
-	die Daten angepasst.
-	
-	\subsubsection{Backtest: 24~Monate, 4~Marktregime.}
-	
-	\begin{table}[ht]
-		\centering
-		\caption{ResoTrade V11.1 Performance \"uber
-			24~Monate. Seit 25.02.2026 live \"uber Kraken.}
-		\label{tab:resotrade}
-		\begin{tabular}{llrl}
-			\hline
-			Regime & Zeitraum
-			& Trades & vs.\ HODL \\
-			\hline
-			Sideways + ETF & M\"ar--Sep 2024
-			& 437 & $+33{,}3\%$ \\
-			Bullrun & Sep 2024--M\"ar 2025
-			& 429 & $+22{,}9\%$ \\
-			Top + Korrektur & M\"ar--Sep 2025
-			& 247 & $+4{,}0\%$ \\
-			Crash & Sep 2025--Feb 2026
-			& 279 & $+44{,}9\%$ \\
-			\hline
-			\textbf{Alle Regime}
-			& \textbf{24~Monate}
-			& \textbf{1392}
-			& $\mathbf{+26{,}3\%}$ \\
-			\hline
-		\end{tabular}
-	\end{table}
-	
-	Performance positiv in \textit{jedem} einzelnen
-	Marktregime. Gleiche Axiome, gleiche Parameter,
-	gleicher Algorithmus. Konvergenz:
-	$+25{,}8\%$ nach 1~Zyklus Training,
-	$+26{,}3\%$ nach 3~Zyklen ($\Delta < 1\%$) --
-	ged\"ampftes Einschwingverhalten, konsistent
-	mit dem Stabilit\"atssatz der RFT.
-	
-	\subsubsection{Live-Validierung.}
-	
-	\begin{table}[ht]
-		\centering
-		\caption{Live-Ergebnisse (Dry-Run,
-			5~Tage ab 25.02.2026).}
-		\label{tab:live}
-		\begin{tabular}{lr}
-			\hline
-			\textbf{Metrik} & \textbf{Wert} \\
-			\hline
-			Performance vs.\ HODL
-			& $+4{,}13\%$ \\
-			Markt im Zeitraum & $-1{,}92\%$ \\
-			Trades & 36 (18 BUY, 18 SELL) \\
-			\O~Kaufpreis & 63\,828~USD \\
-			\O~Verkaufspreis & 68\,105~USD \\
-			Spread & $+6{,}70\%$ \\
-			Regel-Policy-Divergenz & $0{,}0\%$ \\
-			\hline
-		\end{tabular}
-	\end{table}
-	
-	Das System funktioniert in einem Marktregime
-	(Crash $\to$ Erholung), das im Training nicht
-	explizit enthalten war. Die Divergenz von $0{,}0\%$
-	zwischen Regel-Policy und finaler Entscheidung
-	zeigt konvergiertes Lernen.
-	
-	\subsubsection{Falsifikationstest: Altcoin-Analyse.}
-	
-	\"Uber $200\,000$~Episoden mit 10~Altcoins:
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lrrl}
-			\hline
-			\textbf{Konfiguration}
-			& \textbf{Draw}
-			& \textbf{$>$HODL}
-			& \textbf{Interpretation} \\
-			\hline
-			BTC + 13 Aktien
-			& $84\%$ & $100\%$
-			& Eigenfrequenz $\checkmark$ \\
-			BTC + 10 Altcoins
-			& $98{,}4\%$ & $86\%$
-			& Kein Signal \\
-			BTC only (V11)
-			& ${\sim}49\%$ & $83{,}4\%$
-			& Resonanz $\checkmark$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Altcoins besitzen keine eigenst\"andige
-	Eigenfrequenz -- ihre AC-Komponente ist ein
-	skaliertes Echo von BTC:
-	$\mathrm{AC}_{\mathrm{Alt}} \approx \alpha \cdot
-	\mathrm{AC}_{\mathrm{BTC}} + \eta$.
-	Ohne Resonanzbedingung (A3) kein
-	Informationsaustausch. Negativer Lernfortschritt
-	bei Altcoins ($-0{,}002$/Zyklus). Aktien dagegen
-	(eigenst\"andige Eigenfrequenzen) erreichen
-	$100\%$ \"uber HODL.
-	
-	Wenn A3 falsch w\"are, m\"ussten Altcoins profitabel
-	handelbar sein. Sie sind es nicht. Dies ist ein
-	echter Falsifikationstest.
-	
-	\subsubsection{Vergleich mit klassischen Indikatoren.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lrl}
-			\hline
-			\textbf{Indikator}
-			& \textbf{Korrelation}
-			& \textbf{Pr\"adiktive Kraft} \\
-			\hline
-			RSI & $< 0{,}05$ & Keine \\
-			Momentum & $< 0{,}05$ & Keine \\
-			MA-Crossover & $< 0{,}05$ & Keine \\
-			Posterior-WS & Konstant & Keine \\
-			$\vec{E}_{\mathrm{dir}}$ (RFT)
-			& System. & Kapitalfluss \\
-			AC-Phase (RFT) & System.
-			& Zyklusposition \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Kein einziger klassischer Indikator erreicht auf dem
-	24-Monats-Datensatz eine Korrelation \"uber~$0{,}05$
-	mit zuk\"unftigen Preisbewegungen.
-	
-	\subsubsection{Reproduzierbarkeit und Effizienz.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Ressource}
-			& \textbf{ResoTrade}
-			& \textbf{ML} \\
-			\hline
-			Training & 15~Min (CPU) & Std.\ (GPU) \\
-			Speicher & 2~MB CSV & TB \\
-			Hardware & 5~W (Raspi) & kW \\
-			Daten & $5$--$10$k Ep. & $100$k+ \\
-			Erkl\"arbarkeit & Vollst. & Keine \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Jede Entscheidung ist nachvollziehbar. Der
-	Erfahrungsspeicher ist eine lesbare CSV mit
-	${\sim}6\,000$~Eintr\"agen und
-	${\sim}1{,}6$~Mio.\ Z\"ahlern.
-	Deterministisches Training, dokumentierte Parameter,
-	\"offentliche Datenquellen (yfinance, Binance API).
-	
-	\textbf{Axiom-Zuordnung:}
-	Alle sieben Axiome (A1--A7) best\"atigt.
-	
-	
 	%% ============================================================
 	\section{Vergleich mit etablierten Theorien}
 	%% ============================================================
@@ -1388,29 +1111,6 @@
 			CMB-Fit & $\chi^2/\mathrm{dof}
 			\approx 1$
 			& $\Delta\chi^2 = +16$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\medskip
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Aspekt}
-			& \textbf{Klass.\ Trading}
-			& \textbf{ResoTrade} \\
-			\hline
-			Signal & Skalar (RSI etc.)
-			& Vektoriell ($\vec{E}_{\mathrm{dir}}$) \\
-			Phase & Nicht ber\"ucks.
-			& Zentral (AC-Phase) \\
-			Falsifikation & Kein Negativtest
-			& $200\,000$~Altcoin-Ep. \\
-			Korrelation & $< 0{,}05$
-			& Systematisch \\
-			Erkl\"arbarkeit & Keine (ML)
-			& Vollst\"andig \\
 			\hline
 		\end{tabular}
 	\end{center}

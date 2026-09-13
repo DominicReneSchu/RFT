@@ -13,7 +13,7 @@
 - [x] **LaTeX class:** `\documentclass[12pt]{iopart}` — present in `rft_manuscript_en_iop.tex` line 1
 - [ ] **Abstract word count ≤ 200 words (IOP requirement):** ⚠️ **ACTION REQUIRED**
   - Current word count (LaTeX-stripped estimate): **~244 words** — exceeds the 200-word IOP limit
-  - Action: Reduce abstract by approximately 44 words. Suggested cuts: shorten the FLRW result sentence; condense the ResoTrade caveat; reduce the Am-241 SNR detail to a single number. The abstract must retain: main formula, four validation domains, two experimental proposals, falsification criteria, and open-data statement.
+  - Action: Reduce abstract by approximately 44 words. Suggested cuts: shorten the FLRW result sentence; reduce the Am-241 SNR detail to a single number. The abstract must retain: main formula, four validation domains, two experimental proposals, falsification criteria, and open-data statement.
 - [x] **Title:** Present — "Resonance Field Theory: Axiomatics, Fundamental Formula, and Empirical Validation"
 - [x] **Author name and address block:** Present — `\author{Dominic-René Schu}`, `\address{Independent Researcher, ...}`
 - [x] **ORCID:** Present in address block (0009-0004-9769-9061)
@@ -87,17 +87,13 @@
 - [x] **Falsification criteria — explicit and numerical (§6):** Present — Am-241 SNR ≥ 3σ at 100 h (realistic scenario); ⁸⁷Rb |Δ⟨x⟩| ≈ 2.0·λ μm at Δφ = π
 - [x] **Axiom Status Table (August 2026 version):** Present in §2.8 — all seven axioms with derivation status
 - [x] **κ convention (κ_RFT = 1):** Explicitly declared as normalization convention in §3.4 — not claimed as derivation
-- [x] **A7 domain transfer (ResoTrade) declared as analogy:** Present — ResoTrade classified as "application concept" with caveat "primary axiom evidence comes from RFT-internal simulations" (abstract and §4.4)
+- [x] **A7 domain transfer declared:** A7 (invariance under G_sync) algebraically proved for physical resonance fields; domain transfer (CMB, nuclear physics) remains a motivated postulate (RT-02).
 
 ### Limitation Disclosures
 
 - [ ] **RT-08 Limitation — χ²_red = 2.42 on synthetic data, not real experimental data:** ⚠️ **ACTION REQUIRED**
   - Current status: The manuscript mentions the double pendulum simulation confirms ε(Δφ) = cos²(Δφ/2) but does not explicitly state that the χ²_red = 2.42 result is a comparison against the Lagrange null hypothesis (A=0, N=1500) using synthetic data — not against real physical measurements.
   - Action: Add one sentence to §4.3 (Double Pendulum) or §4.4: "Note: the reduced chi-squared χ²_red = 2.42 (RT-08) is computed against the Lagrange zero-coupling null hypothesis on synthetic data; comparison against real experimental measurements (e.g., from RT-38 protocol) remains outstanding."
-
-- [ ] **RT-10 Limitation — Walk-Forward Backtest: 3/5 folds positive, not all folds:** ⚠️ **ACTION REQUIRED**
-  - Current status: The manuscript references the ResoTrade backtest results but does not explicitly state that only 3 out of 5 walk-forward folds met the falsification criterion (vs_hodl > 0) on synthetic data.
-  - Action: Add one sentence to §4.5 (ResoTrade): "The walk-forward backtest (RT-10) on synthetic price data (seed=42) yields 3/5 folds positive (falsification criterion vs_hodl > 0, Ø Sharpe = 0.89, Ø Max-DD = 4.4%); live-API verification with real Binance data is recommended for conclusive validation."
 
 - [x] **RT-09 Limitation — Conservative Am-241 scenario:** Present in manuscript abstract — "corrected RT-09: SNR ≈ 10σ at 100 h" with implicit reference to the conservative scenario requiring longer exposure. Can be strengthened. See §6.1.
 

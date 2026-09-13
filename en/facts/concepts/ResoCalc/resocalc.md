@@ -183,7 +183,6 @@ ResoCalc is not an isolated application — it is the **engineering instance** o
 ```
 Resonance Field Theory   E = π · ε(Δφ) · ℏ · f, κ = 1
   │
-  ├→ ResoTrade           ε controls trade size (financial market)
   ├→ ResoMusic           ε controls accompaniment volume (music)
   ├→ ResoOS              ε controls intervention strength (operating system)
   └→ ResoCalc            ε controls resonance amplification (engineering)

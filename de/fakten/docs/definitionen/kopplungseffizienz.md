@@ -528,8 +528,6 @@ willkürlich, sondern die einzige Messgröße, die direkt ε = η reproduziert.
   CMB-Vergleich mit Planck-2018-Daten
 - **Nukleartechnologie:** Resonanzreaktor — resonante
   Transmutation von Aktiniden (GDR-basiert, κ = 1)
-- **Finanzmärkte:** ResoTrade — resonanzbasiertes BTC-Trading
-  (Anwendungskonzept)
 - **Klassische Mechanik:** Synchronisation gekoppelter
   Oszillatoren, [Doppelpendel](../mathematik/doppelpendel.md)
 - **Biophysik:** Neuronale Synchronisation, Proteinfaltung
@@ -547,11 +545,6 @@ sondern betont die universelle Kopplungsstruktur aller Felder.
 Gegenüber der Informationstheorie (Shannon) werden
 Informationspakete nicht als isolierte Bits, sondern als
 kohärente Feldstrukturen betrachtet (Axiom 6).
-
-Gegenüber konventionellem algorithmischem Trading (ML, RSI,
-MACD) basiert das Anwendungskonzept ResoTrade nicht auf
-Preisprognose, sondern auf Phasenerkennung im Schwingungsfeld
-(siehe [ResoTrade — Anwendungskonzept](../../konzepte/ResoTrade/resotrade_trading_ki.md)).
 
 ---
 

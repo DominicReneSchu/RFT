@@ -51,9 +51,6 @@
 		(all~4 scenarios), perturbation theory confirmed
 		$1-F \sim \lambda^2$, and delivers a falsifiable
 		prediction for ${}^{87}$Rb.
-		The application concept ResoTrade demonstrates the
-		applicability of RFT axioms in a real market environment;
-		primary axiom evidence comes from RFT-internal simulations.
 		Two falsifiable experimental proposals are presented:
 		(I)~phase-dependent photo-excitation of Am-241 at ELI-NP
 		(nuclear physics, 0~free parameters, $>50{,}000\,\sigma$ legacy, corrected RT-09: SNR~$\approx 10\,\sigma$ at 100~h) and
@@ -98,7 +95,7 @@
 	unification of the fundamental forces, but rather at a
 	conceptual framework that describes resonance phenomena
 	uniformly across scales and domains -- from particle physics
-	through cosmology and nuclear technology to financial markets.
+	through cosmology and nuclear technology.
 	
 	The manuscript is structured as follows: Section~2
 	formulates the seven axioms. Section~3 develops the
@@ -285,8 +282,8 @@
 	
 	\textit{Axiom status:} Algebraically proved (stationary)
 	for the frequency-ratio part and the phase-difference
-	structure; domain transfer (CMB, nuclear physics,
-	financial markets) remains a motivated postulate
+	structure; domain transfer (CMB, nuclear physics)
+	remains a motivated postulate
 	(RT-02; see Section~\ref{sec:gsync}).
 	
 	Resonance structures are preserved under variation of
@@ -596,11 +593,10 @@
 	\label{sec:empirics}
 	%% ============================================================
 	
-	RFT is tested across four independent domains:
+	RFT is tested across three independent domains:
 	particle physics (Section~\ref{sec:monte_carlo}),
 	cosmology (Section~\ref{sec:flrw}),
-	nuclear technology (Section~\ref{sec:resonanzreaktor}),
-	and financial markets (Section~\ref{sec:resotrade}).
+	and nuclear technology (Section~\ref{sec:resonanzreaktor}).
 	
 	\subsection{Monte Carlo Simulation on CMS Dielectron Data}
 	\label{sec:monte_carlo}
@@ -1016,278 +1012,6 @@
 	
 	Confirms Axiom~1, 3, 4.
 	
-	\subsection{ResoTrade: Application Concept
-		on the BTC Market}
-	\label{sec:resotrade}
-	
-	ResoTrade~\cite{rftrepo} is an algorithmic BTC trading
-	system built exclusively on the axioms of RFT and
-	demonstrates their applicability in a real market
-	environment. Since ResoTrade is a private
-	implementation, it does not serve as primary axiom
-	evidence; primary evidence comes from the RFT-internal
-	simulations (FLRW, Monte Carlo, double pendulum,
-	resonance reactor).
-	
-	\subsubsection{RFT-internal Axiom Validation.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Axiom} & \textbf{Simulation}
-			& \textbf{Result} \\
-			\hline
-			A1 & FLRW (1\,530 runs)
-			& $\eta \approx \cos^2$, $\Delta d_\eta > 6\sigma$ \\
-			A2 & Coupled oscillators
-			& Multi-frequency superposition \\
-			A3 & Monte Carlo (1\,500\,000 sim.)
-			& 5 resonances, emp.\ $p = 0$ \\
-			A4 & FLRW: $\varepsilon = \eta$
-			& $\kappa = 1$, no free param. \\
-			A5 & Resonance field sim.
-			& Energy direction vector \\
-			A6 & Resonance field sim.
-			& Coupling efficiency, energy flow \\
-			A7 & Monte Carlo
-			& Bandwidth-independent (3 KDE) \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\subsubsection{Architecture: Axiom-to-Mechanism.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Axiom} & \textbf{Mechanism}
-			& \textbf{Observable} \\
-			\hline
-			A1 & AC/DC decomposition
-			& $\psi = \mathrm{DC}_{168h}
-			+ \mathrm{AC}$ \\
-			A2 & 3-mode superposition
-			& $e_s$, $e_l$, score \\
-			A3 & $f_1/f_2 = 1{:}7$
-			& 24h / 168h \\
-			A4 & Balance + pause gate
-			& $\varepsilon \to 0$ \\
-			A5 & $\vec{E}_{\mathrm{dir}}
-			= e_s - e_l$
-			& Direction \\
-			A6 & Resonance gate
-			& 40\% blocked \\
-			A7 & Regime invariance
-			& 4/4 positive \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	The three modes form an emergent structure that is
-	isomorphic to the PID controller of control theory:
-	$e_{\mathrm{long}}$, $e_{\mathrm{short}}$
-	(P-component), experience memory (I-component),
-	MA slope (D-component, V11.2). This isomorphism was
-	not sought, but arose from the axiomatic development:
-	each new processing layer added exactly the missing
-	PID component.
-	
-	\subsubsection{Version History: Prediction, then
-		Measurement.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{llll}
-			\hline
-			\textbf{Version} & \textbf{Axiom}
-			& \textbf{Prediction} & \textbf{Effect} \\
-			\hline
-			V10 & A5
-			& Direction $>$ magnitude
-			& $+1.4$~pp \\
-			V11 & A1
-			& Phase improves timing
-			& $+5.9$~pp \\
-			V11.1 & A4
-			& No trade at $\varepsilon \to 0$
-			& $+44.9\%$ \\
-			V11.2 & A5+
-			& D-component detects turns
-			& Live running \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	At no point was an axiom adapted retroactively to the data.
-	
-	\subsubsection{Application Concept: Backtest and Live Results.}
-
-	\emph{Note: The 24-month backtest and 5-day live validation
-	results below are not available in the repository (private
-	implementation). This section describes ResoTrade as an
-	application concept of RFT applied to financial markets,
-	not as peer-review-ready empirical evidence. Full
-	reproducibility (code, raw data, trade logs) is an open task.}
-	
-	\begin{table}[ht]
-		\centering
-		\caption{ResoTrade V11.1 performance over
-			24~months. Live via Kraken since 25.02.2026.}
-		\label{tab:resotrade}
-		\begin{tabular}{llrl}
-			\hline
-			Regime & Period
-			& Trades & vs.\ HODL \\
-			\hline
-			Sideways + ETF & Mar--Sep 2024
-			& 437 & $+33.3\%$ \\
-			Bull run & Sep 2024--Mar 2025
-			& 429 & $+22.9\%$ \\
-			Top + Correction & Mar--Sep 2025
-			& 247 & $+4.0\%$ \\
-			Crash & Sep 2025--Feb 2026
-			& 279 & $+44.9\%$ \\
-			\hline
-			\textbf{All regimes}
-			& \textbf{24~months}
-			& \textbf{1392}
-			& $\mathbf{+26.3\%}$ \\
-			\hline
-		\end{tabular}
-	\end{table}
-	
-	Performance positive in \textit{every} individual market
-	regime. Same axioms, same parameters, same algorithm.
-	Convergence: $+25.8\%$ after 1~training cycle,
-	$+26.3\%$ after 3~cycles ($\Delta < 1\%$) --
-	damped transient behavior, consistent with the
-	stability theorem of RFT.
-	
-	\subsubsection{Live Validation.}
-	
-	\begin{table}[ht]
-		\centering
-		\caption{Live results (dry-run,
-			5~days from 25.02.2026).}
-		\label{tab:live}
-		\begin{tabular}{lr}
-			\hline
-			\textbf{Metric} & \textbf{Value} \\
-			\hline
-			Performance vs.\ HODL
-			& $+4.13\%$ \\
-			Market in period & $-1.92\%$ \\
-			Trades & 36 (18 BUY, 18 SELL) \\
-			Avg.\ buy price & 63{,}828~USD \\
-			Avg.\ sell price & 68{,}105~USD \\
-			Spread & $+6.70\%$ \\
-			Rule-policy divergence & $0.0\%$ \\
-			\hline
-		\end{tabular}
-	\end{table}
-	
-	The system functions in a market regime (crash $\to$
-	recovery) that was not explicitly included in training.
-	The $0.0\%$ divergence between rule-policy and final
-	decision indicates converged learning.
-	
-	\subsubsection{Falsification Test: Altcoin Analysis.}
-	
-	Over $200{,}000$~episodes with 10~altcoins:
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lrrl}
-			\hline
-			\textbf{Configuration}
-			& \textbf{Draw}
-			& \textbf{$>$HODL}
-			& \textbf{Interpretation} \\
-			\hline
-			BTC + 13 stocks
-			& $84\%$ & $100\%$
-			& Natural frequency $\checkmark$ \\
-			BTC + 10 altcoins
-			& $98.4\%$ & $86\%$
-			& No signal \\
-			BTC only (V11)
-			& ${\sim}49\%$ & $83.4\%$
-			& Resonance $\checkmark$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Altcoins possess no independent natural frequency --
-	their AC component is a scaled echo of BTC:
-	$\mathrm{AC}_{\mathrm{alt}} \approx \alpha \cdot
-	\mathrm{AC}_{\mathrm{BTC}} + \eta$.
-	Without the resonance condition (A3) no information
-	exchange occurs. Negative learning progress for
-	altcoins ($-0.002$/cycle). Stocks, by contrast
-	(independent natural frequencies), achieve
-	$100\%$ above HODL.
-	
-	If A3 were wrong, altcoins should be profitably
-	tradeable. They are not. This is a genuine
-	falsification test.
-	
-	\subsubsection{Comparison with Classical Indicators.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lrl}
-			\hline
-			\textbf{Indicator}
-			& \textbf{Correlation}
-			& \textbf{Predictive power} \\
-			\hline
-			RSI & $< 0.05$ & None \\
-			Momentum & $< 0.05$ & None \\
-			MA-crossover & $< 0.05$ & None \\
-			Posterior prob. & Constant & None \\
-			$\vec{E}_{\mathrm{dir}}$ (RFT)
-			& Systematic & Capital flow \\
-			AC phase (RFT) & Systematic
-			& Cycle position \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Not a single classical indicator achieves a correlation
-	above~$0.05$ with future price movements on the
-	24-month dataset.
-	
-	\subsubsection{Reproducibility and Efficiency.}
-	
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Resource}
-			& \textbf{ResoTrade}
-			& \textbf{ML} \\
-			\hline
-			Training & 15~min (CPU) & Hours (GPU) \\
-			Memory & 2~MB CSV & TB \\
-			Hardware & 5~W (Raspi) & kW \\
-			Data & $5$--$10$k ep. & $100$k+ \\
-			Explainability & Full & None \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Every decision is traceable. The experience memory
-	is a readable CSV with ${\sim}6{,}000$~entries and
-	${\sim}1.6$~million counters.
-	Deterministic training, documented parameters,
-	public data sources (yfinance, Binance API).
-	
-	\textbf{Axiom assignment:}
-	All seven axioms (A1--A7) confirmed.
-	
-	
 	%% ============================================================
 	\section{Comparison with Established Theories}
 	%% ============================================================
@@ -1337,29 +1061,6 @@
 			CMB fit & $\chi^2/\mathrm{dof}
 			\approx 1$
 			& $\Delta\chi^2 = +16$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	\medskip
-	\begin{center}
-		\small
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Aspect}
-			& \textbf{Classical trading}
-			& \textbf{ResoTrade} \\
-			\hline
-			Signal & Scalar (RSI etc.)
-			& Vectorial ($\vec{E}_{\mathrm{dir}}$) \\
-			Phase & Not considered
-			& Central (AC phase) \\
-			Falsification & No negative test
-			& $200{,}000$~altcoin ep. \\
-			Correlation & $< 0.05$
-			& Systematic \\
-			Explainability & None (ML)
-			& Full \\
 			\hline
 		\end{tabular}
 	\end{center}

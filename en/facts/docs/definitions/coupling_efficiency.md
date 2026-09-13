@@ -523,8 +523,6 @@ arbitrary but the unique measure that directly reproduces ε = η.
   CMB comparison with Planck-2018 data
 - **Nuclear technology:** Resonance reactor — resonant
   transmutation of actinides (GDR-based, κ = 1)
-- **Financial markets:** ResoTrade — resonance-based BTC trading
-  (application concept)
 - **Classical mechanics:** Synchronization of coupled
   oscillators, [double pendulum](../mathematics/double_pendulum.md)
 - **Biophysics:** Neural synchronization, protein folding
@@ -542,11 +540,6 @@ but emphasizes the universal coupling structure of all fields.
 Compared to information theory (Shannon), information
 packets are not treated as isolated bits, but as
 coherent field structures (Axiom 6).
-
-Compared to conventional algorithmic trading (ML, RSI,
-MACD), the application concept ResoTrade is not based on
-price prediction, but on phase recognition in the oscillation
-field (see [ResoTrade — application concept](../../concepts/ResoTrade/resotrade_trading_ai.md)).
 
 ---
 

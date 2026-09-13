@@ -230,24 +230,6 @@
 		\item Energiebilanz mit Q-Faktor-Analyse
 	\end{itemize}
 	
-	\subsection{ResoTrade (Anwendungskonzept)}
-	
-	\begin{itemize}
-		\item Resonanzfeldtheoretisches Trading-System
-		f\"ur den BTC-Markt -- demonstriert Anwendbarkeit
-		der RFT-Axiome in einem realen Marktumfeld
-		\item AC/DC-Zerlegung (A1), Superposition
-		dreier Moden (A2), Frequenzverh\"altnis
-		24h:168h~$= 1{:}7$ (A3), Balance-Regler
-		und Downtrend-Pause-Gate (A4),
-		Energierichtungsvektor (A5),
-		Resonanz-Gate (A6)
-		\item Prim\"are Axiom-Belege stammen aus
-		RFT-internen Simulationen (FLRW, Monte Carlo,
-		Doppelpendel, Resonanzreaktor)
-	\end{itemize}
-	
-	%% ============================================================
 	\section{Ergebnisse}
 	%% ============================================================
 	
@@ -328,44 +310,6 @@
 	Falsifizierbare Vorhersage:
 	$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$.
 	Best\"atigt Axiom~1, 3, 4.
-	
-	\subsection{ResoTrade: Anwendungskonzept
-		im BTC-Markt}
-	
-	ResoTrade ist ein resonanzfeldtheoretisches Trading-System,
-	das alle sieben Axiome auf das konkrete Problem des
-	algorithmischen Handels anwendet.
-	Es demonstriert die Anwendbarkeit der RFT-Axiome in
-	einem realen, chaotischen System -- dient jedoch nicht
-	als prim\"arer Axiom-Beweis, da die zugeh\"orige
-	Implementierung nicht \"offentlich nachpr\"ufbar ist.
-	
-	\subsubsection{Dynamische Simulationen.}
-	
-	Die RFT-internen Simulationen best\"atigen die Axiome
-	unabh\"angig und nachpr\"ufbar:
-	
-	\begin{center}
-		\begin{tabular}{lll}
-			\hline
-			\textbf{Axiom} & \textbf{Simulation} & \textbf{Ergebnis} \\
-			\hline
-			A1 & FLRW (1\,530 L\"aufe) & $\eta \approx \cos^2(\Delta\phi/2)$, $\Delta d_\eta > 6\sigma$ \\
-			A2 & Gek.\ Oszillatoren & Mehrfrequenz-Superposition best\"atigt \\
-			A3 & Monte Carlo (1\,500\,000 Sim.) & 5 Resonanzen, emp.\ $p = 0$ \\
-			A4 & Schr\"odinger-Sim.\ (5 Stufen) & Fidelity $= 1{,}0$ (alle 4 Szenarien), $1-F \sim \lambda^2$ \\
-			A4 & Warpantrieb-Sim. & Erste Warpblase mit pos.\ Energiedichte, $w$-Vorzeichen\-wechsel \\
-			A4 & Resonanzreaktor & $\lambda_\text{eff}/\lambda_0 = 7\,872$ (U-235), $\kappa = 1$ \\
-			A4 & FLRW: $\varepsilon = \eta$ Identit\"at & $\kappa = 1$, kein freier Parameter \\
-			A5 & Resonanzfeld-Sim. & Energierichtungsvektor best\"atigt \\
-			A5 & Warpantrieb-Sim. & Vorn-/Hinten-Asymmetrie (Kontraktion vs.\ Expansion) \\
-			A6 & Resonanzfeld-Sim. & Kopplungseffizienz und Energiefluss \\
-			A7 & Monte Carlo & bandbrei\-ten\-un\-ab\-h\"angig (3 KDE) \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	Best\"atigt Axiom~1, 2, 3, 4, 5, 6, 7.
 	
 	\subsection{Dynamische Simulationen}
 	
