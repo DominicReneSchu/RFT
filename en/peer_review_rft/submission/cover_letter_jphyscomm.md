@@ -73,7 +73,7 @@ All derivations, source code, simulation scripts, and raw data underlying this m
 
 **https://github.com/DominicReneSchu/RFT**
 
-This includes all RT-series analyses (RT-01 through RT-38), the double pendulum experiment protocol (RT-38, reproducible with ≈200 EUR and a smartphone), and the full backtest infrastructure for ResoTrade (RT-10). The repository is public and version-controlled. No code or data have been withheld.
+This includes all RT-series analyses (RT-01 through RT-38) and the double pendulum experiment protocol (RT-38, reproducible with ≈200 EUR and a smartphone). The repository is public and version-controlled. No code or data have been withheld.
 
 ---
 

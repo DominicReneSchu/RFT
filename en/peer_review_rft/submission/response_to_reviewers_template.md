@@ -76,15 +76,10 @@ The function ε(Δφ) = cos²(Δφ/2) is not merely theoretically derived but in
 We appreciate this concern. The manuscript explicitly addresses it in two places, and we confirm the status here.
 
 **The A7 domain transfer is declared as a motivated postulate — not a formal derivation.**
-Axiom A7 (invariance under G_sync) establishes the symmetry structure for physical resonance fields. The application of this axiom to financial price dynamics (ResoTrade) is presented as an analogical transfer — a testable hypothesis that the same resonance conditions that hold in physical systems also appear in competitive market dynamics. This is explicitly stated in §4.5: "ResoTrade is classified as an application concept demonstrating the scope of RFT axioms in a non-physical domain; it is not presented as a derivation of market dynamics from first principles."
+Axiom A7 (invariance under G_sync) establishes the symmetry structure for physical resonance fields. The domain transfer to CMB physics and nuclear technology is presented as a motivated postulate (RT-02), not a formal derivation. This is explicitly documented in §2 (Axiom Status Table).
 
-**ResoTrade is not a primary validation domain.**
-The abstract states this explicitly: "primary axiom evidence comes from RFT-internal simulations." The four primary validation domains are particle physics, cosmology, nuclear physics, and quantum mechanics — none of which involve financial data. ResoTrade appears as a fifth, exploratory section precisely because its domain transfer has a different epistemic status.
-
-**The backtest result is falsifiable and limited.**
-The walk-forward backtest (RT-10) uses synthetic price data (Binance Public API with seed=42) and yields 3/5 folds positive against the falsification criterion (vs_hodl > 0). This is a weak positive result, not a proof. The manuscript does not claim financial market validation as evidence for the physical axioms.
-
-**Manuscript change:** If the reviewer judges the ResoTrade section as distracting from the physical content, we are prepared to move it to supplementary material without loss of the primary argument.
+**The primary validation domains are particle physics, cosmology, nuclear physics, and quantum mechanics.**
+These four domains provide the empirical evidence for the RFT axioms — none involve financial or market data.
 
 ---
 

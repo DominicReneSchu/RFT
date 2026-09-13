@@ -18,10 +18,9 @@ LaTeX-stripped word count of the abstract (lines 27–66 of manuscript): **appro
 **Specific overruns identified:**
 - The FLRW results sentence contains two separate sub-results (scaling coefficient and Δχ² improvement) that could be condensed to one
 - The Am-241 description repeats the legacy SNR and the corrected RT-09 SNR in the same sentence — the legacy value (>50,000σ) can be removed as it refers to a pre-correction figure
-- The ResoTrade caveat sentence ("primary axiom evidence comes from RFT-internal simulations") is important but the surrounding context is verbose
 
 **Recommended revision for §abstract:**
-Remove the legacy Am-241 SNR figure (`$>50{,}000\,\sigma$ legacy, corrected RT-09:`), condense the FLRW results to a single sentence, and reduce the ResoTrade caveat to a clause rather than a full sentence. Target: 195–200 words.
+Remove the legacy Am-241 SNR figure (`$>50{,}000\,\sigma$ legacy, corrected RT-09:`), condense the FLRW results to a single sentence. Target: 195–200 words.
 
 **Action required:** **YES — mandatory before submission**
 
@@ -46,30 +45,7 @@ The double pendulum section (§4, around line 1710) notes: "Double pendulum simu
 
 ---
 
-## 3. RT-10 Limitation — Walk-Forward Backtest 3/5 Folds
-
-**IOP / Scientific Standard:** Partial validation results must be clearly disclosed.
-
-**Finding:** ⚠️ **NOT EXPLICITLY STATED**
-
-The manuscript's ResoTrade section (§4.5) contains the following note (lines ~1127–1133):
-> "The 24-month backtest and 5-day live validation results below are not available in the repository (private implementation). This section describes ResoTrade as an application concept..."
-
-This existing note correctly marks the private implementation as not peer-review-ready. However, it does not mention the publicly available RT-10 walk-forward backtest results, specifically:
-- Only **3 out of 5 folds** met the falsification criterion (vs_hodl > 0) on synthetic data (Binance Public API fallback, seed=42)
-- Ø Sharpe = 0.89, Ø Max-DD = 4.4%
-- Live-API verification with real Binance data has not been completed
-
-The public RT-10 backtest is the *reproducible* evidence for ResoTrade's RFT-internal axiom validation. Its mixed result (3/5 folds) should be stated alongside the private 24-month backtest table to give a complete picture.
-
-**Recommended addition (§4.5, after the existing "Application Concept" note):**
-> "The publicly reproducible walk-forward backtest (RT-10) on synthetic Binance price data (seed=42, 5-fold cross-validation) yields 3/5 folds positive against the falsification criterion vs\_hodl > 0 (Ø Sharpe = 0.89, Ø Max-DD = 4.4%). Live-API verification with real market data is recommended for conclusive validation."
-
-**Action required:** **YES — add one to two sentences before submission**
-
----
-
-## 4. RT-38 Experiment Protocol Reference in §6
+## 3. RT-38 Experiment Protocol Reference in §6
 
 **Scientific Standard:** Publicly available experiment protocols that enable independent replication should be explicitly cited.
 

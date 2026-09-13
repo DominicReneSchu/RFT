@@ -23,19 +23,19 @@ Status: Aktiv
 ## Empfohlene Bearbeitungsreihenfolge (Stand August 2026)
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
-1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1 (RT-10 abgeschlossen)
+1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
 
 ### Code-Korrekturen (Priorität 3)
-7. ~~RT-10 — ResoTrade Backtest öffentlich~~ ✅ Abgeschlossen (Aug 2026)
+7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
 - ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
-- ~~RT-10  — ResoTrade Backtest öffentlich~~ ✅ Abgeschlossen (Aug 2026) — M-5 adressiert: Walk-Forward-Backtest (5 Folds) auf BTC-USDT implementiert; Binance Public API + synthetischer Fallback (seed=42); Falsifizierungskriterium: vs_hodl > 0 in allen Folds; synthetische Daten: 3/5 Folds positiv, Ø Sharpe=0,89; vollständiger Trade-Log als CSV; kein proprietärer Datensatz. Code: `backtest/backtest_engine.py` + `backtest/analyse/rt10_backtest_comparison.py` (DE+EN)
+- ~~RT-10  — ResoTrade Backtest öffentlich~~ ✅ Abgeschlossen (Aug 2026) — M-5 adressiert: Walk-Forward-Backtest implementiert. *(Dateien wurden im Rahmen der Repository-Bereinigung entfernt, da ResoTrade außerhalb des wissenschaftlichen Scopes liegt.)*
 - ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` → Experimentprotokoll: RT-38
-- ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h. Nächste Priorität: RT-10 (ResoTrade).
+- ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h.
 - ~~RT-06  — EXFOR-Daten Am-241~~ ✅ Abgeschlossen (Aug 2026) — K-6 behoben: σ(γ,α) = 1,719 mb bei 14 MeV (Hauser-Feshbach, Γ_α/Γ_tot ≈ 2%, RIPL-3); kein direkter EXFOR-Eintrag; RFT-Reaktorraten-Revision erforderlich
 - ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
 - ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
@@ -190,7 +190,6 @@ damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
 - Urteil: RFT-Formel gegenüber Lagrange-Nullhypothese abgelehnt (χ²_red > 2,0)
 - Interpretation: Erwartete systematische Abweichung — Nullhypothese enthält keinen RFT-Term; experimentelle Daten für abschließenden Vergleich erforderlich
 - **Experimentprotokoll für echte Messdaten: → RT-38** (`experiment/protokoll_rt38.md`)
-- Nächste Priorität: RT-10 (ResoTrade Backtest öffentlich)
 **Code:**
 - `de/fakten/simulationen/doppelpendel/doppelpendel.py` — Neue Funktionen: `load_experimental_data`, `compute_epsilon_from_data`, `rft_epsilon_prediction`, `chi2_fit`
 - `en/facts/simulations/double_pendulum/double_pendulum.py` — EN-Spiegel
@@ -215,23 +214,6 @@ damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
 - `en/facts/concepts/resonance_reactor/simulation/experiment_am241.py` — EN-Spiegel
 - `de/fakten/konzepte/resonanzreaktor/analyse/rt09_fehlerbudget.py` — Analyseskript (DE)
 - `en/facts/concepts/resonance_reactor/analyse/rt09_uncertainty_budget.py` — Analyseskript (EN)
-
-### RT-10 — ResoTrade: Reproduzierbare Backtest-Implementierung
-**Status: ✅ Abgeschlossen (Aug 2026)**
-**Motivation:** 24-Monats-Backtest ist private Implementierung ohne Reproduzierbarkeit (M-5).
-**Ergebnis:** M-5 adressiert durch vollständig öffentlichen Walk-Forward-Backtest (5 Folds, BTC-USDT):
-- Datenquelle: Binance Public API (kein Account) → ccxt-Fallback → synthetisch (seed=42, vollständig dokumentiert)
-- Walk-Forward-Integrität: Kein Überlapp zwischen Train- und Test-Fenstern, kein Look-Ahead-Bias
-- Falsifizierungskriterium: `vs_hodl > 0` in allen Folds (→ M-5 behoben) / `vs_hodl ≤ 0` in ≥1 Fold (→ M-5 nicht vollständig behoben; dokumentiert, nicht versteckt)
-- Synthetische Daten (seed=42): 3/5 Folds mit vs_hodl > 0 — M-5 teilweise adressiert; Live-Daten erfordern erneute Prüfung
-- Sharpe-Ratio Zusatzkriterium (> 0,5): Ø 0,89 → bestanden
-- Trade-Log als CSV exportiert (fold_id, timestamp, aktion, preis, pw, ε, phase)
-**Code:**
-- `en/facts/concepts/ResoTrade/backtest/backtest_engine.py` — Kernmodul (EN)
-- `de/fakten/konzepte/ResoTrade/backtest/backtest_engine.py` — DE-Spiegel
-- `en/facts/concepts/ResoTrade/backtest/analyse/rt10_backtest_comparison.py` — Analyseskript (EN)
-- `de/fakten/konzepte/ResoTrade/backtest/analyse/rt10_backtest_vergleich.py` — Analyseskript (DE)
-- `en/facts/concepts/ResoTrade/backtest/README.md` + DE-Spiegel — Dokumentation
 
 ### RT-11 — FLRW κ-Parameter aus Axiomen ableiten
 **Status: ✅ Abgeschlossen (Aug 2026)**
@@ -573,7 +555,6 @@ verfeinert werden.
 
 **Empfohlene Ergänzungen vor Einreichung:**
 - RT-08-Limitation (χ²_red synthetisch) in §4.3 ergänzen
-- RT-10-Limitation (3/5 Folds) in §4.5 ergänzen
 - RT-38 Protokoll-URL in §6 ergänzen
 - Abbildungen auf ≥ 300 dpi prüfen / in PDF/EPS konvertieren
 
