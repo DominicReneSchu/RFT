@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, nächste: AP4)*
+2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, AP4 ✅, nächste: AP5)*
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -128,7 +128,7 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4–AP7 offen
+**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4 ✅ Abgeschlossen (Sep 2026); AP5–AP7 offen
 **Kategorie:** Theoretische Herleitung
 **Priorität:** Hoch (intern abschließbar, Wochen 1–6)
 
@@ -168,13 +168,15 @@ Lorentz-Transformation aus der Kopplungsdynamik herleiten.
 - **Ergebnis:** Erfolgskriterium erfüllt (Lorentz-Gleichungen exakt hergeleitet; strukturelle Lücke präzise dokumentiert). Stationäre Kopplungsbedingung K̇ = 0 mit gleichförmiger Relativbewegung identifiziert. RFT-Kopplungs-Invariante I_RFT = Δφ²/k² = |Δx|² − c²Δt² ≅ Minkowski-Intervall hergeleitet. Lorentz-Transformationsgleichungen t' = γ(t − βx/c), x' = γ(x − βct) exakt bewiesen. Lorentz-Gruppe aus G_sync-Phasenkomposition (AP1) abgeleitet. Brückenannahme B₁ (Kopplungswelle mit Phasengeschwindigkeit c) explizit formuliert — in A1–A7 nicht vollständig enthalten; AP4 soll c als strukturelle Grenze fundieren. Minimale Axiomenerweiterung A8 (Kopplungswellengeschwindigkeit) als Option formuliert.
 - **Kerndokumente:** `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` · `en/facts/theory/rt40_ap3_lorentz_transformation.md`
 
-**AP4 — Konstanz von c aus RFT-Grenzen** *(konzeptuell stärkstes Paket)*
+**AP4 — Konstanz von c aus RFT-Grenzen** ✅ **Abgeschlossen (Sep 2026)**
 c als strukturelle Konstante der RFT herleiten, nicht als Postulat einführen.
 - ε(Δφ) für Δφ → π untersuchen: ε → 0 entspricht Entkopplung
 - Grenzgeschwindigkeit c als diejenige Geschwindigkeit interpretieren, bei der Kopplungseffizienz verschwindet
 - Bezugssystemunabhängigkeit zeigen: Grenze ist Eigenschaft der Kopplungsstruktur, nicht der Bewegung
 - Massebehaftete Resonatoren erreichen c nie, weil ε > 0 für m > 0 Voraussetzung ist
 - Erfolgskriterium: c erscheint als strukturelle Invariante von A4 — kein zirkuläres Postulat
+- **Ergebnis:** Erfolgskriterium erfüllt. ε(Δφ) → 0 für Δφ → π (quadratisch regulär). Strukturelle Grenzgeschwindigkeit c_struct = lim_{ε→0} v(ε) = c_phys abgeleitet. Bezugssystemunabhängigkeit über Lorentz-Invarianz von ε bewiesen (ε ist Skalar im Phasenraum, AP1 + A5). Massebehaftete Resonatoren: E_kin → ∞ für v → c; c in endlicher Zeit nie erreichbar (direkte Konsequenz A4). Brückenannahme B₁ aus AP3 retroaktiv fundiert: c ist die einzige strukturell ausgezeichnete Grenzgeschwindigkeit der RFT. Numerischer Wert c = 2,998 × 10⁸ m/s bleibt empirische Zutat. SRT-Postulate (Relativitätsprinzip + Konstanz von c) beide als Grenzfälle von A1–A7 begründet.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md` · `en/facts/theory/rt40_ap4_speed_of_light_limit.md`
 
 **AP5 — Zeitdilatation und Längenkontraktion als Phasen-/Kopplungseffekte**
 Klassische Formeln als Grenzfall der RFT reformulieren.
