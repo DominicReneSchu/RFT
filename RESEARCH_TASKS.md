@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
+2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, nächste: AP2)*
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -128,7 +128,7 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 📋 Offen**
+**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2–AP7 offen
 **Kategorie:** Theoretische Herleitung
 **Priorität:** Hoch (intern abschließbar, Wochen 1–6)
 
@@ -140,12 +140,14 @@ Diese Beziehung ist bisher nur eine Beobachtung — keine Ableitung. RT-40 soll 
 
 **Arbeitspakete:**
 
-**AP1 — Formale Identifikation: Phase ↔ Rapidität**
+**AP1 — Formale Identifikation: Phase ↔ Rapidität** ✅ **Abgeschlossen (Sep 2026)**
 Prüfen, ob Δφ und die relativistische Rapidität φ dieselbe mathematische Struktur besitzen.
 - Aus A1–A4 ableiten, welche Werte Δφ annehmen kann
 - Untersuchen, ob die Kopplungsdynamik eine hyperbolische Metrik auf dem Phasenraum induziert
 - Prüfen, ob Phasenaddition mit relativistischer Geschwindigkeitsaddition konsistent ist oder durch nichtlineare Verknüpfung ersetzt werden muss
 - Erfolgskriterium: Bijektive Abbildung f: [0,π] → [0,∞) mit f(Δφ₁ ⊕ Δφ₂) = f(Δφ₁) + f(Δφ₂)
+- **Ergebnis:** Erfolgskriterium vollständig bewiesen. f(Δφ) = arcsech(cos(Δφ/2)) = artanh(sin(Δφ/2)) ist die gesuchte Abbildung. Hyperbolische Metrik ds²_RFT = dΔφ²/(4ε(Δφ)) nachgewiesen. Phasenkomposition ⊕ ist strukturell identisch mit relativistischer Geschwindigkeitsaddition (v/c = sin(Δφ/2)).
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap1_phase_rapiditaet.md` · `en/facts/theory/rt40_ap1_phase_rapidity.md`
 
 **AP2 — Kopplungseffizienz als Lorentz-Faktor**
 Zeigen, dass ε(Δφ) = 1/γ² aus A4 folgt — nicht nur formale Ähnlichkeit ist.
