@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, AP4 ✅, nächste: AP5)*
+2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, AP4 ✅, AP5 ✅, nächste: AP6)*
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -128,7 +128,7 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4 ✅ Abgeschlossen (Sep 2026); AP5–AP7 offen
+**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4 ✅ Abgeschlossen (Sep 2026); AP5 ✅ Abgeschlossen (Sep 2026); AP6–AP7 offen
 **Kategorie:** Theoretische Herleitung
 **Priorität:** Hoch (intern abschließbar, Wochen 1–6)
 
@@ -178,13 +178,15 @@ c als strukturelle Konstante der RFT herleiten, nicht als Postulat einführen.
 - **Ergebnis:** Erfolgskriterium erfüllt. ε(Δφ) → 0 für Δφ → π (quadratisch regulär). Strukturelle Grenzgeschwindigkeit c_struct = lim_{ε→0} v(ε) = c_phys abgeleitet. Bezugssystemunabhängigkeit über Lorentz-Invarianz von ε bewiesen (ε ist Skalar im Phasenraum, AP1 + A5). Massebehaftete Resonatoren: E_kin → ∞ für v → c; c in endlicher Zeit nie erreichbar (direkte Konsequenz A4). Brückenannahme B₁ aus AP3 retroaktiv fundiert: c ist die einzige strukturell ausgezeichnete Grenzgeschwindigkeit der RFT. Numerischer Wert c = 2,998 × 10⁸ m/s bleibt empirische Zutat. SRT-Postulate (Relativitätsprinzip + Konstanz von c) beide als Grenzfälle von A1–A7 begründet.
 - **Kerndokumente:** `de/fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md` · `en/facts/theory/rt40_ap4_speed_of_light_limit.md`
 
-**AP5 — Zeitdilatation und Längenkontraktion als Phasen-/Kopplungseffekte**
+**AP5 — Zeitdilatation und Längenkontraktion als Phasen-/Kopplungseffekte** ✅ **Abgeschlossen (Sep 2026)**
 Klassische Formeln als Grenzfall der RFT reformulieren.
 - Eigenfrequenz f₀ eines bewegten Resonators erscheint gegenüber Beobachter um 1/γ reduziert → als Phasenverschiebung Δφ zwischen Sender und Empfänger interpretieren
 - Zeitdilatation Δt' = γΔt aus Phasenverschiebung ableiten
 - Längenkontraktion als Kopplungsreduktion: K_ij → K_ij/γ
 - **Neue Vorhersage:** Kohärenzlänge bewegter Resonatoren — empirisch unterscheidbar von SRT
 - Erfolgskriterium: Klassische Formeln als Grenzfall; Korrekturen höherer Ordnung explizit
+- **Ergebnis:** Erfolgskriterium vollständig erfüllt. Zeitdilatation Δt = γΔt₀ exakt aus hyperbolischer Phasenprojektionsgeometrie (AP1) hergeleitet. Längenkontraktion L' = L₀/γ aus effektiver Wellenzahl k_eff = γ·k₀ (AP3) bewiesen. ε = 1/γ² algebraisch geschlossen: cos²(arcsin β) = 1 − β² = 1/γ². Neue RFT-Vorhersage: Kohärenzlänge l_c(v) = λ₀/(2γ²), skaliert mit γ² statt γ — empirisch unterscheidbar von SRT-Längenkontraktion. Drei experimentelle Methoden und präzises Falsifikationskriterium formuliert.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap5_zeitdilatation_laengenkontraktion.md` · `en/facts/theory/rt40_ap5_time_dilation_length_contraction.md`
 
 **AP6 — Falsifizierbarkeit und Abgrenzung zur SRT**
 Empirisch unterscheidbare Vorhersagen benennen.
