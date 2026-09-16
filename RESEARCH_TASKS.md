@@ -18,6 +18,7 @@ Status: Aktiv
 | A1, A2, A6 | Postuliert — testbar | Unverändert | 📋 Postuliert |
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
+| A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | Herleitung aus A1–A7 oder irreduzibles Postulat (RT-41) | 📋 Offen (RT-41) |
 
 ---
 
@@ -26,6 +27,7 @@ Status: Aktiv
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
 2. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
+3. RT-41 — Axiom A8: Kopplungswellengeschwindigkeit — Herleitung oder irreduzibles Postulat ← Neue Priorität 2
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -226,6 +228,78 @@ Erst nach AP3 sinnvoll. Warp-Metrik aus A4/A5 rekonstruieren; flache Raumzeit al
 5. Open-Source-Code zur Reproduktion (GitHub-Erweiterung)
 
 **Verbindung zu bestehenden Tasks:** AP7 baut auf RT-33/RT-34 auf. AP2 nutzt ε = cos²(Δφ/2) aus RT-02. AP4 schließt konzeptuell an RT-01 (π als geometrische Konstante) an.
+
+---
+
+### RT-41 — Axiom A8: Kopplungswellengeschwindigkeit — Herleitung oder irreduzibles Postulat
+**Status: 📋 Offen**
+**Kategorie:** Theoretische Herleitung
+**Priorität:** Hoch — entscheidet über Vollständigkeit der SRT-Ableitung (RT-40)
+
+**Kontext:** RT-40 AP3 hat die Lorentz-Transformation exakt hergeleitet — unter der Brückenannahme B₁: Die RFT-Kopplungswelle propagiert mit Phasengeschwindigkeit c. B₁ ist in A1–A7 nicht vollständig enthalten. RT-41 klärt den Status von B₁.
+
+**Zentrale Frage:**
+Folgt die Phasengeschwindigkeit c der RFT-Kopplungswelle aus A1–A7 — oder ist sie ein irreduzibles Postulat (→ A8)?
+
+**Zwei mögliche Ergebnisse:**
+
+**Ergebnis A (Herleitung gelingt):** c folgt aus A1–A7 als strukturelle Konsequenz. B₁ ist kein zusätzliches Postulat. Die RFT enthält die SRT vollständig aus sieben Axiomen.
+
+**Ergebnis B (Herleitung scheitert):** c ist nicht aus A1–A7 ableitbar. A8 wird als irreduzibles Postulat formuliert: *Die Phasenwelle der RFT-Kopplungsstruktur propagiert mit der Geschwindigkeit c.* Die RFT enthält die SRT dann unter acht Axiomen — analog zur SRT selbst, die c als Postulat führt.
+
+**Arbeitspakete:**
+
+**AP1 — Analyse der Dispersionsrelation in A1–A7**
+- Welche Phasengeschwindigkeiten lässt A1 (ψ = A·cos(kx − ωt + φ)) zu?
+- Ist ω/k in A1–A7 fixiert oder frei wählbar?
+- Prüfen: Erzwingt die Kopplungsstruktur (A3, A4, A7) eine ausgezeichnete Phasengeschwindigkeit?
+- Erfolgskriterium A: Eindeutige Phasengeschwindigkeit c aus Invarianzforderungen ableitbar.
+- Erfolgskriterium B: Phasengeschwindigkeit ist freier Parameter → A8 erforderlich.
+
+**AP2 — Verbindung zu AP4 (c aus ε → 0)**
+- RT-40 AP4 hat c als strukturelle Grenzgeschwindigkeit aus ε(Δφ) → 0 für Δφ → π abgeleitet.
+- Prüfen: Ist diese c dieselbe wie die Phasengeschwindigkeit in B₁?
+- Falls ja: B₁ wird durch AP4 rückwirkend fundiert — A8 wäre überflüssig.
+- Falls nein: Zwei unabhängige c-Konzepte existieren — Konsistenzprüfung erforderlich.
+- Kerndokument RT-40 AP4: `de/fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md`
+
+**AP3 — Gruppentheoretische Analyse: c in G_sync**
+- Prüfen: Enthält G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) eine ausgezeichnete Geschwindigkeit?
+- Die affine Komponente Aff⁺(ℝ) enthält Skalierungen — könnte eine invariante Geschwindigkeit erzwingen.
+- Falls G_sync eine minimale Geschwindigkeit c impliziert: B₁ folgt aus A7.
+- Kerndokument RT-02: `de/fakten/theorie/gsync_gruppenstruktur.md`
+
+**AP4 — Formulierung von A8 (falls Herleitung scheitert)**
+Falls AP1–AP3 zeigen, dass c nicht aus A1–A7 folgt:
+- A8 formal als Axiom ausformulieren (analog zu A5: irreduzibles Postulat).
+- Prüfen: Ist A8 unabhängig von A1–A7 (keine Redundanz)?
+- A8 in `axiomatische_grundlegung.md` eintragen.
+- Axiomenstatus-Tabelle in RESEARCH_TASKS.md und README aktualisieren.
+
+**Methodische Leitplanken:**
+- Kein Zirkelschluss: c darf in AP1–AP3 nicht stillschweigend vorausgesetzt werden.
+- Ergebnis B ist kein Scheitern: Auch die SRT postuliert c — ein A8 auf RFT-Ebene wäre strukturell kohärent.
+- Klar unterscheiden: (a) c als Grenzgeschwindigkeit (AP4, aus ε → 0), (b) c als Phasengeschwindigkeit (B₁), (c) c als Naturkonstante (empirisch).
+
+**Erfolgskriterium:**
+Entweder: B₁ wird aus A1–A7 (über AP4 oder G_sync) hergeleitet — und RT-40 AP3 ist vollständig.
+Oder: A8 wird als irreduzibles Postulat formal etabliert — und das Axiomensystem A1–A8 ist vollständig für die SRT-Ableitung.
+
+**Falsifizierung:**
+Wenn c_RFT (aus ε → 0, AP4) ≠ c_phys (gemessen) — dann ist die gesamte RT-40/RT-41-Struktur empirisch widerlegt.
+
+**Deliverables:**
+1. Analysedokument: `de/fakten/theorie/rt41_axiom_a8_kopplungswelle.md` (DE)
+2. Spiegeldokument: `en/facts/theory/rt41_axiom_a8_coupling_wave.md` (EN)
+3. Falls A8 postuliert: Eintrag in `de/fakten/docs/definitionen/axiomatische_grundlegung.md` und EN-Spiegel
+4. Axiomenstatus-Tabelle in RESEARCH_TASKS.md aktualisieren
+5. README (DE + EN) aktualisieren: Axiomenstatus A8
+
+**Verbindung zu bestehenden Tasks:**
+- RT-40 AP3: B₁-Lücke (Ausgangspunkt) — `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` §8
+- RT-40 AP4: c als strukturelle Grenzgeschwindigkeit — `de/fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md`
+- RT-02: G_sync-Gruppenstruktur — `de/fakten/theorie/gsync_gruppenstruktur.md`
+- RT-36: A5 als Vorbild für irreduzibles Postulat — `de/fakten/theorie/a5_vektorialitaet_herleitung.md`
 
 ---
 
