@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, nächste: AP3)*
+2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, nächste: AP4)*
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -128,7 +128,7 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3–AP7 offen
+**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4–AP7 offen
 **Kategorie:** Theoretische Herleitung
 **Priorität:** Hoch (intern abschließbar, Wochen 1–6)
 
@@ -159,12 +159,14 @@ Zeigen, dass ε(Δφ) = 1/γ² aus A4 folgt — nicht nur formale Ähnlichkeit i
 - **Ergebnis:** Erfolgskriterium erfüllt (falsifizierbare Relation benannt). Naiver Ansatz (f = f₀/γ, E = γmc²) ergibt ε = γ² — Widerspruch zu AP1 (ε = 1/γ²). Zirkelschluss-Risiko bestätigt. Selbstkonsistenz-Bedingung: f_RFT = γ³·f₀. Physikalischer Gehalt von A4: Kopplungsenergie E_c = mc²/γ² (nicht Gesamtenergie). Verbindung zur Zitterbewegungsfrequenz: f₀_RFT = f_zbw = mc²/(π·ℏ). Vollständige Herleitung ε = 1/γ² aus A4 benötigt AP5.
 - **Kerndokumente:** `de/fakten/theorie/rt40_ap2_kopplungseffizienz_lorentz.md` · `en/facts/theory/rt40_ap2_coupling_efficiency_lorentz.md`
 
-**AP3 — Herleitung der Lorentz-Transformation**
+**AP3 — Herleitung der Lorentz-Transformation** ✅ **Abgeschlossen (Sep 2026)**
 Lorentz-Transformation aus der Kopplungsdynamik herleiten.
 - Stationäre Lösung (K̇ = 0) auf invariante Größe untersuchen
 - Invariante mit Minkowski-Intervall s² = c²t² − x² identifizieren
 - ⚠️ Kritischer Engpass: Brücke Phasenraum → Koordinatenraum erfordert eine zusätzliche Zutat, die in A1–A7 nicht sichtbar ist — diese Lücke explizit dokumentieren oder schließen
 - Erfolgskriterium: Transformationsgleichungen identisch mit Lorentz — oder kontrollierte Abweichung benannt
+- **Ergebnis:** Erfolgskriterium erfüllt (Lorentz-Gleichungen exakt hergeleitet; strukturelle Lücke präzise dokumentiert). Stationäre Kopplungsbedingung K̇ = 0 mit gleichförmiger Relativbewegung identifiziert. RFT-Kopplungs-Invariante I_RFT = Δφ²/k² = |Δx|² − c²Δt² ≅ Minkowski-Intervall hergeleitet. Lorentz-Transformationsgleichungen t' = γ(t − βx/c), x' = γ(x − βct) exakt bewiesen. Lorentz-Gruppe aus G_sync-Phasenkomposition (AP1) abgeleitet. Brückenannahme B₁ (Kopplungswelle mit Phasengeschwindigkeit c) explizit formuliert — in A1–A7 nicht vollständig enthalten; AP4 soll c als strukturelle Grenze fundieren. Minimale Axiomenerweiterung A8 (Kopplungswellengeschwindigkeit) als Option formuliert.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` · `en/facts/theory/rt40_ap3_lorentz_transformation.md`
 
 **AP4 — Konstanz von c aus RFT-Grenzen** *(konzeptuell stärkstes Paket)*
 c als strukturelle Konstante der RFT herleiten, nicht als Postulat einführen.
