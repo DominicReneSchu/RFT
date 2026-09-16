@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, AP4 ✅, AP5 ✅, AP6 ✅, nächste: AP7)*
+2. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -34,6 +34,7 @@ Status: Aktiv
 7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-40  — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall der RFT bewiesen (AP1–AP5); vier empirische Überschuss-Vorhersagen (AP6); Warpkonsistenz und flache Raumzeit als RFT-Grundzustand (AP7). Offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8). Kerndokumente: `de/fakten/theorie/rt40_ap*` · `en/facts/theory/rt40_ap*`
 - ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
 - ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` → Experimentprotokoll: RT-38
 - ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h.
@@ -128,9 +129,9 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4 ✅ Abgeschlossen (Sep 2026); AP5 ✅ Abgeschlossen (Sep 2026); AP6 ✅ Abgeschlossen (Sep 2026); AP7 offen
+**Status: ✅ Abgeschlossen (Sep 2026)** — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅ (alle Arbeitspakete abgeschlossen)
 **Kategorie:** Theoretische Herleitung
-**Priorität:** Hoch (intern abschließbar, Wochen 1–6)
+**Priorität:** Abgeschlossen
 
 **Ziel:** Zeigen, dass die Lorentz-Invarianz der flachen Minkowski-Raumzeit kein unabhängiges Postulat ist, sondern als Spezialfall der RFT-Kopplungsdynamik aus den Axiomen A1–A7 folgt. Die SRT wäre damit kein separates Theoriegebäude, sondern ein Grenzfall der RFT.
 
@@ -196,8 +197,10 @@ Empirisch unterscheidbare Vorhersagen benennen.
 - **Ergebnis:** Erfolgskriterium erfüllt. Kinematik RFT ≡ SRT (vollständig äquivalent). Vier Überschuss-Vorhersagen benannt: (1) l_c(v) = λ₀/(2γ²) — γ²-Skalierung vs. γ der SRT; (2) Phasenrauschen S_φ ∝ γ⁻²; (3) interne Konsistenzfrequenz f_int = γ³f₀; (4) frequenzabhängige Gruppengeschwindigkeit nahe ε→0. LIGO-Daten schließen signifikante GW-Dispersion aus. Myon-g-2 qualitativ plausibel, nicht quantifizierbar ohne Quantisierung der RFT.
 - **Kerndokumente:** `de/fakten/theorie/rt40_ap6_falsifizierbarkeit_srt_abgrenzung.md` · `en/facts/theory/rt40_ap6_falsifiability_srt_distinction.md`
 
-**AP7 — Warpantrieb-Konsistenzprüfung**
+**AP7 — Warpantrieb-Konsistenzprüfung** ✅ **Abgeschlossen (Sep 2026)**
 Erst nach AP3 sinnvoll. Warp-Metrik aus A4/A5 rekonstruieren; flache Raumzeit als Grenzfall (Δφ → 0, ε → 1) prüfen; Kompatibilität mit hergeleiteter SRT-Brücke dokumentieren.
+- **Ergebnis:** Erfolgskriterium vollständig erfüllt. RFT-Warp-Metrik aus A4/A5 hergeleitet: h_μν^RFT = h_μν^Alcubierre · ε(Δφ). Flache Raumzeit als kohärenter Grundzustand (Δφ=0, ε=1) analytisch bewiesen. Lichtgrenzfall (Δφ→π, ε→0): Warpfeld kollabiert, konsistent mit AP4. Keine Negativenergie: ε(Δφ)≥0 → ρ_RFT≥0. Drei neue Vorhersagen gegenüber Standard-Alcubierre: (1) ε²-Winkelmodulation der Energiedichte; (2) ρ≥0 überall (keine exotische Materie); (3) Selbst-Abschaltung bei v_s→c. Offene Lücke: Brückenannahme B₁ (wie AP3) und nichtlinearer Warpfall (v_s~c).
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap7_warpantrieb_konsistenzpruefung.md` · `en/facts/theory/rt40_ap7_warp_consistency_check.md`
 
 **Zeitplan:**
 - Wochen 1–2: AP1 + AP2 (stationäre Kopplungslösung, Invariante)
