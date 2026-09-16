@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, AP4 ✅, AP5 ✅, nächste: AP6)*
+2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, AP3 ✅, AP4 ✅, AP5 ✅, AP6 ✅, nächste: AP7)*
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -128,7 +128,7 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4 ✅ Abgeschlossen (Sep 2026); AP5 ✅ Abgeschlossen (Sep 2026); AP6–AP7 offen
+**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3 ✅ Abgeschlossen (Sep 2026); AP4 ✅ Abgeschlossen (Sep 2026); AP5 ✅ Abgeschlossen (Sep 2026); AP6 ✅ Abgeschlossen (Sep 2026); AP7 offen
 **Kategorie:** Theoretische Herleitung
 **Priorität:** Hoch (intern abschließbar, Wochen 1–6)
 
@@ -188,12 +188,13 @@ Klassische Formeln als Grenzfall der RFT reformulieren.
 - **Ergebnis:** Erfolgskriterium vollständig erfüllt. Zeitdilatation Δt = γΔt₀ exakt aus hyperbolischer Phasenprojektionsgeometrie (AP1) hergeleitet. Längenkontraktion L' = L₀/γ aus effektiver Wellenzahl k_eff = γ·k₀ (AP3) bewiesen. ε = 1/γ² algebraisch geschlossen: cos²(arcsin β) = 1 − β² = 1/γ². Neue RFT-Vorhersage: Kohärenzlänge l_c(v) = λ₀/(2γ²), skaliert mit γ² statt γ — empirisch unterscheidbar von SRT-Längenkontraktion. Drei experimentelle Methoden und präzises Falsifikationskriterium formuliert.
 - **Kerndokumente:** `de/fakten/theorie/rt40_ap5_zeitdilatation_laengenkontraktion.md` · `en/facts/theory/rt40_ap5_time_dilation_length_contraction.md`
 
-**AP6 — Falsifizierbarkeit und Abgrenzung zur SRT**
+**AP6 — Falsifizierbarkeit und Abgrenzung zur SRT** ✅ **Abgeschlossen (Sep 2026)**
 Empirisch unterscheidbare Vorhersagen benennen.
-- Freie Parameter der RFT (α/β, G(fᵢ/fⱼ)) auf messbare Abweichungen untersuchen
-- Konkrete Experimente: Phasenrauschen bei relativistischen Ionen (GSI/FAIR), Myon-g-2, Gravitationswellen-Dispersion
-- Falsifikationskriterium: Welches Ergebnis würde die RFT widerlegen?
-- Erfolgskriterium: Mindestens eine messbare Abweichung benannt — oder vollständige Äquivalenz nachgewiesen (dann: Reformulierung, nicht neue Theorie)
+- Freie Parameter der RFT (α/β, G(fᵢ/fⱼ)) auf messbare Abweichungen untersucht
+- Konkrete Experimente: Phasenrauschen bei relativistischen Ionen (GSI/FAIR), Myon-g-2, Gravitationswellen-Dispersion, Kohärenzlängen-Interferometrie
+- Falsifikationskriterium: l_c ∝ γ⁻¹ (gemessen) würde AP5-Vorhersage widerlegen
+- **Ergebnis:** Erfolgskriterium erfüllt. Kinematik RFT ≡ SRT (vollständig äquivalent). Vier Überschuss-Vorhersagen benannt: (1) l_c(v) = λ₀/(2γ²) — γ²-Skalierung vs. γ der SRT; (2) Phasenrauschen S_φ ∝ γ⁻²; (3) interne Konsistenzfrequenz f_int = γ³f₀; (4) frequenzabhängige Gruppengeschwindigkeit nahe ε→0. LIGO-Daten schließen signifikante GW-Dispersion aus. Myon-g-2 qualitativ plausibel, nicht quantifizierbar ohne Quantisierung der RFT.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap6_falsifizierbarkeit_srt_abgrenzung.md` · `en/facts/theory/rt40_ap6_falsifiability_srt_distinction.md`
 
 **AP7 — Warpantrieb-Konsistenzprüfung**
 Erst nach AP3 sinnvoll. Warp-Metrik aus A4/A5 rekonstruieren; flache Raumzeit als Grenzfall (Δφ → 0, ε → 1) prüfen; Kompatibilität mit hergeleiteter SRT-Brücke dokumentieren.
