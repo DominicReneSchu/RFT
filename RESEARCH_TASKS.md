@@ -25,7 +25,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, nächste: AP2)*
+2. RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie *(AP1 ✅, AP2 ✅, nächste: AP3)*
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -128,7 +128,7 @@ des Wirkungsintegrals, RT-01 + RT-01b).
 **Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
 
 ### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
-**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2–AP7 offen
+**Status: 🔄 In Bearbeitung** — AP1 ✅ Abgeschlossen (Sep 2026); AP2 ✅ Abgeschlossen (Sep 2026); AP3–AP7 offen
 **Kategorie:** Theoretische Herleitung
 **Priorität:** Hoch (intern abschließbar, Wochen 1–6)
 
@@ -149,13 +149,15 @@ Prüfen, ob Δφ und die relativistische Rapidität φ dieselbe mathematische St
 - **Ergebnis:** Erfolgskriterium vollständig bewiesen. f(Δφ) = arcsech(cos(Δφ/2)) = artanh(sin(Δφ/2)) ist die gesuchte Abbildung. Hyperbolische Metrik ds²_RFT = dΔφ²/(4ε(Δφ)) nachgewiesen. Phasenkomposition ⊕ ist strukturell identisch mit relativistischer Geschwindigkeitsaddition (v/c = sin(Δφ/2)).
 - **Kerndokumente:** `de/fakten/theorie/rt40_ap1_phase_rapiditaet.md` · `en/facts/theory/rt40_ap1_phase_rapidity.md`
 
-**AP2 — Kopplungseffizienz als Lorentz-Faktor**
+**AP2 — Kopplungseffizienz als Lorentz-Faktor** ✅ **Abgeschlossen (Sep 2026)**
 Zeigen, dass ε(Δφ) = 1/γ² aus A4 folgt — nicht nur formale Ähnlichkeit ist.
 - E = π·ε·ℏ·f als relativistische Gesamtenergie eines Resonators interpretieren
 - E = γmc² und f = f₀/γ (Zeitdilatation der Eigenfrequenz) einsetzen
 - Nach ε auflösen, mit ε = cos²(Δφ/2) vergleichen
 - Erfolgskriterium: Identität bewiesen — oder falsifizierbare Relation zwischen m, f₀ und ℏ benannt
 - ⚠️ Zirkelschluss-Risiko: f = f₀/γ muss aus der RFT folgen, nicht postuliert werden
+- **Ergebnis:** Erfolgskriterium erfüllt (falsifizierbare Relation benannt). Naiver Ansatz (f = f₀/γ, E = γmc²) ergibt ε = γ² — Widerspruch zu AP1 (ε = 1/γ²). Zirkelschluss-Risiko bestätigt. Selbstkonsistenz-Bedingung: f_RFT = γ³·f₀. Physikalischer Gehalt von A4: Kopplungsenergie E_c = mc²/γ² (nicht Gesamtenergie). Verbindung zur Zitterbewegungsfrequenz: f₀_RFT = f_zbw = mc²/(π·ℏ). Vollständige Herleitung ε = 1/γ² aus A4 benötigt AP5.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap2_kopplungseffizienz_lorentz.md` · `en/facts/theory/rt40_ap2_coupling_efficiency_lorentz.md`
 
 **AP3 — Herleitung der Lorentz-Transformation**
 Lorentz-Transformation aus der Kopplungsdynamik herleiten.
