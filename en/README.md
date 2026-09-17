@@ -37,6 +37,7 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
     - [Analysis Tools](#analysis-tools)
     - [Theoretical Foundations](#theoretical-foundations)
     - [RT-40 Applications: Relativity and Lorentz](#rt-40-applications-relativity-and-lorentz)
+    - [RT-42 Cosmology: Friedmann Analogy from Phase Dynamics](#rt-42-cosmology-friedmann-analogy-from-phase-dynamics)
 - [License](#license)
 - [Research Tasks](#research-tasks)
 
@@ -358,6 +359,16 @@ Formal applications of RFT to relativistic physics (RT-40, Sep 2026):
 | 5 | [AP5 — Time Dilation and Length Contraction](facts/theory/rt40_ap5_time_dilation_length_contraction.md) | A1, A4, A5 | Time dilation and length contraction in the RFT framework |
 | 6 | [AP6 — Falsifiability and SRT Distinction](facts/theory/rt40_ap6_falsifiability_srt_distinction.md) | A1–A7 | Falsifiable predictions and distinction from Special Relativity |
 | 7 | [AP7 — Warp Drive: Consistency Check](facts/theory/rt40_ap7_warp_consistency_check.md) | A1, A4, A5 | Formal consistency check of the warp drive concept in the Lorentz framework |
+
+---
+
+## RT-42 Cosmology: Friedmann Analogy from Phase Dynamics
+
+Formal applications of RFT to cosmology (RT-42, Sep 2026):
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Phase ↔ Scale Factor](facts/theory/rt42_ap1_phase_scale_factor.md) | A1, A4, A8 | Formal analogy: RFT phase difference as dynamic variable of the cosmic scale factor — **✅ RT-42 AP1 completed (Sep 2026)** |
 
 ---
 

@@ -37,6 +37,7 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
     - [Analysetools](#analysetools)
     - [Theoretische Grundlagen](#theoretische-grundlagen)
     - [RT-40 Anwendungen: Relativität und Lorentz](#rt-40-anwendungen-relativität-und-lorentz)
+    - [RT-42 Kosmologie: Friedmann-Analogie aus Phasendynamik](#rt-42-kosmologie-friedmann-analogie-aus-phasendynamik)
 - [Lizenz](#lizenz)
 - [Forschungsaufgaben](#forschungsaufgaben)
 
@@ -358,6 +359,16 @@ Formale Anwendungen der RFT auf relativistische Physik (RT-40, Sep 2026):
 | 5 | [AP5 — Zeitdilatation und Längenkontraktion](fakten/theorie/rt40_ap5_zeitdilatation_laengenkontraktion.md) | A1, A4, A5 | Zeitdilatation und Längenkontraktion im RFT-Rahmen |
 | 6 | [AP6 — Falsifizierbarkeit und SRT-Abgrenzung](fakten/theorie/rt40_ap6_falsifizierbarkeit_srt_abgrenzung.md) | A1–A7 | Falsifizierbare Vorhersagen und Abgrenzung zur Speziellen Relativitätstheorie |
 | 7 | [AP7 — Warpantrieb: Konsistenzprüfung](fakten/theorie/rt40_ap7_warpantrieb_konsistenzpruefung.md) | A1, A4, A5 | Formale Konsistenzprüfung des Warpantriebs-Konzepts im Lorentz-Rahmen |
+
+---
+
+## RT-42 Kosmologie: Friedmann-Analogie aus Phasendynamik
+
+Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Phase ↔ Skalenfaktor](fakten/theorie/rt42_ap1_phase_skalenfaktor.md) | A1, A4, A8 | Formale Analogie: RFT-Phasendifferenz als dynamische Variable des kosmischen Skalenfaktors — **✅ RT-42 AP1 abgeschlossen (Sep 2026)** |
 
 ---
 
