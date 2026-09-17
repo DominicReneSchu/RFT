@@ -422,9 +422,9 @@ bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
 
 ### Ableitung einer Friedmann-Analogie aus der Resonanzfeldtheorie
 
-**Version:** 1.1 – AP1 abgeschlossen
+**Version:** 1.4 – AP4 abgeschlossen
 **Datum:** 17. September 2026
-**Status:** 🔄 In Bearbeitung — AP1 ✅
+**Status:** 🔄 In Bearbeitung — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅
 **Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
 **Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-04 (FLRW-Simulation)
 
@@ -532,7 +532,7 @@ Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall ent
 
 ---
 
-#### AP4 – Skalierungsproblem kosmologisch einordnen
+#### AP4 – Skalierungsproblem kosmologisch einordnen ✅ **Abgeschlossen (Sep 2026)**
 
 **Aufgabe:**
 28-Größenordnungen-Diskrepanz zwischen Warp-Energiedichte ($10^{19}$ J/m³) und $\rho_\Lambda$ ($10^{-9}$ J/m³) auflösen oder als Scheinproblem enttarnen.
@@ -543,6 +543,8 @@ Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall ent
 3. Prüfe Skalierungsfaktor $\rho_{\text{warp}}/\rho_\Lambda \propto (R_H/R)^n$ — welches $n$?
 
 **Erfolgskriterium:** Diskrepanz gelöst (Skalierungsfaktor) oder als Scheinproblem ausgewiesen (verschiedene Regime).
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Die 28-Größenordnungen-Diskrepanz ist ein **Scheinproblem**: Sie spiegelt keine fundamentale Inkonsistenz der RFT wider, sondern die physikalisch verschiedenen Regime der lokalen Metrikstörung (Warp, k_warp ~ 10⁻² m⁻¹) und der globalen kosmologischen Hintergrundenergie (Λ, k₀ ~ 10⁻²⁶ m⁻¹). ρ_Λ c² = Λc⁴/(8πG) ≈ 5,4 × 10⁻¹⁰ J/m³ berechnet und mit dem RFT-Gradientenausdruck aus AP3 identifiziert. Formaler k²-Skalierungsfaktor: (k_warp/k₀)² ~ 10⁴⁸ übertrifft die beobachteten 10²⁸ um weitere 20 Größenordnungen — Warp-Energie und ρ_Λ folgen verschiedenen physikalischen Formeln (Krümmungsterm vs. Gradientenenergie). Empirischer Exponent n ≈ 1,15 nicht universell. Schlüsselargument: Eine kosmologische Warpblase (R ~ R_H/π ~ 5 × 10²⁵ m) hätte tatsächlich ρ ~ ρ_Λ — die 28-Größenordnungen sind Konsequenz der Wahl R_warp = 50 m. Kerndokumente: `de/fakten/theorie/rt42_ap4_skalierungsproblem_kosmologie.md` · `en/facts/theory/rt42_ap4_scaling_problem_cosmology.md`
 
 ---
 
