@@ -19,7 +19,7 @@ Status: Aktiv
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
-| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 📋 Offen (RT-42) |
+| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 🔄 AP1 ✅ (RT-42) |
 
 ---
 
@@ -422,9 +422,9 @@ bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
 
 ### Ableitung einer Friedmann-Analogie aus der Resonanzfeldtheorie
 
-**Version:** 1.0 – Entwurf
+**Version:** 1.1 – AP1 abgeschlossen
 **Datum:** 17. September 2026
-**Status:** 📋 Offen
+**Status:** 🔄 In Bearbeitung — AP1 ✅
 **Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
 **Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-04 (FLRW-Simulation)
 
@@ -473,7 +473,7 @@ Prüfen, ob die kosmische Expansion als **Phaseneffekt im RFT-Feld** beschrieben
 
 ### 3. Arbeitspakete
 
-#### AP1 – Formale Analogie: Phase ↔ Skalenfaktor
+#### AP1 – Formale Analogie: Phase ↔ Skalenfaktor ✅ **Abgeschlossen (Sep 2026)**
 
 **Aufgabe:**
 Prüfe, ob die RFT-Phasendifferenz $\Delta\phi(t)$ als **dynamische Variable** fungiert, die den kosmischen Skalenfaktor $a(t)$ steuert.
@@ -488,6 +488,8 @@ Prüfe, ob die RFT-Phasendifferenz $\Delta\phi(t)$ als **dynamische Variable** f
    ohne separaten $\Lambda$-Term auskommt.
 
 **Erfolgskriterium:** Explizite Abbildung $\Delta\phi(t) \to a(t)$ — oder Nachweis ihrer Nichtexistenz.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Explizite Abbildung $H(t) = H_0 \cdot \cos(\Delta\phi(t)/2)$ konstruiert; Friedmann-artige Gleichung $H^2 = H_0^2 \cdot \varepsilon(\Delta\phi)$ ohne $\Lambda$-Term hergeleitet. Bijektivität auf $\Delta\phi \in [0, \pi/2)$ bewiesen. Offene Einschränkung: $w \in [-1/3, +1/3]$ aus RT-33 deckt $w = -1$ (ΛCDM) nicht ab — AP3 erforderlich. Kerndokumente: `de/fakten/theorie/rt42_ap1_phase_skalenfaktor.md` · `en/facts/theory/rt42_ap1_phase_scale_factor.md`
 
 ---
 
