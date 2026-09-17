@@ -19,7 +19,7 @@ Status: Aktiv
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
-| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 🔄 AP1 ✅ (RT-42) |
+| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 🔄 AP1 ✅ AP2 ✅ (RT-42) |
 
 ---
 
@@ -495,6 +495,8 @@ Prüfe, ob die RFT-Phasendifferenz $\Delta\phi(t)$ als **dynamische Variable** f
 
 #### AP2 – Zeitableitung der Phase
 
+**Status: ✅ Abgeschlossen (Sep 2026)**
+
 **Aufgabe:**
 Bestimme $\dot{\Delta\phi}$ aus der Kopplungsdynamik und interpretiere es als **Expansionsrate**.
 
@@ -507,6 +509,9 @@ Bestimme $\dot{\Delta\phi}$ aus der Kopplungsdynamik und interpretiere es als **
 6. **Konsistenz mit A8:** Begrenzt $c$ die Phasendynamik auf kosmologischen Skalen?
 
 **Erfolgskriterium:** Geschlossene Differentialgleichung für $\Delta\phi(t)$, vergleichbar mit Friedmann-Lösungen.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Geschlossene ODE $\dot{\Delta\phi} = \beta\tan(\Delta\phi/2)$ vollständig aus der RFT-Kopplungsdynamik abgeleitet (A4, A5, AP1-Homogenisierung). Äquivalente Form: $\dot\varepsilon = -\beta(1-\varepsilon)$ mit analytischer Lösung $\varepsilon(t) = 1 - \sin^2(\Delta\phi_0/2)\,e^{\beta t}$. Hubble-Parameter explizit: $H(t) = H_0\sqrt{1 - \sin^2(\Delta\phi_0/2)\,e^{\beta t}}$. Modifizierte Raychaudhuri-Gleichung: $\dot H = -(\beta/2)(H_0^2 - H^2)/H$. Direkte Identifikation $\dot{\Delta\phi} = H$ nicht möglich (verschiedene Funktionen von $\Delta\phi$); physikalische Verbindung läuft über $\dot\varepsilon$. A8-Konsistenz: $\beta \sim H_0$ sichert kausale Verträglichkeit am Hubble-Horizont.
+- **Kerndokumente:** `de/fakten/theorie/rt42_ap2_zeitableitung_phase.md` · `en/facts/theory/rt42_ap2_time_derivative_phase.md`
 
 ---
 

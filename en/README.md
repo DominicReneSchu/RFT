@@ -369,6 +369,7 @@ Formal applications of RFT to cosmology (RT-42, Sep 2026):
 | # | Document | Axioms | Description |
 |---|----------|--------|-------------|
 | 1 | [AP1 — Phase ↔ Scale Factor](facts/theory/rt42_ap1_phase_scale_factor.md) | A1, A4, A8 | Formal analogy: RFT phase difference as dynamic variable of the cosmic scale factor — **✅ RT-42 AP1 completed (Sep 2026)** |
+| 2 | [AP2 — Time Derivative of the Phase](facts/theory/rt42_ap2_time_derivative_phase.md) | A4, A5, A8 | Closed ODE Δφ̇ = β·tan(Δφ/2) from coupling dynamics; Hubble parameter H(t) = H₀√ε(t) derived analytically — **✅ RT-42 AP2 completed (Sep 2026)** |
 
 ---
 
