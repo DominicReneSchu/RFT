@@ -325,6 +325,39 @@ various H₀ values (4 regimes). CERN data: stable resonance pattern.
 
 ---
 
+### Axiom 8 — Coupling Wave Velocity
+
+**Status: ✅ Irreducible Postulate (RT-41, Sep 2026)**
+
+**Formulation:**
+> The phase wave of the RFT coupling structure propagates with the velocity
+> c = 1/√(μ₀ε₀) in vacuum.
+
+**Significance:**
+A8 closes the bridge assumption B₁ from RT-40 AP3: the RFT phase dynamics are
+bound to spacetime geometry via the coupling wave velocity c. Without A8, the
+Lorentz transformation from the RFT coupling dynamics (RT-40 AP3) is not fully
+derivable.
+
+**Irreducibility:**
+RT-41 AP1–AP3 establish that c as a phase velocity does not follow from A1–A7:
+- A1 permits arbitrary dispersion relations (AP1)
+- c_lim (RT-40 AP4) and c_φ (B₁) are conceptually distinct (AP2)
+- G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) contains no SO(1,1) subgroup (AP3)
+
+**Relation to A5:**
+A5 (vectoriality) and A8 (coupling wave velocity) are the two irreducible postulates
+of the extended axiom system A1–A8. Both are group-theoretically not derivable
+from G_sync.
+
+**Empirical Anchoring:**
+c = 299 792 458 m/s (defined, SI). Falsification: c_RFT (from ε → 0, RT-40 AP4)
+≠ c_phys would refute A8 and the entire RT-40/RT-41 structure.
+
+**Core document:** `en/facts/theory/rt41_axiom_a8_coupling_wave.md`
+
+---
+
 ## 4. Mathematical Consequences
 
 ### 4.1 Geometric Motivation of the Factor π in the Energy Formula
@@ -448,6 +481,7 @@ through resonance coupling (A3, A6).
 | A5 | Energy direction | E⃗ = E·ê(Δφ,∇Φ) | Resonance field simulation: energy direction vector; Double pendulum: ε(θ₂−θ₁); Warp drive: front/rear asymmetry (contraction vs. expansion) |
 | A6 | Information flow | MI > 0 ⟺ PCI > 0 | Resonance field simulation: coupling efficiency and energy flow |
 | A7 | Invariance (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte Carlo test: bandwidth-independent (3 KDE); CERN data: stable resonance pattern |
+| A8 | Coupling wave velocity | c = 1/√(μ₀ε₀) | Irreducible postulate (RT-41, Sep 2026); empirically: c = 299 792 458 m/s (SI) |
 
 ---
 
@@ -464,12 +498,15 @@ through resonance coupling (A3, A6).
 
 ## 8. Conclusion
 
-Resonance Field Theory consists of 7 core axioms (A1–A7) that are:
+Resonance Field Theory consists of 8 core axioms (A1–A8) that are:
 
 1. **Minimal**: The stable resonance field (old A5) is derivable as a theorem
 2. **Independent**: No axiom follows from the others
 3. **Formally precise**: Each axiom contains a mathematical formula
 4. **Empirically testable**: Each axiom has a documented test (FLRW simulations, Monte Carlo, CERN data, resonance reactor)
+
+A5 (energy direction) and A8 (coupling wave velocity) are the two irreducible
+postulates — group-theoretically not derivable from G_sync (RT-36, RT-41).
 
 The extension E1 (observer as resonator) is an interpretative supplement
 that builds on the foundation, but does not belong to the physical axiomatics.

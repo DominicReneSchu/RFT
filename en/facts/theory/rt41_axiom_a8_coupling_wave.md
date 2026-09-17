@@ -2,6 +2,9 @@
 
 *Dominic-René Schu, September 2026*
 
+*Status: ✅ Completed (Sep 2026) — A8 established as an irreducible postulate;
+entered in `axiomatic_foundation.md`; axiom system A1–A8 complete.*
+
 ---
 
 ## Table of Contents
@@ -212,14 +215,14 @@ Result B is **not a failure** of the RFT. It is a structurally coherent result:
 | G_sync forces c? | No — no SO(1,1) subgroup (AP3) |
 | Result | **B: A8 is an irreducible postulate** |
 | A8 formulated? | Yes — § 6.3 |
-| Next steps | Enter A8 in `axiomatic_foundation.md`; update README |
+| Next steps | A8 entered in `axiomatic_foundation.md` (Sep 2026) — completed |
 
 **Deliverables of this document:**
 - ✅ AP1–AP3 fully analyzed
 - ✅ Result B documented
 - ✅ A8 formally formulated
-- 📋 Enter A8 in `axiomatic_foundation.md` (AP4, subsequent task)
-- 📋 DE source document: `de/fakten/theorie/rt41_axiom_a8_kopplungswelle.md`
+- ✅ A8 entered in `axiomatic_foundation.md` (AP4, completed Sep 2026)
+- ✅ DE source document: `de/fakten/theorie/rt41_axiom_a8_kopplungswelle.md` (present)
 
 **Connection to existing documents:**
 - RT-40 AP3: `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` §8 (starting point)

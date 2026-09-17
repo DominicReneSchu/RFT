@@ -402,7 +402,7 @@ Das Erfolgskriterium ist **vollständig erfüllt**:
 **Offene Folgeaufgaben:**
 - RT-34: Vollständige 3D-Warpblase (sphärisch-azimutale Geometrie)
 - RT-03/RT-12: Experimentelle Bestimmung von λ (⁸⁷Rb-Interferometrie)
-- A8: Axiomenerweiterung (Kopplungswellengeschwindigkeit, schließt B₁)
+- ~~A8: Axiomenerweiterung (Kopplungswellengeschwindigkeit, schließt B₁)~~ ✅ Abgeschlossen (Sep 2026) — RT-41
 - Quantisierung der RFT (langfristig)
 
 ---

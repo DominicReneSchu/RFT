@@ -344,6 +344,39 @@ verschiedene H₀-Werte (4 Regime). CERN-Daten: stabiles Resonanzmuster.
 
 ---
 
+### Axiom 8 — Kopplungswellengeschwindigkeit
+
+**Status: ✅ Irreduzibles Postulat (RT-41, Sep 2026)**
+
+**Formulierung:**
+> Die Phasenwelle der RFT-Kopplungsstruktur propagiert mit der Geschwindigkeit
+> c = 1/√(μ₀ε₀) im Vakuum.
+
+**Bedeutung:**
+A8 schließt die Brückenannahme B₁ aus RT-40 AP3: Die RFT-Phasendynamik ist über
+die Kopplungswellengeschwindigkeit c an die Raumzeit-Geometrie gebunden. Ohne A8
+ist die Lorentz-Transformation aus der RFT-Kopplungsdynamik (RT-40 AP3) nicht
+vollständig herleitbar.
+
+**Irreduzibilität:**
+RT-41 AP1–AP3 belegen, dass c als Phasengeschwindigkeit nicht aus A1–A7 folgt:
+- A1 lässt beliebige Dispersionsrelationen zu (AP1)
+- c_lim (RT-40 AP4) und c_φ (B₁) sind konzeptuell verschieden (AP2)
+- G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) enthält keine SO(1,1)-Untergruppe (AP3)
+
+**Verhältnis zu A5:**
+A5 (Vektorialität) und A8 (Kopplungswellengeschwindigkeit) sind die beiden
+irreduziblen Postulate des erweiterten Axiomensystems A1–A8. Beide sind
+gruppentheoretisch nicht aus G_sync herleitbar.
+
+**Empirische Verankerung:**
+c = 299 792 458 m/s (definiert, SI). Falsifizierung: c_RFT (aus ε → 0, RT-40 AP4)
+≠ c_phys würde A8 und die gesamte RT-40/RT-41-Struktur widerlegen.
+
+**Kerndokument:** `de/fakten/theorie/rt41_axiom_a8_kopplungswelle.md`
+
+---
+
 ## 4. Mathematische Konsequenzen
 
 ### 4.1 Geometrische Motivation des Faktors π in der Energieformel
@@ -463,6 +496,7 @@ Information mit dem Feld austauscht.
 | A5 | Energierichtung | E⃗ = E·ê(Δφ,∇Φ) | Resonanzfeld-Simulation: Energierichtungsvektor, Doppelpendel: ε(θ₂−θ₁); Warpantrieb: Vorn-/Hinten-Asymmetrie (Kontraktion vs. Expansion) |
 | A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Resonanzfeld-Simulation: Kopplungseffizienz und Energiefluss |
 | A7 | Invarianz (G_sync) | G(fᵢ/fⱼ) = G(T(fᵢ)/T(fⱼ)) | Monte-Carlo-Test: bandbrei­tenunabhängig (3 KDE), CERN-Daten: stabiles Resonanzmuster |
+| A8 | Kopplungswellengeschwindigkeit | c = 1/√(μ₀ε₀) | Irreduzibles Postulat (RT-41, Sep 2026); empirisch: c = 299 792 458 m/s (SI) |
 
 ---
 
@@ -479,12 +513,15 @@ Information mit dem Feld austauscht.
 
 ## 8. Fazit
 
-Die Resonanzfeldtheorie besteht aus 7 Kern-Axiomen (A1–A7), die:
+Die Resonanzfeldtheorie besteht aus 8 Kern-Axiomen (A1–A8), die:
 
 1. **Minimal** sind: Das stabile Resonanzfeld (altes A5) ist als Satz ableitbar
 2. **Unabhängig** sind: Kein Axiom folgt aus den übrigen
 3. **Formal präzise** sind: Jedes Axiom enthält eine mathematische Formel
 4. **Empirisch testbar** sind: Jedes Axiom hat einen dokumentierten Test (FLRW-Simulationen, Monte-Carlo, CERN-Daten, Resonanzreaktor)
+
+A5 (Energierichtung) und A8 (Kopplungswellengeschwindigkeit) sind die beiden
+irreduziblen Postulate — gruppentheoretisch nicht aus G_sync herleitbar (RT-36, RT-41).
 
 Die Erweiterung E1 (Beobachter als Resonator) ist eine interpretative
 Ergänzung, die auf dem Fundament aufbaut, aber nicht zur physikalischen
