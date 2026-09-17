@@ -19,7 +19,7 @@ Status: Aktiv
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
-| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 🔄 AP1 ✅ AP2 ✅ (RT-42) |
+| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42) |
 
 ---
 
@@ -422,9 +422,9 @@ bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
 
 ### Ableitung einer Friedmann-Analogie aus der Resonanzfeldtheorie
 
-**Version:** 1.4 – AP4 abgeschlossen
+**Version:** 1.5 – AP6 abgeschlossen
 **Datum:** 17. September 2026
-**Status:** 🔄 In Bearbeitung — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅
+**Status:** 🔄 In Bearbeitung — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅
 **Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
 **Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-04 (FLRW-Simulation)
 
@@ -565,7 +565,7 @@ Messbare Unterschiede zwischen RFT-Kosmologie und $\Lambda$CDM benennen.
 
 ---
 
-#### AP6 – Kosmische Expansion als Phaseneffekt
+#### AP6 – Kosmische Expansion als Phaseneffekt ✅ **Abgeschlossen (Sep 2026)**
 
 **Aufgabe:**
 Hypothese prüfen: **Die kosmische Expansion ist ein Phaseneffekt des RFT-Feldes.**
@@ -577,6 +577,8 @@ Hypothese prüfen: **Die kosmische Expansion ist ein Phaseneffekt des RFT-Feldes
 4. Szenario B: $\Delta\phi$ wächst → dynamisches $H(t)$; erklärt Beschleunigung und/oder frühe Inflation?
 
 **Erfolgskriterium:** Explizite Gleichung gestützt — oder klar widerlegt.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Hypothese bestätigt: Die kosmische Expansion ist ein Phaseneffekt des RFT-Feldes. Explizite Gleichung $\dot{a}/a = H_0\cos(\Delta\phi(t)/2)$ vollständig aus A1–A8 hergeleitet (via AP1 und AP2). Szenario A (Δφ = const): Exakter de-Sitter-Fixpunkt ($\Delta\phi = 0$) und verallgemeinerter de Sitter ($\beta = 0$, $\Delta\phi_0 >$ 0, $w_{\rm eff} \in [-1, -2/3]$). Szenario B ($\beta > 0$): Verzögerte Expansion; Slow-roll-Inflation für $\beta \ll H_0^{\rm inf}$; $n_s \in [0{,}97, 0{,}99]$ Planck-konsistent; natürlicher Inflationsaustritt auf Zeitskala $1/\beta$. Szenario C ($\beta < 0$): Beschleunigte Expansion; erklärt DESI-DR1-Signal ($w_a < 0$) direkt. Zeitlich variierendes $k_0(t)$: Dynamisches $\Lambda_{\rm eff}(t)$; erklärt DESI-DR1 alternativ/ergänzend für $\gamma \sim H_0$. Drei neue Falsifikationskriterien (F6–F8): Vorzeichen von $\beta$ aus $w_a$, Inflationsspektrum $n_s$, $k_0$-Dynamik aus Surveys. Kerndokumente: `de/fakten/theorie/rt42_ap6_kosmische_expansion_phaseneffekt.md` · `en/facts/theory/rt42_ap6_cosmic_expansion_phase_effect.md`
 
 ---
 
