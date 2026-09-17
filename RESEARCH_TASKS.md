@@ -515,7 +515,7 @@ Bestimme $\dot{\Delta\phi}$ aus der Kopplungsdynamik und interpretiere es als **
 
 ---
 
-#### AP3 – Verbindung zu $\Lambda$ oder Dunkler Energie
+#### AP3 – Verbindung zu $\Lambda$ oder Dunkler Energie ✅ **Abgeschlossen (Sep 2026)**
 
 **Aufgabe:**
 Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall enthält**.
@@ -527,6 +527,8 @@ Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall ent
 4. Benenne Bedingungen, unter denen RFT und $\Lambda$CDM identisch sind.
 
 **Erfolgskriterium:** Klare Aussage: RFT ersetzt / erklärt / ist unvereinbar mit $\Lambda$.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Homogener Grenzfall (∇Δφ = 0): w ∈ [−1/3, +1/3], w = −1 nicht erreichbar — RFT unvereinbar mit Λ = const. Inhomogener Grenzfall (statischer Superhorizontalgradient ∇Δφ = k₀): effektiver Λ-Term ρ_grad = (1/2μ₀)·k₀²·ℏ²/c² mit w_grad → −1 — RFT **erklärt** Λ geometrisch. ΛCDM ist Spezialfall der RFT (β → 0, k₀ = const), nicht umgekehrt. RFT ist erweitertes Quintessenz-Modell mit w_eff ∈ [−1, +1/3]. Falsifizierbare Vorhersage: w(z) = w₀ + w_a·z/(1+z) mit w_a ≈ β/H₀ (AP5). Kerndokumente: `de/fakten/theorie/rt42_ap3_verbindung_lambda_dunkle_energie.md` · `en/facts/theory/rt42_ap3_connection_lambda_dark_energy.md`
 
 ---
 
