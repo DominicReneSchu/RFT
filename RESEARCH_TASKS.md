@@ -19,7 +19,7 @@ Status: Aktiv
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
-| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42) |
+| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | ~~🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42)~~ ✅ Abgeschlossen (Sep 2026) |
 
 ---
 
@@ -27,7 +27,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik
+2. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
 3. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
 4. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
 
@@ -38,6 +38,7 @@ Status: Aktiv
 7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; $H(t) = H_0\cos(\Delta\phi(t)/2)$ aus A1–A8 hergeleitet; ΛCDM als Grenzfall; Szenarien A–C; DESI-DR1-Signal (Szenario C, $\beta < 0$); Falsifikationskriterien F6–F9. Kerndokumente: `de/fakten/theorie/rt42_ap*` · `en/facts/theory/rt42_ap*`
 - ~~RT-40  — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall der RFT bewiesen (AP1–AP5); vier empirische Überschuss-Vorhersagen (AP6); Warpkonsistenz und flache Raumzeit als RFT-Grundzustand (AP7). Offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8). Kerndokumente: `de/fakten/theorie/rt40_ap*` · `en/facts/theory/rt40_ap*`
 - ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
 - ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` → Experimentprotokoll: RT-38
@@ -422,9 +423,9 @@ bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
 
 ### Ableitung einer Friedmann-Analogie aus der Resonanzfeldtheorie
 
-**Version:** 1.5 – AP6 abgeschlossen
+**Version:** 1.6 – AP7 abgeschlossen
 **Datum:** 17. September 2026
-**Status:** 🔄 In Bearbeitung — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅
+**Status:** ✅ Abgeschlossen (Sep 2026) — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅
 **Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
 **Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-04 (FLRW-Simulation)
 
@@ -596,6 +597,8 @@ Konsistenz der RFT-Kosmologie mit abgeschlossenen Tasks prüfen.
 6. Widersprüche explizit benennen — oder deren Abwesenheit zeigen.
 
 **Erfolgskriterium:** Konsistenz mit RT-33, RT-40, RT-41 nachgewiesen — oder Widersprüche präzise dokumentiert.
+
+**Ergebnis:** Erfolgskriterium erfüllt. Konsistenz der RFT-Kosmologie mit RT-33, RT-40 und RT-41 vollständig nachgewiesen. Sechs Leitfragen beantwortet: (1) Skalentrennung AP4 löst scheinbaren Widerspruch Minkowski ↔ kosmologische Expansion auf. (2) ε_kosmo(t) = 1/γ²_kosmo(t) — identische Formel wie RT-40, kosmologischer Lorentz-Faktor γ_kosmo(t) = 1/cos(Δφ(t)/2). (3) Rotverschiebung z aus Δφ(t) über H(t) = H₀cos(Δφ/2) konsistent; Szenario C (β < 0) liefert DESI-DR1-Signal w_a < 0. (4) l_c,kosmo(t) = ε(t)·R_H/2 — skaliert mit Hubble-Radius; BAO-Falsifikationskriterium F9. (5) A8-Schranke H ≤ ck₀ — konsistent mit AP1–AP6; begrenzt auch Inflationsenergie. (6) Kein Widerspruch gefunden; zwei offene Grenzen präzise dokumentiert (B₁/A8, Quantisierung). Kerndokumente: `de/fakten/theorie/rt42_ap7_konsistenz_rt33_rt40_rt41.md` · `en/facts/theory/rt42_ap7_consistency_rt33_rt40_rt41.md`
 
 ---
 
