@@ -36,7 +36,9 @@ Raumzeitphysik (Warpantrieb — erste Warpblase mit positiver Energiedichte).
     - [Erklärungen](#erklärungen)
     - [Analysetools](#analysetools)
     - [Theoretische Grundlagen](#theoretische-grundlagen)
+    - [RT-40 Anwendungen: Relativität und Lorentz](#rt-40-anwendungen-relativität-und-lorentz)
 - [Lizenz](#lizenz)
+- [Forschungsaufgaben](#forschungsaufgaben)
 
 ---
 
@@ -268,8 +270,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | # | Konzept | Axiome | Beschreibung |
 |---|---------|--------|-------------|
 | 1 | [ResoCalc](fakten/konzepte/ResoCalc/resocalc.md) | A1, A3, A4 | Drehmomentberechnung im Resonanzfeld |
-| 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | A1, A3–A7 | Reaktorkonzept |
-| 3 | [Warpantrieb](fakten/konzepte/warpantrieb/warpantrieb.md) | A1, A4, A5 | Antriebskonzept — **erste Warpblasensimulation mit positiver Energiedichte** (E⁻ = 0); w-Vorzeichenwechsel; RT-33: Skalierungsgesetz ρ∝R⁻², R*>>1 AU ([Analyse](fakten/konzepte/warpantrieb/analyse/rt33_energieluecke.py)) |
+| 2 | [Resonanzreaktor](fakten/konzepte/resonanzreaktor/README.md) | A1, A3–A7 | Reaktorkonzept — Übersicht und Einleitung |
+| 2a | [Resonanzreaktor — Hauptdokument](fakten/konzepte/resonanzreaktor/resonanzreaktor.md) | A1, A3–A7 | Vollständige Beschreibung des Reaktorkonzepts |
+| 2b | [Experimentalvorschlag Am-241](fakten/konzepte/resonanzreaktor/experimentalvorschlag_am241.md) | A1, A3, A4 | Falsifizierbarer Experimentalvorschlag: phasenabhängige Photoanregung von Am-241 an der GDR |
+| 2c | [Simulationsergebnisse Resonanzreaktor](fakten/konzepte/resonanzreaktor/simulationsergebnisse.md) | A1, A3, A4 | Quantitative Simulationsergebnisse des Resonanzreaktors |
+| 2d | [Kosten-Nutzen-Rechnung Resonanzreaktor](fakten/konzepte/resonanzreaktor/kosten_nutzen_rechnung_resonanzreaktor.md) | A1, A3, A4 | Quantitative Bewertung auf Basis der RFT-Simulationsergebnisse |
+| 2e | [Resonanz-Impulsantrieb](fakten/konzepte/resonanzreaktor/impulsantrieb.md) | A1, A4, A5 | Gerichtete Spaltung als Raumfahrtantrieb |
+| 3 | [Warpantrieb — Übersicht](fakten/konzepte/warpantrieb/README.md) | A1, A4, A5 | Einführung und Überblick zum Warpantriebs-Konzept |
+| 3a | [Warpantrieb — Hauptdokument](fakten/konzepte/warpantrieb/warpantrieb.md) | A1, A4, A5 | Antriebskonzept — **erste Warpblasensimulation mit positiver Energiedichte** (E⁻ = 0); w-Vorzeichenwechsel; RT-33: Skalierungsgesetz ρ∝R⁻², R*>>1 AU ([Analyse](fakten/konzepte/warpantrieb/analyse/rt33_energieluecke.py)) |
 
 ---
 
@@ -281,8 +289,13 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | 2 | [Doppelpendel](fakten/simulationen/doppelpendel/begleitkapitel_doppelpendel.md) | A1, A2, A4 | Klassisches Doppelpendel mit dynamischer Kopplungseffizienz ε(θ₂−θ₁) — RT-08: χ²-Fit 🔬 ([Analyse](fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py)) — RT-38: [Experimentprotokoll](fakten/simulationen/doppelpendel/experiment/protokoll_rt38.md) 🧪 |
 | 3 | [Gekoppelte Oszillatoren](fakten/simulationen/gekoppelte_oszillatoren/gekoppelte_oszillatoren.md) | A1–A4 | Energieaustausch, Resonanzerkennung, Live-Animation |
 | 4 | [Numerische Demonstration](fakten/simulationen/numerische_demonstration/README.md) | A3, A4, A5 | Konsistenz-Demonstration: Resonanzenergie, Kopplungseffizienz und Entropie über (A, τ) |
+| 4a | [Numerische Demonstration — Begleitkapitel](fakten/simulationen/numerische_demonstration/begleitkapitel_numerische_demonstration.md) | A3, A4, A5 | Ausführliches Begleitkapitel zur numerischen Demonstration |
+| 4b | [Numerische Demonstration — Dokumentation](fakten/simulationen/numerische_demonstration/docs/index.md) | A3, A4, A5 | Technische Dokumentation und Index |
 | 5 | [FLRW-Simulationen](fakten/simulationen/FLRW-Simulationen/README.md) | A1–A7 | 1.530 Läufe, η ≈ cos², Δd_η > 6σ |
 | 6 | [Schrödinger-Simulation](fakten/simulationen/schrödinger/README.md) | A4 | Ableitung der Schrödinger-Gl. aus Axiom 4; Fidelity = 1,0 (alle 4 Szenarien); Störungstheorie 1−F ~ λ² bestätigt; falsifizierbare Vorhersage für ⁸⁷Rb |
+| 6a | [Schrödinger — Experimentalvorschlag](fakten/simulationen/schrödinger/docs/experimental_proposal.md) | A4 | Falsifizierbarer Experimentalvorschlag für ⁸⁷Rb-BEC in harmonischer Falle |
+| 6b | [Schrödinger — Forschungsprogramm (Roadmap)](fakten/simulationen/schrödinger/docs/schrodinger_roadmap.md) | A4 | Schrödinger-Startstrecke: Forschungsprogramm und Minimalnachweis |
+| 7 | [Hamilton-Simulationen](fakten/simulationen/hamilton/README.md) | A1, A3, A4 | RT-31: Resonanz-Hamiltonoperator — Phonon-Kopplung und Spin-Bahn-Kopplung |
 
 ---
 
@@ -292,6 +305,8 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 |---|---------|--------|-------------|
 | 1 | [Resonanzanalyse in Massendaten](fakten/empirisch/cern/dokumentation.md) | A1, A3, A7 | CERN-Daten: Signifikante Resonanzüberschüsse |
 | 2 | [Monte-Carlo-Test](fakten/empirisch/monte_carlo/monte_carlo_test/monte_carlo.md) | A1, A3, A7 | 1.500.000 Simulationen, 5 Resonanzen, emp. p = 0 |
+| 2a | [Monte-Carlo — Publikationsbericht](fakten/empirisch/monte_carlo/monte_carlo_test/publication_results/main_report/resonanz_report.md) | A1, A3, A7 | Vollständiger Publikationsbericht der Monte-Carlo-Analyse |
+| 2b | [Monte-Carlo — Analysebericht](fakten/empirisch/monte_carlo/monte_carlo_test/report_out/resonanz_report.md) | A1, A3, A7 | Automatisch generierter Analysebericht der Monte-Carlo-Simulation |
 
 
 ---
@@ -302,6 +317,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 |---|-----------|--------|-------------|
 | 1 | [Schwarmresonanz](fakten/docs/erklaerungen/schwarmresonanz.md) | A1–A7 | Warum Vogelschwärme nicht kollidieren — und warum die RFT neue Türen öffnet |
 | 2 | [Resonanz in der Physik](fakten/docs/erklaerungen/resonanz_in_der_physik.md) | A1–A7 | Wie ein Muster Mechanik, Thermodynamik, Elektrodynamik, QM und Relativität verbindet |
+| 3 | [RFT – Konsistenzbegründung: Universum als Resonanzblase](fakten/docs/erklaerungen/rft_konsistenzpruefung_resonanzblase.md) | A1–A7 | Formale Begleitstudie: Konsistenzprüfung der Kernaussagen aus „Das Universum als Resonanzblase" |
 
 ---
 
@@ -321,7 +337,26 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 | 2 | [Wirkungsintegral-Herleitung von π](fakten/theorie/wirkungsintegral_pi_herleitung.md) | A4 | Formale Herleitung von π als Sattelpunktsbeitrag der stationären Phase im Pfadintegral (RT-01, Aug 2026) |
 | 3 | [G_sync — Gruppenstruktur und Invarianzbeweise](fakten/theorie/gsync_gruppenstruktur.md) | A7 | Gruppentheoretischer Beweis: G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ); Eindeutigkeit von cos²(Δφ/2); RT-02, Aug 2026 |
 | 4 | [A5-Herleitung: ê(Δφ, ∇Φ) aus G_sync](fakten/theorie/a5_vektorialitaet_herleitung.md) | A5 | RT-36: ê ist irreduzibles Postulat — D-Erzeuger erzwingt ∂_t Φ, nicht ∇Φ; formale Begründungsgrundlage RT-01a; Aug 2026 |
-| 5 | [Peer-Review-Bereitschaft](../PEER_REVIEW_READINESS.md) | — | Status aller offenen Formalisierungsschritte und theoretischen Grundlagen nach Peer-Review-Kriterien |
+| 5 | [κ-Parameter in der RFT (RT-11)](fakten/theorie/kappa_parameter_rft.md) | A4 | Konventionsdeklaration zum κ-Parameter; κ = 1 als zwingende Konsequenz der ε = η Identität (Aug 2026) |
+| 6 | [RT-41 — Axiom A8: Kopplungswellengeschwindigkeit](fakten/theorie/rt41_axiom_a8_kopplungswelle.md) | A1–A7 | Herleitung oder irreduzibles Postulat der Kopplungswellengeschwindigkeit (Sep 2026) |
+| 7 | [RT-01b — Numerisches Pfadintegral: π-Herleitung](fakten/theorie/simulationen/rt01b/README.md) | A4 | Numerische Verifikation der π-Herleitung über Pfadintegral-Simulation |
+| 8 | [Peer-Review-Bereitschaft](../PEER_REVIEW_READINESS.md) | — | Status aller offenen Formalisierungsschritte und theoretischen Grundlagen nach Peer-Review-Kriterien |
+
+---
+
+## RT-40 Anwendungen: Relativität und Lorentz
+
+Formale Anwendungen der RFT auf relativistische Physik (RT-40, Sep 2026):
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Phase ↔ Rapidität](fakten/theorie/rt40_ap1_phase_rapiditaet.md) | A1, A4, A5 | Formale Identifikation: resonanzfeldtheoretische Phase und relativistische Rapidität |
+| 2 | [AP2 — Kopplungseffizienz im Lorentz-Rahmen](fakten/theorie/rt40_ap2_kopplungseffizienz_lorentz.md) | A1, A4 | Verhalten von ε(Δφ) unter Lorentz-Transformation |
+| 3 | [AP3 — Lorentz-Transformation aus der RFT](fakten/theorie/rt40_ap3_lorentz_transformation.md) | A1, A4, A7 | Herleitung der Lorentz-Transformation aus dem RFT-Formalismus |
+| 4 | [AP4 — Lichtgeschwindigkeit als Grenzfall](fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md) | A1, A4 | c als emergenter Grenzfall der Resonanzfeldtheorie |
+| 5 | [AP5 — Zeitdilatation und Längenkontraktion](fakten/theorie/rt40_ap5_zeitdilatation_laengenkontraktion.md) | A1, A4, A5 | Zeitdilatation und Längenkontraktion im RFT-Rahmen |
+| 6 | [AP6 — Falsifizierbarkeit und SRT-Abgrenzung](fakten/theorie/rt40_ap6_falsifizierbarkeit_srt_abgrenzung.md) | A1–A7 | Falsifizierbare Vorhersagen und Abgrenzung zur Speziellen Relativitätstheorie |
+| 7 | [AP7 — Warpantrieb: Konsistenzprüfung](fakten/theorie/rt40_ap7_warpantrieb_konsistenzpruefung.md) | A1, A4, A5 | Formale Konsistenzprüfung des Warpantriebs-Konzepts im Lorentz-Rahmen |
 
 ---
 
@@ -329,6 +364,13 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 
 Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 → [Zum Lizenztext](lizenz/RFT-lizenz_v1.4.md)
+→ [Änderungsprotokoll (Changelog)](lizenz/CHANGELOG.md)
+
+---
+
+## Forschungsaufgaben
+
+→ [Forschungsaufgaben und offene Punkte](../RESEARCH_TASKS.md)
 
 ---
 
