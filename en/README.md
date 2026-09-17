@@ -372,6 +372,7 @@ Formal applications of RFT to cosmology (RT-42, Sep 2026):
 | 2 | [AP2 — Time Derivative of the Phase](facts/theory/rt42_ap2_time_derivative_phase.md) | A4, A5, A8 | Closed ODE Δφ̇ = β·tan(Δφ/2) from coupling dynamics; Hubble parameter H(t) = H₀√ε(t) derived analytically — **✅ RT-42 AP2 completed (Sep 2026)** |
 | 3 | [AP3 — Connection to Λ or Dark Energy](facts/theory/rt42_ap3_connection_lambda_dark_energy.md) | A1, A4, A5, A8 | RFT explains Λ as the effective limiting case of a static super-horizon gradient; w_eff ∈ [−1, +1/3]; ΛCDM as special case (β → 0, k₀ = const) — **✅ RT-42 AP3 completed (Sep 2026)** |
 | 4 | [AP4 — Scaling Problem: Cosmological Classification](facts/theory/rt42_ap4_scaling_problem_cosmology.md) | A1, A4, A5, A8 | 28-orders discrepancy (ρ_warp ~ 10¹⁹ J/m³ vs. ρ_Λ ~ 10⁻⁹ J/m³) identified as an apparent problem: k_warp ~ 10⁻² m⁻¹ (local) ≠ k₀ ~ 10⁻²⁶ m⁻¹ (cosmological); different regimes, different energy formulas — **✅ RT-42 AP4 completed (Sep 2026)** |
+| 5 | [AP5 — Falsifiable Deviations from ΛCDM](facts/theory/rt42_ap5_falsifiable_deviations_lcdm.md) | A1, A4, A5, A8 | Four measurable deviations from ΛCDM identified: dynamic w(z) = w₀ + w_a·z/(1+z) with w_a ≈ β/H₀; modified H(z) (≤ 3 %); suppressed structure growth Δ(fσ₈) ≤ 1 %; reduced ISW signal at ℓ < 20. Primary falsification criterion: w_a = 0 (5σ) forces β = 0 (ΛCDM limit). DESI DR5 and Euclid decisive — **✅ RT-42 AP5 completed (Sep 2026)** |
 
 ---
 

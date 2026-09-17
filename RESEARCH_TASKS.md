@@ -548,7 +548,7 @@ Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall ent
 
 ---
 
-#### AP5 – Falsifizierbare Abweichungen vom $\Lambda$CDM
+#### AP5 – Falsifizierbare Abweichungen vom $\Lambda$CDM ✅ **Abgeschlossen (Sep 2026)**
 
 **Aufgabe:**
 Messbare Unterschiede zwischen RFT-Kosmologie und $\Lambda$CDM benennen.
@@ -560,6 +560,8 @@ Messbare Unterschiede zwischen RFT-Kosmologie und $\Lambda$CDM benennen.
 4. Falsifikationskriterien benennen.
 
 **Erfolgskriterium:** Mindestens eine messbare Abweichung — oder Nachweis vollständiger Äquivalenz.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Vier messbare Abweichungen vom $\Lambda$CDM benannt: (1) Dynamischer Zustandsgleichungsparameter $w(z) = w_0 + w_a\,z/(1+z)$ mit $w_a \approx \beta/H_0 \cdot \sin^2(\Delta\phi_0/2) \neq 0$ (sofern $\beta \neq 0$) — direkt aus AP2/AP3 abgeleitet; $\Lambda$CDM postuliert $w_a = 0$. (2) Modifizierter Hubble-Parameter $\Delta H/H \lesssim 3\,\%$ bei $\beta = 0{,}5\,H_0$, messbar durch Euclid und Rubin LSST. (3) Verlangsamtes Strukturwachstum $\Delta(f\sigma_8) \lesssim 1\,\%$ durch verstärkte Reibung bei $H_{\rm RFT} > H_{\rm \Lambda CDM}$. (4) Reduziertes ISW-Signal bei $\ell < 20$ für $\beta > 0$. Primäres Falsifikationskriterium: $w_a = 0$ (5σ) erzwingt $\beta = 0$ — vollständige Äquivalenz mit $\Lambda$CDM. DESI-DR1 (2024) verträglich; entscheidende Tests durch DESI-DR5 und Euclid. Kerndokumente: `de/fakten/theorie/rt42_ap5_falsifizierbare_abweichungen_lcdm.md` · `en/facts/theory/rt42_ap5_falsifiable_deviations_lcdm.md`
 
 ---
 
