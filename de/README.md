@@ -372,6 +372,7 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 | 2 | [AP2 — Zeitableitung der Phase](fakten/theorie/rt42_ap2_zeitableitung_phase.md) | A4, A5, A8 | Geschlossene ODE Δφ̇ = β·tan(Δφ/2) aus der Kopplungsdynamik; Hubble-Parameter H(t) = H₀√ε(t) analytisch hergeleitet — **✅ RT-42 AP2 abgeschlossen (Sep 2026)** |
 | 3 | [AP3 — Verbindung zu Λ oder Dunkler Energie](fakten/theorie/rt42_ap3_verbindung_lambda_dunkle_energie.md) | A1, A4, A5, A8 | RFT erklärt Λ als effektiven Grenzfall eines statischen Superhorizontalgradienten; w_eff ∈ [−1, +1/3]; ΛCDM als Spezialfall (β → 0, k₀ = const) — **✅ RT-42 AP3 abgeschlossen (Sep 2026)** |
 | 4 | [AP4 — Skalierungsproblem kosmologisch einordnen](fakten/theorie/rt42_ap4_skalierungsproblem_kosmologie.md) | A1, A4, A5, A8 | 28-Größenordnungen-Diskrepanz (ρ_warp ~ 10¹⁹ J/m³ vs. ρ_Λ ~ 10⁻⁹ J/m³) als Scheinproblem ausgewiesen: k_warp ~ 10⁻² m⁻¹ (lokal) ≠ k₀ ~ 10⁻²⁶ m⁻¹ (kosmologisch); verschiedene Regime, verschiedene Energieformeln — **✅ RT-42 AP4 abgeschlossen (Sep 2026)** |
+| 5 | [AP5 — Falsifizierbare Abweichungen vom ΛCDM](fakten/theorie/rt42_ap5_falsifizierbare_abweichungen_lcdm.md) | A1, A4, A5, A8 | Vier messbare Abweichungen vom ΛCDM benannt: dynamisches w(z) = w₀ + w_a·z/(1+z) mit w_a ≈ β/H₀; modifiziertes H(z) (≤ 3 %); verlangsamtes Strukturwachstum Δ(fσ₈) ≤ 1 %; reduziertes ISW-Signal bei ℓ < 20. Primäres Falsifikationskriterium: w_a = 0 (5σ) erzwingt β = 0 (ΛCDM-Grenzfall). DESI-DR5 und Euclid entscheidend — **✅ RT-42 AP5 abgeschlossen (Sep 2026)** |
 
 ---
 
