@@ -400,7 +400,7 @@ The success criterion is **fully met**:
 **Open follow-up tasks:**
 - RT-34: Complete 3D warp bubble (spherical-azimuthal geometry)
 - RT-03/RT-12: Experimental determination of λ (⁸⁷Rb interferometry)
-- A8: Axiom extension (coupling wave velocity, closes B₁)
+- ~~A8: Axiom extension (coupling wave velocity, closes B₁)~~ ✅ Completed (Sep 2026) — RT-41
 - Quantisation of the RFT (long-term)
 
 ---

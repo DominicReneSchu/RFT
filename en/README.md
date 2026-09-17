@@ -6,7 +6,7 @@ Welcome to the official repository of the **Resonance Field Theory (RFT)**.
 This project unifies mathematics, physics, and engineering into
 an axiomatic model of resonance. The theory describes
 fundamental processes as coupling and resonance phenomena in
-oscillation fields — formally grounded in 7 axioms (A1–A7).
+oscillation fields — formally grounded in 8 axioms (A1–A8).
 
 **Empirically validated in six domains:** Particle physics
 (1,500,000 Monte Carlo simulations, 5 resonances, emp. p = 0),
@@ -125,7 +125,7 @@ These two observations — π as a phase-space constant and energy as a vector �
 
 ## Axiom System (Summary)
 
-The RFT consists of 7 core axioms:
+The RFT consists of 8 core axioms:
 
 | Axiom | Core statement | Formula | Status (Aug 2026) |
 |-------|----------------|---------|-------------------|
@@ -136,6 +136,7 @@ The RFT consists of 7 core axioms:
 | A5 | Energy direction | E⃗ = E·ê(Δφ, ∇Φ) | **Irreducible postulate** (RT-36) |
 | A6 | Information flow | MI > 0 ⟺ PCI > 0 | Postulate |
 | A7 | Invariance (G_sync) | G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | **Algebraically proved** (RT-02) |
+| A8 | Coupling wave velocity | c = 1/√(μ₀ε₀) | **Irreducible postulate** (RT-41) |
 
 Additionally there is an interpretative extension:
 - **E1 (Observer as resonator):** Follows from A1, A3, A6
@@ -243,7 +244,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 
 | # | Document | Axioms | Description |
 |---|----------|--------|-------------|
-| 1 | [Axiomatic Foundation](facts/docs/definitions/axiomatic_foundation.md) | A1–A7 | Formal axioms A1–A7 with proofs and empirical tests |
+| 1 | [Axiomatic Foundation](facts/docs/definitions/axiomatic_foundation.md) | A1–A8 | Formal axioms A1–A8 with proofs and empirical tests |
 | 2 | [Coupling Efficiency ε](facts/docs/definitions/coupling_efficiency.md) | A1–A7 | Unified definition, ε = η identity |
 | 3 | [Energy as Fundamental Quantity](facts/docs/definitions/energy_as_fundamental_constant.md) | A1–A5, A7 | Interpretative hypothesis: all quantities from E |
 | 4 | [Resonance Lexicon](facts/docs/definitions/resonance_lexicon.md) | A1–A7 | Glossary of RFT terms |

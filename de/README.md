@@ -6,7 +6,7 @@ Willkommen im offiziellen Repository der **Resonanzfeldtheorie (RFT)**.
 Dieses Projekt vereint Mathematik, Physik und Technik zu
 einem axiomatischen Modell der Resonanz. Die Theorie beschreibt
 fundamentale Prozesse als Kopplungs- und Resonanzphänomene in
-Schwingungsfeldern — formal gegründet auf 7 Axiome (A1–A7).
+Schwingungsfeldern — formal gegründet auf 8 Axiome (A1–A8).
 
 **Empirisch validiert in sechs Domänen:** Teilchenphysik
 (1.500.000 Monte-Carlo-Simulationen, 5 Resonanzen, emp. p = 0),
@@ -125,7 +125,7 @@ Diese beiden Beobachtungen — π als Phasenraumkonstante und Energie als Vektor
 
 ## Axiomensystem (Kurzfassung)
 
-Die RFT besteht aus 7 Kern-Axiomen:
+Die RFT besteht aus 8 Kern-Axiomen:
 
 | Axiom | Kernaussage | Formel | Status (Aug 2026) |
 |-------|-------------|--------|-------------------|
@@ -136,6 +136,7 @@ Die RFT besteht aus 7 Kern-Axiomen:
 | A5 | Energierichtung | E⃗ = E·ê(Δφ, ∇Φ) | **Irreduzibles Postulat** (RT-36) |
 | A6 | Informationsfluss | MI > 0 ⟺ PCI > 0 | Postulat |
 | A7 | Invarianz (G_sync) | G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | **Algebraisch bewiesen** (RT-02) |
+| A8 | Kopplungswellengeschwindigkeit | c = 1/√(μ₀ε₀) | **Irreduzibles Postulat** (RT-41) |
 
 Zusätzlich gibt es eine interpretative Erweiterung:
 - **E1 (Beobachter als Resonator):** Folgt aus A1, A3, A6
@@ -242,7 +243,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 
 | # | Dokument | Axiome | Beschreibung |
 |---|----------|--------|-------------|
-| 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | A1–A7 | Formale Axiome A1–A7 mit Beweisen und empirischen Tests |
+| 1 | [Axiomatische Grundlegung](fakten/docs/definitionen/axiomatische_grundlegung.md) | A1–A8 | Formale Axiome A1–A8 mit Beweisen und empirischen Tests |
 | 2 | [Kopplungseffizienz ε](fakten/docs/definitionen/kopplungseffizienz.md) | A1–A7 | Vereinheitlichte Definition, ε = η Identität |
 | 3 | [Energie als fundamentale Größe](fakten/docs/definitionen/energie_als_urkonstante.md) | A1–A5, A7 | Interpretative Hypothese: Alle Größen aus E |
 | 4 | [Resonanzlexikon](fakten/docs/definitionen/resonanzlexikon.md) | A1–A7 | Glossar der RFT-Begriffe |

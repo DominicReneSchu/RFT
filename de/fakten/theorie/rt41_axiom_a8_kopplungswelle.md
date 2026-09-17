@@ -2,6 +2,9 @@
 
 *Dominic-René Schu, September 2026*
 
+*Status: ✅ Abgeschlossen (Sep 2026) — A8 als irreduzibles Postulat etabliert;
+in `axiomatische_grundlegung.md` eingetragen; Axiomensystem A1–A8 vollständig.*
+
 ---
 
 ## Inhaltsverzeichnis
@@ -212,14 +215,14 @@ Das Ergebnis B ist **kein Scheitern** der RFT. Es ist ein strukturell kohärente
 | G_sync erzwingt c? | Nein — keine SO(1,1)-Untergruppe (AP3) |
 | Ergebnis | **B: A8 ist irreduzibles Postulat** |
 | A8 formuliert? | Ja — § 6.3 |
-| Nächste Schritte | A8 in `axiomatische_grundlegung.md` eintragen; README aktualisieren |
+| Nächste Schritte | A8 in `axiomatische_grundlegung.md` eingetragen (Sep 2026) — abgeschlossen |
 
 **Deliverables dieses Dokuments:**
 - ✅ AP1–AP3 vollständig analysiert
 - ✅ Ergebnis B dokumentiert
 - ✅ A8 formal formuliert
-- 📋 A8 in `axiomatische_grundlegung.md` eintragen (AP4, folgende Aufgabe)
-- 📋 EN-Spiegeldokument: `en/facts/theory/rt41_axiom_a8_coupling_wave.md`
+- ✅ A8 in `axiomatische_grundlegung.md` eingetragen (AP4, abgeschlossen Sep 2026)
+- ✅ EN-Spiegeldokument: `en/facts/theory/rt41_axiom_a8_coupling_wave.md` (vorhanden)
 
 **Verbindung zu bestehenden Dokumenten:**
 - RT-40 AP3: `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` §8 (Ausgangspunkt)
