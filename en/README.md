@@ -36,7 +36,9 @@ Spacetime physics (warp drive — first positive-energy warp bubble).
     - [Explanations](#explanations)
     - [Analysis Tools](#analysis-tools)
     - [Theoretical Foundations](#theoretical-foundations)
+    - [RT-40 Applications: Relativity and Lorentz](#rt-40-applications-relativity-and-lorentz)
 - [License](#license)
+- [Research Tasks](#research-tasks)
 
 ---
 
@@ -181,6 +183,7 @@ A peer review process is actively being pursued:
 - [Response-to-Reviewers Template](peer_review_rft/submission/response_to_reviewers_template.md)
 - [Journal Selection Rationale](peer_review_rft/submission/journal_selection.md)
 - [Manuscript Review Report](peer_review_rft/submission/manuscript_review_report.md)
+- [Figures Overview](peer_review_rft/manuscript_en/figures/README.md)
 
 ---
 
@@ -268,8 +271,14 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | # | Concept | Axioms | Description |
 |---|---------|--------|-------------|
 | 1 | [ResoCalc](facts/concepts/ResoCalc/resocalc.md) | A1, A3, A4 | Torque calculation in resonance field |
-| 2 | [Resonance Reactor](facts/concepts/resonance_reactor/README.md) | A1, A3–A7 | Reactor concept |
-| 3 | [Warp Drive](facts/concepts/warp_drive/warp_drive.md) | A1, A4, A5 | Propulsion concept — **first positive-energy warp bubble simulation** (E⁻ = 0); w sign change; RT-33: scaling law ρ∝R⁻², R*>>1 AU ([analysis](facts/concepts/warp_drive/analyse/rt33_energy_gap.py)) |
+| 2 | [Resonance Reactor](facts/concepts/resonance_reactor/README.md) | A1, A3–A7 | Reactor concept — overview and introduction |
+| 2a | [Resonance Reactor — Main Document](facts/concepts/resonance_reactor/resonance_reactor.md) | A1, A3–A7 | Complete description of the resonance reactor concept |
+| 2b | [Experimental Proposal Am-241](facts/concepts/resonance_reactor/experimental_proposal_am241.md) | A1, A3, A4 | Falsifiable experimental proposal: phase-dependent photoexcitation of Am-241 at the GDR |
+| 2c | [Simulation Results — Resonance Reactor](facts/concepts/resonance_reactor/simulation_results.md) | A1, A3, A4 | Quantitative simulation results of the resonance reactor |
+| 2d | [Cost-Benefit Analysis — Resonance Reactor](facts/concepts/resonance_reactor/cost_benefit_analysis.md) | A1, A3, A4 | Quantitative assessment based on RFT simulation results |
+| 2e | [Resonance Impulse Drive](facts/concepts/resonance_reactor/impulse_drive.md) | A1, A4, A5 | Directed fission as a space propulsion system |
+| 3 | [Warp Drive — Overview](facts/concepts/warp_drive/README.md) | A1, A4, A5 | Introduction and overview of the warp drive concept |
+| 3a | [Warp Drive — Main Document](facts/concepts/warp_drive/warp_drive.md) | A1, A4, A5 | Propulsion concept — **first positive-energy warp bubble simulation** (E⁻ = 0); w sign change; RT-33: scaling law ρ∝R⁻², R*>>1 AU ([analysis](facts/concepts/warp_drive/analyse/rt33_energy_gap.py)) |
 
 ---
 
@@ -281,8 +290,13 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | 2 | [Double Pendulum](facts/simulations/double_pendulum/accompanying_chapter_double_pendulum.md) | A1, A2, A4 | Classical double pendulum with dynamic coupling efficiency ε(θ₂−θ₁) — RT-08: χ² fit 🔬 ([Analysis](facts/simulations/double_pendulum/analyse/rt08_double_pendulum_comparison.py)) — RT-38: [Experiment protocol](facts/simulations/double_pendulum/experiment/protocol_rt38.md) 🧪 |
 | 3 | [Coupled Oscillators](facts/simulations/coupled_oscillators/coupled_oscillators.md) | A1–A4 | Energy exchange, resonance detection, live animation |
 | 4 | [Numerical Demonstration](facts/simulations/numerical_demonstration/README.md) | A3, A4, A5 | Consistency demonstration: resonance energy, coupling efficiency, and entropy over (A, τ) |
-| 5 | [FLRW Simulations](facts/simulations/FLRW-simulations/README.md) | A1–A7 | 1,530 runs, η ≈ cos², Δd_η > 6σ |
+| 4a | [Numerical Demonstration — Accompanying Chapter](facts/simulations/numerical_demonstration/accompanying_chapter_numerical_demonstration.md) | A3, A4, A5 | Extended accompanying chapter for the numerical demonstration |
+| 4b | [Numerical Demonstration — Documentation](facts/simulations/numerical_demonstration/docs/index.md) | A3, A4, A5 | Technical documentation and index |
+| 5 | [FLRW Simulations](facts/simulations/FLRW_simulations/README.md) | A1–A7 | 1,530 runs, η ≈ cos², Δd_η > 6σ |
 | 6 | [Schrödinger Simulation](facts/simulations/schrodinger/README.md) | A4 | Derivation of Schrödinger eq. from Axiom 4; Fidelity = 1.0 (all 4 scenarios); perturbation theory 1−F ~ λ² confirmed; falsifiable prediction for ⁸⁷Rb |
+| 6a | [Schrödinger — Experimental Proposal](facts/simulations/schrodinger/docs/experimental_proposal.md) | A4 | Falsifiable experimental proposal for ⁸⁷Rb-BEC in a harmonic trap |
+| 6b | [Schrödinger — Research Programme (Roadmap)](facts/simulations/schrodinger/docs/schrodinger_roadmap.md) | A4 | Schrödinger starting track: research programme and minimal proof |
+| 7 | [Hamilton Simulations](facts/simulations/hamilton/README.md) | A1, A3, A4 | RT-31: Resonance Hamiltonian operator — phonon coupling and spin-orbit coupling |
 
 ---
 
@@ -292,6 +306,8 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 |---|---------|--------|-------------|
 | 1 | [Resonance Analysis in Mass Data](facts/empirical/cern/documentation.md) | A1, A3, A7 | CERN data: significant resonance excesses |
 | 2 | [Monte Carlo Test](facts/empirical/monte_carlo/monte_carlo_test/monte_carlo.md) | A1, A3, A7 | 1,500,000 simulations, 5 resonances, emp. p = 0 |
+| 2a | [Monte Carlo — Publication Report](facts/empirical/monte_carlo/monte_carlo_test/publication_results/main_report/resonance_report.md) | A1, A3, A7 | Full publication report of the Monte Carlo analysis |
+| 2b | [Monte Carlo — Analysis Report](facts/empirical/monte_carlo/monte_carlo_test/report_out/resonance_report.md) | A1, A3, A7 | Auto-generated analysis report from the Monte Carlo simulation |
 
 
 ---
@@ -302,6 +318,7 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 |---|-------------|--------|-------------|
 | 1 | [Swarm Resonance](facts/docs/explanations/swarm_resonance.md) | A1–A7 | Why flocks of birds don't collide — and why RFT opens new doors |
 | 2 | [Resonance Across Physics](facts/docs/explanations/resonance_across_physics.md) | A1–A7 | How one pattern connects mechanics, thermodynamics, electrodynamics, QM, and relativity |
+| 3 | [RFT — Consistency Review: Universe as a Resonance Bubble](facts/docs/explanations/rft_consistency_review_resonance_bubble.md) | A1–A7 | Formal companion study: consistency check of the core claims from "The Universe as a Resonance Bubble" |
 
 ---
 
@@ -320,7 +337,26 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 | 1 | [π and e as Fundamental Constants of Space](facts/theory/pi_as_fundamental_constant.md) | A4, A5 | Founding idea of RFT: π as geometric phase-space constant, vectorial nature of energy — **✅ RT-01a complete (Aug 2026)** |
 | 2 | [Action Integral Derivation of π](facts/theory/action_integral_pi_derivation.md) | A4 | Formal derivation of π as the saddle-point contribution of the stationary phase in the path integral (RT-01, Aug 2026) |
 | 3 | [G_sync — Group Structure and Invariance Proofs](facts/theory/gsync_group_structure.md) | A7 | Group-theoretic proof: G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ); uniqueness of cos²(Δφ/2); RT-02, Aug 2026 |
-| 4 | [Peer Review Readiness](../PEER_REVIEW_READINESS.md) | — | Status of all open formalisation steps and theoretical foundations against peer-review criteria |
+| 4 | [A5 Derivation: ê(Δφ, ∇Φ) from G_sync](facts/theory/a5_vektorialitaet_herleitung.md) | A5 | RT-36: ê is an irreducible postulate — D-generator forces ∂_t Φ, not ∇Φ; formal justification for RT-01a; Aug 2026 |
+| 5 | [RT-41 — Axiom A8: Coupling Wave Speed](facts/theory/rt41_axiom_a8_coupling_wave.md) | A1–A7 | Derivation or irreducible postulate of the coupling wave speed (Sep 2026) |
+| 6 | [RT-01b — Numerical Path Integral: π Derivation](facts/theory/simulations/rt01b/README.md) | A4 | Numerical verification of the π derivation via path integral simulation |
+| 7 | [Peer Review Readiness](../PEER_REVIEW_READINESS.md) | — | Status of all open formalisation steps and theoretical foundations against peer-review criteria |
+
+---
+
+## RT-40 Applications: Relativity and Lorentz
+
+Formal applications of RFT to relativistic physics (RT-40, Sep 2026):
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Phase ↔ Rapidity](facts/theory/rt40_ap1_phase_rapidity.md) | A1, A4, A5 | Formal identification: resonance-field-theoretic phase and relativistic rapidity |
+| 2 | [AP2 — Coupling Efficiency in the Lorentz Frame](facts/theory/rt40_ap2_coupling_efficiency_lorentz.md) | A1, A4 | Behaviour of ε(Δφ) under Lorentz transformation |
+| 3 | [AP3 — Lorentz Transformation from RFT](facts/theory/rt40_ap3_lorentz_transformation.md) | A1, A4, A7 | Derivation of the Lorentz transformation from the RFT formalism |
+| 4 | [AP4 — Speed of Light as a Limiting Case](facts/theory/rt40_ap4_speed_of_light_limit.md) | A1, A4 | c as an emergent limiting case of Resonance Field Theory |
+| 5 | [AP5 — Time Dilation and Length Contraction](facts/theory/rt40_ap5_time_dilation_length_contraction.md) | A1, A4, A5 | Time dilation and length contraction in the RFT framework |
+| 6 | [AP6 — Falsifiability and SRT Distinction](facts/theory/rt40_ap6_falsifiability_srt_distinction.md) | A1–A7 | Falsifiable predictions and distinction from Special Relativity |
+| 7 | [AP7 — Warp Drive: Consistency Check](facts/theory/rt40_ap7_warp_consistency_check.md) | A1, A4, A5 | Formal consistency check of the warp drive concept in the Lorentz framework |
 
 ---
 
@@ -328,6 +364,13 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 
 This project is licensed under the **RFT-License 1.4**
 → [View license text](license/RFT-license_v1.4.md)
+→ [Changelog](license/CHANGELOG.md)
+
+---
+
+## Research Tasks
+
+→ [Research tasks and open items](../RESEARCH_TASKS.md)
 
 ---
 
