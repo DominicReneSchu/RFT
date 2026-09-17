@@ -56,7 +56,7 @@ Status: Aktiv
 
 ### Langfristig offen
 11. ~~RT-33 — Warpantrieb Stufe 5 (Energielücke)~~ ✅ Abgeschlossen (Aug 2026) — Skalierungsgesetz ρ∝R⁻², R*>>1 AU für alle Fusionsszenarien
-12. RT-34 — Warpantrieb Stufe 6 (3D-Blase) ← Nächste intern abschließbare Aufgabe
+12. ~~RT-34 — Warpantrieb Stufe 6 (3D-Blase)~~ ✅ Abgeschlossen (Sep 2026) — Falsifizierungstest bestanden: ρ≥0 überall; GR-Solver (Christoffel, Riemann, Ricci) implementiert
 
 ---
 
@@ -421,15 +421,17 @@ Die Energielücke ist astronomisch — kein reines Skalierungsproblem.
 **Kerndokument:** `de/fakten/konzepte/warpantrieb/`
 
 ### RT-34 — Warpantrieb: 3D-Warpblase (Stufe 6)
-**Status: 📋 Offen**
-**Motivation:** Das Warpantrieb-README dokumentiert Stufe 6 als ❌ nicht begonnen:
-Die vollständige 3D-Warpgeometrie (azimutale Symmetrie, ρ(r,θ)) fehlt.
-**Aufgabe:** 3D-Warpblasenprofil simulieren mit sphärisch-azimutaler Geometrie.
-Implementierung eines numerischen GR-Solvers (z.B. via `sympy.diffgeom` oder
-`einsteinpy`) für das Zwei-Feld-Modell.
-**Falsifizierung:** Wenn ρ < 0 in irgendeiner Raumzeitregion auftritt, ist das
-Zwei-Feld-Modell nicht hinreichend für eine physikalische Warpblase.
-**Verweise:** `de/fakten/konzepte/warpantrieb/README.md`
+**Status: ✅ Abgeschlossen (Sep 2026)**
+**Ergebnis:** Vollständige sphärisch-azimutale 3D-Warpblase implementiert.
+Falsifizierungstest bestanden: ρ(x,y,z) ≥ 0 in allen Raumzeitregionen des
+50³-Gitters. GR-Solver (numerische Christoffel-Symbole Γ^t_tr, Γ^r_tt,
+Riemann-Tensor R^r_trt, vollständiger Ricci-Skalar R_full) implementiert.
+Zwei-Feld-Modell ist hinreichend für eine physikalische Warpblase.
+**Neue Dateien:** `analyse/rt34_warpblase_3d.py` · `analyse/rt34_warp_bubble_3d.py`
+**Geänderte Dateien:** `de/fakten/konzepte/warpantrieb/warp_3d.py` (GR-Solver,
+Falsifizierungstest) · `en/facts/concepts/warp_drive/warp_3d.py` (EN-Spiegel) ·
+beide READMEs (Stufe 6 ✅)
+**Kerndokument:** `de/fakten/konzepte/warpantrieb/`
 
 ---
 
