@@ -19,6 +19,7 @@ Status: Aktiv
 | Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
+| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | 📋 Offen (RT-42) |
 
 ---
 
@@ -26,8 +27,9 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
-3. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
+2. RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik
+3. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
+4. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -410,6 +412,237 @@ Messung der Schwerpunktverschiebung Δ⟨x⟩ als Funktion von Δφ.
 **Einrichtung:** ELI-NP (Magurele, Rumänien) — gepulste Gammastrahlung
 **Protokoll:** Am-241-Probe mit kohärenter vs. inkohärenter Gammabestrahlung
 bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
+
+
+---
+
+## Kategorie 5: Kosmologie
+
+## RT-42 – RFT-Kosmologie
+
+### Ableitung einer Friedmann-Analogie aus der Resonanzfeldtheorie
+
+**Version:** 1.0 – Entwurf
+**Datum:** 17. September 2026
+**Status:** 📋 Offen
+**Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
+**Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-04 (FLRW-Simulation)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Prüfen, ob die kosmische Expansion als **Phaseneffekt im RFT-Feld** beschrieben werden kann – also ob eine modifizierte Friedmann-Gleichung existiert, in der der Skalenfaktor $a(t)$ aus der Phasendynamik $\Delta\phi(t)$ folgt, **ohne** negative Energie oder eine separate Dunkle-Energie-Komponente.
+
+**Teilziele:**
+
+1. Formale Analogie zwischen RFT-Phasendynamik und Friedmann-Gleichungen herstellen.
+2. Zeitableitung der Phase $\dot{\Delta\phi}$ aus der Kopplungsdynamik herleiten.
+3. Prüfen, ob die RFT $\Lambda$ ersetzen, erklären oder als Spezialfall enthalten kann.
+4. Das Skalierungsproblem der Warp-Simulation (28–50 Größenordnungen) kosmologisch einordnen.
+5. Falsifizierbare Abweichungen vom $\Lambda$CDM-Modell benennen.
+6. **Konsistenz mit A8 prüfen:** Ist die Kopplungswellengeschwindigkeit $c = 1/\sqrt{\mu_0\varepsilon_0}$ mit einem kosmologischen Phasengradienten vereinbar?
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+- Axiome A1–A8 (A8 seit RT-41: $c = 1/\sqrt{\mu_0\varepsilon_0}$ als irreduzibles Postulat)
+- Kopplungseffizienz $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$
+- Kopplungsdynamik $\frac{dK_{ij}}{dt} = \alpha G \cos\Delta\phi - \beta K_{ij}$
+- Zustandsgleichung aus RT-33: $w(\theta) = \frac{1}{3}[2\varepsilon(\Delta\phi(\theta)) - 1]$
+- **RT-40-Ergebnis:** $\varepsilon = 1/\gamma^2$, Lorentz-Transformation als Grenzfall, $l_c \propto \gamma^{-2}$
+- **RT-33-Ergebnis:** ρ ≥ 0 überall, keine negative Energie nötig; $w \in [-1/3, +1/3]$
+- **RT-41-Ergebnis:** A8 etabliert $c$ als Kopplungswellengeschwindigkeit
+
+**Gegeben (Kosmologie):**
+- Friedmann-Gleichungen:
+  $$H^2 = \left(\frac{\dot a}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3}$$
+  $$\frac{\ddot a}{a} = -\frac{4\pi G}{3}\left(\rho + \frac{3p}{c^2}\right) + \frac{\Lambda c^2}{3}$$
+- $\Lambda$CDM: Dunkle Energie mit $w \approx -1$, ca. 68 % der Energiedichte
+- Beobachtungen: beschleunigte Expansion seit $z \approx 0{,}5$
+
+**Bekannte Spannung:**
+- Kosmologische Energiedichte: $\rho_\Lambda \approx 10^{-26}\,\text{kg/m}^3 \approx 10^{-9}\,\text{J/m}^3$
+- Warp-Simulation: $\rho \approx 10^{19}\,\text{J/m}^3$ für R = 50 m
+- **Diskrepanz: ~28 Größenordnungen** (gegen $\rho_\Lambda$)
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Formale Analogie: Phase ↔ Skalenfaktor
+
+**Aufgabe:**
+Prüfe, ob die RFT-Phasendifferenz $\Delta\phi(t)$ als **dynamische Variable** fungiert, die den kosmischen Skalenfaktor $a(t)$ steuert.
+
+**Konkrete Schritte:**
+1. Definiere ein homogenes, isotropes RFT-Feld: $\Delta\phi(\vec x, t) \to \Delta\phi(t)$.
+2. Leite aus A1–A8 ab, wie sich $\Delta\phi$ unter Expansion verhält.
+3. Setze $\varepsilon(t) = \cos^2(\Delta\phi(t)/2)$ und interpretiere $\varepsilon$ als **effektive kosmologische Dichte**.
+4. Vergleiche mit dem Friedmann-Ausdruck: $\varepsilon \leftrightarrow \rho/\rho_c$.
+5. Prüfe, ob eine Friedmann-artige Gleichung der Form
+   $$H^2 = \frac{8\pi G}{3}\rho_{\text{RFT}}(\varepsilon) - \frac{kc^2}{a^2}$$
+   ohne separaten $\Lambda$-Term auskommt.
+
+**Erfolgskriterium:** Explizite Abbildung $\Delta\phi(t) \to a(t)$ — oder Nachweis ihrer Nichtexistenz.
+
+---
+
+#### AP2 – Zeitableitung der Phase
+
+**Aufgabe:**
+Bestimme $\dot{\Delta\phi}$ aus der Kopplungsdynamik und interpretiere es als **Expansionsrate**.
+
+**Konkrete Schritte:**
+1. Homogenes Feld: $\frac{dK}{dt} = \alpha G \cos(\Delta\phi) - \beta K$
+2. Drücke $K$ durch $\Delta\phi$ aus (z. B. $K = K_0 \varepsilon(\Delta\phi)$).
+3. Leite eine Differentialgleichung für $\Delta\phi(t)$ her.
+4. Identifiziere $\dot{\Delta\phi}$ mit $H = \dot a/a$ — oder zeige, warum das nicht geht.
+5. Untersuche stationäre ($\dot{\Delta\phi} = 0$) und dynamische Lösungen.
+6. **Konsistenz mit A8:** Begrenzt $c$ die Phasendynamik auf kosmologischen Skalen?
+
+**Erfolgskriterium:** Geschlossene Differentialgleichung für $\Delta\phi(t)$, vergleichbar mit Friedmann-Lösungen.
+
+---
+
+#### AP3 – Verbindung zu $\Lambda$ oder Dunkler Energie
+
+**Aufgabe:**
+Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall enthält**.
+
+**Konkrete Schritte:**
+1. Prüfe $\varepsilon(\Delta\phi)$ für $\Delta\phi \to \pi$: $\varepsilon \approx \delta^2/4 \to 0$ — nicht $\Lambda$-artig.
+2. Prüfe, ob ein **Phasengradient** $\nabla\Delta\phi$ einen effektiven $\Lambda$-Term erzeugt.
+3. Vergleiche mit Quintessenz-Modellen ($w(t)$ dynamisch).
+4. Benenne Bedingungen, unter denen RFT und $\Lambda$CDM identisch sind.
+
+**Erfolgskriterium:** Klare Aussage: RFT ersetzt / erklärt / ist unvereinbar mit $\Lambda$.
+
+---
+
+#### AP4 – Skalierungsproblem kosmologisch einordnen
+
+**Aufgabe:**
+28-Größenordnungen-Diskrepanz zwischen Warp-Energiedichte ($10^{19}$ J/m³) und $\rho_\Lambda$ ($10^{-9}$ J/m³) auflösen oder als Scheinproblem enttarnen.
+
+**Konkrete Schritte:**
+1. Berechne $\rho_\Lambda c^2 \approx 10^{-9}$ J/m³.
+2. Interpretiere: Warp = lokale Metrikstörung ≠ kosmologische Hintergrundmetrik.
+3. Prüfe Skalierungsfaktor $\rho_{\text{warp}}/\rho_\Lambda \propto (R_H/R)^n$ — welches $n$?
+
+**Erfolgskriterium:** Diskrepanz gelöst (Skalierungsfaktor) oder als Scheinproblem ausgewiesen (verschiedene Regime).
+
+---
+
+#### AP5 – Falsifizierbare Abweichungen vom $\Lambda$CDM
+
+**Aufgabe:**
+Messbare Unterschiede zwischen RFT-Kosmologie und $\Lambda$CDM benennen.
+
+**Konkrete Schritte:**
+1. Freie Parameter: $\alpha/\beta$, $G(f_i/f_j)$, $\Delta\phi_0$, $\dot{\Delta\phi}_0$.
+2. Beobachtbare Effekte: Abweichung in $H(z)$, dynamisches $w(z)$, Strukturwachstum, CMB.
+3. Vergleich mit Planck, DES, SH0ES.
+4. Falsifikationskriterien benennen.
+
+**Erfolgskriterium:** Mindestens eine messbare Abweichung — oder Nachweis vollständiger Äquivalenz.
+
+---
+
+#### AP6 – Kosmische Expansion als Phaseneffekt
+
+**Aufgabe:**
+Hypothese prüfen: **Die kosmische Expansion ist ein Phaseneffekt des RFT-Feldes.**
+
+**Konkrete Schritte:**
+1. Präzise Formulierung: $\dot a/a = f(\Delta\phi, \dot{\Delta\phi}, \alpha, \beta)$.
+2. $f$ aus A1–A8 herleiten — oder Nichtableitbarkeit zeigen.
+3. Szenario A: $\Delta\phi$ konstant → De-Sitter-artig.
+4. Szenario B: $\Delta\phi$ wächst → dynamisches $H(t)$; erklärt Beschleunigung und/oder frühe Inflation?
+
+**Erfolgskriterium:** Explizite Gleichung gestützt — oder klar widerlegt.
+
+---
+
+#### AP7 – Konsistenz mit RT-33, RT-40 und RT-41
+
+**Aufgabe:**
+Konsistenz der RFT-Kosmologie mit abgeschlossenen Tasks prüfen.
+
+**Konkrete Schritte:**
+1. $\Delta\phi \to 0$ (flache Raumzeit) mit expandierendem Universum vereinbar?
+2. $\varepsilon = 1/\gamma^2$ mit kosmologischem $\varepsilon(t)$ vereinbar?
+3. Kosmologische Phase $\Delta\phi(t)$ → Rotverschiebung $z$ konsistent mit Beobachtung?
+4. Kohärenzlänge $l_c \propto \gamma^{-2}$ kosmologisch relevant?
+5. **A8-Konsistenz:** Erzeugt $c$ eine obere Grenze für $H$?
+6. Widersprüche explizit benennen — oder deren Abwesenheit zeigen.
+
+**Erfolgskriterium:** Konsistenz mit RT-33, RT-40, RT-41 nachgewiesen — oder Widersprüche präzise dokumentiert.
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier mit modifizierter Friedmann-Gleichung (falls existent).
+2. Explizite Differentialgleichung für $\Delta\phi(t)$ und ihre Lösungen.
+3. Klare Aussage zu $\Lambda$: Ersatz, Erklärung oder Unvereinbarkeit.
+4. Skalierungsanalyse der 28 Größenordnungen.
+5. Falsifizierbarkeitsabschnitt mit mindestens einer messbaren Abweichung.
+6. Numerische Simulation der RFT-Kosmologie (Python-Code, öffentlich).
+7. Peer-Review-Einreichung (z. B. *Classical and Quantum Gravity*, *JCAP* oder *Foundations of Physics*).
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** RFT lässt eine Friedmann-artige Gleichung zu — auch wenn identisch mit $\Lambda$CDM.
+**Mittelziel:** RFT ersetzt oder erklärt $\Lambda$ — ohne zusätzliche Komponente.
+**Maximalziel:** RFT erklärt beschleunigte Expansion aus Phasendynamik **und** sagt messbare Abweichung von $\Lambda$CDM voraus.
+**Negativziel:** Scheitern präzise dokumentieren; minimale Erweiterung formulieren (z. B. A9: kosmologische Randbedingung).
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** $\Lambda$ darf nicht als Postulat eingeführt werden, wenn sie hergeleitet werden soll.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten aus A1–A8 oder explizit als frei deklariert.
+- **Falsifizierbarkeit:** Jede Behauptung mit Widerlegungskriterium.
+- **Skalentrennung:** Warp (lokal) ≠ Friedmann (kosmologisch) — nicht verwechseln.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentiert.
+- **Abgrenzung:** (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage.
+- **A8-Konsistenz:** $c$ in allen kosmologischen Gleichungen konsistent berücksichtigt.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:** Kopplungsdynamik für homogenes, isotropes RFT-Feld formulieren. DGL für $\Delta\phi(t)$ herleiten. Stationäre und dynamische Lösungen prüfen.
+**Woche 3–4:** $\varepsilon(t) = \cos^2(\Delta\phi(t)/2)$ mit Friedmann vergleichen. Modifizierte Friedmann-Gleichung ohne $\Lambda$ prüfen.
+**Woche 5–6:** Falls Gleichung hält: $H(z)$ herleiten, mit Planck/DES vergleichen. Falls nicht: Lücke dokumentieren, minimale Erweiterung formulieren.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT die kosmische Expansion **exakt** erklärt, ist gering — $\Lambda$CDM passt auf viele Datenpunkte. Die Wahrscheinlichkeit, dass die RFT eine **strukturelle Alternative** liefert — dynamisches $w(z)$ ohne separate Dunkle-Energie-Komponente — ist nicht vernachlässigbar.
+
+Ehrlichster Ausgang: **Die RFT enthält $\Lambda$CDM als Grenzfall — und macht eine neue Vorhersage über die Dynamik von $w(z)$.**
+
+---
+
+### 9. Verwandte Tasks
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-04** | FLRW-Simulation – numerische Infrastruktur |
+| **RT-33** | Warp-Skalierung – $w(\theta)$-Modulation als Baustein |
+| **RT-34** | 3D-Warpblase – numerische Metrik |
+| **RT-40** | SRT-Brücke – $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 – Kopplungswellengeschwindigkeit $c$ |
+| **RT-42** | **Dieser Task** – Kosmologie |
 
 ---
 
