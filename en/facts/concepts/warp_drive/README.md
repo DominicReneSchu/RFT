@@ -37,7 +37,7 @@ controlled via ε(Δφ) = cos²(Δφ/2).
 | 3. Warp profile | Sign change Δw = +0.057 | ✅ |
 | 4. Optimization | V₀=0.5, λ₁=0.5, ε₂₀=3.0 | ✅ |
 | 5. Energy gap | ~10⁵ peak, scaling law ρ∝R⁻², R*>>1 AU (RT-33) | ✅ |
-| 6. 3D bubble | Complete warp geometry | ❌ |
+| 6. 3D bubble | Complete warp geometry | ✅ |
 
 ---
 
@@ -47,7 +47,9 @@ controlled via ε(Δφ) = cos²(Δφ/2).
 |------|-------------|
 | [warp_drive.md](warp_drive.md) | Physics, results, references |
 | [warp_drive.py](warp_drive.py) | Simulation: 5 experiments, 6 plots |
+| [warp_3d.py](warp_3d.py) | RT-34: 3D bubble, GR solver, falsification test |
 | [analyse/rt33_energy_gap.py](analyse/rt33_energy_gap.py) | RT-33: Scaling law, 4 plots, CSV |
+| [analyse/rt34_warp_bubble_3d.py](analyse/rt34_warp_bubble_3d.py) | RT-34: 3D analysis, falsification, GR solver |
 
 ---
 
@@ -55,6 +57,8 @@ controlled via ε(Δφ) = cos²(Δφ/2).
 
 ```bash
 python warp_drive.py    # → figures/ (6 plots)
+python warp_3d.py       # → figures/ (4 plots, falsification test, GR solver)
+python analyse/rt34_warp_bubble_3d.py  # → RT-34 full analysis
 ```
 
 ---
