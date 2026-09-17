@@ -25,15 +25,13 @@ import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import numpy as np
-from warp_3d import WarpBubble3D, PI, C, G, R_CURVATURE_SCALE
+from warp_3d import WarpBubble3D, PI, C
 from warp_3d import (
     plot_bubble_slices,
     plot_bubble_profiles,
     plot_bubble_3d_surface,
     plot_energy_budget,
     ensure_dir,
-    alcubierre_f,
-    alcubierre_df_dr,
 )
 
 
@@ -101,7 +99,7 @@ def analyse_gr_solver(bubble: WarpBubble3D) -> None:
 
     for r, theta, label in test_points:
         cs = bubble.christoffel_symbols_numerical(r, theta)
-        riem = bubble.riemann_tensor_rtrт(r, theta)
+        riem = bubble.riemann_tensor_rtrt(r, theta)
         # Ricci-Skalar (skalarer Aufruf)
         xi = r * np.sin(theta)
         zi = r * np.cos(theta)

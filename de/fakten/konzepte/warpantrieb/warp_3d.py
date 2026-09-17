@@ -257,7 +257,7 @@ class WarpBubble3D:
             "Gamma_r_ttheta": gamma_r_ttheta,
         }
 
-    def riemann_tensor_rtrт(
+    def riemann_tensor_rtrt(
         self, r: float, theta: float, h: float = 1e-3
     ) -> float:
         """
@@ -304,11 +304,17 @@ class WarpBubble3D:
 
         Für die modifizierte Alcubierre-Metrik mit v_s ≪ 1:
             R ≈ R^r_trt · 2 · g^tt · g_rr
-              ≈ 2 · riemann_tensor_rtrт(r, θ) / |g_tt|
+              ≈ 2 · riemann_tensor_rtrt(r, θ) / |g_tt|
 
         Dies ergänzt die bisherige Näherung R = 8πG/c² · ρ,
         die nur die Energiedichteseite nutzt.
         Die volle Berechnung bestätigt Konsistenz der Einstein-Gleichungen.
+
+        Performance-Hinweis:
+            Diese Methode iteriert punktweise (Python-Schleife), da jeder
+            Aufruf finite Differenzen benötigt. Für große Arrays (z.B. N³)
+            empfiehlt sich die Verwendung für Einzelpunkte oder kleine
+            1D-Linien; für Volumen-Visualisierung ricci_scalar() verwenden.
 
         Rückgabe:
             Ricci-Skalar R [m⁻²] als ndarray (gleiche Form wie x).
@@ -328,7 +334,7 @@ class WarpBubble3D:
             r = float(np.sqrt(xi ** 2 + yi ** 2 + zi ** 2))
             theta = float(np.arctan2(np.sqrt(yi ** 2 + zi ** 2), xi))
             r_safe = max(r, 1e-6)
-            riem = self.riemann_tensor_rtrт(r_safe, theta, h)
+            riem = self.riemann_tensor_rtrt(r_safe, theta, h)
             g_tt = self._g_tt(r_safe, theta)
             result[idx] = (2.0 * riem / abs(g_tt)
                            if abs(g_tt) > 1e-30 else 0.0)
@@ -767,7 +773,7 @@ def main() -> None:
     print(f"  Γ^t_tr  (r=R, θ=π/4) = {cs['Gamma_t_tr']:.4e} m⁻¹")
     print(f"  Γ^r_tt  (r=R, θ=π/4) = {cs['Gamma_r_tt']:.4e} m⁻¹")
     print(f"  Γ^t_tθ  (r=R, θ=π/4) = {cs['Gamma_t_ttheta']:.4e} rad⁻¹")
-    riem = bubble.riemann_tensor_rtrт(bubble.R, PI / 4)
+    riem = bubble.riemann_tensor_rtrt(bubble.R, PI / 4)
     print(f"  R^r_trt (r=R, θ=π/4) = {riem:.4e} m⁻²")
     print("  (numerisch, central differences, führende Ordnung v_s ≪ 1)")
 
