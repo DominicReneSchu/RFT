@@ -370,6 +370,7 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 |---|----------|--------|-------------|
 | 1 | [AP1 — Phase ↔ Skalenfaktor](fakten/theorie/rt42_ap1_phase_skalenfaktor.md) | A1, A4, A8 | Formale Analogie: RFT-Phasendifferenz als dynamische Variable des kosmischen Skalenfaktors — **✅ RT-42 AP1 abgeschlossen (Sep 2026)** |
 | 2 | [AP2 — Zeitableitung der Phase](fakten/theorie/rt42_ap2_zeitableitung_phase.md) | A4, A5, A8 | Geschlossene ODE Δφ̇ = β·tan(Δφ/2) aus der Kopplungsdynamik; Hubble-Parameter H(t) = H₀√ε(t) analytisch hergeleitet — **✅ RT-42 AP2 abgeschlossen (Sep 2026)** |
+| 3 | [AP3 — Verbindung zu Λ oder Dunkler Energie](fakten/theorie/rt42_ap3_verbindung_lambda_dunkle_energie.md) | A1, A4, A5, A8 | RFT erklärt Λ als effektiven Grenzfall eines statischen Superhorizontalgradienten; w_eff ∈ [−1, +1/3]; ΛCDM als Spezialfall (β → 0, k₀ = const) — **✅ RT-42 AP3 abgeschlossen (Sep 2026)** |
 
 ---
 
