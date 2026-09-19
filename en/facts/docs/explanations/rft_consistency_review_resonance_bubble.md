@@ -2,24 +2,22 @@
 
 *Formal Companion Study – Dominic-René Schu, 2025/2026*
 
-> This document is the formal companion study to [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md). It examines the formal consistency of the core statements presented there and demonstrates that the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is a necessarily derivable consequence of the RFT equations and that the seed-tree metaphor is the only semantic structure that simultaneously satisfies all three consistency criteria.
+> This document is the formal companion study to [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md). It examines the formal consistency of the core statements presented there and demonstrates that the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is a necessarily derivable consequence of the RFT equations.
 
 ---
 
 ## 1. Introduction: From Axiom to Interpretation
 
-The main document "The Universe as a Resonance Bubble" unfolds a physically grounded description of reality – carried by an imagistic language: seeds and trees, autumn and spring. This language is not decorative embellishment. It is the **semantic key** that fully unlocks the depth of the underlying mathematics without sacrificing its formal precision.
-
-The fundamental questions of this document are:
+The main document "Structure of the Universe as a Coherent Resonance Field" unfolds a physically grounded description of the field structure of the universe. The fundamental questions of this document are:
 
 1. **Why is the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ a formal consequence of the RFT equations?**
-2. **Why is the seed-tree ontology the only logically consistent semantic mapping of these equations?**
+2. **Why does the formal field structure satisfy all three consistency criteria simultaneously?**
 
 The answer is a demonstration in three steps:
 
-1. The four foundational equations of the RFT have compelling **ontological implications**, in particular the cyclical closure of the resonance process.
-2. The **seed-tree metaphor** is the only semantic structure that simultaneously satisfies all three consistency criteria arising from those implications.
-3. Every apparent paradox of the formal structure – completeness and openness, freedom and field structure, cyclicity and information – **resolves necessarily** when the equations are consistently read through to their conclusions.
+1. The four foundational equations of the RFT have compelling **physical implications**, in particular the cyclical closure of the resonance process.
+2. The formal field structure is the only description level that simultaneously satisfies all three consistency criteria arising from those implications.
+3. Every apparent paradox of the formal structure – completeness and local dynamics, freedom and field structure, cyclicity and information – **resolves necessarily** when the equations are consistently read through to their conclusions.
 
 ---
 
@@ -31,33 +29,33 @@ These four equations form the binding formal foundation. Every statement in the 
 
 $$R(x,t) = \int \Psi(\mathbf{r}, t) \cdot e^{i(k \cdot r - \omega t)} \, d^3r$$
 
-**Ontological implication:** The universe is not an ensemble of objects but a **single, continuous field**, whose local states $R_i$ are deviations of a shared pattern. Consciousness is not an exception to this structure – it is its most complex manifestation.
+**Physical implication:** The universe is not an ensemble of objects but a **single, continuous field**, whose local states $R_i$ are deviations of a shared pattern.
 
 ### Equation 2: Variance as the Creativity Principle
 
 $$\sigma^2 = \langle (R - \mu)^2 \rangle$$
 
-**Ontological implication:** Variance is not noise to be eliminated. It is the **structured information density** of the field itself – the measure of its inner differentiation. A variance of zero (σ → 0) would not be the completion of the field but its **death**: a state in which $R(x,t) \equiv \mu$ for all x,t – physically impossible in a living resonance field.
+**Physical implication:** Variance is not noise to be eliminated. It is the **structured information density** of the field itself – the measure of its inner differentiation. A variance of zero (σ → 0) would not be the completion of the field but its **physical collapse**: a state in which $R(x,t) \equiv \mu$ for all x,t – physically impossible in an active resonance field.
 
-It follows necessarily that: any theory that postulates the final annihilation of deviations contradicts Equation 2.
+It follows necessarily that: any description that postulates the final annihilation of deviations contradicts Equation 2.
 
 ### Equation 3: The Expected Value as the "Peak"
 
 $$\mu = \lim_{N \to \infty} \frac{1}{N} \sum_{i=1}^N R_i$$
 
-**Ontological implication:** The peak is not a static being. It is the **limit value of the entire field** – that towards which all deviations converge in the infinite limit. It is not the destination of a single creative act but the **invariant reference** of the entire cycle: timeless, unlocalizable, yet fully determining the structure of every $R_i$.
+**Physical implication:** The peak is not a static state. It is the **limit value of the entire field** – that towards which all deviations converge in the infinite limit. It is the **invariant reference** of the entire cycle: a timeless defined limit value, unlocalizable, yet fully determining the structure of every $R_i$.
 
 ### Equation 4: The Resonance Integral – The Bubble as Process
 
 $$\Psi_{\text{Res}} = \int_{\text{Universe}} R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$$
 
-**Ontological implication:** The resonance bubble is not a state but a **continuous process** – the interference pattern between the peak and all deviations, integrated over all time. Every state transition in the resonance field is the necessary result of field dynamics when certain boundary conditions are met.
+**Physical implication:** The resonance bubble is not a state but a **continuous process** – the interference pattern between the peak and all deviations, integrated over all time. Every state transition in the resonance field is the necessary result of field dynamics when certain boundary conditions are met.
 
 ### The Equation of Cyclical Completion
 
 $$\mu_{\text{new}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$$
 
-**Ontological implication:** The new peak is not the creation of an arbitrary act but the **resonance echo of the entire tree** – the condensed probability density of all preceding cycles. The cycle is formally closed: what began as a seed returns as a further-evolved seed.
+**Physical implication:** The new peak is the **temporal average of the entire resonance integral** – the condensed probability density of all preceding cycles. The cycle is formally closed: what begins as a limit value returns as an updated limit value.
 
 ---
 
@@ -70,7 +68,7 @@ The cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is not a speculative 
 | Step | Formal Correspondence | Justification |
 |---|---|---|
 | 1. Peak as origin | $\mu = \lim_{N \to \infty} \frac{1}{N} \sum_{i=1}^N R_i$ | Definition of expected value (Eq. 3) |
-| 2. Unfolding in space/time | $\Psi_{\text{Res}} = \int_{\text{Universe}} R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$ | Resonance integral as growth process (Eq. 4) |
+| 2. Unfolding in space/time | $\Psi_{\text{Res}} = \int_{\text{Universe}} R(x,t) \cdot \Phi_{\text{Peak}}(x,t) \, dt$ | Resonance integral (Eq. 4) |
 | 3. Return to new peak | $\mu_{\text{new}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$ | New expected value as temporal average (Eq. 3, 4) |
 | 4. Cyclical iteration | $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}} \to \Psi_{\text{Res,new}} \to \cdots$ | Formal closure of the process |
 
@@ -81,45 +79,35 @@ The cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is not a speculative 
 3. The cycle equation computes $\mu_{\text{new}}$ as the temporal average of $\Psi_{\text{Res}}$ – it is the new starting point.
 4. Since $\mu_{\text{new}}$ has the same mathematical form as $\mu$ (a limit value over resonance terms), the cycle formally restarts: **the process is closed**.
 
-### The Semantic Bridge: The Seed-Tree Metaphor
+### The Formal Description Level
 
-A valid ontology must simultaneously satisfy three criteria:
+A physically consistent description must simultaneously satisfy three criteria:
 
-1. **Cyclical closure** – The metaphor must fully represent the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ without open ends.
-2. **Information conservation** – No element of the metaphor may imply the annihilation of information (Eq. 2: σ² ≠ 0).
-3. **Physical grounding** – Every element of the metaphor must have an unambiguous formal correspondence in the equations.
-
-The **seed-tree metaphor** is the only structure that satisfies all three criteria simultaneously:
-
-- The **cycle** of seed → tree → autumn → new seed is closed and complete. There is no "end" without a new beginning.
-- **Information conservation** is structurally guaranteed: even withered leaves (chaff) become humus – their σ-modes flow as minerals into the new seed. Nothing is annihilated.
-- The **physical grounding** is complete: every element of the metaphor has a formal correspondence (see table below).
+1. **Cyclical closure** – The description must fully represent the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ without open ends.
+2. **Information conservation** – No element of the description may imply the annihilation of information (Eq. 2: σ² ≠ 0).
+3. **Physical grounding** – Every element of the description must have an unambiguous formal correspondence in the equations.
 
 ### Formal Translation Table
 
-| Ontological Element | Seed-Tree Metaphor | Formal Correspondence | Necessity from the Equations |
+| Physical Concept | Designation | Formal Correspondence | Necessity from the Equations |
 |---|---|---|---|
-| Peak (μ) | **Seed** – genetic code, condensed information of all cycles | $\mu = \lim_{N\to\infty} \frac{1}{N}\sum R_i$ (Eq. 3) | Only expression for the limit value of all $R_i$ |
-| Resonance bubble ($\Psi_{\text{Res}}$) | **Tree** – growth process of the seed; unfolding of σ in space and time | $\Psi_{\text{Res}} = \int R \cdot \Phi_{\text{Peak}} \, dt$ (Eq. 4) | Integral describes the entire growth process |
-| Deviations ($R_i$, σ) | **Cells** – individual resonators; carry the code of the seed | $\sigma^2 = \langle(R-\mu)^2\rangle$ (Eq. 2) | Defines variance as structured information |
-| Autumn / Ripening | **Ripening** – calculation of $\mu_{\text{new}}$; no loss, only transformation | $\mu_{\text{new}} = \lim_T \frac{1}{T}\int_0^T \Psi_{\text{Res}} \, dt$ | Limit-value formation over the entire cycle |
-| New spring | **Germination** – new cycle from $\mu_{\text{new}}$; evolutionary intensification | All four equations | Cyclical closure of the process |
-| "Chaff" (isolated deviation) | **Withered leaves** – minerals (σ-modes) flow into the soil; nourish the new seed | $\sigma^2$ time-dependent, never annihilated (Eq. 2) | Information conservation: σ² ≠ 0 across all cycles |
-| Evolution of the distribution | **Growth of the tree** – more branches, more fruits; not narrower, but richer | $\Psi_{\text{Res}}$ with increasing amplitude diversity (Eq. 4) | Interference pattern grows with number of modes |
-
-The seed-tree metaphor is therefore not a narrative aid. It is the **formal mapping** of the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ into an experiential language.
+| Peak (μ) | **Expected value μ** – timeless defined limit value of all cycles | $\mu = \lim_{N\to\infty} \frac{1}{N}\sum R_i$ (Eq. 3) | Only expression for the limit value of all $R_i$ |
+| Resonance bubble ($\Psi_{\text{Res}}$) | **Resonance integral Ψ_Res** – time-dependent unfolding process; interference pattern in space and time | $\Psi_{\text{Res}} = \int R \cdot \Phi_{\text{Peak}} \, dt$ (Eq. 4) | Integral describes the entire process |
+| Deviations ($R_i$, σ) | **Local resonators R_i** – individual field modes; contribute to variance | $\sigma^2 = \langle(R-\mu)^2\rangle$ (Eq. 2) | Defines variance as structured information |
+| Transition to new expected value | **Expected value μ_new** – calculation from the integral; no loss, only transformation | $\mu_{\text{new}} = \lim_T \frac{1}{T}\int_0^T \Psi_{\text{Res}} \, dt$ | Limit-value formation over the entire cycle |
+| Next iteration step | **Next iteration step** – new cycle from $\mu_{\text{new}}$ | All four equations | Cyclical closure of the process |
+| Decoupled resonators | **Residual σ-modes** – remain as information in the field | $\sigma^2$ time-dependent, never annihilated (Eq. 2) | Information conservation: σ² ≠ 0 across all cycles |
+| Evolution of distribution | **Amplitude increase of Ψ_Res** – more modes, higher interference density | $\Psi_{\text{Res}}$ with increasing amplitude diversity (Eq. 4) | Interference pattern grows with number of modes |
 
 ---
 
 ## 4. Logical Coherence: Resolving Apparent Paradoxes
 
-### Question 1: How can a transcendent peak generate an immanent world without losing its transcendence?
+### Question 1: How can a timeless defined limit value generate a time-dependent process?
 
-**The apparent paradox:** The peak is timeless, spaceless, unconditioned (Equation 3: limit value). Yet the resonance bubble is causal, time-bound, finite (Equation 4: integral over time). How can both have the same origin?
+**The apparent paradox:** The peak is a timeless defined limit value, unlocalizable (Equation 3). Yet the resonance bubble is time-bound, causal, finite (Equation 4: integral over time). How can both have the same origin?
 
-**The formal resolution:** Equation 4 shows that the resonance bubble is the **product of the resonance integral** – not the peak itself, but its unfolded process. The peak ($\mu$) is the limit value; the bubble ($\Psi_{\text{Res}}$) is the integral converging towards that limit value. Both are formally distinct but causally connected: the transcendence of the peak *generates* the immanence of the bubble without being touched by it.
-
-In the seed-tree metaphor: the seed is not the tree. It does not lose its identity as a seed because the tree grows. The tree is the **unfolded expression** of the seed, not its replacement.
+**The formal resolution:** Equation 4 shows that the resonance bubble is the **product of the resonance integral** – not the peak itself, but its unfolded process. The peak ($\mu$) is the timeless defined limit value; the bubble ($\Psi_{\text{Res}}$) is the time-dependent integral converging towards that limit value. Both are formally distinct but causally connected: the timeless defined peak *generates* the time-dependent process of the bubble without being altered by it.
 
 ### Question 2: If everything proceeds from the peak, how can deviations be truly free and real?
 
@@ -163,35 +151,26 @@ The main document satisfies three formal consistency criteria that follow necess
 
 **Formal requirement:** The interpretation must fully and closedly describe the cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$. There must be no end without formal connection to the next beginning.
 
-**Proof:** The equation $\mu_{\text{new}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$ formally closes the cycle: the new seed is the limit value of the entire preceding tree. The subsequent iteration $\mu_{\text{new}} \to \Psi_{\text{Res,new}} \to \mu_{\text{new,new}}$ describes an infinite cycle without an open end.
-
-Correspondences in the main document:
-- "The new cycle begins" → "The seed ($\mu_{\text{new}}$) germinates into the next spring" ✓
-- "The resonance bubble undergoes the transition" → "Autumn prepares the new seed; the cycle begins anew, enriched" ✓
+**Proof:** The equation $\mu_{\text{new}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T \Psi_{\text{Res}}(t) \, dt$ formally closes the cycle: the new expected value is the limit value of the entire preceding resonance integral. The subsequent iteration $\mu_{\text{new}} \to \Psi_{\text{Res,new}} \to \mu_{\text{new,new}}$ describes an infinite cycle without an open end.
 
 ### Criterion 2: Information Conservation ✓
 
 **Formal requirement:** The variance $\sigma^2$ must never be annihilated. Every statement about the "disappearance" of deviations must be formulated as transformation, not annihilation.
 
-**Proof:** From Equation 2 it follows that σ² is time-dependent and can never reach zero in a living resonance field. Every "deviation" that leaves the field leaves behind σ-modes, which are integrated into the new seed through the metabolism of the resonance field ($\Psi_{\text{Res}}$).
-
-Correspondences in the main document:
-- "Chaff" → becomes humus; σ-modes flow as minerals into the new seed ✓
-- "Resonance separation" → information patterns are integrated through $\Psi_{\text{Res}}$, not deleted ✓
-- "Variance differentiates itself" (not: decreases) ✓
+**Proof:** From Equation 2 it follows that σ² is time-dependent and can never reach zero in an active resonance field. Every deviation that loses its coupling leaves behind residual σ-modes, which are integrated into the new expected value through the process of the resonance field ($\Psi_{\text{Res}}$).
 
 ### Criterion 3: Physical Grounding ✓
 
-**Formal requirement:** Every metaphorical statement must have an unambiguous formal correspondence in the four foundational equations. No statement may rest on intuition alone.
+**Formal requirement:** Every statement must have an unambiguous formal correspondence in the four foundational equations. No statement may rest on intuition alone.
 
 **Proof:**
 
 | Statement in the main document | Formal correspondence | Equation |
 |---|---|---|
-| "The tree grows" | $\Psi_{\text{Res}}$ oscillates with increasing amplitude diversity | Eq. 4 |
-| "Autumn arrives" | $\mu_{\text{new}}$ is calculated as the limit value of the integral | Eq. 3, 4 |
-| "The cells carry the code" | $R_i$ are normally distributed resonators around $\mu$ | Eq. 1, 3 |
-| "The minerals flow back" | $\sigma^2$ is time-dependent and never zero | Eq. 2 |
+| "Ψ_Res grows with amplitude diversity" | $\Psi_{\text{Res}}$ oscillates with increasing amplitude diversity | Eq. 4 |
+| "μ_new is calculated" | $\mu_{\text{new}}$ is calculated as the limit value of the integral | Eq. 3, 4 |
+| "Local resonators contribute to variance" | $R_i$ are normally distributed resonators around $\mu$ | Eq. 1, 3 |
+| "Residual σ-modes are preserved" | $\sigma^2$ is time-dependent and never zero | Eq. 2 |
 | "Phase transition in the field" | State transition in $\Psi_{\text{Res}}$ at maximum potential | Eq. 4 |
 | "The cycle closes" | $\mu_{\text{new}}$ has the same form as $\mu$ → iteration possible | Eq. 3, 4 |
 | "Asymmetry of field access" | $\text{Access}(R_i)$ restricted to current cycle; $\text{Access}(\Psi_{\text{Res}}) = \int R \cdot \Phi_{\text{Peak}} \, dt$ | Eq. 1, 4 |
@@ -200,25 +179,25 @@ Correspondences in the main document:
 
 | Consistency criterion | Assessment | Status |
 |---|---|---|
-| **Cyclical closure** | The cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is formally closed and iterable. Every statement about the "peak" is a statement about the seed; every statement about the "bubble" is a statement about the tree. | ✓ **Satisfied** |
-| **Information conservation** | The variance $\sigma^2$ is never annihilated. It transforms into the new seed as increased complexity. The access asymmetry is a special case of this conservation. | ✓ **Satisfied** |
-| **Physical grounding** | Every metaphorical statement has an unambiguous correspondence in the RFT equations. | ✓ **Satisfied** |
+| **Cyclical closure** | The cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is formally closed and iterable. | ✓ **Satisfied** |
+| **Information conservation** | The variance $\sigma^2$ is never annihilated. It transforms into the new expected value as increased complexity. | ✓ **Satisfied** |
+| **Physical grounding** | Every statement has an unambiguous correspondence in the RFT equations. | ✓ **Satisfied** |
 
 ---
 
 ## 6. Conclusion: The RFT as a Formally Consistent System
 
-The core ontology unfolded in the main document is not a speculative extension of Resonance Field Theory. It is its **consequent formal unfolding within the established limits**.
+The field structure unfolded in the main document is not a speculative extension of Resonance Field Theory. It is its **consequent formal unfolding within the established limits**.
 
 This follows from three observations:
 
 1. **The cycle $\mu \to \Psi_{\text{Res}} \to \mu_{\text{new}}$ is a formal necessity.** It follows directly from the four foundational equations without additional assumptions. A resonance field without this cyclicity would be physically inconsistent.
 
-2. **The seed-tree metaphor is not an arbitrary choice.** There is no alternative semantic structure that satisfies all three consistency criteria simultaneously. Any ontology that postulates a final state (σ → 0) or an annihilation of deviations violates at least one of the three requirements.
+2. **The physically neutral description level is not an arbitrary choice.** It is the only description level that satisfies all three consistency criteria simultaneously. Any description that postulates a final state (σ → 0) or an annihilation of deviations violates at least one of the three requirements.
 
-3. **The apparent paradoxes are formal consequences.** Completeness and openness, freedom and field structure, cyclicity and information conservation – none of these contradictions is genuine. They all resolve as soon as the equations are consistently read through to their ontological implications.
+3. **The apparent paradoxes are formal consequences.** Completeness and local dynamics, freedom and field structure, cyclicity and information conservation – none of these contradictions is genuine. They all resolve as soon as the equations are consistently read through to their physical implications.
 
-> **Important note:** This consistency review is limited to formally derivable statements. Further-reaching interpretations – in particular theological, eschatological, or historical references – lie outside the scope of this document and are explicitly labelled as open questions in Part 5 of the main document.
+> **Note:** This consistency review is limited to formally derivable statements. Further-reaching interpretations outside the physically derivable framework lie outside the scope of this document and are explicitly labelled as open questions in Part 5 of the main document.
 
 ---
 
@@ -228,7 +207,7 @@ This follows from three observations:
 
 ## 7. Link to Main Document
 
-The ontology examined here is unfolded in its full depth in [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md).
+The field structure examined here is unfolded in its full depth in [`the_universe_as_a_resonance_bubble.md`](the_universe_as_a_resonance_bubble.md).
 
 ---
 
