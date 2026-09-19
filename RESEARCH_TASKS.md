@@ -21,6 +21,7 @@ Status: Aktiv
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
 | Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | ~~🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42)~~ ✅ Abgeschlossen (Sep 2026) |
 | Analytische Warpmetrik | Numerisch, offen (RT-34) | Geschlossene perturbative Form h_μν^RFT = h_μν^Alcubierre · ε(Δφ) angestrebt (RT-43) | 🔄 Offen (RT-43) |
+| QM als RFT-Substruktur | Interpretation/Analogie | Formale Ableitung: Atom, Spektrum, Born-Regel, Spin aus A1–A7 | 🔄 Offen (RT-44) |
 
 ---
 
@@ -29,9 +30,10 @@ Status: Aktiv
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
 2. RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit ← Priorität 2
-3. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
-4. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
-5. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
+3. RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin ← Priorität 3
+4. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
+5. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
+6. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -960,3 +962,249 @@ Das wäre ein echter Fortschritt gegenüber dem Status „numerisch, offen" auf 
 **Einreichungsportal:** https://mc.manuscriptcentral.com/jphyscomm
 
 *RT-39 — DominicReneSchu/RFT — August 2026*
+
+---
+
+## Kategorie 8: Quantenmechanik als RFT-Substruktur
+
+### RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋
+**Vorgänger:** Schrödinger-Simulation, RT-31
+**Verwandt:** RT-02, RT-03, RT-40, RT-43
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:** Zeigen, dass die Quantenmechanik — Atomstruktur, Spektren, Born-Regel, Spin — als Substruktur der RFT aus den Axiomen A1–A7 formal ableitbar ist; oder präzise dokumentieren, wo die Axiome nicht ausreichen und welche minimale Erweiterung nötig wäre.
+
+**Ausgangspunkt:** Die Schrödinger-Gleichung ist bereits als Grenzfall $\lambda \to 0$ der RFT nachgewiesen (Fidelity = 1,0). RT-44 geht einen Schritt weiter: nicht nur Konsistenz, sondern **Ableitung** der QM-Struktur.
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+- Axiome A1–A8
+- $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$, $\hat{H}_{\rm res} = \hat{H}_0 + \varepsilon(\Delta\varphi)\,\hat{V}_{\rm Kopplung}$
+- Schrödinger-Simulation: Standard-QM ist Grenzfall $\lambda \to 0$ (RT aus Schrödinger-README)
+- Störungstheorie: $1 - F \sim \lambda^2$, kontrollierte Erweiterung
+- Lagrange-Dichte $S[\psi, \Delta\varphi]$, Euler-Lagrange für $\Delta\varphi$-Dynamik
+- Gisin-Analyse: lokale Kopplung $\varphi(x,t)$, No-Signaling für lokales $\Delta\varphi$
+- A7: $G_{\rm sync} \cong \mathbb{R}^+_\times \times U(1) \times {\rm Aff}^+(\mathbb{R})$ — enthält $U(1)$, aber noch kein $SU(2)$
+
+**Gegeben (Standardquantenmechanik):**
+- Schrödinger-Gleichung $i\hbar\partial_t|\psi\rangle = \hat{H}|\psi\rangle$
+- Wasserstoffspektrum $E_n = -13{,}6\,\text{eV}/n^2$
+- Born-Regel: Messwahrscheinlichkeit $= |\langle a|\psi\rangle|^2$
+- Spin-1/2: $SU(2)$-Darstellung, Pauli-Matrizen
+- Verschränkung: nichtlokale Korrelationen, Bell-Ungleichungen
+
+**Bekannte offene Punkte:**
+- Keine formale Ableitung des Wasserstoffspektrums aus A3
+- Born-Regel nicht aus $\varepsilon$-Struktur abgeleitet (stärkste offene Flanke)
+- Spin/$SU(2)$ nicht in $G_{\rm sync} = U(1)$ enthalten
+- Eichinvarianz offen (aus Schrödinger-README)
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 — Atom als Resonanzmode: Wasserstoffspektrum aus A3
+
+**Aufgabe:** $E_n = -13{,}6\,\text{eV}/n^2$ aus Resonanzbedingung A3 + Coulomb-Kopplung formal ableiten.
+
+**Konkrete Schritte:**
+1. Coulomb-Potential $V(r) = -e^2/(4\pi\varepsilon_0 r)$ als Kopplungsterm in $\hat{H}_{\rm res}$ einsetzen
+2. Resonanzbedingung A3 ($|f_1/f_2 - m/n| < \delta$) als Phasenschlussbedingung für gebundene Moden formulieren
+3. Radiale Modenbedingung $\oint p_r\,dr = n\hbar$ aus Phasenschluss ableiten
+4. Energieeigenwerte $E_n$ aus Modenbedingung + Coulomb-Kopplung berechnen
+5. Mit Bohr-Quantisierung und exakter QM vergleichen; Übereinstimmung oder kontrollierte Abweichung benennen
+
+**Erfolgskriterium:** $E_n = -13{,}6\,\text{eV}/n^2$ formal hergeleitet — oder Nachweis, welche zusätzliche Zutat fehlt.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap1_wasserstoffspektrum.md` · `en/facts/theory/rt44_ap1_hydrogen_spectrum.md`
+
+---
+
+#### AP2 — Interferenz und Welle-Teilchen-Dualismus als Kopplungsregime
+
+**Aufgabe:** Doppelspalt-Interferenz aus $\varepsilon = 0$-Regime (A2 + A1) formal ableiten; Welle-Teilchen-Übergang als $\varepsilon$-Übergang beschreiben.
+
+**Konkrete Schritte:**
+1. Freies Teilchen ($\varepsilon = 0$, $\Delta\varphi = \pi$): Superposition ebener Wellen, Interferenzterm aus A2
+2. Doppelspalt: Zwei Quellen $\psi_1$, $\psi_2$; Intensität $|\psi_1 + \psi_2|^2$ aus Superpositionsprinzip A2
+3. Lokalisierung ($\varepsilon \to 1$): Phasenraumkollaps auf Resonanzknoten — beschreibt Messung
+4. Übergangsregime ($0 < \varepsilon < 1$): partielle Kohärenz — entspricht welchem physikalischen Szenario?
+5. Zusammenhang mit Dekohärenz: $\varepsilon(\Delta\varphi)$ als Maß für Kohärenz des Feldes
+
+**Erfolgskriterium:** Interferenzmuster formal aus A1+A2 ableitbar; $\varepsilon$ als Kohärenzparameter interpretiert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap2_interferenz.md` · `en/facts/theory/rt44_ap2_interference.md`
+
+---
+
+#### AP3 — Heisenbergsche Unschärfe als Modenstruktur
+
+**Aufgabe:** $\Delta x \cdot \Delta p \geq \hbar/2$ als strukturelle Eigenschaft der Resonanzmoden aus A1–A4 ableiten.
+
+**Konkrete Schritte:**
+1. Resonanzmode $\psi = A \cdot \cos(kx - \omega t + \varphi)$ hat endliche Ausdehnung im Phasenraum
+2. Fourier-Unschärfe: $\sigma_x \cdot \sigma_k \geq 1/2$ ist mathematische Eigenschaft jeder lokalisierten Welle
+3. Mit $p = \hbar k$ und $\hbar$ aus A4 ($E = \pi \cdot \varepsilon \cdot \hbar \cdot f$): $\Delta x \cdot \Delta p \geq \hbar/2$
+4. Physikalische Interpretation: Heisenberg-Unschärfe ist nicht Messtörung, sondern Modenbreite
+5. Prüfen: Folgt die Unschärferelation aus der Resonanzbedingung A3 — oder ist sie ein separates Postulat?
+
+**Erfolgskriterium:** Unschärferelation formal aus Modenstruktur A1+A4 abgeleitet — oder als Korollar der Fourier-Mathematik eingeordnet.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap3_unschaerfe.md` · `en/facts/theory/rt44_ap3_uncertainty.md`
+
+---
+
+#### AP4 — Born-Regel aus Kopplungsstruktur
+
+**Aufgabe:** $|\Psi|^2$ als Messwahrscheinlichkeit aus $\varepsilon$-Struktur ableiten. Dies ist die stärkste offene Flanke.
+
+**Konkrete Schritte:**
+1. In der RFT: $|\psi|^2$ entspricht der Intensität/Amplitude des Resonanzfeldes (Energiedichte)
+2. Messvorgang: Kopplung an makroskopisches System mit $\varepsilon \to 1$ (Dekohärenz)
+3. Frage: Folgt $P(a) = |\langle a|\psi\rangle|^2$ aus der Kopplungsstruktur — oder muss es zusätzlich postuliert werden?
+4. Ansatz 1: Energieübertrag bei Messung proportional zu $|\langle a|\psi\rangle|^2 \cdot \varepsilon$ → Born-Regel als Kopplung
+5. Ansatz 2: Gleason-Theorem — Born-Regel folgt aus Additivität von Wahrscheinlichkeitsmaßen auf Hilbertraum
+6. Prüfen: Welcher Ansatz ist mit A1–A7 kompatibel? Ist Born-Regel Korollar oder neues Postulat?
+
+**Erfolgskriterium:** Klare Aussage — Born-Regel folgt aus $\varepsilon$-Struktur, oder sie ist ein irreduzibles Postulat (analog zu A5, A8).
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap4_born_regel.md` · `en/facts/theory/rt44_ap4_born_rule.md`
+
+---
+
+#### AP5 — Messprozess und Dekohärenz als Kopplungsregimeübergang
+
+**Aufgabe:** Quantenmessung als Übergang $\varepsilon: 0 \to 1$ formal beschreiben; Dekohärenz als $\varepsilon(\Delta\varphi)$-Dynamik modellieren.
+
+**Konkrete Schritte:**
+1. Vor Messung: $\varepsilon(\Delta\varphi) < 1$, System in Superposition (Wellenregime)
+2. Messung: Kopplung an makroskopisches Umfeld → $\Delta\varphi \to 0$, $\varepsilon \to 1$ (Lokalisierung)
+3. Dekohärenzzeit $\tau_D$ aus Kopplungsdynamik $dK/dt = \alpha_G \cos\Delta\varphi - \beta K$ abschätzen
+4. Zeigerbasisfestlegung: Welche Moden werden durch $\varepsilon$-Kopplung selektiert?
+5. Quanteneraser / verzögerte Wahl: Rückkehr in $\varepsilon < 1$-Regime durch Entkopplung?
+6. Konsistenz mit Gisin-Analyse: lokale Kopplung → kein Kollaps über Raumgrenzen
+
+**Erfolgskriterium:** Messprozess quantitativ als $\varepsilon$-Übergang beschreibbar; Dekohärenzzeit aus RFT-Parametern abschätzbar.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap5_dekohärenz.md` · `en/facts/theory/rt44_ap5_decoherence.md`
+
+---
+
+#### AP6 — Spin, Pauli-Prinzip und Feinstruktur als Resonanzfreiheitsgrade
+
+**Aufgabe:** Spin-1/2 und Pauli-Prinzip als zusätzliche Resonanzfreiheitsgrade der RFT beschreiben; prüfen ob $SU(2)$ aus $G_{\rm sync}$-Erweiterung folgt.
+
+**Konkrete Schritte:**
+1. $G_{\rm sync}$ enthält $U(1)$ — Spin-1/2 erfordert $SU(2)$; prüfen ob $SU(2) \supset U(1)$ in $G_{\rm sync}$ einbettbar
+2. Spin als zusätzliche Phasenfreiheit: $\psi \to (\psi_\uparrow, \psi_\downarrow)$ als zwei gekoppelte Resonanzmoden
+3. Pauli-Prinzip: Antisymmetrie unter Teilchenaustausch — folgt aus destruktiver Interferenz gleichphasiger Moden ($\Delta\varphi = 0 \to \varepsilon = 1$, vollständige Kopplung → keine unabhängigen Zustände)?
+4. Feinstruktur: Spin-Bahn-Kopplung als $\varepsilon(\Delta\varphi_{\rm spin}, \Delta\varphi_{\rm orbit})$-Wechselwirkung (Hamiltonoperator bereits in RT-31 implementiert)
+5. Zeeman-Effekt: Aufspaltung als Phasendifferenz im äußeren Feld
+
+**Erfolgskriterium:** Spin formal als Resonanzfreiheitsgrad beschreibbar — oder $SU(2)$-Erweiterung von A7 als neues Axiom A9 formuliert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap6_spin.md` · `en/facts/theory/rt44_ap6_spin.md`
+
+---
+
+#### AP7 — Verschränkung als nichtlokale Phasenkorrelation
+
+**Aufgabe:** Quantenverschränkung als nichtlokale Phasenkorrelation im RFT-Feld beschreiben; Bell-Ungleichungen im RFT-Rahmen analysieren.
+
+**Konkrete Schritte:**
+1. Verschränkter Zustand $|\Psi\rangle = (|\uparrow\rangle_A|\downarrow\rangle_B - |\downarrow\rangle_A|\uparrow\rangle_B)/\sqrt{2}$ als korrelierte Phasenmoden beschreiben
+2. Phasenkorrelation: $\Delta\varphi_A$ und $\Delta\varphi_B$ sind nichtlokal korreliert, aber lokal kausal (Gisin-Konsistenz)
+3. Bell-Ungleichungen: Welche Vorhersage macht die RFT für $\langle AB\rangle$? Entspricht sie der QM (Verletzung) oder lokalen Theorien (Einhaltung)?
+4. EPR-Paradoxon im RFT-Rahmen: Vollständige Beschreibung durch lokale Phasenfelder — oder fundamentale Nichtlokalität?
+5. Konsistenz mit AP5 (Dekohärenz): Wie verändert Messung an A die Phasenkorrelation mit B?
+
+**Erfolgskriterium:** Verschränkung formal als Phasenkorrelation beschreibbar; RFT-Vorhersage für Bell-Test explizit — entweder QM-äquivalent oder falsifizierbar abweichend.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap7_verschränkung.md` · `en/facts/theory/rt44_ap7_entanglement.md`
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier: Ableitung des Wasserstoffspektrums aus A3 (AP1)
+2. Kohärenzpapier: $\varepsilon(\Delta\varphi)$ als Kopplungsregime für Welle-Teilchen-Dualismus und Interferenz (AP2)
+3. Unschärfe-Korollar: Heisenberg-Unschärfe als Modenbreite (AP3) — kurzes Begleitdokument
+4. Born-Regel-Analyse: Ableitung oder Einordnung als irreduzibles Postulat (AP4) — entscheidend für Peer-Review
+5. Dekohärenz-Modell: Messprozess als $\varepsilon$-Übergang, Dekohärenzzeit aus RFT-Parametern (AP5)
+6. Spin-Erweiterung: $SU(2)$-Resonanzfreiheitsgrad oder Axiom A9-Entwurf (AP6)
+7. Verschränkungs-Papier: Bell-Test-Vorhersage der RFT (AP7)
+8. Python-Simulationen für AP1 (Radialmode Wasserstoff), AP2 (Doppelspalt), AP5 (Dekohärenz), AP6 (Spin-Bahn), AP7 (Bell-Korrelation)
+9. Peer-Review-Einreichung (z. B. *Foundations of Physics*, *Physical Review A* oder *European Journal of Physics*)
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Wasserstoffspektrum und Interferenz formal aus A1–A7 ableitbar.
+**Mittelziel:** Born-Regel und Dekohärenz als $\varepsilon$-Struktur beschreibbar (Ableitung oder Postulat klar eingeordnet).
+**Maximalziel:** Spin/$SU(2)$ aus $G_{\rm sync}$-Erweiterung; Verschränkung als Phasenkorrelation mit falsifizierbarer Bell-Vorhersage.
+**Negativziel:** Wo A1–A7 nicht ausreichen, präzise Lücke dokumentieren und minimale Erweiterung (A9?) formulieren.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** Born-Regel darf nicht implizit vorausgesetzt werden, wenn sie abgeleitet werden soll.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten aus A1–A8 oder explizit als frei deklariert.
+- **Klar unterscheiden:** (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage.
+- **Falsifizierbarkeit:** Jede Behauptung mit Widerlegungskriterium.
+- **Konsistenz mit Gisin-Analyse:** lokale Kopplungsstruktur $\varphi(x,t)$ durchgehend wahren.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentiert.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:**
+Coulomb-Potential $V(r) = -e^2/(4\pi\varepsilon_0 r)$ in $\hat{H}_{\rm res}$ einsetzen; Resonanzbedingung A3 als Phasenschlussbedingung für 3D-Radialmode formulieren; radiale Bohr-Quantisierung $\oint p_r\,dr = n\hbar$ aus RFT-Phasenschluss ableiten.
+
+**Woche 3–4:**
+Energieeigenwerte $E_n$ berechnen und mit $E_n = -13{,}6\,\text{eV}/n^2$ vergleichen. Falls Übereinstimmung: AP2 (Interferenz) angehen. Falls Lücke: minimale Erweiterung formulieren.
+
+**Woche 5–6:**
+Born-Regel (AP4) und Dekohärenz (AP5) parallel angehen; Spin-Erweiterung (AP6) vorbereiten.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+- **Interferenz und Unschärfe (AP2, AP3):** hohes Vertrauen — folgen strukturell aus A1+A2+A4.
+- **Wasserstoffspektrum (AP1):** mittleres Vertrauen — Resonanzbedingung A3 muss 3D-Coulomb-System tragen.
+- **Dekohärenz (AP5):** mittleres Vertrauen — $\varepsilon$-Dynamik bietet natürlichen Rahmen.
+- **Born-Regel (AP4):** niedrigstes Vertrauen — stärkste offene Flanke; könnte irreduzibles Postulat bleiben.
+- **Spin/$SU(2)$ (AP6):** offen — erfordert wahrscheinlich $G_{\rm sync}$-Erweiterung.
+- **Verschränkung (AP7):** mittleres Vertrauen für Beschreibung; Bell-Vorhersage entscheidet über Falsifizierbarkeit.
+
+**Ehrlichster Ausgang:** Die RFT beschreibt Interferenz, Unschärfe, Dekohärenz und das Wasserstoffspektrum formal korrekt. Born-Regel bleibt möglicherweise irreduzibles Postulat. Spin erfordert $SU(2)$-Erweiterung. Verschränkung ist als Phasenkorrelation beschreibbar — die Bell-Vorhersage entscheidet, ob RFT und QM empirisch unterscheidbar sind.
+
+---
+
+### 9. Querverbindungen
+
+| Task | Beziehung |
+|:--|:--|
+| Schrödinger-Simulation | Ausgangspunkt: QM als Grenzfall $\lambda \to 0$; Fidelity = 1,0; Lagrange-Dichte |
+| RT-02 | $G_{\rm sync}$-Gruppenstruktur — $U(1)$ vorhanden, $SU(2)$ offen (AP6) |
+| RT-03 | ⁸⁷Rb-Experiment — falsifizierbare QM-Vorhersage (AP5 Dekohärenz) |
+| RT-31 | Resonanz-Hamiltonoperator: Spin-Bahn-Kopplung bereits implementiert (AP6) |
+| RT-40 | SRT-Brücke — relativistische Erweiterung des Atommodells (Dirac-Gleichung?) |
+| RT-43 | Analytische Warpmetrik — Konsistenz Quantengravitation offen |
+
+---
+
+*RT-44 — DominicReneSchu/RFT — September 2026*
