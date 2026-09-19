@@ -20,6 +20,7 @@ Status: Aktiv
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
 | Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | ~~🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42)~~ ✅ Abgeschlossen (Sep 2026) |
+| Analytische Warpmetrik | Numerisch, offen (RT-34) | Geschlossene perturbative Form h_μν^RFT = h_μν^Alcubierre · ε(Δφ) angestrebt (RT-43) | 🔄 Offen (RT-43) |
 
 ---
 
@@ -27,9 +28,10 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
-3. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
-4. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
+2. RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit ← Priorität 2
+3. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
+4. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
+5. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
 
 ### Empirisch (Priorität 2)
 4. RT-03 — λ-Bestimmung (⁸⁷Rb)
@@ -60,6 +62,7 @@ Status: Aktiv
 ### Langfristig offen
 11. ~~RT-33 — Warpantrieb Stufe 5 (Energielücke)~~ ✅ Abgeschlossen (Aug 2026) — Skalierungsgesetz ρ∝R⁻², R*>>1 AU für alle Fusionsszenarien
 12. ~~RT-34 — Warpantrieb Stufe 6 (3D-Blase)~~ ✅ Abgeschlossen (Sep 2026) — Falsifizierungstest bestanden: ρ≥0 überall; GR-Solver (Christoffel, Riemann, Ricci) implementiert
+13. RT-43 — Analytische Warpmetrik (Stufe 7): geschlossene perturbative Form, Skalentrennung, Kausalitätsprüfung, technische Bilanz
 
 ---
 
@@ -661,6 +664,275 @@ Ehrlichster Ausgang: **Die RFT enthält $\Lambda$CDM als Grenzfall — und macht
 | **RT-40** | SRT-Brücke – $\varepsilon = 1/\gamma^2$ |
 | **RT-41** | A8 – Kopplungswellengeschwindigkeit $c$ |
 | **RT-42** | **Dieser Task** – Kosmologie |
+
+---
+
+---
+
+## Kategorie 6: Analytische Warptheorie
+
+## RT-43 – Analytische Warpmetrik und technische Anschlussfähigkeit
+
+### Geschlossene Form der RFT-Warpmetrik und Konsistenzprüfung
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋
+**Vorgänger:** RT-33 (Warp-Skalierung, ✅), RT-34 (3D-Warpblase, ✅), RT-42 (Kosmologie, AP1–AP7 ✅)
+**Verwandt:** RT-40 (SRT-Brücke), RT-41 (A8)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Die in RT-34 numerisch nachgewiesene Möglichkeit einer Warp-Metrik mit ρ ≥ 0 **analytisch schließen** und die **technische Anschlussfähigkeit** prüfen. Die Website resoshift.com markiert den Status korrekt als „ρ ≥ 0 möglich | numerisch, offen" — RT-43 adressiert diese Lücke.
+
+**Teilziele:**
+
+1. Eine **geschlossene analytische Form** der RFT-Warpmetrik herleiten (Störungsrechnung oder exakte Lösung).
+2. Die **Skalentrennung** zwischen kosmologischer Phasendynamik (RT-42) und lokaler Warp-Modulation (RT-34) formalisieren.
+3. Die **Energieskala** durch geometrische oder resonante Optimierung reduzieren — ohne ρ < 0 zu erzeugen.
+4. Eine **messbare Signatur** benennen, die die RFT-Warpmetrik von der klassischen Alcubierre-Metrik unterscheidet.
+5. Die **Konsistenz mit A8** prüfen: Ist die Kopplungswellengeschwindigkeit $c$ mit einer stationären Warpmetrik vereinbar?
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+- Axiome A1–A8
+- Kopplungseffizienz $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$
+- Zustandsgleichung $w(\theta) = \frac{1}{3}[2\varepsilon(\Delta\phi(\theta)) - 1]$
+- **RT-33:** ρ ≥ 0 überall, kein exotisches Material; $w \in [-1/3, +1/3]$; Skalierungsgesetz $n \propto R^2$
+- **RT-34:** 3D-Warpblase numerisch implementiert; GR-Solver (Christoffel, Riemann, Ricci) validiert
+- **RT-40:** $\varepsilon = 1/\gamma^2$; $l_c \propto \gamma^{-2}$
+- **RT-41:** A8 ist irreduzibles Postulat; $c$ = Kopplungswellengeschwindigkeit
+- **RT-42 AP1/AP2:** Phasendynamik $\Delta\phi(t)$ als kosmologische Variable etabliert; Skalentrennung $\Delta\phi_{\rm bg}$ vs. $\delta\phi$ vorbereitet
+
+**Numerische Ausgangswerte (RT-33/RT-34):**
+
+| Größe | Wert |
+|:--|:--|
+| Blasenradius | R = 50 m |
+| Gesamtenergie | E ≈ 9,38 × 10¹⁹ J |
+| Negative Energie | E⁻ = 0,00 J |
+| $w$-Werte | $w_{\rm vorn} = +0{,}034$; $w_{\rm hinten} = -0{,}024$ |
+| Δw | +0,058 |
+| ρ_benötigt (konservativ) | ~10⁵⁷ J/m³ |
+| ρ_verfügbar (optimistisch) | ~10¹⁰ J/m³ |
+
+**Bekannte offene Punkte:**
+- Keine geschlossene analytische Form der Metrik.
+- Energiedichten ~28 Größenordnungen über kosmologischem Hintergrund (RT-42 AP4: Scheinproblem verschiedener Regime).
+- Keine messbare Signatur für Falsifikation.
+- Skalentrennung Kosmologie ↔ Warp nicht formalisiert.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Analytische Form der RFT-Warpmetrik
+
+**Aufgabe:**
+Leite eine **geschlossene analytische Form** der RFT-Warpmetrik her — entweder als exakte Lösung oder als kontrollierte Störungsrechnung.
+
+**Konkrete Schritte:**
+1. Ansatz: Linearisierte Metrik um Minkowski:
+   $$g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}^{\rm RFT}, \quad h_{\mu\nu}^{\rm RFT} = h_{\mu\nu}^{\rm Alcubierre} \cdot \varepsilon(\Delta\phi)$$
+2. RFT-Zustandsgleichung $w(\theta) = \frac{1}{3}[2\varepsilon - 1]$ in die Einstein-Gleichungen einsetzen.
+3. Linearisierte Einstein-Gleichungen für $h_{\mu\nu}$ mit $\varepsilon(\Delta\phi(\theta))$ als Quellterm lösen.
+4. Prüfen, ob eine exakte Lösung existiert, die $\varepsilon$ als Modulationsfunktion bestätigt.
+5. Mit RT-34-Numerik vergleichen: Stimmen analytische und numerische Ergebnisse überein?
+
+**Erfolgskriterium:**
+Geschlossene Form $h_{\mu\nu}^{\rm RFT}(x,t)$, die im Grenzfall $\varepsilon \to 1$ die Alcubierre-Metrik und im Grenzfall $\varepsilon \to 0$ die Minkowski-Metrik reproduziert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap1_analytische_warpmetrik.md` · `en/facts/theory/rt43_ap1_analytical_warp_metric.md`
+
+---
+
+#### AP2 – Skalentrennung: Kosmologie ↔ lokale Warpmetrik
+
+**Aufgabe:**
+Formalisiere die **Entkopplung** zwischen der kosmologischen Phasendynamik (RT-42) und der lokalen Warp-Modulation (RT-34).
+
+**Konkrete Schritte:**
+1. Phase zerlegen in Hintergrund und Störung:
+   $$\Delta\phi(\vec x, t) = \Delta\phi_{\rm bg}(t) + \delta\phi(\vec x, t)$$
+2. Zeigen, dass die kosmologische Dynamik nur von $\Delta\phi_{\rm bg}$ abhängt.
+3. Zeigen, dass die Warp-Metrik nur von $\delta\phi$ abhängt.
+4. Den **Kopplungsterm** zwischen beiden bestimmen — falls er existiert.
+5. Prüfen: Ist der Kopplungsterm vernachlässigbar (adiabatische Näherung) oder relevant (Rückwirkung auf Kosmologie)?
+
+**Erfolgskriterium:**
+Die Skalentrennung ist **entweder** formal bewiesen (Kopplungsterm → 0) **oder** quantifiziert (expliziter Skalierungsfaktor).
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap2_skalentrennung.md` · `en/facts/theory/rt43_ap2_scale_separation.md`
+
+---
+
+#### AP3 – Energieoptimierung
+
+**Aufgabe:**
+Untersuche, ob die benötigten Energiedichten durch **geometrische** oder **resonante** Optimierung reduziert werden können — **ohne** ρ < 0 zu erzeugen.
+
+**Konkrete Schritte:**
+1. **Geometrische Optimierung:** Blasenform variieren (nicht-sphärisch, toroidal, fraktal); prüfen, ob ρ_benötigt sinkt.
+2. **Resonante Optimierung:** G-Faktor (Verstärkung produktiver Kopplung) zur Erhöhung von ρ_verfügbar nutzen.
+3. **Wandpacking:** Prüfen, ob das $n \propto R^2$-Skalierungsgesetz aus RT-33 durch hierarchische Wandstrukturen verbessert werden kann.
+4. **Phasenoptimierung:** $\Delta\phi(\theta)$ für minimales ρ_benötigt bei gegebenem Δw optimieren.
+5. **Vergleich mit RT-33-Parametern:** $V_0 = 0{,}5$, $\lambda_1 = 0{,}5$ — sind das die optimalen Werte?
+
+**Erfolgskriterium:**
+Reduzierte Energieskala numerisch oder analytisch nachgewiesen — oder Nachweis, dass die RT-33-Werte bereits optimal sind.
+
+**Erwartete Kerndokumente:** `de/fakten/konzepte/warpantrieb/analyse/rt43_energieoptimierung.py` · EN-Spiegel
+
+---
+
+#### AP4 – Messbare Signatur
+
+**Aufgabe:**
+Benenne eine **messbare Signatur**, die die RFT-Warpmetrik von der klassischen Alcubierre-Metrik unterscheidet.
+
+**Konkrete Schritte:**
+1. **Winkelabhängigkeit:** $\rho(\theta) \propto \varepsilon^2(\Delta\phi(\theta))$ — Alcubierre-Metrik ist sphärisch.
+2. **Kein E⁻:** RFT hat E⁻ = 0 — Alcubierre erfordert E⁻ > 0.
+3. **Selbst-Abschaltung:** Bei $v_s \to c$ löst sich die RFT-Warpkopplung auf (RT-34) — Alcubierre hat keinen solchen Mechanismus.
+4. **Kohärenzlänge:** $l_c \propto \gamma^{-2}$ (RT-40 AP5) — ist das in der Warpmetrik sichtbar?
+5. **Konkretes Experiment formulieren:** Welche Messung würde die RFT-Warpmetrik bestätigen oder ausschließen?
+
+**Erfolgskriterium:**
+Mindestens eine messbare Größe benannt, die die RFT-Warpmetrik von Alcubierre **unterscheidet** — oder Nachweis, dass beide im messbaren Bereich **identisch** sind.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap4_messbare_signatur.md` · `en/facts/theory/rt43_ap4_measurable_signature.md`
+
+---
+
+#### AP5 – Konsistenz mit A8
+
+**Aufgabe:**
+Prüfe, ob die Kopplungswellengeschwindigkeit $c$ (A8) mit einer **stationären** Warpmetrik vereinbar ist.
+
+**Konkrete Schritte:**
+1. Für $v_s < c$ ist die Warpblase kausal erlaubt.
+2. Die Phasenmodulation $\delta\phi(\vec x, t)$ muss kausal sein: $|\partial_t \delta\phi| \leq c |\nabla \delta\phi|$.
+3. Prüfen: Ist die RT-34-Lösung kausal — oder enthält sie überlichtschnelle Phasenausbreitung?
+4. Prüfen: Erzeugt die Warpmetrik **geschlossene zeitartige Kurven** (CTC)? Das wäre ein Kausalitätsverstoß.
+5. Bedingungen benennen, unter denen A8 **verletzt** wäre.
+
+**Erfolgskriterium:**
+Die RT-34-Warpmetrik ist kausal konsistent mit A8 — oder die Verletzung ist explizit benannt und quantifiziert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap5_kausalitaet_a8.md` · `en/facts/theory/rt43_ap5_causality_a8.md`
+
+---
+
+#### AP6 – Technische Anschlussfähigkeit
+
+**Aufgabe:**
+Prüfe, ob die RFT-Warpmetrik **technisch anschlussfähig** ist — d. h., ob es einen realistischen Pfad zu einer experimentellen Realisierung gibt.
+
+**Konkrete Schritte:**
+1. **Energieskala:** Benötigte Energiedichten mit existierenden Technologien vergleichen (Kernfusion: ~10¹⁷ J/m³; NIF: ~10¹⁴ J/m³).
+2. **Skalierung:** Wenn $\rho_{\rm benötigt} \propto 1/R^2$ (RT-33): wie groß müsste R für technisch erreichbare Dichten sein?
+3. **Gain-Anforderung:** Der benötigte Gain $G^*$ liegt bei ~10⁵² (RT-33) — gibt es einen physikalischen Mechanismus?
+4. **Alternative Pfade:** Nicht-technische Konsequenzen der RFT-Warpmetrik (z. B. Kosmologie, Quantengravitation)?
+5. **Ehrliche Bilanz:** Ist die technische Realisierung prinzipiell möglich, praktisch unmöglich oder prinzipiell unmöglich?
+
+**Erfolgskriterium:**
+Klare Aussage zur technischen Anschlussfähigkeit — mit expliziter Nennung der Skalen und physikalischen Grenzen.
+
+**Erwartete Kerndokumente:** `de/fakten/konzepte/warpantrieb/rt43_technische_bilanz.md` · EN-Spiegel
+
+---
+
+#### AP7 – Konsistenz mit RT-33, RT-34, RT-40, RT-42
+
+**Aufgabe:**
+Prüfe, ob RT-43 **konsistent** mit allen verwandten Tasks ist.
+
+**Konkrete Schritte:**
+1. **RT-33:** Skalierungsgesetz $n \propto R^2$ — bleibt es gültig?
+2. **RT-34:** Numerische 3D-Lösung — stimmt sie mit der analytischen Form überein?
+3. **RT-40:** $\varepsilon = 1/\gamma^2$ — ist das in der Warpmetrik sichtbar?
+4. **RT-42:** Kosmologische Phasendynamik — ist die Skalentrennung konsistent?
+5. Widersprüche explizit benennen — oder deren Abwesenheit zeigen.
+
+**Erfolgskriterium:**
+RT-43 ist konsistent mit allen verwandten Tasks — oder die Widersprüche sind explizit benannt.
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier mit der analytischen RFT-Warpmetrik.
+2. Skalentrennungs-Theorem: Formale Entkopplung von Kosmologie und Warp.
+3. Optimierungsanalyse: Reduzierte Energieskala durch geometrische/resonante Optimierung.
+4. Signaturpapier: Messbare Abweichung von der Alcubierre-Metrik.
+5. Kausalitätsprüfung: Konsistenz mit A8.
+6. Technische Bilanz: Ehrliche Einschätzung der Realisierbarkeit.
+7. Python-Code zur numerischen Verifikation (öffentlich).
+8. Peer-Review-Einreichung (z. B. *Classical and Quantum Gravity*, *Physical Review D* oder *Foundations of Physics*).
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Eine geschlossene analytische Form der RFT-Warpmetrik liegt vor — auch wenn sie nur perturbativ gilt.
+**Mittelziel:** Die Skalentrennung ist formal bewiesen, und eine messbare Signatur ist benannt.
+**Maximalziel:** Die Energieskala ist signifikant reduziert, und ein technischer Pfad ist skizziert — oder die prinzipielle Unmöglichkeit ist bewiesen.
+**Negativziel:** Falls die analytische Schließung scheitert: präzise dokumentieren, an welcher Stelle A1–A8 nicht ausreichen — und die minimale Erweiterung formulieren (z. B. A9: Warp-Randbedingung).
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** Die Metrik darf nicht so konstruiert werden, dass sie ρ ≥ 0 per Definition erfüllt.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten müssen aus A1–A8 folgen oder explizit als frei benannt werden.
+- **Kausalität wahren:** Jede Lösung muss mit A8 konsistent sein.
+- **Falsifizierbarkeit:** Jede Behauptung muss ein Kriterium angeben, unter dem sie widerlegt wäre.
+- **Skalentrennung:** Kosmologie und Warp sind verschiedene Regime — nicht verwechseln.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentieren.
+- **Abgrenzung:** Klar unterscheiden zwischen (a) mathematischer Äquivalenz, (b) heuristischer Analogie und (c) empirischer Vorhersage.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:**
+Ansatz $h_{\mu\nu}^{\rm RFT} = h_{\mu\nu}^{\rm Alcubierre} \cdot \varepsilon(\Delta\phi)$ formulieren und in die linearisierten Einstein-Gleichungen einsetzen. DGL für $\varepsilon(\Delta\phi)$ herleiten.
+
+**Woche 3–4:**
+DGL für verschiedene $\Delta\phi(\theta)$-Profile lösen. Prüfen, ob die Lösung die RT-34-Numerik reproduziert.
+
+**Woche 5–6:**
+Falls die Lösung hält: Skalentrennung (AP2) und Energieoptimierung (AP3) untersuchen. Falls nicht: Lücke dokumentieren und minimale Erweiterung formulieren.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT-Warpmetrik **exakt** analytisch geschlossen werden kann, ist **moderat** — die RT-34-Numerik zeigt bereits, dass die Struktur nichttrivial ist. Die Wahrscheinlichkeit, dass eine **perturbative** analytische Form existiert, die die numerischen Ergebnisse reproduziert, ist **hoch**.
+
+Ehrlichster Ausgang: **Die RFT-Warpmetrik hat eine geschlossene perturbative Form. Die Energieskala bleibt technisch unerreichbar, aber die Winkelabhängigkeit und das Fehlen negativer Energie sind messbare Signaturen — und die Konsistenz mit RT-42 zeigt, dass Kosmologie und Warp zwei Regime derselben Theorie sind.**
+
+Das wäre ein echter Fortschritt gegenüber dem Status „numerisch, offen" auf der Website.
+
+---
+
+### 9. Verwandte Tasks
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-04** | FLRW-Simulation — numerische Infrastruktur |
+| **RT-33** | Warp-Skalierung — liefert $n \propto R^2$, $w(\theta)$ |
+| **RT-34** | 3D-Warpblase — liefert numerische Metrik, GR-Solver |
+| **RT-40** | SRT-Brücke — liefert $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 — liefert Kopplungswellengeschwindigkeit $c$ |
+| **RT-42** | Kosmologie — liefert Phasendynamik $\Delta\phi(t)$, Skalentrennung |
+| **RT-43** | **Dieser Task** — analytische Warpmetrik, technische Anschlussfähigkeit |
 
 ---
 
