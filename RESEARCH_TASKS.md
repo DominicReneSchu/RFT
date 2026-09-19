@@ -1463,3 +1463,282 @@ Der ehrlichste Ausgang wäre: A5 ist kompatibel mit der Standard-Feldtheorie im 
 ---
 
 *RT-45 — DominicReneSchu/RFT — September 2026*
+
+---
+
+## RT-46 – RFT-Validierung am Doppelpendel mit öffentlichen Daten
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** Offen
+**Vorgänger:** RT-38 (Öffentliches Experimentierprotokoll Doppelpendel, abgeschlossen)
+**Verwandt:** RT-02 ($G_{\text{sync}}$-Gruppenstruktur), RT-45 (Energie als gerichtete Größe)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Die in RT-38 formulierte Kopplungshypothese der RFT am Doppelpendel **empirisch prüfen**, ohne einen eigenen Versuchsaufbau zu benötigen. Stattdessen werden **öffentlich verfügbare, hochwertige Messdatensätze** als Sekundärdaten genutzt. Das Ziel ist die **Reproduzierbarkeit** der RFT-Vorhersagen auf Basis unabhängiger, bereits validierter Daten.
+
+**Teilziele:**
+
+1. Identifikation und Beschaffung geeigneter öffentlicher Doppelpendel-Datensätze.
+2. Extraktion der für die RFT relevanten Observablen: $(\theta_1, \theta_2)$, $(\dot\theta_1, \dot\theta_2)$, Phasendifferenz $\Delta\phi$, Kopplungseffizienz $\varepsilon$, PCI.
+3. Statistische Prüfung, ob die gemessenen Kopplungsgrößen mit der RFT-Vorhersage $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$ übereinstimmen.
+4. Prüfung, ob die Kopplungsdynamik $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$ die beobachtete Energiedissipation erklärt.
+5. Falsifikationskriterien formulieren und dokumentieren.
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RT-38):**
+- Öffentliches Experimentierprotokoll für den Doppelpendelversuch.
+- Definition der RFT-Observablen: Phasenlage $\Delta\phi$, Kopplungseffizienz $\varepsilon$, PCI.
+- Hypothese: Das Doppelpendel zeigt RFT-charakteristische Kopplungsmuster, die über die Standard-Hamilton-Dynamik hinausgehen.
+
+**Gegeben (öffentliche Daten):**
+
+| Datensatz | Quelle | Umfang | Eignung |
+|:--|:--|:--|:--|
+| **MultiArm-Pendulum** (Kaheman et al., 2023) | Zenodo: `10.5281/zenodo.6633719` | Einzel-, Doppel-, Dreifachpendel; Encoder + Video | **Sehr hoch** |
+| **Double Pendulum Dataset** (Chen et al., 2025) | TIB: `10.57702/xqkaca5s` | Zeitreihen der Winkel | **Hoch** |
+| **Physik-Experimente Uni Duisburg-Essen** | CASSY Lab | Spannungssignale $U_a(t), U_b(t)$ | **Mittel** (Kalibrierung nötig) |
+| **V-scope / Matlab-Daten (PTEE 2000)** | BME Budapest | Chaos-Messungen | **Mittel** |
+
+**Methodische Vorlage:**
+- arXiv:2002.05909 beschreibt die Datenaufbereitung aus Hochgeschwindigkeitsvideos: Extraktion von $(\theta_1, \theta_2)$, $(\dot\theta_1, \dot\theta_2)$, sowie die Berücksichtigung der zeitlichen Dämpfung.
+- Die Dämpfung ist ein **externer, nicht-autonomer Term** und muss in der RFT-Analyse als $\beta$-Beitrag modelliert werden.
+
+**Bekannte Einschränkung:**
+- Kein eigener Versuchsaufbau möglich → vollständige Abhängigkeit von der Qualität und Dokumentation der öffentlichen Daten.
+- Keine Kontrolle über Messfehler, Kalibrierung, Umgebungsbedingungen.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Datenbeschaffung und Qualitätsprüfung
+
+**Aufgabe:**
+Identifiziere, lade und prüfe die öffentlichen Doppelpendel-Datensätze auf ihre Eignung für die RFT-Analyse.
+
+**Konkrete Schritte:**
+
+1. Lade den **MultiArm-Pendulum-Datensatz** von Zenodo (`10.5281/zenodo.6633719`).
+2. Prüfe die Datenstruktur: Samplingrate, Zeitstempel, Einheiten, Encoder-Auflösung, Video-Framerate.
+3. Identifiziere die für Doppelpendel relevanten Dateien (Winkel-Zeitreihen, ggf. Video).
+4. Prüfe die Dokumentation auf Kalibrierungsangaben (Encoder-Offsets, Nullpunkt, Dämpfungsparameter).
+5. Ergänze ggf. den **Double Pendulum Dataset** (TIB) als unabhängige zweite Quelle.
+6. Dokumentiere die Qualitätsprüfung: Gibt es Lücken, Ausreißer, Drift?
+
+**Erfolgskriterium:**
+Mindestens ein Datensatz ist vollständig geladen, dokumentiert und für die Extraktion von $(\theta_1, \theta_2)$ geeignet.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap1_datenbeschaffung.md` · `en/facts/experiments/rt46_ap1_data_acquisition.md`
+
+---
+
+#### AP2 – Datenaufbereitung und Observable-Extraktion
+
+**Aufgabe:**
+Extrahiere die für die RFT relevanten Observablen aus den Rohdaten.
+
+**Konkrete Schritte:**
+
+1. Kalibriere die Rohsignale (Encoder-Spannung → Winkel) gemäß der Dokumentation.
+2. Extrahiere die Zeitreihen $\theta_1(t)$ und $\theta_2(t)$.
+3. Berechne die Winkelgeschwindigkeiten $\dot\theta_1(t)$, $\dot\theta_2(t)$ (finite Differenzen oder Spline-Ableitung).
+4. Berechne die **Phasendifferenz**:
+   $$\Delta\phi(t) = \phi_1(t) - \phi_2(t)$$
+   wobei $\phi_i(t) = \arctan2(\dot\theta_i, \omega_i \theta_i)$ (Phasenraumwinkel).
+5. Berechne die **Kopplungseffizienz**:
+   $$\varepsilon_{\text{exp}}(t) = \cos^2\!\left(\frac{\Delta\phi(t)}{2}\right)$$
+6. Berechne den **PCI** als gleitendes Fenstermittel:
+   $$\mathrm{PCI}(t) = \left|\left\langle e^{i\Delta\phi(t)}\right\rangle_{\text{Fenster}}\right|$$
+7. Berechne die **Gesamtenergie** $E(t) = T + V$ und deren Dissipationsrate $\dot E(t)$.
+
+**Erfolgskriterium:**
+Alle Observablen liegen als Zeitreihen vor, mit dokumentierter Unsicherheit und Fenstergröße.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap2_observablen.md` · `en/facts/experiments/rt46_ap2_observables.md`
+
+---
+
+#### AP3 – Prüfung der RFT-Kopplungshypothese
+
+**Aufgabe:**
+Statistische Prüfung, ob die experimentell extrahierten Kopplungsgrößen mit der RFT-Vorhersage übereinstimmen.
+
+**Konkrete Schritte:**
+
+1. **Hypothese H1:** $\varepsilon_{\text{exp}}(\Delta\phi) = \cos^2(\Delta\phi/2)$.
+   - Auftragen von $\varepsilon_{\text{exp}}$ gegen $\Delta\phi$.
+   - Vergleich mit der theoretischen Kurve.
+   - Bestimmung von $R^2$, RMSE, systematischen Abweichungen.
+2. **Hypothese H2:** Die Kopplungsdynamik folgt $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$.
+   - Schätze $K(t)$ aus der Energiedissipation.
+   - Fitte $\alpha, \beta$ an die Daten.
+   - Prüfe, ob $\alpha/\beta > 1$ (Feldaufbau) oder $< 1$ (Zerfall).
+3. **Hypothese H3:** PCI korreliert mit der Energieübertragung zwischen den Pendeln.
+   - Berechne die Korrelation zwischen $\mathrm{PCI}(t)$ und $|E_1(t) - E_2(t)|$.
+4. **Hypothese H4:** Die Dämpfung ist ein $\beta$-Effekt, kein externer Zufall.
+   - Vergleiche die gemessene Dissipationsrate mit der aus $\beta$ abgeleiteten.
+
+**Erfolgskriterium:**
+Für jede Hypothese liegt ein statistisches Testergebnis vor – Bestätigung, Ablehnung oder Unentschieden.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap3_hypothesentest.md` · `en/facts/experiments/rt46_ap3_hypothesis_test.md`
+
+---
+
+#### AP4 – Falsifikationskriterien und Abgrenzung
+
+**Aufgabe:**
+Formuliere präzise Falsifikationskriterien und grenze die RFT-Vorhersage von der Standard-Hamilton-Dynamik ab.
+
+**Konkrete Schritte:**
+
+1. **Standard-Hamilton-Vorhersage:** Der Doppelpendel-Phasenraum ist symplektisch; es gibt keine Kopplungseffizienz $\varepsilon$, die über die geometrische Kopplung hinausgeht.
+2. **RFT-Vorhersage:** Zusätzlich zur Hamilton-Dynamik gibt es eine **effektive Kopplungseffizienz** $\varepsilon(\Delta\phi)$, die die Energieübertragung moduliert.
+3. **Falsifikationskriterium F1:** Wenn $\varepsilon_{\text{exp}}$ **nicht** mit $\cos^2(\Delta\phi/2)$ korreliert ($R^2 < 0{,}5$), ist H1 abgelehnt.
+4. **Falsifikationskriterium F2:** Wenn die Dissipationsrate **nicht** durch $\beta K$ erklärbar ist, ist H2 abgelehnt.
+5. **Falsifikationskriterium F3:** Wenn PCI **keine** Korrelation mit der Energieübertragung zeigt, ist H3 abgelehnt.
+6. Dokumentiere die Kriterien **vor** der Analyse (Pre-Registrierung).
+
+**Erfolgskriterium:**
+Falsifikationskriterien sind dokumentiert und werden **vor** der Datenanalyse festgelegt.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap4_falsifikation.md` · `en/facts/experiments/rt46_ap4_falsification.md`
+
+---
+
+#### AP5 – Vergleich mit RT-38-Protokoll
+
+**Aufgabe:**
+Prüfe, ob die Ergebnisse mit dem ursprünglichen RT-38-Protokoll konsistent sind.
+
+**Konkrete Schritte:**
+
+1. Vergleiche die extrahierten Observablen mit den in RT-38 definierten Zielgrößen.
+2. Prüfe, ob die in RT-38 formulierten Erwartungen erfüllt sind.
+3. Dokumentiere Abweichungen und deren mögliche Ursachen (z. B. andere Messbedingungen).
+4. Falls möglich: Simuliere das Doppelpendel mit den RT-38-Parametern und vergleiche mit den öffentlichen Daten.
+
+**Erfolgskriterium:**
+Konsistenz oder dokumentierte Abweichung mit Begründung.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap5_rt38_vergleich.md` · `en/facts/experiments/rt46_ap5_rt38_comparison.md`
+
+---
+
+#### AP6 – Statistische Robustheit und Kreuzvalidierung
+
+**Aufgabe:**
+Prüfe die Robustheit der Ergebnisse durch unabhängige Datensätze und statistische Methoden.
+
+**Konkrete Schritte:**
+
+1. Wiederhole die Analyse mit dem **zweiten Datensatz** (TIB oder Uni-Due).
+2. Prüfe, ob die Ergebnisse **konsistent** sind.
+3. Führe eine **Bootstrap-Analyse** durch, um Konfidenzintervalle für $\alpha, \beta$ zu schätzen.
+4. Prüfe die **Sensitivität** gegenüber der Fenstergröße für PCI.
+5. Dokumentiere systematische Unsicherheiten.
+
+**Erfolgskriterium:**
+Die Ergebnisse sind über mindestens zwei unabhängige Datensätze robust – oder die Abweichungen sind quantifiziert.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap6_kreuzvalidierung.md` · `en/facts/experiments/rt46_ap6_cross_validation.md`
+
+---
+
+#### AP7 – Dokumentation und Publikation
+
+**Aufgabe:**
+Dokumentiere die gesamte Analyse reproduzierbar und bereite eine Publikation vor.
+
+**Konkrete Schritte:**
+
+1. Erstelle ein **Jupyter Notebook** oder Python-Skript, das die gesamte Analyse reproduziert.
+2. Dokumentiere alle Datenquellen, DOI, Versionen.
+3. Stelle die Ergebnisse in **RT-38-kompatibler Form** dar.
+4. Verfasse ein Manuskript für Peer Review (z. B. *Chaos*, *Physical Review E*, *Foundations of Physics*).
+5. Veröffentliche den Code auf GitHub (Erweiterung des RFT-Repos).
+
+**Erfolgskriterium:**
+Code, Daten und Manuskript sind öffentlich verfügbar und reproduzierbar.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap7_publikation.md` · `en/facts/experiments/rt46_ap7_publication.md`
+
+---
+
+### 4. Deliverables
+
+1. **Datensatz-Beschreibung** mit Quelle, DOI, Qualitätsprüfung.
+2. **Python-Pipeline** zur Extraktion von $\Delta\phi$, $\varepsilon$, PCI aus Rohdaten.
+3. **Statistische Auswertung** der Hypothesen H1–H4 mit $R^2$, RMSE, Konfidenzintervallen.
+4. **Falsifikationsprotokoll** (Pre-Registrierung).
+5. **Vergleich mit RT-38-Protokoll** (Konsistenz oder Abweichung).
+6. **Manuskript** für Peer Review.
+7. **Öffentlicher Code** auf GitHub.
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Die öffentlichen Daten sind extrahiert und die Observablen $(\Delta\phi, \varepsilon, \mathrm{PCI})$ sind berechnet.
+**Mittelziel:** Mindestens eine der Hypothesen H1–H3 ist statistisch **bestätigt** oder **abgelehnt**.
+**Maximalziel:** Die RFT-Kopplungshypothese ist über **zwei unabhängige Datensätze** robust bestätigt – oder klar widerlegt.
+**Negativziel:** Falls die Daten nicht ausreichen: Dokumentiere präzise, welche Observablen fehlen und welcher Mindestdatensatz nötig wäre.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Pre-Registrierung:** Falsifikationskriterien werden **vor** der Analyse festgelegt.
+- **Keine nachträgliche Parameteranpassung:** $\alpha, \beta$ werden aus den Daten gefittet, nicht an sie angepasst.
+- **Transparenz:** Alle Datenquellen, Versionen, Skripte werden dokumentiert.
+- **Robustheit:** Ergebnisse müssen über Fenstergrößen, Datensätze und Methoden stabil sein.
+- **Abgrenzung:** Standard-Hamilton-Dynamik und RFT-Kopplungseffekte müssen klar getrennt werden.
+- **Ehrlichkeit:** Negative Ergebnisse werden genauso dokumentiert wie positive.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:**
+Lade den MultiArm-Pendulum-Datensatz von Zenodo. Prüfe die Dokumentation. Extrahiere die ersten $\theta_1(t)$- und $\theta_2(t)$-Zeitreihen. Visualisiere sie.
+
+**Woche 3–4:**
+Berechne $\Delta\phi(t)$, $\varepsilon_{\text{exp}}(t)$, $\mathrm{PCI}(t)$. Erstelle erste Plots: $\varepsilon_{\text{exp}}$ gegen $\Delta\phi$.
+
+**Woche 5–6:**
+Fitte $\alpha, \beta$. Prüfe H1–H3. Dokumentiere Ergebnisse. Entscheide, ob H4 (Dämpfung) robust genug ist.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die öffentlichen Daten **ausreichen**, um die RFT-Kopplungshypothese zu prüfen, ist **moderat bis hoch**. Der MultiArm-Pendulum-Datensatz ist qualitativ hochwertig und dokumentiert.
+
+Die Wahrscheinlichkeit, dass die RFT-Hypothese H1 ($\varepsilon = \cos^2(\Delta\phi/2)$) **exakt** bestätigt wird, ist **gering** – die Standard-Hamilton-Dynamik ist bereits extrem gut validiert, und jede zusätzliche Kopplung müsste sich als **kleine Korrektur** zeigen.
+
+Der ehrlichste Ausgang wäre: **Die RFT-Kopplungseffizienz ist mit den Daten konsistent, aber nicht signifikant von der Standard-Dynamik unterscheidbar. Die Hypothese bleibt offen – bis ein Experiment mit höherer Präzision oder ein anderes System (z. B. gekoppelte Oszillatoren, Laser-Arrays) eine Unterscheidung ermöglicht.** Das ist kein Scheitern – es ist Wissenschaft.
+
+---
+
+### 9. Querverbindungen
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-02** | $G_{\text{sync}}$-Gruppenstruktur – theoretische Grundlage |
+| **RT-33** | Warp-Skalierung – analoge Kopplungsstruktur |
+| **RT-38** | Experimentierprotokoll Doppelpendel – direkter Vorgänger |
+| **RT-40** | SRT-Brücke – $\varepsilon = 1/\gamma^2$ |
+| **RT-45** | Energie als gerichtete Größe – theoretische Vertiefung |
+| **RT-46** | **Dieser Task** – empirische Validierung |
+
+---
+
+*RT-46 — DominicReneSchu/RFT — September 2026*
