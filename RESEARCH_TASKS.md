@@ -1468,11 +1468,11 @@ Der ehrlichste Ausgang wäre: A5 ist kompatibel mit der Standard-Feldtheorie im 
 
 ## RT-46 – RFT-Validierung am Doppelpendel mit öffentlichen Daten
 
-**Version:** 1.0 – Entwurf
+**Version:** 1.1 – Entwurf (ergänzt)
 **Datum:** 19. September 2026
 **Status:** Offen
-**Vorgänger:** RT-38 (Öffentliches Experimentierprotokoll Doppelpendel, abgeschlossen)
-**Verwandt:** RT-02 ($G_{\text{sync}}$-Gruppenstruktur), RT-45 (Energie als gerichtete Größe)
+**Vorgänger:** RT-38 (Öffentliches Experimentierprotokoll Doppelpendel, abgeschlossen), RT-08 (Doppelpendel: Experimentaldaten vs. RFT-Vorhersage, abgeschlossen)
+**Verwandt:** RT-02 ($G_{\text{sync}}$-Gruppenstruktur), RT-43 (Warpmetrik), RT-45 (Energie als gerichtete Größe)
 
 ---
 
@@ -1480,6 +1480,12 @@ Der ehrlichste Ausgang wäre: A5 ist kompatibel mit der Standard-Feldtheorie im 
 
 **Übergeordnetes Ziel:**
 Die in RT-38 formulierte Kopplungshypothese der RFT am Doppelpendel **empirisch prüfen**, ohne einen eigenen Versuchsaufbau zu benötigen. Stattdessen werden **öffentlich verfügbare, hochwertige Messdatensätze** als Sekundärdaten genutzt. Das Ziel ist die **Reproduzierbarkeit** der RFT-Vorhersagen auf Basis unabhängiger, bereits validierter Daten.
+
+**Strategische Einordnung:**
+RT-46 ist kein eigenständiger empirischer Test, sondern der **empirische Arm** einer dreistufigen theoretisch-empirischen Strategie:
+- **RT-45** liefert die theoretische Grundlage: Wenn Energie eine gerichtete Größe ist, muss $\varepsilon(\Delta\phi)$ eine Richtungsabhängigkeit zeigen. RT-46 testet genau das.
+- **RT-43** liefert die Metrik-Perspektive: Die Winkelabhängigkeit $\rho(\theta) \propto \varepsilon^2$ in der Warpmetrik ist strukturell dieselbe wie die $\varepsilon(\Delta\phi)$-Abhängigkeit im Doppelpendel. Ein experimenteller Nachweis in RT-46 stützt damit gleichzeitig die Metrikstruktur in RT-43.
+- **RT-46** testet die in RT-45 und RT-43 theoretisch formulierten A5-Konsequenzen an realen Daten.
 
 **Teilziele:**
 
@@ -1497,6 +1503,9 @@ Die in RT-38 formulierte Kopplungshypothese der RFT am Doppelpendel **empirisch 
 - Öffentliches Experimentierprotokoll für den Doppelpendelversuch.
 - Definition der RFT-Observablen: Phasenlage $\Delta\phi$, Kopplungseffizienz $\varepsilon$, PCI.
 - Hypothese: Das Doppelpendel zeigt RFT-charakteristische Kopplungsmuster, die über die Standard-Hamilton-Dynamik hinausgehen.
+
+**RT-08-Kontext:**
+Die frühere Analyse (RT-08) basierte auf **synthetischen** Lagrange-Daten ($A=0$) und fand $\chi^2_{\text{red}} = 2{,}42$ – die RFT-Formel wurde abgelehnt. RT-46 nutzt **reale** experimentelle Daten und prüft, ob die Ablehnung auf die synthetische Datenbasis oder auf die RFT-Hypothese selbst zurückzuführen ist. Das ist eine **direkte Fortsetzung** von RT-08 mit besserer Datenqualität – kein Neuanfang, sondern eine methodische Verbesserung.
 
 **Gegeben (öffentliche Daten):**
 
@@ -1536,6 +1545,18 @@ Identifiziere, lade und prüfe die öffentlichen Doppelpendel-Datensätze auf ih
 **Erfolgskriterium:**
 Mindestens ein Datensatz ist vollständig geladen, dokumentiert und für die Extraktion von $(\theta_1, \theta_2)$ geeignet.
 
+**Fehlerbudget:**
+Vor der Analyse sind die systematischen Fehlerquellen zu quantifizieren:
+
+| Quelle | Systematischer Fehler | RFT-Relevanz |
+|:--|:--|:--|
+| Encoder-Auflösung | Quantisierung der Winkel | $\Delta\phi$ unsicher bei kleinen Winkeln |
+| Video-Tracking | Frame-Rate, Linsenverzerrung | $\dot\theta$ unsicher bei schnellen Bewegungen |
+| Lagerreibung | Asymmetrisch zwischen den Pendeln | $\beta$ möglicherweise nicht symmetrisch |
+| Luftreibung | Geschwindigkeitsabhängig | $\beta K$ möglicherweise falsch modelliert |
+
+Da der MultiArm-Pendulum-Datensatz sowohl Encoder- als auch Video-Daten enthält, ist eine **Kreuzvalidierung** zwischen beiden Messmethoden möglich. Diese ermöglicht eine unabhängige Abschätzung der systematischen Fehler auf $\Delta\phi$, $\varepsilon$ und PCI.
+
 **Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap1_datenbeschaffung.md` · `en/facts/experiments/rt46_ap1_data_acquisition.md`
 
 ---
@@ -1573,18 +1594,25 @@ Statistische Prüfung, ob die experimentell extrahierten Kopplungsgrößen mit d
 
 **Konkrete Schritte:**
 
-1. **Hypothese H1:** $\varepsilon_{\text{exp}}(\Delta\phi) = \cos^2(\Delta\phi/2)$.
+1. **Nullhypothese H0:** $\varepsilon_{\text{exp}}(\Delta\phi)$ ist **nicht** von der Standard-Hamilton-Dynamik unterscheidbar; jede beobachtete $\Delta\phi$-Abhängigkeit folgt aus der geometrischen Kopplung, nicht aus einem zusätzlichen RFT-Term.
+   - H0 wird **vor** der Datenanalyse formuliert und getestet.
+   - **Likelihood-Ratio-Test:** Vergleich des Hamilton-Modells (H0) mit dem RFT-Kopplungsmodell (H1); Entscheidungsschwelle $p < 0{,}05$.
+2. **Hypothese H1:** $\varepsilon_{\text{exp}}(\Delta\phi) = \cos^2(\Delta\phi/2)$.
    - Auftragen von $\varepsilon_{\text{exp}}$ gegen $\Delta\phi$.
    - Vergleich mit der theoretischen Kurve.
    - Bestimmung von $R^2$, RMSE, systematischen Abweichungen.
-2. **Hypothese H2:** Die Kopplungsdynamik folgt $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$.
+3. **Hypothese H2:** Die Kopplungsdynamik folgt $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$.
    - Schätze $K(t)$ aus der Energiedissipation.
    - Fitte $\alpha, \beta$ an die Daten.
    - Prüfe, ob $\alpha/\beta > 1$ (Feldaufbau) oder $< 1$ (Zerfall).
-3. **Hypothese H3:** PCI korreliert mit der Energieübertragung zwischen den Pendeln.
+4. **Hypothese H3:** PCI korreliert mit der Energieübertragung zwischen den Pendeln.
    - Berechne die Korrelation zwischen $\mathrm{PCI}(t)$ und $|E_1(t) - E_2(t)|$.
-4. **Hypothese H4:** Die Dämpfung ist ein $\beta$-Effekt, kein externer Zufall.
+5. **Hypothese H4:** Die Dämpfung ist ein $\beta$-Effekt, kein externer Zufall.
    - Vergleiche die gemessene Dissipationsrate mit der aus $\beta$ abgeleiteten.
+6. **Distinktive Signaturen** (Vorhersagen, die die Hamilton-Dynamik *nicht* macht):
+   - **(a) Dämpfungsform:** Die RFT sagt $\beta K$ als Dämpfungsterm voraus; die Standardphysik verwendet einen phänomenologischen Luftreibungsterm ($\propto \dot\theta$ oder $\propto \dot\theta^2$). Wenn die RFT-Dämpfungsform die Daten besser beschreibt (höheres $R^2$, niedrigeres AIC), ist das eine Stufe-2-Signatur.
+   - **(b) Phasenkohärenz im Chaos-Übergang:** Die RFT sagt voraus, dass PCI im Übergang zwischen quasi-periodischer und chaotischer Bewegung ein charakteristisches Minimum durchläuft. Wenn ein solches Minimum in den Daten sichtbar ist und die RFT-Kopplungsdynamik es reproduziert, ist das eine distinktive Signatur.
+   - **(c) Energierichtung:** A5 (Energierichtung) sagt voraus, dass der Energiefluss zwischen den Pendeln gerichtet ist. Test: Korrelation zwischen dem RFT-Richtungsvektor $\hat e(\Delta\phi)$ und dem beobachteten Energiefluss. Die Standardphysik hat keinen solchen Vektor.
 
 **Erfolgskriterium:**
 Für jede Hypothese liegt ein statistisches Testergebnis vor – Bestätigung, Ablehnung oder Unentschieden.
@@ -1675,10 +1703,16 @@ Code, Daten und Manuskript sind öffentlich verfügbar und reproduzierbar.
 
 ### 4. Deliverables
 
-1. **Datensatz-Beschreibung** mit Quelle, DOI, Qualitätsprüfung.
+1. **Datensatz-Beschreibung** mit Quelle, DOI, Qualitätsprüfung und Fehlerbudget.
 2. **Python-Pipeline** zur Extraktion von $\Delta\phi$, $\varepsilon$, PCI aus Rohdaten.
-3. **Statistische Auswertung** der Hypothesen H1–H4 mit $R^2$, RMSE, Konfidenzintervallen.
-4. **Falsifikationsprotokoll** (Pre-Registrierung).
+3. **Pre-Registrierungsdokument** (vor der Datenanalyse auf GitHub veröffentlicht), enthält:
+   - Datenquellen (DOI, Version, Datum des Downloads)
+   - Hypothesen H0–H4 mit expliziten Vorhersagen
+   - Falsifikationskriterien (z. B. $R^2 < 0{,}5$ für H1)
+   - Statistische Tests (Likelihood Ratio, Bootstrap, Kreuzvalidierung)
+   - Fenstergrößen für PCI und $\varepsilon$
+   - Ausschlusskriterien für Datenpunkte
+4. **Statistische Auswertung** der Hypothesen H0–H4 mit $R^2$, RMSE, Konfidenzintervallen und Likelihood-Ratio-Test.
 5. **Vergleich mit RT-38-Protokoll** (Konsistenz oder Abweichung).
 6. **Manuskript** für Peer Review.
 7. **Öffentlicher Code** auf GitHub.
@@ -1707,14 +1741,21 @@ Code, Daten und Manuskript sind öffentlich verfügbar und reproduzierbar.
 
 ### 7. Konkreter erster Schritt
 
-**Woche 1–2:**
-Lade den MultiArm-Pendulum-Datensatz von Zenodo. Prüfe die Dokumentation. Extrahiere die ersten $\theta_1(t)$- und $\theta_2(t)$-Zeitreihen. Visualisiere sie.
+**Woche 1:**
+- Lade den MultiArm-Pendulum-Datensatz von Zenodo (`10.5281/zenodo.6633719`).
+- Prüfe die README auf Dateistruktur, Samplingrate und Kalibrierung.
+- Extrahiere eine erste Doppelpendel-Zeitreihe (Encoder-Daten).
+- Visualisiere $\theta_1(t)$, $\theta_2(t)$ und $\Delta\phi(t)$.
+
+**Woche 2:**
+- Implementiere die Pre-Registrierung (H0–H4, Falsifikationskriterien, Fenstergrößen, Ausschlusskriterien).
+- Berechne $\varepsilon_{\text{exp}}(t)$ und $\mathrm{PCI}(t)$.
+- Erstelle den ersten $\varepsilon_{\text{exp}}$-vs-$\Delta\phi$-Plot.
 
 **Woche 3–4:**
-Berechne $\Delta\phi(t)$, $\varepsilon_{\text{exp}}(t)$, $\mathrm{PCI}(t)$. Erstelle erste Plots: $\varepsilon_{\text{exp}}$ gegen $\Delta\phi$.
-
-**Woche 5–6:**
-Fitte $\alpha, \beta$. Prüfe H1–H3. Dokumentiere Ergebnisse. Entscheide, ob H4 (Dämpfung) robust genug ist.
+- Fitte $\alpha, \beta$ an die Daten.
+- Teste H0 (Hamilton-Nullhypothese) gegen H1 (RFT) via Likelihood-Ratio-Test.
+- Dokumentiere Ergebnisse – **auch wenn sie negativ sind**.
 
 ---
 
@@ -1733,12 +1774,14 @@ Der ehrlichste Ausgang wäre: **Die RFT-Kopplungseffizienz ist mit den Daten kon
 | Task | Beziehung |
 |:--|:--|
 | **RT-02** | $G_{\text{sync}}$-Gruppenstruktur – theoretische Grundlage |
+| **RT-08** | Doppelpendel vs. RFT-Vorhersage (synthetische Daten, $\chi^2_{\text{red}}=2{,}42$) – direkter Vorgänger |
 | **RT-33** | Warp-Skalierung – analoge Kopplungsstruktur |
 | **RT-38** | Experimentierprotokoll Doppelpendel – direkter Vorgänger |
 | **RT-40** | SRT-Brücke – $\varepsilon = 1/\gamma^2$ |
-| **RT-45** | Energie als gerichtete Größe – theoretische Vertiefung |
+| **RT-43** | Warpmetrik – $\rho(\theta)\propto\varepsilon^2$ strukturell analog zu $\varepsilon(\Delta\phi)$ |
+| **RT-45** | Energie als gerichtete Größe – theoretische Grundlage für Richtungsabhängigkeit von $\varepsilon$ |
 | **RT-46** | **Dieser Task** – empirische Validierung |
 
 ---
 
-*RT-46 — DominicReneSchu/RFT — September 2026*
+*RT-46 — DominicReneSchu/RFT — September 2026 (v1.1)*
