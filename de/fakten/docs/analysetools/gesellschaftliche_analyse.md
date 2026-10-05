@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 8. September 2026 | Fassung 2.20 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 5. Oktober 2026 | Fassung 2.21 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -157,6 +157,7 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
 | **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. |
 | **F12** | Somatische Alarmverwechslung / Archaische Reaktionsfalle | Bei B tritt nach einem psychischen Stressor (z. B. Prüfung, Konfrontation, Bewertung, innerem Erwartungsdruck) ein starkes inneres Warngefühl auf (Herzrasen, Anspannung, Drang zu sofortiger Reaktion), obwohl keine physische Bedrohung vorliegt. B fühlt sich gedrängt, sofort zu kämpfen, zu fliehen oder sich zu rechtfertigen, und neigt zu überstürzten, oft unbedachten Handlungen. Der Auslöser kann ein externer Akteur sein, muss es aber nicht. | Das evolutionär alte physische Alarmsystem wird bei einem psychischen Stressor fehlaktiviert. B wird in eine fremde Frequenz (Alarm, Eile, Bringschuld) gezwungen; **β_B steigt** stark an, während die Eigenfrequenz (Ruhe, Souveränität) verloren geht. Der PCI von B springt vom Inhalt auf das Alarmsignal, die Kopplung zur Gruppe oder zur realen Struktur wird destabilisiert. Ein externer Akteur A kann diesen Mechanismus gezielt auslösen und sein β niedrig halten, während er die Kontrolle über das Timing der Interaktion gewinnt. |
+| **F13** | Anomaler Resonator in Hochdruckfeld | In einem Feld mit hohem strukturellem Druck (starker Attraktor, hohe Einsätze, zyklische Systemabhängigkeit) erreicht ein Resonator ohne sichtbare $K_{ij}$-Vorgeschichte in kurzer Zeit hohe Kopplung zu tragenden Machtstrukturen – obwohl dies unter Zufallsbedingungen extrem unwahrscheinlich wäre. | Zwei strukturell ununterscheidbare Pfade: (a) latenter $K_{ij}$ (versteckte Kopplung), (b) Feldselbstorganisation (der Attraktor erzeugt die Figur). F13 markiert Ermittlungsbedarf, nicht Beweis. |
 
 ---
 
@@ -239,6 +240,38 @@ $$
 
 Der Indikator ist besonders stark, wenn B nach der Situation angibt, „aus dem Bauch heraus" reagiert zu haben, obwohl die Reaktion im Nachhinein als unangemessen oder kontraproduktiv bewertet wird – unabhängig davon, ob ein externer Profiteur vorhanden ist.
 
+**F13 (Anomaler Resonator in Hochdruckfeld)** ist erfüllt, wenn gilt:
+
+$$K_{ij}^{\text{sichtbar}}(t_0) \approx 0 \quad \text{bei gleichzeitig} \quad K_{ij}^{\text{erreicht}}(t_0 + \Delta t) \gg 0$$
+
+und gleichzeitig:
+
+$$P(\text{Erreichen} \mid \text{Zufall}) \ll 1$$
+
+Das Hochdruckfeld ist durch einen dominanten Attraktor (Kriegs-, Finanz-, Ressourcen- oder Machterhaltungszyklus), hohe Einsätze und zyklische Systemabhängigkeit gekennzeichnet. Der Indikator ist besonders stark, wenn mehrere der folgenden Bedingungen gleichzeitig gelten: (1) Fehlende sichtbare $K_{ij}$-Vorgeschichte (kein dokumentiertes Netzwerk, keine sichtbaren Förderer, keine überprüfbaren Geldflüsse). (2) Reibungslose Kopplung an bestehende Machtstrukturen nach dem Aufstieg. (3) Kein dokumentierter, überprüfbarer Kopplungsmechanismus.
+
+Entscheidend: F13 kann zwischen zwei strukturell möglichen Erklärungspfaden **nicht** unterscheiden – beide erzeugen dasselbe Oberflächenmuster:
+
+- **(a) Versteckte Kopplung:** Es existiert ein latenter $K_{ij}$, der öffentlich nicht sichtbar ist (verdeckte Finanzierung, informelles Netzwerk, institutionelle Protektion).
+- **(b) Feldselbstorganisation:** Der Attraktor selbst erzeugt den Resonator – das Feld „braucht" eine Figur mit bestimmten Eigenschaften und produziert sie aus dem vorhandenen Material.
+
+**Abgrenzung:**
+
+| Muster | Zentraler Mechanismus | Abgrenzung zu F13 |
+|:--|:--|:--|
+| F9 (Innere Infiltration) | Akteur tritt in bestehenden Raum ein, simuliert Δφ → 0 | F9 betrifft die Infiltration eines vorhandenen Raums; F13 betrifft die Anomalie der Kopplungsvorgeschichte beim Eintritt. |
+| 7.4 (Drei-Phasen-Vereinnahmung) | Übernahme eines fremden Resonanzraums | 7.4 beschreibt den Übernahmeprozess; F13 fragt: Wie kam der Resonator überhaupt dorthin? |
+| 7.9 (Resonanzmonopol) | Aufmerksamkeitskonzentration auf einen Resonator | 7.9 beschreibt den Zustand nach der Monopolisierung; F13 adressiert die Phase davor. |
+| 7.3 (Parasitärer Extraktionszyklus) | Zyklischer Aufbau und Ausbeutung | 7.3 beschreibt den Zyklus selbst; F13 ist ein Verdachtsindikator für dessen verdeckte Vorbereitung. |
+
+**Skaleninvarianz (A7):** F13 tritt auf allen Skalenebenen auf: Dyade (neuer Partner ohne sichtbare Vorgeschichte koppelt sich reibungslos an eine statushohe Person), Organisation (Mitarbeiter ohne erkennbare Laufbahn erhält in kurzer Zeit zentrale Positionen), Politik (Kandidat ohne sichtbare Basis erreicht höchste Ämter), Geopolitik (Akteur erlangt in einem Hochdruckfeld unvermittelt Schlüsselpositionen).
+
+**Epistemischer Vorbehalt (→ Abschnitt 9):**
+
+$$\text{F13} \Rightarrow \text{Ermittlungsbedarf}, \quad \text{nicht} \Rightarrow \text{Beweis}$$
+
+F13 unterscheidet nicht zwischen verborgener Kopplung (a) und Feldselbstorganisation (b). Er darf nicht dazu verwendet werden, aus einer plausiblen Struktur eine historische Tatsache zu machen. Er ist am stärksten, wenn er in Kombination mit dokumentierten Spuren (Akten, Geldflüsse, Zeugen) auftritt – nicht als Ersatz dafür.
+
 ---
 
 #### 4.5.5 Diagnosefragen zur Anwendung
@@ -271,6 +304,18 @@ Der Indikator ist besonders stark, wenn B nach der Situation angibt, „aus dem 
 18. **Führt die unmittelbare Reaktion von B zu einer sichtbaren Schwächung seiner Position (Rechtfertigung, Angriff, Rückzug, Blackout), die anschließend gegen ihn verwendet werden kann – sei es durch andere oder durch B selbst (z. B. Selbstabwertung, Scham)?**  
     → F12 in Kombination mit F5 oder POI-2
 
+19. **Besteht im untersuchten Feld ein dominanter Attraktor mit hohem strukturellem Druck (Kriegs-, Finanz-, Ressourcen- oder Machterhaltungszyklus)?**  
+    → F13 (Hochdruckfeldprüfung)
+
+20. **Lässt die sichtbare $K_{ij}$-Vorgeschichte des Resonators seine erreichte Position erklären – oder klafft zwischen biographisch sichtbarer Vorgeschichte und tatsächlich erreichter Position eine auffällige Lücke?**  
+    → F13 (Vorgeschichtsanalyse)
+
+21. **Gibt es dokumentierte Spuren latenter Kopplung (Geldflüsse, Netzwerke, Akten, Zeugen), die eine versteckte Kopplung (a) belegen würden – oder ist der Aufstieg plausibler durch Feldselbstorganisation (b) erklärbar?**  
+    → F13 (Erklärungspfad-Prüfung)
+
+22. **Wird F13 verwendet, um eine Ermittlungsrichtung zu begründen – oder um eine Verschwörung zu behaupten, ohne empirische Spuren zu benennen?**  
+    → F13 Missbrauchscheck (→ Abschnitt 9)
+
 ---
 
 #### 4.5.6 Abgrenzung und Grenzen
@@ -286,6 +331,10 @@ F12 ist mit besonderer Vorsicht zu verwenden, da nicht jedes Auftreten eines kö
 F12 liegt nur dann vor, wenn **keine physische Bedrohung** besteht **und** das Alarmsignal den Betroffenen zu einer **unbedachten, für ihn nachteiligen Handlung** treibt, die im Nachhinein als unangemessen bewertet wird. Der Auslöser kann ein externer Akteur sein, muss es aber nicht: Auch Prüfungsangst, Lampenfieber, soziale Bewertungsangst oder innere Erwartungskonflikte können den Mechanismus aktivieren.
 
 Entscheidend ist die **Fehlpassung zwischen Reiz und Reaktion**: Das Alarmsignal ist in Stärke und Qualität unverhältnismäßig zur tatsächlichen, nicht-physischen Bedrohung.
+
+F13 ist unter den Frühindikatoren besonders missbrauchsanfällig und muss mit besonderer epistemischer Disziplin verwendet werden: Jedes Auftreten eines Resonators ohne sichtbare Vorgeschichte in einem Hochdruckfeld lässt sich mit F13 belegen – auch dann, wenn Feldselbstorganisation (b) die vollständig ausreichende Erklärung ist. F13 lässt sich damit besonders leicht in eine Unfalsifizierbarkeitsfalle verwandeln: Die Abwesenheit sichtbarer Kopplung könnte als Beweis für ihre Verborgenheit gedeutet werden. Dieser Schluss ist strukturell unzulässig.
+
+F13 ist daher **ausschließlich als Ermittlungsindikator** zu verwenden: Er benennt eine strukturelle Auffälligkeit und rechtfertigt die systematische Suche nach Belegen. Er ersetzt diese Belege nicht. Die Grenze zwischen *Strukturplausibilität* und *Fallbeleg* muss bei F13 expliziter gezogen werden als bei jedem anderen Frühindikator (→ Abschnitt 9).
 
 ---
 
@@ -583,6 +632,19 @@ F12 (Somatische Alarmverwechslung / Archaische Reaktionsfalle) ist eng verwandt 
 - **7.1 AiR (Aktiv invertierter Resonator):** Ein AiR kann F12 gezielt bei anderen auslösen, um deren β zu erhöhen und den PCI zur realen Struktur zu senken.
 
 ---
+
+### 7.12 Beziehung von F13 zu bestehenden Strukturmustern
+
+F13 (Anomaler Resonator in Hochdruckfeld) füllt eine Lücke im Frühindikatorensatz, die von F1–F12 und POI-1 bis POI-4 nicht systematisch adressiert wird: die Anomalie der Kopplungsvorgeschichte in Hochdruckfeldern – also die Frage, wie ein Resonator überhaupt in eine machttragende Position gelangt ist, bevor jede weitere Analyse der dortigen Dynamiken beginnt.
+
+- **F9 (Innere Infiltration):** F9 analysiert das Verhalten eines Akteurs *innerhalb* eines bestehenden Resonanzraums. F13 betrifft die strukturell auffällige Art des Eintritts in diesen Raum – die Phase, bevor jede Infiltration beginnt.
+- **7.4 (Drei-Phasen-Vereinnahmung):** 7.4 beschreibt, *wie* ein fremder Resonanzraum übernommen wird. F13 fragt, wie der Resonator *überhaupt* in die Position gelangt ist, von der aus die Vereinnahmung stattfinden kann.
+- **7.9 (Resonanzmonopol):** 7.9 analysiert die Aufmerksamkeitskonzentration nach dem Aufstieg. F13 adressiert die strukturelle Anomalie, die dem Monopol vorausgeht.
+- **7.3 (Parasitärer Extraktionszyklus):** 7.3 beschreibt den zyklischen Mechanismus der Ausbeutung. F13 ist ein Verdachtsindikator für die verdeckte Vorbereitung, die einem solchen Zyklus vorausgehen kann.
+
+Epistemische Grenze: F13 kann zwischen versteckter Kopplung (a) und Feldselbstorganisation (b) strukturell nicht unterscheiden. Beide erzeugen dasselbe Oberflächenmuster. Der Indikator markiert daher Ermittlungsbedarf, nicht Wahrheit (→ Abschnitt 9).
+
+---
 **Fall:** Eine Medienkampagne erklärt eine Minderheit zur Hauptursache einer Wirtschaftskrise.  
 **RFT-Lesart:** PCI steigt zur Zielgruppe, nicht zur realen Finanz- oder Machtstruktur. Das spricht für Sündenbocklenkung bei gleichzeitigem $\beta$-Anstieg im Gesamtsystem.
 
@@ -610,7 +672,7 @@ F12 (Somatische Alarmverwechslung / Archaische Reaktionsfalle) ist eng verwandt 
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F12 sowie das Strukturmuster 7.11 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F12 sowie das Strukturmuster 7.11 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F13 sowie das Strukturmuster 7.12 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F13 ist dabei besonders missbrauchsanfällig: Er lässt sich leicht in eine Unfalsifizierbarkeitsfalle verwandeln und markiert ausschließlich Ermittlungsbedarf, nicht Beweis.
 
 ---
 
@@ -623,8 +685,8 @@ Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlu
 ### 10.2 Allgemeine Anwendungshinweise
 
 - Die Analyse beginnt immer mit der **Feldgrenze** (wer sind die relevanten Resonatoren?) und den **Taktgebern** (welche Rhythmen strukturieren das Feld?).
-- Frühindikatoren **F1–F12** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
-- Die **Strukturmuster 7.1–7.11** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft, somatische Alarmverwechslung).
+- Frühindikatoren **F1–F13** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
+- Die **Strukturmuster 7.1–7.12** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft, somatische Alarmverwechslung, anomaler Resonator in Hochdruckfeld).
 - Die **Projektion** (Abschnitt 5) kann verwendet werden, um wahrscheinliche Eskalationsverläufe zu skizzieren; die **Retrodiktion** (Abschnitt 6) hilft, aus heutigen Spuren auf frühere Ausgangszustände zu schließen.
 - Jede RFT-Analyse muss **dokumentiert** werden: Welche Indikatoren wurden beobachtet, welche Größen geschätzt, welche Hypothesen gebildet? Erst die **iterative Anwendung** (wiederholte Beobachtung über Zeit und verschiedene Quellen) erhöht die Plausibilität.
 
