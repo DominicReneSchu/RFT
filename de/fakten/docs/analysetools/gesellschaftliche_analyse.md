@@ -157,6 +157,56 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
 | **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. |
 | **F12** | Somatische Alarmverwechslung / Archaische Reaktionsfalle | Bei B tritt nach einem psychischen Stressor (z. B. Prüfung, Konfrontation, Bewertung, innerem Erwartungsdruck) ein starkes inneres Warngefühl auf (Herzrasen, Anspannung, Drang zu sofortiger Reaktion), obwohl keine physische Bedrohung vorliegt. B fühlt sich gedrängt, sofort zu kämpfen, zu fliehen oder sich zu rechtfertigen, und neigt zu überstürzten, oft unbedachten Handlungen. Der Auslöser kann ein externer Akteur sein, muss es aber nicht. | Das evolutionär alte physische Alarmsystem wird bei einem psychischen Stressor fehlaktiviert. B wird in eine fremde Frequenz (Alarm, Eile, Bringschuld) gezwungen; **β_B steigt** stark an, während die Eigenfrequenz (Ruhe, Souveränität) verloren geht. Der PCI von B springt vom Inhalt auf das Alarmsignal, die Kopplung zur Gruppe oder zur realen Struktur wird destabilisiert. Ein externer Akteur A kann diesen Mechanismus gezielt auslösen und sein β niedrig halten, während er die Kontrolle über das Timing der Interaktion gewinnt. |
+| **F13** | Anomaler Resonator in Hochdruckfeld (struktureller Zufallsverdacht) | In einem Hochdruckfeld erscheint ein Akteur ohne sichtbare Kopplungsvorgeschichte; in kurzer Zeit erreicht er starke $K_{ij}$ zu tragenden Strukturen. | Ein Feld mit starkem strukturellem Druck erzeugt einen Resonator ohne erkennbare Vorgeschichte; seine Position ist unter Zufallsbedingungen extrem unwahrscheinlich. |
+
+#### F13 – Anomaler Resonator in Hochdruckfeld (struktureller Zufallsverdacht)
+
+**Definition.** Ein Frühindikator F13 liegt vor, wenn in einem Feld mit hohem strukturellem Druck (starker Attraktor, hohe Einsätze, zyklische Systemabhängigkeit) ein Resonator ohne sichtbare Kopplungsvorgeschichte in kurzer Zeit eine hohe Kopplung zu den tragenden Machtstrukturen aufbaut und dadurch eine Position erreicht, deren Erreichen unter Zufallsbedingungen extrem unwahrscheinlich wäre.
+
+**Beobachtbares Merkmal.**
+
+- Das Feld weist einen dominanten Attraktor auf: Kriegs- oder Finanzzyklen, Ressourcenlogik, Machterhaltungslogik.
+- Ein Akteur erscheint scheinbar „aus dem Nichts“ und erreicht innerhalb kurzer Zeit hohe $K_{ij}$ zu Eliten, Medien, Finanziers oder Institutionen.
+- Die sichtbare Biografie erklärt die erreichte Position nicht: Es fehlen Netzwerke, Vermögen, Ämter oder sichtbare Förderer.
+- Trotzdem funktioniert die Kopplung reibungslos: Türen öffnen sich, Finanzierung erscheint, Medien greifen zu.
+
+**RFT-Interpretation.** Formal gilt:
+
+$$
+K_{ij}^{\text{sichtbar}}(t_0) \approx 0 \quad \text{bei} \quad K_{ij}^{\text{erreicht}}(t_0+\Delta t) \gg 0
+$$
+
+und
+
+$$
+P(\text{Erreichen} \mid \text{Zufall}) \ll 1.
+$$
+
+Dann bestehen zwei strukturell mögliche Erklärungen:
+
+- **(a) Versteckte Kopplung:** Es existiert ein latenter $K_{ij}$, der nicht öffentlich sichtbar ist.
+- **(b) Feldselbstorganisation:** Der Feldattraktor selbst erzeugt den Resonator; das Feld „braucht“ eine Figur mit den passenden Eigenschaften.
+
+F13 kann zwischen (a) und (b) nicht unterscheiden. Beide erzeugen dasselbe Oberflächenmuster: einen scheinbar unvermittelten Aufstieg in einem Hochdruckfeld.
+
+**Abgrenzung zu bestehenden Mustern.**
+
+| Muster | zentraler Mechanismus | Abgrenzung zu F13 |
+|:--|:--|:--|
+| **F9** | Infiltration eines bestehenden Raums | F13 fragt nach der **Anomalie der Kopplungsvorgeschichte**, nicht nach der Infiltration selbst. |
+| **7.4** | Drei-Phasen-Vereinnahmung | F13 beschreibt, **wie der Resonator dorthin kam**, nicht die späteren Phasen der Übernahme. |
+| **7.9** | Resonanzmonopol | F13 steht **vor** dem Monopol: Es fragt nach dem unerklärten Eintritt in den Machtzusammenhang. |
+| **7.3** | Parasitärer Extraktionszyklus | F13 ist ein **Verdachtsindikator** für verdeckte Vorbereitung, nicht der Zyklus selbst. |
+
+**Skaleninvarianz.** F13 ist A7-invariant und tritt auf allen Ebenen auf: Dyade, Organisation, Politik, Geopolitik.
+
+**Missbrauchsgefahr / epistemischer Vorbehalt.** F13 ist besonders missbrauchsanfällig. Er markiert eine **Strukturplausibilität**, aber keine historische Tatsache. Nach Abschnitt 9 gilt:
+
+$$
+\text{F13} \Rightarrow \text{Ermittlungsbedarf}, \quad \text{nicht} \Rightarrow \text{Beweis}.
+$$
+
+Er ist am stärksten, wenn er mit dokumentierten Spuren (Akten, Geldflüsse, Zeugen) kombiniert wird; ohne solche Spuren bleibt er ein Leitfaden für weitere Nachprüfung, nicht eine abschließende Diagnose.
 
 ---
 
