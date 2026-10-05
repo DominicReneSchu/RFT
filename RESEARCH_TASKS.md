@@ -23,6 +23,7 @@ Status: Aktiv
 | Analytische Warpmetrik | Numerisch, offen (RT-34) | Geschlossene perturbative Form h_μν^RFT = h_μν^Alcubierre · ε(Δφ) angestrebt (RT-43) | 🔄 Offen (RT-43) |
 | QM als RFT-Substruktur | Interpretation/Analogie | Formale Ableitung: Atom, Spektrum, Born-Regel, Spin aus A1–A7 | 🔄 Offen (RT-44) |
 | Energie als gerichtete Größe | Skalare Energiedichte | Vektorielle Kopplungsgröße: A5-Kompatibilität, Kosmol. Konstante, ρ ≥ 0 strukturell | 🔄 Offen (RT-45) |
+| Distinktive Teilchenphysik-Signaturen | Stufe-1-Passung (RT-22) | Quantitative, vom SM unterscheidbare Vorhersage angestrebt (RT-47) | 🔄 Offen (RT-47) |
 
 ---
 
@@ -33,6 +34,7 @@ Status: Aktiv
 2. RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit ← Priorität 2
 3. RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin ← Priorität 3
 4. RT-45 — Energie als gerichtete Größe: A5-Kompatibilität, Kosmol. Konstante als Gradientenproblem, ρ ≥ 0 strukturell ← Priorität 4
+5. RT-47 — Distinktive RFT-Signaturen in CERN-Daten: Stufe-2/3-Validierung in der Teilchenphysik ← Strategische Option (nach RT-43, RT-44, RT-45, RT-46)
 4. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
 5. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
 6. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
@@ -937,6 +939,7 @@ Das wäre ein echter Fortschritt gegenüber dem Status „numerisch, offen" auf 
 | **RT-41** | A8 — liefert Kopplungswellengeschwindigkeit $c$ |
 | **RT-42** | Kosmologie — liefert Phasendynamik $\Delta\phi(t)$, Skalentrennung |
 | **RT-43** | **Dieser Task** — analytische Warpmetrik, technische Anschlussfähigkeit |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
 
 ---
 
@@ -1206,6 +1209,7 @@ Born-Regel (AP4) und Dekohärenz (AP5) parallel angehen; Spin-Erweiterung (AP6) 
 | RT-31 | Resonanz-Hamiltonoperator: Spin-Bahn-Kopplung bereits implementiert (AP6) |
 | RT-40 | SRT-Brücke — relativistische Erweiterung des Atommodells (Dirac-Gleichung?) |
 | RT-43 | Analytische Warpmetrik — Konsistenz Quantengravitation offen |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
 
 ---
 
@@ -1459,6 +1463,7 @@ Der ehrlichste Ausgang wäre: A5 ist kompatibel mit der Standard-Feldtheorie im 
 | **RT-43** | Warpmetrik – liefert analytische Form |
 | **RT-44** | QM als RFT-Substruktur – benachbarter Task |
 | **RT-45** | **Dieser Task** – Energie als gerichtete Größe |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
 
 ---
 
@@ -1781,7 +1786,264 @@ Der ehrlichste Ausgang wäre: **Die RFT-Kopplungseffizienz ist mit den Daten kon
 | **RT-43** | Warpmetrik – $\rho(\theta)\propto\varepsilon^2$ strukturell analog zu $\varepsilon(\Delta\phi)$ |
 | **RT-45** | Energie als gerichtete Größe – theoretische Grundlage für Richtungsabhängigkeit von $\varepsilon$ |
 | **RT-46** | **Dieser Task** – empirische Validierung |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
 
 ---
 
 *RT-46 — DominicReneSchu/RFT — September 2026 (v1.1)*
+
+---
+
+## Kategorie 9: Teilchenphysik und CERN-Daten
+
+## RT-47 – Distinktive RFT-Signaturen in CERN-Daten
+
+### Suche nach unterscheidbaren Vorhersagen gegenüber dem Standardmodell
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋 (Bearbeitung nach RT-43, RT-44, RT-45, RT-46)
+**Vorgänger:** RT-22 (Teilchenphysik, abgeschlossen – Stufe 1), RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
+**Verwandt:** RT-03 (Resonanzbedingungen), RT-07 (Kernphysik), RT-45 (Energie als gerichtete Größe), RT-46 (Doppelpendel)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Prüfen, ob die RFT in der Teilchenphysik **distinktive Signaturen** liefert, die über die bereits erreichte Stufe-1-Passung (RT-22) hinausgehen. Konkret: Gibt es eine **messbare Abweichung** vom Standardmodell (SM), die die RFT **vorhersagt** und die in öffentlichen CERN-Daten **nachweisbar** ist? Das Ziel ist die Erreichung von **Stufe 2** (explanatorischer Vorteil) oder **Stufe 3** (distinktive, bestätigte Vorhersage).
+
+**Teilziele:**
+
+1. Identifikation **offener Anomalien** im SM, die als Ansatzpunkte dienen können.
+2. Prüfung, ob die RFT für mindestens eine dieser Anomalien eine **strukturelle Erklärung** liefert.
+3. Herleitung einer **quantitativen Vorhersage**, die sich vom SM unterscheidet.
+4. Vergleich mit **öffentlichen CERN-Daten** (Open Data Portal, LHCb, ATLAS, CMS).
+5. Formulierung von **Falsifikationskriterien** und Pre-Registrierung.
+6. Klare Einordnung des Ergebnisses (Stufe 1, 2 oder 3).
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RT-22 – abgeschlossen):**
+
+| Größe | Ergebnis |
+|:--|:--|
+| Monte-Carlo-Simulationen | 1.500.000 |
+| Identifizierte Resonanzen | 5 |
+| Signifikanz | $p = 0$ |
+| Einordnung | **Stufe 1** – SM erklärt dieselben Daten |
+
+**Gegeben (Standardmodell):**
+- Auf $10^{-10}$ genau validiert (Elektron-g-2, Myon-g-2 teilweise, Neutrino-Oszillationen).
+- Erklärt Massenspektrum, Mischungswinkel, CP-Verletzung **phänomenologisch**, nicht strukturell.
+- **Offene Anomalien** (Stand 2026): Myon-g-2 (4,2σ, Fermilab 2021/2023), $R_K$/$R_{K^*}$-Anomalien (LHCb), Neutrino-Massen, Koide-Formel, CP-Phase.
+
+**Gegeben (RFT):**
+- A1–A8 (axiomatisch).
+- $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$, Kopplungsdynamik $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$.
+- $\varepsilon = 1/\gamma^2$ (RT-40), PCI $\in [0,1]$ als Kohärenzmaß.
+
+**Gegeben (öffentliche Daten):**
+
+| Quelle | Inhalt | Zugang |
+|:--|:--|:--|
+| **CERN Open Data Portal** | ATLAS, CMS, LHCb (Run 1, 2, 3) | `opendata.cern.ch` |
+| **LHCb Public Data** | B-Physik, CP-Verletzung | `lhcb-public.web.cern.ch` |
+| **Fermilab g-2** | Myon-g-2 Rohdaten | `muon-g-2.fnal.gov` |
+| **PDG** | Massenspektren, Mischungswinkel | `pdg.lbl.gov` |
+
+**Bekannte Einschränkung:** SM ist extrem präzise validiert. QCD-Hintergründe sind komplex. Stufe 2 erfordert einen signifikanten explanatorischen Vorteil.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Katalog offener Anomalien
+
+**Aufgabe:**
+Systematische Erfassung aller offenen SM-Anomalien als Ansatzpunkte für distinktive RFT-Signaturen.
+
+**Konkrete Schritte:**
+1. Tabelle aller Anomalien mit Größe, Signifikanz (in σ), SM-Vorhersage, experimentellem Wert, Status.
+2. Priorisierung nach Signal-zu-Rausch-Verhältnis und theoretischer Klarheit.
+3. Identifikation der drei stärksten Kandidaten für eine RFT-Erklärung.
+4. Dokumentation der Auswahlkriterien.
+
+**Erfolgskriterium:** Priorisierte Liste mit mindestens drei geeigneten Anomalien.
+
+---
+
+#### AP2 – Strukturelle RFT-Erklärung
+
+**Aufgabe:**
+Prüfen, ob die RFT für eine der priorisierten Anomalien eine **strukturelle** Erklärung liefert — nicht nur eine numerische Anpassung.
+
+**Konkrete Schritte:**
+1. **Kandidat A – Myon-g-2:** Kann die Anomalie durch eine Korrektur der Kopplungseffizienz $\varepsilon(\Delta\phi)$ im Myon-System erklärt werden?
+2. **Kandidat B – Koide-Formel:** Folgt die Relation
+   $$\frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e} + \sqrt{m_\mu} + \sqrt{m_\tau})^2} = \frac{2}{3}$$
+   aus der RFT-Resonanzbedingung (A3, A7)?
+3. **Kandidat C – CP-Verletzung:** Kann die CP-Phase aus der RFT-Phasendynamik $\Delta\phi$ hergeleitet werden?
+4. Prüfung für jeden Kandidaten: Ist die Erklärung **post-hoc** oder **prädiktiv**?
+5. Dokumentation der Grenzen der RFT-Erklärung.
+
+**Erfolgskriterium:** Für mindestens einen Kandidaten liegt eine quantitative RFT-Vorhersage vor, die sich vom SM unterscheidet.
+
+---
+
+#### AP3 – Quantitative Vorhersage vs. SM
+
+**Aufgabe:**
+Herleitung einer **quantitativen, messbaren** Vorhersage, die sich **signifikant** vom SM unterscheidet.
+
+**Konkrete Schritte:**
+1. RFT-Vorhersage in SM-Sprache formulieren (z. B. als Korrektur zu einem Kopplungsparameter).
+2. Größe der Abweichung quantifizieren (in % oder σ).
+3. Prüfung, ob die Abweichung innerhalb der aktuellen Messgenauigkeit liegt.
+4. Falls nachweisbar: Vergleich mit aktuellen Daten. Falls nicht: benötigte Präzision benennen.
+5. Vorhersage in pre-registrierter Form dokumentieren.
+
+**Erfolgskriterium:** Eine quantitative, messbare, vom SM unterscheidbare Vorhersage liegt vor.
+
+---
+
+#### AP4 – Vergleich mit CERN-Daten
+
+**Aufgabe:**
+Vergleich der RFT-Vorhersage mit **öffentlichen CERN-Daten**.
+
+**Konkrete Schritte:**
+1. Relevante Datensätze im CERN Open Data Portal identifizieren (ATLAS, CMS, LHCb).
+2. Relevante Observablen extrahieren.
+3. Statistische Analyse: Likelihood-Ratio-Test (SM vs. RFT), $R^2$, AIC, BIC, Bootstrap.
+4. Prüfung, ob die RFT-Vorhersage besser oder schlechter zu den Daten passt als das SM.
+5. Systematische Unsicherheiten dokumentieren (QCD-Hintergrund, Detektor-Effekte).
+
+**Erfolgskriterium:** Ein statistisches Testergebnis liegt vor — RFT besser, schlechter oder nicht unterscheidbar vom SM.
+
+---
+
+#### AP5 – Falsifikationskriterien und Pre-Registrierung
+
+**Aufgabe:**
+Präzise Falsifikationskriterien formulieren und **vor** der Datenanalyse registrieren.
+
+**Konkrete Schritte:**
+1. H0: RFT-Vorhersage ist nicht von der SM-Vorhersage unterscheidbar.
+2. H1: RFT-Vorhersage weicht signifikant vom SM ab.
+3. **F1:** Wenn Daten mit SM bei $\chi^2_{\rm red} < 1{,}5$ und RFT-Abweichung $> 3\sigma$ → RFT **widerlegt**.
+4. **F2:** Wenn Daten mit RFT bei $\chi^2_{\rm red} < 1{,}5$ und SM-Abweichung $> 3\sigma$ → RFT **bestätigt** (Stufe 3).
+5. **F3:** Wenn weder SM noch RFT passen → beide widerlegt (dokumentieren).
+6. Pre-Registrierung auf GitHub vor der Analyse.
+
+**Erfolgskriterium:** Falsifikationskriterien dokumentiert und pre-registriert.
+
+---
+
+#### AP6 – Robustheit und Kreuzvalidierung
+
+**Aufgabe:**
+Robustheit der Ergebnisse durch unabhängige Datensätze und Methoden prüfen.
+
+**Konkrete Schritte:**
+1. Analyse mit mindestens zwei unabhängigen Datensätzen (z. B. ATLAS und CMS) wiederholen.
+2. Konsistenz der Ergebnisse prüfen.
+3. Sensitivitätsanalyse: Variation der Fit-Parameter, Datenauswahl, Statistik.
+4. Prüfung, ob Ergebnisse von der Kandidatenwahl abhängen.
+5. Systematische Unsicherheiten und ihre Auswirkung auf das Endergebnis dokumentieren.
+
+**Erfolgskriterium:** Ergebnisse über mehrere Datensätze und Methoden robust — oder Abweichungen quantifiziert.
+
+---
+
+#### AP7 – Dokumentation und Publikation
+
+**Aufgabe:**
+Gesamte Analyse reproduzierbar dokumentieren und Publikation vorbereiten.
+
+**Konkrete Schritte:**
+1. Jupyter Notebook oder Python-Skript, das die gesamte Analyse reproduziert.
+2. Alle Datenquellen, DOIs, Versionen dokumentieren.
+3. Ergebnisse in RT-22-kompatibler Form darstellen.
+4. Manuskript für Peer Review verfassen (z. B. *Physical Review D*, *Journal of High Energy Physics*, *European Physical Journal C*).
+5. Code auf GitHub veröffentlichen.
+
+**Erfolgskriterium:** Code, Daten und Manuskript öffentlich verfügbar und reproduzierbar.
+
+---
+
+### 4. Deliverables
+
+1. Katalog offener Anomalien mit Priorisierung.
+2. Strukturelle RFT-Erklärung für mindestens einen Kandidaten.
+3. Quantitative Vorhersage (Zahlenwert + Unsicherheit).
+4. Statistische Auswertung mit Likelihood-Ratio, AIC, BIC.
+5. Falsifikationsprotokoll (pre-registriert).
+6. Robustheitsanalyse über mindestens zwei Datensätze.
+7. Manuskript für Peer Review.
+8. Öffentlicher Code auf GitHub.
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Eine strukturelle RFT-Erklärung für eine offene Anomalie liegt vor (Stufe 2).
+**Mittelziel:** Eine quantitative Vorhersage ist formuliert und mit CERN-Daten geprüft — konsistent mit RFT, aber nicht signifikant vom SM unterscheidbar (Stufe 2).
+**Maximalziel:** Die RFT-Vorhersage ist signifikant besser als das SM ($> 3\sigma$) — Daten bestätigen sie (Stufe 3).
+**Negativziel:** Falls die RFT keine distinktive Signatur liefert: präzise dokumentieren, warum — und welche Erweiterung nötig wäre.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Pre-Registrierung:** Falsifikationskriterien werden **vor** der Datenanalyse festgelegt.
+- **Keine post-hoc-Anpassung:** Die RFT-Vorhersage darf nicht nachträglich an die Daten angepasst werden.
+- **Transparenz:** Alle Datenquellen, Versionen, Skripte werden dokumentiert.
+- **Robustheit:** Ergebnisse müssen über Datensätze, Methoden und Kandidaten stabil sein.
+- **Abgrenzung:** SM und RFT klar trennen. Klar unterscheiden: (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage.
+- **Ehrlichkeit:** Negative Ergebnisse werden genauso dokumentiert wie positive.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:** Katalog offener Anomalien erstellen. Priorisierung nach Signifikanz und theoretischer Klarheit. Drei stärkste Kandidaten auswählen.
+
+**Woche 3–4:** Für jeden Kandidaten prüfen, ob eine strukturelle RFT-Erklärung existiert. Falls ja: quantitative Vorhersage herleiten.
+
+**Woche 5–6:** Falls Vorhersage existiert: Vergleich mit CERN Open Data. Falls nicht: Lücke dokumentieren und minimale Erweiterung formulieren.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT in der Teilchenphysik **Stufe 3** erreicht, ist **gering** — das SM ist extrem präzise, und die Konkurrenz durch SUSY, String, Composite Higgs und viele weitere Alternativen ist groß.
+
+Die Wahrscheinlichkeit, dass die RFT **Stufe 2** erreicht (explanatorischer Vorteil für eine offene Anomalie), ist **moderat** — es gibt mehrere Ansatzpunkte (g-2, Koide, CP).
+
+Ehrlichster Ausgang: **Die RFT liefert für eine offene Anomalie eine strukturelle Erklärung, die mit den Daten konsistent ist — aber die Signifikanz reicht nicht aus, um das SM zu widerlegen. Das wäre ein echter Beitrag — aber kein Jahrhundertbefund.**
+
+Der Task bleibt offen, bis RT-43, RT-44, RT-45 und RT-46 abgeschlossen sind. Er ist als **strategische Option** formuliert, nicht als unmittelbare Priorität.
+
+---
+
+### 9. Verwandte Tasks
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-03** | Resonanzbedingungen — theoretische Grundlage |
+| **RT-07** | Kernphysik — Nachbardomäne |
+| **RT-22** | Teilchenphysik — direkter Vorgänger (Stufe 1) |
+| **RT-40** | SRT-Brücke — $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 — Kopplungswellengeschwindigkeit |
+| **RT-43** | Analytische Warpmetrik — strukturelle Voraussetzung |
+| **RT-44** | QM als RFT-Substruktur — benachbarter Task |
+| **RT-45** | Energie als gerichtete Größe — theoretische Vertiefung |
+| **RT-46** | Doppelpendel — empirische Validierung |
+| **RT-47** | **Dieser Task** — distinktive Signaturen in CERN-Daten |
+
+---
+
+*RT-47 — DominicReneSchu/RFT — September 2026*
