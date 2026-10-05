@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 8 September 2026 | Version 2.20 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 5 October 2026 | Version 2.21 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -157,6 +157,7 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. |
 | **POI-4** | Historical revision | The prehistory (provocation, own escalation steps) is systematically suppressed or reinterpreted; discourse focuses only on the current "threat". | PCI remains stable on substitute object; K_ij (A↔prehistory) → 0. |
 | **F12** | Somatic alarm confusion / Archaic reaction trap | After a psychological stressor (e.g. examination, confrontation, evaluation, internal performance pressure), B experiences a strong inner warning signal (racing heart, tension, urge for immediate action) despite the absence of any physical threat. B feels compelled to fight, flee, or justify immediately, and tends towards rash, often unconsidered actions. The trigger may be an external actor but need not be. | The evolutionarily ancient physical alarm system is misactivated by a psychological stressor. B is forced onto an alien frequency (alarm, urgency, obligation to respond); **β_B rises** sharply while the natural frequency (calm, composure) is lost. B's PCI jumps from the content to the alarm signal; coupling to the group or to the real structure is destabilised. An external actor A can deliberately trigger this mechanism and keep their own β low while gaining control over the timing of the interaction. |
+| **F13** | Anomalous resonator in high-pressure field | In a field with high structural pressure (strong attractor, high stakes, cyclical system dependency), a resonator with no visible $K_{ij}$ history attains high coupling to load-bearing power structures in a short time – though this would be extremely improbable under chance conditions. | Two structurally indistinguishable paths: (a) latent $K_{ij}$ (covert coupling), (b) field self-organisation (the attractor produces the figure). F13 flags investigative need, not proof. |
 
 ---
 
@@ -239,6 +240,38 @@ $$
 
 The indicator is especially strong when B reports having reacted "from gut instinct" after the situation, while the reaction is subsequently evaluated as inappropriate or counterproductive – regardless of whether an external beneficiary is present.
 
+**F13 (Anomalous resonator in high-pressure field)** is satisfied when:
+
+$$K_{ij}^{\text{visible}}(t_0) \approx 0 \quad \text{while simultaneously} \quad K_{ij}^{\text{attained}}(t_0 + \Delta t) \gg 0$$
+
+and simultaneously:
+
+$$P(\text{attainment} \mid \text{chance}) \ll 1$$
+
+The high-pressure field is characterised by a dominant attractor (war, financial, resource, or power-maintenance cycle), high stakes, and cyclical system dependency. The indicator is especially strong when several of the following conditions hold simultaneously: (1) No visible $K_{ij}$ prehistory (no documented network, no visible sponsors, no verifiable financial flows). (2) Frictionless coupling to existing power structures after the rise. (3) No documented, verifiable coupling mechanism.
+
+Decisive: F13 cannot distinguish between two structurally possible explanatory paths – both produce the same surface pattern:
+
+- **(a) Covert coupling:** A latent $K_{ij}$ exists that is not publicly visible (covert financing, informal network, institutional patronage).
+- **(b) Field self-organisation:** The attractor itself produces the resonator – the field "needs" a figure with certain properties and generates it from available material.
+
+**Delimitation:**
+
+| Pattern | Central mechanism | Delimitation from F13 |
+|:--|:--|:--|
+| F9 (Inner infiltration) | Actor enters existing space, simulates Δφ → 0 | F9 concerns infiltration of an existing space; F13 concerns the anomaly of coupling prehistory at entry. |
+| 7.4 (Three-phase appropriation) | Takeover of a foreign resonance space | 7.4 describes the takeover process; F13 asks: how did the resonator get there in the first place? |
+| 7.9 (Resonance monopoly) | Concentration of attention on one resonator | 7.9 describes the state after monopolisation; F13 addresses the phase beforehand. |
+| 7.3 (Parasitic extraction cycle) | Cyclical build-up and exploitation | 7.3 describes the cycle itself; F13 is a suspicion indicator for its covert preparation. |
+
+**Scale invariance (A7):** F13 occurs at all scale levels: dyad (new partner with no visible prehistory couples frictionlessly to a high-status person), organisation (employee with no discernible career trajectory obtains central positions in a short time), politics (candidate with no visible base reaches the highest offices), geopolitics (actor unexpectedly attains key positions in a high-pressure field).
+
+**Epistemic caveat (→ Section 9):**
+
+$$\text{F13} \Rightarrow \text{investigative need}, \quad \text{not} \Rightarrow \text{proof}$$
+
+F13 does not distinguish between covert coupling (a) and field self-organisation (b). It must not be used to turn a plausible structure into a historical fact. It is strongest when it appears in combination with documented traces (files, financial flows, witnesses) – not as a substitute for them.
+
 ---
 
 #### 4.5.5 Diagnostic Questions for Application
@@ -271,6 +304,18 @@ The indicator is especially strong when B reports having reacted "from gut insti
 18. **Does B's immediate reaction lead to a visible weakening of their position (justification, attack, withdrawal, blackout) that can subsequently be used against them – whether by others or by B themselves (e.g. self-deprecation, shame)?**  
     → F12 in combination with F5 or POI-2
 
+19. **Does the field under investigation have a dominant attractor with high structural pressure (war, financial, resource, or power-maintenance cycle)?**  
+    → F13 (high-pressure field check)
+
+20. **Does the resonator's visible $K_{ij}$ prehistory explain their attained position – or is there a striking gap between biographically visible prehistory and position actually reached?**  
+    → F13 (prehistory analysis)
+
+21. **Are there documented traces of latent coupling (financial flows, networks, files, witnesses) that would support covert coupling (a) – or is the rise more plausibly explained by field self-organisation (b)?**  
+    → F13 (explanatory-path check)
+
+22. **Is F13 being used to establish an investigative direction – or to assert a conspiracy without citing empirical traces?**  
+    → F13 misuse check (→ Section 9)
+
 ---
 
 #### 4.5.6 Delimitation and Limits
@@ -286,6 +331,10 @@ F12 calls for particular caution, as not every occurrence of a bodily warning si
 F12 applies only when **no physical threat** exists **and** the alarm signal drives the affected party to an **unconsidered, self-detrimental action** that is subsequently evaluated as inappropriate. The trigger may be an external actor but need not be: examination anxiety, stage fright, social evaluation anxiety, or internal expectation conflicts can equally activate the mechanism.
 
 Decisive is the **mismatch between stimulus and response**: the alarm signal is disproportionate in intensity and quality to the actual, non-physical threat.
+
+F13 is the most misuse-prone of the early indicators and must be applied with particular epistemic discipline: any occurrence of a resonator without visible prehistory in a high-pressure field can be flagged with F13 – even when field self-organisation (b) is a fully sufficient explanation. F13 can therefore be transformed particularly easily into an unfalsifiability trap: the absence of visible coupling might be taken as evidence for its concealment. This inference is structurally inadmissible.
+
+F13 is therefore to be used **exclusively as an investigative indicator**: it identifies a structural anomaly and justifies a systematic search for evidence. It does not replace that evidence. The boundary between *structural plausibility* and *case evidence* must be drawn more explicitly for F13 than for any other early indicator (→ Section 9).
 
 ---
 
@@ -583,6 +632,19 @@ F12 (Somatic alarm confusion / Archaic reaction trap) is closely related to seve
 - **7.1 AiR (Actively inverted resonator):** An AiR can deliberately trigger F12 in others to raise their β and lower their PCI toward the real structure.
 
 ---
+
+### 7.12 Relationship of F13 to Existing Structural Patterns
+
+F13 (Anomalous resonator in high-pressure field) fills a gap in the early-indicator set that F1–F12 and POI-1 to POI-4 do not systematically address: the anomaly of coupling prehistory in high-pressure fields – that is, the question of how a resonator came to occupy a power-bearing position in the first place, before any analysis of the dynamics within that position begins.
+
+- **F9 (Inner infiltration):** F9 analyses an actor's behaviour *inside* an existing resonance space. F13 concerns the structurally anomalous manner of entry into that space – the phase before any infiltration begins.
+- **7.4 (Three-phase appropriation):** 7.4 describes *how* an alien resonance space is taken over. F13 asks how the resonator *came to* the position from which the appropriation can proceed.
+- **7.9 (Resonance monopoly):** 7.9 analyses the concentration of attention after the rise. F13 addresses the structural anomaly that precedes the monopoly.
+- **7.3 (Parasitic extraction cycle):** 7.3 describes the cyclical mechanism of exploitation. F13 is a suspicion indicator for the covert preparation that may precede such a cycle.
+
+Epistemic boundary: F13 cannot structurally distinguish between covert coupling (a) and field self-organisation (b). Both produce the same surface pattern. The indicator therefore flags investigative need, not truth (→ Section 9).
+
+---
 **Case:** A media campaign frames a minority as the main cause of an economic crisis.  
 **RFT reading:** PCI rises toward the target group, not toward the actual financial or power structure. That indicates scapegoat steering alongside a rise in system-wide $\beta$.
 
@@ -610,7 +672,7 @@ F12 (Somatic alarm confusion / Archaic reaction trap) is closely related to seve
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F12 and structural pattern 7.11 are likewise heuristic interpretive frameworks without evidential force and require empirical verification.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F12 and structural pattern 7.11 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F13 and structural pattern 7.12 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. F13 is particularly prone to misuse: it can readily be converted into an unfalsifiability trap and marks investigative need exclusively, not proof.
 
 ---
 
@@ -623,8 +685,8 @@ This section is addressed to **psychologists/therapists**, **police/investigativ
 ### 10.2 General Application Guidelines
 
 - Analysis always begins with the **field boundary** (who are the relevant resonators?) and the **pacemakers** (which rhythms structure the field?).
-- Early indicators **F1–F12** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
-- **Structural patterns 7.1–7.11** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership, somatic alarm confusion).
+- Early indicators **F1–F13** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
+- **Structural patterns 7.1–7.12** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership, somatic alarm confusion, anomalous resonator in high-pressure field).
 - **Projection** (Section 5) can be used to sketch probable escalation trajectories; **retrodiction** (Section 6) helps infer earlier starting states from present traces.
 - Every RFT analysis must be **documented**: which indicators were observed, which quantities estimated, which hypotheses formed? Only **iterative application** (repeated observation over time and across multiple sources) increases plausibility.
 
