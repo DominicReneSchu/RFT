@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 6. Oktober 2026 | Fassung 2.22 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 6. Oktober 2026 | Fassung 2.23 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als **heuristisches Screening-Instrument** zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -41,7 +41,7 @@ Die Modi sind nicht für einmalige Diagnose konzipiert, sondern für **zyklische
 
 ---
 
-## 2. Axiomensystem A1–A8 (kompakt)
+## 2. Axiomensystem A1–A7 (kompakt)
 
 | Axiom | Kernaussage | Kurzform | Herkunft | Eigenleistung RFT |
 |:--|:--|:--|:--|:--|
@@ -52,11 +52,15 @@ Die Modi sind nicht für einmalige Diagnose konzipiert, sondern für **zyklische
 | **A5** | Energierichtung | $\vec E=E_{\text{eff}}\cdot \hat e(\Delta\phi,\nabla\Phi)$ | Feldtheorie (Maxwell 1865) | Richtungsoperator für soziale Energieflüsse |
 | **A6** | Informationsfluss | $\mathrm{MI}>0 \Leftrightarrow \mathrm{PCI}>0$ | Informationstheorie (Shannon 1948); Systemtheorie (Luhmann 1984) | PCI als operationalisiertes Kohärenzmaß |
 | **A7** | Invarianz | $G(f_i/f_j)=G(T(f_i)/T(f_j))$ | Fraktale (Mandelbrot 1982); Selbstähnlichkeit; Synergetik (Haken 1977) | Gesellschaftliche Skaleninvarianz – eigener Beitrag |
-| **A8** | Kopplungswellengeschwindigkeit | $c=1/\sqrt{\mu_0\varepsilon_0}$ | Elektrodynamik (Maxwell 1865); SRT (Einstein 1905); RT-41 (Schu 2026) | Irreduzibles Postulat; für soziale Analyse: endliche Propagationsgeschwindigkeit von Kopplungsänderungen |
 
 Interpretative Ergänzung: Beobachter sind Resonatoren im Feld und können selbst $K_{ij}$ aufbauen, stören oder umlenken.
 
-**Hinweis zu A8 (Kopplungswellengeschwindigkeit):** A8 ist primär ein physikalisches Postulat (Propagationsgeschwindigkeit von Phasenwellen mit Lichtgeschwindigkeit c). Für die gesellschaftliche Analyse gilt die schwächere heuristische Analogie: Kopplungsveränderungen propagieren in sozialen Netzwerken nicht instantan – Information, Vertrauen und Alignement verbreiten sich mit endlicher Geschwindigkeit. Dies ist konsistent mit A8, ohne dessen physikalische Präzision zu beanspruchen.
+> **Axiomatische Vollständigkeit:** Das gesellschaftliche Analyse-Tool verwendet A1–A7.
+> Ein achtes Axiom (A8, Kopplungswellengeschwindigkeit: $c = 1/\sqrt{\mu_0\varepsilon_0}$)
+> ist im übergeordneten Forschungsprogramm als irreduzibles Postulat eingeführt
+> (RT-41, Schu 2026). Es wird hier nicht verwendet, weil keine der Operationalisierungen
+> (F1–F14, 7.1–7.13) auf eine endliche Propagationsgeschwindigkeit angewiesen ist.
+> → [RFT-Forschungsprogramm (Repo)](https://github.com/DominicReneSchu/RFT)
 
 **Formale Größen (Notation und Herkunft):**
 - **ε(Δφ)**: Eigene Notation; Phasenkohärenz-Effizienzfunktion, angelehnt an Signalverarbeitung
@@ -826,7 +830,6 @@ Das RFT-Instrument bringt folgende eigenständige Beiträge ein, die in dieser F
 2. **Gesellschaftliche Skaleninvarianz (A7):** Formale Begründung, warum dieselben Muster auf allen sozialen Ebenen auftreten – eigener Beitrag
 3. **Iterativer Analysezyklus:** Systematische Verknüpfung von Analyse (t₀), Projektion (t₀+Δt) und Retrodiktion (t₀−Δt) als geschlossener Zyklus
 4. **Operationalisierte Frühindikatoren:** F1–F14 und POI-1–4 als konkretes Screening-Set mit formaler Charakterisierung
-5. **Axiom A8 (Kopplungswellengeschwindigkeit):** Irreduzibles Postulat über die endliche Propagationsgeschwindigkeit von Kopplungsänderungen (RT-41, Sep 2026)
 
 **Leitsatz:** Das RFT-Instrument erfindet das Rad nicht neu. Es baut ein Fahrrad aus bekannten Rädern und zeigt, wie sie zusammen fahren.
 

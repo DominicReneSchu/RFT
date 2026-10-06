@@ -1,11 +1,11 @@
 # RFT – Gesellschaftliche Analyse: Mapping-Tabellen
 
-→ [Gesellschaftliche Analyse (Fassung 2.22)](gesellschaftliche_analyse.md)
+→ [Gesellschaftliche Analyse (Fassung 2.23)](gesellschaftliche_analyse.md)
 → [Mapping-Tabellen](rft_mapping_tabellen.md)
 → [Literaturverzeichnis](rft_literaturverzeichnis.md)
 → [Änderungsprotokoll](rft_aenderungsprotokoll.md)
 
-## Tabelle 1: Axiome A1–A8 und formale Größen (ε, Δφ, PCI, K_ij, α, β, AiR)
+## Tabelle 1: Axiome A1–A7 und formale Größen (ε, Δφ, PCI, K_ij, α, β, AiR)
 
 | RFT-Begriff | Etablierter Begriff | Hauptquelle(n) | Was RFT hinzufügt |
 |:--|:--|:--|:--|
@@ -16,7 +16,7 @@
 | A5 Energierichtung | Feldtheorie, Gradienten | Maxwell (1865); Helmholtz (1847) | Richtungsoperator für soziale Energieflüsse |
 | A6 Informationsfluss | Informationstheorie, Kommunikation | Shannon (1948); Luhmann (1984); Bateson (1972) | PCI als operationalisiertes Kohärenzmaß |
 | A7 Skaleninvarianz | Fraktale Geometrie, Selbstähnlichkeit | Mandelbrot (1967, 1982); Haken (1977) | Gesellschaftliche Skaleninvarianz; eigener Beitrag |
-| A8 Kopplungswellengeschwindigkeit | Lichtgeschwindigkeit, SRT | Maxwell (1865); Einstein (1905) | Irreduzibles Postulat; endliche Propagation sozialer Signale |
+| A8 Kopplungswellengeschwindigkeit *(nicht im Analyse-Tool verwendet)* | Lichtgeschwindigkeit, SRT | Maxwell (1865); Einstein (1905); RT-41 (Schu 2026) | Irreduzibles Postulat im RFT-Forschungsprogramm; wird im Analyse-Tool nicht verwendet → <a href="https://github.com/DominicReneSchu/RFT">Repo</a> |
 | ε (Kopplungseffizienz) | Übertragungseffizienz | Signalverarbeitung, Regelungstechnik | Phasendifferenz-abhängige Effizienzfunktion: ε(Δφ) = cos²(Δφ/2) |
 | Δφ (Phasendifferenz) | Phasenverschiebung, Wertedivergenz | Wellentheorie; Polarisierungsforschung (Inglehart & Norris 2016) | Operationalisierung sozialer Phasenlage |
 | PCI (Phase Coherence Index) | Kohärenzmaß, Gruppengeschlossenheit | Kuramoto (1975); Soziale Kohäsion (Putnam 2000) | Formale Messgröße kollektiver Phasenkohärenz |

@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 6 October 2026 | Version 2.22 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 6 October 2026 | Version 2.23 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a **heuristic screening instrument** for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -41,7 +41,7 @@ The modes are not designed for one-time diagnosis but for **cyclic, iterative ap
 
 ---
 
-## 2. Axiom System A1–A8 (compact)
+## 2. Axiom System A1–A7 (compact)
 
 | Axiom | Core statement | Short form | Origin | RFT contribution |
 |:--|:--|:--|:--|:--|
@@ -52,11 +52,15 @@ The modes are not designed for one-time diagnosis but for **cyclic, iterative ap
 | **A5** | Energy direction | $\vec E=E_{\text{eff}}\cdot \hat e(\Delta\phi,\nabla\Phi)$ | Field theory (Maxwell 1865) | Direction operator for social energy flows |
 | **A6** | Information flow | $\mathrm{MI}>0 \Leftrightarrow \mathrm{PCI}>0$ | Information theory (Shannon 1948); systems theory (Luhmann 1984) | PCI as operationalised coherence metric |
 | **A7** | Invariance | $G(f_i/f_j)=G(T(f_i)/T(f_j))$ | Fractals (Mandelbrot 1982); self-similarity; synergetics (Haken 1977) | Social scale invariance – original contribution |
-| **A8** | Coupling wave velocity | $c=1/\sqrt{\mu_0\varepsilon_0}$ | Electrodynamics (Maxwell 1865); SRT (Einstein 1905); RT-41 (Schu 2026) | Irreducible postulate; for social analysis: finite propagation speed of coupling changes |
 
 Interpretive extension: observers are themselves resonators and can build, redirect, or degrade $K_{ij}$.
 
-**Note on A8 (Coupling wave velocity):** A8 is primarily a physical postulate (propagation speed of phase waves at the speed of light c). For social analysis the weaker heuristic analogy applies: coupling changes propagate through social networks non-instantaneously – information, trust, and alignment spread at finite speed. This is consistent with A8, without claiming its physical precision.
+> **Axiomatic completeness:** The social analysis tool uses A1–A7.
+> An eighth axiom (A8, coupling wave velocity: $c = 1/\sqrt{\mu_0\varepsilon_0}$)
+> is introduced as an irreducible postulate in the overarching research programme
+> (RT-41, Schu 2026). It is not used here because none of the operationalisations
+> (F1–F14, 7.1–7.13) depend on a finite propagation speed.
+> → [RFT Research Programme (Repo)](https://github.com/DominicReneSchu/RFT)
 
 **Formal quantities (notation and origin):**
 - **ε(Δφ)**: Own notation; phase-coherence efficiency function, based on signal processing concepts
@@ -832,7 +836,6 @@ What RFT adds to these established disciplines:
 2. **Scale invariance (A7):** The patterns are described scale-invariantly from dyads to societal systems. This extension is explicit.
 3. **Iterative analysis cycle:** Systematic workflow (field delineation → indicator screening → pattern assignment → projection/retrodiction → verification) as a structured approach.
 4. **Operationalised early indicators:** F1–F14 and POI-1–4 translate established concepts into observable features that can be applied without specialist training in each source discipline.
-5. **Axiom A8:** The postulate of coupling wave velocity (c = 1/√(μ₀ε₀) in physical systems) is an irreducible RFT postulate with no direct social science analogue. Its heuristic meaning: coupling changes in social networks are non-instantaneous.
 
 ### 10.3 Epistemic Position
 

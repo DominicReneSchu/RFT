@@ -1,13 +1,28 @@
 # RFT – Social Analysis: Changelog
 
-→ [Societal Analysis (Version 2.22)](social_analysis.md)
+→ [Societal Analysis (Version 2.23)](social_analysis.md)
 → [Mapping Tables](rft_mapping_tables.md)
 → [Bibliography](rft_bibliography.md)
 → [Changelog](rft_changelog.md)
 
 **Document:** `social_analysis.md`
-**Current version:** 2.22 (October 2026)
-**Predecessor version:** 2.21
+**Current version:** 2.23 (October 2026)
+**Predecessor version:** 2.22
+
+---
+
+## Version 2.23 (October 2026)
+
+**Change:** A8 removed from the axiom system of the social analysis tool.
+
+- Axiom table restricted to A1–A7
+- A8 row removed from the table
+- Cross-reference to the RFT research programme (Repo) added
+- Section 10.2 item 5 (A8 as an original contribution of the analysis tool) removed
+- Mapping table updated
+
+**Rationale:** None of the operationalisations (F1–F14, 7.1–7.13) require a
+finite propagation speed. A8 remains fully in the Repo (RT-41, RT-42).
 
 ---
 

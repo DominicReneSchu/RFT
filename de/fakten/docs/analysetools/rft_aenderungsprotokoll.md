@@ -1,13 +1,28 @@
 # RFT – Gesellschaftliche Analyse: Änderungsprotokoll
 
-→ [Gesellschaftliche Analyse (Fassung 2.22)](gesellschaftliche_analyse.md)
+→ [Gesellschaftliche Analyse (Fassung 2.23)](gesellschaftliche_analyse.md)
 → [Mapping-Tabellen](rft_mapping_tabellen.md)
 → [Literaturverzeichnis](rft_literaturverzeichnis.md)
 → [Änderungsprotokoll](rft_aenderungsprotokoll.md)
 
 **Dokument:** `gesellschaftliche_analyse.md`
-**Aktuelle Version:** 2.22 (Oktober 2026)
-**Vorgängerversion:** 2.21
+**Aktuelle Version:** 2.23 (Oktober 2026)
+**Vorgängerversion:** 2.22
+
+---
+
+## Fassung 2.23 (Oktober 2026)
+
+**Änderung:** A8 aus dem Axiomensystem des gesellschaftlichen Analyse-Tools ausgelagert.
+
+- Axiomentabelle auf A1–A7 beschränkt
+- A8-Zeile aus der Tabelle entfernt
+- Querverweis auf RFT-Forschungsprogramm (Repo) eingefügt
+- Abschnitt 10.2 Punkt 5 (A8 als Eigenleistung des Analyse-Tools) entfernt
+- Mapping-Tabelle angepasst
+
+**Begründung:** Keine der Operationalisierungen (F1–F14, 7.1–7.13) benötigt eine
+endliche Propagationsgeschwindigkeit. A8 bleibt vollständig im Repo erhalten (RT-41, RT-42).
 
 ---
 
