@@ -327,7 +327,10 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warpantrie
 
 | # | Dokument | Axiome | Beschreibung |
 |---|----------|--------|-------------|
-| 1 | [Gesellschaftliche Analyse](fakten/docs/analysetools/gesellschaftliche_analyse.md) | A1–A7 | RFT-Analyseinstrument für gesellschaftliche Zusammenhänge – KI-Kontext-Prompt zur Mustererkennung in Nachrichtenmeldungen; Fassung 2.10: Nutzungsanleitung um Projektion und Retrodiktion erweitert; §1.11a Retrodiktion als formale Methode; Zeitmodi-Abschnitt in Präambel ergänzt |
+| 1 | [Gesellschaftliche Analyse](fakten/docs/analysetools/gesellschaftliche_analyse.md) | A1–A7 | RFT-Analyseinstrument für gesellschaftliche Zusammenhänge – integratives Rahmenmodell zur Mustererkennung in sozialen Feldern; Fassung 2.22: wissenschaftliche Fundierung, Quellenintegration, F14 neu |
+| 1a | [Mapping-Tabellen](fakten/docs/analysetools/rft_mapping_tabellen.md) | A1–A7 | Übersetzungstabellen: RFT-Begriffe ↔ etablierte Konzepte aus Rhetorik, Sozialpsychologie, Systemtheorie, Diskursanalyse, Konfliktforschung, Kognitionswissenschaft |
+| 1b | [Literaturverzeichnis](fakten/docs/analysetools/rft_literaturverzeichnis.md) | — | Alphabetisches Quellenverzeichnis (≥ 80 Quellen, APA 7) für das gesellschaftliche Analyseinstrument |
+| 1c | [Änderungsprotokoll](fakten/docs/analysetools/rft_aenderungsprotokoll.md) | — | Änderungs- und Prüfprotokoll der Überarbeitung von Fassung 2.21 auf 2.22 |
 
 ---
 

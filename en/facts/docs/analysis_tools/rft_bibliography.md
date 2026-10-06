@@ -1,5 +1,10 @@
 # RFT – Social Analysis: Bibliography
 
+→ [Societal Analysis (Version 2.22)](social_analysis.md)
+→ [Mapping Tables](rft_mapping_tables.md)
+→ [Bibliography](rft_bibliography.md)
+→ [Changelog](rft_changelog.md)
+
 *Alphabetical, APA 7, as of October 2026 | At least 80 entries, ≥ 50 peer-reviewed*
 
 ## 1. Rhetoric and Argumentation

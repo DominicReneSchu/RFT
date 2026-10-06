@@ -1,5 +1,10 @@
 # RFT – Gesellschaftliche Analyse: Mapping-Tabellen
 
+→ [Gesellschaftliche Analyse (Fassung 2.22)](gesellschaftliche_analyse.md)
+→ [Mapping-Tabellen](rft_mapping_tabellen.md)
+→ [Literaturverzeichnis](rft_literaturverzeichnis.md)
+→ [Änderungsprotokoll](rft_aenderungsprotokoll.md)
+
 ## Tabelle 1: Axiome A1–A8 und formale Größen (ε, Δφ, PCI, K_ij, α, β, AiR)
 
 | RFT-Begriff | Etablierter Begriff | Hauptquelle(n) | Was RFT hinzufügt |

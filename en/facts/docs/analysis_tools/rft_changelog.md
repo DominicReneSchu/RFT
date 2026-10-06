@@ -1,5 +1,10 @@
 # RFT – Social Analysis: Changelog
 
+→ [Societal Analysis (Version 2.22)](social_analysis.md)
+→ [Mapping Tables](rft_mapping_tables.md)
+→ [Bibliography](rft_bibliography.md)
+→ [Changelog](rft_changelog.md)
+
 **Document:** `social_analysis.md`
 **Current version:** 2.22 (October 2026)
 **Predecessor version:** 2.21

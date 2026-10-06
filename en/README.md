@@ -328,7 +328,10 @@ Schrödinger ──ε(Δφ)──→ FLRW ──Klein-Gordon──→ Warp drive
 
 | # | Document | Axioms | Description |
 |---|----------|--------|-------------|
-| 1 | [Social Analysis](facts/docs/analysis_tools/social_analysis.md) | A1–A7 | RFT analysis instrument for social dynamics – AI context prompt for pattern recognition in news reports; Version 2.10: usage guide extended with projection and retrodiction; §1.11a retrodiction as formal method; time-modes section added to preamble |
+| 1 | [Social Analysis](facts/docs/analysis_tools/social_analysis.md) | A1–A7 | RFT analysis instrument for societal contexts – integrative framework for pattern recognition in social fields; Version 2.22: scientific grounding, source integration, F14 new |
+| 1a | [Mapping Tables](facts/docs/analysis_tools/rft_mapping_tables.md) | A1–A7 | Translation tables: RFT concepts ↔ established concepts from rhetoric, social psychology, systems theory, discourse analysis, conflict research, cognitive science |
+| 1b | [Bibliography](facts/docs/analysis_tools/rft_bibliography.md) | — | Alphabetical bibliography (≥ 80 sources, APA 7) for the societal analysis instrument |
+| 1c | [Changelog](facts/docs/analysis_tools/rft_changelog.md) | — | Change and quality assurance log for the revision from Version 2.21 to 2.22 |
 
 ---
 
