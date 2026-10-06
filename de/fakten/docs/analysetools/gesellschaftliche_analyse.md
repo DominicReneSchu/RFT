@@ -685,7 +685,7 @@ Ein **Resonanzmonopol** liegt vor, wenn ein Resonator R die kollektive Phasenkoh
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Dyaden über Gruppen und Organisationen bis zu medialen Diskursen.
 
-**Etablierte Vorläufer:** McCombs & Shaw (1972) beschreiben Agenda-Setting als Prozess, durch den Medien bestimmen, welche Themen öffentlich als wichtig gelten – eine Form des PCI-Monopols auf Themenbene. Watzlawick et al. (1967) zeigen komplementäre Kommunikationsmuster, bei denen ein Partner dauerhaft dominiert und der andere in passive Rezeptivität gedrängt wird. Luhmann (1984) analysiert Kommunikation als systemische Operation, bei der Aufmerksamkeit eine knappe Ressource darstellt. **Abgrenzung:** RFT formalisiert das Monopol als stationären Zustand mit $K_{E,R} \gg K_{R,E}$ und macht die Auswirkungen auf die Eigenfrequenzen der Empfänger sichtbar.
+**Etablierte Vorläufer:** McCombs & Shaw (1972) beschreiben Agenda-Setting als Prozess, durch den Medien bestimmen, welche Themen öffentlich als wichtig gelten – eine Form des PCI-Monopols auf Themenebene. Watzlawick et al. (1967) zeigen komplementäre Kommunikationsmuster, bei denen ein Partner dauerhaft dominiert und der andere in passive Rezeptivität gedrängt wird. Luhmann (1984) analysiert Kommunikation als systemische Operation, bei der Aufmerksamkeit eine knappe Ressource darstellt. **Abgrenzung:** RFT formalisiert das Monopol als stationären Zustand mit $K_{E,R} \gg K_{R,E}$ und macht die Auswirkungen auf die Eigenfrequenzen der Empfänger sichtbar.
 
 ---
 

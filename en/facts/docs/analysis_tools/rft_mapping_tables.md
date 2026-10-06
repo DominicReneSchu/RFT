@@ -37,7 +37,7 @@
 | 7.6 POI Cycle | DARVO; victim-offender reversal; conflict escalation | Freyd (1997); Glasl (1980); Lederach (1997) | Four-phase cycle with PCI-jump formalization |
 | 7.7 Exclusion-Escalation Spiral | Social identity theory; moral exclusion; conflict escalation | Tajfel & Turner (1979); Glasl (1980); Opotow (1990) | Self-reinforcing system dimension; Δφ→π as a limit state |
 | 7.8 Internal Infiltration | Conformity pressure; social networks; intelligence-service concepts | Milgram (1974); Granovetter (1973); Cialdini (1984) | Δφ discrepancy simulated/real; formalized K_ij extraction |
-| 7.9 Resonance Monopoly | Agenda-setting; complementary communication; systems communication | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_E→R ≫ K_R→E; PCI monopoly as a stationary state |
+| 7.9 Resonance Monopoly | Agenda-setting; complementary communication; systems communication | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_{E,R} ≫ K_{R,E}; PCI monopoly as a stationary state |
 | 7.10 Resonance Followership | Cognitive dissonance; authoritarian followership; compliance | Festinger (1957); Adorno et al. (1950); Milgram (1974) | PCI jump toward devotion; formalized extraction of recognition |
 | 7.11 F12 Relationships | Amygdala hijacking; stress response; provocation | LeDoux (1996); Goleman (1995); Lazarus (1966) | Relational link F12↔POI-1, F7, F5, AiR |
 | 7.12 F13 Relationships | Ascent anomalies; power elites; networks in high-pressure fields | Mills (1956); Padgett & Ansell (1993); Acemoglu & Robinson (2012) | Epistemic limit: structurally indistinguishable (a) vs. (b) |

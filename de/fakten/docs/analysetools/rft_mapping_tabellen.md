@@ -37,7 +37,7 @@
 | 7.6 POI-Zyklus | DARVO; Opfer-Täter-Umkehr; Konflikteskalation | Freyd (1997); Glasl (1980); Lederach (1997) | Vierphasiger Zyklus mit PCI-Sprung-Formalisierung |
 | 7.7 Ausgrenzungs-Eskalations-Spirale | Soziale Identitätstheorie; moralischer Ausschluss; Konflikteskalation | Tajfel & Turner (1979); Glasl (1980); Opotow (1990) | Selbstverstärkende Systemdimension; Δφ→π als Grenzzustand |
 | 7.8 Innere Infiltration | Konformitätsdruck; soziale Netzwerke; Geheimdienst-Konzepte | Milgram (1974); Granovetter (1973); Cialdini (1984) | Δφ-Diskrepanz simuliert/real; K_ij-Extraktion formalisiert |
-| 7.9 Resonanzmonopol | Agenda-Setting; komplementäre Kommunikation; Systemkommunikation | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_E→R ≫ K_R→E; PCI-Monopol als stationärer Zustand |
+| 7.9 Resonanzmonopol | Agenda-Setting; komplementäre Kommunikation; Systemkommunikation | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_{E,R} ≫ K_{R,E}; PCI-Monopol als stationärer Zustand |
 | 7.10 Resonanzgefolgschaft | Kognitive Dissonanz; autoritäre Gefolgschaft; Compliance | Festinger (1957); Adorno et al. (1950); Milgram (1974) | PCI-Sprung auf Hingabe; Anerkennungsextraktion formalisiert |
 | 7.11 F12-Beziehungen | Amygdala-Hijacking; Stressreaktion; Provokation | LeDoux (1996); Goleman (1995); Lazarus (1966) | Relationale Verbindung F12↔POI-1, F7, F5, AiR |
 | 7.12 F13-Beziehungen | Aufstiegsanomalien; Machteliten; Netzwerke in Hochdruckfeldern | Mills (1956); Padgett & Ansell (1993); Acemoglu & Robinson (2012) | Epistemische Grenze: strukturell ununterscheidbar (a) vs. (b) |
