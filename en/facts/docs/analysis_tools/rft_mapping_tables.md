@@ -40,7 +40,7 @@
 | 7.9 Resonance Monopoly | Agenda-setting; complementary communication; systems communication | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_E→R ≫ K_R→E; PCI monopoly as a stationary state |
 | 7.10 Resonance Followership | Cognitive dissonance; authoritarian followership; compliance | Festinger (1957); Adorno et al. (1950); Milgram (1974) | PCI jump toward devotion; formalized extraction of recognition |
 | 7.11 F12 Relationships | Amygdala hijacking; stress response; provocation | LeDoux (1996); Goleman (1995); Lazarus (1966) | Relational link F12↔POI-1, F7, F5, AiR |
-| 7.12 F13 Relationships | Network anomalies; ascent into elites; extraction | Granovetter (1973); Acemoglu & Robinson (2012); Glasl (1980) | Epistemic limit: structurally indistinguishable (a) vs. (b) |
+| 7.12 F13 Relationships | Ascent anomalies; power elites; networks in high-pressure fields | Mills (1956); Padgett & Ansell (1993); Acemoglu & Robinson (2012) | Epistemic limit: structurally indistinguishable (a) vs. (b) |
 | 7.13 F14 Relationships | Sophistry; strategic ambiguity; Kafka trapping | Walton (1989); Shackel (2005); Boghossian & Lindsay (2019) | Doubly blocked burden of production; formalized hidden channel |
 
 ## Table 3: Early Indicators F1–F14, POI-1–POI-4
@@ -51,15 +51,15 @@
 | F2 Asymmetric Definitional Power | Discursive sovereignty; power and knowledge | Foucault (1969); Bourdieu (1990) | Criteria blockade: formalized surrender of one's own frequency |
 | F3 Substitute-Object Focus | Metaphor frame; framing | Watzlawick et al. (1967); Lakoff & Johnson (1980) | PCI redirection as a measurable feature |
 | F4 Apparent Questions | Eristic dialectic; rhetoric | Schopenhauer (1831); Walton (1989) | β-raising test pulse formalized |
-| F5 Burden Without a Fulfillable Path | Kafka trapping; burden reversal | Boghossian & Lindsay (2019); Walton (1989) | β-dominance activation; permanent burden of proof |
+| F5 Burden Without a Fulfillable Path | Kafka trapping; burden reversal; regress problem | Walton (1997); Rescher (1976); Boghossian & Lindsay (2019) (popular science) | β-dominance activation; permanent burden of proof |
 | F6 Formal Superposition | Argumentation; discursive displacement | Toulmin (1958); Fairclough (1995) | PCI jump toward a formal criterion instead of real coupling |
 | F7 Friendliness Trap | Love bombing; reciprocity; Dark Triad | Cialdini (1984); Paulhus & Williams (2002); Herman (1992) | β_B↓, K_AB↑ with later material extraction |
 | F8 Moral Exclusion Trap | Moral exclusion; backfire effect; discursive power | Opotow (1990); Nyhan & Reifler (2010); Bail et al. (2018) | PCI_substitute object↑ while PCI_real politics→0 |
-| F9 Internal Infiltration | Weak ties; conformity pressure | Milgram (1974); Granovetter (1973) | Δφ discrepancy simulated/real; K extraction |
+| F9 Internal Infiltration | Self-presentation; role play; entryism; the stranger | Goffman (1959); Simmel (1908); political science literature on entryism | Δφ discrepancy simulated/real; K extraction |
 | F10 Monologue Dominance | Complementary patterns; communication pathology | Watzlawick et al. (1967); Luhmann (1984) | PCI monopolization; formalized damping of intrinsic frequency |
 | F11 Visible Devotion | Cognitive dissonance; authoritarian followership | Festinger (1957); Adorno et al. (1950) | PCI jump toward devotion/morality instead of the real issue |
 | F12 Somatic Alarm Confusion | Amygdala hijacking; primary appraisal; fight-or-flight | LeDoux (1996); Goleman (1995); Lazarus (1966) | β_B increase without physical threat; external trigger formalized |
-| F13 Anomalous Resonator | Network anomaly; elite reproduction | Granovetter (1973); Acemoglu & Robinson (2012); Glasl (1980) | High-pressure field indicator; epistemic limit made explicit |
+| F13 Anomalous Resonator | Ascent anomalies; networks in high-pressure fields; power elites | Mills (1956); Padgett & Ansell (1993); Acemoglu & Robinson (2012) | High-pressure field indicator; epistemic limit made explicit |
 | F14 Context-Free Definition Trap | Kafka trapping; eristic dialectic; strategic ambiguity | Boghossian & Lindsay (2019); Walton (1989); Schopenhauer (1831) | Doubly blocked burden of production; hidden channel |
 | POI-1 Asymmetric Provocation | DARVO; provocation; conflict trigger | Freyd (1997); Glasl (1980) | β_B/β_A ≫ 1 with rising Δφ_AB |
 | POI-2 Victim-Role Inversion | DARVO; victim-offender reversal | Freyd (1997); Lederach (1997) | PCI jump: enemy B → victim A |

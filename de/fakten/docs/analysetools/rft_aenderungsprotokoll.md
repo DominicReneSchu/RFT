@@ -1,13 +1,25 @@
 # RFT – Gesellschaftliche Analyse: Änderungsprotokoll
 
-→ [Gesellschaftliche Analyse (Fassung 2.23)](gesellschaftliche_analyse.md)
+→ [Gesellschaftliche Analyse (Fassung 2.24)](gesellschaftliche_analyse.md)
 → [Mapping-Tabellen](rft_mapping_tabellen.md)
 → [Literaturverzeichnis](rft_literaturverzeichnis.md)
 → [Änderungsprotokoll](rft_aenderungsprotokoll.md)
 
 **Dokument:** `gesellschaftliche_analyse.md`
-**Aktuelle Version:** 2.23 (Oktober 2026)
-**Vorgängerversion:** 2.22
+**Aktuelle Version:** 2.24 (Oktober 2026)
+**Vorgängerversion:** 2.23
+
+---
+
+## Fassung 2.24 (Oktober 2026)
+
+- Superlative zurückgenommen („erstmals" → „in integrierter Form")
+- Skaleninvarianz (A7) als Postulat gekennzeichnet
+- Vorläufer F5, F9, F13 präzisiert (Walton/Rescher, Goffman/Simmel, Mills/Padgett)
+- Neuer Abschnitt 10.3: Verhältnis zu verwandten formalen Ansätzen
+- Falsifikationsbedingungen 7.2, 7.3, 7.6 als echte Falsifikationen reformuliert
+- Abschnitt 3 in „Formale Notation" umbenannt, Einleitungssatz ergänzt
+- K_ij-Notation in 7.9 vereinheitlicht
 
 ---
 

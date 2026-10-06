@@ -1,13 +1,25 @@
 # RFT – Social Analysis: Changelog
 
-→ [Societal Analysis (Version 2.23)](social_analysis.md)
+→ [Societal Analysis (Version 2.24)](social_analysis.md)
 → [Mapping Tables](rft_mapping_tables.md)
 → [Bibliography](rft_bibliography.md)
 → [Changelog](rft_changelog.md)
 
 **Document:** `social_analysis.md`
-**Current version:** 2.23 (October 2026)
-**Predecessor version:** 2.22
+**Current version:** 2.24 (October 2026)
+**Predecessor version:** 2.23
+
+---
+
+## Version 2.24 (October 2026)
+
+- Superlatives retracted ("for the first time" → "in integrated form")
+- Scale invariance (A7) marked as a postulate
+- Predecessors F5, F9, F13 refined (Walton/Rescher, Goffman/Simmel, Mills/Padgett)
+- New Section 10.3: Relation to related formal approaches
+- Falsification conditions 7.2, 7.3, 7.6 reformulated as genuine falsifications
+- Section 3 renamed to "Formal Notation", introductory sentence added
+- K_ij notation in 7.9 unified
 
 ---
 
