@@ -1,7 +1,9 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
 **Stand: 6. Oktober 2026 | Fassung 2.22 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
-Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
+Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als **heuristisches Screening-Instrument** zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
+
+**Epistemischer Status:** Das RFT-Instrument ist ein **integratives Rahmenmodell**, das etablierte Konzepte aus Rhetorik, Sozialpsychologie, Systemtheorie, Diskursanalyse, Konfliktforschung und Kognitionswissenschaft in eine gemeinsame formale Sprache überführt. Es erfindet keine neuen Phänomene, sondern formalisiert und verbindet bekannte Konzepte. Eigene Beiträge sind: Formalisierung durch Feldgrößen (ε, Δφ, PCI, K_ij), gesellschaftliche Skaleninvarianz (A7), iterativer Analysezyklus und operationalisierte Frühindikatoren (F1–F14, POI-1–4). Eine ausführliche wissenschaftliche Einordnung findet sich in Abschnitt 10.
 
 ---
 
@@ -19,19 +21,30 @@ Die Modi sind nicht für einmalige Diagnose konzipiert, sondern für **zyklische
 
 ---
 
-## 2. Axiomensystem A1–A7 (kompakt)
+## 2. Axiomensystem A1–A8 (kompakt)
 
-| Axiom | Kernaussage | Kurzform |
-|:--|:--|:--|
-| **A1** | Universelle Schwingung | $\psi(x,t)=A\cos(kx-\omega t+\phi)$ |
-| **A2** | Superposition | $\Phi(x,t)=\sum_i \psi_i(x,t)$ |
-| **A3** | Resonanzbedingung | $\left\vert f_i/f_j-m/n \right\vert < \delta$ |
-| **A4** | Kopplungsenergie | $E=\pi\cdot\varepsilon(\Delta\phi)\cdot\hbar\cdot f$ |
-| **A5** | Energierichtung | $\vec E=E_{\text{eff}}\cdot \hat e(\Delta\phi,\nabla\Phi)$ |
-| **A6** | Informationsfluss | $\mathrm{MI}>0 \Leftrightarrow \mathrm{PCI}>0$ |
-| **A7** | Invarianz | $G(f_i/f_j)=G(T(f_i)/T(f_j))$ |
+| Axiom | Kernaussage | Kurzform | Herkunft | Eigenleistung RFT |
+|:--|:--|:--|:--|:--|
+| **A1** | Universelle Schwingung | $\psi(x,t)=A\cos(kx-\omega t+\phi)$ | Wellenphysik (Euler 1748; d'Alembert); Fourier-Analyse (Fourier 1822) | Übertragung auf gesellschaftliche Resonatoren |
+| **A2** | Superposition | $\Phi(x,t)=\sum_i \psi_i(x,t)$ | Wellentheorie (Young 1802); Quantenmechanik (Dirac 1930) | Formalisierung sozialer Überlagerungen |
+| **A3** | Resonanzbedingung | $\left\vert f_i/f_j-m/n \right\vert < \delta$ | Synergetik (Haken 1977); Nichtlineare Dynamik (Prigogine & Stengers 1984) | δ operationalisiert für Akteursfrequenzen |
+| **A4** | Kopplungsenergie | $E=\pi\cdot\varepsilon(\Delta\phi)\cdot\hbar\cdot f$ | Quantenmechanik (Planck 1900; de Broglie 1924) | Phasenkohärenz-Effizienzfunktion ε(Δφ) = cos²(Δφ/2) |
+| **A5** | Energierichtung | $\vec E=E_{\text{eff}}\cdot \hat e(\Delta\phi,\nabla\Phi)$ | Feldtheorie (Maxwell 1865) | Richtungsoperator für soziale Energieflüsse |
+| **A6** | Informationsfluss | $\mathrm{MI}>0 \Leftrightarrow \mathrm{PCI}>0$ | Informationstheorie (Shannon 1948); Systemtheorie (Luhmann 1984) | PCI als operationalisiertes Kohärenzmaß |
+| **A7** | Invarianz | $G(f_i/f_j)=G(T(f_i)/T(f_j))$ | Fraktale (Mandelbrot 1982); Selbstähnlichkeit; Synergetik (Haken 1977) | Gesellschaftliche Skaleninvarianz – eigener Beitrag |
+| **A8** | Kopplungswellengeschwindigkeit | $c=1/\sqrt{\mu_0\varepsilon_0}$ | Elektrodynamik (Maxwell 1865); SRT (Einstein 1905); RT-41 (Schu 2026) | Irreduzibles Postulat; für soziale Analyse: endliche Propagationsgeschwindigkeit von Kopplungsänderungen |
 
 Interpretative Ergänzung: Beobachter sind Resonatoren im Feld und können selbst $K_{ij}$ aufbauen, stören oder umlenken.
+
+**Hinweis zu A8 (Kopplungswellengeschwindigkeit):** A8 ist primär ein physikalisches Postulat (Propagationsgeschwindigkeit von Phasenwellen mit Lichtgeschwindigkeit c). Für die gesellschaftliche Analyse gilt die schwächere heuristische Analogie: Kopplungsveränderungen propagieren in sozialen Netzwerken nicht instantan – Information, Vertrauen und Alignement verbreiten sich mit endlicher Geschwindigkeit. Dies ist konsistent mit A8, ohne dessen physikalische Präzision zu beanspruchen.
+
+**Formale Größen (Notation und Herkunft):**
+- **ε(Δφ)**: Eigene Notation; Phasenkohärenz-Effizienzfunktion, angelehnt an Signalverarbeitung
+- **Δφ**: Standardnotation Phasenverschiebung (Wellenphysik); eigene Anwendung auf sozialen Konsens
+- **PCI**: Eigene Notation; orientiert an Kuramoto-Ordnungsparameter (Kuramoto 1975)
+- **K_ij**: Eigene Notation; konzeptuell verwandt mit Granovetter (1973), Netzwerkgewichten
+- **α, β**: Standardnotation Regelungstechnik/Systemdynamik; Eigenleistung: Interpretation als Feldverstärker/Dämpfer
+- **AiR**: Eigene Bezeichnung; konzeptuell verwandt mit Dark Triad (Paulhus & Williams 2002)
 
 ---
 
@@ -139,26 +152,26 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 
 #### 4.5.3 Übersichtstabelle
 
-| Nr. | Frühindikator | Beobachtbares Merkmal | RFT-Interpretation |
-|:--|:--|:--|:--|
-| **F1** | Externe Frequenzverschiebung | Ein Gesprächspartner führt plötzlich eine externe, nur ihm zugängliche Datenbasis oder ein formales Kriterium ein und macht dieses zum alleinigen Bezugspunkt. | Frequenz-Switch: Der Resonator wird gezwungen, auf einer fremden, vom Gegenüber kontrollierten Frequenz zu schwingen. |
-| **F2** | Asymmetrische Definitionsmacht | Die Definitionshoheit über den neu eingeführten Bezugspunkt liegt strukturell beim Fragesteller, nicht beim Befragten. | Kriterienblockade: Die Anerkennung des Resonators wird an eine Bedingung geknüpft, die er nicht erfüllen kann, ohne seine Eigenfrequenz aufzugeben. |
-| **F3** | Ersatzobjekt-Fokussierung | Die Diskussion verlagert sich von der ursprünglichen Kernaussage auf einen Nebenaspekt oder ein Detail, das nicht Teil der ursprünglichen Aussage war. | PCI-Umlenkung: Die kollektive Aufmerksamkeit springt auf ein sichtbares Ersatzobjekt, während die eigentliche Kopplungsleistung unsichtbar bleibt. |
-| **F4** | Scheinbare Fragen | Mehrere Meldungen oder Rückfragen erfolgen gleichzeitig; die Formulierungen sind keine offenen Verständnisfragen, sondern wirken als Feststellungen oder Bewertungen. | Testpuls / $\beta$-Erhöhung: Der AiR versucht, den Resonator in Erklärungsnot zu bringen und dessen Dämpfung zu erhöhen, ohne selbst als Störer erkennbar zu sein. |
-| **F5** | Bringschuld ohne Erfüllungsweg | Der Resonator wird aufgefordert, etwas zu erklären oder zu belegen, wobei die Bedingungen für eine erfolgreiche Erfüllung strukturell unklar oder unerfüllbar sind. | Aktivierung von $\beta$-Dominanz: Die Selbstkorrektur wird verhindert, stattdessen entsteht eine permanente Beweislast. |
-| **F6** | Formale Überlagerung | Die Diskussion dreht sich zunehmend um die Form (Zahlen, Begriffe, Verfahren) statt um den inhaltlichen Gegenstand; der Resonator muss sich für formale Abweichungen rechtfertigen. | Kollektiver PCI springt auf ein formales Kriterium, nicht auf die reale Kopplung – charakteristisch für das Totschlagargument. |
-| **F7** | Freundlichkeitsfalle (Wolf im Schafspelz) | Ein Akteur tritt auffällig freundlich, lobend oder bewundernd auf und ermutigt das Gegenüber gezielt, mehr Persönliches, Schwächen oder verwundbares Material preiszugeben. Die Freundlichkeit wirkt übertrieben oder auf ein bestimmtes Ziel gerichtet. | Der AiR senkt aktiv das **β** des Opfers (Dämpfung sinkt, Vertrauen steigt). **K_ij** wird künstlich aufgebaut, aber nur zur **Extraktion von Material**. Δφ erscheint niedrig, ist jedoch taktisch. Der spätere Wechsel in Spott/Angriff offenbart die wahre Phasenlage. |
-| **F8** | Moralische Ausgrenzungsfalle | Ein Akteur oder eine Gruppe wird systematisch aus dem legitimen Diskursraum ausgeschlossen, indem sie an einem unerreichbaren moralischen Kriterium gemessen wird (z. B. „demokratietauglich", „nicht koalitionsfähig"). Die Definitionsmacht über das Kriterium liegt bei den Ausgrenzenden. | Die Ausgrenzung erhöht das **β** des Ausgegrenzten (Wut, Trotz, Solidarisierung) und senkt den **PCI zur realen politischen Auseinandersetzung**. Die Energie fließt in das Opfernarrativ des Ausgegrenzten; die Polarisierung verstärkt sich. |
-| **F9** | Innere Infiltration | Ein Mitglied oder Akteur verhält sich auffällig loyal, drängt auf interne Vertraulichkeit, hat aber auffällig viele externe Kontakte oder vollzieht plötzliche Positionswechsel, die der Gruppe schaden. Interne Informationen dringen wiederholt nach außen. | Simulierte Δφ → 0 bei tatsächlich Δφ → π; K_ij (innen) wird zur Extraktion genutzt; PCI der Gruppe springt auf interne Konflikte, nicht auf die reale Bedrohung. |
-| **F10** | Monologdominanz | Der Anteil der Redezeit eines Akteurs liegt deutlich über dem der anderen; Pausen für Rückmeldungen fehlen; Unterbrechungen werden ignoriert oder sanktioniert. | Die kollektive Phasenkohärenz wird auf einen einzelnen Resonator monopolisiert; die Eigenfrequenzen der übrigen Resonatoren werden gedämpft. |
-| **F11** | Sichtbare Hingabe / Anerkennungsopfer | Ein Akteur betont öffentlich sein Engagement, seine Opfer oder seine Nähe zu einem dominanten Resonator; sucht Bestätigung dafür; inhaltliche Tiefe oder echte Resonanz mit der Sache fehlt; moralische Überlegenheit wird aus der Hingabe abgeleitet. | Der PCI des Akteurs springt auf das Ersatzobjekt „Hingabe/Moral" statt auf die reale Struktur; die Energie stabilisiert das Resonanzmonopol, nicht die produktive Kopplung. |
-| **POI-1** | Asymmetrische Provokation | Akteur A sendet verdeckte Störsignale (Unterstellungen, gezielte Tests, Grenzüberschreitungen), ohne als Aggressor erkennbar zu sein. Akteur B reagiert sichtbar gereizt oder aggressiv. | β-Erhöhung bei B, während β bei A niedrig bleibt; Δφ (A↔B) steigt. |
-| **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. |
-| **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. |
-| **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. |
-| **F12** | Somatische Alarmverwechslung / Archaische Reaktionsfalle | Bei B tritt nach einem psychischen Stressor (z. B. Prüfung, Konfrontation, Bewertung, innerem Erwartungsdruck) ein starkes inneres Warngefühl auf (Herzrasen, Anspannung, Drang zu sofortiger Reaktion), obwohl keine physische Bedrohung vorliegt. B fühlt sich gedrängt, sofort zu kämpfen, zu fliehen oder sich zu rechtfertigen, und neigt zu überstürzten, oft unbedachten Handlungen. Der Auslöser kann ein externer Akteur sein, muss es aber nicht. | Das evolutionär alte physische Alarmsystem wird bei einem psychischen Stressor fehlaktiviert. B wird in eine fremde Frequenz (Alarm, Eile, Bringschuld) gezwungen; **β_B steigt** stark an, während die Eigenfrequenz (Ruhe, Souveränität) verloren geht. Der PCI von B springt vom Inhalt auf das Alarmsignal, die Kopplung zur Gruppe oder zur realen Struktur wird destabilisiert. Ein externer Akteur A kann diesen Mechanismus gezielt auslösen und sein β niedrig halten, während er die Kontrolle über das Timing der Interaktion gewinnt. |
-| **F13** | Anomaler Resonator in Hochdruckfeld | In einem Feld mit hohem strukturellem Druck (starker Attraktor, hohe Einsätze, zyklische Systemabhängigkeit) erreicht ein Resonator ohne sichtbare $K_{ij}$-Vorgeschichte in kurzer Zeit hohe Kopplung zu tragenden Machtstrukturen – obwohl dies unter Zufallsbedingungen extrem unwahrscheinlich wäre. | Zwei strukturell ununterscheidbare Pfade: (a) latenter $K_{ij}$ (versteckte Kopplung), (b) Feldselbstorganisation (der Attraktor erzeugt die Figur). F13 markiert Ermittlungsbedarf, nicht Beweis. |
-| **F14** | Kontextfreie Definitionsfalle | Eine Frage wird ohne Kontext gestellt, obwohl der Kontext die Antwort strukturell bestimmt. Der verwendete Begriff trägt zwei etablierte Bedeutungen, sodass jede Antwort angreifbar ist. | Δφ zwischen Fragesteller und Befragtem treibt gegen π bei simulierter fachlicher Kohärenz; β beim Befragten steigt durch doppelt blockierte Bringschuld; Auswertung erfolgt im verborgenen Kanal; PCI der Gruppe stärkt sich nicht durch offenen Diskurs, sondern durch verdeckte Zuschreibung. |
+| Nr. | Frühindikator | Beobachtbares Merkmal | RFT-Interpretation | Wissenschaftliche Grundlage |
+|:--|:--|:--|:--|:--|
+| **F1** | Externe Frequenzverschiebung | Ein Gesprächspartner führt plötzlich eine externe, nur ihm zugängliche Datenbasis oder ein formales Kriterium ein und macht dieses zum alleinigen Bezugspunkt. | Frequenz-Switch: Der Resonator wird gezwungen, auf einer fremden, vom Gegenüber kontrollierten Frequenz zu schwingen. | Walton (1989): Beweislastverschiebung; Foucault (1969): Diskursmacht |
+| **F2** | Asymmetrische Definitionsmacht | Die Definitionshoheit über den neu eingeführten Bezugspunkt liegt strukturell beim Fragesteller, nicht beim Befragten. | Kriterienblockade: Die Anerkennung des Resonators wird an eine Bedingung geknüpft, die er nicht erfüllen kann, ohne seine Eigenfrequenz aufzugeben. | Walton (1989); Foucault (1969); Bourdieu (1990): symbolische Macht |
+| **F3** | Ersatzobjekt-Fokussierung | Die Diskussion verlagert sich von der ursprünglichen Kernaussage auf einen Nebenaspekt oder ein Detail, das nicht Teil der ursprünglichen Aussage war. | PCI-Umlenkung: Die kollektive Aufmerksamkeit springt auf ein sichtbares Ersatzobjekt, während die eigentliche Kopplungsleistung unsichtbar bleibt. | Watzlawick et al. (1967): Kommunikationsaxiome; Lakoff & Johnson (1980): Framing |
+| **F4** | Scheinbare Fragen | Mehrere Meldungen oder Rückfragen erfolgen gleichzeitig; die Formulierungen sind keine offenen Verständnisfragen, sondern wirken als Feststellungen oder Bewertungen. | Testpuls / $\beta$-Erhöhung: Der AiR versucht, den Resonator in Erklärungsnot zu bringen und dessen Dämpfung zu erhöhen, ohne selbst als Störer erkennbar zu sein. | Schopenhauer (1831): Eristische Dialektik; Walton (1989): falsche Fragen |
+| **F5** | Bringschuld ohne Erfüllungsweg | Der Resonator wird aufgefordert, etwas zu erklären oder zu belegen, wobei die Bedingungen für eine erfolgreiche Erfüllung strukturell unklar oder unerfüllbar sind. | Aktivierung von $\beta$-Dominanz: Die Selbstkorrektur wird verhindert, stattdessen entsteht eine permanente Beweislast. | Boghossian & Lindsay (2019): Kafka-Trapping; Walton (1989): burden of proof |
+| **F6** | Formale Überlagerung | Die Diskussion dreht sich zunehmend um die Form (Zahlen, Begriffe, Verfahren) statt um den inhaltlichen Gegenstand; der Resonator muss sich für formale Abweichungen rechtfertigen. | Kollektiver PCI springt auf ein formales Kriterium, nicht auf die reale Kopplung – charakteristisch für das Totschlagargument. | Toulmin (1958): Beweisstruktur; Fairclough (1995): Critical Discourse Analysis |
+| **F7** | Freundlichkeitsfalle (Wolf im Schafspelz) | Ein Akteur tritt auffällig freundlich, lobend oder bewundernd auf und ermutigt das Gegenüber gezielt, mehr Persönliches, Schwächen oder verwundbares Material preiszugeben. Die Freundlichkeit wirkt übertrieben oder auf ein bestimmtes Ziel gerichtet. | Der AiR senkt aktiv das **β** des Opfers (Dämpfung sinkt, Vertrauen steigt). **K_ij** wird künstlich aufgebaut, aber nur zur **Extraktion von Material**. Δφ erscheint niedrig, ist jedoch taktisch. Der spätere Wechsel in Spott/Angriff offenbart die wahre Phasenlage. | Cialdini (1984): Reziprozität und Compliance; Paulhus & Williams (2002): Dark Triad |
+| **F8** | Moralische Ausgrenzungsfalle | Ein Akteur oder eine Gruppe wird systematisch aus dem legitimen Diskursraum ausgeschlossen, indem sie an einem unerreichbaren moralischen Kriterium gemessen wird (z. B. „demokratietauglich", „nicht koalitionsfähig"). Die Definitionsmacht über das Kriterium liegt bei den Ausgrenzenden. | Die Ausgrenzung erhöht das **β** des Ausgegrenzten (Wut, Trotz, Solidarisierung) und senkt den **PCI zur realen politischen Auseinandersetzung**. Die Energie fließt in das Opfernarrativ des Ausgegrenzten; die Polarisierung verstärkt sich. | Opotow (1990): moralischer Ausschluss; Nyhan & Reifler (2010): Backfire-Effekt; Bail et al. (2018): politische Polarisierung |
+| **F9** | Innere Infiltration | Ein Mitglied oder Akteur verhält sich auffällig loyal, drängt auf interne Vertraulichkeit, hat aber auffällig viele externe Kontakte oder vollzieht plötzliche Positionswechsel, die der Gruppe schaden. Interne Informationen dringen wiederholt nach außen. | Simulierte Δφ → 0 bei tatsächlich Δφ → π; K_ij (innen) wird zur Extraktion genutzt; PCI der Gruppe springt auf interne Konflikte, nicht auf die reale Bedrohung. | Milgram (1974): Gehorsamkeit und Autoritätsübernahme; Granovetter (1973): Netzwerke und schwache Bindungen |
+| **F10** | Monologdominanz | Der Anteil der Redezeit eines Akteurs liegt deutlich über dem der anderen; Pausen für Rückmeldungen fehlen; Unterbrechungen werden ignoriert oder sanktioniert. | Die kollektive Phasenkohärenz wird auf einen einzelnen Resonator monopolisiert; die Eigenfrequenzen der übrigen Resonatoren werden gedämpft. | Watzlawick et al. (1967): komplementäre Kommunikationsmuster; Luhmann (1984): Aufmerksamkeit als knappe Ressource |
+| **F11** | Sichtbare Hingabe / Anerkennungsopfer | Ein Akteur betont öffentlich sein Engagement, seine Opfer oder seine Nähe zu einem dominanten Resonator; sucht Bestätigung dafür; inhaltliche Tiefe oder echte Resonanz mit der Sache fehlt; moralische Überlegenheit wird aus der Hingabe abgeleitet. | Der PCI des Akteurs springt auf das Ersatzobjekt „Hingabe/Moral" statt auf die reale Struktur; die Energie stabilisiert das Resonanzmonopol, nicht die produktive Kopplung. | Festinger (1957): kognitive Dissonanz; Adorno et al. (1950): autoritäre Gefolgschaft |
+| **POI-1** | Asymmetrische Provokation | Akteur A sendet verdeckte Störsignale (Unterstellungen, gezielte Tests, Grenzüberschreitungen), ohne als Aggressor erkennbar zu sein. Akteur B reagiert sichtbar gereizt oder aggressiv. | β-Erhöhung bei B, während β bei A niedrig bleibt; Δφ (A↔B) steigt. | Freyd (1997): DARVO; Glasl (1980): Eskalationsstufen |
+| **POI-2** | Opferrollen-Inversion | A wechselt plötzlich in die Opferrolle und stellt B als Aggressor dar; die eigene Provokation wird ausgeblendet. | PCI springt von „Feind B" auf „Opfer A"; K_ij (A↔Öffentlichkeit) steigt. | Freyd (1997): DARVO; Lederach (1997): Narrativ-Kontrolle |
+| **POI-3** | Legitimation von Härte | A nutzt die zugeschriebene Bedrohung, um eigene Gewalt, Repression oder institutionelle Härte als Notwehr darzustellen. | K_ij (A↔Gewalt/Repression) steigt; Δφ (A↔reale Struktur) bleibt hoch. | Glasl (1980): Eskalation und Verhärtung; Lederach (1997): gerechter Krieg und Frieden |
+| **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. | Glasl (1980); Lederach (1997); Luhmann (1984): Gedächtnis sozialer Systeme |
+| **F12** | Somatische Alarmverwechslung / Archaische Reaktionsfalle | Bei B tritt nach einem psychischen Stressor (z. B. Prüfung, Konfrontation, Bewertung, innerem Erwartungsdruck) ein starkes inneres Warngefühl auf (Herzrasen, Anspannung, Drang zu sofortiger Reaktion), obwohl keine physische Bedrohung vorliegt. B fühlt sich gedrängt, sofort zu kämpfen, zu fliehen oder sich zu rechtfertigen, und neigt zu überstürzten, oft unbedachten Handlungen. Der Auslöser kann ein externer Akteur sein, muss es aber nicht. | Das evolutionär alte physische Alarmsystem wird bei einem psychischen Stressor fehlaktiviert. B wird in eine fremde Frequenz (Alarm, Eile, Bringschuld) gezwungen; **β_B steigt** stark an, während die Eigenfrequenz (Ruhe, Souveränität) verloren geht. Der PCI von B springt vom Inhalt auf das Alarmsignal, die Kopplung zur Gruppe oder zur realen Struktur wird destabilisiert. Ein externer Akteur A kann diesen Mechanismus gezielt auslösen und sein β niedrig halten, während er die Kontrolle über das Timing der Interaktion gewinnt. | LeDoux (1996): Amygdala und Emotionsverarbeitung; Goleman (1995): emotionale Intelligenz; Lazarus (1966): primäre Bewertung und Stressreaktion |
+| **F13** | Anomaler Resonator in Hochdruckfeld | In einem Feld mit hohem strukturellem Druck (starker Attraktor, hohe Einsätze, zyklische Systemabhängigkeit) erreicht ein Resonator ohne sichtbare $K_{ij}$-Vorgeschichte in kurzer Zeit hohe Kopplung zu tragenden Machtstrukturen – obwohl dies unter Zufallsbedingungen extrem unwahrscheinlich wäre. | Zwei strukturell ununterscheidbare Pfade: (a) latenter $K_{ij}$ (versteckte Kopplung), (b) Feldselbstorganisation (der Attraktor erzeugt die Figur). F13 markiert Ermittlungsbedarf, nicht Beweis. | Granovetter (1973): Netzwerkanomalien; Acemoglu & Robinson (2012): Elitenreproduktion; Glasl (1980): Hochdruckfelder |
+| **F14** | Kontextfreie Definitionsfalle | Eine Frage wird ohne Kontext gestellt, obwohl der Kontext die Antwort strukturell bestimmt. Der verwendete Begriff trägt zwei etablierte Bedeutungen, sodass jede Antwort angreifbar ist. | Δφ zwischen Fragesteller und Befragtem treibt gegen π bei simulierter fachlicher Kohärenz; β beim Befragten steigt durch doppelt blockierte Bringschuld; Auswertung erfolgt im verborgenen Kanal; PCI der Gruppe stärkt sich nicht durch offenen Diskurs, sondern durch verdeckte Zuschreibung. | Boghossian & Lindsay (2019): Kafka-Trapping; Walton (1989): strategische Ambiguität; Schopenhauer (1831): Eristische Dialektik |
 
 ---
 
@@ -477,6 +490,8 @@ $$
 \varepsilon_{\text{AiR}}\to 0,\qquad \frac{dK_{ij}^{\text{Umfeld}}}{dt}<0
 $$
 
+**Etablierte Vorläufer:** Paulhus & Williams (2002) beschreiben das Dark-Triad-Konstrukt (Narzissmus, Machiavellismus, Psychopathie) als Persönlichkeitsprofil, das destruktive soziale Dynamiken erzeugt. Berne (1964) analysiert Spieler in der Transaktionsanalyse als Akteure, die Interaktionen instrumentell führen. Cialdini (1984) zeigt, wie Reziprozität und Konsistenz manipulativ subvertiert werden können. **Abgrenzung:** RFT formalisiert AiR durch ε→0, Δφ→π und dK_ij/dt<0 als messbare Feldgrößen; die zugrunde liegenden Persönlichkeitsmuster entstammen etablierter Sozialpsychologie.
+
 ### 7.2 Sündenbock-Mechanismus
 
 Die Gruppe bündelt PCI auf ein sichtbares Zielobjekt, während die eigentliche Systemstruktur unsichtbar bleibt.
@@ -489,6 +504,8 @@ $$
 
 Funktion: affektive Entlastung, keine strukturelle Lösung.
 
+**Etablierte Vorläufer:** Girard (1972) analysiert den Sündenbockmechanismus als anthropologische Grundkonstante mimetischer Gewalt: Gruppen richten kollektiven Zorn auf ein Zielobjekt, das eine Krisenlösung simuliert, ohne Ursachen zu beheben. Adorno et al. (1950) untersuchen Projektion und Vorurteil als Mechanismen der autoritären Persönlichkeit. Allport (1954) systematisiert Sündenbock-Theorien im Rahmen der Vorurteilsforschung. **Abgrenzung:** RFT ergänzt PCI_Ziel vs. PCI_Struktur als formale Unterscheidungsgröße, die die Umlenkung kollektiver Aufmerksamkeit messbar macht.
+
 ### 7.3 Parasitärer Extraktionszyklus
 
 Minimalform in fünf Phasen:
@@ -499,6 +516,8 @@ Minimalform in fünf Phasen:
 5. Wiederaufbau unter neuer Abhängigkeit
 
 Kennzeichen: Energie wird aus produktiven Netzen gezogen, aber nicht resonant zurückgeführt.
+
+**Etablierte Vorläufer:** Acemoglu & Robinson (2012) beschreiben extraktive Institutionen als Systeme, die Wohlstand auf eine kleine Elite umverteilen und produktive Investitionen systematisch untergraben. Glasl (1980) analysiert Eskalationsstufen in Konflikten, die strukturell dem Fünf-Phasen-Zyklus ähneln. **Abgrenzung:** RFT formalisiert den Zyklus mit K_ij-Dynamik und macht die Phasenübergänge über die Kopplungsgleichung dK_ij/dt sichtbar.
 
 ### 7.4 Drei-Phasen-Vereinnahmung
 
@@ -513,6 +532,8 @@ $$
 $$
 
 Das Muster ist A7-invariant und skaliert von Einzelbeziehungen bis zu Institutionen.
+
+**Etablierte Vorläufer:** Cialdini (1984) beschreibt Compliance-Techniken wie Fuß-in-der-Tür und Reziprozität als Grundlage der Vereinnahmung. Milgram (1974) zeigt, wie schrittweise Autoritätsbindung zu tiefer Gehorsamkeit führt. Herman (1992) analysiert Love Bombing als erste Phase in Missbrauchsbeziehungen. **Abgrenzung:** RFT formalisiert das τ-Phasenmodell (Demut→Testen→Missbrauch) und macht den Zeitverlauf der Übernahme in sozialen Feldern sichtbar.
 
 ### 7.5 Totschlagargument / Kriterienblockade
 
@@ -537,6 +558,8 @@ $$
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Einzelpersonen über Institutionen bis zu gesamten Diskursfeldern.
 
+**Etablierte Vorläufer:** Walton (1989) systematisiert Argumentationsfehler und Beweislastverschiebungen in der informellen Logik. Toulmin (1958) entwickelt ein Beweisstrukturmodell, das zeigt, wie Argumente durch implizite Garantien und Rückzugsoptionen immunisiert werden können. Shackel (2005) beschreibt die Motte-and-Bailey-Taktik: Eine schwer verteidigbare Position wird mit einer unverdächtigen verwechselt, um Kritik abzuwehren. **Abgrenzung:** RFT überführt diese diskursanalytischen Konzepte in die PCI-Umlenkungsformel: PCI_Resonator→0 trotz K_ij_real>0.
+
 ### 7.6 Provokations-Opfer-Inversionszyklus (POI-Zyklus)
 
 Der **POI-Zyklus** beschreibt eine wiederkehrende Abfolge, in der ein Akteur A zunächst einen anderen Akteur B gezielt provoziert und als Feind darstellt, dann in die Opferrolle wechselt, sobald sich Machtverhältnisse verschieben oder B sichtbar reagiert, und schließlich die eigene Provokation aus dem kollektiven Gedächtnis löscht. Die zugeschriebene Aggression von B wird zur selbsterfüllenden Prophezeiung, die A nutzt, um eigene Härte zu legitimieren.
@@ -555,6 +578,8 @@ $$
 $$
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von dyadischen Beziehungen über institutionelle Konflikte bis zu geopolitischen Auseinandersetzungen.
+
+**Etablierte Vorläufer:** Freyd (1997) beschreibt DARVO (Deny, Attack, Reverse Victim and Offender) als typisches Reaktionsmuster von Tätern auf Konfrontation. Glasl (1980) analysiert Eskalationsstufen im Konfliktmanagement, die den Phasen des POI-Zyklus strukturell entsprechen. Lederach (1997) untersucht Peacebuilding-Prozesse und zeigt, wie Narrativ-Kontrolle Konflikte dauerhaft stabilisiert. **Abgrenzung:** RFT formalisiert den POI-Zyklus als vierphasiges Muster mit PCI-Sprüngen und macht so die Opfer-Täter-Inversion als Feldoperation sichtbar.
 
 ---
 
@@ -577,6 +602,8 @@ $$
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen Organisationen über Parteienlandschaften bis zu internationalen Konflikten. Die Ausgrenzungs-Eskalations-Spirale ist eng verwandt mit dem POI-Zyklus (7.6), betont jedoch die **systemische Dimension**: Nicht ein einzelner Akteur provoziert, sondern das System selbst erzeugt durch Ausschluss die Eskalation.
 
+**Etablierte Vorläufer:** Tajfel & Turner (1979) beschreiben in der Theorie sozialer Identität, wie In-Group/Out-Group-Dynamiken Ausgrenzung strukturell erzeugen und Gruppenidentität durch Abgrenzung stabilisieren. Glasl (1980) zeigt, wie Ausgrenzung in Konfliktsituationen zur Selbstverstärkung führt. Opotow (1990) entwickelt das Konzept des moralischen Ausschlusses: Gruppen, die aus dem Kreis moralischer Berücksichtigung ausgeschlossen werden, verlieren ihren Anspruch auf Gerechtigkeit. **Abgrenzung:** RFT ergänzt die systemische Rückkopplungsstruktur und formalisiert Δφ→π als Grenzwert maximaler Entkopplung.
+
 ---
 
 ### 7.8 Innere Infiltration (Wolf im Schafspelz in offenen Resonanzräumen)
@@ -597,6 +624,8 @@ $$
 $$
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von einzelnen Gruppen über Parteien bis zu geopolitischen Allianzen. Es ist eng verwandt mit der Freundlichkeitsfalle (F7), betont jedoch die **institutionelle Dimension**: Der offene Zugang zu Resonanzräumen ermöglicht die Infiltration, weil keine kontinuierliche Prüfung der tatsächlichen Phasenlage stattfindet.
+
+**Etablierte Vorläufer:** Milgram (1974) zeigt, wie Autoritätsbindung und schrittweise Anpassung ein Individuum zur Übernahme fremder Ziele veranlassen. Cialdini (1984) beschreibt, wie Commitment und Konsistenz systematisch ausgenutzt werden. Granovetter (1973) analysiert, wie schwache Bindungen in Netzwerken für Informationstransfer und Einflussnahme genutzt werden. **Abgrenzung:** RFT formalisiert die Δφ-Diskrepanz zwischen simulierter und realer Phasenlage und macht die Extraktion über K_ij-Dynamik sichtbar.
 
 ---
 
@@ -627,6 +656,8 @@ Ein **Resonanzmonopol** liegt vor, wenn ein Resonator R die kollektive Phasenkoh
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Dyaden über Gruppen und Organisationen bis zu medialen Diskursen.
 
+**Etablierte Vorläufer:** McCombs & Shaw (1972) beschreiben Agenda-Setting als Prozess, durch den Medien bestimmen, welche Themen öffentlich als wichtig gelten – eine Form des PCI-Monopols auf Themenbene. Watzlawick et al. (1967) zeigen komplementäre Kommunikationsmuster, bei denen ein Partner dauerhaft dominiert und der andere in passive Rezeptivität gedrängt wird. Luhmann (1984) analysiert Kommunikation als systemische Operation, bei der Aufmerksamkeit eine knappe Ressource darstellt. **Abgrenzung:** RFT formalisiert das Monopol als stationären Zustand mit K_E→R ≫ K_R→E und macht die Auswirkungen auf die Eigenfrequenzen der Empfänger sichtbar.
+
 ---
 
 ### 7.10 Resonanzgefolgschaft (Anerkennungsextraktion durch sichtbare Hingabe)
@@ -654,6 +685,8 @@ Ein Akteur F (Folger) koppelt sich eng an einen dominanten Resonator R (z. B. de
 - **Für Führungskräfte/Moderatoren:** Vermeidung der bewussten oder unbewussten Förderung von Gefolgschaft; Schaffung von Räumen für unabhängige Rückmeldungen.
 
 Das Muster ist A7-invariant und tritt auf allen Skalenebenen auf: von Familien über Freundeskreise und Organisationen bis zu politischen Bewegungen und medialen Öffentlichkeiten.
+
+**Etablierte Vorläufer:** Festinger (1957) beschreibt kognitive Dissonanz als Triebkraft für Selbstrechtfertigung und Anpassung an Gruppennarrative. Milgram (1974) zeigt, wie Gehorsamkeit gegenüber Autoritäten moralische Eigenverantwortung suspendiert. Adorno et al. (1950) untersuchen, wie autoritäre Gefolgschaft aus dem Bedürfnis nach Zugehörigkeit und moralischer Selbstaufwertung entsteht. **Abgrenzung:** RFT fokussiert auf Anerkennungsextraktion und PCI-Sprung auf Hingabe statt reale Sache und macht den Mechanismus durch die Feldgrößen operationalisierbar.
 
 ---
 
@@ -724,17 +757,92 @@ Epistemische Grenze: F14 liegt nur dann vor, wenn die Kontextlosigkeit und die A
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F12 sowie das Strukturmuster 7.11 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F13 sowie das Strukturmuster 7.12 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F13 ist dabei besonders missbrauchsanfällig: Er lässt sich leicht in eine Unfalsifizierbarkeitsfalle verwandeln und markiert ausschließlich Ermittlungsbedarf, nicht Beweis. Auch der neue Frühindikator F14 sowie das Strukturmuster 7.13 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F14 ist kein Absichtsbeweis und liegt nur dann vor, wenn Kontextlosigkeit, begriffliche Ambiguität und Musterbildung gleichzeitig auftreten.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. **Das RFT-Instrument integriert etablierte Konzepte aus Rhetorik, Sozialpsychologie, Systemtheorie, Diskursanalyse, Konfliktforschung und Kognitionswissenschaft – es ersetzt diese Disziplinen nicht.** Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Alle Frühindikatoren F1–F14, POI-1 bis POI-4 und Strukturmuster 7.1–7.13 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F13 ist dabei besonders missbrauchsanfällig: Er lässt sich leicht in eine Unfalsifizierbarkeitsfalle verwandeln und markiert ausschließlich Ermittlungsbedarf, nicht Beweis. F14 ist kein Absichtsbeweis und liegt nur dann vor, wenn Kontextlosigkeit, begriffliche Ambiguität und Musterbildung gleichzeitig auftreten.
+
+### 9.1 Falsifikationsbedingungen je Strukturmuster
+
+Kein Muster des RFT-Instruments ist immunisiert. Die folgenden Beobachtungen würden das jeweilige Muster prinzipiell widerlegen oder erheblich schwächen (Popper 1934):
+
+| Strukturmuster | Falsifikationsbedingung |
+|:--|:--|
+| **7.1 AiR** | Ein Akteur mit ε→0 und Δφ→π trägt systematisch zum positiven dK_ij/dt im Umfeld bei – d. h. er baut produktive Kopplung auf, anstatt sie zu zerstören. |
+| **7.2 Sündenbock** | Die Gruppe richtet PCI auf ein Zielobjekt, und dadurch verbessert sich tatsächlich die reale Systemstruktur – d. h. die Problemursache lag tatsächlich beim Zielobjekt. |
+| **7.3 Parasitärer Extraktionszyklus** | Nach Phase 4 (Zerstörung) folgt kein Wiederaufbau unter neuer Abhängigkeit, sondern eine strukturell verbesserte, unabhängige Regeneration. |
+| **7.4 Drei-Phasen-Vereinnahmung** | Die Demut-Phase führt zu echter gegenseitiger Resonanz (Δφ→0 bilateral), und die Testphase produziert keine Extraktion, sondern produktive Ko-Kopplung. |
+| **7.5 Kriterienblockade** | Das externe Kriterium wird vom Resonator tatsächlich erfüllt, und die Anerkennung wird daraufhin gewährt – d. h. das Kriterium war sachlich, nicht strukturell ausgrenzend. |
+| **7.6 POI-Zyklus** | Nach der sichtbaren Reaktion von B wechselt A nicht in die Opferrolle, sondern übernimmt Verantwortung für die eigene Provokation und bricht den Zyklus. |
+| **7.7 Ausgrenzungs-Eskalations-Spirale** | Moralische Ausgrenzung reduziert die Energie des Ausgegrenzten, ohne Solidarisierungseffekte auszulösen, und führt zum Rückgang der ausgeschlossenen Gruppe. |
+| **7.8 Innere Infiltration** | Ein Akteur mit simulierter Phasenkohärenz (Δφ→0) schädigt die Gruppe nicht, sondern trägt dauerhaft zu deren Zielen bei – d. h. die Phasenkohärenz war echt. |
+| **7.9 Resonanzmonopol** | Asymmetrische Sendedominanz eines Resonators korreliert mit steigender Kopplung K_{E–E} unter den Empfängern und steigendem PCI zur realen Struktur. |
+| **7.10 Resonanzgefolgschaft** | Sichtbare Hingabe an einen dominanten Resonator geht mit produktiver Kopplung an die reale Sache einher – d. h. die Energie fließt in strukturelle Problemlösung, nicht in Monopolstabilisierung. |
+| **F12 Somatische Alarmverwechslung** | Das somatische Warnsignal führt systematisch zu angemessenen, adaptiven Reaktionen, die die Position des Betroffenen stärken. |
+| **F13 Anomaler Resonator** | Dokumentierte Belege (Netzwerke, Geldflüsse, Akten) zeigen: Der schnelle Aufstieg erklärt sich vollständig durch öffentlich sichtbare Kopplungsmechanismen. |
+| **F14 Kontextfreie Definitionsfalle** | Die ambige Frage wird im offenen Kanal geklärt, und die Antwort findet keine weitere Verwendung gegen den Befragten. |
 
 ---
 
-## 10. Anwendungshinweise für Fachkräfte
+## 10. Wissenschaftliche Einordnung
 
-### 10.1 Zweck und Zielgruppe
+### 10.1 Vorläufer-Disziplinen
+
+Das RFT-Instrument integriert Konzepte aus folgenden Fachdisziplinen:
+
+| Disziplin | Kernbeitrag | Hauptvertreter |
+|:--|:--|:--|
+| **Rhetorik & Argumentation** | Analyse von Argumentationsfehlern, Beweislast, Diskursstrategien | Aristoteles; Schopenhauer (1831); Toulmin (1958); Walton (1989); Shackel (2005) |
+| **Kommunikations- & Systemtheorie** | Kommunikationspathologien, komplementäre Muster, Systemoperationen | Watzlawick et al. (1967); Luhmann (1984); Bateson (1972) |
+| **Sozialpsychologie & Manipulation** | Compliance, Gehorsamkeit, kognitive Dissonanz, Opfer-Täter-Dynamiken | Cialdini (1984); Festinger (1957); Milgram (1974); Paulhus & Williams (2002); Freyd (1997) |
+| **Kognition & Neurowissenschaft** | Emotionsverarbeitung, Stressreaktion, primäre Bewertung | LeDoux (1996); Goleman (1995); Lazarus (1966); Kahneman (2011) |
+| **Diskurs, Sprache & Macht** | Diskursmacht, Framing, symbolische Gewalt | Foucault (1969); Bourdieu (1990); Fairclough (1995); Lakoff & Johnson (1980) |
+| **Konfliktforschung** | Eskalationsstufen, DARVO, Peacebuilding | Glasl (1980); Freyd (1997); Lederach (1997); Girard (1972) |
+| **Soziologie & Politikwissenschaft** | Netzwerktheorie, Agenda-Setting, moralischer Ausschluss | Granovetter (1973); McCombs & Shaw (1972); Opotow (1990); Adorno et al. (1950); Acemoglu & Robinson (2012) |
+| **Wissenschaftstheorie** | Falsifizierbarkeit, kritischer Rationalismus | Popper (1934); Albert (1968) |
+
+### 10.2 Eigener Beitrag der RFT
+
+Das RFT-Instrument bringt folgende eigenständige Beiträge ein, die in dieser Form in keiner der Vorläufer-Disziplinen vorliegen:
+
+1. **Formalisierung durch Feldgrößen:** ε(Δφ), PCI, K_ij, α, β als operationalisierbare Messgrößen für soziale Kopplungen
+2. **Gesellschaftliche Skaleninvarianz (A7):** Formale Begründung, warum dieselben Muster auf allen sozialen Ebenen auftreten – eigener Beitrag
+3. **Iterativer Analysezyklus:** Systematische Verknüpfung von Analyse (t₀), Projektion (t₀+Δt) und Retrodiktion (t₀−Δt) als geschlossener Zyklus
+4. **Operationalisierte Frühindikatoren:** F1–F14 und POI-1–4 als konkretes Screening-Set mit formaler Charakterisierung
+5. **Axiom A8 (Kopplungswellengeschwindigkeit):** Irreduzibles Postulat über die endliche Propagationsgeschwindigkeit von Kopplungsänderungen (RT-41, Sep 2026)
+
+**Leitsatz:** Das RFT-Instrument erfindet das Rad nicht neu. Es baut ein Fahrrad aus bekannten Rädern und zeigt, wie sie zusammen fahren.
+
+### 10.3 Epistemische Position
+
+- **Heuristik:** Das Instrument erzeugt plausible Hypothesen, keine Beweise
+- **Screening-Instrument:** Es rechtfertigt vertiefte Untersuchungen, ersetzt sie nicht
+- **Formalisierungsleistung:** Es übersetzt qualitative Konzepte in messbare Feldgrößen
+- **Anschlussfähig, nicht abgeschlossen:** Konzepte können ergänzt, revidiert, falsifiziert werden
+- **Kein Beweisapparat:** Keine Diagnostik, keine Prognosegarantie, keine empirische Validierung vorhanden
+
+### 10.4 Grenzen
+
+- **Keine empirische Validierung:** PCI, K_ij und ε sind nicht empirisch gemessen; keine kontrollierten Studien zur Vorhersagekraft
+- **Keine Diagnostik:** Das Instrument stellt keine Diagnosen im klinischen oder forensischen Sinne
+- **Keine Prognosegarantie:** Projektionen sind Szenarien, keine Vorhersagen
+- **Scheinpräzision:** Mathematische Notation suggeriert Messbarkeit, die nicht immer gegeben ist
+- **Interrater-Reliabilität:** Nicht untersucht – verschiedene Anwendende können dieselbe Situation unterschiedlich einschätzen
+
+### 10.5 Falsifikationsbedingungen
+
+Jedes Strukturmuster des RFT-Instruments ist prinzipiell widerlegbar. Spezifische Falsifikationsbedingungen finden sich in Abschnitt 9.1. Das Gesamtinstrument wäre dann falsifiziert, wenn:
+
+- Frühindikatoren F1–F14 in repräsentativen Stichproben keine überzufällige Korrelation mit den postulierten Dynamiken zeigen
+- Die Skaleninvarianz (A7) systematisch auf einer Ebene versagt (z. B. in dyadischen Interaktionen keine Analogien zu medialen Diskursen erkennbar sind)
+- Die Kopplungsgleichung (dK_ij/dt) systematisch falsche Trajektorien vorhersagt
+
+---
+
+## 11. Anwendungshinweise für Fachkräfte
+
+### 11.1 Zweck und Zielgruppe
 
 Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlungsbehörden** und **Anwälte/Richter**. Das RFT-Instrument dient als **heuristisches Strukturierungsraster**, nicht als Beweismittel oder diagnostisches Manual. Es soll helfen, **komplexe soziale Dynamiken, psychische Gewalt und verdeckte Manipulationen** aus Berichten, Zeugenaussagen oder Aktenlagen herauszuarbeiten und in eine gemeinsame Sprache zu übersetzen. Es ersetzt keine fachlichen Standards, sondern ergänzt sie als zusätzliche Perspektive.
 
-### 10.2 Allgemeine Anwendungshinweise
+### 11.2 Allgemeine Anwendungshinweise
 
 - Die Analyse beginnt immer mit der **Feldgrenze** (wer sind die relevanten Resonatoren?) und den **Taktgebern** (welche Rhythmen strukturieren das Feld?).
 - Frühindikatoren **F1–F14** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
@@ -742,28 +850,31 @@ Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlu
 - Die **Projektion** (Abschnitt 5) kann verwendet werden, um wahrscheinliche Eskalationsverläufe zu skizzieren; die **Retrodiktion** (Abschnitt 6) hilft, aus heutigen Spuren auf frühere Ausgangszustände zu schließen.
 - Jede RFT-Analyse muss **dokumentiert** werden: Welche Indikatoren wurden beobachtet, welche Größen geschätzt, welche Hypothesen gebildet? Erst die **iterative Anwendung** (wiederholte Beobachtung über Zeit und verschiedene Quellen) erhöht die Plausibilität.
 
-### 10.3 Spezifische Hinweise für Psychologen und Therapeuten
+### 11.3 Spezifische Hinweise für Psychologen und Therapeuten
 
 - **Zielfragen:** Liegt eine Freundlichkeitsfalle (F7) vor? Durchläuft der Patient/die Patientin gerade einen POI-Zyklus? Wird er/sie moralisch ausgegrenzt (F8) oder von innen infiltriert (F9)? Liegt eine kontextfreie Definitionsfalle (F14) vor, bei der der Betroffene in eine doppelt blockierte Erklärungspflicht gebracht wird?
 - **Gesprächsführung:** Die Diagnosefragen in 4.5.5 können als Leitfaden dienen, um die Chronologie toxischer Beziehungen zu rekonstruieren und die Mechanik für den Patienten sichtbar zu machen.
 - **Differenzierung:** Die Unterscheidung zwischen subjektivem Erleben (β, Gefühl der Bedrohung) und realer Struktur (K_ij, tatsächliche Kopplungen) hilft, sowohl Über- als auch Unterschätzung von Bedrohungen zu erkennen.
 - **Vorsicht:** F7 ist besonders zurückhaltend zu verwenden, da Freundlichkeit in therapeutischen Kontexten oft authentisch ist. Erst die **Asymmetrie der späteren Nutzung** (Material wird gegen die Person verwendet) macht die Falle erkennbar.
+- **Weiterführende Fachliteratur:** Cialdini (1984) – Compliance und Manipulation; Festinger (1957) – kognitive Dissonanz; Freyd (1997) – Verrats­trauma und DARVO; LeDoux (1996) – emotionales Gedächtnis; Lazarus (1966) – primäre Bewertung.
 
-### 10.4 Spezifische Hinweise für Polizei und Ermittlungsbehörden
+### 11.4 Spezifische Hinweise für Polizei und Ermittlungsbehörden
 
 - **Zielfragen:** Wer treibt die Eskalation tatsächlich voran? Liegt eine **asymmetrische Provokation (POI-1)** vor, bei der der vermeintlich Aggressive in Wirklichkeit der provozierte Verteidiger ist? Gibt es Hinweise auf **innere Infiltration (F9)**?
 - **Zeugenaussagen:** Das Raster hilft, widersprüchliche Aussagen zu strukturieren, indem es die **Informationsrichtung (PCI)** und die **Kopplungsverhältnisse (K_ij)** analysiert.
 - **Verdeckte Manipulation:** In Fällen von Stalking, Nachstellung, häuslicher Gewalt oder organisierter Kriminalität kann der POI-Zyklus sichtbar machen, wie ein Täter die Opferrolle übernimmt und die Vorgeschichte verschwinden lässt.
 - **Einschränkung:** Das Tool liefert **Ermittlungsrichtungen**, keine Beweise. Die Ergebnisse müssen mit klassischen Mitteln (Befragungen, Überwachung, forensische Auswertung) verifiziert werden.
+- **Weiterführende Fachliteratur:** Glasl (1980) – Konflikteskalation und Deeskalation; Lederach (1997) – Konfliktanalyse und Peacebuilding; Freyd (1997) – DARVO und Täter-Opfer-Dynamiken; Granovetter (1973) – Netzwerkanomalien.
 
-### 10.5 Spezifische Hinweise für Anwälte und Richter
+### 11.5 Spezifische Hinweise für Anwälte und Richter
 
 - **Zielfragen:** Liegt eine **Kriterienblockade (7.5)** vor, die den Mandanten gezielt in eine Bringschuld treibt? Nutzt die Gegenseite **Totschlagargumente** oder lenkt den PCI auf formale Nebenaspekte? Liegt eine **kontextfreie Definitionsfalle (F14)** vor, bei der dem Mandanten eine Frage mit strukturell doppeldeutigem Begriff gestellt wurde, deren Antwort anschließend im verfahrensexternen Kanal verwendet wird?
 - **Verfahrenstaktik:** Das Tool kann helfen, Verfahrenstaktiken der Gegenseite zu durchschauen (z. B. moralische Ausgrenzungsfalle F8, formale Überlagerung F6).
 - **Glaubwürdigkeitsanalyse:** Die RFT liefert eine strukturierte Hypothese über die Rollen im Resonanzfeld, die dann mit klassischen Beweismitteln (Chats, E-Mails, Zeugenaussagen) überprüft werden kann.
 - **Dokumentation:** Die RFT-Hypothese sollte als **Arbeitshypothese** in die Akte aufgenommen und durch empirische Belege gestützt werden; sie ersetzt keine juristische Subsumtion.
+- **Weiterführende Fachliteratur:** Walton (1989) – informelle Logik und Argumentationsanalyse; Toulmin (1958) – Beweisstruktur und juristische Argumentation; Shackel (2005) – Motte-and-Bailey-Taktik; Fairclough (1995) – kritische Diskursanalyse.
 
-### 10.6 Grenzen und ethische Leitplanken
+### 11.6 Grenzen und ethische Leitplanken
 
 - Die RFT ist **kein Beweismittel** und **kein Ersatz für Fachgutachten**.
 - Sie darf nicht verwendet werden, um **Verdachtsmomente** zu konstruieren oder Personen vorzuverurteilen.
