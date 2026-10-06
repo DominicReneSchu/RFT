@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 5 October 2026 | Version 2.21 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 6 October 2026 | Version 2.22 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a heuristic model for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -158,6 +158,7 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **POI-4** | Historical revision | The prehistory (provocation, own escalation steps) is systematically suppressed or reinterpreted; discourse focuses only on the current "threat". | PCI remains stable on substitute object; K_ij (A↔prehistory) → 0. |
 | **F12** | Somatic alarm confusion / Archaic reaction trap | After a psychological stressor (e.g. examination, confrontation, evaluation, internal performance pressure), B experiences a strong inner warning signal (racing heart, tension, urge for immediate action) despite the absence of any physical threat. B feels compelled to fight, flee, or justify immediately, and tends towards rash, often unconsidered actions. The trigger may be an external actor but need not be. | The evolutionarily ancient physical alarm system is misactivated by a psychological stressor. B is forced onto an alien frequency (alarm, urgency, obligation to respond); **β_B rises** sharply while the natural frequency (calm, composure) is lost. B's PCI jumps from the content to the alarm signal; coupling to the group or to the real structure is destabilised. An external actor A can deliberately trigger this mechanism and keep their own β low while gaining control over the timing of the interaction. |
 | **F13** | Anomalous resonator in high-pressure field | In a field with high structural pressure (strong attractor, high stakes, cyclical system dependency), a resonator with no visible $K_{ij}$ history attains high coupling to load-bearing power structures in a short time – though this would be extremely improbable under chance conditions. | Two structurally indistinguishable paths: (a) latent $K_{ij}$ (covert coupling), (b) field self-organisation (the attractor produces the figure). F13 flags investigative need, not proof. |
+| **F14** | Context-free definition trap | A question is posed without context, although the context structurally determines the answer. The term used carries two established meanings, making any answer structurally attackable. | Δφ between questioner and respondent drives towards π under simulated expert coherence; β of the respondent rises through doubly blocked burden of proof; evaluation occurs in a covert channel; group PCI is reinforced not through open discourse but through covert attribution. |
 
 ---
 
@@ -272,6 +273,22 @@ $$\text{F13} \Rightarrow \text{investigative need}, \quad \text{not} \Rightarrow
 
 F13 does not distinguish between covert coupling (a) and field self-organisation (b). It must not be used to turn a plausible structure into a historical fact. It is strongest when it appears in combination with documented traces (files, financial flows, witnesses) – not as a substitute for them.
 
+**F14 (Context-free definition trap)** is satisfied when:
+
+Actor A sends a question with maximum conceptual ambiguity under simulated expert clarity:
+
+$$\Delta\phi_{A,\text{question}} \to \pi \quad \text{at} \quad \mathrm{PCI}_{A,\text{expert clarity}} \to 0$$
+
+For all response options $a_i$ of B:
+
+$$P(\text{attack} \mid a_i) > 0 \quad \Rightarrow \quad \text{doubly blocked burden of proof:} \quad \beta_B \uparrow$$
+
+Group evaluation occurs in the covert channel:
+
+$$\mathrm{PCI}_{\text{group, B's incompetence}} \uparrow \quad \text{at} \quad \mathrm{PCI}_{\text{group, real expert structure}} \to 0$$
+
+The indicator is especially strong when B has no time or space to ask for context without appearing to lose face – and when the answer is subsequently used in another channel while the question was publicly framed as a simple request for clarification.
+
 ---
 
 #### 4.5.5 Diagnostic Questions for Application
@@ -316,6 +333,12 @@ F13 does not distinguish between covert coupling (a) and field self-organisation
 22. **Is F13 being used to establish an investigative direction – or to assert a conspiracy without citing empirical traces?**  
     → F13 misuse check (→ Section 9)
 
+23. **Is a question posed without context, although the context structurally determines the answer – and does it contain a term with two established meanings such that any answer is attackable?**  
+    → F14
+
+24. **Is the respondent's answer subsequently used against them in another channel, while the question was publicly framed as a simple request for clarification?**  
+    → F14
+
 ---
 
 #### 4.5.6 Delimitation and Limits
@@ -336,6 +359,10 @@ F13 is the most misuse-prone of the early indicators and must be applied with pa
 
 F13 is therefore to be used **exclusively as an investigative indicator**: it identifies a structural anomaly and justifies a systematic search for evidence. It does not replace that evidence. The boundary between *structural plausibility* and *case evidence* must be drawn more explicitly for F13 than for any other early indicator (→ Section 9).
 
+F14 applies only when several indicators appear simultaneously and a pattern is discernible – in particular the subsequent use of the answer in a covert channel. Individual context-free questions may have innocent explanations (genuine requests for clarification, lack of contextual knowledge). F14 is not proof of intent.
+
+The countermeasure for F14 is to actively request context and explicitly name both interpretive paths of the ambiguous term before answering. This dissolves the doubly blocked burden of proof and structurally interrupts the covert channel.
+
 ---
 
 #### 4.5.7 Scale Invariance
@@ -350,6 +377,14 @@ Examples of F12 at different levels:
 - **Individual (intrapersonal):** An examinee experiences such severe physical symptoms before an examination that clear thinking is no longer possible and a simple task cannot be completed.
 - **Group/team:** A member raises a topic that enrages another team member; the group experiences the emotional reaction, not the provocation.
 - **Institution/media:** An actor deliberately deploys trigger points to provoke overreactions in the opposing side, which are then exploited in media coverage.
+
+Examples of F14 at different levels:
+
+- **Dyad:** In a two-person conversation, a technical term is queried without any contextual framing. The respondent selects one of the two common interpretations; the answer is subsequently used against them in a separate conversation – as evidence of ignorance or bad intent.
+- **Group/team:** In a team meeting, a member is asked for their assessment of a concept defined differently across the team. Any answer can subsequently be read as evidence of insufficient competence or poor team orientation; the discussion occurs not openly but in side conversations.
+- **Institution:** An authority poses a written question to an applicant whose central term is used in two distinct legal interpretations. Regardless of the answer, the application can be formally rejected; the ambiguity of the term is not disclosed.
+- **Media:** In an interview, an expert is asked an apparently simple question containing a scientific term in both its everyday and its technical meaning. The answer is subsequently edited such that only one meaning remains visible, calling the expert's professional competence into question.
+- **Geopolitics:** A negotiating party poses a question to a delegation in which the key term carries diverging meanings across two different legal traditions. Regardless of the answer, the formulation is later used in other channels as support for the questioner's own legal position.
 
 ---
 
@@ -645,6 +680,23 @@ F13 (Anomalous resonator in high-pressure field) fills a gap in the early-indica
 Epistemic boundary: F13 cannot structurally distinguish between covert coupling (a) and field self-organisation (b). Both produce the same surface pattern. The indicator therefore flags investigative need, not truth (→ Section 9).
 
 ---
+
+### 7.13 Relationship of F14 to Existing Structural Patterns
+
+F14 (Context-free definition trap) addresses a gap not systematically covered by F1–F13 and POI-1 to POI-4: the deliberate exploitation of conceptual ambiguity combined with the withholding of context – so that the respondent's burden of proof is structurally blocked without this being visible in the open channel.
+
+- **F1 (External frequency shift):** F1 describes the introduction of a new, alien reference point into the discourse. F14 intervenes one step earlier: the term is not newly introduced but deliberately used without its determining context, activating two competing frequencies simultaneously without making this transparent.
+- **F2 (Asymmetric definitional power):** F2 describes who holds definitional power over central terms. F14 actively exploits this power asymmetry: actor A controls which of the two meanings functions as the reference in the covert channel, while B has no access to that channel.
+- **F4 (Apparent questions):** F4 describes questions that are not genuine information requests but rhetorical positionings. F14 is a sub-form: the question appears as a request for clarification but is constructed such that any answer offers an attack surface.
+- **F5 (Burden of proof without a path to fulfilment):** F14 generates a specific form of burden of proof: B is expected to answer a question for which context is missing, without requesting that context (which would risk a loss of face). The burden of proof is doubly blocked – substantively and socially.
+- **F6 (Formal overlay):** F6 describes the displacement of substantive discourse by formal requirements. F14 can complement F6 when the ambiguity of the term is framed as the questioner's legitimate need for clarification, while the actual intent is the attribution of incompetence.
+- **F12 (Somatic alarm confusion):** F12 and F14 can occur in combination when B is driven into acute inner pressure by the doubly blocked burden of proof and pushed into a hasty answer that can subsequently be used against them.
+- **POI-1 (Asymmetric provocation):** POI-1 describes covert disruptive signals that raise β in B. F14 operates similarly but on the linguistic-semantic level: the provocation lies not in an emotional gesture but in the structural impossibility of a defensible answer.
+- **7.5 (Criterion blockade):** 7.5 describes how a criterion is set such that it is structurally unfulfilable. F14 is a semantic variant: the criterion for a "correct" answer remains hidden because the meaning of the central term is not disclosed.
+
+Epistemic boundary: F14 applies only when context-freeness and term ambiguity occur simultaneously and the subsequent use in a covert channel is demonstrable or structurally plausible. Individual ambiguous questions without a discernible pattern are not sufficient (→ Section 9).
+
+---
 **Case:** A media campaign frames a minority as the main cause of an economic crisis.  
 **RFT reading:** PCI rises toward the target group, not toward the actual financial or power structure. That indicates scapegoat steering alongside a rise in system-wide $\beta$.
 
@@ -672,7 +724,7 @@ Epistemic boundary: F13 cannot structurally distinguish between covert coupling 
 
 ## 9. Epistemological Caveat
 
-This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F12 and structural pattern 7.11 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F13 and structural pattern 7.12 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. F13 is particularly prone to misuse: it can readily be converted into an unfalsifiability trap and marks investigative need exclusively, not proof.
+This instrument is a formal interpretive grid, not an established social science theory and not a proof machine. It generates structurally consistent hypotheses about how coupling, decoupling, and information steering may interact. Empirical testing, counter-hypotheses, and falsifiability remain mandatory in every concrete application. The new early indicators F7, F8, and POI-1 to POI-4 as well as structural patterns 7.6 and 7.7 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicators F9, F10, and F11 as well as structural patterns 7.8, 7.9, and 7.10 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F12 and structural pattern 7.11 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. The new early indicator F13 and structural pattern 7.12 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. F13 is particularly prone to misuse: it can readily be converted into an unfalsifiability trap and marks investigative need exclusively, not proof. The new early indicator F14 and structural pattern 7.13 are likewise heuristic interpretive frameworks without evidential force and require empirical verification. F14 is not proof of intent and applies only when context-freeness, conceptual ambiguity, and pattern formation occur simultaneously.
 
 ---
 
@@ -685,14 +737,14 @@ This section is addressed to **psychologists/therapists**, **police/investigativ
 ### 10.2 General Application Guidelines
 
 - Analysis always begins with the **field boundary** (who are the relevant resonators?) and the **pacemakers** (which rhythms structure the field?).
-- Early indicators **F1–F13** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
-- **Structural patterns 7.1–7.12** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership, somatic alarm confusion, anomalous resonator in high-pressure field).
+- Early indicators **F1–F14** and **POI-1 to POI-4** serve as **screening instruments**: they justify a deeper structural examination but are not evidence.
+- **Structural patterns 7.1–7.13** help to classify recurring dynamics (e.g. AiR, scapegoat, POI cycle, inner infiltration, resonance monopoly, resonance followership, somatic alarm confusion, anomalous resonator in high-pressure field, context-free definition trap).
 - **Projection** (Section 5) can be used to sketch probable escalation trajectories; **retrodiction** (Section 6) helps infer earlier starting states from present traces.
 - Every RFT analysis must be **documented**: which indicators were observed, which quantities estimated, which hypotheses formed? Only **iterative application** (repeated observation over time and across multiple sources) increases plausibility.
 
 ### 10.3 Specific Guidance for Psychologists and Therapists
 
-- **Key questions:** Is a kindness trap (F7) present? Is the patient currently going through a POI cycle? Are they being morally excluded (F8) or subjected to inner infiltration (F9)?
+- **Key questions:** Is a kindness trap (F7) present? Is the patient currently going through a POI cycle? Are they being morally excluded (F8) or subjected to inner infiltration (F9)? Is a context-free definition trap (F14) present in which the affected party has been placed under a doubly blocked obligation to explain?
 - **Therapeutic dialogue:** The diagnostic questions in 4.5.5 can serve as a guide for reconstructing the chronology of toxic relationships and making the mechanism visible to the patient.
 - **Differentiation:** The distinction between subjective experience (β, sense of threat) and real structure (K_ij, actual couplings) helps identify both over- and underestimation of threats.
 - **Caution:** F7 should be applied with particular restraint, since friendliness in therapeutic contexts is often authentic. Only the **asymmetry of later use** (material is turned against the person) makes the trap recognisable.
@@ -706,7 +758,7 @@ This section is addressed to **psychologists/therapists**, **police/investigativ
 
 ### 10.5 Specific Guidance for Lawyers and Judges
 
-- **Key questions:** Is there a **criterion blockade (7.5)** that deliberately places the client under an impossible burden of proof? Is the opposing side using **conversation-stoppers** or redirecting PCI toward formal side-issues?
+- **Key questions:** Is there a **criterion blockade (7.5)** that deliberately places the client under an impossible burden of proof? Is the opposing side using **conversation-stoppers** or redirecting PCI toward formal side-issues? Is there a **context-free definition trap (F14)** in which the client was asked a question with a structurally ambiguous term whose answer is subsequently used in channels outside the proceedings?
 - **Procedural tactics:** The tool can help to see through the opposing side's procedural tactics (e.g. moral exclusion trap F8, formal overlay F6).
 - **Credibility analysis:** The RFT provides a structured hypothesis about roles in the resonance field, which can then be tested against classical evidence (chats, emails, witness statements).
 - **Documentation:** The RFT hypothesis should be recorded in the case file as a **working hypothesis** and supported by empirical evidence; it does not replace legal subsumption.

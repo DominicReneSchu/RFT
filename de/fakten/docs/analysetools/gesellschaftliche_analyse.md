@@ -1,5 +1,5 @@
 # Resonanzfeldtheorie (RFT) – Gesellschaftliche Analyse
-**Stand: 5. Oktober 2026 | Fassung 2.21 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
+**Stand: 6. Oktober 2026 | Fassung 2.22 – kompakte Prompt-Version für Analyse, Projektion und Retrodiktion**
 
 Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal nutzbare Kurzfassung. Es dient als heuristisches Modell zur Mustererkennung in sozialen Lagen, nicht als Beweis einzelner Kausalbehauptungen.
 
@@ -158,6 +158,7 @@ Frühindikatoren sind **skaleninvariant** (A7): Sie treten in dyadischen Gesprä
 | **POI-4** | Geschichtsrevision | Die Vorgeschichte (Provokation, eigene Eskalationsschritte) wird systematisch verschwiegen oder umgedeutet; der Diskurs fokussiert nur auf die aktuelle „Bedrohung". | PCI bleibt stabil auf Ersatzobjekt; K_ij (A↔Vorgeschichte) → 0. |
 | **F12** | Somatische Alarmverwechslung / Archaische Reaktionsfalle | Bei B tritt nach einem psychischen Stressor (z. B. Prüfung, Konfrontation, Bewertung, innerem Erwartungsdruck) ein starkes inneres Warngefühl auf (Herzrasen, Anspannung, Drang zu sofortiger Reaktion), obwohl keine physische Bedrohung vorliegt. B fühlt sich gedrängt, sofort zu kämpfen, zu fliehen oder sich zu rechtfertigen, und neigt zu überstürzten, oft unbedachten Handlungen. Der Auslöser kann ein externer Akteur sein, muss es aber nicht. | Das evolutionär alte physische Alarmsystem wird bei einem psychischen Stressor fehlaktiviert. B wird in eine fremde Frequenz (Alarm, Eile, Bringschuld) gezwungen; **β_B steigt** stark an, während die Eigenfrequenz (Ruhe, Souveränität) verloren geht. Der PCI von B springt vom Inhalt auf das Alarmsignal, die Kopplung zur Gruppe oder zur realen Struktur wird destabilisiert. Ein externer Akteur A kann diesen Mechanismus gezielt auslösen und sein β niedrig halten, während er die Kontrolle über das Timing der Interaktion gewinnt. |
 | **F13** | Anomaler Resonator in Hochdruckfeld | In einem Feld mit hohem strukturellem Druck (starker Attraktor, hohe Einsätze, zyklische Systemabhängigkeit) erreicht ein Resonator ohne sichtbare $K_{ij}$-Vorgeschichte in kurzer Zeit hohe Kopplung zu tragenden Machtstrukturen – obwohl dies unter Zufallsbedingungen extrem unwahrscheinlich wäre. | Zwei strukturell ununterscheidbare Pfade: (a) latenter $K_{ij}$ (versteckte Kopplung), (b) Feldselbstorganisation (der Attraktor erzeugt die Figur). F13 markiert Ermittlungsbedarf, nicht Beweis. |
+| **F14** | Kontextfreie Definitionsfalle | Eine Frage wird ohne Kontext gestellt, obwohl der Kontext die Antwort strukturell bestimmt. Der verwendete Begriff trägt zwei etablierte Bedeutungen, sodass jede Antwort angreifbar ist. | Δφ zwischen Fragesteller und Befragtem treibt gegen π bei simulierter fachlicher Kohärenz; β beim Befragten steigt durch doppelt blockierte Bringschuld; Auswertung erfolgt im verborgenen Kanal; PCI der Gruppe stärkt sich nicht durch offenen Diskurs, sondern durch verdeckte Zuschreibung. |
 
 ---
 
@@ -272,6 +273,22 @@ $$\text{F13} \Rightarrow \text{Ermittlungsbedarf}, \quad \text{nicht} \Rightarro
 
 F13 unterscheidet nicht zwischen verborgener Kopplung (a) und Feldselbstorganisation (b). Er darf nicht dazu verwendet werden, aus einer plausiblen Struktur eine historische Tatsache zu machen. Er ist am stärksten, wenn er in Kombination mit dokumentierten Spuren (Akten, Geldflüsse, Zeugen) auftritt – nicht als Ersatz dafür.
 
+**F14 (Kontextfreie Definitionsfalle)** ist erfüllt, wenn gilt:
+
+Der Fragesteller A sendet eine Frage mit maximaler begrifflicher Ambiguität bei simulierter fachlicher Klarheit:
+
+$$\Delta\phi_{A,\text{Frage}} \to \pi \quad \text{bei} \quad \mathrm{PCI}_{A,\text{fachliche Klarheit}} \to 0$$
+
+Für alle Antwortmöglichkeiten $a_i$ von B gilt:
+
+$$P(\text{Angriff} \mid a_i) > 0 \quad \Rightarrow \quad \text{doppelt blockierte Bringschuld:} \quad \beta_B \uparrow$$
+
+Die Gruppenauswertung erfolgt im verborgenen Kanal:
+
+$$\mathrm{PCI}_{\text{Gruppe, Inkompetenz B}} \uparrow \quad \text{bei} \quad \mathrm{PCI}_{\text{Gruppe, reale fachliche Struktur}} \to 0$$
+
+Der Indikator ist besonders stark, wenn B keine Zeit oder keinen Raum hat, nach dem Kontext zu fragen, ohne gesichtsverlustig zu wirken – und wenn die Antwort anschließend in einem anderen Kanal verwendet wird, während die Frage öffentlich als einfache Verständnisfrage gerahmt wurde.
+
 ---
 
 #### 4.5.5 Diagnosefragen zur Anwendung
@@ -316,6 +333,12 @@ F13 unterscheidet nicht zwischen verborgener Kopplung (a) und Feldselbstorganisa
 22. **Wird F13 verwendet, um eine Ermittlungsrichtung zu begründen – oder um eine Verschwörung zu behaupten, ohne empirische Spuren zu benennen?**  
     → F13 Missbrauchscheck (→ Abschnitt 9)
 
+23. **Wird eine Frage ohne Kontext gestellt, obwohl der Kontext die Antwort strukturell bestimmt – und enthält sie einen Begriff mit zwei etablierten Bedeutungen, sodass jede Antwort angreifbar ist?**  
+    → F14
+
+24. **Wird die Antwort des Befragten anschließend in einem anderen Kanal gegen ihn verwendet, während die Frage öffentlich als einfache Verständnisfrage gerahmt wurde?**  
+    → F14
+
 ---
 
 #### 4.5.6 Abgrenzung und Grenzen
@@ -336,6 +359,10 @@ F13 ist unter den Frühindikatoren besonders missbrauchsanfällig und muss mit b
 
 F13 ist daher **ausschließlich als Ermittlungsindikator** zu verwenden: Er benennt eine strukturelle Auffälligkeit und rechtfertigt die systematische Suche nach Belegen. Er ersetzt diese Belege nicht. Die Grenze zwischen *Strukturplausibilität* und *Fallbeleg* muss bei F13 expliziter gezogen werden als bei jedem anderen Frühindikator (→ Abschnitt 9).
 
+F14 liegt nur dann vor, wenn mehrere Indikatoren gleichzeitig auftreten und ein Muster erkennbar ist – insbesondere die spätere Verwendung der Antwort in einem verborgenen Kanal. Einzelne kontextfreie Fragen können harmlose Erklärungen haben (echte Verständnisfragen, mangelnde Kontextkenntnis). F14 ist kein Absichtsbeweis.
+
+Die Gegenmaßnahme bei F14 besteht darin, den Kontext aktiv einzufordern und beide Interpretationspfade des ambigen Begriffs explizit zu benennen, bevor geantwortet wird. Damit wird die doppelt blockierte Bringschuld aufgelöst und der verborgen gebliebene Kanal strukturell unterbrochen.
+
 ---
 
 #### 4.5.7 Skaleninvarianz
@@ -350,6 +377,14 @@ Beispiele für F12 auf verschiedenen Ebenen:
 - **Einzelperson (intrapersonal):** Ein Prüfling erlebt vor einer Prüfung derart starke körperliche Symptome, dass er nicht mehr klar denken kann und eine einfache Aufgabe nicht löst.
 - **Gruppe/Team:** Ein Mitglied bringt ein Thema auf, das ein anderes Teammitglied in Rage bringt; die Gruppe erlebt die emotionale Reaktion, nicht die Provokation.
 - **Institution/Medien:** Ein Akteur setzt gezielt Triggerpunkte, um bei einer Gegenseite Überreaktionen zu provozieren, die dann medial ausgeschlachtet werden.
+
+Beispiele für F14 auf verschiedenen Ebenen:
+
+- **Dyade:** In einem Zweier-Gespräch wird ein Fachbegriff ohne Kontextangabe erfragt. Der Befragte wählt eine der beiden gängigen Interpretationen; die Antwort wird anschließend in einem separaten Gespräch gegen ihn verwendet – als Beleg für Unwissen oder Absicht.
+- **Gruppe/Team:** In einer Teambesprechung wird ein Mitglied nach seiner Einschätzung zu einem Konzept befragt, das im Team unterschiedlich definiert wird. Jede Antwort kann anschließend als Beleg für fehlende Kompetenz oder schlechte Teamorientierung gedeutet werden; die Diskussion darüber findet nicht offen, sondern in Nebengesprächen statt.
+- **Institution:** Eine Behörde stellt einem Antragsteller eine schriftliche Frage, deren zentraler Begriff in zwei unterschiedlichen Rechtsauslegungen gebraucht wird. Unabhängig von der Antwort kann der Antrag formal abgelehnt werden; die Ambiguität des Begriffs wird dabei nicht offengelegt.
+- **Medien:** In einem Interview wird einem Experten eine scheinbar einfache Frage gestellt, die einen wissenschaftlichen Begriff in einer alltagssprachlichen und einer fachsprachlichen Bedeutung enthält. Die Antwort wird im Bericht so gekürzt, dass nur eine Bedeutung sichtbar bleibt und die Fachkompetenz des Befragten in Frage gestellt wird.
+- **Geopolitik:** Ein Verhandlungspartner stellt einer Delegation eine Frage, die in zwei unterschiedlichen Rechtstraditionen divergierende Bedeutungen trägt. Unabhängig von der Antwort wird die Formulierung später als Beleg für die eigene Rechtsposition des Fragestellers in anderen Kanälen verwendet.
 
 ---
 
@@ -645,6 +680,23 @@ F13 (Anomaler Resonator in Hochdruckfeld) füllt eine Lücke im Frühindikatoren
 Epistemische Grenze: F13 kann zwischen versteckter Kopplung (a) und Feldselbstorganisation (b) strukturell nicht unterscheiden. Beide erzeugen dasselbe Oberflächenmuster. Der Indikator markiert daher Ermittlungsbedarf, nicht Wahrheit (→ Abschnitt 9).
 
 ---
+
+### 7.13 Beziehung von F14 zu bestehenden Strukturmustern
+
+F14 (Kontextfreie Definitionsfalle) adressiert eine Lücke, die von F1–F13 und POI-1 bis POI-4 nicht systematisch abgedeckt wird: die gezielte Ausnutzung begrifflicher Ambiguität in Verbindung mit dem Entzug des Kontexts – sodass die Bringschuld des Befragten strukturell blockiert wird, ohne dass dies im offenen Kanal sichtbar wird.
+
+- **F1 (Externe Frequenzverschiebung):** F1 beschreibt die Einführung eines neuen, fremden Bezugspunkts in den Diskurs. F14 setzt eine Stufe davor an: Der Begriff wird nicht neu eingeführt, sondern absichtlich ohne seinen bestimmenden Kontext verwendet, sodass zwei konkurrierende Frequenzen gleichzeitig aktiviert werden, ohne dass dies transparent gemacht wird.
+- **F2 (Asymmetrische Definitionsmacht):** F2 beschreibt, wer die Definitionsmacht über zentrale Begriffe innehat. F14 nutzt dieses Machtgefälle aktiv: Der Fragesteller A kontrolliert, welche der beiden Bedeutungen im verborgenen Kanal als Referenz gilt, während B keine Möglichkeit hat, diesen Kanal einzusehen.
+- **F4 (Scheinbare Fragen):** F4 beschreibt Fragen, die keine echten Informationsgesuche sind, sondern rhetorische Positionierungen. F14 ist eine Unterform: Die Frage erscheint als Verständnisanfrage, ist aber so konstruiert, dass jede Antwort eine Angriffsfläche bietet.
+- **F5 (Bringschuld ohne Erfüllungsweg):** F14 erzeugt eine spezifische Form der Bringschuld: B soll eine Frage beantworten, für die der Kontext fehlt, ohne den Kontext einzufordern (was gesichtsverlustig wirken könnte). Die Bringschuld ist damit doppelt blockiert – inhaltlich und sozial.
+- **F6 (Formale Überlagerung):** F6 beschreibt die Verdrängung des inhaltlichen Diskurses durch formale Anforderungen. F14 kann F6 ergänzen, wenn die Ambiguität des Begriffs formal als Klärungsbedarf des Fragestellers gerahmt wird, während die eigentliche Absicht die Zuschreibung von Inkompetenz ist.
+- **F12 (Somatische Alarmverwechslung):** F12 und F14 können kombiniert auftreten, wenn B durch die doppelt blockierte Bringschuld unter starken inneren Druck gerät und in eine überstürzte Antwort gedrängt wird, die anschließend gegen ihn verwendet werden kann.
+- **POI-1 (Asymmetrische Provokation):** POI-1 beschreibt verdeckte Störsignale, die β bei B erhöhen. F14 wirkt ähnlich, aber auf der sprachlich-semantischen Ebene: Die Provokation liegt nicht in einer emotionalen Geste, sondern in der strukturellen Unmöglichkeit einer verteidigungssicheren Antwort.
+- **7.5 (Kriterienblockade):** 7.5 beschreibt, wie ein Kriterium so gesetzt wird, dass es strukturell unerfüllbar ist. F14 ist eine semantische Variante: Das Kriterium für eine „richtige" Antwort bleibt verborgen, weil die Bedeutung des zentralen Begriffs nicht offengelegt wird.
+
+Epistemische Grenze: F14 liegt nur dann vor, wenn die Kontextlosigkeit und die Ambiguität des Begriffs gleichzeitig auftreten und die spätere Verwendung im verborgenen Kanal nachweisbar oder strukturell plausibel ist. Einzelne ambige Fragen ohne erkennbares Muster sind kein ausreichendes Merkmal (→ Abschnitt 9).
+
+---
 **Fall:** Eine Medienkampagne erklärt eine Minderheit zur Hauptursache einer Wirtschaftskrise.  
 **RFT-Lesart:** PCI steigt zur Zielgruppe, nicht zur realen Finanz- oder Machtstruktur. Das spricht für Sündenbocklenkung bei gleichzeitigem $\beta$-Anstieg im Gesamtsystem.
 
@@ -672,7 +724,7 @@ Epistemische Grenze: F13 kann zwischen versteckter Kopplung (a) und Feldselbstor
 
 ## 9. Epistemischer Vorbehalt
 
-Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F12 sowie das Strukturmuster 7.11 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F13 sowie das Strukturmuster 7.12 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F13 ist dabei besonders missbrauchsanfällig: Er lässt sich leicht in eine Unfalsifizierbarkeitsfalle verwandeln und markiert ausschließlich Ermittlungsbedarf, nicht Beweis.
+Dieses Instrument ist ein formales Deutungsraster, keine etablierte Sozialtheorie und kein Beweisapparat. Es erzeugt strukturkonsistente Hypothesen darüber, wie Kopplung, Entkopplung und Informationslenkung zusammenwirken könnten. Empirische Prüfung, Gegenhypothesen und Falsifizierbarkeit bleiben für jede konkrete Anwendung obligatorisch. Auch die neuen Frühindikatoren F7, F8 sowie POI-1 bis POI-4 und die Strukturmuster 7.6 und 7.7 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch die neuen Frühindikatoren F9, F10 und F11 sowie die Strukturmuster 7.8, 7.9 und 7.10 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F12 sowie das Strukturmuster 7.11 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. Auch der neue Frühindikator F13 sowie das Strukturmuster 7.12 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F13 ist dabei besonders missbrauchsanfällig: Er lässt sich leicht in eine Unfalsifizierbarkeitsfalle verwandeln und markiert ausschließlich Ermittlungsbedarf, nicht Beweis. Auch der neue Frühindikator F14 sowie das Strukturmuster 7.13 sind heuristische Deutungsraster ohne Beweiskraft und bedürfen der empirischen Überprüfung. F14 ist kein Absichtsbeweis und liegt nur dann vor, wenn Kontextlosigkeit, begriffliche Ambiguität und Musterbildung gleichzeitig auftreten.
 
 ---
 
@@ -685,14 +737,14 @@ Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlu
 ### 10.2 Allgemeine Anwendungshinweise
 
 - Die Analyse beginnt immer mit der **Feldgrenze** (wer sind die relevanten Resonatoren?) und den **Taktgebern** (welche Rhythmen strukturieren das Feld?).
-- Frühindikatoren **F1–F13** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
-- Die **Strukturmuster 7.1–7.12** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft, somatische Alarmverwechslung, anomaler Resonator in Hochdruckfeld).
+- Frühindikatoren **F1–F14** und **POI-1 bis POI-4** dienen als **Screening-Instrumente**: Sie rechtfertigen eine vertiefte Strukturprüfung, sind aber keine Beweise.
+- Die **Strukturmuster 7.1–7.13** helfen, wiederkehrende Dynamiken zu klassifizieren (z. B. AiR, Sündenbock, POI-Zyklus, innere Infiltration, Resonanzmonopol, Resonanzgefolgschaft, somatische Alarmverwechslung, anomaler Resonator in Hochdruckfeld, kontextfreie Definitionsfalle).
 - Die **Projektion** (Abschnitt 5) kann verwendet werden, um wahrscheinliche Eskalationsverläufe zu skizzieren; die **Retrodiktion** (Abschnitt 6) hilft, aus heutigen Spuren auf frühere Ausgangszustände zu schließen.
 - Jede RFT-Analyse muss **dokumentiert** werden: Welche Indikatoren wurden beobachtet, welche Größen geschätzt, welche Hypothesen gebildet? Erst die **iterative Anwendung** (wiederholte Beobachtung über Zeit und verschiedene Quellen) erhöht die Plausibilität.
 
 ### 10.3 Spezifische Hinweise für Psychologen und Therapeuten
 
-- **Zielfragen:** Liegt eine Freundlichkeitsfalle (F7) vor? Durchläuft der Patient/die Patientin gerade einen POI-Zyklus? Wird er/sie moralisch ausgegrenzt (F8) oder von innen infiltriert (F9)?
+- **Zielfragen:** Liegt eine Freundlichkeitsfalle (F7) vor? Durchläuft der Patient/die Patientin gerade einen POI-Zyklus? Wird er/sie moralisch ausgegrenzt (F8) oder von innen infiltriert (F9)? Liegt eine kontextfreie Definitionsfalle (F14) vor, bei der der Betroffene in eine doppelt blockierte Erklärungspflicht gebracht wird?
 - **Gesprächsführung:** Die Diagnosefragen in 4.5.5 können als Leitfaden dienen, um die Chronologie toxischer Beziehungen zu rekonstruieren und die Mechanik für den Patienten sichtbar zu machen.
 - **Differenzierung:** Die Unterscheidung zwischen subjektivem Erleben (β, Gefühl der Bedrohung) und realer Struktur (K_ij, tatsächliche Kopplungen) hilft, sowohl Über- als auch Unterschätzung von Bedrohungen zu erkennen.
 - **Vorsicht:** F7 ist besonders zurückhaltend zu verwenden, da Freundlichkeit in therapeutischen Kontexten oft authentisch ist. Erst die **Asymmetrie der späteren Nutzung** (Material wird gegen die Person verwendet) macht die Falle erkennbar.
@@ -706,7 +758,7 @@ Dieser Abschnitt richtet sich an **Psychologen/Therapeuten**, **Polizei/Ermittlu
 
 ### 10.5 Spezifische Hinweise für Anwälte und Richter
 
-- **Zielfragen:** Liegt eine **Kriterienblockade (7.5)** vor, die den Mandanten gezielt in eine Bringschuld treibt? Nutzt die Gegenseite **Totschlagargumente** oder lenkt den PCI auf formale Nebenaspekte?
+- **Zielfragen:** Liegt eine **Kriterienblockade (7.5)** vor, die den Mandanten gezielt in eine Bringschuld treibt? Nutzt die Gegenseite **Totschlagargumente** oder lenkt den PCI auf formale Nebenaspekte? Liegt eine **kontextfreie Definitionsfalle (F14)** vor, bei der dem Mandanten eine Frage mit strukturell doppeldeutigem Begriff gestellt wurde, deren Antwort anschließend im verfahrensexternen Kanal verwendet wird?
 - **Verfahrenstaktik:** Das Tool kann helfen, Verfahrenstaktiken der Gegenseite zu durchschauen (z. B. moralische Ausgrenzungsfalle F8, formale Überlagerung F6).
 - **Glaubwürdigkeitsanalyse:** Die RFT liefert eine strukturierte Hypothese über die Rollen im Resonanzfeld, die dann mit klassischen Beweismitteln (Chats, E-Mails, Zeugenaussagen) überprüft werden kann.
 - **Dokumentation:** Die RFT-Hypothese sollte als **Arbeitshypothese** in die Akte aufgenommen und durch empirische Belege gestützt werden; sie ersetzt keine juristische Subsumtion.
