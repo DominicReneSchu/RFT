@@ -7,6 +7,22 @@ Dieses Dokument verdichtet das gesellschaftliche RFT-Instrument auf eine formal 
 
 ---
 
+## Was die RFT hinzufügt – und warum sie trotz etablierter Vorläufer eigenständig ist
+
+Die Phänomene, die die RFT beschreibt, sind in der Literatur bekannt. Glasl beschreibt Konfliktstufen in Organisationen, Girard den Sündenbockmechanismus in archaischen Gesellschaften, Freyd DARVO in dyadischen Missbrauchsbeziehungen, Cialdini Compliance-Mechanismen, Luhmann und Foucault Systemstrukturen. Das Literaturverzeichnis belegt diese Konvergenz. Die Frage stellt sich damit zwingend: Was fügt die RFT hinzu?
+
+**Skaleninvarianz (A7):** Glasl beschreibt Eskalationsstufen in Organisationskonflikten. Girard analysiert den Sündenbock in archaischen Gesellschaften. Freyd beschreibt DARVO in dyadischen Missbrauchsbeziehungen. Keiner dieser Autoren beansprucht dasselbe formale Muster auf *allen* Ebenen gleichzeitig und mit denselben Variablen. A7 tut genau das. Konkretes Vergleichsbeispiel: Glasls Stufe 7 (Begrenzte Vernichtungsschläge) entspricht formal POI-3 – gleiche Δφ-Dynamik (Phasenkohärenz kollabiert), gleicher PCI-Sprung auf Legitimation von Härte, andere Skala (Organisation vs. Geopolitik). Die formale Struktur ist identisch; nur der Kontext wechselt. Das ist keine Analogie, sondern Skaleninvarianz.
+
+**Einheitliche Formelsprache:** Sündenbock (Girard), Kriterienblockade (Walton), DARVO (Freyd), Bestätigungsfehler (Nyhan/Bail) – jede Disziplin arbeitet mit eigener Terminologie ohne gemeinsame formale Schnittstelle. ε, Δφ, PCI und K_ij schaffen diese Schnittstelle erstmals. Konkretes Beispiel: Glasls Konfliktstufe 5 (Gesichtsverlust) lässt sich exakt als Δφ → π bei K_ij > 0 und PCI_Ersatzobjekt ↑ beschreiben – eine Übersetzung, die disziplinübergreifenden Vergleich und Kalibrierung erst ermöglicht.
+
+**Frühindikatoren (F1–F14, POI-1–POI-4):** Die Fachliteratur beschreibt Phänomene retrospektiv oder unter kontrollierten Laborbedingungen. F1–F14 sind auf zeitnahe Erkennung *im laufenden Feld* ausgelegt – bevor die Strukturdiagnose abgeschlossen ist. Der entscheidende Unterschied: Cialdini beschreibt *warum* Reziprozität wirkt. F7 beschreibt *woran man erkennt*, dass sie gerade instrumentalisiert wird – bevor der Schaden eingetreten ist. Das ist kein theoretischer Mehrwert, sondern ein operationaler: Screening vor der Diagnose, nicht nach ihr.
+
+**Iterativer Analysezyklus:** Luhmann, Foucault und Bourdieu sind Theoriegebäude mit hoher Erklärungskraft, aber ohne Handwerkzeugcharakter. Der RFT-Zyklus Analyse → Projektion → Retrodiktion ist ein geschlossenes, rückgekoppeltes Monitoring-Instrument: Jede Analyse aktualisiert PCI und K_ij; jede Projektion wird durch Beobachtung bei t₁ überprüft; jede Retrodiktion schließt Lücken im Ausgangszustand. Methodisch vergleichbar mit wiederholten Messverfahren in der klinischen Psychologie oder mit Szenarioplanung im strategischen Management – aber auf soziale Feldanalyse übertragen und formal geschlossen.
+
+*Die RFT ist kein Ersatz für Glasl, Freyd oder Luhmann – sie ist ein Übersetzungsrahmen, der ihre Ergebnisse auf eine gemeinsame formale Skala bringt und daraus ein iterativ anwendbares Screening-Werkzeug macht. Der Eigenleistungsanspruch liegt nicht in der Entdeckung der Phänomene, sondern in ihrer systematischen Zusammenführung, Formalisierung und Skaleninvarianz.*
+
+---
+
 ## 1. Zeitmodi des Instruments
 
 | Modus | Zeitbezug | Leitfrage | Primäre Größen | Ergebnis |

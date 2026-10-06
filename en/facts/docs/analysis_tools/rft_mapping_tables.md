@@ -77,3 +77,13 @@
 | Early-Indicator Screening | Early warning; risk indication; signal detection | Kahneman (2011); Bazerman & Watkins (2004) | F1–F14, POI-1–4 as an operationalized screening set |
 | Cross-Scale Application | Micro-macro link; multilevel analysis | Coleman (1990); Alexander et al. (1987) | A7 invariance as a formal justification for scale transfer |
 
+
+## Table 5: Contribution Matrix – What RFT Adds Beyond Its Sources
+
+| Contribution | Description | Why the sources don't cover this |
+|:--|:--|:--|
+| **Scale Invariance (A7)** | Formally identical pattern structure across all levels (dyad → institution → media discourse → geopolitics) | Glasl: organizations only. Girard: archaic societies. Freyd: dyadic abuse. No author claims cross-scale formal identity. |
+| **Unified Formal Language** | ε, Δφ, PCI, K_ij as shared notation across rhetoric, social psychology, systems theory, conflict research | Each discipline has its own terminology with no shared formal interface. Cross-disciplinary comparison impossible. |
+| **Early Indicators (F1–F14, POI-1–POI-4)** | Near-real-time detection before full structural diagnosis, as observable screening signals in live interaction | Literature describes phenomena retrospectively or in lab settings. No operationalized early-warning system for ongoing interaction. |
+| **Iterative Analysis Cycle** | Analysis → Projection → Retrodiction as a closed, repeatable tool with feedback loop | Theoretical frameworks (Luhmann, Foucault, Bourdieu) are not practical tools. No iterative monitoring equivalent for social fields. |
+| **Structural Pattern Integration** | 12 structural patterns (7.1–7.12) as an integrated typological system with shared variables | Individual patterns described in literature, but not as an integrated system with shared variables and cross-references. |

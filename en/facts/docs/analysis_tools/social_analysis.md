@@ -7,6 +7,22 @@ This document compresses the social RFT instrument into a formally usable short 
 
 ---
 
+## What RFT adds – and why it is independent despite established predecessors
+
+The phenomena that RFT describes are well-known in the literature. Glasl describes conflict escalation stages in organisations, Girard the scapegoat mechanism in archaic societies, Freyd DARVO in dyadic abuse relationships, Cialdini compliance mechanisms, and Luhmann and Foucault structural dynamics of social systems. The bibliography documents this convergence. The question therefore arises directly: what does RFT add?
+
+**Scale Invariance (A7):** Glasl describes escalation stages in organisational conflicts. Girard analyses the scapegoat in archaic societies. Freyd describes DARVO in dyadic abuse. None of these authors claim the same formal pattern across *all* levels simultaneously and with the same variables. A7 does exactly that. Concrete example: Glasl's Stage 7 (Limited Destructive Blows) corresponds formally to POI-3 – the same Δφ dynamics (phase coherence collapses), the same PCI jump toward legitimation of harshness, but a different scale (organisation vs. geopolitics). The formal structure is identical; only the context changes. This is not analogy; it is scale invariance.
+
+**Unified Formal Language:** Scapegoat (Girard), criteria blockade (Walton), DARVO (Freyd), confirmation bias (Nyhan/Bail) – each discipline operates with its own terminology and no shared formal interface. ε, Δφ, PCI, and K_ij create this interface for the first time. Concrete example: Glasl's conflict Stage 5 (Loss of Face) can be described precisely as Δφ → π with K_ij > 0 and PCI_substitute_object ↑ – a translation that makes cross-disciplinary comparison and calibration possible.
+
+**Early Indicators (F1–F14, POI-1–POI-4):** The scholarly literature describes phenomena retrospectively or under controlled laboratory conditions. F1–F14 are designed for near-real-time detection *in live interaction* – before structural diagnosis is complete. The decisive difference: Cialdini describes *why* reciprocity works. F7 describes *how to recognise* that it is being instrumentalised – before the harm has occurred. This is not a theoretical advantage but an operational one: screening before diagnosis, not after.
+
+**Iterative Analysis Cycle:** Luhmann, Foucault, and Bourdieu are theoretical frameworks with high explanatory power but without the character of a practical tool. The RFT cycle Analysis → Projection → Retrodiction is a closed, feedback-coupled monitoring instrument: each analysis updates PCI and K_ij; each projection is checked against observation at t₁; each retrodiction closes gaps in the initial state. Methodologically comparable to repeated measurement procedures in clinical psychology or scenario planning in strategic management – but transferred to social field analysis and formally closed.
+
+*RFT is not a replacement for Glasl, Freyd, or Luhmann – it is a translation framework that brings their findings onto a shared formal scale and turns them into an iteratively applicable screening tool. The claim to originality lies not in discovering the phenomena, but in systematically integrating, formalising, and applying scale invariance to them.*
+
+---
+
 ## 1. Time Modes of the Instrument
 
 | Mode | Time frame | Guiding question | Primary quantities | Output |

@@ -77,3 +77,13 @@
 | Frühindikatoren-Screening | Früherkennung; Risikoindikation; Signalentdeckung | Kahneman (2011); Bazerman & Watkins (2004) | F1–F14, POI-1–4 als operationalisiertes Screening-Set |
 | Skalenübergreifende Anwendung | Mikro-Makro-Link; Mehrebenenanalyse | Coleman (1990); Alexander et al. (1987) | A7-Invarianz als formale Begründung der Skalenübertragung |
 
+
+## Tabelle 5: Eigenleistungs-Matrix
+
+| Leistung | Beschreibung | Warum die Quellen das nicht abdecken |
+|:--|:--|:--|
+| **Skaleninvarianz (A7)** | Formal identische Musterstruktur auf allen Ebenen (Dyade → Institution → Mediendiskurs → Geopolitik) | Glasl: nur Organisationen. Girard: archaische Gesellschaften. Freyd: dyadische Beziehungen. Kein Autor beansprucht skalenübergreifende formale Identität. |
+| **Einheitliche Formelsprache** | ε, Δφ, PCI, K_ij als gemeinsame Notation für Phänomene aus Rhetorik, Sozialpsychologie, Systemtheorie, Konfliktforschung | Jede Disziplin hat eigene Terminologie ohne gemeinsame formale Schnittstelle. Kein disziplinübergreifender Vergleich möglich. |
+| **Frühindikatoren (F1–F14, POI-1–POI-4)** | Zeitnahe Erkennung vor vollständiger Diagnose als Screening-Signale im laufenden Feld | Fachliteratur beschreibt retrospektiv oder im Labor. Kein operationalisiertes Frühwarnsystem für laufende Interaktion. |
+| **Iterativer Analysezyklus** | Analyse → Projektion → Retrodiktion als geschlossenes, wiederholbares Werkzeug mit Rückkopplungsschleife | Theoriegebäude (Luhmann, Foucault, Bourdieu) sind keine Handwerkzeuge. Kein iteratives Monitoring-Äquivalent für soziale Felder. |
+| **Strukturmuster-Integration** | 12 Strukturmuster (7.1–7.12) als integriertes Typologiesystem mit gemeinsamen Variablen | Einzelne Muster in der Literatur beschrieben, aber nicht als aufeinander bezogenes System mit gemeinsamen Variablen und Querverweisen. |
