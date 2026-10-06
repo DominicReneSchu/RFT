@@ -1,5 +1,5 @@
 # Resonance Field Theory (RFT) – Social Analysis
-**As of: 6 October 2026 | Version 2.23 – compact prompt-ready edition for analysis, projection, and retrodiction**
+**As of: 6 October 2026 | Version 2.24 – compact prompt-ready edition for analysis, projection, and retrodiction**
 
 This document compresses the social RFT instrument into a formally usable short version. It is a **heuristic screening instrument** for pattern recognition in social situations, not proof of specific causal claims.
 
@@ -11,9 +11,9 @@ This document compresses the social RFT instrument into a formally usable short 
 
 The phenomena that RFT describes are well-known in the literature. Glasl describes conflict escalation stages in organisations, Girard the scapegoat mechanism in archaic societies, Freyd DARVO in dyadic abuse relationships, Cialdini compliance mechanisms, and Luhmann and Foucault structural dynamics of social systems. The bibliography documents this convergence. The question therefore arises directly: what does RFT add?
 
-**Scale Invariance (A7):** Glasl describes escalation stages in organisational conflicts. Girard analyses the scapegoat in archaic societies. Freyd describes DARVO in dyadic abuse. None of these authors claim the same formal pattern across *all* levels simultaneously and with the same variables. A7 does exactly that. Concrete example: Glasl's Stage 7 (Limited Destructive Blows) corresponds formally to POI-3 – the same Δφ dynamics (phase coherence collapses), the same PCI jump toward legitimation of harshness, but a different scale (organisation vs. geopolitics). The formal structure is identical; only the context changes. This is not analogy; it is scale invariance.
+**Scale Invariance (A7):** Glasl describes escalation stages in organisational conflicts. Girard analyses the scapegoat in archaic societies. Freyd describes DARVO in dyadic abuse. None of these authors claim the same formal pattern across *all* levels simultaneously and with the same variables. A7 does exactly that. Concrete example: Glasl's Stage 7 (Limited Destructive Blows) corresponds formally to POI-3 – the same Δφ dynamics (phase coherence collapses), the same PCI jump toward legitimation of harshness, but a different scale (organisation vs. geopolitics). The formal structure is identical; only the context changes. RFT postulates that this is structural scale invariance – a postulate that would need to be tested empirically.
 
-**Unified Formal Language:** Scapegoat (Girard), criteria blockade (Walton), DARVO (Freyd), confirmation bias (Nyhan/Bail) – each discipline operates with its own terminology and no shared formal interface. ε, Δφ, PCI, and K_ij create this interface for the first time. Concrete example: Glasl's conflict Stage 5 (Loss of Face) can be described precisely as Δφ → π with K_ij > 0 and PCI_substitute_object ↑ – a translation that makes cross-disciplinary comparison and calibration possible.
+**Unified Formal Language:** Scapegoat (Girard), criteria blockade (Walton), DARVO (Freyd), confirmation bias (Nyhan/Bail) – each discipline operates with its own terminology and no shared formal interface. ε, Δφ, PCI, and K_ij create this interface in integrated form and with a shared formal language. Concrete example: Glasl's conflict Stage 5 (Loss of Face) can be described precisely as Δφ → π with K_ij > 0 and PCI_substitute_object ↑ – a translation that makes cross-disciplinary comparison and calibration possible.
 
 **Early Indicators (F1–F14, POI-1–POI-4):** The scholarly literature describes phenomena retrospectively or under controlled laboratory conditions. F1–F14 are designed for near-real-time detection *in live interaction* – before structural diagnosis is complete. The decisive difference: Cialdini describes *why* reciprocity works. F7 describes *how to recognise* that it is being instrumentalised – before the harm has occurred. This is not a theoretical advantage but an operational one: screening before diagnosis, not after.
 
@@ -72,7 +72,12 @@ Interpretive extension: observers are themselves resonators and can build, redir
 
 ---
 
-## 3. Core Formulae
+## 3. Formal Notation
+
+The following quantities are to be read as formal notation, not as physical equations in
+the strict sense. ℏ and f are placeholders for relative coupling intensity and actor
+frequency; their units are not physically measurable in social systems but are to be
+estimated heuristically.
 
 ### 3.1 Coupling energy
 
@@ -182,11 +187,11 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **F2** | Asymmetric definitional power | Definitional authority over the newly introduced reference point lies structurally with the questioner, not the respondent. | Criterion blockade: recognition of the resonator is tied to a condition it cannot meet without abandoning its own frequency. | Walton (1989); Foucault (1969); Bourdieu (1990): symbolic power |
 | **F3** | Substitute-object focusing | The discussion shifts from the original core statement to a peripheral aspect or detail that was not part of the original statement. | PCI redirection: collective attention jumps to a visible substitute object while the actual coupling performance remains invisible. | Watzlawick et al. (1967): communication axioms; Lakoff & Johnson (1980): framing |
 | **F4** | Pseudo-questions | Multiple messages or follow-up queries arrive simultaneously; the formulations are not open clarifying questions but read as assertions or evaluations. | Test pulse / $\beta$ increase: the AiR attempts to put the resonator on the defensive and raise its damping without becoming recognisable as a disruptor. | Schopenhauer (1831): eristic dialectic; Walton (1989): fallacious questions |
-| **F5** | Burden of proof without a path to fulfilment | The resonator is asked to explain or substantiate something, yet the conditions for successful fulfilment are structurally unclear or unattainable. | Activation of $\beta$-dominance: self-correction is prevented; instead a permanent burden of proof arises. | Boghossian & Lindsay (2019): Kafka-trapping; Walton (1989): burden of proof |
+| **F5** | Burden of proof without a path to fulfilment | The resonator is asked to explain or substantiate something, yet the conditions for successful fulfilment are structurally unclear or unattainable. | Activation of $\beta$-dominance: self-correction is prevented; instead a permanent burden of proof arises. | Walton (1997): question-begging fallacies; Rescher (1976): regress problem; Boghossian & Lindsay (2019): Kafka-trapping (popular science) |
 | **F6** | Formal overlay | The discussion increasingly centres on form (numbers, terms, procedures) rather than substance; the resonator must justify formal deviations. | Collective PCI jumps to a formal criterion rather than real coupling – characteristic of the conversation-stopper. | Toulmin (1958): proof structure; Fairclough (1995): critical discourse analysis |
 | **F7** | Kindness trap (wolf in sheep's clothing) | An actor behaves conspicuously friendly, praising, or admiring and deliberately encourages the counterpart to disclose personal details, weaknesses, or vulnerable material. The friendliness appears exaggerated or directed at a specific goal. | The AiR actively lowers the victim's **β** (damping falls, trust rises). **K_ij** is artificially built up but only for **material extraction**. Δφ appears low yet is tactical. The subsequent shift to mockery/attack reveals the true phase relationship. | Cialdini (1984): reciprocity and compliance; Paulhus & Williams (2002): Dark Triad |
 | **F8** | Moral exclusion trap | An actor or group is systematically excluded from the legitimate discourse space by being measured against an unattainable moral criterion (e.g. "fit for democracy", "not fit for coalition"). Definitional power over the criterion rests with those doing the excluding. | The exclusion raises the **β** of the excluded (anger, defiance, solidarity) and lowers the **PCI towards the real political contest**. Energy flows into the excluded actor's victim narrative; polarisation intensifies. | Opotow (1990): moral exclusion; Nyhan & Reifler (2010): backfire effect; Bail et al. (2018): political polarisation |
-| **F9** | Inner infiltration | A member or actor behaves conspicuously loyally, pushes for internal confidentiality, yet has a striking number of external contacts or makes sudden position shifts that harm the group. Internal information repeatedly leaks to the outside. | Simulated Δφ → 0 while actual Δφ → π; K_ij (internal) is used for extraction; group PCI jumps to internal conflicts rather than the real threat. | Milgram (1974): obedience and authority adoption; Granovetter (1973): networks and weak ties |
+| **F9** | Inner infiltration | A member or actor behaves conspicuously loyally, pushes for internal confidentiality, yet has a striking number of external contacts or makes sudden position shifts that harm the group. Internal information repeatedly leaks to the outside. | Simulated Δφ → 0 while actual Δφ → π; K_ij (internal) is used for extraction; group PCI jumps to internal conflicts rather than the real threat. | Goffman (1959): self-presentation and roles; Simmel (1908): the stranger; political science literature on entryism |
 | **F10** | Monologue dominance | One actor's share of speaking time is significantly higher than the others'; pauses for feedback are absent; interruptions are ignored or sanctioned. | Collective phase coherence is monopolised by a single resonator; the natural frequencies of the remaining resonators are suppressed. | Watzlawick et al. (1967): complementary communication patterns; Luhmann (1984): attention as scarce resource |
 | **F11** | Visible devotion / recognition sacrifice | An actor publicly emphasises their commitment, sacrifices, or closeness to a dominant resonator; seeks validation for it; substantive depth or genuine resonance with the issue is absent; moral superiority is derived from the devotion. | The actor's PCI jumps to the substitute object "devotion/morality" rather than to the real structure; energy stabilises the resonance monopoly rather than productive coupling. | Festinger (1957): cognitive dissonance; Adorno et al. (1950): authoritarian followership |
 | **POI-1** | Asymmetric provocation | Actor A sends covert disruptive signals (insinuations, deliberate tests, boundary violations) without becoming recognisable as the aggressor. Actor B reacts in a visibly irritated or aggressive manner. | β rises in B while β in A remains low; Δφ (A↔B) increases. | Freyd (1997): DARVO; Glasl (1980): escalation stages |
@@ -194,7 +199,7 @@ Early indicators are **scale-invariant** (A7): they appear in dyadic conversatio
 | **POI-3** | Legitimation of severity | A uses the attributed threat to present its own violence, repression, or institutional harshness as self-defence. | K_ij (A↔violence/repression) rises; Δφ (A↔real structure) remains high. | Glasl (1980): escalation and hardening; Lederach (1997): just war and peace |
 | **POI-4** | Historical revision | The prehistory (provocation, own escalation steps) is systematically suppressed or reinterpreted; discourse focuses only on the current "threat". | PCI remains stable on substitute object; K_ij (A↔prehistory) → 0. | Glasl (1980); Lederach (1997); Luhmann (1984): memory of social systems |
 | **F12** | Somatic alarm confusion / Archaic reaction trap | After a psychological stressor (e.g. examination, confrontation, evaluation, internal performance pressure), B experiences a strong inner warning signal (racing heart, tension, urge for immediate action) despite the absence of any physical threat. B feels compelled to fight, flee, or justify immediately, and tends towards rash, often unconsidered actions. The trigger may be an external actor but need not be. | The evolutionarily ancient physical alarm system is misactivated by a psychological stressor. B is forced onto an alien frequency (alarm, urgency, obligation to respond); **β_B rises** sharply while the natural frequency (calm, composure) is lost. B's PCI jumps from the content to the alarm signal; coupling to the group or to the real structure is destabilised. An external actor A can deliberately trigger this mechanism and keep their own β low while gaining control over the timing of the interaction. | LeDoux (1996): amygdala and emotional processing; Goleman (1995): emotional intelligence; Lazarus (1966): primary appraisal and stress response |
-| **F13** | Anomalous resonator in high-pressure field | In a field with high structural pressure (strong attractor, high stakes, cyclical system dependency), a resonator with no visible $K_{ij}$ history attains high coupling to load-bearing power structures in a short time – though this would be extremely improbable under chance conditions. | Two structurally indistinguishable paths: (a) latent $K_{ij}$ (covert coupling), (b) field self-organisation (the attractor produces the figure). F13 flags investigative need, not proof. | Granovetter (1973): network anomalies; Acemoglu & Robinson (2012): elite reproduction; Glasl (1980): high-pressure fields |
+| **F13** | Anomalous resonator in high-pressure field | In a field with high structural pressure (strong attractor, high stakes, cyclical system dependency), a resonator with no visible $K_{ij}$ history attains high coupling to load-bearing power structures in a short time – though this would be extremely improbable under chance conditions. | Two structurally indistinguishable paths: (a) latent $K_{ij}$ (covert coupling), (b) field self-organisation (the attractor produces the figure). F13 flags investigative need, not proof. | Mills (1956): power elites and ascent anomalies; Padgett & Ansell (1993): network anomalies in high-pressure fields; Acemoglu & Robinson (2012): elite reproduction |
 | **F14** | Context-free definition trap | A question is posed without context, although the context structurally determines the answer. The term used carries two established meanings, making any answer structurally attackable. | Δφ between questioner and respondent drives towards π under simulated expert coherence; β of the respondent rises through doubly blocked burden of proof; evaluation occurs in a covert channel; group PCI is reinforced not through open discourse but through covert attribution. | Boghossian & Lindsay (2019): Kafka-trapping; Walton (1989): strategic ambiguity; Schopenhauer (1831): eristic dialectic |
 
 ---
@@ -649,7 +654,7 @@ $$
 
 The pattern is A7-invariant and occurs at every scale: from small groups through parties to geopolitical alliances. It is closely related to the kindness trap (F7) but emphasises the **institutional dimension**: open access to resonance spaces enables infiltration because no continuous verification of the actual phase alignment takes place.
 
-**Established predecessors:** Milgram (1974) shows how authority binding and gradual adaptation lead an individual to adopt external goals. Cialdini (1984) describes how commitment and consistency are systematically exploited. Granovetter (1973) analyses how weak ties in networks are used for information transfer and influence. **Demarcation:** RFT formalises the Δφ discrepancy between simulated and real phase alignment and makes the extraction visible through K_ij dynamics.
+**Established predecessors:** Goffman (1959) analyses how actors shape social situations to their advantage through strategic self-presentation and role play. Simmel (1908) describes the figure of the stranger, who structurally combines proximity and distance, thereby obtaining privileged access to information. Political science literature on entryism shows how organised actors infiltrate groups through formal membership. **Demarcation:** RFT formalises the Δφ discrepancy between simulated and real phase alignment and makes the extraction visible through K_ij dynamics.
 
 ---
 
@@ -658,7 +663,7 @@ The pattern is A7-invariant and occurs at every scale: from small groups through
 A **resonance monopoly** exists when a resonator R continuously draws the collective phase coherence (PCI) of a field toward itself while forcing the remaining resonators into a **compelled receiver role**. R transmits continuously but takes in little feedback; the field's energy (attention, time, emotional engagement) flows one-sidedly to R without being resonantly fed back.
 
 **Formal characteristics:**
-- **Asymmetric coupling:** $K_{E→R} \gg K_{R→E}$  
+- **Asymmetric coupling:** $K_{E,R} \gg K_{R,E}$ *(directed coupling, first index = sender)*  
 - **PCI monopoly:** $\mathrm{PCI}_{\text{field–R}} \to 1$, while $\mathrm{PCI}_{\text{field–real structure}} \to 0$  
 - **Fragmentation:** $\frac{dK_{E–E}}{dt} < 0$ (listeners decouple from each other)  
 - **β rise in receivers:** $\beta_E$ rises with the duration of enforced passivity  
@@ -680,7 +685,7 @@ A **resonance monopoly** exists when a resonator R continuously draws the collec
 
 The pattern is A7-invariant and occurs at every scale: from dyads through groups and organisations to media discourses.
 
-**Established predecessors:** McCombs & Shaw (1972) describe agenda-setting as the process through which media determine which topics count as publicly important – a form of PCI monopoly at the topic level. Watzlawick et al. (1967) show complementary communication patterns in which one partner permanently dominates while the other is pushed into passive receptivity. Luhmann (1984) analyses communication as a systemic operation in which attention is a scarce resource. **Demarcation:** RFT formalises the monopoly as a stationary state with K_E→R ≫ K_R→E and makes the suppression of receivers' natural frequencies visible.
+**Established predecessors:** McCombs & Shaw (1972) describe agenda-setting as the process through which media determine which topics count as publicly important – a form of PCI monopoly at the topic level. Watzlawick et al. (1967) show complementary communication patterns in which one partner permanently dominates while the other is pushed into passive receptivity. Luhmann (1984) analyses communication as a systemic operation in which attention is a scarce resource. **Demarcation:** RFT formalises the monopoly as a stationary state with $K_{E,R} \gg K_{R,E}$ and makes the suppression of receivers' natural frequencies visible.
 
 ---
 
@@ -796,11 +801,11 @@ Each structural pattern generates a widerlegbare (refutable) prediction. If none
 | Pattern | Refutable prediction | Would be refuted by |
 |:--|:--|:--|
 | 7.1 AiR | Disruptive signals occur asymmetrically (A→B not B→A) | Documented symmetry of disruptive signals; B's provocations prevail |
-| 7.2 Scapegoat | PCI rises toward target group without increase in real coupling | Direct evidence of causal responsibility of the target group |
-| 7.3 Parasitic extraction | K_ij declines with rising material extraction | K_ij remains stable or rises despite extraction; mutual benefit demonstrable |
+| 7.2 Scapegoat | PCI rises toward target group without decrease in PCI toward the real structure | The group directs PCI at a target object while PCI_structure remains high – i.e. the concentration of attention on the target does not suppress structural perception |
+| 7.3 Parasitic extraction | Phases 1–4 occur systematically and are followed by Phase 5 (reconstruction under renewed dependency) | Phases 1–4 occur systematically without Phase 5 following – and instead an independent regeneration of productive coupling is observable |
 | 7.4 Three-phase co-optation | Phase sequence (Bonding–Trust–Takeover) is observable in chronological order | Phases are absent or reversed; takeover occurs without Bonding phase |
 | 7.5 Criterion blockade | Criterion is unreachable for the excluded despite genuine effort | Excluded party fulfils criterion and is accepted |
-| 7.6 POI cycle | Victim-role inversion occurs after documented provocation by A | No provocation by A demonstrable; B is structurally the aggressor |
+| 7.6 POI cycle | Provoking actor A adopts victim role after visible reaction by B | The provoking actor A systematically takes no victim role after B's visible reaction but instead accepts responsibility – and this pattern is replicable across several independent fields |
 | 7.7 Exclusion–escalation spiral | Exclusion precedes escalation and escalation reinforces exclusion | Escalation occurs without prior exclusion; de-escalation after renewed inclusion |
 | 7.8 Inner infiltration | Divergence between simulated and real Δφ is observable over time | Actor's declared and real phase alignment remain consistent |
 | 7.9 Resonance monopoly | Monologue share > 80 %; other resonators are progressively silenced | Collective participation remains balanced despite high individual share |
@@ -819,13 +824,13 @@ The RFT social analysis tool integrates concepts from the following disciplines:
 
 | Discipline | Core contributions | Key sources |
 |:--|:--|:--|
-| Rhetoric/Argumentation | Fallacy theory, burden of proof, proof structure | Aristotle; Schopenhauer (1831); Toulmin (1958); Walton (1989) |
+| Rhetoric/Argumentation | Fallacy theory, burden of proof, proof structure | Aristotle; Schopenhauer (1831); Toulmin (1958); Walton (1989); Walton (1997); Rescher (1976) |
 | Social psychology | Conformity, obedience, cognitive dissonance, authoritarianism | Festinger (1957); Milgram (1974); Adorno et al. (1950); Cialdini (1984) |
 | Systems theory | Communication as systemic operation, attention as scarce resource | Luhmann (1984); Watzlawick et al. (1967); Bateson (1972) |
 | Discourse analysis | Discourse power, framing, agenda setting | Foucault (1969); Fairclough (1995); McCombs & Shaw (1972) |
 | Conflict research | Escalation stages, victim–perpetrator inversion, reconciliation | Glasl (1980); Lederach (1997); Girard (1972) |
 | Cognitive science | Amygdala response, emotional regulation, stress appraisal | LeDoux (1996); Goleman (1995); Lazarus (1966) |
-| Network sociology | Weak ties, structural anomalies, elite reproduction | Granovetter (1973); Acemoglu & Robinson (2012) |
+| Network sociology | Weak ties, structural anomalies, elite reproduction, entryism | Granovetter (1973); Acemoglu & Robinson (2012); Goffman (1959); Simmel (1908); Mills (1956); Padgett & Ansell (1993) |
 | Philosophy of science | Falsifiability, critical rationalism | Popper (1934/1959); Albert (1968) |
 
 ### 10.2 RFT's Own Contribution
@@ -837,21 +842,37 @@ What RFT adds to these established disciplines:
 3. **Iterative analysis cycle:** Systematic workflow (field delineation → indicator screening → pattern assignment → projection/retrodiction → verification) as a structured approach.
 4. **Operationalised early indicators:** F1–F14 and POI-1–4 translate established concepts into observable features that can be applied without specialist training in each source discipline.
 
-### 10.3 Epistemic Position
+### 10.3 Relation to Related Formal Approaches
+
+The RFT instrument operates within a field of related formal approaches from which it
+differs in specific respects:
+
+| Approach | Core contribution | Difference from RFT |
+|:--|:--|:--|
+| **Sociophysics** (Weidlich 1971; Helbing 1995; Castellano et al. 2009) | Formal models of collective opinion formation and social coupling | Sociophysics models aggregate population dynamics; RFT focuses on phase coherence and directed coupling structure of individual actors |
+| **Computational Social Science** (Lazer et al. 2009; Pentland 2014) | Empirical, data-driven models of collective dynamics | CSS works with measured data; RFT is a heuristic screening instrument without empirical validation |
+| **Formal Epistemology** (Spohn 2012; Leitgeb 2017) | Coherence and belief dynamics in formal systems | Formal epistemology operates at the propositional level; RFT operates at the field level with phase and coupling quantities |
+| **Network Theory** (Barabási & Albert 1999; Watts & Strogatz 1998) | Coupling dynamics on social graphs | Network theory describes structures; RFT adds phase coherence and energy direction as interpretive quantities |
+
+The original contribution of RFT lies not in inventing formal social models, but in
+combining the phase-coherence metric, the early-indicator set, and the iterative
+analysis cycle into an application-oriented screening instrument.
+
+### 10.4 Epistemic Position
 
 - **Heuristic:** The tool generates hypotheses, not proof.
 - **Screening instrument:** It identifies where deeper investigation is warranted, not where conclusions may be drawn.
 - **Formalisation achievement:** Formal notation reduces ambiguity but does not replace empirical testing.
 - **Open, not closed:** New findings from the constituent disciplines are to be integrated; RFT claims no monopoly on interpretation.
 
-### 10.4 Limits
+### 10.5 Limits
 
 - No empirical validation of the formal model exists to date.
 - No diagnostic instrument: the tool may not be used as a substitute for clinical or forensic expert reports.
 - No predictive guarantee: projections are structurally plausible hypotheses, not forecasts.
 - Measurement illusion: quantities such as ε, K_ij, and PCI cannot be precisely measured in practice; their value lies in the qualitative thinking they prompt.
 
-### 10.5 Falsification Conditions
+### 10.6 Falsification Conditions
 
 Refutable predictions for each structural pattern are listed in Section 9.1. The overall model would be seriously challenged if:
 - Systematic studies showed that the postulated patterns (e.g. POI cycle, criterion blockade, resonance monopoly) cannot be reliably identified by independent observers even with training;

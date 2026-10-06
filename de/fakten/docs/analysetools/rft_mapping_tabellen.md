@@ -37,10 +37,10 @@
 | 7.6 POI-Zyklus | DARVO; Opfer-Täter-Umkehr; Konflikteskalation | Freyd (1997); Glasl (1980); Lederach (1997) | Vierphasiger Zyklus mit PCI-Sprung-Formalisierung |
 | 7.7 Ausgrenzungs-Eskalations-Spirale | Soziale Identitätstheorie; moralischer Ausschluss; Konflikteskalation | Tajfel & Turner (1979); Glasl (1980); Opotow (1990) | Selbstverstärkende Systemdimension; Δφ→π als Grenzzustand |
 | 7.8 Innere Infiltration | Konformitätsdruck; soziale Netzwerke; Geheimdienst-Konzepte | Milgram (1974); Granovetter (1973); Cialdini (1984) | Δφ-Diskrepanz simuliert/real; K_ij-Extraktion formalisiert |
-| 7.9 Resonanzmonopol | Agenda-Setting; komplementäre Kommunikation; Systemkommunikation | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_E→R ≫ K_R→E; PCI-Monopol als stationärer Zustand |
+| 7.9 Resonanzmonopol | Agenda-Setting; komplementäre Kommunikation; Systemkommunikation | McCombs & Shaw (1972); Watzlawick et al. (1967); Luhmann (1984) | K_{E,R} ≫ K_{R,E}; PCI-Monopol als stationärer Zustand |
 | 7.10 Resonanzgefolgschaft | Kognitive Dissonanz; autoritäre Gefolgschaft; Compliance | Festinger (1957); Adorno et al. (1950); Milgram (1974) | PCI-Sprung auf Hingabe; Anerkennungsextraktion formalisiert |
 | 7.11 F12-Beziehungen | Amygdala-Hijacking; Stressreaktion; Provokation | LeDoux (1996); Goleman (1995); Lazarus (1966) | Relationale Verbindung F12↔POI-1, F7, F5, AiR |
-| 7.12 F13-Beziehungen | Netzwerkanomalien; Aufstieg in Eliten; Extraktion | Granovetter (1973); Acemoglu & Robinson (2012); Glasl (1980) | Epistemische Grenze: strukturell ununterscheidbar (a) vs. (b) |
+| 7.12 F13-Beziehungen | Aufstiegsanomalien; Machteliten; Netzwerke in Hochdruckfeldern | Mills (1956); Padgett & Ansell (1993); Acemoglu & Robinson (2012) | Epistemische Grenze: strukturell ununterscheidbar (a) vs. (b) |
 | 7.13 F14-Beziehungen | Sophisterei; Strategische Ambiguität; Kafka-Trapping | Walton (1989); Shackel (2005); Boghossian & Lindsay (2019) | Doppelt blockierte Bringschuld; verborgener Kanal formalisiert |
 
 ## Tabelle 3: Frühindikatoren F1–F14, POI-1–POI-4
@@ -51,15 +51,15 @@
 | F2 Asymmetrische Definitionsmacht | Diskurshoheit; Macht und Wissen | Foucault (1969); Bourdieu (1990) | Kriterienblockade: Eigenfrequenzaufgabe formalisiert |
 | F3 Ersatzobjekt-Fokussierung | Metaphernrahmen; Framing | Watzlawick et al. (1967); Lakoff & Johnson (1980) | PCI-Umlenkung als messbares Merkmal |
 | F4 Scheinbare Fragen | Eristische Dialektik; Rhetorik | Schopenhauer (1831); Walton (1989) | β-Erhöhungs-Testpuls formalisiert |
-| F5 Bringschuld ohne Erfüllungsweg | Kafka-Trapping; Beweislastumkehr | Boghossian & Lindsay (2019); Walton (1989) | β-Dominanz-Aktivierung; permanente Beweislast |
+| F5 Bringschuld ohne Erfüllungsweg | Kafka-Trapping; Beweislastumkehr; Regressproblem | Walton (1997); Rescher (1976); Boghossian & Lindsay (2019) (populärwiss.) | β-Dominanz-Aktivierung; permanente Beweislast |
 | F6 Formale Überlagerung | Argumentation; Diskursverschiebung | Toulmin (1958); Fairclough (1995) | PCI-Sprung auf formales Kriterium statt realer Kopplung |
 | F7 Freundlichkeitsfalle | Love Bombing; Reziprozität; Dark Triad | Cialdini (1984); Paulhus & Williams (2002); Herman (1992) | β_B↓, K_AB↑ bei späterer Material-Extraktion |
 | F8 Moralische Ausgrenzungsfalle | Moralischer Ausschluss; Backfire-Effekt; Diskursmacht | Opotow (1990); Nyhan & Reifler (2010); Bail et al. (2018) | PCI_Ersatzobjekt↑ bei PCI_reale_Politik→0 |
-| F9 Innere Infiltration | Schwache Bindungen; Konformitätsdruck | Milgram (1974); Granovetter (1973) | Δφ-Diskrepanz simuliert/real; K-Extraktion |
+| F9 Innere Infiltration | Selbstdarstellung; Rollenspiel; Entryism; Der Fremde | Goffman (1959); Simmel (1908); politikwiss. Literatur zu Entryism | Δφ-Diskrepanz simuliert/real; K-Extraktion |
 | F10 Monologdominanz | Komplementäre Muster; Kommunikationspathologie | Watzlawick et al. (1967); Luhmann (1984) | PCI-Monopolisierung; Eigenfrequenz-Dämpfung formalisiert |
 | F11 Sichtbare Hingabe | Kognitive Dissonanz; autoritäre Gefolgschaft | Festinger (1957); Adorno et al. (1950) | PCI-Sprung auf Hingabe/Moral statt reale Sache |
 | F12 Somatische Alarmverwechslung | Amygdala-Hijacking; primäre Bewertung; Fight-or-Flight | LeDoux (1996); Goleman (1995); Lazarus (1966) | β_B-Anstieg ohne physische Bedrohung; externer Trigger formalisiert |
-| F13 Anomaler Resonator | Netzwerkanomalie; Elite-Reproduktion | Granovetter (1973); Acemoglu & Robinson (2012); Glasl (1980) | Hochdruckfeld-Indikator; epistemische Grenze explizit |
+| F13 Anomaler Resonator | Aufstiegsanomalien; Netzwerke in Hochdruckfeldern; Machteliten | Mills (1956); Padgett & Ansell (1993); Acemoglu & Robinson (2012) | Hochdruckfeld-Indikator; epistemische Grenze explizit |
 | F14 Kontextfreie Definitionsfalle | Kafka-Trapping; Eristische Dialektik; Strategische Ambiguität | Boghossian & Lindsay (2019); Walton (1989); Schopenhauer (1831) | Doppelt blockierte Bringschuld; verborgener Kanal |
 | POI-1 Asymmetrische Provokation | DARVO; Provokation; Konflikt-Trigger | Freyd (1997); Glasl (1980) | β_B/β_A ≫ 1 bei Δφ_AB-Anstieg |
 | POI-2 Opferrollen-Inversion | DARVO; Opfer-Täter-Umkehr | Freyd (1997); Lederach (1997) | PCI-Sprung: Feind B → Opfer A |
