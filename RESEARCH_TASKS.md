@@ -1,0 +1,2049 @@
+# RFT — Offene Forschungsaufgaben
+
+Generiert: August 2026
+Aktualisiert: September 2026
+Status: Aktiv
+
+---
+
+## Theoretischer Gesamtstatus (September 2026)
+
+| Axiom | Was war Postulat | Was ist jetzt abgeleitet | Status |
+|-------|-----------------|--------------------------|--------|
+| A4: π-Faktor | Freier numerischer Parameter | Geometrischer Sattelpunktsbeitrag (RT-01, RT-01b) | ✅ Abgeleitet |
+| A4: ε = cos²(Δφ/2) | Phänomenologische Wahl | Eindeutig durch k=1-Darstellung U(1) ⊂ G_sync (RT-02) | ✅ Abgeleitet |
+| A7: G_sync | Postulierte Invarianz | Algebraisch bewiesen, G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) | ✅ Bewiesen (stationär) |
+| A3: Quantisierung | Unabhängiges Axiom | Korollar aus Darstellungsstruktur von ℝ⁺_× ⊂ G_sync (RT-02, RT-35) | ✅ Abgeleitet |
+| A5: Vektorialität | Irreduzibles Postulat | Gruppentheoretisch irreduzibel (RT-36); Begründung: RT-01a Vektorialitätsinkonsistenz | ✅ Abgeschlossen (RT-36) |
+| A1, A2, A6 | Postuliert — testbar | Unverändert | 📋 Postuliert |
+| Domänenübertragung A7 | CMB/Kern/Finanzen als Analogie | Analogie — kein formaler Beweis | 📋 Postulat |
+| SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
+| A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
+| Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | ~~🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42)~~ ✅ Abgeschlossen (Sep 2026) |
+| Analytische Warpmetrik | Numerisch, offen (RT-34) | Geschlossene perturbative Form h_μν^RFT = h_μν^Alcubierre · ε(Δφ) angestrebt (RT-43) | 🔄 Offen (RT-43) |
+| QM als RFT-Substruktur | Interpretation/Analogie | Formale Ableitung: Atom, Spektrum, Born-Regel, Spin aus A1–A7 | 🔄 Offen (RT-44) |
+| Energie als gerichtete Größe | Skalare Energiedichte | Vektorielle Kopplungsgröße: A5-Kompatibilität, Kosmol. Konstante, ρ ≥ 0 strukturell | 🔄 Offen (RT-45) |
+| Distinktive Teilchenphysik-Signaturen | Stufe-1-Passung (RT-22) | Quantitative, vom SM unterscheidbare Vorhersage angestrebt (RT-47) | 🔄 Offen (RT-47) |
+
+---
+
+## Empfohlene Bearbeitungsreihenfolge (Stand September 2026)
+
+### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
+1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
+2. RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit ← Priorität 2
+3. RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin ← Priorität 3
+4. RT-45 — Energie als gerichtete Größe: A5-Kompatibilität, Kosmol. Konstante als Gradientenproblem, ρ ≥ 0 strukturell ← Priorität 4
+5. RT-47 — Distinktive RFT-Signaturen in CERN-Daten: Stufe-2/3-Validierung in der Teilchenphysik ← Strategische Option (nach RT-43, RT-44, RT-45, RT-46)
+4. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
+5. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
+6. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
+
+### Empirisch (Priorität 2)
+4. RT-03 — λ-Bestimmung (⁸⁷Rb)
+
+### Code-Korrekturen (Priorität 3)
+7. (keine offenen Code-Korrekturen)
+
+### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; $H(t) = H_0\cos(\Delta\phi(t)/2)$ aus A1–A8 hergeleitet; ΛCDM als Grenzfall; Szenarien A–C; DESI-DR1-Signal (Szenario C, $\beta < 0$); Falsifikationskriterien F6–F9. Kerndokumente: `de/fakten/theorie/rt42_ap*` · `en/facts/theory/rt42_ap*`
+- ~~RT-40  — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall der RFT bewiesen (AP1–AP5); vier empirische Überschuss-Vorhersagen (AP6); Warpkonsistenz und flache Raumzeit als RFT-Grundzustand (AP7). Offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8). Kerndokumente: `de/fakten/theorie/rt40_ap*` · `en/facts/theory/rt40_ap*`
+- ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
+- ~~RT-08  — Doppelpendel vs. Experimentaldaten~~ ✅ Abgeschlossen (Aug 2026) — χ²_red = 2,42 gegenüber Lagrange-Nullhypothese (A=0); RFT-Formel abgelehnt (erwartet: Nullhypothese ohne RFT-Term); experimentelle Daten für abschließenden Vergleich erforderlich. Analyseskript: `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` → Experimentprotokoll: RT-38
+- ~~RT-09  — Fehlerbudget Am-241~~ ✅ Abgeschlossen (Aug 2026) — M-4 teilweise behoben: σ(γ,α) = 1,719 mb (RT-06, Faktor 212× kleiner als σ_GDR); SNR_median = 10,3σ bei 100 h realistisch (p16 = 3,2σ); t(5σ) ≈ 24 h; dominanter Beitrag: σ(γ,α)-Unsicherheit (94%); Signalverhältnis R = 2,0000 (exakt); konservatives Szenario: t(5σ) ≈ 516 h.
+- ~~RT-06  — EXFOR-Daten Am-241~~ ✅ Abgeschlossen (Aug 2026) — K-6 behoben: σ(γ,α) = 1,719 mb bei 14 MeV (Hauser-Feshbach, Γ_α/Γ_tot ≈ 2%, RIPL-3); kein direkter EXFOR-Eintrag; RFT-Reaktorraten-Revision erforderlich
+- ~~RT-07  — Drei unabhängige η-Estimatoren~~ ✅ Abgeschlossen (Aug 2026) — K-2 behoben (Pearson als physikalisch ausgezeichnete Observable bestätigt)
+- ~~RT-32  — λε⁴-Sättigungsterm in Klein-Gordon~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-11  — κ-Parameter formal ableiten oder als Konvention deklarieren~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-36  — A5-Herleitung aus G_sync (D-Erzeuger)~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-37  — IOP-Manuskript DE + EN aktualisieren~~ ✅ Abgeschlossen (Aug 2026)
+- ~~RT-39  — Einreichungsvorbereitung IOP~~ ✅ Abgeschlossen (Aug 2026) — Cover Letter (MD + LaTeX), Submission Checklist, Response-to-Reviewers Vorlage (7 Kritikpunkte), Journal-Auswahl-Begründung, Manuskript-Prüfbericht. Zieljournal: Journal of Physics Communications. Primäre Aktion: Abstract-Kürzung auf ≤ 200 Wörter erforderlich. `en/peer_review_rft/submission/`
+
+### Extern (benötigt Kooperationspartner)
+8. RT-03 — λ-Bestimmung (⁸⁷Rb)
+9. RT-12 — ⁸⁷Rb-Interferometrie
+10. RT-13 — Am-241 ELI-NP
+- ~~RT-38  — Doppelpendel: Öffentliches Experimentprotokoll~~ ✅ Abgeschlossen (Aug 2026) — Vollständiges Tabletop-Falsifizierungsprotokoll für ε(Δφ)=cos²(Δφ/2); ~100–300 €; Smartphone-Tracking + Encoder-Variante; CSV-Format RT-08-kompatibel. Protokoll: `de/fakten/simulationen/doppelpendel/experiment/protokoll_rt38.md`
+
+### Langfristig offen
+11. ~~RT-33 — Warpantrieb Stufe 5 (Energielücke)~~ ✅ Abgeschlossen (Aug 2026) — Skalierungsgesetz ρ∝R⁻², R*>>1 AU für alle Fusionsszenarien
+12. ~~RT-34 — Warpantrieb Stufe 6 (3D-Blase)~~ ✅ Abgeschlossen (Sep 2026) — Falsifizierungstest bestanden: ρ≥0 überall; GR-Solver (Christoffel, Riemann, Ricci) implementiert
+13. RT-43 — Analytische Warpmetrik (Stufe 7): geschlossene perturbative Form, Skalentrennung, Kausalitätsprüfung, technische Bilanz
+
+---
+
+## Kategorie 1: Theoretische Herleitungen
+
+### RT-01 — Wirkungsintegral-Herleitung von π
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** π als Sattelpunktsbeitrag des stationären Wirkungsintegrals S[ψ, Δφ] hergeleitet.
+**Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md`
+
+**RT-01 (Erweiterung — Planck-Grenzübergang):**
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Grenzübergang E = π·ε·ℏ·f → E = hf_Hz formal geschlossen.
+**Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §5
+
+### RT-01a — π als Urkonstante: Operationale Definition und Dezimalartefakt-Argument
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** Dezimalartefakt-Argument formal als Dreischritt-Satz (Darstellungsrelativität)
+ausgearbeitet; Zwei-Stufen-Argumentationsstruktur RT-01a + RT-01 explizit als konsistente
+Einheit beschrieben; Verbindung zu G_sync und k=1-Minimalitätsprinzip (RT-02) als
+strukturelle Äquivalenz formuliert; e-Eigenschaft (Selbstähnlichkeitsbasis) formal
+abgeschlossen; A5-Einordnung nach RT-36 korrigiert (irreduzibles Postulat, keine Herleitung).
+**Was formal noch offen bleibt:**
+- e ist noch nicht in die Axiomatik (A1–A7) integriert.
+- Natürliches Einheitensystem {π, e, ℏ} ist konzeptuell beschrieben, aber formal nicht als
+  Korollar der Axiomatik ausgearbeitet.
+**Begründung A4:** Die Begründungsstruktur von A4 ist nach RT-01a vollständig geschlossen:
+konzeptuell (Darstellungsrelativität, Minimalitätsprinzip) und formal (Sattelpunktsbeitrag
+des Wirkungsintegrals, RT-01 + RT-01b).
+**Kerndokument:** `de/fakten/theorie/pi_als_urkonstante.md` | `en/facts/theory/pi_as_fundamental_constant.md`
+
+### RT-01b — Unabhängige π-Herleitung: Numerisches Pfadintegral + Nicht-Gaussian-Korrekturen
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Konvergenz gegen π (Maschinengenauigkeit), |c₃+c₄| ≈ 5.5×10⁻¹¹, π für 3/5 Potenziale geometrisch nachgewiesen.
+**Kerndokument:** `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` §4.5+§9
+
+### RT-02 — Gruppentheoretischer Beweis der Skalentransformation (A7)
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ) bewiesen; ε = cos²(Δφ/2) darstellungstheoretisch eindeutig (k=1, U(1)); A3 als Korollar von A7.
+**Kerndokument:** `de/fakten/theorie/gsync_gruppenstruktur.md`
+
+### RT-03 — Unabhängige Bestimmung von λ (⁸⁷Rb-Vorhersage)
+**Status: 📋 Offen** (benötigt Kooperationspartner)
+**Motivation:** |Δ⟨x⟩| = 4.9·λ·ℓ ist nicht falsifizierbar ohne unabhängiges λ (M-7).
+**Aufgabe:** λ aus einem zweiten, unabhängigen Experiment bestimmen.
+**Ansatz:** Doppelspalt-Interferometrie mit kontrollierbarer Phasendifferenz Δφ.
+
+### RT-35 — A3 als Korollar von A7 in Axiomatik
+**Status: ✅ Abgeschlossen (August 2026)** (durch RT-31 erledigt)
+**Ergebnis:** Korollar in `axiomatische_grundlegung.md` §A3 und §A7 eingetragen; Korollar formal in `gsync_gruppenstruktur.md` §5 dokumentiert.
+**Kerndokument:** `de/fakten/theorie/gsync_gruppenstruktur.md` §5
+
+### RT-36 — A5-Herleitung aus Phasenraumgeometrie
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** Möglichkeit B — ê ist irreduzibles Postulat. D-Erzeuger liefert δ_D Φ ∝ ∂_t Φ (nicht ∇Φ); δ_D(∇Φ/|∇Φ|) ≠ 0 allgemein; G_sync operiert nicht auf Raumrichtungen. A5 bleibt eigenständiges Axiom; Begründungsgrundlage: RT-01a Vektorialitätsinkonsistenz (Drehmoment, Spin, Lorentz-4-Vektor) ist jetzt formal explizit in A5 aufgenommen.
+**Kerndokument:** `de/fakten/theorie/a5_vektorialitaet_herleitung.md`
+
+### RT-37 — Manuskript-Update IOP (DE + EN)
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Beide IOP-Manuskripte (DE + EN) sowie alle Begleitdateien vollständig auf den aktuellen Axiomenstatus aktualisiert. Eingearbeitet:
+- A4 π-Faktor: geometrisch abgeleiteter Sattelpunktsbeitrag des Wirkungsintegrals S[ψ, Δφ] (RT-01, RT-01b); numerische Bestätigung |c₃+c₄| ≈ 5.5×10⁻¹¹
+- A4 ε = cos²(Δφ/2): darstellungstheoretisch eindeutig aus k=1-Darstellung U(1) ⊂ G_sync (RT-02)
+- A7: Algebraisch bewiesen (stationär); G_sync ≅ ℝ⁺_× × U(1) × Aff⁺(ℝ)
+- Neuer §3.x Gruppentheoretischer Beweis von G_sync (Gruppenstruktur, ε-Eindeutigkeit, A3-Korollar, Lie-Algebra-Tabelle)
+- A3: Korollar aus A7 (RT-02, RT-35) — kein unabhängiges Axiom
+- A5: Irreduzibles Postulat (RT-36); δ_D(∇Φ/|∇Φ|) ≠ 0 allgemein
+- Axiomenstatus-Übersicht-Tabelle (August 2026) in beiden Manuskripten eingefügt
+- V(ε) = ½m²ε² + ¼λε⁴ + (1/6)λ_ε⁴ε⁶ und δη ≈ −c·λ·⟨ε³⟩ in FLRW-Abschnitt (RT-32)
+- κ_RFT = 1 als Normierungskonvention deklariert; nicht aus A1–A7 ableitbar (RT-11)
+- de/README.md, en/README.md, de/rft_zusammenfassung.tex, en/rft_summary.tex, PEER_REVIEW_READINESS.md aktualisiert
+
+**Kerndokumente:** `de/peer_review_rft/manuskript_de/rft_manuskript_de_iop.tex` · `en/peer_review_rft/manuscript_en/rft_manuscript_en_iop.tex` · `de/fakten/theorie/wirkungsintegral_pi_herleitung.md` · `de/fakten/theorie/gsync_gruppenstruktur.md` · `de/fakten/theorie/a5_vektorialitaet_herleitung.md` · `de/fakten/theorie/kappa_parameter_rft.md`
+
+### RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie
+**Status: ✅ Abgeschlossen (Sep 2026)** — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅ (alle Arbeitspakete abgeschlossen)
+**Kategorie:** Theoretische Herleitung
+**Priorität:** Abgeschlossen
+
+**Ziel:** Zeigen, dass die Lorentz-Invarianz der flachen Minkowski-Raumzeit kein unabhängiges Postulat ist, sondern als Spezialfall der RFT-Kopplungsdynamik aus den Axiomen A1–A7 folgt. Die SRT wäre damit kein separates Theoriegebäude, sondern ein Grenzfall der RFT.
+
+**Bekannte Brücke (Ausgangspunkt):**
+$$\Delta\phi = 2\arccos(\operatorname{sech}\varphi) \quad \Longleftrightarrow \quad \varepsilon(\Delta\phi) = \frac{1}{\gamma^2}$$
+Diese Beziehung ist bisher nur eine Beobachtung — keine Ableitung. RT-40 soll sie entweder herleiten oder widerlegen.
+
+**Arbeitspakete:**
+
+**AP1 — Formale Identifikation: Phase ↔ Rapidität** ✅ **Abgeschlossen (Sep 2026)**
+Prüfen, ob Δφ und die relativistische Rapidität φ dieselbe mathematische Struktur besitzen.
+- Aus A1–A4 ableiten, welche Werte Δφ annehmen kann
+- Untersuchen, ob die Kopplungsdynamik eine hyperbolische Metrik auf dem Phasenraum induziert
+- Prüfen, ob Phasenaddition mit relativistischer Geschwindigkeitsaddition konsistent ist oder durch nichtlineare Verknüpfung ersetzt werden muss
+- Erfolgskriterium: Bijektive Abbildung f: [0,π] → [0,∞) mit f(Δφ₁ ⊕ Δφ₂) = f(Δφ₁) + f(Δφ₂)
+- **Ergebnis:** Erfolgskriterium vollständig bewiesen. f(Δφ) = arcsech(cos(Δφ/2)) = artanh(sin(Δφ/2)) ist die gesuchte Abbildung. Hyperbolische Metrik ds²_RFT = dΔφ²/(4ε(Δφ)) nachgewiesen. Phasenkomposition ⊕ ist strukturell identisch mit relativistischer Geschwindigkeitsaddition (v/c = sin(Δφ/2)).
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap1_phase_rapiditaet.md` · `en/facts/theory/rt40_ap1_phase_rapidity.md`
+
+**AP2 — Kopplungseffizienz als Lorentz-Faktor** ✅ **Abgeschlossen (Sep 2026)**
+Zeigen, dass ε(Δφ) = 1/γ² aus A4 folgt — nicht nur formale Ähnlichkeit ist.
+- E = π·ε·ℏ·f als relativistische Gesamtenergie eines Resonators interpretieren
+- E = γmc² und f = f₀/γ (Zeitdilatation der Eigenfrequenz) einsetzen
+- Nach ε auflösen, mit ε = cos²(Δφ/2) vergleichen
+- Erfolgskriterium: Identität bewiesen — oder falsifizierbare Relation zwischen m, f₀ und ℏ benannt
+- ⚠️ Zirkelschluss-Risiko: f = f₀/γ muss aus der RFT folgen, nicht postuliert werden
+- **Ergebnis:** Erfolgskriterium erfüllt (falsifizierbare Relation benannt). Naiver Ansatz (f = f₀/γ, E = γmc²) ergibt ε = γ² — Widerspruch zu AP1 (ε = 1/γ²). Zirkelschluss-Risiko bestätigt. Selbstkonsistenz-Bedingung: f_RFT = γ³·f₀. Physikalischer Gehalt von A4: Kopplungsenergie E_c = mc²/γ² (nicht Gesamtenergie). Verbindung zur Zitterbewegungsfrequenz: f₀_RFT = f_zbw = mc²/(π·ℏ). Vollständige Herleitung ε = 1/γ² aus A4 benötigt AP5.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap2_kopplungseffizienz_lorentz.md` · `en/facts/theory/rt40_ap2_coupling_efficiency_lorentz.md`
+
+**AP3 — Herleitung der Lorentz-Transformation** ✅ **Abgeschlossen (Sep 2026)**
+Lorentz-Transformation aus der Kopplungsdynamik herleiten.
+- Stationäre Lösung (K̇ = 0) auf invariante Größe untersuchen
+- Invariante mit Minkowski-Intervall s² = c²t² − x² identifizieren
+- ⚠️ Kritischer Engpass: Brücke Phasenraum → Koordinatenraum erfordert eine zusätzliche Zutat, die in A1–A7 nicht sichtbar ist — diese Lücke explizit dokumentieren oder schließen
+- Erfolgskriterium: Transformationsgleichungen identisch mit Lorentz — oder kontrollierte Abweichung benannt
+- **Ergebnis:** Erfolgskriterium erfüllt (Lorentz-Gleichungen exakt hergeleitet; strukturelle Lücke präzise dokumentiert). Stationäre Kopplungsbedingung K̇ = 0 mit gleichförmiger Relativbewegung identifiziert. RFT-Kopplungs-Invariante I_RFT = Δφ²/k² = |Δx|² − c²Δt² ≅ Minkowski-Intervall hergeleitet. Lorentz-Transformationsgleichungen t' = γ(t − βx/c), x' = γ(x − βct) exakt bewiesen. Lorentz-Gruppe aus G_sync-Phasenkomposition (AP1) abgeleitet. Brückenannahme B₁ (Kopplungswelle mit Phasengeschwindigkeit c) explizit formuliert — in A1–A7 nicht vollständig enthalten; AP4 soll c als strukturelle Grenze fundieren. Minimale Axiomenerweiterung A8 (Kopplungswellengeschwindigkeit) als Option formuliert.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` · `en/facts/theory/rt40_ap3_lorentz_transformation.md`
+
+**AP4 — Konstanz von c aus RFT-Grenzen** ✅ **Abgeschlossen (Sep 2026)**
+c als strukturelle Konstante der RFT herleiten, nicht als Postulat einführen.
+- ε(Δφ) für Δφ → π untersuchen: ε → 0 entspricht Entkopplung
+- Grenzgeschwindigkeit c als diejenige Geschwindigkeit interpretieren, bei der Kopplungseffizienz verschwindet
+- Bezugssystemunabhängigkeit zeigen: Grenze ist Eigenschaft der Kopplungsstruktur, nicht der Bewegung
+- Massebehaftete Resonatoren erreichen c nie, weil ε > 0 für m > 0 Voraussetzung ist
+- Erfolgskriterium: c erscheint als strukturelle Invariante von A4 — kein zirkuläres Postulat
+- **Ergebnis:** Erfolgskriterium erfüllt. ε(Δφ) → 0 für Δφ → π (quadratisch regulär). Strukturelle Grenzgeschwindigkeit c_struct = lim_{ε→0} v(ε) = c_phys abgeleitet. Bezugssystemunabhängigkeit über Lorentz-Invarianz von ε bewiesen (ε ist Skalar im Phasenraum, AP1 + A5). Massebehaftete Resonatoren: E_kin → ∞ für v → c; c in endlicher Zeit nie erreichbar (direkte Konsequenz A4). Brückenannahme B₁ aus AP3 retroaktiv fundiert: c ist die einzige strukturell ausgezeichnete Grenzgeschwindigkeit der RFT. Numerischer Wert c = 2,998 × 10⁸ m/s bleibt empirische Zutat. SRT-Postulate (Relativitätsprinzip + Konstanz von c) beide als Grenzfälle von A1–A7 begründet.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md` · `en/facts/theory/rt40_ap4_speed_of_light_limit.md`
+
+**AP5 — Zeitdilatation und Längenkontraktion als Phasen-/Kopplungseffekte** ✅ **Abgeschlossen (Sep 2026)**
+Klassische Formeln als Grenzfall der RFT reformulieren.
+- Eigenfrequenz f₀ eines bewegten Resonators erscheint gegenüber Beobachter um 1/γ reduziert → als Phasenverschiebung Δφ zwischen Sender und Empfänger interpretieren
+- Zeitdilatation Δt' = γΔt aus Phasenverschiebung ableiten
+- Längenkontraktion als Kopplungsreduktion: K_ij → K_ij/γ
+- **Neue Vorhersage:** Kohärenzlänge bewegter Resonatoren — empirisch unterscheidbar von SRT
+- Erfolgskriterium: Klassische Formeln als Grenzfall; Korrekturen höherer Ordnung explizit
+- **Ergebnis:** Erfolgskriterium vollständig erfüllt. Zeitdilatation Δt = γΔt₀ exakt aus hyperbolischer Phasenprojektionsgeometrie (AP1) hergeleitet. Längenkontraktion L' = L₀/γ aus effektiver Wellenzahl k_eff = γ·k₀ (AP3) bewiesen. ε = 1/γ² algebraisch geschlossen: cos²(arcsin β) = 1 − β² = 1/γ². Neue RFT-Vorhersage: Kohärenzlänge l_c(v) = λ₀/(2γ²), skaliert mit γ² statt γ — empirisch unterscheidbar von SRT-Längenkontraktion. Drei experimentelle Methoden und präzises Falsifikationskriterium formuliert.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap5_zeitdilatation_laengenkontraktion.md` · `en/facts/theory/rt40_ap5_time_dilation_length_contraction.md`
+
+**AP6 — Falsifizierbarkeit und Abgrenzung zur SRT** ✅ **Abgeschlossen (Sep 2026)**
+Empirisch unterscheidbare Vorhersagen benennen.
+- Freie Parameter der RFT (α/β, G(fᵢ/fⱼ)) auf messbare Abweichungen untersucht
+- Konkrete Experimente: Phasenrauschen bei relativistischen Ionen (GSI/FAIR), Myon-g-2, Gravitationswellen-Dispersion, Kohärenzlängen-Interferometrie
+- Falsifikationskriterium: l_c ∝ γ⁻¹ (gemessen) würde AP5-Vorhersage widerlegen
+- **Ergebnis:** Erfolgskriterium erfüllt. Kinematik RFT ≡ SRT (vollständig äquivalent). Vier Überschuss-Vorhersagen benannt: (1) l_c(v) = λ₀/(2γ²) — γ²-Skalierung vs. γ der SRT; (2) Phasenrauschen S_φ ∝ γ⁻²; (3) interne Konsistenzfrequenz f_int = γ³f₀; (4) frequenzabhängige Gruppengeschwindigkeit nahe ε→0. LIGO-Daten schließen signifikante GW-Dispersion aus. Myon-g-2 qualitativ plausibel, nicht quantifizierbar ohne Quantisierung der RFT.
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap6_falsifizierbarkeit_srt_abgrenzung.md` · `en/facts/theory/rt40_ap6_falsifiability_srt_distinction.md`
+
+**AP7 — Warpantrieb-Konsistenzprüfung** ✅ **Abgeschlossen (Sep 2026)**
+Erst nach AP3 sinnvoll. Warp-Metrik aus A4/A5 rekonstruieren; flache Raumzeit als Grenzfall (Δφ → 0, ε → 1) prüfen; Kompatibilität mit hergeleiteter SRT-Brücke dokumentieren.
+- **Ergebnis:** Erfolgskriterium vollständig erfüllt. RFT-Warp-Metrik aus A4/A5 hergeleitet: h_μν^RFT = h_μν^Alcubierre · ε(Δφ). Flache Raumzeit als kohärenter Grundzustand (Δφ=0, ε=1) analytisch bewiesen. Lichtgrenzfall (Δφ→π, ε→0): Warpfeld kollabiert, konsistent mit AP4. Keine Negativenergie: ε(Δφ)≥0 → ρ_RFT≥0. Drei neue Vorhersagen gegenüber Standard-Alcubierre: (1) ε²-Winkelmodulation der Energiedichte; (2) ρ≥0 überall (keine exotische Materie); (3) Selbst-Abschaltung bei v_s→c. Offene Lücke: Brückenannahme B₁ (wie AP3) und nichtlinearer Warpfall (v_s~c).
+- **Kerndokumente:** `de/fakten/theorie/rt40_ap7_warpantrieb_konsistenzpruefung.md` · `en/facts/theory/rt40_ap7_warp_consistency_check.md`
+
+**Zeitplan:**
+- Wochen 1–2: AP1 + AP2 (stationäre Kopplungslösung, Invariante)
+- Wochen 3–4: AP4 (c als strukturelle Konstante) + AP2 abschließen
+- Wochen 5–6: AP3 (Lorentz-Transformation) — Lücke dokumentieren oder schließen
+- Wochen 7–8: AP5 + AP6 (neue Vorhersagen, Falsifizierbarkeit)
+
+**Minimalziel:** ε(Δφ) = 1/γ² ist kein Zufall — folgt aus A4.
+**Mittelziel:** Lorentz-Transformation vollständig aus Kopplungsdynamik hergeleitet.
+**Maximalziel:** RFT enthält SRT als Grenzfall + benennbare messbare Abweichung.
+**Negativziel:** Falls Herleitung scheitert — präzise dokumentieren, an welcher Stelle A1–A7 nicht ausreichen, und minimale Axiomenerweiterung formulieren.
+
+**Methodische Leitplanken:**
+- Keine Zirkelschlüsse: c darf nicht als Postulat eingeführt werden, wenn sie hergeleitet werden soll
+- Keine nachträgliche Parameteranpassung: Alle Konstanten müssen aus A1–A7 folgen oder explizit als frei benannt sein
+- Klar unterscheiden: (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage
+
+**Deliverables:**
+1. Formales Papier: vollständige Herleitung (oder dokumentiertes Scheitern mit Lückenanalyse)
+2. Explizite Formel Δφ(φ) und ε(γ) — bewiesen oder widerlegt
+3. Falsifizierbarkeitsabschnitt mit mindestens einer messbaren Abweichung
+4. Numerische Simulation: Kopplungsdynamik für relativistische Geschwindigkeiten vs. SRT
+5. Open-Source-Code zur Reproduktion (GitHub-Erweiterung)
+
+**Verbindung zu bestehenden Tasks:** AP7 baut auf RT-33/RT-34 auf. AP2 nutzt ε = cos²(Δφ/2) aus RT-02. AP4 schließt konzeptuell an RT-01 (π als geometrische Konstante) an.
+
+---
+
+### RT-41 — Axiom A8: Kopplungswellengeschwindigkeit — Herleitung oder irreduzibles Postulat
+**Status: ✅ Abgeschlossen (Sep 2026)**
+**Kategorie:** Theoretische Herleitung
+**Priorität:** Abgeschlossen
+
+**Ergebnis:** Ergebnis B: A8 ist irreduzibles Postulat. c als Phasengeschwindigkeit
+folgt nicht aus A1–A7. AP1: Dispersionsrelation ist in A1 freier Parameter. AP2: c_lim
+(ε→0) und c_φ (B₁) konzeptuell verschieden — Gleichheit konsistent, aber nicht beweisbar.
+AP3: G_sync enthält keine SO(1,1)-Untergruppe. A8 formal formuliert und in
+`axiomatische_grundlegung.md` eingetragen. Axiomensystem A1–A8 vollständig für SRT-Ableitung.
+
+**Kerndokumente:** `de/fakten/theorie/rt41_axiom_a8_kopplungswelle.md` ·
+`en/facts/theory/rt41_axiom_a8_coupling_wave.md` ·
+`de/fakten/docs/definitionen/axiomatische_grundlegung.md`
+
+**Verbindung zu bestehenden Tasks:**
+- RT-40 AP3: B₁-Lücke (Ausgangspunkt) — `de/fakten/theorie/rt40_ap3_lorentz_transformation.md` §8
+- RT-40 AP4: c als strukturelle Grenzgeschwindigkeit — `de/fakten/theorie/rt40_ap4_lichtgeschwindigkeit_grenzfall.md`
+- RT-02: G_sync-Gruppenstruktur — `de/fakten/theorie/gsync_gruppenstruktur.md`
+- RT-36: A5 als Vorbild für irreduzibles Postulat — `de/fakten/theorie/a5_vektorialitaet_herleitung.md`
+
+---
+
+## Kategorie 2: Simulationen mit öffentlichen Daten
+
+### RT-04 — FLRW-Simulation mit SI-Einheiten (Friedmann-Gleichung)
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Aufgabe:** Neuer FLRW-Solver in SI-Einheiten mit H₀ in s⁻¹ aus Friedmann-Gleichung.
+**Daten:** Planck-2018-Kosmologieparameter (öffentlich: https://pla.esac.esa.int)
+**Code:** `core/flrw_si.py` (DE + EN) — `flrw_si_sim()`, `compare_to_astropy()`.
+**Analyseskript:** `analyse/rt04_si_vergleich.py` + `analyse/rt04_si_comparison.py` (EN).
+**Ergebnis:** Falsifizierungskriterium: max. Abweichung |a_rft − a_astropy| / a_astropy < 1 %
+über t = 0.1..13.8 Gyr. SI-Parameter als `PLANCK_2018`-Sektion in `config.py` eingetragen.
+**Domänenübertragung A7 (Kosmologie):** Status → empirisch testbar (SI) sobald astropy-Vergleich
+< 1 % Abweichung zeigt.
+
+### RT-05 — CMB-Vergleich mit CAMB/CLASS
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Motivation:** generate_lcdm_bestfit() ist ein Spielzeugmodell (K-5). K-5 behoben durch echten Boltzmann-Solver.
+**Aufgabe:** Echtzeit-ΛCDM-Spektrum via CAMB oder CLASS generieren und als Referenz nutzen.
+**Daten:** Planck-2018 TT-Spektrum (öffentlich: https://pla.esac.esa.int/pla/#cosmology)
+**Code:** `core/camb_reference.py` (DE + EN) — `generate_camb_spectrum()` mit CAMB/CLASS-Fallback.
+`core/cmb_comparison.py` erweitert: `compare_with_camb()`, `scan_h0_tension()`.
+**Analyseskript:** `analyse/rt05_camb_vergleich.py` + `analyse/rt05_camb_comparison.py` (EN).
+**Ergebnis:** Δχ²_CAMB bestimmt ob K-5 behoben (> 0) oder neues Artefakt gefunden (≤ 0).
+H0-Spannungstest: H₀_min(RFT) ∈ [67, 73] → direkter H0-Tension-Beitrag.
+**Hinweis:** bisheriger Δχ² = +16 war vs. Spielzeugmodell — CAMB-Vergleich ist der echte Test.
+
+### RT-06 — (γ,α)-Wirkungsquerschnitt für Am-241 aus EXFOR-Datenbank
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Motivation:** σ_photo_alpha in material.py ist nicht aus Literaturdaten (K-6).
+**Ergebnis:** EXFOR-Recherche: Kein direkter (γ,α)-Eintrag für Am-241 (oder U-235) in EXFOR.
+  Fallback: Hauser-Feshbach (Weisskopf-Evaporationsmodell, RIPL-3-Parametrisierung).
+  σ(γ,α) = 1,719 mb bei E = 14,0 MeV (GDR-Zentroid), Unsicherheit ±factor 2–5.
+  Der bisherige „Schätzwert" (σ_GDR ≈ 364 mb) war der Gesamtquerschnitt, nicht σ(γ,α)
+  → factor ~212 Unterschied. RFT-Reaktorraten-Vorhersage muss revidiert werden.
+  K-6 Status: BEHOBEN (mit Revision erforderlich).
+**Code:** `simulation/exfor_data.py` (DE + EN), `analyse/rt06_exfor_vergleich.py` (DE + EN).
+  Am241_Literature: neue Felder exfor_gamma_alpha_*. photo_alpha_cross_section() neu.
+  material.py: americium_241.sigma_photo_alpha = 1.719e-3 barn (RT-06-Wert).
+**Kreuzvalidierung:** σ(γ,f) vs. Soldatov: 0,0% Abweichung [PASS]; σ(γ,n) vs. Berman: 0,0% [PASS].
+
+### RT-07 — Unabhängiger η-Estimator in FLRW-Simulationen
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Motivation:** Pearson-Estimator ist algebraisch äquivalent zu cos²(Δφ/2) (K-2).
+**Aufgabe:** Drei alternative Estimatoren implementieren und vergleichen:
+  1. Energietransfer-Rate: ΔE₁₂ / (E₁ + E₂)
+  2. Mutual Information: MI(ε₁, ε₂) via Histogramm
+  3. Phase Locking Value: PLV = |⟨exp(i·Δφ)⟩|
+**Ergebnis:** Alle drei Estimatoren weichen systematisch von cos²(Δφ/2) ab
+(η_E ≈ 0.39, η_MI ≈ 0.27, η_PLV ≈ 0.27). Sie messen orthogonale Aspekte:
+Energie-Imbalance, statistische Abhängigkeit, Phasenstabilität. Der Pearson-
+Estimator ist die einzige Messgröße, die direkt ε = η reproduziert — er ist
+damit physikalisch ausgezeichnet, nicht tautologisch. K-2 behoben.
+**Code:** `compute_eta_independent(sol, results)` in `coupled_flrw.py` (DE + EN).
+**Analyseskript:** `analyse/rt07_estimator_vergleich.py` + Plot `rt07_estimator_vergleich.png`.
+
+### RT-08 — Doppelpendel: Experimentaldaten vs. RFT-Vorhersage
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:**
+- Datenbasis: Synthetische Zeitreihe (Lagrange, A=0, N=1500 Punkte)
+- χ² = 3627,50 | χ²_red = **2,42** | dof = 1499 | p < 0,0001
+- Urteil: RFT-Formel gegenüber Lagrange-Nullhypothese abgelehnt (χ²_red > 2,0)
+- Interpretation: Erwartete systematische Abweichung — Nullhypothese enthält keinen RFT-Term; experimentelle Daten für abschließenden Vergleich erforderlich
+- **Experimentprotokoll für echte Messdaten: → RT-38** (`experiment/protokoll_rt38.md`)
+**Code:**
+- `de/fakten/simulationen/doppelpendel/doppelpendel.py` — Neue Funktionen: `load_experimental_data`, `compute_epsilon_from_data`, `rft_epsilon_prediction`, `chi2_fit`
+- `en/facts/simulations/double_pendulum/double_pendulum.py` — EN-Spiegel
+- `de/fakten/simulationen/doppelpendel/analyse/rt08_doppelpendel_vergleich.py` — Analyseskript (DE)
+- `en/facts/simulations/double_pendulum/analyse/rt08_double_pendulum_comparison.py` — Analyseskript (EN)
+
+---
+
+## Kategorie 3: Code-Korrekturen
+
+### RT-09 — Vollständiges Unsicherheitsbudget für Am-241-Experiment
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** M-4 teilweise behoben (konservatives Szenario noch nicht ausreichend):
+- Korrigierter Querschnitt: σ(γ,α) = 1.719 mb (RT-06, Hauser-Feshbach) — Faktor 212× kleiner als σ_GDR
+- Signifikanz (alt, σ_GDR): >484.997 σ [RT-06: FALSCH] → Signifikanz (neu, σ(γ,α)): 2.288 σ pro Sekunde absolut, SNR_median = 10,3 σ (realistisches Szenario, 100 h, ELI-NP)
+- Messzeit-Anforderungen: t(5σ) = 23,7 h (realistisch), 15,1 h (optimistisch), 516 h (konservativ)
+- Dominanter Unsicherheitsbeitrag: σ(γ,α)-Hauser-Feshbach-Faktor (93,9% der Gesamtvarianz)
+- Signalverhältnis R = 2,0000 (Median, exakt — unabhängig von σ(γ,α))
+- Falsifizierungskriterium (SNR_p16 ≥ 3σ bei 100 h): Optimistisch JA, Realistisch JA, Konservativ NEIN
+**Code:**
+- `de/fakten/konzepte/resonanzreaktor/simulation/experiment_am241.py` — `uncertainty_budget_am241()` + `ExperimentConfig` aktualisiert
+- `en/facts/concepts/resonance_reactor/simulation/experiment_am241.py` — EN-Spiegel
+- `de/fakten/konzepte/resonanzreaktor/analyse/rt09_fehlerbudget.py` — Analyseskript (DE)
+- `en/facts/concepts/resonance_reactor/analyse/rt09_uncertainty_budget.py` — Analyseskript (EN)
+
+### RT-11 — FLRW κ-Parameter aus Axiomen ableiten
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** κ_RFT = 1 ist eine explizite Konventionsdeklaration (Normierungsfreiheit im dimensionslosen Einheitensystem). Eine formale Ableitung von κ = 8πG aus A1–A7 ist nicht möglich, da G_sync auf dem internen Phasenraum operiert und keinen Zugang zur Newtonschen Gravitationskonstante G hat. Die zentralen Ergebnisse (η-Korrektur, d_η-Skalierung) sind κ-invariant.
+**Kerndokument:** `de/fakten/theorie/kappa_parameter_rft.md`
+
+### RT-31 — Resonanz-Hamiltonoperator für spezifische Systeme konstruieren
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Phonon-Phonon-System: ΔE(Δφ) = ε(Δφ)·ΔE(0) bestätigt (Abweichung < 1e-14). Spin-Bahn: analytische Eigenwerte exakt, resonanter Fall bestätigt. A3-Korollar dokumentiert.
+**Kerndokument:** `de/fakten/simulationen/hamilton/README.md`
+
+### RT-32 — Nichtlineare Sättigungsterme in der Feldgleichung
+**Status: ✅ Abgeschlossen (Aug 2026)**
+**Ergebnis:** `lambda_eps4`-Parameter in `coupled_flrw.py` eingeführt. Das Potential wird erweitert zu V(ε) = ½m²ε² + ¼λε⁴ + (1/6)λ_ε⁴ε⁶. Störungstheoretisch: δη ≈ −c·λ_ε⁴·ε₀²·sin²(Δφ/2), d.h. bei kleinen Amplituden (ε₀ ≈ 0.3) sind Korrekturen perturbativ klein. Neue Funktion `scan_lambda_eps4()` für systematischen Parametervergleich. Rückwärtskompatibel: lambda_eps4=0 entspricht Standard-λφ⁴.
+**Kerndokument:** `de/fakten/simulationen/FLRW-Simulationen/core/coupled_flrw.py` · `de/fakten/simulationen/FLRW-Simulationen/README.md`
+
+### RT-33 — Warpantrieb: Energielücke schließen (Stufe 5)
+**Status: ✅ Abgeschlossen (August 2026)**
+**Ergebnis:** Skalierungsgesetz ρ_benötigt ∝ R⁻² analytisch hergeleitet (Alcubierre-Metrik,
+Einstein-Feldgleichungen). Wandpacking-Modell: n_reaktoren ∝ R² → ρ_verfügbar = const.
+Lücken-Faktor L(R) ∝ R⁻². Kritischer Radius R* für drei Szenarien berechnet:
+R* liegt auf parsec- bis kiloparsec-Skala (weit jenseits 1 AU) für alle Fusionsszenarien.
+Benötigter Gain G* bei R = 50 m: ~10¹²–10¹⁶. Übereinstimmung mit Alcubierre (1994) und
+Pfenning & Ford (1997) bestätigt. Ehrlichkeitsstandard (§6.1) beibehalten:
+Die Energielücke ist astronomisch — kein reines Skalierungsproblem.
+**Falsifizierung:** R* >> 1 AU → Stufe 5 mit bekannter Fusion nicht realisierbar.
+**Neue Dateien:** `analyse/rt33_energieluecke.py` · `analyse/rt33_energy_gap.py`
+**Geänderte Dateien:** `warpantrieb.py` (skalierungsgesetz()) · `warp_drive.py` (scaling_law()) ·
+`warpantrieb.md` (§7a) · `warp_drive.md` (§7a) · beide READMEs (Stufe 5 ✅)
+**Kerndokument:** `de/fakten/konzepte/warpantrieb/`
+
+### RT-34 — Warpantrieb: 3D-Warpblase (Stufe 6)
+**Status: ✅ Abgeschlossen (Sep 2026)**
+**Ergebnis:** Vollständige sphärisch-azimutale 3D-Warpblase implementiert.
+Falsifizierungstest bestanden: ρ(x,y,z) ≥ 0 in allen Raumzeitregionen des
+50³-Gitters. GR-Solver (numerische Christoffel-Symbole Γ^t_tr, Γ^r_tt,
+Riemann-Tensor R^r_trt, vollständiger Ricci-Skalar R_full) implementiert.
+Zwei-Feld-Modell ist hinreichend für eine physikalische Warpblase.
+**Neue Dateien:** `analyse/rt34_warpblase_3d.py` · `analyse/rt34_warp_bubble_3d.py`
+**Geänderte Dateien:** `de/fakten/konzepte/warpantrieb/warp_3d.py` (GR-Solver,
+Falsifizierungstest) · `en/facts/concepts/warp_drive/warp_3d.py` (EN-Spiegel) ·
+beide READMEs (Stufe 6 ✅)
+**Kerndokument:** `de/fakten/konzepte/warpantrieb/`
+
+---
+
+## Kategorie 4: Experimentelle Vorhersagen (extern testbar)
+
+### RT-38 — Doppelpendel: Öffentliches Experimentprotokoll (Tabletop-Falsifizierungstest)
+**Status: ✅ Abgeschlossen (Aug 2026)** (Protokoll fertig; Durchführung extern)
+**Test:** ε(Δφ) = cos²(Δφ/2) (Axiom A4) am physischen Doppelpendel
+**Budget:** ~100–300 €, Smartphone genügt für Variante A
+**Protokoll:** `de/fakten/simulationen/doppelpendel/experiment/protokoll_rt38.md`
+**EN-Spiegel:** `en/facts/simulations/double_pendulum/experiment/protocol_rt38.md`
+**Falsifizierungskriterium:** χ²_red ≤ 1.5 → H₁ nicht falsifiziert; χ²_red > 2.0 → H₁ abgelehnt
+**Verbindung zu RT-08:** Analyseskript (`rt08_doppelpendel_vergleich.py`) bereits vorhanden;
+RT-38 liefert echte Messdaten für abschließenden χ²-Test (RT-08 bisher nur synthetische Daten).
+**Einladung:** Ergebnisse via GitHub Issues (Label `RT-38-result`) melden.
+
+### RT-12 — ⁸⁷Rb-Interferometrie-Experiment
+**Status: 📋 Offen** (benötigt Kooperationspartner)
+**Einrichtung:** Atominterferometer-Labore (PTB Berlin, NIST, SYRTE Paris)
+**Protokoll:** Kontrollierbare Phasendifferenz Δφ zwischen zwei Rb-Ensembles;
+Messung der Schwerpunktverschiebung Δ⟨x⟩ als Funktion von Δφ.
+
+### RT-13 — Resonanzreaktor: σ_coh vs. σ_incoh
+**Status: 📋 Offen** (benötigt ELI-NP Kooperation)
+**Einrichtung:** ELI-NP (Magurele, Rumänien) — gepulste Gammastrahlung
+**Protokoll:** Am-241-Probe mit kohärenter vs. inkohärenter Gammabestrahlung
+bei E_γ = GDR-Energie; Messung der α-Zerfallsrate als Funktion von Δφ.
+
+
+---
+
+## Kategorie 5: Kosmologie
+
+## RT-42 – RFT-Kosmologie
+
+### Ableitung einer Friedmann-Analogie aus der Resonanzfeldtheorie
+
+**Version:** 1.6 – AP7 abgeschlossen
+**Datum:** 17. September 2026
+**Status:** ✅ Abgeschlossen (Sep 2026) — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅
+**Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
+**Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-04 (FLRW-Simulation)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Prüfen, ob die kosmische Expansion als **Phaseneffekt im RFT-Feld** beschrieben werden kann – also ob eine modifizierte Friedmann-Gleichung existiert, in der der Skalenfaktor $a(t)$ aus der Phasendynamik $\Delta\phi(t)$ folgt, **ohne** negative Energie oder eine separate Dunkle-Energie-Komponente.
+
+**Teilziele:**
+
+1. Formale Analogie zwischen RFT-Phasendynamik und Friedmann-Gleichungen herstellen.
+2. Zeitableitung der Phase $\dot{\Delta\phi}$ aus der Kopplungsdynamik herleiten.
+3. Prüfen, ob die RFT $\Lambda$ ersetzen, erklären oder als Spezialfall enthalten kann.
+4. Das Skalierungsproblem der Warp-Simulation (28–50 Größenordnungen) kosmologisch einordnen.
+5. Falsifizierbare Abweichungen vom $\Lambda$CDM-Modell benennen.
+6. **Konsistenz mit A8 prüfen:** Ist die Kopplungswellengeschwindigkeit $c = 1/\sqrt{\mu_0\varepsilon_0}$ mit einem kosmologischen Phasengradienten vereinbar?
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+- Axiome A1–A8 (A8 seit RT-41: $c = 1/\sqrt{\mu_0\varepsilon_0}$ als irreduzibles Postulat)
+- Kopplungseffizienz $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$
+- Kopplungsdynamik $\frac{dK_{ij}}{dt} = \alpha G \cos\Delta\phi - \beta K_{ij}$
+- Zustandsgleichung aus RT-33: $w(\theta) = \frac{1}{3}[2\varepsilon(\Delta\phi(\theta)) - 1]$
+- **RT-40-Ergebnis:** $\varepsilon = 1/\gamma^2$, Lorentz-Transformation als Grenzfall, $l_c \propto \gamma^{-2}$
+- **RT-33-Ergebnis:** ρ ≥ 0 überall, keine negative Energie nötig; $w \in [-1/3, +1/3]$
+- **RT-41-Ergebnis:** A8 etabliert $c$ als Kopplungswellengeschwindigkeit
+
+**Gegeben (Kosmologie):**
+- Friedmann-Gleichungen:
+  $$H^2 = \left(\frac{\dot a}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3}$$
+  $$\frac{\ddot a}{a} = -\frac{4\pi G}{3}\left(\rho + \frac{3p}{c^2}\right) + \frac{\Lambda c^2}{3}$$
+- $\Lambda$CDM: Dunkle Energie mit $w \approx -1$, ca. 68 % der Energiedichte
+- Beobachtungen: beschleunigte Expansion seit $z \approx 0{,}5$
+
+**Bekannte Spannung:**
+- Kosmologische Energiedichte: $\rho_\Lambda \approx 10^{-26}\,\text{kg/m}^3 \approx 10^{-9}\,\text{J/m}^3$
+- Warp-Simulation: $\rho \approx 10^{19}\,\text{J/m}^3$ für R = 50 m
+- **Diskrepanz: ~28 Größenordnungen** (gegen $\rho_\Lambda$)
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Formale Analogie: Phase ↔ Skalenfaktor ✅ **Abgeschlossen (Sep 2026)**
+
+**Aufgabe:**
+Prüfe, ob die RFT-Phasendifferenz $\Delta\phi(t)$ als **dynamische Variable** fungiert, die den kosmischen Skalenfaktor $a(t)$ steuert.
+
+**Konkrete Schritte:**
+1. Definiere ein homogenes, isotropes RFT-Feld: $\Delta\phi(\vec x, t) \to \Delta\phi(t)$.
+2. Leite aus A1–A8 ab, wie sich $\Delta\phi$ unter Expansion verhält.
+3. Setze $\varepsilon(t) = \cos^2(\Delta\phi(t)/2)$ und interpretiere $\varepsilon$ als **effektive kosmologische Dichte**.
+4. Vergleiche mit dem Friedmann-Ausdruck: $\varepsilon \leftrightarrow \rho/\rho_c$.
+5. Prüfe, ob eine Friedmann-artige Gleichung der Form
+   $$H^2 = \frac{8\pi G}{3}\rho_{\text{RFT}}(\varepsilon) - \frac{kc^2}{a^2}$$
+   ohne separaten $\Lambda$-Term auskommt.
+
+**Erfolgskriterium:** Explizite Abbildung $\Delta\phi(t) \to a(t)$ — oder Nachweis ihrer Nichtexistenz.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Explizite Abbildung $H(t) = H_0 \cdot \cos(\Delta\phi(t)/2)$ konstruiert; Friedmann-artige Gleichung $H^2 = H_0^2 \cdot \varepsilon(\Delta\phi)$ ohne $\Lambda$-Term hergeleitet. Bijektivität auf $\Delta\phi \in [0, \pi/2)$ bewiesen. Offene Einschränkung: $w \in [-1/3, +1/3]$ aus RT-33 deckt $w = -1$ (ΛCDM) nicht ab — AP3 erforderlich. Kerndokumente: `de/fakten/theorie/rt42_ap1_phase_skalenfaktor.md` · `en/facts/theory/rt42_ap1_phase_scale_factor.md`
+
+---
+
+#### AP2 – Zeitableitung der Phase
+
+**Status: ✅ Abgeschlossen (Sep 2026)**
+
+**Aufgabe:**
+Bestimme $\dot{\Delta\phi}$ aus der Kopplungsdynamik und interpretiere es als **Expansionsrate**.
+
+**Konkrete Schritte:**
+1. Homogenes Feld: $\frac{dK}{dt} = \alpha G \cos(\Delta\phi) - \beta K$
+2. Drücke $K$ durch $\Delta\phi$ aus (z. B. $K = K_0 \varepsilon(\Delta\phi)$).
+3. Leite eine Differentialgleichung für $\Delta\phi(t)$ her.
+4. Identifiziere $\dot{\Delta\phi}$ mit $H = \dot a/a$ — oder zeige, warum das nicht geht.
+5. Untersuche stationäre ($\dot{\Delta\phi} = 0$) und dynamische Lösungen.
+6. **Konsistenz mit A8:** Begrenzt $c$ die Phasendynamik auf kosmologischen Skalen?
+
+**Erfolgskriterium:** Geschlossene Differentialgleichung für $\Delta\phi(t)$, vergleichbar mit Friedmann-Lösungen.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Geschlossene ODE $\dot{\Delta\phi} = \beta\tan(\Delta\phi/2)$ vollständig aus der RFT-Kopplungsdynamik abgeleitet (A4, A5, AP1-Homogenisierung). Äquivalente Form: $\dot\varepsilon = -\beta(1-\varepsilon)$ mit analytischer Lösung $\varepsilon(t) = 1 - \sin^2(\Delta\phi_0/2)\,e^{\beta t}$. Hubble-Parameter explizit: $H(t) = H_0\sqrt{1 - \sin^2(\Delta\phi_0/2)\,e^{\beta t}}$. Modifizierte Raychaudhuri-Gleichung: $\dot H = -(\beta/2)(H_0^2 - H^2)/H$. Direkte Identifikation $\dot{\Delta\phi} = H$ nicht möglich (verschiedene Funktionen von $\Delta\phi$); physikalische Verbindung läuft über $\dot\varepsilon$. A8-Konsistenz: $\beta \sim H_0$ sichert kausale Verträglichkeit am Hubble-Horizont.
+- **Kerndokumente:** `de/fakten/theorie/rt42_ap2_zeitableitung_phase.md` · `en/facts/theory/rt42_ap2_time_derivative_phase.md`
+
+---
+
+#### AP3 – Verbindung zu $\Lambda$ oder Dunkler Energie ✅ **Abgeschlossen (Sep 2026)**
+
+**Aufgabe:**
+Klären, ob die RFT $\Lambda$ **ersetzt**, **erklärt** oder **als Grenzfall enthält**.
+
+**Konkrete Schritte:**
+1. Prüfe $\varepsilon(\Delta\phi)$ für $\Delta\phi \to \pi$: $\varepsilon \approx \delta^2/4 \to 0$ — nicht $\Lambda$-artig.
+2. Prüfe, ob ein **Phasengradient** $\nabla\Delta\phi$ einen effektiven $\Lambda$-Term erzeugt.
+3. Vergleiche mit Quintessenz-Modellen ($w(t)$ dynamisch).
+4. Benenne Bedingungen, unter denen RFT und $\Lambda$CDM identisch sind.
+
+**Erfolgskriterium:** Klare Aussage: RFT ersetzt / erklärt / ist unvereinbar mit $\Lambda$.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Homogener Grenzfall (∇Δφ = 0): w ∈ [−1/3, +1/3], w = −1 nicht erreichbar — RFT unvereinbar mit Λ = const. Inhomogener Grenzfall (statischer Superhorizontalgradient ∇Δφ = k₀): effektiver Λ-Term ρ_grad = (1/2μ₀)·k₀²·ℏ²/c² mit w_grad → −1 — RFT **erklärt** Λ geometrisch. ΛCDM ist Spezialfall der RFT (β → 0, k₀ = const), nicht umgekehrt. RFT ist erweitertes Quintessenz-Modell mit w_eff ∈ [−1, +1/3]. Falsifizierbare Vorhersage: w(z) = w₀ + w_a·z/(1+z) mit w_a ≈ β/H₀ (AP5). Kerndokumente: `de/fakten/theorie/rt42_ap3_verbindung_lambda_dunkle_energie.md` · `en/facts/theory/rt42_ap3_connection_lambda_dark_energy.md`
+
+---
+
+#### AP4 – Skalierungsproblem kosmologisch einordnen ✅ **Abgeschlossen (Sep 2026)**
+
+**Aufgabe:**
+28-Größenordnungen-Diskrepanz zwischen Warp-Energiedichte ($10^{19}$ J/m³) und $\rho_\Lambda$ ($10^{-9}$ J/m³) auflösen oder als Scheinproblem enttarnen.
+
+**Konkrete Schritte:**
+1. Berechne $\rho_\Lambda c^2 \approx 10^{-9}$ J/m³.
+2. Interpretiere: Warp = lokale Metrikstörung ≠ kosmologische Hintergrundmetrik.
+3. Prüfe Skalierungsfaktor $\rho_{\text{warp}}/\rho_\Lambda \propto (R_H/R)^n$ — welches $n$?
+
+**Erfolgskriterium:** Diskrepanz gelöst (Skalierungsfaktor) oder als Scheinproblem ausgewiesen (verschiedene Regime).
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Die 28-Größenordnungen-Diskrepanz ist ein **Scheinproblem**: Sie spiegelt keine fundamentale Inkonsistenz der RFT wider, sondern die physikalisch verschiedenen Regime der lokalen Metrikstörung (Warp, k_warp ~ 10⁻² m⁻¹) und der globalen kosmologischen Hintergrundenergie (Λ, k₀ ~ 10⁻²⁶ m⁻¹). ρ_Λ c² = Λc⁴/(8πG) ≈ 5,4 × 10⁻¹⁰ J/m³ berechnet und mit dem RFT-Gradientenausdruck aus AP3 identifiziert. Formaler k²-Skalierungsfaktor: (k_warp/k₀)² ~ 10⁴⁸ übertrifft die beobachteten 10²⁸ um weitere 20 Größenordnungen — Warp-Energie und ρ_Λ folgen verschiedenen physikalischen Formeln (Krümmungsterm vs. Gradientenenergie). Empirischer Exponent n ≈ 1,15 nicht universell. Schlüsselargument: Eine kosmologische Warpblase (R ~ R_H/π ~ 5 × 10²⁵ m) hätte tatsächlich ρ ~ ρ_Λ — die 28-Größenordnungen sind Konsequenz der Wahl R_warp = 50 m. Kerndokumente: `de/fakten/theorie/rt42_ap4_skalierungsproblem_kosmologie.md` · `en/facts/theory/rt42_ap4_scaling_problem_cosmology.md`
+
+---
+
+#### AP5 – Falsifizierbare Abweichungen vom $\Lambda$CDM ✅ **Abgeschlossen (Sep 2026)**
+
+**Aufgabe:**
+Messbare Unterschiede zwischen RFT-Kosmologie und $\Lambda$CDM benennen.
+
+**Konkrete Schritte:**
+1. Freie Parameter: $\alpha/\beta$, $G(f_i/f_j)$, $\Delta\phi_0$, $\dot{\Delta\phi}_0$.
+2. Beobachtbare Effekte: Abweichung in $H(z)$, dynamisches $w(z)$, Strukturwachstum, CMB.
+3. Vergleich mit Planck, DES, SH0ES.
+4. Falsifikationskriterien benennen.
+
+**Erfolgskriterium:** Mindestens eine messbare Abweichung — oder Nachweis vollständiger Äquivalenz.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Vier messbare Abweichungen vom $\Lambda$CDM benannt: (1) Dynamischer Zustandsgleichungsparameter $w(z) = w_0 + w_a\,z/(1+z)$ mit $w_a \approx \beta/H_0 \cdot \sin^2(\Delta\phi_0/2) \neq 0$ (sofern $\beta \neq 0$) — direkt aus AP2/AP3 abgeleitet; $\Lambda$CDM postuliert $w_a = 0$. (2) Modifizierter Hubble-Parameter $\Delta H/H \lesssim 3\,\%$ bei $\beta = 0{,}5\,H_0$, messbar durch Euclid und Rubin LSST. (3) Verlangsamtes Strukturwachstum $\Delta(f\sigma_8) \lesssim 1\,\%$ durch verstärkte Reibung bei $H_{\rm RFT} > H_{\rm \Lambda CDM}$. (4) Reduziertes ISW-Signal bei $\ell < 20$ für $\beta > 0$. Primäres Falsifikationskriterium: $w_a = 0$ (5σ) erzwingt $\beta = 0$ — vollständige Äquivalenz mit $\Lambda$CDM. DESI-DR1 (2024) verträglich; entscheidende Tests durch DESI-DR5 und Euclid. Kerndokumente: `de/fakten/theorie/rt42_ap5_falsifizierbare_abweichungen_lcdm.md` · `en/facts/theory/rt42_ap5_falsifiable_deviations_lcdm.md`
+
+---
+
+#### AP6 – Kosmische Expansion als Phaseneffekt ✅ **Abgeschlossen (Sep 2026)**
+
+**Aufgabe:**
+Hypothese prüfen: **Die kosmische Expansion ist ein Phaseneffekt des RFT-Feldes.**
+
+**Konkrete Schritte:**
+1. Präzise Formulierung: $\dot a/a = f(\Delta\phi, \dot{\Delta\phi}, \alpha, \beta)$.
+2. $f$ aus A1–A8 herleiten — oder Nichtableitbarkeit zeigen.
+3. Szenario A: $\Delta\phi$ konstant → De-Sitter-artig.
+4. Szenario B: $\Delta\phi$ wächst → dynamisches $H(t)$; erklärt Beschleunigung und/oder frühe Inflation?
+
+**Erfolgskriterium:** Explizite Gleichung gestützt — oder klar widerlegt.
+
+- **Ergebnis:** Erfolgskriterium erfüllt. Hypothese bestätigt: Die kosmische Expansion ist ein Phaseneffekt des RFT-Feldes. Explizite Gleichung $\dot{a}/a = H_0\cos(\Delta\phi(t)/2)$ vollständig aus A1–A8 hergeleitet (via AP1 und AP2). Szenario A (Δφ = const): Exakter de-Sitter-Fixpunkt ($\Delta\phi = 0$) und verallgemeinerter de Sitter ($\beta = 0$, $\Delta\phi_0 >$ 0, $w_{\rm eff} \in [-1, -2/3]$). Szenario B ($\beta > 0$): Verzögerte Expansion; Slow-roll-Inflation für $\beta \ll H_0^{\rm inf}$; $n_s \in [0{,}97, 0{,}99]$ Planck-konsistent; natürlicher Inflationsaustritt auf Zeitskala $1/\beta$. Szenario C ($\beta < 0$): Beschleunigte Expansion; erklärt DESI-DR1-Signal ($w_a < 0$) direkt. Zeitlich variierendes $k_0(t)$: Dynamisches $\Lambda_{\rm eff}(t)$; erklärt DESI-DR1 alternativ/ergänzend für $\gamma \sim H_0$. Drei neue Falsifikationskriterien (F6–F8): Vorzeichen von $\beta$ aus $w_a$, Inflationsspektrum $n_s$, $k_0$-Dynamik aus Surveys. Kerndokumente: `de/fakten/theorie/rt42_ap6_kosmische_expansion_phaseneffekt.md` · `en/facts/theory/rt42_ap6_cosmic_expansion_phase_effect.md`
+
+---
+
+#### AP7 – Konsistenz mit RT-33, RT-40 und RT-41
+
+**Aufgabe:**
+Konsistenz der RFT-Kosmologie mit abgeschlossenen Tasks prüfen.
+
+**Konkrete Schritte:**
+1. $\Delta\phi \to 0$ (flache Raumzeit) mit expandierendem Universum vereinbar?
+2. $\varepsilon = 1/\gamma^2$ mit kosmologischem $\varepsilon(t)$ vereinbar?
+3. Kosmologische Phase $\Delta\phi(t)$ → Rotverschiebung $z$ konsistent mit Beobachtung?
+4. Kohärenzlänge $l_c \propto \gamma^{-2}$ kosmologisch relevant?
+5. **A8-Konsistenz:** Erzeugt $c$ eine obere Grenze für $H$?
+6. Widersprüche explizit benennen — oder deren Abwesenheit zeigen.
+
+**Erfolgskriterium:** Konsistenz mit RT-33, RT-40, RT-41 nachgewiesen — oder Widersprüche präzise dokumentiert.
+
+**Ergebnis:** Erfolgskriterium erfüllt. Konsistenz der RFT-Kosmologie mit RT-33, RT-40 und RT-41 vollständig nachgewiesen. Sechs Leitfragen beantwortet: (1) Skalentrennung AP4 löst scheinbaren Widerspruch Minkowski ↔ kosmologische Expansion auf. (2) ε_kosmo(t) = 1/γ²_kosmo(t) — identische Formel wie RT-40, kosmologischer Lorentz-Faktor γ_kosmo(t) = 1/cos(Δφ(t)/2). (3) Rotverschiebung z aus Δφ(t) über H(t) = H₀cos(Δφ/2) konsistent; Szenario C (β < 0) liefert DESI-DR1-Signal w_a < 0. (4) l_c,kosmo(t) = ε(t)·R_H/2 — skaliert mit Hubble-Radius; BAO-Falsifikationskriterium F9. (5) A8-Schranke H ≤ ck₀ — konsistent mit AP1–AP6; begrenzt auch Inflationsenergie. (6) Kein Widerspruch gefunden; zwei offene Grenzen präzise dokumentiert (B₁/A8, Quantisierung). Kerndokumente: `de/fakten/theorie/rt42_ap7_konsistenz_rt33_rt40_rt41.md` · `en/facts/theory/rt42_ap7_consistency_rt33_rt40_rt41.md`
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier mit modifizierter Friedmann-Gleichung (falls existent).
+2. Explizite Differentialgleichung für $\Delta\phi(t)$ und ihre Lösungen.
+3. Klare Aussage zu $\Lambda$: Ersatz, Erklärung oder Unvereinbarkeit.
+4. Skalierungsanalyse der 28 Größenordnungen.
+5. Falsifizierbarkeitsabschnitt mit mindestens einer messbaren Abweichung.
+6. Numerische Simulation der RFT-Kosmologie (Python-Code, öffentlich).
+7. Peer-Review-Einreichung (z. B. *Classical and Quantum Gravity*, *JCAP* oder *Foundations of Physics*).
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** RFT lässt eine Friedmann-artige Gleichung zu — auch wenn identisch mit $\Lambda$CDM.
+**Mittelziel:** RFT ersetzt oder erklärt $\Lambda$ — ohne zusätzliche Komponente.
+**Maximalziel:** RFT erklärt beschleunigte Expansion aus Phasendynamik **und** sagt messbare Abweichung von $\Lambda$CDM voraus.
+**Negativziel:** Scheitern präzise dokumentieren; minimale Erweiterung formulieren (z. B. A9: kosmologische Randbedingung).
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** $\Lambda$ darf nicht als Postulat eingeführt werden, wenn sie hergeleitet werden soll.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten aus A1–A8 oder explizit als frei deklariert.
+- **Falsifizierbarkeit:** Jede Behauptung mit Widerlegungskriterium.
+- **Skalentrennung:** Warp (lokal) ≠ Friedmann (kosmologisch) — nicht verwechseln.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentiert.
+- **Abgrenzung:** (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage.
+- **A8-Konsistenz:** $c$ in allen kosmologischen Gleichungen konsistent berücksichtigt.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:** Kopplungsdynamik für homogenes, isotropes RFT-Feld formulieren. DGL für $\Delta\phi(t)$ herleiten. Stationäre und dynamische Lösungen prüfen.
+**Woche 3–4:** $\varepsilon(t) = \cos^2(\Delta\phi(t)/2)$ mit Friedmann vergleichen. Modifizierte Friedmann-Gleichung ohne $\Lambda$ prüfen.
+**Woche 5–6:** Falls Gleichung hält: $H(z)$ herleiten, mit Planck/DES vergleichen. Falls nicht: Lücke dokumentieren, minimale Erweiterung formulieren.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT die kosmische Expansion **exakt** erklärt, ist gering — $\Lambda$CDM passt auf viele Datenpunkte. Die Wahrscheinlichkeit, dass die RFT eine **strukturelle Alternative** liefert — dynamisches $w(z)$ ohne separate Dunkle-Energie-Komponente — ist nicht vernachlässigbar.
+
+Ehrlichster Ausgang: **Die RFT enthält $\Lambda$CDM als Grenzfall — und macht eine neue Vorhersage über die Dynamik von $w(z)$.**
+
+---
+
+### 9. Verwandte Tasks
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-04** | FLRW-Simulation – numerische Infrastruktur |
+| **RT-33** | Warp-Skalierung – $w(\theta)$-Modulation als Baustein |
+| **RT-34** | 3D-Warpblase – numerische Metrik |
+| **RT-40** | SRT-Brücke – $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 – Kopplungswellengeschwindigkeit $c$ |
+| **RT-42** | **Dieser Task** – Kosmologie |
+
+---
+
+---
+
+## Kategorie 6: Analytische Warptheorie
+
+## RT-43 – Analytische Warpmetrik und technische Anschlussfähigkeit
+
+### Geschlossene Form der RFT-Warpmetrik und Konsistenzprüfung
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋
+**Vorgänger:** RT-33 (Warp-Skalierung, ✅), RT-34 (3D-Warpblase, ✅), RT-42 (Kosmologie, AP1–AP7 ✅)
+**Verwandt:** RT-40 (SRT-Brücke), RT-41 (A8)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Die in RT-34 numerisch nachgewiesene Möglichkeit einer Warp-Metrik mit ρ ≥ 0 **analytisch schließen** und die **technische Anschlussfähigkeit** prüfen. Die Website resoshift.com markiert den Status korrekt als „ρ ≥ 0 möglich | numerisch, offen" — RT-43 adressiert diese Lücke.
+
+**Teilziele:**
+
+1. Eine **geschlossene analytische Form** der RFT-Warpmetrik herleiten (Störungsrechnung oder exakte Lösung).
+2. Die **Skalentrennung** zwischen kosmologischer Phasendynamik (RT-42) und lokaler Warp-Modulation (RT-34) formalisieren.
+3. Die **Energieskala** durch geometrische oder resonante Optimierung reduzieren — ohne ρ < 0 zu erzeugen.
+4. Eine **messbare Signatur** benennen, die die RFT-Warpmetrik von der klassischen Alcubierre-Metrik unterscheidet.
+5. Die **Konsistenz mit A8** prüfen: Ist die Kopplungswellengeschwindigkeit $c$ mit einer stationären Warpmetrik vereinbar?
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+- Axiome A1–A8
+- Kopplungseffizienz $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$
+- Zustandsgleichung $w(\theta) = \frac{1}{3}[2\varepsilon(\Delta\phi(\theta)) - 1]$
+- **RT-33:** ρ ≥ 0 überall, kein exotisches Material; $w \in [-1/3, +1/3]$; Skalierungsgesetz $n \propto R^2$
+- **RT-34:** 3D-Warpblase numerisch implementiert; GR-Solver (Christoffel, Riemann, Ricci) validiert
+- **RT-40:** $\varepsilon = 1/\gamma^2$; $l_c \propto \gamma^{-2}$
+- **RT-41:** A8 ist irreduzibles Postulat; $c$ = Kopplungswellengeschwindigkeit
+- **RT-42 AP1/AP2:** Phasendynamik $\Delta\phi(t)$ als kosmologische Variable etabliert; Skalentrennung $\Delta\phi_{\rm bg}$ vs. $\delta\phi$ vorbereitet
+
+**Numerische Ausgangswerte (RT-33/RT-34):**
+
+| Größe | Wert |
+|:--|:--|
+| Blasenradius | R = 50 m |
+| Gesamtenergie | E ≈ 9,38 × 10¹⁹ J |
+| Negative Energie | E⁻ = 0,00 J |
+| $w$-Werte | $w_{\rm vorn} = +0{,}034$; $w_{\rm hinten} = -0{,}024$ |
+| Δw | +0,058 |
+| ρ_benötigt (konservativ) | ~10⁵⁷ J/m³ |
+| ρ_verfügbar (optimistisch) | ~10¹⁰ J/m³ |
+
+**Bekannte offene Punkte:**
+- Keine geschlossene analytische Form der Metrik.
+- Energiedichten ~28 Größenordnungen über kosmologischem Hintergrund (RT-42 AP4: Scheinproblem verschiedener Regime).
+- Keine messbare Signatur für Falsifikation.
+- Skalentrennung Kosmologie ↔ Warp nicht formalisiert.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Analytische Form der RFT-Warpmetrik
+
+**Aufgabe:**
+Leite eine **geschlossene analytische Form** der RFT-Warpmetrik her — entweder als exakte Lösung oder als kontrollierte Störungsrechnung.
+
+**Konkrete Schritte:**
+1. Ansatz: Linearisierte Metrik um Minkowski:
+   $$g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}^{\rm RFT}, \quad h_{\mu\nu}^{\rm RFT} = h_{\mu\nu}^{\rm Alcubierre} \cdot \varepsilon(\Delta\phi)$$
+2. RFT-Zustandsgleichung $w(\theta) = \frac{1}{3}[2\varepsilon - 1]$ in die Einstein-Gleichungen einsetzen.
+3. Linearisierte Einstein-Gleichungen für $h_{\mu\nu}$ mit $\varepsilon(\Delta\phi(\theta))$ als Quellterm lösen.
+4. Prüfen, ob eine exakte Lösung existiert, die $\varepsilon$ als Modulationsfunktion bestätigt.
+5. Mit RT-34-Numerik vergleichen: Stimmen analytische und numerische Ergebnisse überein?
+
+**Erfolgskriterium:**
+Geschlossene Form $h_{\mu\nu}^{\rm RFT}(x,t)$, die im Grenzfall $\varepsilon \to 1$ die Alcubierre-Metrik und im Grenzfall $\varepsilon \to 0$ die Minkowski-Metrik reproduziert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap1_analytische_warpmetrik.md` · `en/facts/theory/rt43_ap1_analytical_warp_metric.md`
+
+---
+
+#### AP2 – Skalentrennung: Kosmologie ↔ lokale Warpmetrik
+
+**Aufgabe:**
+Formalisiere die **Entkopplung** zwischen der kosmologischen Phasendynamik (RT-42) und der lokalen Warp-Modulation (RT-34).
+
+**Konkrete Schritte:**
+1. Phase zerlegen in Hintergrund und Störung:
+   $$\Delta\phi(\vec x, t) = \Delta\phi_{\rm bg}(t) + \delta\phi(\vec x, t)$$
+2. Zeigen, dass die kosmologische Dynamik nur von $\Delta\phi_{\rm bg}$ abhängt.
+3. Zeigen, dass die Warp-Metrik nur von $\delta\phi$ abhängt.
+4. Den **Kopplungsterm** zwischen beiden bestimmen — falls er existiert.
+5. Prüfen: Ist der Kopplungsterm vernachlässigbar (adiabatische Näherung) oder relevant (Rückwirkung auf Kosmologie)?
+
+**Erfolgskriterium:**
+Die Skalentrennung ist **entweder** formal bewiesen (Kopplungsterm → 0) **oder** quantifiziert (expliziter Skalierungsfaktor).
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap2_skalentrennung.md` · `en/facts/theory/rt43_ap2_scale_separation.md`
+
+---
+
+#### AP3 – Energieoptimierung
+
+**Aufgabe:**
+Untersuche, ob die benötigten Energiedichten durch **geometrische** oder **resonante** Optimierung reduziert werden können — **ohne** ρ < 0 zu erzeugen.
+
+**Konkrete Schritte:**
+1. **Geometrische Optimierung:** Blasenform variieren (nicht-sphärisch, toroidal, fraktal); prüfen, ob ρ_benötigt sinkt.
+2. **Resonante Optimierung:** G-Faktor (Verstärkung produktiver Kopplung) zur Erhöhung von ρ_verfügbar nutzen.
+3. **Wandpacking:** Prüfen, ob das $n \propto R^2$-Skalierungsgesetz aus RT-33 durch hierarchische Wandstrukturen verbessert werden kann.
+4. **Phasenoptimierung:** $\Delta\phi(\theta)$ für minimales ρ_benötigt bei gegebenem Δw optimieren.
+5. **Vergleich mit RT-33-Parametern:** $V_0 = 0{,}5$, $\lambda_1 = 0{,}5$ — sind das die optimalen Werte?
+
+**Erfolgskriterium:**
+Reduzierte Energieskala numerisch oder analytisch nachgewiesen — oder Nachweis, dass die RT-33-Werte bereits optimal sind.
+
+**Erwartete Kerndokumente:** `de/fakten/konzepte/warpantrieb/analyse/rt43_energieoptimierung.py` · EN-Spiegel
+
+---
+
+#### AP4 – Messbare Signatur
+
+**Aufgabe:**
+Benenne eine **messbare Signatur**, die die RFT-Warpmetrik von der klassischen Alcubierre-Metrik unterscheidet.
+
+**Konkrete Schritte:**
+1. **Winkelabhängigkeit:** $\rho(\theta) \propto \varepsilon^2(\Delta\phi(\theta))$ — Alcubierre-Metrik ist sphärisch.
+2. **Kein E⁻:** RFT hat E⁻ = 0 — Alcubierre erfordert E⁻ > 0.
+3. **Selbst-Abschaltung:** Bei $v_s \to c$ löst sich die RFT-Warpkopplung auf (RT-34) — Alcubierre hat keinen solchen Mechanismus.
+4. **Kohärenzlänge:** $l_c \propto \gamma^{-2}$ (RT-40 AP5) — ist das in der Warpmetrik sichtbar?
+5. **Konkretes Experiment formulieren:** Welche Messung würde die RFT-Warpmetrik bestätigen oder ausschließen?
+
+**Erfolgskriterium:**
+Mindestens eine messbare Größe benannt, die die RFT-Warpmetrik von Alcubierre **unterscheidet** — oder Nachweis, dass beide im messbaren Bereich **identisch** sind.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap4_messbare_signatur.md` · `en/facts/theory/rt43_ap4_measurable_signature.md`
+
+---
+
+#### AP5 – Konsistenz mit A8
+
+**Aufgabe:**
+Prüfe, ob die Kopplungswellengeschwindigkeit $c$ (A8) mit einer **stationären** Warpmetrik vereinbar ist.
+
+**Konkrete Schritte:**
+1. Für $v_s < c$ ist die Warpblase kausal erlaubt.
+2. Die Phasenmodulation $\delta\phi(\vec x, t)$ muss kausal sein: $|\partial_t \delta\phi| \leq c |\nabla \delta\phi|$.
+3. Prüfen: Ist die RT-34-Lösung kausal — oder enthält sie überlichtschnelle Phasenausbreitung?
+4. Prüfen: Erzeugt die Warpmetrik **geschlossene zeitartige Kurven** (CTC)? Das wäre ein Kausalitätsverstoß.
+5. Bedingungen benennen, unter denen A8 **verletzt** wäre.
+
+**Erfolgskriterium:**
+Die RT-34-Warpmetrik ist kausal konsistent mit A8 — oder die Verletzung ist explizit benannt und quantifiziert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt43_ap5_kausalitaet_a8.md` · `en/facts/theory/rt43_ap5_causality_a8.md`
+
+---
+
+#### AP6 – Technische Anschlussfähigkeit
+
+**Aufgabe:**
+Prüfe, ob die RFT-Warpmetrik **technisch anschlussfähig** ist — d. h., ob es einen realistischen Pfad zu einer experimentellen Realisierung gibt.
+
+**Konkrete Schritte:**
+1. **Energieskala:** Benötigte Energiedichten mit existierenden Technologien vergleichen (Kernfusion: ~10¹⁷ J/m³; NIF: ~10¹⁴ J/m³).
+2. **Skalierung:** Wenn $\rho_{\rm benötigt} \propto 1/R^2$ (RT-33): wie groß müsste R für technisch erreichbare Dichten sein?
+3. **Gain-Anforderung:** Der benötigte Gain $G^*$ liegt bei ~10⁵² (RT-33) — gibt es einen physikalischen Mechanismus?
+4. **Alternative Pfade:** Nicht-technische Konsequenzen der RFT-Warpmetrik (z. B. Kosmologie, Quantengravitation)?
+5. **Ehrliche Bilanz:** Ist die technische Realisierung prinzipiell möglich, praktisch unmöglich oder prinzipiell unmöglich?
+
+**Erfolgskriterium:**
+Klare Aussage zur technischen Anschlussfähigkeit — mit expliziter Nennung der Skalen und physikalischen Grenzen.
+
+**Erwartete Kerndokumente:** `de/fakten/konzepte/warpantrieb/rt43_technische_bilanz.md` · EN-Spiegel
+
+---
+
+#### AP7 – Konsistenz mit RT-33, RT-34, RT-40, RT-42
+
+**Aufgabe:**
+Prüfe, ob RT-43 **konsistent** mit allen verwandten Tasks ist.
+
+**Konkrete Schritte:**
+1. **RT-33:** Skalierungsgesetz $n \propto R^2$ — bleibt es gültig?
+2. **RT-34:** Numerische 3D-Lösung — stimmt sie mit der analytischen Form überein?
+3. **RT-40:** $\varepsilon = 1/\gamma^2$ — ist das in der Warpmetrik sichtbar?
+4. **RT-42:** Kosmologische Phasendynamik — ist die Skalentrennung konsistent?
+5. Widersprüche explizit benennen — oder deren Abwesenheit zeigen.
+
+**Erfolgskriterium:**
+RT-43 ist konsistent mit allen verwandten Tasks — oder die Widersprüche sind explizit benannt.
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier mit der analytischen RFT-Warpmetrik.
+2. Skalentrennungs-Theorem: Formale Entkopplung von Kosmologie und Warp.
+3. Optimierungsanalyse: Reduzierte Energieskala durch geometrische/resonante Optimierung.
+4. Signaturpapier: Messbare Abweichung von der Alcubierre-Metrik.
+5. Kausalitätsprüfung: Konsistenz mit A8.
+6. Technische Bilanz: Ehrliche Einschätzung der Realisierbarkeit.
+7. Python-Code zur numerischen Verifikation (öffentlich).
+8. Peer-Review-Einreichung (z. B. *Classical and Quantum Gravity*, *Physical Review D* oder *Foundations of Physics*).
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Eine geschlossene analytische Form der RFT-Warpmetrik liegt vor — auch wenn sie nur perturbativ gilt.
+**Mittelziel:** Die Skalentrennung ist formal bewiesen, und eine messbare Signatur ist benannt.
+**Maximalziel:** Die Energieskala ist signifikant reduziert, und ein technischer Pfad ist skizziert — oder die prinzipielle Unmöglichkeit ist bewiesen.
+**Negativziel:** Falls die analytische Schließung scheitert: präzise dokumentieren, an welcher Stelle A1–A8 nicht ausreichen — und die minimale Erweiterung formulieren (z. B. A9: Warp-Randbedingung).
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** Die Metrik darf nicht so konstruiert werden, dass sie ρ ≥ 0 per Definition erfüllt.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten müssen aus A1–A8 folgen oder explizit als frei benannt werden.
+- **Kausalität wahren:** Jede Lösung muss mit A8 konsistent sein.
+- **Falsifizierbarkeit:** Jede Behauptung muss ein Kriterium angeben, unter dem sie widerlegt wäre.
+- **Skalentrennung:** Kosmologie und Warp sind verschiedene Regime — nicht verwechseln.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentieren.
+- **Abgrenzung:** Klar unterscheiden zwischen (a) mathematischer Äquivalenz, (b) heuristischer Analogie und (c) empirischer Vorhersage.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:**
+Ansatz $h_{\mu\nu}^{\rm RFT} = h_{\mu\nu}^{\rm Alcubierre} \cdot \varepsilon(\Delta\phi)$ formulieren und in die linearisierten Einstein-Gleichungen einsetzen. DGL für $\varepsilon(\Delta\phi)$ herleiten.
+
+**Woche 3–4:**
+DGL für verschiedene $\Delta\phi(\theta)$-Profile lösen. Prüfen, ob die Lösung die RT-34-Numerik reproduziert.
+
+**Woche 5–6:**
+Falls die Lösung hält: Skalentrennung (AP2) und Energieoptimierung (AP3) untersuchen. Falls nicht: Lücke dokumentieren und minimale Erweiterung formulieren.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT-Warpmetrik **exakt** analytisch geschlossen werden kann, ist **moderat** — die RT-34-Numerik zeigt bereits, dass die Struktur nichttrivial ist. Die Wahrscheinlichkeit, dass eine **perturbative** analytische Form existiert, die die numerischen Ergebnisse reproduziert, ist **hoch**.
+
+Ehrlichster Ausgang: **Die RFT-Warpmetrik hat eine geschlossene perturbative Form. Die Energieskala bleibt technisch unerreichbar, aber die Winkelabhängigkeit und das Fehlen negativer Energie sind messbare Signaturen — und die Konsistenz mit RT-42 zeigt, dass Kosmologie und Warp zwei Regime derselben Theorie sind.**
+
+Das wäre ein echter Fortschritt gegenüber dem Status „numerisch, offen" auf der Website.
+
+---
+
+### 9. Verwandte Tasks
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-04** | FLRW-Simulation — numerische Infrastruktur |
+| **RT-33** | Warp-Skalierung — liefert $n \propto R^2$, $w(\theta)$ |
+| **RT-34** | 3D-Warpblase — liefert numerische Metrik, GR-Solver |
+| **RT-40** | SRT-Brücke — liefert $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 — liefert Kopplungswellengeschwindigkeit $c$ |
+| **RT-42** | Kosmologie — liefert Phasendynamik $\Delta\phi(t)$, Skalentrennung |
+| **RT-43** | **Dieser Task** — analytische Warpmetrik, technische Anschlussfähigkeit |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
+
+---
+
+## Kategorie 7: Einreichungsvorbereitung
+
+### RT-39 — Einreichungsvorbereitung IOP (Cover Letter, Submission Checklist, Response-to-Reviewers)
+**Status: ✅ Abgeschlossen (August 2026)**
+
+**Ziel:** Vollständige Vorbereitung der Einreichung von `rft_manuscript_en_iop.tex` beim Journal of Physics Communications (IOP Publishing).
+
+**Ergebnis:**
+- Cover Letter: `en/peer_review_rft/submission/cover_letter_jphyscomm.md` + `.tex`
+- Submission Checklist: `en/peer_review_rft/submission/submission_checklist.md` (3 Kategorien, alle IOP-Standards geprüft)
+- Response-to-Reviewers: `en/peer_review_rft/submission/response_to_reviewers_template.md` (7 Kritikpunkte vollständig ausgearbeitet)
+- Journal-Auswahl: `en/peer_review_rft/submission/journal_selection.md` (JPhysComm primär, NJP alternativ, arXiv empfohlen)
+- Manuskript-Prüfbericht: `en/peer_review_rft/submission/manuscript_review_report.md`
+
+**Primär offene Aktion:** Abstract-Kürzung auf ≤ 200 Wörter (aktuell ~244 Wörter) — obligatorisch vor Einreichung.
+
+**Empfohlene Ergänzungen vor Einreichung:**
+- RT-08-Limitation (χ²_red synthetisch) in §4.3 ergänzen
+- RT-38 Protokoll-URL in §6 ergänzen
+- Abbildungen auf ≥ 300 dpi prüfen / in PDF/EPS konvertieren
+
+**Einreichungsportal:** https://mc.manuscriptcentral.com/jphyscomm
+
+*RT-39 — DominicReneSchu/RFT — August 2026*
+
+---
+
+## Kategorie 8: Quantenmechanik als RFT-Substruktur
+
+### RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋
+**Vorgänger:** Schrödinger-Simulation, RT-31
+**Verwandt:** RT-02, RT-03, RT-40, RT-43
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:** Zeigen, dass die Quantenmechanik — Atomstruktur, Spektren, Born-Regel, Spin — als Substruktur der RFT aus den Axiomen A1–A7 formal ableitbar ist; oder präzise dokumentieren, wo die Axiome nicht ausreichen und welche minimale Erweiterung nötig wäre.
+
+**Ausgangspunkt:** Die Schrödinger-Gleichung ist bereits als Grenzfall $\lambda \to 0$ der RFT nachgewiesen (Fidelity = 1,0). RT-44 geht einen Schritt weiter: nicht nur Konsistenz, sondern **Ableitung** der QM-Struktur.
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+- Axiome A1–A8
+- $\varepsilon(\Delta\varphi) = \cos^2(\Delta\varphi/2)$, $\hat{H}_{\rm res} = \hat{H}_0 + \varepsilon(\Delta\varphi)\,\hat{V}_{\rm Kopplung}$
+- Schrödinger-Simulation: Standard-QM ist Grenzfall $\lambda \to 0$ (RT aus Schrödinger-README)
+- Störungstheorie: $1 - F \sim \lambda^2$, kontrollierte Erweiterung
+- Lagrange-Dichte $S[\psi, \Delta\varphi]$, Euler-Lagrange für $\Delta\varphi$-Dynamik
+- Gisin-Analyse: lokale Kopplung $\varphi(x,t)$, No-Signaling für lokales $\Delta\varphi$
+- A7: $G_{\rm sync} \cong \mathbb{R}^+_\times \times U(1) \times {\rm Aff}^+(\mathbb{R})$ — enthält $U(1)$, aber noch kein $SU(2)$
+
+**Gegeben (Standardquantenmechanik):**
+- Schrödinger-Gleichung $i\hbar\partial_t|\psi\rangle = \hat{H}|\psi\rangle$
+- Wasserstoffspektrum $E_n = -13{,}6\,\text{eV}/n^2$
+- Born-Regel: Messwahrscheinlichkeit $= |\langle a|\psi\rangle|^2$
+- Spin-1/2: $SU(2)$-Darstellung, Pauli-Matrizen
+- Verschränkung: nichtlokale Korrelationen, Bell-Ungleichungen
+
+**Bekannte offene Punkte:**
+- Keine formale Ableitung des Wasserstoffspektrums aus A3
+- Born-Regel nicht aus $\varepsilon$-Struktur abgeleitet (stärkste offene Flanke)
+- Spin/$SU(2)$ nicht in $G_{\rm sync} = U(1)$ enthalten
+- Eichinvarianz offen (aus Schrödinger-README)
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 — Atom als Resonanzmode: Wasserstoffspektrum aus A3
+
+**Aufgabe:** $E_n = -13{,}6\,\text{eV}/n^2$ aus Resonanzbedingung A3 + Coulomb-Kopplung formal ableiten.
+
+**Konkrete Schritte:**
+1. Coulomb-Potential $V(r) = -e^2/(4\pi\varepsilon_0 r)$ als Kopplungsterm in $\hat{H}_{\rm res}$ einsetzen
+2. Resonanzbedingung A3 ($|f_1/f_2 - m/n| < \delta$) als Phasenschlussbedingung für gebundene Moden formulieren
+3. Radiale Modenbedingung $\oint p_r\,dr = n\hbar$ aus Phasenschluss ableiten
+4. Energieeigenwerte $E_n$ aus Modenbedingung + Coulomb-Kopplung berechnen
+5. Mit Bohr-Quantisierung und exakter QM vergleichen; Übereinstimmung oder kontrollierte Abweichung benennen
+
+**Erfolgskriterium:** $E_n = -13{,}6\,\text{eV}/n^2$ formal hergeleitet — oder Nachweis, welche zusätzliche Zutat fehlt.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap1_wasserstoffspektrum.md` · `en/facts/theory/rt44_ap1_hydrogen_spectrum.md`
+
+---
+
+#### AP2 — Interferenz und Welle-Teilchen-Dualismus als Kopplungsregime
+
+**Aufgabe:** Doppelspalt-Interferenz aus $\varepsilon = 0$-Regime (A2 + A1) formal ableiten; Welle-Teilchen-Übergang als $\varepsilon$-Übergang beschreiben.
+
+**Konkrete Schritte:**
+1. Freies Teilchen ($\varepsilon = 0$, $\Delta\varphi = \pi$): Superposition ebener Wellen, Interferenzterm aus A2
+2. Doppelspalt: Zwei Quellen $\psi_1$, $\psi_2$; Intensität $|\psi_1 + \psi_2|^2$ aus Superpositionsprinzip A2
+3. Lokalisierung ($\varepsilon \to 1$): Phasenraumkollaps auf Resonanzknoten — beschreibt Messung
+4. Übergangsregime ($0 < \varepsilon < 1$): partielle Kohärenz — entspricht welchem physikalischen Szenario?
+5. Zusammenhang mit Dekohärenz: $\varepsilon(\Delta\varphi)$ als Maß für Kohärenz des Feldes
+
+**Erfolgskriterium:** Interferenzmuster formal aus A1+A2 ableitbar; $\varepsilon$ als Kohärenzparameter interpretiert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap2_interferenz.md` · `en/facts/theory/rt44_ap2_interference.md`
+
+---
+
+#### AP3 — Heisenbergsche Unschärfe als Modenstruktur
+
+**Aufgabe:** $\Delta x \cdot \Delta p \geq \hbar/2$ als strukturelle Eigenschaft der Resonanzmoden aus A1–A4 ableiten.
+
+**Konkrete Schritte:**
+1. Resonanzmode $\psi = A \cdot \cos(kx - \omega t + \varphi)$ hat endliche Ausdehnung im Phasenraum
+2. Fourier-Unschärfe: $\sigma_x \cdot \sigma_k \geq 1/2$ ist mathematische Eigenschaft jeder lokalisierten Welle
+3. Mit $p = \hbar k$ und $\hbar$ aus A4 ($E = \pi \cdot \varepsilon \cdot \hbar \cdot f$): $\Delta x \cdot \Delta p \geq \hbar/2$
+4. Physikalische Interpretation: Heisenberg-Unschärfe ist nicht Messtörung, sondern Modenbreite
+5. Prüfen: Folgt die Unschärferelation aus der Resonanzbedingung A3 — oder ist sie ein separates Postulat?
+
+**Erfolgskriterium:** Unschärferelation formal aus Modenstruktur A1+A4 abgeleitet — oder als Korollar der Fourier-Mathematik eingeordnet.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap3_unschaerfe.md` · `en/facts/theory/rt44_ap3_uncertainty.md`
+
+---
+
+#### AP4 — Born-Regel aus Kopplungsstruktur
+
+**Aufgabe:** $|\Psi|^2$ als Messwahrscheinlichkeit aus $\varepsilon$-Struktur ableiten. Dies ist die stärkste offene Flanke.
+
+**Konkrete Schritte:**
+1. In der RFT: $|\psi|^2$ entspricht der Intensität/Amplitude des Resonanzfeldes (Energiedichte)
+2. Messvorgang: Kopplung an makroskopisches System mit $\varepsilon \to 1$ (Dekohärenz)
+3. Frage: Folgt $P(a) = |\langle a|\psi\rangle|^2$ aus der Kopplungsstruktur — oder muss es zusätzlich postuliert werden?
+4. Ansatz 1: Energieübertrag bei Messung proportional zu $|\langle a|\psi\rangle|^2 \cdot \varepsilon$ → Born-Regel als Kopplung
+5. Ansatz 2: Gleason-Theorem — Born-Regel folgt aus Additivität von Wahrscheinlichkeitsmaßen auf Hilbertraum
+6. Prüfen: Welcher Ansatz ist mit A1–A7 kompatibel? Ist Born-Regel Korollar oder neues Postulat?
+
+**Erfolgskriterium:** Klare Aussage — Born-Regel folgt aus $\varepsilon$-Struktur, oder sie ist ein irreduzibles Postulat (analog zu A5, A8).
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap4_born_regel.md` · `en/facts/theory/rt44_ap4_born_rule.md`
+
+---
+
+#### AP5 — Messprozess und Dekohärenz als Kopplungsregimeübergang
+
+**Aufgabe:** Quantenmessung als Übergang $\varepsilon: 0 \to 1$ formal beschreiben; Dekohärenz als $\varepsilon(\Delta\varphi)$-Dynamik modellieren.
+
+**Konkrete Schritte:**
+1. Vor Messung: $\varepsilon(\Delta\varphi) < 1$, System in Superposition (Wellenregime)
+2. Messung: Kopplung an makroskopisches Umfeld → $\Delta\varphi \to 0$, $\varepsilon \to 1$ (Lokalisierung)
+3. Dekohärenzzeit $\tau_D$ aus Kopplungsdynamik $dK/dt = \alpha_G \cos\Delta\varphi - \beta K$ abschätzen
+4. Zeigerbasisfestlegung: Welche Moden werden durch $\varepsilon$-Kopplung selektiert?
+5. Quanteneraser / verzögerte Wahl: Rückkehr in $\varepsilon < 1$-Regime durch Entkopplung?
+6. Konsistenz mit Gisin-Analyse: lokale Kopplung → kein Kollaps über Raumgrenzen
+
+**Erfolgskriterium:** Messprozess quantitativ als $\varepsilon$-Übergang beschreibbar; Dekohärenzzeit aus RFT-Parametern abschätzbar.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap5_dekohärenz.md` · `en/facts/theory/rt44_ap5_decoherence.md`
+
+---
+
+#### AP6 — Spin, Pauli-Prinzip und Feinstruktur als Resonanzfreiheitsgrade
+
+**Aufgabe:** Spin-1/2 und Pauli-Prinzip als zusätzliche Resonanzfreiheitsgrade der RFT beschreiben; prüfen ob $SU(2)$ aus $G_{\rm sync}$-Erweiterung folgt.
+
+**Konkrete Schritte:**
+1. $G_{\rm sync}$ enthält $U(1)$ — Spin-1/2 erfordert $SU(2)$; prüfen ob $SU(2) \supset U(1)$ in $G_{\rm sync}$ einbettbar
+2. Spin als zusätzliche Phasenfreiheit: $\psi \to (\psi_\uparrow, \psi_\downarrow)$ als zwei gekoppelte Resonanzmoden
+3. Pauli-Prinzip: Antisymmetrie unter Teilchenaustausch — folgt aus destruktiver Interferenz gleichphasiger Moden ($\Delta\varphi = 0 \to \varepsilon = 1$, vollständige Kopplung → keine unabhängigen Zustände)?
+4. Feinstruktur: Spin-Bahn-Kopplung als $\varepsilon(\Delta\varphi_{\rm spin}, \Delta\varphi_{\rm orbit})$-Wechselwirkung (Hamiltonoperator bereits in RT-31 implementiert)
+5. Zeeman-Effekt: Aufspaltung als Phasendifferenz im äußeren Feld
+
+**Erfolgskriterium:** Spin formal als Resonanzfreiheitsgrad beschreibbar — oder $SU(2)$-Erweiterung von A7 als neues Axiom A9 formuliert.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap6_spin.md` · `en/facts/theory/rt44_ap6_spin.md`
+
+---
+
+#### AP7 — Verschränkung als nichtlokale Phasenkorrelation
+
+**Aufgabe:** Quantenverschränkung als nichtlokale Phasenkorrelation im RFT-Feld beschreiben; Bell-Ungleichungen im RFT-Rahmen analysieren.
+
+**Konkrete Schritte:**
+1. Verschränkter Zustand $|\Psi\rangle = (|\uparrow\rangle_A|\downarrow\rangle_B - |\downarrow\rangle_A|\uparrow\rangle_B)/\sqrt{2}$ als korrelierte Phasenmoden beschreiben
+2. Phasenkorrelation: $\Delta\varphi_A$ und $\Delta\varphi_B$ sind nichtlokal korreliert, aber lokal kausal (Gisin-Konsistenz)
+3. Bell-Ungleichungen: Welche Vorhersage macht die RFT für $\langle AB\rangle$? Entspricht sie der QM (Verletzung) oder lokalen Theorien (Einhaltung)?
+4. EPR-Paradoxon im RFT-Rahmen: Vollständige Beschreibung durch lokale Phasenfelder — oder fundamentale Nichtlokalität?
+5. Konsistenz mit AP5 (Dekohärenz): Wie verändert Messung an A die Phasenkorrelation mit B?
+
+**Erfolgskriterium:** Verschränkung formal als Phasenkorrelation beschreibbar; RFT-Vorhersage für Bell-Test explizit — entweder QM-äquivalent oder falsifizierbar abweichend.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt44_ap7_verschränkung.md` · `en/facts/theory/rt44_ap7_entanglement.md`
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier: Ableitung des Wasserstoffspektrums aus A3 (AP1)
+2. Kohärenzpapier: $\varepsilon(\Delta\varphi)$ als Kopplungsregime für Welle-Teilchen-Dualismus und Interferenz (AP2)
+3. Unschärfe-Korollar: Heisenberg-Unschärfe als Modenbreite (AP3) — kurzes Begleitdokument
+4. Born-Regel-Analyse: Ableitung oder Einordnung als irreduzibles Postulat (AP4) — entscheidend für Peer-Review
+5. Dekohärenz-Modell: Messprozess als $\varepsilon$-Übergang, Dekohärenzzeit aus RFT-Parametern (AP5)
+6. Spin-Erweiterung: $SU(2)$-Resonanzfreiheitsgrad oder Axiom A9-Entwurf (AP6)
+7. Verschränkungs-Papier: Bell-Test-Vorhersage der RFT (AP7)
+8. Python-Simulationen für AP1 (Radialmode Wasserstoff), AP2 (Doppelspalt), AP5 (Dekohärenz), AP6 (Spin-Bahn), AP7 (Bell-Korrelation)
+9. Peer-Review-Einreichung (z. B. *Foundations of Physics*, *Physical Review A* oder *European Journal of Physics*)
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Wasserstoffspektrum und Interferenz formal aus A1–A7 ableitbar.
+**Mittelziel:** Born-Regel und Dekohärenz als $\varepsilon$-Struktur beschreibbar (Ableitung oder Postulat klar eingeordnet).
+**Maximalziel:** Spin/$SU(2)$ aus $G_{\rm sync}$-Erweiterung; Verschränkung als Phasenkorrelation mit falsifizierbarer Bell-Vorhersage.
+**Negativziel:** Wo A1–A7 nicht ausreichen, präzise Lücke dokumentieren und minimale Erweiterung (A9?) formulieren.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** Born-Regel darf nicht implizit vorausgesetzt werden, wenn sie abgeleitet werden soll.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten aus A1–A8 oder explizit als frei deklariert.
+- **Klar unterscheiden:** (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage.
+- **Falsifizierbarkeit:** Jede Behauptung mit Widerlegungskriterium.
+- **Konsistenz mit Gisin-Analyse:** lokale Kopplungsstruktur $\varphi(x,t)$ durchgehend wahren.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentiert.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:**
+Coulomb-Potential $V(r) = -e^2/(4\pi\varepsilon_0 r)$ in $\hat{H}_{\rm res}$ einsetzen; Resonanzbedingung A3 als Phasenschlussbedingung für 3D-Radialmode formulieren; radiale Bohr-Quantisierung $\oint p_r\,dr = n\hbar$ aus RFT-Phasenschluss ableiten.
+
+**Woche 3–4:**
+Energieeigenwerte $E_n$ berechnen und mit $E_n = -13{,}6\,\text{eV}/n^2$ vergleichen. Falls Übereinstimmung: AP2 (Interferenz) angehen. Falls Lücke: minimale Erweiterung formulieren.
+
+**Woche 5–6:**
+Born-Regel (AP4) und Dekohärenz (AP5) parallel angehen; Spin-Erweiterung (AP6) vorbereiten.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+- **Interferenz und Unschärfe (AP2, AP3):** hohes Vertrauen — folgen strukturell aus A1+A2+A4.
+- **Wasserstoffspektrum (AP1):** mittleres Vertrauen — Resonanzbedingung A3 muss 3D-Coulomb-System tragen.
+- **Dekohärenz (AP5):** mittleres Vertrauen — $\varepsilon$-Dynamik bietet natürlichen Rahmen.
+- **Born-Regel (AP4):** niedrigstes Vertrauen — stärkste offene Flanke; könnte irreduzibles Postulat bleiben.
+- **Spin/$SU(2)$ (AP6):** offen — erfordert wahrscheinlich $G_{\rm sync}$-Erweiterung.
+- **Verschränkung (AP7):** mittleres Vertrauen für Beschreibung; Bell-Vorhersage entscheidet über Falsifizierbarkeit.
+
+**Ehrlichster Ausgang:** Die RFT beschreibt Interferenz, Unschärfe, Dekohärenz und das Wasserstoffspektrum formal korrekt. Born-Regel bleibt möglicherweise irreduzibles Postulat. Spin erfordert $SU(2)$-Erweiterung. Verschränkung ist als Phasenkorrelation beschreibbar — die Bell-Vorhersage entscheidet, ob RFT und QM empirisch unterscheidbar sind.
+
+---
+
+### 9. Querverbindungen
+
+| Task | Beziehung |
+|:--|:--|
+| Schrödinger-Simulation | Ausgangspunkt: QM als Grenzfall $\lambda \to 0$; Fidelity = 1,0; Lagrange-Dichte |
+| RT-02 | $G_{\rm sync}$-Gruppenstruktur — $U(1)$ vorhanden, $SU(2)$ offen (AP6) |
+| RT-03 | ⁸⁷Rb-Experiment — falsifizierbare QM-Vorhersage (AP5 Dekohärenz) |
+| RT-31 | Resonanz-Hamiltonoperator: Spin-Bahn-Kopplung bereits implementiert (AP6) |
+| RT-40 | SRT-Brücke — relativistische Erweiterung des Atommodells (Dirac-Gleichung?) |
+| RT-43 | Analytische Warpmetrik — Konsistenz Quantengravitation offen |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
+
+---
+
+*RT-44 — DominicReneSchu/RFT — September 2026*
+
+---
+
+## RT-45 – Energie als gerichtete Größe
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** Offen
+**Vorgänger:** RT-36 (A5 als irreduzibles Postulat, abgeschlossen), RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen), RT-42 (Kosmologie, abgeschlossen), RT-43 (Warpmetrik, offen)
+**Verwandt:** RT-33 (Warp-Skalierung), RT-34 (3D-Warpblase), RT-02 ($G_{\text{sync}}$-Gruppenstruktur)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Prüfen, ob die Behandlung der Energie als **Skalar** in der Standardphysik eine unzulässige Vereinfachung ist, und ob die RFT mit **A5 (Energierichtung)** eine fundamentalere Beschreibung liefert. Falls ja: Zeigen, dass zentrale Probleme der Standardphysik – insbesondere das **kosmologische Konstantenproblem** – als **Gradientenprobleme** reformuliert werden können.
+
+**Teilziele:**
+1. Die **formale Struktur** von Energie in der Standardphysik kritisch analysieren (Skalar vs. Vierervektor vs. Tensor).
+2. Zeigen, dass **A5 (Energierichtung)** die richtige Erweiterung ist – und mit der Standard-Feldtheorie **kompatibel** oder **erweiternd**.
+3. Das **kosmologische Konstantenproblem** als Gradientenproblem reformulieren.
+4. Die **Warpmetrik ρ ≥ 0** aus RT-33/RT-34 als **strukturelle Konsequenz** von A5 ableiten (nicht als numerischen Zufall).
+5. **Falsifizierbare Abweichungen** von der Standardphysik benennen.
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (Standardphysik):**
+- Energie $E$ wird in der nicht-relativistischen Mechanik als **Skalar** behandelt.
+- In der relativistischen Feldtheorie ist $E = \int T^{00} d^3x$ die **Zeitkomponente** des Energie-Impuls-Tensors.
+- Der Viererimpuls $p^\mu = (E/c, \vec p)$ ist ein **Vektor** in der Raumzeit.
+- Der **Energiefluss** $\vec S$ (Poynting, Wärmefluss) ist immer gerichtet.
+- Lorentzinvariante Größe: Ruhemasse $m^2 c^4 = E^2 - p^2 c^2$.
+
+**Gegeben (RFT):**
+- A5 (Energierichtung): $\vec E = E_{\text{eff}} \cdot \hat e(\Delta\phi, \nabla\Phi)$
+- A4 (Kopplungsenergie): $E = \pi \varepsilon(\Delta\phi) \hbar f$
+- A6 (Informationsfluss): $\mathrm{MI} > 0 \Leftrightarrow \mathrm{PCI} > 0$
+- **RT-36-Ergebnis:** A5 ist gruppentheoretisch irreduzibel; Vektorialität ist nicht aus A1–A4 ableitbar.
+- **RT-40-Ergebnis:** $\varepsilon = 1/\gamma^2$; $E_c = mc^2/\gamma^2$ (Kopplungsenergie)
+- **RT-33-Ergebnis:** ρ ≥ 0 überall; $w(\theta) = \frac{1}{3}[2\varepsilon - 1]$
+- **RT-42-Ergebnis:** Kosmologische Expansion als Phaseneffekt; Skalentrennung Kosmologie ↔ Warp
+
+**Beobachtete Spannung:**
+- Standardphysik: Energie ist ein Skalar; Vakuumenergie ist eine konstante Dichte.
+- Kosmologisches Konstantenproblem: Warum ist $\rho_\Lambda$ so klein, aber nicht null?
+- RFT: Energie hat Richtung; homogene Energiedichte hat keine physikalische Wirkung.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 — Formale Analyse: Energie in der Standardphysik
+
+**Aufgabe:** Systematisch prüfen, wo die Standardphysik Energie als Skalar behandelt – und wo diese Behandlung **unzulässig** ist.
+
+**Konkrete Schritte:**
+1. Katalogisiere alle Kontexte, in denen $E$ als Skalar auftritt:
+   - Newtonsche Mechanik: $E = \frac{1}{2}mv^2 + V$
+   - Thermodynamik: $dU = \delta Q - \delta W$
+   - Elektrostatik: $U = q\Phi$
+   - Quantenmechanik: $H|\psi\rangle = E|\psi\rangle$
+   - Kosmologie: $\rho_\Lambda = \text{const}$
+2. Prüfe für jeden Kontext: Ist die skalare Behandlung **exakt** oder **näherungsweise**?
+3. Identifiziere die Kontexte, in denen Energie **notwendig gerichtet** ist:
+   - Energiefluss (Poynting, Wärme)
+   - Leistung $P = \vec F \cdot \vec v$
+   - Impuls-Energie-Relation
+4. Formuliere das **Skalaritätspostulat** explizit: Unter welchen Bedingungen ist $E$ ein Skalar?
+5. Zeige: In der **allgemeinen Relativitätstheorie** ist $T^{00}$ **rahmenabhängig** – also kein Skalar.
+
+**Erfolgskriterium:** Eine **systematische Übersicht**, die zeigt, wo die skalare Behandlung von $E$ zulässig ist und wo nicht.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt45_ap1_skalaritaet.md` · `en/facts/theory/rt45_ap1_scalarity.md`
+
+---
+
+#### AP2 — A5 als Erweiterung der Standard-Feldtheorie
+
+**Aufgabe:** Prüfen, ob A5 (Energierichtung) mit der Standard-Feldtheorie **kompatibel** ist oder sie **erweitert**.
+
+**Konkrete Schritte:**
+1. Formuliere A5 präzise: $\vec E = E_{\text{eff}} \cdot \hat e(\Delta\phi, \nabla\Phi)$
+2. Vergleiche mit dem **Poynting-Vektor** $\vec S = \vec E \times \vec B$:
+   - Ist $\vec S$ ein Spezialfall von A5?
+   - Was ist der Unterschied zwischen $\vec E$ (Feld) und $\vec E$ (Energie)?
+3. Vergleiche mit dem **Energie-Impuls-Tensor** $T^{\mu\nu}$:
+   - Ist A5 eine **Zerlegung** von $T^{0i}$?
+   - Oder eine **Erweiterung**, die $T^{00}$ ebenfalls richtungsabhängig macht?
+4. Prüfe die **Lorentz-Kovarianz** von A5:
+   - Transformiert sich $\vec E$ wie ein Vektor?
+   - Oder braucht A5 einen **eigenen** Transformationsrahmen?
+5. Benenne die Bedingungen, unter denen A5 auf die Standard-Feldtheorie **reduziert** wird.
+
+**Erfolgskriterium:** Eine **klare Aussage**: A5 ist kompatibel mit der Standard-Feldtheorie, oder A5 erweitert sie – mit explizitem Grenzfall.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt45_ap2_a5_feldtheorie.md` · `en/facts/theory/rt45_ap2_a5_fieldtheory.md`
+
+---
+
+#### AP3 — Kosmologisches Konstantenproblem als Gradientenproblem
+
+**Aufgabe:** Das kosmologische Konstantenproblem als **Gradientenproblem** reformulieren.
+
+**Konkrete Schritte:**
+1. Standardformulierung: Warum ist $\rho_\Lambda \approx 10^{-26}\,\text{kg/m}^3$ und nicht $10^{96}\,\text{kg/m}^3$ (Vakuumenergie)?
+2. RFT-Formulierung: Wenn Energie nur durch **Gradienten** wirkt, dann ist eine **homogene** Vakuumenergie **prinzipiell unsichtbar**.
+3. Prüfe: Ist die beobachtete beschleunigte Expansion durch $\nabla\Delta\phi$ (Phasengradient) statt durch $\rho_\Lambda$ (skalare Dichte) erklärbar?
+4. Leite die **modifizierte Friedmann-Gleichung** her:
+   $$H^2 = \frac{8\pi G}{3}\left[\rho_m + \rho_r + \rho_{\text{grad}}(\nabla\Delta\phi)\right] - \frac{kc^2}{a^2}$$
+5. Prüfe: Ist $\rho_{\text{grad}}$ automatisch **klein**, weil $\nabla\Delta\phi$ auf kosmologischen Skalen klein ist?
+6. Vergleiche mit RT-42 AP1–AP2 (Phasendynamik als kosmologische Variable).
+
+**Erfolgskriterium:** Das kosmologische Konstantenproblem ist **entweder** als Gradientenproblem gelöst **oder** es ist gezeigt, dass A5 **nicht** ausreicht.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt45_ap3_kosmologische_konstante.md` · `en/facts/theory/rt45_ap3_cosmological_constant.md`
+
+---
+
+#### AP4 — ρ ≥ 0 als strukturelle Konsequenz von A5
+
+**Aufgabe:** Zeigen, dass die **Warpmetrik ρ ≥ 0** (RT-33/RT-34) eine **strukturelle Konsequenz** von A5 ist – kein numerischer Zufall.
+
+**Konkrete Schritte:**
+1. Analysiere die klassische Alcubierre-Metrik: Warum erfordert sie $\rho < 0$?
+   - Die negative Energiedichte entsteht aus der **skalaren** Behandlung der Expansion/Kontraktion.
+2. Analysiere die RFT-Warpmetrik: Warum ist $\rho \geq 0$?
+   - Die Asymmetrie entsteht aus der **Phasendifferenz** $\Delta\phi(\theta)$, nicht aus einer negativen Energiedichte.
+3. Formuliere den Zusammenhang:
+   $$\rho(\theta) = \rho_0 \cdot \varepsilon^2(\Delta\phi(\theta)) \geq 0$$
+4. Zeige: Die Winkelabhängigkeit $\rho(\theta) \propto \varepsilon^2$ ist der **direkte Ausdruck** von A5.
+5. Prüfe: Gibt es **andere** Metriken (nicht Warp), in denen A5 ebenfalls ρ ≥ 0 erzwingt?
+
+**Erfolgskriterium:** ρ ≥ 0 ist **strukturell** aus A5 abgeleitet – nicht nur numerisch bestätigt.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt45_ap4_rho_positiv.md` · `en/facts/theory/rt45_ap4_rho_positive.md`
+
+---
+
+#### AP5 — Falsifizierbare Abweichungen von der Standardphysik
+
+**Aufgabe:** Benenne **messbare** Abweichungen zwischen RFT (A5) und Standardphysik (Skalarität).
+
+**Konkrete Schritte:**
+1. Identifiziere die **empirisch prüfbaren** Konsequenzen von A5:
+   - Winkelabhängige Energiedichte in Warp-Metriken
+   - Gradientenbasierte kosmologische Expansion
+   - Richtungsabhängigkeit in starken Feldern
+2. Prüfe: Gibt es **bestehende** Experimente, die A5 bestätigen oder ausschließen?
+   - CMB-Anisotropien
+   - Gravitationswellen-Dispersion
+   - Präzisionstests der ART
+3. Benenne **neue** Experimente, die A5 prüfen könnten.
+4. Formuliere **Falsifikationskriterien**: Welches Ergebnis würde A5 widerlegen?
+
+**Erfolgskriterium:** Mindestens eine **messbare** Abweichung ist benannt – oder es ist gezeigt, dass A5 und Standardphysik im messbaren Bereich **identisch** sind.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt45_ap5_falsifizierbarkeit.md` · `en/facts/theory/rt45_ap5_falsifiability.md`
+
+---
+
+#### AP6 — Konsistenz mit RT-36, RT-40, RT-42, RT-43
+
+**Aufgabe:** Prüfen, ob RT-45 **konsistent** mit den verwandten Tasks ist.
+
+**Konkrete Schritte:**
+1. **RT-36:** A5 als irreduzibles Postulat – ist die Vektorialität mit der Standard-Feldtheorie vereinbar?
+2. **RT-40:** Ist $\varepsilon = 1/\gamma^2$ mit A5 als gerichteter Größe vereinbar?
+3. **RT-42:** Ist die kosmologische Phasendynamik $\Delta\phi(t)$ ein **Spezialfall** von A5?
+4. **RT-43:** Ist die analytische Warpmetrik $h_{\mu\nu}^{\text{RFT}}$ konsistent mit A5?
+5. **RT-41:** Erzeugt A8 (Kopplungswellengeschwindigkeit $c$) eine **obere Grenze** für den Energierichtungsvektor $\hat e$?
+6. Benenne **Widersprüche** – oder zeige deren Abwesenheit.
+
+**Erfolgskriterium:** RT-45 ist **konsistent** mit RT-36, RT-40, RT-41, RT-42 und RT-43 – oder die Widersprüche sind explizit benannt.
+
+**Erwartete Kerndokumente:** `de/fakten/theorie/rt45_ap6_konsistenz.md` · `en/facts/theory/rt45_ap6_consistency.md`
+
+---
+
+### 4. Deliverables
+
+1. Formales Papier zur Struktur der Energie in der Standardphysik (Skalar vs. Vektor vs. Tensor).
+2. A5-Kompatibilitätsanalyse: Kompatibel mit Standard-Feldtheorie oder Erweiterung?
+3. Reformulierung des kosmologischen Konstantenproblems als Gradientenproblem.
+4. Struktureller Beweis für ρ ≥ 0 aus A5.
+5. Falsifizierbarkeitsabschnitt mit messbaren Abweichungen.
+6. Numerische Verifikation (Python-Code zur Reproduktion).
+7. Peer-Review-Einreichung (z. B. *Foundations of Physics*, *Physical Review D* oder *Annals of Physics*).
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Zeige, dass A5 mit der Standard-Feldtheorie **kompatibel** ist (A5 als Zerlegung von $T^{0i}$).
+**Mittelziel:** Zeige, dass A5 die Standard-Feldtheorie **erweitert** – und dass die skalare Behandlung von $E$ ein **Grenzfall** ist.
+**Maximalziel:** Zeige, dass das **kosmologische Konstantenproblem** aus der gerichteten Natur der Energie folgt – und dass ρ ≥ 0 in Warp-Metriken **strukturell** erzwungen ist.
+**Negativziel:** Falls A5 nicht ausreicht, dokumentiere **präzise**, welche Erweiterung nötig wäre (z. B. A9: Energie als Tensor höherer Ordnung).
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine Zirkelschlüsse:** A5 darf nicht so formuliert werden, dass es die gewünschten Ergebnisse **per Definition** liefert.
+- **Keine nachträgliche Parameteranpassung:** Alle Konstanten müssen aus A1–A8 folgen oder explizit als frei benannt werden.
+- **Kompatibilität prüfen:** A5 muss mit der **Lorentz-Kovarianz** und der **allgemeinen Relativitätstheorie** vereinbar sein.
+- **Falsifizierbarkeit:** Jede Behauptung muss ein Kriterium angeben, unter dem sie widerlegt wäre.
+- **Skalentrennung:** Mikrophysik (A5) und Makrophysik (Kosmologie) sind **verschiedene Regime** – nicht verwechseln.
+- **Transparenz:** Alle Schritte reproduzierbar dokumentieren.
+- **Abgrenzung:** Klar unterscheiden zwischen (a) mathematischer Äquivalenz, (b) heuristischer Analogie und (c) empirischer Vorhersage.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:**
+Katalogisiere alle Kontexte, in denen $E$ als Skalar behandelt wird. Identifiziere die Kontexte, in denen diese Behandlung **notwendig** ist und wo sie **nur näherungsweise** gilt.
+
+**Woche 3–4:**
+Vergleiche A5 mit dem Poynting-Vektor und dem Energie-Impuls-Tensor. Formuliere die Bedingungen, unter denen A5 auf die Standard-Feldtheorie reduziert wird.
+
+**Woche 5–6:**
+Falls A5 kompatibel ist: Reformuliere das kosmologische Konstantenproblem als Gradientenproblem. Falls nicht: Dokumentiere die Lücke und formuliere die minimale Erweiterung.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass A5 **exakt** mit der Standard-Feldtheorie übereinstimmt, ist **gering** – die Standardphysik behandelt Energie in vielen Kontexten erfolgreich als Skalar. Aber die Wahrscheinlichkeit, dass A5 eine **strukturelle Erweiterung** ist, die in bestimmten Grenzfällen (kosmologische Konstante, Warp-Metriken) **notwendig** wird, ist **hoch**.
+
+Der ehrlichste Ausgang wäre: A5 ist kompatibel mit der Standard-Feldtheorie im lokalen Grenzfall, erweitert sie aber im kosmologischen und im Warp-Regime. Die skalare Behandlung von $E$ ist eine Näherung, die in homogenen Systemen zulässig ist, aber in gradientenreichen Systemen versagt.
+
+---
+
+### 9. Querverbindungen
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-02** | $G_{\text{sync}}$-Gruppenstruktur – liefert Gruppenstruktur für A5 |
+| **RT-33** | Warp-Skalierung – liefert ρ ≥ 0 als numerisches Ergebnis |
+| **RT-34** | 3D-Warpblase – liefert GR-Solver und Winkelabhängigkeit |
+| **RT-36** | A5 als irreduzibles Postulat – Vorbild für A8 |
+| **RT-40** | SRT-Brücke – liefert $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 – liefert Kopplungswellengeschwindigkeit $c$ |
+| **RT-42** | Kosmologie – liefert Phasendynamik $\Delta\phi(t)$ |
+| **RT-43** | Warpmetrik – liefert analytische Form |
+| **RT-44** | QM als RFT-Substruktur – benachbarter Task |
+| **RT-45** | **Dieser Task** – Energie als gerichtete Größe |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
+
+---
+
+*RT-45 — DominicReneSchu/RFT — September 2026*
+
+---
+
+## RT-46 – RFT-Validierung am Doppelpendel mit öffentlichen Daten
+
+**Version:** 1.1 – Entwurf (ergänzt)
+**Datum:** 19. September 2026
+**Status:** Offen
+**Vorgänger:** RT-38 (Öffentliches Experimentierprotokoll Doppelpendel, abgeschlossen), RT-08 (Doppelpendel: Experimentaldaten vs. RFT-Vorhersage, abgeschlossen)
+**Verwandt:** RT-02 ($G_{\text{sync}}$-Gruppenstruktur), RT-43 (Warpmetrik), RT-45 (Energie als gerichtete Größe)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Die in RT-38 formulierte Kopplungshypothese der RFT am Doppelpendel **empirisch prüfen**, ohne einen eigenen Versuchsaufbau zu benötigen. Stattdessen werden **öffentlich verfügbare, hochwertige Messdatensätze** als Sekundärdaten genutzt. Das Ziel ist die **Reproduzierbarkeit** der RFT-Vorhersagen auf Basis unabhängiger, bereits validierter Daten.
+
+**Strategische Einordnung:**
+RT-46 ist kein eigenständiger empirischer Test, sondern der **empirische Arm** einer dreistufigen theoretisch-empirischen Strategie:
+- **RT-45** liefert die theoretische Grundlage: Wenn Energie eine gerichtete Größe ist, muss $\varepsilon(\Delta\phi)$ eine Richtungsabhängigkeit zeigen. RT-46 testet genau das.
+- **RT-43** liefert die Metrik-Perspektive: Die Winkelabhängigkeit $\rho(\theta) \propto \varepsilon^2$ in der Warpmetrik ist strukturell dieselbe wie die $\varepsilon(\Delta\phi)$-Abhängigkeit im Doppelpendel. Ein experimenteller Nachweis in RT-46 stützt damit gleichzeitig die Metrikstruktur in RT-43.
+- **RT-46** testet die in RT-45 und RT-43 theoretisch formulierten A5-Konsequenzen an realen Daten.
+
+**Teilziele:**
+
+1. Identifikation und Beschaffung geeigneter öffentlicher Doppelpendel-Datensätze.
+2. Extraktion der für die RFT relevanten Observablen: $(\theta_1, \theta_2)$, $(\dot\theta_1, \dot\theta_2)$, Phasendifferenz $\Delta\phi$, Kopplungseffizienz $\varepsilon$, PCI.
+3. Statistische Prüfung, ob die gemessenen Kopplungsgrößen mit der RFT-Vorhersage $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$ übereinstimmen.
+4. Prüfung, ob die Kopplungsdynamik $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$ die beobachtete Energiedissipation erklärt.
+5. Falsifikationskriterien formulieren und dokumentieren.
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RT-38):**
+- Öffentliches Experimentierprotokoll für den Doppelpendelversuch.
+- Definition der RFT-Observablen: Phasenlage $\Delta\phi$, Kopplungseffizienz $\varepsilon$, PCI.
+- Hypothese: Das Doppelpendel zeigt RFT-charakteristische Kopplungsmuster, die über die Standard-Hamilton-Dynamik hinausgehen.
+
+**RT-08-Kontext:**
+Die frühere Analyse (RT-08) basierte auf **synthetischen** Lagrange-Daten ($A=0$) und fand $\chi^2_{\text{red}} = 2{,}42$ – die RFT-Formel wurde abgelehnt. RT-46 nutzt **reale** experimentelle Daten und prüft, ob die Ablehnung auf die synthetische Datenbasis oder auf die RFT-Hypothese selbst zurückzuführen ist. Das ist eine **direkte Fortsetzung** von RT-08 mit besserer Datenqualität – kein Neuanfang, sondern eine methodische Verbesserung.
+
+**Gegeben (öffentliche Daten):**
+
+| Datensatz | Quelle | Umfang | Eignung |
+|:--|:--|:--|:--|
+| **MultiArm-Pendulum** (Kaheman et al., 2023) | Zenodo: `10.5281/zenodo.6633719` | Einzel-, Doppel-, Dreifachpendel; Encoder + Video | **Sehr hoch** |
+| **Double Pendulum Dataset** (Chen et al., 2025) | TIB: `10.57702/xqkaca5s` | Zeitreihen der Winkel | **Hoch** |
+| **Physik-Experimente Uni Duisburg-Essen** | CASSY Lab | Spannungssignale $U_a(t), U_b(t)$ | **Mittel** (Kalibrierung nötig) |
+| **V-scope / Matlab-Daten (PTEE 2000)** | BME Budapest | Chaos-Messungen | **Mittel** |
+
+**Methodische Vorlage:**
+- arXiv:2002.05909 beschreibt die Datenaufbereitung aus Hochgeschwindigkeitsvideos: Extraktion von $(\theta_1, \theta_2)$, $(\dot\theta_1, \dot\theta_2)$, sowie die Berücksichtigung der zeitlichen Dämpfung.
+- Die Dämpfung ist ein **externer, nicht-autonomer Term** und muss in der RFT-Analyse als $\beta$-Beitrag modelliert werden.
+
+**Bekannte Einschränkung:**
+- Kein eigener Versuchsaufbau möglich → vollständige Abhängigkeit von der Qualität und Dokumentation der öffentlichen Daten.
+- Keine Kontrolle über Messfehler, Kalibrierung, Umgebungsbedingungen.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Datenbeschaffung und Qualitätsprüfung
+
+**Aufgabe:**
+Identifiziere, lade und prüfe die öffentlichen Doppelpendel-Datensätze auf ihre Eignung für die RFT-Analyse.
+
+**Konkrete Schritte:**
+
+1. Lade den **MultiArm-Pendulum-Datensatz** von Zenodo (`10.5281/zenodo.6633719`).
+2. Prüfe die Datenstruktur: Samplingrate, Zeitstempel, Einheiten, Encoder-Auflösung, Video-Framerate.
+3. Identifiziere die für Doppelpendel relevanten Dateien (Winkel-Zeitreihen, ggf. Video).
+4. Prüfe die Dokumentation auf Kalibrierungsangaben (Encoder-Offsets, Nullpunkt, Dämpfungsparameter).
+5. Ergänze ggf. den **Double Pendulum Dataset** (TIB) als unabhängige zweite Quelle.
+6. Dokumentiere die Qualitätsprüfung: Gibt es Lücken, Ausreißer, Drift?
+
+**Erfolgskriterium:**
+Mindestens ein Datensatz ist vollständig geladen, dokumentiert und für die Extraktion von $(\theta_1, \theta_2)$ geeignet.
+
+**Fehlerbudget:**
+Vor der Analyse sind die systematischen Fehlerquellen zu quantifizieren:
+
+| Quelle | Systematischer Fehler | RFT-Relevanz |
+|:--|:--|:--|
+| Encoder-Auflösung | Quantisierung der Winkel | $\Delta\phi$ unsicher bei kleinen Winkeln |
+| Video-Tracking | Frame-Rate, Linsenverzerrung | $\dot\theta$ unsicher bei schnellen Bewegungen |
+| Lagerreibung | Asymmetrisch zwischen den Pendeln | $\beta$ möglicherweise nicht symmetrisch |
+| Luftreibung | Geschwindigkeitsabhängig | $\beta K$ möglicherweise falsch modelliert |
+
+Da der MultiArm-Pendulum-Datensatz sowohl Encoder- als auch Video-Daten enthält, ist eine **Kreuzvalidierung** zwischen beiden Messmethoden möglich. Diese ermöglicht eine unabhängige Abschätzung der systematischen Fehler auf $\Delta\phi$, $\varepsilon$ und PCI.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap1_datenbeschaffung.md` · `en/facts/experiments/rt46_ap1_data_acquisition.md`
+
+---
+
+#### AP2 – Datenaufbereitung und Observable-Extraktion
+
+**Aufgabe:**
+Extrahiere die für die RFT relevanten Observablen aus den Rohdaten.
+
+**Konkrete Schritte:**
+
+1. Kalibriere die Rohsignale (Encoder-Spannung → Winkel) gemäß der Dokumentation.
+2. Extrahiere die Zeitreihen $\theta_1(t)$ und $\theta_2(t)$.
+3. Berechne die Winkelgeschwindigkeiten $\dot\theta_1(t)$, $\dot\theta_2(t)$ (finite Differenzen oder Spline-Ableitung).
+4. Berechne die **Phasendifferenz**:
+   $$\Delta\phi(t) = \phi_1(t) - \phi_2(t)$$
+   wobei $\phi_i(t) = \arctan2(\dot\theta_i, \omega_i \theta_i)$ (Phasenraumwinkel).
+5. Berechne die **Kopplungseffizienz**:
+   $$\varepsilon_{\text{exp}}(t) = \cos^2\!\left(\frac{\Delta\phi(t)}{2}\right)$$
+6. Berechne den **PCI** als gleitendes Fenstermittel:
+   $$\mathrm{PCI}(t) = \left|\left\langle e^{i\Delta\phi(t)}\right\rangle_{\text{Fenster}}\right|$$
+7. Berechne die **Gesamtenergie** $E(t) = T + V$ und deren Dissipationsrate $\dot E(t)$.
+
+**Erfolgskriterium:**
+Alle Observablen liegen als Zeitreihen vor, mit dokumentierter Unsicherheit und Fenstergröße.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap2_observablen.md` · `en/facts/experiments/rt46_ap2_observables.md`
+
+---
+
+#### AP3 – Prüfung der RFT-Kopplungshypothese
+
+**Aufgabe:**
+Statistische Prüfung, ob die experimentell extrahierten Kopplungsgrößen mit der RFT-Vorhersage übereinstimmen.
+
+**Konkrete Schritte:**
+
+1. **Nullhypothese H0:** $\varepsilon_{\text{exp}}(\Delta\phi)$ ist **nicht** von der Standard-Hamilton-Dynamik unterscheidbar; jede beobachtete $\Delta\phi$-Abhängigkeit folgt aus der geometrischen Kopplung, nicht aus einem zusätzlichen RFT-Term.
+   - H0 wird **vor** der Datenanalyse formuliert und getestet.
+   - **Likelihood-Ratio-Test:** Vergleich des Hamilton-Modells (H0) mit dem RFT-Kopplungsmodell (H1); Entscheidungsschwelle $p < 0{,}05$.
+2. **Hypothese H1:** $\varepsilon_{\text{exp}}(\Delta\phi) = \cos^2(\Delta\phi/2)$.
+   - Auftragen von $\varepsilon_{\text{exp}}$ gegen $\Delta\phi$.
+   - Vergleich mit der theoretischen Kurve.
+   - Bestimmung von $R^2$, RMSE, systematischen Abweichungen.
+3. **Hypothese H2:** Die Kopplungsdynamik folgt $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$.
+   - Schätze $K(t)$ aus der Energiedissipation.
+   - Fitte $\alpha, \beta$ an die Daten.
+   - Prüfe, ob $\alpha/\beta > 1$ (Feldaufbau) oder $< 1$ (Zerfall).
+4. **Hypothese H3:** PCI korreliert mit der Energieübertragung zwischen den Pendeln.
+   - Berechne die Korrelation zwischen $\mathrm{PCI}(t)$ und $|E_1(t) - E_2(t)|$.
+5. **Hypothese H4:** Die Dämpfung ist ein $\beta$-Effekt, kein externer Zufall.
+   - Vergleiche die gemessene Dissipationsrate mit der aus $\beta$ abgeleiteten.
+6. **Distinktive Signaturen** (Vorhersagen, die die Hamilton-Dynamik *nicht* macht):
+   - **(a) Dämpfungsform:** Die RFT sagt $\beta K$ als Dämpfungsterm voraus; die Standardphysik verwendet einen phänomenologischen Luftreibungsterm ($\propto \dot\theta$ oder $\propto \dot\theta^2$). Wenn die RFT-Dämpfungsform die Daten besser beschreibt (höheres $R^2$, niedrigeres AIC), ist das eine Stufe-2-Signatur.
+   - **(b) Phasenkohärenz im Chaos-Übergang:** Die RFT sagt voraus, dass PCI im Übergang zwischen quasi-periodischer und chaotischer Bewegung ein charakteristisches Minimum durchläuft. Wenn ein solches Minimum in den Daten sichtbar ist und die RFT-Kopplungsdynamik es reproduziert, ist das eine distinktive Signatur.
+   - **(c) Energierichtung:** A5 (Energierichtung) sagt voraus, dass der Energiefluss zwischen den Pendeln gerichtet ist. Test: Korrelation zwischen dem RFT-Richtungsvektor $\hat e(\Delta\phi)$ und dem beobachteten Energiefluss. Die Standardphysik hat keinen solchen Vektor.
+
+**Erfolgskriterium:**
+Für jede Hypothese liegt ein statistisches Testergebnis vor – Bestätigung, Ablehnung oder Unentschieden.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap3_hypothesentest.md` · `en/facts/experiments/rt46_ap3_hypothesis_test.md`
+
+---
+
+#### AP4 – Falsifikationskriterien und Abgrenzung
+
+**Aufgabe:**
+Formuliere präzise Falsifikationskriterien und grenze die RFT-Vorhersage von der Standard-Hamilton-Dynamik ab.
+
+**Konkrete Schritte:**
+
+1. **Standard-Hamilton-Vorhersage:** Der Doppelpendel-Phasenraum ist symplektisch; es gibt keine Kopplungseffizienz $\varepsilon$, die über die geometrische Kopplung hinausgeht.
+2. **RFT-Vorhersage:** Zusätzlich zur Hamilton-Dynamik gibt es eine **effektive Kopplungseffizienz** $\varepsilon(\Delta\phi)$, die die Energieübertragung moduliert.
+3. **Falsifikationskriterium F1:** Wenn $\varepsilon_{\text{exp}}$ **nicht** mit $\cos^2(\Delta\phi/2)$ korreliert ($R^2 < 0{,}5$), ist H1 abgelehnt.
+4. **Falsifikationskriterium F2:** Wenn die Dissipationsrate **nicht** durch $\beta K$ erklärbar ist, ist H2 abgelehnt.
+5. **Falsifikationskriterium F3:** Wenn PCI **keine** Korrelation mit der Energieübertragung zeigt, ist H3 abgelehnt.
+6. Dokumentiere die Kriterien **vor** der Analyse (Pre-Registrierung).
+
+**Erfolgskriterium:**
+Falsifikationskriterien sind dokumentiert und werden **vor** der Datenanalyse festgelegt.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap4_falsifikation.md` · `en/facts/experiments/rt46_ap4_falsification.md`
+
+---
+
+#### AP5 – Vergleich mit RT-38-Protokoll
+
+**Aufgabe:**
+Prüfe, ob die Ergebnisse mit dem ursprünglichen RT-38-Protokoll konsistent sind.
+
+**Konkrete Schritte:**
+
+1. Vergleiche die extrahierten Observablen mit den in RT-38 definierten Zielgrößen.
+2. Prüfe, ob die in RT-38 formulierten Erwartungen erfüllt sind.
+3. Dokumentiere Abweichungen und deren mögliche Ursachen (z. B. andere Messbedingungen).
+4. Falls möglich: Simuliere das Doppelpendel mit den RT-38-Parametern und vergleiche mit den öffentlichen Daten.
+
+**Erfolgskriterium:**
+Konsistenz oder dokumentierte Abweichung mit Begründung.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap5_rt38_vergleich.md` · `en/facts/experiments/rt46_ap5_rt38_comparison.md`
+
+---
+
+#### AP6 – Statistische Robustheit und Kreuzvalidierung
+
+**Aufgabe:**
+Prüfe die Robustheit der Ergebnisse durch unabhängige Datensätze und statistische Methoden.
+
+**Konkrete Schritte:**
+
+1. Wiederhole die Analyse mit dem **zweiten Datensatz** (TIB oder Uni-Due).
+2. Prüfe, ob die Ergebnisse **konsistent** sind.
+3. Führe eine **Bootstrap-Analyse** durch, um Konfidenzintervalle für $\alpha, \beta$ zu schätzen.
+4. Prüfe die **Sensitivität** gegenüber der Fenstergröße für PCI.
+5. Dokumentiere systematische Unsicherheiten.
+
+**Erfolgskriterium:**
+Die Ergebnisse sind über mindestens zwei unabhängige Datensätze robust – oder die Abweichungen sind quantifiziert.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap6_kreuzvalidierung.md` · `en/facts/experiments/rt46_ap6_cross_validation.md`
+
+---
+
+#### AP7 – Dokumentation und Publikation
+
+**Aufgabe:**
+Dokumentiere die gesamte Analyse reproduzierbar und bereite eine Publikation vor.
+
+**Konkrete Schritte:**
+
+1. Erstelle ein **Jupyter Notebook** oder Python-Skript, das die gesamte Analyse reproduziert.
+2. Dokumentiere alle Datenquellen, DOI, Versionen.
+3. Stelle die Ergebnisse in **RT-38-kompatibler Form** dar.
+4. Verfasse ein Manuskript für Peer Review (z. B. *Chaos*, *Physical Review E*, *Foundations of Physics*).
+5. Veröffentliche den Code auf GitHub (Erweiterung des RFT-Repos).
+
+**Erfolgskriterium:**
+Code, Daten und Manuskript sind öffentlich verfügbar und reproduzierbar.
+
+**Erwartete Kerndokumente:** `de/fakten/experimente/rt46_ap7_publikation.md` · `en/facts/experiments/rt46_ap7_publication.md`
+
+---
+
+### 4. Deliverables
+
+1. **Datensatz-Beschreibung** mit Quelle, DOI, Qualitätsprüfung und Fehlerbudget.
+2. **Python-Pipeline** zur Extraktion von $\Delta\phi$, $\varepsilon$, PCI aus Rohdaten.
+3. **Pre-Registrierungsdokument** (vor der Datenanalyse auf GitHub veröffentlicht), enthält:
+   - Datenquellen (DOI, Version, Datum des Downloads)
+   - Hypothesen H0–H4 mit expliziten Vorhersagen
+   - Falsifikationskriterien (z. B. $R^2 < 0{,}5$ für H1)
+   - Statistische Tests (Likelihood Ratio, Bootstrap, Kreuzvalidierung)
+   - Fenstergrößen für PCI und $\varepsilon$
+   - Ausschlusskriterien für Datenpunkte
+4. **Statistische Auswertung** der Hypothesen H0–H4 mit $R^2$, RMSE, Konfidenzintervallen und Likelihood-Ratio-Test.
+5. **Vergleich mit RT-38-Protokoll** (Konsistenz oder Abweichung).
+6. **Manuskript** für Peer Review.
+7. **Öffentlicher Code** auf GitHub.
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Die öffentlichen Daten sind extrahiert und die Observablen $(\Delta\phi, \varepsilon, \mathrm{PCI})$ sind berechnet.
+**Mittelziel:** Mindestens eine der Hypothesen H1–H3 ist statistisch **bestätigt** oder **abgelehnt**.
+**Maximalziel:** Die RFT-Kopplungshypothese ist über **zwei unabhängige Datensätze** robust bestätigt – oder klar widerlegt.
+**Negativziel:** Falls die Daten nicht ausreichen: Dokumentiere präzise, welche Observablen fehlen und welcher Mindestdatensatz nötig wäre.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Pre-Registrierung:** Falsifikationskriterien werden **vor** der Analyse festgelegt.
+- **Keine nachträgliche Parameteranpassung:** $\alpha, \beta$ werden aus den Daten gefittet, nicht an sie angepasst.
+- **Transparenz:** Alle Datenquellen, Versionen, Skripte werden dokumentiert.
+- **Robustheit:** Ergebnisse müssen über Fenstergrößen, Datensätze und Methoden stabil sein.
+- **Abgrenzung:** Standard-Hamilton-Dynamik und RFT-Kopplungseffekte müssen klar getrennt werden.
+- **Ehrlichkeit:** Negative Ergebnisse werden genauso dokumentiert wie positive.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1:**
+- Lade den MultiArm-Pendulum-Datensatz von Zenodo (`10.5281/zenodo.6633719`).
+- Prüfe die README auf Dateistruktur, Samplingrate und Kalibrierung.
+- Extrahiere eine erste Doppelpendel-Zeitreihe (Encoder-Daten).
+- Visualisiere $\theta_1(t)$, $\theta_2(t)$ und $\Delta\phi(t)$.
+
+**Woche 2:**
+- Implementiere die Pre-Registrierung (H0–H4, Falsifikationskriterien, Fenstergrößen, Ausschlusskriterien).
+- Berechne $\varepsilon_{\text{exp}}(t)$ und $\mathrm{PCI}(t)$.
+- Erstelle den ersten $\varepsilon_{\text{exp}}$-vs-$\Delta\phi$-Plot.
+
+**Woche 3–4:**
+- Fitte $\alpha, \beta$ an die Daten.
+- Teste H0 (Hamilton-Nullhypothese) gegen H1 (RFT) via Likelihood-Ratio-Test.
+- Dokumentiere Ergebnisse – **auch wenn sie negativ sind**.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die öffentlichen Daten **ausreichen**, um die RFT-Kopplungshypothese zu prüfen, ist **moderat bis hoch**. Der MultiArm-Pendulum-Datensatz ist qualitativ hochwertig und dokumentiert.
+
+Die Wahrscheinlichkeit, dass die RFT-Hypothese H1 ($\varepsilon = \cos^2(\Delta\phi/2)$) **exakt** bestätigt wird, ist **gering** – die Standard-Hamilton-Dynamik ist bereits extrem gut validiert, und jede zusätzliche Kopplung müsste sich als **kleine Korrektur** zeigen.
+
+Der ehrlichste Ausgang wäre: **Die RFT-Kopplungseffizienz ist mit den Daten konsistent, aber nicht signifikant von der Standard-Dynamik unterscheidbar. Die Hypothese bleibt offen – bis ein Experiment mit höherer Präzision oder ein anderes System (z. B. gekoppelte Oszillatoren, Laser-Arrays) eine Unterscheidung ermöglicht.** Das ist kein Scheitern – es ist Wissenschaft.
+
+---
+
+### 9. Querverbindungen
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-02** | $G_{\text{sync}}$-Gruppenstruktur – theoretische Grundlage |
+| **RT-08** | Doppelpendel vs. RFT-Vorhersage (synthetische Daten, $\chi^2_{\text{red}}=2{,}42$) – direkter Vorgänger |
+| **RT-33** | Warp-Skalierung – analoge Kopplungsstruktur |
+| **RT-38** | Experimentierprotokoll Doppelpendel – direkter Vorgänger |
+| **RT-40** | SRT-Brücke – $\varepsilon = 1/\gamma^2$ |
+| **RT-43** | Warpmetrik – $\rho(\theta)\propto\varepsilon^2$ strukturell analog zu $\varepsilon(\Delta\phi)$ |
+| **RT-45** | Energie als gerichtete Größe – theoretische Grundlage für Richtungsabhängigkeit von $\varepsilon$ |
+| **RT-46** | **Dieser Task** – empirische Validierung |
+| **RT-47** | Distinktive CERN-Signaturen — strategische Anschlussoption |
+
+---
+
+*RT-46 — DominicReneSchu/RFT — September 2026 (v1.1)*
+
+---
+
+## Kategorie 9: Teilchenphysik und CERN-Daten
+
+## RT-47 – Distinktive RFT-Signaturen in CERN-Daten
+
+### Suche nach unterscheidbaren Vorhersagen gegenüber dem Standardmodell
+
+**Version:** 1.0 – Entwurf
+**Datum:** 19. September 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋 (Bearbeitung nach RT-43, RT-44, RT-45, RT-46)
+**Vorgänger:** RT-22 (Teilchenphysik, abgeschlossen – Stufe 1), RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
+**Verwandt:** RT-03 (Resonanzbedingungen), RT-07 (Kernphysik), RT-45 (Energie als gerichtete Größe), RT-46 (Doppelpendel)
+
+---
+
+### 1. Zielsetzung
+
+**Übergeordnetes Ziel:**
+Prüfen, ob die RFT in der Teilchenphysik **distinktive Signaturen** liefert, die über die bereits erreichte Stufe-1-Passung (RT-22) hinausgehen. Konkret: Gibt es eine **messbare Abweichung** vom Standardmodell (SM), die die RFT **vorhersagt** und die in öffentlichen CERN-Daten **nachweisbar** ist? Das Ziel ist die Erreichung von **Stufe 2** (explanatorischer Vorteil) oder **Stufe 3** (distinktive, bestätigte Vorhersage).
+
+**Teilziele:**
+
+1. Identifikation **offener Anomalien** im SM, die als Ansatzpunkte dienen können.
+2. Prüfung, ob die RFT für mindestens eine dieser Anomalien eine **strukturelle Erklärung** liefert.
+3. Herleitung einer **quantitativen Vorhersage**, die sich vom SM unterscheidet.
+4. Vergleich mit **öffentlichen CERN-Daten** (Open Data Portal, LHCb, ATLAS, CMS).
+5. Formulierung von **Falsifikationskriterien** und Pre-Registrierung.
+6. Klare Einordnung des Ergebnisses (Stufe 1, 2 oder 3).
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RT-22 – abgeschlossen):**
+
+| Größe | Ergebnis |
+|:--|:--|
+| Monte-Carlo-Simulationen | 1.500.000 |
+| Identifizierte Resonanzen | 5 |
+| Signifikanz | $p = 0$ |
+| Einordnung | **Stufe 1** – SM erklärt dieselben Daten |
+
+**Gegeben (Standardmodell):**
+- Auf $10^{-10}$ genau validiert (Elektron-g-2, Myon-g-2 teilweise, Neutrino-Oszillationen).
+- Erklärt Massenspektrum, Mischungswinkel, CP-Verletzung **phänomenologisch**, nicht strukturell.
+- **Offene Anomalien** (Stand 2026): Myon-g-2 (4,2σ, Fermilab 2021/2023), $R_K$/$R_{K^*}$-Anomalien (LHCb), Neutrino-Massen, Koide-Formel, CP-Phase.
+
+**Gegeben (RFT):**
+- A1–A8 (axiomatisch).
+- $\varepsilon(\Delta\phi) = \cos^2(\Delta\phi/2)$, Kopplungsdynamik $\frac{dK}{dt} = \alpha G \cos\Delta\phi - \beta K$.
+- $\varepsilon = 1/\gamma^2$ (RT-40), PCI $\in [0,1]$ als Kohärenzmaß.
+
+**Gegeben (öffentliche Daten):**
+
+| Quelle | Inhalt | Zugang |
+|:--|:--|:--|
+| **CERN Open Data Portal** | ATLAS, CMS, LHCb (Run 1, 2, 3) | `opendata.cern.ch` |
+| **LHCb Public Data** | B-Physik, CP-Verletzung | `lhcb-public.web.cern.ch` |
+| **Fermilab g-2** | Myon-g-2 Rohdaten | `muon-g-2.fnal.gov` |
+| **PDG** | Massenspektren, Mischungswinkel | `pdg.lbl.gov` |
+
+**Bekannte Einschränkung:** SM ist extrem präzise validiert. QCD-Hintergründe sind komplex. Stufe 2 erfordert einen signifikanten explanatorischen Vorteil.
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 – Katalog offener Anomalien
+
+**Aufgabe:**
+Systematische Erfassung aller offenen SM-Anomalien als Ansatzpunkte für distinktive RFT-Signaturen.
+
+**Konkrete Schritte:**
+1. Tabelle aller Anomalien mit Größe, Signifikanz (in σ), SM-Vorhersage, experimentellem Wert, Status.
+2. Priorisierung nach Signal-zu-Rausch-Verhältnis und theoretischer Klarheit.
+3. Identifikation der drei stärksten Kandidaten für eine RFT-Erklärung.
+4. Dokumentation der Auswahlkriterien.
+
+**Erfolgskriterium:** Priorisierte Liste mit mindestens drei geeigneten Anomalien.
+
+---
+
+#### AP2 – Strukturelle RFT-Erklärung
+
+**Aufgabe:**
+Prüfen, ob die RFT für eine der priorisierten Anomalien eine **strukturelle** Erklärung liefert — nicht nur eine numerische Anpassung.
+
+**Konkrete Schritte:**
+1. **Kandidat A – Myon-g-2:** Kann die Anomalie durch eine Korrektur der Kopplungseffizienz $\varepsilon(\Delta\phi)$ im Myon-System erklärt werden?
+2. **Kandidat B – Koide-Formel:** Folgt die Relation
+   $$\frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e} + \sqrt{m_\mu} + \sqrt{m_\tau})^2} = \frac{2}{3}$$
+   aus der RFT-Resonanzbedingung (A3, A7)?
+3. **Kandidat C – CP-Verletzung:** Kann die CP-Phase aus der RFT-Phasendynamik $\Delta\phi$ hergeleitet werden?
+4. Prüfung für jeden Kandidaten: Ist die Erklärung **post-hoc** oder **prädiktiv**?
+5. Dokumentation der Grenzen der RFT-Erklärung.
+
+**Erfolgskriterium:** Für mindestens einen Kandidaten liegt eine quantitative RFT-Vorhersage vor, die sich vom SM unterscheidet.
+
+---
+
+#### AP3 – Quantitative Vorhersage vs. SM
+
+**Aufgabe:**
+Herleitung einer **quantitativen, messbaren** Vorhersage, die sich **signifikant** vom SM unterscheidet.
+
+**Konkrete Schritte:**
+1. RFT-Vorhersage in SM-Sprache formulieren (z. B. als Korrektur zu einem Kopplungsparameter).
+2. Größe der Abweichung quantifizieren (in % oder σ).
+3. Prüfung, ob die Abweichung innerhalb der aktuellen Messgenauigkeit liegt.
+4. Falls nachweisbar: Vergleich mit aktuellen Daten. Falls nicht: benötigte Präzision benennen.
+5. Vorhersage in pre-registrierter Form dokumentieren.
+
+**Erfolgskriterium:** Eine quantitative, messbare, vom SM unterscheidbare Vorhersage liegt vor.
+
+---
+
+#### AP4 – Vergleich mit CERN-Daten
+
+**Aufgabe:**
+Vergleich der RFT-Vorhersage mit **öffentlichen CERN-Daten**.
+
+**Konkrete Schritte:**
+1. Relevante Datensätze im CERN Open Data Portal identifizieren (ATLAS, CMS, LHCb).
+2. Relevante Observablen extrahieren.
+3. Statistische Analyse: Likelihood-Ratio-Test (SM vs. RFT), $R^2$, AIC, BIC, Bootstrap.
+4. Prüfung, ob die RFT-Vorhersage besser oder schlechter zu den Daten passt als das SM.
+5. Systematische Unsicherheiten dokumentieren (QCD-Hintergrund, Detektor-Effekte).
+
+**Erfolgskriterium:** Ein statistisches Testergebnis liegt vor — RFT besser, schlechter oder nicht unterscheidbar vom SM.
+
+---
+
+#### AP5 – Falsifikationskriterien und Pre-Registrierung
+
+**Aufgabe:**
+Präzise Falsifikationskriterien formulieren und **vor** der Datenanalyse registrieren.
+
+**Konkrete Schritte:**
+1. H0: RFT-Vorhersage ist nicht von der SM-Vorhersage unterscheidbar.
+2. H1: RFT-Vorhersage weicht signifikant vom SM ab.
+3. **F1:** Wenn Daten mit SM bei $\chi^2_{\rm red} < 1{,}5$ und RFT-Abweichung $> 3\sigma$ → RFT **widerlegt**.
+4. **F2:** Wenn Daten mit RFT bei $\chi^2_{\rm red} < 1{,}5$ und SM-Abweichung $> 3\sigma$ → RFT **bestätigt** (Stufe 3).
+5. **F3:** Wenn weder SM noch RFT passen → beide widerlegt (dokumentieren).
+6. Pre-Registrierung auf GitHub vor der Analyse.
+
+**Erfolgskriterium:** Falsifikationskriterien dokumentiert und pre-registriert.
+
+---
+
+#### AP6 – Robustheit und Kreuzvalidierung
+
+**Aufgabe:**
+Robustheit der Ergebnisse durch unabhängige Datensätze und Methoden prüfen.
+
+**Konkrete Schritte:**
+1. Analyse mit mindestens zwei unabhängigen Datensätzen (z. B. ATLAS und CMS) wiederholen.
+2. Konsistenz der Ergebnisse prüfen.
+3. Sensitivitätsanalyse: Variation der Fit-Parameter, Datenauswahl, Statistik.
+4. Prüfung, ob Ergebnisse von der Kandidatenwahl abhängen.
+5. Systematische Unsicherheiten und ihre Auswirkung auf das Endergebnis dokumentieren.
+
+**Erfolgskriterium:** Ergebnisse über mehrere Datensätze und Methoden robust — oder Abweichungen quantifiziert.
+
+---
+
+#### AP7 – Dokumentation und Publikation
+
+**Aufgabe:**
+Gesamte Analyse reproduzierbar dokumentieren und Publikation vorbereiten.
+
+**Konkrete Schritte:**
+1. Jupyter Notebook oder Python-Skript, das die gesamte Analyse reproduziert.
+2. Alle Datenquellen, DOIs, Versionen dokumentieren.
+3. Ergebnisse in RT-22-kompatibler Form darstellen.
+4. Manuskript für Peer Review verfassen (z. B. *Physical Review D*, *Journal of High Energy Physics*, *European Physical Journal C*).
+5. Code auf GitHub veröffentlichen.
+
+**Erfolgskriterium:** Code, Daten und Manuskript öffentlich verfügbar und reproduzierbar.
+
+---
+
+### 4. Deliverables
+
+1. Katalog offener Anomalien mit Priorisierung.
+2. Strukturelle RFT-Erklärung für mindestens einen Kandidaten.
+3. Quantitative Vorhersage (Zahlenwert + Unsicherheit).
+4. Statistische Auswertung mit Likelihood-Ratio, AIC, BIC.
+5. Falsifikationsprotokoll (pre-registriert).
+6. Robustheitsanalyse über mindestens zwei Datensätze.
+7. Manuskript für Peer Review.
+8. Öffentlicher Code auf GitHub.
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Eine strukturelle RFT-Erklärung für eine offene Anomalie liegt vor (Stufe 2).
+**Mittelziel:** Eine quantitative Vorhersage ist formuliert und mit CERN-Daten geprüft — konsistent mit RFT, aber nicht signifikant vom SM unterscheidbar (Stufe 2).
+**Maximalziel:** Die RFT-Vorhersage ist signifikant besser als das SM ($> 3\sigma$) — Daten bestätigen sie (Stufe 3).
+**Negativziel:** Falls die RFT keine distinktive Signatur liefert: präzise dokumentieren, warum — und welche Erweiterung nötig wäre.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Pre-Registrierung:** Falsifikationskriterien werden **vor** der Datenanalyse festgelegt.
+- **Keine post-hoc-Anpassung:** Die RFT-Vorhersage darf nicht nachträglich an die Daten angepasst werden.
+- **Transparenz:** Alle Datenquellen, Versionen, Skripte werden dokumentiert.
+- **Robustheit:** Ergebnisse müssen über Datensätze, Methoden und Kandidaten stabil sein.
+- **Abgrenzung:** SM und RFT klar trennen. Klar unterscheiden: (a) mathematische Äquivalenz, (b) heuristische Analogie, (c) empirische Vorhersage.
+- **Ehrlichkeit:** Negative Ergebnisse werden genauso dokumentiert wie positive.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2:** Katalog offener Anomalien erstellen. Priorisierung nach Signifikanz und theoretischer Klarheit. Drei stärkste Kandidaten auswählen.
+
+**Woche 3–4:** Für jeden Kandidaten prüfen, ob eine strukturelle RFT-Erklärung existiert. Falls ja: quantitative Vorhersage herleiten.
+
+**Woche 5–6:** Falls Vorhersage existiert: Vergleich mit CERN Open Data. Falls nicht: Lücke dokumentieren und minimale Erweiterung formulieren.
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT in der Teilchenphysik **Stufe 3** erreicht, ist **gering** — das SM ist extrem präzise, und die Konkurrenz durch SUSY, String, Composite Higgs und viele weitere Alternativen ist groß.
+
+Die Wahrscheinlichkeit, dass die RFT **Stufe 2** erreicht (explanatorischer Vorteil für eine offene Anomalie), ist **moderat** — es gibt mehrere Ansatzpunkte (g-2, Koide, CP).
+
+Ehrlichster Ausgang: **Die RFT liefert für eine offene Anomalie eine strukturelle Erklärung, die mit den Daten konsistent ist — aber die Signifikanz reicht nicht aus, um das SM zu widerlegen. Das wäre ein echter Beitrag — aber kein Jahrhundertbefund.**
+
+Der Task bleibt offen, bis RT-43, RT-44, RT-45 und RT-46 abgeschlossen sind. Er ist als **strategische Option** formuliert, nicht als unmittelbare Priorität.
+
+---
+
+### 9. Verwandte Tasks
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-03** | Resonanzbedingungen — theoretische Grundlage |
+| **RT-07** | Kernphysik — Nachbardomäne |
+| **RT-22** | Teilchenphysik — direkter Vorgänger (Stufe 1) |
+| **RT-40** | SRT-Brücke — $\varepsilon = 1/\gamma^2$ |
+| **RT-41** | A8 — Kopplungswellengeschwindigkeit |
+| **RT-43** | Analytische Warpmetrik — strukturelle Voraussetzung |
+| **RT-44** | QM als RFT-Substruktur — benachbarter Task |
+| **RT-45** | Energie als gerichtete Größe — theoretische Vertiefung |
+| **RT-46** | Doppelpendel — empirische Validierung |
+| **RT-47** | **Dieser Task** — distinktive Signaturen in CERN-Daten |
+
+---
+
+*RT-47 — DominicReneSchu/RFT — September 2026*

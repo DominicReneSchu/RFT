@@ -1,0 +1,532 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, top=2cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}
+\usepackage{tikz}
+\usepackage{qrcode}
+\usepackage{background}
+\usepackage{graphicx}
+
+\setlength{\parindent}{0pt}
+
+% Watermark settings
+\backgroundsetup{
+	scale=1,
+	color=black!15,
+	opacity=0.15,
+	angle=45,
+	position=current page.center,
+	vshift=0pt,
+	hshift=0pt,
+	contents={%
+		\Huge
+		Dominic-Ren\'e Schu --- \today --- \url{https://github.com/DominicReneSchu/RFT}
+	}
+}
+
+\title{Summary of Resonance Field Theory \\ and Empirical Results}
+\author{Dominic-Ren\'e Schu}
+\date{\today}
+
+\begin{document}
+	
+	\BgThispage
+	
+	\maketitle
+	
+	% QR code bottom right
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=south east,xshift=-1cm,yshift=1cm]
+		at (current page.south east)
+		{\qrcode{https://github.com/DominicReneSchu/RFT}};
+	\end{tikzpicture}
+	
+	\tableofcontents
+	\newpage
+	
+	%% ============================================================
+	\section{Introduction and Objectives}
+	%% ============================================================
+	
+	Resonance Field Theory (RFT) is an axiomatic framework
+	that describes oscillatory coupling as a universal organizing
+	principle of physical and systemic phenomena.
+	The goal is a parametric extension of the Planck relation
+	that uniformly captures resonance phenomena across scales
+	and domains -- from particle physics through cosmology
+	to financial markets and nuclear technology.
+	
+	This document summarizes the theoretical foundations, the
+	methodology, and the empirical results. The
+	complete manuscript in IOP format is available as
+	\texttt{rft\_manuscript\_en\_iop.tex}.
+	All derivations, source codes, and data are openly
+	accessible at
+	\url{https://github.com/DominicReneSchu/RFT}.
+	
+	Philosophical and metaphysical extensions of the RFT
+	are separately documented as interpretative extensions
+	(\texttt{en/facts/docs/explanations/the\_universe\_as\_a\_resonance\_bubble.md})
+	and explicitly marked as
+	speculative perspectives.
+	
+	%% ============================================================
+	\section{Theoretical Background}
+	%% ============================================================
+	
+	The RFT formulates seven hierarchically structured axioms
+	(A1--A7), from which the central
+	\textit{Resonance Field Equation} follows:
+	\begin{equation}
+		E = \pi \cdot \varepsilon(\Delta\varphi) \cdot \hbar \cdot f
+	\end{equation}
+	Here:
+	\begin{itemize}
+		\item $\pi$ is the mathematical constant as a measure of cyclic structure,
+		\item $\hbar = h/(2\pi)$ is the reduced Planck action quantum%
+		      \footnote{The RFT uses $\hbar$ (reduced Planck constant) throughout,
+		      which is the canonical choice for angular-frequency formulations.
+		      The relation to the ordinary Planck constant is $\hbar = h/(2\pi)$.},
+		\item $f$ is the resonance frequency of the system,
+		\item $\varepsilon(\Delta\varphi) \in [0,1]$ is the
+		phase-dependent \textbf{coupling operator}, which describes the
+		strength of the resonance coupling between two systems
+		as a function of their phase difference $\Delta\varphi$.
+	\end{itemize}
+	
+	\subsection{\texorpdfstring{$\pi$}{pi} as a Geometric Fundamental Constant of Phase Space}
+
+	$\pi$ appears in the Resonance Field Equation not as an arbitrary numerical
+	prefactor. It is the \textbf{natural measure of a half-oscillation}: the phase
+	interval $[0,\pi]$ corresponds to the transition from full phase coherence
+	($\Delta\varphi = 0$, $\varepsilon = 1$) to complete destructive interference
+	($\Delta\varphi = \pi$, $\varepsilon = 0$).
+
+	\textbf{Status (RT-01, RT-01b):} The factor~$\pi$ is not a free parameter,
+	but the \textbf{geometrically derived saddle-point contribution} of the stationary
+	action integral $S[\psi, \Delta\varphi]$. The limit
+	$E = \pi\varepsilon\hbar f \to E = hf_{\mathrm{Hz}}$ is formally closed.
+	Numerical confirmation (RT-01b): convergence to $\pi$ to machine precision,
+	$|c_3 + c_4| \approx 5.5 \times 10^{-11}$.
+
+	\subsection{Conceptual Distinctions}
+	
+	\begin{itemize}
+		\item \textbf{Coupling operator}
+		$\varepsilon(\Delta\varphi)$:
+		Dimensionless parameter in the basic formula.
+		Representation-theoretically uniquely determined as the only function
+		belonging exclusively to the $k{=}1$ representation of
+		$\mathrm{U}(1) \subset G_{\mathrm{sync}}$ (RT-02):
+		$\varepsilon = \cos^2(\Delta\varphi/2)$.
+		Limit values: $\varepsilon = 0$ (anti-resonance),
+		$\varepsilon = 1$ (complete phase coherence).
+		\item \textbf{Coupling efficiency}
+		$\eta(\Delta\varphi)$:
+		Measurable quantity in the FLRW simulations. Extracted from the
+		time-averaged cross-term of two coupled scalar fields.
+		Analytical expectation:
+		$\eta_{\mathrm{theo}} = \cos^2(\Delta\varphi/2)$.
+		\item \textbf{Identity $\varepsilon = \eta$}:
+		In the resonance reactor context it was shown that
+		$\varepsilon(\Delta\varphi) = \eta(\Delta\varphi)$
+		holds exactly.
+		This identity eliminates the coupling strength parameter
+		$\kappa$ completely:
+		$\kappa = 1$ (no free parameter).
+	\end{itemize}
+	
+	\subsection{Planck Special Case}
+	
+	For $\varepsilon = 1/(2\pi)$ it follows that
+	$E = \frac{1}{2}\hbar f$, consistent with the
+	ground-state energy of the harmonic oscillator.
+	
+	\subsection{The Seven Axioms (Axiom Status Aug.\ 2026)}
+	
+	\begin{enumerate}
+		\item[A1] \textbf{Universal Oscillation:}
+		Every physical entity can be described by an
+		oscillation function.
+		\textit{Status: Postulate.}
+		\item[A2] \textbf{Superposition and Interference:}
+		Oscillations superpose linearly.
+		\textit{Status: Postulate.}
+		\item[A3] \textbf{Resonance Condition:}
+		Coupling occurs when frequencies stand in rational
+		ratios ($f_1/f_2 = n/m$).
+		\textit{Status: Corollary from A7 (RT-02, RT-35);
+		not an independent axiom.}
+		\item[A4] \textbf{Coupling Energy:}
+		$E = \pi \cdot \varepsilon(\Delta\varphi)
+		\cdot \hbar \cdot f$.
+		\textit{Status: $\pi$ geometrically derived (RT-01, RT-01b);
+		$\varepsilon$ representation-theoretically unique (RT-02).}
+		\item[A5] \textbf{Energy Direction:}
+		Energy is a vectorial quantity with magnitude
+		and direction in the resonance field.
+		\textit{Status: Irreducible postulate (RT-36);
+		not derivable from $G_{\mathrm{sync}}$.}
+		\item[A6] \textbf{Information Flow:}
+		Information propagates exclusively along
+		coherent resonance paths.
+		\textit{Status: Postulate.}
+		\item[A7] \textbf{Invariance under $G_{\mathrm{sync}}$:}
+		Resonance structures are preserved under variation of
+		the observer's perspective and system parameters;
+		$G_{\mathrm{sync}} \cong \mathbb{R}^+_\times \times \mathrm{U}(1)
+		\times \mathrm{Aff}^+(\mathbb{R})$.
+		\textit{Status: Algebraically proved (stationary), RT-02.}
+	\end{enumerate}
+	
+	%% ============================================================
+	\section{Methodology and Software Architecture}
+	%% ============================================================
+	
+	The empirical validation is carried out by four independent
+	simulation pipelines:
+	
+	\subsection{Monte Carlo Resonance Analysis}
+	
+	\begin{itemize}
+		\item $50\,000$ pseudo-experiments on CMS open data
+		($99\,915$ dielectron events)
+		\item KDE background model with narrow signal exclusion
+		\item Binomial test with Bonferroni correction over
+		68~window widths
+		\item Bootstrap confidence intervals
+		($10\,000$~repetitions)
+		\item Systematics checks over three KDE bandwidths
+		and ten independent seeds
+		\item \textbf{Total scope: $1\,500\,000$ simulations}
+	\end{itemize}
+	
+	\subsection{Coupled FLRW Simulations}
+	
+	\begin{itemize}
+		\item $1\,530$~individual simulations
+		(51~$H_0$ points $\times$ 30~phase values)
+		\item Klein-Gordon equation in expanding spacetime
+		\item DOP853 integrator, $t = 0$--$120$,
+		$12\,000$~evaluation points
+		\item Jackknife error on $d_\eta$,
+		bootstrap error on slope
+	\end{itemize}
+	
+	\subsection{Resonance Reactor Simulation}
+	
+	\begin{itemize}
+		\item GDR data from literature:
+		Berman \& Fultz (1975), RIPL-3,
+		Ishkhanov \& Kapitonov (2021)
+		\item Resonance frequencies from RFT basic formula:
+		$f = E_{\mathrm{GDR}} / (\pi \cdot \hbar)$
+		\item Coupling strength $\kappa = 1$ from
+		$\varepsilon = \eta$ identity
+		\item Energy balance with Q-factor analysis
+	\end{itemize}
+	
+	\section{Results}
+	%% ============================================================
+	
+	\subsection{Monte Carlo on CMS Dielectron Data}
+	
+	Five resonances with empirical p-value~$= 0$ detected
+	($1\,500\,000$ total simulations):
+	
+	\begin{center}
+		\begin{tabular}{llrrl}
+			\hline
+			\textbf{Resonance} & $M_0$ (GeV)
+			& \textbf{Hits} & $p_{\mathrm{corr}}$
+			& \textbf{emp.\ $p$} \\
+			\hline
+			$\phi$(1020) & $1{,}020$ & $19\,869$
+			& $1{,}07 \times 10^{-54}$ & $0$ \\
+			J/$\psi$ & $3{,}100$ & $3\,256$
+			& $1{,}02 \times 10^{-121}$ & $0$ \\
+			$\Upsilon$(1S) & $9{,}460$ & $4\,186$
+			& $3{,}01 \times 10^{-201}$ & $0$ \\
+			$\Upsilon$(2S) & $10{,}020$ & $4\,625$
+			& $5{,}16 \times 10^{-188}$ & $0$ \\
+			Z-boson & $91{,}200$ & $52$
+			& $< 10^{-300}$ & $0$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Bandwidth-independent ($0{,}3$, $0{,}5$,
+	$0{,}7$~GeV) and seed-independent
+	(10~seeds, all emp.\ $p = 0{,}000 \pm 0{,}000$).
+	Confirms Axioms~3 and 7.
+	
+	\subsection{Coupled FLRW Simulations}
+	
+	\begin{center}
+		\begin{tabular}{lr}
+			\hline
+			\textbf{Measured quantity} & \textbf{Value} \\
+			\hline
+			Individual simulations & $1\,530$ \\
+			Slope $\mathrm{d}d_\eta / \mathrm{d}H_0$
+			& $(0{,}00113 \pm 0{,}00017)$~(km/s/Mpc)$^{-1}$ \\
+			$\Delta d_\eta$ (SH0ES $-$ Planck)
+			& $0{,}0063 \pm 0{,}0010$ ($>6\sigma$) \\
+			$\Delta\chi^2$ vs.\ Planck-2018-CMB
+			& $+16{,}0$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Confirms Axioms~1, 3, 4, 5, 7.
+	
+	\subsection{Resonance Reactor: Resonant Transmutation}
+	
+	\subsubsection{Results
+		($\Phi_\gamma = 10^{12}$~$\gamma$/(cm$^2 \cdot$s),
+		$\Delta\varphi = 0$, $\kappa = 1$).}
+	
+	\begin{center}
+		\begin{tabular}{lrrrl}
+			\hline
+			\textbf{Isotope} & $t_{1/2}$
+			& $\lambda_{\mathrm{eff}}/\lambda_0$
+			& $Q_{\mathrm{fiss}}$ & \textbf{Interpretation} \\
+			\hline
+			U-235 & $7{,}04 \times 10^8$~y & $7\,872$
+			& $0{,}97$ & Resonance dominates \\
+			Pu-239 & $24\,110$~y & $1{,}3$
+			& $1{,}00$ & Break-even \\
+			Am-241 & $432$~y & $1{,}005$
+			& -- & Marginal \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Falsifiable prediction:
+	$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$.
+	Confirms Axioms~1, 3, 4.
+	
+	\subsection{Dynamic Simulations}
+	
+	Double pendulum model and Schr\"odinger simulation
+	for visualization of complex coupling states:
+	\begin{itemize}
+		\item Double pendulum: known motion patterns
+		confirmed, novel resonance modes identified,
+		$\varepsilon(\theta_2-\theta_1) = \cos^2(\Delta\theta/2)$
+		dynamically confirmed (A1, A2, A4)
+		\item Schr\"odinger simulation: derivation of the
+		Schr\"odinger equation from Axiom~4 in
+		5~derivation steps; Fidelity~$= 1{,}0$ (all~4
+		scenarios); perturbation theory
+		$1-F \sim \lambda^2$ confirmed; falsifiable
+		prediction $|\Delta\langle x\rangle| \approx
+		2{,}0 \cdot \lambda\;\mu$m for ${}^{87}$Rb (A4)
+		\item Warp drive simulation: first positive-energy
+		warp bubble ($E^- = 0$);
+		sign change in equation of state~$w$ via
+		$\varepsilon(\Delta\varphi)$ phase control;
+		$\Delta w = +0{,}057$; $\rho > 0$ everywhere (A4, A5)
+	\end{itemize}
+	
+	%% ============================================================
+	\section{Mathematical Proofs}
+	%% ============================================================
+	
+	Through new methods of series expansion it has been possible to:
+	\begin{itemize}
+		\item analytically solve previously unsolved integrals,
+		\item establish systemic connections between frequency,
+		coupling, and energy,
+		\item prove the identity
+		$\varepsilon(\Delta\varphi) = \eta(\Delta\varphi)$,
+		which eliminates the last free parameter.
+	\end{itemize}
+	
+	%% ============================================================
+	\section{Outlook and Open Questions}
+	%% ============================================================
+	
+	\begin{enumerate}
+		\item \textbf{Independent determination of
+			$\varepsilon$:}
+		Ab-initio derivation from system geometry.
+		
+		\item \textbf{New prediction:}
+		$\sigma_{\mathrm{coh}} > \sigma_{\mathrm{incoh}}$
+		experimentally testable in the resonance reactor.
+		
+		\item \textbf{Resonance reactor -- $Q > 1$:}
+		Break-even curve $d_{\min}(k)$, optimal
+		target geometry.
+		
+		\item \textbf{CMB with Boltzmann solver:}
+		Full $\ell$-range with
+		\textsc{camb}/\textsc{class}.
+		
+		\item \textbf{Nonlinear saturation:}
+		$\lambda\varepsilon^4$- and
+		$\alpha R\varepsilon^2$-terms.
+		
+		\item \textbf{Resonance Hamiltonian:}
+		Construct and solve $\hat{H}_{\mathrm{res}}$
+		for specific quantum systems
+		(phonon coupling, spin-orbit coupling).
+		
+		\item \textbf{Warp drive -- 3D bubble:}
+		Full 3D warp geometry with
+		spherical-azimuthal symmetry;
+		quantify energy gap at stage~5.
+		
+		\item \textbf{Further domains:}
+		Acoustics, biology, network theory.
+	\end{enumerate}
+	
+	%% ============================================================
+	\section{Experimental Predictions}
+	%% ============================================================
+	
+	The RFT formulates two falsifiable experimental proposals
+	that test the coupling function $\cos^2(\Delta\varphi/2)$ over
+	19~orders of magnitude in energy.
+	
+	\subsection{Experiment~I: Am-241 at ELI-NP (Nuclear physics)}
+	
+	\begin{itemize}
+		\item \textbf{Prediction:}
+		Signal(coherent) / Signal(incoherent) $= 2{,}0$
+		(RFT) vs.\ $1{,}0$ (SM). No free parameters
+		($\kappa = 1$ from $\varepsilon = \eta$).
+		\item \textbf{System:} 100~mg Am-241,
+		GDR centroid $14{,}0$~MeV
+		\item \textbf{Facility:} ELI-NP VEGA
+		(M\u{a}gurele, Romania),
+		$\Phi > 10^{11}\;\gamma$/s,
+		$\Delta E/E < 0{,}5\%$
+		\item \textbf{Measurement protocol:} 5~measurement points (M1--M5)
+		with varying phase coherence. M5 = reference
+		(incoherent). RFT predicts:
+		$\cos^2(\Delta\varphi/2)$ pattern over M1--M5.
+		SM predicts: all equal.
+		\item \textbf{Significance:} $> 50\,000\,\sigma$
+		\item \textbf{Beam time:} ${\sim}30$~h,
+		cost ${\sim}50\,000$~EUR
+	\end{itemize}
+	
+	\subsection{Experiment~II: ${}^{87}$Rb-BEC in harmonic
+		trap (Quantum mechanics)}
+	
+	\begin{itemize}
+		\item \textbf{Prediction:}
+		$|\Delta\langle x\rangle|
+		= 4{,}9 \cdot \lambda \cdot \ell
+		\approx 2{,}0 \cdot \lambda\;\mu$m (RFT)
+		vs.\ $0$ (Standard QM). One free parameter
+		($\lambda$).
+		\item \textbf{System:} Ultracold ${}^{87}$Rb atoms
+		in harmonic trap,
+		$\omega = 2\pi \times 100$~Hz
+		\item \textbf{SI calibration:}
+		$\ell = 0{,}41\;\mu$m,
+		$\tau = 0{,}225$~ms, consistency over 6
+		independent relations verified
+		($\hbar = m \cdot \ell^2/\tau$ etc.)
+		\item \textbf{Perturbation theory:} Numerically
+		verified over $\lambda$-scan
+		($10^{-4}$\,\ldots\,$5$):
+		$1 - F \sim \lambda^{2{,}00}$,
+		$\Delta\langle O\rangle \sim \lambda^{1{,}00}$.
+		Rel.\ error $1{,}3 \times 10^{-4}$.
+		\item \textbf{Kohn theorem:}
+		GP interaction does not shift $\langle x\rangle$
+		(Kohn-protected). RFT feedback breaks
+		Kohn condition -- unique signal.
+		\item \textbf{Sensitivity:}
+		$\lambda \gtrsim 0{,}05$ after 100~repetitions,
+		$\lambda \gtrsim 0{,}005$ after $10\,000$
+	\end{itemize}
+	
+	\subsection{Comparison of Both Experiments}
+	
+	\begin{center}
+		\small
+		\begin{tabular}{lll}
+			\hline
+			& \textbf{Am-241 (Nuclear physics)}
+			& \textbf{${}^{87}$Rb-BEC (QM)} \\
+			\hline
+			Domain & Nuclear physics (GDR, 14~MeV)
+			& QM ($\mu$eV) \\
+			Energy scale & $10^7$~eV & $10^{-12}$~eV \\
+			Measured quantity
+			& Signal$_{\mathrm{coh}}$ /
+			Signal$_{\mathrm{inc}}$
+			& $\Delta\langle x\rangle$ \\
+			RFT prediction & $2{,}0$ (exact)
+			& $2{,}0 \cdot \lambda\;\mu$m \\
+			SM prediction & $1{,}0$ & $0$ \\
+			Free parameters & $0$ & $1$ ($\lambda$) \\
+			Tested quantity
+			& $\eta(\Delta\varphi)
+			= \cos^2(\Delta\varphi/2)$
+			& $\varepsilon(\Delta\varphi(t))$ dynamic \\
+			Test type & Yes/No (ratio)
+			& Continuous ($\lambda$-scan) \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Both experiments test the same core of the RFT
+	(the coupling function $\cos^2(\Delta\varphi/2)$) over
+	19~orders of magnitude in energy. They are
+	independently falsifiable.
+	
+	%% ============================================================
+	\section*{Document Overview}
+	%% ============================================================
+	
+	\begin{center}
+		\begin{tabular}{ll}
+			\hline
+			\textbf{Document} & \textbf{Content} \\
+			\hline
+			\texttt{rft\_manuscript\_en\_iop.tex}
+			& Physics, simulations, peer review \\
+			\texttt{RFT\_Summary.tex}
+			& Technical overall overview \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\section*{Appendix: Directory Structure}
+	
+	\textbf{Monte Carlo:}
+	\texttt{en/facts/empirical/monte\_carlo/}
+	
+	\textbf{FLRW:}
+	\texttt{en/facts/simulations/FLRW\_simulations/}
+	
+	\textbf{Schr\"odinger sim.:}
+	\texttt{en/facts/simulations/schrodinger/}
+	
+	\textbf{Resonance reactor:}
+	\texttt{en/facts/concepts/resonance\_reactor/}
+	
+	\textbf{Dynamic sim.:}
+	\texttt{en/facts/simulations/double\_pendulum/}
+	
+	\vspace{2em}
+	
+	\textbf{Repository:}
+	\url{https://github.com/DominicReneSchu/RFT}
+	\hfill
+	\qrcode{https://github.com/DominicReneSchu/RFT}
+	
+\end{document}

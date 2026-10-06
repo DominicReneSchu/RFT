@@ -1,0 +1,12 @@
+{
+  "L1_m": 0.300,
+  "L2_m": 0.250,
+  "m1_kg": 0.150,
+  "m2_kg": 0.120,
+  "g_ms2": 9.812,
+  "measurement_date": "YYYY-MM-DD",
+  "location": "Stadt, Land",
+  "hardware": "Smartphone-Modell oder Encoder-Typ",
+  "fps_or_samplerate_hz": 120,
+  "notes": ""
+}
