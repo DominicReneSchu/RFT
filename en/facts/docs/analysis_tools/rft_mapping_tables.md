@@ -1,11 +1,11 @@
 # RFT – Social Analysis: Mapping Tables
 
-→ [Societal Analysis (Version 2.22)](social_analysis.md)
+→ [Societal Analysis (Version 2.23)](social_analysis.md)
 → [Mapping Tables](rft_mapping_tables.md)
 → [Bibliography](rft_bibliography.md)
 → [Changelog](rft_changelog.md)
 
-## Table 1: Axioms A1–A8 and Formal Quantities (ε, Δφ, PCI, K_ij, α, β, AiR)
+## Table 1: Axioms A1–A7 and Formal Quantities (ε, Δφ, PCI, K_ij, α, β, AiR)
 
 | RFT Term | Established Concept | Main Source(s) | What RFT Adds |
 |:--|:--|:--|:--|
@@ -16,7 +16,7 @@
 | A5 Energy Direction | Field theory, gradients | Maxwell (1865); Helmholtz (1847) | Direction operator for social energy flows |
 | A6 Information Flow | Information theory, communication | Shannon (1948); Luhmann (1984); Bateson (1972) | PCI as an operationalized coherence measure |
 | A7 Scale Invariance | Fractal geometry, self-similarity | Mandelbrot (1967, 1982); Haken (1977) | Social scale invariance; original contribution |
-| A8 Coupling Wave Velocity | Speed of light, SRT | Maxwell (1865); Einstein (1905) | Irreducible postulate; finite propagation of social signals |
+| A8 Coupling Wave Velocity *(not used in the analysis tool)* | Speed of light, SRT | Maxwell (1865); Einstein (1905); RT-41 (Schu 2026) | Irreducible postulate in the RFT research programme; not used in the analysis tool → <a href="https://github.com/DominicReneSchu/RFT">Repo</a> |
 | ε (Coupling Efficiency) | Transmission efficiency | Signal processing, control engineering | Phase-difference-dependent efficiency function: ε(Δφ) = cos²(Δφ/2) |
 | Δφ (Phase Difference) | Phase shift, value divergence | Wave theory; polarization research (Inglehart & Norris 2016) | Operationalization of social phase position |
 | PCI (Phase Coherence Index) | Coherence measure, group cohesion | Kuramoto (1975); Social cohesion (Putnam 2000) | Formal measure of collective phase coherence |
