@@ -1,5 +1,10 @@
 # RFT – Gesellschaftliche Analyse: Änderungsprotokoll
 
+→ [Gesellschaftliche Analyse (Fassung 2.22)](gesellschaftliche_analyse.md)
+→ [Mapping-Tabellen](rft_mapping_tabellen.md)
+→ [Literaturverzeichnis](rft_literaturverzeichnis.md)
+→ [Änderungsprotokoll](rft_aenderungsprotokoll.md)
+
 **Dokument:** `gesellschaftliche_analyse.md`
 **Aktuelle Version:** 2.22 (Oktober 2026)
 **Vorgängerversion:** 2.21

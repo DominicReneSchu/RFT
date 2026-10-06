@@ -19,6 +19,10 @@ All three modes use the same axioms; only the direction of integration of the fi
 
 The modes are not designed for one-time diagnosis but for **cyclic, iterative application**: after an analysis at $t_0$ a projection follows; its occurrence or non-occurrence is observed at $t_1$, causing PCI and $K_{ij}$ to update and triggering a fresh analysis on the new field state. Resonance fields are dynamic – phase coherence shifts, coupling strengths evolve, attractors migrate. The instrument is therefore best understood as an **iterative resonance analyser**, not a static diagnostic tool.
 
+→ [Mapping Tables](rft_mapping_tables.md)
+→ [Bibliography](rft_bibliography.md)
+→ [Changelog](rft_changelog.md)
+
 ---
 
 ## 2. Axiom System A1–A8 (compact)

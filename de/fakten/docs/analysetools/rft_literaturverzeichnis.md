@@ -1,5 +1,10 @@
 # RFT – Gesellschaftliche Analyse: Literaturverzeichnis
 
+→ [Gesellschaftliche Analyse (Fassung 2.22)](gesellschaftliche_analyse.md)
+→ [Mapping-Tabellen](rft_mapping_tabellen.md)
+→ [Literaturverzeichnis](rft_literaturverzeichnis.md)
+→ [Änderungsprotokoll](rft_aenderungsprotokoll.md)
+
 *Alphabetisch, APA 7, Stand: Oktober 2026 | Mindestens 80 Einträge, davon ≥ 50 peer-reviewed*
 
 ## 1. Rhetorik und Argumentation

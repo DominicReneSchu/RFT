@@ -1,5 +1,10 @@
 # RFT – Social Analysis: Mapping Tables
 
+→ [Societal Analysis (Version 2.22)](social_analysis.md)
+→ [Mapping Tables](rft_mapping_tables.md)
+→ [Bibliography](rft_bibliography.md)
+→ [Changelog](rft_changelog.md)
+
 ## Table 1: Axioms A1–A8 and Formal Quantities (ε, Δφ, PCI, K_ij, α, β, AiR)
 
 | RFT Term | Established Concept | Main Source(s) | What RFT Adds |
