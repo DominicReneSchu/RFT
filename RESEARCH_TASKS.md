@@ -2325,7 +2325,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 
 **Version:** 1.0 – Entwurf
 **Datum:** November 2026
-**Status:** 🔄 Offen — AP1 📋 AP2 📋
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅
 **Vorgänger:** RT-45 AP3 (konzeptionelle Auflösung des Λ-Problems), RT-42 (Phasendynamik)
 **Motivation:** RT-45 AP3 löst das Λ-Problem konzeptionell. Die quantitative Frage bleibt: Kann die RFT ρ_Λ^obs ~ 10⁻²⁶ kg/m³ aus ersten Prinzipien berechnen?
 
@@ -2343,7 +2343,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 
 **Version:** 1.0 – Entwurf
 **Datum:** November 2026
-**Status:** 🔄 Offen
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3 ✅
 **Vorgänger:** RT-47 AP2 (Koide), RT-44 AP1 (Wasserstoffspektrum)
 **Motivation:** RT-47 leitet Koide Q=2/3 aus A3+A7 ab. Die natürliche Erweiterung: Kann die gesamte fermionische Massenmatrix (Yukawa-Kopplungen) aus RFT-Resonanzstruktur hergeleitet werden?
 
@@ -2355,6 +2355,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 **Erfolgskriterium:** Yukawa-Matrix-Einträge aus RFT-Parametern ableitbar — oder präzise Lücke dokumentiert.
 
 ---
+
 
 
 
