@@ -103,7 +103,7 @@ Complete definition: [Coupling efficiency](facts/docs/definitions/coupling_effic
 
 $$\Gamma_{\rm RFT} = \frac{c^2}{\pi\hbar} \approx 2.713e+50\;\frac{\rm Hz}{\rm kg}$$
 
-The Resonance Field Theory provides the **first structural time anchor without caesium**:
+The Resonance Field Theory formulates the **first structural candidate for a time anchor without a specific atomic transition** *(hypothesis; F-Γ1 open)*:
 
 $$1\\;\\rm s = N \\times \\frac{\\pi\\hbar}{m_e c^2}, \\qquad N \\approx 2.471e+20$$
 
@@ -523,6 +523,7 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
 
