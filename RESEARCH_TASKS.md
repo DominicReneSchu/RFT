@@ -24,7 +24,7 @@ Status: Aktiv
 | QM als RFT-Substruktur | Interpretation/Analogie | E_n hergeleitet, ε=Kohärenz, Born→A_Born, Spin→A9, Bell=QM (RT-44) | ✅ Abgeschlossen (RT-44, Nov 2026) |
 | Energie als gerichtete Größe | Skalare Energiedichte | A5 Erweiterung Std-FT; Λ-Problem→Gradient; ρ≥0 strukturell aus A5; 3 Signaturen (RT-45) | ✅ Abgeschlossen (RT-45, Nov 2026) |
 | Distinktive Teilchenphysik-Signaturen | Stufe-1-Passung (RT-22) | Koide Q=2/3 aus A3+A7 (Stufe 2); Q_Neutrinos=2/3 Vorhersage; Δa_τ≈2,8×10⁻⁷ (RT-47) | ✅ Abgeschlossen (RT-47, Nov 2026) |
-| Skaleninvarianz ℝ⁺× in G_sync | Kein absoluter Frequenzanker | Skalenbruchmechanismus und fundamentale Frequenz ν₀ angestrebt (RT-48) | 🔄 Offen (RT-48) |
+| Skaleninvarianz ℝ⁺× in G_sync | Kein absoluter Frequenzanker | Γ_RFT=c²/(πħ); ℝ⁺× echte Symmetrie; K2 intern via RT-47/51 (RT-48) | ✅ Abgeschlossen (RT-48, Nov 2026) |
 
 ---
 
@@ -36,7 +36,7 @@ Status: Aktiv
 3. ~~RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin~~ ✅ Abgeschlossen (Nov 2026)
 4. ~~RT-45 — Energie als gerichtete Größe~~ ✅ Abgeschlossen (Nov 2026)
 5. ~~RT-47 — Distinktive RFT-Signaturen in CERN-Daten~~ ✅ Abgeschlossen (Nov 2026)
-6. RT-48 — RFT-Raum-Zeit-Konstante: Skalenbruchmechanismus und fundamentale Frequenz ← Theoretische Grundlagenfrage (nach RT-40, RT-41, RT-42)
+6. ~~RT-48 — RFT-Raum-Zeit-Konstante~~ ✅ Abgeschlossen (Nov 2026)
 4. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
 5. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
 6. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
@@ -48,6 +48,7 @@ Status: Aktiv
 7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-48 — RFT-Raum-Zeit-Konstante~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP5 vollständig; ℝ⁺× echte Symmetrie (nicht Eichredundanz); K3 Negativergebnis (Vakuumsektor); K2 intern via RT-47 (Koide→m_e→ν₀); Γ_RFT = c²/(πħ) ≈ 2.71e+50 Hz/kg; Kette A3+A7→m_e→ν₀ bei RT-51 geschlossen. Kerndokumente: `de/fakten/theorie/rt48_ap*` + `rt48_raum_zeit_konstante.md`
 - ~~RT-47 — Distinktive RFT-Signaturen in CERN-Daten~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP7 vollständig; Koide Q=2/3 aus A3+A7 (kein freier Parameter, Stufe 2); neue Vorhersagen: Q_Neutrinos=2/3, Δa_τ≈2,8×10⁻⁷ (Belle II); QCD-Korrektur erklärt Quark-Abweichung; Τau g−2 als Falsifikationskriterium. Kerndokumente: `de/fakten/theorie/rt47_ap1*` bis `rt47_ap7*`
 - ~~RT-45 — Energie als gerichtete Größe~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP6 vollständig; Skalarität nur Näherung; A5 erweitert Std-FT; Λ-Problem konzeptionell gelöst (∇ρ=0 → unsichtbar, A5); ρ≥0 strukturell aus A5+A4 (ε²≥0); 3 Signaturen (GW-Winkel, CMB, l_c∝1/γ²); konsistent RT-36/40/41/42/43/44. Kerndokumente: `de/fakten/theorie/rt45_ap1*` bis `rt45_ap6*`
 - ~~RT-44 — QM als RFT-Substruktur~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP7 vollständig; E_n=−13,6/n² aus A3; ε=Interferenz/Kohärenz (AP2); Unschärfe aus Fourier+A4 (AP3); Born-Regel→A_Born irreduzibel (AP4); Dekohärenz τ_D=1/β (AP5); Spin→A9_Spin+SU(2) (AP6); Bell |S|=2√2 QM-äquivalent (AP7). Kerndokumente: `de/fakten/theorie/rt44_ap1*` bis `rt44_ap7*`
@@ -2351,5 +2352,6 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 **Erfolgskriterium:** Yukawa-Matrix-Einträge aus RFT-Parametern ableitbar — oder präzise Lücke dokumentiert.
 
 ---
+
 
 
