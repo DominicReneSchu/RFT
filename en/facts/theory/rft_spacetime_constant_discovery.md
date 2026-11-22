@@ -154,7 +154,7 @@ Metrology distinguishes:
 
 The Cs second is both. The RFT second is **definition only**. ν_e ≈ 2.5e+20 Hz
 is in the X-ray range — no direct clock realisation. A frequency-comb bridge
-(~67 halving steps) is in principle possible but technically not realisable today.
+(~~19 halving steps (log₂(6×10⁵)) steps) is in principle possible but technically not realisable today.
 
 ### 3. The Koide assumption is the critical test point
 
@@ -260,6 +260,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
