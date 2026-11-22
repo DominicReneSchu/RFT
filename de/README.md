@@ -103,7 +103,7 @@ Vollständige Definition: [Kopplungseffizienz](fakten/docs/definitionen/kopplung
 
 $$\Gamma_{\rm RFT} = \frac{c^2}{\pi\hbar} \approx 2.713e+50\;\frac{\rm Hz}{\rm kg}$$
 
-Die Resonanzfeldtheorie liefert den **ersten strukturellen Zeitanker ohne Cäsium**:
+Die Resonanzfeldtheorie formuliert den **ersten strukturellen Kandidaten für einen Zeitanker ohne spezifischen Atomübergang** *(Hypothese; F-Γ1 offen)*:
 
 $$1\\;\\rm s = N \\times \\frac{\\pi\\hbar}{m_e c^2}, \\qquad N \\approx 2.471e+20$$
 
@@ -525,6 +525,7 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
 
 
