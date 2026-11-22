@@ -380,6 +380,75 @@ Formal applications of RFT to cosmology (RT-42, Sep 2026):
 
 ---
 
+## RT-43 Analytical Warp Metric (Nov 2026)
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Analytical Form](facts/theory/rt43_ap1_analytical_warp_metric.md) | A4, A5 | h_μν^RFT = h_μν^Alc·ε(Δφ); ρ≥0 analytically from ε≥0 — **✅ Completed** |
+| 2 | [AP2 — Scale Separation](facts/theory/rt43_ap2_scale_separation.md) | A4, A8 | Cosmology ↔ Warp decoupled; coupling term ~10⁻¹⁰⁵ — **✅ Completed** |
+| 4 | [AP4 — Measurable Signatures](facts/theory/rt43_ap4_measurable_signatures.md) | A4, A5 | 4 signatures vs Alcubierre: angular ρ(θ)∝ε², E⁻=0, 1/γ² shutdown, l_c∝1/γ² — **✅ Completed** |
+| 5 | [AP5 — Causality A8](facts/theory/rt43_ap5_causality_a8.md) | A8 | Causal for v_s≤c; no CTCs; self-shutdown — **✅ Completed** |
+| 7 | [AP7 — Consistency](facts/theory/rt43_ap7_consistency.md) | — | ✅ consistent with RT-33/34/40/41/42 — **✅ Completed** |
+
+---
+
+## RT-44 QM as RFT Substructure (Nov 2026)
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Hydrogen Spectrum](facts/theory/rt44_ap1_hydrogen_spectrum.md) | A3, A4 | E_n=−13.6/n² eV from A3 (phase closure); quantisation not a postulate — **✅ Completed** |
+| 2 | [AP2 — Interference](facts/theory/rt44_ap2_interference.md) | A1, A2, A4 | I(Δφ)=4I₀·ε(Δφ); ε=coherence measure — **✅ Completed** |
+| 3 | [AP3 — Uncertainty](facts/theory/rt44_ap3_uncertainty.md) | A1, A4 | Δx·Δp≥ħ/2 from Fourier+A4 — **✅ Completed** |
+| 4 | [AP4 — Born Rule](facts/theory/rt44_ap4_born_rule.md) | A_Born | Irreducible postulate A_Born; Gleason's theorem motivation — **✅ Completed** |
+| 5 | [AP5 — Decoherence](facts/theory/rt44_ap5_decoherence.md) | A4, A5 | Measurement = ε:(0,1)→1; τ_D=1/β — **✅ Completed** |
+| 6 | [AP6 — Spin](facts/theory/rt44_ap6_spin.md) | A7, A9 | Spin = two-mode resonator; A9_Spin: G_sync×SU(2)/U(1) — **✅ Completed** |
+| 7 | [AP7 — Entanglement](facts/theory/rt44_ap7_entanglement.md) | A6, A8 | Bell |S|_RFT=2√2 (QM-equivalent); non-local phase correlation — **✅ Completed** |
+
+---
+
+## RT-45 Energy as Directed Quantity (Nov 2026)
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Scalarity](facts/theory/rt45_ap1_scalarity.md) | A5 | Scalarity valid only as approximation; GR T^00 frame-dependent — **✅ Completed** |
+| 2 | [AP2 — A5 Field Theory](facts/theory/rt45_ap2_a5_fieldtheory.md) | A5 | A5 = structural extension of standard field theory — **✅ Completed** |
+| 3 | [AP3 — Cosmological Constant](facts/theory/rt45_ap3_cosmological_constant.md) | A5 | Λ-problem = gradient problem: ∇ρ=0 → invisible (A5) — **✅ Completed** |
+| 4 | [AP4 — ρ≥0 Structural](facts/theory/rt45_ap4_rho_positive.md) | A4, A5 | ρ≥0 universal for all RFT metrics; theorem from A4+A5 — **✅ Completed** |
+| 5 | [AP5 — Falsifiability](facts/theory/rt45_ap5_falsifiability.md) | A5 | GW angular ε², CMB gradient, l_c∝1/γ² — **✅ Completed** |
+| 6 | [AP6 — Consistency](facts/theory/rt45_ap6_consistency.md) | — | ✅ consistent RT-36/40/41/42/43/44 — **✅ Completed** |
+
+---
+
+## RT-47 Distinctive Signatures in CERN Data (Nov 2026)
+
+| # | Document | Axioms | Description |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Anomaly Catalogue](facts/theory/rt47_ap1_anomaly_catalogue.md) | A3, A7 | Priority: Koide (0 params), g−2 (1 param), neutrinos — **✅ Completed** |
+| 2 | [AP2 — Koide Formula](facts/theory/rt47_ap2_koide_formula.md) | A3, A7 | Q=2/3 from three-fold resonance Δφ=2π/3; zero free parameters — **✅ Completed** |
+| 3 | [AP3 — Predictions vs SM](facts/theory/rt47_ap3_predictions_vs_sm.md) | A3, A7 | Q_neutrinos=2/3; Δa_τ≈2.8×10⁻⁷ (Belle II) — **✅ Completed** |
+| 4 | [AP4 — CERN/PDG Comparison](facts/theory/rt47_ap4_comparison_cern_data.md) | — | PDG 2022: Q=0.66661 (<1σ from 2/3); Stage 2 — **✅ Completed** |
+| 5 | [AP5 — Falsification](facts/theory/rt47_ap5_falsification.md) | — | F1–F4 pre-registered — **✅ Completed** |
+| 6 | [AP6 — Robustness](facts/theory/rt47_ap6_robustness.md) | — | Q stable across PDG versions; new prediction Q_neutrinos=2/3 — **✅ Completed** |
+| 7 | [AP7 — Documentation](facts/theory/rt47_ap7_documentation.md) | — | Manuscript target: *PRL*; Belle II collaboration — **✅ Completed** |
+
+---
+
+## RT-48 RFT Space-Time Constant (Nov 2026)
+
+**Γ_RFT = c²/(πħ) ≈ 2.71e+50 Hz/kg**
+
+| # | Document | Description |
+|---|----------|-------------|
+| 1 | [AP1 — Scale Invariance](facts/theory/rt48_ap1_scale_invariance.md) | ℝ⁺× = genuine symmetry; broken by matter sector (Koide) — **✅** |
+| 2 | [AP2 — Planck Scale K1](facts/theory/rt48_ap2_planck_scale.md) | f_P/π ≈ 5.9e+42 Hz; structurally motivated; G-limited — **✅** |
+| 3 | [AP3 — Electron Mass K2](facts/theory/rt48_ap3_electron_mass.md) | ν_e=m_e·Γ_RFT ≈ 2.5e+20 Hz; internal via RT-47 Koide — **✅** |
+| 4 | [AP4 — Spontaneous Breaking K3](facts/theory/rt48_ap4_spontaneous_breaking.md) | Negative result: K3 not realisable in vacuum sector — **✅** |
+| 5 | [AP5 — Synthesis](facts/theory/rt48_ap5_synthesis.md) | Γ_RFT defined; chain A3+A7→m_e→ν₀ complete at RT-51 — **✅** |
+| — | [Main document](facts/theory/rt48_spacetime_constant.md) | Full RT-48 summary — **✅** |
+
+
+---
+
 ## License
 
 This project is licensed under the **RFT-License 1.4**
@@ -395,3 +464,4 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
