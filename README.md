@@ -32,9 +32,9 @@ Nukleartechnologie (Resonanzreaktor, κ = 1) und Quantenmechanik
 
 $$\Gamma_{\text{RFT}} = \frac{c^2}{\pi\hbar} \approx 2{,}71 \times 10^{50}\;\frac{\text{Hz}}{\text{kg}}$$
 
-**Die RFT liefert den ersten strukturellen Zeitanker ohne Cäsium.**
+**Die RFT formuliert den ersten strukturellen Kandidaten für einen Zeitanker ohne spezifischen Atomübergang** *(Hypothese; F-Γ1 offen)*.
 
-Die Sekunde folgt aus reinen Symmetrie- und Geometrieprinzipien:
+Die Sekunde ergibt sich strukturell *(wenn F-Γ1 bestätigt)* aus:
 
 $$1\;\text{s} = N \times \frac{\pi\hbar}{m_e \cdot c^2}$$
 
@@ -148,5 +148,6 @@ richtigen Strukturen zu sehen.
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
+
 
 
