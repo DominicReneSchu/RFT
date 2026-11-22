@@ -1,6 +1,6 @@
 # Die RFT-Raum-Zeit-Kopplung Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.3 — Statusformulierung nach DeepSeek, RFT-intern vs. etabliert)*
+*Dominic-René Schu, November 2026 (v2.4 — Statusformulierung präzisiert; F-Γ3 Realisierungsstrategie; alle Quellenangaben neutral)*
 
 ---
 
@@ -10,7 +10,7 @@
 > unabhängig etablierten Massenskala, mit expliziten Falsifikationskriterien,
 > aber ohne metrologische Realisierung und ohne unabhängige Bestätigung der Koide-Ableitung.**
 >
-> *(Formulierung nach DeepSeek-Analyse, Nov 2026)*
+> *(Formulierung nach externer Peer-Review-Analyse, Nov 2026)*
 
 Das ist kein Negativbefund — es ist der Stand, den RT-48 als möglichen Ausgang vorgesehen
 hatte (AP5, Negativziel). Dieser Abschnitt erklärt, warum dieser Status dennoch
@@ -119,7 +119,7 @@ G_sync-Transformation erreichbar — damit nicht physikalisch ausgezeichnet.
 **Ergebnis (RT-47 AP2):** A3 + A7 → Kreisverteilung im √m-Raum → Q = 2/3.
 Kein freier Parameter.
 
-### Was die RFT NICHT leistet (DeepSeek-Präzisierung)
+### Was die RFT NICHT leistet — kritische Einordnung
 
 **Die Koide-Formel ist empirisch, nicht axiomatisch erzwungen.**
 
@@ -139,7 +139,7 @@ erfordert noch einen Ankerpunkt (den Phasenwinkel θ in der Brannen-Parameterisi
 
 ---
 
-## Drei Präzisierungen (DeepSeek, Nov 2026)
+## Drei kritische Präzisierungen
 
 ### 1. Γ_RFT ist keine unabhängige neue Konstante
 
@@ -227,6 +227,25 @@ aber wie beide nicht direkt realisierbar.
 | **F-Γ3** | RFT-s ≠ Cs-s bei > 1 ppb | Wenn ν_e realisierbar | Langfristig |
 | **F-Γ4** | Q_Neutrinos ≠ 2/3 bei > 3σ — **testet A3+A7-Struktur**, nicht nur Koide | KATRIN / Project 8 | 5–15 Jahre |
 
+**Zu F-Γ3 — Konkrete Realisierungsstrategie:**
+
+Die direkte Realisierung bei ν_e ≈ 2,47×10²⁰ Hz (harte Röntgenstrahlung, λ ≈ 1,2 pm) ist
+heute nicht möglich. Mögliche Brückenstrategien:
+
+| Schritt | Methode | Frequenzbereich | Status |
+|---------|---------|----------------|--------|
+| Optische Uhr → ν_e | Frequenzkamm-Kaskade (~67 Halbierungen) | 10¹⁵ → 10²⁰ Hz | Konzept |
+| Kernühr (¹⁷⁵Lu+, 2,1 keV) | XUV-Frequenzkamm | ~5×10¹⁷ Hz | Forschung |
+| Compton-Streuung als Brücke | γ-Strahlen + Compton-Teleskop | ~10¹⁹ Hz | Offen |
+
+**Erreichbare Unsicherheit (Schätzung):** Mit einem vollständigen Frequenzkamm-Stack
+wäre δν/ν ~ 10⁻¹² erreichbar — besser als optische Uhren (10⁻¹⁸) vermutlich nicht
+ohne Kerntransition als Zwischenanker (z.B. ⁴⁵Sc bei 12,4 keV).
+
+**F-Γ3 ist daher ein langfristiges Kriterium** — nicht wegen der RFT-Definition,
+sondern wegen der messtechnischen Brücke. Das ist das metrologische Offen-Problem,
+das von der RFT nicht gelöst wird.
+
 **Zu F-Γ4:** Neutrinos haben keine Farbladung (kein QCD-Korrekturbeitrag). Wenn A3+A7 → Δφ=2π/3
 das richtige Prinzip ist, muss Q_ν = 2/3 gelten — unabhängig von der Leptonenbestätigung.
 Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation.
@@ -251,6 +270,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
