@@ -2429,3 +2429,30 @@ Wenn elektroschwache SB analog zum Kerr-Spin eine ê_EW definiert → B₃ liefe
 **Kerndokument:** `de/fakten/theorie/rt54_kerr_metrik_epsilon.md`
 
 ---
+
+## RT-55 — Kerr-Newman-Metrik: Ladung als ε-Verstärker
+
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** ✅ Analytisch abgeschlossen (Nov 2026)
+**Vorgänger:** RT-54 (Kerr ε-Modulation)
+
+ε_KN = 1 − (r_Sr − r_Q²)/Σ. Ladung erhöht ε gegenüber Kerr (schiebt weg von ε=0).
+No-Hair-Theorem: BH durch (M,J,Q) = drei ε-Modifikationen vollständig beschrieben.
+Magnetisches Moment μ=Qa=Q·J/(Mc) → identisch mit geladenem Spinor g=2 (A9_Spin).
+Kerndokument: `de/fakten/theorie/rt55_kerr_newman_epsilon.md`
+
+---
+
+## RT-56 — Allgemeine Raumzeit als ε-Feld
+
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** ✅ Analytisch abgeschlossen — Rahmen (Nov 2026)
+**Vorgänger:** RT-53/54/55 (ε-Hierarchie)
+
+ε(x^μ) ≡ −g_tt(x^μ): jede GR-Lösung ist ein RFT-ε-Feld.
+G_μν ∝ ∂_με·∂_νε − ½g_μν(∂ε)²: Gravitation = ε-Gradientendynamik.
+Vergleichstabelle: GR vs. RFT für Horizonte, Zeitdilatation, Dunkle Energie.
+RT-57 (offen): Quantengravitation als ε̂(x^μ) mit Quantenfluktuationen.
+Kerndokument: `de/fakten/theorie/rt56_allgemeine_raumzeit_epsilon.md`
+
+---
