@@ -55,9 +55,12 @@ contribution of the action integral of resonance coupling over the half-period [
 Γ_RFT = c²/(πħ) ≠ c²/(2πħ): the factor π distinguishes the RFT from the standard
 Compton mass-frequency relation — and this distinction is geometrically justified.
 
-### m_e — from A3+A7 (Koide formula, RT-47)
+### m_e — structurally motivated by A3+A7 (Koide hypothesis, RT-47)
 
 **This is the weakest link — and the most important.**
+
+m_e is **not freely chosen**, but **empirically calibrated**: the Koide formula
+provides the mass scale; whether it necessarily follows from A3+A7 is what F-Γ1 tests.
 
 ---
 
@@ -166,7 +169,7 @@ fallback" empirically testable.
 | Cs-133 (SI 2019) | Hyperfine transition | — | — | ✅ 10⁻¹⁶ |
 | Compton: m_e c²/h | h = 2πħ, empirical | No | Empirical | ❌ |
 | Planck: √(c⁵/Għ) | G not from RFT | — | — | ❌ G too uncertain |
-| **RFT: m_e c²/(πħ)** | **A3+A7+A4** | **Yes (RT-01)** | **A3+A7, Koide hypothesis** | **❌ 10²⁰ Hz** |
+| **RFT: m_e c²/(πħ)** | **A3+A7+A4** | **Yes (RT-01)** | **A3+A7, Koide hypothesis (F-Γ1)** | **❌ 10²⁰ Hz** |
 
 ---
 
@@ -197,4 +200,5 @@ fallback" empirically testable.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.1: Precision after second DeepSeek analysis — m_e correctly as structurally motivated/empirically calibrated; "no external anchor" removed*
+
 
