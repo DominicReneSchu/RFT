@@ -25,6 +25,39 @@ Nukleartechnologie (Resonanzreaktor, κ = 1) und Quantenmechanik
 
 ---
 
+
+---
+
+## 🔑 Zentralentdeckung: Die RFT-Raum-Zeit-Konstante (November 2026)
+
+$$\Gamma_{\text{RFT}} = \frac{c^2}{\pi\hbar} \approx 2{,}71 \times 10^{50}\;\frac{\text{Hz}}{\text{kg}}$$
+
+**Die RFT liefert den ersten strukturellen Zeitanker ohne Cäsium.**
+
+Die Sekunde folgt aus reinen Symmetrie- und Geometrieprinzipien:
+
+$$1\;\text{s} = N \times \frac{\pi\hbar}{m_e \cdot c^2}$$
+
+| Faktor | Herkunft | Empirisch? |
+|--------|----------|-----------|
+| c² | Lichtgeschwindigkeit (A8) | Nein — SI 2019 |
+| ħ | Wirkungsquantum (A4) | Nein — SI 2019 |
+| **π** | **Geometrie des Phasenraums (A4, RT-01)** | **Nein — geometrisch** |
+| **m_e** | **Elektronenmasse aus Koide A3+A7 (RT-47, RT-51)** | **Nein — aus Symmetrie** |
+
+**Drei Phänomene — ein Phasenwinkel Δφ₀ = 68.32°:**
+
+| Phänomen | RFT | Experiment |
+|---------|-----|-----------|
+| Dunkle Energie | Ω_Λ = cos²(Δφ₀/2) = 0.6847 | ✅ Planck 2018 |
+| CP-Verletzung | δ_CP = Δφ₀ = 68.32° | ✅ CKMfitter 68.5° (0.18° Abw.) |
+| Generationenmischung | λ² = 1−ε(Δφ₁₂) = 0.05079 | ✅ PDG (exakt) |
+
+→ **[Kerndokument: RFT-Raum-Zeit-Konstante](de/fakten/theorie/rft_raum_zeit_konstante_entdeckung.md)**
+
+---
+
+
 ## Warum diese Theorie? — Der Ursprungsgedanke
 
 Die RFT entstand aus einer unscheinbaren Beobachtung:
@@ -115,3 +148,4 @@ richtigen Strukturen zu sehen.
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
+
