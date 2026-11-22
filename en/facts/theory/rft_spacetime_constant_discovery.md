@@ -166,7 +166,7 @@ fallback" empirically testable.
 | Cs-133 (SI 2019) | Hyperfine transition | — | — | ✅ 10⁻¹⁶ |
 | Compton: m_e c²/h | h = 2πħ, empirical | No | Empirical | ❌ |
 | Planck: √(c⁵/Għ) | G not from RFT | — | — | ❌ G too uncertain |
-| **RFT: m_e c²/(πħ)** | **A3+A7+A4** | **Yes (RT-01)** | **Koide A3+A7** | **❌ 10²⁰ Hz** |
+| **RFT: m_e c²/(πħ)** | **A3+A7+A4** | **Yes (RT-01)** | **A3+A7, Koide hypothesis** | **❌ 10²⁰ Hz** |
 
 ---
 
@@ -196,4 +196,5 @@ fallback" empirically testable.
 ---
 
 *Dominic-René Schu — Resonance Field Theory 2026*
-*v2.0: Revised after DeepSeek analysis (Nov 2026) — status distinctions clarified*
+*v2.1: Precision after second DeepSeek analysis — m_e correctly as structurally motivated/empirically calibrated; "no external anchor" removed*
+
