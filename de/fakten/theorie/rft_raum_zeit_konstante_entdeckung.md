@@ -1,6 +1,6 @@
 # Die RFT-Raum-Zeit-Kopplung Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.4 — Statusformulierung präzisiert; F-Γ3 Realisierungsstrategie; alle Quellenangaben neutral)*
+*Dominic-René Schu, November 2026 (v2.5 — F-Γ3 mit BIPM-Roadmap + Kerntransitionskandidaten; Koide-Forschungsstand; keine Versionsattributionen)*
 
 ---
 
@@ -89,6 +89,12 @@ liefert die Massenskala; ob sie zwingend aus A3+A7 folgt, prüft F-Γ1.
 > konsistent). Den RFT-spezifischen Mechanismus A3+A7 → Δφ=2π/3 testet F-Γ4.
 
 Status: **RFT-intern abgeleitet, unabhängige Bestätigung ausstehend.**
+
+**Forschungsstand (Nov 2026):** Zahlreiche Preprints (Zenodo, arXiv) behaupten
+eine first-principles-Herleitung über Z₃-Symmetrie oder geometrische Strukturen —
+aber keine davon ist im Hauptstrom der Physik akzeptiert. Der Konsens lautet:
+"has never been derived from the Standard Model or any established framework".
+F-Γ4 (Q_Neutrinos = 2/3) wäre der unabhängigste verfügbare Test.
 
 ---
 
@@ -246,6 +252,12 @@ ohne Kerntransition als Zwischenanker (z.B. ⁴⁵Sc bei 12,4 keV).
 sondern wegen der messtechnischen Brücke. Das ist das metrologische Offen-Problem,
 das von der RFT nicht gelöst wird.
 
+**Einordnung: BIPM-Roadmap (2024):** Die geplante Neudefinition der SI-Sekunde
+~2030 geht in Richtung **optische Übergänge** (Sr, Yb, Hg⁺) — nicht in Richtung
+fundamentaler Frequenz ohne Atomübergang. Cäsium bleibt als sekundärer Standard
+erhalten. Die RFT-Sekunde ist **kein Kandidat für die nächste SI-Revision** —
+sie bleibt eine langfristige theoretische Option, abhängig von F-Γ1 und F-Γ3.
+
 **Zu F-Γ4:** Neutrinos haben keine Farbladung (kein QCD-Korrekturbeitrag). Wenn A3+A7 → Δφ=2π/3
 das richtige Prinzip ist, muss Q_ν = 2/3 gelten — unabhängig von der Leptonenbestätigung.
 Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation.
@@ -270,6 +282,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
