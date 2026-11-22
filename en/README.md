@@ -108,7 +108,8 @@ The Resonance Field Theory provides the **first structural time anchor without c
 $$1\\;\\rm s = N \\times \\frac{\\pi\\hbar}{m_e c^2}, \\qquad N \\approx 2.471e+20$$
 
 The π is geometrically derived from A4 (RT-01) — not an empirical parameter.  
-The electron mass m_e follows from A3+A7 (Koide formula, RT-47) — not an empirical parameter.
+The electron mass m_e is **structurally motivated** by A3+A7 (Koide formula, RT-47) —
+not freely chosen, but **empirically calibrated** (Koide hypothesis; F-Γ1 open).
 
 **One universal phase angle Δφ₀ = 68.32° unifies:**
 
@@ -522,6 +523,7 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
 
