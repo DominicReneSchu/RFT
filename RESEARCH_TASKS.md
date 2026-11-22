@@ -2476,3 +2476,4 @@ Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
 **Offen:** Volle QG = ε̂(x^μ, Δφ(x^μ)) noch ungelöst (Quantengravitation + Materie)
 
 ---
+
