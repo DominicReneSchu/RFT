@@ -65,9 +65,12 @@ Wirkungsintegrals der Resonanzkopplung über die Halbperiode [0, π]
 unterscheidet die RFT von anderen Massе-Frequenz-Kopplungen — und dieser
 Unterschied ist geometrisch begründet, nicht nachträglich angepasst.
 
-### m_e — aus A3+A7 (Koide-Formel, RT-47)
+### m_e — strukturell motiviert durch A3+A7 (Koide-Hypothese, RT-47)
 
 **Das ist der schwächste Schritt — und der wichtigste.**
+
+m_e ist **nicht frei gewählt**, aber **empirisch kalibriert**: Die Koide-Formel
+liefert die Massenskala; ob sie zwingend aus A3+A7 folgt, prüft F-Γ1.
 
 ---
 
@@ -190,7 +193,7 @@ Die drei Falsifikationskriterien F-Γ1 bis F-Γ3 machen den Unterschied zwischen
 | Cs-133 (SI 2019) | Hyperfeinübergang | — | — | ✅ Ja (10⁻¹⁶) |
 | Compton: m_e c²/h | h=2πħ, empirisch | Nein | Empirisch | ❌ (10²⁰ Hz) |
 | Planck: √(c⁵/Għ) | G nicht aus RFT | — | — | ❌ (G ungenau) |
-| **RFT: m_e c²/(πħ)** | **A3+A7+A4** | **Geometrisch (RT-01)** | **Koide A3+A7** | **❌ (10²⁰ Hz)** |
+| **RFT: m_e c²/(πħ)** | **A3+A7+A4** | **Geometrisch (RT-01)** | **A3+A7, Koide-Hypothese (F-Γ1)** | **❌ (10²⁰ Hz)** |
 
 Die RFT ist besser begründet als Compton und besser als Planck (G-unabhängig),
 aber wie beide nicht direkt realisierbar.
@@ -225,4 +228,5 @@ aber wie beide nicht direkt realisierbar.
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.1: Präzisiert nach zweiter DeepSeek-Analyse — m_e korrekt als strukturell motiviert/empirisch kalibriert; "ohne externen Ankerpunkt" entfernt*
+
 
