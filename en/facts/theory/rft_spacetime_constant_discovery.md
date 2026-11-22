@@ -1,6 +1,6 @@
 # The RFT Space-Time Coupling Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.6 — 67→19 halvings error fixed; second definition via ν₀ primary (N not integer)*
+*Dominic-René Schu, November 2026 (v2.7 — 67→19 halvings error fixed; second definition via ν₀ primary (N not integer)*
 
 ---
 
@@ -261,6 +261,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
