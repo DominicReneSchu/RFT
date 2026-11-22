@@ -471,6 +471,19 @@ Formal applications of RFT to cosmology (RT-42, Sep 2026):
 
 ---
 
+## RT-51 Complete Yukawa Matrix from RFT Resonance Structure (Nov 2026)
+
+**Three central results — one universal phase angle Delta_phi_0 = 68.32°**
+
+| # | Document | Description |
+|---|----------|-------------|
+| 1 | [AP1 — Yukawa Matrix](facts/theory/rt51_ap1_yukawa_matrix.md) | lambda^2=1-epsilon exact; Wolfenstein from coupling inefficiency — **✅** |
+| 2 | [AP2 — CKM Angles](facts/theory/rt51_ap2_ckm_angles.md) | theta_ij=Dphi_ij/2; Wolfenstein hierarchy — **✅** |
+| 3 | [AP3 — CP Phase](facts/theory/rt51_ap3_cp_phase.md) | delta_CP=68.32°=Delta_phi_0 (CKMfitter: 68.5°, 0.18° dev.) — **✅** |
+| — | [Main document](facts/theory/rt51_yukawa_complete.md) | Full chain A3+A7→m_e→Gamma_RFT→Delta_phi_0 — **✅** |
+
+---
+
 ## License
 
 This project is licensed under the **RFT-License 1.4**
@@ -486,6 +499,7 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
 
