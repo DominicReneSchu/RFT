@@ -20,7 +20,7 @@ Status: Aktiv
 | SRT als Grenzfall | Unabhängiges Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-40) | 📋 Offen (RT-40) |
 | A8: Kopplungswellengeschwindigkeit | Nicht in A1–A7 enthalten (B₁-Lücke, RT-40 AP3) | A8 als irreduzibles Postulat: c = 1/√(μ₀ε₀) (RT-41) | ✅ Postuliert (RT-41) |
 | Kosmologie als Phaseneffekt | Analogie/Postulat | Ableitung aus Kopplungsdynamik angestrebt (RT-42) | ~~🔄 AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ (RT-42)~~ ✅ Abgeschlossen (Sep 2026) |
-| Analytische Warpmetrik | Numerisch, offen (RT-34) | Geschlossene perturbative Form h_μν^RFT = h_μν^Alcubierre · ε(Δφ) angestrebt (RT-43) | 🔄 Offen (RT-43) |
+| Analytische Warpmetrik | Numerisch, offen (RT-34) | h_μν^RFT = h_μν^Alcubierre·ε(Δφ), ρ≥0 analytisch, 4 Signaturen, Skalentrennung (RT-43) | ✅ Abgeschlossen (RT-43, Nov 2026) |
 | QM als RFT-Substruktur | Interpretation/Analogie | Formale Ableitung: Atom, Spektrum, Born-Regel, Spin aus A1–A7 | 🔄 Offen (RT-44) |
 | Energie als gerichtete Größe | Skalare Energiedichte | Vektorielle Kopplungsgröße: A5-Kompatibilität, Kosmol. Konstante, ρ ≥ 0 strukturell | 🔄 Offen (RT-45) |
 | Distinktive Teilchenphysik-Signaturen | Stufe-1-Passung (RT-22) | Quantitative, vom SM unterscheidbare Vorhersage angestrebt (RT-47) | 🔄 Offen (RT-47) |
@@ -32,7 +32,7 @@ Status: Aktiv
 
 ### Theoretisch — intern abschließbar (Priorität 1 — Nächste)
 1. RT-03 — λ-Bestimmung (⁸⁷Rb) ← Neue Priorität 1
-2. RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit ← Priorität 2
+2. ~~RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit~~ ✅ Abgeschlossen (Nov 2026)
 3. RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin ← Priorität 3
 4. RT-45 — Energie als gerichtete Größe: A5-Kompatibilität, Kosmol. Konstante als Gradientenproblem, ρ ≥ 0 strukturell ← Priorität 4
 5. RT-47 — Distinktive RFT-Signaturen in CERN-Daten: Stufe-2/3-Validierung in der Teilchenphysik ← Strategische Option (nach RT-43, RT-44, RT-45, RT-46)
@@ -48,6 +48,7 @@ Status: Aktiv
 7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-43 — Analytische Warpmetrik und technische Anschlussfähigkeit~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP7 vollständig; h_μν^RFT = h_μν^Alcubierre·ε(Δφ) analytisch; ρ≥0 analytisch aus ε≥0; Skalentrennung Kosmologie/Warp (~10⁻¹⁰⁵); 4 messbare Signaturen vs. Alcubierre (Winkelabhängigkeit, kein E⁻, Selbst-Abschaltung 1/γ², Kohärenzlänge 1/γ²); Kausalität mit A8 bewiesen; Technische Lücke ~12 Größenordnungen, kein Physikverbot. Kerndokumente: `de/fakten/theorie/rt43_ap1*` bis `rt43_ap7*` · `de/fakten/konzepte/warpantrieb/rt43_ap3*` · `rt43_ap6*`
 - ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; $H(t) = H_0\cos(\Delta\phi(t)/2)$ aus A1–A8 hergeleitet; ΛCDM als Grenzfall; Szenarien A–C; DESI-DR1-Signal (Szenario C, $\beta < 0$); Falsifikationskriterien F6–F9. Kerndokumente: `de/fakten/theorie/rt42_ap*` · `en/facts/theory/rt42_ap*`
 - ~~RT-40  — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall der RFT bewiesen (AP1–AP5); vier empirische Überschuss-Vorhersagen (AP6); Warpkonsistenz und flache Raumzeit als RFT-Grundzustand (AP7). Offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8). Kerndokumente: `de/fakten/theorie/rt40_ap*` · `en/facts/theory/rt40_ap*`
 - ~~RT-01a — Operationale Definition π/e formal~~ ✅ Abgeschlossen (Aug 2026) — Dezimalartefakt-Argument als Satz formalisiert; Zwei-Stufen-Argumentation (RT-01a + RT-01) explizit; Verbindung k=1-Darstellung / Minimalitätsprinzip (RT-02); e-Selbstähnlichkeitseigenschaft formal; A5-Einordnung nach RT-36 korrigiert. Kerndokument: `de/fakten/theorie/pi_als_urkonstante.md`
@@ -70,7 +71,7 @@ Status: Aktiv
 ### Langfristig offen
 11. ~~RT-33 — Warpantrieb Stufe 5 (Energielücke)~~ ✅ Abgeschlossen (Aug 2026) — Skalierungsgesetz ρ∝R⁻², R*>>1 AU für alle Fusionsszenarien
 12. ~~RT-34 — Warpantrieb Stufe 6 (3D-Blase)~~ ✅ Abgeschlossen (Sep 2026) — Falsifizierungstest bestanden: ρ≥0 überall; GR-Solver (Christoffel, Riemann, Ricci) implementiert
-13. RT-43 — Analytische Warpmetrik (Stufe 7): geschlossene perturbative Form, Skalentrennung, Kausalitätsprüfung, technische Bilanz
+13. ~~RT-43 — Analytische Warpmetrik (Stufe 7)~~ ✅ Abgeschlossen (Nov 2026) — h_μν^RFT analytisch; ρ≥0 bewiesen; Skalentrennung ~10⁻¹⁰⁵; 4 Signaturen (AP4); Kausalität (AP5); Bilanz: 12 OOM Lücke, kein Physikverbot
 
 ---
 
@@ -685,7 +686,7 @@ Ehrlichster Ausgang: **Die RFT enthält $\Lambda$CDM als Grenzfall — und macht
 
 **Version:** 1.0 – Entwurf
 **Datum:** 19. September 2026
-**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅
 **Vorgänger:** RT-33 (Warp-Skalierung, ✅), RT-34 (3D-Warpblase, ✅), RT-42 (Kosmologie, AP1–AP7 ✅)
 **Verwandt:** RT-40 (SRT-Brücke), RT-41 (A8)
 
@@ -978,7 +979,7 @@ Das wäre ein echter Fortschritt gegenüber dem Status „numerisch, offen" auf 
 
 **Version:** 1.0 – Entwurf
 **Datum:** 19. September 2026
-**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅
 **Vorgänger:** Schrödinger-Simulation, RT-31
 **Verwandt:** RT-02, RT-03, RT-40, RT-43
 
@@ -1804,7 +1805,7 @@ Der ehrlichste Ausgang wäre: **Die RFT-Kopplungseffizienz ist mit den Daten kon
 
 **Version:** 1.0 – Entwurf
 **Datum:** 19. September 2026
-**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋 AP6 📋 AP7 📋 (Bearbeitung nach RT-43, RT-44, RT-45, RT-46)
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅ AP5 ✅ AP6 ✅ AP7 ✅ (Bearbeitung nach RT-43, RT-44, RT-45, RT-46)
 **Vorgänger:** RT-22 (Teilchenphysik, abgeschlossen – Stufe 1), RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen)
 **Verwandt:** RT-03 (Resonanzbedingungen), RT-07 (Kernphysik), RT-45 (Energie als gerichtete Größe), RT-46 (Doppelpendel)
 
@@ -2290,4 +2291,5 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 ---
 
 *RT-48 — DominicReneSchu/RFT — November 2026 (v1.0)*
+
 
