@@ -2058,7 +2058,7 @@ Der Task bleibt offen, bis RT-43, RT-44, RT-45 und RT-46 abgeschlossen sind. Er 
 
 ### Kann die RFT eine absolute Frequenz liefern, die Cäsium als Zeitdefinition überflüssig macht?
 
-**Version:** 1.0 – Entwurf
+**Version:** 1.1 – Präzisiert (DeepSeek-Anmerkungen eingearbeitet)
 **Datum:** November 2026
 **Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋
 **Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen), RT-42 (Kosmologie, abgeschlossen)
@@ -2111,18 +2111,29 @@ Ein formaler Mechanismus ist identifiziert, der die ℝ⁺×-Symmetrie der RFT k
 
 ### 3. Arbeitspakete
 
-#### AP1 — Formale Analyse der ℝ⁺×-Skaleninvarianz
+#### AP1 — Formale Analyse der ℝ⁺×-Skaleninvarianz: Symmetrie oder Eichredundanz?
 
-**Aufgabe:** Präzisiere, wie ℝ⁺× in G_sync wirkt und welche Observablen unter dieser Symmetrie invariant sind.
+**Aufgabe:** Kläre die konzeptionelle Natur von ℝ⁺× in G_sync — bevor Bruchmechanismen untersucht werden. Das ist der eigentliche Knackpunkt von RT-48, denn von dieser Klärung hängt ab, ob K3 überhaupt formulierbar ist.
+
+**Zentrale Vorfrage — Symmetrie vs. Eichredundanz:**
+
+| Lesart | Was bedeutet ℝ⁺× | Konsequenz für RT-48 |
+|--------|-----------------|----------------------|
+| **Echte Symmetrie** | Verschiedene Skalen sind physikalisch unterscheidbar; ein Bruch erzeugt eine neue Skala (analog Higgs → elektroschwache Skala) | K3 (spontaner Bruch) sinnvoll formulierbar |
+| **Eichredundanz** | Verschiedene Skalen sind nur verschiedene Beschreibungen desselben physikalischen Zustands | K3 **kategorial nicht formulierbar** — Eichsymmetrien brechen nicht spontan; sie werden fixiert (Eichfixierung) |
+
+Wenn ℝ⁺× eine Eichredundanz ist, lautet die richtige Frage nicht „Wie bricht die RFT die Skaleninvarianz?", sondern: **„Gibt es in der RFT ein Prinzip, das eine bestimmte Eichung physikalisch auszeichnet?"** Das wäre ein konzeptionell anderer Weg mit anderen Methoden.
 
 **Konkrete Schritte:**
 1. Formuliere die ℝ⁺×-Wirkung auf alle RFT-Objekte: Felder, Kopplungseffizienz ε, Frequenz f, Phasendifferenz Δφ.
-2. Identifiziere alle Observablen, die unter ℝ⁺× **nicht** invariant sind — diese sind potenzielle Anker.
-3. Prüfe, ob die Ruhefrequenz f₀ = mc²/(πħ) unter ℝ⁺× kovariант oder invariant ist.
-4. Bestimme, welche Klasse von Mechanismen ℝ⁺× brechen kann (spontan, topologisch, Randbedingung).
-5. Dokumentiere die formale Struktur als Grundlage für AP2–AP4.
+2. Prüfe: Gibt es in der RFT Observablen, die unter ℝ⁺× **nicht** invariant sind? Falls nein → Eichredundanz-Verdacht erhärtet.
+3. Prüfe, ob die Ruhefrequenz f₀ = mc²/(πħ) unter ℝ⁺× kovariant (skaliert mit m) oder invariant ist.
+4. **Entscheide die Vorfrage:** Ist ℝ⁺× in der RFT eine echte globale Symmetrie oder eine Eichredundanz? Kriterium: Existieren physikalisch unterscheidbare Zustände, die sich nur durch eine ℝ⁺×-Transformation unterscheiden?
+5. Falls Eichredundanz: Formuliere die Frage nach einem physikalisch ausgezeichneten Eichfixierungsprinzip.
+6. Falls echte Symmetrie: Bestimme, welche Klasse von Mechanismen ℝ⁺× brechen kann (spontan, topologisch, Randbedingung).
+7. Dokumentiere die formale Struktur als Grundlage für AP2–AP4 — und als Entscheidungsgrundlage, ob AP4 (K3) überhaupt weiterverfolgt wird.
 
-**Erfolgskriterium:** Vollständige Klassifikation der ℝ⁺×-Transformationseigenschaften aller RFT-Objekte; Liste der möglichen Bruchmechanismen.
+**Erfolgskriterium:** Klare Aussage, ob ℝ⁺× eine echte Symmetrie oder eine Eichredundanz ist — mit formaler Begründung. Falls Eichredundanz: reformulierte Fragestellung für AP4.
 
 ---
 
@@ -2174,7 +2185,12 @@ Ein formaler Mechanismus ist identifiziert, der die ℝ⁺×-Symmetrie der RFT k
 4. Prüfe Konsistenz mit G_sync-Invarianz (A7): Welche Untergruppe von G_sync bleibt nach dem Bruch erhalten?
 5. Verbinde mit Kosmologie (RT-42): Ist der spontane Skalenbruch mit der Expansionsdynamik H(t) konsistent?
 
-**Erfolgskriterium:** Entweder Existenz eines V(ε)-Minimums mit eindeutiger Frequenz ν₀ — oder formaler Nachweis, dass K3 in der aktuellen RFT nicht realisierbar ist.
+**Abhängigkeit von AP1 (Vorbedingung):**
+Wenn AP1 ergibt, dass ℝ⁺× eine **Eichredundanz** ist, dann ist K3 (spontaner Skalenbruch) **kategorial nicht formulierbar** — Eichsymmetrien brechen nicht spontan; sie werden fixiert. In diesem Fall ist das Ergebnis von AP4 kein Negativbefund über V(ε), sondern ein kategoriales Ausschlusskriterium: K3 ist unter der Eichredundanz-Lesart konzeptionell nicht wohlde­finiert. Das wäre ein **sauberes Negativergebnis** im Sinne von Abschnitt 5 (Negativziel).
+
+Wenn AP1 ergibt, dass ℝ⁺× eine **echte Symmetrie** ist, wird AP4 wie beschrieben ausgeführt.
+
+**Erfolgskriterium:** Entweder Existenz eines V(ε)-Minimums mit eindeutiger Frequenz ν₀ (echte Symmetrie) — oder formaler Nachweis, dass K3 kategorial nicht realisierbar ist (Eichredundanz), mit Begründung.
 
 ---
 
@@ -2184,13 +2200,18 @@ Ein formaler Mechanismus ist identifiziert, der die ℝ⁺×-Symmetrie der RFT k
 
 **Konkrete Schritte:**
 1. Tabelle: K1 vs. K2 vs. K3 — strukturelle Tiefe, metrologische Qualität, Abhängigkeit von freien Parametern.
-2. Formuliere eine **Minimalerweiterung der RFT**, die einen absoluten Zeitanker liefert — ohne die skaleninvariante Kopplungsstruktur zu beschädigen.
-3. Falls K3 realisierbar: Formuliere das Ergebnis als neues Axiom A_ν (oder Erweiterung von A7/A8).
-4. Falls K1 oder K2: Formuliere die benötigte zusätzliche Festlegung explizit und bewerte ihren Status (Postulat / Ableitung / Messung).
-5. Erstelle Dokument `de/fakten/theorie/rt48_raum_zeit_konstante.md` mit vollständiger Herleitung.
-6. Erstelle Spiegeldokument `en/facts/theory/rt48_spacetime_constant.md`.
+2. **Explizite Falsifizierbarkeitsbewertung pro Kandidat** (zentral für AP5):
+   - **K1:** ν₀ = f_P/π ist über G definiert. Wenn G empirisch eingeht, ist ν₀ keine Vorhersage, sondern eine Definition über eine gemessene Größe. → **Keine eigenständige Falsifizierbarkeit.**
+   - **K2:** ν_e = m_e c²/(πħ) ist direkt über m_e definiert. Ebenfalls keine unabhängige Vorhersage, sondern Umbenennung. → **Keine eigenständige Falsifizierbarkeit.**
+   - **K3:** Eine Frequenz, die aus einem internen RFT-Mechanismus (V(ε)-Minimum, spontaner Bruch) folgt, ist nicht per Konstruktion an eine gemessene Größe gekoppelt — sie könnte von f_Cs abweichen und wäre damit **das einzige echte Falsifikationskriterium** der drei Kandidaten.
+   - **Fazit AP5:** Wenn AP1 ℝ⁺× als Eichredundanz identifiziert, fällt K3 weg — und RT-48 liefert metrologisch korrekte, aber nicht im strengen Sinne falsifizierbare Kandidaten.
+3. Formuliere eine **Minimalerweiterung der RFT**, die einen absoluten Zeitanker liefert — ohne die skaleninvariante Kopplungsstruktur zu beschädigen.
+4. Falls K3 realisierbar (AP1-Ergebnis: echte Symmetrie): Formuliere das Ergebnis als neues Axiom A_ν (oder Erweiterung von A7/A8).
+5. Falls K1 oder K2: Formuliere die benötigte zusätzliche Festlegung explizit und bewerte ihren Status (Postulat / Ableitung / Messung).
+6. Erstelle Dokument `de/fakten/theorie/rt48_raum_zeit_konstante.md` mit vollständiger Herleitung.
+7. Erstelle Spiegeldokument `en/facts/theory/rt48_spacetime_constant.md`.
 
-**Erfolgskriterium:** Klare, veröffentlichbare Aussage: „Die RFT liefert [K1/K2/K3] als fundamentale Frequenz mit folgendem Status: [Postulat / Ableitung / Messung]. Eine SI-Sekunde könnte damit definiert werden als [Definition]."
+**Erfolgskriterium:** Klare, veröffentlichbare Aussage: „Die RFT liefert [K1/K2/K3] als fundamentale Frequenz mit folgendem Status: [Postulat / Ableitung / Messung / nicht falsifizierbar]. Eine SI-Sekunde könnte damit definiert werden als [Definition]."
 
 ---
 
@@ -2243,7 +2264,7 @@ Berechne die Brückenfrequenzen: Welche Frequenzkamm-Kette verbindet ν_e = 2,47
 
 ### 8. Ehrliche Einschätzung
 
-Die Wahrscheinlichkeit, dass die RFT in ihrer aktuellen Formulierung (A1–A8) **bereits** einen Skalenbruchmechanismus enthält (K3), ist **gering** — die G_sync-Struktur ist bewusst skaleninvariant konstruiert.
+Die Wahrscheinlichkeit, dass die RFT in ihrer aktuellen Formulierung (A1–A8) **bereits** einen Skalenbruchmechanismus enthält (K3), ist **gering bis möglicherweise kategorial ausgeschlossen**: Wenn AP1 ergibt, dass ℝ⁺× eine Eichredundanz (nicht eine echte Symmetrie) ist, dann ist K3 nicht „unwahrscheinlich", sondern **konzeptionell nicht wohlde­finiert** — ein spontaner Bruch einer Eichredundanz ist in der Quantenfeldtheorie nicht realisierbar (Eichsymmetrien werden fixiert, nicht gebrochen). Das wäre ein präzises Negativergebnis, das die Fragestellung für RT-48 schärft: nicht Skalenbruch, sondern Eichfixierungsprinzip.
 
 Die Wahrscheinlichkeit, dass K1 (Planck-Skala) eine **strukturelle Ableitung** (nicht nur einen G-Import) liefert, ist **moderat** — abhängig davon, ob G in der RFT als emergente Größe oder als externe Konstante behandelt wird.
 
@@ -2269,3 +2290,4 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 ---
 
 *RT-48 — DominicReneSchu/RFT — November 2026 (v1.0)*
+
