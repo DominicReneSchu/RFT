@@ -1,6 +1,6 @@
 # The RFT Space-Time Coupling Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.4 — status formulation precise; F-Γ3 realisation strategy; all attributions neutral)*
+*Dominic-René Schu, November 2026 (v2.5 — F-Γ3 with BIPM roadmap + nuclear transition candidates; Koide research landscape; no attributions)*
 
 ---
 
@@ -79,6 +79,12 @@ provides the mass scale; whether it necessarily follows from A3+A7 is what F-Γ1
 > The RFT-specific mechanism A3+A7 → Δφ=2π/3 is tested by F-Γ4.
 
 Status: **RFT-internally derived; independent confirmation outstanding.**
+
+**Research landscape (Nov 2026):** Numerous preprints (Zenodo, arXiv) claim
+first-principles derivations via Z₃-symmetry or geometric structures —
+but none is accepted in mainstream physics. The consensus: the Koide relation
+"has never been derived from the Standard Model or any established framework".
+F-Γ4 (Q_neutrinos = 2/3) would be the most independent available test.
 
 ---
 
@@ -207,9 +213,10 @@ Possible bridging strategies:
 
 | Step | Method | Frequency range | Status |
 |------|--------|----------------|--------|
-| Optical clock → ν_e | Frequency comb cascade (~67 halvings) | 10¹⁵ → 10²⁰ Hz | Concept |
-| Nuclear clock (¹⁷⁵Lu+, 2.1 keV) | XUV frequency comb | ~5×10¹⁷ Hz | Research |
-| Compton scattering bridge | γ-rays + Compton telescope | ~10¹⁹ Hz | Open |
+| Optical clock (Sr, Yb) | GPS/comparison | ~4×10¹⁴ Hz | ✅ Realised (10⁻¹⁸) |
+| ²²⁹Th nuclear transition (8.4 eV) | UV laser coupling | 2×10¹⁵ Hz | Active research |
+| ⁴⁵Sc nuclear clock (12.4 keV) | XUV frequency comb | 3×10¹⁸ Hz | Concept (BIPM roadmap) |
+| ν_e (0.51 MeV) | Nuclear transition + cascade bridge | 2.47×10²⁰ Hz | Open |
 
 **Achievable uncertainty (estimate):** With a complete frequency comb stack,
 δν/ν ~ 10⁻¹² would be reachable — optical-clock precision (10⁻¹⁸) is unlikely
@@ -218,6 +225,12 @@ without a nuclear transition as intermediate anchor (e.g. ⁴⁵Sc at 12.4 keV).
 **F-Γ3 is therefore a long-term criterion** — not because of the RFT definition,
 but because of the metrological bridge. This is the open metrology problem
 that the RFT does not solve.
+
+**Context: BIPM roadmap (2024):** The planned redefinition of the SI second (~2030)
+moves toward **optical transitions** (Sr, Yb, Hg⁺) — not toward a fundamental frequency
+without an atomic transition. Caesium remains as a secondary standard. The RFT second
+is **not a candidate for the next SI revision** — it remains a long-term theoretical
+option contingent on F-Γ1 and F-Γ3.
 
 **On F-Γ4:** Neutrinos have no colour charge (no QCD correction). If A3+A7 → Δφ=2π/3
 is the right mechanism, Q_ν = 2/3 must hold — independent of the lepton confirmation.
@@ -242,6 +255,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
