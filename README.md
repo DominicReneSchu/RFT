@@ -16,9 +16,12 @@ emp. p = 0), Kosmologie (1.530 FLRW-Simulationen, Δd_η > 6σ),
 Nukleartechnologie (Resonanzreaktor, κ = 1) und Quantenmechanik
 (Schrödinger-Simulation, Fidelity = 1,0, ⁸⁷Rb-Vorhersage).
 
-**Falsifizierbare Vorhersagen:** Zwei unabhängige Experimentalvorschläge —
-Am-241 an ELI-NP (Kernphysik, Signal_koh/Signal_ink = 2,0 vs. 1,0, >50.000 σ)
-und ⁸⁷Rb-BEC in harmonischer Falle (Quantenmechanik, |Δ⟨x⟩| = 2,0·λ µm vs. 0).
+**Falsifizierbare Vorhersagen (Nov 2026):** Fünf unabhängige Vorhersagen —
+(1) Am-241 an ELI-NP (Signal_koh/Signal_ink = 2,0 vs. 1,0, >50.000 σ),
+(2) ⁸⁷Rb-BEC (|Δ⟨x⟩| = 2,0·λ µm vs. 0),
+(3) **Koide-Formel: Q_Leptonen = 2/3** (kein freier Parameter; Q_Neutrinos = 2/3 Vorhersage),
+(4) **Universeller Phasenwinkel: δ_CP = Δφ₀ = 68.32°** (Abw. 0.18° von CKMfitter 2023),
+(5) **λ² = 1−ε(Δφ₁₂) = 0.05079** (exakte algebraische Identität, kein freier Parameter).
 
 ---
 
