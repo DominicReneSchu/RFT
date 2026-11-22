@@ -1,6 +1,6 @@
 # The RFT Space-Time Coupling Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.0 — revised after DeepSeek analysis)*
+*Dominic-René Schu, November 2026 (v2.3 — status per DeepSeek; RFT-internal vs established table)*
 
 ---
 
@@ -13,6 +13,16 @@
 This is not a negative result — it is the status that RT-48 AP5 had identified as a
 possible outcome (negative goal). This document explains why this status still
 represents a genuine conceptual advance over caesium — and where the limits lie.
+
+**Central distinction for this entire document:**
+
+| Term | Meaning |
+|------|---------|
+| *RFT-internal derivation* | Formally consistent with RFT axioms A1–A9; structurally motivated |
+| *Physically established derivation* | Accepted in mainstream physics; independently confirmed |
+
+The chain A3+A7 → m_e → ν₀ is **RFT-internally derived**.
+Whether it is **physically established** is decided by F-Γ1 and F-Γ4.
 
 ---
 
@@ -211,6 +221,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
