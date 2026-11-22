@@ -2458,3 +2458,21 @@ Kerndokument: `de/fakten/theorie/rt56_allgemeine_raumzeit_epsilon.md`
 
 ---
 
+## Kategorie 13: Quantengravitation
+
+## RT-57 — Quantengravitation als ε̂-Feldtheorie
+
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** ✅ Analytischer Rahmen abgeschlossen (Nov 2026)
+**Vorgänger:** RT-56 (Allg. Raumzeit als ε-Feld), RT-44 (QM), RT-48 (RT-Zeit-Konstante K1)
+
+**Zentralergebnis:** ε̂(x^μ) = ε₀ + δε̂ — Quantisierung des ε-Gravitationsfeldes.
+Graviton = δε̂-Quant mit 1/k²-Propagator.
+Bekenstein-Hawking-Entropie S = kB·A/(4ℓ_P²) aus ε-Zustandszählung auf Horizont.
+Hawking-Strahlung = δε̂-Tunneling durch ε=0-Fläche.
+RT-48 K1: ν_P,RFT = 5.905e+42 Hz = natürlicher UV-Cutoff der ε-Feldtheorie.
+Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
+
+**Offen:** Volle QG = ε̂(x^μ, Δφ(x^μ)) noch ungelöst (Quantengravitation + Materie)
+
+---
