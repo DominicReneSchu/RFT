@@ -6,9 +6,11 @@
 
 ## Upfront: Honest Status
 
-> **Structurally motivated time definition based on an empirically calibrated mass scale
-> (Koide formula), with explicit falsification criteria, but without independent
-> metrological realisation.**
+> **Structurally motivated time definition based on an RFT-internally derived, but not
+> independently established mass scale, with explicit falsification criteria,
+> but without metrological realisation and without independent confirmation of the Koide derivation.**
+>
+> *(Formulation: DeepSeek analysis, Nov 2026)*
 
 This is not a negative result — it is the status that RT-48 AP5 had identified as a
 possible outcome (negative goal). This document explains why this status still
@@ -221,6 +223,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
