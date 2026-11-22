@@ -72,6 +72,12 @@ Unterschied ist geometrisch begründet, nicht nachträglich angepasst.
 m_e ist **nicht frei gewählt**, aber **empirisch kalibriert**: Die Koide-Formel
 liefert die Massenskala; ob sie zwingend aus A3+A7 folgt, prüft F-Γ1.
 
+> **Wichtige Unterscheidung:** F-Γ1 kann die RFT-Ableitung **falsifizieren**
+> (wenn Q≠2/3), aber nicht **bestätigen** (Q=2/3 wäre mit vielen Modellen
+> konsistent). Den RFT-spezifischen Mechanismus A3+A7 → Δφ=2π/3 testet F-Γ4.
+
+Status: **RFT-intern abgeleitet, unabhängige Bestätigung ausstehend.**
+
 ---
 
 ## Die Koide-Kette: Was sie leistet und was sie nicht leistet
@@ -207,6 +213,11 @@ aber wie beide nicht direkt realisierbar.
 | **F-Γ1** | Q_Leptonen ≠ 2/3 bei > 5σ | Belle II δm_τ, KATRIN | 3–10 Jahre |
 | **F-Γ2** | δ_CP ≠ Δφ₀ bei > 5σ | LHCb Run 3, Belle II | 2–5 Jahre |
 | **F-Γ3** | RFT-s ≠ Cs-s bei > 1 ppb | Wenn ν_e realisierbar | Langfristig |
+| **F-Γ4** | Q_Neutrinos ≠ 2/3 bei > 3σ — **testet A3+A7-Struktur**, nicht nur Koide | KATRIN / Project 8 | 5–15 Jahre |
+
+**Zu F-Γ4:** Neutrinos haben keine Farbladung (kein QCD-Korrekturbeitrag). Wenn A3+A7 → Δφ=2π/3
+das richtige Prinzip ist, muss Q_ν = 2/3 gelten — unabhängig von der Leptonenbestätigung.
+Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation.
 
 ---
 
@@ -227,6 +238,7 @@ aber wie beide nicht direkt realisierbar.
 ---
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
-*v2.1: Präzisiert nach zweiter DeepSeek-Analyse — m_e korrekt als strukturell motiviert/empirisch kalibriert; "ohne externen Ankerpunkt" entfernt*
+*v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
