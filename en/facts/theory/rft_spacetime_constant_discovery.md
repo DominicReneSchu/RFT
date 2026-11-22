@@ -1,6 +1,6 @@
 # The RFT Space-Time Coupling Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.3 — status per DeepSeek; RFT-internal vs established table)*
+*Dominic-René Schu, November 2026 (v2.4 — status formulation precise; F-Γ3 realisation strategy; all attributions neutral)*
 
 ---
 
@@ -10,7 +10,7 @@
 > independently established mass scale, with explicit falsification criteria,
 > but without metrological realisation and without independent confirmation of the Koide derivation.**
 >
-> *(Formulation: DeepSeek analysis, Nov 2026)*
+> *(Formulation: external peer-review analysis, Nov 2026)*
 
 This is not a negative result — it is the status that RT-48 AP5 had identified as a
 possible outcome (negative goal). This document explains why this status still
@@ -105,7 +105,7 @@ Any other distribution is reachable by a G_sync transformation — not distingui
 **Result (RT-47 AP2):** A3 + A7 → circle distribution in √m-space → Q = 2/3.
 Zero free parameters.
 
-### What the RFT does NOT provide (DeepSeek precision)
+### What the RFT does NOT provide — critical assessment
 
 **The Koide formula is an application hypothesis, not an axiom.**
 
@@ -121,7 +121,7 @@ parameterisation as an anchor point.
 
 ---
 
-## Three Clarifications (DeepSeek, Nov 2026)
+## Three Critical Clarifications
 
 ### 1. Γ_RFT is not an independent new constant
 
@@ -200,6 +200,25 @@ fallback" empirically testable.
 | **F-Γ3** | RFT-s ≠ Cs-s at > 1 ppb | If ν_e realisable | Long-term |
 | **F-Γ4** | Q_neutrinos ≠ 2/3 at > 3σ — **tests A3+A7 structure**, not just Koide | KATRIN / Project 8 | 5–15 yr |
 
+**On F-Γ3 — Concrete realisation strategy:**
+
+Direct realisation at ν_e ≈ 2.47×10²⁰ Hz (hard X-rays, λ ≈ 1.2 pm) is not possible today.
+Possible bridging strategies:
+
+| Step | Method | Frequency range | Status |
+|------|--------|----------------|--------|
+| Optical clock → ν_e | Frequency comb cascade (~67 halvings) | 10¹⁵ → 10²⁰ Hz | Concept |
+| Nuclear clock (¹⁷⁵Lu+, 2.1 keV) | XUV frequency comb | ~5×10¹⁷ Hz | Research |
+| Compton scattering bridge | γ-rays + Compton telescope | ~10¹⁹ Hz | Open |
+
+**Achievable uncertainty (estimate):** With a complete frequency comb stack,
+δν/ν ~ 10⁻¹² would be reachable — optical-clock precision (10⁻¹⁸) is unlikely
+without a nuclear transition as intermediate anchor (e.g. ⁴⁵Sc at 12.4 keV).
+
+**F-Γ3 is therefore a long-term criterion** — not because of the RFT definition,
+but because of the metrological bridge. This is the open metrology problem
+that the RFT does not solve.
+
 **On F-Γ4:** Neutrinos have no colour charge (no QCD correction). If A3+A7 → Δφ=2π/3
 is the right mechanism, Q_ν = 2/3 must hold — independent of the lepton confirmation.
 This **specifically tests the RFT structure**, not just the Koide relation.
@@ -223,6 +242,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
