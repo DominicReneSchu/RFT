@@ -48,6 +48,7 @@ Status: Aktiv
 7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-51 — Vollstaendige Yukawa-Matrix aus RFT~~ ✅ Abgeschlossen (Nov 2026) — AP1: lambda^2=1-epsilon(Dphi12) exakt (kein Parameter); AP2: CKM-Winkel=Quark-Phasendifferenzen; Wolfenstein-Hierarchie; AP3: ZENTRALBEFUND delta_CP=68.32°=Delta_phi_0 (Abw. 0.18°=0.06sigma); Kette geschlossen: A3+A7->m_e->Gamma_RFT->Delta_phi_0->Omega_Lambda+delta_CP+lambda. Kerndokumente: `de/fakten/theorie/rt51_ap*` + `rt51_yukawa_vollstaendig.md`
 - ~~RT-50 — Quantitative Λ-Berechnung~~ ✅ Abgeschlossen (Nov 2026) — AP1: Renormierung strukturell (A5, nicht subtraktiv, 140 OOM); AP2: Zentralbefund Omega_Lambda=epsilon_0=0.6840 -> Deltaφ₀=68.4°; Dunkle Energie = kosmologische Kopplungseffizienz; Λ_RFT=Λ_obs. Kerndokumente: `de/fakten/theorie/rt50_ap*` + `rt50_lambda_vakuumstruktur.md`
 - ~~RT-49 — Relativistische Formulierung A5 + Bell + Dirac~~ ✅ Abgeschlossen (Nov 2026) — AP1: J^μ_E=E_eff·e^μ Lorentz-kovariant; T^0i_RFT=ε²·T^0i; AP2: Bell-Nichtlokalität konsistent mit A6/A8 (No-Signaling formal); AP3: Dirac-Brücke B₂ (Cl(1,3)+A9_Spin); Zitterbewegung=1.55e+21 Hz; g=2 aus SU(2). Kerndokumente: `de/fakten/theorie/rt49_ap1*` bis `rt49_ap3*`
 - ~~RT-48 — RFT-Raum-Zeit-Konstante~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP5 vollständig; ℝ⁺× echte Symmetrie (nicht Eichredundanz); K3 Negativergebnis (Vakuumsektor); K2 intern via RT-47 (Koide→m_e→ν₀); Γ_RFT = c²/(πħ) ≈ 2.71e+50 Hz/kg; Kette A3+A7→m_e→ν₀ bei RT-51 geschlossen. Kerndokumente: `de/fakten/theorie/rt48_ap*` + `rt48_raum_zeit_konstante.md`
@@ -2354,6 +2355,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 **Erfolgskriterium:** Yukawa-Matrix-Einträge aus RFT-Parametern ableitbar — oder präzise Lücke dokumentiert.
 
 ---
+
 
 
 
