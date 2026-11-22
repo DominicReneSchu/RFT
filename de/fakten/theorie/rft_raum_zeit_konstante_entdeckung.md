@@ -224,4 +224,5 @@ aber wie beide nicht direkt realisierbar.
 ---
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
-*v2.0: Überarbeitet nach DeepSeek-Analyse (Nov 2026) — Statusabgrenzung präzisiert*
+*v2.1: Präzisiert nach zweiter DeepSeek-Analyse — m_e korrekt als strukturell motiviert/empirisch kalibriert; "ohne externen Ankerpunkt" entfernt*
+
