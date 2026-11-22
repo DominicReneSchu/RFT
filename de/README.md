@@ -108,7 +108,8 @@ Die Resonanzfeldtheorie liefert den **ersten strukturellen Zeitanker ohne Cäsiu
 $$1\\;\\rm s = N \\times \\frac{\\pi\\hbar}{m_e c^2}, \\qquad N \\approx 2.471e+20$$
 
 Das π ist geometrisch aus A4 abgeleitet (RT-01) — kein empirischer Parameter.  
-Die Elektronenmasse m_e folgt aus A3+A7 (Koide-Formel, RT-47) — kein empirischer Parameter.
+Die Elektronenmasse m_e ist **strukturell motiviert** durch A3+A7 (Koide-Formel, RT-47) —
+nicht frei gewählt, aber **empirisch kalibriert** (Koide-Hypothese; F-Γ1 offen).
 
 **Ein universeller Phasenwinkel Δφ₀ = 68.32° verbindet:**
 
@@ -524,6 +525,7 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
 
 
