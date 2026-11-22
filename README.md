@@ -55,6 +55,8 @@ $$1\;\text{s} = N \times \frac{\pi\hbar}{m_e \cdot c^2}$$
 
 → **[Kerndokument: RFT-Raum-Zeit-Konstante](de/fakten/theorie/rft_raum_zeit_konstante_entdeckung.md)**
 
+→ **[Zeit als Ursprungsgröße](de/fakten/docs/erklaerungen/zeit_als_ursprungsgroesse.md)** — Warum Zeit keine Messgröße, sondern die Kopplungsrate des Universums ist
+
 ---
 
 
@@ -166,6 +168,7 @@ richtigen Strukturen zu sehen.
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
+
 
 
 
