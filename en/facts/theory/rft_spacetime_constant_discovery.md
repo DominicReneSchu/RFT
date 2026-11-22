@@ -1,6 +1,6 @@
 # The RFT Space-Time Coupling Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.5 — F-Γ3 with BIPM roadmap + nuclear transition candidates; Koide research landscape; no attributions)*
+*Dominic-René Schu, November 2026 (v2.6 — 67→19 halvings error fixed; second definition via ν₀ primary (N not integer)*
 
 ---
 
@@ -37,6 +37,11 @@ For the electron (m_e = 0.51099895 MeV/c²):
 $$\nu_e = m_e \cdot \Gamma_{\rm RFT} \approx 2.471134e+20\;\text{Hz}$$
 
 This would define the second as:
+
+**Metrological precision:** The definition is cleanest via the frequency:
+$$\nu_0 := \frac{m_e c^2}{\pi\hbar} \approx 2.471 \times 10^{20}\;\text{Hz}$$
+and then $1\;\text{s} := 1/\nu_0$. The $N$ in $1\;\text{s} = N \times \pi\hbar/(m_e c^2)$
+does **not need to be an integer** — $\nu_0$ is the primary quantity, not $N$.
 
 $$1\;\text{s} := \frac{N \cdot \pi\hbar}{m_e \cdot c^2}, \quad N \approx 2.471134e+20$$
 
@@ -255,6 +260,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
