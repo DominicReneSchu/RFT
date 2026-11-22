@@ -2386,3 +2386,20 @@ RT-52-F3: Q_ν ≠ 2/3 (> 3σ, KATRIN)
 **Kerndokument:** `de/fakten/theorie/rt52_brannen_phase_b3.md`
 
 ---
+
+## RT-53 — Gravitationale Zeitdilatation als ε-Effekt
+
+**Version:** 1.0
+**Datum:** November 2026
+**Status:** ✅ Analytisch abgeschlossen (Nov 2026)
+**Vorgänger:** RT-40 (ε=1/γ², SRT), RT-48 (Zeitdefinition ν₀)
+
+**Zentralergebnis:**
+ε_grav(r) = 1 − r_S/r → ν₀_lokal = ν₀·√ε_grav — identisch mit SRT-Zeitdilatation.
+Einheitlicher ε-Mechanismus für SRT und GR. GPS-Korrektur ~0,7 ns/Tag korrekt reproduziert.
+Schwarzes Loch: r → r_S → ε → 0 → Zeit stoppt (ε-Entkopplung).
+
+**Kerndokument:** `de/fakten/theorie/rt53_gravitationale_zeitdilatation.md`
+**Offen:** RT-54 — Kerr-Metrik als anisotrope ε-Modulation (rotierende SL)
+
+---
