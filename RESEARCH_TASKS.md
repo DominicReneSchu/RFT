@@ -48,6 +48,7 @@ Status: Aktiv
 7. (keine offenen Code-Korrekturen)
 
 ### Abgeschlossen (Manuskript + Theorie)
+- ~~RT-49 — Relativistische Formulierung A5 + Bell + Dirac~~ ✅ Abgeschlossen (Nov 2026) — AP1: J^μ_E=E_eff·e^μ Lorentz-kovariant; T^0i_RFT=ε²·T^0i; AP2: Bell-Nichtlokalität konsistent mit A6/A8 (No-Signaling formal); AP3: Dirac-Brücke B₂ (Cl(1,3)+A9_Spin); Zitterbewegung=1.55e+21 Hz; g=2 aus SU(2). Kerndokumente: `de/fakten/theorie/rt49_ap1*` bis `rt49_ap3*`
 - ~~RT-48 — RFT-Raum-Zeit-Konstante~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP5 vollständig; ℝ⁺× echte Symmetrie (nicht Eichredundanz); K3 Negativergebnis (Vakuumsektor); K2 intern via RT-47 (Koide→m_e→ν₀); Γ_RFT = c²/(πħ) ≈ 2.71e+50 Hz/kg; Kette A3+A7→m_e→ν₀ bei RT-51 geschlossen. Kerndokumente: `de/fakten/theorie/rt48_ap*` + `rt48_raum_zeit_konstante.md`
 - ~~RT-47 — Distinktive RFT-Signaturen in CERN-Daten~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP7 vollständig; Koide Q=2/3 aus A3+A7 (kein freier Parameter, Stufe 2); neue Vorhersagen: Q_Neutrinos=2/3, Δa_τ≈2,8×10⁻⁷ (Belle II); QCD-Korrektur erklärt Quark-Abweichung; Τau g−2 als Falsifikationskriterium. Kerndokumente: `de/fakten/theorie/rt47_ap1*` bis `rt47_ap7*`
 - ~~RT-45 — Energie als gerichtete Größe~~ ✅ Abgeschlossen (Nov 2026) — AP1–AP6 vollständig; Skalarität nur Näherung; A5 erweitert Std-FT; Λ-Problem konzeptionell gelöst (∇ρ=0 → unsichtbar, A5); ρ≥0 strukturell aus A5+A4 (ε²≥0); 3 Signaturen (GW-Winkel, CMB, l_c∝1/γ²); konsistent RT-36/40/41/42/43/44. Kerndokumente: `de/fakten/theorie/rt45_ap1*` bis `rt45_ap6*`
@@ -2305,7 +2306,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 
 **Version:** 1.0 – Entwurf
 **Datum:** November 2026
-**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3 ✅
 **Vorgänger:** RT-44 AP7 (Bell QM-äquivalent, offen: formaler Beweis), RT-45 AP2 (A5 als Vierervektor offen)
 **Motivation:** Entstanden aus RT-44 AP7 (Verschränkung) und RT-45 AP2 (A5-Formulierung).
 
@@ -2352,6 +2353,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 **Erfolgskriterium:** Yukawa-Matrix-Einträge aus RFT-Parametern ableitbar — oder präzise Lücke dokumentiert.
 
 ---
+
 
 
 
