@@ -43,7 +43,7 @@ $$1\;\text{s} = N \times \frac{\pi\hbar}{m_e \cdot c^2}$$
 | c² | Lichtgeschwindigkeit (A8) | Nein — SI 2019 |
 | ħ | Wirkungsquantum (A4) | Nein — SI 2019 |
 | **π** | **Geometrie des Phasenraums (A4, RT-01)** | **Nein — geometrisch** |
-| **m_e** | **Elektronenmasse aus Koide A3+A7 (RT-47, RT-51)** | **Nein — aus Symmetrie** |
+| **m_e** | **Elektronenmasse, strukturell motiviert (Koide A3+A7, RT-47)** | **Hypothese; F-Γ1 offen** |
 
 **Drei Phänomene — ein Phasenwinkel Δφ₀ = 68.32°:**
 
@@ -148,4 +148,5 @@ richtigen Strukturen zu sehen.
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
+
 
