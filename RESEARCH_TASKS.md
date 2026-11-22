@@ -2356,10 +2356,33 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 
 ---
 
+---
 
+## Kategorie 12: Leptonische Massenhierarchie und elektroschwache Brücke
 
+## RT-52 — Brannen-Phasenwinkel θ: Brücke B₃ zur elektroschwachen Skala
 
+**Version:** 1.0 – Entwurf
+**Datum:** November 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋
+**Vorgänger:** RT-47 (Koide Q=2/3), RT-51 (Yukawa-Matrix vollständig)
 
+**Zielsetzung:** Der Brannen-Phasenwinkel θ ≈ 132.7323° bestimmt die Leptonmassenhierarchie.
+RT-47 (A3+A7) erklärt Q=2/3 (Form des Kreises), aber nicht θ (Orientierung).
 
+**Zentraler Strukturbeweis:**
+Σcos(θ + 2πn/3) = 0 für alle θ — G_sync-Invarianz ist algebraisch ungeeignet, θ festzulegen.
+Notwendig: asymmetrische Referenzrichtung = **Brücke B₃** (Higgs/elektroschwache Vakuumrichtung).
 
+**Arbeitspakete:**
+- AP1: Energiekugel-Geometrie: θ als Neigungswinkel des Leptonen-Kreises
+- AP2: Higgs-Kopplung als B₃: θ = arccos(ê_lept · ê_Higgs)
+- AP3: Verbindung M² und θ zur elektroschwachen Skala
+- AP4: Neutrino-Massenhierarchie: θ_ν aus demselben B₃-Mechanismus
 
+**Falsifikation:** RT-52-F1: θ_pred ≠ θ_PDG bei > 0,001° (wenn B₃ formuliert)
+RT-52-F3: Q_ν ≠ 2/3 (> 3σ, KATRIN)
+
+**Kerndokument:** `de/fakten/theorie/rt52_brannen_phase_b3.md`
+
+---
