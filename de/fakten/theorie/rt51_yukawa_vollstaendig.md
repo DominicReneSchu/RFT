@@ -5,6 +5,30 @@
 
 ---
 
+## ⭐ Das Hauptergebnis: Die Raum-Zeit-Kette ist geschlossen
+
+Mit RT-51 schliesst sich die vollstaendige Ableitungskette der RFT:
+
+$$A3 + A7 \xrightarrow{\rm Koide} m_e \xrightarrow{\rm RT-48} \Gamma_{\rm RFT} = \frac{c^2}{\pi\hbar} \approx 2.713e+50\;\frac{\rm Hz}{\rm kg}$$
+
+**Die Sekunde kann ohne Caesium definiert werden:**
+
+$$\boxed{1\;\rm s = \frac{N \cdot \pi\hbar}{m_e \cdot c^2}, \quad N \approx 2.4711e+20}$$
+
+Alle Faktoren — c, hbar, pi, m_e — folgen aus Strukturprinzipien der RFT.
+Kein empirischer Atomuebergang noetig.
+
+→ Ausfuehrliche Darstellung: [rft_raum_zeit_konstante_entdeckung.md](rft_raum_zeit_konstante_entdeckung.md)
+
+---
+
+— Vollstaendige Yukawa-Matrix aus RFT-Resonanzstruktur
+
+*Dominic-René Schu, November 2026*
+*Status: ✅ Abgeschlossen (Nov 2026)*
+
+---
+
 ## Die drei Zentralbefunde
 
 ### Befund 1 — Schliessen der Raum-Zeit-Konstantenkette
@@ -86,3 +110,4 @@ Delta_phi_0 = 68.32 Grad [Universeller RFT-Phasenwinkel]
 ---
 
 *RT-51 — DominicReneSchu/RFT — November 2026*
+
