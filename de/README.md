@@ -465,7 +465,7 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 
 | # | Dokument | Beschreibung |
 |---|----------|-------------|
-| 1 | [AP1 — ℝ⁺× Skaleninvarianz](fakten/theorie/rt48_ap1_skaleninvarianz.md) | ℝ⁺× = echte Symmetrie (nicht Eichredundanz); Bruch durch Materiesektor (Koide) — **✅** |
+| 1 | [AP1 — ℝ⁺× Skaleninvarianz](fakten/theorie/rt48_ap1_skaleninvarianz.md) | ℝ⁺× echt; **Γ_RFT selbst ℝ⁺×-invariant**; B₃ bricht Skala (nicht Eichredundanz); Bruch durch Materiesektor (Koide) — **✅** |
 | 2 | [AP2 — Planck-Skala K1](fakten/theorie/rt48_ap2_planck_skala.md) | f_P/π ≈ 5.9e+42 Hz; strukturell motiviert; G-limitiert (10⁻⁵) — **✅** |
 | 3 | [AP3 — Elektronenmasse K2](fakten/theorie/rt48_ap3_elektronenmasse.md) | ν_e = m_e·Γ_RFT ≈ 2.5e+20 Hz; intern via RT-47 (Koide→m_e→ν₀) — **✅** |
 | 4 | [AP4 — Spontaner Bruch K3](fakten/theorie/rt48_ap4_spontaner_skalenbruch.md) | Negativergebnis: K3 im Vakuumsektor nicht realisierbar (A4 schließt m²<0 aus) — **✅** |
@@ -555,6 +555,7 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
 
 
