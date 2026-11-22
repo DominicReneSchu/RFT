@@ -58,6 +58,24 @@ $$1\;\text{s} = N \times \frac{\pi\hbar}{m_e \cdot c^2}$$
 ---
 
 
+---
+
+## 🌌 Gravitationale ε-Hierarchie (November 2026)
+
+Die RFT beschreibt **alle Gravitationsphänomene** durch eine einzige Größe — die Kopplungseffizienz ε:
+
+| Raumzeit | ε | RFT-Task |
+|----------|---|---------|
+| Flach (Minkowski) | ε = 1 | RT-40 |
+| Schweres Objekt | ε(r) = 1 − r_S/r | RT-53 ✅ |
+| Rotierendes SL | ε(r,ϑ) = 1 − r_Sr/Σ | RT-54 ✅ |
+| Geladenes rot. SL | ε(r,ϑ,Q) | RT-55 ✅ |
+| Allg. Raumzeit | ε(x^μ) | RT-56 ✅ |
+| Quantengravitation | ε̂ = ε₀ + δε̂ | RT-57 ✅ |
+
+**Graviton = δε̂-Quant** · **Hawking = δε̂-Tunneling** · **BH-Entropie = ε-Zustandszählung**
+
+
 ## Warum diese Theorie? — Der Ursprungsgedanke
 
 Die RFT entstand aus einer unscheinbaren Beobachtung:
@@ -148,6 +166,7 @@ richtigen Strukturen zu sehen.
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025 / 2026
+
 
 
 
