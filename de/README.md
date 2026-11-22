@@ -96,6 +96,29 @@ Vollständige Definition: [Kopplungseffizienz](fakten/docs/definitionen/kopplung
 
 ---
 
+
+---
+
+## 🔑 Zentralentdeckung: RFT-Raum-Zeit-Konstante (November 2026)
+
+$$\Gamma_{\rm RFT} = \frac{c^2}{\pi\hbar} \approx 2.713e+50\;\frac{\rm Hz}{\rm kg}$$
+
+Die Resonanzfeldtheorie liefert den **ersten strukturellen Zeitanker ohne Cäsium**:
+
+$$1\\;\\rm s = N \\times \\frac{\\pi\\hbar}{m_e c^2}, \\qquad N \\approx 2.471e+20$$
+
+Das π ist geometrisch aus A4 abgeleitet (RT-01) — kein empirischer Parameter.  
+Die Elektronenmasse m_e folgt aus A3+A7 (Koide-Formel, RT-47) — kein empirischer Parameter.
+
+**Ein universeller Phasenwinkel Δφ₀ = 68.32° verbindet:**
+
+- **Dunkle Energie:** Ω_Λ = cos²(Δφ₀/2) = 0.6847 ✅
+- **CP-Verletzung:** δ_CP = Δφ₀ = 68.32° (CKMfitter: 68.5°, 0.18° Abw.) ✅
+- **Generationenmischung:** λ² = 1−ε(Δφ₁₂) = 0.05079 (exakt) ✅
+
+→ **[Kerndokument](fakten/theorie/rft_raum_zeit_konstante_entdeckung.md)**
+
+
 ## Warum diese Theorie? — Der Ursprungsgedanke
 
 Die RFT entstand aus einer unscheinbaren Beobachtung:
@@ -501,6 +524,7 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
 
 
