@@ -473,6 +473,19 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 
 ---
 
+## RT-51 Vollstaendige Yukawa-Matrix aus RFT-Resonanzstruktur (Nov 2026)
+
+**Drei Zentralbefunde — ein universeller Phasenwinkel Delta_phi_0 = 68.32 Grad**
+
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [AP1 — Yukawa-Matrix](fakten/theorie/rt51_ap1_yukawa_matrix.md) | lambda^2=1-epsilon(Dphi12) exakt; Wolfenstein aus Kopplungsineffizienz — **✅** |
+| 2 | [AP2 — CKM-Winkel](fakten/theorie/rt51_ap2_ckm_winkel.md) | theta_ij=Dphi_ij/2; Wolfenstein-Hierarchie — **✅** |
+| 3 | [AP3 — CP-Phase](fakten/theorie/rt51_ap3_cp_phase.md) | delta_CP=68.32 Grad=Delta_phi_0 (CKMfitter: 68.5°, 0.18° Abw.) — **✅** |
+| — | [Kerndokument](fakten/theorie/rt51_yukawa_vollstaendig.md) | Vollstaendige Kette A3+A7→m_e→Gamma_RFT→Delta_phi_0 — **✅** |
+
+---
+
 ## Lizenz
 
 Dieses Projekt steht unter der **RFT-Lizenz 1.4**
@@ -488,6 +501,7 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
 
 
