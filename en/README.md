@@ -119,6 +119,10 @@ not freely chosen, but **empirically calibrated** (Koide hypothesis; F-Γ1 open)
 
 → **[Core document](facts/theory/rft_spacetime_constant_discovery.md)**
 
+→ **[Scale Invariance and Γ_RFT](facts/theory/scale_invariance_and_gamma_rft.md)** — Γ_RFT is ℝ⁺×-invariant; B₃ breaks scale
+
+→ **[Time as fundamental quantity](facts/docs/explanations/time_as_fundamental_quantity.md)** — Why time is not a measured quantity
+
 
 ## Why This Theory? — The Founding Idea
 
@@ -553,6 +557,7 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
 
