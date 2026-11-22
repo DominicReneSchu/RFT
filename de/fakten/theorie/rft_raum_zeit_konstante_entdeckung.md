@@ -240,9 +240,10 @@ heute nicht möglich. Mögliche Brückenstrategien:
 
 | Schritt | Methode | Frequenzbereich | Status |
 |---------|---------|----------------|--------|
-| Optische Uhr → ν_e | Frequenzkamm-Kaskade (~67 Halbierungen) | 10¹⁵ → 10²⁰ Hz | Konzept |
-| Kernühr (¹⁷⁵Lu+, 2,1 keV) | XUV-Frequenzkamm | ~5×10¹⁷ Hz | Forschung |
-| Compton-Streuung als Brücke | γ-Strahlen + Compton-Teleskop | ~10¹⁹ Hz | Offen |
+| Optische Uhr (Sr, Yb) | GPS/Vergleich | ~4×10¹⁴ Hz | ✅ Realisiert (10⁻¹⁸) |
+| ²²⁹Th-Kerntransition (8,4 eV) | UV-Laser-Kopplung | ~2×10¹⁵ Hz | Aktive Forschung |
+| ⁴⁵Sc-Kernuhr (12,4 keV) | XUV-Frequenzkamm | ~3×10¹⁸ Hz | Konzept (BIPM-Roadmap) |
+| ν_e (0,51 MeV) | Kerntransition + Kaskadenbrücke | 2,47×10²⁰ Hz | Offen |
 
 **Erreichbare Unsicherheit (Schätzung):** Mit einem vollständigen Frequenzkamm-Stack
 wäre δν/ν ~ 10⁻¹² erreichbar — besser als optische Uhren (10⁻¹⁸) vermutlich nicht
@@ -282,6 +283,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
