@@ -178,7 +178,7 @@ Die Cs-Sekunde ist beides — definiert UND durch Atomuhren realisiert (10⁻¹�
 
 Die RFT-Sekunde ist **nur definiert**. Die Frequenz ν_e ≈ 2.5e+20 Hz liegt im
 Röntgenbereich — keine direkte Uhrenrealisierung möglich. Eine Brückenkaskade über
-Frequenzkamm-Technologie wäre prinzipiell möglich (67 Halbierungsschritte), ist
+Frequenzkamm-Technologie wäre prinzipiell möglich (~19 Halbierungsschritte, d.h. log₂(2,47×10²⁰ / 4×10¹⁴) ≈ 19), ist
 aber heute technisch nicht realisierbar.
 
 **Konsequenz:** Die RFT-Sekunde ist metrologisch eine mathematische Relation,
@@ -289,6 +289,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
