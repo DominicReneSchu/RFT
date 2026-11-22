@@ -1,7 +1,7 @@
 # RFT — Offene Forschungsaufgaben
 
 Generiert: August 2026
-Aktualisiert: September 2026
+Aktualisiert: November 2026
 Status: Aktiv
 
 ---
@@ -24,6 +24,7 @@ Status: Aktiv
 | QM als RFT-Substruktur | Interpretation/Analogie | Formale Ableitung: Atom, Spektrum, Born-Regel, Spin aus A1–A7 | 🔄 Offen (RT-44) |
 | Energie als gerichtete Größe | Skalare Energiedichte | Vektorielle Kopplungsgröße: A5-Kompatibilität, Kosmol. Konstante, ρ ≥ 0 strukturell | 🔄 Offen (RT-45) |
 | Distinktive Teilchenphysik-Signaturen | Stufe-1-Passung (RT-22) | Quantitative, vom SM unterscheidbare Vorhersage angestrebt (RT-47) | 🔄 Offen (RT-47) |
+| Skaleninvarianz ℝ⁺× in G_sync | Kein absoluter Frequenzanker | Skalenbruchmechanismus und fundamentale Frequenz ν₀ angestrebt (RT-48) | 🔄 Offen (RT-48) |
 
 ---
 
@@ -35,6 +36,7 @@ Status: Aktiv
 3. RT-44 — QM als RFT-Substruktur: Atom, Spektrum, Born-Regel und Spin ← Priorität 3
 4. RT-45 — Energie als gerichtete Größe: A5-Kompatibilität, Kosmol. Konstante als Gradientenproblem, ρ ≥ 0 strukturell ← Priorität 4
 5. RT-47 — Distinktive RFT-Signaturen in CERN-Daten: Stufe-2/3-Validierung in der Teilchenphysik ← Strategische Option (nach RT-43, RT-44, RT-45, RT-46)
+6. RT-48 — RFT-Raum-Zeit-Konstante: Skalenbruchmechanismus und fundamentale Frequenz ← Theoretische Grundlagenfrage (nach RT-40, RT-41, RT-42)
 4. ~~RT-42 — RFT-Kosmologie: Friedmann-Analogie aus Phasendynamik~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; kosmische Expansion als Phaseneffekt hergeleitet; ΛCDM als Grenzfall; DESI-DR1-Signal (Szenario C); neues Falsifikationskriterium F9 (BAO-Modulation)
 5. ~~RT-40 — RFT als Grenzfall der Speziellen Relativitätstheorie~~ ✅ Abgeschlossen (Sep 2026) — AP1–AP7 vollständig; SRT als Grenzfall bewiesen; Warp-Konsistenz dokumentiert; offene Lücke: Brückenannahme B₁ (minimale Axiomenerweiterung A8)
 6. ~~RT-41~~  ✅ Abgeschlossen (Sep 2026) — Axiom A8: Kopplungswellengeschwindigkeit als irreduzibles Postulat etabliert
@@ -2047,3 +2049,223 @@ Der Task bleibt offen, bis RT-43, RT-44, RT-45 und RT-46 abgeschlossen sind. Er 
 ---
 
 *RT-47 — DominicReneSchu/RFT — September 2026*
+
+---
+
+## Kategorie 10: Metrologie und fundamentale Raum-Zeit-Skala
+
+## RT-48 – RFT-Raum-Zeit-Konstante: Skalenbruchmechanismus und fundamentale Frequenz
+
+### Kann die RFT eine absolute Frequenz liefern, die Cäsium als Zeitdefinition überflüssig macht?
+
+**Version:** 1.0 – Entwurf
+**Datum:** November 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋 AP4 📋 AP5 📋
+**Vorgänger:** RT-40 (SRT-Brücke, abgeschlossen), RT-41 (A8, abgeschlossen), RT-42 (Kosmologie, abgeschlossen)
+**Kontext:** Entstanden aus metrologischer Frage: Kann die RFT die Cs-133-basierte SI-Sekunde durch eine strukturell begründete Fundamentalkonstante ersetzen?
+
+---
+
+### 1. Zielsetzung und Erfolgskriterium
+
+**Ausgangsfrage:**
+Die SI-Sekunde ist seit 1967 über den Cs-133-Hyperfeinübergang definiert (Δν_Cs = 9.192.631.770 Hz). Dieser Übergang ist ein spezifischer Atomzustand — kein fundamentales Naturprinzip. Die offene metrologische Frage lautet:
+
+> **Gibt es eine Fundamentalfrequenz ν₀, die ohne Cäsium die Sekunde definiert und über c und ħ auch Meter und Kilogramm anschließt?**
+
+Die RFT liefert mit Γ_RFT = c²/(πħ) eine Masse-Frequenz-Kopplung. Die tiefere Frage ist, ob die RFT einen **Skalenbruchmechanismus** enthält, der aus dieser Relation eine **absolute Frequenz** ableitet.
+
+**Strukturdiagnose:**
+Die Symmetriegruppe G_sync ≅ ℝ⁺× × U(1) × Aff⁺(ℝ) enthält den Faktor ℝ⁺× — das ist **Skaleninvarianz eingebaut**. Eine skaleninvariante Theorie kann per Konstruktion keine absolute Frequenz festlegen. Für eine absolute Zeitdefinition braucht die RFT daher einen Mechanismus, der ℝ⁺× bricht — entweder **spontan**, durch einen **topologischen Sektor** oder durch eine **Randbedingung** an der Planck-Skala.
+
+**Erfolgskriterium:**
+Ein formaler Mechanismus ist identifiziert, der die ℝ⁺×-Symmetrie der RFT kontrolliert bricht und eine eindeutige Frequenz ν₀ festlegt — **ohne freie empirische Parameter** (kein Cäsium, keine willkürlich gewählte Referenzmasse).
+
+---
+
+### 2. Ausgangslage
+
+**Gegeben (RFT):**
+
+| Ergebnis | Quelle | Status |
+|----------|--------|--------|
+| E = π · ε(Δφ) · ħ · f | A4 | ✅ Axiom (RT-01: π geometrisch abgeleitet) |
+| ε(Δφ) = cos²(Δφ/2) | A4, RT-02 | ✅ Abgeleitet (k=1-Darstellung U(1)) |
+| c als strukturelle Grenzgeschwindigkeit | RT-40 AP4 | ✅ Abgeleitet (ε → 0 für Δφ → π) |
+| G_sync ≅ ℝ⁺× × U(1) × Aff⁺(ℝ) | RT-02 | ✅ Bewiesen (stationär) |
+| f₀ = mc²/(πħ) als Ruhefrequenz | RT-40 AP4 | ✅ Abgeleitet — aber enthält m als freien Parameter |
+| Γ_RFT = c²/(πħ) als Masse-Frequenz-Kopplung | Analytisch | ✅ Strukturell klar — kein eigenständiger Zeitanker |
+
+**Offene strukturelle Lücke:**
+Γ_RFT verknüpft Masse und Frequenz — aber es fehlt ein Mechanismus, der ℝ⁺× bricht und eine absolute Referenz setzt.
+
+**Drei Kandidaten für einen Skalenbruchmechanismus:**
+
+| Kandidat | Mechanismus | Resultierende Frequenz | Metrologische Qualität |
+|----------|-------------|------------------------|------------------------|
+| **K1 — Planck-Skala** | ε(Δφ_P) → 0 an der Planck-Grenze (G eingebunden) | ν₀ = f_P/π = (1/π)√(c⁵/Għ) ≈ 5,9 × 10⁴² Hz | Strukturell tiefste Option; G zu ungenau (~10⁻⁵ rel.) |
+| **K2 — Elektronenmasse als fixierter Anker** | m_e als definierte SI-Konstante (wie ħ, c seit 2019) | ν_e = m_e c²/(πħ) ≈ 2,477 × 10²⁰ Hz | Pragmatisch; Frequenz im Röntgenbereich |
+| **K3 — Spontaner Skalenbruch in G_sync** | ℝ⁺×-Symmetrie wird spontan gebrochen durch ein RFT-eigenes Potential | ν₀ aus Vakuum-Kopplungsstruktur | Originell; derzeit offene theoretische Frage |
+
+---
+
+### 3. Arbeitspakete
+
+#### AP1 — Formale Analyse der ℝ⁺×-Skaleninvarianz
+
+**Aufgabe:** Präzisiere, wie ℝ⁺× in G_sync wirkt und welche Observablen unter dieser Symmetrie invariant sind.
+
+**Konkrete Schritte:**
+1. Formuliere die ℝ⁺×-Wirkung auf alle RFT-Objekte: Felder, Kopplungseffizienz ε, Frequenz f, Phasendifferenz Δφ.
+2. Identifiziere alle Observablen, die unter ℝ⁺× **nicht** invariant sind — diese sind potenzielle Anker.
+3. Prüfe, ob die Ruhefrequenz f₀ = mc²/(πħ) unter ℝ⁺× kovariант oder invariant ist.
+4. Bestimme, welche Klasse von Mechanismen ℝ⁺× brechen kann (spontan, topologisch, Randbedingung).
+5. Dokumentiere die formale Struktur als Grundlage für AP2–AP4.
+
+**Erfolgskriterium:** Vollständige Klassifikation der ℝ⁺×-Transformationseigenschaften aller RFT-Objekte; Liste der möglichen Bruchmechanismen.
+
+---
+
+#### AP2 — Kandidat K1: Planck-Skala als natürliche Grenze
+
+**Aufgabe:** Prüfe, ob die Einbeziehung von G in die RFT-Kopplungsstruktur die ℝ⁺×-Symmetrie bricht und die Planck-Frequenz ν₀ = f_P/π als eindeutige Frequenz fixiert.
+
+**Leitfragen:**
+1. Kann G in die G_sync-Gruppe eingebettet werden — oder ist G eine externe Skala, die ℝ⁺× bricht?
+2. Folgt die Bedingung ε(Δφ_P) → 0 zwingend aus der RFT-Kopplungsstruktur, oder ist dies ein Postulat?
+3. Ist die Planck-Frequenz ν₀ = f_P/π **strukturell eindeutig** — oder eine unter vielen möglichen Grenzfrequenzen?
+4. Wenn G empirisch eingeht: Ist ν₀ dann eine Ableitung oder eine Definition über eine gemessene Konstante?
+
+**Konkrete Schritte:**
+1. Formuliere die Kopplungsbedingung A4 in einem Raum mit metrischer Struktur (Einbeziehung von G).
+2. Zeige, ob ε(Δφ) → 0 für v → c (RT-40 AP4) eine direkte Analogie zur Bedingung ε → 0 an der Planck-Grenze hat.
+3. Prüfe, ob der Faktor π in ν₀ = f_P/π aus der RFT-Geometrie folgt — oder ob er nachträglich eingefügt wird.
+4. Bewerte: Ist f_P/π eine **Vorhersage** der RFT oder eine **Definition** durch Import von G?
+
+**Erfolgskriterium:** Klare Aussage, ob K1 eine strukturelle Ableitung oder eine parametrische Definition ist; ggf. Formulierung einer minimal notwendigen Erweiterung (A_grav).
+
+---
+
+#### AP3 — Kandidat K2: Elektronenmasse als definierter Anker
+
+**Aufgabe:** Prüfe, ob m_e als festgelegte SI-Konstante (analog zu ħ und c) kombiniert mit Γ_RFT eine praktikable Zeitdefinition ergibt.
+
+**Konkrete Schritte:**
+1. Formuliere die Sekunden-Definition: 1 s := N · πħ / (m_e · c²) für ein geeignetes ganzzahliges N.
+2. Bestimme N so, dass 1 s exakt der aktuellen SI-Sekunde entspricht (Brücken-Bedingung).
+3. Analysiere die metrologische Realisierbarkeit: Welche Frequenzkamm-Kaskade wäre nötig, um von ~10²⁰ Hz auf messbare Frequenzen zu kommen?
+4. Vergleiche die erreichbare Unsicherheit mit aktuellen Cs-Uhren (~10⁻¹⁶) und optischen Uhren (~10⁻¹⁸).
+5. Bewerte: Ist K2 ein qualitativer Fortschritt gegenüber Cs — oder nur eine Umbenennung?
+
+**Erfolgskriterium:** Quantifizierung der erreichbaren Messgenauigkeit und Bewertung, ob K2 metrologisch konkurrenzfähig ist.
+
+---
+
+#### AP4 — Kandidat K3: Spontaner Skalenbruch in der G_sync-Struktur
+
+**Aufgabe:** Prüfe, ob die RFT-Kopplungsdynamik selbst einen Mechanismus enthält, der ℝ⁺× spontan bricht.
+
+**Leitfrage:** Das Higgs-Feld bricht spontan die elektroschwache Symmetrie und erzeugt einen Massenskala. Gibt es ein analoges RFT-Objekt — ein "Resonanzfeld-Kondensat" — das ℝ⁺× bricht und eine fundamentale Frequenz auszeichnet?
+
+**Konkrete Schritte:**
+1. Formuliere ein effektives Potential V(ε) für die Kopplungseffizienz ε — analog zum Higgs-Potential.
+2. Prüfe, ob V(ε) ein Minimum bei ε₀ ≠ 0, 1 besitzt, das ℝ⁺× bricht.
+3. Falls ja: Bestimme die Eigenfrequenz des Feldes um dieses Minimum — das wäre ν₀.
+4. Prüfe Konsistenz mit G_sync-Invarianz (A7): Welche Untergruppe von G_sync bleibt nach dem Bruch erhalten?
+5. Verbinde mit Kosmologie (RT-42): Ist der spontane Skalenbruch mit der Expansionsdynamik H(t) konsistent?
+
+**Erfolgskriterium:** Entweder Existenz eines V(ε)-Minimums mit eindeutiger Frequenz ν₀ — oder formaler Nachweis, dass K3 in der aktuellen RFT nicht realisierbar ist.
+
+---
+
+#### AP5 — Synthese, Bewertung und Dokumentation
+
+**Aufgabe:** Zusammenführung der AP1–AP4-Ergebnisse zu einer klaren Aussage, welcher Kandidat (K1, K2, K3) der strukturell konsistenteste Weg zu einer RFT-basierten Zeitdefinition ist.
+
+**Konkrete Schritte:**
+1. Tabelle: K1 vs. K2 vs. K3 — strukturelle Tiefe, metrologische Qualität, Abhängigkeit von freien Parametern.
+2. Formuliere eine **Minimalerweiterung der RFT**, die einen absoluten Zeitanker liefert — ohne die skaleninvariante Kopplungsstruktur zu beschädigen.
+3. Falls K3 realisierbar: Formuliere das Ergebnis als neues Axiom A_ν (oder Erweiterung von A7/A8).
+4. Falls K1 oder K2: Formuliere die benötigte zusätzliche Festlegung explizit und bewerte ihren Status (Postulat / Ableitung / Messung).
+5. Erstelle Dokument `de/fakten/theorie/rt48_raum_zeit_konstante.md` mit vollständiger Herleitung.
+6. Erstelle Spiegeldokument `en/facts/theory/rt48_spacetime_constant.md`.
+
+**Erfolgskriterium:** Klare, veröffentlichbare Aussage: „Die RFT liefert [K1/K2/K3] als fundamentale Frequenz mit folgendem Status: [Postulat / Ableitung / Messung]. Eine SI-Sekunde könnte damit definiert werden als [Definition]."
+
+---
+
+### 4. Deliverables
+
+1. Formale Analyse der ℝ⁺×-Skaleninvarianz in G_sync (AP1).
+2. Bewertung K1: Ist f_P/π eine RFT-Vorhersage oder ein G-Import? (AP2)
+3. Bewertung K2: Metrologische Erreichbarkeit der Elektronenruhefrequenz als Zeitanker (AP3).
+4. Bewertung K3: Existenz/Nicht-Existenz eines spontanen Skalenbruchmechanismus (AP4).
+5. Synthese-Tabelle K1 vs. K2 vs. K3 (AP5).
+6. Kerndokument: `de/fakten/theorie/rt48_raum_zeit_konstante.md`
+7. Spiegeldokument: `en/facts/theory/rt48_spacetime_constant.md`
+
+---
+
+### 5. Erfolgskriterien
+
+**Minimalziel:** Formale Klassifikation der drei Kandidaten mit klarer Aussage, welche davon strukturelle Ableitungen und welche Postulate sind.
+
+**Mittelziel:** Für mindestens einen Kandidaten liegt ein formaler Skalenbruchmechanismus vor, der ℝ⁺× bricht — ohne freie Parameter.
+
+**Maximalziel:** Die RFT enthält in K3 einen spontanen Skalenbruchmechanismus, aus dem eine eindeutige Fundamentalfrequenz ν₀ folgt — und diese Frequenz ist über Frequenzkamm-Kaskaden messtechnisch zugänglich.
+
+**Negativziel:** Falls kein Mechanismus ohne freie Parameter existiert: Präzise dokumentieren, welche minimale Erweiterung (neues Axiom A_ν, Einbeziehung von G, m_e als fixierter Anker) nötig wäre — und bewerten, ob diese Erweiterung die Eleganz der G_sync-Struktur erhält oder beschädigt.
+
+---
+
+### 6. Methodische Leitplanken
+
+- **Keine numerische Anpassung:** ν₀ darf nicht nachträglich so gewählt werden, dass sie mit Cs-Daten übereinstimmt — sie muss strukturell folgen.
+- **Klare Trennung:** Ableitung aus RFT-Axiomen vs. Postulat vs. Import einer gemessenen Konstante — für jeden Schritt explizit ausweisen.
+- **Falsifizierbarkeit:** Falls ein Kandidat eine Frequenz ν₀ ergibt, die von f_Cs abweicht: Das wäre ein messbares Falsifikationskriterium für die RFT.
+- **Konsistenz mit G_sync:** Jede Erweiterung muss mit A7 (G_sync-Invarianz) verträglich sein oder den Bruch explizit beschreiben.
+- **DeepSeek-Präzisierung beachten:** Γ_RFT = c²/(πħ) ist eine **Masse-Frequenz-Kopplung**, keine Raum-Zeit-Konstante. Eine echte Raum-Zeit-Konstante braucht entweder keine Referenzmasse oder eine theoretisch fixierte Masse.
+
+---
+
+### 7. Konkreter erster Schritt
+
+**Woche 1–2 (AP1):**
+Formuliere die ℝ⁺×-Transformationsregeln für alle RFT-Objekte. Identifiziere alle Bruchmechanismen. Prüfe insbesondere: Ist f₀ = mc²/(πħ) unter ℝ⁺× kovariант (skaliert mit m) oder gibt es eine Klasse von m-Werten, für die f₀ invariant ist?
+
+**Woche 3–4 (AP2):**
+Prüfe G-Einbindung: Formuliere die A4-Kopplungsbedingung in einer Metrik mit Newton-Potential und bestimme, ob ε(Δφ) an der Planck-Grenze eindeutig auf Null geht.
+
+**Woche 5–6 (AP3):**
+Berechne die Brückenfrequenzen: Welche Frequenzkamm-Kette verbindet ν_e = 2,477 × 10²⁰ Hz mit dem messtechnisch zugänglichen Bereich (10⁸–10¹⁶ Hz)?
+
+---
+
+### 8. Ehrliche Einschätzung
+
+Die Wahrscheinlichkeit, dass die RFT in ihrer aktuellen Formulierung (A1–A8) **bereits** einen Skalenbruchmechanismus enthält (K3), ist **gering** — die G_sync-Struktur ist bewusst skaleninvariant konstruiert.
+
+Die Wahrscheinlichkeit, dass K1 (Planck-Skala) eine **strukturelle Ableitung** (nicht nur einen G-Import) liefert, ist **moderat** — abhängig davon, ob G in der RFT als emergente Größe oder als externe Konstante behandelt wird.
+
+K2 (Elektronenmasse) ist **pragmatisch**, konzeptionell aber kein fundamentaler Fortschritt gegenüber Cs: Man tauscht einen Atomübergang gegen eine Teilchenmasse. Messtechnisch wäre es heute schlechter als optische Uhren.
+
+Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometrisch begründetem π) und identifiziert das Problem korrekt (ℝ⁺×-Bruch als fehlender Baustein). Der Weg zu einer echten Fundamentalfrequenz führt über Quantengravitation (K1) oder spontanen Skalenbruch (K3) — beides ist ein Forschungsprogramm, nicht eine ableitbare Konstante. Der Beitrag der RFT liegt in der Präzision der Fragestellung.**
+
+---
+
+### 9. Querverbindungen
+
+| Task | Beziehung |
+|:--|:--|
+| **RT-01 / RT-01a** | π als geometrische Phasenraumkonstante — Fundament von Γ_RFT |
+| **RT-02** | G_sync-Gruppenstruktur mit ℝ⁺× — Quelle der Skaleninvarianz |
+| **RT-40 AP4** | c als strukturelle Grenzgeschwindigkeit — analoges Vorgehen für ν₀ angestrebt |
+| **RT-41 (A8)** | c = 1/√(μ₀ε₀) als Vakuum-Eigenschaft — Frage: hat das Vakuum auch eine fundamentale Frequenz? |
+| **RT-42** | Kosmologischer Phaseneffekt — β ~ H₀ als tatsächlich realisierte kosmologische Frequenzskala |
+| **RT-44** | QM als RFT-Substruktur — Elektronenmasse und Compton-Frequenz als Brücke zu K2 |
+| **RT-47** | Distinktive CERN-Signaturen — Massenspektrum als möglicher Zugang zu K2 |
+| **RT-48** | **Dieser Task** |
+
+---
+
+*RT-48 — DominicReneSchu/RFT — November 2026 (v1.0)*
