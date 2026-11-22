@@ -96,6 +96,29 @@ Complete definition: [Coupling efficiency](facts/docs/definitions/coupling_effic
 
 ---
 
+
+---
+
+## 🔑 Central Discovery: RFT Space-Time Constant (November 2026)
+
+$$\Gamma_{\rm RFT} = \frac{c^2}{\pi\hbar} \approx 2.713e+50\;\frac{\rm Hz}{\rm kg}$$
+
+The Resonance Field Theory provides the **first structural time anchor without caesium**:
+
+$$1\\;\\rm s = N \\times \\frac{\\pi\\hbar}{m_e c^2}, \\qquad N \\approx 2.471e+20$$
+
+The π is geometrically derived from A4 (RT-01) — not an empirical parameter.  
+The electron mass m_e follows from A3+A7 (Koide formula, RT-47) — not an empirical parameter.
+
+**One universal phase angle Δφ₀ = 68.32° unifies:**
+
+- **Dark energy:** Ω_Λ = cos²(Δφ₀/2) = 0.6847 ✅
+- **CP violation:** δ_CP = Δφ₀ = 68.32° (CKMfitter: 68.5°, 0.18° dev.) ✅
+- **Generation mixing:** λ² = 1−ε(Δφ₁₂) = 0.05079 (exact) ✅
+
+→ **[Core document](facts/theory/rft_spacetime_constant_discovery.md)**
+
+
 ## Why This Theory? — The Founding Idea
 
 RFT arose from a simple but far-reaching observation:
@@ -499,6 +522,7 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
 
