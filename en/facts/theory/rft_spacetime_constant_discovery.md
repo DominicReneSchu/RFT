@@ -43,7 +43,8 @@ $$\nu_0 := \frac{m_e c^2}{\pi\hbar} \approx 2.471 \times 10^{20}\;\text{Hz}$$
 and then $1\;\text{s} := 1/\nu_0$. The $N$ in $1\;\text{s} = N \times \pi\hbar/(m_e c^2)$
 does **not need to be an integer** — $\nu_0$ is the primary quantity, not $N$.
 
-$$1\;\text{s} := \frac{N \cdot \pi\hbar}{m_e \cdot c^2}, \quad N \approx 2.471134e+20$$
+Equivalent notation (N need not be an integer):
+$$1\;\text{s} = \frac{N \cdot \pi\hbar}{m_e \cdot c^2}, \quad N = \nu_0 \approx 2.471 \times 10^{20}$$
 
 ---
 
@@ -260,6 +261,7 @@ This **specifically tests the RFT structure**, not just the Koide relation.
 
 *Dominic-René Schu — Resonance Field Theory 2026*
 *v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
 
