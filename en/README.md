@@ -508,6 +508,36 @@ Formal applications of RFT to cosmology (RT-42, Sep 2026):
 
 ---
 
+## RT-52 Brannen Phase Angle θ: Bridge B₃ (Nov 2026)
+
+| # | Document | Description |
+|---|----------|-------------|
+| 1 | [AP1 — Energy Sphere](facts/theory/rt52_ap1_energy_sphere_geometry.md) | Proof Σcos=0 → G_sync insufficient; t=tan(θ/2)=2.285 on U(1) — **✅** |
+| 2 | [AP2 — Higgs Bridge B₃](facts/theory/rt52_ap2_higgs_bridge_b3.md) | B₃=Higgs-Yukawa; analogy B₁(SRT)/B₂(Dirac)/B₃(Flavour) — **✅** |
+| 3 | [AP3 — EW Scale](facts/theory/rt52_ap3_electroweak_scale.md) | Negative result: 1°≈2013 MeV in m_τ; no simple EW connection — **✅** |
+| 4 | [AP4 — Neutrino Masses](facts/theory/rt52_ap4_neutrino_mass_hierarchy.md) | Q_ν=2/3; δ_PMNS≈248° (DUNE); Seesaw predictions — **✅** |
+
+---
+
+## RT-53–57 Gravity and Quantum Gravity (Nov 2026)
+
+**Complete ε-hierarchy:**
+
+| Metric | ε form | RT |
+|--------|--------|-----|
+| Minkowski | ε = 1 | RT-40 |
+| Schwarzschild | 1 − r_S/r | [RT-53](facts/theory/rt53_gravitational_time_dilation.md) ✅ |
+| Kerr (rotating) | 1 − r_Sr/Σ | [RT-54](facts/theory/rt54_kerr_metric_epsilon.md) ✅ |
+| Kerr-Newman | 1 − (r_Sr−r_Q²)/Σ | [RT-55](facts/theory/rt55_kerr_newman_epsilon.md) ✅ |
+| General GR | ε(x^μ) = −g_tt | [RT-56](facts/theory/rt56_general_spacetime_epsilon.md) ✅ |
+| Quantum gravity | ε̂ = ε₀ + δε̂ | [RT-57](facts/theory/rt57_quantum_gravity_epsilon.md) ✅ |
+
+**RT-57 key results:** Graviton=δε̂ quantum; Bekenstein-Hawking S=kB·A/(4ℓ_P²) from ε-state counting;
+Hawking radiation=δε̂ tunneling; UV cutoff=ν_P,RFT ≈ 5.90e+42 Hz (RT-48 K1).
+
+
+---
+
 ## License
 
 This project is licensed under the **RFT-License 1.4**
@@ -523,6 +553,7 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
 
