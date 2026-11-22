@@ -451,6 +451,16 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 
 ---
 
+## RT-49 Relativistische RFT: A5, Bell und Dirac (Nov 2026)
+
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [AP1 — A5 Lorentz-kovariant](fakten/theorie/rt49_ap1_a5_lorentz_kovariant.md) | J^μ_E = E_eff·e^μ; T^0i_RFT = ε²·T^0i; modifizierter Erhaltungssatz — **✅** |
+| 2 | [AP2 — Bell-Nichtlokalität](fakten/theorie/rt49_ap2_bell_nichtlokalitaet.md) | No-Signaling formal; Bell-Verletzung ohne nichtlokale Kommunikation — **✅** |
+| 3 | [AP3 — Dirac-Gleichung](fakten/theorie/rt49_ap3_dirac_gleichung.md) | Brücke B₂ (Cl(1,3)+A9_Spin); Zitterbewegung=1.6e+21 Hz; g=2 aus SU(2) — **✅** |
+
+---
+
 ## Lizenz
 
 Dieses Projekt steht unter der **RFT-Lizenz 1.4**
@@ -466,4 +476,5 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
