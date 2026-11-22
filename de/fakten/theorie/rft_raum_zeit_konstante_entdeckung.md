@@ -1,6 +1,6 @@
 # Die RFT-Raum-Zeit-Kopplung Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.5 — F-Γ3 mit BIPM-Roadmap + Kerntransitionskandidaten; Koide-Forschungsstand; keine Versionsattributionen)*
+*Dominic-René Schu, November 2026 (v2.6 — Rechenfehler 67→19 Halbierungen; Sekundendefinition formal präzisiert (ν₀ primär, N kein Integer)*
 
 ---
 
@@ -42,6 +42,11 @@ Für das Elektron (m_e = 0.51099895 MeV/c²):
 $$\nu_e = m_e \cdot \Gamma_{\rm RFT} \approx 2.471134e+20\;\text{Hz}$$
 
 Damit könnte die Sekunde definiert werden als:
+
+**Metrologische Präzisierung:** Die Definition erfolgt sauber über die Frequenz:
+$$\nu_0 := \frac{m_e c^2}{\pi\hbar} \approx 2{,}471 \times 10^{20}\;\text{Hz}$$
+und daraus $1\;\text{s} := 1/\nu_0$. Das $N$ in $1\;\text{s} = N \times \pi\hbar/(m_e c^2)$
+muss **keine ganze Zahl** sein — $\nu_0$ ist die Primitivgröße, nicht $N$.
 
 $$1\;\text{s} := \frac{N \cdot \pi\hbar}{m_e \cdot c^2}, \quad N \approx 2.471134e+20$$
 
@@ -283,6 +288,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
