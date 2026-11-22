@@ -2403,3 +2403,29 @@ Schwarzes Loch: r → r_S → ε → 0 → Zeit stoppt (ε-Entkopplung).
 **Offen:** RT-54 — Kerr-Metrik als anisotrope ε-Modulation (rotierende SL)
 
 ---
+
+## RT-54 — Kerr-Metrik als anisotrope ε-Modulation: Rotierende Schwarze Löcher
+
+**Version:** 1.0
+**Datum:** November 2026
+**Status:** ✅ Analytisch abgeschlossen (Nov 2026)
+**Vorgänger:** RT-53 (Schwarzschild als isotropes ε), RT-52 (Brücke B₃)
+
+**Zentralergebnis:**
+ε_Kerr(r,ϑ) = 1 − r_S·r/(r²+a²cos²ϑ) — anisotrope ε-Modulation in der Energiekugel.
+Ergosphäre (ε=0, kein Horizont): r_ergo_equator = r_S/2 für ALLE Spinwerte.
+Frame-Dragging = Rotation von ê (A5) mit Ω_LT = a·r_S·c/(2r³).
+g=2 für Kerr-Newman: identisch mit Elektron-g-Faktor (A9_Spin, SU(2)).
+
+**Zentrales neues Ergebnis:**
+Kerr ist das ERSTE RFT-Beispiel einer physikalisch realisierten asymmetrischen
+Richtung ê in der Energiekugel — direkte Brücke zu RT-52 (Brannen-Phase B₃):
+Wenn elektroschwache SB analog zum Kerr-Spin eine ê_EW definiert → B₃ liefert θ.
+
+**Folgeaufgaben:**
+- RT-55 (offen): Kerr-Newman (M+J+Q) als ε-Modulation
+- RT-56 (offen): Allgemeine Raumzeit aus Einst.-Gl. als ε(x^μ)
+
+**Kerndokument:** `de/fakten/theorie/rt54_kerr_metrik_epsilon.md`
+
+---
