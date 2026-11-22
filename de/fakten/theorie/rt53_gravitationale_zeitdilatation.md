@@ -5,6 +5,20 @@
 
 ---
 
+## Ehrlicher Status — Identifikation vs. Ableitung
+
+> **Analog zu RT-48, RT-56:** Die Form ε_grav(r) = 1 − r_S/r ist **keine Ableitung aus A1–A9**,
+> sondern eine **Identifikation** mit der Schwarzschild-Lösung der ART (**Brücke B_grav**).
+>
+> RFT-intern abgeleitet: Dass ε→0 Entkopplung bedeutet (A4); dass Zeitdilatation
+> strukturell als ε-Effekt formulierbar ist (RT-40 Analogie). ✅
+>
+> Als Brücke gesetzt: ε_grav(r) ≡ −g_tt(r) = 1 − r_S/r (ART als Kalibrierungsinput). ⚠️
+>
+> Status: **Phänomenologisch motivierter Anschluss an ART — konsistent, nicht fundamental bewiesen.**
+
+---
+
 ## Das Ergebnis
 
 Die gravitationale Zeitdilatation der Allgemeinen Relativitätstheorie
@@ -123,3 +137,4 @@ einheitlicher ε-Mechanismus widerlegt.
 ---
 
 *RT-53 — DominicReneSchu/RFT — November 2026*
+
