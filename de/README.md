@@ -510,6 +510,36 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 
 ---
 
+## RT-52 Brannen-Phasenwinkel θ: Brücke B₃ (Nov 2026)
+
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [AP1 — Energiekugel-Geometrie](fakten/theorie/rt52_ap1_energiekugel_geometrie.md) | Beweis Σcos=0 → G_sync ungenügend; t=tan(θ/2)=2,285 auf U(1) — **✅** |
+| 2 | [AP2 — Higgs-Brücke B₃](fakten/theorie/rt52_ap2_higgs_brücke_b3.md) | B₃=Higgs-Yukawa; Analogie B₁(SRT)/B₂(Dirac)/B₃(Flavour) — **✅** |
+| 3 | [AP3 — EW-Skala](fakten/theorie/rt52_ap3_elektroschwache_skala.md) | Negatives Ergebnis: 1°≈2013 MeV in m_τ; keine einfache EW-Verbindung — **✅** |
+| 4 | [AP4 — Neutrino-Massen](fakten/theorie/rt52_ap4_neutrino_massenhierarchie.md) | Q_ν=2/3; δ_PMNS≈248° (DUNE testbar); Seesaw-Vorhersagen — **✅** |
+
+---
+
+## RT-53–57 Gravitation und Quantengravitation (Nov 2026)
+
+**Die vollständige ε-Hierarchie:**
+
+| Metrik | ε-Form | RT |
+|--------|--------|-----|
+| Minkowski (flach) | ε = 1 | RT-40 |
+| Schwarzschild | 1 − r_S/r | [RT-53](fakten/theorie/rt53_gravitationale_zeitdilatation.md) ✅ |
+| Kerr (rotierend) | 1 − r_Sr/Σ | [RT-54](fakten/theorie/rt54_kerr_metrik_epsilon.md) ✅ |
+| Kerr-Newman (M+J+Q) | 1 − (r_Sr−r_Q²)/Σ | [RT-55](fakten/theorie/rt55_kerr_newman_epsilon.md) ✅ |
+| Allgemeine GR | ε(x^μ) = −g_tt | [RT-56](fakten/theorie/rt56_allgemeine_raumzeit_epsilon.md) ✅ |
+| Quantengravitation | ε̂ = ε₀ + δε̂ | [RT-57](fakten/theorie/rt57_quantengravitation_epsilon.md) ✅ |
+
+**RT-57 Kernergebnisse:** Graviton=δε̂-Quant; Bekenstein-Hawking S=kB·A/(4ℓ_P²) aus ε-Zustandszählung;
+Hawking-Strahlung=δε̂-Tunneling; UV-Cutoff = ν_P,RFT ≈ 5.90e+42 Hz (RT-48 K1).
+
+
+---
+
 ## Lizenz
 
 Dieses Projekt steht unter der **RFT-Lizenz 1.4**
@@ -525,6 +555,7 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
 
 
 
