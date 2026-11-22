@@ -380,6 +380,77 @@ Formale Anwendungen der RFT auf Kosmologie (RT-42, Sep 2026):
 
 ---
 
+## RT-43 Analytische Warpmetrik (Nov 2026)
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Analytische Form](fakten/theorie/rt43_ap1_analytische_warpmetrik.md) | A4, A5 | h_μν^RFT = h_μν^Alc·ε(Δφ); ρ≥0 analytisch aus ε=cos²(Δφ/2)≥0 — **✅ Abgeschlossen** |
+| 2 | [AP2 — Skalentrennung](fakten/theorie/rt43_ap2_skalentrennung.md) | A4, A8 | Kosmologie ↔ Warp entkoppelt; Kopplungsterm ~10⁻¹⁰⁵ — **✅ Abgeschlossen** |
+| 3 | [AP3 — Energieoptimierung](../fakten/konzepte/warpantrieb/rt43_ap3_energieoptimierung.py) | A4 | Python: ρ_RFT vs. Referenztechnologien — **✅ Abgeschlossen** |
+| 4 | [AP4 — Messbare Signaturen](fakten/theorie/rt43_ap4_messbare_signaturen.md) | A4, A5 | 4 Signaturen vs. Alcubierre: Winkel ρ(θ)∝ε², E⁻=0, 1/γ²-Abschaltung, l_c∝1/γ² — **✅ Abgeschlossen** |
+| 5 | [AP5 — Kausalität A8](fakten/theorie/rt43_ap5_kausalitaet_a8.md) | A8 | Kausal für v_s≤c; CTC-Ausschluss; Selbst-Abschaltung — **✅ Abgeschlossen** |
+| 6 | [AP6 — Technische Bilanz](../fakten/konzepte/warpantrieb/rt43_ap6_technische_bilanz.md) | — | Lücke ~12 OOM zu Kernfusion; kein Physikverbot — **✅ Abgeschlossen** |
+| 7 | [AP7 — Konsistenz](fakten/theorie/rt43_ap7_konsistenz.md) | — | ✅ konsistent mit RT-33/34/40/41/42 — **✅ Abgeschlossen** |
+
+---
+
+## RT-44 QM als RFT-Substruktur (Nov 2026)
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Wasserstoffspektrum](fakten/theorie/rt44_ap1_wasserstoffspektrum.md) | A3, A4 | E_n=−13,6/n² eV aus A3 (Phasenschluss); Quantisierung kein Postulat — **✅ Abgeschlossen** |
+| 2 | [AP2 — Interferenz](fakten/theorie/rt44_ap2_interferenz.md) | A1, A2, A4 | I(Δφ)=4I₀·ε(Δφ); ε=Kohärenzmaß — **✅ Abgeschlossen** |
+| 3 | [AP3 — Unschärfe](fakten/theorie/rt44_ap3_unschaerfe.md) | A1, A4 | Δx·Δp≥ħ/2 aus Fourier+A4; kein Postulat — **✅ Abgeschlossen** |
+| 4 | [AP4 — Born-Regel](fakten/theorie/rt44_ap4_born_regel.md) | A2, A_Born | A_Born = irreduzibles Postulat (analog A5, A8); Gleasons Theorem — **✅ Abgeschlossen** |
+| 5 | [AP5 — Dekohärenz](fakten/theorie/rt44_ap5_dekohärenz.md) | A4, A5 | Messprozess = ε: (0,1)→1; τ_D=1/β — **✅ Abgeschlossen** |
+| 6 | [AP6 — Spin](fakten/theorie/rt44_ap6_spin.md) | A7, A9 | Spin = Zweimoden-Resonator; A9_Spin: G_sync×SU(2)/U(1) — **✅ Abgeschlossen** |
+| 7 | [AP7 — Verschränkung](fakten/theorie/rt44_ap7_verschraenkung.md) | A6, A8 | Bell |S|_RFT=2√2 (QM-äquivalent); nichtlokale Phasenkorrelation — **✅ Abgeschlossen** |
+
+---
+
+## RT-45 Energie als gerichtete Größe (Nov 2026)
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Skalarität](fakten/theorie/rt45_ap1_skalaritaet.md) | A5 | Skalarität nur Näherung; ART T^00 rahmenabhängig — **✅ Abgeschlossen** |
+| 2 | [AP2 — A5 Feldtheorie](fakten/theorie/rt45_ap2_a5_feldtheorie.md) | A5 | A5 = strukturelle Erweiterung; Grenzfall: ε=1,∇Δφ=0 → Standard — **✅ Abgeschlossen** |
+| 3 | [AP3 — Kosmologische Konstante](fakten/theorie/rt45_ap3_kosmologische_konstante.md) | A5 | Λ-Problem = Gradientenproblem: ∇ρ=0 → unsichtbar (A5) — **✅ Abgeschlossen** |
+| 4 | [AP4 — ρ≥0 strukturell](fakten/theorie/rt45_ap4_rho_positiv.md) | A4, A5 | ρ≥0 universal für alle RFT-Metriken; Theorem aus A4+A5 — **✅ Abgeschlossen** |
+| 5 | [AP5 — Falsifizierbarkeit](fakten/theorie/rt45_ap5_falsifizierbarkeit.md) | A5 | GW-Winkel ε², CMB-Gradient, l_c∝1/γ² — **✅ Abgeschlossen** |
+| 6 | [AP6 — Konsistenz](fakten/theorie/rt45_ap6_konsistenz.md) | — | ✅ konsistent RT-36/40/41/42/43/44 — **✅ Abgeschlossen** |
+
+---
+
+## RT-47 Distinktive Signaturen in CERN-Daten (Nov 2026)
+
+| # | Dokument | Axiome | Beschreibung |
+|---|----------|--------|-------------|
+| 1 | [AP1 — Anomalie-Katalog](fakten/theorie/rt47_ap1_anomalie_katalog.md) | A3, A7 | Priorität: Koide (0 Parameter), g−2 (1 Parameter), Neutrinos — **✅ Abgeschlossen** |
+| 2 | [AP2 — Koide-Formel](fakten/theorie/rt47_ap2_koide_formel.md) | A3, A7 | Q=2/3 aus dreifach-Resonanz Δφ=2π/3; kein freier Parameter — **✅ Abgeschlossen** |
+| 3 | [AP3 — Vorhersage vs. SM](fakten/theorie/rt47_ap3_vorhersage_vs_sm.md) | A3, A7 | Q_Neutrinos=2/3; Δa_τ≈2,8×10⁻⁷ (Belle II) — **✅ Abgeschlossen** |
+| 4 | [AP4 — CERN/PDG-Vergleich](fakten/theorie/rt47_ap4_vergleich_cern_daten.md) | — | PDG 2022: Q=0,66661 (<1σ von 2/3); Stufe 2 — **✅ Abgeschlossen** |
+| 5 | [AP5 — Falsifikation](fakten/theorie/rt47_ap5_falsifikation.md) | — | F1–F4 pre-registriert — **✅ Abgeschlossen** |
+| 6 | [AP6 — Robustheit](fakten/theorie/rt47_ap6_robustheit.md) | — | Q stabil über alle PDG-Versionen; neue Vorhersage Q_Neutrinos=2/3 — **✅ Abgeschlossen** |
+| 7 | [AP7 — Dokumentation](fakten/theorie/rt47_ap7_dokumentation.md) | — | Manuskriptziel: *PRL*; Belle II Anfrage — **✅ Abgeschlossen** |
+
+---
+
+## RT-48 RFT-Raum-Zeit-Konstante (Nov 2026)
+
+**Γ_RFT = c²/(πħ) ≈ 2.71e+50 Hz/kg**
+
+| # | Dokument | Beschreibung |
+|---|----------|-------------|
+| 1 | [AP1 — ℝ⁺× Skaleninvarianz](fakten/theorie/rt48_ap1_skaleninvarianz.md) | ℝ⁺× = echte Symmetrie (nicht Eichredundanz); Bruch durch Materiesektor (Koide) — **✅** |
+| 2 | [AP2 — Planck-Skala K1](fakten/theorie/rt48_ap2_planck_skala.md) | f_P/π ≈ 5.9e+42 Hz; strukturell motiviert; G-limitiert (10⁻⁵) — **✅** |
+| 3 | [AP3 — Elektronenmasse K2](fakten/theorie/rt48_ap3_elektronenmasse.md) | ν_e = m_e·Γ_RFT ≈ 2.5e+20 Hz; intern via RT-47 (Koide→m_e→ν₀) — **✅** |
+| 4 | [AP4 — Spontaner Bruch K3](fakten/theorie/rt48_ap4_spontaner_skalenbruch.md) | Negativergebnis: K3 im Vakuumsektor nicht realisierbar (A4 schließt m²<0 aus) — **✅** |
+| 5 | [AP5 — Synthese](fakten/theorie/rt48_ap5_synthese.md) | Γ_RFT definiert; Kette A3+A7→m_e→ν₀ bei RT-51 geschlossen — **✅** |
+| — | [Kerndokument](fakten/theorie/rt48_raum_zeit_konstante.md) | Vollständige Zusammenfassung RT-48 — **✅** |
+
+
+---
+
 ## Lizenz
 
 Dieses Projekt steht unter der **RFT-Lizenz 1.4**
@@ -395,3 +466,4 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 ---
 
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
+
