@@ -1,7 +1,7 @@
 # RFT — Offene Forschungsaufgaben
 
 Generiert: August 2026
-Aktualisiert: November 2026
+Aktualisiert: November 2026 (RT-43/44/45/49/50)
 Status: Aktiv
 
 ---
@@ -2295,5 +2295,42 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 *RT-48 — DominicReneSchu/RFT — November 2026 (v1.0)*
 
 
+---
 
+## Kategorie 11: Offene Folgefragen aus RT-43/44/45
+
+## RT-49 — Relativistische Formulierung von A5 und Bell-Nichtlokalität
+
+**Version:** 1.0 – Entwurf
+**Datum:** November 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋 AP3 📋
+**Vorgänger:** RT-44 AP7 (Bell QM-äquivalent, offen: formaler Beweis), RT-45 AP2 (A5 als Vierervektor offen)
+**Motivation:** Entstanden aus RT-44 AP7 (Verschränkung) und RT-45 AP2 (A5-Formulierung).
+
+**Zielsetzung:**
+1. **AP1:** A5 (Energierichtung) als Lorentz-kovarianten Viererstrom J^μ_E = (ρ_E, E⃗/c) formulieren. Transformationsregeln unter Lorentz-Boost bestimmen. Konsistenz mit T^μν der ART prüfen.
+2. **AP2:** Formalen Beweis, dass nichtlokale Phasenkorrelationen (RT-44 AP7: Δφ_A + Δφ_B = π) mit lokaler Kausalität (A6/A8) konsistent sind. Analogie zur QFT-Behandlung von Bell-Nichtlokalität.
+3. **AP3:** Dirac-Gleichung als relativistischer Grenzfall der RFT ableiten oder als Brücke B₂ (analog zu B₁ für SRT in RT-40/41) formulieren.
+
+**Erfolgskriterium:** A5 lorentz-kovariant; Bell-Konsistenz formal; Dirac-Brücke skizziert.
+
+---
+
+## RT-50 — Quantitative Λ-Berechnung: RFT-Vakuumstruktur
+
+**Version:** 1.0 – Entwurf
+**Datum:** November 2026
+**Status:** 🔄 Offen — AP1 📋 AP2 📋
+**Vorgänger:** RT-45 AP3 (konzeptionelle Auflösung des Λ-Problems), RT-42 (Phasendynamik)
+**Motivation:** RT-45 AP3 löst das Λ-Problem konzeptionell. Die quantitative Frage bleibt: Kann die RFT ρ_Λ^obs ~ 10⁻²⁶ kg/m³ aus ersten Prinzipien berechnen?
+
+**Zielsetzung:**
+1. **AP1:** Renormierungsschema für Vakuumenergie im RFT-Rahmen entwickeln. Frage: Wie muss die Normalordnung angepasst werden, damit homogene Beiträge per A5 herausfallen?
+2. **AP2:** Phasengradient-Stressenergietensor T^μν_grad = ∂_μΔφ · ∂_νΔφ · f_RFT² berechnen. Vergleich mit beobachtetem ρ_Λ^obs.
+
+**Erfolgskriterium:** Entweder quantitative Übereinstimmung mit ρ_Λ^obs aus RFT-Parametern — oder präzise Aussage, welche zusätzliche Eingabe nötig ist.
+
+---
+
+*Kategorie 11 — DominicReneSchu/RFT — November 2026 (aus RT-43/44/45)*
 
