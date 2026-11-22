@@ -6,6 +6,18 @@
 
 ---
 
+## Ehrlicher Status
+
+> **Identifikation, keine Ableitung (analog RT-48, RT-53):**
+> Die Identifikation ε(x^μ) ≡ −g_tt(x^μ) ist eine **Brücke B_grav** —
+> eine minimal notwendige Erweiterung, die g_tt als ε-Feld setzt.
+> Sie ist strukturell motiviert (ε=0 ↔ Horizont ↔ Entkopplung, aus A4),
+> aber nicht zwingend aus A1–A9 ableitbar ohne ART als Kalibrierungsvorgabe.
+>
+> Status: **RFT-intern motiviert; ART-Konsistenz gezeigt; zwingende Ableitung offen.**
+
+---
+
 ## Das Zentralergebnis
 
 Jede Raumzeit-Lösung der Einsteinschen Feldgleichungen lässt sich als
@@ -142,3 +154,4 @@ RT-57 offen, aber RT-56 nicht widerlegt.
 ---
 
 *RT-56 — DominicReneSchu/RFT — November 2026*
+
