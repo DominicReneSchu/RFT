@@ -459,6 +459,18 @@ Formal applications of RFT to cosmology (RT-42, Sep 2026):
 
 ---
 
+## RT-50 Quantitative Λ Calculation: RFT Vacuum Structure (Nov 2026)
+
+**Central finding: Ω_Λ = ε₀ = cos²(Δφ₀/2) = 0.6840 → Δφ₀ = 68.4°**
+
+| # | Document | Description |
+|---|----------|-------------|
+| 1 | [AP1 — Renormalisation](facts/theory/rt50_ap1_renormalisation.md) | Structural, not subtractive: ∇ρ=0 → inert (A5); 140 OOM resolved — **✅** |
+| 2 | [AP2 — Λ Calculation](facts/theory/rt50_ap2_lambda_calculation.md) | Ω_Λ=ε₀; dark energy = coupling efficiency; Λ_RFT=Λ_obs — **✅** |
+| — | [Main document](facts/theory/rt50_dark_energy_vacuum.md) | Full RT-50 summary — **✅** |
+
+---
+
 ## License
 
 This project is licensed under the **RFT-License 1.4**
@@ -474,5 +486,6 @@ This project is licensed under the **RFT-License 1.4**
 ---
 
 © Dominic-René Schu — Resonance Field Theory 2025/2026
+
 
 
