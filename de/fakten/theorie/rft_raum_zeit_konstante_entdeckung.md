@@ -1,19 +1,31 @@
 # Die RFT-Raum-Zeit-Kopplung Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.0 — überarbeitet nach DeepSeek-Analyse)*
+*Dominic-René Schu, November 2026 (v2.3 — Statusformulierung nach DeepSeek, RFT-intern vs. etabliert)*
 
 ---
 
 ## Vorab: Ehrlicher Status
 
-> **Strukturell motivierte Zeitdefinition auf Basis einer empirisch kalibrierten Massenskala
-> (Koide-Formel), mit expliziten Falsifikationskriterien, aber ohne unabhängige
-> metrologische Realisierung.**
+> **Strukturell motivierte Zeitdefinition auf Basis einer RFT-internen, aber nicht
+> unabhängig etablierten Massenskala, mit expliziten Falsifikationskriterien,
+> aber ohne metrologische Realisierung und ohne unabhängige Bestätigung der Koide-Ableitung.**
+>
+> *(Formulierung nach DeepSeek-Analyse, Nov 2026)*
 
 Das ist kein Negativbefund — es ist der Stand, den RT-48 als möglichen Ausgang vorgesehen
 hatte (AP5, Negativziel). Dieser Abschnitt erklärt, warum dieser Status dennoch
 einen echten konzeptionellen Fortschritt gegenüber Cäsium darstellt — und wo die
 Grenzen liegen.
+
+**Zentrale Unterscheidung für das gesamte Dokument:**
+
+| Begriff | Bedeutung |
+|---------|----------|
+| *RFT-interne Ableitung* | Formal konsistent mit A1–A9 der RFT; strukturell motiviert |
+| *Physikalisch etablierte Ableitung* | Im Hauptstrom der Physik akzeptiert; unabhängig bestätigt |
+
+Die Kette A3+A7 → m_e → ν₀ ist **RFT-intern abgeleitet**.
+Ob sie **physikalisch etabliert** ist, entscheiden F-Γ1 und F-Γ4.
 
 ---
 
@@ -239,6 +251,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
