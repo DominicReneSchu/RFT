@@ -1,6 +1,6 @@
 # Die RFT-Raum-Zeit-Kopplung Γ_RFT = c²/(πħ)
 
-*Dominic-René Schu, November 2026 (v2.6 — Rechenfehler 67→19 Halbierungen; Sekundendefinition formal präzisiert (ν₀ primär, N kein Integer)*
+*Dominic-René Schu, November 2026 (v2.7 — Rechenfehler 67→19 Halbierungen; Sekundendefinition formal präzisiert (ν₀ primär, N kein Integer)*
 
 ---
 
@@ -289,6 +289,7 @@ Das ist ein **spezifischer Test der RFT-Struktur**, nicht nur der Koide-Relation
 
 *Dominic-René Schu — Resonanzfeldtheorie 2026*
 *v2.2: F-Γ4 (Q_Neutrinos = 2/3) als spezifischer RFT-Strukturtest ergänzt; m_e-Status: "RFT-intern abgeleitet, unabhängige Bestätigung ausstehend"; F-Γ1/F-Γ4-Unterscheidung explizit*
+
 
 
 
