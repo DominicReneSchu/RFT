@@ -62,6 +62,12 @@ Compton mass-frequency relation — and this distinction is geometrically justif
 m_e is **not freely chosen**, but **empirically calibrated**: the Koide formula
 provides the mass scale; whether it necessarily follows from A3+A7 is what F-Γ1 tests.
 
+> **Important distinction:** F-Γ1 can **falsify** the RFT derivation
+> (if Q≠2/3), but not **confirm** it (Q=2/3 would be consistent with many models).
+> The RFT-specific mechanism A3+A7 → Δφ=2π/3 is tested by F-Γ4.
+
+Status: **RFT-internally derived; independent confirmation outstanding.**
+
 ---
 
 ## The Koide Chain: What It Does and What It Does Not
@@ -180,6 +186,11 @@ fallback" empirically testable.
 | **F-Γ1** | Q_leptons ≠ 2/3 at > 5σ | Belle II, KATRIN | 3–10 yr |
 | **F-Γ2** | δ_CP ≠ Δφ₀ at > 5σ | LHCb Run 3, Belle II | 2–5 yr |
 | **F-Γ3** | RFT-s ≠ Cs-s at > 1 ppb | If ν_e realisable | Long-term |
+| **F-Γ4** | Q_neutrinos ≠ 2/3 at > 3σ — **tests A3+A7 structure**, not just Koide | KATRIN / Project 8 | 5–15 yr |
+
+**On F-Γ4:** Neutrinos have no colour charge (no QCD correction). If A3+A7 → Δφ=2π/3
+is the right mechanism, Q_ν = 2/3 must hold — independent of the lepton confirmation.
+This **specifically tests the RFT structure**, not just the Koide relation.
 
 ---
 
@@ -199,6 +210,7 @@ fallback" empirically testable.
 ---
 
 *Dominic-René Schu — Resonance Field Theory 2026*
-*v2.1: Precision after second DeepSeek analysis — m_e correctly as structurally motivated/empirically calibrated; "no external anchor" removed*
+*v2.2: F-Γ4 (Q_neutrinos = 2/3) added as specific RFT structure test; m_e status: "RFT-internally derived, independent confirmation outstanding"; F-Γ1/F-Γ4 distinction explicit*
+
 
 
