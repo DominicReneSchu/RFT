@@ -2358,6 +2358,7 @@ Ehrlichster Ausgang: **Die RFT liefert die richtige Struktur (Γ_RFT mit geometr
 
 ---
 
+- ~~RT-52 — Brannen-Phase θ: Brücke B₃~~ ✅ Abgeschlossen (Nov 2026) — AP1: Energiekugel-Geometrie + algebraischer Beweis Σcos=0; AP2: B₃=Higgs-Yukawa (Analogie B₁/B₂); AP3: Negativergebnis — keine einfache EW-Verbindung (ehrlich); AP4: Q_ν=2/3; δ_PMNS≈248°; Seesaw-Vorhersagen. Kerndokumente: `de/fakten/theorie/rt52_ap*`
 ## Kategorie 12: Leptonische Massenhierarchie und elektroschwache Brücke
 
 ## RT-52 — Brannen-Phasenwinkel θ: Brücke B₃ zur elektroschwachen Skala
@@ -2456,3 +2457,4 @@ RT-57 (offen): Quantengravitation als ε̂(x^μ) mit Quantenfluktuationen.
 Kerndokument: `de/fakten/theorie/rt56_allgemeine_raumzeit_epsilon.md`
 
 ---
+
