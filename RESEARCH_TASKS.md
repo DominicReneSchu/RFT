@@ -2505,3 +2505,41 @@ Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
 **Offen:** Vollständige O3-CC-Spektren (G2001287, LIGO DCC, Login erforderlich) oder O3-Rohdaten (~300 GB).
 
 ---
+
+## RT-59 — Zeit als geometrische Ursprungsgröße: Mehrdimensionalität und kosmologischer Anker
+
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** 🔄 Offen
+**Vorgänger:** RT-48 (Γ_RFT), RT-50 (Ω_Λ), RT-56 (allgemeine Raumzeit), RT-58 (LIGO-Test)
+
+**Kernthese:**
+Die RFT beantwortet nicht nur *wie groß* die Zeit ist, sondern *was Zeit ist*:
+eine geometrisch definierte Größe mit festem kosmologischem Anker — symmetrisch zum Raum.
+
+**Arbeitspunkte:**
+- AP1: Zeit in zwei Dimensionen — Amplitude (ε) und Phase (Δφ), Analogie zur komplexen Zahlenebene
+- AP2: Mögliche weitere Zeitdimensionen — Konsequenzen und Falsifizierbarkeit
+- AP3: Urknall-Singularität als globaler Nullpunkt beider Größen (Raum und Zeit)
+- AP4: Raum-Zeit-Symmetrie: beide mit festem geometrischen Ursprung, beschreibbar in verschiedenen Koordinatensystemen
+- AP5: Verbindung zu kosmologischer ε-Hierarchie (RT-50) und B_grav (RT-56)
+
+**Kerndokument:** `de/fakten/theorie/rt59_zeit_geometrisch.md`
+
+---
+
+## RT-60 — LIGO O3 Vollständige Daten: Γ(f)-Folgeexperiment
+
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** 🔄 Offen (benötigt LIGO-Datenzugang)
+**Vorgänger:** RT-58 (Trend: 3.42σ → 1.99σ, noch nicht auflösbar)
+
+**Zielsetzung:** Vollständige O3-CC-Spektren für ε-Mittelung über Monate.
+
+**Datenzugang (einer der folgenden):**
+- LIGO DCC G2001287 `C_O3_HL.dat` (3.8 MB, Login erforderlich)
+- O3-Rohdaten über GWOSC (Login, ~300 GB)
+- LIGO Scientific Collaboration Kooperation
+
+**Analyseskript bereit:** `de/fakten/simulationen/gwosc/rt58_sgwb_analyse.py`
+
+---
