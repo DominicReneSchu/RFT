@@ -2570,3 +2570,38 @@ Euclid (ESA) soll $\Omega_\Lambda$ auf ~0.2% messen → $0.6847 \pm 0.0014$.
 Dann wäre $\Omega_\Lambda^\varphi = 0.6812$ bei **2.5σ** ausgeschlossen oder bestätigt.
 
 ---
+
+## RT-62 — Dreiheit Raum-Zeit-Materie: Γ_RFT als strukturelle Einheit
+
+**Version:** 1.0 | **Datum:** November 2026  
+**Status:** 🔄 Offen  
+**Vorgänger:** RT-48 (Γ_RFT), RT-59 (Zeit geometrisch), RT-61 (Goldener Schnitt)
+
+**Auslösender Gedanke:**
+Die Einheit von $\Gamma_\mathrm{RFT} = c^2/(\pi\hbar)$ [Hz/kg] zeigt eine untrennbare Dreiheit:
+- **Hz** → Zeit (Frequenz)
+- **kg** → Materie (Masse)  
+- **c²** → Raum (Lichtgeschwindigkeit² verknüpft Raum-Zeit)
+
+Mit der Schaffung von Zeit musste Materie entstehen, die sich dann in Raum ausdehnete.
+Alle drei Größen sind nicht unabhängig — sie sind Projektionen einer einzigen geometrischen Struktur.
+
+**Neue Konsequenz aus RT-59 (komplex. Zeitkoordinate):**
+
+$$\mathrm{Re}[z_t]^2 = \Omega_\Lambda = 0.6847 \qquad \mathrm{Im}[z_t]^2 = 1 - \Omega_\Lambda = 0.3153$$
+
+Gemessen: $\Omega_m + \Omega_r = 0.3090 \pm 0.0062$ → **Differenz 1.02σ** (konsistent!)
+
+Die Aufteilung des Universums in dunkle Energie und Materie+Strahlung **ist** die Zerlegung der komplexen Zeitkoordinate $z_t = e^{i\Delta\varphi/2}$ in Real- und Imaginärteil.
+
+**Arbeitspunkte:**
+- AP1: Ableitung der Dreiheit aus den Axiomen A1–A9 und den Brücken B1–B3
+- AP2: $\mathrm{Im}[z_t]^2 = \Omega_m + \Omega_r$ als RFT-Vorhersage — Abhängigkeit von Messgenauigkeit
+- AP3: Kosmologische Evolution: $\mathrm{Im}[z_t]^2 \to 0$ als Materie verdünnt wird ($\varepsilon \to 1$)
+- AP4: Urknall $\mathrm{Im}[z_{BB}]^2 = 1$: reine Materie/Energie, kein Vakuumanteil — konsistent mit frühem Universum
+- AP5: Verbindung zu RT-50 ($\Omega_\Lambda = \varepsilon_0$) und RT-57 (Urknall als $\varepsilon=0$)
+
+**Falsifikation F-62-1:**  
+Präzisionsmessung $\Omega_m$ durch Euclid/DESI auf <0.1% → RFT sagt $\Omega_m + \Omega_r = \sin^2(\Delta\varphi_0/2) = 0.3153$.
+
+---
