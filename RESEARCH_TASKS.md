@@ -2477,22 +2477,39 @@ Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
 
 ---
 
-## RT-58 — LIGO/GWOSC: Stochastische GW-Hintergrund-Suche als RFT-Test
+## RT-58 — LIGO/GWOSC: Γ(f)-Analyse GW150914 als RFT-Test
 
-**Version:** 1.0 | **Datum:** November 2026
-**Status:** 🔄 Offen (benötigt ~4 GB Strain-Daten von gwosc.org)
+**Version:** 1.1 | **Datum:** November 2026
+**Status:** 🔄 Analyseskript bereit — Daten lokal vorhanden, Analyse noch ausstehend
 **Vorgänger:** RT-46 (Doppelpendel, konsistent), RT-46-GWOSC (Negativergebnis, Diagnose)
 
-**Zielsetzung:** Teste ε(Δφ) = cos²(Δφ/2) an der LIGO-Überlapp-Reduktionsfunktion Γ(f).
+**Zielsetzung:** Teste ε(Δφ) = cos²(Δφ/2) an der LIGO-Kreuzkorrelationsfunktion Γ(f).
 
-**Γ(f) ∝ ∫dΩ [F+_H·F+_L + F×_H·F×_L] e^{2πif·Δt(Ω)}**
+**RFT-Vorhersage:** Γ_RFT(f) = cos²(πf / 2f₀), f₀ = c/(2·d_HL) ≈ 50 Hz
 
-Erster Nulldurchgang bei f≈50 Hz (H1-L1-Basislinie 3002 km).
-Die Hüllkurve hat strukturell cos²-Charakter — das ist die LIGO-Realisierung der RFT-Kopplung.
+**Datenstatus:**
+- Daten lokal: `H-H1_LOSC_4_V2-1126257414-4096.hdf5` (124 MB) + L1-Analogon
+- Zu groß für GitHub-Upload (> 100 MB Limit)
+- Analyseskript extrahiert automatisch 32s-Ereignisfenster (~500 KB) und speicherbar
 
-**Schritt 1:** `curl -L "https://gwosc.org/auxiliary/GW150914/H-H1_LOSC_4_V1-1126257414-4096.hdf5" -o h1.hdf5`
-**Schritt 2:** Kreuzspektrum H1×L1 → Γ(f)
-**Schritt 3:** Vergleich Γ(f) vs cos²(π·f·d/c)/Normierung
-Kerndokument: `de/fakten/theorie/rt46_gwosc_negativergebnis.md`
+**Analyseskript:** `de/fakten/simulationen/gwosc/rt58_extract_and_analyze.py`
+
+**Ausführung:**
+```bash
+pip install h5py numpy scipy matplotlib
+python rt58_extract_and_analyze.py \
+  --h1 H-H1_LOSC_4_V2-1126257414-4096.hdf5 \
+  --l1 L-L1_LOSC_4_V2-1126257414-4096.hdf5 \
+  --outdir rt58_output/
+```
+
+**Kerndokumentation:**
+- `de/fakten/simulationen/gwosc/rt58_ligo_analyse.md`
+- `en/facts/simulations/gwosc/rt58_ligo_analysis.md`
+
+**Wichtige Einschränkungen:**
+- GW150914 ist Einzelereignis — statistische Aussagekraft begrenzt
+- Für echten SGWB-Test: O3-Daten (Monate) erforderlich
+- B_grav-Status: ε = -g_tt ist Identifikation, nicht Ableitung aus A1–A9
 
 ---
