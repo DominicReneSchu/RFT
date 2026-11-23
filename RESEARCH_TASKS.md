@@ -2543,3 +2543,30 @@ eine geometrisch definierte Größe mit festem kosmologischem Anker — symmetri
 **Analyseskript bereit:** `de/fakten/simulationen/gwosc/rt58_sgwb_analyse.py`
 
 ---
+
+## RT-61 — Goldener Schnitt im kosmologischen Zeitraum: Zufall oder Struktur?
+
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** 🔄 Offen
+**Vorgänger:** RT-59 (Zeit als geometrische Ursprungsgröße)
+
+**Beobachtung (aus RT-59):**
+Das Verhältnis von zurückgelegter zu verbleibender Phase auf $S^1$:
+
+$$\frac{\pi - \Delta\varphi_0}{\Delta\varphi_0} = \frac{111.68°}{68.32°} = 1.634 \approx \varphi = 1.618\ (\mathrm{goldener\ Schnitt})$$
+
+**Wenn exakt:** $\Delta\varphi_0^\varphi = \pi/\varphi^2 = 68.75°$ → $\Omega_\Lambda^\varphi = \cos^2(\pi/2\varphi^2) = 0.6812$
+
+**Vergleich mit Messung:** $\Omega_\Lambda = 0.6847 \pm 0.0073$ → **Differenz 0.48σ** (konsistent!)
+
+**Arbeitspunkte:**
+- AP1: Ist das Zufall oder folgt $\Omega_\Lambda = \cos^2(\pi/2\varphi^2)$ aus den RFT-Axiomen?
+- AP2: Verbindung zur KAM-Theorie — goldener Schnitt als maximal stabile quasi-periodische Bahn auf $S^1$
+- AP3: Selbstähnlichkeit: $\varphi = 1 + 1/\varphi$ als Fixpunktgleichung der Zeitstruktur
+- AP4: Falsifikation F-φ-1: Präzisionsmessung $\Omega_\Lambda$ auf <0.1% Genauigkeit (Euclid-Satellit 2025+)
+
+**Falsifikation F-φ-1:**  
+Euclid (ESA) soll $\Omega_\Lambda$ auf ~0.2% messen → $0.6847 \pm 0.0014$.  
+Dann wäre $\Omega_\Lambda^\varphi = 0.6812$ bei **2.5σ** ausgeschlossen oder bestätigt.
+
+---
