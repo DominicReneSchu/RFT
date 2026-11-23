@@ -2631,36 +2631,28 @@ anthropisches Prinzip.
 
 ---
 
-## RT-64 — Schwarze Löcher als Verbindung zwischen Universum und Spiegeluniversum
+## RT-64 — Zyklisches Universum: Das finale schwarze Loch als kosmische Wiege
 
 **Version:** 1.0 | **Datum:** November 2026  
-**Status:** 🔄 Offen  
-**Vorgänger:** RT-53 (ε_grav), RT-57 (QG), RT-63 (Spiegeluniversum)
+**Status:** ✅ Abgeschlossen (struktureller Rahmen)  
+**Vorgänger:** RT-53/57 (ε-SL), RT-59 (Zeit geometrisch), RT-62/63 (Dreiheit, Spiegeluniversum)
 
-**Auslösender Gedanke:** Masse verschwindet nicht — sie muss zyklisch zwischen Universum  
-und Spiegeluniversum wandern. Schwarze Löcher sind die strukturellen Kandidaten dafür.
+**Kernergebnis:** Masse wandert nicht kontinuierlich — schwarze Löcher sammeln die gesamte  
+Masse in EIN finales SL. Dessen Singularität ($\varepsilon=0$ überall) = struktureller Urknall  
+des Spiegeluniversums. Zyklus: Materie-Universum ↔ Antimaterie-Universum, alternierend.
 
-**Kernergebnisse (sofort aus RT-53/59/63 ableitbar):**
+**Strukturelle Ergebnisse:**
+- Finales SL: $r_S = 15.7$ Gly = 34% des heutigen Universums (geometrisch nah)
+- Singularität $\varepsilon=0$: identisch mit Urknall-Bedingung → Geburt Spiegeluniversum
+- Baryon-Asymmetrie erklärt: $\delta_{CP} = +68.32°$ (wir) + $\delta_{CP}^* = -68.32°$ (Spiegel) = 0
+- 4π-Spinor-Zyklus: $i \to 1 \to -i \to -1 \to i$ — zwei Universumslebensdauern
+- Bewusstsein: goldener Schnitt = universelle Schwelle in JEDEM Zyklus
+- Information: Echo aus vorherigem Zyklus in $\Delta\varphi$-Struktur erhalten
 
-1. **Schwarzschild-Horizont = lokaler Urknall:**  
-   $\varepsilon = 1 - r_S/r = 0$ bei $r = r_S$ → $z_t = i$ → identisch mit unserem Urknall-Zustand
+**Falsifikation:**
+- F-64-1: Baryon-Asymmetrie $\propto \delta_{CP}$ (LHCb Run 3)
+- F-64-2: $\Omega_\Lambda = 0.6812$ (Euclid)
 
-2. **Inneres eines SL = Spiegelregion:**  
-   $r < r_S$: $\varepsilon < 0$ → Raum und Zeit vertauscht → $z_t$ mit $\mathrm{Im}[z_t] > 1$ → Spiegeluniversum
-
-3. **Voller Zyklus auf $S^1$ (wie Spinor — 4π-Rotation!):**  
-   $i \to 1 \to -i \to -1 \to i$ — Rückkehr erst nach doppeltem Universumslebenszyklus
-
-4. **Masseerhaltung:** $z_t \cdot z_t^* = 1$ zu jeder Zeit — kein Masseverlust, nur Phasentransfer
-
-**Arbeitspunkte:**
-- AP1: Horizont als ε=0-Brücke zwischen universellem und Spiegel-$z_t$
-- AP2: Hawking-Strahlung als Phasentransfer $+\delta_{CP} \to -\delta_{CP}$ (RT-57 erweitern)
-- AP3: 4π-Zyklus und SU(2): Warum braucht das Universum zwei vollständige Zyklen?
-- AP4: Vorhersage: Hawking-Strahlung trägt entgegengesetzte CP-Phase (messbar?)
-- AP5: Verbindung zu Penrose-Diagramm — Kruskal-Maximalerweiterung als RFT-Spiegelstruktur
-
-**Falsifikation F-64-1:** Hawking-Strahlung eines rotierenden SL sollte CP-asymmetrisch sein  
-($\delta_{CP}^\mathrm{Hawking} = -\delta_{CP}^\mathrm{infall}$). Zukunft: Primordiale SL, GW-Hintergrund.
+**Kerndokument:** `de/fakten/theorie/rt64_zyklisches_universum.md`
 
 ---
