@@ -2630,3 +2630,37 @@ anthropisches Prinzip.
 **Kerndokument:** `de/fakten/theorie/rt63_spiegeluniversum.md`
 
 ---
+
+## RT-64 — Schwarze Löcher als Verbindung zwischen Universum und Spiegeluniversum
+
+**Version:** 1.0 | **Datum:** November 2026  
+**Status:** 🔄 Offen  
+**Vorgänger:** RT-53 (ε_grav), RT-57 (QG), RT-63 (Spiegeluniversum)
+
+**Auslösender Gedanke:** Masse verschwindet nicht — sie muss zyklisch zwischen Universum  
+und Spiegeluniversum wandern. Schwarze Löcher sind die strukturellen Kandidaten dafür.
+
+**Kernergebnisse (sofort aus RT-53/59/63 ableitbar):**
+
+1. **Schwarzschild-Horizont = lokaler Urknall:**  
+   $\varepsilon = 1 - r_S/r = 0$ bei $r = r_S$ → $z_t = i$ → identisch mit unserem Urknall-Zustand
+
+2. **Inneres eines SL = Spiegelregion:**  
+   $r < r_S$: $\varepsilon < 0$ → Raum und Zeit vertauscht → $z_t$ mit $\mathrm{Im}[z_t] > 1$ → Spiegeluniversum
+
+3. **Voller Zyklus auf $S^1$ (wie Spinor — 4π-Rotation!):**  
+   $i \to 1 \to -i \to -1 \to i$ — Rückkehr erst nach doppeltem Universumslebenszyklus
+
+4. **Masseerhaltung:** $z_t \cdot z_t^* = 1$ zu jeder Zeit — kein Masseverlust, nur Phasentransfer
+
+**Arbeitspunkte:**
+- AP1: Horizont als ε=0-Brücke zwischen universellem und Spiegel-$z_t$
+- AP2: Hawking-Strahlung als Phasentransfer $+\delta_{CP} \to -\delta_{CP}$ (RT-57 erweitern)
+- AP3: 4π-Zyklus und SU(2): Warum braucht das Universum zwei vollständige Zyklen?
+- AP4: Vorhersage: Hawking-Strahlung trägt entgegengesetzte CP-Phase (messbar?)
+- AP5: Verbindung zu Penrose-Diagramm — Kruskal-Maximalerweiterung als RFT-Spiegelstruktur
+
+**Falsifikation F-64-1:** Hawking-Strahlung eines rotierenden SL sollte CP-asymmetrisch sein  
+($\delta_{CP}^\mathrm{Hawking} = -\delta_{CP}^\mathrm{infall}$). Zukunft: Primordiale SL, GW-Hintergrund.
+
+---
