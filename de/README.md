@@ -554,13 +554,21 @@ Dieses Projekt steht unter der **RFT-Lizenz 1.4**
 
 ---
 
+
+## 🔑 Kosmologische Zeitstruktur (November 2026)
+
+Die komplexe Zeitkoordinate $z_t = e^{i\Delta\varphi/2}$ zerlegt das Universum:
+
+$$\mathrm{Re}[z_t]^2 = \Omega_\Lambda = 0.6847 \qquad \mathrm{Im}[z_t]^2 = \Omega_m + \Omega_r \approx 0.3153$$
+
+Das Universum befindet sich am **goldenen Schnitt** seiner Entwicklung (62% zurückgelegt).  
+Schwarze Löcher verbinden Universum und Spiegeluniversum — der Zyklus ist spinoriell ($4\pi$).
+
+→ [RT-59: Zeit geometrisch](fakten/theorie/rt59_zeit_geometrisch.md)
+→ [RT-61: Goldener Schnitt](fakten/theorie/rt61_goldener_schnitt.md)
+→ [RT-63: Spiegeluniversum](fakten/theorie/rt63_spiegeluniversum.md)
+→ [RT-64: Zyklisches Universum](fakten/theorie/rt64_zyklisches_universum.md)
+
+---
+
 © Dominic-René Schu — Resonanzfeldtheorie 2025/2026
-
-
-
-
-
-
-
-
-
