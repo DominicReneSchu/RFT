@@ -2605,3 +2605,28 @@ Die Aufteilung des Universums in dunkle Energie und Materie+Strahlung **ist** di
 Präzisionsmessung $\Omega_m$ durch Euclid/DESI auf <0.1% → RFT sagt $\Omega_m + \Omega_r = \sin^2(\Delta\varphi_0/2) = 0.3153$.
 
 ---
+
+## RT-63 — Spiegeluniversum, Informationserhaltung und Bewusstsein im goldenen Schnitt
+
+**Version:** 1.0 | **Datum:** November 2026  
+**Status:** ✅ Abgeschlossen (struktureller Rahmen)  
+**Vorgänger:** RT-59, RT-61, RT-62
+
+**Auslösende Beobachtung:** Die 5-Dimensionalität der RFT-Raumzeit + Goldener-Schnitt-Position  
+implizieren ein Spiegeluniversum, Informationserhaltung und ein geometrisch begründetes  
+anthropisches Prinzip.
+
+**Kernergebnisse:**
+- $Z_2$-Symmetrie $\phi_t \to -\phi_t$ auf $S^2$: Spiegeluniversum mit $\delta_{CP}^* = -68.32°$
+- Gemeinsamer Ursprung: $z_{BB} \cdot z_{BB}^* = i \cdot (-i) = 1$ (reell)
+- Informationserhaltung: $\Delta\varphi$ geometrisch konserviert; Übergang ins Vakuum unitär
+- Bewusstsein am goldenen Schnitt: KAM-Stabilität → anthropisches Prinzip mit RFT-Begründung
+- CP-Verletzung = einziges messbares Echo des Spiegeluniversums
+
+**Falsifikation:**
+- F-63-1: Baryon-Asymmetrie vs. $2\delta_{CP} = 136.64°$
+- F-63-2: $\Omega_\Lambda = 0.6812$ (Euclid)
+
+**Kerndokument:** `de/fakten/theorie/rt63_spiegeluniversum.md`
+
+---
