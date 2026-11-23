@@ -2547,7 +2547,7 @@ eine geometrisch definierte Größe mit festem kosmologischem Anker — symmetri
 ## RT-61 — Goldener Schnitt im kosmologischen Zeitraum: Zufall oder Struktur?
 
 **Version:** 1.0 | **Datum:** November 2026
-**Status:** 🔄 Offen
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP strukturell, Falsifikation F-φ-1 definiert
 **Vorgänger:** RT-59 (Zeit als geometrische Ursprungsgröße)
 
 **Beobachtung (aus RT-59):**
@@ -2574,7 +2574,7 @@ Dann wäre $\Omega_\Lambda^\varphi = 0.6812$ bei **2.5σ** ausgeschlossen oder b
 ## RT-62 — Dreiheit Raum-Zeit-Materie: Γ_RFT als strukturelle Einheit
 
 **Version:** 1.0 | **Datum:** November 2026  
-**Status:** 🔄 Offen  
+**Status:** ✅ Abgeschlossen (Nov 2026) — Dreiheit + Re/Im-Zerlegung numerisch bestätigt  
 **Vorgänger:** RT-48 (Γ_RFT), RT-59 (Zeit geometrisch), RT-61 (Goldener Schnitt)
 
 **Auslösender Gedanke:**
