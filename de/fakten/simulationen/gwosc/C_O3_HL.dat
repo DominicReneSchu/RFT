@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Welcome To The CILogon OpenID Connect Authorization Service</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon-ligo.ico">
+    <link rel="stylesheet" href="/include/fontawesome-7.1.0.min.css" />
+    <link rel="stylesheet" href="/include/solid.min.css" />
+    <link rel="stylesheet" href="/include/bootstrap-4.6.2.min.css" />
+    <link rel="stylesheet" href="/include/bootstrap-select-1.13.18.min.css" />
+    <link rel="stylesheet" href="/include/cilogon-1.2.0.css" />
+    <style>body{font-family:arial,tahoma,verdana,helvetica,sans-serif;font-size:.9em;color:#000;background-color:#fff}a{color:#369;border-bottom:1px dotted #369;text-decoration:none}a:link{text-decoration:none}a:hover{color:#369;border-bottom:1px solid #369;text-decoration:none}
+.card-header{background-color:#f2f2f2}.footer a:link{color:#369;border-bottom:1px dotted #369;text-decoration:none}.footer a:hover{color:#369;border-bottom:1px solid #369;text-decoration:none}.footer a:visited{color:#369;border-bottom:1px solid #369;text-decoration:none}
+.btn.btn-primary{color:#fff;background-color:#369}.btn.btn-primary:hover,.btn.btn-primary.active,.btn.btn-primary.active.focus,.btn.btn-primary.active:focus,.btn.btn-primary.active:hover,.btn.btn-primary:active,.btn.btn-primary:active.focus,.btn.btn-primary:active:focus,.btn.btn-primary:active:hover{background-color:#47a;color:#fff}
+div.logoheader{background:0 0;height:64px;margin-bottom:8px}div.logoheader h1{background:transparent url("/images/ligo-logo.png") no-repeat top left;margin-top:0;margin-left:0;width:86;height:64;float:left}div.skincilogonlogo{display:inline}</style>
+  </head>
+  <body>
+    <header>
+    <div class="skincilogonlogo">
+      <a target="_blank" href="https://www.cilogon.org/faq"><img src="/images/poweredby32.png" alt="CILogon" title="CILogon Service" /></a>
+    </div>
+
+    <div class="logoheader">
+       <h1 aria-label="Welcome To The CILogon OpenID Connect Authorization Service"><span>[CILogon Service]</span></h1>
+    </div>
+    
+    </header>
+    <div class="mt-4 container-fluid" role="main" id="mainbootstrap"> <!-- Main Bootstrap Container -->
+    
+      <noscript>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+          <span>Notice: JavaScript is not enabled. The CILogon Service requires JavaScript for functionality. <a target="_blank" href="https://enable-javascript.com/" class="alert-link">Please Enable JavaScript</a>.
+          </span>
+        </div>
+      </noscript>
+        
+      <section title="Consent to Attribute Release" id="id-section-oidcconsent">
+      <div class="card col-sm-10 offset-sm-1" id="id-div-oidcconsent">
+        <h5 class="card-header text-center">
+          <a class="d-block" data-toggle="collapse"
+            href="#collapse-oidcconsent" aria-expanded="true" aria-controls="collapse-oidcconsent"
+            id="heading-oidcconsent">
+            <i class="fa-solid fa-chevron-down fa-pull-end"></i>
+            Consent to Attribute Release
+          </a>
+        </h5>
+        <div id="collapse-oidcconsent" class="collapse show" >
+            <div class="card-body px-5">
+              <div class="card-text my-2" id="id-consent-attribute-release">
+                <a target="_blank" href="https://www.ligo.org">LIGO Federated Authentication System</a> requests access to the following information. If you do not approve this request, do not proceed.
+              </div> <!-- end row -->
+              <ul>
+        <li>Your CILogon user identifier</li><li>Your name</li><li>Your email address</li><li>Your username and affiliation from your identity provider</li></ul>
+            </div> <!-- end card-body -->
+        
+        </div> <!-- end collapse-... -->
+      </div> <!-- end card -->
+      </section>
+        
+      <div class="card text-center col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 mt-3">
+        <h4 class="card-header" id="heading-selectanidp">Select an Identity Provider</h4>
+        <div class="card-body">
+          <form action="/authorize/" method="post">
+            <div class="form-group">
+            <select name="providerId" id="providerId"
+                aria-label="Select an Identity Provider"
+                autofocus="autofocus"
+                class="selectpicker mw-100"
+                data-size="20" data-width="fit"
+                data-none-selected-text="Select an IdP"
+                data-live-search="true"
+                data-live-search-placeholder="Type to search"
+                data-live-search-normalize="true">
+                
+                <option data-tokens="https://login.ligo.org/idp/shibboleth" value="https://login.ligo.org/idp/shibboleth" selected="selected">LIGO Scientific Collaboration</option>
+                <option data-tokens="http://orcid.org/oauth/authorize" value="http://orcid.org/oauth/authorize">ORCID</option>
+                <option data-tokens="http://google.com/accounts/o8/id" value="http://google.com/accounts/o8/id">Google</option>
+                <option data-tokens="http://login.microsoftonline.com/common/oauth2/v2.0/authorize" value="http://login.microsoftonline.com/common/oauth2/v2.0/authorize">Microsoft</option>
+                <option data-tokens="http://github.com/login/oauth/authorize" value="http://github.com/login/oauth/authorize">GitHub</option>
+                <option data-divider="true" aria-label="divider"></option>
+            </select>
+            <a href="#" tabindex="0" data-trigger="hover click"
+            class="helpcursor" role="tooltip" aria-label="Selection"
+            data-toggle="popover" data-html="true"
+            title="Selecting an Identity Provider" id="id-a-select-help"
+            data-content="<p>
+            CILogon facilitates secure access to CyberInfrastructure (CI). In order to use the CILogon Service, you must first select an identity provider. An identity provider (IdP) is an organization where you have an account and can log on to gain access to online services.
+        </p>
+        <p>If you are a faculty, staff, or student member of a university or college, please select it as your identity provider. If your school is not listed, please see <a target='_blank' href='https://www.cilogon.org/selectidp'>How to Select an Identity Provider</a>.
+        </p>
+        <p>If available, you can also try one of the social identity providers such as ORCID or Google.</p>"><i class="fa
+            fa-question-circle"></i></a>
+            </div> <!-- end div form-group -->
+            
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                id="keepidp" name="keepidp"  />
+                <label class="form-check-label" id="id-label-remember"
+                for="keepidp">Remember this selection</label>
+                <a href="#" tabindex="0" data-trigger="hover click"
+                class="helpcursor" role="tooltip" aria-label="Remember"
+                data-toggle="popover" data-html="true" id="id-a-bypass-help"
+                data-content="Check this box to bypass the welcome page on subsequent visits and proceed directly to the selected identity provider. You will need to clear your browser's cookies to return here."><i class="fa
+                fa-question-circle"></i></a>
+              </div> <!-- end div form-check -->
+            </div> <!-- end div form-group -->
+            <input type="hidden" name="CSRF" value="572447eeb438b0523c14a51e73c56589" /><input type="hidden" name="skinname" id="skinname" value="ligo" /><input type="hidden" name="previouspage" value="WAYF" />
+            <div class="form-group">
+              <div class="form-row align-items-center justify-content-center">
+                <div class="col-auto">
+                  <button type="submit" name="submit"
+                  class="btn btn-primary submit"
+                  title="Log On"
+                  value="Log On" id="wayflogonbutton">Log On</button>
+                </div> <!-- end col-auto -->
+        
+              </div> <!-- end div form-row align-items-center -->
+            </div> <!-- end div form-group -->
+        
+        <p class="privacypolicy">
+        By logging on to this site, you agree to the <a target="_blank" href="https://www.cilogon.org/privacy">privacy policy</a>.
+        </p>
+
+          </form>
+
+        </div> <!-- End card-body -->
+      </div> <!-- End card -->
+        
+    </div> <!-- Close Main Bootstrap Container -->
+    <footer class="footer">
+        <p>For questions about this site, please see the <a target="_blank" href="https://www.cilogon.org/faq">FAQs</a> or send email to <a href="mailto:help@cilogon.org">help@cilogon.org</a>.</p>
+        <p>When using the CILogon Service, be mindful of
+        <a target="_blank" href="https://www.cilogon.org/aup">your responsibilities</a>.</p>
+        <p><a target="_blank" href="https://www.cilogon.org/acknowledgements">Acknowledgements of support</a> for this site.</p>
+    </footer>
+
+    <script src="/include/jquery-3.7.1.min.js"></script>
+    <script src="/include/bootstrap-4.6.2.bundle.min.js"></script>
+    <script src="/include/bootstrap-select-1.13.18.min.js"></script>
+    <script>$(document).ready(function(){ $('[data-toggle="popover"]').popover(); });</script>
+    <script src="/include/cilogon-1.2.0.js"></script>
+
+  </body>
+</html>
