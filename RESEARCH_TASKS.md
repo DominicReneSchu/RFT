@@ -1485,7 +1485,7 @@ Der ehrlichste Ausgang wäre: A5 ist kompatibel mit der Standard-Feldtheorie im 
 
 **Version:** 1.1 – Entwurf (ergänzt)
 **Datum:** 19. September 2026
-**Status:** Offen
+**Status:** 🔄 Teilweise abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3(Pipeline) ✅ AP4(Synth.) ✅ AP5(Echte Daten) ⚠️ extern
 **Vorgänger:** RT-38 (Öffentliches Experimentierprotokoll Doppelpendel, abgeschlossen), RT-08 (Doppelpendel: Experimentaldaten vs. RFT-Vorhersage, abgeschlossen)
 **Verwandt:** RT-02 ($G_{\text{sync}}$-Gruppenstruktur), RT-43 (Warpmetrik), RT-45 (Energie als gerichtete Größe)
 
@@ -2476,4 +2476,5 @@ Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
 **Offen:** Volle QG = ε̂(x^μ, Δφ(x^μ)) noch ungelöst (Quantengravitation + Materie)
 
 ---
+
 
