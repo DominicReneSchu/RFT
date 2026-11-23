@@ -2477,5 +2477,22 @@ Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
 
 ---
 
+## RT-58 — LIGO/GWOSC: Stochastische GW-Hintergrund-Suche als RFT-Test
 
+**Version:** 1.0 | **Datum:** November 2026
+**Status:** 🔄 Offen (benötigt ~4 GB Strain-Daten von gwosc.org)
+**Vorgänger:** RT-46 (Doppelpendel, konsistent), RT-46-GWOSC (Negativergebnis, Diagnose)
 
+**Zielsetzung:** Teste ε(Δφ) = cos²(Δφ/2) an der LIGO-Überlapp-Reduktionsfunktion Γ(f).
+
+**Γ(f) ∝ ∫dΩ [F+_H·F+_L + F×_H·F×_L] e^{2πif·Δt(Ω)}**
+
+Erster Nulldurchgang bei f≈50 Hz (H1-L1-Basislinie 3002 km).
+Die Hüllkurve hat strukturell cos²-Charakter — das ist die LIGO-Realisierung der RFT-Kopplung.
+
+**Schritt 1:** `curl -L "https://gwosc.org/auxiliary/GW150914/H-H1_LOSC_4_V1-1126257414-4096.hdf5" -o h1.hdf5`
+**Schritt 2:** Kreuzspektrum H1×L1 → Γ(f)
+**Schritt 3:** Vergleich Γ(f) vs cos²(π·f·d/c)/Normierung
+Kerndokument: `de/fakten/theorie/rt46_gwosc_negativergebnis.md`
+
+---
