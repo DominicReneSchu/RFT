@@ -556,13 +556,21 @@ This project is licensed under the **RFT-License 1.4**
 
 ---
 
+
+## 🔑 Cosmological Time Structure (November 2026)
+
+The complex time coordinate $z_t = e^{i\Delta\varphi/2}$ decomposes the universe:
+
+$$\mathrm{Re}[z_t]^2 = \Omega_\Lambda = 0.6847 \qquad \mathrm{Im}[z_t]^2 = \Omega_m + \Omega_r \approx 0.3153$$
+
+The universe is at the **golden ratio** point (62% of its journey complete).  
+Black holes connect universe and mirror universe — the cycle is spinorial ($4\pi$).
+
+→ [RT-59: Time as geometric quantity](facts/theory/rt59_time_geometric.md)
+→ [RT-61: Golden ratio](facts/theory/rt61_golden_ratio.md)
+→ [RT-63: Mirror universe](facts/theory/rt63_mirror_universe.md)
+→ [RT-64: Cyclic universe](facts/theory/rt64_cyclic_universe.md)
+
+---
+
 © Dominic-René Schu — Resonance Field Theory 2025/2026
-
-
-
-
-
-
-
-
-
