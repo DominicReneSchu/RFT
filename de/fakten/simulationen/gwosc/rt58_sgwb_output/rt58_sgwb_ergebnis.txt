@@ -1,0 +1,8 @@
+RT-58b: LIGO O3 CC-Spektrum Γ(f)-Analyse
+==================================================
+f₀ geometrisch  = 49.93 Hz
+f₀ beobachtet   = 20.50 Hz
+ε_mean 20-200Hz = 0.2361 ± 0.2249
+ε₀ (Ω_Λ)        = 0.6847
+Abweichung      = 1.99σ
+Daten: 16777216 Samples = 68.3 min
