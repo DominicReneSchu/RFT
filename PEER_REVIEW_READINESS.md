@@ -203,3 +203,30 @@ A3 + A7
 ---
 
 *RFT Peer-Review Readiness — Dominic-René Schu — November 2026 (v2.0)*
+
+## Kategorie 8 — Kosmologische Zeitstruktur und Zyklisches Universum (November 2026)
+
+**Neue Ergebnisse RT-59, RT-61–64:**
+
+| Ergebnis | Formel | Status |
+|----------|--------|--------|
+| Zeit zweidimensional | $z_t = e^{i\Delta\varphi/2}$, Urknall $z_{BB}=i$ | Strukturell abgeleitet |
+| Re/Im-Zerlegung | $\mathrm{Re}^2 = \Omega_\Lambda$, $\mathrm{Im}^2 \approx \Omega_m+\Omega_r$ (1.0σ) | Falsifizierbar |
+| Goldener Schnitt | $\Delta\varphi_0 = \pi/\varphi^2$, 0.48σ konsistent | Falsifizierbar |
+| Dynamische DE | $w \approx -0.927$ (DESI 2024: $w=-0.838\pm0.057$, 1.6σ) | Falsifizierbar |
+| Spin = Zeitdimension | $SU(2)_{Spin} \equiv SU(2)_{Zeit}$ | Strukturell |
+| Spiegeluniversum | $Z_2$: $\delta_{CP}^* = -68.32°$, $z_t\cdot z_t^*=1$ | Falsifizierbar (F-t-2) |
+| Zyklisches Universum | $i \to 1 \to -i \to 1 \to i$ (4π spinoriell) | Strukturell |
+| Baryon-Asymmetrie | Alternierende $\delta_{CP}$-Vorzeichen | F-64-1 |
+
+**Priorität Peer-Review:** PRL Letter — „Cosmological time as a geometric quantity: $\Omega_m + \Omega_r = \sin^2(\Delta\varphi_0/2)$"
+
+**Neue Falsifikationskriterien:**
+
+| ID | Test | Vorhersage | Experiment | Zeitrahmen |
+|----|------|-----------|-----------|-----------|
+| F-t-2 | $\delta_{CP} \approx 68.32°$ | Diagonale auf $S^2$ | LHCb Run 3 | 2–5 Jahre |
+| F-φ-1 | $\Omega_\Lambda = 0.6812$ | Goldener Schnitt | Euclid | 2–4 Jahre |
+| F-61-2 | $w \in (-1,-0.9)$ | Dynamische DE | DESI Full Survey | 2–3 Jahre |
+| F-62-1 | $\Omega_m+\Omega_r = \sin^2(\Delta\varphi_0/2)$ | 0.3153 vs 0.3090 | Euclid/DESI | 2–4 Jahre |
+| F-64-1 | Baryon-Asymmetrie $\propto \delta_{CP}$ | Zyklischer Mechanismus | LHCb Run 3 | 2–5 Jahre |
