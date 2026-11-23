@@ -2547,7 +2547,7 @@ eine geometrisch definierte Größe mit festem kosmologischem Anker — symmetri
 ## RT-61 — Goldener Schnitt im kosmologischen Zeitraum: Zufall oder Struktur?
 
 **Version:** 1.0 | **Datum:** November 2026
-**Status:** ✅ Abgeschlossen (Nov 2026) — AP strukturell, Falsifikation F-φ-1 definiert
+**Status:** ✅ Abgeschlossen (Nov 2026) — AP1 ✅ AP2 ✅ AP3 ✅ AP4 ✅; w≈-0.927 (DESI konsistent 1.6σ)
 **Vorgänger:** RT-59 (Zeit als geometrische Ursprungsgröße)
 
 **Beobachtung (aus RT-59):**
