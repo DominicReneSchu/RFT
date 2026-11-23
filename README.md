@@ -79,6 +79,37 @@ Die RFT beschreibt **alle Gravitationsphänomene** durch eine einzige Größe �
 
 **Graviton = δε̂-Quant** · **Hawking = δε̂-Tunneling** · **BH-Entropie = ε-Zustandszählung**
 
+## 🔑 Zeit als geometrische Ursprungsgröße (November 2026)
+
+Die RFT beantwortet nicht nur *wie groß* Zeit ist — sondern **was Zeit ist**:
+
+$$z_t = e^{i\Delta\varphi/2} \in S^1, \quad \varepsilon = \mathrm{Re}[z_t]^2 = \Omega_\Lambda, \quad 1-\varepsilon = \mathrm{Im}[z_t]^2 \approx \Omega_m + \Omega_r$$
+
+| Größe | Wert | Bedeutung |
+|-------|------|-----------|
+| $z_{BB} = i$ | Urknall | Rein imaginär — reine Materie/Energie |
+| $z_0 \approx 0.827 + 0.562i$ | Heute | 62% des geometrischen Weges |
+| $z_\infty = 1$ | de-Sitter-Vakuum | Reell — reine dunkle Energie |
+| $\Delta\varphi_0 = \pi/\varphi^2$ | Goldener Schnitt | Einzige selbstähnliche Teilung |
+
+**Spin = zweite Zeitdimension** ($SU(2)_{Spin} \equiv SU(2)_{Zeit}$) · **Zeitpfeil: $\dot{\varepsilon} \geq 0$ (Theorem)** · **$w \approx -0.927$ (DESI konsistent)**
+
+## 🔑 Zyklisches Universum und Spiegelstruktur (November 2026)
+
+| Eigenschaft | Unser Universum | Spiegeluniversum |
+|------------|----------------|-----------------|
+| $z_{BB}$ | $+i$ | $-i$ |
+| $\delta_{CP}$ | $+68.32°$ | $-68.32°$ |
+| Entstehung | Urknall | Singularität des finalen SL |
+| Konvergenz | $z_\infty = 1$ | $z_\infty^* = 1$ (identisch) |
+
+**Finales schwarzes Loch** ($r_S = 15.7$ Gly) = kosmische Wiege des Spiegeluniversums ·
+**Baryon-Asymmetrie** durch alternierende $\delta_{CP}$-Vorzeichen erklärt ·
+**Goldener Schnitt** = KAM-stabile Bewusstseinsschwelle in jedem Zyklus
+
+→ [RT-59: Zeit geometrisch](de/fakten/theorie/rt59_zeit_geometrisch.md) · [RT-61: Goldener Schnitt](de/fakten/theorie/rt61_goldener_schnitt.md) · [RT-63: Spiegeluniversum](de/fakten/theorie/rt63_spiegeluniversum.md) · [RT-64: Zyklisches Universum](de/fakten/theorie/rt64_zyklisches_universum.md)
+
+---
 
 ## Warum diese Theorie? — Der Ursprungsgedanke
 
