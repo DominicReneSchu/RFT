@@ -86,4 +86,8 @@ desktop.ini
 *.bbl
 *.blg
 *.fdb_latexmk
-*.fls
+*.fls*.hdf5
+*.hdf5
+*.hdf5
+*.hdf5
+*.hdf5
