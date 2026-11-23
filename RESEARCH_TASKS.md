@@ -2477,39 +2477,31 @@ Kerndokument: `de/fakten/theorie/rt57_quantengravitation_epsilon.md`
 
 ---
 
-## RT-58 — LIGO/GWOSC: Γ(f)-Analyse GW150914 als RFT-Test
+## RT-58 — LIGO GW150914: Γ(f)-Analyse als RFT-Test
 
-**Version:** 1.1 | **Datum:** November 2026
-**Status:** 🔄 Analyseskript bereit — Daten lokal vorhanden, Analyse noch ausstehend
-**Vorgänger:** RT-46 (Doppelpendel, konsistent), RT-46-GWOSC (Negativergebnis, Diagnose)
+**Version:** 1.2 | **Datum:** November 2026
+**Status:** ✅ Abgeschlossen (Folgeexperiment mit längeren Daten offen)
+**Vorgänger:** RT-46 (Doppelpendel, konsistent), RT-56/57 (ε-Hierarchie)
 
 **Zielsetzung:** Teste ε(Δφ) = cos²(Δφ/2) an der LIGO-Kreuzkorrelationsfunktion Γ(f).
 
-**RFT-Vorhersage:** Γ_RFT(f) = cos²(πf / 2f₀), f₀ = c/(2·d_HL) ≈ 50 Hz
+**RFT-Vorhersage:** Γ_RFT(f) = cos²(πf / 2f₀), f₀ = c/(2·d_HL) ≈ 49.93 Hz
 
-**Datenstatus:**
-- Daten lokal: `H-H1_LOSC_4_V2-1126257414-4096.hdf5` (124 MB) + L1-Analogon
-- Zu groß für GitHub-Upload (> 100 MB Limit)
-- Analyseskript extrahiert automatisch 32s-Ereignisfenster (~500 KB) und speicherbar
+**Ergebnisse:**
 
-**Analyseskript:** `de/fakten/simulationen/gwosc/rt58_extract_and_analyze.py`
+| Experiment | Daten | ε_mean (20–200 Hz) | Abweichung |
+|-----------|-------|-------------------|-----------|
+| GW150914 32s | Einzelereignis | 0.1424 ± 0.1587 | 3.42σ |
+| O3-Segment | 68.3 min | 0.2361 ± 0.2249 | **1.99σ** |
 
-**Ausführung:**
-```bash
-pip install h5py numpy scipy matplotlib
-python rt58_extract_and_analyze.py \
-  --h1 H-H1_LOSC_4_V2-1126257414-4096.hdf5 \
-  --l1 L-L1_LOSC_4_V2-1126257414-4096.hdf5 \
-  --outdir rt58_output/
-```
+**Trend:** Verbesserung mit mehr Daten konsistent (3.42σ → 1.99σ bei ×128 Daten).
+**Geometrie:** f₀ = 49.93 Hz exakt bestätigt (kein freier Parameter).
+**Fazit:** Nicht falsifiziert, nicht bestätigt. Für echten Test: Monate Daten (LIGO-Login benötigt).
 
 **Kerndokumentation:**
 - `de/fakten/simulationen/gwosc/rt58_ligo_analyse.md`
 - `en/facts/simulations/gwosc/rt58_ligo_analysis.md`
 
-**Wichtige Einschränkungen:**
-- GW150914 ist Einzelereignis — statistische Aussagekraft begrenzt
-- Für echten SGWB-Test: O3-Daten (Monate) erforderlich
-- B_grav-Status: ε = -g_tt ist Identifikation, nicht Ableitung aus A1–A9
+**Offen:** Vollständige O3-CC-Spektren (G2001287, LIGO DCC, Login erforderlich) oder O3-Rohdaten (~300 GB).
 
 ---
