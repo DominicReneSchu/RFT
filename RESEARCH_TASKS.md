@@ -2656,3 +2656,25 @@ des Spiegeluniversums. Zyklus: Materie-Universum ↔ Antimaterie-Universum, alte
 **Kerndokument:** `de/fakten/theorie/rt64_zyklisches_universum.md`
 
 ---
+
+## RT-65 — Das Ende des Zyklus: Übergang ins Nichts
+
+**Version:** 1.0 | **Datum:** November 2026  
+**Status:** ✅ Abgeschlossen (struktureller Rahmen)  
+**Vorgänger:** RT-62 (Dreiheit), RT-63 (Spiegeluniversum), RT-64 (Zyklisches Universum)
+
+**Kernergebnis:**
+Wenn die letzte Materie ins Spiegeluniversum übergeben wurde: $z_t = 1$, $\Delta\varphi = 0$, $\mathrm{Im}[z_t] = 0$.
+
+Ohne Materie (kg) verliert $\Gamma_\mathrm{RFT}$ [Hz/kg] seine Bedeutung → Zeit → Raum → alles löst sich auf.
+
+Das Nichts ist **nicht** ein externes Vakuum — es ist die Auflösung der strukturellen Unterschiede, die Existenz erst definieren.
+
+**Vollständiger Zyklus:**
+$$\text{NICHTS} \xrightarrow{\delta\hat\varepsilon\text{-Fluktuation}} \text{Urknall}\ (z=i) \xrightarrow{62\%} \text{Bewusstsein} \xrightarrow{} \text{finales SL} \xrightarrow{} \text{NICHTS}$$
+
+**Offene Frage:** Warum entsteht $\Delta\varphi \neq 0$ aus dem Nichts? — Heisenberg-Unschärfe verhindert exaktes $\Delta\varphi = 0$: neuer Zyklus ist unvermeidlich.
+
+**Kerndokument:** `de/fakten/theorie/rt65_ende_des_zyklus.md`
+
+---
