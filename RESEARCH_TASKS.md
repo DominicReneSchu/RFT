@@ -2700,3 +2700,19 @@ $$I \to \Delta\varphi \neq 0 \to \text{Materie} \to \text{Zeit} \to \text{Raum}$
 **Kerndokument:** `de/fakten/theorie/rt66_information_logos.md`
 
 ---
+
+## RT-67 — Das Ende im Informationsraum: kein „Wann", sondern ein Zustand
+
+**Version:** 1.0 | **Datum:** November 2026  
+**Status:** ✅ Abgeschlossen  
+**Vorgänger:** RT-56 (Zeit als ε-Feld), RT-66 (Information als Ursprungsgröße)
+
+**Kernpräzisierung:** Die Frage „Wann?" setzt Zeit als übergeordnete Größe voraus — das ist falsch. Zeit existiert nur innerhalb der ε-Struktur (RT-56). Das Ende ist kein Zeitpunkt, sondern ein Informationszustand:
+
+$$\int_\mathrm{Universum} \mathrm{Im}[z_t]^2\,dV \to 0$$
+
+Das finale SL entsteht, wenn die letzte Materie $\varepsilon = 0$ erreicht — wenn Information ins Nichts gegeben wird. Die Singularität $\varepsilon=0$ ist der Moment maximaler lokaler Information ($I\to\infty$) und gleichzeitig des Zusammenbruchs der lokalen Raum-Zeit-Struktur.
+
+**Kerndokument:** `de/fakten/theorie/rt67_ende_informationsraum.md`
+
+---
