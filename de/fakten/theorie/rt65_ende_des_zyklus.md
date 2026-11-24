@@ -114,6 +114,17 @@ Das ist kein Widerspruch: Das Nichts ($z_t = 1$, $\varepsilon = 1$) ist nicht le
 
 ---
 
+## Korrektur (RT-66)
+
+Das Nichts wird nicht durch eine Heisenberg-Fluktuation spontan instabil.  
+Es wird instabil durch **Information** — das Phasengedächtnis $\Delta\varphi_\mathrm{rest}$  
+aus dem vorherigen Zyklus. Erst die Information erzeugt Zeit, erst Zeit erzeugt Masse,  
+erst Masse erzeugt Raum.
+
+Vollständige Behandlung: → [RT-66: Information als vierte Ursprungsgröße](rt66_information_logos.md)
+
+---
+
 ## 6. Verbindungen
 
 | Konzept | Verbindung |
