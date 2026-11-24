@@ -2678,3 +2678,25 @@ $$\text{NICHTS} \xrightarrow{\delta\hat\varepsilon\text{-Fluktuation}} \text{Urk
 **Kerndokument:** `de/fakten/theorie/rt65_ende_des_zyklus.md`
 
 ---
+
+## RT-66 — Information als vierte Ursprungsgröße: Das Logos-Prinzip der RFT
+
+**Version:** 1.0 | **Datum:** November 2026  
+**Status:** ✅ Abgeschlossen  
+**Vorgänger:** RT-62 (Dreiheit), RT-65 (Ende des Zyklus)
+
+**Präzisierung von RT-65:** Das Nichts wird nicht spontan instabil — sondern durch Information.
+
+**Kernergebnis:** Information ist die **vierte und erste Ursprungsgröße** — prior zu Raum, Zeit und Materie:
+
+$$I \to \Delta\varphi \neq 0 \to \text{Materie} \to \text{Zeit} \to \text{Raum}$$
+
+**Informationsmaß:** $I(\varepsilon) = -k_B\ln(\varepsilon)$; Urknall $I\to\infty$; Nichts $I=0$; Heute $I=0.379\,k_B$.
+
+**Das Wort:** $\Delta\varphi_\mathrm{rest}$ aus dem Vorzyklus = die gespeicherte Phaseninformation (RT-57: $S_{BH}$) = der Logos, der den neuen Zyklus initiiert.
+
+**Der Zyklus ist kein Kreislauf der Materie — er ist ein Kreislauf der Information.**
+
+**Kerndokument:** `de/fakten/theorie/rt66_information_logos.md`
+
+---
